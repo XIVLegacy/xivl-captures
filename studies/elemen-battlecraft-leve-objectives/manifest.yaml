@@ -1,0 +1,45 @@
+id: elemen-battlecraft-leve-objectives
+title: eLeMeN FF14 1.x Regional Battlecraft Leve Objectives - Web Tables
+evidence_class: web-tables
+status: distilled
+content_kind: battlecraft-leve
+system: guildleve
+tags:
+- web-reference
+- wiki-tier
+- calibration
+- guildleve
+- regional-leve
+- battlecraft
+- leve-objective
+- wave-choreography
+- elemen
+- patch-1.x
+search_hints:
+- 1.x regional battlecraft guildleve objectives
+- leve wave choreography spawn add flee
+- 当たり探し find the right one lottery leve
+- 倒すと追加 defeat then add spawn
+- guildleve objective 概要 mob count party
+- Limsa Lominsa Gridania Ul'dah battlecraft camps
+- xtx_guildleve client leve id cross-check
+- regional leve My Very First Adventure Mole Patrol
+- eLeMeN elemen.sakura.ne.jp guildleve regional battlecraft
+notes: 'Deliberately narrow web-table harvest of the eLeMeN - FF14 (elemen.sakura.ne.jp) regional battlecraft guildleve pages (guildleve/regional/*_BattlecraftLeves) - the objective choreography only. A client-first comparison of the whole guildleve section (2026-07-18) shows the rest is redundant: the client ships leve names + descriptions (xtx_guildleve.csv, 623 leves) and objective params + rewards + contract period (guildleve.csv: counts, mob/item ids, e.g. c40=5 = the x5, c22=30 = 30 min), so those columns were dropped, not transcribed. The one web-unique slice is the readable runtime choreography (wave structure, defeat- then-add spawns, flee behavior, find-the-right-one lottery, item-gated triggers) that the client encodes only as opaque numeric params. One derived CSV: battlecraft-leve-objectives.csv (177 rows, 59 per city Limsa/Gridania/ Ul''dah: city, camp_jp, leve_name_jp, leve_name_en_client, client_leve_id, objective_text, name_match_note). content_kind battlecraft-leve; system guildleve. Evidence tier: wiki, CALIBRATION-grade. Client cross-check: every leve name joins xtx_guildleve.csv (JP col10 -> EN col11, id col0), 177/177 resolve to a client leve id - 174 direct, 3 via audited overrides for site transcription variants (触覚 vs client 触角 antenna; ｢｣/「」 brackets; a dropped ・). The site carries no reward gil/exp amounts (just ギル) and no star ratings, so there is no second web-unique slice. Regional fieldcraft and local tradecraft leves are out of scope (gather/synth objectives, client-carried, no battle choreography). The final 1.x (patch 1.23b) edition is confirmed by the 177/177 join to the 1.x client leve table, not ARR. The site 403s naive fetchers (curl/WebFetch); pages were read with a browser UA and captured into elemen-site-archive as the archival copy. Source HTML preserved in elemen-site-archive, see its derived/url-map.csv. Harvested 2026-07-18.'
+related_implementation_docs: []
+source_refs:
+- source: elemen-battlecraft-leve-objectives
+- source: elemen-site-archive
+  citation: full site mirror
+primary_paths:
+- derived/evidence-map.md
+- derived/battlecraft-leve-objectives.csv
+- derived/glossary.md
+- derived/file-inventory.csv
+distilled:
+  distilled: true
+  distilled_artifacts:
+  - derived/battlecraft-leve-objectives.csv
+  - derived/glossary.md
+  - derived/evidence-map.md
+  - derived/file-inventory.csv

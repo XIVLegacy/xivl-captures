@@ -1,0 +1,46 @@
+id: elemen-craft-gather-actions
+title: eLeMeN FF14 1.x Crafter and Gatherer Actions - Web Tables
+evidence_class: web-tables
+status: distilled
+content_kind: action-mechanic
+tags:
+- web-reference
+- wiki-tier
+- calibration
+- class-action
+- disciples-of-the-hand
+- disciples-of-the-land
+- crafter
+- gatherer
+- godsend
+- action-mechanic
+- elemen
+- patch-1.x
+search_hints:
+- 1.x crafter gatherer actions Disciples of the Hand Land
+- Carpenter Blacksmith Armorer Goldsmith Leatherworker Weaver Alchemist Culinarian
+- Miner Botanist Fisher
+- godsend ゴッドセンド crafting gathering ability
+- action level TP cast recast duration equip-condition
+- Hasty Hand Grandmastery Tender Touch Sharp Vision Earthen Favor
+- Nald'thal's Ward Menphina's Ward Deep Vigor
+- xtx_command action name cross-check client id 29xxx
+- eLeMeN elemen.sakura.ne.jp class action crafter gatherer
+notes: 'Web-table transcription of the eLeMeN - FF14 (elemen.sakura.ne.jp) "データ資料 > クラス" section for the non-combat classes: the 8 Disciples of the Hand (crafter) and 3 Disciples of the Land (gatherer) action pages (class/action/~patch2.00_*). Sibling to elemen-battle-actions (the 7 Disciplines of War/Magic); same pipeline and cross-check. One derived CSV: craft-gather-actions.csv (167 rows, 120 distinct names: one per class action / ability, with discipline hand/land, section アクション/ゴッドセンド, level, TP, cast, recast, duration, equip-condition, and the site description). content_kind is action-mechanic. Evidence tier: wiki, so CALIBRATION-grade (packet captures > video breakdown > wiki). Client-first: xivl-client-data ships the ability names + descriptions (xtx_command.csv) as primary evidence, and every EN here is joined from that sheet (JP col2 -> EN col3, id col0), not authored - 167/167 resolve, zero (?), zero misses; the crafting/gathering abilities are the client''s 29xxx command rows (295xx crafting, 297xx gathering), the general アクション actions the shared 22xxx rows. The abilities are shared within a discipline as a single client id (Hasty Hand = 29502 on every crafter page that lists it), not per-class copies, so the per-class id assignment was a no-op (0 twins, 0 ambiguous picks). This set''s web-unique value is the level-learned, the equip-condition grouping, and the アクション TP/cast/recast/duration - ゴッドセンド rows carry no TP/cast on the source page. ~patch2.00 is the site''s forward-facing label; the content is the final 1.x (patch 1.23b) state at the 2012-11-11 world-down, not ARR. The site 403s naive fetchers (curl/WebFetch); pages were read with a browser UA and captured into elemen-site-archive as the archival copy (web.archive Save-Page-Now not relied on). Source HTML preserved in elemen-site-archive, see its derived/url-map.csv. The ~patch1.20/~patch1.22 historical snapshots and class/level are out of scope for a future intake. Harvested 2026-07-18.'
+related_implementation_docs: []
+source_refs:
+- source: elemen-craft-gather-actions
+- source: elemen-site-archive
+  citation: full site mirror
+primary_paths:
+- derived/evidence-map.md
+- derived/craft-gather-actions.csv
+- derived/glossary.md
+- derived/file-inventory.csv
+distilled:
+  distilled: true
+  distilled_artifacts:
+  - derived/craft-gather-actions.csv
+  - derived/glossary.md
+  - derived/evidence-map.md
+  - derived/file-inventory.csv

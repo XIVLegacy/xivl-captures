@@ -1,0 +1,34 @@
+option,function,source_page
+Attributes,"View character information and statistics such as: - Title settings and display - General attributes (HP, MP, TP, strength, etc.) - Race, clan, gender, nameday, starting city and guardian deity - Classes and Levels (current class's level is displayed in green) - Key items currently in possession - Grand Company rank and company seal totals - Timers for guildleve reissuing, behests, instanced raids",menus
+Gear,Equip gear,menus
+Actions & Traits,"Set actions, traits, and abilities for use",menus
+Point Allotment,Distribute bonus points to enhance your attributes,menus
+Inventory,View or discard items in your possession,menus
+Inventory,View or distribute items in your loot list,menus
+Inventory,View details of crystals and gil in your possession,menus
+Inventory,Manage settings for bazaars and seeking repairs,menus
+Journal,View levequest details,menus
+Journal,View important details and synopses of ongoing quests,menus
+Journal,View completed quests,menus
+Achievements,View achievements and achievement progress,menus
+Search,Search for other PCs based on specified conditions,menus
+Party,Search for a party seeking members,menus
+Party,Search for or oust party members (leaders only),menus
+Party,View a list of current party members,menus
+Party,Disband party (leaders only),menus
+Social Lists,Manage Friendlist and Blacklist settings,menus
+Linkshell,View a list of active linkshell members * A current linkshell is one for which the /linkshell chat mode is enabled,menus
+Linkshell,Change your active linkshell,menus
+Linkshell,View a list of linkshells to which you belong,menus
+Linkshell,Retire from a linkshell to which you belong,menus
+Linkshell,Invite a player to join your linkshell (masters and leaders only),menus
+Linkshell,Manage linkshell leader privileges (masters only),menus
+Retainer List,View profiles of employed retainers,menus
+Map,View the current map,menus
+Map,Toggle between maps of previously visited areas,menus
+NPC Linkpearls,Receive linkpearl messages from NPCs while on quests,menus
+Teleport,Instantly travel to any previously attuned aetheryte,menus
+Return,Instantly travel to the aertheryte set as your home point,menus
+Support Desk,View the Support Desk window,menus
+Configuration,"Manage various game settings, such as audio, video, text, and macros",menus
+Exit Game,Either of the following two options can be selected to exit game: - Log out and close the game - Return to the character selection screen,menus

@@ -1,0 +1,39 @@
+enemy,enemy_rank,dlvl,class,attack,crit_potency,normal_min,normal_max,normal_predict,normal_dev_pct,crit_min,crit_max,crit_predict,crit_dev_pct,critical_bonus_pct,source
+Corroded Coblyn,1,-49,THM,Fire,10,1893,2092,1992.5,4.994,3313,3659,3486.0,4.963,174.956,stat-testing-4-critical-damage-bonus
+Corroded Coblyn,1,-49,THM,Fire,70,1893,2092,1992.5,4.994,3313,3653,3483.0,4.881,174.806,stat-testing-4-critical-damage-bonus
+Gnawing Gnat,30,-20,CNJ,Fire,0,578,638,608.0,4.934,1012,1113,1062.5,4.753,174.753,stat-testing-4-critical-damage-bonus
+Cursed Eye,35,-15,CNJ,Fire,0,710,785,747.5,5.017,1133,1246,1189.5,4.750,159.130,stat-testing-4-critical-damage-bonus
+Cursed Eye,35,-15,CNJ,Fire,60,710,785,747.5,5.017,1253,1370,1311.5,4.461,175.452,stat-testing-4-critical-damage-bonus
+Cursed Eye,35,-15,THM,Fire,10,1164,1284,1224.0,4.902,1888,2084,1986.0,4.935,162.255,stat-testing-4-critical-damage-bonus
+Cursed Eye,35,-15,THM,Fire,70,1164,1284,1224.0,4.902,2038,2246,2142.0,4.855,175.000,stat-testing-4-critical-damage-bonus
+Cursed Eye,35,-15,THM,Fire,10,940,1040,990.0,5.051,1528,1687,1607.5,4.946,162.374,stat-testing-4-critical-damage-bonus
+Cursed Eye,35,-15,THM,Fire,46,940,1040,990.0,5.051,1626,1792,1709.0,4.857,172.626,stat-testing-4-critical-damage-bonus
+Dapper Cadaver,45,-5,CNJ,Fire,0,435,481,458.0,5.022,574,631,602.5,4.730,131.550,stat-testing-4-critical-damage-bonus
+Dapper Cadaver,45,-5,CNJ,Fire,60,435,481,458.0,5.022,627,692,659.5,4.928,143.996,stat-testing-4-critical-damage-bonus
+Blotched Mongrel,46,-4,THM,Fire,10,509,563,536.0,5.037,671,740,705.5,4.890,131.623,stat-testing-4-critical-damage-bonus
+Blotched Mongrel,46,-4,THM,Fire,70,509,563,536.0,5.037,730,806,768.0,4.948,143.284,stat-testing-4-critical-damage-bonus
+Blotched Mongrel,49,-1,THM,Fire,10,458,506,482.0,4.979,574,635,604.5,5.045,125.415,stat-testing-4-critical-damage-bonus
+Blotched Mongrel,49,-1,THM,Fire,70,458,506,482.0,4.979,624,689,656.5,4.950,136.203,stat-testing-4-critical-damage-bonus
+Zahar'ak Drubber,50,0,THM,Fire,10,284,314,299.0,5.017,351,388,369.5,5.007,123.579,stat-testing-4-critical-damage-bonus
+Zahar'ak Drubber,50,0,THM,Fire,70,284,314,299.0,5.017,382,421,401.5,4.857,134.281,stat-testing-4-critical-damage-bonus
+Blotched Mongrel,52,2,THM,Fire,10,486,536,511.0,4.892,579,639,609.0,4.926,119.178,stat-testing-4-critical-damage-bonus
+Blotched Mongrel,52,2,THM,Fire,70,486,536,511.0,4.892,625,690,657.5,4.943,128.669,stat-testing-4-critical-damage-bonus
+Sphene Doblyn,56,6,THM,Fire,70,570,630,600.0,5.000,685,757,721.0,4.993,120.167,stat-testing-4-critical-damage-bonus
+Sphene Doblyn,58,8,THM,Fire,10,513,567,540.0,5.000,592,649,620.5,4.593,114.907,stat-testing-4-critical-damage-bonus
+Sphene Doblyn,58,8,THM,Fire,70,513,567,540.0,5.000,599,661,630.0,4.921,116.667,stat-testing-4-critical-damage-bonus
+Quartz Doblyn,41,-9,CNJ,Auto,0,81,95,88.0,7.955,116,136,126.0,7.937,143.182,stat-testing-4-critical-damage-bonus
+Quartz Doblyn,41,-9,CNJ,Auto,40,81,95,88.0,7.955,124,145,134.5,7.807,152.841,stat-testing-4-critical-damage-bonus
+Quartz Doblyn,43,-7,CNJ,Auto,0,74,87,80.5,8.075,102,119,110.5,7.692,137.267,stat-testing-4-critical-damage-bonus
+Quartz Doblyn,43,-7,CNJ,Auto,40,74,87,80.5,8.075,109,127,118.0,7.627,146.584,stat-testing-4-critical-damage-bonus
+Quartz Doblyn,45,-5,CNJ,Auto,0,68,80,74.0,8.108,90,105,97.5,7.692,131.757,stat-testing-4-critical-damage-bonus
+Quartz Doblyn,45,-5,CNJ,Auto,40,68,80,74.0,8.108,96,112,104.0,7.692,140.541,stat-testing-4-critical-damage-bonus
+Cockatrice,50,0,CNJ,Auto,0,42,50,46.0,8.696,51,59,55.0,7.273,119.565,stat-testing-4-critical-damage-bonus
+Cockatrice,50,0,CNJ,Auto,40,42,50,46.0,8.696,54,64,59.0,8.475,128.261,stat-testing-4-critical-damage-bonus
+Cockatrice,51,1,CNJ,Auto,0,38,45,41.5,8.434,46,54,50.0,8.000,120.482,stat-testing-4-critical-damage-bonus
+Cockatrice,51,1,CNJ,Auto,40,38,45,41.5,8.434,49,57,53.0,7.547,127.711,stat-testing-4-critical-damage-bonus
+Cockatrice,54,4,CNJ,Light Shot,0,124,146,135.0,8.148,143,167,155.0,7.742,114.815,stat-testing-4-critical-damage-bonus
+Cockatrice,54,4,ARC,Light Shot,40,124,146,135.0,8.148,149,174,161.5,7.740,119.630,stat-testing-4-critical-damage-bonus
+Sphene Doblyn,56,6,ARC,Light Shot,0,99,117,108.0,8.333,114,134,124.0,8.065,114.815,stat-testing-4-critical-damage-bonus
+Sphene Doblyn,56,6,ARC,Light Shot,40,99,117,108.0,8.333,115,135,125.0,8.000,115.741,stat-testing-4-critical-damage-bonus
+Sphene Doblyn,58,8,ARC,Light Shot,0,88,103,95.5,7.853,101,119,110.0,8.182,115.183,stat-testing-4-critical-damage-bonus
+Sphene Doblyn,58,8,ARC,Light Shot,40,88,103,95.5,7.853,101,119,110.0,8.182,115.183,stat-testing-4-critical-damage-bonus

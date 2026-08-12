@@ -1,0 +1,10 @@
+rank_index,commission_tier,maelstrom_rank,twin_adder_rank,immortal_flames_rank,requirement,source_page
+1,Enlistee,Storm Private Third Class,Serpent Private Third Class,Flame Private Third Class,Official enlistment,grand-company-guide
+2,Enlistee,Storm Private Second Class,Serpent Private Second Class,Flame Private Second Class,"1,000 company seals",grand-company-guide
+3,Enlistee,Storm Private First Class,Serpent Private First Class,Flame Private First Class,"1,500 company seals",grand-company-guide
+4,Enlistee,Storm Corporal,Serpent Corporal,Flame Corporal,"2,000 company seals",grand-company-guide
+5,Petty Officer,Storm Sergeant Third Class,Serpent Sergeant Third Class,Flame Sergeant Third Class,"Completion of the duties below and 2,500 company seals",grand-company-guide
+6,Petty Officer,Storm Sergeant Second Class,Serpent Sergeant Second Class,Flame Sergeant Second Class,"3,000 company seals",grand-company-guide
+7,Petty Officer,Storm Sergeant First Class,Serpent Sergeant First Class,Flame Sergeant First Class,"3,500 company seals",grand-company-guide
+8,Petty Officer,Chief Storm Sergeant,Chief Serpent Sergeant,Chief Flame Sergeant,"4,000 company seals",grand-company-guide
+9,Officer,Second Storm Lieutenant,Second Serpent Lieutenant,Second Flame Lieutenant,"Completion of the duties below and 25,000 company seals",grand-company-guide

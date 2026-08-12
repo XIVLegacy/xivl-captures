@@ -1,0 +1,33 @@
+placeholder,description,source_page
+<t>,Displays current target name.,text-commands-and-macros
+<me>,Displays your character's name.,text-commands-and-macros
+<p0>,Party Member 0. Displays your character's name.,text-commands-and-macros
+<p1>,Party Member 1. Displays name of first party member in list.,text-commands-and-macros
+<p2>,Party Member 2. Displays name of second party member in list.,text-commands-and-macros
+<p3>,Party Member 3. Displays name of third party member in list.,text-commands-and-macros
+<p4>,Party Member 4. Displays name of fourth party member in list.,text-commands-and-macros
+<p5>,Party Member 5. Displays name of fifth party member in list.,text-commands-and-macros
+<p6>,Party Member 6. Displays name of sixth party member in list.,text-commands-and-macros
+<p7>,Party Member 7. Displays name of seventh party member in list.,text-commands-and-macros
+<st>,Subtarget.,text-commands-and-macros
+<stpc>,Displays available PC subtargets.,text-commands-and-macros
+<stnpc>,Displays available NPC subtargets.,text-commands-and-macros
+<stenemy>,Displays available engageable enemy subtargets.,text-commands-and-macros
+<stenmity>,Displays available engaged enemy subtargets.,text-commands-and-macros
+<stparty>,Displays available party member subtargets.,text-commands-and-macros
+<lastat>,Displays the last enemy that attacked you.,text-commands-and-macros
+<hp>,Displays current HP and maximum HP. Example: 150/200,text-commands-and-macros
+<hpp>,Displays current HP as a percentage. Example: 75%,text-commands-and-macros
+<mp>,Displays current MP and maximum MP. Example: 75/100,text-commands-and-macros
+<mpp>,Displays current MP as a percentage. Example: 75%,text-commands-and-macros
+<tp>,Displays current TP. Example: 3000,text-commands-and-macros
+<lastst>,Displays name of last subtarget.,text-commands-and-macros
+<pos>,Display's coordinates of current location.,text-commands-and-macros
+<sign0>,Displays ally sign 0.,text-commands-and-macros
+<sign1>,Displays ally sign 1.,text-commands-and-macros
+<sign2>,Displays ally sign 2.,text-commands-and-macros
+<sign3>,Displays ally sign 3.,text-commands-and-macros
+<sign4>,Displays ally sign 4.,text-commands-and-macros
+<sign5>,Displays ally sign 5.,text-commands-and-macros
+<sign6>,Displays ally sign 6.,text-commands-and-macros
+<sign7>,Displays ally sign 7.,text-commands-and-macros

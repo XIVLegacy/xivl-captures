@@ -1,0 +1,44 @@
+id: elemen-history-removed
+title: eLeMeN FF14 1.x History - Removed-System Milestones - Web Tables
+evidence_class: web-tables
+status: distilled
+content_kind: character-mechanic
+tags:
+- web-reference
+- wiki-tier
+- calibration
+- history
+- milestone
+- removed-content
+- physical-level
+- shield-class
+- seasonal-event
+- lodestone-history
+- elemen
+- patch-1.x
+search_hints:
+- lodestone history removed milestone unobtainable 現在は取得不可能
+- removed shield class 盾 physical level フィジカル ladder
+- past seasonal event item swimsuit yukata removed from client
+- history feed superseded by achievement system xtx_achievement
+- xtx_itemName event item cross-check removed content
+- character progression milestone 1.x calibration
+- eLeMeN elemen.sakura.ne.jp history
+notes: 'Web-table harvest of the eLeMeN - FF14 (elemen.sakura.ne.jp) etc/history section (the Lodestone "History" milestone feed), scoped client-first to the narrow historical slice. The 2026-07-18 client comparison shows the History feed (~951 rows across 42 tables) is a deprecated notification system superseded by the achievement system the client ships as primary evidence (xtx_achievement.csv 748 rows named + ranked + EN, achievement.csv, xtx_title.csv). The History strings are not literally in the client, but the live progression ladders (kill/level/gil/leve/quest counts) are substance-redundant with the client achievement system and were dropped. Kept the 190 rows marked 現在は取得不可能 (currently unobtainable) - the records of removed systems and past content the achievement system does not preserve: the removed Shield class (盾, Lv5-50) and physical-level (Lv5-50) ladders, past seasonal events (42) and other events (11), and discontinued quest milestones (117). One derived CSV history-removed.csv (category JP/EN, title, display text, and for event rows the obtained item). Client cross-check: event items join xtx_itemName.csv (JP col5 -> EN col6, id col0), NFKC - 27/43 resolve; the 16 that do not are the payload, removed event-exclusive items absent from the 1.23b client (summer 水着 swimsuits, 浴衣/股引 yukata sets, 下駄, Moonfire / Chocobo-egg rewards, モーグリキャップ - confirmed absent), so a blank client_item_id on a non-blank event_item_jp means existed-then-gone. The removed Shield class and physical-level ladders have no client join - that absence is the evidence. Evidence tier: wiki, CALIBRATION-grade (a historical/provenance record). Edition: physical level was removed in the 1.0 -> 1.x transition, the Shield class and events are 1.x-era; the 27 resolvable event items confirm the 1.x client join. The ingame.html in-game-log variant carries the same content and was not separately harvested. The site 403s naive fetchers; the History page was read with a browser UA and captured into elemen-site-archive. Source HTML preserved in elemen-site-archive, see its derived/url-map.csv. Harvested 2026-07-18.'
+related_implementation_docs: []
+source_refs:
+- source: elemen-history-removed
+- source: elemen-site-archive
+  citation: full site mirror
+primary_paths:
+- derived/evidence-map.md
+- derived/history-removed.csv
+- derived/glossary.md
+- derived/file-inventory.csv
+distilled:
+  distilled: true
+  distilled_artifacts:
+  - derived/history-removed.csv
+  - derived/glossary.md
+  - derived/evidence-map.md
+  - derived/file-inventory.csv

@@ -1,0 +1,48 @@
+id: elemen-instanced-content-entry-rules
+title: eLeMeN FF14 1.x Instanced-Content Entry Rules - Web Tables
+evidence_class: web-tables
+status: distilled
+content_kind: instanced-dungeon
+tags:
+- web-reference
+- wiki-tier
+- calibration
+- entry-rules
+- instanced-dungeon
+- primal-battle
+- stronghold-field
+- level-restriction
+- party-limit
+- rechallenge-cooldown
+- gamecontents
+- elemen
+- patch-1.x
+search_hints:
+- instanced raid entry rule level restriction party limit time limit rechallenge
+- primal battle garuda ifrit moggle mog normal hard extreme entry gate
+- stronghold field castrum novum ughamaro natalan zaharak recommended level
+- aurum vale cutters cry dzemael darkhold toto rak instanced dungeon
+- xtx_raidDungeon xtx_placeName xtx_monsterRace client cross-check
+- gamecontents materia grand company skipped client-redundant
+- eLeMeN elemen.sakura.ne.jp gamecontents instanced content entry
+- re-challenge cooldown 15 min success 5 min failure 再挑戦 制限時間
+notes: 'Web-table harvest of the eLeMeN - FF14 (elemen.sakura.ne.jp) gamecontents InstancedRaids + PrimalBattle + StrongholdandDungeon index pages, scoped client-first. The whole gamecontents section was compared; everything but the entry gates below is client-redundant or out of scope. Materia is client-redundant - the materia value grid matches materia.csv exactly (16-value grade grids keyed to the param id, verified byte-identical for 天軍 Attack Power and 雄略 Crit), slot compatibility is the bool-column matrix in materia.csv, names/params are materia.csv + xtx_itemName; the only web-unique materia content is qualitative overmeld prose with no numeric rate table. Grand Company is client-redundant + lore prose - ranks xtx_gcRank, thresholds gcRank, seal shop gcSealShopItem (403 rows), GC quests already in elemen-quest-rewards-walkthroughs. Per-boss strategy prose overlaps the video-breakdown evidence class. The one web-unique payload is the instanced-content entry gates: level restriction, party-size cap, time limit, and re-challenge cooldown (plus patch-change annotations and dated reference pages) for the 4 raids, the primal operations (Garuda/Moggle Mog/Ifrit with Hard/Extreme tiers as separate rows), and the 5 open-world stronghold fields - none in any decoded client table (the client has instance names xtx_raidDungeon, geometry raidDungeon*, and gate dialogue instanceRaidGuide*, but not the numeric gates). 15 rows. Cross-check per studies/elemen-bestiary/derived/client-crosscheck.md (NFKC): operation names 9/9 to xtx_raidDungeon (JP col26 -> id col0, EN col27, the client name being the place e.g. the Howling Eye, not the JP flavor name), all locations to xtx_placeName, beastmen 3/3 to xtx_monsterRace (the client stores Amalj''aa as Amlaj''aa, a client typo, recorded verbatim). Unlock/prereq quests kept verbatim, not re-joined (owned by the quest set). Evidence tier: wiki, CALIBRATION-grade; the gates are server-side and uncheckable against the client - corroborate against pcap or independent instance definitions before promotion. The site 403s naive fetchers; pages fetched with a browser UA and cached in elemen-site-archive. Source HTML preserved in elemen-site-archive, see its derived/url-map.csv. Harvested 2026-07-18.'
+related_implementation_docs: []
+source_refs:
+- source: elemen-instanced-content-entry-rules
+- source: elemen-site-archive
+  citation: full site mirror
+primary_paths:
+- derived/evidence-map.md
+- derived/instanced-content-entry-rules.csv
+- derived/glossary.md
+- derived/file-inventory.csv
+canonical_evidence:
+- derived/instanced-content-entry-rules.csv
+distilled:
+  distilled: true
+  distilled_artifacts:
+  - derived/instanced-content-entry-rules.csv
+  - derived/glossary.md
+  - derived/evidence-map.md
+  - derived/file-inventory.csv

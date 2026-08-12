@@ -1,0 +1,321 @@
+scope_jp,scope_en,client_actor_id,is_nm,group_jp,group_en,skill_name_jp,skill_name_en,client_command_id,cast_effect_color,cast_effect_color_en,aoe_range,aoe_range_en,deals_damage,deals_damage_en,interruptible,interruptible_en,status_effect,status_effect_en,remarks,source
+アルドゴート,Aldgoats,,n,百獣綱,Beasts,アルパインフューリー,Alpine Fury,23092,黄,Yellow (buff),敵単体,single target,-,no,,,バーサク,Berserk,,monster/bestiary/Aldgoat.html
+アルドゴート,Aldgoats,,n,百獣綱,Beasts,ヘッドバット,Head Butt,23091;23167,赤,Red (damage),近接単体,melee single,○,Yes,,,ノックバック,Knockback,,monster/bestiary/Aldgoat.html
+アンテロープ,Antelope,,n,百獣綱,Beasts,スタンピード,Stampede,23078;23166,赤,Red (damage),単体,single target,○,Yes,,,ノックバック,Knockback,,monster/bestiary/Antelope.html
+アンテロープ,Antelope,,n,百獣綱,Beasts,フーフキック,Hoofkick,23079,赤,Red (damage),近接単体,melee single,○,Yes,,,ノックバック,Knockback,後方から攻撃時,monster/bestiary/Antelope.html
+ウルフ,Wolf/Hyena/Hellhound,,n,百獣綱,Beasts,サングインバイト,Sanguine Bite,23145,紫,Purple (debuff),単体,single target,○,Yes,,,ＨＰ吸収,HP drain,ジャッカル,monster/bestiary/Wolf.html
+ウルフ,Wolf/Hyena/Hellhound,,n,百獣綱,Beasts,沈唸,Threatening Growl,23143,,,敵単体,single target,-,no,,,,,,monster/bestiary/Wolf.html
+ウルフ,Wolf/Hyena/Hellhound,,n,百獣綱,Beasts,ファウルバイト,Foul Bite,23144,赤,Red (damage),近接単体,melee single,○,Yes,,,,,,monster/bestiary/Wolf.html
+ウルフ,Wolf/Hyena/Hellhound,,n,百獣綱,Beasts,ミッドナイトハウル,Midnight Howl,23142,黄,Yellow (buff),敵単体,single target,-,no,,,ミッドナイトウルフ（月の影響下におかれた状態。）,Midnight Wolf (state under the moon's influence),,monster/bestiary/Wolf.html
+オポオポ,Opo-opo,,n,百獣綱,Beasts,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/bestiary/Opo-opo.html
+オポオポ,Opo-opo,,n,百獣綱,Beasts,かっぱらい,Deep Scratch,23075,,,単体,single target,○,Yes,,,強化ステータスを吸収,absorbs target's buffs,,monster/bestiary/Opo-opo.html
+オポオポ,Opo-opo,,n,百獣綱,Beasts,毒手,Soil Smear,23076,,,単体,single target,○,Yes,,,弱体ステータスを移す,transfers its debuffs to target,,monster/bestiary/Opo-opo.html
+オポオポ,Opo-opo,,n,百獣綱,Beasts,ドロップキック,Drop Kick,23074,,,近接単体,melee single,○,Yes,,,ノックバック,Knockback,,monster/bestiary/Opo-opo.html
+クァール,Couerl,,n,百獣綱,Beasts,カオティックアイ,Chaotic Eye,23322,紫,Purple (debuff),目視中前方範囲,frontal gaze cone (while in sight),-,no,,,TPをすべて失う,removes all TP,,monster/bestiary/Coeurl.html
+クァール,Couerl,,n,百獣綱,Beasts,チャージドホイスカー,Charged Whisker,23318;23319;23320,赤,Red (damage),敵範囲,area (enemies),○,Yes,,,麻痺,Paralysis,,monster/bestiary/Coeurl.html
+クァール,Couerl,,n,百獣綱,Beasts,ホイスカーチャージ,Whisker Charge,23323;23324;23410;23411;23412,黄,Yellow (buff),敵単体,single target,-,no,,,（ヒゲに電気が溢れる）,(whiskers surge with electricity),,monster/bestiary/Coeurl.html
+グゥーブー,Goobbue,,n,百獣綱,Beasts,インヘイル,Inhale,23215,紫,Purple (debuff),前方範囲,frontal cone,○,Yes,,,（吸い込み）,(inhale / pull-in),,monster/bestiary/Goobbue.html
+グゥーブー,Goobbue,,n,百獣綱,Beasts,カビ散布,Violent Sneeze,23211;23212;23214,紫,Purple (debuff),前方範囲,frontal cone,○,Yes,,,物理攻撃－ / 暗闇 / 麻痺 / スロウ,Attack Down / Blind / Paralysis / Slow,,monster/bestiary/Goobbue.html
+シープ,Sheep,,n,百獣綱,Beasts,ララバイ,Lullaby,23239,紫<br>※,Purple (debuff) (see note),敵範囲,area (enemies),（○）,Yes (conditional),,,睡眠,Sleep,カラクール /<br>発動後に鼻提灯をつけて敵自身も睡眠 /<br>鼻提灯が破裂した時にダメージ /<br>破裂時のエフェクト色は赤,monster/bestiary/Sheep.html
+バッファロー,Buffalo,,n,百獣綱,Beasts,（通常攻撃）,(normal attack),,-,none,範囲,area,○,Yes,-,n/a,,,,monster/bestiary/Buffalo.html
+バッファロー,Buffalo,,n,百獣綱,Beasts,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/bestiary/Buffalo.html
+バッファロー,Buffalo,,n,百獣綱,Beasts,オンラッシュ,Onrush,23297,赤<br>+<br>（黄）,Red (damage) + (Yellow),前方範囲,frontal cone,○,Yes,○,Yes,ノックバック,Knockback,,monster/bestiary/Buffalo.html
+バッファロー,Buffalo,,n,百獣綱,Beasts,サイズミックリフト,Seismic Rift,23298,紫,Purple (debuff),敵範囲,area (enemies),○,Yes,○,Yes,ヘヴィ,Heavy,,monster/bestiary/Buffalo.html
+バッファロー,Buffalo,,n,百獣綱,Beasts,ソノラスブラスト,Sonorous Blast,23299,紫,Purple (debuff),敵範囲,area (enemies),-,no,,,敵視上昇率－,Sonorous Blast,,monster/bestiary/Buffalo.html
+バッファロー,Buffalo,,n,百獣綱,Beasts,デッドリーストンプ,Pulverizing Pound,23296,赤<br>+<br>（黄）,Red (damage) + (Yellow),近接単体,melee single,○,Yes,,,,,,monster/bestiary/Buffalo.html
+ボア,Boar,,n,百獣綱,Beasts,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/bestiary/Boar.html
+ボア,Boar,,n,百獣綱,Beasts,叫喚,Bellowing Grunt,23157,,,敵範囲,area (enemies),-,no,,,スタン,Stun,,monster/bestiary/Boar.html
+ボア,Boar,,n,百獣綱,Beasts,猪突猛進,Reckless Charge,23155,赤,Red (damage),前方直線,frontal line,○,Yes,○,Yes,ノックバック,Knockback,回り込み回避可能,monster/bestiary/Boar.html
+ボア,Boar,,n,百獣綱,Beasts,怒髪天,Bristle,23156,黄,Yellow (buff),敵単体,single target,-,no,,,,,,monster/bestiary/Boar.html
+ムーンマウス,GAP,,n,百獣綱,Beasts,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/bestiary/MoonMouse.html
+モール,GAP,,n,百獣綱,Beasts,スピンアウト,Spinout,23056,-,none,対象範囲,targeted area,○,Yes,,,,,ヘッジモール /<br>土中に潜った後に使用,monster/bestiary/Mole.html
+モール,GAP,,n,百獣綱,Beasts,ブレークアウト,Breakout,23055,,,対象範囲,targeted area,○,Yes,,,,,土中に潜った後に使用,monster/bestiary/Mole.html
+ローデント,GAP,,n,百獣綱,Beasts,サマーソルトスラッシュ,Somersault Slash,23010,赤,Red (damage),前方単体,frontal single,○,Yes,,,,,回り込み回避可能,monster/bestiary/Rodent.html
+ローデント,GAP,,n,百獣綱,Beasts,突き声,Bark to Arms,23011,青,Blue (special),敵範囲,area (enemies),-,no,,,,,,monster/bestiary/Rodent.html
+ローデント,GAP,,n,百獣綱,Beasts,ナットシェル,Nutshell,23012,黄,Yellow (buff),敵範囲,area (enemies),-,no,,,物理防御＋,Defense Up,,monster/bestiary/Rodent.html
+カクター,Sabotender,,n,草木綱,Plantlife,太陽針,Sun Spines,23149,,,敵範囲,area (enemies),○,Yes,○,Yes,バインド,Bind,,monster/bestiary/Cactuar.html
+カクター,Sabotender,,n,草木綱,Plantlife,テンダースラスト,Tender Thrust,23148,,,単体,single target,○,Yes,,,ヘイトリセット / ノックバック,enmity reset / Knockback,,monster/bestiary/Cactuar.html
+ファンガー,Funguar,,n,草木綱,Plantlife,クイージークラウド,Queasy Cloud,23256,,,敵範囲,area (enemies),-,no,,,中毒,Poison,「～の柄が膨らんだ……」と出た時に攻撃すると発動,monster/bestiary/Funguar.html
+ファンガー,Funguar,,n,草木綱,Plantlife,クイージースポア,Queasy Spores,23254,,,敵範囲,area (enemies),○,Yes,,,中毒,Poison,,monster/bestiary/Funguar.html
+ファンガー,Funguar,,n,草木綱,Plantlife,スランバークラウド,Slumber Cloud,23251,,,敵範囲,area (enemies),-,no,,,睡眠,Sleep,マイコニド /<br>「～の柄が膨らんだ……」と出た時に攻撃すると発動,monster/bestiary/Funguar.html
+ファンガー,Funguar,,n,草木綱,Plantlife,スランバースポア,Slumber Spores,23250,,,敵範囲,area (enemies),○,Yes,,,睡眠,Sleep,マイコニド,monster/bestiary/Funguar.html
+ファンガー,Funguar,,n,草木綱,Plantlife,ハイファウィップ,Hypha Whip,23255,,,,,○,Yes,,,ノックバック,Knockback,マイコニド /<br>「～の柄が縮んだ……」と出た後に発動,monster/bestiary/Funguar.html
+フライングトラップ,Flytrap,,n,草木綱,Plantlife,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/bestiary/FlyingTrap.html
+フライングトラップ,Flytrap,,n,草木綱,Plantlife,ジャミネート,Germinate,23087,,,対象範囲,targeted area,○,Yes,,,,,,monster/bestiary/FlyingTrap.html
+フライングトラップ,Flytrap,,n,草木綱,Plantlife,シードスプレー,Seedspray,23088,,,対象範囲,targeted area,○,Yes,,,ヘヴィ,Heavy,,monster/bestiary/FlyingTrap.html
+フライングトラップ,Flytrap,,n,草木綱,Plantlife,サフ,Sough,23089,赤,Red (damage),前方範囲,frontal cone,○,Yes,,,ノックバック,Knockback,回り込み回避可能,monster/bestiary/FlyingTrap.html
+モルボル,Morbol,,n,草木綱,Plantlife,甘い息,Sweet Breath,23286,紫,Purple (debuff),前方範囲,frontal cone,○,Yes,,,睡眠,Sleep,,monster/bestiary/Morbol.html
+モルボル,Morbol,,n,草木綱,Plantlife,臭い息,Bad Breath,23285,紫<br>+<br>（黄）,Purple (debuff) + (Yellow),前方範囲,frontal cone,○,Yes,,,麻痺 / 静寂 / 中毒 / 暗闇 / ヘヴィ / スロウ,Paralysis / Silence / Poison / Blind / Heavy / Slow,,monster/bestiary/Morbol.html
+オロボン,GAP,,n,水棲綱,Aquatic,マインドワイプ,Mindwipe,23402,,,敵範囲,area (enemies),,,,,,,,monster/bestiary/Orobon.html
+ギガントード,Gigantoad,,n,水棲綱,Aquatic,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,引き寄せ,draw-in,,monster/bestiary/Gigantoad.html
+ギガントード,Gigantoad,,n,水棲綱,Aquatic,ガットプレス,Gut Press,23266,赤,Red (damage),敵範囲,area (enemies),○,Yes,○,Yes,,,詠唱の中断に成功すると仰向けに転倒する,monster/bestiary/Gigantoad.html
+ギガントード,Gigantoad,,n,水棲綱,Aquatic,ガマの脂,Slimy Secretion,23264,黄,Yellow (buff),敵単体,single target,-,no,,,物理回避＋,Evasion Up,,monster/bestiary/Gigantoad.html
+ギガントード,Gigantoad,,n,水棲綱,Aquatic,三竦み,Ranine Glare,23269,紫,Purple (debuff),目視中前方範囲,frontal gaze cone (while in sight),-,no,○,Yes,ＷＳ不可,Pacification,,monster/bestiary/Gigantoad.html
+ギガントード,Gigantoad,,n,水棲綱,Aquatic,果し目,Fated Gaze (?),,紫,Purple (debuff),目視中前方範囲,frontal gaze cone (while in sight),-,no,○,Yes,ＴＰを全て失う,removes all TP,,monster/bestiary/Gigantoad.html
+ギガントード,Gigantoad,,n,水棲綱,Aquatic,リヴィッドラップ,Livid Lap,23265,紫,Purple (debuff),前方範囲,frontal cone,○,Yes,,,ステータスエフェクト2つの効果（スロウ/麻痺）,2 status effects (Slow / Paralysis),ニクス,monster/bestiary/Gigantoad.html
+サラマンダー,Salamander,,n,水棲綱,Aquatic,キネティックパルス,Kinetic Pulse,23160;23161;23162,,,敵範囲,area (enemies),-,no,○,Yes,バインド,Bind,,monster/bestiary/Salamander.html
+サラマンダー,Salamander,,n,水棲綱,Aquatic,サンダーヴェイパー,Thundervapor,23159,,,前方範囲,frontal cone,○,Yes,,,,,回り込み回避可能,monster/bestiary/Salamander.html
+サラマンダー,Salamander,,n,水棲綱,Aquatic,マグネティックパルス,Magnetic Pulse,23163;23164;23165,,,敵範囲,area (enemies),-,no,,,ヘヴィ,Heavy,,monster/bestiary/Salamander.html
+ジェリーフィッシュ,Jellyfish,,n,水棲綱 （＋有翼綱）,水棲綱 （＋有翼綱）,刺胞,Binding Tendrils,23038,,,前方単体,frontal single,○,Yes,,,バインド,Bind,回り込み回避可能,monster/bestiary/Jellyfish.html
+ジェリーフィッシュ,Jellyfish,,n,水棲綱 （＋有翼綱）,水棲綱 （＋有翼綱）,雷胞,Numbing Tendrils,23039,紫,Purple (debuff),,,○,Yes,,,麻痺,Paralysis,アネモネ,monster/bestiary/Jellyfish.html
+スラッグ,Slug,,n,水棲綱,Aquatic,粘汁散布,Viscous Discharge,23099,紫,Purple (debuff),敵範囲,area (enemies),○,Yes,○,Yes,静寂,Silence,,monster/bestiary/Slug.html
+スラッグ,Slug,,n,水棲綱,Aquatic,忘汁散布,Mucous Discharge,23100;23347,紫,Purple (debuff),敵範囲,area (enemies),○,Yes,,,アビリティ不可,Amnesia,,monster/bestiary/Slug.html
+メガロクラブ,GAP,,n,水棲綱,Aquatic,潮騒,Sound of the Sea,23403,,,前方範囲,frontal cone,-,no,,,睡眠,Sleep,,monster/bestiary/Megalocrab.html
+アマルジャ,Amlaj'aa,,n,六識綱,Beastmen,我武者羅,Infuriate,23202;23587,黄,Yellow (buff),敵単体,single target,-,no,,,ヘイスト / 物理攻撃＋,Haste / Attack Up,,monster/bestiary/Amalj'aa.html
+アマルジャ,Amlaj'aa,,n,六識綱,Beastmen,ストロングショルダー,Strong Shoulder,23395,赤,Red (damage),,,○,Yes,,,,,,monster/bestiary/Amalj'aa.html
+イクサル,Ixal,,n,六識綱,Beastmen,ウィングクリッパー,Wing Clipper,23394,紫,Purple (debuff),敵範囲,area (enemies),○,Yes,,,ヘヴィ,Heavy,,monster/bestiary/Ixali.html
+イクサル,Ixal,,n,六識綱,Beastmen,スウィフトゲイル,Swift Gale,23196,黄,Yellow (buff),敵単体,single target,-,no,,,パーフェクトドッジ（物理攻撃を完全に回避する状態。/効果時間1分）,Perfect Dodge (fully evades physical attacks; 1 min),,monster/bestiary/Ixali.html
+キキルン,Qiqirn,,n,六識綱,Beastmen,カイボッシュ,Kibosh,23204,紫,Purple (debuff),単体,single target,-,no,,,アビリティ不可,Amnesia,,monster/bestiary/Qiqirn.html
+キキルン,Qiqirn,,n,六識綱,Beastmen,サンドスプレー,Sandspray,23205,紫,Purple (debuff),前方範囲,frontal cone,-,no,,,暗闇,Blind,,monster/bestiary/Qiqirn.html
+キキルン,Qiqirn,,n,六識綱,Beastmen,ミスディレクション,Misdirection,23206,紫,Purple (debuff),前方範囲,frontal cone,-,no,,,スタン,Stun,,monster/bestiary/Qiqirn.html
+ゴブリン,Goblin,,n,六識綱,Beastmen,爆弾投げ,Bomb Toss,23311;23312,赤,Red (damage),敵範囲,area (enemies),○,Yes,○,Yes,,,,monster/bestiary/Goblin.html
+ゴブリン,Goblin,,n,六識綱,Beastmen,ファイアクラッカーシャワー,Firecracker Shower,23315,紫,Purple (debuff),敵範囲,area (enemies),-,no,,,スタン,Stun,,monster/bestiary/Goblin.html
+ゴブリン,Goblin,,n,六識綱,Beastmen,ヘイルメアリー,Hail Mary,23313;23314,赤,Red (damage),敵範囲,area (enemies),○,Yes,,,,,,monster/bestiary/Goblin.html
+コボルド,Kobold,,n,六識綱,Beastmen,特大発破,Titan's Heart,23397,紫,Purple (debuff),敵範囲,area (enemies),○,Yes,,,,,,monster/bestiary/Kobold.html
+コボルド,Kobold,,n,六識綱,Beastmen,粉塵,Firedamp,23396,黄,Yellow (buff),敵範囲,area (enemies),-,no,,,麻痺,Paralysis,,monster/bestiary/Kobold.html
+シルフ,Sylph,,n,六識綱 （＋有翼綱）,六識綱 （＋有翼綱）,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/bestiary/Sylph.html
+シルフ,Sylph,,n,六識綱 （＋有翼綱）,六識綱 （＋有翼綱）,ウッドランド・ララバイ,Woodland Lullaby,23190,,,敵範囲,area (enemies),-,no,○,Yes,睡眠,Sleep,,monster/bestiary/Sylph.html
+シルフ,Sylph,,n,六識綱 （＋有翼綱）,六識綱 （＋有翼綱）,光合成,Lay of the Leaves,23189;23447,,,敵単体,single target,-,no,,,ＨＰを回復,HP recovery,,monster/bestiary/Sylph.html
+人,GAP,,n,六識綱,Beastmen,（通常攻撃）,(normal attack),,-,none,メインアームに準拠,per main-hand weapon,,,,,,,,monster/bestiary/Human.html
+人,GAP,,n,六識綱,Beastmen,（WS）,(weaponskill),,-,none,メインアームのWSを使用（関連 : クラス_アクション/特性/ゴッドセンド）,uses main-hand weaponskill (see class actions / Godsend),,,,,,,,monster/bestiary/Human.html
+人,GAP,,n,六識綱,Beastmen,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/bestiary/Human.html
+人,GAP,,n,六識綱,Beastmen,アトリション,Attrition,23401,紫<br>+<br>（黄）,Purple (debuff) + (Yellow),,,○,Yes,,,ノックバック,Knockback,インペリアル,monster/bestiary/Human.html
+人,GAP,,n,六識綱,Beastmen,インペリアルガード,Imperial Guard,23223,,,敵単体,single target,-,no,,,ガード,Guard,インペリアル,monster/bestiary/Human.html
+人,GAP,,n,六識綱,Beastmen,デフトスラッシュ,Deft Slash,23217,赤,Red (damage),,,○,Yes,,,,,インペリアル,monster/bestiary/Human.html
+ドレーク,Drake,,n,甲鱗綱,Reptilian,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/bestiary/Drake.html
+ドレーク,Drake,,n,甲鱗綱,Reptilian,サーペンタインテール,Serpentine Tail,23278,赤,Red (damage),後方範囲,rear cone,○,Yes,,,,,後方から攻撃時,monster/bestiary/Drake.html
+ドレーク,Drake,,n,甲鱗綱,Reptilian,スモルダー,Smoulder,23271,青,Blue (special),,,○,Yes,,,（赤く光る）,(glows red),ドレイク,monster/bestiary/Drake.html
+ドレーク,Drake,,n,甲鱗綱,Reptilian,バーニングサイクロン,Burning Cyclone,23274,赤,Red (damage),前方範囲,frontal cone,○,Yes,,,,,,monster/bestiary/Drake.html
+ドレーク,Drake,,n,甲鱗綱,Reptilian,墜狂焔,Flames of Defiance,23276,赤,Red (damage),対象範囲,targeted area,○,Yes,,,,,,monster/bestiary/Drake.html
+バジリスク,Basilisk,,n,甲鱗綱,Reptilian,ストーンゲイズ,Stone Gaze,23023,,,前方範囲,frontal cone,-,no,,,石化,Petrification,使用後に敵の眼が光り、見ると石化,monster/bestiary/Basilisk.html
+バジリスク,Basilisk,,n,甲鱗綱,Reptilian,ヘヴィストンプ,Heavy Stomp,23025,,,敵範囲,area (enemies),○,Yes,○,Yes,,,,monster/bestiary/Basilisk.html
+バジリスク,Basilisk,,n,甲鱗綱,Reptilian,ボディスラム,Body Slam,23026,,,敵範囲,area (enemies),○,Yes,○,Yes,ヘヴィ,Heavy,,monster/bestiary/Basilisk.html
+ラプトル,Raptor,,n,甲鱗綱,Reptilian,サイズテール,Scythe Tail,23031,赤,Red (damage),後方範囲,rear cone,○,Yes,,,,,後方から攻撃時,monster/bestiary/Raptor.html
+ラプトル,Raptor,,n,甲鱗綱,Reptilian,ファウルブレス,Foul Breath,23030,赤,Red (damage),前方範囲,frontal cone,○,Yes,○,Yes,,,,monster/bestiary/Raptor.html
+ラプトル,Raptor,,n,甲鱗綱,Reptilian,リッパーファング,Ripper Fang,23029,,,,,○,Yes,,,,,,monster/bestiary/Raptor.html
+アントリング,Antling,,n,百蟲綱,Insects,顎鳴,Stridulation,23227,黄,Yellow (buff),,,,,,,,,,monster/bestiary/Antling.html
+アントリング,Antling,,n,百蟲綱,Insects,フォーミックフェロモンズ,Formic Pheromones,23229;23560,黄,Yellow (buff),敵範囲,area (enemies),-,no,,,HP回復 / 状態異常回復,HP recovery / cures status ailments,,monster/bestiary/Antling.html
+アントリング,Antling,,n,百蟲綱,Insects,マンディブルバイト,Mandible Bite,23228,赤,Red (damage),前方範囲,frontal cone,○,Yes,,,,,,monster/bestiary/Antling.html
+ビートル,GAP,,n,百蟲綱,Insects,スポイル,Spoil,23085,,,敵範囲,area (enemies),○,Yes,○,Yes,,,,monster/bestiary/Beetle.html
+ビートル,GAP,,n,百蟲綱,Insects,ブラインディングバースト,Blinding Burst,23259,,,敵範囲,area (enemies),-,no,○,Yes,閃光,Glare,ファイアフライ,monster/bestiary/Beetle.html
+スウォーム,Swarm,,n,百蟲綱 （＋有翼綱）,百蟲綱 （＋有翼綱）,（通常攻撃）,(normal attack),,-,none,近接単体,melee single,○,Yes,×,No,中毒,Poison,ビーズ,monster/bestiary/Sworm.html
+スウォーム,Swarm,,n,百蟲綱 （＋有翼綱）,百蟲綱 （＋有翼綱）,（通常攻撃）,(normal attack),,-,none,近接単体,melee single,○,Yes,×,No,ＴＰＤｏＴ,TP Bleed,サーフィズ,monster/bestiary/Sworm.html
+ダイアマイト,GAP,,n,百蟲綱,Insects,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/bestiary/Diremite.html
+ダイアマイト,GAP,,n,百蟲綱,Insects,コースティックブロー,Caustic Blow,23288,紫,Purple (debuff),単体,single target,○,Yes,,,物理防御－,Defense Down,マイトリング /<br>ダイアマイト,monster/bestiary/Diremite.html
+ダイアマイト,GAP,,n,百蟲綱,Insects,スティッキーウェブ,Sticky Web,23294,紫,Purple (debuff),前方範囲,frontal cone,-,no,○,Yes,スロウ,Slow,,monster/bestiary/Diremite.html
+ダイアマイト,GAP,,n,百蟲綱,Insects,デッドリースラスト,Deadly Thrust,23289;23291,紫,Purple (debuff),単体,single target,○,Yes,,,中毒,Poison,,monster/bestiary/Diremite.html
+ダイアマイト,GAP,,n,百蟲綱,Insects,レルムシェーカー,Realm Shaker,23290,,,敵範囲,area (enemies),○,Yes,,,,,ベーンマイト,monster/bestiary/Diremite.html
+チゴー,Chigoe,,n,百蟲綱,Insects,モータルミスト,Mortal Mist,23051,,,敵範囲,area (enemies),○,Yes,,,中毒,Poison,ヂッガ /<br>敵にウェポンスキルがヒットすると使用,monster/bestiary/Chigoe.html
+ナット,Gnat,,n,百蟲綱 （＋有翼綱）,百蟲綱 （＋有翼綱）,サンダーウォール,Thunderwall,23067,,,,,○,Yes,,,,,,monster/bestiary/Gnat.html
+ナット,Gnat,,n,百蟲綱 （＋有翼綱）,百蟲綱 （＋有翼綱）,サンダーストーム,Thunderstorm,23068,,,敵範囲,area (enemies),○,Yes,,,,,,monster/bestiary/Gnat.html
+ヤーゾン,Yarzon,,n,百蟲綱,Insects,コロシヴスピット,Corrosive Spit,23139;23348,紫,Purple (debuff),,,○,Yes,○,Yes,バインド,Bind,回り込み回避可能,monster/bestiary/Yarzon.html
+ヤーゾン,Yarzon,,n,百蟲綱,Insects,ブレインスパイク,Brain Spike,23140,紫,Purple (debuff),単体,single target,-,no,,,ＴＰ吸収,TP drain,,monster/bestiary/Yarzon.html
+アプカル,Apkallu,,n,有翼綱,Winged,フライングマリーン,Flying Mareen (?),,赤,Red (damage),遠隔単体,ranged single,○,Yes,,,,,,monster/bestiary/Apkallu.html
+アプカル,Apkallu,,n,有翼綱,Winged,ヨーン,Yawn,23208,紫,Purple (debuff),敵範囲,area (enemies),,,,,睡眠,Sleep,発動後にフライングマリーンを使用、またはPCの後ろに回り込む,monster/bestiary/Apkallu.html
+ヴァルチャー,Vulture,,n,有翼綱,Winged,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/bestiary/Vulture.html
+ヴァルチャー,Vulture,,n,有翼綱,Winged,ウィングカッター,Wing Cutter,23234,,,,,○,Yes,,,ノックバック,Knockback,,monster/bestiary/Vulture.html
+ヴァルチャー,Vulture,,n,有翼綱,Winged,デフェニングカー,Deafening Caw,23236,紫,Purple (debuff),敵範囲,area (enemies),-,no,,,ＴＰをすべて失う,removes all TP,,monster/bestiary/Vulture.html
+ヴァルチャー,Vulture,,n,有翼綱,Winged,ヨークシャワー,Yolk Shower,23235,,,,,○,Yes,○,Yes,バインド,Bind,,monster/bestiary/Vulture.html
+ドードー,GAP,,n,有翼綱,Winged,ファウルステンチ,Fowl Stench,23017;23018;23019,,,,,-,no,,,睡眠,Sleep,コカトリス,monster/bestiary/Dodo.html
+ドードー,GAP,,n,有翼綱,Winged,ランシッドベルチ,Rancid Belch,23014;23015;23016,紫,Purple (debuff),前方範囲,frontal cone,-,no,○,Yes,スロウ / 暗闇 / 睡眠,Slow / Blind / Sleep,,monster/bestiary/Dodo.html
+ドードー,GAP,,n,有翼綱,Winged,リガージテイト,Regurgitate,23020,,,敵範囲,area (enemies),-,no,,,ステータスエフェクト3つの効果（スロウ/暗闇/睡眠）,3 status effects (Slow / Blind / Sleep),コカトリス,monster/bestiary/Dodo.html
+ヒッポグリフ,Hippogryph,,n,百獣綱,Beasts,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/bestiary/Hippogryph.html
+ヒッポグリフ,Hippogryph,,n,百獣綱,Beasts,号叫,Shriek,23081,紫,Purple (debuff),敵範囲,area (enemies),-,no,○,Yes,スタン,Stun,,monster/bestiary/Hippogryph.html
+ヒッポグリフ,Hippogryph,,n,百獣綱,Beasts,ビークスナップ,Beak Snap,23083,赤,Red (damage),単体,single target,○,Yes,,,,,,monster/bestiary/Hippogryph.html
+プーク,Puk,,n,甲鱗綱,Reptilian,テイルチェイス,Tail Chase,23059,,,敵範囲,area (enemies),○,Yes,,,,,テロック,monster/bestiary/Puk.html
+プーク,Puk,,n,甲鱗綱,Reptilian,バックフリップ,Backflip,23058,赤,Red (damage),前方直線,frontal line,○,Yes,○,Yes,ノックバック,Knockback,回り込み回避可能,monster/bestiary/Puk.html
+バット,Bat,,n,有翼綱,Winged,吸血,Blood Drain,23049,紫,Purple (debuff),単体,single target,○,Yes,,,ＨＰ吸収,HP drain,,monster/bestiary/Bat.html
+バット,Bat,,n,有翼綱,Winged,超音波,Ultrasonics,23048,紫,Purple (debuff),,,○,Yes,,,物理命中－,Accuracy Down,,monster/bestiary/Bat.html
+ゴースト,Ghost,,n,死屍綱 （＋有翼綱）,死屍綱 （＋有翼綱）,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/bestiary/Ghost.html
+ゴースト,Ghost,,n,死屍綱 （＋有翼綱）,死屍綱 （＋有翼綱）,グレーブリール,Grave Reel,23129,紫,Purple (debuff),敵範囲,area (enemies),○,Yes,,,ＨＰ吸収,HP drain,,monster/bestiary/Ghost.html
+ゴースト,Ghost,,n,死屍綱 （＋有翼綱）,死屍綱 （＋有翼綱）,呪言,Curse,23128,紫,Purple (debuff),,,○,Yes,,,魔法防御－,Magic Defense Down,,monster/bestiary/Ghost.html
+ザ・ダムド,GAP,,n,死屍綱,Undead,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/bestiary/TheDamned.html
+ザ・ダムド,GAP,,n,死屍綱,Undead,瘴気,Cloud of Pestilence,23232,紫,Purple (debuff),,,○,Yes,,,中毒,Poison,,monster/bestiary/TheDamned.html
+ザ・ダムド,GAP,,n,死屍綱,Undead,ロットブレス,Rot Breath,23231,紫,Purple (debuff),,,○,Yes,,,ＴＰＤｏＴ,TP Bleed,,monster/bestiary/TheDamned.html
+ワイト,Wight,,n,死屍綱,Undead,シャドーシックル,Shadow Sickle,23246,赤,Red (damage),前方範囲,frontal cone,○,Yes,○,Yes,ノックバック,Knockback,回り込み回避可能,monster/bestiary/Wight.html
+ワイト,Wight,,n,死屍綱,Undead,ソウルイーター,Soul Eater,23346,赤,Red (damage),前方範囲,frontal cone,○,Yes,,,,,回り込み回避可能,monster/bestiary/Wight.html
+ワイト,Wight,,n,死屍綱,Undead,禍霊,Minions of the Pit,23247,赤,Red (damage),敵範囲,area (enemies),○,Yes,○,Yes,,,,monster/bestiary/Wight.html
+ワイト,Wight,,n,死屍綱,Undead,マジックドスカル,Magicked Skull,23245,赤,Red (damage),対象範囲,targeted area,○,Yes,,,,,,monster/bestiary/Wight.html
+コブラン,Coblyn,,n,呪具綱,Cursed-object,クラスターガイザー,Cluster Geyser,23114,赤,Red (damage),敵範囲,area (enemies),○,Yes,,,ノックバック,Knockback,特殊（後部）の鉱石が無くなる,monster/bestiary/Coblyn.html
+スプリガン,Spriggan,,n,呪具綱,Cursed-object,非天拳,Frenetic Flurry,23122,赤,Red (damage),単体,single target,○,Yes,,,,,,monster/bestiary/Spriggan.html
+アーリマン,Ahriman,,n,妖異綱 （＋有翼綱）,妖異綱 （＋有翼綱）,カタウォール,Caterwaul,23097,青,Blue (special),敵範囲,area (enemies),-,no,,,,,,monster/bestiary/Ahriman.html
+アーリマン,Ahriman,,n,妖異綱 （＋有翼綱）,妖異綱 （＋有翼綱）,デスマーチ,Death March,23379,紫,Purple (debuff),敵範囲,area (enemies),○,Yes,-,n/a,,,,monster/bestiary/Ahriman.html
+アーリマン,Ahriman,,n,妖異綱 （＋有翼綱）,妖異綱 （＋有翼綱）,デススロウズ,Death Throes,23380,赤,Red (damage),敵範囲,area (enemies),-,no,-,n/a,ステータスエフェクト4つの効果（バインド/WS不可/アビリティ不可/静寂）,4 status effects (Bind / Pacification / Amnesia / Silence),,monster/bestiary/Ahriman.html
+インプ,Imp,,n,妖異綱 （＋有翼綱）,妖異綱 （＋有翼綱）,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/bestiary/Imp.html
+インプ,Imp,,n,妖異綱 （＋有翼綱）,妖異綱 （＋有翼綱）,スターダスト,Stardust,23119,-,none,敵単体,single target,-,no,,,,,デビレット,monster/bestiary/Imp.html
+インプ,Imp,,n,妖異綱 （＋有翼綱）,妖異綱 （＋有翼綱）,魔法放題,Impish Incantations,23116;23117;23118,紫<br>+<br>（黄）,Purple (debuff) + (Yellow),敵範囲,area (enemies),○,Yes,,,,,スターダスト後に発動成功,monster/bestiary/Imp.html
+ウィル・オ・ザ・ウィスプ,GAP,,n,妖異綱,Aberrant,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/bestiary/Will-o'-the-Wisp.html
+ウィル・オ・ザ・ウィスプ,GAP,,n,妖異綱,Aberrant,インナーノヴァ,Innernova,23260,紫,Purple (debuff),単体,single target,-,no,,,全ステータス－,Imperiled,,monster/bestiary/Will-o'-the-Wisp.html
+エレメンタル,Elemental,,n,妖異綱,Aberrant,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/bestiary/Elemental.html
+エレメンタル,Elemental,,n,妖異綱,Aberrant,エーテリアルバリア,Aetherial Barrier,23152,,,敵単体,single target,-,no,,,ファストキャスト,Fastcast,,monster/bestiary/Elemental.html
+オーガ,Ogre,,n,妖異綱,Aberrant,インフェルノドロップ,Inferno Drop,23043,赤,Red (damage),敵範囲,area (enemies),○,Yes,,,,,,monster/bestiary/Ogre.html
+オーガ,Ogre,,n,妖異綱,Aberrant,エルボードロップ,Elbow Drop,23042,赤,Red (damage),後方範囲,rear cone,○,Yes,○,Yes,ノックバック,Knockback,後方から攻撃時,monster/bestiary/Ogre.html
+オーガ,Ogre,,n,妖異綱,Aberrant,ダブルスマッシュ,Double Smash,23041,赤,Red (damage),前方範囲,frontal cone,○,Yes,,,ノックバック,Knockback,,monster/bestiary/Ogre.html
+オーガ,Ogre,,n,妖異綱,Aberrant,蛮叫,Primal Scream,23046,紫,Purple (debuff),敵範囲,area (enemies),-,no,,,スタン,Stun,,monster/bestiary/Ogre.html
+オーガ,Ogre,,n,妖異綱,Aberrant,ボーンブレイカー,Bone Breaker,23044,赤,Red (damage),近接単体,melee single,○,Yes,,,ノックバック,Knockback,,monster/bestiary/Ogre.html
+ファーブル,Phurble,,n,妖異綱,Aberrant,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/bestiary/Phurble.html
+ファーブル,Phurble,,n,妖異綱,Aberrant,ヘアボール,Hair Ball,23070,,,,,○,Yes,,,,,,monster/bestiary/Phurble.html
+プラズモイド,GAP,,n,妖異綱 （＋有翼綱）,妖異綱 （＋有翼綱）,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/bestiary/Plasmoid.html
+プラズモイド,GAP,,n,妖異綱 （＋有翼綱）,妖異綱 （＋有翼綱）,ハイパーノヴァ,Hypernova,23261,,,,,-,no,,,特技ランク－,special-move rank down,,monster/bestiary/Plasmoid.html
+フラン,Flan,,n,妖異綱,Aberrant,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/bestiary/Flan.html
+フラン,Flan,,n,妖異綱,Aberrant,グロッソラリア,Glossolalia,23306,紫,Purple (debuff),敵単体,single target,-,no,,,詠唱妨害無効,Glossolalia,,monster/bestiary/Flan.html
+ボム,Bomb,,n,妖異綱 （＋有翼綱）,妖異綱 （＋有翼綱）,自爆,Self-destruct,23033;23628,,,範囲+敵単体,area + single target,○,Yes,,,,,,monster/bestiary/Bomb.html
+ボム,Bomb,,n,妖異綱 （＋有翼綱）,妖異綱 （＋有翼綱）,爆燃,Combustion,23034,-,none,敵単体,single target,-,no,,,（サイズアップ）,(size up),敵にウェポンスキルがヒットすると使用,monster/bestiary/Bomb.html
+ボム,Bomb,,n,妖異綱 （＋有翼綱）,妖異綱 （＋有翼綱）,ファストバーン,Fast Burn,23036,,,,,,,,,,,,monster/bestiary/Bomb.html
+ヴァンガード,GAP,,n,,,ドリルキャノン,Drill Cannon,23566,赤,Red (damage),前方範囲,frontal cone,○,Yes,,,ノックバック,Knockback,,monster/bestiary/Vanguard.html
+ガーゴイル,Gargoyle,,n,,,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/bestiary/Gargoyle.html
+ガーゴイル,Gargoyle,,n,,,エンシェントラス,Ancient Wrath,23356,-,none,敵範囲,area (enemies),-,no,,,スタン,Stun,,monster/bestiary/Gargoyle.html
+ガーゴイル,Gargoyle,,n,,,コラプテッドテール,Corrupted Tail,23353,黄,Yellow (buff),,,○,Yes,,,中毒,Poison,回り込み回避可能,monster/bestiary/Gargoyle.html
+ガーゴイル,Gargoyle,,n,,,グリムヘイロー,Grim Halo,23351,赤,Red (damage),敵範囲,area (enemies),○,Yes,,,,,,monster/bestiary/Gargoyle.html
+ガーゴイル,Gargoyle,,n,,,グリムフェイト,Grim Fate,23352;23588,赤,Red (damage),,,○,Yes,,,,,回り込み回避可能,monster/bestiary/Gargoyle.html
+ガーゴイル,Gargoyle,,n,,,グリムクリーバー,Grim Cleaver,23350,赤,Red (damage),,,○,Yes,,,,,回り込み回避可能,monster/bestiary/Gargoyle.html
+ガーゴイル,Gargoyle,,n,,,シャドウバースト,Shadow Burst,23355,-,none,前方範囲,frontal cone,○,Yes,,,,,回り込み回避可能,monster/bestiary/Gargoyle.html
+ガーゴイル,Gargoyle,,n,,,デソレーション,Desolation,23354;23590,-,none,前方直線,frontal line,○,Yes,,,,,回り込み回避可能,monster/bestiary/Gargoyle.html
+キマイラ,GAP,,n,,,火炎の咆哮,Voice of the Lion,23457,赤,Red (damage),前方範囲,frontal cone,○,Yes,,,ヘヴィ,Heavy,獅子頭の眼が青く光っている時に使用,monster/bestiary/Chimera.html
+キマイラ,GAP,,n,,,カオティックコーラス,Chaotic Chorus,23463,赤,Red (damage),範囲,area,○,Yes,,,引き寄せ,draw-in,,monster/bestiary/Chimera.html
+キマイラ,GAP,,n,,,コールドブレス,Breath of the Ram,23460,赤,Red (damage),右側前方範囲,right-frontal cone,○,Yes,,,中毒,Poison,,monster/bestiary/Chimera.html
+キマイラ,GAP,,n,,,サンダーブレス,Breath of the Dragon,23458,赤,Red (damage),左側前方範囲,left-frontal cone,○,Yes,,,麻痺,Paralysis,,monster/bestiary/Chimera.html
+キマイラ,GAP,,n,,,スコーピオンスティング,the Scorpion's Sting,23464,紫,Purple (debuff),後方範囲,rear cone,○,Yes,,,中毒,Poison,後方から攻撃時,monster/bestiary/Chimera.html
+キマイラ,GAP,,n,,,バットディセント,Dissent of the Bat,23462,赤,Red (damage),前方範囲,frontal cone,○,Yes,,,ノックバック,Knockback,,monster/bestiary/Chimera.html
+キマイラ,GAP,,n,,,氷結の咆哮,Voice of the Ram,23461,赤,Red (damage),範囲,area,○,Yes,,,静寂,Silence,山羊頭の眼が青く光っている時に使用,monster/bestiary/Chimera.html
+キマイラ,GAP,,n,,,フレイムブレス,Breath of the Lion,23456,赤,Red (damage),前方範囲,frontal cone,○,Yes,,,対象の強化エフェクトを1つ削除,removes one buff from target,,monster/bestiary/Chimera.html
+キマイラ,GAP,,n,,,雷電の咆哮,Voice of the Dragon,23459,赤,Red (damage),ドーナツ状範囲,donut/ring AoE,○,Yes,,,物理防御－,Defense Down,竜頭の眼が青く光っている時に使用,monster/bestiary/Chimera.html
+ゴーレム,Golem (1.2),,n,,,ストーンスカル,Stone Skull,23389,赤<br>+<br>（黄）,Red (damage) + (Yellow),単体,single target,○,Yes,,,,,,monster/bestiary/Golem.html
+ゴーレム,Golem (1.2),,n,,,トゥルーグリット,True Grit,23393,紫,Purple (debuff),前方範囲,frontal cone,○,Yes,,,暗闇,Blind,,monster/bestiary/Golem.html
+ゴーレム,Golem (1.2),,n,,,プレーンクラッカー,Plaincracker,23386;23639,赤,Red (damage),敵範囲,area (enemies),○,Yes,,,スタン,Stun,,monster/bestiary/Golem.html
+ゴーレム,Golem (1.2),,n,,,ボルダークラップ,Boulder Clap,23387;23640,赤,Red (damage),前方範囲,frontal cone,○,Yes,,,ノックバック,Knockback,,monster/bestiary/Golem.html
+ゴーレム,Golem (1.2),,n,,,モルテンコア,Molten Core,23390,赤,Red (damage),前方範囲,frontal cone,○,Yes,,,ノックバック,Knockback,,monster/bestiary/Golem.html
+サイクロプス,GAP,,n,,,10トンズ・スイング,10-tonze Swing,23477,赤,Red (damage),範囲,area,○,Yes,,,,,,monster/bestiary/Cyclops.html
+サイクロプス,GAP,,n,,,10トンズ・スワイプ,10-tonze Swipe,23476,赤,Red (damage),前方範囲,frontal cone,○,Yes,,,,,回り込み回避可能,monster/bestiary/Cyclops.html
+サイクロプス,GAP,,n,,,100トンズ・スイング,100-tonze Swing,23481;23482;23630,赤,Red (damage),範囲,area,○,Yes,,,,,,monster/bestiary/Cyclops.html
+サイクロプス,GAP,,n,,,100トンズ・スワイプ,100-tonze Swipe,23480;23629,赤,Red (damage),前方範囲,frontal cone,○,Yes,,,ノックバック,Knockback,回り込み回避可能,monster/bestiary/Cyclops.html
+サイクロプス,GAP,,n,,,アニマルインスティンクト,Animal Instinct,23484,-,none,敵単体,single target,-,no,,,敵対心リセット,enmity reset,,monster/bestiary/Cyclops.html
+サイクロプス,GAP,,n,,,アイ・オブ・ビボルダー,Eye of the Beholder (?),,赤,Red (damage),ドーナツ状範囲,donut/ring AoE,○,Yes,,,,,,monster/bestiary/Cyclops.html
+サイクロプス,GAP,,n,,,グラワー,Glower,23479,赤,Red (damage),前方直線,frontal line,○,Yes,,,,,,monster/bestiary/Cyclops.html
+トレント,Treant,,n,,,ライズ・アンド・フォール,Rise and Fall,23444,赤<br>+<br>（黄）,Red (damage) + (Yellow),前方範囲,frontal cone,○,Yes,,,,,,monster/bestiary/Treant.html
+アンノウンソルジャー,Unknown Soldier,3104323,y,ラノシア地方,La Noscea,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/LaNoscea.html
+アンノウンソルジャー,Unknown Soldier,3104323,y,ラノシア地方,La Noscea,グレーブリール,Grave Reel,23129,,,敵範囲,area (enemies),○,Yes,,,ＨＰ吸収,HP drain,,monster/nm/LaNoscea.html
+アンノウンソルジャー,Unknown Soldier,3104323,y,ラノシア地方,La Noscea,呪言,Curse,23128,,,,,○,Yes,,,魔法防御－,Magic Defense Down,,monster/nm/LaNoscea.html
+アンノウンソルジャー,Unknown Soldier,3104323,y,ラノシア地方,La Noscea,（魔法）,(magic),,,,アブゾアキュル / アブゾアタ / アブゾイヴェ / サイフォタック,magic: Absorb ACC / Absorb ATK / Absorb EVA / Siphon TP,,,,,,,,monster/nm/LaNoscea.html
+オールドシックスアームズ,Old Six-Arms,3107616,y,ラノシア地方,La Noscea,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/LaNoscea.html
+オールドシックスアームズ,Old Six-Arms,3107616,y,ラノシア地方,La Noscea,クローガード,Claw Guard,23133,,,敵単体,single target,-,no,,,（ガード）,(Guard),,monster/nm/LaNoscea.html
+オールドシックスアームズ,Old Six-Arms,3107616,y,ラノシア地方,La Noscea,バッククリップ,Backclip,23135,,,後方範囲,rear cone,○,Yes,,,,,後方から攻撃時,monster/nm/LaNoscea.html
+オールドシックスアームズ,Old Six-Arms,3107616,y,ラノシア地方,La Noscea,バブルシャワー,Bubble Shower,23134,,,前方範囲,frontal cone,○,Yes,,,,,回り込み回避可能,monster/nm/LaNoscea.html
+グルタナスガーティ,Gluttonous Gertrude,3102012,y,ラノシア地方,La Noscea,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/LaNoscea.html
+グルタナスガーティ,Gluttonous Gertrude,3102012,y,ラノシア地方,La Noscea,リガージテイト,Regurgitate,23020,,,前方範囲,frontal cone,-,no,,,ステータスエフェクト3つの効果（スロウ/暗闇/睡眠）,3 status effects (Slow / Blind / Sleep),,monster/nm/LaNoscea.html
+グレートバッファロー,Great Buffalo,3100801,y,ラノシア地方,La Noscea,（通常攻撃）,(normal attack),,-,none,範囲,area,○,Yes,-,n/a,,,,monster/nm/LaNoscea.html
+グレートバッファロー,Great Buffalo,3100801,y,ラノシア地方,La Noscea,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/LaNoscea.html
+グレートバッファロー,Great Buffalo,3100801,y,ラノシア地方,La Noscea,オンラッシュ,Onrush,23297,,,前方範囲,frontal cone,○,Yes,○,Yes,ノックバック,Knockback,,monster/nm/LaNoscea.html
+グレートバッファロー,Great Buffalo,3100801,y,ラノシア地方,La Noscea,サイズミックリフト,Seismic Rift,23298,,,敵範囲,area (enemies),○,Yes,○,Yes,ヘヴィ,Heavy,,monster/nm/LaNoscea.html
+グレートバッファロー,Great Buffalo,3100801,y,ラノシア地方,La Noscea,ソノラスブラスト,Sonorous Blast,23299,,,単体,single target,-,no,,,敵視上昇率－,Sonorous Blast,,monster/nm/LaNoscea.html
+グレートバッファロー,Great Buffalo,3100801,y,ラノシア地方,La Noscea,デッドリーストンプ,Pulverizing Pound,23296,,,近接単体,melee single,○,Yes,,,,,,monster/nm/LaNoscea.html
+シアリングシェリダン,Shearing Sheridan,3107618,y,ラノシア地方,La Noscea,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/LaNoscea.html
+シアリングシェリダン,Shearing Sheridan,3107618,y,ラノシア地方,La Noscea,クローガード,Claw Guard,23133,,,敵単体,single target,-,no,,,（ガード）,(Guard),,monster/nm/LaNoscea.html
+シアリングシェリダン,Shearing Sheridan,3107618,y,ラノシア地方,La Noscea,潮騒,Sound of the Sea,23403,,,前方範囲,frontal cone,-,no,,,睡眠,Sleep,,monster/nm/LaNoscea.html
+シアリングシェリダン,Shearing Sheridan,3107618,y,ラノシア地方,La Noscea,バッククリップ,Backclip,23135,,,後方範囲,rear cone,○,Yes,,,,,後方から攻撃時,monster/nm/LaNoscea.html
+シアリングシェリダン,Shearing Sheridan,3107618,y,ラノシア地方,La Noscea,バブルシャワー,Bubble Shower,23134,,,前方範囲,frontal cone,○,Yes,,,,,回り込み回避可能,monster/nm/LaNoscea.html
+ジャイアントレモラ,Giant Remora,3104513,y,ラノシア地方,La Noscea,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/LaNoscea.html
+ジャイアントレモラ,Giant Remora,3104513,y,ラノシア地方,La Noscea,怒潮,Rage of the Deep,23061,,,敵単体,single target,-,no,,,バーサク,Berserk,,monster/nm/LaNoscea.html
+ジャイアントレモラ,Giant Remora,3104513,y,ラノシア地方,La Noscea,フィーディングフレンジー,Feeding Frenzy,23062,,,敵範囲,area (enemies),-,no,-,n/a,物理攻撃＋,Attack Up,,monster/nm/LaNoscea.html
+ジャイアントレモラ,Giant Remora,3104513,y,ラノシア地方,La Noscea,マインドワイプ,Mindwipe,23402,,,敵範囲,area (enemies),,,,,,,,monster/nm/LaNoscea.html
+スリプリーサイクス,Slippery Sykes,3104214,y,ラノシア地方,La Noscea,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/LaNoscea.html
+スリプリーサイクス,Slippery Sykes,3104214,y,ラノシア地方,La Noscea,忘汁散布,Mucous Discharge,23100;23347,,,敵範囲,area (enemies),○,Yes,,,アビリティ不可,Amnesia,,monster/nm/LaNoscea.html
+バロメッツ,Barometz,3102720,y,ラノシア地方,La Noscea,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/LaNoscea.html
+バロメッツ,Barometz,3102720,y,ラノシア地方,La Noscea,シードスプレー,Seedspray,23088,,,対象範囲,targeted area,○,Yes,,,ヘヴィ,Heavy,,monster/nm/LaNoscea.html
+バロメッツ,Barometz,3102720,y,ラノシア地方,La Noscea,サフ,Sough,23089,,,前方範囲,frontal cone,○,Yes,,,ノックバック,Knockback,回り込み回避可能,monster/nm/LaNoscea.html
+ボムバロン,Bomb Baron,3101612,y,ラノシア地方,La Noscea,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/LaNoscea.html
+ボムバロン,Bomb Baron,3101612,y,ラノシア地方,La Noscea,自爆,Self-destruct,23033;23628,,,範囲+敵単体,area + single target,○,Yes,,,,,複数回使用,monster/nm/LaNoscea.html
+ボムバロン,Bomb Baron,3101612,y,ラノシア地方,La Noscea,（魔法）,(magic),,,,バーンII / ファイアII,magic: Burn II / Fire II,,,,,,,,monster/nm/LaNoscea.html
+ローンクァール,Lone Coeurl,3103203,y,ラノシア地方,La Noscea,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/LaNoscea.html
+ローンクァール,Lone Coeurl,3103203,y,ラノシア地方,La Noscea,カオティックアイ,Chaotic Eye,23322,,,目視中前方範囲,frontal gaze cone (while in sight),-,no,,,TPをすべて失う,removes all TP,,monster/nm/LaNoscea.html
+ローンクァール,Lone Coeurl,3103203,y,ラノシア地方,La Noscea,チャージドホイスカー,Charged Whisker,23318;23319;23320,,,敵範囲,area (enemies),○,Yes,,,,,,monster/nm/LaNoscea.html
+ローンクァール,Lone Coeurl,3103203,y,ラノシア地方,La Noscea,ホイスカーチャージ,Whisker Charge,23323;23324;23410;23411;23412,,,敵単体,single target,-,no,,,（髭に雷を蓄える）,(stores lightning in whiskers),,monster/nm/LaNoscea.html
+ウラエウス,Uraeus,3100717,y,クルザス地方,Coerthas,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/Coerthas.html
+ウラエウス,Uraeus,3100717,y,クルザス地方,Coerthas,サンドブレス,Sand Breath,23024,,,前方範囲,frontal cone,○,Yes,,,,,,monster/nm/Coerthas.html
+ウラエウス,Uraeus,3100717,y,クルザス地方,Coerthas,ストーンゲイズ,Stone Gaze,23023,,,前方範囲,frontal cone,-,no,,,石化,Petrification,使用後に敵の眼が光り、見ると石化,monster/nm/Coerthas.html
+ウラエウス,Uraeus,3100717,y,クルザス地方,Coerthas,ヘヴィストンプ,Heavy Stomp,23025,,,敵範囲,area (enemies),○,Yes,○,Yes,,,,monster/nm/Coerthas.html
+ウラエウス,Uraeus,3100717,y,クルザス地方,Coerthas,ボディスラム,Body Slam,23026,,,敵範囲,area (enemies),○,Yes,○,Yes,ヘヴィ,Heavy,,monster/nm/Coerthas.html
+スピットファイア,Spitfire,3106209,y,クルザス地方,Coerthas,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/Coerthas.html
+スピットファイア,Spitfire,3106209,y,クルザス地方,Coerthas,（魔法）,(magic),,,,氷：スロウ / バインド / パライズ / ブリザドII / フロストII<br>雷：グラビデ / ショックII / サイレス / サンダーII,magic: Ice: Slow / Bind / Paralyze / Blizzard II / Frost II | Lightning: Gravity / Shock II / Silence / Thunder II,,,,,,,,monster/nm/Coerthas.html
+ダウニーダンスタン,Downy Dunstan,3106019,y,クルザス地方,Coerthas,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/Coerthas.html
+ダウニーダンスタン,Downy Dunstan,3106019,y,クルザス地方,Coerthas,ララバイ,Lullaby,23239,,,敵範囲,area (enemies),（○）,Yes (conditional),,,睡眠,Sleep,発動後に鼻提灯をつけて敵自身も睡眠 /<br>鼻提灯が破裂した時にダメージ,monster/nm/Coerthas.html
+アルシュ,Alux,3102611,y,黒衣森地方,Black Shroud,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/BlackShroud.html
+アルシュ,Alux,3102611,y,黒衣森地方,Black Shroud,スターダスト,Stardust,23119,,,敵単体,single target,-,no,,,,,,monster/nm/BlackShroud.html
+アルシュ,Alux,3102611,y,黒衣森地方,Black Shroud,魔法放題,Impish Incantations,23116;23117;23118,,,敵範囲,area (enemies),○,Yes,,,,,,monster/nm/BlackShroud.html
+アルシュ,Alux,3102611,y,黒衣森地方,Black Shroud,（魔法）,(magic),,,,パライズ / ブリザドII / フロストII,magic: Paralyze / Blizzard II / Frost II,,,,,,,,monster/nm/BlackShroud.html
+ガーディアントレント,Guardian of the Grove,3102805,y,黒衣森地方,Black Shroud,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/BlackShroud.html
+ガーディアントレント,Guardian of the Grove,3102805,y,黒衣森地方,Black Shroud,まつぼっくり爆弾,Pinecone Bomb,23450,,,遠隔単体,ranged single,○,Yes,,,睡眠,Sleep,,monster/nm/BlackShroud.html
+カプリシャスキャシー,Capricious Cassie,3101011,y,黒衣森地方,Black Shroud,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/BlackShroud.html
+カプリシャスキャシー,Capricious Cassie,3101011,y,黒衣森地方,Black Shroud,臭い息,Bad Breath,23285,紫<br>+<br>（黄）,Purple (debuff) + (Yellow),前方範囲,frontal cone,○,Yes,,,麻痺 / 静寂 / 中毒 / 暗闇 / ヘヴィ / スロウ,Paralysis / Silence / Poison / Blind / Heavy / Slow,,monster/nm/BlackShroud.html
+カプリシャスキャシー,Capricious Cassie,3101011,y,黒衣森地方,Black Shroud,串刺し,Vine Probe,23282,紫,Purple (debuff),単体,single target,○,Yes,,,バインド,Bind,,monster/nm/BlackShroud.html
+カプリシャスキャシー,Capricious Cassie,3101011,y,黒衣森地方,Black Shroud,スウィーピングラッシュ,Sweeping Lash,23283,赤,Red (damage),前方範囲,frontal cone,○,Yes,,,スタン,Stun,,monster/nm/BlackShroud.html
+カプリシャスキャシー,Capricious Cassie,3101011,y,黒衣森地方,Black Shroud,テンドリルトレマー,Tendril Tremor,23284,赤,Red (damage),敵範囲,area (enemies),○,Yes,,,ノックバック,Knockback,,monster/nm/BlackShroud.html
+クィーングーグー,Queen Gougou,3100515,y,黒衣森地方,Black Shroud,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/BlackShroud.html
+クィーングーグー,Queen Gougou,3100515,y,黒衣森地方,Black Shroud,かっぱらい,Deep Scratch,23075,,,単体,single target,○,Yes,,,強化ステータスを吸収,absorbs target's buffs,,monster/nm/BlackShroud.html
+クィーングーグー,Queen Gougou,3100515,y,黒衣森地方,Black Shroud,毒手,Soil Smear,23076,,,単体,single target,○,Yes,,,弱体ステータスを移す,transfers its debuffs to target,,monster/nm/BlackShroud.html
+クィーングーグー,Queen Gougou,3100515,y,黒衣森地方,Black Shroud,ドロップキック,Drop Kick,23074,,,近接単体,melee single,○,Yes,,,ノックバック,Knockback,,monster/nm/BlackShroud.html
+クィーンボリート,Queen Bolete,3105915,y,黒衣森地方,Black Shroud,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/BlackShroud.html
+クィーンボリート,Queen Bolete,3105915,y,黒衣森地方,Black Shroud,スランバークラウド,Slumber Cloud,23251,,,敵範囲,area (enemies),-,no,,,睡眠,Sleep,「～の柄が膨らんだ……」と出た時に攻撃すると発動,monster/nm/BlackShroud.html
+クィーンボリート,Queen Bolete,3105915,y,黒衣森地方,Black Shroud,スランバースポア,Slumber Spores,23250,,,敵範囲,area (enemies),○,Yes,,,睡眠,Sleep,,monster/nm/BlackShroud.html
+クィーンボリート,Queen Bolete,3105915,y,黒衣森地方,Black Shroud,ハイファウィップ,Hypha Whip,23255,,,,,○,Yes,,,ノックバック,Knockback,「～の柄が縮んだ……」と出た後に発動,monster/nm/BlackShroud.html
+グレートオーク,Great Oak,3102806,y,黒衣森地方,Black Shroud,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/BlackShroud.html
+グレートオーク,Great Oak,3102806,y,黒衣森地方,Black Shroud,アーボリアルストーム,Arboreal Storm,23443,,,敵範囲,area (enemies),○,Yes,,,スロウ,Slow,,monster/nm/BlackShroud.html
+グレートオーク,Great Oak,3102806,y,黒衣森地方,Black Shroud,カノピー,Canopy,23442,,,前方範囲,frontal cone,○,Yes,,,,,,monster/nm/BlackShroud.html
+グレートオーク,Great Oak,3102806,y,黒衣森地方,Black Shroud,スイッチスワイプ,Switch Swipe,23440;23441;23642;23643,,,前方範囲,frontal cone,○,Yes,,,,,,monster/nm/BlackShroud.html
+グレートオーク,Great Oak,3102806,y,黒衣森地方,Black Shroud,バウダウン,Bough Down,23439,,,,,○,Yes,,,,,,monster/nm/BlackShroud.html
+グレートオーク,Great Oak,3102806,y,黒衣森地方,Black Shroud,バックハンドブロー,Backhand Blow,23445,,,後方範囲,rear cone,○,Yes,,,,,後方から攻撃時,monster/nm/BlackShroud.html
+グレートオーク,Great Oak,3102806,y,黒衣森地方,Black Shroud,まつぼっくり爆弾,Pinecone Bomb,23450,,,遠隔単体,ranged single,○,Yes,,,睡眠,Sleep,,monster/nm/BlackShroud.html
+ジャッカネイプス,Jackanapes,3100512,y,黒衣森地方,Black Shroud,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/BlackShroud.html
+ジャッカネイプス,Jackanapes,3100512,y,黒衣森地方,Black Shroud,かっぱらい,Deep Scratch,23075,,,単体,single target,○,Yes,,,強化ステータスを吸収,absorbs target's buffs,,monster/nm/BlackShroud.html
+ジャッカネイプス,Jackanapes,3100512,y,黒衣森地方,Black Shroud,毒手,Soil Smear,23076,,,単体,single target,○,Yes,,,弱体ステータスを移す,transfers its debuffs to target,,monster/nm/BlackShroud.html
+ジャッカネイプス,Jackanapes,3100512,y,黒衣森地方,Black Shroud,ドロップキック,Drop Kick,23074,,,近接単体,melee single,○,Yes,,,ノックバック,Knockback,,monster/nm/BlackShroud.html
+シロッコ,Sirocco,3100311,y,黒衣森地方,Black Shroud,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/BlackShroud.html
+シロッコ,Sirocco,3100311,y,黒衣森地方,Black Shroud,スタンピード,Stampede,23078;23166,,,単体,single target,○,Yes,,,ノックバック,Knockback,,monster/nm/BlackShroud.html
+シロッコ,Sirocco,3100311,y,黒衣森地方,Black Shroud,フーフキック,Hoofkick,23079,,,近接単体,melee single,○,Yes,,,ノックバック,Knockback,後方から攻撃時,monster/nm/BlackShroud.html
+スパイトフル,Spiteful,3106221,y,黒衣森地方,Black Shroud,非天拳,Frenetic Flurry,23122,赤,Red (damage),単体,single target,○,Yes,,,,,,monster/nm/BlackShroud.html
+スピンディグル,Spindiggle,3106222,y,黒衣森地方,Black Shroud,非天拳,Frenetic Flurry,23122,赤,Red (damage),単体,single target,○,Yes,,,,,,monster/nm/BlackShroud.html
+パイア,Phaia,3101511,y,黒衣森地方,Black Shroud,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/BlackShroud.html
+パイア,Phaia,3101511,y,黒衣森地方,Black Shroud,叫喚,Bellowing Grunt,23157,,,敵範囲,area (enemies),-,no,,,スタン,Stun,,monster/nm/BlackShroud.html
+パイア,Phaia,3101511,y,黒衣森地方,Black Shroud,猪突猛進,Reckless Charge,23155,,,前方直線,frontal line,○,Yes,,,ノックバック,Knockback,回り込み回避可能,monster/nm/BlackShroud.html
+パイア,Phaia,3101511,y,黒衣森地方,Black Shroud,怒髪天,Bristle,23156,,,敵単体,single target,-,no,,,,,,monster/nm/BlackShroud.html
+ブアタ,Buata,3101513,y,黒衣森地方,Black Shroud,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/BlackShroud.html
+ブアタ,Buata,3101513,y,黒衣森地方,Black Shroud,猪突猛進,Reckless Charge,23155,赤,Red (damage),前方直線,frontal line,○,Yes,○,Yes,ノックバック,Knockback,回り込み回避可能,monster/nm/BlackShroud.html
+太っ腹のホットポックス,Haughtpox Bloatbelly,3110312,y,黒衣森地方,Black Shroud,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/BlackShroud.html
+太っ腹のホットポックス,Haughtpox Bloatbelly,3110312,y,黒衣森地方,Black Shroud,爆弾投げ,Bomb Toss,23311;23312,,,敵範囲,area (enemies),○,Yes,,,,,,monster/nm/BlackShroud.html
+太っ腹のホットポックス,Haughtpox Bloatbelly,3110312,y,黒衣森地方,Black Shroud,ファイアクラッカーシャワー,Firecracker Shower,23315,,,敵範囲,area (enemies),-,no,,,スタン,Stun,,monster/nm/BlackShroud.html
+太っ腹のホットポックス,Haughtpox Bloatbelly,3110312,y,黒衣森地方,Black Shroud,ヘイルメアリー,Hail Mary,23313;23314,,,敵範囲,area (enemies),○,Yes,,,,,,monster/nm/BlackShroud.html
+プリンスオブペスト,Prince of Pestilence,3100612,y,黒衣森地方,Black Shroud,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/BlackShroud.html
+プリンスオブペスト,Prince of Pestilence,3100612,y,黒衣森地方,Black Shroud,サンダーウォール,Thunderwall,23067,,,,,○,Yes,,,,,,monster/nm/BlackShroud.html
+プリンスオブペスト,Prince of Pestilence,3100612,y,黒衣森地方,Black Shroud,サンダーストーム,Thunderstorm,23068,,,敵範囲,area (enemies),○,Yes,,,,,,monster/nm/BlackShroud.html
+プリンスオブペスト,Prince of Pestilence,3100612,y,黒衣森地方,Black Shroud,サンダーストライク,Thunderstrike,23066,,,前方直線,frontal line,○,Yes,,,,,回り込み回避可能,monster/nm/BlackShroud.html
+プリンスオブペスト,Prince of Pestilence,3100612,y,黒衣森地方,Black Shroud,溶空,Brundleflight,23064,,,,,,,,,（ターゲット解除）,(target released),ワープ移動,monster/nm/BlackShroud.html
+プリンスオブペスト,Prince of Pestilence,3100612,y,黒衣森地方,Black Shroud,（魔法）,(magic),,,,サンダーII / ショックII,magic: Thunder II / Shock II,,,,,,,,monster/nm/BlackShroud.html
+異言のアザブ・チャー,Voidtongue Ahzabb Chah,3106563,y,ザナラーン地方,Thanalan,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/Thanalan.html
+エルダーモスホーン,Elder Mosshorn,3102311,y,ザナラーン地方,Thanalan,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/Thanalan.html
+エルダーモスホーン,Elder Mosshorn,3102311,y,ザナラーン地方,Thanalan,アルパインフューリー,Alpine Fury,23092,,,敵単体,single target,-,no,,,バーサク,Berserk,,monster/nm/Thanalan.html
+エルダーモスホーン,Elder Mosshorn,3102311,y,ザナラーン地方,Thanalan,ヘッドバット,Head Butt,23091;23167,,,近接単体,melee single,○,Yes,,,ノックバック,Knockback,,monster/nm/Thanalan.html
+カクタージャック,Cactuar Jack,3100913,y,ザナラーン地方,Thanalan,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/Thanalan.html
+カクタージャック,Cactuar Jack,3100913,y,ザナラーン地方,Thanalan,太陽針,Sun Spines,23149,,,敵範囲,area (enemies),○,Yes,○,Yes,バインド,Bind,,monster/nm/Thanalan.html
+カクタージャック,Cactuar Jack,3100913,y,ザナラーン地方,Thanalan,テンダースラスト,Tender Thrust,23148,,,単体,single target,○,Yes,,,ヘイトリセット / ノックバック,enmity reset / Knockback,,monster/nm/Thanalan.html
+カクタージャック,Cactuar Jack,3100913,y,ザナラーン地方,Thanalan,針百本,100 Needles,23413,赤,Red (damage),敵範囲,area (enemies),○,Yes,,,合計100ダメージ,100 damage total,,monster/nm/Thanalan.html
+ダディーロングレッグ,Daddy Longlegs,3105515,y,ザナラーン地方,Thanalan,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/Thanalan.html
+ダディーロングレッグ,Daddy Longlegs,3105515,y,ザナラーン地方,Thanalan,コロシヴスピット,Corrosive Spit,23139;23348,,,,,○,Yes,○,Yes,バインド,Bind,,monster/nm/Thanalan.html
+ダディーロングレッグ,Daddy Longlegs,3105515,y,ザナラーン地方,Thanalan,ブレインスパイク,Brain Spike,23140,,,単体,single target,-,no,,,ＴＰ吸収,TP drain,,monster/nm/Thanalan.html
+弾指のココルン,Kokoroon Quickfingers,3106312,y,ザナラーン地方,Thanalan,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/Thanalan.html
+弾指のココルン,Kokoroon Quickfingers,3106312,y,ザナラーン地方,Thanalan,カイボッシュ,Kibosh,23204,,,,,-,no,,,アビリティ不可,Amnesia,,monster/nm/Thanalan.html
+弾指のココルン,Kokoroon Quickfingers,3106312,y,ザナラーン地方,Thanalan,サンドスプレー,Sandspray,23205,,,前方範囲,frontal cone,-,no,,,暗闇,Blind,,monster/nm/Thanalan.html
+弾指のココルン,Kokoroon Quickfingers,3106312,y,ザナラーン地方,Thanalan,ミスディレクション,Misdirection,23206,,,,,-,no,,,スタン,Stun,,monster/nm/Thanalan.html
+ネストコマンダー,Nest Commander,3103009,y,ザナラーン地方,Thanalan,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/Thanalan.html
+ネストコマンダー,Nest Commander,3103009,y,ザナラーン地方,Thanalan,トラップジョーズ,Trap Jaws,23226,,,,,○,Yes,,,,,,monster/nm/Thanalan.html
+バルディ,Bardi,3101415,y,ザナラーン地方,Thanalan,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/Thanalan.html
+バルディ,Bardi,3101415,y,ザナラーン地方,Thanalan,サングインバイト,Sanguine Bite,23145,,,単体,single target,○,Yes,,,ＨＰ吸収,HP drain,,monster/nm/Thanalan.html
+バルディ,Bardi,3101415,y,ザナラーン地方,Thanalan,沈唸,Threatening Growl,23143,,,敵単体,single target,-,no,,,,,,monster/nm/Thanalan.html
+ピュラウスタ,Pyrausta,3100117,y,ザナラーン地方,Thanalan,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/Thanalan.html
+ピュラウスタ,Pyrausta,3100117,y,ザナラーン地方,Thanalan,テイルチェイス,Tail Chase,23059,,,敵範囲,area (enemies),○,Yes,,,,,,monster/nm/Thanalan.html
+ピュラウスタ,Pyrausta,3100117,y,ザナラーン地方,Thanalan,バックフリップ,Backflip,23058,,,前方直線,frontal line,○,Yes,○,Yes,ノックバック,Knockback,回り込み回避可能,monster/nm/Thanalan.html
+ドドレ,Dodore,3101710,y,モードゥナ地方,Mor Dhona,（遠隔攻撃）,(ranged attack),,-,none,遠隔単体,ranged single,○,Yes,-,n/a,,,,monster/nm/MorDhona.html
+ドドレ,Dodore,3101710,y,モードゥナ地方,Mor Dhona,オーラルバキューム,Tail Whip,23096,,,目視中前方範囲,frontal gaze cone (while in sight),○,Yes,○,Yes,ステータスエフェクト1～3つの効果（アビリティ不可/WS不可/沈黙）,1-3 status effects (Amnesia / Pacification / Mute),,monster/nm/MorDhona.html
+ドドレ,Dodore,3101710,y,モードゥナ地方,Mor Dhona,カタウォール,Caterwaul,23097,,,敵範囲,area (enemies),-,no,,,,,,monster/nm/MorDhona.html
+ドドレ,Dodore,3101710,y,モードゥナ地方,Mor Dhona,テールホイップ,Aural Vacuum,23095,,,後方範囲,rear cone,○,Yes,,,ノックバック,Knockback,後方から攻撃時,monster/nm/MorDhona.html
+ドドレ,Dodore,3101710,y,モードゥナ地方,Mor Dhona,レベル5石化,Level 5 Petrify,23094,,,目視中前方範囲,frontal gaze cone (while in sight),-,no,○,Yes,レベルが5の倍数の場合石化,Petrify if level is a multiple of 5,,monster/nm/MorDhona.html
+ドドレ,Dodore,3101710,y,モードゥナ地方,Mor Dhona,（魔法/ドドレズミニオン）,(magic / Dodore's minions),,,,シャドーシアー / スカージII / ブライン,magic: Shadowsear / Scourge II / Blind,,,,,,,,monster/nm/MorDhona.html

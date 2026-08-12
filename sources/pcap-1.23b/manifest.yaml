@@ -1,0 +1,495 @@
+# Canonical pcap corpus membership and scenario partition.
+# Edit this manifest and regenerate; do not edit rendered scenario views.
+# tools/validate_schemas.py validates it against schemas/source.schema.json.
+
+id: pcap-1.23b
+title: FFXIV 1.23b Retail Packet-Capture Corpus
+evidence_class: packet-capture
+# Raw objects are restricted; manifest metadata and hashes stay public.
+distribution: restricted
+provenance:
+  owner_attested: true
+  attestation_date: 2026-07-27
+  recorded_against: retail 1.23b live servers
+  note: >-
+    Direct retail observations, not recordings of an emulator or private server.
+    When a captured value matches a known emulator default, the match is
+    coincidence or shared ancestry; the capture still testifies to retail
+    behavior.
+storage:
+  original_state: in-repo
+  storage_id: repo
+  path: objects/
+  master_archive:
+    file: pcap-1.23b-objects.zip
+    sha256: 20a78b9f40ff2393037c9a160c957783cf590b4f01797493d22fcd2039e9cbff
+    size_bytes: 2622720
+    holds: all 54 files under objects/, deflate, fixed timestamps
+    cold_store_path: archives/pcap-1.23b/pcap-1.23b-objects.zip
+members:
+- file: accept_leve.pcapng
+  sha256: 42b87e6c095db130def1de5bc382e428b4f4c12c8069c4682d6fa4bc7681967a
+  size_bytes: 59576
+- file: accept_local_leve.pcapng
+  sha256: 3b4b071d88742a5d3c94a1e29ca6a4074cb6b9a9a60207118302fe22f932bd7c
+  size_bytes: 50676
+- file: accept_quest.pcapng
+  sha256: a207109240254b1398a36f877afc7ac34a08466cfbd3cdd3f2eb5f4a50718057
+  size_bytes: 53180
+- file: action_and_traits.pcapng
+  sha256: c3d30fe46d69996dc74e4864245c42675cde2388525c03063dac180df528352f
+  size_bytes: 37584
+- file: add_str.pcapng
+  sha256: 246e4948a7ca1e4dc620e724677bfd9153ce76f6445a557967d309e9946021ed
+  size_bytes: 20056
+- file: attributes.pcapng
+  sha256: 5bc78b05d45a4e410b7410d046cb8b958ec549ce5b1b51a52225c4d15041a2ff
+  size_bytes: 22624
+- file: battle_mode_passive_mode.pcapng
+  sha256: 5a8290df1d11781f4f5fa1f6990651c679e57ee3b8c5549021f06767bb172d4b
+  size_bytes: 12776
+- file: buy_square_maple_shield.pcapng
+  sha256: aab582bd9658c89cd4d56e132500481f442b9f2dc2179f1a5829ea09776bce6b
+  size_bytes: 54088
+- file: change_bodyarmor.pcapng
+  sha256: 55ee6035d24e80b97c9354a0800b86a52d0a99e1200cf6875a5b56009215021a
+  size_bytes: 54536
+- file: change_helm.pcapng
+  sha256: af1e465076c3acf6188f24f084622b22beccc932bb96effd517b2d9a44606e08
+  size_bytes: 39660
+- file: change_to_botanist.pcapng
+  sha256: 8fdc448a17d19bea3d07855a8d8843d78926c50586f3656946c96b6a6cb27d26
+  size_bytes: 41500
+- file: chat_say.pcapng
+  sha256: ccaefd38c94512507d518f83ab693edaf7f42167f3b82876869b53a736275e37
+  size_bytes: 8864
+- file: chat_shout.pcapng
+  sha256: 94ab6b14373b2d0d0122e14b3eb18a1371e52165172ba18b3fc836c8ba94265a
+  size_bytes: 7872
+- file: check_room_map.pcapng
+  sha256: cca1eea57329b02e5d66e53ad6f44d28deebf8ee8c11cfafd22bf813d1551ee5
+  size_bytes: 28032
+- file: checkbed.pcapng
+  sha256: 9e05a05de6ec44eded13761fcb3546eb248c0c68e537051eef575e29dfff1b79
+  size_bytes: 26276
+- file: coerthas_map.pcapng
+  sha256: 779de805f9172832e986f5c46c0a94f6d93f4b9c7f1c41fd0de0f5f8326c0ae3
+  size_bytes: 34364
+- file: combat_autoattack.pcapng
+  sha256: 2f677ab61047b25c4168a3dd9496f372d48de3bba018d582dd5a968b9272f7b2
+  size_bytes: 82908
+- file: combat_skills.pcapng
+  sha256: 7fe66d92f6f62584e57562e51355d310546935690e0b96c2c689b83bbe8a07a7
+  size_bytes: 63028
+- file: cutscene_book.pcapng
+  sha256: c2cf85e02d8d15fe2aa9261e8b796c29c0a3d9dd9cdf287ce0f75f3a666b2b4d
+  size_bytes: 123824
+- file: emote_dance.pcapng
+  sha256: 9e004f1e791cfc37b7d23e8986a5e69021b7b7f828295fdf7957e36aa1c57dc8
+  size_bytes: 30352
+- file: emote_kneel.pcapng
+  sha256: 3381b6121f5b0789c97ededdc5394c6bc9b14c561029191fb5b3f428033c80e8
+  size_bytes: 23920
+- file: friendlist_search.pcapng
+  sha256: 3b9a35689fb923d9520bbfed8a3886dc2b461c9516492e3d8e68eec093eb7b0e
+  size_bytes: 37744
+- file: from_gridania_to_blackshroud.pcapng
+  sha256: eff300de679230653953ea3399939a15ce9d6aeafd202c7ebcf5f55e6d24930f
+  size_bytes: 196308
+- file: gather_wood.pcapng
+  sha256: c308aa4c984eb3e1912383c06e5115c6924713978df43cdb8075335e1bac7d32
+  size_bytes: 157688
+- file: gear_changesoul.pcapng
+  sha256: 62af2cde3a4683fba3e09cc3dfed8001d74303b120381de577b05df492926780
+  size_bytes: 23784
+- file: gear_changeweapon.pcapng
+  sha256: 3eec2c2993feeb2b8c47c1e1f553335638a7262ec13b561e2d52d768f0798080
+  size_bytes: 21352
+- file: gridania_map.pcapng
+  sha256: 13e26b2d68f195b8e2daf7c355a2741c155a1036b80d79c90aab982157290795
+  size_bytes: 16184
+- file: gridania_to_coerthas.pcapng
+  sha256: 63152a1ed6e446df5cc4750fe50a0839f9e45ad270c79abfc72b5c09cc47e547
+  size_bytes: 939832
+- file: harvest.pcapng
+  sha256: 8522a844b6904207c3465ae1d1038599eddb8b9dc47800d5230c8a1c3ad0e440
+  size_bytes: 60680
+- file: idle_in_party.pcapng
+  sha256: 98b45822079372380bf834a937a9cb83b662b9e302555aafa14ee353537f74c1
+  size_bytes: 20168
+- file: idling.pcapng
+  sha256: fd86f5b78b2975dcaf7bb8a8e7f94267f9f2660078a5193ea26732cb317dd385
+  size_bytes: 42608
+- file: inventory.pcapng
+  sha256: f667bfc1cb87afec3c5c5f56b031254101aff012577f6f35c7cbf133815b6878
+  size_bytes: 27908
+- file: invite_join_party.pcapng
+  sha256: 34c946c3f93744d2bbd841e75f983ef12b9bbcb59afcba31414d6d3f41e7de58
+  size_bytes: 88372
+- file: local_leve_complete.pcapng
+  sha256: 4f0793f354140478725bf2c30642a3458a854460f47fb11a7af635c8881d95cd
+  size_bytes: 358296
+- file: login.pcapng
+  sha256: 28e06b54fe559870031f077f8549b9244caafa7e5177dbca08a7feae6c2b1b62
+  size_bytes: 856236
+- file: mount_unmount_chocobo.pcapng
+  sha256: e77c06799f07029feb054792eac30baa431da15a61937b1a39bcd025e4db4072
+  size_bytes: 21240
+- file: move_around_gridania.pcapng
+  sha256: bea7ae86444fa3ef9acc08f148f60dff1e5992188ee85136dec50c64e09236d0
+  size_bytes: 220128
+- file: move_out_of_room.pcapng
+  sha256: a7a03a1d688f3feb264f8da9fae3519c55b7e267aa3802472f0221f4d729b37b
+  size_bytes: 83412
+- file: moving_around_gridania.pcapng
+  sha256: bf6abf7ccc7a16e071846036477c1fadbc3b46385ef6e747b543d836f3f51017
+  size_bytes: 855000
+- file: open_gear_menu.pcapng
+  sha256: 6b7dee09f59d03d9706ca1c81586dce667cd4d806ee2a2b72d89432d617afc2e
+  size_bytes: 25940
+- file: party_battle_leve.pcapng
+  sha256: 6327e5e1f5cbd51a9baaa9bcbacf53ca51c50a98fe4b66ae3e6bdecd9198089f
+  size_bytes: 1429864
+- file: quest_journal.pcapng
+  sha256: e1f983e9009a9ebe8b8231647229bee1672a1ac85d95a830113280f534531edc
+  size_bytes: 32264
+- file: quest_update.pcapng
+  sha256: e31aa9738dd523b7703eefa6d38527135f16d8b5ff2fc314fd7e5b808d7e4787
+  size_bytes: 66756
+- file: repair_items.pcapng
+  sha256: bbd829cbd3f42b2cbfb3aa8a74a1cc35d4e2c16c99e5a4a20ca76573f02dd90f
+  size_bytes: 63400
+- file: return_to_inn.pcapng
+  sha256: 9a81e483d3dd2673081afef06ed521c190c4d42be16e95e24097f25ff81f58c1
+  size_bytes: 44012
+- file: sell_item.pcapng
+  sha256: 1cd808fff6501c53e4c113f1fdef090e50dfe0fd7fe86ceaa552b3a53c1b5aac
+  size_bytes: 57580
+- file: small_talk_louisoix.pcapng
+  sha256: 58b620d90370ba69202e63f7f70edb79004ccbb8068e11e2e112a825d84dcafe
+  size_bytes: 18444
+- file: switch_to_weaver.pcapng
+  sha256: b41b25bc51be1a64f41861142dc992c14493c65bcd920cadca013243480b777e
+  size_bytes: 33364
+- file: teleport_to_camp_nine_ivies.pcapng
+  sha256: fac2b485608247d299a406a7065e19918789118e7e544ca85cec4d772da0e3ab
+  size_bytes: 80004
+- file: teleport_to_camp_tranquil.pcapng
+  sha256: 488318351cdedb2e2b650dc68c55014b160fbbc26753c200922402c1ba6c4dd7
+  size_bytes: 67920
+- file: teleport_to_gridania.pcapng
+  sha256: 779141dc79a4bcf4bfc2e265f8b9510607d5a6b6e78d32f8940e5a847e598fa0
+  size_bytes: 67620
+- file: war_quest_update1.pcapng
+  sha256: ce64e429063cc7e49a2045e2f7b0e18b1991f5908368b791b93c72419841e890
+  size_bytes: 42812
+- file: war_quest_update2.pcapng
+  sha256: bf43b5ee32c58e5dc6f8149b071bd9c5cd5cc0aaa55ea3528872308fd7be2429
+  size_bytes: 206216
+- file: war_quest_update3.pcapng
+  sha256: 52279e8cbc13d3f4751b5ee3cb9c91df1895ed5c41d30672629db3ec1c9efd05
+  size_bytes: 103520
+scenarios:
+- id: session-mechanic-login-and-idle
+  title: Login Handshake and In-World Idle
+  content_kind: session-mechanic
+  tags:
+  - session
+  - login
+  - handshake
+  - keepalive
+  - idle
+  blurb: "Session-layer captures: the connection/login handshake and an in-world idle keepalive baseline."
+  caveat: >-
+    login.pcapng is confirmed pure TLS (both directions open with the TLS
+    handshake record `16 03 01`, a ClientHello/ServerHello to
+    secure.square-enix.com); it is encrypted and carries no decodable game
+    opcodes, so it is excluded from the canonical decode and contributes zero
+    opcodes here.
+  members:
+  - login.pcapng
+  - idling.pcapng
+- id: chat-mechanic-say-shout-and-npc-talk
+  title: Chat Channels - Say, Shout, NPC Talk
+  content_kind: chat-mechanic
+  tags:
+  - chat
+  - say
+  - shout
+  - npc-dialogue
+  - communication
+  blurb: "Chat-channel captures: proximity say, broadcast shout, and an NPC small-talk exchange (Louisoix)."
+  members:
+  - chat_say.pcapng
+  - chat_shout.pcapng
+  - small_talk_louisoix.pcapng
+- id: inventory-mechanic-bags-and-gear
+  title: Inventory and Gear Changes
+  content_kind: inventory-mechanic
+  tags:
+  - inventory
+  - equipment
+  - gear-change
+  - soul-crystal
+  - armor
+  - weapon
+  blurb: Inventory projection plus body/helm/soul-crystal/weapon equip changes through the gear menu.
+  members:
+  - inventory.pcapng
+  - open_gear_menu.pcapng
+  - change_bodyarmor.pcapng
+  - change_helm.pcapng
+  - gear_changesoul.pcapng
+  - gear_changeweapon.pcapng
+- id: shop-vendor-buy-sell-repair
+  title: Vendor - Buy, Sell, Repair
+  content_kind: shop-vendor
+  tags:
+  - shop
+  - vendor
+  - buy
+  - sell
+  - repair
+  - gil
+  blurb: "NPC-vendor transactions: buying a square maple shield, selling an item, and repairing gear."
+  members:
+  - buy_square_maple_shield.pcapng
+  - sell_item.pcapng
+  - repair_items.pcapng
+- id: social-mechanic-party-and-friends
+  title: Party and Friend List
+  content_kind: social-mechanic
+  tags:
+  - party
+  - invite
+  - friend-list
+  - social
+  - group
+  blurb: Party state machine (invite/join, idle-in-party keepalive) and a friend-list search.
+  members:
+  - invite_join_party.pcapng
+  - idle_in_party.pcapng
+  - friendlist_search.pcapng
+- id: movement-mechanic-gridania-locomotion
+  title: Player Movement in Gridania
+  content_kind: movement-mechanic
+  city_state: gridania
+  zones:
+  - gridania
+  tags:
+  - movement
+  - locomotion
+  - position-update
+  blurb: Two player-locomotion recordings around Gridania (position-update traffic).
+  members:
+  - move_around_gridania.pcapng
+  - moving_around_gridania.pcapng
+- id: zone-mechanic-cross-zone-travel
+  title: Cross-Zone Travel (Gridania / Black Shroud / Coerthas)
+  content_kind: zone-mechanic
+  zones:
+  - gridania
+  - black shroud
+  - coerthas
+  tags:
+  - zone-travel
+  - zone-handoff
+  - region-change
+  - map-ui
+  blurb: Cross-zone travel exercising the map-server handoff between Gridania, the Black Shroud, and Coerthas.
+  members:
+  - gridania_to_coerthas.pcapng
+  - from_gridania_to_blackshroud.pcapng
+- id: zone-mechanic-inn-room
+  title: Inn Room (The Roost)
+  content_kind: zone-mechanic
+  city_state: gridania
+  zones:
+  - the roost
+  tags:
+  - inn-room
+  - housing
+  - the-roost
+  - private-quarters
+  blurb: "Private inn-room captures (Gridania's Roost): checking the bed, the room map, and leaving the room."
+  members:
+  - move_out_of_room.pcapng
+  - checkbed.pcapng
+  - check_room_map.pcapng
+- id: zone-mechanic-map-ui
+  title: Map UI Projection (Gridania, Coerthas)
+  content_kind: zone-mechanic
+  zones:
+  - gridania
+  - coerthas
+  tags:
+  - map-ui
+  - map-screen
+  - ui-projection
+  blurb: Map-screen UI projection captures for the Gridania and Coerthas maps.
+  members:
+  - gridania_map.pcapng
+  - coerthas_map.pcapng
+- id: aetheryte-mechanic-teleport-flows
+  title: Aetheryte Teleport Flows
+  content_kind: aetheryte-mechanic
+  system: aetheryte-travel
+  zones:
+  - gridania
+  - camp nine ivies
+  - camp tranquil
+  tags:
+  - teleport
+  - aetheryte
+  - return
+  - inn
+  - the-roost
+  blurb: Aetheryte teleports to Camp Nine Ivies, Camp Tranquil, Gridania, and the return-to-inn flow.
+  members:
+  - teleport_to_camp_nine_ivies.pcapng
+  - teleport_to_camp_tranquil.pcapng
+  - teleport_to_gridania.pcapng
+  - return_to_inn.pcapng
+- id: chocobo-mechanic-mount-unmount
+  title: Chocobo Mount / Unmount
+  content_kind: chocobo-mechanic
+  system: chocobo
+  tags:
+  - chocobo
+  - mount
+  - unmount
+  blurb: Mounting and unmounting a chocobo.
+  members:
+  - mount_unmount_chocobo.pcapng
+- id: action-mechanic-combat-and-actions
+  title: Combat and Action Bar
+  content_kind: action-mechanic
+  tags:
+  - combat
+  - auto-attack
+  - weaponskill
+  - battle-stance
+  - action-bar
+  - traits
+  blurb: "Combat-system captures: auto-attack, basic skills, battle/passive stance toggle, and the action-and-traits bar."
+  members:
+  - combat_autoattack.pcapng
+  - combat_skills.pcapng
+  - battle_mode_passive_mode.pcapng
+  - action_and_traits.pcapng
+- id: character-mechanic-attributes-and-class
+  title: Attributes and Class Switching
+  content_kind: character-mechanic
+  tags:
+  - attributes
+  - stat-allocation
+  - class-change
+  - botanist
+  - weaver
+  blurb: "Character-sheet captures: allocating STR, querying attributes, and switching class to Botanist and Weaver."
+  members:
+  - add_str.pcapng
+  - attributes.pcapng
+  - change_to_botanist.pcapng
+  - switch_to_weaver.pcapng
+- id: emote-mechanic-dance-and-kneel
+  title: Emotes - Dance, Kneel
+  content_kind: emote-mechanic
+  tags:
+  - emote
+  - dance
+  - kneel
+  blurb: "Emote captures: dance and kneel."
+  members:
+  - emote_dance.pcapng
+  - emote_kneel.pcapng
+- id: side-quest-accept-and-journal
+  title: Quest - Accept, Journal, Update
+  content_kind: side-quest
+  tags:
+  - quest
+  - accept
+  - journal
+  - quest-update
+  blurb: "Generic quest-state captures: accepting a quest, the quest journal projection, and a quest update."
+  caveat: >-
+    content_kind side-quest is the generic quest-state reading; the captures do
+    not identify the specific quest, so it could be a class/job/story quest.
+    Refine if the quest is identified.
+  members:
+  - accept_quest.pcapng
+  - quest_journal.pcapng
+  - quest_update.pcapng
+- id: job-quest-war-updates
+  title: War Quest Updates
+  content_kind: job-quest
+  progression_track: job-quest
+  tags:
+  - quest
+  - quest-update
+  - war-quest
+  blurb: "A three-part quest-update sequence captured from the `war_quest` scenario."
+  caveat: >-
+    The `war_quest` filename is read here as a Warrior job questline, hence
+    content_kind job-quest / progression_track job-quest. This is a filename
+    inference only - not confirmed against the quest data - and could instead be
+    a story or other quest. Refine when the quest is identified.
+  members:
+  - war_quest_update1.pcapng
+  - war_quest_update2.pcapng
+  - war_quest_update3.pcapng
+- id: battlecraft-leve-accept-and-complete
+  title: Guildleve - Accept and Complete
+  content_kind: battlecraft-leve
+  system: guildleve
+  tags:
+  - guildleve
+  - leve
+  - regional-leve
+  - local-leve
+  - battlecraft
+  blurb: "Guildleve flow: accepting a regional leve and a local leve, a local leve completion, and a full party battle-leve content session."
+  members:
+  - accept_leve.pcapng
+  - accept_local_leve.pcapng
+  - local_leve_complete.pcapng
+  - party_battle_leve.pcapng
+- id: gathering-node-wood-and-harvest
+  title: Gathering - Logging and Harvesting
+  content_kind: gathering-node
+  tags:
+  - gathering
+  - logging
+  - harvesting
+  - botanist
+  blurb: "Gathering sessions: logging for wood and harvesting."
+  members:
+  - gather_wood.pcapng
+  - harvest.pcapng
+- id: cutscene-mechanic-book
+  title: Cutscene - Reading a Book
+  content_kind: cutscene-mechanic
+  tags:
+  - cutscene
+  - event
+  - book
+  blurb: A scripted cutscene/event capture (reading a book).
+  members:
+  - cutscene_book.pcapng
+# Every member above is claimed by exactly one scenario.
+exclusions: []
+products:
+- file: derived/sequences.json
+- file: derived/timing.json
+- file: derived/payload_samples.json
+- file: derived/content_samples.json
+- file: derived/property_targets.json
+- file: derived/request_response_pairs.json
+- file: derived/gam_keys.json
+- file: derived/spawn_observations.json
+- file: derived/gam_hash_names.json
+  derived_from: derived/gam_keys.json + derived/gam_name_candidates.json
+- file: derived/observations.json
+- file: derived/lane_observations.json
+- file: derived/payload_layouts.json
+  derived_from: derived/payload_samples.json

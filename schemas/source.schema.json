@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xivlegacy.local/xivl-captures/schemas/source.schema.json",
+  "title": "Capture source manifest",
+  "description": "Validates sources/*/manifest.yaml. evidence_class membership is checked against schemas/evidence-classes.yaml by the validator, not enumerated here.",
+  "type": "object",
+  "properties": {
+    "id": { "$ref": "#/$defs/id48" },
+    "title": { "type": "string", "minLength": 1 },
+    "evidence_class": { "type": "string", "minLength": 1 },
+    "distribution": { "enum": ["public", "restricted", "local-only"] },
+    "storage": {
+      "type": "object",
+      "properties": {
+        "original_state": { "type": "string", "minLength": 1 },
+        "storage_id": { "type": "string", "minLength": 1 },
+        "path": { "type": "string", "minLength": 1 }
+      },
+      "required": ["original_state", "storage_id", "path"],
+      "additionalProperties": true
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "members": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "file": { "type": "string", "minLength": 1 },
+          "sha256": { "$ref": "#/$defs/sha256" },
+          "size_bytes": { "type": "integer", "minimum": 0 }
+        },
+        "required": ["file", "sha256", "size_bytes"],
+        "additionalProperties": true
+      }
+    },
+    "scenarios": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "$ref": "#/$defs/id48" },
+          "title": { "type": "string", "minLength": 1 },
+          "content_kind": { "type": "string" },
+          "tags": { "type": "array", "items": { "type": "string" } },
+          "blurb": { "type": "string" },
+          "members": { "type": "array", "items": { "type": "string" } },
+          "caveat": { "type": "string" },
+          "city_state": { "type": "string" },
+          "zones": { "type": "array", "items": { "type": "string" } },
+          "system": { "type": "string" },
+          "progression_track": { "type": "string" }
+        },
+        "required": ["id", "title", "content_kind", "tags", "blurb", "members"],
+        "additionalProperties": true
+      }
+    },
+    "exclusions": { "type": "array" },
+    "products": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "file": { "type": "string", "minLength": 1 },
+          "derived_from": { "type": "string" }
+        },
+        "required": ["file"],
+        "additionalProperties": true
+      }
+    },
+    "notes": { "type": ["string", "array"] }
+  },
+  "required": ["id", "title", "evidence_class", "distribution", "storage", "provenance"],
+  "additionalProperties": true,
+  "$defs": {
+    "id48": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9.-]{0,47}$"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}

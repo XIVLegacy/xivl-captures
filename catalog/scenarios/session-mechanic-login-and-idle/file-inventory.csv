@@ -1,0 +1,3 @@
+pcap,capture_path,bytes,sha256,n_opcodes,opcodes,service_mix
+login.pcapng,sources/pcap-1.23b/objects/login.pcapng,856236,28e06b54fe559870031f077f8549b9244caafa7e5177dbca08a7feae6c2b1b62,0,,
+idling.pcapng,sources/pcap-1.23b/objects/idling.pcapng,42608,fd86f5b78b2975dcaf7bb8a8e7f94267f9f2660078a5193ea26732cb317dd385,4,0x0001;0x00ca;0x00cf;0x018d,map=5

@@ -1,0 +1,47 @@
+id: lodestone-lore
+title: FFXIV 1.x Lodestone Lore - GC Newsletters, The Last Word, Events
+evidence_class: web-tables
+status: distilled
+content_kind: main-scenario
+tags:
+- web-reference
+- lore
+- flavor
+- grand-company-newsletter
+- the-last-word
+- seasonal-event
+- official
+- square-enix
+- lodestone-1x
+- first-party
+- calamity-arc
+- wiki-lore
+content_kind_note: content_kind is main-scenario as the least-wrong bucket - the GC newsletters and The Last Word narrate the 1.x story arc toward the Calamity. This set is 1.x lore/flavor prose, NOT main-scenario-quest captures; the per-kind breakdown is in derived/index.md.
+search_hints:
+- grand company newsletter mythril eye raven harbor herald
+- the last word news serial calamity
+- garlean empire mor dhona dalamud
+- seasonal events starlight valentione hatching-tide
+- the mythril eye immortal flames
+- the raven twin adder
+- the harbor herald maelstrom
+- seventh umbral era calamity dalamud
+- garlean empire mor dhona base
+- heavensturn moonfire all saints foundation day
+notes: 'Clean Markdown transcription of the 1.x Lodestone lore/flavor pages, harvested from the same Jan-2015 master archive as the other lodestone sets. 63 pages, ~33k words, 152 images, one .md per page, grouped by kind in derived/index.md: Grand Company in-world newsletters (The Mythril Eye / Immortal Flames, The Raven / Twin Adder, The Harbor Herald / Maelstrom), The Last Word news serial tracking the Garlean advance and the road to the Calamity, and seasonal-event announcements. This is the lowest evidence tier - period lore and flavor, not mechanics - retained as first-party lore and seasonal-event evidence; downstream consumers should reword facts rather than copy source prose. The GC newsletters use an older Lodestone template (div.gc-news-detail-inner) rather than the guide/topics container. Prose is ASCII-normalized (decorative circle bullets mapped to "-", a stray ideographic comma to ","); three genuinely non-ASCII glyphs are kept verbatim in loanwords (the cedilla in "facade", the diaeresis in "naive"). This set completes the 1.x Lodestone harvest: the remaining ~34 master-rar pages are ARR-transition / billing / misc announcements, out of 1.23b scope.'
+related_implementation_docs: []
+source_refs:
+- source: lodestone-lore
+primary_paths:
+- derived/index.md
+- derived/evidence-map.md
+- derived/file-inventory.csv
+canonical_evidence:
+- derived/index.md
+- derived/evidence-map.md
+distilled:
+  distilled: true
+  distilled_artifacts:
+  - derived/index.md
+  - derived/evidence-map.md
+  - derived/file-inventory.csv

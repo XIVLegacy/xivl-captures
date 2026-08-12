@@ -1,0 +1,44 @@
+id: gamerescape-tables
+title: Gamer Escape FFXIV 1.x Item and Mob Tables - Web Tables
+evidence_class: web-tables
+distribution: local-only
+provenance:
+  sources:
+  - key: ge-item-pages
+    title: Gamer Escape FFXIV wiki - 1.0 item pages (raw wikitext, Infobox Item)
+    url: https://ffxiv.gamerescape.com/wiki/
+    archive_url: https://web.archive.org/web/20260719042509/https://ffxiv.gamerescape.com/wiki/Main_Page
+    site: Gamer Escape - Final Fantasy XIV wiki
+    note: 'Per-row provenance is the ge_page_title / ge_revision_id / ge_revision_timestamp columns; the live page is https://ffxiv.gamerescape.com/wiki/<ge_page_title> with spaces as underscores. archive_url is the site-level anchor: no per-page Wayback snapshots were created, because the 11,227-page corpus stays local-only by policy (see retention) and the site 403s naive fetchers behind Cloudflare.'
+  - key: ge-mob-pages
+    title: Gamer Escape FFXIV wiki - 1.0 mob pages (raw wikitext, Infobox Mob + Mob Row)
+    url: https://ffxiv.gamerescape.com/wiki/
+    archive_url: https://web.archive.org/web/20260719042509/https://ffxiv.gamerescape.com/wiki/Main_Page
+    site: Gamer Escape - Final Fantasy XIV wiki
+    note: Feeds both mobs.csv (Infobox Mob, one row per mob page) and mob-locations.csv (Mob Row, one row per sighting). Same per-row provenance and archive caveat as ge-item-pages.
+  - key: ge-mob-family-pages
+    title: Gamer Escape FFXIV wiki - 1.0 mob family pages (raw wikitext, Infobox Mob Family)
+    url: https://ffxiv.gamerescape.com/wiki/
+    archive_url: https://web.archive.org/web/20260719042509/https://ffxiv.gamerescape.com/wiki/Main_Page
+    site: Gamer Escape - Final Fantasy XIV wiki
+    note: 'Feeds mob-families.csv. These 52 pages live in the Category: namespace, which the miner otherwise skips, and they hold the element, weakness and behavior defaults that individual mob rows override. The four prose params (Description, Notes, Etymology, Raimdelle Codex) are deliberately not mined - they are the verbatim GE prose the register excludes. Same per-row provenance and archive caveat as ge-item-pages.'
+  - key: ge-npc-pages
+    title: Gamer Escape FFXIV wiki - 1.0 Infobox NPC pages
+    url: https://ffxiv.gamerescape.com/wiki/Baderon_Tenfingers
+    site: Gamer Escape - Final Fantasy XIV wiki
+    note: 'The 1,335 Infobox NPC pages in the same 2026-07-16 corpus as ge-mob-pages, the largest template family in it and the last one unmined. Best provenance of any GE source in this set: 263 pages were last edited in 2010, contemporaneous with 1.0''s launch, and none after 2012. They feed npcs.csv - race, clan, gender, occupation, affiliation, zone, coordinates and shop inventory, none of which the client ships - and npc-client-crosscheck.csv. The prose params Dialogue, Notes and Biography are excluded as verbatim GE prose, per the same register rule as the family pages.'
+  - key: ge-quest-pages
+    title: Gamer Escape FFXIV wiki - 1.x Infobox Quest pages
+    url: https://ffxiv.gamerescape.com/wiki/Futures_Perfect
+    site: Gamer Escape - Final Fantasy XIV wiki
+    note: 'The 273 Infobox Quest pages inside the same 2026-07-16 wikitext corpus as ge-mob-pages, mined for the first time here. They matter because every one of them was last edited in 2011 or 2012, which makes them the only GE material in this set unambiguously contemporaneous with 1.x - better provenance than the ARR-era ge-terminology-pages. They feed mob-quest-attribution.csv, which stores the quest and its revision id for each undocumented client mob name a quest mentions. Only that attribution is stored: the register excludes verbatim GE prose, and these pages are walkthrough prose throughout.'
+  - key: ge-terminology-pages
+    title: Gamer Escape FFXIV wiki - mob behavior code templates and terminology pages
+    url: https://ffxiv.gamerescape.com/wiki/Template:Mob_Notes-S
+    site: Gamer Escape - Final Fantasy XIV wiki
+    note: 'The eight Template:Mob Notes-<code> pages the mob infoboxes resolve each behavior letter through, plus the Aggressive / Passive / Detects by Sound / Detects by Magic terminology pages they link to. None are in the local 1.0 corpus; they were fetched from the MediaWiki API on 2026-07-31 and feed mob-behavior-codes.csv, which pins each definition by ge_revision_id. These revisions date from 2017-2022 and are therefore ARR-era: the letter meanings are corroborated back to a 2010 revision of Template:Monster Notes, but the mechanic detail on them is not 1.x evidence.'
+storage:
+  original_state: local-only
+  storage_id: local-research-corpus
+  path: research/gamerescape/pages
+members: []

@@ -1,0 +1,825 @@
+ge_page_title,ge_revision_id,ge_revision_timestamp,removed_before_arr,mob_name,family,subfamily,subspecies,mob_type,job,gender,element,elemental_weakness,aggressive,behavior_flags,notorious_monster,level_low,level_high,hp_low,hp_high,mp_low,mp_high,drops_no_shards,drops_no_crystals,notes,etymology,source
+Aetherbound Slave,30728,2012-07-29T18:41:28Z,0,Aetherbound Slave,Ogre,,,,,,Fire,Wind,Y,,Y,55,,,,,,Y,Y,,,ge-mob-pages
+Ahriman,151160,2011-09-25T00:45:00Z,0,Ahriman,Ahriman,,,,,,,,x,,,65,74,6087,7267,6030,7190,,,,"In ancient Persia, Ahriman were demons who opposed Ahura Mazda and are considered to be the first personification of the devil himself.",ge-mob-pages
+Akoman,30023,2012-07-29T18:35:30Z,0,Akoman,Ahriman,,,,Thaumaturge,,,,Y,,Y,55,,,,,,Y,Y,Spawns along with several Akoman's Daewas.,,ge-mob-pages
+Akoman's Daewa,30132,2012-07-29T18:37:28Z,0,Akoman's Daewa,Ahriman,,,,Thaumaturge,,,,Y,,,55,,,,,,Y,Y,Spawns with Akoman,,ge-mob-pages
+Ala Mhigan Axeman,320859,2012-05-31T05:26:10Z,0,Ala Mhigan Axeman,Enemy Humanoid,Hyur,,,Marauder,Male,,,Y,,Y,53,53,,,,,Y,Y,,,ge-mob-pages
+Ala Mhigan Bladedancer,322113,2012-06-01T03:38:07Z,0,Ala Mhigan Bladedancer,Enemy Humanoid,Hyur,,,Marauder,,,,Y,,Y,36,36,,,,,X,X,,,ge-mob-pages
+Ala Mhigan Bowman,320907,2012-05-31T05:26:47Z,0,Ala Mhigan Bowman,Enemy Humanoid,Hyur,,,Archer,Male,,,Y,,Y,53,53,,,,,Y,Y,,,ge-mob-pages
+Ala Mhigan Challenger,295301,2012-06-01T03:56:22Z,0,Ala Mhigan Challenger,Enemy Humanoid,Lalafell,,,"Gladiator, Marauder",Male,,,x,,x,20,36,,,,,,,,,ge-mob-pages
+Ala Mhigan Pikeman,320961,2012-05-31T05:27:21Z,0,Ala Mhigan Pikeman,Enemy Humanoid,Hyur,,,Lancer,Male,,,Y,,Y,53,53,,,,,Y,Y,,,ge-mob-pages
+Ala Mhigan Shaman,321017,2012-05-31T05:27:41Z,0,Ala Mhigan Shaman,Enemy Humanoid,Hyur,,,Conjurer,Male,,,Y,,Y,53,53,,,,,Y,Y,,,ge-mob-pages
+Alchemist's Tinder,10342,2012-02-25T21:22:50Z,0,Alchemist's Tinder,Wisp,,,,Thaumaturge,,Fire,,Yes,,,50,,2393,,3930,,,,,,ge-mob-pages
+Aldgoat Billy,280177,2012-05-29T23:51:48Z,0,Aldgoat Billy,Aldgoat,,,,,Male,Earth,,,,,30,39,2193,2813,568,726,,,,,ge-mob-pages
+Aldgoat Nanny,280536,2012-05-29T23:50:06Z,0,Aldgoat Nanny,Aldgoat,,,,,Female,Earth,Water,,,,20,29,2046,2661,427,552,,,,,ge-mob-pages
+All-seeing Eye,1020,2012-08-07T18:50:00Z,0,All-seeing Eye,Ahriman,,,,,,,,,P,x,N/A,,N/A,,N/A,,,,"All-seeing Eye is invulnerable to all harm. It will patrol a specific sector of The Dzemael Darkhold relative to how much progress the party has made. At particular locations, it will pause briefly and cast Death March, regardless of whether or not there are players near the location at the time.","The All-seeing Eye, or Eye of Providence, is a religious symbol found in many forms across many faiths; it often symbolizes the ubiquitous eye of God.",ge-mob-pages
+Alpgrot Orobon,323022,2012-06-01T21:24:28Z,0,Alpgrot Orobon,Angler,,,,,,Water,,Y,,,52,52,,,,,,,,,ge-mob-pages
+Alpha Coywolf,373778,2011-09-19T00:00:07Z,0,Alpha Coywolf,Wolf,,,,,,,,x,,,13,,801,,350,,,,,,ge-mob-pages
+Alpha Eft,326644,2012-06-06T18:56:39Z,0,Alpha Eft,Salamander,,,,,,,,Y,,,50,50,,,,,,,,,ge-mob-pages
+Alpha Gnat,372607,2012-06-20T22:33:52Z,0,Alpha Gnat,Gnat,,,,,,Lightning,,Y,,,30,,,,,,,,,,ge-mob-pages
+Alpha Miteling,308316,2012-06-14T00:53:30Z,0,Alpha Miteling,Diremite,Diremite,,,,,,,Y,,,50,,,,,,,,"Despite its name, it is a full Diremite and has a tail.",,ge-mob-pages
+Alpha Roseling,329241,2012-06-05T03:45:27Z,0,Alpha Roseling,Landtrap,Roseling,,,,,Earth,,Y,,,30,30,,,,,,,,,ge-mob-pages
+Alpha Toad,372674,2012-06-20T22:35:42Z,0,Alpha Toad,Toad,,,,,,Water,,Y,,,50,,,,,,,,,,ge-mob-pages
+Alux,216116,2012-08-29T04:17:36Z,0,Alux,Imp,,,,Conjurer,,Ice,,x,,x,42,,"27,489",,"23,190",,,,Involved in the quest Honor Lost.,,ge-mob-pages
+Alvara Sourkiss,28320,2010-12-20T20:38:15Z,0,Alvara Sourkiss,Enemy Humanoid,,,Quest,,,,,,,,,,,,,,,,,,ge-mob-pages
+Amalj'aa Bowyer,363007,2012-06-14T00:54:49Z,0,Amalj'aa Bowyer,Amalj'aa,,,,Archer,,Fire,,Y,,,42,,,,,,,,,,ge-mob-pages
+Amalj'aa Bruiser,318486,2012-05-30T01:11:45Z,0,Amalj'aa Bruiser,Amalj'aa,,,,PGL,,Fire,,x,,,27,29,,,,,,,,,ge-mob-pages
+Amalj'aa Chief,328538,2012-07-13T15:07:04Z,0,Amalj'aa Chief,Amalj'aa,,,,Pugilist,,Fire,,Y,,Y,59,59,,,,,Y,Y,The boss for The Battle for the Golden Bazaar level 1.,,ge-mob-pages
+Amalj'aa Divinator,65111,2012-10-31T07:52:56Z,0,Amalj'aa Divinator,Amalj'aa,,,,,,Fire,Wind,x,,,47,49,,,,,,,,,ge-mob-pages
+Amalj'aa Drubber,7221,2012-08-08T19:50:41Z,0,Amalj'aa Drubber,Amalj'aa,,,,Pugilist,,,,,,,,,,,,,,,,,ge-mob-pages
+Amalj'aa Grappler,497844,2011-09-20T00:45:16Z,0,Amalj'aa Grappler,Amalj'aa,,,,,,Earth,,x,,,65,99,5891,11513,1206,2343,,,"Aggressive, large sight aggro distance, can also see through walls currently, not sure if this is a glitch or not.",,ge-mob-pages
+Amalj'aa Grunt,231531,2011-09-20T00:56:29Z,0,Amalj'aa Grunt,Amalj'aa,,,,,,,,x,,,30,,2741,,568,,,,,,ge-mob-pages
+Amalj'aa Hunter,318691,2012-05-30T01:13:29Z,0,Amalj'aa Hunter,Amalj'aa,,,,ARC,,Fire,,x,,,27,29,,,,,,,,,ge-mob-pages
+Amalj'aa Inculcator,157980,2011-09-20T00:47:38Z,0,Amalj'aa Inculcator,Amalj'aa,,,,,,Fire,,,,,50,70,4385,6500,902,1330,,,,,ge-mob-pages
+Amalj'aa Javelineer,318850,2012-05-30T01:12:39Z,0,Amalj'aa Javelineer,Amalj'aa,,,,LNC,,Fire,,x,,,27,29,,,,,,,,,ge-mob-pages
+Amalj'aa Lancer,328621,2012-07-13T15:07:44Z,0,Amalj'aa Lancer,Amalj'aa,,,,Lancer,,Fire,,Y,,,55,55,,,,,Y,Y,,,ge-mob-pages
+Amalj'aa Pugilist,428453,2012-07-13T15:08:21Z,0,Amalj'aa Pugilist,Amalj'aa,,,,Pugilist,,Fire,,,,,36,59,1987,5234,676,1074,,,,,ge-mob-pages
+Amalj'aa Shaman,328877,2012-07-13T15:08:50Z,0,Amalj'aa Shaman,Amalj'aa,,,,Thaumaturge,,Fire,,Y,,,55,55,,,,,Y,Y,,,ge-mob-pages
+Amalj'aa Stargazer,318429,2012-05-30T01:14:27Z,0,Amalj'aa Stargazer,Amalj'aa,,,,THM,,fire,,x,,,27,29,,,,,,,,,ge-mob-pages
+Amalj'aa Striker,60897,2012-10-31T07:41:39Z,0,Amalj'aa Striker,Amalj'aa,,,,,,,,x,,,32,34,,,,,,,,,ge-mob-pages
+Amalj'aa Transfigurator,80537,2011-09-20T00:50:57Z,0,Amalj'aa Transfigurator,Amalj'aa,,,,,,Fire,,,,,45,66,2385,3605,819,6150,,,,,ge-mob-pages
+Amalj'aa Transfisticator,80287,2011-09-20T00:52:21Z,0,Amalj'aa Transfisticator,Amalj'aa,,,,,,Fire,,,,,45,66,1987,3605,819,1230,,,,,ge-mob-pages
+Amalj'aa Transfixer,80385,2011-09-20T00:53:28Z,0,Amalj'aa Transfixer,Amalj'aa,,,,,,Fire,,,,,36,66,2385,3605,676,1230,,,,,ge-mob-pages
+Amalj'aa Trooper,80451,2011-09-20T00:54:36Z,0,Amalj'aa Trooper,Amalj'aa,,,,,,Fire,,,,,36,66,2385,3605,676,1230,,,,,ge-mob-pages
+Amateur Footpad,363286,2012-05-30T02:08:30Z,0,Amateur Footpad,Enemy Humanoid,,,Quest,Gladiator,Male,,,,,,,,,,,,,,Midlander Hyur,,ge-mob-pages
+Amateur Highwayman,401691,2012-05-29T00:56:34Z,0,Amateur Highwayman,Enemy Humanoid,,,Quest,Lancer,Male,,,,,,,,,,,,,,Midlander Hyur,,ge-mob-pages
+Amateur Raider,504099,2012-05-30T02:09:02Z,0,Amateur Raider,Enemy Humanoid,,,Quest,Archer,Male,,,,,,,,,,,,,,Midlander Hyur,,ge-mob-pages
+Anemone,361733,2012-09-30T04:25:20Z,0,Anemone,Aurelia,,,,,,Water,,x,,,45,54,2252,2688,819,975,,,,,ge-mob-pages
+Angler,501044,2011-09-21T18:09:14Z,0,Angler,Angler,,,,,,Water,,x,,,20,24,682,920,427,478,,,,,ge-mob-pages
+Ankle Biter,451731,2011-09-22T00:24:21Z,0,Ankle Biter,Chigoe,,,,,,,,,,,10,,2,3,322,,,,This monster is found during the instanced escort in the quest Treasures of the Main.,,ge-mob-pages
+Anole,493654,2012-05-28T01:13:55Z,0,Anole,Raptor,,,,,,Fire,,x,,,55,64,3387,4043,994,1183,,,"Very Aggressive, aggros on sight",,ge-mob-pages
+Anole Familiar,89495,2011-09-30T13:01:58Z,0,Anole Familiar,Raptor,,,,,,Fire,,x,,,19,,2783,,415,,,,,,ge-mob-pages
+Anole Stalker,327159,2012-06-03T18:30:23Z,0,Anole Stalker,Raptor,Anole,,,,,,,Y,,,40,52,,,,,,,,,ge-mob-pages
+Antares,41305,2012-05-20T00:47:25Z,0,Antares,Diremite,,,NM,,,,,x,,x,38,38,,,,,,,*Antares appears in the Confession (southern) Chamber of The Thousand Maws of Toto-Rak. *Spawns a number of chests after defeat. Rewards vary by tasks accomplished in the raid.,"Antares, also called Alpha Scorpii, is the brighest star in the constellation Scorpius and one of the brightest stars in the sky. Antares was used in some Ancient Egyptian rituals and the Persians considered it one of the ""royal stars"" (the others are Aldebaran, Regulus, Fomalhaut). Antares is Greek for ""opposed to Ares"" (Ares is the god of war and the Greek name for the planet Mars), which derives from its red color, which makes it somewhat similar to Mars. Antares is a M-type star (red) and is a red giant. It is located 604 ly from the Sol solar system. Antares is also called The Heart of the Scorpion.",ge-mob-pages
+Antelope Doe,498062,2012-08-29T20:08:23Z,0,Antelope Doe,Antelope,,,,,Female,Earth,,,,,20,29,1342,1508,492,552,,,,,ge-mob-pages
+Antelope Stag,472753,2012-08-08T19:23:44Z,0,Antelope Stag,Antelope,,,,,Male,Earth,,x,"A, S",,45,54,2517,3004,819,975,,,,,ge-mob-pages
+Antling Digger,497372,2012-06-17T01:11:28Z,0,Antling Digger,Antling,,,,,,Earth,,x,,,35,39,1693,1876,657,726,,,,,ge-mob-pages
+Antling Forager,507164,2011-09-21T03:25:52Z,0,Antling Forager,Antling,,,,,,Earth,,x,,,50,54,2339,2530,902,975,,,,,ge-mob-pages
+Antling Worker,81004,2012-06-23T02:31:41Z,0,Antling Worker,Antling,,,,,,Earth,,x,,,35,59,847,1919,657,1074,,,,,ge-mob-pages
+Apep,318942,2012-06-12T20:05:41Z,0,Apep,Basilisk,,,,,,Earth,Wind,Y,,,53,53,,,,,,,"Has high HP and Regen. Difficult, if not impossible to solo at 50.",,ge-mob-pages
+Apkallu,488279,2011-09-18T01:21:11Z,0,Apkallu,Apkallu,,,,,,Water,,x,,,55,59,2258,2443,994,1074,,,,,ge-mob-pages
+Arbor Squirrel,498189,2011-09-18T02:13:29Z,0,Arbor Squirrel,Rodent,,,,,,Earth,,,,,20,29,1364,1774,427,552,,,,,ge-mob-pages
+Ascian,407265,2011-10-02T05:04:01Z,0,Ascian,Ascian,,,,,,,,,,,,,,,,,,,The only ascian seen thus far has been part of a cutscene during a main scenario mission.,,ge-mob-pages
+Ashdrake,252278,2012-05-01T00:17:19Z,0,Ashdrake,Drake,,,,,,Fire,,Yes,,,43,49,,,,,,,,,ge-mob-pages
+Atomos,58085,2012-09-14T03:29:19Z,0,Atomos,Primal,,,,,,,,Y,,Y,60,,,,,,Y,Y,"*The inactive (Level N/A) Atomoses are untargetable and only spawn monsters. **Note that only one inactive Atomos will spawn monsters, the rest act as a signal that there is an inactive Atomos releasing monsters at one of the applicable camps. *The active (Level 60) Atomoses attack, spawn monsters, and leave a Voidstone upon defeat. Active Atomoses spawn every night at 18:00 and 0:00 at the above camps.",,ge-mob-pages
+Aurelia,448340,2012-09-26T20:03:24Z,0,Aurelia,Aurelia,,,,,,Water,,Yes,,,10,19,175,385,200,401,,,,,ge-mob-pages
+Aurora Angler,56042,2012-09-03T18:47:23Z,0,Aurora Angler,Angler,,,,,,Water,,x,,,30,30,,,,,,,,,ge-mob-pages
+B'Khenna Phoenixfire,29086,2010-09-14T20:02:19Z,0,B'Khenna Phoenixfire,Enemy Humanoid,,,Quest,,,,,,,,,,,,,,,,,,ge-mob-pages
+B'khenna the Phoenixfire,475352,2010-11-23T19:22:52Z,0,B'khenna the Pheonixfire,Enemy Humanoid,,,Quest,,,,,,,,,,,,,,,,,,ge-mob-pages
+Balloon,513980,2011-09-25T01:12:37Z,0,Balloon,Bomb,,,,,,Fire,,x,,,35,39,1904,2110,3285,3630,,,,,ge-mob-pages
+Bandicoot,507093,2011-09-17T21:59:36Z,0,Bandicoot,Mole,,,,,,Earth,,,,,55,59,4032,4362,994,1074,,,,,ge-mob-pages
+Bandit Spearman,58544,2011-04-27T22:29:48Z,0,Bandit Spearman,Enemy Humanoid,,,,Lancer,Female,,,,,,,,,,,,,,"Very long respawn. Uses lancer weapon skills Leg Sweep, Moonrise, Heavy Trammel and Twisting Vice.",,ge-mob-pages
+Banemite,487003,2011-09-22T01:04:44Z,0,Banemite,Diremite,,,,,,Earth,,x,,,65,74,3142,3751,1206,1438,,,,,ge-mob-pages
+Banescale Guivre,433851,2011-09-19T00:43:39Z,0,Banescale Guivre,Drake,,,,,,,,x,,,70,74,4333,4688,1330,1438,,,,,ge-mob-pages
+Barbatos,251531,2012-04-30T22:26:22Z,0,Barbatos,Gargoyle,,,,,,,,Yes,,Yes,,,,,,,Yes,Yes,,,ge-mob-pages
+Bardi,215201,2012-07-04T15:09:06Z,0,Bardi,Wolf,,,,,Female,Lightning,Earth,x,,x,42,,"19,992",,773,,,,Bardi does a hate reset move called threatening growl. It resets everyone in the group. So first person to do something after it casts it will have hate.,"Bardi, outside of game lore, is a feminine, shapeshifting jackal from Turkish folklore whose howl is an omen of death.",ge-mob-pages
+Bark Eft,4200,2011-09-19T23:32:55Z,0,Bark Eft,Salamander,,,,,,Water,,x,,,50,54,5408,5850,902,975,,,,,ge-mob-pages
+Bark Weevil,344551,2012-04-30T02:42:45Z,0,Bark Weevil,Beetle,,,,,,Fire,,,,,3,15,56,255,248,370,,,,,ge-mob-pages
+Barometz,216879,2012-08-18T21:58:40Z,0,Barometz,Landtrap,,Roseling,,,,Wind,Ice,x,,x,36,,17424,,676,,,,,"Barometz, outside of game lore, is also known as the Vegetable Lamb of Tartary, a mythical plant from southeast Asia said to grow sheep as if it were the plant's fruit.",ge-mob-pages
+Basilisk,433748,2011-10-02T05:53:12Z,0,Basilisk,Basilisk,,,,,,,,x,,,75,89,6455,8506,1466,1926,,,,,ge-mob-pages
+Bastard Mite,296278,2012-05-20T01:04:54Z,0,Bastard Mite,Diremite,Miteling,,,,,,,Y,,,39,39,,,,,,,Assists Shaula,,ge-mob-pages
+Batraal,48876,2012-04-30T21:35:15Z,0,Batraal,Gargoyle,,,,,,,,Yes,,Yes,,,,,,,,,"Final boss for The Dzemael Darkhold. Up to 5 chests spawn on defeat, depending on objectives accomplished.",,ge-mob-pages
+Battle Drake,296577,2012-07-13T15:09:14Z,0,Battle Drake,Drake,,,,,,Fire,,Y,,,52,57,,,,,,,,,ge-mob-pages
+Battrap,43708,2011-10-24T06:10:58Z,0,Battrap,Landtrap,,Flytrap,,,,Wind,,x,,,45,49,1855,2007,819,885,,,Shares spawn with Yarzon Scavengers (group of 4),,ge-mob-pages
+Beady Beetle,420762,2011-09-21T23:11:13Z,0,Beady Beetle,Beetle,,,,,,Fire,,,,,5,14,337,802,267,360,,,,,ge-mob-pages
+Bee Cloud,467608,2011-10-02T07:48:09Z,0,Bee Cloud,Swarm,Bees,,,,,Wind,,x,,,5,40,76,793,267,744,,,,,ge-mob-pages
+Beryl Crab,258318,2012-05-05T20:06:27Z,0,Beryl Crab,Crab,,,,,,Water,,,,,20,20,,,,,,,Involved in quest Beryl Overboard. Beryl Crab Shell only drops while on quest.,,ge-mob-pages
+Biast,363610,2011-09-19T00:45:36Z,0,Biast,Drake,,,,,,Lightning,,x,,,60,69,3558,4249,1095,1304,,,,,ge-mob-pages
+Bigmouth Orobon,34088,2012-09-30T04:31:16Z,0,Bigmouth Orobon,Angler,,,,,,Water,,x,,,40,44,1682,1819,744,803,,,,,ge-mob-pages
+Bile Gnat,266295,2012-09-26T03:47:03Z,0,Bile Gnat,Gnat,,Gnat,,,,Lightning,,x,,,40,68,769,1959,3720,6395,,,,,ge-mob-pages
+Bilge-soaked Buccaneer,51181,2010-11-03T01:54:51Z,0,Bilge-soaked Buccaneer,Enemy Humanoid,,,Quest,Archer,Male,,,,,,,,,,,,,,Roegadyn,,ge-mob-pages
+Bixie,28967,2012-07-28T21:22:47Z,0,Bixie,Chimera,,,,,,,,Y,,Y,55,,,,,,,,Spawns after Wadjet is defeated or after 10 minutes pass.,,ge-mob-pages
+Black Bat,449279,2012-05-29T05:05:00Z,0,Black Bat,Bat,,Bat,,,,Wind,,x,,,15,19,265,1061,300,415,,,,,ge-mob-pages
+Black Crow Cleaver,63416,2012-10-24T21:21:31Z,0,Black Crow Cleaver,Enemy Humanoid,,,,Marauder,Male,,,,,,47,49,,,,,,,,,ge-mob-pages
+Black Crow Swashbuckler,63492,2012-10-24T21:21:34Z,0,Black Crow Swashbuckler,Enemy Humanoid,,,,Gladiator,Male,,,,,,47,49,,,,,,,,,ge-mob-pages
+Black Eft,495639,2012-05-30T02:54:38Z,0,Black Eft,Salamander,,,,,,Water,,x,,,40,49,4444,5303,744,885,,,,,ge-mob-pages
+Black Wolf (1.x),310267,2012-05-29T03:19:17Z,0,Black Wolf,Wolf,,,,,,,,Y,,,53,56,,,,,,,,,ge-mob-pages
+Blind Eft,42419,2012-09-30T04:44:47Z,0,Blind Eft,Salamander,,,,,,Water,,x,,,40,44,4444,4807,744,803,,,,,ge-mob-pages
+Bloated Bogy,304130,2012-05-29T23:40:52Z,0,Bloated Bogy,Ghost,,,,Thaumaturge,,Ice,,x,,,20,24,682,920,2135,2390,,,,,ge-mob-pages
+Bloated Burble,327436,2012-06-03T19:02:52Z,0,Bloated Burble,Snurble,,,,Conjurer,,,,,,,40,52,,,,,,,,,ge-mob-pages
+Bloodied Buccaneer,50918,2010-11-03T01:57:10Z,0,Bloodied Buccaneer,Enemy Humanoid,,,Quest,Gladiator,Male,,,,,,,,,,,,,,Roegadyn,,ge-mob-pages
+Bloodshore Bell,360265,2012-08-08T19:33:20Z,0,Bloodshore Bell,Aurelia,,,,,,Water,,,P,,20,24,751,1150,427,478,,,,,ge-mob-pages
+Bloodshot Eye,326791,2012-06-03T21:26:55Z,0,Bloodshot Eye,Ahriman,,,,,,,,Y,,,40,52,,,,,,,,,ge-mob-pages
+Bloodthirsty Wolf,495022,2012-08-07T18:10:07Z,0,Bloodthirsty Wolf,Wolf,,,,,,Lightning,Earth,,P,,1,13,152,801,230,350,x,x,"Fought during Gridania's introductory quest, Sundered Skies. Though the exact location is never shown, due to their low level and proximity to Gridania, it has been listed as the Central Shroud.",,ge-mob-pages
+Bloody Revenant,63331,2012-10-24T20:59:08Z,0,Bloody Revenant,Ghost,,,,,,Ice,,,,,41,41,,,,,,,,,ge-mob-pages
+Blotched Mongrel,475282,2012-06-17T00:20:38Z,0,Blotched Mongrel,Wolf,,,,,,Lightning,Earth,Y,,,40,52,1590,2759,819,1410,,,,,ge-mob-pages
+Bog Yarzon,443892,2012-04-19T00:48:41Z,0,Bog Yarzon,Yarzon,,,,,,Ice,,,,,35,59,847,1919,657,1074,,,,,ge-mob-pages
+Bogy,66855,2012-05-30T03:03:21Z,0,Bogy,Ghost,,,,,,Ice,,,,,10,14,525,688,1610,1800,,,,,ge-mob-pages
+Bomb Baron,209684,2012-08-07T02:04:23Z,0,Bomb Baron,Bomb,,,,Conjurer,,Fire,Fire,x,,x,42,,"29,988",,"23,190",,,,Can spawn anywhere in that western area of Cassiopeia Hollow. Casts Burn II and Fire II.,Many important bombs in the Final Fantasy series have been given titles of nobility and monarchy. Baron is often one of the lowest ranking of such titles in various real world and fictional hierarchies.,ge-mob-pages
+Bomb Ember,269501,2011-11-06T09:40:22Z,0,Bomb Ember,Bomb,,,,,,Fire,,x,,,30,,1645,,2840,,,x,,,ge-mob-pages
+Bomb (Enemy),278477,2011-09-25T01:14:35Z,0,Bomb,Bomb,,,,,,Fire,,,,,30,34,1645,1849,2840,3190,,,,,ge-mob-pages
+Bone Nix,323135,2012-06-01T21:25:32Z,0,Bone Nix,Toad,,,,,,Water,,Y,,,52,52,,,,,,,,,ge-mob-pages
+Branded Drake,157662,2011-09-19T00:48:03Z,0,Branded Drake,Drake,,,,,,Lightning,,x,,,40,75,1081,4781,744,1466,,,,,ge-mob-pages
+Brimstone Bomb,310816,2012-05-29T01:15:46Z,0,Brimstone Bomb,Bomb,,,,,,Fire,Fire,Y,,,40,52,,,,,,,,,ge-mob-pages
+Brine Bogy,430527,2012-04-24T21:05:52Z,0,Brine Bogy,Ghost,,,Quest,,,,,,,,,,,,,,,,,,ge-mob-pages
+Bristletail Marmot,203015,2011-09-18T02:14:56Z,0,Bristletail Marmot,Rodent,,,,,,Earth,,,,,10,,1019,,322,,,,,,ge-mob-pages
+Brutal Sheep,266601,2012-07-11T05:02:28Z,0,Brutal Sheep,Ram,,,,,Female,Wind,,,,,40,43,,,,,,,,,ge-mob-pages
+Buata,310222,2012-05-30T03:44:35Z,0,Buata,Boar,,,,,,Earth,,Y,,Y,55,55,,,,,,,,,ge-mob-pages
+Bumble Beetle,420551,2012-04-30T00:58:53Z,0,Bumble Beetle,Beetle,,,,,,Fire,,,,,1,7,,,,,,,,,ge-mob-pages
+Burble,258486,2012-05-05T20:07:02Z,0,Burble,Snurble,,,,Conjurer,,Lightning,,,,,20,22,400,450,,,,,"While idle, cast Cure and Protect on players.",,ge-mob-pages
+Burned Brother,372800,2012-06-20T22:38:58Z,0,Burned Brother,Amalj'aa,,,,,,Fire,,Y,,,55,,,,,,,,Assists Flamefist Ahlygg Roh,,ge-mob-pages
+Buzzard,459881,2012-06-08T02:44:25Z,0,Buzzard,Vulture,Vulture,,,,,Wind,,x,,,40,44,1562,1689,744,803,,,,,ge-mob-pages
+Buzzing Djigga,277125,2011-09-22T00:26:57Z,0,Buzzing Djigga,Chigoe,,,,,,Fire,,x,,,40,49,1802,2150,744,885,,,,,ge-mob-pages
+Cactuar,150468,2012-05-30T03:19:51Z,0,Cactuar,Cactuar,,,,,,Lightning,,,,,20,24,887,997,427,478,,,,,ge-mob-pages
+Cactuar Jack,213735,2012-07-29T02:17:40Z,0,Cactuar Jack,Cactuar,,,,,,Lightning,Earth,,,x,47,,26449,,851,,,,"Able to use Sun Spines which damages and binds anyone in the AoE, whether or not they are on his hate list, Tender Thrust, that damages and knocks back, and 1000 Needles.","Cactuar Jack is a play on the name Cactus Jack, which, outside of game lore, has been used numerous times in numerous ways in the past, from political nicknames to television personas.",ge-mob-pages
+Cactuar Jaques,29814,2012-07-29T18:29:41Z,0,Cactuar Jaques,Cactuar,,,,,,Lightning,Fire,Y,,Y,55,,,,,,Y,Y,Spawns along with Princess of Pestilence and Eurylochus,,ge-mob-pages
+Cadaverous Cockatrice,474681,2012-05-29T02:58:51Z,0,Cadaverous Cockatrice,Cockatrice,Cockatrice,,,,,Wind,,,,,40,52,1060,2529,819,1410,,,,,ge-mob-pages
+Canopy Galago,498777,2011-10-27T19:12:09Z,0,Canopy Galago,Opo-opo,,,,,,Fire,"Water, Wind",,,,20,24,1092,1227,427,478,,,,,ge-mob-pages
+Canyon Condor,329424,2012-06-06T20:06:03Z,0,Canyon Condor,Vulture,Condor,,,,,Wind,,Y,,,43,,,,,,,,,,ge-mob-pages
+Capricious Cassie,310033,2012-05-28T01:35:37Z,0,Capricious Cassie,Morbol,,,,,,Earth,,,,Y,55,55,,,,,,,,,ge-mob-pages
+Carrier Ladybug,400334,2012-05-30T01:44:00Z,0,Carrier Ladybug,Beetle,,,,,,Fire,,,,,20,44,405,1377,427,803,,,,,ge-mob-pages
+Carrion Chiglet,430496,2012-03-18T01:08:20Z,0,Carrion Chiglet,Chigoe,,,,,,Fire,,,,,10,30,86,461,322,568,,,,,ge-mob-pages
+Carrion Chigoe,360695,2012-05-30T03:51:11Z,0,Carrion Chigoe,Chigoe,,,,,,Fire,,,,,10,19,408,928,322,415,,,,,ge-mob-pages
+Cassiopeia,281867,2012-08-08T19:33:24Z,0,Cassiopeia,Aurelia,,,,,,Water,,,P,,20,29,868,1331,492,552,,,,,ge-mob-pages
+Cave Bat,496585,2011-09-18T01:57:25Z,0,Cave Bat,Bat,,Bat,,,,Wind,,x,,,5,14,673,917,267,360,,,,,ge-mob-pages
+Cavern Eft,29019,2011-09-19T23:39:58Z,0,Cavern Eft,Salamander,,,,,,Water,,,,,40,68,1346,2958,744,1279,,,,,ge-mob-pages
+Cavernulous Coblyn,481586,2011-09-17T22:48:35Z,0,Cavernulous Coblyn,Coblyn,,,,,,,,,,,10,26,62,813,322,506,,,,,ge-mob-pages
+Cell Mite,295454,2012-05-20T00:49:05Z,0,Cell Mite,Diremite,Miteling,,,,,,,Y,,,39,39,,,,,,,All Cell Mites beyond the third gate must be defeated for the chest containing Charred Axe or Warden's Dagger to appear.,,ge-mob-pages
+Cellar Puk,501125,2012-04-19T00:49:02Z,0,Cellar Puk,Puk,,,,,,Wind,Ice,,,,30,34,1279,1438,568,638,,,,,ge-mob-pages
+Ceruleum Generator,355534,2012-08-08T19:53:05Z,0,Ceruleum Generator,Unknown,,,,,,,,,,,50,,,,,,N,N,,,ge-mob-pages
+Chain Bearer,323206,2012-06-01T21:27:07Z,0,Chain Bearer,Ghost,,,,,,Ice,,Y,,,55,55,,,,,,,Spawn in the mid-boss fight against Deepvoid Slave.,,ge-mob-pages
+Chiglet,457587,2012-05-30T03:51:43Z,0,Chiglet,Chigoe,,,,,,Fire,,,,,3,15,47,213,248,370,,,,,ge-mob-pages
+Chigoe,496550,2012-05-30T03:59:49Z,0,Chigoe,Chigoe,,,,,,Fire,,,,,4,10,289,686,230,310,,,,,ge-mob-pages
+Chinchilla,474225,2011-09-18T02:16:17Z,0,Chinchilla,Rodent,,,,,,Earth,,,,,10,,,,322,,,,,,ge-mob-pages
+Cinderbelly Eft,503734,2011-09-19T23:41:32Z,0,Cinderbelly Eft,Salamander,,,,,,Water,,x,,,55,59,5967,6455,994,1074,,,,,ge-mob-pages
+Cliffdiver,329579,2012-06-06T19:30:28Z,0,Cliffdiver,Vulture,Condor,,,,,Wind,,Y,,,53,,,,,,,,,,ge-mob-pages
+Clipper,348851,2011-09-23T15:56:10Z,0,Clipper,Crab,,,,,,,,,,,70,79,4333,5173,1330,1585,,,"Rears itself up as a warning for several seconds when approached. Will only attack if someone stays near it after those several seconds. Will not attack if someone goes past it, nor will it follow them without provocation.",,ge-mob-pages
+Cloud Hippocerf,252538,2012-08-07T18:52:24Z,0,Cloud Hippocerf,Hippogryph,,,,,,Wind,,Yes,,,46,49,,,,,,,,,ge-mob-pages
+Cochineal Cactuar,502465,2011-09-21T00:42:12Z,0,Cochineal Cactuar,Cactuar,,,,,,Lightning,,,,,30,39,1188,1524,568,726,,,,,ge-mob-pages
+Cockatrice (1.x),497579,2011-10-02T09:36:21Z,0,Cockatrice,Cockatrice,Cockatrice,,,,,Wind,,,,,45,54,2649,3162,819,975,,,,,ge-mob-pages
+Coiled Adder,28237,2010-12-20T20:39:02Z,0,Coiled Adder,Enemy Humanoid,,,Quest,,,,,,,,,,,,,,,,,,ge-mob-pages
+Common Cactuar,504063,2012-05-30T01:35:45Z,0,Common Cactuar,Cactuar,,,,,,Lightning,,,,,20,32,273,841,427,744,,,,,ge-mob-pages
+Condor,473353,2012-05-31T21:10:20Z,0,Condor,Vulture,,,,,,Wind,,x,,,40,44,1562,1689,744,803,,,,,ge-mob-pages
+Copper Coblyn,465636,2012-05-30T03:20:10Z,0,Copper Coblyn,Coblyn,,,,,,Earth,,,,,5,14,169,573,267,360,,,,,ge-mob-pages
+Corroded Coblyn,465684,2012-04-29T18:03:20Z,0,Corroded Coblyn,Coblyn,,,,,,Earth,Water,,,,1,13,51,625,267,392,,,,,ge-mob-pages
+Corrosive Coblyn,18082,2011-09-17T23:53:54Z,0,Corrosive Coblyn,Coblyn,,,,,,Earth,,,,,20,,682,,427,,,,,,ge-mob-pages
+Crabfisher,259371,2012-05-07T02:10:17Z,0,Crabfisher,Angler,,,,,,Water,,Y,,,33,33,,,,,,,Vulnerable only to polearm and magic damage,,ge-mob-pages
+Crapulous Canine,377258,2012-08-07T18:10:01Z,0,Crapulous Canine,Wolf,,,,,,Lightning,,,P,,30,42,,,,,,,,,ge-mob-pages
+Creeping Ivy,504077,2011-09-21T01:47:07Z,0,Creeping Ivy,Morbol,,,,,,Ice,,x,,,75,84,6933,8277,1466,1747,,,,,ge-mob-pages
+Croft Kalong,422246,2012-04-19T00:49:25Z,0,Croft Kalong,Bat,,Kalong,,,,Wind,,x,,,35,39,804,1850,657,1074,,,They use a Drain type attack which can make them very difficult to handle at lower levels.,,ge-mob-pages
+Curious Galago,468060,2012-06-05T03:44:22Z,0,Curious Galago,Opo-opo,,,,,,Fire,Wind,,,,15,40,328,1290,370,744,,,Absorbs Earth Magic,"A play on Curious George, the monkey protagonist of a series of popular children's books written by Hans Augusto Rey and Margret Rey.",ge-mob-pages
+Curious Gorge (Mob),329701,2012-06-06T19:38:11Z,0,Curious Gorge,Enemy Humanoid,Roegadyn,,,Warrior,Male,,,Y,,Y,55,55,,,,,,,,,ge-mob-pages
+Cursed Eye,60367,2012-10-01T06:36:32Z,0,Cursed Eye,Ahriman,,Eye,,,Male,Earth,Water,x,,,35,35,,,,,,,,,ge-mob-pages
+Daddy Longlegs,218788,2012-07-29T03:22:41Z,0,Daddy Longlegs,Yarzon,,,,,,Ice,,x,,x,42,,"27,489",,773,,,,Also involved in the quest A Time to Kill,,ge-mob-pages
+Dapper Cadaver,2193,2012-07-03T01:21:27Z,0,Dapper Cadaver,Fomor,,,,,,,,Y,,,45,45,,,,,,,,,ge-mob-pages
+Darkeye Devilet,27635,2012-09-26T03:43:24Z,0,Darkeye Devilet,Imp,,,,"Thaumaturge, Conjurer",,Ice,,x,,,40,68,721,1875,3720,6395,,,,,ge-mob-pages
+Darkwing Devilet,464363,2012-06-23T05:36:40Z,0,Darkwing Devilet,Imp,,,,"Thaumaturge, Conjurer",,Ice,,x,,,35,59,1058,2268,3285,5370,,,,,ge-mob-pages
+Deadeyes,18845,2012-05-29T03:20:37Z,0,Deadeyes,Wolf,,,,,,Lightning,Earth,Y,,,10,60,459,6405,322,1095,,,,,ge-mob-pages
+Deathstroke Assassin,400057,2012-05-29T01:44:25Z,0,Deathstroke Assassin,Enemy Humanoid,Lalafell,,,Pugilist,Male,,,Y,,,20,52,,,,,,,,,ge-mob-pages
+Deepground Puk,421267,2012-04-19T00:50:27Z,0,Deepground Puk,Puk,,,,,,Wind,,,,,35,59,741,1745,657,1074,,,,,ge-mob-pages
+Deepvoid Pikeman,58741,2012-09-14T03:22:43Z,0,Deepvoid Pikeman,Fomor,,,,Lancer,,,,Y,,,60,,,,,,Y,Y,Spawned by Active Atomos,,ge-mob-pages
+Deepvoid Scamp,58491,2012-09-14T03:17:42Z,0,Deepvoid Scamp,Imp,,,,,,,,Y,,,60,,,,,,Y,Y,Spawned by both Active and Passive Atomos.,,ge-mob-pages
+Deepvoid Sludge,58360,2012-09-14T03:18:01Z,0,Deepvoid Sludge,Flan,,,,,,,,Y,,,60,,,,,,Y,Y,Spawned by Active Atomos. Can change elemental weakness.,,ge-mob-pages
+Deepvoid Soul,59006,2012-09-14T03:27:33Z,0,Deepvoid Soul,Ghost,,,,,,,,Y,,,60,,,,,,Y,Y,Spawned by both Active and Passive Atomos.,,ge-mob-pages
+Deepvoid Warrior,58658,2012-09-14T03:20:14Z,0,Deepvoid Warrior,Wight,,,,Gladiator,,,,Y,,,60,,,,,,Y,Y,Spawned by both Active and Passive Atomos,,ge-mob-pages
+Deepvoid Watcher,58945,2012-09-14T03:25:50Z,0,Deepvoid Watcher,Ahriman,,,,Thaumaturge,,,,Y,,,60,,,,,,Y,Y,Spawned by Active Atomos,,ge-mob-pages
+Deepvoid Wizard,58850,2012-09-14T03:23:19Z,0,Deepvoid Wizard,Fomor,,,,Thaumaturge,,,,Y,,,60,,,,,,Y,Y,Spawned by Active Atomos,,ge-mob-pages
+Delta Crab,417528,2012-06-05T05:40:25Z,0,Delta Crab,Crab,,,,,,Water,,,,,30,54,549,1423,568,975,,,,,ge-mob-pages
+Desert Peiste,501924,2011-10-02T05:53:27Z,0,Desert Peiste,Basilisk,,,,,,Fire,,x,,,45,54,3179,3795,819,975,,,,,ge-mob-pages
+Devilet,508178,2012-09-26T01:21:38Z,0,Devilet,Imp,,,,"Thaumaturge, Conjurer",,Ice,,x,,,40,44,2402,2598,3720,4015,,,,,ge-mob-pages
+Dew Hare,499842,2011-09-24T00:53:27Z,0,Dew Hare,Slug,,,,,,Water,,,,,45,49,4106,4443,819,885,,,,,ge-mob-pages
+Diamond-tooth Hedgemole,323260,2012-08-08T19:36:15Z,0,Diamond-tooth Hedgemole,Mole,Hedgemole,,,,,Earth,,Y,"A, H",,52,52,,,,,,,,,ge-mob-pages
+Dire Dormouse,417260,2012-09-26T04:01:15Z,0,Dire Dormouse,Rodent,,,,,,Earth,,,,,35,68,721,1875,657,1279,,,,,ge-mob-pages
+Dire Rat,51557,2012-05-29T05:09:19Z,0,Dire Rat,Rodent,,,,,,Earth,,,,,15,19,1179,1325,370,415,,,Will sometimes spawn as a Plains Footpad.,,ge-mob-pages
+Diremite,479933,2011-09-22T01:08:15Z,0,Diremite,Diremite,,,,,,Earth,,x,,,50,59,2339,2792,902,1074,,,,,ge-mob-pages
+Diremite Straggler,367714,2012-06-16T22:45:40Z,0,Diremite Straggler,Diremite,,,,,,,,Y,,,35,,,,,,Y,Y,,,ge-mob-pages
+Dirty Mongrel,81227,2012-05-29T03:20:43Z,0,Dirty Mongrel,Wolf,,,,,,Lightning,Earth,Y,,,32,73,1590,2759,602,1410,,,,,ge-mob-pages
+Dodo (1.x),128733,2012-05-29T05:06:25Z,0,Dodo,Cockatrice,Dodo,,,,,Wind,Ice,,,,15,24,1179,1533,370,478,,,,"The dodo (Raphus cucullatus) was a flightless bird endemic to the Indian Ocean island of Mauritius. Related to pigeons and doves, it stood about a meter tall, weighing about 20 kilograms (44 lb), living on fruit and nesting on the ground. The dodo has been extinct since the mid-to-late 17th century. It is commonly used as the archetype of an extinct species because its extinction occurred during recorded human history, and was directly attributable to human activity.",ge-mob-pages
+Dodore,12595,2012-07-27T21:39:30Z,0,Dodore,Ahriman,,,,,,Earth,Wind,x,,x,60,,32022,,5475,,,,"*Dodore will only spawn during umbral weather; however, he will spawn at least once during every cycle of the miasma. In Mor Dhona, the weather will have a chance of shifting daily at 00:00, 08:00, and 16:00; these cycles seem to produce the miasma much more frequently around (but not limited to) the New Moon. *Spawns near the lake north of Brittlebark *Dodore spawns with several Dodore Minions assisting.","Outside of game lore, the Dodore are a mythical race from the folklore of the Solomon Islands. Their physical features include one eye, one arm, one leg, long red hair similar to a horse's tail, and long fingernails, which it uses to kill.",ge-mob-pages
+Dodore's Minion,9853,2012-05-30T03:41:37Z,0,Dodore's Minion,Ahriman,,,,,,Earth,Wind,x,,x,55,,19350,,4970,,,,Assists Dodore.,,ge-mob-pages
+Doomvoid Guivre,505339,2011-09-19T00:51:26Z,0,Doomvoid Guivre,Drake,,,,,,Lightning,,x,,,75,79,4781,5173,1466,1585,,,,,ge-mob-pages
+Dormouse,353783,2011-09-18T02:31:29Z,0,Dormouse,Rodent,,,,,,Earth,,,,,40,44,2402,2598,744,803,,,,,ge-mob-pages
+Downcast Hippocerf,307575,2012-04-19T00:50:46Z,0,Downcast Hippocerf,Hippogryph,,,,,,Lightning,,x,,,30,54,439,1234,568,975,,,,,ge-mob-pages
+Downy Dunstan,218495,2012-07-12T13:13:19Z,0,Downy Dunstan,Ram,,,,,Male,Wind,,x,,x,42,,17493,,773,,,,"Spawn point varies around (49, 32). Best reached via Camp Glory.","When used to describe a sheep, the term Down refers to a short-wooled sheep from the southern Downs of England, while the name Dunstan is made of of two Old English morphemes meaning ""dark"" and ""stone"" respectively.",ge-mob-pages
+Drake Familiar,89585,2011-09-30T14:41:41Z,0,Drake Familiar,Drake,,,,,,Earth,,x,,,19,,2650,,415,,,,,,ge-mob-pages
+Dreadwolf,501204,2012-09-29T07:31:21Z,0,Dreadwolf,Wolf,,,,,,Lightning,Earth,,,,25,29,1421,1597,492,552,,,,,ge-mob-pages
+Dreamtoad,27864,2012-09-26T03:48:42Z,0,Dreamtoad,Toad,,,,,,Water,,,,,45,73,1537,3356,819,1410,,,,,ge-mob-pages
+Drifting Anemone,29338,2011-09-23T13:58:22Z,0,Drifting Anemone,Aurelia,,,,,,Water,,,,,45,73,1140,2667,819,1410,,,,,ge-mob-pages
+Drifting Aurelia,29442,2011-09-23T14:05:57Z,0,Drifting Aurelia,Aurelia,,,,,,Water,,,,,20,48,314,1068,427,868,,,,,ge-mob-pages
+Drifting Dud,374573,2012-07-10T03:09:58Z,0,Drifting Dud,Bomb,,,,CNJ,,Fire,,Yes,,,23,26,497,603,2215,3000,,,,,ge-mob-pages
+Drifting Mine,333457,2011-09-25T01:19:58Z,0,Drifting Mine,Bomb,,,,,,Fire,,,,,,,,,,,,,,,ge-mob-pages
+Drunken Dormouse,376843,2012-06-23T10:34:37Z,0,Drunken Dormouse,Rodent,,,,,,Earth,,,,,30,42,,,,,,,,,ge-mob-pages
+Drybone Shrew,66234,2012-05-30T03:03:38Z,0,Drybone Shrew,Mole,,,,,,Earth,,,,,10,14,1121,1260,322,360,,,,,ge-mob-pages
+Dune Bogy,503419,2012-08-08T18:14:06Z,0,Dune Bogy,Ghost,,,Quest,,,,,,,,,,,,,,,,,,ge-mob-pages
+Dusty Devilet,377194,2012-06-23T20:43:27Z,0,Dusty Devilet,Imp,,,,,THM,Ice,,A,,,30,42,,,,,,,,,ge-mob-pages
+Dusty Mongrel,499252,2012-06-20T00:48:00Z,0,Dusty Mongrel,Wolf,,,,,,Lightning,Earth,x,,,45,49,2385,2580,819,885,,,,,ge-mob-pages
+Dwarf Banemite,51719,2011-09-22T01:06:30Z,0,Dwarf Banemite,Diremite,,,,,,Earth,,x,,,60,64,2847,3081,1095,1183,,,,,ge-mob-pages
+Dwarf Diremite,479128,2011-09-22T01:10:39Z,0,Dwarf Diremite,Diremite,,,,,,Earth,,x,,,45,49,2120,2293,819,885,,,,,ge-mob-pages
+Earth Elemental,506716,2012-09-26T03:37:43Z,0,Earth Elemental,Elemental,,,,,,Earth,Wind,Yes,,,30,75,1157,4781,2260,7330,x,,,,ge-mob-pages
+Earthbound Wrath,329742,2012-06-06T19:43:14Z,0,Earthbound Wrath,Elemental,Earth Elemental,,,,,Earth,,Y,,Y,55,,,,,,Y,,,,ge-mob-pages
+Eftstool,372941,2012-06-20T22:42:21Z,0,Eftstool,Funguar,,,,,,Earth,,Y,,,55,,,,,,,,,,ge-mob-pages
+Elder Longhorn,30520,2012-07-29T18:40:15Z,0,Elder Longhorn,Aldgoat,,,,,Male,Earth,,Y,,Y,55,,,,,,Y,Y,Spawns along with Longhorn Nannygoats and Longhorn Billygoats,,ge-mob-pages
+Elder Mosshorn,13150,2012-08-22T20:03:00Z,0,Elder Mosshorn,Aldgoat,,,,,,Earth,,x,,x,60,,32022,,1095,,,,"* Found just west or south of Nophica Wells in the 17, 33 area to the 17-19, 36 area * Spawns during the daytime 08:00-20:00 * (Place monster characteristics here- For winning setups, see Testimonials) * Assisted by Mosshorn Nannygoat and Mosshorn Billygoat * Horn is required to be broken to drop Mossy Horn. check incapacitation to head for skills required",,ge-mob-pages
+Elite Bestiarius,260051,2012-06-06T16:51:06Z,0,Elite Bestiarius,Enemy Humanoid,,,,Lancer,Male,,,x,,,30,50+,,,,,,,,,ge-mob-pages
+Elite Eques,355675,2012-06-09T04:01:38Z,0,Elite Eques,Enemy Humanoid,,,,Lancer,,,,Y,,,56,,,,,,,,Assists the Level 63 Magitek Vanguard H-1.,,ge-mob-pages
+Elite Funditor,192797,2012-06-06T16:50:21Z,0,Elite Funditor,Enemy Humanoid,,Elezen,,Archer,Male,,,x,,x,50+,50+,,,,,,,Spawns for Imperial Invasion (Event),,ge-mob-pages
+Elite Hoplomachus,355768,2012-06-09T04:00:34Z,0,Elite Hoplomachus,Enemy Humanoid,,,,Gladiator,,,,Y,,,56,,,,,,,,Assists the Level 63 Magitek Vanguard H-1.,,ge-mob-pages
+Elite Laquearius,355716,2012-06-09T04:00:04Z,0,Elite Laquearius,Enemy Humanoid,,,,Marauder,,,,Y,,,56,,,,,,,,Assists the Level 63 Magitek Vanguard H-1.,,ge-mob-pages
+Elite Medicus,355813,2012-06-09T04:01:10Z,0,Elite Medicus,Enemy Humanoid,,,,Conjurer,,,,Y,,,56,,,,,,,,Assists the Level 63 Magitek Vanguard H-1.,,ge-mob-pages
+Elite Sagitarius,355904,2012-06-09T04:02:54Z,0,Elite Sagitarius,Enemy Humanoid,,,,Archer,,,,Y,,,56,,,,,,,,Assists the Level 63 Magitek Vanguard H-1.,,ge-mob-pages
+Elite Secutor,355951,2012-06-09T04:03:16Z,0,Elite Secutor,Enemy Humanoid,,,,Pugilist,,,,Y,,,56,,,,,,,,Assists the Level 63 Magitek Vanguard H-1.,,ge-mob-pages
+Elite Signifer,355607,2012-06-09T03:58:47Z,0,Elite Signifer,Enemy Humanoid,,,,Thaumaturge,,,,Y,,,56,,,,,,,,Assists the Level 63 Magitek Vanguard H-1.,,ge-mob-pages
+Elite Speculator,192635,2012-06-06T16:51:31Z,0,Elite Speculator,Enemy Humanoid,,Lalafell,,Conjurer,Male,,,x,,x,50+,50+,,,,,,,Spawns for Imperial Invasion (Event),,ge-mob-pages
+Elite Triarius,261448,2012-06-06T16:50:50Z,0,Elite Triarius,Enemy Humanoid,Roegadyn/Hyur,,,Gladiator,Male,,,x,,,30,30,,,,,,,,,ge-mob-pages
+Emerald Bee Swarm,499780,2012-06-01T02:40:39Z,0,Emerald Bee Swarm,Swarm,Bees,,,,,Wind,,x,,,10,14,306,688,322,360,,,,,ge-mob-pages
+Emerald Salamander,333816,2011-09-19T23:43:50Z,0,Emerald Salamander,Salamander,,,,,,Water,,x,,,75,84,8128,9704,1466,1747,,,,,ge-mob-pages
+Emperor Apkallu,421233,2011-09-18T01:26:32Z,0,Emperor Apkallu,Apkallu,,,,,,Wind,,x,,,65,69,2749,2975,1206,1304,,,,,ge-mob-pages
+Errant Soul,65829,2011-09-17T17:24:46Z,0,Errant Soul,Ghost,,,,,,Earth,,x,,,1,4,433,485,1150,1285,,,,,ge-mob-pages
+Errant Spirt,496631,2011-09-17T18:25:37Z,0,Errant Spirt,Ghost,,,,,,Ice,Fire,,,,1,4,374,485,1150,1285,,,Spawns in small cave not far from camp Bentbranch only at night.,,ge-mob-pages
+Escaped Goobbue,479881,2011-09-21T01:39:12Z,0,Escaped Goobbue,Goobbue,,,,,,,,x,,x,1,,670,,230,,,,,,ge-mob-pages
+Estinien Wyrmblood,159570,2012-04-21T03:44:43Z,0,Estinien Wyrmblood,Enemy Humanoid,,,,,,,,Yes,,Yes,,,,,,,,,,,ge-mob-pages
+Eurylochus,29881,2012-07-29T18:31:36Z,0,Eurylochus,Boar,,,,,,,,Y,,Y,55,,,,,,Y,Y,Spawns along with Princess of Pestilence and Cactuar Jaques.,,ge-mob-pages
+Evenfall Firefly,506757,2011-09-22T23:40:45Z,0,Evenfall Firefly,Firefly,,,,,,Fire,,,,,5,40,202,937,267,744,,,,,ge-mob-pages
+Evil Eye,506934,2012-04-30T01:26:26Z,0,Evil Eye,Ahriman,,,,,,Earth,,x,,,50,59,3947,4711,4510,5370,,,,,ge-mob-pages
+Eyetrap,449437,2011-10-24T06:10:20Z,0,Eyetrap,Landtrap,,Flytrap,,,,Wind,,x,,,55,59,2258,2443,994,1074,,,,,ge-mob-pages
+Fachan,28891,2012-09-26T03:36:03Z,0,Fachan,Ahriman,,,,,,Earth,,x,,,40,68,985,2333,3720,6395,,,,,ge-mob-pages
+Faerie Funguar,499610,2012-05-30T03:52:02Z,0,Faerie Funguar,Funguar,,,,,,Ice,Fire,,,,15,19,1356,1524,370,415,,,,,ge-mob-pages
+Fallen Archmage,317289,2011-09-17T02:28:54Z,0,Fallen Archmage,Fomor,,,,Thaumaturge,,,,,,,75,79,7650,8277,1466,7925,,,,,ge-mob-pages
+Fallen Captain,317160,2011-09-17T02:34:00Z,0,Fallen Captain,Fomor,,,,Lancer,,,,,,,75,79,7650,8277,1466,34263,,,,,ge-mob-pages
+Fallen Mage,488168,2011-09-17T17:18:08Z,0,Fallen Mage,Fomor,,,,Thaumaturge,,Earth,,,,,57,64,5367,6161,1074,5915,,,,,ge-mob-pages
+Fallen Pikeman,342104,2012-05-30T03:21:26Z,0,Fallen Pikeman,Fomor,,,,Lancer,,Fire,,x,,,65,74,6284,7501,1206,1438,,,,,ge-mob-pages
+Fallen Soldier,449571,2012-05-30T03:22:19Z,0,Fallen Soldier,Fomor,,,,Lancer,Male,Earth,,x,,,55,64,5161,6161,994,1183,,,,,ge-mob-pages
+Fallen Wizard,449360,2011-09-17T17:21:18Z,0,Fallen Wizard,Fomor,,,,Thaumaturge,,Earth,,,,,65,74,6284,7501,1206,7190,,,,,ge-mob-pages
+Fallgourd Funguar,283124,2012-05-30T03:52:21Z,0,Fallgourd Funguar,Funguar,,,,,,Ice,,,,,10,14,1172,1317,322,360,,,"* Central Shroud Fallgourd Funguar: ** Spawns around Faerie Funguars, yet is the only one of its kind around them. * South Shroud Fallgourd Funguar: ** May share spawn with Ladybug, Roselet, and Plains Footpad.",,ge-mob-pages
+Fat Dodo,270982,2012-05-20T21:31:38Z,0,Fat Dodo,Cockatrice,Dodo,,,,,Wind,,,,,25,34,1578,2054,492,638,,,,,ge-mob-pages
+Fellbite Peiste,27251,2012-05-29T03:15:55Z,0,Fellbite Peiste,Basilisk,,,,,,Fire,,x,,,45,73,1590,3448,819,1410,,,,,ge-mob-pages
+Feral Dodo,27025,2012-06-23T05:18:45Z,0,Feral Dodo,Cockatrice,Dodo,,,,,Wind,,,,,30,58,549,1540,568,1053,,,,,ge-mob-pages
+Feral Watchdog,329188,2012-09-29T07:29:29Z,0,Feral Watchdog,Wolf,,,,,,Lightning,,Y,,,30,39,,,,,,,,,ge-mob-pages
+Fevered Doe,421312,2012-06-05T05:05:06Z,0,Fevered Doe,Antelope,,,,,Female,Earth,,,,,30,54,476,1297,568,975,,,,,ge-mob-pages
+Figgy Pudding,376947,2012-06-23T20:48:51Z,0,Figgy Pudding,Flan,,,,THM,,,,A,,,30,42,,,,,,,"Flans appear in six (6) different colours. Every colour seems to be attached to certain element. Red : Fire, Blue : Water, Purple: Lightning, Light Green: Earth, Green: Wind, White: Ice",,ge-mob-pages
+Fire Bomb,474907,2011-09-25T01:21:32Z,0,Fire Bomb,Bomb,,,,,,Fire,,,,,30,54,494,1329,2840,4875,,,,,ge-mob-pages
+Fire Elemental,342914,2012-06-23T05:37:24Z,0,Fire Elemental,Elemental,,,,,,Fire,Water,Yes,,,30,79,1827,5173,2840,7925,x,,,,ge-mob-pages
+Firebound Wrath,329769,2012-06-06T19:43:54Z,0,Firebound Wrath,Elemental,Fire Elemental,,,,,Fire,,Y,,Y,55,,,,,,Y,,,,ge-mob-pages
+Firedrake,501472,2011-09-19T00:53:35Z,0,Firedrake,Drake,,,,,,Fire,,x,,,60,69,3558,4249,1095,1304,,,,,ge-mob-pages
+Firefly,351294,2011-09-22T23:47:54Z,0,Firefly,Firefly,,,,,,Fire,,,,,5,9,673,785,267,310,,,,,ge-mob-pages
+Firestarter Imp,497528,2012-05-30T01:50:26Z,0,Firestarter Imp,Imp,,,,Conjurer,,Ice,Fire,x,,,10,40,276,1009,1610,3720,,,,,ge-mob-pages
+Flamedrake,433686,2011-09-19T01:01:51Z,0,Flamedrake,Drake,,,,,,Fire,,x,,,70,74,4333,4688,1330,1438,,,,,ge-mob-pages
+Flamefist Ahlygg Roh,297025,2012-05-20T03:52:10Z,0,Flamefist Ahlygg Roh,Amalj'aa,,,,Pugilist,,Fire,,Y,,Y,59,59,,,,,,,,,ge-mob-pages
+Floating Eye,500541,2012-09-30T04:42:15Z,0,Floating Eye,Ahriman,,,,,,Earth,,,P,,40,49,3243,3870,3720,4425,,,,,ge-mob-pages
+Flytrap,388227,2011-10-24T06:09:53Z,0,Flytrap,Landtrap,,Flytrap,,,,Wind,,x,,,40,44,1682,1819,744,803,,,,,ge-mob-pages
+Foraging Doe (1.x),474830,2012-09-26T03:56:49Z,0,Foraging Doe,Antelope,,,,,Female,Earth,,,,,25,68,679,1709,492,1279,,,,,ge-mob-pages
+Forest Funguar,496314,2012-05-31T13:51:23Z,0,Forest Funguar,Funguar,,,,,,Ice,Fire,,,,1,9,828,1127,230,310,,,,,ge-mob-pages
+Forest Roseling,506785,2011-10-24T06:09:23Z,0,Forest Roseling,Landtrap,,Roseling,,,,Wind,,x,,,10,26,122,399,322,506,,,,,ge-mob-pages
+Forsaken Soul,324068,2012-06-01T21:52:22Z,0,Forsaken Soul,Ghost,,,,,,Ice,Fire,Y,,,52,52,,,,,,,,,ge-mob-pages
+Frenzied Aurelia,437905,2011-09-23T14:21:15Z,0,Frenzied Aurelia,Aurelia,,,,,,,,,,,1,,173,,230,,,,"Spawns as part of the Limsa Lominsa Main Scenario Quest Shapeless Melody. Sthalmann and Y'shtola assist you as party members in fighting this monster, healing you as necessary. If you selected a starting Discipline incapable of dealing sufficient damage to defeat this monster, Sthalmann will defeat the monster for you after you futilely attack it a few times. In essence, you cannot lose the fight.",,ge-mob-pages
+Friar's Lantern,500612,2012-09-26T01:13:41Z,0,Friar's Lantern,Wisp,,Wisp,,,,Fire,,,,,35,39,1693,1876,3285,3630,,,,,ge-mob-pages
+Frightened Cactuar,328987,2012-07-13T15:09:42Z,0,Frightened Cactuar,Cactuar,,,,,,Earth,,,,,50,50,,,,,,,,,ge-mob-pages
+Frightened Lemur,362437,2012-07-12T23:42:24Z,0,Frightened Lemur,Opo-opo,Lemur,,,,,Earth,,,,,50,,,,,,Y,Y,,,ge-mob-pages
+Fumbling Funguar,28452,2011-09-21T01:08:02Z,0,Fumbling Funguar,Funguar,,,,,,Ice,,,,,10,31,357,941,322,585,,,,,ge-mob-pages
+Furline Mosstrooper,55958,2012-09-05T20:35:28Z,0,Furline Mosstrooper,Enemy Humanoid,,,,,,,,,,,32,,,,,,,,,,ge-mob-pages
+Furryfoot Kupli Kipp,247693,2012-06-06T16:33:13Z,0,Furryfoot Kupli Kipp,Moogle,,,,White Mage,Male,,,Yes,,Yes,50,,,,,,Yes,Yes,Casts Cure IV and grants Good King Moggle Mog XII the ability to cast Cure IV after death.,,ge-mob-pages
+Gall Gnat,473790,2012-09-30T04:43:35Z,0,Gall Gnat,Gnat,,Ked,,,,Lightning,,x,,,45,49,2782,3010,4095,4425,,,,,ge-mob-pages
+Game Dodo,437119,2012-05-30T01:43:45Z,0,Game Dodo,Cockatrice,Dodo,,,,,Wind,,,,,20,40,410,1081,427,744,,,,,ge-mob-pages
+Gaoler's Lantern,295564,2012-05-20T00:50:24Z,0,Gaoler's Lantern,Wisp,,,,,,Fire,,Y,,,39,39,,,,,,,,,ge-mob-pages
+Garuda,251148,2012-05-21T03:10:07Z,0,Garuda,Primal,,,,,,Wind,,Yes,,Yes,,,,,,,Yes,Yes,,,ge-mob-pages
+Gas Bomb,508316,2012-08-24T04:11:33Z,0,Gas Bomb,Bomb,,,,,,Fire,Wind,,,,45,49,2385,2580,4095,4425,,,,,ge-mob-pages
+Ghost Slug,43929,2011-09-24T00:42:36Z,0,Ghost Slug,Slug,,,,,,Water,,,,,40,44,3363,3638,744,803,,,,,ge-mob-pages
+Giant Bat,460431,2012-04-19T00:52:34Z,0,Giant Bat,Bat,,Bat,,,,Wind,,x,,,25,29,1263,1420,492,552,,,,,ge-mob-pages
+Giant Crab,362013,2012-05-29T05:01:57Z,0,Giant Crab,Crab,,,,Archer,,Water,,,,,25,29,1578,1774,492,552,,,,,ge-mob-pages
+Giant Gnat,307495,2012-05-24T16:16:15Z,0,Giant Gnat,Gnat,,,,,,Lightning,,Y,,,32,32,,,,,,,,,ge-mob-pages
+Giant Remora,26559,2012-09-26T20:10:58Z,0,Giant Remora,Angler,Orobon,,,,,Water,,Yes,,Yes,19,,2695,,380,,,,Assisted by 7 Remoras. Found on Map 3.,,ge-mob-pages
+Giant Slug,373685,2011-09-23T20:18:50Z,0,Giant Slug,Slug,,,,,,Water,,,,,30,54,768,1803,568,975,,,,,ge-mob-pages
+Gigantoad,43201,2012-05-28T00:57:02Z,0,Gigantoad,Toad,,,,,,Water,,x,,,55,64,3709,4428,994,1183,,,,,ge-mob-pages
+Gloom Lurker,28535,2012-02-26T03:26:39Z,0,Gloom Lurker,Wisp,,,,,,Fire,,Yes,,,17,18,288,307,1700,1955,,,Found on Map 4 after one or more Gloom Seekers enter the clam at Llymlaen's Trial.,,ge-mob-pages
+Gloom Seeker,27131,2012-05-12T04:38:26Z,0,Gloom Seeker,Wisp,,,,,,Fire,,,,,15,,245,,1500,,Yes,Yes,"Spawns in groups of 4 out of the clam at (5-4) on Map 1, and then travels down to (7-5) on Map 4 where it enters another clam. This clam then spawns groups of 12 Gloom Lurkers for a set amount of time, depending on how many Gloom Seekers made it to the clam. Cant be killed and will not engage a player, but will disappear if it loses enough health.",,ge-mob-pages
+Glowfly,496503,2011-09-23T00:04:12Z,0,Glowfly,Firefly,,,,,,Fire,,,,,10,14,816,917,322,360,,,,,ge-mob-pages
+Gluttonous Gertrude,215425,2012-05-28T00:10:35Z,0,Gluttonous Gertrude,Cockatrice,,,,,,Wind,Ice,x,,x,42,,32487,,773,,,,Involved in the quest Insulted Intelligence.,,ge-mob-pages
+Goblin Bouncer,34620,2012-05-30T03:40:11Z,0,Goblin Bouncer,Goblin,,,,,,Fire,,,,,50,59,2923,3489,902,1074,,,,,ge-mob-pages
+Goblin Braggadocio,76626,2011-09-20T01:13:31Z,0,Goblin Braggadocio,Goblin,,,,,,Fire,,,,,55,,19350,,994,,,,,,ge-mob-pages
+Goblin Freesword,26518,2011-09-20T01:18:11Z,0,Goblin Freesword,Goblin,,,,,,Fire,,,,,40,49,2402,2866,744,885,,,,,ge-mob-pages
+Goblin Headman,34278,2012-08-08T19:26:57Z,0,Goblin Headman,Goblin,,,,,,Fire,,x,"A, S",,90,99,6426,7675,1964,2343,,,"Generally passive, but on occasion you may capture ones attention and it will follow you for a short while.",,ge-mob-pages
+Goblin Mugger,64777,2012-10-31T03:49:26Z,0,Goblin Mugger,Goblin,,,,,,Fire,,,,,71,76,,,,,,,,,ge-mob-pages
+Goblin Thug,63250,2012-04-19T00:53:03Z,0,Goblin Thug,Goblin,,,,,,Fire,,,,,30,39,1827,2344,568,726,,,,,ge-mob-pages
+Goddess Girdle,51305,2011-09-23T14:35:06Z,0,Goddess Girdle,Aurelia,,,,,,Ice,,x,,,60,64,3025,3273,1095,1183,,,,,ge-mob-pages
+Godwin Goodgoat,475366,2010-11-23T19:25:49Z,0,Godwin Goodgoat,Enemy Humanoid,,,Quest,,,,,,,,,,,,,,,,,,ge-mob-pages
+Goobbue,278791,2011-09-21T01:40:48Z,0,Goobbue,Goobbue,,,,,,Ice,,x,,,65,69,6087,6586,1206,1304,,,,,ge-mob-pages
+Gorgebug,459205,2012-08-08T19:55:00Z,0,Gorgebug,Beetle,,,Quest,,,,,,,,,,,,,,,,,,ge-mob-pages
+Gorged Djigga,478883,2011-09-22T00:48:29Z,0,Gorged Djigga,Chigoe,,,,,,Fire,,x,,,30,54,421,1202,568,975,,,,,ge-mob-pages
+Grass Raptor,470145,2012-05-01T00:54:17Z,0,Grass Raptor,Raptor,,,,,,Fire,,x,,,55,64,3387,4043,994,1183,,,,,ge-mob-pages
+Gravid Crab,63177,2012-10-24T20:19:25Z,0,Gravid Crab,Crab,,,,,,Water,,Y,,,72,72,,,,,,,,,ge-mob-pages
+Great Buffalo,11989,2012-03-21T21:18:12Z,0,Great Buffalo,Buffalo,,,,,,Earth,,x,,x,65,,32767,,1206,,,,* To get Buffalo Horn to drop you need to incapacitate a horn. * Horns can get incapacitated by attacking Left(outer) or Right(Outer). * Max Amount of horns to drop is 2 if you incapacitate both horns.,,ge-mob-pages
+Great Elm,30809,2012-07-29T18:43:17Z,0,Great Elm,Treant,,,,,,Earth,Fire,Y,,Y,55,,,,,,Y,Y,Final boss in the Locke's Lie Skirmish. Spawns in the center after all other enemies have been defeated. Resets hate very often.,,ge-mob-pages
+Great Oak,310132,2012-07-26T04:27:03Z,0,Great Oak,Treant,,,,,,Earth,,Y,,Y,55,55,,,,,,,,,ge-mob-pages
+Greater Buffalo,28750,2012-07-28T21:18:49Z,0,Greater Buffalo,Buffalo,,,,,,,,Y,,Y,55,,,,,,Y,Y,Spawns first in Turtleback Island Skirmish,,ge-mob-pages
+Greedy Angler,417490,2012-06-05T05:25:40Z,0,Greedy Angler,Angler,,,,,,Water,,x,,,30,54,329,1044,568,975,,,,,ge-mob-pages
+Green Dewflower Sylph,364525,2011-09-20T02:19:03Z,0,Green Dewflower Sylph,Sylph,,,,Conjurer,,Wind,,,,,30,50,768,1667,2840,4510,,,,,ge-mob-pages
+Grenade,1954,2012-04-30T01:05:18Z,0,Grenade,Bomb,,,,,,Fire,,,,,60,69,3558,4249,5475,6520,,,,,ge-mob-pages
+Greywine,295006,2012-05-19T13:38:51Z,0,Greywine,Drake,,,,,,Fire,,x,,x,,,,,,,,,"Will change colors to a glowing purple, this indicates a spikes effect. Melee damage should be avoided for the duration of this.",,ge-mob-pages
+Gripper,28155,2012-08-09T16:28:05Z,0,Gripper,Crab,,,,,,Water,,Yes,"A, H",,15,17,288,338,300,381,,,,,ge-mob-pages
+Guano Gnat,250269,2012-09-09T23:05:41Z,0,Guano Gnat,Gnat,,,,,,Lightning,,Y,,Y,30,30,,,,,,,,,ge-mob-pages
+Guardian of the Grove,247276,2012-04-29T19:25:01Z,0,Guardian of the Grove,Treant,,,,,,,,Yes,,Yes,,,,,,,Yes,Yes,"Aggroes to sound. Avoid aggro by walking. Uses Pinecone Bomb immediately upon aggro for 9,999 damage.",,ge-mob-pages
+Guivre,505351,2011-09-19T01:08:01Z,0,Guivre,Drake,,,,,,Fire,,x,,,40,69,1081,4249,744,1304,,,,,ge-mob-pages
+Hairless Hare,478497,2011-09-23T20:12:53Z,0,Hairless Hare,Slug,,,,,,Water,,,,,40,68,1246,2583,744,1279,,,,,ge-mob-pages
+Haughtpox Bloatbelly,8320,2012-08-08T19:27:00Z,0,Haughtpox Bloatbelly,Goblin,,,,,,Fire,,x,"A, S",x,60,,32022,,1095,,,,*Spawns during the day 8:00-20:00. *Spawns with 2 Goblin Braggadocio and 2 Goblin Bouncers. *Not Solo-able. Goblin Bouncers are level 58-59 and all 5 link together.,,ge-mob-pages
+Headrip Ogre,474669,2011-09-24T01:46:49Z,0,Headrip Ogre,Ogre,,,,,,Fire,,x,,,85,89,11353,12286,1781,1926,,,,,ge-mob-pages
+Headsman's Axe,300049,2012-06-08T00:38:11Z,0,Headsman's Axe,Ixal,,,,Marauder,,Wind,,Yes,,,56,56,,,,,,,,,ge-mob-pages
+Hedgemole,41992,2012-09-30T04:42:57Z,0,Hedgemole,Mole,,,,,,Earth,,,,,45,49,3312,3583,819,885,,,,,ge-mob-pages
+Heliodor Doblyn,507969,2012-08-02T18:38:56Z,0,Heliodor Doblyn,Coblyn,,,,,,Earth,Water,,,,40,44,481,1299,744,803,,,,,ge-mob-pages
+Hellbender,495831,2011-09-19T23:45:23Z,0,Hellbender,Salamander,,,,,,Water,,x,,,80,84,8970,9704,1616,1747,,,,,ge-mob-pages
+Hellsbound Warrior,323339,2012-06-01T21:30:11Z,0,Hellsbound Warrior,Wight,,,,Gladiator,,Ice,Fire,Y,,,52,52,,,,,,,,,ge-mob-pages
+Hellsfire Hedgemole,187049,2012-09-26T03:42:13Z,0,Hellsfire Hedgemole,Mole,,Hedgemole,,,,Earth,,,,,40,52,1606,3447,788,1356,,,,,ge-mob-pages
+Hill Yarzon,326922,2012-06-03T21:25:13Z,0,Hill Yarzon,Yarzon,,,,,,,,Y,,,40,52,,,,,,,,,ge-mob-pages
+Hippocerf,501643,2011-09-21T01:24:24Z,0,Hippocerf,Hippogryph,,,,,,Lightning,Earth,x,,,30,39,1462,1876,568,726,,,,,ge-mob-pages
+Hippogryph,502151,2011-09-21T01:44:23Z,0,Hippogryph,Hippogryph,,,,,,Lightning,,A,,,65,74,4320,5157,1206,1438,,,,,ge-mob-pages
+Hippogryph Pup,61669,2011-09-21T01:30:17Z,0,Hippogryph Pup,Hippogryph,,,,,,Lightning,,x,,,60,64,3914,4236,1095,1183,,,,,ge-mob-pages
+Hispid Dormouse,69529,2011-09-18T02:32:58Z,0,Hispid Dormouse,Rodent,,,,,,Earth,,,,,45,49,2649,2866,819,885,,,,,ge-mob-pages
+Honeybee Swarm,503800,2012-05-30T03:52:35Z,0,Honeybee Swarm,Swarm,Bees,,,,,Wind,,x,,,5,9,253,589,267,310,,,,,ge-mob-pages
+Horde Mite,296201,2012-05-20T01:01:22Z,0,Horde Mite,Diremite,Miteling,,,,,,,Y,,,39,39,,,,,,,Assists Sargas,,ge-mob-pages
+Hoverfly Swarm,359995,2012-05-30T03:52:48Z,0,Hoverfly Swarm,Swarm,,Syrphids,,,,Wind,,x,,,25,34,474,1233,492,638,,,,,ge-mob-pages
+Hungry Dreadwolf,55863,2012-09-03T01:26:29Z,0,Hungry Dreadwolf,Wolf,,,,,,,,,,,,,,,,,,,,,ge-mob-pages
+Hunter Kalong,500346,2011-09-18T02:23:26Z,0,Hunter Kalong,Bat,,Kalong,,,,Wind,,x,,,50,54,2193,2372,902,975,,,,,ge-mob-pages
+Ice Elemental,456653,2011-09-19T17:57:33Z,0,Ice Elemental,Elemental,,,,,,Ice,Fire,Yes,,,30,59,1827,3489,2840,5370,x,,,,ge-mob-pages
+Icebound Wrath,329803,2012-06-06T19:44:32Z,0,Icebound Wrath,Elemental,Ice Elemental,,,,,Ice,,Y,,Y,55,,,,,,Y,,,,ge-mob-pages
+Ifrit,250848,2012-05-30T03:47:35Z,0,Ifrit,Primal,,,,,,Fire,Water,Yes,,Yes,35,55,,,,,Yes,Yes,,,ge-mob-pages
+Ignis Fatuus (1.x),57320,2012-09-09T22:46:01Z,0,Ignis Fatuus,Bomb,,,,,,,,,,,,,,,,,x,x,,,ge-mob-pages
+Ill-tempered Pteroc,326286,2012-06-03T16:53:45Z,0,Illtempered Pteroc.jpg,Puk,Pteroc,,,,,Wind,,,,,45,45,,,,,,,,,ge-mob-pages
+Imperial Eques,356130,2012-09-08T22:24:10Z,0,Imperial Eques,Enemy Humanoid,,,,Lancer,,,,Y,,,50,55,,,,,,,,,ge-mob-pages
+Imperial Hastatus,424717,2010-12-20T20:40:23Z,0,Imperial Hastatus,Enemy Humanoid,,,Quest,Lancer,Male,,,,,,,,,,,,,,,,ge-mob-pages
+Imperial Hoplomachus,356358,2012-09-08T22:26:55Z,0,Imperial Hoplomachus,Enemy Humanoid,,,,Gladiator,,,,Y,,,50,55,,,,,,,,,ge-mob-pages
+Imperial Juggernaut,12102,2012-05-21T06:03:27Z,0,Imperial Juggernaut,Juggernaut,,,,,,,,Y,,Y,50,50,14874,,2389,,,,"The juggernaut need not be fought directly; only the three imperials need to be defeated in order for the quest to progress. Occasionally, it will fire Magitek Cannon, which is virtually a guaranteed one-shot against the target. Be sure to avoid its targeting AoE, which will turn red and stop blinking for a moment before firing, at all costs.",,ge-mob-pages
+Imperial Laqueairus,356293,2012-09-08T22:31:39Z,0,Imperial Laquearius,Enemy Humanoid,,,,Marauder,,,,Y,,,50,55,,,,,,,,,ge-mob-pages
+Imperial Medicus,356449,2012-09-08T22:27:55Z,0,Imperial Medicus,Enemy Humanoid,,,,Conjurer,,,,Y,,,50,55,,,,,,,,,ge-mob-pages
+Imperial Myrmillo,324024,2012-06-02T00:31:34Z,0,Imperial Myrmillo,Enemy Humanoid,Hyur,,,Marauder,Male,,,Y,,,52,52,,,,,,,,,ge-mob-pages
+Imperial Pilus Prior,192411,2012-06-06T16:50:41Z,0,Imperial Pilus Prior,Enemy Humanoid,,,,Gladiator,Male,,,x,,x,50+,50+,,,,,,,Boss for Imperial Invasion. Uses Attrition.,,ge-mob-pages
+Imperial Primus Ordinarius,323407,2012-06-01T21:31:44Z,0,Imperial Primus Ordinarius,Enemy Humanoid,Hyur,,,Gladiator,Male,,,Y,,,52,52,,,,,,,Must be defeated for the quest Into the Dark.,,ge-mob-pages
+Imperial Retiarius,424675,2010-12-20T20:40:30Z,0,Imperial Retiarius,Enemy Humanoid,,,Quest,Lancer,Male,,,,,,,,,,,,,,,,ge-mob-pages
+Imperial Sagitarius,356531,2012-09-08T22:23:41Z,0,Imperial Sagitarius,Enemy Humanoid,,,,Arhcer,,,,Y,,,50,55,,,,,,,,,ge-mob-pages
+Imperial Secutor,356610,2012-09-08T22:20:27Z,0,Imperial Secutor,Enemy Humanoid,,,,Pugilist,,,,Y,,,50,55,,,,,,,,,ge-mob-pages
+Imperial Signifer,356212,2012-09-08T22:26:00Z,0,Imperial Signifer,Enemy Humanoid,,,,Thaumaturge,,,,Y,,,50,55,,,,,,,,,ge-mob-pages
+Imperial Speculator,424698,2012-06-01T21:35:37Z,0,Imperial Speculator,Enemy Humanoid,Hyur,,,Conjurer,Male,,,Y,,,22,52,,,,,,,,,ge-mob-pages
+Imperial Triarius,424744,2011-10-23T03:10:55Z,0,Imperial Triarius,Enemy Humanoid,,,Quest,Gladiator,Male,,,,,,,,,,,,,,,,ge-mob-pages
+Imperial Veles,323451,2012-06-01T21:37:16Z,0,Imperial Veles,Enemy Humanoid,Hyur,,,Pugilist,Male,,,Y,,,52,52,,,,,,,,,ge-mob-pages
+Imperial War Hound,355999,2012-06-09T04:06:04Z,0,Imperial War Hound,Wolf,Hyena,,,,,Lightning,,Y,,,54,55,,,,,,,,,ge-mob-pages
+Imptrap,503745,2011-10-24T06:08:52Z,0,Imptrap,Landtrap,,Flytrap,,,,Wind,,x,,,56,59,2303,2443,1013,1074,,,,,ge-mob-pages
+Infernal Nail,319481,2012-08-08T19:52:25Z,0,Infernal Nail,Unknown,,,,,,Fire,Water,,,Y,35,55,,,,,Y,Y,Summoned by Ifrit prior to Hellfire. Destroying these reduces the damage of Hellfire. They do not attack.,,ge-mob-pages
+Inferno Drake,474333,2011-09-19T01:11:41Z,0,Inferno Drake,Drake,,,,,,Fire,,x,,,75,79,4781,5173,1466,1585,,,,,ge-mob-pages
+Inland Angler,421813,2011-09-21T22:07:05Z,0,Inland Angler,Angler,,,,,,Water,,x,,,20,44,246,858,427,803,,,,,ge-mob-pages
+Iron Coblyn,493462,2012-05-31T20:56:42Z,0,Iron Coblyn,Coblyn,,,,,,Earth,Water,,,,28,34,366,1027,568,638,,,,,ge-mob-pages
+Ironshell,259412,2012-08-09T16:28:03Z,0,Ironshell,Crab,,,,,,Water,,Y,"A, H",,35,35,,,,,,,Vulnerable only to polearm and magic damage.,,ge-mob-pages
+Island Crab,270546,2011-09-23T15:46:52Z,0,Island Crab,Crab,,,,,,Water,,,,,30,39,1827,2344,568,726,,,,,ge-mob-pages
+Ixali Boundwing,298439,2012-05-20T17:42:53Z,0,Ixali Boundwing,Ixal,,,,Marauder,,Wind,,Y,,,20,22,,,,,,,,,ge-mob-pages
+Ixali Bravewing,329953,2012-06-06T20:12:36Z,0,Ixali Bravewing,Ixal,,,,Marauder,,Wind,,Y,,,53,,,,,,,,,,ge-mob-pages
+Ixali Bravo,80643,2011-09-20T01:53:46Z,0,Ixali Bravo,Ixal,,,,,,Wind,,x,,,45,66,1802,2724,819,1230,,,,,ge-mob-pages
+Ixali Fearcaller,298166,2012-05-20T17:26:46Z,0,Ixali Fearcaller,Ixal,,,,Conjurer,,Wind,,Y,,,20,22,,,,,,,,,ge-mob-pages
+Ixali Fencer,160342,2011-09-20T01:51:49Z,0,Ixali Fencer,Ixal,,,,,,Wind,,x,,,40,54,2523,3321,744,975,,,,,ge-mob-pages
+Ixali Fogcaller,330010,2012-07-12T23:45:23Z,0,Ixali Fogcaller,Ixal,,,,Thaumaturge,,Wind,,Y,,,53,56,,,,,,,,,ge-mob-pages
+Ixali Sabreur,330132,2012-07-12T23:45:45Z,0,Ixali Sabreur,Ixal,,,,Gladiator,,Wind,,Y,,,53,56,,,,,,,,,ge-mob-pages
+Ixali Scout,82875,2012-04-24T21:15:01Z,0,Ixali Scout,Ixal,,,,,,Wind,,Yes,,,52,,,,,,,,,,ge-mob-pages
+Ixali Squire,298802,2012-05-20T17:45:17Z,0,Ixali Squire,Ixal,,,,Gladiator,,Wind,,Y,,,20,22,,,,,,,,,ge-mob-pages
+Ixali Stillbeak,298595,2012-05-20T17:42:30Z,0,Ixali Stillbeak,Ixal,,,,Lancer,,Wind,,Y,,,20,22,,,,,,,,,ge-mob-pages
+Ixali Strongbeak,330207,2012-07-12T23:48:53Z,0,Ixali Strongbeak,Ixal,,,,Lancer,,Wind,,Y,,,53,56,,,,,,,,,ge-mob-pages
+J'moldva (Mob),321534,2012-06-01T02:56:24Z,0,J'moldva (Mob),Enemy Humanoid,Miqo'te,,,Lancer,Female,,,Y,,Y,30,30,,,,,Y,Y,,,ge-mob-pages
+Jackal Pup,28893,2012-07-29T21:30:19Z,0,Jackal Pup,Wolf,Mongrel,,,,,Lightning,,Yes,,,18,21,333,403,360,440,,,"On Map 5, killing all 11 Jackal Pups is required to spawn the Lone Coeurl. They will not respawn until all 11 pups plus the NM are defeated.",,ge-mob-pages
+Jackanapes,212492,2012-05-27T14:53:41Z,0,Jackanapes,Opo-opo,,,,,,Fire,,,,x,36,,15246,,676,,,,Can steal buffs using Deep Scratch. Also capable of passing on Debuffs to its target using Soil Smear.,,ge-mob-pages
+Jellyfish,430413,2011-09-23T14:43:18Z,0,Jellyfish,Aurelia,,,,,,Water,,,,,10,26,174,618,322,506,,,,,ge-mob-pages
+Jenlyns Straightblade,324315,2012-06-01T22:08:03Z,0,Jenlyns Straightblade,Enemy Humanoid,Hyur,,,Paladin,Male,,,Y,,Y,52,52,,,,,Y,Y,,,ge-mob-pages
+Jetsam Jelly,90751,2012-08-08T19:33:16Z,0,Jetsam Jelly,Aurelia,,,,,,Water,,,P,,20,,1023,,427,,,,,,ge-mob-pages
+Jumping Djigga,495908,2012-05-30T03:53:08Z,0,Jumping Djigga,Chigoe,,,,,,Fire,,x,,,30,39,1035,1758,568,726,,,"Aggressive, uses AOE poison that also damages self",,ge-mob-pages
+Kalong,2819,2012-05-30T03:58:43Z,0,Kalong,Bat,,Kalong,,,,Wind,,x,,,35,39,1587,1758,657,726,,,,,ge-mob-pages
+Karakul Ewe,421334,2011-09-18T22:39:56Z,0,Karakul Ewe,Ram,,,,,,Wind,,,,,30,54,439,1234,568,975,,,,,ge-mob-pages
+Ked,38112,2012-04-30T01:03:02Z,0,Ked,Gnat,,Ked,,,,Lightning,,x,,,55,64,4193,5005,4970,5915,,,,,ge-mob-pages
+Kedtrap,305143,2011-10-24T06:07:16Z,0,Kedtrap,Landtrap,,Flytrap,,,,Wind,,x,,,55,59,2258,2443,994,1074,,,,,ge-mob-pages
+King Apkallu,42890,2011-09-18T01:32:22Z,0,King Apkallu,Apkallu,,,,,,Water,,x,,,60,64,2491,2695,1095,1183,,,,,ge-mob-pages
+Kobold Acolyte,306964,2012-08-28T23:34:51Z,0,Kobold Acolyte,Kobold,,,,Thaumaturge,,Earth,,Yes,,,33,39,,,,,,,,,ge-mob-pages
+Kobold Almsman,311459,2012-05-29T04:30:22Z,0,Kobold Almsman,Kobold,,,,CNJ,,Earth,,x,,,20,29,,,,,,,,,ge-mob-pages
+Kobold Ascetic,311418,2012-05-29T04:30:50Z,0,Kobold Ascetic,Kobold,,,,THM,,Earth,,x,,,20,29,,,,,,,,,ge-mob-pages
+Kobold Ashman,373191,2012-06-20T22:47:11Z,0,Kobold Ashman,Kobold,,,,Gladiator,,Earth,,Y,,,52,,,,,,,,,,ge-mob-pages
+Kobold Bedesman,373239,2012-06-20T22:48:04Z,0,Kobold Bedesman,Kobold,,,,Conjurer,,Earth,,Y,,,52,,,,,,,,,,ge-mob-pages
+Kobold Footman,307280,2012-08-28T23:35:43Z,0,Kobold Footman,Kobold,,,,Gladiator,,Earth,,Yes,,,33,39,,,,,,,,,ge-mob-pages
+Kobold Junkman,373375,2012-06-20T22:50:47Z,0,Kobold Junkman,Kobold,,,,Marauder,,Earth,,Y,,,53,,,,,,,,,,ge-mob-pages
+Kobold Kirkman,307442,2012-08-28T23:36:10Z,0,Kobold Kirkman,Kobold,,,,Conjurer,,Earth,,Yes,,,33,39,,,,,,,,,ge-mob-pages
+Kobold Mendicant,51310,2011-09-20T02:06:52Z,0,Kobold Mendicant,Kobold,,,,,,Earth,,,,,40,49,1922,2293,3720,4425,,,,,ge-mob-pages
+Kobold Packman,311493,2012-05-29T04:29:53Z,0,Kobold Packman,Kobold,,,,GLD,,Earth,,x,,,20,29,,,,,,,,,ge-mob-pages
+Kobold Patrolman,62343,2012-10-16T03:04:40Z,0,Kobold Patrolman,Kobold,,,,,,Earth,,,,,47,49,,,,,,,,,ge-mob-pages
+Kobold Pickman,311522,2012-05-29T04:31:46Z,0,Kobold Pickman,Kobold,,,,MRD,,Earth,,x,,,20,29,,,,,,,,,ge-mob-pages
+Kobold Pitman,307062,2012-08-28T23:36:36Z,0,Kobold Pitman,Kobold,,,,Marauder,,Earth,,Yes,,,33,39,,,,,,,,,ge-mob-pages
+Kobold Prelate,478314,2012-02-23T06:56:01Z,0,Kobold Prelate,Kobold,,,,Thaumaturge,,Earth,,Yes,,,50,54,2339,2842,3930,16000,,,,,ge-mob-pages
+Kobold Quarryman,62176,2012-10-16T03:02:57Z,0,Kobold Quarryman,Kobold,,,,,,Earth,,,,,47,49,,,,,,,,,ge-mob-pages
+Kobold Supplicant,154795,2011-10-05T03:12:57Z,0,Kobold Supplicant,Kobold,,,,Thaumaturge,,Earth,,,,,20,44,546,1429,427,4015,,,,,ge-mob-pages
+Kobold Vestryman,62113,2012-10-16T03:01:16Z,0,Kobold Vestryman,Kobold,,,,,,Earth,,,,,47,49,,,,,,,,,ge-mob-pages
+Kokoroon Quickfingers,210881,2012-07-04T15:28:41Z,0,Kokoroon Quickfingers,Qiqirn,,,,Pugilist,,Earth,,x,,x,49,50,25794,26307,885,902,,,"Attacks include basic auto attack, Misdirection, and Sandspray. Casts Kibosh to inflict player with Amnesia.",,ge-mob-pages
+Kraken Deckhand,487112,2012-05-26T16:24:57Z,0,Kraken Deckhand,Enemy Humanoid,Hyur,,,Marauder,Male,,,Y,,Y,25,25,,,,,Y,Y,Only the final Kraken Deckhand will drop a Counterfeit Chip Mold. Defeating Kraken Deckhands will cause treasure chests to spawn which may also contain a Counterfeit Chip Mold.,,ge-mob-pages
+Ladybug,358925,2012-06-04T20:32:01Z,0,Ladybug,Beetle,,,,,,Fire,,,,,20,32,751,1508,427,552,,,"* South Shroud Ladybug: ** May share spawn with Fallgourd Funguar, Roselet, and Plains Footpad.",,ge-mob-pages
+Lake Crab,60390,2012-06-03T17:12:35Z,0,Lake Crab,Crab,,,,,,Water,,,,,40,68,721,1875,744,1279,,,,,ge-mob-pages
+Lammergeyer,493375,2012-06-08T02:46:19Z,0,Lammergeyer,Vulture,Vulture,,,,,Wind,,x,,,55,59,2097,2268,994,1074,,,,,ge-mob-pages
+Land Angler,502308,2011-09-21T22:15:02Z,0,Land Angler,Angler,,,,,,Water,,x,,,25,29,813,1065,492,552,,,,,ge-mob-pages
+Laughing Mongrel,493584,2011-09-19T00:19:57Z,0,Laughing Mongrel,Wolf,,,,,,Lightning,Earth,x,,,55,59,2903,3141,994,1074,,,,,ge-mob-pages
+Lava Drake,323487,2012-06-01T21:38:57Z,0,Lava Drake,Drake,,,,,,Fire,Water,Y,,,52,52,,,,,,,,,ge-mob-pages
+Lead Coblyn,433945,2012-05-31T00:09:04Z,0,Lead Coblyn,Coblyn,Coblyn,,,,,Earth,Water,,,,15,19,236,663,370,415,,,,,ge-mob-pages
+Lemur,499931,2012-09-29T08:38:27Z,0,Lemur,Opo-opo,,,,,,Fire,,,,,40,49,2042,2437,744,885,,,,,ge-mob-pages
+Lightning Beetle,500036,2011-09-23T00:07:12Z,0,Lightning Beetle,Firefly,,,,,,Fire,,,,,15,19,944,1061,370,415,,,,,ge-mob-pages
+Lightning Elemental,281387,2012-06-06T19:45:25Z,0,Lightning Elemental,Elemental,,,,,,Lightning,Earth,Yes,,,30,77,1827,4973,2840,7620,x,,,,ge-mob-pages
+Lily of the Vale,373412,2012-06-20T22:49:46Z,0,Lily of the Vale,Landtrap,,,,,,Earth,,Y,,,53,,,,,,,,,,ge-mob-pages
+Lindwurm,495955,2011-09-19T03:39:17Z,0,Lindwurm,Raptor,,,,,,Fire,,x,,,65,74,4124,4923,1206,1438,,,"Seems to aggro on sight, not sound.",,ge-mob-pages
+Little Apkallu,69414,2011-09-18T01:37:00Z,0,Little Apkallu,Apkallu,,,,,,Water,,x,,,50,54,2047,2214,902,975,,,,,ge-mob-pages
+Lone Coeurl,108451,2012-02-25T22:32:42Z,0,Lone Coeurl,Coeurl,,,,,,Lightning,,Yes,,Yes,22,,3728,,433,,,,Can be spawned by defeating all 11 Jackal Pups around Llymlaen's Stand outside of his cage. Spawns in the Hall of Serpents.,,ge-mob-pages
+Lone Wolf,499038,2011-09-19T00:23:20Z,0,Lone Wolf,Wolf,,,,,,Lightning,Earth,x,,,15,24,1062,1380,370,478,,,,,ge-mob-pages
+Longclaw Galago,478870,2012-06-23T05:37:03Z,0,Longclaw Galago,Opo-opo,,,,,,Fire,,,,,30,54,439,1234,568,975,,,,,ge-mob-pages
+Longhorn Billygoat,30228,2012-07-29T18:38:57Z,0,Longhorn Billygoat,Aldgoat,,,,,Male,Earth,,Y,,,55,,,,,,Y,Y,Spawns along with Longhorn Nannygoats and Elder Longhorn,,ge-mob-pages
+Longhorn Nannygoat,30368,2012-07-29T18:39:27Z,0,Longhorn Nannygoat,Aldgoat,,,,,Female,Earth,,Y,,,55,,,,,,Y,Y,Spawns along with Longhorn Billygoats and Elder Longhorn,,ge-mob-pages
+Lost Ewe,361549,2011-09-18T22:42:39Z,0,Lost Ewe,Ram,,Sheep,,,Female,Wind,,,,,5,9,463,735,267,310,,,,,ge-mob-pages
+Lost Lamb (Mob),51914,2011-10-29T20:16:18Z,0,Lost Lamb,Ram,,,,,,Wind,,,,,1,4,397,606,230,257,,,,,ge-mob-pages
+Lost Wether,388162,2011-09-18T23:35:02Z,0,Lost Wether,Ram,,,,,Male,Wind,,,,,1,4,397,735,230,310,,,,,ge-mob-pages
+Loverly Ladybird,435332,2011-09-21T23:44:54Z,0,Loverly Ladybird,Beetle,,,,,,Fire,,,,,25,29,868,1508,492,552,,,,,ge-mob-pages
+Lowland Billygoat,417460,2012-06-05T05:28:03Z,0,Lowland Billygoat,Aldgoat,,,,,Male,Earth,,,,,30,54,658,1613,568,975,,,,,ge-mob-pages
+Lowland Nannygoat,460354,2012-06-23T05:22:42Z,0,Lowland Nannygoat,Aldgoat,,,,,Female,Earth,,,,,20,54,614,1898,427,975,,,,,ge-mob-pages
+Lozol Totoloq the Decapitator,300119,2012-06-08T00:38:24Z,0,Natalan,Ixal,,,,Gladiator,,Wind,,Yes,,Yes,59,59,,,,,,,,,ge-mob-pages
+Lunar Fragment,26786,2012-08-14T04:33:09Z,0,Lunar Fragment,Unknown,,,,,,,,,,,45,,,,,,,,Will explode if they reach the ground before being destroyed.,,ge-mob-pages
+Lunar Golem,26906,2012-08-14T05:14:12Z,0,Lunar Golem,Golem,,,,,,Earth,,Y,,,50,,,,,,Y,Y,,,ge-mob-pages
+Lunging Lemur,327386,2012-06-03T19:04:40Z,0,Lunging Lemur,Opo-opo,Lemur,,,,,Earth,,,,,40,52,,,,,,,,,ge-mob-pages
+Mad Angler,495589,2011-09-22T00:59:56Z,0,Mad Angler,Angler,,,,,,Water,,x,,,35,39,1116,1407,657,726,,,,,ge-mob-pages
+Mad Karakul Ewe,501995,2012-08-07T18:14:08Z,0,Mad Karakul Ewe,Ram,,,,,Female,Wind,,x,A,,45,49,2120,2293,819,885,,,,,ge-mob-pages
+Magicked Bones,449127,2012-04-19T00:53:53Z,0,Magicked Bones,Wight,,,,,,Ice,,x,,,25,34,1578,2054,492,638,,,"Skull eyepatch is obtained by removing the head of the magicked bones through using a weapon skill that targets the head, such as Concussive Blow II.",,ge-mob-pages
+Magitek Transmitter,355480,2012-08-08T20:06:37Z,0,Magitek Transmitter,Unknown,,,,,,,,,,,55,,,,,,N,N,,,ge-mob-pages
+Magitek Vanguard,241161,2012-07-30T19:02:53Z,0,Magitek Vanguard,Magitek Armor,,,,,,,,Yes,,,55,58,,,,,,,Resets hate on occasion.,,ge-mob-pages
+Magitek Vanguard F-1,354863,2012-06-09T03:30:14Z,0,Magitek Vanguard F-1,Magitek Armor,,,,,,,,Y,,,63,,,,,,,,,,ge-mob-pages
+Magitek Vanguard H-1,354742,2012-07-23T07:29:35Z,0,Magitek Vanguard H-1,Magitek Armor,,,,,,,,Y,,,61,63,,,,,,,,,ge-mob-pages
+Maidenbug,495873,2012-09-30T04:55:09Z,0,Maidenbug,Beetle,,,,,,Fire,,,,,28,39,1164,1993,657,726,,,,,ge-mob-pages
+Maned Wyrmhound,474304,2011-10-02T05:54:05Z,0,Maned Wyrmhound,Basilisk,,,,,,Fire,,x,,,75,79,6455,6984,1466,1585,,,,,ge-mob-pages
+Manipulated Eye,324675,2012-06-06T18:48:37Z,0,Manipulated Eye,Ahriman,,,,,,,,Y,,Y,55,,,,,,,,,,ge-mob-pages
+Manipulated Ogre,309477,2012-06-06T18:48:13Z,0,Manipulated Ogre,Ogre,,,,,,Fire,,Y,,Y,55,,,,,,Y,Y,,,ge-mob-pages
+Marshlight,501098,2012-06-23T09:27:16Z,0,Marshlight,Wisp,,Wisp,,,,Fire,,,,,25,29,1263,1420,2460,2760,,,,,ge-mob-pages
+Megalocrab,269536,2011-09-23T17:43:16Z,0,Megalocrab,Crab,,,,,,Water,,,,,30,54,549,1423,568,975,,,,,ge-mob-pages
+Mickle Mouse,326839,2012-06-03T17:35:57Z,0,Mickle Mouse,Rodent,Mouse,,,,,,,,,,40,52,,,,,,,"While the word ""Mickle"" means ""A large amount"" and the Mickle Mouse is certainly large for a mouse, it is more than likely to be a play on words of the famous Disney character ""Micky Mouse""",,ge-mob-pages
+Midge Cloud (1.x),467986,2011-10-02T07:50:27Z,0,Midge Cloud,Swarm,,Midges,,,,Wind,,,,,3,26,70,537,248,506,,,,,ge-mob-pages
+Migrating Doe,472913,2012-06-06T20:24:23Z,0,Migrating Doe,Antelope,,,,,Female,Earth,,,,,34,42,1798,1993,657,726,,,,,ge-mob-pages
+Mildewed Goobbue,50542,2011-09-21T01:42:43Z,0,Mildewed Goobbue,Goobbue,,,,,,,,x,,,70,74,6717,7267,1330,1438,,,,,ge-mob-pages
+Mirror Roselet,498209,2012-06-04T21:19:34Z,0,Mirror Roselet,Landtrap,,Roseling,,,,Wind,,,,,25,29,921,1154,492,552,,,,,ge-mob-pages
+Mistbeard Buccaneer,34606,2012-09-30T04:33:53Z,0,Mistbeard Buccaneer,Enemy Humanoid,,,,,,,,,,,,,,,,,,,,,ge-mob-pages
+Miteling,477711,2011-09-22T01:12:46Z,0,Miteling,Diremite,,,,,,Earth,,x,,,20,29,1160,1508,427,552,,,,,ge-mob-pages
+Miteling Straggler,367671,2012-06-16T22:43:09Z,0,Miteling Straggler,Diremite,Miteling,,,,,,,Y,,,33,,,,,,,,,,ge-mob-pages
+Mitetrap,295627,2012-05-20T00:52:21Z,0,Mitetrap,Landtrap,,,,,,Earth,,Y,,,39,39,,,,,,,,,ge-mob-pages
+Moiling Mole,64970,2012-10-31T06:36:00Z,0,Moiling Mole,Mole,,,,,,Earth,Water,,,,15,15,,,,,,,,,ge-mob-pages
+Molting Megalocrab,475189,2011-09-23T17:54:09Z,0,Molting Megalocrab,Crab,,,,,,Water,,,,,25,45,789,1722,492,819,,,,,ge-mob-pages
+Molting Miteling,478175,2012-04-19T00:54:48Z,0,Molting Miteling,Diremite,,,,,,Earth,,x,,,30,39,1553,1993,568,726,,,,,ge-mob-pages
+Moon-eared Mouse,32095,2012-03-08T05:39:44Z,0,Moon-eared Mouse,Rodent,Dormouse,,,,,Wind,,,,,25,,1578,,492,,,,,,ge-mob-pages
+Moon-eyed Mouse,31941,2012-03-08T05:40:14Z,0,Moon-eyed Mouse,Rodent,Dormouse,,,,,Wind,,,,,15,,1179,,370,,,,,,ge-mob-pages
+Moon-toothed Mouse,42600,2012-03-08T05:40:43Z,0,Moon-toothed Mouse,Rodent,Dormouse,,,,,Wind,,,,,35,,2115,,657,,,,,,ge-mob-pages
+Moonblind Dodo,17957,2011-10-02T09:40:50Z,0,Moonblind Dodo,Cockatrice,Dodo,,,,,Wind,,,,,20,,614,,427,,,,,,ge-mob-pages
+Moraby Mole,417289,2012-05-29T05:12:01Z,0,Moraby Mole,Mole,,,,,,Earth,,,,,15,19,1297,1458,370,415,,,"*Uses Breakout, after which is it untargetable for a couple of seconds.",,ge-mob-pages
+Morbol,160514,2011-09-21T01:48:35Z,0,Morbol,Morbol,,,,,,Earth,,x,,,65,74,5695,6798,1206,1438,,,,,ge-mob-pages
+Mosshorn Billygoat,20701,2011-09-17T01:24:55Z,0,Mosshorn Billygoat,Aldgoat,,,,,Male,Earth,,x,,x,55,,18706,19350,994,,,,Only spawn around Elder Mosshorn. Links with Elder Mosshorn,,ge-mob-pages
+Mosshorn Nannygoat,20887,2011-09-17T01:24:27Z,0,Mosshorn Nannygoat,Aldgoat,,,,,Female,Earth,,x,,x,55,,18706,19350,994,,,,Only spawn around Elder Mosshorn. Links with Elder Mosshorn,,ge-mob-pages
+Mossy Goobbue,317492,2012-09-07T20:19:17Z,0,Mossy Goobbue,Goobbue,,,,,,Earth,,x,"A, H",,75,79,7411,8019,1466,1585,,,,,ge-mob-pages
+Mottled Eft,80910,2011-09-19T23:47:00Z,0,Mottled Eft,Salamander,,,,,,Water,,x,,,40,68,1346,2958,744,1279,,,,,ge-mob-pages
+Mountain Peiste,509929,2012-05-01T00:50:02Z,0,Mountain Peiste,Basilisk,,,,,,Fire,,,,,50,54,3508,3795,902,975,,,,,ge-mob-pages
+Mudpuppy,498505,2011-09-19T23:50:17Z,0,Mudpuppy,Salamander,,,,,,Water,,x,,,70,74,7367,7970,1330,1438,,,,,ge-mob-pages
+Mummer's Lantern,376993,2012-06-23T09:29:29Z,0,Mummer's Lantern,Wisp,,,,,,Fire,,,,,30,42,,,,,,,,,ge-mob-pages
+Mun-Tuy Sapling,295768,2012-05-20T00:52:36Z,0,Mun-Tuy Sapling,Landtrap,,,,,,Earth,,Y,,,39,39,,,,,,,,,ge-mob-pages
+Mun-Tuy Squirrel,497995,2012-06-04T20:29:16Z,0,Mun-Tuy Squirrel,Rodent,,,,,,Earth,Water,,,,30,34,1827,2054,568,638,,,,,ge-mob-pages
+Musk Roseling,258615,2012-05-05T20:50:14Z,0,Musk Roseling,Landtrap,Roseling,,,,,Earth,,Yes,,,20,20,,,,,,,Involved in quest Till Death Do Us Part. Musk Roseling Pollen drops 100% while on the quest.,,ge-mob-pages
+Musk Stag,327328,2012-06-03T18:57:24Z,0,Musk Stag,Antelope,Stag,,,,Male,Earth,,,,,40,52,,,,,,,,,ge-mob-pages
+Myrmidon Drone,324869,2012-06-01T22:26:10Z,0,Myrmidon Drone,Antling,,,,,,Earth,,Y,,,50,50,,,,,,,,,ge-mob-pages
+Myrmidon Guard,324985,2012-06-01T22:28:10Z,0,Myrmidon Guard,Antling,,,,,,Earth,,Y,,,55,55,,,,,,,"Assists, and heals Myrmidon Princess.",,ge-mob-pages
+Myrmidon Princess,325053,2012-06-01T22:29:09Z,0,Myrmidon Princess,Antling,,,,,Female,Earth,,Y,,Y,59,59,,,,,,,,,ge-mob-pages
+Myrmidon Sentry,324912,2012-06-01T22:27:05Z,0,Myrmidon Sentry,Antling,,,,,,Earth,,Y,,,56,56,,,,,,,,,ge-mob-pages
+Myrmidon Soldier,325129,2012-06-01T22:29:59Z,0,Myrmidon Soldier,Antling,,,,,,Earth,,Y,,,45,45,,,,,,,Assist Myrmidon Princess.,,ge-mob-pages
+Naked Mole,492229,2011-09-17T23:27:50Z,0,Naked Mole,Mole,,,,,,Earth,,,,,3,26,257,780,322,506,,,,,ge-mob-pages
+Napalm,65289,2012-10-31T10:49:59Z,0,Napalm,Bomb,,,,,,Fire,,Y,,,70,74,,,,,,,,,ge-mob-pages
+Natalan Boneknitter,299421,2012-06-08T00:38:31Z,0,Natalan Boneknitter,Ixal,,,,Thaumaturge,,Wind,,Yes,,,50,56,,,,,,,,,ge-mob-pages
+Natalan Gatekeeper,299781,2012-06-08T00:41:53Z,0,Natalan Gatekeeper,Ixal,,,,Gladiator,,Wind,,Yes,,,52,56,,,,,,,Must be defeated in order to open the gates within Natalan,,ge-mob-pages
+Natalan Logsplitter,299304,2012-06-08T00:41:20Z,0,Natalan Logsplitter,Ixal,,,,Marauder,,Wind,,Yes,,,50,56,,,,,,,,,ge-mob-pages
+Natalan Pikecarver,299363,2012-06-08T00:41:15Z,0,Natalan Pikecarver,Ixal,,,,Lancer,,Wind,,Yes,,,50,56,,,,,,,,,ge-mob-pages
+Natalan Sentry (Gladiator),299491,2012-06-08T00:41:11Z,0,Natalan Sentry,Ixal,,,,Gladiator,,Wind,,Yes,,,52,52,,,,,,,,,ge-mob-pages
+Natalan Sentry (Lancer),299631,2012-06-08T00:41:06Z,0,Natalan Sentry,Ixal,,,,Lancer,,Wind,,Yes,,,50,56,,,,,,,,,ge-mob-pages
+Natalan Sentry (Marauder),299562,2012-06-08T00:41:01Z,0,Natalan Sentry,Ixal,,,,Marauder,,Wind,,Yes,,,53,53,,,,,,,,,ge-mob-pages
+Natalan Sentry (Thaumaturge),299704,2012-06-08T00:40:56Z,0,Natalan Sentry,Ixal,,,,Thaumaturge,,Wind,,Yes,,,59,59,,,,,,,,,ge-mob-pages
+Natalan Wolftamer,299241,2012-06-08T00:40:51Z,0,Natalan Wolftamer,Ixal,,,,Gladiator,,Wind,,Yes,,,50,56,,,,,,,,,ge-mob-pages
+Needletail,6282,2012-09-11T20:55:27Z,0,Needletail,Diremite,,,,,,,,x,,,,,,,,,,,,,ge-mob-pages
+Nest Commander,217486,2012-08-18T21:07:21Z,0,Nest Commander,Antling,,,,,,Earth,,x,,x,36,,15246,,676,,,,8:1 drop rate for Nighthawk Visor,,ge-mob-pages
+Nestling Buzzard,367796,2012-07-06T15:20:10Z,0,Nestling Buzzard,Vulture,Vulture,,,,,Wind,,x,,,37,39,,,,,,,,,ge-mob-pages
+Nether Nix,330508,2012-06-06T20:31:44Z,0,Nether Nix,Toad,,,,,,Water,,Y,,,55,,,,,,,,,,ge-mob-pages
+Nibbled Toadstool,326958,2012-06-03T17:32:34Z,0,Nibbled Toadstool,Funguar,,,,,,Earth,,,,,40,52,,,,,,,,,ge-mob-pages
+Nightblade Assassin,499812,2012-05-10T17:42:02Z,0,Nightblade Assassin,Enemy Humanoid,,,"Normal, Quest",Gladiator,Male,,,,,,,,,,,,,,Lalafell,,ge-mob-pages
+Nightwolf,360996,2011-09-19T00:25:09Z,0,Nightwolf,Wolf,,,,,,Lightning,Earth,,,,10,30,276,768,322,568,,,,,ge-mob-pages
+Nix,426114,2011-09-20T00:10:18Z,0,Nix,Toad,,,,,,Water,,x,,,65,73,5498,6436,1206,1410,,,,,ge-mob-pages
+Northern Eft,384412,2011-09-19T23:52:00Z,0,Northern Eft,Salamander,,,,,,Water,,,,,40,68,1346,2958,744,1279,,,,,ge-mob-pages
+Nut Nibbler,330464,2012-06-06T20:32:35Z,0,Nut Nibbler,Rodent,Squirrel,,,,,Earth,,,,,40,,,,,,,,,,ge-mob-pages
+Nutbiter Marmot,467823,2011-09-18T02:38:31Z,0,Nutbiter Marmot,Rodent,,,,,,Earth,,,,,3,30,234,823,248,568,,,,,ge-mob-pages
+Nutbreaker Squirrel,401832,2011-09-18T02:40:50Z,0,Nutbreaker Squirrel,Rodent,,,,,,Earth,,,,,20,40,410,1081,427,744,,,,,ge-mob-pages
+Nutcracker Squirrel,417235,2011-09-18T02:41:50Z,0,Nutcracker Squirrel,Rodent,,,,,,Earth,,,,,30,54,549,1423,568,975,,,,,ge-mob-pages
+Nutgrabber Marmot,65033,2012-10-31T06:57:04Z,0,Nutgrabber Marmot,Rodent,,,,,,Earth,Water,,,,10,10,,,,,,,Resistance to Stone,,ge-mob-pages
+Ocean Roseling (Roselet),456528,2012-05-29T01:25:55Z,0,Ocean Roseling,Landtrap,,Roseling,,,,Wind,,x,,,10,40,122,841,322,744,,,,,ge-mob-pages
+Oilbug,7942,2011-10-27T02:53:23Z,0,Oilbug,Beetle,,,,,,Fire,,,,,17,19,,,,,,,,,ge-mob-pages
+Old Six-arms,214314,2012-06-10T23:44:12Z,0,Old Six-arms,Crab,,,,,,Water,,,,x,47,,11020,,851,,,,"Uses a move named ""Backclip."" Inflicts high damage to a player with emnity behind the NM. Involved in the Paladin quest: Power Struggles",,ge-mob-pages
+Opo-opo,156410,2012-06-04T20:33:29Z,0,Opo-Opo,Opo-opo,,,,,,Fire,,,,,25,34,1263,1644,492,638,,,,,ge-mob-pages
+Ornery Karakul Ewe,473294,2012-07-11T03:49:48Z,0,Ornery Karakul Ewe,Ram,,,,,Female,Wind,,,,,35,39,1693,1876,657,726,,,,,ge-mob-pages
+Orobon,439931,2011-09-22T01:07:39Z,0,Orobon,Angler,,,,,,Water,,x,,,35,39,1481,1641,657,726,,,,,ge-mob-pages
+Ossuary Almstaker,156573,2012-05-29T03:55:09Z,0,Ossuary Almstaker,Enemy Humanoid,Lalafell,,,Thaumaturge,Female,,,Y,,Y,36,36,,,,,X,X,,,ge-mob-pages
+Pack Rat (1.x),430303,2011-09-18T02:43:13Z,0,Pack Rat,Rodent,,,,,,Earth,,,,,10,26,306,732,322,506,,,,,ge-mob-pages
+Painted Ladybug,359112,2011-09-21T23:49:47Z,0,Painted Ladybug,Beetle,,,,,,Fire,,,,,30,34,1553,1746,568,638,,,,,ge-mob-pages
+Palemoon Parazuzu,292800,2010-11-23T21:34:18Z,0,Palemoon Parazuzu,Enemy Humanoid,,,Quest,Archer,Female,,,,,,,,,,,,,,Archer type mob. Will use stun effect weapon skills. Lalafell,,ge-mob-pages
+Peiste Familiar,89085,2011-10-02T05:54:22Z,0,Peiste Familiar,Basilisk,,,,,,Fire,,x,,,19,,3181,,415,,,,,,ge-mob-pages
+Phaia,210384,2012-07-11T19:02:41Z,0,Phaia,Boar,,,,,,Fire,,x,,x,47,,28928,,851,,,,Monster appears to be highly resistant if not immune to stun. Seems to only aggro from behind.,,ge-mob-pages
+Phantasma,500069,2011-09-17T17:42:23Z,0,Phantasma,Ghost,,,,,,Water,,x,,,10,14,510,688,1610,1800,,,,,ge-mob-pages
+Pharosfly,460293,2011-09-23T00:12:11Z,0,Pharosfly,Firefly,,,,,,,,,,,,,,,,,,,,,ge-mob-pages
+Phurble,488352,2011-09-24T01:15:58Z,0,Phurble,Snurble,,,,"Thaumaturge, Conjurer",,Lightning,,,,,50,59,3216,3838,4510,5370,,,,,ge-mob-pages
+Plague Djigga,80215,2012-05-29T01:15:20Z,0,Plague Djigga,Chigoe,,,,,,Fire,,x,,,40,52,913,1584,744,1279,,,,,ge-mob-pages
+Plague Rat,339164,2011-09-18T02:46:40Z,0,Plague Rat,Rodent,,,,,,Earth,,,,,3,23,234,671,248,465,,,,,ge-mob-pages
+Plain Pudding,29711,2012-09-30T04:39:07Z,0,Plain Pudding,Flan,,,,,,,,,,,40,44,2402,2598,3720,4015,,,"Plain Puddings appear in six (6) different colors. Every color seems to be attached to certain element. Red : Fire, Blue : Water, Purple: Lightning, Light Green: Earth, Green: Wind, White: Ice They can all cast spells based on their element up to level II (2) spells, for example Fire II and Burn II. They can also use possibly magic improving ability Glossolalia and melee attack Amorphic Spear.",,ge-mob-pages
+Plains Footpad,362560,2012-05-30T00:06:32Z,0,Plains Footpad,Enemy Humanoid,Hyur,,,Gladiator,Male,,,Y,,,29,29,,,,,,,,,ge-mob-pages
+Plains Rat,360873,2011-09-18T02:49:04Z,0,Plains Rat,Rodent,,,,,,Earth,,,,,10,14,1019,1145,322,360,,,,,ge-mob-pages
+Plasma Spark,474765,2011-09-30T05:10:34Z,0,Plasma Spark,Plasmoid,,Plasmoid,,,,Lightning,,,,,45,73,1669,2897,4095,7050,,,,,ge-mob-pages
+Plasmoid,61161,2011-09-30T05:00:29Z,0,Plasmoid,Plasmoid,,Plasmoid,,,,Lightning,,,,,45,49,2517,2723,4095,4425,,,,,ge-mob-pages
+Poison Flytrap,189298,2011-10-24T06:01:30Z,0,Poison Flytrap,Landtrap,,Flytrap,,,,Wind,,,,,40,68,841,2083,744,1279,,,,,ge-mob-pages
+Poisoned Peasant,330589,2012-06-06T20:35:28Z,0,Poisoned Peasant,Ghost,,,,Thaumaturge,,Ice,,Y,,,56,,,,,,,,,,ge-mob-pages
+Popoto-opoto,297774,2012-05-20T16:39:18Z,0,Popoto-opoto,Opo-opo,,,,,,,,,,,25,25,,,,,,,,,ge-mob-pages
+Porcupine,43038,2011-09-18T00:40:39Z,0,Porcupine,Mole,,,,,,Earth,,,,,55,64,4032,994,4813,1183,,,,,ge-mob-pages
+Prince of Pestilence,213083,2012-08-29T04:18:18Z,0,Prince of Pestilence,Gnat,,Gnat,,,,Lightning,,x,,x,47,,19285,,25530,,,,"Teleports frequently, often using a powerful lightning attack right afterwards.","The Prince of Pestilence is the title of the theological demon Meresin. Though he is attributed by many names across Abrahamic mythologies, he is specifically mentioned in Heywood's The Hierarchy of the Blessed Angels as being the lord of thunder and lightning in Hell. This example is worth noting above others, as The Prince of Pestilence is a Gnat, who as a species exhibit powerful lightning abilities.",ge-mob-pages
+Princess of Pestilence,29946,2012-07-29T18:33:41Z,0,Princess of Pestilence,Gnat,,,,,,Lightning,Earth,Y,,Y,55,,,,,,Y,Y,Spawns along with Eurylochus and Cactuar Jaques,,ge-mob-pages
+Prison Pteroc,30404,2012-05-20T00:54:09Z,0,Prison Pteroc,Puk,,,,,,Wind,,x,,,35,,1481,,657,,,,,,ge-mob-pages
+Prison Pudding,48416,2012-05-20T00:53:10Z,0,Prison Pudding,Flan,,,,,,,,,,,35,,2115,,3285,,,,"Prison Puddings appear in six (6) different colours. Every colour seems to be attached to certain element. Red : Fire, Blue : Water, Purple: Lightning, Light Green: Earth, Green: Wind, White: Ice",,ge-mob-pages
+Pruned Roselet,329109,2012-09-29T07:34:02Z,0,Pruned Roselet,Landtrap,Roselet,,,,,Earth,,Y,,,34,37,,,,,,,,,ge-mob-pages
+Pteroc Matron,473446,2012-09-26T03:57:53Z,0,Pteroc Matron,Puk,,,,,,Wind,,,,,35,39,1481,1641,657,726,,,,,ge-mob-pages
+Pteroctrap,3196,2011-10-24T06:01:01Z,0,Pteroctrap,Landtrap,,Flytrap,,,,Wind,,x,,,45,49,1855,2007,819,885,,,,,ge-mob-pages
+Pugot,505317,2011-09-17T11:37:39Z,0,Pugot,Boar,,,,,,Fire,,x,,,75,79,8128,8795,1466,1585,,,Detects by sound.,,ge-mob-pages
+Puk (1.X),127078,2012-05-29T05:03:42Z,0,Puk,Puk,,,,,,Wind,,,,,20,24,955,1074,427,478,,,,,ge-mob-pages
+Puk Hatchling,343662,2012-03-17T23:57:41Z,0,Puk Hatchling,Puk,,,,,,Wind,,,,,10,14,714,802,322,360,,,,,ge-mob-pages
+Pukla Puki the Pomburner,247499,2012-06-06T16:41:17Z,0,Pukla Puki the Pomburner,Moogle,,,,Thaumaturge,Female,,,Yes,,Yes,,,50,,,,Yes,Yes,Uses Pom Flare and grants Good King Moggle Mog XII the ability to use Pom Flare after death.,,ge-mob-pages
+Pukna Pako the Tailturner,247979,2012-06-06T16:46:26Z,0,Pukna Pako the Tailturner,Moogle,,,,Thief,Female,,,Yes,,Yes,,,50,,,,Yes,Yes,Uses Mognesia and Break and grants Good King Moggle Mog XII the ability to use Mognesia and Break after death.,,ge-mob-pages
+Puksi Piko the Shaggysong,247594,2012-06-06T16:44:49Z,0,Puksi Piko the Shaggysong,Moogle,,,,Bard,Female,,,Yes,,Yes,50,,,,,,Yes,Yes,Uses Maximoogle and grants Good King Moggle Mog XII the ability to use Maximoogle after death.,,ge-mob-pages
+Puroboros,507055,2011-09-25T01:29:00Z,0,Puroboros,Bomb,,,,,,Fire,,x,,,75,79,4781,5173,7330,7925,,,,,ge-mob-pages
+Pus Gnat,56611,2012-09-26T01:14:57Z,0,Pus Gnat,Gnat,,Gnat,,,,Lightning,,x,,,28,29,2221,2728,,,,,,,ge-mob-pages
+Pygmy Dormouse,498168,2012-06-04T21:17:08Z,0,Pygmy Dormouse,Rodent,,,,,,Earth,,,,,35,39,2115,2344,657,726,,,,,ge-mob-pages
+Pyrausta,211433,2012-08-18T21:18:04Z,0,Pyrausta,Puk,,,,,,Wind,,,,x,36,,16335,,676,,,,,,ge-mob-pages
+Pyro,427254,2011-09-26T11:52:44Z,0,Pyro,Imp,,,,,,,,x,,,,,,,,,,,,,ge-mob-pages
+Qiqirn Beater,274441,2011-09-20T02:42:45Z,0,Qiqirn Beater,Qiqirn,,,,,,Earth,,,,,55,59,3225,3489,994,1074,,,,,ge-mob-pages
+Qiqirn Egg Hunter,352043,2011-09-20T02:45:31Z,0,Qiqirn Egg Hunter,Qiqirn,,,,,,,,,,,35,39,2115,2344,657,726,,,,,ge-mob-pages
+Qiqirn Goon,458995,2011-09-20T02:49:09Z,0,Qiqirn Goon,Qiqirn,,,,,,Earth,,,,,30,54,549,1423,568,975,,,,,ge-mob-pages
+Qiqirn Mercenary,333585,2011-09-20T02:53:07Z,0,Qiqirn Mercenary,Qiqirn,,,,,,Earth,,,,,60,99,3558,7675,1095,2343,,,,,ge-mob-pages
+Qiqirn Poacher,34410,2012-09-30T04:40:17Z,0,Qiqirn Poacher,Qiqirn,,,,,,Earth,,,,,45,49,2649,2866,819,885,,,,,ge-mob-pages
+Qiqirn Scrambler,508267,2012-07-03T02:00:35Z,0,Qiqirn Scrambler,Qiqirn,,,,,,Earth,,,,,50,54,2923,3162,902,975,,,,,ge-mob-pages
+Qiqirn Shirrer,55106,2012-06-20T22:59:59Z,0,Qiqirn Shirrer,Qiqirn,,,,,,,,,,,,,,,,,,,,,ge-mob-pages
+Quartz Doblyn,505370,2012-08-03T01:47:05Z,0,Quartz Doblyn,Coblyn,,,,,,Earth,Water,,,,40,49,481,1433,744,885,,,,,ge-mob-pages
+Queen Bolete,219350,2012-07-19T01:29:08Z,0,Queen Bolete,Funguar,,,,,,Ice,,x,,x,36,,15246,,676,,,,Casts Slumber Cloud and Slumber Spores to make the player Sleep. Also casts Hyena Whip.,,ge-mob-pages
+Queen Gougou,309690,2012-05-28T00:44:35Z,0,Queen Gougou,Opo-opo,,,,,,Earth,,,,Y,55,55,,,,,,,,,ge-mob-pages
+Quicksand Peiste,325385,2012-06-01T22:35:58Z,0,Quicksand Peiste,Basilisk,,,,,,Earth,,Y,,,56,56,,,,,,,,,ge-mob-pages
+Rabid Coywolf,450984,2011-09-19T00:26:32Z,0,Rabid Coywolf,Wolf,,,,,,Lightning,Earth,x,,,10,,459,,322,,x,x,,,ge-mob-pages
+Rabid Dodo,362014,2012-06-13T20:20:32Z,0,Rabid Dodo,Cockatrice,,,,,,Wind,,,,,10,,,,,,,,,,ge-mob-pages
+Rabid Jackal,464650,2011-09-19T00:28:11Z,0,Rabid Jackal,Wolf,,,,,,Lightning,Earth,x,,,55,59,2903,3141,994,1074,,,,,ge-mob-pages
+Ragged Hippocerf,250797,2012-04-30T21:12:56Z,0,Ragged Hippocerf,Hippogryph,,,,,,,,Yes,,No,43,44,,,,,,,,,ge-mob-pages
+Raging Ram,344190,2011-09-18T23:42:21Z,0,Raging Ram,Ram,,,,,Male,Wind,,,,,3,38,133,870,248,709,,,,,ge-mob-pages
+Rainbow Basilisk,509966,2011-10-02T05:54:29Z,0,Rainbow Basilisk,Basilisk,,,,,,Lightning,,x,,,80,94,7123,9388,1616,2124,,,,,ge-mob-pages
+Ranig'oh,297101,2012-05-30T21:04:52Z,0,Ranig'oh,Drake,,,,,,Fire,,Y,,,56,56,,,,,,,,,ge-mob-pages
+Raptor Poacher,80749,2012-09-26T03:53:41Z,0,Raptor Poacher,Enemy Humanoid,,,Quest,Lancer,Female,,,,,,,,,,,,,,Miqo'te,,ge-mob-pages
+Rat Mole,427200,2011-09-18T00:43:05Z,0,Rat Mole,Mole,,,,,,Earth,,,,,3,15,257,566,248,370,,,,,ge-mob-pages
+Ravenous Billygoat,450916,2012-05-27T02:35:10Z,0,Ravenous Billygoat,Aldgoat,,,,,Male,Earth,,,,,40,49,2883,3440,744,885,,,,,ge-mob-pages
+Ravenous Nannygoat,351155,2011-09-17T01:21:33Z,0,Ravenous Nannygoat,Aldgoat,,,,,Female,Earth,,,,,30,39,2741,3516,568,726,,,,,ge-mob-pages
+Razor Plume,300353,2012-08-08T19:56:10Z,0,Razor Plume,Unknown,,,,,,Wind,,Yes,,Yes,,,,,,,Yes,Yes,Attempts to destroy the pillars around the battlefield.,,ge-mob-pages
+Razorback,58121,2011-09-17T18:11:33Z,0,Razorback,Boar,,,,,,Fire,,x,,,70,74,7367,7970,1330,1438,,,,,ge-mob-pages
+Rebel,333692,2010-09-10T21:32:43Z,0,Rebel,Enemy Humanoid,,,Quest,Gladiator,Male,,,,,,,,,,,,,,,,ge-mob-pages
+Recluse Hippogryph,323551,2012-06-01T21:40:36Z,0,Recluse Hippogryph,Hippogryph,,,,,,Wind,,Y,,,52,52,,,,,,,,,ge-mob-pages
+Red Dewflower Sylph,364766,2011-09-20T02:20:35Z,0,Red Dewflower Sylph,Sylph,,,,,,Wind,,,,,30,50,768,1667,2840,4510,,,,,ge-mob-pages
+Redhorn Ogre,497894,2011-09-24T01:55:18Z,0,Redhorn Ogre,Ogre,,,,,,Fire,,x,,,70,74,8450,9142,1330,1438,,,"Redhorn Ogres that spawn near Wyrmking's Perch Aetheryte gate have a tendency to not attack after walking into the gorge near the Aetherial Gate. When this happens they are easily killable by low ranked/physical leveled players. Fights last 40-60 minutes with a party of four low ranked/physical leveled players. Any close range fighters should worry about aggro from other patrolling Redhorn Ogres. Ogres use fire based Area of Effect magic. (Tested and duplicated on the Lindblum server on September 27/28, 2010) [http://www.youtube.com/watch?v=Wb5hl2H1m8c Youtube Glitch Video Pt. 1]",,ge-mob-pages
+Redwing Ked,362273,2012-01-02T05:55:20Z,0,Redwing Ked,Gnat,,Ked,,,,,,x,,,65,74,5106,6095,6030,7190,,,Detects by sound. Cannot walk (sneak) past it.,,ge-mob-pages
+Reef Angler,440054,2011-09-22T01:22:02Z,0,Reef Angler,Angler,,,,,,Water,,x,,,30,34,914,1233,568,638,,,,,ge-mob-pages
+Remora (1.x),26336,2012-09-26T20:09:42Z,0,Remora,Angler,Orobon,,,,,Water,,Yes,,Yes,15,,1475,,361,,,,Assists Giant Remora. Found on Map 3.,,ge-mob-pages
+Revenant,456620,2012-05-30T03:13:37Z,0,Revenant,Ghost,,,,Thaumaturge,,Ice,,,,,30,39,1188,1524,2840,3630,,,,,ge-mob-pages
+Rift Angler,437674,2011-10-09T15:04:41Z,0,Rift Angler,Angler,,,,,,,,x,,,,,,,,,,,,,ge-mob-pages
+Ringtail,503830,2011-09-18T01:57:18Z,0,Ringtail,Opo-opo,,,,,,Fire,,,,,55,59,2742,2966,994,1074,,,,,ge-mob-pages
+Ringtail Pteroc,401896,2011-09-19T03:01:53Z,0,Ringtail Pteroc,Puk,,,,,,Wind,,,,,25,45,553,1325,492,819,,,,,ge-mob-pages
+Ripe Shrieker,345637,2012-06-07T03:40:46Z,0,Ripe Shrieker,Funguar,,,,,,,,,,,56,,,,,,,,,,ge-mob-pages
+Roadrunner,493973,2011-10-02T09:41:16Z,0,Roadrunner,Cockatrice,Cockatrice,,,,,Wind,,,,,55,59,3225,3489,994,1074,,,,,ge-mob-pages
+Roadside Bewitcher,373833,2012-06-20T23:28:02Z,0,Roadside Bewitcher,Enemy Humanoid,Lalafell,,,Thaumaturge,,,,Y,,,27,,,,,,,,,,ge-mob-pages
+Roadside Bludgeoner,373866,2012-06-20T23:28:24Z,0,Roadside Bludgeoner,Enemy Humanoid,Lalafell,,,Pugilist,,,,Y,,,27,,,,,,,,,,ge-mob-pages
+Roadside Poacher,331086,2012-06-06T20:51:41Z,0,Roadside Poacher,Enemy Humanoid,Miqo'te,,,Lancer,,,,Y,,,27,,,,,,,,,,ge-mob-pages
+Roadside Stabber,373899,2012-06-20T23:28:57Z,0,Roadside Stabber,Enemy Humanoid,Lalafell,,,Gladiator,,,,Y,,,27,,,,,,,,,,ge-mob-pages
+Roadside Tracker,331160,2012-06-06T20:52:42Z,0,Roadside Tracker,Enemy Humanoid,Miqo'te,,,Archer,,,,Y,,,27,,,,,,,,,,ge-mob-pages
+Roadside Trapper,331125,2012-06-06T20:52:17Z,0,Roadside Trapper,Enemy Humanoid,Miqo'te,,,Pugilist,,,,Y,,,27,,,,,,,,,,ge-mob-pages
+Rock Crab,34765,2012-09-30T04:36:34Z,0,Rock Crab,Crab,,,,,,Water,,,,,40,44,2402,2598,744,803,,,,,ge-mob-pages
+Rorogun the Tailtamer,373882,2010-12-20T20:34:49Z,0,Rorogun the Tailtamer,Enemy Humanoid,,,Quest,Pugilist,Male,,,,,,,,,,,,,,"Lalafell, has AoE spell",,ge-mob-pages
+Roselet,499685,2012-01-15T20:27:05Z,0,Roselet,Landtrap,,Roseling,,,,Wind,Ice,x,,,10,19,561,862,322,415,,,"* South Shroud Roselet: ** May share spawn with Ladybug, Fallgourd Funguar, and Plains Footpad.",,ge-mob-pages
+Roseling,348576,2011-10-24T05:59:55Z,0,Roseling,Landtrap,,Roseling,,,,Wind,Ice,x,,,10,19,561,862,322,415,,,,,ge-mob-pages
+Rotting Corpse,508232,2012-09-30T04:51:25Z,0,Rotting Corpse,Fomor,,,,Lancer,,Earth,,,,,45,49,4239,4586,819,885,,,,,ge-mob-pages
+Rubyscale Pteroc,226300,2011-09-19T03:03:51Z,0,Rubyscale Pteroc,Puk,,,,,,Wind,,,,,30,54,384,1139,568,975,,,,,ge-mob-pages
+Ruffletuft Kupta Kapa,247865,2012-06-06T16:25:46Z,0,Ruffletuft Kupta Kapa,Moogle,,,,Marauder,Male,,,Yes,,Yes,50,,,,,,Yes,Yes,Uses Moogle-Go-Round and grants Good King Moggle Mog XII the ability to use Moogle-Go-Round after death.,,ge-mob-pages
+Runagate Imp,309103,2012-05-26T06:39:57Z,0,Runagate Imp,Imp,,,,Conjurer,,,,Y,,,35,35,,,,,,,,,ge-mob-pages
+Sabletooth Spriggan,235784,2011-09-19T04:24:03Z,0,Sabletooth Spriggan,Spriggan,,,,,,Lightning,,Yes,,,15,,885,,1850,,,,,,ge-mob-pages
+Sabotender,364818,2012-09-25T23:23:34Z,0,Sabotender,Cactuar,,,,,,Lightning,,,,,65,74,3142,3751,1206,1438,,,,,ge-mob-pages
+Sabotender Del Sol,502510,2012-09-25T23:24:27Z,0,Sabotender Del Sol,Cactuar,,,,,,Lightning,,,,,75,84,3825,4567,1466,1747,,,,,ge-mob-pages
+Salamander,277061,2011-09-19T23:53:19Z,0,Salamander,Salamander,,,,,,Water,,x,,,65,74,6676,7970,1206,1438,,,"Seems to detect low HP, unconfirmed at this time however. I ran right past it while doing a levequest for Bloodshore and it ignored me. In the middle of the fight however it came over and smacked me dead. I took specific care not to use any AoE abilities that might aggro it. While weakened I tried to finish my last monster off but once again when I hit yellow HP the Salamander came over and killed me.",,ge-mob-pages
+Salt Hare,475651,2012-06-23T20:44:39Z,0,Salt Hare,Slug,,,,,,Water,,,,,30,59,1650,3245,657,1074,,,,,ge-mob-pages
+Saltspray Pteroc,498490,2012-05-30T00:03:48Z,0,Saltspray Pteroc,Puk,,,,,,Wind,,,,,25,34,1105,1438,492,638,,,,,ge-mob-pages
+Sand Bat,325313,2012-06-01T22:34:43Z,0,Sand Bat,Bat,,,,,,,,Y,,,52,52,,,,,,,,,ge-mob-pages
+Sand Slug,475240,2011-09-23T20:03:41Z,0,Sand Slug,Slug,,,,,,Water,,,,,35,39,2961,3282,657,726,,,,,ge-mob-pages
+Sand Yarzon,481530,2012-04-30T02:41:24Z,0,Sand Yarzon,Yarzon,,,,,,Ice,,,,,10,26,184,537,322,506,,,,,ge-mob-pages
+Sandskin Peiste,494488,2011-10-02T05:54:39Z,0,Sandskin Peiste,Basilisk,,,,,,Fire,,x,,,55,59,3871,4187,994,1074,,,,,ge-mob-pages
+Sandstorm,325252,2012-06-01T22:33:42Z,0,Sandstorm,Swarm,,,,,,Earth,,Y,,,51,51,,,,,,,,,ge-mob-pages
+Sargas,40977,2012-05-20T00:48:16Z,0,Sargas,Diremite,,,NM,,,,,x,,x,38,38,,,,,,,*Sargas appears in the Execution (eastern) Chamber of The Thousand Maws of Toto-Rak. *Spawns a number of chests after defeat. Rewards vary by tasks accomplished in the raid.,"Theta Scorpii (θ Sco / θ Scorpii) is a star in the constellation Scorpius. It has the traditional names Sargas and Girtab, both of Sumerian origin. θ Scorpii A is a yellow giant of spectral type F1 II shining with a luminosity of 960 times that of the Sun from a distance of 272 light years. The radius of this star is 20 solar radii and its surface temperature is 7200 Kelvin, and the size of Sargas is 3.7 solar masses, or 3.7 times the size of our sun.",ge-mob-pages
+Sazel Ciloc the Divine,362372,2012-07-12T23:49:22Z,0,Sazel Ciloc the Divine,Ixal,,,,Gladiator,,Wind,,Y,,Y,59,,,,,,Y,Y,,,ge-mob-pages
+Scalepuk,341903,2011-09-19T03:10:30Z,0,Scalepuk,Puk,,,,,,Wind,,,,,10,26,214,586,322,506,,,,,ge-mob-pages
+Scarred Kalong,496247,2012-09-26T01:30:28Z,0,Scarred Kalong,Bat,,Kalong,,,,Wind,,x,,,45,49,1987,2150,819,885,,,,,ge-mob-pages
+Scarred Watchwolf,299988,2012-05-30T21:03:37Z,0,Scarred Watchwolf,Wolf,,,,,,,,Yes,,,59,59,,,,,,,,,ge-mob-pages
+Scout Vulture,499730,2012-06-08T02:43:39Z,0,Scout Vulture,Vulture,Vulture,,,,,Wind,,x,,,50,54,1900,2056,902,975,,,"Aggro by sight, not sound.",,ge-mob-pages
+Scout Wolf,82771,2012-07-12T23:49:43Z,0,Scout Wolf,Wolf,,,,,,Lightning,,Yes,,,50,,,,,,,,,,ge-mob-pages
+Scrambling Spriggan,38407,2012-08-08T18:56:13Z,0,Scrambling Spriggan,Spriggan,,,,,,,,,P,,20,,887,,2135,,True,True,,,ge-mob-pages
+Screamer,499979,2011-09-21T01:15:07Z,0,Screamer,Funguar,,,,,,,,,,,65,69,5106,5524,1206,1304,,,,,ge-mob-pages
+Screaming Kalong,161085,2012-09-30T04:29:59Z,0,Screaming Kalong,Bat,,Kalong,,,,Wind,,x,,,40,44,1802,1949,744,803,,,,,ge-mob-pages
+Screecher,498012,2011-09-21T01:30:22Z,0,Screecher,Funguar,,,,,,Ice,,,,,55,59,4193,4536,994,1074,,,,,ge-mob-pages
+Scurrying Spriggan,38238,2012-08-08T18:56:20Z,0,Scurrying Spriggan,Spriggan,,,,,,,,,P,,30,,1188,,2840,,True,True,,,ge-mob-pages
+Sea Hare,334031,2011-09-23T20:00:08Z,0,Sea Hare,Slug,,,,,,Water,,,,,35,44,3279,4027,657,803,,,,,ge-mob-pages
+Sea Puk,271497,2011-09-19T03:13:17Z,0,Sea Puk,Puk,,,,,,Wind,,,,,25,29,1105,1242,492,552,,,,,ge-mob-pages
+Sea Wasp,488225,2011-09-23T14:46:44Z,0,Sea Wasp,Aurelia,,,,,,Water,,x,,,55,59,2742,2966,994,1074,,,,,ge-mob-pages
+Ser Aucheforne of the High Tide,475635,2010-11-23T21:39:31Z,0,Ser Aucheforne of the High Tide,Enemy Humanoid,,,Quest,,,,,,,,,,,,,,,,,,ge-mob-pages
+Serpent Reaver Claw,3331,2012-09-30T04:49:23Z,0,Serpent Reaver Claw,Enemy Humanoid,,,,Gladiator,,,,y,,,45,45,,,,,,,,,ge-mob-pages
+Serpent Reaver Eye,3469,2012-09-30T04:47:13Z,0,Serpent Reaver Eye,Enemy Humanoid,,,,Archer,,,,y,,,45,45,,,,,,,,,ge-mob-pages
+Serpent Reaver Fin,3200,2012-09-30T04:48:21Z,0,Serpent Reaver Fin,Enemy Humanoid,,,,Marauder,,,,Y,,,45,45,,,,,,,,,ge-mob-pages
+Sewer Mole,361266,2012-05-30T03:03:55Z,0,Sewer Mole,Mole,,,,,,Earth,Water,,,,1,9,793,1079,230,310,,,,,ge-mob-pages
+Shade Lurker,28331,2012-02-26T03:18:05Z,0,Shade Lurker,Wisp,,,,,,Fire,,Yes,,,15,16,245,269,1500,1855,,,Found on Map 2 after one or more Shade Seekers enter the clam at Black Nook.,,ge-mob-pages
+Shade Seeker,26936,2012-05-12T04:38:51Z,0,Shade Seeker,Wisp,,,,,,Fire,,,,,15,,245,,1500,,Yes,Yes,"Spawns in groups of 4 out of the clam at (5-4) on Map 1, and then travels down to (4-4) on Map 2 where it enters another clam. This clam then spawns groups of 12 Shade Lurkers for a set amount of time, depending on how many Shade Seekers made it to the clam. Can't be killed and will not engage a player, but will disappear if it loses enough health.",,ge-mob-pages
+Shadow Lurker,28467,2012-09-26T20:07:28Z,0,Shadow Lurker,Wisp,,,,,,Fire,,Yes,,,16,17,269,288,1600,1905,,,Found on Map 3 after one or more Shadow Seekers enter the clam at Llymlaen's Resolve.,,ge-mob-pages
+Shadow Seeker,27226,2012-05-12T04:39:21Z,0,Shadow Seeker,Wisp,,,,,,Fire,,,,,15,,245,,1500,,Yes,Yes,"Spawns in groups of 4 out of the clam at (5-4) on Map 1, and then travels down to (6-5) on Map 3 where it enters another clam. This clam then spawns groups of 12 Shadow Lurkers for a set amount of time, depending on how many Shadow Seekers made it to the clam. Can't be killed and will not engage a player, but will disappear if it loses enough health.",,ge-mob-pages
+Shaggy Wolf,292696,2011-09-19T00:29:56Z,0,Shaggy Wolf,Wolf,,,,,,Lightning,Earth,,,,20,40,369,1009,427,744,,,,,ge-mob-pages
+Shaula,43044,2012-05-20T01:07:55Z,0,Shaula,Diremite,,,NM,,Female,,,x,,x,40,40,,,,,,,*Shaula appears in the Interrogation (northern) Chamber of The Thousand Maws of Toto-Rak. *Spawns a number of chests after defeat. Rewards vary by tasks accomplished in the raid.,"Lambda Scorpii (? Sco, ? Scorpii) is the second brightest star system in the constellation Scorpius, and one of the brightest stars in the nighttime sky. It has the Bayer designation ? despite being the second brightest in its constellation. It has the traditional name Shaula, which comes from the Arabic ??????? al-šawla-´ meaning the raised [tail], as it is found in the tail of the scorpion (Scorpius). (From wikipedia.org.)",ge-mob-pages
+Shearing Sheridan,26690,2012-08-09T16:28:08Z,0,Shearing Sheridan,Crab,,,,,,Water,,Yes,"A, H",Yes,20,,2870,,400,,,,Found on Map 2.,,ge-mob-pages
+Shore Slug,290724,2012-05-29T05:05:49Z,0,Shore Slug,Slug,,,,,,Water,,,,,25,34,2210,2876,492,638,,,,,ge-mob-pages
+Shroud Bee Swarm,64708,2012-10-31T04:11:34Z,0,Shroud Bee Swarm,Swarm,Bees,,,,,Wind,,x,,,17,17,,,,,,,,,ge-mob-pages
+Shroud Hare,406060,2012-09-26T01:31:07Z,0,Shroud Hare,Slug,,,,,,Water,,,,,40,44,3724,4027,744,803,,,,,ge-mob-pages
+Shroud Shrew,62733,2012-10-24T00:44:00Z,0,Shroud Shrew,Mole,,,,,,Earth,,,,,10,16,,,,,,,,,ge-mob-pages
+Shuffling Spriggan,38601,2012-08-08T18:57:35Z,0,Shuffling Spriggan,Spriggan,,,,,,,,,P,,10,,663,,1610,,True,True,,,ge-mob-pages
+Sirocco,211774,2012-09-29T07:39:39Z,0,Sirocco,Antelope,,,,,Female,Earth,,,,x,42,,28739,,773,,,,,,ge-mob-pages
+Skeleton Soldier,497638,2012-09-26T01:34:00Z,0,Skeleton Soldier,Wight,,,,,,Ice,,,,,40,44,2402,2598,744,803,,,,,ge-mob-pages
+Skeleton Swordbearer,57244,2012-05-30T03:26:41Z,0,Skeleton Swordbearer,Wight,,,,,,Ice,,x,,,35,39,2115,2344,657,726,,,,,ge-mob-pages
+Skulking Wolf,422204,2012-04-19T00:56:10Z,0,Skulking Wolf,Wolf,,,,,,Lightning,Earth,,,,30,54,494,1329,568,975,,,,,ge-mob-pages
+Slippery Sykes,217951,2012-08-18T21:52:30Z,0,Slippery Sykes,Slug,,,,,,Water,,,,x,36,,15246,,676,,,,,,ge-mob-pages
+Slithering Slug,326323,2012-06-03T16:55:40Z,0,Slithering Slug,Slug,,,,,,Water,,,,,45,45,,,,,,,,,ge-mob-pages
+Smoke Bomb,41656,2012-09-30T04:52:11Z,0,Smoke Bomb,Bomb,,,,,,Fire,,,,,40,44,2162,2339,3720,4015,,,,,ge-mob-pages
+Smolenkos,417225,2011-09-25T01:01:16Z,0,Smolenkos,Ahriman,,,,,,Earth,,x,,,75,84,7411,8848,7330,8735,,,,,ge-mob-pages
+Snapping Shrew,494675,2012-05-30T03:04:19Z,0,Snapping Shrew,Mole,,,,,,Earth,,,,,1,21,793,1079,230,310,,,,,ge-mob-pages
+Snipper,342344,2012-08-09T16:28:13Z,0,Snipper,Crab,,,,,,Water,,x,"A, H",,60,69,3558,4249,1095,1304,,,,,ge-mob-pages
+Snowbuck Stag,501912,2012-08-08T19:23:39Z,0,Snowbuck Stag,Antelope,,,,,Male,Earth,,x,"A, S",,55,59,3064,3315,994,1074,,,,,ge-mob-pages
+Snurble,320381,2011-09-24T01:35:23Z,0,Snurble,Snurble,,,,"Thaumaturge, Conjurer",,Lightning,,,,,60,69,3914,4674,5475,6520,,,Snurbles will heal you if you are injured. They will also cast protect on you.,,ge-mob-pages
+Sordes (1.X),499894,2012-09-26T01:17:30Z,0,Sordes,Puk,,,,,,Wind,,,,,40,44,1682,1819,744,803,,,,,ge-mob-pages
+Sotted Simian,376899,2012-06-23T20:40:07Z,0,Sotted Simian,Opo-Opo,,,,,,Fire,,,,,30,42,,,,,,,,,ge-mob-pages
+Soulgazer,323728,2012-08-07T18:49:57Z,0,Soulgazer,Ahriman,,,,,,,,,P,X,N/A,,N/A,,N/A,,,,"Soulgazer is invulnerable to all harm. It will patrol a specific sector of The Dzemael Darkhold relative to how much progress the party has made. At particular locations, it will pause briefly and cast Death Throes, regardless of whether or not there are players near the location at the time.",,ge-mob-pages
+Spawning Orobon,28704,2012-09-26T20:06:01Z,0,Spawning Orobon,Angler,Orobon,,,,,Water,,Yes,,,16,19,316,385,320,401,,,,,ge-mob-pages
+Spelaean Slug,265098,2012-02-26T02:49:45Z,0,Spelaean Slug,Slug,,,,,,Water,,Yes,,,16,19,316,385,320,401,,,,,ge-mob-pages
+Sphene Doblyn (1.0),494040,2012-04-30T01:09:07Z,0,Sphene Doblyn,Coblyn,,Doblyn,,,,Earth,Water,,,,50,59,585,1745,902,1074,,,,,ge-mob-pages
+Spindiggle,309985,2012-05-28T01:12:23Z,0,Spindiggle,Spriggan,,,,Conjurer,,,,Y,,,55,55,,,,,,,,,ge-mob-pages
+Spinesnap Ogre,502088,2011-09-24T02:01:24Z,0,Spinesnap Ogre,Ogre,,,,,,Fire,,x,,,80,84,10289,11131,1616,1747,,,,,ge-mob-pages
+Spiny Dormouse,495810,2012-09-26T01:12:53Z,0,Spiny Dormouse,Rodent,,,,,,Earth,,,,,45,49,2649,2866,819,885,,,,,ge-mob-pages
+Spirit of the Wood,409211,2011-09-18T06:04:37Z,0,Spirit of the Wood,Elemental,,,,,,,,Yes,,,28,,2930,,2680,,,,"The elemental type, or ""aspect"", for this elemental will vary periodically throughout the fight and will cast spells that correspond with its current element.",,ge-mob-pages
+Spiteful (1.x),309888,2012-05-28T01:00:11Z,0,Spiteful,Spriggan,,,,Conjurer,,,,Y,,Y,55,55,,,,,,,Wanders Turning Leaf very likely to aggro while killing other NMs for A Feast of Fools,,ge-mob-pages
+Spitfire,219779,2012-07-12T14:04:00Z,0,Spitfire,Spriggan,,,,,,Lightning,,Yes,,Yes,47,,25346,,25530,,,,"Hits very hard when it uses magical attacks; bringing an extra healer is advised, even at higher ranks.","The word spitfire is often used to describe someone who is easily angered. As spriggans are known to be more of a mischievous nuisance than a real threat, Spitfire's name serves as a warning that he is not to be taken so lightly.",ge-mob-pages
+Spriggan,279184,2012-05-30T03:26:55Z,0,Spriggan,Spriggan,,,,,,Lightning,Earth,Yes,,,5,30,115,1188,1335,2840,,,,,ge-mob-pages
+Spriggan Bezzler,377291,2012-06-23T20:51:55Z,0,Spriggan Bezzler,Spriggan,,,,,,,,,,,30,42,,,,,,,,,ge-mob-pages
+Spriggan Collector,421321,2012-05-30T03:55:39Z,0,Spriggan Collector,Spriggan,,,,,,Lightning,,Yes,,,5,14,463,859,1335,1800,,,,,ge-mob-pages
+Sprinting Spriggan,38083,2012-08-08T18:58:50Z,0,Sprinting Spriggan,Spriggan,,,,,,,,,P,,40,,1562,,3720,,True,True,,,ge-mob-pages
+Star Marmot,465868,2011-09-18T03:04:31Z,0,Star Marmot,Rodent,,,,,,Earth,Water,,,,1,3,720,777,230,248,,,Resistance to Stone,,ge-mob-pages
+Steropes,29044,2012-07-28T21:25:19Z,0,Steropes,Cyclopes,,,,,,,,Y,,Y,55,,,,,,Y,Y,Spawns after Bixie is defeated or after 15 minutes pass.,,ge-mob-pages
+Stollenwurm,295149,2012-05-19T13:46:19Z,0,Stollenwurm,Drake,,,,,,fire,,x,,,53,53,,,,,,,,,ge-mob-pages
+Stone Golem,29179,2012-07-28T21:28:01Z,0,Stone Golem,Golem,,,,,,Earth,Water,Y,,Y,55,,,,,,Y,Y,"Spawns after Steropes is defeated, or 20 minutes pass. Highly resistant to Lightning damage.",,ge-mob-pages
+Stoneshell,495511,2011-09-23T18:31:22Z,0,Stoneshell,Crab,,,,,,Water,,,,,35,39,2115,2344,657,726,,,,,ge-mob-pages
+Storm Biast,317390,2011-09-19T01:13:37Z,0,Storm Biast,Drake,,,,,,,,x,,,70,74,4333,4688,1330,1438,,,,,ge-mob-pages
+Stormcry Boatswain,62973,2012-10-24T19:42:35Z,0,Stormcry Boatswain,Enemy Humanoid,,,,Marauder,Male,,,y,,,30,30,,,,,,,,,ge-mob-pages
+Stormcry Powder Monkey,63037,2012-10-24T19:42:49Z,0,Stormcry Powder Monkey,Enemy Humanoid,,,,Archer,Male,,,y,,,30,30,,,,,,,,,ge-mob-pages
+Stormcry Quartermaster,63103,2012-10-24T19:43:35Z,0,Stormcry Quartermaster,Enemy Humanoid,,,,Gladiator,Male,,,y,,,30,30,,,,,,,,,ge-mob-pages
+Stray Dodo,280816,2012-03-18T00:58:40Z,0,Stray Dodo,Cockatrice,Dodo,,,,,Wind,,,,,15,31,590,1223,370,585,,,Usually spawns in groups of two. Attacking one in the group will cause both to become aggressive.,,ge-mob-pages
+Stray Karakul Ewe,475394,2011-09-18T23:49:06Z,0,Stray Karakul Ewe,Ram,,,,,Female,Wind,,,,,30,54,439,1234,568,975,,,,,ge-mob-pages
+Stray Karakul Ram,475379,2011-09-18T23:49:45Z,0,Stray Karakul Ram,Ram,,,,,Male,Wind,,,,,30,54,439,1234,568,975,,,,,ge-mob-pages
+Stuffed Dodo,60264,2012-10-01T03:33:10Z,0,Stuffed Dodo,Cockatrice,,Dodo,,,,,,,,,15,15,,,,,,,,,ge-mob-pages
+Stumbling Funguar,467860,2011-09-21T01:32:03Z,0,Stumbling Funguar,Funguar,,,,,,Ice,,,,,3,15,272,590,248,370,,,,,ge-mob-pages
+Sulfur Slug,331249,2012-06-06T20:55:18Z,0,Sulfur Slug,Slug,,,,,,Water,,Y,,,52,,,,,,,,,,ge-mob-pages
+Sultan's Trumpet,498453,2012-05-30T03:05:14Z,0,Sultan's Trumpet,Mole,,,,,,Earth,,,,,15,19,1297,1458,370,415,,,,,ge-mob-pages
+Sultansworn Elite (Mob),324767,2012-06-01T22:22:30Z,0,Sultansworn Elite,Enemy Humanoid,Hyur,,,Paladin,Male,,,Y,,,50,50,,,,,Y,Y,,,ge-mob-pages
+Sun Midge Swarm,62790,2012-10-24T05:30:33Z,0,Sun Midge Swarm,Swarm,,Midges,,,,Wind,,Y,,,6,6,,,,,,,,,ge-mob-pages
+Sundrake,494405,2012-04-30T01:23:49Z,0,Sundrake,Drake,,,,,,Fire,,x,,,60,64,3558,3850,1095,1183,,,,,ge-mob-pages
+Sure-footed Billygoat,474642,2011-09-17T01:23:37Z,0,Sure-footed Billygoat,Aldgoat,,,,,Male,Earth,,,,,40,68,865,2125,744,1279,,,,,ge-mob-pages
+Surf Eft,42664,2011-09-19T23:55:58Z,0,Surf Eft,Salamander,,,,,,Water,,x,,,55,59,5967,6455,994,1074,,,,,ge-mob-pages
+Sylph Susurrus,504890,2011-09-20T02:24:39Z,0,Sylph Susurrus,Sylph,,,,Conjurer,,Lightning,,,,,40,44,3363,3638,3720,4015,,,,,ge-mob-pages
+Syrphid Cloud,437169,2012-03-18T01:10:40Z,0,Syrphid Cloud,Swarm,,Syrphids,,,,Wind,,,,,15,54,177,1044,370,975,,,,,ge-mob-pages
+Syrphid Swarm,359673,2012-08-16T21:23:11Z,0,Syrphid Swarm,Swarm,,Syrphids,,,,Wind,,,,,15,24,354,920,370,478,,,Attacks have additional effect: TP Bleed (Status Effect) on them.,,ge-mob-pages
+Tainted Louse,295899,2012-05-20T00:53:57Z,0,Tainted Louse,Chigoe,,,,,,,,Y,,,39,39,,,,,,,,,ge-mob-pages
+Tarbh Uisge,20440,2011-09-17T20:12:22Z,0,Tarbh Uisge,Buffalo,,,,,,Earth,,x,,,60,,32022,,1095,,,,,,ge-mob-pages
+Tempered Captive,301204,2012-05-21T06:36:03Z,0,Tempered Captive,Hyur,,,,Thaumaturge,Male,,,,,x,,,,,,,,,"These come in to different varieties, but both are Thaumaturges.",,ge-mob-pages
+Tempest Biast,308510,2011-09-19T01:17:28Z,0,Tempest Biast,Drake,,,,,,,,x,,,75,79,4781,5173,1466,1585,,,,,ge-mob-pages
+Territorial Angler,308195,2012-05-24T19:44:20Z,0,Territorial Angler,Angler,,,,,,,,Y,,,50,50,,,,,,,,,ge-mob-pages
+Territorial Antling,374063,2012-06-20T23:46:41Z,0,Territorial Antling,Antling,,,,,,Earth,,Y,,,27,,,,,,,,,,ge-mob-pages
+Territorial Chiglet,331288,2012-06-06T20:57:50Z,0,Territorial Chiglet,Chigoe,,,,,,,,Y,,,25,,,,,,,,,,ge-mob-pages
+Territorial Coblyn,374105,2012-06-20T23:48:25Z,0,Territorial Coblyn,Coblyn,,,,,,Earth,,,,,25,,,,,,,,,,ge-mob-pages
+Territorial Digger,308257,2012-06-14T01:19:49Z,0,Territorial Digger,Antling,,,,,,Earth,,Y,,,50,,,,,,,,,,ge-mob-pages
+Territorial Dreadwolf,326501,2012-06-03T17:06:18Z,0,Territorial Dreadwolf,Wolf,,,,,,Lightning,Earth,Y,,,46,46,,,,,,,,,ge-mob-pages
+Territorial Galago,331337,2012-06-06T21:00:54Z,0,Territorial Galago,Opo-opo,,,,,,Earth,,,,,27,,,,,,,,,,ge-mob-pages
+Territorial Gnat,308157,2012-06-14T01:19:14Z,0,Territorial Gnat,Gnat,,,,,,Lightning,,Y,,,48,,,,,,,,,,ge-mob-pages
+Territorial Hog,326723,2012-06-03T17:21:03Z,0,Territorial Hog,Boar,,,,,,,,Y,,,50,50,,,,,,,,,ge-mob-pages
+Territorial Megalocrab,374177,2012-08-09T16:28:12Z,0,Territorial Megalocrab,Crab,,,,,,Water,,A,"A, H",,48,,,,,,,,,,ge-mob-pages
+Territorial Raptor,374234,2012-06-21T00:11:01Z,0,Territorial Raptor,Raptor,,,,,,Fire,,Y,,,50,,,,,,,,,,ge-mob-pages
+Territorial Roselet,326684,2012-06-03T17:18:27Z,0,Territorial Roselet,Landtrap,Roselet,,,,,Earth,,Y,,,48,48,,,,,,,,,ge-mob-pages
+Territorial Scavenger,374313,2012-06-21T00:13:18Z,0,Territorial Scavenger,Yarzon,Bog Yarzon,,,,,Earth,,Y,,,46,,,,,,,,,,ge-mob-pages
+Territorial Wolf,331410,2012-06-06T21:02:53Z,0,Territorial Wolf,Wolf,,,,,,Lightning,,Y,,,29,,,,,,,,,,ge-mob-pages
+Territorial Yarzon,374471,2012-06-21T00:16:52Z,0,Territorial Yarzon,Yarzon,,,,,,Earth,,Y,,,29,,,,,,,,,,ge-mob-pages
+Thickshell,498119,2011-09-23T18:42:10Z,0,Thickshell,Crab,,,,,,Water,Lightning,,,,25,34,1578,2054,492,638,,,,,ge-mob-pages
+Third Order Patriarch Zu Ga,40879,2012-08-09T17:18:15Z,0,Third Order Patriarch Zu Ga,Kobold,,,,,,Earth,,Yes,,Yes,59,59,,,,,,,,,ge-mob-pages
+Thistletail Marmot,497441,2012-05-29T23:14:21Z,0,Thistletail Marmot,Rodent,,,,,,Earth,Water,,,,10,19,1019,1325,322,415,,,Resistance to Stone,,ge-mob-pages
+Thorned Roseling,399135,2012-05-29T05:14:32Z,0,Thorned Roseling,Landtrap,,Roseling,,,,Wind,,x,,,20,29,887,1154,427,552,,,,,ge-mob-pages
+Tiny Dormouse,359237,2011-09-18T03:11:10Z,0,Tiny Dormouse,Rodent,,,,,,Earth,,,,,35,39,2115,2344,657,726,,,,,ge-mob-pages
+Toad Poacher,495728,2012-09-26T01:19:43Z,0,Toad Poacher,Enemy Humanoid,Miqo'te,,,Pugilist,Female,,,Yes,,,35,44,,,,,,,,,ge-mob-pages
+Toadsquatter Femomo,28154,2010-11-23T21:41:31Z,0,Toadsquatter Femomo,Enemy Humanoid,,,Quest,,,,,,,,,,,,,,,,,,ge-mob-pages
+Toadstool,473575,2012-05-01T00:51:44Z,0,Toadstool,Funguar,,,,,,Ice,,,,,50,54,3800,4111,902,975,,,,,ge-mob-pages
+Toadtrap,329055,2012-09-29T07:32:43Z,0,Toadtrap,Landtrap,,,,,,Earth,,Y,,,31,32,,,,,,,,,ge-mob-pages
+Toothless Gladiator,309296,2012-05-26T07:27:08Z,0,Toothless Gladiator,Enemy Humanoid,Hyur,,,Gladiator,,,,Y,,Y,20,20,300,300,,,Y,Y,,,ge-mob-pages
+Tourney Gladiator,505457,2011-07-13T22:18:58Z,0,Tourney Gladiator,Enemy Humanoid,,,Quest,Gladiator,Male,,,,,,,,,,,,,,"*Aggros immediately when entering the battle. *Uses Light Slash, Light Stab, and Red Lotus *He is undefeatable. If you reduce him to 1% HP, he will continue to take damage, but will never drop to 0. The fight ends when you are reduced to red HP.",,ge-mob-pages
+Toxic Flytrap,28604,2011-10-24T05:58:47Z,0,Toxic Flytrap,Landtrap,,Flytrap,,,,Wind,,,,,40,68,841,2083,744,1279,,,,,ge-mob-pages
+Toxic Toad,363997,2011-09-20T00:15:59Z,0,Toxic Toad,Toad,,,,,,Water,,x,,,45,54,3047,3637,819,975,,,Detects by sight.,,ge-mob-pages
+Trancetoad,327122,2012-06-03T18:29:03Z,0,Trancetoad,Toad,,,,,,Water,,Y,,,40,52,,,,,,,,,ge-mob-pages
+Tree Slug,298914,2012-05-20T18:32:47Z,0,Tree Slug,Slug,,,,,,Water,,,,,27,29,,,,,,,"Even while passive, will occasionally use Viscous Discharge, hitting anyone within range.",,ge-mob-pages
+Truffle Hog,491856,2012-05-30T03:45:54Z,0,Truffle Hog,Boar,,,,,,Fire,,x,,,50,59,4239,5060,902,1074,,,"Has a very small sight and sound aggro radius, unlike the Wild Hog.",,ge-mob-pages
+Tuco-tuco,497776,2012-04-30T20:39:28Z,0,Tuco-tuco,Mole,,,,,,Earth,,,,,45,54,3312,3953,819,975,,,,,ge-mob-pages
+Turquoise Dewflower Sylph,364686,2011-09-20T02:21:33Z,0,Turquoise Dewflower Sylph,Sylph,,,,,,Wind,,,,,30,50,768,1667,2840,4510,,,,,ge-mob-pages
+Tusked Hog,80125,2012-09-26T03:59:32Z,0,Tusked Hog,Boar,,,,,,Fire,,,,,40,68,1057,2458,744,1279,,,,,ge-mob-pages
+U'Ghamaro Ashman,423677,2012-02-20T05:40:43Z,0,U'Ghamaro Ashman,Kobold,,,,Gladiator,,Earth,,Yes,,,55,,11205,,862,,,,,,ge-mob-pages
+U'Ghamaro Gateman,10417,2012-02-23T06:59:26Z,0,U'Ghamaro Gateman,Kobold,,,,Marauder,,Earth,,Yes,,,56,57,3354,12495,878,4200,,,Guards gates in U'Ghamaro Mines. Will not respawn until all of the guards on a particular gate are killed.,,ge-mob-pages
+U'Ghamaro Gurneyman,10228,2012-02-23T06:57:30Z,0,U'Ghamaro Gurneyman,Kobold,,,,Conjurer,,Earth,,Yes,,,52,57,2686,12495,4080,21000,,,Guards gates in U'Ghamaro Mines. Will not respawn until all of the guards on a particular gate are killed.,,ge-mob-pages
+U'Ghamaro Junkman,10508,2012-02-23T07:01:19Z,0,U'Ghamaro Junkman,Kobold,,,,Marauder,,Earth,,Yes,,,53,56,2842,3354,831,3400,,,,,ge-mob-pages
+U'Ghamaro Overman,415681,2012-02-23T06:33:54Z,0,U'Ghamaro Overman,Kobold,,,,Gladiator,,Earth,,Yes,,,55,,11205,,862,,,,,,ge-mob-pages
+U'Ghamaro Underman,415646,2012-02-16T06:03:19Z,0,U'Ghamaro Underman,Kobold,,,,Conjurer,,Earth,,Yes,,,50,,2393,,3930,,,Yes,,,ge-mob-pages
+Uncommon Cactuar,448312,2011-09-21T00:52:42Z,0,Uncommon Cactuar,Cactuar,,,,,,Lightning,,,,,30,54,366,1107,568,975,,,,,ge-mob-pages
+Unknown Soldier,218248,2012-07-13T17:48:09Z,0,Unknown Soldier,Ghost,,,,Thaumaturge,,Ice,Fire,x,,x,47,,"19,285",,"25,530",,,,"Can teleport to players highest on hate list. TP move ""Curse"" resets hate.",,ge-mob-pages
+Uraeus,11557,2012-07-27T21:25:40Z,0,Uraeus,Basilisk,,,,,,Fire,,x,,x,62,65,32767,,1138,1206,,,Spawns at night time (after 20:00),,ge-mob-pages
+Vale Diremite,331483,2012-06-06T21:10:13Z,0,Vale Diremite,Diremite,,,,,,Earth,,Y,,,54,,,,,,,,,,ge-mob-pages
+Vale Wasp,331593,2012-06-06T21:10:09Z,0,Vale Wasp,Aurelia,,,,,,Water,,Y,,,53,,,,,,,,,,ge-mob-pages
+Velociraptor,58265,2011-09-19T03:41:14Z,0,Velociraptor,Raptor,,,,,,Fire,,x,,,65,74,4124,4923,1206,1438,,,,,ge-mob-pages
+Venomtongue Assassin,400109,2012-05-29T01:52:01Z,0,Venomtongue Assassin,Enemy Humanoid,Lalafell,,,Thaumaturge,Male,,,Y,,,20,52,,,,,,,,,ge-mob-pages
+VIIth Legion Centurion,355322,2012-07-23T07:30:18Z,0,VIIth Legion Centurion,Enemy Humanoid,Hyur,,,Gladiator,Male,,,Y,,,57,,,,,,,,"Plays an audio clip upon defeat, stating that ""My death means nothing, the empire will prevail.""",,ge-mob-pages
+VIIth Legion Eques,355070,2012-06-09T03:41:34Z,0,VIIth Legion Eques,Enemy Humanoid,,,,Lancer,,,,Y,,,54,55,,,,,,,,,ge-mob-pages
+VIIth Legion Hoplomachus,355213,2012-06-09T03:44:57Z,0,VIIth Legion Hoplomachus,Enemy Humanoid,,,,Gladiator,,,,Y,,,54,55,,,,,,,,,ge-mob-pages
+VIIth Legion Laquearius,355162,2012-06-09T03:44:00Z,0,VIIth Legion Laquearius,Enemy Humanoid,,,,Marauder,,,,Y,,,54,55,,,,,,,,,ge-mob-pages
+VIIth Legion Medicus,355261,2012-06-09T03:45:32Z,0,VIIth Legion Medicus,Enemy Humanoid,,,,Conjurer,,,,Y,,,54,55,,,,,,,,,ge-mob-pages
+VIIth Legion Sagitarius,355111,2012-06-09T03:41:23Z,0,VIIth Legion Sagitarius,Enemy Humanoid,,,,Archer,,,,Y,,,54,55,,,,,,,,,ge-mob-pages
+VIIth Legion Secutor,355008,2012-06-09T03:39:58Z,0,VIIth Legion Secutor,Enemy Humanoid,,,,Pugilist,,,,Y,,,54,55,,,,,,,,,ge-mob-pages
+VIIth Legion Signifer,354966,2012-06-09T03:39:18Z,0,VIIth Legion Signifer,Enemy Humanoid,,,,Thaumaturge,,,,Y,,,54,55,,,,,,,,,ge-mob-pages
+Vile Gnat,363096,2012-05-27T16:24:06Z,0,Vile Gnat,Gnat,,Gnat,,,,Lightning,,x,,,30,54,585,1487,2840,4875,,,,,ge-mob-pages
+Void Flame,296011,2012-05-20T00:51:20Z,0,Void Flame,Wisp,,,,,,Fire,,Y,,,39,39,,,,,,,,,ge-mob-pages
+Void Lantern,251440,2012-04-30T22:24:09Z,0,Void Lantern,Wisp,,,,,,Fire,,Yes,,,,,,,,,Yes,Yes,,,ge-mob-pages
+Voidtongue Ahzabb Chah,4319,2012-08-30T03:21:24Z,0,Voidtongue Ahzabb Chah,Amalj'aa,,,,,,Fire,,x,,x,,,,,,,,,He spawns in a cave not shown on the Thanalan map. The entrance is at the very bottom of the map by the border between 18-36 and 19-36. He seems to be about level 30.,,ge-mob-pages
+Vulture,62914,2012-10-24T07:40:25Z,0,Vulture,Vulture,Vulture,,,,,,,x,,,45,49,,,,,,,,,ge-mob-pages
+Vulture Poacher,501222,2012-04-19T00:57:50Z,0,Vulture Poacher,Enemy Humanoid,,,,Archer,Female,,,,,,,,,,,,,,Agressive,,ge-mob-pages
+Vulturetrap,495681,2011-10-24T05:47:52Z,0,Vulturetrap,Landtrap,,Flytrap,,,,Wind,,,,,40,44,1682,1819,744,803,,,,,ge-mob-pages
+Wadjet,28852,2012-07-28T21:21:06Z,0,Wadjet,Basilisk,,,,,,,,Y,,Y,55,,,,,,Y,Y,"Spawns after Greater Buffalo is defeated, or after 5 minutes pass.",,ge-mob-pages
+Wandering Bogy,322858,2012-06-01T04:40:42Z,0,Wandering Bogy,Ghost,,,,,,Ice,,Y,,,32,32,,,,,,,,,ge-mob-pages
+Wandering Mage,322708,2012-06-01T04:39:01Z,0,Wandering Mage,Fomor,,,,Thaumaturge,,,,Y,,,34,34,,,,,,,,,ge-mob-pages
+Wandering Soldier,322900,2012-06-01T04:41:56Z,0,Wandering Soldier,Fomor,,,,Lancer,,,,Y,,,34,34,,,,,,,,,ge-mob-pages
+Wandering Wight,310611,2012-06-11T20:53:51Z,0,Wandering Wight,Wight,,,,Gladiator,,Ice,,Y,,,35,,,,,,,,,,ge-mob-pages
+Wandering Wisp,359900,2012-06-01T04:36:08Z,0,Wandering Wisp,Wisp,,Wisp,,,,Fire,,x,,,30,54,439,1234,2840,4875,,,,,ge-mob-pages
+Watchwolf,299829,2012-05-21T02:27:31Z,0,Watchwolf,Wolf,,,,,,,,Yes,,,50,55,,,,,,,,,ge-mob-pages
+Water Elemental,439456,2012-09-30T04:35:25Z,0,Water Elemental,Elemental,,,,,,Water,Lightning,Yes,,,30,79,1827,5173,2840,7925,x,,,,ge-mob-pages
+Waterdog,3949,2011-09-19T23:57:49Z,0,Waterdog,Salamander,,,,,,Ice,,x,,,75,79,8128,8795,1466,1585,,,,,ge-mob-pages
+Wayside Archer,326052,2012-06-03T17:10:52Z,0,Wayside Archer,Enemy Humanoid,Miqo'te,,,Archer,Female,,,Y,,,48,48,,,,,,,,,ge-mob-pages
+Wayside Backstabber,362514,2012-06-14T00:51:36Z,0,Wayside Backstabber,Enemy Humanoid,,,,Gladiator,,,,Y,,,48,,,,,,,,,,ge-mob-pages
+Wayside Bewitcher,308104,2012-06-14T00:15:45Z,0,Wayside Bewitcher,Enemy Humanoid,,,,Thaumaturge,,,,Y,,,48,,,,,,,,,,ge-mob-pages
+Wayside Bludgeoner,308040,2012-06-14T00:18:39Z,0,Wayside Bludgeoner,Enemy Humanoid,,,,Pugilist,,,,Y,,,48,,,,,,,,,,ge-mob-pages
+Wayside Boarder,374598,2012-06-21T00:20:32Z,0,Wayside Boarder,Enemy Humanoid,Roegadyn,,,Gladiator,,,,Y,,,48,,,,,,,,,,ge-mob-pages
+Wayside Lancer,326588,2012-06-03T17:12:27Z,0,Wayside Lancer,Enemy Humanoid,Hyur,,,Lancer,,,,Y,,,48,48,,,,,,,,,ge-mob-pages
+Wayside Pugilist,326546,2012-06-03T17:11:01Z,0,Wayside Pugilist,Enemy Humanoid,Miqo'te,,,Pugilist,,,,Y,,,48,48,,,,,,,,,ge-mob-pages
+Wayside Raider,374559,2012-06-21T00:20:57Z,0,Wayside Raider,Enemy Humanoid,Roegadyn,,,Marauder,,,,Y,,,48,,,,,,,,,,ge-mob-pages
+Wayside Sniper,374515,2012-06-21T00:21:05Z,0,Wayside Sniper,Enemy Humanoid,Roegadyn,,,Archer,,,,Y,,,48,,,,,,,,,,ge-mob-pages
+Wendigo,249055,2012-04-30T01:14:04Z,0,Wendigo,Wight,,,,,,Earth,,Yes,,,56,56,,,,,,,,,ge-mob-pages
+Westroad Footpad,351041,2010-11-23T18:16:51Z,0,Westroad Footpad,Enemy Humanoid,,,Normal,Gladiator,Male,,,,,,,,,,,,,,,,ge-mob-pages
+Westroad Raider,63255,2012-10-24T20:44:00Z,0,Westroad Raider,Enemy Humanoid,,,,Archer,Male,,,,,,31,31,,,,,,,,,ge-mob-pages
+Wharf Rat,343197,2012-05-29T05:10:06Z,0,Wharf Rat,Rodent,,,,,,Earth,Water,,,,1,9,720,980,230,310,,,,,ge-mob-pages
+Whiskerwall Kupdi Koop,248078,2012-06-06T16:26:18Z,0,Whiskerwall Kupdi Koop,Moogle,,,,Gladiator,Male,,,Yes,,Yes,50,,,,,,Yes,Yes,Uses Whisker Bash and grants Good King Moggle Mog XII the ability to use Whisker Bash after death.,,ge-mob-pages
+Whitetalon,159963,2012-04-30T21:17:24Z,0,Whitetalon,Hippogryph,,,,,,,,Yes,,Yes,46,46,,,,,,,Spawns after two Ragged Hippocerfs have been defeated.,,ge-mob-pages
+Wicked Soul,377038,2012-06-23T10:37:20Z,0,Wicked Soul,Ghost,,,,,,Ice,,A,,,30,42,,,,,,,,,ge-mob-pages
+Widargelt the Watcher,321072,2012-05-31T05:28:42Z,0,Widargelt the Watcher,Enemy Humanoid,Hyur,,,Monk,Male,,,Y,,Y,55,55,,,,,Y,Y,,,ge-mob-pages
+Widow's Suitor,296350,2012-05-20T01:07:10Z,0,Widow's Suitor,Diremite,,,,,,,,Y,,,39,39,,,,,,,Spawns when Shaula is at 50% HP. Spawns Bastard Mites when low on health.,,ge-mob-pages
+Widowmaker (Diremite),486776,2011-09-22T01:18:31Z,0,Widowmaker,Diremite,,,,,,Earth,,x,,,75,79,3825,4139,1466,1585,,,,,ge-mob-pages
+Wight Warrior,141337,2012-09-30T04:45:58Z,0,Wight Warrior,Wight,,,,,,Ice,,x,,,45,49,2649,2866,819,885,,,,,ge-mob-pages
+Wild Boar,501573,2011-09-17T18:18:36Z,0,Wild Boar,Boar,,,,,Male,Fire,,,,,60,69,6049,7224,1095,1304,,,,,ge-mob-pages
+Wild Ewe,290283,2012-05-29T04:59:49Z,0,Wild Ewe,Ram,,,,,Female,Wind,,,,,15,19,649,994,370,415,,,Appears to spawn EXTREMELY rarely,,ge-mob-pages
+Wild Hog,473656,2012-09-29T08:14:16Z,0,Wild Hog,Boar,,,,,Male,Fire,,Y,,,40,49,3483,4156,744,885,,,,,ge-mob-pages
+Wild Jackal,353501,2012-09-30T04:37:58Z,0,Wild Jackal,Wolf,,,,,,Lightning,Earth,,,,45,54,2385,2846,819,975,,,,,ge-mob-pages
+Will-o'-the-wisp,309988,2012-05-30T03:56:18Z,0,Will-o'-the-wisp,Wisp,,Wisp,,,,Fire,,x,,,20,24,1092,1227,2135,2390,,,,,ge-mob-pages
+Will-o'-the Wykes,501159,2012-04-19T00:58:19Z,0,Will-o'-the Wykes,Wisp,,Wisp,,,,Fire,,x,,,30,34,1462,1644,2840,3190,,,,,ge-mob-pages
+Wind Elemental,362783,2012-06-06T19:46:53Z,0,Wind Elemental,Elemental,,,,,,Wind,Ice,Yes,,,30,69,1827,4249,2840,6520,x,,,,ge-mob-pages
+Windborn Buccaneer,51015,2010-11-03T01:59:33Z,0,Windborn Buccaneer,Enemy Humanoid,,,Quest,Marauder,Male,,,,,,,,,,,,,,Roegadyn,,ge-mob-pages
+Wingrat,346198,2012-05-30T03:57:00Z,0,Wingrat,Bat,,Bat,,,,Wind,,x,,,3,26,94,634,248,506,,,,,ge-mob-pages
+Wisp Familiar,504134,2012-05-30T01:50:57Z,0,Wisp Familiar,Wisp,,Wisp,,Conjurer,,Fire,,,,,20,40,328,937,2135,3720,,,"Will commonly cast Fire, Burn, Absorb ATK, Absorb DEF, Absorb ACC, and Absorb EVA.",,ge-mob-pages
+Wolf Poacher,417595,2012-09-26T03:51:38Z,0,Wolf Poacher,Enemy Humanoid,,,Quest,Pugilist,Female,,,,,,,,,,,,,,Miqo'te,,ge-mob-pages
+Wood Weevil,459225,2012-05-29T01:26:18Z,0,Wood Weevil,Beetle,,,,,,Fire,,,,,10,34,130,740,322,638,,,,,ge-mob-pages
+Woodsin Thrall,299115,2012-05-20T18:39:32Z,0,Woodsin Thrall,Ghost,,,,,,,,Y,,,15,15,,,,,,,South Shroud version shares spawns with Black Bat and Sultan's Trumpet,,ge-mob-pages
+Woolywart Kupqu Kogi,247371,2012-06-06T16:40:19Z,0,Woolywart Kupqu Kogi,Moogle,,,,Archer,Male,,,Yes,,Yes,50,,,,,,Yes,Yes,Uses Moogle Eye Shot and grants Good King Moggle Mog XII the ability to use Moogle Eye Shot after death.,,ge-mob-pages
+Xha Viqqoh the Nibbler,339258,2010-11-23T21:42:12Z,0,Xha Viqqoh the Nibbler,Enemy Humanoid,,,Quest,,Female,,,,,,,,,,,,,,Miqo'te,,ge-mob-pages
+Yarzon Biter,38418,2011-09-23T12:51:32Z,0,Yarzon Biter,Yarzon,,,,,,Ice,,,,,35,39,1693,1876,657,726,,,,,ge-mob-pages
+Yarzon Bleeder,498564,2012-06-05T05:22:11Z,0,Yarzon Bleeder,Yarzon,,,,,,Ice,,,,,20,29,887,1154,427,552,,,,,ge-mob-pages
+Yarzon Burrower,69656,2011-09-23T17:58:25Z,0,Yarzon Burrower,Yarzon,,,,,,Ice,,x,,,45,49,2120,2293,819,885,,,,,ge-mob-pages
+Yarzon Feeder,465991,2012-05-30T03:57:15Z,0,Yarzon Feeder,Yarzon,,,,,,Ice,,x,,,10,19,663,862,322,415,,,,,ge-mob-pages
+Yarzon Invader,367262,2012-06-16T22:22:38Z,0,Yarzon Invader,Yarzon,,,,,,,,Y,,,15,,,,,,Y,Y,,,ge-mob-pages
+Yarzon Scavenger,334198,2012-09-30T04:28:13Z,0,Yarzon Scavenger,Yarzon,,,,,,Ice,,x,,,35,44,1693,2079,657,803,,,,,ge-mob-pages
+Yarzon Stalker,55776,2012-09-03T01:25:17Z,0,Yarzon Stalker,Yarzon,,,,,,,,,,,,,,,,,,,,,ge-mob-pages
+Yellow Dewflower Sylph,364612,2011-09-20T02:22:19Z,0,Yellow Dewflower Sylph,Sylph,,,,,,Wind,,,,,30,50,768,1667,2840,4510,,,,,ge-mob-pages
+Yotoli Hueloc the Austere,330251,2012-06-06T20:15:17Z,0,Yotoli Hueloc the Austere,Ixal,,,,Conjurer,,Wind,,Y,,Y,55,,,,,,,,,,ge-mob-pages
+Young Antelope Stag,61948,2012-10-31T03:55:26Z,0,Young Antelope Stag,Antelope,,,,,Male,,,x,,,23,29,,,,,,,,,ge-mob-pages
+Young Galago,498825,2011-09-18T02:01:09Z,0,Young Galago,Opo-opo,,,,,,Fire,,,,,15,19,944,1061,370,415,,,,,ge-mob-pages
+Young Raptor,14120,2011-09-19T03:43:50Z,0,Young Raptor,Raptor,,,,,,Fire,,x,,,40,49,2523,3010,744,885,,,"Uses ranged attack, basic attack, conal AoE attack Foul Breath (Ability), and circular AoE attack Scythe Tail.",,ge-mob-pages
+Zahar'ak Chandler,296707,2012-05-20T03:29:15Z,0,Zahar'ak Chandler,Amalj'aa,,,,Conjurer,,Fire,,Y,,,50,54,,,,,,,,,ge-mob-pages
+Zahar'ak Drubber,259604,2012-05-23T15:23:59Z,0,Zahar'ak Drubber,Amalj'aa,,,,Pugilist,,Fire,Wind,Yes,,,50,53,3379,4012,786,3400,,,,,ge-mob-pages
+Zahar'ak Feretrar,296772,2012-05-20T03:31:53Z,0,Zahar'ak Feretrar,Amalj'aa,,,,Thaumaturge,,Fire,,^,,,55,55,,,,,,,,,ge-mob-pages
+Zahar'ak Halberdier,296417,2012-05-20T03:23:26Z,0,Zahar'ak Halberdier,Amalj'aa,,,,Lancer,,Fire,,Y,,,54,57,,,,,,,Two guard the gates and must be defeated to open each gate.,,ge-mob-pages
+Zahar'ak Illuminator,296833,2012-05-20T03:33:48Z,0,Zahar'ak Illuminator,Amalj'aa,,,,Thaumaturge,,Fire,,^,,,55,55,,,,,,,,,ge-mob-pages
+Zahar'ak Ostiary,297241,2012-05-20T04:03:06Z,0,Zahar'ak Ostiary,Amalj'aa,,,,Gladiator,,Fire,,Y,,,55,57,,,,,,,,,ge-mob-pages
+Zahar'ak Scriniary,296948,2012-05-20T03:38:20Z,0,Zahar'ak Scriniary,Amalj'aa,,,,Thaumaturge,,Fire,,Y,,,55,55,,,,,,,,,ge-mob-pages
+Zahar'ak Sniper,296899,2012-06-17T16:18:06Z,0,Zahar'ak Sniper,Amalj'aa,,,,Archer,,Fire,,Y,,,52,55,,,,,,,,,ge-mob-pages
+Zanig'oh (1.X),18989,2012-02-14T22:15:33Z,0,Zanig'oh,Drake,,,,,,Fire,,x,,,60,,3558,,1095,,,,,,ge-mob-pages
+Zikko,363406,2012-08-08T19:51:20Z,0,Zikko,Imp,,,,,,,,,,,,,,,,,,,,,ge-mob-pages
+Zombie Mage,79974,2012-07-12T23:50:23Z,0,Zombie Mage,Fomor,,,,Thaumaturge,,Earth,,Y,,,40,52,2517,3805,819,6150,,,,,ge-mob-pages
+Zombie Pikeman,79695,2012-05-29T02:08:42Z,0,Zombie Pikeman,Fomor,,,,Lancer,,Earth,,Y,,,40,52,2120,4368,819,1410,,,,,ge-mob-pages

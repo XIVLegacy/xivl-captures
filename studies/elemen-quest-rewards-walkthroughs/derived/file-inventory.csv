@@ -1,0 +1,5 @@
+page_file,category,kind,source,quest_rows
+sources/elemen-quest-rewards-walkthroughs/objects/pages/quest-rewards.md,all,reward-tables,quest/{MainQuest;SubQuest;TheGrandCompanies;ClassQuest;JobQuest}/index.html,281
+sources/elemen-quest-rewards-walkthroughs/objects/pages/walkthroughs-main.md,main,walkthroughs,quest/MainQuest/*.html,19
+sources/elemen-quest-rewards-walkthroughs/objects/pages/walkthroughs-class.md,class,walkthroughs,quest/ClassQuest/*.html,51
+sources/elemen-quest-rewards-walkthroughs/objects/pages/walkthroughs-job.md,job,walkthroughs,quest/JobQuest/*.html,42

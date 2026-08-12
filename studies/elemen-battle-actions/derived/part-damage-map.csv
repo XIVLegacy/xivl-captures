@@ -1,0 +1,16 @@
+class_jp,class_en,body_part_jp,body_part_en,ws_name_jp,ws_name_en_client,client_command_id,source
+剣術,Gladiator,頭,head,スピリッツウィズイン,Spirits Within,27159,class/battle/index.html
+剣術,Gladiator,右腕,right arm,サベッジブレード,Savage Blade,27152,class/battle/index.html
+剣術,Gladiator,特殊（右部）,special (right),フラットブレード,Flat Blade,27151,class/battle/index.html
+格闘,Pugilist,頭,head,コンカシブブロー,Concussive Blow,26615;27111,class/battle/index.html
+格闘,Pugilist,脚,legs,デモリッシュ,Demolish,27115,class/battle/index.html
+格闘,Pugilist,特殊（後部）,special (rear),双竜脚,Dragon Kick,23486;27118,class/battle/index.html
+斧術,Marauder,頭,head,スカルサンダー,Skull Sunder,26986;27191,class/battle/index.html
+斧術,Marauder,右腕,right arm,シュトルムヴィント,Storm's Path,26995;27196,class/battle/index.html
+斧術,Marauder,特殊（右部）,special (right),ゴッズベーン,Godsbane,23490;27195,class/battle/index.html
+斧術,Marauder,特殊（後部）,special (rear),メイム,Maim,26992;27194,class/battle/index.html
+槍術,Lancer,左腕,left arm,ヘヴィスラスト,Heavy Thrust,27273;27757,class/battle/index.html
+槍術,Lancer,特殊（左部）,special (left),インパルスドライヴ,Impulse Drive,27275,class/battle/index.html
+弓術,Archer,頭,head,ブラッドレッター,Bloodletter,27235;27536,class/battle/index.html
+弓術,Archer,脚,legs,レッデンアロー,Leaden Arrow,27229,class/battle/index.html
+弓術,Archer,特殊（左部）,special (left),グルームアロー,Gloom Arrow,27234,class/battle/index.html

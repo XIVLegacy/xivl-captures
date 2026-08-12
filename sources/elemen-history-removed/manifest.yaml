@@ -1,0 +1,20 @@
+id: elemen-history-removed
+title: eLeMeN FF14 1.x History - Removed-System Milestones - Web Tables
+evidence_class: web-tables
+distribution: restricted
+provenance:
+  sources: []
+storage:
+  original_state: in-repo
+  storage_id: repo
+  path: objects/
+  master_archive:
+    file: elemen-history-removed-objects.zip
+    sha256: ba4ed2221a6a21e8d5cd3e3bfc5146904ca8b3884e77ae8c30d01d59f0dc372e
+    size_bytes: 2957
+    holds: all 1 files under objects/, deflate, fixed timestamps
+    cold_store_path: archives/elemen-history-removed/elemen-history-removed-objects.zip
+members:
+- file: pages/history-removed.md
+  sha256: 34b83dcc65e2d9f08cbb7fa636eb4eb2bd03cfb80230f9b0360adfc4731bbc87
+  size_bytes: 16350

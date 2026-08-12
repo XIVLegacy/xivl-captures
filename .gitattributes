@@ -1,0 +1,17 @@
+# Normalize all text to LF in the working tree (matches the sibling repos), so the
+# decode pipeline's re-decode reproducibility check holds on any checkout. Binary
+# paths below override with -text.
+* text=auto eol=lf
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.rar filter=lfs diff=lfs merge=lfs -text
+*.7z filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.mkv filter=lfs diff=lfs merge=lfs -text
+# Raw evidence is immutable at the byte level: no EOL conversion, so the
+# recorded sha256 of a text original survives a fresh checkout. Retired
+# the sets/*/raw/original/** rule at the sources/studies split; the
+# sources/*/objects/** rule below covers the new home.
+# The 1.23b pcap corpus (the canonical capture binaries), one sources/*/objects/
+# per corpus. Plain binary, not LFS (7.1 MB total, each < 25 MB); no EOL
+# conversion so the checked-out sha256 recorded in the corpus manifest survives.
+sources/*/objects/** -text

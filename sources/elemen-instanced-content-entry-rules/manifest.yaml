@@ -1,0 +1,32 @@
+id: elemen-instanced-content-entry-rules
+title: eLeMeN FF14 1.x Instanced-Content Entry Rules - Web Tables
+evidence_class: web-tables
+distribution: restricted
+provenance:
+  sources:
+  - url: http://elemen.sakura.ne.jp/ff14_dated_archives/gamecontents/InstancedRaids/index.html
+    archive_url: ''
+    site: eLeMeN - FF14
+    key: elemen-raid
+  - url: http://elemen.sakura.ne.jp/ff14_dated_archives/gamecontents/PrimalBattle/index.html
+    archive_url: ''
+    site: eLeMeN - FF14
+    key: elemen-primal
+  - url: http://elemen.sakura.ne.jp/ff14_dated_archives/gamecontents/StrongholdandDungeon/index.html
+    archive_url: ''
+    site: eLeMeN - FF14
+    key: elemen-stronghold
+storage:
+  original_state: in-repo
+  storage_id: repo
+  path: objects/
+  master_archive:
+    file: elemen-instanced-content-entry-rules-objects.zip
+    sha256: 7fe43db93ef3b3352222c57950550deaa31d923195e64eb633ed11d9c8d2e15e
+    size_bytes: 2305
+    holds: all 1 files under objects/, deflate, fixed timestamps
+    cold_store_path: archives/elemen-instanced-content-entry-rules/elemen-instanced-content-entry-rules-objects.zip
+members:
+- file: pages/instanced-content-entry-rules.md
+  sha256: 52f650a273cfd46c080b4762a9417ca0dae304edaec2301f4a2e98851e4744fa
+  size_bytes: 7910

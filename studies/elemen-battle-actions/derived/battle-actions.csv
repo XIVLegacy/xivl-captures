@@ -1,0 +1,227 @@
+class_jp,class_en,section_jp,section_en,name_jp,name_en_client,client_command_id,level,tp,cast,recast_time,effect_duration,equip_condition_jp,equip_condition_en,description_jp,source
+剣術,Gladiator,ジョブ専用アクション,job-specific action,かばう,Cover,27146,30,-,-,60秒,15秒,ジョブ専用,job-exclusive,対象のパーティメンバーへの物理攻撃を肩代わりする。 効果発動条件：対象が8m以内に存在,class/action/~patch2.00_Gladiator.html
+剣術,Gladiator,ジョブ専用アクション,job-specific action,ディヴァインヴェール,Divine Veil,27147,35,-,-,60秒,20秒,ジョブ専用,job-exclusive,効果中、物理攻撃を必ずブロックし、かつパーティメンバーからケアル、およびケアルラを受けた際に、周囲のパーティメンバーに「継続してＨＰ回復」効果をかける。 「継続してHP回復」効果が白魔法「リジェネ」と同時にかかる,class/action/~patch2.00_Gladiator.html
+剣術,Gladiator,ジョブ専用アクション,job-specific action,ホーリーサカー,Holy Succor,27149,40,-,-,10秒,,ジョブ専用,job-exclusive,対象のＨＰを回復。他人を回復した場合はその50%分、自身にもＨＰ回復効果を得る。,class/action/~patch2.00_Gladiator.html
+剣術,Gladiator,ジョブ専用アクション,job-specific action,スピリッツウィズイン,Spirits Within,27159,45,3000,-,60秒,,ジョブ専用,job-exclusive,対象に近接攻撃。命中高い。自身の残りＨＰが多いほどダメージアップ コンボ条件：ファランクス ボーナス：敵視アップ,class/action/~patch2.00_Gladiator.html
+剣術,Gladiator,ジョブ専用アクション,job-specific action,インビンシブル,Hallowed Ground,27148,50,-,-,900秒,,ジョブ専用,job-exclusive,効果中、特定の攻撃を除くすべての攻撃を無効化する。,class/action/~patch2.00_Gladiator.html
+剣術,Gladiator,アクション,action,投擲,Throw,22113,1,-,-,5秒,-,汎用,general,武器を投げつける。 [目標にダメージ] 投擲武器を装備する,class/action/~patch2.00_Gladiator.html
+剣術,Gladiator,アクション,action,ファストブレード,Fast Blade,27150,1,1000,-,10秒,-,ファイター専用,Disciples of War only,対象に物理攻撃。 正面攻撃時：ダメージアップ,class/action/~patch2.00_Gladiator.html
+剣術,Gladiator,アクション,action,ランパート,Rampart,27142,2,-,-,120秒,60秒,-,,自身の物理防御力をアップする。敵視が高い。,class/action/~patch2.00_Gladiator.html
+剣術,Gladiator,アクション,action,ファランクス,Phalanx,27158,4,250,-,5秒,-,専用,class-exclusive,対象に物理攻撃。発動条件：ブロック発動直後,class/action/~patch2.00_Gladiator.html
+剣術,Gladiator,アクション,action,イージスブーン,Aegis Boon,27141,6,-,-,60秒,30秒,専用,class-exclusive,盾装備時に次の物理攻撃を必ずブロックし、かつ被ダメージに比例したＨＰ回復を得る。,class/action/~patch2.00_Gladiator.html
+剣術,Gladiator,アクション,action,サベッジブレード,Savage Blade,27152,10,1000,-,30秒,-,ファイター専用,Disciples of War only,対象に物理攻撃。 コンボ条件：ファストブレード ボーナス：ダメージアップ 部位損傷「」,class/action/~patch2.00_Gladiator.html
+剣術,Gladiator,アクション,action,フラッシュ,Flash,27145,14,-,-,30秒,-,-,,対象の敵視をアップ。,class/action/~patch2.00_Gladiator.html
+剣術,Gladiator,アクション,action,シールドバッシュ,Shield Bash,27156,18,250,-,30秒,5秒,-,,対象に盾で物理攻撃。 追加効果「スタン」,class/action/~patch2.00_Gladiator.html
+剣術,Gladiator,アクション,action,センチネル,Sentinel,27140,22,-,-,90秒,15秒,-,,一定時間、自身へのダメージを軽減する。効果中はコマンド実行時の敵視にボーナスを得る。,class/action/~patch2.00_Gladiator.html
+剣術,Gladiator,アクション,action,フラットブレード,Flat Blade,27151,26,1500,-,10秒,-,ファイター専用,Disciples of War only,対象に物理攻撃。 コンボ条件：ファストブレード ボーナス：敵視アップ 部位損傷「」 MNDによってコンボボーナスの効果が上がる,class/action/~patch2.00_Gladiator.html
+剣術,Gladiator,アクション,action,ライオットソード,Riot Blade,27154,30,2000,-,80秒,30秒,専用,class-exclusive,対象に遠距離物理攻撃。 背面攻撃時：追加効果「物理防御力ダウン」,class/action/~patch2.00_Gladiator.html
+剣術,Gladiator,アクション,action,アウトマニューバ,Outmaneuver,27144,34,-,-,90秒,30秒,-,,盾装備時にブロック発動力をアップする。効果中はブロック発動時にＴＰを得る。,class/action/~patch2.00_Gladiator.html
+剣術,Gladiator,アクション,action,ウォードラム,War Drum,27157,38,500,-,60秒,-,専用,class-exclusive,自身の周囲の敵に盾で物理攻撃。敵視が高い。 発動条件：ブロック発動直後,class/action/~patch2.00_Gladiator.html
+剣術,Gladiator,アクション,action,鋼の意志,Tempered Will,27143,42,-,-,180秒,20秒,専用,class-exclusive,自身にかけられた「バインド」と「ヘヴィ」を解除し、かつ効果中はノックバックと引きよせ無効。,class/action/~patch2.00_Gladiator.html
+剣術,Gladiator,アクション,action,レイジオブハルオーネ,Rage of Halone,27155,46,1500,-,20秒,-,専用,class-exclusive,対象に物理5回攻撃。命中にペナルティ。 コンボ条件：ライオットソード ボーナス：物理命中力アップ,class/action/~patch2.00_Gladiator.html
+剣術,Gladiator,アクション,action,ゴアブレード,Goring Blade,27153,50,3000,-,60秒,30秒,専用,class-exclusive,対象に物理攻撃。 背面攻撃時：追加効果「継続ダメージ」 コンボ条件：サベッジブレード ボーナス：追加効果「継続ダメージ」ダメージアップ,class/action/~patch2.00_Gladiator.html
+剣術,Gladiator,特性,trait,物理防御力アップI,Enhanced Physical Defense,27168,8,,,,,専用,class-exclusive,物理防御力を+8する。,class/action/~patch2.00_Gladiator.html
+剣術,Gladiator,特性,trait,ランパート効果アップ,Enhanced Rampart,27163,12,,,,,専用,class-exclusive,ランパートの効果範囲を単体から、自身とその周囲のパーティメンバーに拡大する。,class/action/~patch2.00_Gladiator.html
+剣術,Gladiator,特性,trait,ブロック発動力アップI,Enhanced Block Rate,27167,16,,,,,専用,class-exclusive,ブロック発動力を+10する。,class/action/~patch2.00_Gladiator.html
+剣術,Gladiator,特性,trait,イージスブーンリキャストタイム短縮,Swift Aegis Boon,27164,20,,,,,専用,class-exclusive,イージスブーンのリキャストタイムを-15秒する。,class/action/~patch2.00_Gladiator.html
+剣術,Gladiator,特性,trait,物理防御力アップII,Enhanced Physical Defense II,27169,24,,,,,専用,class-exclusive,物理防御力を+10する。,class/action/~patch2.00_Gladiator.html
+剣術,Gladiator,特性,trait,フラッシュ効果アップI,Enhanced Flash,27161,28,,,,,専用,class-exclusive,フラッシュに「暗闇」の効果を追加する。,class/action/~patch2.00_Gladiator.html
+剣術,Gladiator,特性,trait,物理クリティカル防御力アップI,Enhanced Physical Crit Resilience,27166,32,,,,,専用,class-exclusive,物理クリティカル防御力を+10する。,class/action/~patch2.00_Gladiator.html
+剣術,Gladiator,特性,trait,センチネル効果アップ,Enhanced Sentinel,27160,36,,,,,専用,class-exclusive,センチネルによるダメージ軽減効果を+20％する。,class/action/~patch2.00_Gladiator.html
+剣術,Gladiator,特性,trait,物理防御力アップIII,Enhanced Physical Defense III,27170,40,,,,,専用,class-exclusive,物理防御力を+12する。,class/action/~patch2.00_Gladiator.html
+剣術,Gladiator,特性,trait,アウトマニューバ効果アップ,Enhanced Outmaneuver,27165,44,,,,,専用,class-exclusive,アウトマニューバ中、ブロック発動時にＭＰが回復する。,class/action/~patch2.00_Gladiator.html
+剣術,Gladiator,特性,trait,フラッシュ効果アップII,Enhanced Flash II,27162,48,,,,,専用,class-exclusive,フラッシュのターゲットが単体から、対象とその周囲の敵に拡大する。,class/action/~patch2.00_Gladiator.html
+闘術,Pugilist,ジョブ専用アクション,job-specific action,羅刹衝,Shoulder Tackle,27108,30,-,-,60秒,,ジョブ専用,job-exclusive,対象に向かって突進物理攻撃。対象に自身の敵視がのっていない場合に限り追加効果「スタン」,class/action/~patch2.00_Pugilist.html
+闘術,Pugilist,ジョブ専用アクション,job-specific action,蹴撃,Spinning Heel,27107,35,-,-,120秒,,ジョブ専用,job-exclusive,効果中、オートアタックのダメージが下がる代わりに追加で蹴りを放つ。 「百烈拳」とは同時に使えない。,class/action/~patch2.00_Pugilist.html
+闘術,Pugilist,ジョブ専用アクション,job-specific action,疾風の構え,Fists of Wind,27109,40,-,-,10秒,,ジョブ専用,job-exclusive,自身の攻撃を風属性にし、かつ移動速度アップとウェポンスキルのリキャストタイム短縮効果を得る。再発動で効果終了。(効果中はMPを消費し続ける） 「金剛の構え」「紅蓮の構え」とは同時に使えない。,class/action/~patch2.00_Pugilist.html
+闘術,Pugilist,ジョブ専用アクション,job-specific action,双竜脚,Dragon Kick,27118,45,2000,-,60秒,,ジョブ専用,job-exclusive,対象に物理2回攻撃。 コンボ条件：闘魂吸魔掌 ボーナス：追加効果「ＷＳ使用不可」 部位損傷「」,class/action/~patch2.00_Pugilist.html
+闘術,Pugilist,ジョブ専用アクション,job-specific action,百烈拳,Hundred Fists,27106,50,-,-,900秒,,ジョブ専用,job-exclusive,効果中、自身の攻撃間隔を短縮。 「蹴撃」とは同時に使えない。,class/action/~patch2.00_Pugilist.html
+闘術,Pugilist,アクション,action,投擲,Throw,22113,1,-,-,5秒,-,汎用,general,武器を投げつける。 [目標にダメージ] 投擲武器を装備する,class/action/~patch2.00_Pugilist.html
+闘術,Pugilist,アクション,action,裏拳,Pummel,27110,1,1000,-,10秒,-,ファイター専用,Disciples of War only,対象に物理攻撃。 正面攻撃時：ダメージボーナス,class/action/~patch2.00_Pugilist.html
+闘術,Pugilist,アクション,action,フェザーステップ,Featherfoot,27103,2,-,-,60秒,30秒,-,,自身の物理回避力を大幅アップし、回避成功時はＭＰを回復する。時間経過、もしくは一度回避が成功すると効果終了。,class/action/~patch2.00_Pugilist.html
+闘術,Pugilist,アクション,action,当身,Pounce,27114,4,1500,-,20秒,10秒,専用,class-exclusive,対象に物理攻撃。 背後攻撃時：追加効果「スタン」,class/action/~patch2.00_Pugilist.html
+闘術,Pugilist,アクション,action,内丹,Second Wind,27100,6,-,-,45秒,-,-,,自身のＨＰを回復。,class/action/~patch2.00_Pugilist.html
+闘術,Pugilist,アクション,action,コンカシブブロー,Concussive Blow,27111,10,1500,-,30秒,30秒,ファイター専用,Disciples of War only,対象に物理攻撃。 側面攻撃時：追加効果「暗闇」 コンボ条件：裏拳 ボーナス：ダメージアップ 部位損傷「」,class/action/~patch2.00_Pugilist.html
+闘術,Pugilist,アクション,action,ブラインドサイド,Blindside,27101,14,-,-,60秒,60秒,-,,次のウェポンスキルを対象の背後から実行時にクリティカルヒットさせる。,class/action/~patch2.00_Pugilist.html
+闘術,Pugilist,アクション,action,ヘイメーカー,Haymaker,27119,18,250,-,5秒,-,専用,class-exclusive,対象に物理攻撃。追加効果「スタン」 発動条件：回避直後,class/action/~patch2.00_Pugilist.html
+闘術,Pugilist,アクション,action,金剛の構え,Fists of Earth,27105,22,-,-,10秒,-,専用,class-exclusive,自身の攻撃を土属性にし、かつ物理防御力にボーナスを得る。再発動で効果終了。(効果中はＭＰを消費し続ける） 「紅蓮の構え」「疾風の構え」とは同時に使えない。,class/action/~patch2.00_Pugilist.html
+闘術,Pugilist,アクション,action,闘魂吸魔掌,Sucker Punch,27117,26,1000,-,15秒,-,ファイター専用,Disciples of War only,対象に物理攻撃。 側面攻撃時：追加効果「ＭＰ回復」 コンボ条件：当身 ボーナス：追加効果ＭＰ回復量アップ,class/action/~patch2.00_Pugilist.html
+闘術,Pugilist,アクション,action,デモリッシュ,Demolish,27115,30,1500,-,30秒,-,ファイター専用,Disciples of War only,対象に物理攻撃。 コンボ条件：当身 ボーナス：対象の強化エフェクトを1つ削除 部位損傷「」,class/action/~patch2.00_Pugilist.html
+闘術,Pugilist,アクション,action,紅蓮の構え,Fists of Fire,27104,34,-,-,10秒,-,専用,class-exclusive,自身の攻撃を火属性にし、かつ物理攻撃力にボーナスを得る。再発動で効果終了。(効果中はＭＰを消費し続ける） 「金剛の構え」「疾風の構え」とは同時に使えない。,class/action/~patch2.00_Pugilist.html
+闘術,Pugilist,アクション,action,オーラパルス,Aura Pulse,27113,38,1500,-,40秒,30秒,専用,class-exclusive,自身の周囲の敵に物理範囲攻撃。 コンボ条件：裏拳 ボーナス：追加効果「スロウ」,class/action/~patch2.00_Pugilist.html
+闘術,Pugilist,アクション,action,口笛,Taunt,27102,42,-,-,60秒,5秒,専用,class-exclusive,一時的に敵のターゲットを自身に固定する。,class/action/~patch2.00_Pugilist.html
+闘術,Pugilist,アクション,action,空鳴拳,Howling Fist,27116,46,3000,-,80秒,-,専用,class-exclusive,対象に物理攻撃。 側面攻撃時：物理命中力アップ コンボ条件：デモリッシュ ボーナス：ダメージアップ,class/action/~patch2.00_Pugilist.html
+闘術,Pugilist,アクション,action,猿猴九連掌,Simian Thrash,27112,50,2000,-,80秒,-,専用,class-exclusive,対象に物理9回攻撃。ダメージが低い。 コンボ条件：コンカシブブロー ボーナス：ダメージアップ,class/action/~patch2.00_Pugilist.html
+闘術,Pugilist,特性,trait,物理攻撃力アップI,Enhanced Physical Attack,27127,8,,,,,専用,class-exclusive,物理攻撃力を+8する。,class/action/~patch2.00_Pugilist.html
+闘術,Pugilist,特性,trait,物理回避力アップI,Enhanced Evasion,27129,12,,,,,専用,class-exclusive,物理回避力を+8する。,class/action/~patch2.00_Pugilist.html
+闘術,Pugilist,特性,trait,物理命中力アップI,Enhanced Physical Accuracy,27126,16,,,,,専用,class-exclusive,物理命中力を+8する。,class/action/~patch2.00_Pugilist.html
+闘術,Pugilist,特性,trait,内丹効果アップ,Enhanced Second Wind,27120,20,,,,,専用,class-exclusive,内丹によるＨＰ回復効果を+25%する。,class/action/~patch2.00_Pugilist.html
+闘術,Pugilist,特性,trait,ブラインドサイド効果アップ,Enhanced Blindside,27121,24,,,,,専用,class-exclusive,ブラインドサイドにINTに依存した物理攻撃力アップ効果を追加する。,class/action/~patch2.00_Pugilist.html
+闘術,Pugilist,特性,trait,フェザーステップ効果アップ,Enhanced Featherfoot,27123,28,,,,,専用,class-exclusive,フェザーステップによるＭＰ回復効果を+25%にする。,class/action/~patch2.00_Pugilist.html
+闘術,Pugilist,特性,trait,物理クリティカル攻撃力アップI,Enhanced Physical Crit Damage,27130,32,,,,,専用,class-exclusive,物理クリティカル攻撃力を+10する。,class/action/~patch2.00_Pugilist.html
+闘術,Pugilist,特性,trait,金剛の構え効果アップ,Enhanced Fists of Earth,27125,36,,,,,専用,class-exclusive,金剛の構え時の物理防御力アップ効果を+5％する。,class/action/~patch2.00_Pugilist.html
+闘術,Pugilist,特性,trait,物理攻撃力アップII,Enhanced Physical Attack II,27128,40,,,,,専用,class-exclusive,物理攻撃力を+10する。,class/action/~patch2.00_Pugilist.html
+闘術,Pugilist,特性,trait,紅蓮の構え効果アップ,Enhanced Fists of Fire,27124,44,,,,,専用,class-exclusive,紅蓮の構え時の物理攻撃力アップ効果を+5％する。,class/action/~patch2.00_Pugilist.html
+闘術,Pugilist,特性,trait,口笛リキャストタイム短縮,Swift Taunt,27122,48,,,,,専用,class-exclusive,口笛のリキャストタイムを-15秒する。,class/action/~patch2.00_Pugilist.html
+斧術,Marauder,ジョブ専用アクション,job-specific action,ヴェンジェンス,Vengeance,27186,30,-,-,150秒,,ジョブ専用,job-exclusive,効果中、自身が受けた物理属性ダメージの一部を相手に跳ね返す。,class/action/~patch2.00_Marauder.html
+斧術,Marauder,ジョブ専用アクション,job-specific action,アンタゴナイズ,Antagonize,27187,35,-,-,120秒,,ジョブ専用,job-exclusive,効果中、アクション実行時の敵視を増加させる。,class/action/~patch2.00_Marauder.html
+斧術,Marauder,ジョブ専用アクション,job-specific action,コルーション,Collusion,27188,40,-,-,90秒,,ジョブ専用,job-exclusive,対象としたパーティメンバーの次の攻撃による敵視の一部を肩代わりする。 効果発動条件：対象が8m以内に存在,class/action/~patch2.00_Marauder.html
+斧術,Marauder,ジョブ専用アクション,job-specific action,スチールサイクロン,Steel Cyclone,27192,45,2000,-,30秒,,ジョブ専用,job-exclusive,自身の周囲の敵に物理範囲攻撃。ランページ中は効果がリセットされる代わりにダメージアップし、かつ対象に狙われている場合：追加効果「スタン」 コンボ条件：スカルサンダー ボーナス：クリティカルヒット確率アップ,class/action/~patch2.00_Marauder.html
+斧術,Marauder,ジョブ専用アクション,job-specific action,マイティストライク,Mighty Strikes,27189,50,-,-,900秒,,ジョブ専用,job-exclusive,効果中、斧による攻撃が全てクリティカルヒットする。,class/action/~patch2.00_Marauder.html
+斧術,Marauder,アクション,action,投擲,Throw,22113,1,-,-,5秒,-,汎用,general,武器を投げつける。 [目標にダメージ] 投擲武器を装備する,class/action/~patch2.00_Marauder.html
+斧術,Marauder,アクション,action,ヘヴィスウィング,Heavy Swing,27190,1,1000,-,10秒,-,ファイター専用,Disciples of War only,対象に物理攻撃。 正面攻撃時：物理命中力アップ,class/action/~patch2.00_Marauder.html
+斧術,Marauder,アクション,action,フォーサイト,Foresight,27181,2,-,-,60秒,30秒,-,,自身の受け流し発動率アップ。一度受け流しが成功すると効果終了。,class/action/~patch2.00_Marauder.html
+斧術,Marauder,アクション,action,ブルータルスウィング,Brutal Swing,27193,4,1500,-,20秒,-,ファイター専用,Disciples of War only,対象に物理攻撃。 側面攻撃時：ダメージアップ,class/action/~patch2.00_Marauder.html
+斧術,Marauder,アクション,action,ブラッドバス,Bloodbath,27182,6,-,-,60秒,30秒,-,,次のウェポンスキルに追加効果「ＨＰ吸収」。 [VITで吸収量ボーナス] の効果,class/action/~patch2.00_Marauder.html
+斧術,Marauder,アクション,action,スカルサンダー,Skull Sunder,27191,10,1500,-,30秒,-,ファイター専用,Disciples of War only,対象に物理攻撃。 コンボ条件：ヘヴィスウィング ボーナス：敵視アップ 部位損傷「」,class/action/~patch2.00_Marauder.html
+斧術,Marauder,アクション,action,挑発,Provoke,27180,14,-,-,30秒,-,-,,対象の敵視をアップする。,class/action/~patch2.00_Marauder.html
+斧術,Marauder,アクション,action,フラクチャー,Fracture,27198,18,500,-,40秒,8秒,専用,class-exclusive,対象に物理攻撃。追加効果「ＷＳ使用不可」 発動条件：受け流し発動直後,class/action/~patch2.00_Marauder.html
+斧術,Marauder,アクション,action,バーサク,Berserk,27183,22,-,-,10秒,-,専用,class-exclusive,効果中、物理攻撃が命中するたびに物理攻撃力アップ、物理防御力ダウン。 ダメージを受けると効果がリセットされる。再発動で効果終了。「ランページ」とは同時に使えない。,class/action/~patch2.00_Marauder.html
+斧術,Marauder,アクション,action,メイム,Maim,27194,26,1500,-,30秒,-,ファイター専用,Disciples of War only,対象に物理攻撃。 コンボ条件：ブルータルスウィング ボーナス：物理命中力アップ 部位損傷「」,class/action/~patch2.00_Marauder.html
+斧術,Marauder,アクション,action,オーバーパワー,Overpower,27199,30,250,-,5秒,-,ファイター専用,Disciples of War only,対象に向かって前方範囲攻撃。 発動条件：受け流し発動直後,class/action/~patch2.00_Marauder.html
+斧術,Marauder,アクション,action,ランページ,Rampage,27184,34,-,-,10秒,-,専用,class-exclusive,効果中、物理攻撃を受ける度に攻撃速度と受け流しをアップし、自身の攻撃がクリティカルするとHP回復の効果。 時間経過で効果が減衰する。再発動で効果終了。「バーサク」とは同時に使えない。,class/action/~patch2.00_Marauder.html
+斧術,Marauder,アクション,action,シュトルムヴィント,Path of the Storm,27196,38,1500,-,30秒,-,専用,class-exclusive,対象に物理攻撃。 背後攻撃時：追加効果「ヘヴィ」 部位損傷「」,class/action/~patch2.00_Marauder.html
+斧術,Marauder,アクション,action,不屈の行軍,Enduring March,27185,42,-,-,180秒,20秒,専用,class-exclusive,効果中、移動速度が低下する代わりに殆どの弱体効果を無効化、かつランページの効果が減衰しない。,class/action/~patch2.00_Marauder.html
+斧術,Marauder,アクション,action,ワールウィンド,Whirlwind,27197,46,3000,-,80秒,-,専用,class-exclusive,自身の周囲の敵に物理範囲攻撃。 コンボ条件：シュトルムヴィント ボーナス：バーサク中は効果がリセットされる代わりにダメージアップ。,class/action/~patch2.00_Marauder.html
+斧術,Marauder,アクション,action,ゴッズベーン,Godsbane,27195,50,3000,-,60秒,-,専用,class-exclusive,対象に物理3回攻撃。 バーサク中は効果がリセットされる代わりに物理命中力アップ。 コンボ条件：メイム ボーナス：クリティカルヒット確率アップ 部位損傷「」,class/action/~patch2.00_Marauder.html
+斧術,Marauder,特性,trait,物理攻撃力アップI,Enhanced Physical Attack Power,27210,8,,,,,専用,class-exclusive,物理攻撃力を+8する。,class/action/~patch2.00_Marauder.html
+斧術,Marauder,特性,trait,物理防御力アップI,Enhanced Physical Defense,27208,12,,,,,専用,class-exclusive,物理防御力を+8する。,class/action/~patch2.00_Marauder.html
+斧術,Marauder,特性,trait,ブラッドバスリキャストタイム短縮,Swift Bloodbath,27202,16,,,,,専用,class-exclusive,ブラッドバスのリキャストタイムを-15秒する。,class/action/~patch2.00_Marauder.html
+斧術,Marauder,特性,trait,フォーサイトリキャストタイム短縮,Swift Foresight,27201,20,,,,,専用,class-exclusive,フォーサイトのリキャストタイムを-15秒する。,class/action/~patch2.00_Marauder.html
+斧術,Marauder,特性,trait,受け流し力アップI,Enhanced Parry,27207,24,,,,,専用,class-exclusive,受け流し力を+8する。,class/action/~patch2.00_Marauder.html
+斧術,Marauder,特性,trait,挑発効果アップ,Enhanced Provoke,27200,28,,,,,専用,class-exclusive,挑発に「攻撃力ダウン」の効果を追加する。,class/action/~patch2.00_Marauder.html
+斧術,Marauder,特性,trait,物理クリティカル回避力アップI,Enhanced Physical Crit Evasion,27206,32,,,,,専用,class-exclusive,物理クリティカル回避力を+10する。,class/action/~patch2.00_Marauder.html
+斧術,Marauder,特性,trait,バーサク効果アップ,Enhanced Berserk,27205,36,,,,,専用,class-exclusive,バーサクによる効果を1.2倍にする。,class/action/~patch2.00_Marauder.html
+斧術,Marauder,特性,trait,物理防御力アップII,Enhanced Physical Defense II,27209,40,,,,,専用,class-exclusive,物理防御力を+10する。,class/action/~patch2.00_Marauder.html
+斧術,Marauder,特性,trait,ランページ効果アップ,Enhanced Rampage,27204,44,,,,,専用,class-exclusive,ランページ時のクリティカルによるＨＰ回復効果を2倍にする。,class/action/~patch2.00_Marauder.html
+斧術,Marauder,特性,trait,不屈の行軍効果アップ,Enhanced Enduring March,27203,48,,,,,専用,class-exclusive,不屈の行軍時の移動速度を+20％する。,class/action/~patch2.00_Marauder.html
+槍術,Lancer,ジョブ専用アクション,job-specific action,ジャンプ,Jump,27266,30,-,-,60秒,,ジョブ専用,job-exclusive,物理攻撃を回避しつつ対象にジャンプで近づき攻撃し、攻撃後は元の位置に戻る。,class/action/~patch2.00_Lancer.html
+槍術,Lancer,ジョブ専用アクション,job-specific action,ディセムボウル,Disembowel,27272,35,750,-,30秒,,ジョブ専用,job-exclusive,対象に物理攻撃。 追加効果「麻痺」 コンボ条件：フェイント ボーナス：麻痺効果時間延長,class/action/~patch2.00_Lancer.html
+槍術,Lancer,ジョブ専用アクション,job-specific action,イルーシブジャンプ,Elusive Jump,27267,40,-,-,90秒,,ジョブ専用,job-exclusive,自身の後方に大きくバックジャンプ。 追加効果「敵視ダウン」,class/action/~patch2.00_Lancer.html
+槍術,Lancer,ジョブ専用アクション,job-specific action,リングオブタロン,Ring of Talons,27277,45,2000,-,60秒,,ジョブ専用,job-exclusive,自身の周囲の敵に物理範囲攻撃。 コンボ条件：インパルスドライヴ ボーナス：クリティカルヒット確率アップ,class/action/~patch2.00_Lancer.html
+槍術,Lancer,ジョブ専用アクション,job-specific action,ドラゴンダイブ,Dragonfire Dive,27268,50,-,-,900秒,,ジョブ専用,job-exclusive,ジャンプして対象とその周囲の敵に火属性攻撃。,class/action/~patch2.00_Lancer.html
+槍術,Lancer,アクション,action,投擲,Throw,22113,1,-,-,5秒,-,汎用,general,武器を投げつける。 [目標にダメージ] 投擲武器を装備する,class/action/~patch2.00_Lancer.html
+槍術,Lancer,アクション,action,トゥルースラスト,True Thrust,27269,1,1000,-,10,-,ファイター専用,Disciples of War only,対象に物理攻撃。 正面攻撃時：物理命中力アップ,class/action/~patch2.00_Lancer.html
+槍術,Lancer,アクション,action,ボーパルスラスト,Vorpal Thrust,27274,2,1500,-,20秒,-,ファイター専用,Disciples of War only,対象に物理攻撃。 背後攻撃時：クリティカルヒット確率アップ,class/action/~patch2.00_Lancer.html
+槍術,Lancer,アクション,action,フェイント,Feint,27278,4,250,-,10秒,-,ファイター専用,Disciples of War only,対象に物理攻撃。命中高い。 発動条件：ミス直後,class/action/~patch2.00_Lancer.html
+槍術,Lancer,アクション,action,捨身,Blood for Blood,27264,6,-,-,60秒,-,-,,次のウェポンスキル実行時にＨＰを消費してダメージアップ。,class/action/~patch2.00_Lancer.html
+槍術,Lancer,アクション,action,ヘヴィスラスト,Heavy Thrust,27273,10,1500,-,20秒,4秒,ファイター専用,Disciples of War only,対象に物理攻撃。 対象に狙われている場合：追加効果「スタン」 コンボ条件：トゥルースラスト ボーナス：スタン効果時間延長 部位損傷「」,class/action/~patch2.00_Lancer.html
+槍術,Lancer,アクション,action,気合,Invigorate,27260,14,-,-,90秒,30秒,-,,ＴＰを得る。効果中は非戦闘中もＴＰが減らない。,class/action/~patch2.00_Lancer.html
+槍術,Lancer,アクション,action,インパルスドライヴ,Impulse Drive,27275,18,1500,-,30秒,-,ファイター専用,Disciples of War only,対象に物理攻撃。 側面攻撃時：ダメージアップ コンボ条件：ボーパルスラスト ボーナス：クリティカルヒット確率アップ 部位損傷「」,class/action/~patch2.00_Lancer.html
+槍術,Lancer,アクション,action,竜剣,Life Surge,27262,22,250,-,15秒,180秒,専用,class-exclusive,ＴＰを消費して自身のオートアタックにＨＰ吸収能力を付加。 3回まで効果は蓄積。竜槍とは同時に使えない。,class/action/~patch2.00_Lancer.html
+槍術,Lancer,アクション,action,キーンフラーリ,Keen Flurry,27265,26,-,-,90秒,-,-,,ＨＰを消費して、次のウェポンスキルのリキャストタイムを短縮する。,class/action/~patch2.00_Lancer.html
+槍術,Lancer,アクション,action,足払い,Leg Sweep,27270,30,1000,-,30秒,8秒,ファイター専用,Disciples of War only,自身の周囲の敵に物理範囲攻撃。 コンボ条件：トゥルースラスト ボーナス：追加効果「スタン」,class/action/~patch2.00_Lancer.html
+槍術,Lancer,アクション,action,竜槍,Power Surge,27261,34,-,-,10秒,-,専用,class-exclusive,自身に物理攻撃力アップ、物理防御力ダウン。対象にウェポンスキルもしくはジャンプを使用した場合、効果時間延長。更にその回数が一定数を超えると効果アップ(Max：3段階)。竜剣とは同時に使えない。再発動で効果終了。,class/action/~patch2.00_Lancer.html
+槍術,Lancer,アクション,action,フルスラスト,Full Thrust,27279,38,250,-,30秒,-,専用,class-exclusive,対象に物理攻撃。命中高い。追加効果「獲得TPボーナス」 発動条件：ミス直後 PIEによってボーナスが付与,class/action/~patch2.00_Lancer.html
+槍術,Lancer,アクション,action,ドレッドスパイク,Dread Spike,27263,42,-,-,120秒,-,専用,class-exclusive,次の被ダメージ時にＨＰ吸収。 竜槍および竜剣の効果が終了する代わりに吸収量アップ。,class/action/~patch2.00_Lancer.html
+槍術,Lancer,アクション,action,ドゥームスパイク,Doom Spike,27271,46,3000,-,60秒,-,専用,class-exclusive,対象に向かって物理貫通攻撃。 コンボ条件：足払い ボーナス：物理命中力アップ,class/action/~patch2.00_Lancer.html
+槍術,Lancer,アクション,action,桜華狂咲,Chaos Thrust,27276,50,3000,-,80秒,-,専用,class-exclusive,対象に物理6回攻撃。物理クリティカルダメージにボーナス。 コンボ条件：インパルスドライヴ ボーナス：クリティカルヒット確率アップ,class/action/~patch2.00_Lancer.html
+槍術,Lancer,特性,trait,物理攻撃力アップI,Enhanced Physical Attack Power,27288,8,,,,,専用,class-exclusive,物理攻撃力を+8する。,class/action/~patch2.00_Lancer.html
+槍術,Lancer,特性,trait,ストアＴＰ,Store TP,27286,12,,,,,専用,class-exclusive,攻撃時の獲得ＴＰを+5%する。,class/action/~patch2.00_Lancer.html
+槍術,Lancer,特性,trait,捨身リキャストタイム短縮,Swift Blood for Blood,27284,16,,,,,専用,class-exclusive,捨身のリキャストタイムを-15秒する。,class/action/~patch2.00_Lancer.html
+槍術,Lancer,特性,trait,物理攻撃力アップII,Enhanced Physical Attack Power II,27289,20,,,,,専用,class-exclusive,物理攻撃力を+10する。,class/action/~patch2.00_Lancer.html
+槍術,Lancer,特性,trait,物理クリティカル命中力アップI,Enhanced Physical Crit Accuracy,27287,24,,,,,専用,class-exclusive,物理クリティカル命中力を+10する。,class/action/~patch2.00_Lancer.html
+槍術,Lancer,特性,trait,気合効果アップ,Enhanced Invigorate,27280,28,,,,,専用,class-exclusive,気合の効果時間を+15秒する。,class/action/~patch2.00_Lancer.html
+槍術,Lancer,特性,trait,竜剣効果アップ,Enhanced Life Surge,27282,32,,,,,専用,class-exclusive,竜剣によるＨＰ吸収効果を+20%する。,class/action/~patch2.00_Lancer.html
+槍術,Lancer,特性,trait,キーンフラーリ効果アップ,Enhanced Keen Flurry,27285,36,,,,,専用,class-exclusive,キーンフラーリによるWSのリキャストタイム短縮効果を-50％する。,class/action/~patch2.00_Lancer.html
+槍術,Lancer,特性,trait,物理攻撃力アップIII,Enhanced Physical Attack Power III,27290,40,,,,,専用,class-exclusive,物理攻撃力を+12する。,class/action/~patch2.00_Lancer.html
+槍術,Lancer,特性,trait,竜槍効果アップ,Enhanced Power Surge,27281,44,,,,,専用,class-exclusive,竜槍による効果を1.5倍にする。,class/action/~patch2.00_Lancer.html
+槍術,Lancer,特性,trait,捨身効果アップ,Enhanced Blood for Blood,27283,48,,,,,専用,class-exclusive,捨身によるダメージアップ効果を+25％する。,class/action/~patch2.00_Lancer.html
+弓術,Archer,ジョブ専用アクション,job-specific action,賢人のバラード,Ballad of Magi,27237,30,-,-,10秒,,ジョブ専用,job-exclusive,自身と周囲のパーティメンバーのＭＰを徐々に回復する歌。,class/action/~patch2.00_Archer.html
+弓術,Archer,ジョブ専用アクション,job-specific action,厳命のメヌエット,Minuet of Rigor,27239,35,-,-,10秒,,ジョブ専用,job-exclusive,自身と周囲のパーティメンバーの物理命中と魔法命中をアップする歌。,class/action/~patch2.00_Archer.html
+弓術,Archer,ジョブ専用アクション,job-specific action,軍神のパイオン,Paeon of War,27238,40,1000,-,10秒,,ジョブ専用,job-exclusive,ＴＰも消費して、自身と周囲のパーティメンバーのＴＰを徐々に上昇させる歌。,class/action/~patch2.00_Archer.html
+弓術,Archer,ジョブ専用アクション,job-specific action,レインオブデス,Rain of Death,27232,45,3000,-,30秒,,ジョブ専用,job-exclusive,対象とその周囲の敵に物理攻撃。 コンボ条件：クイックノック ボーナス：追加効果「スタン」,class/action/~patch2.00_Archer.html
+弓術,Archer,ジョブ専用アクション,job-specific action,バトルボイス,Battle Voice,27227,50,-,-,900秒,,ジョブ専用,job-exclusive,自身と周囲のパーティメンバーのＨＰmaxをアップさせ、かつ効果中は唱える歌の効果が増大する。,class/action/~patch2.00_Archer.html
+弓術,Archer,アクション,action,投擲,Throw,22113,1,-,-,5秒,-,汎用,general,武器を投げつける。 [目標にダメージ] 投擲武器を装備する,class/action/~patch2.00_Archer.html
+弓術,Archer,アクション,action,ヘヴィショット,Heavy Shot,27228,1,1000,-,10秒,-,ファイター専用,Disciples of War only,対象に物理攻撃。 コンボ成立射程：8m以上,class/action/~patch2.00_Archer.html
+弓術,Archer,アクション,action,矢籠め,Refill,27258,1,-,-,-,-,専用,class-exclusive,矢筒に矢を籠める,class/action/~patch2.00_Archer.html
+弓術,Archer,アクション,action,ショット,Light Shot,27259,1,-,-,4.5秒,-,専用,class-exclusive,目標に物理攻撃。,class/action/~patch2.00_Archer.html
+弓術,Archer,アクション,action,デコイ,Decoy,27222,2,-,-,90秒,60秒,-,,ＭＰを消費して、1回のみ遠隔攻撃と魔法攻撃を避ける。,class/action/~patch2.00_Archer.html
+弓術,Archer,アクション,action,ピアシングアロー,Piercing Arrow,27233,4,1000,-,20秒,-,ファイター専用,Disciples of War only,対象に物理攻撃。 コンボ成立射程：8m以上,class/action/~patch2.00_Archer.html
+弓術,Archer,アクション,action,ホークアイ,Hawk's Eye,27220,6,-,-,90秒,15秒,-,,自身の物理命中力をアップする。,class/action/~patch2.00_Archer.html
+弓術,Archer,アクション,action,レッデンアロー,Leaden Arrow,27229,10,1500,-,30秒,30秒,ファイター専用,Disciples of War only,対象に物理攻撃。 追加効果「ヘヴィ」 コンボ条件：ヘヴィショット ボーナス：ヘヴィ効果時間延長 部位損傷「」,class/action/~patch2.00_Archer.html
+弓術,Archer,アクション,action,猛者の撃,Raging Strike,27225,14,-,-,60秒,-,専用,class-exclusive,効果中「ショット」が命中するたびに、弓による攻撃にダメージボーナス(Max：3段階）を得る代わりに敵視が上がりやすくなる。 弓による攻撃がミスすると効果がリセットされる。再発動で効果終了。,class/action/~patch2.00_Archer.html
+弓術,Archer,アクション,action,影縫い,Shadowbind,27236,18,250,-,40秒,30秒,専用,class-exclusive,対象に物理攻撃。 追加効果「バインド」 コンボ条件：ピアシングアロー ボーナス：バインド効果時間延長,class/action/~patch2.00_Archer.html
+弓術,Archer,アクション,action,静者の撃,Quelling Strike,27221,22,-,-,60秒,30秒,-,,次の攻撃の敵視上昇を抑え、かつ獲得TPにボーナスを得る。更に「猛者の撃」中は、「猛者の撃」の効果が終了する代わりに、その段階に応じたＴＰを得る。,class/action/~patch2.00_Archer.html
+弓術,Archer,アクション,action,スウィフトソング,Swiftsong,27226,26,-,-,10秒,180秒,専用,class-exclusive,自身と周囲のパーティメンバーの移動速度をアップする歌。 敵対行動をした場合、およびされた場合に効果終了。,class/action/~patch2.00_Archer.html
+弓術,Archer,アクション,action,グルームアロー,Gloom Arrow,27234,30,1000,-,10秒,30秒,ファイター専用,Disciples of War only,対象に物理攻撃。 コンボ条件：ピアシングアロー ボーナス：追加効果「暗闇」 部位損傷「」,class/action/~patch2.00_Archer.html
+弓術,Archer,アクション,action,乱れ撃ち,Barrage,27224,34,-,-,90秒,60秒,専用,class-exclusive,次のショットを複数回攻撃にする。ただし、命中にペナルティ。,class/action/~patch2.00_Archer.html
+弓術,Archer,アクション,action,クイックノック,Quick Nock,27231,38,1000,-,180秒,-,専用,class-exclusive,矢を5本消費して、対象に向かって前方扇範囲攻撃。射程が短い。 コンボ条件：ヘヴィショット ボーナス：ターゲットを単体化して5回攻撃,class/action/~patch2.00_Archer.html
+弓術,Archer,アクション,action,カメレオン,Chameleon,27223,42,-,-,180秒,-,-,,自身の敵視を下げる。 DEXによって効果が上がる,class/action/~patch2.00_Archer.html
+弓術,Archer,アクション,action,ブラッドレッター,Bloodletter,27235,46,1500,-,80秒,30秒,専用,class-exclusive,対象に物理攻撃。 追加効果「継続ダメージ」 コンボ条件：グルームアロー ボーナス：継続ダメージの効果終了時に大ダメージ。 部位損傷「」,class/action/~patch2.00_Archer.html
+弓術,Archer,アクション,action,ワイドボレー,Wide Volley,27230,50,2000,-,80秒,-,専用,class-exclusive,対象とその周囲の敵に物理範囲攻撃。命中にペナルティ。 コンボ条件：レッデンアロー ボーナス：物理命中力アップ,class/action/~patch2.00_Archer.html
+弓術,Archer,特性,trait,物理命中力アップI,Enhanced Physical Accuracy,27249,8,,,,,専用,class-exclusive,物理命中力を+8する。,class/action/~patch2.00_Archer.html
+弓術,Archer,特性,trait,物理回避力アップI,Enhanced Physical Evasion,27248,12,,,,,専用,class-exclusive,物理回避力を+8する。,class/action/~patch2.00_Archer.html
+弓術,Archer,特性,trait,デコイ効果アップ,Enhanced Decoy,27244,16,,,,,専用,class-exclusive,デコイで物理攻撃も避ける。,class/action/~patch2.00_Archer.html
+弓術,Archer,特性,trait,物理クリティカル回避力アップI,Enhanced Physical Crit Evasion,27247,20,,,,,専用,class-exclusive,物理クリティカル回避力を+10する。,class/action/~patch2.00_Archer.html
+弓術,Archer,特性,trait,物理命中力アップII,Enhanced Physical Accuracy II,27250,24,,,,,専用,class-exclusive,物理命中力を+10する。,class/action/~patch2.00_Archer.html
+弓術,Archer,特性,trait,ホークアイ効果アップ,Enhanced Hawk's Eye,27240,28,,,,,専用,class-exclusive,ホークアイによる物理命中力アップ効果を+50％する。,class/action/~patch2.00_Archer.html
+弓術,Archer,特性,trait,静者の撃効果アップ,Enhanced Quelling Strike,27241,32,,,,,専用,class-exclusive,静者の撃による獲得ＴＰ効果を+50%する。,class/action/~patch2.00_Archer.html
+弓術,Archer,特性,trait,猛者の撃効果アップ,Enhanced Raging Strike,27243,36,,,,,専用,class-exclusive,猛者の撃による効果を1.5倍にする。,class/action/~patch2.00_Archer.html
+弓術,Archer,特性,trait,物理クリティカル命中力アップI,Enhanced Physical Crit Accuracy,27246,40,,,,,専用,class-exclusive,物理クリティカル命中力を+10する。,class/action/~patch2.00_Archer.html
+弓術,Archer,特性,trait,乱れ撃ち効果アップ,Enhanced Barrage,27242,44,,,,,専用,class-exclusive,乱れ撃ちによる攻撃回数を+1する。,class/action/~patch2.00_Archer.html
+弓術,Archer,特性,trait,カメレオンリキャストタイム短縮,Swift Chameleon,27245,48,,,,,専用,class-exclusive,カメレオンのリキャストタイムを-60秒する。,class/action/~patch2.00_Archer.html
+幻術,Conjurer,ジョブ専用アクション,job-specific action,神速魔,Presence of Mind,27344,30,-,-,300秒,,ジョブ専用,job-exclusive,次の魔法の詠唱時間とリキャストタイムを0にする。,class/action/~patch2.00_Conjurer.html
+幻術,Conjurer,ジョブ専用アクション,job-specific action,リジェネ,Regen,27358,35,-,-,5秒,,ジョブ専用,job-exclusive,対象に「継続してＨＰ回復」の効果。,class/action/~patch2.00_Conjurer.html
+幻術,Conjurer,ジョブ専用アクション,job-specific action,エスナ,Esuna,27357,40,-,-,10秒,,ジョブ専用,job-exclusive,対象にかかった弱体効果を解除する。,class/action/~patch2.00_Conjurer.html
+幻術,Conjurer,ジョブ専用アクション,job-specific action,ホーリー,Holy,27359,45,,-,300秒,,ジョブ専用,job-exclusive,全ＭＰを消費して、自分の周囲の敵にダメージ。追加効果「バインド」,class/action/~patch2.00_Conjurer.html
+幻術,Conjurer,ジョブ専用アクション,job-specific action,ベネディクション,Benediction,27345,50,-,-,900秒,,ジョブ専用,job-exclusive,自身と周囲のパーティメンバーのＨＰを瞬時に回復する。,class/action/~patch2.00_Conjurer.html
+幻術,Conjurer,アクション,action,投擲,Throw,22113,1,-,-,5秒,-,汎用,general,武器を投げつける。 [目標にダメージ] 投擲武器を装備する,class/action/~patch2.00_Conjurer.html
+幻術,Conjurer,アクション,action,ストーン,Stone,27355,1,-,2秒,6秒,-,-,,対象に土属性ダメージ。 追加効果「魔法回避－」,class/action/~patch2.00_Conjurer.html
+幻術,Conjurer,アクション,action,ケアル,Cure,27346,2,-,2秒,5秒,-,-,,対象のＨＰを小回復する。,class/action/~patch2.00_Conjurer.html
+幻術,Conjurer,アクション,action,エアロ,Aero,27353,4,-,3秒,6秒,-,-,,対象に風属性ダメージ。 追加効果「継続ダメージ」,class/action/~patch2.00_Conjurer.html
+幻術,Conjurer,アクション,action,プロテス,Protect,27351,6,-,3秒,30秒,300秒,-,,対象とその周囲のパーティメンバーに対して、物理防御力アップの効果。 プロテス／シェルの効果は同時にかからず、あとからかけた効果が上書きされる,class/action/~patch2.00_Conjurer.html
+幻術,Conjurer,アクション,action,クルセードスタンス,Cleric Stance,27342,10,-,-,30秒,-,専用,class-exclusive,攻撃魔法の威力を20%アップする代わりに、回復魔法の威力を20%ダウンする。 再発動で効果終了。,class/action/~patch2.00_Conjurer.html
+幻術,Conjurer,アクション,action,献身,Blissful Mind,27343,14,-,-,30秒,-,専用,class-exclusive,発動時にＨＰを消費して、徐々にＭＰを蓄積する。再発動で蓄積したＭＰが還元される。,class/action/~patch2.00_Conjurer.html
+幻術,Conjurer,アクション,action,レイズ,Raise,27349,18,-,10秒,300秒,-,-,,対象を蘇生する。,class/action/~patch2.00_Conjurer.html
+幻術,Conjurer,アクション,action,ストンラ,Stonera,27356,22,-,3秒,30秒,-,専用,class-exclusive,対象とその周囲の敵に土属性ダメージ。 追加効果「ヘヴィ」 コンボ条件：ストーン ボーナス：ターゲットを単体化してダメージアップ,class/action/~patch2.00_Conjurer.html
+幻術,Conjurer,アクション,action,ストンスキン,Stoneskin,27350,26,-,3秒,30秒,300秒,-,,対象に一定量のダメージを防ぐバリアをはる。,class/action/~patch2.00_Conjurer.html
+幻術,Conjurer,アクション,action,ケアルラ,Cura,27347,30,-,2秒,5秒,-,専用,class-exclusive,対象のＨＰを大回復する。,class/action/~patch2.00_Conjurer.html
+幻術,Conjurer,アクション,action,女神の慈悲,Sacred Prism,27340,34,-,-,90秒,60秒,-,,詠唱時間が延びる代わりに、次のケアル、ケアルラ、リジェネ、エスナ、および強化魔法を範囲化する。,class/action/~patch2.00_Conjurer.html
+幻術,Conjurer,アクション,action,女神の加護,Shroud of Saints,27341,38,-,-,180秒,20秒,専用,class-exclusive,自身の敵視を一時的に半減させ、かつ効果中は徐々にＭＰが回復する。,class/action/~patch2.00_Conjurer.html
+幻術,Conjurer,アクション,action,エアロラ,Aerora,27354,42,-,4秒,20秒,-,専用,class-exclusive,対象とその周囲の敵に風属性ダメージ＆強化エフェクトを1つ削除。 コンボ条件：エアロ ボーナス：ターゲットを単体化して魔法命中力アップ,class/action/~patch2.00_Conjurer.html
+幻術,Conjurer,アクション,action,ケアルガ,Curaga,27348,46,-,3秒,10秒,-,専用,class-exclusive,対象とその周囲のパーティメンバーに対して、ＨＰが減っているメンバーを優先的に回復する。,class/action/~patch2.00_Conjurer.html
+幻術,Conjurer,アクション,action,リポーズ,Repose,27352,50,-,3秒,-,-,専用,class-exclusive,対象に「睡眠」の効果。,class/action/~patch2.00_Conjurer.html
+幻術,Conjurer,特性,trait,回復魔法威力アップI,Greater Healing,27367,8,,,,,専用,class-exclusive,回復魔法威力を+8する。,class/action/~patch2.00_Conjurer.html
+幻術,Conjurer,特性,trait,強化魔法威力アップI,Greater Enhancing Magic,27366,12,,,,,専用,class-exclusive,強化魔法威力を+8する。,class/action/~patch2.00_Conjurer.html
+幻術,Conjurer,特性,trait,魔法命中力アップI,Enhanced Magic Accuracy,27369,16,,,,,専用,class-exclusive,魔法命中力を+8する。,class/action/~patch2.00_Conjurer.html
+幻術,Conjurer,特性,trait,オートリフレシュ,Auto-refresh,27370,20,,,,,専用,class-exclusive,継続的にＭＰが徐々に回復する。,class/action/~patch2.00_Conjurer.html
+幻術,Conjurer,特性,trait,プロテス効果アップ,Enhanced Protect,27365,24,,,,,専用,class-exclusive,プロテスで魔法防御力もアップする。,class/action/~patch2.00_Conjurer.html
+幻術,Conjurer,特性,trait,回復魔法威力アップII,Greater Healing II,27368,28,,,,,専用,class-exclusive,回復魔法威力を+10する。,class/action/~patch2.00_Conjurer.html
+幻術,Conjurer,特性,trait,献身効果アップ,Enhanced Blissful Mind,27362,32,,,,,専用,class-exclusive,献身の蓄積速度が速くなる。,class/action/~patch2.00_Conjurer.html
+幻術,Conjurer,特性,trait,ストンスキン効果アップ,Enhanced Stoneskin,27364,36,,,,,専用,class-exclusive,ストンスキンの効果をアップする。,class/action/~patch2.00_Conjurer.html
+幻術,Conjurer,特性,trait,女神の慈悲リキャストタイム短縮,Swift Sacred Prism,27360,40,,,,,専用,class-exclusive,女神の慈悲のリキャストタイムを-30秒する。,class/action/~patch2.00_Conjurer.html
+幻術,Conjurer,特性,trait,女神の加護リキャストタイム短縮,Swift Shroud of Saints,27361,44,,,,,専用,class-exclusive,女神の加護のリキャストタイムを-60秒する。,class/action/~patch2.00_Conjurer.html
+幻術,Conjurer,特性,trait,レイズ効果アップ,Enhanced Raise,27363,48,,,,,専用,class-exclusive,レイズによる蘇生時に「衰弱」しなくなる。,class/action/~patch2.00_Conjurer.html
+呪術,Thaumaturge,ジョブ専用アクション,job-specific action,コンバート,Convert,27305,30,-,-,450秒,,ジョブ専用,job-exclusive,自身のＨＰとＭＰを入れ替える。,class/action/~patch2.00_Thaumaturge.html
+呪術,Thaumaturge,ジョブ専用アクション,job-specific action,フリーズ,Freeze,27319,35,-,-,120秒,,ジョブ専用,job-exclusive,対象に氷属性ダメージ。 追加効果「敵視ダウン」,class/action/~patch2.00_Thaumaturge.html
+呪術,Thaumaturge,ジョブ専用アクション,job-specific action,フレア,Flare,27318,40,-,-,120秒,,ジョブ専用,job-exclusive,自身の周囲の敵に火属性ダメージ。距離が近いほどダメージアップ。 追加効果「継続ダメージ」,class/action/~patch2.00_Thaumaturge.html
+呪術,Thaumaturge,ジョブ専用アクション,job-specific action,スリプガ,Sleepga,27317,45,-,-,-,,ジョブ専用,job-exclusive,対象とその周囲の敵に「睡眠」の効果。,class/action/~patch2.00_Thaumaturge.html
+呪術,Thaumaturge,ジョブ専用アクション,job-specific action,バースト,Burst,27316,50,-,-,900秒,,ジョブ専用,job-exclusive,対象に雷属性ダメージ。 コンボ条件：サンダラ ボーナス：自身の残りＨＰが少ないほどダメージアップ。,class/action/~patch2.00_Thaumaturge.html
+呪術,Thaumaturge,アクション,action,投擲,Throw,22113,1,-,-,5秒,-,汎用,general,武器を投げつける。 [目標にダメージ] 投擲武器を装備する,class/action/~patch2.00_Thaumaturge.html
+呪術,Thaumaturge,アクション,action,サンダー,Thunder,27313,1,-,2秒,6秒,-,-,,対象に雷属性ダメージ。,class/action/~patch2.00_Thaumaturge.html
+呪術,Thaumaturge,アクション,action,パーシモニー,Parsimony,27304,2,-,-,90秒,30秒,専用,class-exclusive,次の攻撃魔法のＭＰコストを半減し、かつ魔法発動時にＭＰを得る。,class/action/~patch2.00_Thaumaturge.html
+呪術,Thaumaturge,アクション,action,ブリザド,Blizzard,27308,4,-,3秒,10秒,30秒,専用,class-exclusive,対象に氷属性ダメージ。追加効果「ヘヴィ」,class/action/~patch2.00_Thaumaturge.html
+呪術,Thaumaturge,アクション,action,ネクロジェネシス,Necrogenesis,27303,6,-,-,90秒,30秒,-,,次の攻撃魔法使用時に自身のＨＰを回復する。,class/action/~patch2.00_Thaumaturge.html
+呪術,Thaumaturge,アクション,action,ファイア,Fire,27310,10,-,3秒,8秒,-,-,,対象とその周囲の敵に火属性ダメージ。,class/action/~patch2.00_Thaumaturge.html
+呪術,Thaumaturge,アクション,action,ダークシール,Dark Seal,27300,14,-,-,90秒,30秒,-,,次の魔法の魔法命中力をアップする。,class/action/~patch2.00_Thaumaturge.html
+呪術,Thaumaturge,アクション,action,サンダラ,Thundara,27314,18,-,-,30秒,4秒,専用,class-exclusive,対象に雷属性ダメージ。 追加効果「スタン」 コンボ条件：サンダー ボーナス：追加効果が発動しない代わりに、ダメージアップ＆リキャストタイム短縮,class/action/~patch2.00_Thaumaturge.html
+呪術,Thaumaturge,アクション,action,レゾナンス,Resonance,27301,22,-,-,90秒,30秒,-,,次の魔法の射程を延ばす。,class/action/~patch2.00_Thaumaturge.html
+呪術,Thaumaturge,アクション,action,ブリザラ,Blizzara,27309,26,-,-,40秒,30秒,専用,class-exclusive,自身の周囲の敵に氷属性ダメージ。追加効果「バインド」,class/action/~patch2.00_Thaumaturge.html
+呪術,Thaumaturge,アクション,action,ブラッドライト,Sanguine Rite,27307,30,-,-,60秒,20秒,-,,被ダメージ量に応じたＭＰを回復する。効果中は被ダメージによって詠唱中断されない。,class/action/~patch2.00_Thaumaturge.html
+呪術,Thaumaturge,アクション,action,ファイラ,Fira,27311,34,-,5秒,16秒,-,-,,対象とその周囲の敵に火属性ダメージ。 コンボ条件：ファイア ボーナス：詠唱時間短縮,class/action/~patch2.00_Thaumaturge.html
+呪術,Thaumaturge,アクション,action,エクスクルシエート,Excruciate,27302,38,-,-,90秒,30秒,専用,class-exclusive,魔法クリティカル発動力を徐々にアップ。1回でもクリティカルヒットが発動すると効果終了。,class/action/~patch2.00_Thaumaturge.html
+呪術,Thaumaturge,アクション,action,スリプル,Sleep,27306,42,-,3秒,-,60秒,専用,class-exclusive,対象に「睡眠」の効果。,class/action/~patch2.00_Thaumaturge.html
+呪術,Thaumaturge,アクション,action,サンダガ,Thundaga,27315,46,-,5秒,45秒,-,専用,class-exclusive,対象に雷属性ダメージ。 コンボ条件：サンダラ ボーナス：魔法クリティカルダメージアップ,class/action/~patch2.00_Thaumaturge.html
+呪術,Thaumaturge,アクション,action,ファイガ,Firaga,27312,50,-,8秒,7秒,-,専用,class-exclusive,対象とその周囲の敵に火属性ダメージ。 コンボ条件：ファイラ ボーナス：詠唱時間短縮,class/action/~patch2.00_Thaumaturge.html
+呪術,Thaumaturge,特性,trait,攻撃魔法威力アップI,Enhanced Magic Potency,27327,8,,,,,専用,class-exclusive,攻撃魔法威力を+8する。,class/action/~patch2.00_Thaumaturge.html
+呪術,Thaumaturge,特性,trait,弱体魔法威力アップI,Enhanced Enfeebling Magic,27325,12,,,,,専用,class-exclusive,弱体魔法威力を+8する。,class/action/~patch2.00_Thaumaturge.html
+呪術,Thaumaturge,特性,trait,パーシモニー効果アップ,Enhanced Parsimony,27323,16,,,,,専用,class-exclusive,パーシモニーによる獲得ＭＰを+25%する。,class/action/~patch2.00_Thaumaturge.html
+呪術,Thaumaturge,特性,trait,オートリフレシュ,Auto-refresh,27330,20,,,,,専用,class-exclusive,継続的にＭＰが徐々に回復する。,class/action/~patch2.00_Thaumaturge.html
+呪術,Thaumaturge,特性,trait,ネクロジェネシスリキャストタイム短縮,Swift Necrogenesis,27322,24,,,,,専用,class-exclusive,ネクロジェネシスのリキャストタイムを-30秒する。,class/action/~patch2.00_Thaumaturge.html
+呪術,Thaumaturge,特性,trait,攻撃魔法威力アップII,Enhanced Magic Potency II,27328,28,,,,,専用,class-exclusive,攻撃魔法威力を+10する。,class/action/~patch2.00_Thaumaturge.html
+呪術,Thaumaturge,特性,trait,弱体魔法威力アップII,Enhanced Enfeebling Magic II,27326,32,,,,,専用,class-exclusive,弱体魔法威力を+10する。,class/action/~patch2.00_Thaumaturge.html
+呪術,Thaumaturge,特性,trait,ダークシールリキャストタイム短縮,Swift Dark Seal,27320,36,,,,,専用,class-exclusive,ダークシールのリキャストタイムを-30秒する。,class/action/~patch2.00_Thaumaturge.html
+呪術,Thaumaturge,特性,trait,魔法クリティカル威力アップI,Enhanced Magic Crit Potency,27329,40,,,,,専用,class-exclusive,魔法クリティカル威力を+10する。,class/action/~patch2.00_Thaumaturge.html
+呪術,Thaumaturge,特性,trait,ブラッドライト効果アップ,Enhanced Sanguine Rite,27324,44,,,,,専用,class-exclusive,ブラッドライトにダメージ軽減効果を追加する。,class/action/~patch2.00_Thaumaturge.html
+呪術,Thaumaturge,特性,trait,エクスクルシエート効果アップ,Enhanced Excruciate,27321,48,,,,,専用,class-exclusive,エクスクルシエートによる魔法クリティカル発動力をアップする。,class/action/~patch2.00_Thaumaturge.html

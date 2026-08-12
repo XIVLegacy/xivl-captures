@@ -1,0 +1,35 @@
+id: elemen-site-archive
+title: eLeMeN FF14 1.x Site Archive - HTML Mirror of Digested Sections
+evidence_class: archive
+status: indexed
+tags:
+- web-reference
+- site-archive
+- preservation
+- provenance
+- html-mirror
+- wiki-tier
+- elemen
+- patch-1.x
+search_hints:
+- elemen site archive html mirror preservation provenance
+- eLeMeN elemen.sakura.ne.jp ff14_dated_archives original pages
+- source page mirror for elemen-* web-tables sets
+- monster bestiary quest area playguide food medicine gamecontents html
+- db_shop.js shop data original
+- offline copy of elemen fan site 1.23b world-down
+notes: 'Consolidated verbatim HTML mirror of the eLeMeN - FF14 (elemen.sakura.ne.jp/ff14_dated_archives/) sections represented in this archive, preserved at their true site paths under sources/elemen-site-archive/objects/ff14_dated_archives/. 271 files (270 HTML + the shop data file js/db_shop.js), bytes identical to source. eLeMeN preserves the final 1.x (patch 1.23b) data at the 2012-11-11 world-down and is the primary source behind every elemen-* set; this archive is its preservation/provenance copy. Scope is the sections represented here, not the whole site: monster/bestiary + monster/nm, class/action + class/battle + class/level, quest/{ClassQuest,JobQuest,MainQuest} detail pages, guildleve/regional battlecraft pages, etc/{area,shopitem,playguide,history,food,medicine}, and gamecontents/{InstancedRaids,PrimalBattle,StrongholdandDungeon,Materia, TheGrandCompanies,etc}. Site paths were reconstructed from each page''s breadcrumb (authoritative section) plus the cross-page link graph (exact filenames incl. apostrophes); derived/url-map.csv maps every archived file to its exact source URL. This is a preservation duplicate - each page also lives in its originating set''s sources/<id>/objects/ as that set''s working evidence; this set is the browsable, path-faithful consolidation. Gaps: only represented pages are present (index-based sections effectively complete, detail-page sections partial); the gear/ section is not represented in this archive; images are not mirrored (separate ff14_archives/img/ subtree, mostly icons already decoded in xivl-client-data derived/icons-1.23b/); a few WAF-blocked resources (etc/playguide/server.html, gamecontents/index.html) were never fetchable. Archived 2026-07-18.'
+related_implementation_docs: []
+source_refs:
+- source: elemen-site-archive
+primary_paths:
+- README.md
+- derived/url-map.csv
+- derived/file-inventory.csv
+canonical_evidence:
+- derived/url-map.csv
+distilled:
+  distilled: false
+  distilled_artifacts:
+  - derived/url-map.csv
+  - derived/file-inventory.csv

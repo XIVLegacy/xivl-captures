@@ -1,0 +1,52 @@
+id: elemen-level-exp
+title: eLeMeN FF14 1.x Level / EXP Growth - Web Tables
+evidence_class: web-tables
+status: distilled
+content_kind: character-mechanic
+progression_track: class-rank
+tags:
+- web-reference
+- wiki-tier
+- calibration
+- level-curve
+- exp-curve
+- exp-economy
+- physical-bonus
+- attribute-allotment
+- link-chain-rest-bonus
+- character-mechanic
+- elemen
+- patch-1.x
+search_hints:
+- 1.x level exp growth curve
+- exp to next level 570 700 880 threshold
+- physical bonus point attribute allotment
+- max value per parameter allot
+- max base exp per kill by party size
+- link bonus chain bonus rest bonus exp
+- レベル 経験値 フィジカルボーナス
+- 修錬値 ランク physical level removed patch 1.19
+- character growth exp economy 1.23b
+- eLeMeN elemen.sakura.ne.jp class level
+notes: 'Web-table transcription of the eLeMeN - FF14 (elemen.sakura.ne.jp) "データ資料 > クラス > レベル/経験値" page (class/level/index.html). Unlike the sibling elemen-*-actions sets, this is a numeric growth-curve harvest with no client name-join. Three derived CSVs: level-growth.csv (50 rows, one per class level 1-50: physical-bonus point + max-per-attribute, the four quest/leve unlock markers verbatim JP, and exp_to_next_level / next_level), max-exp-per-kill.csv (86 value rows, long form level x party_size 1-8, the per-kill base-EXP cap; sparse on the source, 22 estimated/faint-text values flagged), and exp-bonuses.csv (10 rows: link / chain / rest EXP multipliers). content_kind is character-mechanic; progression_track physical-level. Evidence tier: wiki, so CALIBRATION-grade (packet captures > video breakdown > wiki). Client-first crux: this data is WEB-UNIQUE - the EXP-to-next curve (570,700,880,...) and the max-EXP-per-kill curve (225,225,225,300,...) appear in NO decoded xivl-client-data CSV (searched every csv for the printed sequences); the only EXP-named sheet exp_BPCost.csv (29 rows, s16/s8/s16/s16) is an unrelated sub-system whose index/values match none of this page''s curves. So the 1.x EXP economy is server-side and absent from the shipped client - the reason the harvest exists. The 最大値 (max-per-attribute) cell uses rowspan=2 on the source (two equal levels merged); it is expanded per-level in the transcription. The page describes the final 1.x state (it records physical level removed in patch 1.19 and 修錬値->経験値 / ランク->レベル renamed then), i.e. patch 1.23b at the 2012-11-11 world-down, not ARR. The site 403s naive fetchers (curl/WebFetch); the page was read with a browser UA and captured into elemen-site-archive as the archival copy (web.archive Save-Page-Now not relied on). Source HTML preserved in elemen-site-archive, see its derived/url-map.csv. The ~patch1.20/~patch1.22 historical snapshots and the other eLeMeN sections (equipment, quests, guildleves, areas) are out of scope for future intakes. Harvested 2026-07-18.'
+related_implementation_docs: []
+source_refs:
+- source: elemen-level-exp
+- source: elemen-site-archive
+  citation: full site mirror
+primary_paths:
+- derived/evidence-map.md
+- derived/level-growth.csv
+- derived/max-exp-per-kill.csv
+- derived/exp-bonuses.csv
+- derived/glossary.md
+- derived/file-inventory.csv
+distilled:
+  distilled: true
+  distilled_artifacts:
+  - derived/level-growth.csv
+  - derived/max-exp-per-kill.csv
+  - derived/exp-bonuses.csv
+  - derived/glossary.md
+  - derived/evidence-map.md
+  - derived/file-inventory.csv

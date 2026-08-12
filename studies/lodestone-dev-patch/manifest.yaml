@@ -1,0 +1,59 @@
+id: lodestone-dev-patch
+title: FFXIV 1.x Lodestone Dev Posts and Patch Notes
+evidence_class: web-tables
+status: distilled
+content_kind: action-mechanic
+tags:
+- web-reference
+- dev-communication
+- patch-notes
+- official
+- square-enix
+- lodestone-1x
+- first-party
+- ask-the-devs
+- producer-letters
+- battle-reform
+- enmity
+- auto-attack
+- version-update
+- patch-history
+- materia
+- guildleve
+- notorious-monster
+- primal-battle
+- wiki-consumable
+tags_note: content_kind is action-mechanic to match the sibling web-tables sets (kanican-tables, lodestone-manual); this set actually spans dev communications across all 1.x systems. The per-kind breakdown is in derived/dev-patch-index.md.
+search_hints:
+- patch notes 1.15 1.16 1.18
+- battle reform auto-attack enmity
+- ask the devs
+- letter from the producer
+- guildleve reform materia
+- notorious monsters primals
+- fatigue system removal surplus
+- comprehensive version update details
+- materia introduction
+- introducing settlements
+- chocobos and airships
+- instanced raids
+- ifrit garuda good king moggle mog
+- enmity calculation change
+- raise weakness revision
+notes: 'Clean Markdown transcription of the 1.x FINAL FANTASY XIV Lodestone dev communications and patch notes, harvested from the same Jan-2015 master archive as the manual set. 63 pages, ~55k words, 166 content images, one .md per page under sources/lodestone-dev-patch/objects/pages/, grouped by kind in derived/dev-patch-index.md. This is the patch-history / design-intent layer: what SE changed and why across patches 1.15-1.23 (auto-attack and enmity reform, fatigue-system removal, Raise/Return revisions, materia, guildleve reform, settlements, airships, instanced raids, NMs and primals), plus 17 Ask the Devs Q&A and 6 producer letters. Retained as first-party patch-history evidence and behavior/patch context. Evidence tier: first-party SE dev communication of design INTENT - stronger than community wiki, but it records what was announced/intended; observed packet/video evidence still outranks it for actual runtime values, and an announced change is intent until confirmed shipped in 1.23b. Prose and authored text are ASCII-normalized; two genuinely non-ASCII glyphs are kept verbatim as data (a yen sign in a flavor line, an accented letter in "a la mode"). The ~120 lore/event/ARR-transition pages and 12 Beginner''s Guide columns in the master rar are NOT harvested here.'
+related_implementation_docs: []
+source_refs:
+- source: lodestone-dev-patch
+primary_paths:
+- derived/dev-patch-index.md
+- derived/evidence-map.md
+- derived/file-inventory.csv
+canonical_evidence:
+- derived/dev-patch-index.md
+- derived/evidence-map.md
+distilled:
+  distilled: true
+  distilled_artifacts:
+  - derived/dev-patch-index.md
+  - derived/evidence-map.md
+  - derived/file-inventory.csv

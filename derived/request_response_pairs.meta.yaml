@@ -1,0 +1,13 @@
+dataset: request_response_pairs
+kind: generated
+evidence_class: packet-capture
+schema_version: 1
+output:
+  file: derived/request_response_pairs.json
+  sha256: 28b7a6704c0f79191111c79682d0aac44cbfe1583d310cf8331303c6f8ba00a7
+generator:
+  tool: tools/extractors/extract_request_response_pairs.py
+  version: '1'
+inputs:
+- source: pcap-1.23b
+  content_sha256: 3e39bfbffdf5a7efa0f42fc221f42dc2d1d28af8f19378d28921a3b903c0c7ee

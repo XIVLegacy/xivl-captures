@@ -1,0 +1,13 @@
+dataset: lane_observations
+kind: generated
+evidence_class: packet-capture
+schema_version: 1
+output:
+  file: derived/lane_observations.json
+  sha256: 0f8e3039302dda03ceb896e99d31d59aef6e6e198933fd0a1f4976294c9cbe7a
+generator:
+  tool: tools/extractors/extract_observations.py
+  version: '1'
+inputs:
+- source: pcap-1.23b
+  content_sha256: 3e39bfbffdf5a7efa0f42fc221f42dc2d1d28af8f19378d28921a3b903c0c7ee

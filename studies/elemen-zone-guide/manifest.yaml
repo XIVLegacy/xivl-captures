@@ -1,0 +1,63 @@
+id: elemen-zone-guide
+title: eLeMeN FF14 1.x Zone Guide - Weather, Aetheryte, Adjacency - Web Tables
+evidence_class: web-tables
+status: distilled
+content_kind: zone-mechanic
+tags:
+- web-reference
+- wiki-tier
+- calibration
+- zone
+- weather
+- aetheryte
+- teleport-economy
+- adjacency
+- transport
+- service-npc
+- shop-vendor
+- submap-patch-history
+- elemen
+- patch-1.x
+search_hints:
+- 1.x zone weather runtime behavior region linkage change timing
+- eorzea time 0 8 16 weather change no client weather table
+- aetheryte teleport gil cost 500 1000 2000 4000 served landmarks
+- zone adjacency transport ferry airship 定期船 飛空艇
+- service npc repair leve linkshell retainer bell coords
+- shop npc roster venue category coords patch
+- submap implementation patch date 実装
+- xtx_placeName xtx_displayName client cross-check
+- zone economy calibration 1.23b opaque params
+- eLeMeN elemen.sakura.ne.jp area map shop
+- eorzea time 0 8 16 weather change tenki
+- no client weather table opaque params calibration 1.23b
+notes: 'Web-table harvest of the eLeMeN - FF14 (elemen.sakura.ne.jp) etc/area section, scoped client-first then full-mirrored over the web-unique slices. The 2026-07-18 client comparison shows that the client ships the map geometry (2Dmap_*), shop item inventories (shopItem/populace*Shop*/xtx_itemName + the site''s own etc/shopitem reverse-lookup), aetheryte placement (aetheryte*), gathering tables, zone roster (_zoneParam/zoneGroupParam, with the external non-public bahamut/data/zones.json roster consulted at research time), and NPC dialogue (populace* greeting tables) as primary evidence - all dropped. Kept the runtime/economy/placement data the client stores only as opaque params or not at all: (1) per-zone weather runtime behavior - there is NO weather table anywhere in the client, so the readable rules (region linkage, Eorzea 0/8/16h change timing, sub-area weather independence/absence, special-event weather) are entirely web-unique; (2) aetheryte teleport economy - gil cost tiers (500/1000/2000/4000) and served sub-landmarks, opaque in aetheryte.csv; (3) adjacency + transport mode (walk/ferry/airship); (4) service-NPC roster (repair/leve/linkshell/retainer-hire/retainer-bell) + player-map coords; (5) shop-NPC roster (category/venue/npc/coords/patch; item inventories dropped); (6) sub-map roster + patch-implementation dates. Seven derived CSVs. Client cross-check: places join xtx_placeName.csv (JP col1 -> EN col2, id col0) and NPCs join xtx_displayName.csv (same shape), whitespace-insensitive NFKC - zones 27/28, adjacency 52/52, aetheryte 25/25 + landmarks 63/63, service NPCs 55/55 named, shop NPCs 153/154 named, sub-maps 42/45. Four shop NPCs matched via personal-name base override (the shop list abbreviates role prefixes, e.g. site 板金商 vs client 甲冑商) - logged in name_match_note. Genuine client gaps (flagged, not guessed): 船/Ship + 2 ship sub-decks + the モードゥナ/交信電波塔 landmark (no xtx_placeName row), and 酒保商人フォルガード (no xtx_displayName row). Weather-type icons (weatherN.png) have no source legend and no client table to resolve against, so they are kept verbatim as [weatherN] tokens, not decoded. Evidence tier: wiki, CALIBRATION-grade. The final 1.x (patch 1.23b) edition is confirmed by the place/NPC joins and the in-page patch dates (1.18-1.22). The site 403s naive fetchers; pages were read with a browser UA and captured into elemen-site-archive (28 zones + index). Source HTML preserved in elemen-site-archive, see its derived/url-map.csv. Harvested 2026-07-18.'
+related_implementation_docs: []
+source_refs:
+- source: elemen-zone-guide
+- source: elemen-site-archive
+  citation: full site mirror
+primary_paths:
+- derived/evidence-map.md
+- derived/weather.csv
+- derived/aetheryte.csv
+- derived/adjacency.csv
+- derived/service-npcs.csv
+- derived/shops.csv
+- derived/submaps.csv
+- derived/zones.csv
+- derived/glossary.md
+- derived/file-inventory.csv
+distilled:
+  distilled: true
+  distilled_artifacts:
+  - derived/weather.csv
+  - derived/aetheryte.csv
+  - derived/adjacency.csv
+  - derived/service-npcs.csv
+  - derived/shops.csv
+  - derived/submaps.csv
+  - derived/zones.csv
+  - derived/glossary.md
+  - derived/evidence-map.md
+  - derived/file-inventory.csv

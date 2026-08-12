@@ -1,0 +1,73 @@
+id: elemen-bestiary
+title: eLeMeN FF14 1.x Bestiary and NM - Web Tables
+evidence_class: web-tables
+status: distilled
+content_kind: notorious-monster
+tags:
+- web-reference
+- wiki-tier
+- calibration
+- bestiary
+- mob-skill-list
+- notorious-monster
+- taxonomy
+- crystal-drop
+- special-move
+- item-drop
+- nm-spawn
+- spawn-location
+- elemen
+- patch-1.x
+search_hints:
+- 1.x bestiary monster taxonomy 類 綱 属 種
+- crystal drop priority by element
+- 特殊技 special move cast color range interrupt effect
+- mob skill list notorious monster NM
+- ranged attack usage per genus
+- 網 vs 綱 in-game vs official setting class
+- weakness resistance inferred attribute
+- eLeMeN elemen.sakura.ne.jp bestiary nm
+- Aldgoat Coeurl Morbol Goobbue Chimera
+- Great Buffalo Lone Coeurl Cactuar Jack Dodore
+- english translation gloss cast color element status effect
+- NM item drop table rare drop ◆ equipment material xtx_itemName
+- NM spawn location zone coords condition xtx_displayName xtx_placeName
+- モンスター 生息域 出現条件 アイテム habitat spawn drop
+- crystal drop priority element
+- 特殊技 special move table
+- cast effect color 赤 黄 紫 青
+- 網 vs 綱 official setting
+- NM spawn location zone coords condition window xtx_displayName
+notes: 'Web-table transcription of the eLeMeN - FF14 (elemen.sakura.ne.jp) "データ資料 > モンスター" section: the bestiary (monster/bestiary/, 65 genus detail pages + index) and the NM list (monster/nm/, 5 region pages + index, 39 NMs). Two derived CSVs: bestiary-taxonomy.csv (65 genus rows: 類/綱/属/種, crystal drop-priority by element, inferred weakness/resistance) and mob-skill-list.csv (320 special-move rows: 194 regular + 126 NM; cast color, AoE range, deals-damage, interruptible, status effect). content_kind is the nearest valid monster-domain kind (notorious-monster); the set spans the full bestiary and the mob-skill-list payload via tags. Evidence tier: wiki, so CALIBRATION-grade (packet captures > video breakdown > wiki). Raw monster stats defer to xivl-client-data; this set''s unique value is the observation-only fields: crystal drop-priority order, cast-effect colors, ranged-attack usage, and the NM special-move tables. The site 403s naive fetchers (curl/WebFetch); pages were read with a browser UA and captured into elemen-site-archive as the archival copy (web.archive Save-Page-Now not relied on). Source HTML preserved in elemen-site-archive, see its derived/url-map.csv. Genus JP->EN client mapping is keyed to xivl-client-data/csv/xtx_monsterRace.csv; 15 genera have no confident client row (marked GAP) and NM names use site-provided EN only - see derived/evidence-map.md, which also carries the 網-vs-綱 note and every ※ in-game-vs-official-setting class difference. Both CSVs also carry interleaved `*_en` columns (JP kept verbatim); status_effect_en is the client status name from xtx_status.csv (NFKC-matched: Amnesia, Pacification, Mute, Imperiled, Glossolalia, ...), other mechanics vocabulary (elements, cast colors, AoE geometry, taxonomy labels) is authored FFXIV EN, and skill_name_en is the official 1.x client EN action name from xivl-client-data/csv/xtx_command.csv, with client_command_id for direct cross-reference (187/195 resolve; 3 absent names flagged `(?)`), and NM scope_en is the client actor name from xtx_displayName.csv with client_actor_id (all 36 resolve) - see derived/glossary.md. derived/species-client-map.csv maps every species (112) to the client actor table xtx_displayName.csv (106 present); a site species maps to a family of client field mobs, so it gives the generic bare-form name plus the full variant list + ids, recovering mob-granularity client names for the 15 race-table-GAP genera (genus_en_client stays keyed to xtx_monsterRace and is left unchanged). Two further CSVs distill the per-NM metadata the 5 NM region pages carry (regular bestiary pages have neither): derived/mob-drops.csv (84 item-drop rows across the 35 NMs that drop items - NM proper name + client_actor_id via xtx_displayName, dropped item JP with item_en_client + item_client_id via xtx_itemName 84/84, the site''s ◆/◆◆ rarity mark, and drop_group preserving the source line-grouping) and derived/nm-spawns.csv (39 rows, one per NM - zone + coords + spawn condition verbatim, zone_en via xtx_placeName, monster_family_en_client reused from bestiary-taxonomy). NM EN is the client display-name in in-game title case (client_actor_id makes the raw lowercase join reproducible); this fixed the site''s mis-spaced romaji (Guardianofthegrove -> Guardian of the Grove, OldSix-arms -> Old Six-Arms, PrinceofPestilence -> Prince of Pestilence). Item EN is joined by exact JP match, so odd-looking client strings are authoritative (セストソル = Fists of the Sixth Sun). Harvested 2026-07-17.'
+related_implementation_docs: []
+source_refs:
+- source: elemen-bestiary
+- source: elemen-site-archive
+  citation: full site mirror
+primary_paths:
+- derived/evidence-map.md
+- derived/bestiary-taxonomy.csv
+- derived/mob-skill-list.csv
+- derived/species-client-map.csv
+- derived/mob-drops.csv
+- derived/nm-spawns.csv
+- derived/glossary.md
+- derived/file-inventory.csv
+canonical_evidence:
+- derived/bestiary-taxonomy.csv
+- derived/mob-skill-list.csv
+- derived/mob-drops.csv
+- derived/nm-spawns.csv
+- derived/glossary.md
+- derived/evidence-map.md
+distilled:
+  distilled: true
+  distilled_artifacts:
+  - derived/bestiary-taxonomy.csv
+  - derived/mob-skill-list.csv
+  - derived/species-client-map.csv
+  - derived/mob-drops.csv
+  - derived/nm-spawns.csv
+  - derived/glossary.md
+  - derived/evidence-map.md
+  - derived/file-inventory.csv

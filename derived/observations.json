@@ -1,0 +1,6503 @@
+{
+  "version": "1.23b",
+  "captures": [
+    "accept_leve.pcapng",
+    "accept_local_leve.pcapng",
+    "accept_quest.pcapng",
+    "action_and_traits.pcapng",
+    "add_str.pcapng",
+    "attributes.pcapng",
+    "battle_mode_passive_mode.pcapng",
+    "buy_square_maple_shield.pcapng",
+    "change_bodyarmor.pcapng",
+    "change_helm.pcapng",
+    "change_to_botanist.pcapng",
+    "chat_say.pcapng",
+    "chat_shout.pcapng",
+    "check_room_map.pcapng",
+    "checkbed.pcapng",
+    "coerthas_map.pcapng",
+    "combat_autoattack.pcapng",
+    "combat_skills.pcapng",
+    "cutscene_book.pcapng",
+    "emote_dance.pcapng",
+    "emote_kneel.pcapng",
+    "friendlist_search.pcapng",
+    "from_gridania_to_blackshroud.pcapng",
+    "gather_wood.pcapng",
+    "gear_changesoul.pcapng",
+    "gear_changeweapon.pcapng",
+    "gridania_map.pcapng",
+    "gridania_to_coerthas.pcapng",
+    "harvest.pcapng",
+    "idle_in_party.pcapng",
+    "idling.pcapng",
+    "inventory.pcapng",
+    "invite_join_party.pcapng",
+    "local_leve_complete.pcapng",
+    "mount_unmount_chocobo.pcapng",
+    "move_around_gridania.pcapng",
+    "move_out_of_room.pcapng",
+    "moving_around_gridania.pcapng",
+    "open_gear_menu.pcapng",
+    "party_battle_leve.pcapng",
+    "quest_journal.pcapng",
+    "quest_update.pcapng",
+    "repair_items.pcapng",
+    "return_to_inn.pcapng",
+    "sell_item.pcapng",
+    "small_talk_louisoix.pcapng",
+    "switch_to_weaver.pcapng",
+    "teleport_to_camp_nine_ivies.pcapng",
+    "teleport_to_camp_tranquil.pcapng",
+    "teleport_to_gridania.pcapng",
+    "war_quest_update1.pcapng",
+    "war_quest_update2.pcapng",
+    "war_quest_update3.pcapng"
+  ],
+  "outer_frames": {
+    "c2s": {
+      "0x0002": {
+        "opcode": 2,
+        "totalCount": 4963,
+        "payloadLengths": [
+          96,
+          120,
+          136,
+          144,
+          152,
+          176,
+          192,
+          200,
+          208,
+          272,
+          296
+        ],
+        "observedIn": [
+          "accept_leve.pcapng",
+          "accept_local_leve.pcapng",
+          "accept_quest.pcapng",
+          "action_and_traits.pcapng",
+          "add_str.pcapng",
+          "attributes.pcapng",
+          "battle_mode_passive_mode.pcapng",
+          "buy_square_maple_shield.pcapng",
+          "change_bodyarmor.pcapng",
+          "change_helm.pcapng",
+          "change_to_botanist.pcapng",
+          "chat_say.pcapng",
+          "chat_shout.pcapng",
+          "check_room_map.pcapng",
+          "checkbed.pcapng",
+          "coerthas_map.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "cutscene_book.pcapng",
+          "emote_dance.pcapng",
+          "emote_kneel.pcapng",
+          "friendlist_search.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gear_changesoul.pcapng",
+          "gear_changeweapon.pcapng",
+          "gridania_map.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "idle_in_party.pcapng",
+          "idling.pcapng",
+          "inventory.pcapng",
+          "invite_join_party.pcapng",
+          "local_leve_complete.pcapng",
+          "mount_unmount_chocobo.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "open_gear_menu.pcapng",
+          "party_battle_leve.pcapng",
+          "quest_journal.pcapng",
+          "quest_update.pcapng",
+          "repair_items.pcapng",
+          "return_to_inn.pcapng",
+          "sell_item.pcapng",
+          "small_talk_louisoix.pcapng",
+          "switch_to_weaver.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x0003": {
+        "opcode": 3,
+        "totalCount": 3018,
+        "payloadLengths": [
+          152,
+          168,
+          184,
+          200,
+          208,
+          216,
+          264,
+          360,
+          440,
+          720
+        ],
+        "observedIn": [
+          "accept_leve.pcapng",
+          "accept_local_leve.pcapng",
+          "accept_quest.pcapng",
+          "action_and_traits.pcapng",
+          "add_str.pcapng",
+          "attributes.pcapng",
+          "battle_mode_passive_mode.pcapng",
+          "buy_square_maple_shield.pcapng",
+          "change_bodyarmor.pcapng",
+          "change_helm.pcapng",
+          "change_to_botanist.pcapng",
+          "chat_say.pcapng",
+          "chat_shout.pcapng",
+          "check_room_map.pcapng",
+          "checkbed.pcapng",
+          "coerthas_map.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "cutscene_book.pcapng",
+          "emote_dance.pcapng",
+          "emote_kneel.pcapng",
+          "friendlist_search.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gear_changesoul.pcapng",
+          "gear_changeweapon.pcapng",
+          "gridania_map.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "idle_in_party.pcapng",
+          "idling.pcapng",
+          "inventory.pcapng",
+          "invite_join_party.pcapng",
+          "local_leve_complete.pcapng",
+          "mount_unmount_chocobo.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "open_gear_menu.pcapng",
+          "party_battle_leve.pcapng",
+          "quest_journal.pcapng",
+          "quest_update.pcapng",
+          "repair_items.pcapng",
+          "return_to_inn.pcapng",
+          "sell_item.pcapng",
+          "small_talk_louisoix.pcapng",
+          "switch_to_weaver.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x0004": {
+        "opcode": 4,
+        "totalCount": 255,
+        "payloadLengths": [
+          216,
+          224,
+          240,
+          248,
+          264,
+          272,
+          280,
+          288,
+          304,
+          320,
+          328,
+          416,
+          424,
+          432,
+          776
+        ],
+        "observedIn": [
+          "accept_leve.pcapng",
+          "accept_local_leve.pcapng",
+          "action_and_traits.pcapng",
+          "add_str.pcapng",
+          "attributes.pcapng",
+          "battle_mode_passive_mode.pcapng",
+          "buy_square_maple_shield.pcapng",
+          "change_bodyarmor.pcapng",
+          "change_helm.pcapng",
+          "change_to_botanist.pcapng",
+          "chat_shout.pcapng",
+          "checkbed.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "cutscene_book.pcapng",
+          "friendlist_search.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gear_changesoul.pcapng",
+          "gear_changeweapon.pcapng",
+          "gridania_map.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "inventory.pcapng",
+          "local_leve_complete.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "open_gear_menu.pcapng",
+          "party_battle_leve.pcapng",
+          "quest_journal.pcapng",
+          "quest_update.pcapng",
+          "repair_items.pcapng",
+          "sell_item.pcapng",
+          "small_talk_louisoix.pcapng",
+          "switch_to_weaver.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x0005": {
+        "opcode": 5,
+        "totalCount": 62,
+        "payloadLengths": [
+          264,
+          280,
+          288,
+          312,
+          328,
+          336,
+          344,
+          360,
+          376,
+          384,
+          440,
+          456,
+          488,
+          800
+        ],
+        "observedIn": [
+          "accept_leve.pcapng",
+          "accept_quest.pcapng",
+          "buy_square_maple_shield.pcapng",
+          "change_helm.pcapng",
+          "checkbed.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "gear_changesoul.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "local_leve_complete.pcapng",
+          "move_out_of_room.pcapng",
+          "open_gear_menu.pcapng",
+          "party_battle_leve.pcapng",
+          "quest_update.pcapng",
+          "sell_item.pcapng",
+          "small_talk_louisoix.pcapng",
+          "switch_to_weaver.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x0001": {
+        "opcode": 1,
+        "totalCount": 560,
+        "payloadLengths": [
+          40,
+          56,
+          72,
+          80,
+          88,
+          136,
+          232,
+          568
+        ],
+        "observedIn": [
+          "accept_leve.pcapng",
+          "accept_quest.pcapng",
+          "battle_mode_passive_mode.pcapng",
+          "buy_square_maple_shield.pcapng",
+          "change_to_botanist.pcapng",
+          "coerthas_map.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "cutscene_book.pcapng",
+          "emote_dance.pcapng",
+          "friendlist_search.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "idling.pcapng",
+          "inventory.pcapng",
+          "invite_join_party.pcapng",
+          "local_leve_complete.pcapng",
+          "mount_unmount_chocobo.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "quest_update.pcapng",
+          "repair_items.pcapng",
+          "return_to_inn.pcapng",
+          "sell_item.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x0006": {
+        "opcode": 6,
+        "totalCount": 11,
+        "payloadLengths": [
+          352,
+          416,
+          432,
+          496
+        ],
+        "observedIn": [
+          "accept_local_leve.pcapng",
+          "combat_autoattack.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "party_battle_leve.pcapng",
+          "repair_items.pcapng"
+        ]
+      },
+      "0x0008": {
+        "opcode": 8,
+        "totalCount": 6,
+        "payloadLengths": [
+          480,
+          520,
+          680
+        ],
+        "observedIn": [
+          "change_bodyarmor.pcapng",
+          "change_helm.pcapng",
+          "change_to_botanist.pcapng",
+          "gear_changesoul.pcapng",
+          "gear_changeweapon.pcapng",
+          "party_battle_leve.pcapng"
+        ]
+      },
+      "0x0007": {
+        "opcode": 7,
+        "totalCount": 4,
+        "payloadLengths": [
+          456,
+          464,
+          520,
+          616
+        ],
+        "observedIn": [
+          "change_to_botanist.pcapng",
+          "switch_to_weaver.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x0009": {
+        "opcode": 9,
+        "totalCount": 1,
+        "payloadLengths": [
+          744
+        ],
+        "observedIn": [
+          "gear_changeweapon.pcapng"
+        ]
+      }
+    },
+    "s2c": {
+      "0x0001": {
+        "opcode": 1,
+        "totalCount": 6412,
+        "payloadLengths": [
+          40,
+          42,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          88,
+          90,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          142,
+          143,
+          147,
+          152,
+          162,
+          513,
+          514,
+          515,
+          522,
+          523,
+          524,
+          525,
+          538,
+          539,
+          540,
+          594,
+          598,
+          599,
+          600,
+          605,
+          627,
+          628,
+          638,
+          639,
+          642,
+          647,
+          671,
+          672,
+          676,
+          677
+        ],
+        "observedIn": [
+          "accept_leve.pcapng",
+          "accept_local_leve.pcapng",
+          "accept_quest.pcapng",
+          "action_and_traits.pcapng",
+          "add_str.pcapng",
+          "attributes.pcapng",
+          "battle_mode_passive_mode.pcapng",
+          "buy_square_maple_shield.pcapng",
+          "change_bodyarmor.pcapng",
+          "change_helm.pcapng",
+          "change_to_botanist.pcapng",
+          "chat_say.pcapng",
+          "chat_shout.pcapng",
+          "check_room_map.pcapng",
+          "checkbed.pcapng",
+          "coerthas_map.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "cutscene_book.pcapng",
+          "emote_dance.pcapng",
+          "emote_kneel.pcapng",
+          "friendlist_search.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gear_changesoul.pcapng",
+          "gear_changeweapon.pcapng",
+          "gridania_map.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "idle_in_party.pcapng",
+          "idling.pcapng",
+          "inventory.pcapng",
+          "invite_join_party.pcapng",
+          "local_leve_complete.pcapng",
+          "mount_unmount_chocobo.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "open_gear_menu.pcapng",
+          "party_battle_leve.pcapng",
+          "quest_journal.pcapng",
+          "quest_update.pcapng",
+          "repair_items.pcapng",
+          "return_to_inn.pcapng",
+          "sell_item.pcapng",
+          "small_talk_louisoix.pcapng",
+          "switch_to_weaver.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x000a": {
+        "opcode": 10,
+        "totalCount": 784,
+        "payloadLengths": [
+          114,
+          115,
+          116,
+          137,
+          192,
+          197,
+          202,
+          205,
+          214,
+          216,
+          221,
+          226,
+          230,
+          231,
+          232,
+          233,
+          234,
+          235,
+          236,
+          237,
+          238,
+          239,
+          240,
+          241,
+          242,
+          243,
+          244,
+          245,
+          246,
+          247,
+          248,
+          249,
+          250,
+          251,
+          252,
+          253,
+          254,
+          255,
+          256,
+          257,
+          258,
+          259,
+          260,
+          261,
+          262,
+          263,
+          264,
+          265,
+          266,
+          267,
+          268,
+          269,
+          270,
+          271,
+          272,
+          273,
+          274,
+          275,
+          276,
+          277,
+          278,
+          279,
+          280,
+          281,
+          282,
+          283,
+          284,
+          285,
+          286,
+          287,
+          288,
+          289,
+          290,
+          291,
+          292,
+          293,
+          294,
+          295,
+          296,
+          297,
+          313,
+          339
+        ],
+        "observedIn": [
+          "accept_leve.pcapng",
+          "accept_local_leve.pcapng",
+          "accept_quest.pcapng",
+          "battle_mode_passive_mode.pcapng",
+          "buy_square_maple_shield.pcapng",
+          "change_to_botanist.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gridania_map.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "idle_in_party.pcapng",
+          "invite_join_party.pcapng",
+          "local_leve_complete.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "sell_item.pcapng",
+          "switch_to_weaver.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x0002": {
+        "opcode": 2,
+        "totalCount": 1234,
+        "payloadLengths": [
+          56,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          68,
+          69,
+          70,
+          71,
+          72,
+          74,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          141,
+          142,
+          143,
+          144,
+          146,
+          147,
+          148,
+          151,
+          152,
+          155,
+          156,
+          157,
+          158,
+          159,
+          162,
+          164,
+          165,
+          166,
+          168,
+          171,
+          172,
+          173,
+          175,
+          176,
+          177,
+          180,
+          182,
+          183,
+          186,
+          187,
+          191,
+          192,
+          196,
+          197,
+          206,
+          212,
+          606
+        ],
+        "observedIn": [
+          "accept_leve.pcapng",
+          "accept_local_leve.pcapng",
+          "action_and_traits.pcapng",
+          "attributes.pcapng",
+          "buy_square_maple_shield.pcapng",
+          "change_bodyarmor.pcapng",
+          "change_helm.pcapng",
+          "change_to_botanist.pcapng",
+          "checkbed.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "cutscene_book.pcapng",
+          "friendlist_search.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gear_changesoul.pcapng",
+          "gear_changeweapon.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "inventory.pcapng",
+          "invite_join_party.pcapng",
+          "local_leve_complete.pcapng",
+          "mount_unmount_chocobo.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "open_gear_menu.pcapng",
+          "party_battle_leve.pcapng",
+          "quest_update.pcapng",
+          "repair_items.pcapng",
+          "return_to_inn.pcapng",
+          "sell_item.pcapng",
+          "small_talk_louisoix.pcapng",
+          "switch_to_weaver.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x0004": {
+        "opcode": 4,
+        "totalCount": 206,
+        "payloadLengths": [
+          66,
+          67,
+          68,
+          75,
+          89,
+          91,
+          92,
+          93,
+          94,
+          95,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          111,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          120,
+          121,
+          122,
+          123,
+          124,
+          126,
+          127,
+          128,
+          130,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          152,
+          153,
+          156,
+          161,
+          170,
+          173,
+          174,
+          181,
+          185,
+          188,
+          197,
+          203,
+          204,
+          211,
+          212,
+          214,
+          241,
+          249,
+          252,
+          281,
+          294,
+          372
+        ],
+        "observedIn": [
+          "accept_leve.pcapng",
+          "change_to_botanist.pcapng",
+          "checkbed.pcapng",
+          "combat_skills.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "invite_join_party.pcapng",
+          "local_leve_complete.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "small_talk_louisoix.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x0006": {
+        "opcode": 6,
+        "totalCount": 96,
+        "payloadLengths": [
+          74,
+          111,
+          120,
+          125,
+          126,
+          133,
+          149,
+          154,
+          155,
+          159,
+          161,
+          162,
+          163,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177,
+          178,
+          179,
+          180,
+          181,
+          183,
+          184,
+          185,
+          186,
+          187,
+          189,
+          190,
+          191,
+          192,
+          195,
+          201,
+          202,
+          206,
+          207,
+          209,
+          215,
+          218,
+          220,
+          236,
+          238,
+          253
+        ],
+        "observedIn": [
+          "accept_leve.pcapng",
+          "change_helm.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "inventory.pcapng",
+          "local_leve_complete.pcapng",
+          "move_around_gridania.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "small_talk_louisoix.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x0009": {
+        "opcode": 9,
+        "totalCount": 89,
+        "payloadLengths": [
+          157,
+          162,
+          163,
+          182,
+          204,
+          215,
+          218,
+          223,
+          224,
+          225,
+          226,
+          228,
+          229,
+          230,
+          231,
+          234,
+          235,
+          236,
+          237,
+          239,
+          240,
+          244,
+          245,
+          247,
+          250,
+          251,
+          252,
+          253,
+          254,
+          255,
+          256,
+          257,
+          263,
+          265,
+          266,
+          271,
+          275,
+          281,
+          284,
+          294,
+          379,
+          793
+        ],
+        "observedIn": [
+          "accept_leve.pcapng",
+          "accept_quest.pcapng",
+          "change_bodyarmor.pcapng",
+          "change_to_botanist.pcapng",
+          "combat_autoattack.pcapng",
+          "gear_changeweapon.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "invite_join_party.pcapng",
+          "local_leve_complete.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "switch_to_weaver.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x0003": {
+        "opcode": 3,
+        "totalCount": 487,
+        "payloadLengths": [
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          72,
+          73,
+          74,
+          75,
+          78,
+          81,
+          83,
+          86,
+          90,
+          91,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          149,
+          150,
+          151,
+          152,
+          153,
+          155,
+          156,
+          159,
+          160,
+          161,
+          163,
+          164,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          175,
+          176,
+          177,
+          178,
+          181,
+          182,
+          184,
+          187,
+          191,
+          197,
+          219,
+          222,
+          223,
+          224,
+          226,
+          227,
+          233,
+          238,
+          246,
+          264,
+          299,
+          301,
+          610
+        ],
+        "observedIn": [
+          "accept_leve.pcapng",
+          "accept_quest.pcapng",
+          "add_str.pcapng",
+          "battle_mode_passive_mode.pcapng",
+          "buy_square_maple_shield.pcapng",
+          "chat_say.pcapng",
+          "chat_shout.pcapng",
+          "coerthas_map.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "idling.pcapng",
+          "local_leve_complete.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "quest_update.pcapng",
+          "return_to_inn.pcapng",
+          "sell_item.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x000b": {
+        "opcode": 11,
+        "totalCount": 67,
+        "payloadLengths": [
+          125,
+          226,
+          246,
+          247,
+          256,
+          258,
+          264,
+          267,
+          269,
+          276,
+          278,
+          287,
+          288,
+          290,
+          293,
+          294,
+          297,
+          300,
+          303,
+          304,
+          307,
+          312,
+          316,
+          317,
+          318,
+          319,
+          322,
+          323,
+          327,
+          328,
+          332,
+          337,
+          338,
+          342,
+          347,
+          356,
+          371,
+          373,
+          375,
+          378,
+          381,
+          382,
+          384,
+          386,
+          389,
+          391,
+          393,
+          431
+        ],
+        "observedIn": [
+          "accept_quest.pcapng",
+          "buy_square_maple_shield.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "invite_join_party.pcapng",
+          "local_leve_complete.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "repair_items.pcapng",
+          "sell_item.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x0005": {
+        "opcode": 5,
+        "totalCount": 380,
+        "payloadLengths": [
+          69,
+          70,
+          71,
+          72,
+          86,
+          100,
+          101,
+          102,
+          104,
+          106,
+          108,
+          113,
+          114,
+          116,
+          119,
+          123,
+          130,
+          132,
+          134,
+          135,
+          137,
+          139,
+          140,
+          142,
+          143,
+          144,
+          145,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          176,
+          186,
+          187,
+          193,
+          194,
+          195,
+          215,
+          217,
+          232,
+          275
+        ],
+        "observedIn": [
+          "action_and_traits.pcapng",
+          "add_str.pcapng",
+          "attributes.pcapng",
+          "change_bodyarmor.pcapng",
+          "change_helm.pcapng",
+          "check_room_map.pcapng",
+          "checkbed.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "cutscene_book.pcapng",
+          "emote_dance.pcapng",
+          "emote_kneel.pcapng",
+          "friendlist_search.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gear_changesoul.pcapng",
+          "gear_changeweapon.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "inventory.pcapng",
+          "invite_join_party.pcapng",
+          "local_leve_complete.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "open_gear_menu.pcapng",
+          "party_battle_leve.pcapng",
+          "quest_journal.pcapng",
+          "quest_update.pcapng",
+          "repair_items.pcapng",
+          "return_to_inn.pcapng",
+          "small_talk_louisoix.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x0007": {
+        "opcode": 7,
+        "totalCount": 62,
+        "payloadLengths": [
+          76,
+          117,
+          125,
+          126,
+          140,
+          141,
+          164,
+          169,
+          170,
+          172,
+          186,
+          187,
+          188,
+          190,
+          191,
+          192,
+          193,
+          194,
+          197,
+          198,
+          199,
+          200,
+          202,
+          203,
+          204,
+          205,
+          206,
+          207,
+          222,
+          223,
+          226,
+          238,
+          246,
+          271,
+          276,
+          284,
+          660
+        ],
+        "observedIn": [
+          "action_and_traits.pcapng",
+          "change_helm.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "mount_unmount_chocobo.pcapng",
+          "move_around_gridania.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "switch_to_weaver.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x0008": {
+        "opcode": 8,
+        "totalCount": 111,
+        "payloadLengths": [
+          79,
+          80,
+          122,
+          124,
+          130,
+          135,
+          137,
+          153,
+          156,
+          158,
+          174,
+          183,
+          191,
+          194,
+          203,
+          204,
+          205,
+          207,
+          208,
+          209,
+          210,
+          211,
+          212,
+          213,
+          216,
+          219,
+          220,
+          221,
+          222,
+          223,
+          224,
+          227,
+          228,
+          229,
+          230,
+          234,
+          235,
+          238,
+          239,
+          244,
+          260,
+          272,
+          287,
+          300
+        ],
+        "observedIn": [
+          "buy_square_maple_shield.pcapng",
+          "change_bodyarmor.pcapng",
+          "change_helm.pcapng",
+          "change_to_botanist.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gear_changeweapon.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "mount_unmount_chocobo.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "repair_items.pcapng",
+          "switch_to_weaver.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x0012": {
+        "opcode": 18,
+        "totalCount": 94,
+        "payloadLengths": [
+          368,
+          455,
+          464,
+          465,
+          466,
+          470,
+          471,
+          472,
+          473,
+          476,
+          483,
+          486,
+          563,
+          564,
+          565,
+          566,
+          567,
+          568,
+          569,
+          570,
+          571,
+          572,
+          573,
+          574,
+          575,
+          576,
+          579,
+          580,
+          581,
+          582,
+          583,
+          584
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "gather_wood.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "local_leve_complete.pcapng",
+          "move_around_gridania.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x001e": {
+        "opcode": 30,
+        "totalCount": 43,
+        "payloadLengths": [
+          253,
+          260,
+          268,
+          287,
+          308,
+          323,
+          324,
+          590,
+          592,
+          593,
+          613,
+          614,
+          615,
+          619,
+          624,
+          629,
+          640,
+          647,
+          657,
+          658,
+          806
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "gather_wood.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "local_leve_complete.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "repair_items.pcapng"
+        ]
+      },
+      "0x001d": {
+        "opcode": 29,
+        "totalCount": 172,
+        "payloadLengths": [
+          240,
+          245,
+          250,
+          255,
+          256,
+          257,
+          259,
+          260,
+          261,
+          268,
+          281,
+          306,
+          343,
+          346,
+          347,
+          350,
+          351,
+          352,
+          353,
+          355,
+          358,
+          366,
+          381,
+          384,
+          386,
+          388,
+          389,
+          390,
+          395,
+          396,
+          397,
+          398,
+          418,
+          529,
+          532,
+          550,
+          555,
+          576,
+          578,
+          580,
+          581,
+          582,
+          587,
+          603,
+          613,
+          622,
+          721,
+          784,
+          1578,
+          1602,
+          1604
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "local_leve_complete.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "repair_items.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x001b": {
+        "opcode": 27,
+        "totalCount": 6,
+        "payloadLengths": [
+          233,
+          277,
+          624,
+          638
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng"
+        ]
+      },
+      "0x0019": {
+        "opcode": 25,
+        "totalCount": 9,
+        "payloadLengths": [
+          168,
+          183,
+          539,
+          572,
+          583,
+          649,
+          723,
+          739,
+          1088
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_around_gridania.pcapng",
+          "moving_around_gridania.pcapng",
+          "teleport_to_gridania.pcapng"
+        ]
+      },
+      "0x0026": {
+        "opcode": 38,
+        "totalCount": 41,
+        "payloadLengths": [
+          626,
+          701,
+          705,
+          708,
+          718,
+          719,
+          720,
+          721,
+          722,
+          723,
+          725,
+          726,
+          738,
+          739,
+          742,
+          744,
+          749,
+          751,
+          756,
+          760,
+          764,
+          768,
+          769,
+          770,
+          773,
+          774,
+          780,
+          781,
+          786,
+          788,
+          808,
+          811,
+          813,
+          815,
+          818,
+          825,
+          829,
+          846,
+          849,
+          858,
+          1227
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x0022": {
+        "opcode": 34,
+        "totalCount": 7,
+        "payloadLengths": [
+          387,
+          398,
+          643,
+          656,
+          678,
+          684,
+          789
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_around_gridania.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x001f": {
+        "opcode": 31,
+        "totalCount": 8,
+        "payloadLengths": [
+          265,
+          269,
+          281,
+          349,
+          636,
+          673
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "gather_wood.pcapng",
+          "harvest.pcapng",
+          "local_leve_complete.pcapng",
+          "move_around_gridania.pcapng",
+          "moving_around_gridania.pcapng"
+        ]
+      },
+      "0x001c": {
+        "opcode": 28,
+        "totalCount": 10,
+        "payloadLengths": [
+          274,
+          275,
+          284,
+          292,
+          315,
+          666,
+          776,
+          777,
+          792,
+          1466
+        ],
+        "observedIn": [
+          "combat_skills.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng"
+        ]
+      },
+      "0x000e": {
+        "opcode": 14,
+        "totalCount": 23,
+        "payloadLengths": [
+          227,
+          299,
+          322,
+          334,
+          344,
+          378,
+          384,
+          385,
+          386,
+          414,
+          415,
+          416,
+          417,
+          429,
+          444,
+          490,
+          518,
+          580,
+          581
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "local_leve_complete.pcapng",
+          "move_around_gridania.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x0013": {
+        "opcode": 19,
+        "totalCount": 11,
+        "payloadLengths": [
+          398,
+          420,
+          446,
+          462,
+          482,
+          488,
+          528,
+          548,
+          559,
+          595,
+          668
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "local_leve_complete.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng"
+        ]
+      },
+      "0x000c": {
+        "opcode": 12,
+        "totalCount": 27,
+        "payloadLengths": [
+          194,
+          256,
+          258,
+          285,
+          309,
+          319,
+          321,
+          329,
+          339,
+          347,
+          380,
+          390,
+          410,
+          431,
+          439,
+          449,
+          450,
+          451,
+          452,
+          557
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gear_changesoul.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "local_leve_complete.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x000f": {
+        "opcode": 15,
+        "totalCount": 100,
+        "payloadLengths": [
+          151,
+          351,
+          394,
+          408,
+          409,
+          411,
+          412,
+          413,
+          415,
+          418,
+          420,
+          429,
+          435,
+          437,
+          439,
+          443,
+          444,
+          446,
+          447,
+          448,
+          451,
+          452,
+          453,
+          454,
+          455,
+          456,
+          457,
+          458,
+          459,
+          461,
+          462,
+          463,
+          514,
+          515,
+          516,
+          518,
+          528,
+          532
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "local_leve_complete.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "small_talk_louisoix.pcapng",
+          "switch_to_weaver.pcapng"
+        ]
+      },
+      "0x0021": {
+        "opcode": 33,
+        "totalCount": 10,
+        "payloadLengths": [
+          297,
+          350,
+          671,
+          691,
+          695,
+          724,
+          728,
+          753,
+          766,
+          770
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng"
+        ]
+      },
+      "0x0018": {
+        "opcode": 24,
+        "totalCount": 5,
+        "payloadLengths": [
+          185,
+          427,
+          561,
+          658,
+          676
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "party_battle_leve.pcapng",
+          "switch_to_weaver.pcapng"
+        ]
+      },
+      "0x0027": {
+        "opcode": 39,
+        "totalCount": 30,
+        "payloadLengths": [
+          607,
+          710,
+          715,
+          720,
+          727,
+          732,
+          734,
+          739,
+          740,
+          741,
+          746,
+          751,
+          753,
+          754,
+          755,
+          759,
+          761,
+          762,
+          764,
+          765,
+          767,
+          773,
+          792,
+          838,
+          846,
+          854,
+          855,
+          869,
+          954
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_around_gridania.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng"
+        ]
+      },
+      "0x0015": {
+        "opcode": 21,
+        "totalCount": 7,
+        "payloadLengths": [
+          195,
+          424,
+          463,
+          510,
+          582,
+          589,
+          618
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "local_leve_complete.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng"
+        ]
+      },
+      "0x0010": {
+        "opcode": 16,
+        "totalCount": 29,
+        "payloadLengths": [
+          289,
+          410,
+          420,
+          429,
+          433,
+          434,
+          436,
+          438,
+          464,
+          467,
+          472,
+          482,
+          505,
+          506,
+          510,
+          533,
+          535,
+          536,
+          537,
+          538,
+          541,
+          548
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "local_leve_complete.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng"
+        ]
+      },
+      "0x002d": {
+        "opcode": 45,
+        "totalCount": 4,
+        "payloadLengths": [
+          658,
+          660,
+          703
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "move_out_of_room.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng"
+        ]
+      },
+      "0x0029": {
+        "opcode": 41,
+        "totalCount": 8,
+        "payloadLengths": [
+          713,
+          752,
+          802,
+          810,
+          835,
+          837,
+          908,
+          912
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x002c": {
+        "opcode": 44,
+        "totalCount": 6,
+        "payloadLengths": [
+          715,
+          722,
+          723,
+          724
+        ],
+        "observedIn": [
+          "gridania_to_coerthas.pcapng",
+          "moving_around_gridania.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng"
+        ]
+      },
+      "0x002b": {
+        "opcode": 43,
+        "totalCount": 7,
+        "payloadLengths": [
+          697,
+          732,
+          770,
+          780,
+          781,
+          802,
+          1004
+        ],
+        "observedIn": [
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng"
+        ]
+      },
+      "0x0024": {
+        "opcode": 36,
+        "totalCount": 30,
+        "payloadLengths": [
+          654,
+          692,
+          709,
+          717,
+          718,
+          719,
+          720,
+          727,
+          730,
+          731,
+          733,
+          734,
+          741,
+          760,
+          764,
+          771,
+          782,
+          789,
+          795,
+          819,
+          823,
+          824,
+          826,
+          833,
+          838
+        ],
+        "observedIn": [
+          "gridania_to_coerthas.pcapng",
+          "party_battle_leve.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x0011": {
+        "opcode": 17,
+        "totalCount": 9,
+        "payloadLengths": [
+          164,
+          422,
+          462,
+          465,
+          494,
+          521
+        ],
+        "observedIn": [
+          "gridania_to_coerthas.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "switch_to_weaver.pcapng"
+        ]
+      },
+      "0x0017": {
+        "opcode": 23,
+        "totalCount": 3,
+        "payloadLengths": [
+          487,
+          655,
+          667
+        ],
+        "observedIn": [
+          "gridania_to_coerthas.pcapng",
+          "moving_around_gridania.pcapng"
+        ]
+      },
+      "0x0028": {
+        "opcode": 40,
+        "totalCount": 8,
+        "payloadLengths": [
+          428,
+          689,
+          708,
+          740,
+          750,
+          832,
+          835,
+          838
+        ],
+        "observedIn": [
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x0016": {
+        "opcode": 22,
+        "totalCount": 5,
+        "payloadLengths": [
+          576,
+          627,
+          632,
+          645,
+          649
+        ],
+        "observedIn": [
+          "gridania_to_coerthas.pcapng",
+          "party_battle_leve.pcapng"
+        ]
+      },
+      "0x000d": {
+        "opcode": 13,
+        "totalCount": 8,
+        "payloadLengths": [
+          182,
+          219,
+          309,
+          310,
+          424,
+          452,
+          475
+        ],
+        "observedIn": [
+          "gridania_to_coerthas.pcapng",
+          "local_leve_complete.pcapng",
+          "move_out_of_room.pcapng",
+          "party_battle_leve.pcapng",
+          "sell_item.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x0025": {
+        "opcode": 37,
+        "totalCount": 24,
+        "payloadLengths": [
+          631,
+          650,
+          666,
+          668,
+          672,
+          673,
+          680,
+          683,
+          684,
+          697,
+          699,
+          701,
+          706,
+          712,
+          717,
+          730,
+          744,
+          784,
+          796,
+          832
+        ],
+        "observedIn": [
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x0020": {
+        "opcode": 32,
+        "totalCount": 6,
+        "payloadLengths": [
+          293,
+          332,
+          389,
+          682,
+          683,
+          785
+        ],
+        "observedIn": [
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng"
+        ]
+      },
+      "0x002a": {
+        "opcode": 42,
+        "totalCount": 8,
+        "payloadLengths": [
+          617,
+          683,
+          714,
+          729,
+          730,
+          737,
+          755,
+          849
+        ],
+        "observedIn": [
+          "move_around_gridania.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng"
+        ]
+      },
+      "0x001a": {
+        "opcode": 26,
+        "totalCount": 7,
+        "payloadLengths": [
+          226,
+          227,
+          552,
+          608,
+          627,
+          735,
+          929
+        ],
+        "observedIn": [
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x0014": {
+        "opcode": 20,
+        "totalCount": 3,
+        "payloadLengths": [
+          531,
+          671,
+          681
+        ],
+        "observedIn": [
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng"
+        ]
+      },
+      "0x0032": {
+        "opcode": 50,
+        "totalCount": 1,
+        "payloadLengths": [
+          725
+        ],
+        "observedIn": [
+          "moving_around_gridania.pcapng"
+        ]
+      },
+      "0x0030": {
+        "opcode": 48,
+        "totalCount": 1,
+        "payloadLengths": [
+          555
+        ],
+        "observedIn": [
+          "war_quest_update2.pcapng"
+        ]
+      }
+    }
+  },
+  "sub_events": {
+    "c2s": {
+      "0x0003": {
+        "opcode": 3,
+        "totalCount": 20934,
+        "payloadLengths": [
+          40,
+          56,
+          64,
+          72,
+          120,
+          216,
+          296,
+          552,
+          576
+        ],
+        "observedIn": [
+          "accept_leve.pcapng",
+          "accept_local_leve.pcapng",
+          "accept_quest.pcapng",
+          "action_and_traits.pcapng",
+          "add_str.pcapng",
+          "attributes.pcapng",
+          "battle_mode_passive_mode.pcapng",
+          "buy_square_maple_shield.pcapng",
+          "change_bodyarmor.pcapng",
+          "change_helm.pcapng",
+          "change_to_botanist.pcapng",
+          "chat_say.pcapng",
+          "chat_shout.pcapng",
+          "check_room_map.pcapng",
+          "checkbed.pcapng",
+          "coerthas_map.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "cutscene_book.pcapng",
+          "emote_dance.pcapng",
+          "emote_kneel.pcapng",
+          "friendlist_search.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gear_changesoul.pcapng",
+          "gear_changeweapon.pcapng",
+          "gridania_map.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "idle_in_party.pcapng",
+          "idling.pcapng",
+          "inventory.pcapng",
+          "invite_join_party.pcapng",
+          "local_leve_complete.pcapng",
+          "mount_unmount_chocobo.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "open_gear_menu.pcapng",
+          "party_battle_leve.pcapng",
+          "quest_journal.pcapng",
+          "quest_update.pcapng",
+          "repair_items.pcapng",
+          "return_to_inn.pcapng",
+          "sell_item.pcapng",
+          "small_talk_louisoix.pcapng",
+          "switch_to_weaver.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ],
+        "outerTypeContext": {
+          "0x0002": {
+            "count": 9926,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              120,
+              216
+            ]
+          },
+          "0x0003": {
+            "count": 9049,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              120,
+              216,
+              296,
+              576
+            ]
+          },
+          "0x0004": {
+            "count": 1016,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              120,
+              216,
+              576
+            ]
+          },
+          "0x0005": {
+            "count": 310,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              120,
+              216
+            ]
+          },
+          "0x0006": {
+            "count": 66,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              216
+            ]
+          },
+          "0x0008": {
+            "count": 48,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              216
+            ]
+          },
+          "0x0007": {
+            "count": 28,
+            "payloadLengths": [
+              56,
+              64,
+              72,
+              216
+            ]
+          },
+          "0x0001": {
+            "count": 482,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              120,
+              216,
+              552
+            ]
+          },
+          "0x0009": {
+            "count": 9,
+            "payloadLengths": [
+              56,
+              64,
+              72,
+              216
+            ]
+          }
+        }
+      },
+      "0x0007": {
+        "opcode": 7,
+        "totalCount": 72,
+        "payloadLengths": [
+          24
+        ],
+        "observedIn": [
+          "accept_leve.pcapng",
+          "accept_quest.pcapng",
+          "battle_mode_passive_mode.pcapng",
+          "buy_square_maple_shield.pcapng",
+          "change_to_botanist.pcapng",
+          "coerthas_map.pcapng",
+          "combat_autoattack.pcapng",
+          "cutscene_book.pcapng",
+          "emote_dance.pcapng",
+          "friendlist_search.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "idling.pcapng",
+          "inventory.pcapng",
+          "invite_join_party.pcapng",
+          "local_leve_complete.pcapng",
+          "move_around_gridania.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "quest_update.pcapng",
+          "repair_items.pcapng",
+          "sell_item.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ],
+        "outerTypeContext": {
+          "0x0001": {
+            "count": 72,
+            "payloadLengths": [
+              24
+            ]
+          }
+        }
+      },
+      "0x0008": {
+        "opcode": 8,
+        "totalCount": 15,
+        "payloadLengths": [
+          24
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng"
+        ],
+        "outerTypeContext": {
+          "0x0004": {
+            "count": 4,
+            "payloadLengths": [
+              24
+            ]
+          },
+          "0x0003": {
+            "count": 5,
+            "payloadLengths": [
+              24
+            ]
+          },
+          "0x0001": {
+            "count": 6,
+            "payloadLengths": [
+              24
+            ]
+          }
+        }
+      }
+    },
+    "s2c": {
+      "0x0003": {
+        "opcode": 3,
+        "totalCount": 44171,
+        "payloadLengths": [
+          40,
+          48,
+          56,
+          64,
+          72,
+          80,
+          88,
+          96,
+          112,
+          136,
+          144,
+          152,
+          160,
+          168,
+          176,
+          192,
+          216,
+          224,
+          296,
+          336,
+          440,
+          584,
+          648,
+          696,
+          936,
+          968,
+          1640,
+          1824,
+          3616
+        ],
+        "observedIn": [
+          "accept_leve.pcapng",
+          "accept_local_leve.pcapng",
+          "accept_quest.pcapng",
+          "action_and_traits.pcapng",
+          "add_str.pcapng",
+          "attributes.pcapng",
+          "battle_mode_passive_mode.pcapng",
+          "buy_square_maple_shield.pcapng",
+          "change_bodyarmor.pcapng",
+          "change_helm.pcapng",
+          "change_to_botanist.pcapng",
+          "chat_say.pcapng",
+          "chat_shout.pcapng",
+          "check_room_map.pcapng",
+          "checkbed.pcapng",
+          "coerthas_map.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "cutscene_book.pcapng",
+          "emote_dance.pcapng",
+          "emote_kneel.pcapng",
+          "friendlist_search.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gear_changesoul.pcapng",
+          "gear_changeweapon.pcapng",
+          "gridania_map.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "idle_in_party.pcapng",
+          "idling.pcapng",
+          "inventory.pcapng",
+          "invite_join_party.pcapng",
+          "local_leve_complete.pcapng",
+          "mount_unmount_chocobo.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "open_gear_menu.pcapng",
+          "party_battle_leve.pcapng",
+          "quest_journal.pcapng",
+          "quest_update.pcapng",
+          "repair_items.pcapng",
+          "return_to_inn.pcapng",
+          "sell_item.pcapng",
+          "small_talk_louisoix.pcapng",
+          "switch_to_weaver.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ],
+        "outerTypeContext": {
+          "0x0001": {
+            "count": 6310,
+            "payloadLengths": [
+              40,
+              48,
+              56,
+              64,
+              72,
+              80,
+              88,
+              96,
+              144,
+              168,
+              176,
+              216,
+              224,
+              584,
+              696,
+              1640,
+              3616
+            ]
+          },
+          "0x000a": {
+            "count": 7840,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              80,
+              88,
+              144,
+              152,
+              168,
+              216,
+              296,
+              440
+            ]
+          },
+          "0x0002": {
+            "count": 2468,
+            "payloadLengths": [
+              40,
+              48,
+              56,
+              64,
+              72,
+              80,
+              88,
+              96,
+              144,
+              168,
+              176,
+              216,
+              224,
+              648,
+              696,
+              968
+            ]
+          },
+          "0x0004": {
+            "count": 824,
+            "payloadLengths": [
+              40,
+              48,
+              56,
+              64,
+              72,
+              80,
+              88,
+              96,
+              136,
+              152,
+              168,
+              176,
+              216,
+              224,
+              296,
+              440,
+              696
+            ]
+          },
+          "0x0006": {
+            "count": 576,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              80,
+              88,
+              144,
+              152,
+              168,
+              176,
+              216,
+              296,
+              696
+            ]
+          },
+          "0x0009": {
+            "count": 801,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              80,
+              88,
+              112,
+              152,
+              168,
+              216,
+              296,
+              696,
+              936
+            ]
+          },
+          "0x0003": {
+            "count": 1461,
+            "payloadLengths": [
+              40,
+              48,
+              56,
+              64,
+              72,
+              80,
+              88,
+              96,
+              168,
+              176,
+              216,
+              224,
+              296,
+              696,
+              3616
+            ]
+          },
+          "0x000b": {
+            "count": 737,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              80,
+              88,
+              144,
+              152,
+              168,
+              176,
+              216,
+              296,
+              696,
+              936,
+              1824
+            ]
+          },
+          "0x0005": {
+            "count": 1900,
+            "payloadLengths": [
+              40,
+              48,
+              56,
+              64,
+              72,
+              80,
+              88,
+              96,
+              144,
+              152,
+              168,
+              176,
+              216,
+              224,
+              296,
+              440,
+              696
+            ]
+          },
+          "0x0007": {
+            "count": 434,
+            "payloadLengths": [
+              40,
+              48,
+              56,
+              64,
+              72,
+              80,
+              88,
+              112,
+              144,
+              152,
+              168,
+              176,
+              216,
+              296
+            ]
+          },
+          "0x0008": {
+            "count": 888,
+            "payloadLengths": [
+              40,
+              48,
+              56,
+              64,
+              72,
+              80,
+              88,
+              112,
+              144,
+              152,
+              168,
+              216,
+              296,
+              440,
+              696,
+              936
+            ]
+          },
+          "0x0012": {
+            "count": 1692,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              80,
+              88,
+              96,
+              152,
+              168,
+              216,
+              224,
+              296
+            ]
+          },
+          "0x001e": {
+            "count": 1290,
+            "payloadLengths": [
+              40,
+              48,
+              56,
+              64,
+              72,
+              80,
+              88,
+              96,
+              136,
+              152,
+              168,
+              296,
+              440
+            ]
+          },
+          "0x001d": {
+            "count": 4988,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              80,
+              88,
+              96,
+              136,
+              152,
+              160,
+              168,
+              176,
+              296,
+              440,
+              936
+            ]
+          },
+          "0x001b": {
+            "count": 162,
+            "payloadLengths": [
+              40,
+              64,
+              72,
+              80,
+              136,
+              168,
+              296
+            ]
+          },
+          "0x0019": {
+            "count": 225,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              80,
+              88,
+              144,
+              152,
+              160,
+              168,
+              296,
+              936
+            ]
+          },
+          "0x0026": {
+            "count": 1558,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              80,
+              88,
+              152,
+              168,
+              296
+            ]
+          },
+          "0x0022": {
+            "count": 238,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              80,
+              88,
+              136,
+              152,
+              168,
+              296
+            ]
+          },
+          "0x001f": {
+            "count": 248,
+            "payloadLengths": [
+              40,
+              56,
+              72,
+              80,
+              136,
+              168,
+              216,
+              296,
+              696
+            ]
+          },
+          "0x001c": {
+            "count": 280,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              80,
+              88,
+              136,
+              152,
+              160,
+              168,
+              296,
+              336,
+              936
+            ]
+          },
+          "0x000e": {
+            "count": 322,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              80,
+              88,
+              152,
+              168,
+              176,
+              216,
+              224,
+              296
+            ]
+          },
+          "0x0013": {
+            "count": 209,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              80,
+              88,
+              136,
+              152,
+              168,
+              176,
+              216,
+              224,
+              296,
+              696
+            ]
+          },
+          "0x000c": {
+            "count": 324,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              80,
+              88,
+              152,
+              168,
+              216,
+              296,
+              696,
+              936,
+              1824
+            ]
+          },
+          "0x000f": {
+            "count": 1500,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              80,
+              88,
+              96,
+              112,
+              144,
+              152,
+              168,
+              296
+            ]
+          },
+          "0x0021": {
+            "count": 330,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              80,
+              88,
+              136,
+              144,
+              152,
+              168,
+              296
+            ]
+          },
+          "0x0018": {
+            "count": 120,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              80,
+              88,
+              144,
+              152,
+              168,
+              216,
+              296
+            ]
+          },
+          "0x0027": {
+            "count": 1170,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              80,
+              88,
+              96,
+              152,
+              168,
+              296
+            ]
+          },
+          "0x0015": {
+            "count": 147,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              80,
+              88,
+              136,
+              152,
+              168,
+              296
+            ]
+          },
+          "0x0010": {
+            "count": 464,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              80,
+              88,
+              152,
+              168,
+              176,
+              216,
+              296
+            ]
+          },
+          "0x002d": {
+            "count": 180,
+            "payloadLengths": [
+              40,
+              72,
+              80,
+              88,
+              168,
+              296
+            ]
+          },
+          "0x0029": {
+            "count": 328,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              80,
+              88,
+              96,
+              112,
+              152,
+              168,
+              192,
+              296
+            ]
+          },
+          "0x002c": {
+            "count": 264,
+            "payloadLengths": [
+              40,
+              72,
+              80,
+              168,
+              296
+            ]
+          },
+          "0x002b": {
+            "count": 301,
+            "payloadLengths": [
+              40,
+              56,
+              72,
+              80,
+              88,
+              96,
+              168,
+              296
+            ]
+          },
+          "0x0024": {
+            "count": 1080,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              80,
+              88,
+              152,
+              168,
+              296
+            ]
+          },
+          "0x0011": {
+            "count": 153,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              80,
+              88,
+              144,
+              152,
+              168,
+              296,
+              696
+            ]
+          },
+          "0x0017": {
+            "count": 69,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              80,
+              152,
+              168,
+              296,
+              696
+            ]
+          },
+          "0x0028": {
+            "count": 320,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              80,
+              88,
+              152,
+              168,
+              296
+            ]
+          },
+          "0x0016": {
+            "count": 110,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              80,
+              88,
+              152,
+              168,
+              296
+            ]
+          },
+          "0x000d": {
+            "count": 104,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              80,
+              88,
+              144,
+              152,
+              168,
+              176,
+              216,
+              224,
+              296,
+              936
+            ]
+          },
+          "0x0025": {
+            "count": 888,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              80,
+              88,
+              152,
+              168,
+              296
+            ]
+          },
+          "0x0020": {
+            "count": 192,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              80,
+              88,
+              136,
+              152,
+              168,
+              296
+            ]
+          },
+          "0x002a": {
+            "count": 336,
+            "payloadLengths": [
+              40,
+              72,
+              80,
+              88,
+              168,
+              296
+            ]
+          },
+          "0x001a": {
+            "count": 182,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              80,
+              88,
+              136,
+              152,
+              168,
+              176,
+              296,
+              696
+            ]
+          },
+          "0x0014": {
+            "count": 60,
+            "payloadLengths": [
+              40,
+              56,
+              64,
+              72,
+              80,
+              152,
+              168,
+              216,
+              296,
+              696
+            ]
+          },
+          "0x0032": {
+            "count": 50,
+            "payloadLengths": [
+              40,
+              72,
+              80,
+              168,
+              192,
+              296
+            ]
+          },
+          "0x0030": {
+            "count": 48,
+            "payloadLengths": [
+              40,
+              72,
+              80,
+              168,
+              296
+            ]
+          }
+        }
+      },
+      "0x0008": {
+        "opcode": 8,
+        "totalCount": 72,
+        "payloadLengths": [
+          24
+        ],
+        "observedIn": [
+          "accept_leve.pcapng",
+          "accept_quest.pcapng",
+          "battle_mode_passive_mode.pcapng",
+          "buy_square_maple_shield.pcapng",
+          "change_to_botanist.pcapng",
+          "coerthas_map.pcapng",
+          "combat_autoattack.pcapng",
+          "cutscene_book.pcapng",
+          "emote_dance.pcapng",
+          "friendlist_search.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "idling.pcapng",
+          "inventory.pcapng",
+          "invite_join_party.pcapng",
+          "local_leve_complete.pcapng",
+          "move_around_gridania.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "quest_update.pcapng",
+          "repair_items.pcapng",
+          "sell_item.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ],
+        "outerTypeContext": {
+          "0x0001": {
+            "count": 72,
+            "payloadLengths": [
+              24
+            ]
+          }
+        }
+      },
+      "0x0007": {
+        "opcode": 7,
+        "totalCount": 15,
+        "payloadLengths": [
+          24
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng"
+        ],
+        "outerTypeContext": {
+          "0x0001": {
+            "count": 15,
+            "payloadLengths": [
+              24
+            ]
+          }
+        }
+      },
+      "0x0002": {
+        "opcode": 2,
+        "totalCount": 15,
+        "payloadLengths": [
+          56
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng"
+        ],
+        "outerTypeContext": {
+          "0x0001": {
+            "count": 15,
+            "payloadLengths": [
+              56
+            ]
+          }
+        }
+      }
+    }
+  },
+  "inner_opcodes": {
+    "c2s": {
+      "0x00ca": {
+        "opcode": 202,
+        "totalCount": 16757,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          64
+        ],
+        "observedIn": [
+          "accept_leve.pcapng",
+          "accept_local_leve.pcapng",
+          "accept_quest.pcapng",
+          "action_and_traits.pcapng",
+          "add_str.pcapng",
+          "attributes.pcapng",
+          "battle_mode_passive_mode.pcapng",
+          "buy_square_maple_shield.pcapng",
+          "change_bodyarmor.pcapng",
+          "change_helm.pcapng",
+          "change_to_botanist.pcapng",
+          "chat_say.pcapng",
+          "chat_shout.pcapng",
+          "check_room_map.pcapng",
+          "checkbed.pcapng",
+          "coerthas_map.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "cutscene_book.pcapng",
+          "emote_dance.pcapng",
+          "emote_kneel.pcapng",
+          "friendlist_search.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gear_changesoul.pcapng",
+          "gear_changeweapon.pcapng",
+          "gridania_map.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "idle_in_party.pcapng",
+          "idling.pcapng",
+          "inventory.pcapng",
+          "invite_join_party.pcapng",
+          "local_leve_complete.pcapng",
+          "mount_unmount_chocobo.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "open_gear_menu.pcapng",
+          "party_battle_leve.pcapng",
+          "quest_journal.pcapng",
+          "quest_update.pcapng",
+          "repair_items.pcapng",
+          "return_to_inn.pcapng",
+          "sell_item.pcapng",
+          "small_talk_louisoix.pcapng",
+          "switch_to_weaver.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x0001": {
+        "opcode": 1,
+        "totalCount": 3329,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          56
+        ],
+        "observedIn": [
+          "accept_leve.pcapng",
+          "accept_local_leve.pcapng",
+          "accept_quest.pcapng",
+          "action_and_traits.pcapng",
+          "add_str.pcapng",
+          "attributes.pcapng",
+          "battle_mode_passive_mode.pcapng",
+          "buy_square_maple_shield.pcapng",
+          "change_bodyarmor.pcapng",
+          "change_helm.pcapng",
+          "change_to_botanist.pcapng",
+          "chat_say.pcapng",
+          "chat_shout.pcapng",
+          "check_room_map.pcapng",
+          "checkbed.pcapng",
+          "coerthas_map.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "cutscene_book.pcapng",
+          "emote_dance.pcapng",
+          "emote_kneel.pcapng",
+          "friendlist_search.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gear_changesoul.pcapng",
+          "gear_changeweapon.pcapng",
+          "gridania_map.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "idle_in_party.pcapng",
+          "idling.pcapng",
+          "inventory.pcapng",
+          "invite_join_party.pcapng",
+          "local_leve_complete.pcapng",
+          "mount_unmount_chocobo.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "open_gear_menu.pcapng",
+          "party_battle_leve.pcapng",
+          "quest_journal.pcapng",
+          "quest_update.pcapng",
+          "repair_items.pcapng",
+          "return_to_inn.pcapng",
+          "sell_item.pcapng",
+          "small_talk_louisoix.pcapng",
+          "switch_to_weaver.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x00cd": {
+        "opcode": 205,
+        "totalCount": 118,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "accept_leve.pcapng",
+          "accept_local_leve.pcapng",
+          "accept_quest.pcapng",
+          "buy_square_maple_shield.pcapng",
+          "checkbed.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "cutscene_book.pcapng",
+          "gather_wood.pcapng",
+          "local_leve_complete.pcapng",
+          "move_out_of_room.pcapng",
+          "party_battle_leve.pcapng",
+          "quest_update.pcapng",
+          "repair_items.pcapng",
+          "sell_item.pcapng",
+          "small_talk_louisoix.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x00cc": {
+        "opcode": 204,
+        "totalCount": 66,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "accept_leve.pcapng",
+          "accept_local_leve.pcapng",
+          "accept_quest.pcapng",
+          "buy_square_maple_shield.pcapng",
+          "checkbed.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "cutscene_book.pcapng",
+          "local_leve_complete.pcapng",
+          "move_out_of_room.pcapng",
+          "party_battle_leve.pcapng",
+          "quest_update.pcapng",
+          "repair_items.pcapng",
+          "sell_item.pcapng",
+          "small_talk_louisoix.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x012d": {
+        "opcode": 301,
+        "totalCount": 126,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          216
+        ],
+        "observedIn": [
+          "accept_leve.pcapng",
+          "accept_local_leve.pcapng",
+          "accept_quest.pcapng",
+          "action_and_traits.pcapng",
+          "add_str.pcapng",
+          "battle_mode_passive_mode.pcapng",
+          "buy_square_maple_shield.pcapng",
+          "change_bodyarmor.pcapng",
+          "change_helm.pcapng",
+          "change_to_botanist.pcapng",
+          "checkbed.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "emote_dance.pcapng",
+          "emote_kneel.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gear_changesoul.pcapng",
+          "gear_changeweapon.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "invite_join_party.pcapng",
+          "local_leve_complete.pcapng",
+          "mount_unmount_chocobo.pcapng",
+          "move_out_of_room.pcapng",
+          "party_battle_leve.pcapng",
+          "quest_journal.pcapng",
+          "quest_update.pcapng",
+          "repair_items.pcapng",
+          "return_to_inn.pcapng",
+          "sell_item.pcapng",
+          "small_talk_louisoix.pcapng",
+          "switch_to_weaver.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x012e": {
+        "opcode": 302,
+        "totalCount": 200,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          120
+        ],
+        "observedIn": [
+          "accept_leve.pcapng",
+          "accept_local_leve.pcapng",
+          "accept_quest.pcapng",
+          "add_str.pcapng",
+          "buy_square_maple_shield.pcapng",
+          "checkbed.pcapng",
+          "gather_wood.pcapng",
+          "harvest.pcapng",
+          "local_leve_complete.pcapng",
+          "move_out_of_room.pcapng",
+          "party_battle_leve.pcapng",
+          "quest_update.pcapng",
+          "repair_items.pcapng",
+          "return_to_inn.pcapng",
+          "sell_item.pcapng",
+          "small_talk_louisoix.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x012f": {
+        "opcode": 303,
+        "totalCount": 44,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          72
+        ],
+        "observedIn": [
+          "action_and_traits.pcapng",
+          "attributes.pcapng",
+          "change_bodyarmor.pcapng",
+          "change_helm.pcapng",
+          "change_to_botanist.pcapng",
+          "friendlist_search.pcapng",
+          "gear_changesoul.pcapng",
+          "gear_changeweapon.pcapng",
+          "inventory.pcapng",
+          "open_gear_menu.pcapng",
+          "switch_to_weaver.pcapng"
+        ]
+      },
+      "0x0003": {
+        "opcode": 3,
+        "totalCount": 2,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          576
+        ],
+        "observedIn": [
+          "chat_say.pcapng",
+          "chat_shout.pcapng"
+        ]
+      },
+      "0x0133": {
+        "opcode": 307,
+        "totalCount": 268,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          72
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "invite_join_party.pcapng",
+          "local_leve_complete.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x00ce": {
+        "opcode": 206,
+        "totalCount": 2,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          72
+        ],
+        "observedIn": [
+          "cutscene_book.pcapng"
+        ]
+      },
+      "0x01cf": {
+        "opcode": 463,
+        "totalCount": 2,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "friendlist_search.pcapng",
+          "invite_join_party.pcapng"
+        ]
+      },
+      "0x01dd": {
+        "opcode": 477,
+        "totalCount": 1,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          296
+        ],
+        "observedIn": [
+          "friendlist_search.pcapng"
+        ]
+      },
+      "0x0007": {
+        "opcode": 7,
+        "totalCount": 8,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x00c9": {
+        "opcode": 201,
+        "totalCount": 11,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          552
+        ],
+        "observedIn": [
+          "party_battle_leve.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      }
+    },
+    "s2c": {
+      "0x0001": {
+        "opcode": 1,
+        "totalCount": 3418,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          64
+        ],
+        "observedIn": [
+          "accept_leve.pcapng",
+          "accept_local_leve.pcapng",
+          "accept_quest.pcapng",
+          "action_and_traits.pcapng",
+          "add_str.pcapng",
+          "attributes.pcapng",
+          "battle_mode_passive_mode.pcapng",
+          "buy_square_maple_shield.pcapng",
+          "change_bodyarmor.pcapng",
+          "change_helm.pcapng",
+          "change_to_botanist.pcapng",
+          "chat_say.pcapng",
+          "chat_shout.pcapng",
+          "check_room_map.pcapng",
+          "checkbed.pcapng",
+          "coerthas_map.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "cutscene_book.pcapng",
+          "emote_dance.pcapng",
+          "emote_kneel.pcapng",
+          "friendlist_search.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gear_changesoul.pcapng",
+          "gear_changeweapon.pcapng",
+          "gridania_map.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "idle_in_party.pcapng",
+          "idling.pcapng",
+          "inventory.pcapng",
+          "invite_join_party.pcapng",
+          "local_leve_complete.pcapng",
+          "mount_unmount_chocobo.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "open_gear_menu.pcapng",
+          "party_battle_leve.pcapng",
+          "quest_journal.pcapng",
+          "quest_update.pcapng",
+          "repair_items.pcapng",
+          "return_to_inn.pcapng",
+          "sell_item.pcapng",
+          "small_talk_louisoix.pcapng",
+          "switch_to_weaver.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x00cf": {
+        "opcode": 207,
+        "totalCount": 14991,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          80
+        ],
+        "observedIn": [
+          "accept_leve.pcapng",
+          "accept_local_leve.pcapng",
+          "accept_quest.pcapng",
+          "action_and_traits.pcapng",
+          "add_str.pcapng",
+          "attributes.pcapng",
+          "battle_mode_passive_mode.pcapng",
+          "buy_square_maple_shield.pcapng",
+          "change_bodyarmor.pcapng",
+          "change_helm.pcapng",
+          "change_to_botanist.pcapng",
+          "chat_say.pcapng",
+          "chat_shout.pcapng",
+          "check_room_map.pcapng",
+          "checkbed.pcapng",
+          "coerthas_map.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "cutscene_book.pcapng",
+          "emote_dance.pcapng",
+          "emote_kneel.pcapng",
+          "friendlist_search.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gear_changesoul.pcapng",
+          "gear_changeweapon.pcapng",
+          "gridania_map.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "idle_in_party.pcapng",
+          "idling.pcapng",
+          "inventory.pcapng",
+          "invite_join_party.pcapng",
+          "local_leve_complete.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "open_gear_menu.pcapng",
+          "party_battle_leve.pcapng",
+          "quest_journal.pcapng",
+          "quest_update.pcapng",
+          "repair_items.pcapng",
+          "return_to_inn.pcapng",
+          "sell_item.pcapng",
+          "small_talk_louisoix.pcapng",
+          "switch_to_weaver.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x00d3": {
+        "opcode": 211,
+        "totalCount": 167,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "accept_leve.pcapng",
+          "accept_local_leve.pcapng",
+          "accept_quest.pcapng",
+          "buy_square_maple_shield.pcapng",
+          "checkbed.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "cutscene_book.pcapng",
+          "gather_wood.pcapng",
+          "local_leve_complete.pcapng",
+          "move_out_of_room.pcapng",
+          "party_battle_leve.pcapng",
+          "quest_update.pcapng",
+          "repair_items.pcapng",
+          "sell_item.pcapng",
+          "small_talk_louisoix.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x018d": {
+        "opcode": 397,
+        "totalCount": 592,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          696
+        ],
+        "observedIn": [
+          "accept_leve.pcapng",
+          "accept_local_leve.pcapng",
+          "accept_quest.pcapng",
+          "add_str.pcapng",
+          "battle_mode_passive_mode.pcapng",
+          "buy_square_maple_shield.pcapng",
+          "change_to_botanist.pcapng",
+          "chat_say.pcapng",
+          "chat_shout.pcapng",
+          "coerthas_map.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gridania_map.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "idle_in_party.pcapng",
+          "idling.pcapng",
+          "invite_join_party.pcapng",
+          "local_leve_complete.pcapng",
+          "mount_unmount_chocobo.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "quest_update.pcapng",
+          "repair_items.pcapng",
+          "return_to_inn.pcapng",
+          "sell_item.pcapng",
+          "small_talk_louisoix.pcapng",
+          "switch_to_weaver.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x00d2": {
+        "opcode": 210,
+        "totalCount": 121,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "accept_leve.pcapng",
+          "accept_local_leve.pcapng",
+          "accept_quest.pcapng",
+          "buy_square_maple_shield.pcapng",
+          "checkbed.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "cutscene_book.pcapng",
+          "local_leve_complete.pcapng",
+          "move_out_of_room.pcapng",
+          "party_battle_leve.pcapng",
+          "quest_update.pcapng",
+          "repair_items.pcapng",
+          "sell_item.pcapng",
+          "small_talk_louisoix.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x0130": {
+        "opcode": 304,
+        "totalCount": 200,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          176
+        ],
+        "observedIn": [
+          "accept_leve.pcapng",
+          "accept_local_leve.pcapng",
+          "accept_quest.pcapng",
+          "add_str.pcapng",
+          "buy_square_maple_shield.pcapng",
+          "checkbed.pcapng",
+          "gather_wood.pcapng",
+          "harvest.pcapng",
+          "local_leve_complete.pcapng",
+          "move_out_of_room.pcapng",
+          "party_battle_leve.pcapng",
+          "quest_update.pcapng",
+          "repair_items.pcapng",
+          "return_to_inn.pcapng",
+          "sell_item.pcapng",
+          "small_talk_louisoix.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x0161": {
+        "opcode": 353,
+        "totalCount": 4,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          48
+        ],
+        "observedIn": [
+          "accept_leve.pcapng"
+        ]
+      },
+      "0x0167": {
+        "opcode": 359,
+        "totalCount": 78,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          56
+        ],
+        "observedIn": [
+          "accept_leve.pcapng",
+          "accept_local_leve.pcapng",
+          "accept_quest.pcapng",
+          "gather_wood.pcapng",
+          "harvest.pcapng",
+          "local_leve_complete.pcapng",
+          "party_battle_leve.pcapng",
+          "quest_update.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x0137": {
+        "opcode": 311,
+        "totalCount": 1992,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          168
+        ],
+        "observedIn": [
+          "accept_leve.pcapng",
+          "accept_local_leve.pcapng",
+          "accept_quest.pcapng",
+          "action_and_traits.pcapng",
+          "add_str.pcapng",
+          "attributes.pcapng",
+          "change_bodyarmor.pcapng",
+          "change_helm.pcapng",
+          "change_to_botanist.pcapng",
+          "check_room_map.pcapng",
+          "checkbed.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "friendlist_search.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gear_changesoul.pcapng",
+          "gear_changeweapon.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "inventory.pcapng",
+          "local_leve_complete.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "open_gear_menu.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "small_talk_louisoix.pcapng",
+          "switch_to_weaver.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x0131": {
+        "opcode": 305,
+        "totalCount": 101,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          80
+        ],
+        "observedIn": [
+          "accept_leve.pcapng",
+          "accept_local_leve.pcapng",
+          "accept_quest.pcapng",
+          "action_and_traits.pcapng",
+          "add_str.pcapng",
+          "battle_mode_passive_mode.pcapng",
+          "buy_square_maple_shield.pcapng",
+          "checkbed.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "gather_wood.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "local_leve_complete.pcapng",
+          "mount_unmount_chocobo.pcapng",
+          "move_out_of_room.pcapng",
+          "party_battle_leve.pcapng",
+          "quest_update.pcapng",
+          "repair_items.pcapng",
+          "return_to_inn.pcapng",
+          "sell_item.pcapng",
+          "small_talk_louisoix.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x00d9": {
+        "opcode": 217,
+        "totalCount": 9,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "accept_local_leve.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "sell_item.pcapng"
+        ]
+      },
+      "0x0133": {
+        "opcode": 307,
+        "totalCount": 25,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          224
+        ],
+        "observedIn": [
+          "accept_quest.pcapng",
+          "local_leve_complete.pcapng",
+          "party_battle_leve.pcapng",
+          "quest_journal.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x0159": {
+        "opcode": 345,
+        "totalCount": 3,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          64
+        ],
+        "observedIn": [
+          "action_and_traits.pcapng",
+          "change_to_botanist.pcapng"
+        ]
+      },
+      "0x0144": {
+        "opcode": 324,
+        "totalCount": 982,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "action_and_traits.pcapng",
+          "add_str.pcapng",
+          "change_bodyarmor.pcapng",
+          "change_helm.pcapng",
+          "change_to_botanist.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gear_changesoul.pcapng",
+          "gear_changeweapon.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "local_leve_complete.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "repair_items.pcapng",
+          "return_to_inn.pcapng",
+          "small_talk_louisoix.pcapng",
+          "switch_to_weaver.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x00d0": {
+        "opcode": 208,
+        "totalCount": 1237,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          168
+        ],
+        "observedIn": [
+          "action_and_traits.pcapng",
+          "add_str.pcapng",
+          "change_bodyarmor.pcapng",
+          "change_helm.pcapng",
+          "change_to_botanist.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gear_changesoul.pcapng",
+          "gear_changeweapon.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "local_leve_complete.pcapng",
+          "mount_unmount_chocobo.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "repair_items.pcapng",
+          "return_to_inn.pcapng",
+          "small_talk_louisoix.pcapng",
+          "switch_to_weaver.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x0139": {
+        "opcode": 313,
+        "totalCount": 438,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          88
+        ],
+        "observedIn": [
+          "action_and_traits.pcapng",
+          "battle_mode_passive_mode.pcapng",
+          "change_bodyarmor.pcapng",
+          "change_helm.pcapng",
+          "change_to_botanist.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "gather_wood.pcapng",
+          "gear_changesoul.pcapng",
+          "gear_changeweapon.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "local_leve_complete.pcapng",
+          "mount_unmount_chocobo.pcapng",
+          "move_out_of_room.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "switch_to_weaver.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x0134": {
+        "opcode": 308,
+        "totalCount": 902,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "battle_mode_passive_mode.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "local_leve_complete.pcapng",
+          "mount_unmount_chocobo.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "small_talk_louisoix.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x00cb": {
+        "opcode": 203,
+        "totalCount": 718,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "battle_mode_passive_mode.pcapng",
+          "combat_autoattack.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "local_leve_complete.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x016d": {
+        "opcode": 365,
+        "totalCount": 80,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "buy_square_maple_shield.pcapng",
+          "change_bodyarmor.pcapng",
+          "change_helm.pcapng",
+          "change_to_botanist.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gear_changeweapon.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "local_leve_complete.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "repair_items.pcapng",
+          "return_to_inn.pcapng",
+          "sell_item.pcapng",
+          "switch_to_weaver.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x0146": {
+        "opcode": 326,
+        "totalCount": 151,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "buy_square_maple_shield.pcapng",
+          "change_bodyarmor.pcapng",
+          "change_helm.pcapng",
+          "change_to_botanist.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gear_changeweapon.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "local_leve_complete.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "repair_items.pcapng",
+          "return_to_inn.pcapng",
+          "sell_item.pcapng",
+          "switch_to_weaver.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x0148": {
+        "opcode": 328,
+        "totalCount": 54,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          144
+        ],
+        "observedIn": [
+          "buy_square_maple_shield.pcapng",
+          "change_helm.pcapng",
+          "change_to_botanist.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "gather_wood.pcapng",
+          "harvest.pcapng",
+          "local_leve_complete.pcapng",
+          "party_battle_leve.pcapng",
+          "repair_items.pcapng",
+          "sell_item.pcapng",
+          "switch_to_weaver.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x0147": {
+        "opcode": 327,
+        "totalCount": 151,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "buy_square_maple_shield.pcapng",
+          "change_bodyarmor.pcapng",
+          "change_helm.pcapng",
+          "change_to_botanist.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gear_changeweapon.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "local_leve_complete.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "repair_items.pcapng",
+          "return_to_inn.pcapng",
+          "sell_item.pcapng",
+          "switch_to_weaver.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x016e": {
+        "opcode": 366,
+        "totalCount": 80,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "buy_square_maple_shield.pcapng",
+          "change_bodyarmor.pcapng",
+          "change_helm.pcapng",
+          "change_to_botanist.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gear_changeweapon.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "local_leve_complete.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "repair_items.pcapng",
+          "return_to_inn.pcapng",
+          "sell_item.pcapng",
+          "switch_to_weaver.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x0169": {
+        "opcode": 361,
+        "totalCount": 51,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          72
+        ],
+        "observedIn": [
+          "buy_square_maple_shield.pcapng",
+          "gather_wood.pcapng",
+          "harvest.pcapng",
+          "invite_join_party.pcapng",
+          "local_leve_complete.pcapng",
+          "party_battle_leve.pcapng",
+          "repair_items.pcapng",
+          "sell_item.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x0149": {
+        "opcode": 329,
+        "totalCount": 40,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          936
+        ],
+        "observedIn": [
+          "change_bodyarmor.pcapng",
+          "change_to_botanist.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gear_changeweapon.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "return_to_inn.pcapng",
+          "sell_item.pcapng",
+          "switch_to_weaver.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng"
+        ]
+      },
+      "0x014d": {
+        "opcode": 333,
+        "totalCount": 6,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "change_bodyarmor.pcapng",
+          "change_helm.pcapng",
+          "change_to_botanist.pcapng",
+          "gear_changeweapon.pcapng",
+          "switch_to_weaver.pcapng"
+        ]
+      },
+      "0x00d6": {
+        "opcode": 214,
+        "totalCount": 754,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          296
+        ],
+        "observedIn": [
+          "change_bodyarmor.pcapng",
+          "change_helm.pcapng",
+          "change_to_botanist.pcapng",
+          "combat_autoattack.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gear_changeweapon.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "local_leve_complete.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "small_talk_louisoix.pcapng",
+          "switch_to_weaver.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x015b": {
+        "opcode": 347,
+        "totalCount": 13,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          112
+        ],
+        "observedIn": [
+          "change_bodyarmor.pcapng",
+          "change_helm.pcapng",
+          "change_to_botanist.pcapng",
+          "gear_changeweapon.pcapng",
+          "switch_to_weaver.pcapng"
+        ]
+      },
+      "0x0152": {
+        "opcode": 338,
+        "totalCount": 8,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "change_helm.pcapng",
+          "switch_to_weaver.pcapng",
+          "teleport_to_gridania.pcapng"
+        ]
+      },
+      "0x015a": {
+        "opcode": 346,
+        "totalCount": 31,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          80
+        ],
+        "observedIn": [
+          "change_to_botanist.pcapng",
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "gear_changesoul.pcapng",
+          "gear_changeweapon.pcapng",
+          "party_battle_leve.pcapng",
+          "switch_to_weaver.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x0168": {
+        "opcode": 360,
+        "totalCount": 41,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          56
+        ],
+        "observedIn": [
+          "checkbed.pcapng",
+          "gather_wood.pcapng",
+          "harvest.pcapng",
+          "local_leve_complete.pcapng",
+          "party_battle_leve.pcapng",
+          "teleport_to_gridania.pcapng"
+        ]
+      },
+      "0x0166": {
+        "opcode": 358,
+        "totalCount": 34,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "checkbed.pcapng",
+          "gather_wood.pcapng",
+          "local_leve_complete.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng"
+        ]
+      },
+      "0x017a": {
+        "opcode": 378,
+        "totalCount": 272,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          176
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "invite_join_party.pcapng",
+          "local_leve_complete.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x000c": {
+        "opcode": 12,
+        "totalCount": 25,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "local_leve_complete.pcapng",
+          "mount_unmount_chocobo.pcapng",
+          "move_out_of_room.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x0187": {
+        "opcode": 391,
+        "totalCount": 42,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          96
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "invite_join_party.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x00db": {
+        "opcode": 219,
+        "totalCount": 62,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "party_battle_leve.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x0195": {
+        "opcode": 405,
+        "totalCount": 149,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "party_battle_leve.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x00ca": {
+        "opcode": 202,
+        "totalCount": 821,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "local_leve_complete.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "small_talk_louisoix.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x016b": {
+        "opcode": 363,
+        "totalCount": 887,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          72
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "local_leve_complete.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "small_talk_louisoix.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x00ce": {
+        "opcode": 206,
+        "totalCount": 930,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          72
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "local_leve_complete.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "small_talk_louisoix.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x013d": {
+        "opcode": 317,
+        "totalCount": 821,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          72
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "local_leve_complete.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "small_talk_louisoix.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x017c": {
+        "opcode": 380,
+        "totalCount": 361,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          152
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "invite_join_party.pcapng",
+          "local_leve_complete.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x017d": {
+        "opcode": 381,
+        "totalCount": 361,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          64
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "invite_join_party.pcapng",
+          "local_leve_complete.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x0183": {
+        "opcode": 387,
+        "totalCount": 371,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          152
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "gather_wood.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "local_leve_complete.pcapng",
+          "party_battle_leve.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x017e": {
+        "opcode": 382,
+        "totalCount": 361,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          56
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "invite_join_party.pcapng",
+          "local_leve_complete.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x0179": {
+        "opcode": 377,
+        "totalCount": 821,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          72
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "local_leve_complete.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "small_talk_louisoix.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x0145": {
+        "opcode": 325,
+        "totalCount": 822,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "invite_join_party.pcapng",
+          "local_leve_complete.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "small_talk_louisoix.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x017b": {
+        "opcode": 379,
+        "totalCount": 834,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "local_leve_complete.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "small_talk_louisoix.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x00cc": {
+        "opcode": 204,
+        "totalCount": 821,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          296
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gather_wood.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "local_leve_complete.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "small_talk_louisoix.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x0157": {
+        "opcode": 343,
+        "totalCount": 8,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          48
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "mount_unmount_chocobo.pcapng",
+          "party_battle_leve.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x018b": {
+        "opcode": 395,
+        "totalCount": 287,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          88
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "local_leve_complete.pcapng",
+          "mount_unmount_chocobo.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "small_talk_louisoix.pcapng",
+          "war_quest_update2.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x018f": {
+        "opcode": 399,
+        "totalCount": 28,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "gather_wood.pcapng",
+          "harvest.pcapng",
+          "local_leve_complete.pcapng",
+          "party_battle_leve.pcapng",
+          "repair_items.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x0190": {
+        "opcode": 400,
+        "totalCount": 5569,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          136
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "gather_wood.pcapng",
+          "harvest.pcapng",
+          "local_leve_complete.pcapng",
+          "party_battle_leve.pcapng",
+          "repair_items.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x0191": {
+        "opcode": 401,
+        "totalCount": 28,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "gather_wood.pcapng",
+          "harvest.pcapng",
+          "local_leve_complete.pcapng",
+          "party_battle_leve.pcapng",
+          "repair_items.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x00de": {
+        "opcode": 222,
+        "totalCount": 43,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "party_battle_leve.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x013a": {
+        "opcode": 314,
+        "totalCount": 66,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          216
+        ],
+        "observedIn": [
+          "combat_autoattack.pcapng",
+          "combat_skills.pcapng",
+          "harvest.pcapng",
+          "local_leve_complete.pcapng",
+          "party_battle_leve.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x0177": {
+        "opcode": 375,
+        "totalCount": 128,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "combat_skills.pcapng",
+          "move_out_of_room.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x00e1": {
+        "opcode": 225,
+        "totalCount": 3,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          48
+        ],
+        "observedIn": [
+          "emote_dance.pcapng",
+          "emote_kneel.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x01cf": {
+        "opcode": 463,
+        "totalCount": 2,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          1640
+        ],
+        "observedIn": [
+          "friendlist_search.pcapng",
+          "invite_join_party.pcapng"
+        ]
+      },
+      "0x01df": {
+        "opcode": 479,
+        "totalCount": 1,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          968
+        ],
+        "observedIn": [
+          "friendlist_search.pcapng"
+        ]
+      },
+      "0x01e0": {
+        "opcode": 480,
+        "totalCount": 1,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          648
+        ],
+        "observedIn": [
+          "friendlist_search.pcapng"
+        ]
+      },
+      "0x012e": {
+        "opcode": 302,
+        "totalCount": 393,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          72
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "small_talk_louisoix.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng"
+        ]
+      },
+      "0x0136": {
+        "opcode": 310,
+        "totalCount": 597,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          72
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "small_talk_louisoix.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x016f": {
+        "opcode": 367,
+        "totalCount": 196,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          88
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x0010": {
+        "opcode": 16,
+        "totalCount": 12,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x000d": {
+        "opcode": 13,
+        "totalCount": 11,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x0005": {
+        "opcode": 5,
+        "totalCount": 11,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          48
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng"
+        ]
+      },
+      "0x0132": {
+        "opcode": 306,
+        "totalCount": 88,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          72
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng"
+        ]
+      },
+      "0x000f": {
+        "opcode": 15,
+        "totalCount": 13,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          56
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x017f": {
+        "opcode": 383,
+        "totalCount": 27,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          440
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "invite_join_party.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x014b": {
+        "opcode": 331,
+        "totalCount": 71,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          3616
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "return_to_inn.pcapng",
+          "sell_item.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng"
+        ]
+      },
+      "0x014a": {
+        "opcode": 330,
+        "totalCount": 11,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          1824
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng"
+        ]
+      },
+      "0x014e": {
+        "opcode": 334,
+        "totalCount": 23,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          88
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "return_to_inn.pcapng",
+          "sell_item.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng"
+        ]
+      },
+      "0x0194": {
+        "opcode": 404,
+        "totalCount": 13,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x019d": {
+        "opcode": 413,
+        "totalCount": 13,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x01a4": {
+        "opcode": 420,
+        "totalCount": 17,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gear_changesoul.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "switch_to_weaver.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x0196": {
+        "opcode": 406,
+        "totalCount": 11,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          56
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng"
+        ]
+      },
+      "0x0198": {
+        "opcode": 408,
+        "totalCount": 11,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          64
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng"
+        ]
+      },
+      "0x0199": {
+        "opcode": 409,
+        "totalCount": 11,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng"
+        ]
+      },
+      "0x019a": {
+        "opcode": 410,
+        "totalCount": 11,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          160
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng"
+        ]
+      },
+      "0x019b": {
+        "opcode": 411,
+        "totalCount": 11,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          64
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng"
+        ]
+      },
+      "0x019c": {
+        "opcode": 412,
+        "totalCount": 11,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng"
+        ]
+      },
+      "0x0006": {
+        "opcode": 6,
+        "totalCount": 12,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x0008": {
+        "opcode": 8,
+        "totalCount": 19,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          80
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x0007": {
+        "opcode": 7,
+        "totalCount": 12,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "from_gridania_to_blackshroud.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x012f": {
+        "opcode": 303,
+        "totalCount": 4,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          144
+        ],
+        "observedIn": [
+          "gather_wood.pcapng",
+          "harvest.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x013c": {
+        "opcode": 316,
+        "totalCount": 27,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          72
+        ],
+        "observedIn": [
+          "gather_wood.pcapng",
+          "gridania_to_coerthas.pcapng",
+          "harvest.pcapng",
+          "local_leve_complete.pcapng",
+          "mount_unmount_chocobo.pcapng",
+          "repair_items.pcapng"
+        ]
+      },
+      "0x00da": {
+        "opcode": 218,
+        "totalCount": 31,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "gear_changesoul.pcapng",
+          "local_leve_complete.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng"
+        ]
+      },
+      "0x0197": {
+        "opcode": 407,
+        "totalCount": 4,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "gridania_to_coerthas.pcapng",
+          "mount_unmount_chocobo.pcapng"
+        ]
+      },
+      "0x00d8": {
+        "opcode": 216,
+        "totalCount": 15,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "gridania_to_coerthas.pcapng",
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng"
+        ]
+      },
+      "0x0193": {
+        "opcode": 403,
+        "totalCount": 9,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x00e2": {
+        "opcode": 226,
+        "totalCount": 8,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "gridania_to_coerthas.pcapng",
+          "move_out_of_room.pcapng",
+          "party_battle_leve.pcapng",
+          "return_to_inn.pcapng",
+          "teleport_to_camp_nine_ivies.pcapng",
+          "teleport_to_camp_tranquil.pcapng",
+          "teleport_to_gridania.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x0143": {
+        "opcode": 323,
+        "totalCount": 12,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          64
+        ],
+        "observedIn": [
+          "invite_join_party.pcapng",
+          "party_battle_leve.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x0175": {
+        "opcode": 373,
+        "totalCount": 1,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          96
+        ],
+        "observedIn": [
+          "move_around_gridania.pcapng"
+        ]
+      },
+      "0x00e3": {
+        "opcode": 227,
+        "totalCount": 17,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          40
+        ],
+        "observedIn": [
+          "move_around_gridania.pcapng",
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng",
+          "quest_update.pcapng",
+          "switch_to_weaver.pcapng",
+          "war_quest_update1.pcapng",
+          "war_quest_update3.pcapng"
+        ]
+      },
+      "0x0170": {
+        "opcode": 368,
+        "totalCount": 8,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          96
+        ],
+        "observedIn": [
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng"
+        ]
+      },
+      "0x000a": {
+        "opcode": 10,
+        "totalCount": 2,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          192
+        ],
+        "observedIn": [
+          "move_out_of_room.pcapng",
+          "moving_around_gridania.pcapng"
+        ]
+      },
+      "0x0009": {
+        "opcode": 9,
+        "totalCount": 2,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          112
+        ],
+        "observedIn": [
+          "moving_around_gridania.pcapng",
+          "teleport_to_camp_tranquil.pcapng"
+        ]
+      },
+      "0x00c9": {
+        "opcode": 201,
+        "totalCount": 26,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          584
+        ],
+        "observedIn": [
+          "party_battle_leve.pcapng",
+          "war_quest_update2.pcapng"
+        ]
+      },
+      "0x01a3": {
+        "opcode": 419,
+        "totalCount": 1,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          336
+        ],
+        "observedIn": [
+          "return_to_inn.pcapng"
+        ]
+      },
+      "0x0153": {
+        "opcode": 339,
+        "totalCount": 2,
+        "innerSizes": [
+          20
+        ],
+        "subEventSizes": [
+          56
+        ],
+        "observedIn": [
+          "sell_item.pcapng",
+          "teleport_to_gridania.pcapng"
+        ]
+      }
+    }
+  }
+}

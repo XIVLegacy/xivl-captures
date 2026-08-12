@@ -1,0 +1,25 @@
+city,destination,location,npc,source_page
+Limsa Lominsa,Aetheryte Plaza,"Limsa Lominsa Upper Decks (7,6)",Storm Private Gardner,getting-around
+Limsa Lominsa,Drowning Wench,"Limsa Lominsa Upper Decks (7,5)",Storm Private Rich,getting-around
+Limsa Lominsa,The Bismarck,"Limsa Lominsa Upper Decks (7,3)",Storm Private Potter,getting-around
+Limsa Lominsa,Ferry Docks,"Limsa Lominsa Lower Decks (4,5)",Storm Private Hunt,getting-around
+Limsa Lominsa,Fisherman's Bottom,"Limsa Lominsa Lower Decks (5,6)",Storm Private Abel,getting-around
+Limsa Lominsa,The Octant,"Limsa Lominsa Lower Decks (6,4)",Storm Private Stone,getting-around
+Limsa Lominsa,Procession of Terns,"Limsa Lominsa Lower Decks (9,5)",Storm Private Holt,getting-around
+Limsa Lominsa,Zephyr Gate( * ),"Lower La Noscea (25,31)",-,getting-around
+Gridania,Aetheryte Plaza,"Gridania (5,4)",Serpent Private White,getting-around
+Gridania,Carline Canopy,"Gridania (7,6)",Serpent Private Hill,getting-around
+Gridania,Atelier Fen-Yll,"Gridania (6,4)",Serpent Private Carver,getting-around
+Gridania,The Whistling Miller,"Gridania (5,3)",Serpent Private Stone,getting-around
+Gridania,Quiver's Hold,"Gridania (8,5)",Serpent Private Holmes,getting-around
+Gridania,Wailing Barracks,"Gridania (7,2)",Serpent Private Kirk,getting-around
+Gridania,Mistalle Bridges( * ),"Central Shroud (34,28)",-,getting-around
+Gridania,Berlends Bridges( * ),"Central Shroud (29,27)",-,getting-around
+Ul'dah,Aetheryte Plaza,"Ul'dah Merchant Strip (5,3)",Flame Private Newton,getting-around
+Ul'dah,Quicksand,"Ul'dah Merchant Strip (6,3)",Flame Private Tanner,getting-around
+Ul'dah,Frondale's Phrontistery,"Ul'dah Hustings Strip (5,5)",Flame Private Morning,getting-around
+Ul'dah,Onyx Lane,"Ul'dah Merchant Strip (6,6)",Flame Private Covey,getting-around
+Ul'dah,Gold Court (Merchant Strip),"Ul'dah Merchant Strip (5,5)",Flame Private Allen,getting-around
+Ul'dah,Arrzaneth Ossuary,"Ul'dah Merchant Strip (4,5)",Flame Private Yar,getting-around
+Ul'dah,Gate of Nald( * ),"Central Thanalan (26,29)",-,getting-around
+Ul'dah,Gate of Thal( * ),"Central Thanalan (28,32)",-,getting-around

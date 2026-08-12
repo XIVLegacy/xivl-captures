@@ -1,0 +1,2 @@
+pcap,capture_path,bytes,sha256,n_opcodes,opcodes,service_mix
+mount_unmount_chocobo.pcapng,sources/pcap-1.23b/objects/mount_unmount_chocobo.pcapng,21240,e77c06799f07029feb054792eac30baa431da15a61937b1a39bcd025e4db4072,13,0x0001;0x000c;0x00ca;0x00d0;0x012d;0x0131;0x0134;0x0139;0x013c;0x0157;0x018b;0x018d;0x0197,map=14
