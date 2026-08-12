@@ -1,0 +1,62 @@
+ge_page_title,npc_name,race,zones,likely_cause,mob_range_actor_ids,nearest_client_name
+Beleaguered Botanist,Beleaguered Botanist,Lalafell,,mob-range-actor,2290046,
+Bombard,Bombard,Bomb,"South Shroud, Lower La Noscea, Southern Thanalan",mob-range-actor,2201606 2201611,
+Bombard King,Bombard King,Bomb,"South Shroud, Lower La Noscea, Southern Thanalan",mob-range-actor,2201607 2201612,
+Bonny,Bonny,Chocobo,Western Thanalan,mob-range-actor,2210509,
+Butch,Butch,Chocobo,North Shroud,mob-range-actor,2210513,
+Choc,Choc,Chocobo,South Shroud,mob-range-actor,2210504,
+Choca,Choca,Chocobo,South Shroud,mob-range-actor,2210506,
+Choco,Choco,Chocobo,South Shroud,mob-range-actor,2210505,chocobo
+Cicidoa Sosodoa,Cicidoa Sosodoa,Lalafell,,lore-figure,,
+Dryfhund,Dryfhund,Roegadyn,Limsa Lominsa,no-client-actor,,dyrfhund
+Faire Chaperone (Gridania),Faire Chaperone,Hyur,Gridania,no-client-actor,,faire chaperone judye
+Faire Chaperone (Limsa Lominsa),Faire Chaperone,Hyur,Limsa Lominsa,no-client-actor,,faire chaperone judye
+Faire Chaperone (Ul'dah),Faire Chaperone,Hyur,Ul'dah,no-client-actor,,faire chaperone judye
+Frandelont Raimdelle,Frandelont Raimdelle,,,lore-figure,,
+Gilly,Gilly,Chocobo,Western Thanalan,mob-range-actor,2210507,
+Gota Jaab,Gota Jaab,,,lore-figure,,
+Guillaurmand de Padellaint,Guillaurmand de Padellaint,,,lore-figure,,
+Guolskyf Bhaldwaensyn,Guolskyf Bhaldwaensyn,,,lore-figure,,
+Jajariku Nanariku,Jajariku Nanariku,,,lore-figure,,
+Jovanni Gnonno,Jovanni Gnonno,,,lore-figure,,
+Lucky,Lucky,Chocobo,Western La Noscea,mob-range-actor,2210510,
+Luke,Luke,Chocobo,Western La Noscea,mob-range-actor,2210511,
+Lump,Lump,Chocobo,Western La Noscea,mob-range-actor,2210512,
+Militia Barber (Hyrstmill),Militia Barber,Miqo'te,The Battle for Hyrstmill,mob-range-actor,2290057 2290061 2290065,militia archer
+Militia Barber (The Golden Bazaar),Militia Barber,Hyur,The Battle for the Golden Bazaar,mob-range-actor,2290057 2290061 2290065,militia archer
+Militia Cook (Hyrstmill),Militia Cook,Miqo'te,The Battle for Hyrstmill,mob-range-actor,2290056 2290060 2290064,
+Militia Cook (The Golden Bazaar),Militia Cook,Hyur,The Battle for the Golden Bazaar,mob-range-actor,2290056 2290060 2290064,
+Militia Front Line Archer (Hyrstmill),Militia Front Line Archer,Elezen,The Battle for Hyrstmill,mob-range-actor,2290066 2290067 2290068 2290076,
+Militia Front Line Archer (The Golden Bazaar),Militia Front Line Archer,Lalafell,The Battle for the Golden Bazaar,mob-range-actor,2290066 2290067 2290068 2290076,
+Militia Outfitter (Hyrstmill),Militia Outfitter,Miqo'te,The Battle for Hyrstmill,mob-range-actor,2290055 2290059 2290063,militia outrider
+Militia Outfitter (The Golden Bazaar),Militia Outfitter,Hyur,The Battle for the Golden Bazaar,mob-range-actor,2290055 2290059 2290063,militia outrider
+Militia Second Line Archer (Hyrstmill),Militia Second Line Archer,Elezen,The Battle for Hyrstmill,mob-range-actor,2290069 2290070 2290071 2290079,
+Militia Second Line Archer (The Golden Bazaar),Militia Second Line Archer,Lalafell,The Battle for the Golden Bazaar,mob-range-actor,2290069 2290070 2290071 2290079,
+Militia Smith (Hyrstmill),Militia Smith,Miqo'te,The Battle for Hyrstmill,mob-range-actor,2290054 2290058 2290062,
+Militia Smith (The Golden Bazaar),Militia Smith,Hyur,The Battle for the Golden Bazaar,mob-range-actor,2290054 2290058 2290062,
+Militia Third Line Archer (Hyrstmill),Militia Third Line Archer,Elezen,The Battle for Hyrstmill,mob-range-actor,2290072 2290073 2290074 2290075,
+Militia Third Line Archer (The Golden Bazaar),Militia Third Line Archer,Lalafell,The Battle for the Golden Bazaar,mob-range-actor,2290072 2290073 2290074 2290075,
+N'bolata Tyata,N'bolata Tyata,,,lore-figure,,
+Nelly,Nelly,Chocobo,Western Thanalan,mob-range-actor,2210508,
+Niellefresne (1.x),Niellefresne,,Ul'dah,no-client-actor,,guillefresne
+O-Guna-Por,O-Guna-Por,,,lore-figure,,
+Pandelion Brontard,Pandelion Brontard,,,lore-figure,,
+Patch,Patch,Chocobo,North Shroud,mob-range-actor,2210514,
+Path Companion,Path Companion,,,lore-figure,,
+Pelmomo,Pelmomo,Lalafell,,lore-figure,,
+Pilfa Dalfa,Pilfa Dalfa,,,lore-figure,,
+Rhylsygg Bhirlonsyn,Rhylsygg Bhirlonsyn,,,lore-figure,,
+Saint Daniffen,Saint Daniffen,Elezen,,lore-figure,,
+Saint Moergynn,Saint Moergynn,Roegadyn,,lore-figure,,
+Saint Tothor,Saint Tothor the Ratcatcher,Lalafell,,lore-figure,,
+Saiverin Vaireloque,Saiverin Vaireloque,,,lore-figure,,
+Salty,Salty,Chocobo,Eastern Thanalan,mob-range-actor,2210516,
+Serpent Patrol,Serpent Patrol,Elezen,North Shroud,mob-range-actor,2290050,
+Slugger,Slugger,Chocobo,Eastern Thanalan,mob-range-actor,2210517,
+Snobby Young Man,Snobby Young Man,Hyur,Limsa Lominsa,no-client-actor,,
+Steamer,Steamer,Chocobo,Eastern Thanalan,mob-range-actor,2210518,
+Stemn,Stemn,,,lore-figure,,
+Stitch,Stitch,Chocobo,North Shroud,mob-range-actor,2210515,
+Sylskaetsyn,Sylskaetsyn,,,lore-figure,,
+Tourney Gladiator,Tourney Gladiator,Hyur,Ul'dah,mob-range-actor,2280157,
+Wahlbert,Wahlbert,Hyur,Western Thanalan,no-client-actor,,walhbert

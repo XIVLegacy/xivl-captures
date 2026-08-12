@@ -1,0 +1,109 @@
+group_jp,group_en,category_jp,category_en,item_jp,item_marker,client_item_id,client_item_en,effect_jp,effect_en,recast_s,duration_s,client_recast_s,client_duration_s,source
+肉料理,Meat,物理攻撃力,Attack Power,ミコッテ風山の幸串焼,,3010001,Meat Miq'abob,物理攻撃力:＋11%(上限 22) PIE:＋5%(上限 4),Attack Power:+11%(cap 22) Piety:+5%(cap 4),5,1800,5,1800,elemen-food
+肉料理,Meat,物理攻撃力,Attack Power,大山羊ステーキ,,3010002,Aldgoat Steak,物理攻撃力:＋9%(上限 30) STR:＋4%(上限 5),Attack Power:+9%(cap 30) Strength:+4%(cap 5),5,1800,5,1800,elemen-food
+肉料理,Meat,物理攻撃力,Attack Power,マーモットステーキ,,3010006,Marmot Steak,物理攻撃力:＋13%(上限 15) STR:＋7%(上限 3),Attack Power:+13%(cap 15) Strength:+7%(cap 3),5,1800,5,1800,elemen-food
+肉料理,Meat,物理攻撃力,Attack Power,ラビットパイ,,3010007,Rabbit Pie,物理攻撃力:＋11%(上限 24) INT:＋5%(上限 4),Attack Power:+11%(cap 24) Intelligence:+5%(cap 4),5,1800,5,1800,elemen-food
+肉料理,Meat,物理攻撃力,Attack Power,ビーフジャーキー,,3010008,Jerked Beef,物理攻撃力:＋7%(上限 51) PIE:＋3%(上限 7),Attack Power:+7%(cap 51) Piety:+3%(cap 7),5,1800,5,1800,elemen-food
+肉料理,Meat,物理攻撃力,Attack Power,ドードーのグリル,,3010009,Grilled Dodo,物理攻撃力:＋11%(上限 22) PIE:＋5%(上限 4),Attack Power:+11%(cap 22) Piety:+5%(cap 4),5,1800,5,1800,elemen-food
+肉料理,Meat,物理攻撃力,Attack Power,シェパードパイ,,3010010,Shepherd's Pie,物理攻撃力:＋9%(上限 32) 物理クリティカル攻撃力:＋10,Attack Power:+9%(cap 32) Critical Hit Attack Power:+10,5,1800,5,1800,elemen-food
+肉料理,Meat,物理攻撃力,Attack Power,スモークドラプトル,,3010011,Smoked Raptor,物理攻撃力:＋8%(上限 41) STR:＋3%(上限 6),Attack Power:+8%(cap 41) Strength:+3%(cap 6),5,1800,5,1800,elemen-food
+肉料理,Meat,物理攻撃力,Attack Power,ローストドードー,,3010013,Roast Dodo,物理攻撃力:＋9%(上限 33),Attack Power:+9%(cap 33),5,1800,5,1800,elemen-food
+肉料理,Meat,物理攻撃力,Attack Power,モールローフ,,3010014,Mole Loaf,物理攻撃力:＋11%(上限 24) STR:＋5%(上限 4),Attack Power:+11%(cap 24) Strength:+5%(cap 4),5,1800,5,1800,elemen-food
+肉料理,Meat,物理攻撃力,Attack Power,エフトステーキ,,3010017,Eft Steak,物理攻撃力:＋7%(上限 51) INT:＋3%(上限 7),Attack Power:+7%(cap 51) Intelligence:+3%(cap 7),5,1800,5,1800,elemen-food
+卵料理,Egg,HP,HP,ボイルドエッグ,,3010003,Boiled Egg,HP:＋15%(上限 30),HP:+15%(cap 30),5,1800,5,1800,elemen-food
+卵料理,Egg,HP,HP,ドードーオムレツ,,3010004,Dodo Omelette,HP:＋13%(上限 45) VIT:＋2,HP:+13%(cap 45) Vitality:+2,5,1800,5,1800,elemen-food
+卵料理,Egg,HP,HP,デビルドエッグズ,,3010012,Deviled Eggs,HP:＋6%(上限 180),HP:+6%(cap 180),5,1800,5,1800,elemen-food
+卵料理,Egg,HP,HP,マスタードエッグズ,,3010016,Mustard Eggs,HP:＋10%(上限 70),HP:+10%(cap 70),5,1800,5,1800,elemen-food
+卵料理,Egg,HP,HP,アプカルオムレツ,,3010020,Apkallu Omelette,HP:＋5%(上限 220),HP:+5%(cap 220),5,1800,5,1800,elemen-food
+卵料理,Egg,HP,HP,スクランブルエッグ,,3010021,Scrambled Eggs,HP:＋7%(上限 130),HP:+7%(cap 130),5,1800,5,1800,elemen-food
+卵料理,Egg,HP,HP,フライドエッグ,,3010022,Fried Egg,HP:＋8%(上限 90),HP:+8%(cap 90),5,1800,5,1800,elemen-food
+卵料理,Egg,HP,HP,猟師風エフトキッシュ,,3010023,Trapper's Quiche,HP:＋5%(上限 230),HP:+5%(cap 230),5,1800,5,1800,elemen-food
+穀物料理,Grain,物理防御力,Defense,フラットブレッド,,3010201,Flatbread,物理防御力:＋13%(上限 15) VIT:＋7%(上限 3),Defense:+13%(cap 15) Vitality:+7%(cap 3),5,1800,5,1800,elemen-food
+穀物料理,Grain,物理防御力,Defense,ハニーマフィン,,3010203,Honey Muffin,物理防御力:＋11%(上限 22) DEX:＋5%(上限 4),Defense:+11%(cap 22) Dexterity:+5%(cap 4),5,1800,5,1800,elemen-food
+穀物料理,Grain,物理防御力,Defense,ラノシアトースト,,3010204,La Noscean Toast,物理防御力:＋7%(上限 51) VIT:＋3%(上限 7),Defense:+7%(cap 51) Vitality:+3%(cap 7),5,1800,5,1800,elemen-food
+穀物料理,Grain,物理防御力,Defense,エーコンクッキー,,3010205,Acorn Cookie,物理防御力:＋8%(上限 41) VIT:＋3%(上限 6),Defense:+8%(cap 41) Vitality:+3%(cap 6),5,1800,5,1800,elemen-food
+穀物料理,Grain,物理防御力,Defense,プレッツェル,,3010206,Dark Pretzel,物理防御力:＋9%(上限 30) VIT:＋4%(上限 5),Defense:+9%(cap 30) Vitality:+4%(cap 5),5,1800,5,1800,elemen-food
+穀物料理,Grain,物理防御力,Defense,コーンブレッド,,3010207,Cornbread,物理防御力:＋9%(上限 32) DEX:＋4%(上限 5),Defense:+9%(cap 32) Dexterity:+4%(cap 5),5,1800,5,1800,elemen-food
+穀物料理,Grain,物理防御力,Defense,ナイツブレッド,,3010208,Knight's Bread,物理防御力:＋8%(上限 41) DEX:＋3%(上限 6),Defense:+8%(cap 41) Dexterity:+3%(cap 6),5,1800,5,1800,elemen-food
+穀物料理,Grain,物理防御力,Defense,ウォルナットブレッド,,3010209,Walnut Bread,物理防御力:＋11%(上限 22) VIT:＋5%(上限 4),Defense:+11%(cap 22) Vitality:+5%(cap 4),5,1800,5,1800,elemen-food
+穀物料理,Grain,物理防御力,Defense,ビスマルク風エッグサンド,,3010211,Finger Sandwich,物理防御力:＋7%(上限 53) DEX:＋3%(上限 7),Defense:+7%(cap 53) Dexterity:+3%(cap 7),5,1800,5,1800,elemen-food
+穀物料理,Grain,物理防御力,Defense,ミズンマスト印のクッキー,,3010419,Mizzenmast Biscuit,物理防御力:＋13%(上限 20),Defense:+13%(cap 20),5,1800,5,1800,elemen-food
+穀物料理,Grain,物理防御力,Defense,とまり木印のクッキー,,3010420,Roost Biscuit,物理防御力:＋13%(上限 20),Defense:+13%(cap 20),5,1800,5,1800,elemen-food
+穀物料理,Grain,物理防御力,Defense,砂時計亭印のクッキー,,3010421,Hourglass Biscuit,物理防御力:＋13%(上限 20),Defense:+13%(cap 20),5,1800,5,1800,elemen-food
+野菜料理,Vegetable,物理回避力獲得力,Evasion / Gathering,スピナッチソテー,,3010301,Spinach Saute,物理回避力:＋8%(上限 20) 獲得力:＋16%(上限 10) INT:＋4%(上限 5),Evasion:+8%(cap 20) Gathering:+16%(cap 10) Intelligence:+4%(cap 5),5,1800,5,1800,elemen-food
+野菜料理,Vegetable,物理回避力獲得力,Evasion / Gathering,ジャック・オ・ランタン,,3010302,Jack-o'-lantern,物理回避力:＋12%(上限 10) 獲得力:＋20%(上限 5) VIT:＋7%(上限 3),Evasion:+12%(cap 10) Gathering:+20%(cap 5) Vitality:+7%(cap 3),5,1800,5,1800,elemen-food
+野菜料理,Vegetable,物理回避力獲得力,Evasion / Gathering,ランドトラップサラダ,,3010303,Landtrap Salad,物理回避力:＋6%(上限 31) 獲得力:＋12%(上限 15) INT:＋3%(上限 7),Evasion:+6%(cap 31) Gathering:+12%(cap 15) Intelligence:+3%(cap 7),5,1800,5,1800,elemen-food
+野菜料理,Vegetable,物理回避力獲得力,Evasion / Gathering,パースニップサラダ,,3010305,Parsnip Salad,物理回避力:＋10%(上限 17) 獲得力:＋18%(上限 7) INT:＋5%(上限 4),Evasion:+10%(cap 17) Gathering:+18%(cap 7) Intelligence:+5%(cap 4),5,1800,5,1800,elemen-food
+野菜料理,Vegetable,物理回避力獲得力,Evasion / Gathering,ザワークラウト,,3010306,Sauerkraut,物理回避力:＋7%(上限 25) 獲得力:＋14%(上限 13) INT:＋3%(上限 6),Evasion:+7%(cap 25) Gathering:+14%(cap 13) Intelligence:+3%(cap 6),5,1800,5,1800,elemen-food
+野菜料理,Vegetable,物理回避力獲得力,Evasion / Gathering,トマトパイ,,3010308,Tomato Pie,物理回避力:＋6%(上限 33) 獲得力:＋12%(上限 16) VIT:＋3%(上限 7),Evasion:+6%(cap 33) Gathering:+12%(cap 16) Vitality:+3%(cap 7),5,1800,5,1800,elemen-food
+野菜料理,Vegetable,物理回避力獲得力,Evasion / Gathering,ローストノパル,,3010309,Roasted Nopales,物理回避力:＋10%(上限 15) 獲得力:＋18%(上限 7) VIT:＋5%(上限 4),Evasion:+10%(cap 15) Gathering:+18%(cap 7) Vitality:+5%(cap 4),5,1800,5,1800,elemen-food
+野菜料理,Vegetable,物理回避力獲得力,Evasion / Gathering,アリゲーターサラダ,,3010310,Alligator Salad,物理回避力:＋8%(上限 22) 獲得力:＋16%(上限 11) VIT:＋4%(上限 5),Evasion:+8%(cap 22) Gathering:+16%(cap 11) Vitality:+4%(cap 5),5,1800,5,1800,elemen-food
+野菜料理,Vegetable,物理回避力獲得力,Evasion / Gathering,スタッフドアーティチョーク,,3010311,Stuffed Artichoke,物理回避力:＋7%(上限 28) 獲得力:＋14%(上限 12) VIT:＋3%(上限 6),Evasion:+7%(cap 28) Gathering:+14%(cap 12) Vitality:+3%(cap 6),5,1800,5,1800,elemen-food
+キノコ料理,Mushroom,魔法命中力,Magic Accuracy,ミコッテ風森の幸串焼,,3010312,Forest Miq'abob,魔法命中力:＋9%(上限 16) MND:＋4%(上限 5),Magic Accuracy:+9%(cap 16) Mind:+4%(cap 5),5,1800,5,1800,elemen-food
+キノコ料理,Mushroom,魔法命中力,Magic Accuracy,キノコのガーリックソテー,,3010313,Button Mushroom Saute,魔法命中力:＋7%(上限 32) MND:＋3%(上限 7),Magic Accuracy:+7%(cap 32) Mind:+3%(cap 7),5,1800,5,1800,elemen-food
+キノコ料理,Mushroom,魔法命中力,Magic Accuracy,ラプトルシチュー,,3010314,Raptor Stew,魔法命中力:＋8%(上限 23) INT:＋3%(上限 6),Magic Accuracy:+8%(cap 23) Intelligence:+3%(cap 6),5,1800,5,1800,elemen-food
+キノコ料理,Mushroom,魔法命中力,Magic Accuracy,鶏肉キノコ炒め,,3010315,Chicken and Mushrooms,魔法命中力:＋11%(上限 11) INT:＋5%(上限 4),Magic Accuracy:+11%(cap 11) Intelligence:+5%(cap 4),5,1800,5,1800,elemen-food
+キノコ料理,Mushroom,魔法命中力,Magic Accuracy,キノコのソテー,,3010316,Chanterelle Saute,魔法命中力:＋13%(上限 7) MND:＋7%(上限 3),Magic Accuracy:+13%(cap 7) Mind:+7%(cap 3),5,1800,5,1800,elemen-food
+キノコ料理,Mushroom,魔法命中力,Magic Accuracy,キノコのキャベツ巻き,,3010317,Buttons in a Blanket,魔法命中力:＋7%(上限 34) INT:＋3%(上限 7),Magic Accuracy:+7%(cap 34) Intelligence:+3%(cap 7),5,1800,5,1800,elemen-food
+菓子,Confection,攻撃魔法威力,Attack Magic Potency,ブラッドカーラントタルト,,3010304,Blood Currant Tart,攻撃魔法威力:＋7%(上限 24) INT:＋3%(上限 6),Attack Magic Potency:+7%(cap 24) Intelligence:+3%(cap 6),5,1800,5,1800,elemen-food
+菓子,Confection,攻撃魔法威力,Attack Magic Potency,アップルタルト,,3010401,Apple Tart,攻撃魔法威力:＋10%(上限 10) INT:＋5%(上限 4),Attack Magic Potency:+10%(cap 10) Intelligence:+5%(cap 4),5,1800,5,1800,elemen-food
+菓子,Confection,攻撃魔法威力,Attack Magic Potency,ジンジャークッキー,,3010402,Ginger Cookie,攻撃魔法威力:＋8%(上限 17) MND:＋4%(上限 5),Attack Magic Potency:+8%(cap 17) Mind:+4%(cap 5),5,1800,5,1800,elemen-food
+菓子,Confection,攻撃魔法威力,Attack Magic Potency,ドライプルーン,,3010403,Dried Prunes,攻撃魔法威力:＋8%(上限 15) 魔法クリティカル威力:＋5,Attack Magic Potency:+8%(cap 15) Magic Critical Hit Potency:+5,5,1800,5,1800,elemen-food
+菓子,Confection,攻撃魔法威力,Attack Magic Potency,レーズン,,3010404,Raisins,攻撃魔法威力:＋12%(上限 6) INT:＋7%(上限 3),Attack Magic Potency:+12%(cap 6) Intelligence:+7%(cap 3),5,1800,5,1800,elemen-food
+菓子,Confection,攻撃魔法威力,Attack Magic Potency,クランペット,,3010405,Crumpet,攻撃魔法威力:＋8%(上限 17) INT:＋4%(上限 5),Attack Magic Potency:+8%(cap 17) Intelligence:+4%(cap 5),5,1800,5,1800,elemen-food
+菓子,Confection,攻撃魔法威力,Attack Magic Potency,ペストリーフィッシュ,,3010406,Pastry Fish,攻撃魔法威力:＋6%(上限 33) MND:＋3%(上限 7),Attack Magic Potency:+6%(cap 33) Mind:+3%(cap 7),5,1800,5,1800,elemen-food
+菓子,Confection,攻撃魔法威力,Attack Magic Potency,ガレット・デ・ロワ,,3010407,Crowned Cake,攻撃魔法威力:＋6%(上限 34) INT:＋3%(上限 7),Attack Magic Potency:+6%(cap 34) Intelligence:+3%(cap 7),5,1800,5,1800,elemen-food
+菓子,Confection,攻撃魔法威力,Attack Magic Potency,プリンセスプリン,,3010408,Princess Pudding,攻撃魔法威力:＋12%(上限 7),Attack Magic Potency:+12%(cap 7),5,1800,5,1800,elemen-food
+菓子,Confection,攻撃魔法威力,Attack Magic Potency,ブッシュ・オ・ショコラ,,3010409,Starlight Log,攻撃魔法威力:＋7%(上限 24),Attack Magic Potency:+7%(cap 24),5,1800,5,1800,elemen-food
+菓子,Confection,攻撃魔法威力,Attack Magic Potency,ガトー・オ・フレーズ,,3010410,Snowflake Peak,攻撃魔法威力:＋10%(上限 10),Attack Magic Potency:+10%(cap 10),5,1800,5,1800,elemen-food
+菓子,Confection,攻撃魔法威力,Attack Magic Potency,シュトレン,,3010411,Ore Fruitcake,攻撃魔法威力:＋12%(上限 7),Attack Magic Potency:+12%(cap 7),5,1800,5,1800,elemen-food
+菓子,Confection,攻撃魔法威力,Attack Magic Potency,バブルチョコ,,3010412,Bubble Chocolate,攻撃魔法威力:＋10%(上限 9) MND:＋5%(上限 4),Attack Magic Potency:+10%(cap 9) Mind:+5%(cap 4),5,1800,5,1800,elemen-food
+菓子,Confection,攻撃魔法威力,Attack Magic Potency,パールチョコ,,3010413,Pearl Chocolate,攻撃魔法威力:＋10%(上限 9) 魔法クリティカル威力:＋5,Attack Magic Potency:+10%(cap 9) Magic Critical Hit Potency:+5,5,1800,5,1800,elemen-food
+菓子,Confection,攻撃魔法威力,Attack Magic Potency,ハートチョコ,,3010414,Heart Chocolate,攻撃魔法威力:＋10%(上限 10),Attack Magic Potency:+10%(cap 10),5,1800,5,1800,elemen-food
+菓子,Confection,攻撃魔法威力,Attack Magic Potency,ホワイトチョコ,,3010415,White Chocolate,攻撃魔法威力:＋10%(上限 10),Attack Magic Potency:+10%(cap 10),5,1800,5,1800,elemen-food
+菓子,Confection,攻撃魔法威力,Attack Magic Potency,菱餅,,3010416,Sweet Rice Cake,攻撃魔法威力:＋10%(上限 10),Attack Magic Potency:+10%(cap 10),5,1800,5,1800,elemen-food
+菓子,Confection,攻撃魔法威力,Attack Magic Potency,パンプキンクッキー,,3010417,Pumpkin Cookie,攻撃魔法威力:＋12%(上限 7),Attack Magic Potency:+12%(cap 7),5,1800,5,1800,elemen-food
+菓子,Confection,攻撃魔法威力,Attack Magic Potency,ブレスドハートチョコ,,3010418,Consecrated Chocolate,攻撃魔法威力:＋10%(上限 10),Attack Magic Potency:+10%(cap 10),5,1800,5,1800,elemen-food
+飲料,Beverage,MP魔法加工,Magic Craftsmanship / MP,オレンジジュース,,3010605,Orange Juice,MP:＋15%(上限 30) 魔法加工:＋20%(上限 5),MP:+15%(cap 30) Magic Craftsmanship:+20%(cap 5),5,1800,5,1800,elemen-food
+飲料,Beverage,MP魔法加工,Magic Craftsmanship / MP,パインジュース,,3010606,Pineapple Juice,MP:＋5%(上限 190) 魔法加工:＋12%(上限 15),MP:+5%(cap 190) Magic Craftsmanship:+12%(cap 15),5,1800,5,1800,elemen-food
+飲料,Beverage,MP魔法加工,Magic Craftsmanship / MP,アップルジュース,,3010607,Apple Juice,MP:＋7%(上限 120) 魔法加工:＋14%(上限 12),MP:+7%(cap 120) Magic Craftsmanship:+14%(cap 12),5,1800,5,1800,elemen-food
+飲料,Beverage,MP魔法加工,Magic Craftsmanship / MP,マルドティー,,3010608,Mulled Tea,MP:＋6%(上限 160) 魔法加工:＋12%(上限 16) PIE:＋3,MP:+6%(cap 160) Magic Craftsmanship:+12%(cap 16) Piety:+3,5,1800,5,1800,elemen-food
+飲料,Beverage,MP魔法加工,Magic Craftsmanship / MP,ミネラルウォーター,,3010609,Mineral Water,-,-,5,1800,5,1800,elemen-food
+飲料,Beverage,MP魔法加工,Magic Craftsmanship / MP,カモミールティー,,3010610,Chamomile Tea,MP:＋8%(上限 80) 魔法加工:＋16%(上限 10),MP:+8%(cap 80) Magic Craftsmanship:+16%(cap 10),5,1800,5,1800,elemen-food
+飲料,Beverage,MP魔法加工,Magic Craftsmanship / MP,グレープジュース,,3010611,Grape Juice,MP:＋10%(上限 50) 魔法加工:＋18%(上限 7),MP:+10%(cap 50) Magic Craftsmanship:+18%(cap 7),5,1800,5,1800,elemen-food
+魚介料理,Seafood,物理命中力変質制御,Accuracy / Control,グリルドカープ,,3010101,Grilled Carp,物理命中力:＋13%(上限 7) 変質制御:＋10%(上限 3) VIT:＋7%(上限 3),Accuracy:+13%(cap 7) Control:+10%(cap 3) Vitality:+7%(cap 3),5,1800,5,1800,elemen-food
+魚介料理,Seafood,物理命中力変質制御,Accuracy / Control,ソルトコッド,,3010102,Salt Cod,物理命中力:＋13%(上限 7) 変質制御:＋10%(上限 3) MND:＋7%(上限 3),Accuracy:+13%(cap 7) Control:+10%(cap 3) Mind:+7%(cap 3),5,1800,5,1800,elemen-food
+魚介料理,Seafood,物理命中力変質制御,Accuracy / Control,ボイルドクレイフィッシュ,,3010103,Boiled Crayfish,物理命中力:＋13%(上限 7) 変質制御:＋10%(上限 3) PIE:＋7%(上限 3),Accuracy:+13%(cap 7) Control:+10%(cap 3) Piety:+7%(cap 3),5,1800,5,1800,elemen-food
+魚介料理,Seafood,物理命中力変質制御,Accuracy / Control,ローオイスター,,3010104,Raw Oyster,物理命中力:＋11%(上限 11) 変質制御:＋10%(上限 5) DEX:＋5%(上限 4),Accuracy:+11%(cap 11) Control:+10%(cap 5) Dexterity:+5%(cap 4),5,1800,5,1800,elemen-food
+魚介料理,Seafood,物理命中力変質制御,Accuracy / Control,グリルドトラウト,,3010105,Grilled Trout,物理命中力:＋13%(上限 7) 変質制御:＋10%(上限 3) INT:＋7%(上限 3),Accuracy:+13%(cap 7) Control:+10%(cap 3) Intelligence:+7%(cap 3),5,1800,5,1800,elemen-food
+魚介料理,Seafood,物理命中力変質制御,Accuracy / Control,サーモンムニエル,,3010106,Salmon Meuniere,物理命中力:＋11%(上限 11) 変質制御:＋10%(上限 5) PIE:＋5%(上限 4),Accuracy:+11%(cap 11) Control:+10%(cap 5) Piety:+5%(cap 4),5,1800,5,1800,elemen-food
+魚介料理,Seafood,物理命中力変質制御,Accuracy / Control,ミコッテ風海の幸串焼,,3010107,Tuna Miq'abob,物理命中力:＋8%(上限 24) 変質制御:＋9%(上限 9) STR:＋3%(上限 6),Accuracy:+8%(cap 24) Control:+9%(cap 9) Strength:+3%(cap 6),5,1800,5,1800,elemen-food
+魚介料理,Seafood,物理命中力変質制御,Accuracy / Control,イールパイ,,3010108,Eel Pie,物理命中力:＋11%(上限 12) 変質制御:＋10%(上限 5) STR:＋5%(上限 4),Accuracy:+11%(cap 12) Control:+10%(cap 5) Strength:+5%(cap 4),5,1800,5,1800,elemen-food
+魚介料理,Seafood,物理命中力変質制御,Accuracy / Control,ソルトコッドパフ,,3010109,Salt Cod Puffs,物理命中力:＋7%(上限 34) 変質制御:＋8%(上限 11) DEX:＋3%(上限 7),Accuracy:+7%(cap 34) Control:+8%(cap 11) Dexterity:+3%(cap 7),5,1800,5,1800,elemen-food
+魚介料理,Seafood,物理命中力変質制御,Accuracy / Control,パイクのキャベツ巻き,,3010110,Stuffed Cabbage,物理命中力:＋7%(上限 34) 変質制御:＋8%(上限 11) PIE:＋3%(上限 7),Accuracy:+7%(cap 34) Control:+8%(cap 11) Piety:+3%(cap 7),5,1800,5,1800,elemen-food
+魚介料理,Seafood,物理命中力変質制御,Accuracy / Control,ラーヴァトードレッグズ,,3010111,Lava Toad Legs,物理命中力:＋7%(上限 34) 変質制御:＋8%(上限 11) INT:＋3%(上限 7),Accuracy:+7%(cap 34) Control:+8%(cap 11) Intelligence:+3%(cap 7),5,1800,5,1800,elemen-food
+魚介料理,Seafood,物理命中力変質制御,Accuracy / Control,ツリートードレッグズ,,3010112,Tree Toad Legs,物理命中力:＋13%(上限 8) 変質制御:＋10%(上限 3) STR:＋7%(上限 3),Accuracy:+13%(cap 8) Control:+10%(cap 3) Strength:+7%(cap 3),5,1800,5,1800,elemen-food
+魚介料理,Seafood,物理命中力変質制御,Accuracy / Control,ベイクドソール,,3010113,Baked Sole,物理命中力:＋9%(上限 15) 変質制御:＋9%(上限 7) INT:＋4%(上限 5),Accuracy:+9%(cap 15) Control:+9%(cap 7) Intelligence:+4%(cap 5),5,1800,5,1800,elemen-food
+魚介料理,Seafood,物理命中力変質制御,Accuracy / Control,ベイクドピピラ,,3010114,Braised Pipira,物理命中力:＋13%(上限 7) 変質制御:＋10%(上限 3) DEX:＋7%(上限 3),Accuracy:+13%(cap 7) Control:+10%(cap 3) Dexterity:+7%(cap 3),5,1800,5,1800,elemen-food
+魚介料理,Seafood,物理命中力変質制御,Accuracy / Control,ボイルドブリーム,,3010115,Boiled Bream,物理命中力:＋9%(上限 17) 変質制御:＋9%(上限 7) 物理クリティカル命中力:＋10,Accuracy:+9%(cap 17) Control:+9%(cap 7) Critical Hit Rating:+10,5,1800,5,1800,elemen-food
+魚介料理,Seafood,物理命中力変質制御,Accuracy / Control,カープ＆マグワート,,3010118,Mugwort Carp,物理命中力:＋8%(上限 23) 変質制御:＋9%(上限 9) HP:＋10,Accuracy:+8%(cap 23) Control:+9%(cap 9) HP:+10,5,1800,5,1800,elemen-food
+スープ＆シチュー,Soup & Stew,魔法回避力操作力,Magic Evasion / Output,フルメンティ,,3010202,Frumenty,魔法回避力:＋12%(上限 10) 操作力:＋20%(上限 5) PIE:＋7%(上限 3),Magic Evasion:+12%(cap 10) Output:+20%(cap 5) Piety:+7%(cap 3),5,1800,5,1800,elemen-food
+スープ＆シチュー,Soup & Stew,魔法回避力操作力,Magic Evasion / Output,レンティル＆チェスナット,,3010210,Lentils & Chestnuts,魔法回避力:＋10%(上限 15) 操作力:＋18%(上限 7) PIE:＋5%(上限 4),Magic Evasion:+10%(cap 15) Output:+18%(cap 7) Piety:+5%(cap 4),5,1800,5,1800,elemen-food
+スープ＆シチュー,Soup & Stew,魔法回避力操作力,Magic Evasion / Output,ゼーメル家風グラタン,,3010307,Dzemael Gratin,魔法回避力:＋6%(上限 31) 操作力:＋12%(上限 15) MND:＋3%(上限 7),Magic Evasion:+6%(cap 31) Output:+12%(cap 15) Mind:+3%(cap 7),5,1800,5,1800,elemen-food
+スープ＆シチュー,Soup & Stew,魔法回避力操作力,Magic Evasion / Output,ピースープ,,3010501,Pea Soup,魔法回避力:＋8%(上限 20) 操作力:＋16%(上限 10) INT:＋4%(上限 5),Magic Evasion:+8%(cap 20) Output:+16%(cap 10) Intelligence:+4%(cap 5),5,1800,5,1800,elemen-food
+スープ＆シチュー,Soup & Stew,魔法回避力操作力,Magic Evasion / Output,ストーンスープ,,3010502,Stone Soup,魔法回避力:＋8%(上限 20) 操作力:＋16%(上限 10) PIE:＋4%(上限 5),Magic Evasion:+8%(cap 20) Output:+16%(cap 10) Piety:+4%(cap 5),5,1800,5,1800,elemen-food
+スープ＆シチュー,Soup & Stew,魔法回避力操作力,Magic Evasion / Output,ビーフシチュー,,3010503,Beef Stew,魔法回避力:＋6%(上限 32) 操作力:＋12%(上限 15) HP:＋15,Magic Evasion:+6%(cap 32) Output:+12%(cap 15) HP:+15,5,1800,5,1800,elemen-food
+スープ＆シチュー,Soup & Stew,魔法回避力操作力,Magic Evasion / Output,カウルケニン,,3010504,Cawl Cennin,魔法回避力:＋7%(上限 25) 操作力:＋14%(上限 12) PIE:＋3%(上限 6),Magic Evasion:+7%(cap 25) Output:+14%(cap 12) Piety:+3%(cap 6),5,1800,5,1800,elemen-food
+スープ＆シチュー,Soup & Stew,魔法回避力操作力,Magic Evasion / Output,ラタトゥイユ,,3010505,Ratatouille,魔法回避力:＋7%(上限 25) 操作力:＋14%(上限 12) HP:＋15,Magic Evasion:+7%(cap 25) Output:+14%(cap 12) HP:+15,5,1800,5,1800,elemen-food
+スープ＆シチュー,Soup & Stew,魔法回避力操作力,Magic Evasion / Output,マトンシチュー,,3010506,Mutton Stew,魔法回避力:＋12%(上限 10) 操作力:＋20%(上限 5) MND:＋7%(上限 3),Magic Evasion:+12%(cap 10) Output:+20%(cap 5) Mind:+7%(cap 3),5,1800,5,1800,elemen-food
+スープ＆シチュー,Soup & Stew,魔法回避力操作力,Magic Evasion / Output,フィッシュスープ,,3010507,Fish Soup,魔法回避力:＋6%(上限 31) 操作力:＋12%(上限 15) PIE:＋3%(上限 7),Magic Evasion:+6%(cap 31) Output:+12%(cap 15) Piety:+3%(cap 7),5,1800,5,1800,elemen-food
+スープ＆シチュー,Soup & Stew,魔法回避力操作力,Magic Evasion / Output,ブイヤベース,,3010508,Bouillabaisse,魔法回避力:＋6%(上限 31) 操作力:＋12%(上限 15) INT:＋3%(上限 7),Magic Evasion:+6%(cap 31) Output:+12%(cap 15) Intelligence:+3%(cap 7),5,1800,5,1800,elemen-food
+スープ＆シチュー,Soup & Stew,魔法回避力操作力,Magic Evasion / Output,雑煮,,3010509,Zoni,魔法回避力:＋12%(上限 11) 操作力:＋20%(上限 5),Magic Evasion:+12%(cap 11) Output:+20%(cap 5),5,1800,5,1800,elemen-food
+スープ＆シチュー,Soup & Stew,魔法回避力操作力,Magic Evasion / Output,オロボンシチュー,,3010510,Orobon Stew,魔法回避力:＋8%(上限 22) 操作力:＋16%(上限 10) MND:＋4%(上限 5),Magic Evasion:+8%(cap 22) Output:+16%(cap 10) Mind:+4%(cap 5),5,1800,5,1800,elemen-food
+乳酪類,Dairy,物理加工識質力,Craftsmanship / Perception,コテージチーズ,,3010005,Cottage Cheese,物理加工:＋18%(上限 8) 識質力:＋18%(上限 8),Craftsmanship:+18%(cap 8) Perception:+18%(cap 8),5,1800,5,1800,elemen-food
+乳酪類,Dairy,物理加工識質力,Craftsmanship / Perception,ブルードルチェ,,3010015,Blue Cheese,物理加工:＋16%(上限 10) 識質力:＋16%(上限 10),Craftsmanship:+16%(cap 10) Perception:+16%(cap 10),5,1800,5,1800,elemen-food
+乳酪類,Dairy,物理加工識質力,Craftsmanship / Perception,クリームチーズ,,3010018,Cream Cheese,物理加工:＋14%(上限 12) 識質力:＋14%(上限 12),Craftsmanship:+14%(cap 12) Perception:+14%(cap 12),5,1800,5,1800,elemen-food
+乳酪類,Dairy,物理加工識質力,Craftsmanship / Perception,ロランベリーチーズ,,3010019,Rolanberry Cheese,物理加工:＋12%(上限 15) 識質力:＋11%(上限 15),Craftsmanship:+12%(cap 15) Perception:+11%(cap 15),5,1800,5,1800,elemen-food
+乳酪類,Dairy,物理加工識質力,Craftsmanship / Perception,山羊乳,,3010603,Aldgoat Milk,物理加工:＋20%(上限 5) 識質力:＋20%(上限 5),Craftsmanship:+20%(cap 5) Perception:+20%(cap 5),5,1800,5,1800,elemen-food
+乳酪類,Dairy,物理加工識質力,Craftsmanship / Perception,水牛乳,,3010604,Buffalo Milk,物理加工:＋18%(上限 7) 識質力:＋18%(上限 7),Craftsmanship:+18%(cap 7) Perception:+18%(cap 7),5,1800,5,1800,elemen-food
+乳酪類,Dairy,物理加工識質力,Craftsmanship / Perception,ロランベリーラッシー,,3010612,Rolanberry Lassi,物理加工:＋11%(上限 15) 識質力:＋12%(上限 15),Craftsmanship:+11%(cap 15) Perception:+12%(cap 15),5,1800,5,1800,elemen-food

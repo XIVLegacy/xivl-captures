@@ -1,0 +1,12 @@
+# Python dependencies for the xivl-captures tooling.
+# Most tools use only the Python 3 standard library. Three third-party deps:
+#   - scapy: pcap parsing for the extractors
+#     (tools/extractors/extract_streams.py and friends).
+#   - jsonschema: Draft 2020-12 schema validation in tools/validate_schemas.py.
+#   - PyYAML: manifest and sidecar tooling (source/study manifests, dataset
+#     meta sidecars, pipeline manifests, evidence-classes.yaml).
+#
+#   python -m pip install -r tools/requirements.txt
+scapy>=2.5.0
+jsonschema>=4.0.0
+PyYAML>=6.0

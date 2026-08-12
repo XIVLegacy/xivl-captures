@@ -1,0 +1,2 @@
+pcap,capture_path,bytes,sha256,n_opcodes,opcodes,service_mix
+cutscene_book.pcapng,sources/pcap-1.23b/objects/cutscene_book.pcapng,123824,c2cf85e02d8d15fe2aa9261e8b796c29c0a3d9dd9cdf287ce0f75f3a666b2b4d,8,0x0001;0x00ca;0x00cc;0x00cd;0x00ce;0x00cf;0x00d2;0x00d3,map=9

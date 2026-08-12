@@ -1,0 +1,1142 @@
+{
+  "windowMs": 200,
+  "noiseOpcodesExcluded": [
+    "0x00ca",
+    "0x00cf"
+  ],
+  "captureCount": 53,
+  "c2sOpcodes": [
+    {
+      "c2sOpcode": 1,
+      "c2sOpcodeHex": "0x0001",
+      "c2sTotal": 3329,
+      "topResponses": [
+        {
+          "s2cOpcode": 400,
+          "s2cOpcodeHex": "0x0190",
+          "pairCount": 1288,
+          "captures": 5,
+          "c2sShare": 0.387,
+          "s2cShare": 0.231
+        },
+        {
+          "s2cOpcode": 311,
+          "s2cOpcodeHex": "0x0137",
+          "pairCount": 423,
+          "captures": 24,
+          "c2sShare": 0.127,
+          "s2cShare": 0.212
+        },
+        {
+          "s2cOpcode": 208,
+          "s2cOpcodeHex": "0x00d0",
+          "pairCount": 242,
+          "captures": 15,
+          "c2sShare": 0.073,
+          "s2cShare": 0.196
+        },
+        {
+          "s2cOpcode": 324,
+          "s2cOpcodeHex": "0x0144",
+          "pairCount": 208,
+          "captures": 16,
+          "c2sShare": 0.062,
+          "s2cShare": 0.212
+        },
+        {
+          "s2cOpcode": 206,
+          "s2cOpcodeHex": "0x00ce",
+          "pairCount": 197,
+          "captures": 12,
+          "c2sShare": 0.059,
+          "s2cShare": 0.212
+        },
+        {
+          "s2cOpcode": 363,
+          "s2cOpcodeHex": "0x016b",
+          "pairCount": 190,
+          "captures": 11,
+          "c2sShare": 0.057,
+          "s2cShare": 0.214
+        },
+        {
+          "s2cOpcode": 308,
+          "s2cOpcodeHex": "0x0134",
+          "pairCount": 187,
+          "captures": 14,
+          "c2sShare": 0.056,
+          "s2cShare": 0.207
+        },
+        {
+          "s2cOpcode": 379,
+          "s2cOpcodeHex": "0x017b",
+          "pairCount": 184,
+          "captures": 12,
+          "c2sShare": 0.055,
+          "s2cShare": 0.221
+        },
+        {
+          "s2cOpcode": 204,
+          "s2cOpcodeHex": "0x00cc",
+          "pairCount": 182,
+          "captures": 11,
+          "c2sShare": 0.055,
+          "s2cShare": 0.222
+        },
+        {
+          "s2cOpcode": 325,
+          "s2cOpcodeHex": "0x0145",
+          "pairCount": 180,
+          "captures": 12,
+          "c2sShare": 0.054,
+          "s2cShare": 0.219
+        },
+        {
+          "s2cOpcode": 377,
+          "s2cOpcodeHex": "0x0179",
+          "pairCount": 180,
+          "captures": 12,
+          "c2sShare": 0.054,
+          "s2cShare": 0.219
+        },
+        {
+          "s2cOpcode": 317,
+          "s2cOpcodeHex": "0x013d",
+          "pairCount": 176,
+          "captures": 12,
+          "c2sShare": 0.053,
+          "s2cShare": 0.214
+        },
+        {
+          "s2cOpcode": 214,
+          "s2cOpcodeHex": "0x00d6",
+          "pairCount": 163,
+          "captures": 13,
+          "c2sShare": 0.049,
+          "s2cShare": 0.216
+        },
+        {
+          "s2cOpcode": 310,
+          "s2cOpcodeHex": "0x0136",
+          "pairCount": 160,
+          "captures": 7,
+          "c2sShare": 0.048,
+          "s2cShare": 0.268
+        },
+        {
+          "s2cOpcode": 397,
+          "s2cOpcodeHex": "0x018d",
+          "pairCount": 123,
+          "captures": 22,
+          "c2sShare": 0.037,
+          "s2cShare": 0.208
+        },
+        {
+          "s2cOpcode": 395,
+          "s2cOpcodeHex": "0x018b",
+          "pairCount": 113,
+          "captures": 7,
+          "c2sShare": 0.034,
+          "s2cShare": 0.394
+        },
+        {
+          "s2cOpcode": 378,
+          "s2cOpcodeHex": "0x017a",
+          "pairCount": 113,
+          "captures": 9,
+          "c2sShare": 0.034,
+          "s2cShare": 0.415
+        },
+        {
+          "s2cOpcode": 313,
+          "s2cOpcodeHex": "0x0139",
+          "pairCount": 87,
+          "captures": 7,
+          "c2sShare": 0.026,
+          "s2cShare": 0.199
+        },
+        {
+          "s2cOpcode": 302,
+          "s2cOpcodeHex": "0x012e",
+          "pairCount": 85,
+          "captures": 7,
+          "c2sShare": 0.026,
+          "s2cShare": 0.216
+        },
+        {
+          "s2cOpcode": 203,
+          "s2cOpcodeHex": "0x00cb",
+          "pairCount": 69,
+          "captures": 7,
+          "c2sShare": 0.021,
+          "s2cShare": 0.096
+        }
+      ]
+    },
+    {
+      "c2sOpcode": 3,
+      "c2sOpcodeHex": "0x0003",
+      "c2sTotal": 2,
+      "topResponses": [
+        {
+          "s2cOpcode": 1,
+          "s2cOpcodeHex": "0x0001",
+          "pairCount": 1,
+          "captures": 1,
+          "c2sShare": 0.5,
+          "s2cShare": 0.0
+        }
+      ]
+    },
+    {
+      "c2sOpcode": 7,
+      "c2sOpcodeHex": "0x0007",
+      "c2sTotal": 8,
+      "topResponses": [
+        {
+          "s2cOpcode": 1,
+          "s2cOpcodeHex": "0x0001",
+          "pairCount": 5,
+          "captures": 5,
+          "c2sShare": 0.625,
+          "s2cShare": 0.001
+        }
+      ]
+    },
+    {
+      "c2sOpcode": 201,
+      "c2sOpcodeHex": "0x00c9",
+      "c2sTotal": 11,
+      "topResponses": [
+        {
+          "s2cOpcode": 311,
+          "s2cOpcodeHex": "0x0137",
+          "pairCount": 3,
+          "captures": 1,
+          "c2sShare": 0.273,
+          "s2cShare": 0.002
+        },
+        {
+          "s2cOpcode": 1,
+          "s2cOpcodeHex": "0x0001",
+          "pairCount": 2,
+          "captures": 2,
+          "c2sShare": 0.182,
+          "s2cShare": 0.001
+        },
+        {
+          "s2cOpcode": 397,
+          "s2cOpcodeHex": "0x018d",
+          "pairCount": 1,
+          "captures": 1,
+          "c2sShare": 0.091,
+          "s2cShare": 0.002
+        },
+        {
+          "s2cOpcode": 206,
+          "s2cOpcodeHex": "0x00ce",
+          "pairCount": 1,
+          "captures": 1,
+          "c2sShare": 0.091,
+          "s2cShare": 0.001
+        },
+        {
+          "s2cOpcode": 313,
+          "s2cOpcodeHex": "0x0139",
+          "pairCount": 1,
+          "captures": 1,
+          "c2sShare": 0.091,
+          "s2cShare": 0.002
+        }
+      ]
+    },
+    {
+      "c2sOpcode": 204,
+      "c2sOpcodeHex": "0x00cc",
+      "c2sTotal": 66,
+      "topResponses": [
+        {
+          "s2cOpcode": 400,
+          "s2cOpcodeHex": "0x0190",
+          "pairCount": 116,
+          "captures": 1,
+          "c2sShare": 1.758,
+          "s2cShare": 0.021
+        },
+        {
+          "s2cOpcode": 1,
+          "s2cOpcodeHex": "0x0001",
+          "pairCount": 23,
+          "captures": 10,
+          "c2sShare": 0.348,
+          "s2cShare": 0.007
+        },
+        {
+          "s2cOpcode": 211,
+          "s2cOpcodeHex": "0x00d3",
+          "pairCount": 21,
+          "captures": 10,
+          "c2sShare": 0.318,
+          "s2cShare": 0.126
+        },
+        {
+          "s2cOpcode": 311,
+          "s2cOpcodeHex": "0x0137",
+          "pairCount": 21,
+          "captures": 2,
+          "c2sShare": 0.318,
+          "s2cShare": 0.011
+        },
+        {
+          "s2cOpcode": 208,
+          "s2cOpcodeHex": "0x00d0",
+          "pairCount": 15,
+          "captures": 1,
+          "c2sShare": 0.227,
+          "s2cShare": 0.012
+        },
+        {
+          "s2cOpcode": 206,
+          "s2cOpcodeHex": "0x00ce",
+          "pairCount": 13,
+          "captures": 2,
+          "c2sShare": 0.197,
+          "s2cShare": 0.014
+        },
+        {
+          "s2cOpcode": 214,
+          "s2cOpcodeHex": "0x00d6",
+          "pairCount": 13,
+          "captures": 1,
+          "c2sShare": 0.197,
+          "s2cShare": 0.017
+        },
+        {
+          "s2cOpcode": 317,
+          "s2cOpcodeHex": "0x013d",
+          "pairCount": 13,
+          "captures": 1,
+          "c2sShare": 0.197,
+          "s2cShare": 0.016
+        },
+        {
+          "s2cOpcode": 363,
+          "s2cOpcodeHex": "0x016b",
+          "pairCount": 13,
+          "captures": 1,
+          "c2sShare": 0.197,
+          "s2cShare": 0.015
+        },
+        {
+          "s2cOpcode": 204,
+          "s2cOpcodeHex": "0x00cc",
+          "pairCount": 12,
+          "captures": 1,
+          "c2sShare": 0.182,
+          "s2cShare": 0.015
+        },
+        {
+          "s2cOpcode": 308,
+          "s2cOpcodeHex": "0x0134",
+          "pairCount": 12,
+          "captures": 1,
+          "c2sShare": 0.182,
+          "s2cShare": 0.013
+        },
+        {
+          "s2cOpcode": 324,
+          "s2cOpcodeHex": "0x0144",
+          "pairCount": 12,
+          "captures": 1,
+          "c2sShare": 0.182,
+          "s2cShare": 0.012
+        },
+        {
+          "s2cOpcode": 325,
+          "s2cOpcodeHex": "0x0145",
+          "pairCount": 12,
+          "captures": 1,
+          "c2sShare": 0.182,
+          "s2cShare": 0.015
+        },
+        {
+          "s2cOpcode": 377,
+          "s2cOpcodeHex": "0x0179",
+          "pairCount": 12,
+          "captures": 1,
+          "c2sShare": 0.182,
+          "s2cShare": 0.015
+        },
+        {
+          "s2cOpcode": 379,
+          "s2cOpcodeHex": "0x017b",
+          "pairCount": 12,
+          "captures": 1,
+          "c2sShare": 0.182,
+          "s2cShare": 0.014
+        },
+        {
+          "s2cOpcode": 380,
+          "s2cOpcodeHex": "0x017c",
+          "pairCount": 11,
+          "captures": 1,
+          "c2sShare": 0.167,
+          "s2cShare": 0.03
+        },
+        {
+          "s2cOpcode": 381,
+          "s2cOpcodeHex": "0x017d",
+          "pairCount": 11,
+          "captures": 1,
+          "c2sShare": 0.167,
+          "s2cShare": 0.03
+        },
+        {
+          "s2cOpcode": 382,
+          "s2cOpcodeHex": "0x017e",
+          "pairCount": 11,
+          "captures": 1,
+          "c2sShare": 0.167,
+          "s2cShare": 0.03
+        },
+        {
+          "s2cOpcode": 387,
+          "s2cOpcodeHex": "0x0183",
+          "pairCount": 11,
+          "captures": 1,
+          "c2sShare": 0.167,
+          "s2cShare": 0.03
+        },
+        {
+          "s2cOpcode": 305,
+          "s2cOpcodeHex": "0x0131",
+          "pairCount": 4,
+          "captures": 4,
+          "c2sShare": 0.061,
+          "s2cShare": 0.04
+        }
+      ]
+    },
+    {
+      "c2sOpcode": 205,
+      "c2sOpcodeHex": "0x00cd",
+      "c2sTotal": 118,
+      "topResponses": [
+        {
+          "s2cOpcode": 400,
+          "s2cOpcodeHex": "0x0190",
+          "pairCount": 116,
+          "captures": 1,
+          "c2sShare": 0.983,
+          "s2cShare": 0.021
+        },
+        {
+          "s2cOpcode": 311,
+          "s2cOpcodeHex": "0x0137",
+          "pairCount": 36,
+          "captures": 3,
+          "c2sShare": 0.305,
+          "s2cShare": 0.018
+        },
+        {
+          "s2cOpcode": 1,
+          "s2cOpcodeHex": "0x0001",
+          "pairCount": 35,
+          "captures": 12,
+          "c2sShare": 0.297,
+          "s2cShare": 0.01
+        },
+        {
+          "s2cOpcode": 211,
+          "s2cOpcodeHex": "0x00d3",
+          "pairCount": 26,
+          "captures": 10,
+          "c2sShare": 0.22,
+          "s2cShare": 0.156
+        },
+        {
+          "s2cOpcode": 208,
+          "s2cOpcodeHex": "0x00d0",
+          "pairCount": 23,
+          "captures": 2,
+          "c2sShare": 0.195,
+          "s2cShare": 0.019
+        },
+        {
+          "s2cOpcode": 363,
+          "s2cOpcodeHex": "0x016b",
+          "pairCount": 20,
+          "captures": 2,
+          "c2sShare": 0.169,
+          "s2cShare": 0.023
+        },
+        {
+          "s2cOpcode": 206,
+          "s2cOpcodeHex": "0x00ce",
+          "pairCount": 19,
+          "captures": 3,
+          "c2sShare": 0.161,
+          "s2cShare": 0.02
+        },
+        {
+          "s2cOpcode": 214,
+          "s2cOpcodeHex": "0x00d6",
+          "pairCount": 19,
+          "captures": 2,
+          "c2sShare": 0.161,
+          "s2cShare": 0.025
+        },
+        {
+          "s2cOpcode": 317,
+          "s2cOpcodeHex": "0x013d",
+          "pairCount": 19,
+          "captures": 2,
+          "c2sShare": 0.161,
+          "s2cShare": 0.023
+        },
+        {
+          "s2cOpcode": 204,
+          "s2cOpcodeHex": "0x00cc",
+          "pairCount": 18,
+          "captures": 2,
+          "c2sShare": 0.153,
+          "s2cShare": 0.022
+        },
+        {
+          "s2cOpcode": 308,
+          "s2cOpcodeHex": "0x0134",
+          "pairCount": 18,
+          "captures": 2,
+          "c2sShare": 0.153,
+          "s2cShare": 0.02
+        },
+        {
+          "s2cOpcode": 324,
+          "s2cOpcodeHex": "0x0144",
+          "pairCount": 18,
+          "captures": 2,
+          "c2sShare": 0.153,
+          "s2cShare": 0.018
+        },
+        {
+          "s2cOpcode": 325,
+          "s2cOpcodeHex": "0x0145",
+          "pairCount": 18,
+          "captures": 2,
+          "c2sShare": 0.153,
+          "s2cShare": 0.022
+        },
+        {
+          "s2cOpcode": 377,
+          "s2cOpcodeHex": "0x0179",
+          "pairCount": 18,
+          "captures": 2,
+          "c2sShare": 0.153,
+          "s2cShare": 0.022
+        },
+        {
+          "s2cOpcode": 379,
+          "s2cOpcodeHex": "0x017b",
+          "pairCount": 18,
+          "captures": 2,
+          "c2sShare": 0.153,
+          "s2cShare": 0.022
+        },
+        {
+          "s2cOpcode": 380,
+          "s2cOpcodeHex": "0x017c",
+          "pairCount": 17,
+          "captures": 2,
+          "c2sShare": 0.144,
+          "s2cShare": 0.047
+        },
+        {
+          "s2cOpcode": 381,
+          "s2cOpcodeHex": "0x017d",
+          "pairCount": 17,
+          "captures": 2,
+          "c2sShare": 0.144,
+          "s2cShare": 0.047
+        },
+        {
+          "s2cOpcode": 382,
+          "s2cOpcodeHex": "0x017e",
+          "pairCount": 17,
+          "captures": 2,
+          "c2sShare": 0.144,
+          "s2cShare": 0.047
+        },
+        {
+          "s2cOpcode": 387,
+          "s2cOpcodeHex": "0x0183",
+          "pairCount": 17,
+          "captures": 2,
+          "c2sShare": 0.144,
+          "s2cShare": 0.046
+        },
+        {
+          "s2cOpcode": 313,
+          "s2cOpcodeHex": "0x0139",
+          "pairCount": 7,
+          "captures": 2,
+          "c2sShare": 0.059,
+          "s2cShare": 0.016
+        }
+      ]
+    },
+    {
+      "c2sOpcode": 301,
+      "c2sOpcodeHex": "0x012d",
+      "c2sTotal": 126,
+      "topResponses": [
+        {
+          "s2cOpcode": 1,
+          "s2cOpcodeHex": "0x0001",
+          "pairCount": 48,
+          "captures": 20,
+          "c2sShare": 0.381,
+          "s2cShare": 0.014
+        },
+        {
+          "s2cOpcode": 311,
+          "s2cOpcodeHex": "0x0137",
+          "pairCount": 23,
+          "captures": 3,
+          "c2sShare": 0.183,
+          "s2cShare": 0.012
+        },
+        {
+          "s2cOpcode": 208,
+          "s2cOpcodeHex": "0x00d0",
+          "pairCount": 17,
+          "captures": 1,
+          "c2sShare": 0.135,
+          "s2cShare": 0.014
+        },
+        {
+          "s2cOpcode": 206,
+          "s2cOpcodeHex": "0x00ce",
+          "pairCount": 14,
+          "captures": 2,
+          "c2sShare": 0.111,
+          "s2cShare": 0.015
+        },
+        {
+          "s2cOpcode": 211,
+          "s2cOpcodeHex": "0x00d3",
+          "pairCount": 12,
+          "captures": 8,
+          "c2sShare": 0.095,
+          "s2cShare": 0.072
+        },
+        {
+          "s2cOpcode": 324,
+          "s2cOpcodeHex": "0x0144",
+          "pairCount": 12,
+          "captures": 1,
+          "c2sShare": 0.095,
+          "s2cShare": 0.012
+        },
+        {
+          "s2cOpcode": 379,
+          "s2cOpcodeHex": "0x017b",
+          "pairCount": 12,
+          "captures": 2,
+          "c2sShare": 0.095,
+          "s2cShare": 0.014
+        },
+        {
+          "s2cOpcode": 313,
+          "s2cOpcodeHex": "0x0139",
+          "pairCount": 11,
+          "captures": 2,
+          "c2sShare": 0.087,
+          "s2cShare": 0.025
+        },
+        {
+          "s2cOpcode": 214,
+          "s2cOpcodeHex": "0x00d6",
+          "pairCount": 10,
+          "captures": 1,
+          "c2sShare": 0.079,
+          "s2cShare": 0.013
+        },
+        {
+          "s2cOpcode": 317,
+          "s2cOpcodeHex": "0x013d",
+          "pairCount": 10,
+          "captures": 1,
+          "c2sShare": 0.079,
+          "s2cShare": 0.012
+        },
+        {
+          "s2cOpcode": 204,
+          "s2cOpcodeHex": "0x00cc",
+          "pairCount": 9,
+          "captures": 1,
+          "c2sShare": 0.071,
+          "s2cShare": 0.011
+        },
+        {
+          "s2cOpcode": 308,
+          "s2cOpcodeHex": "0x0134",
+          "pairCount": 9,
+          "captures": 1,
+          "c2sShare": 0.071,
+          "s2cShare": 0.01
+        },
+        {
+          "s2cOpcode": 325,
+          "s2cOpcodeHex": "0x0145",
+          "pairCount": 9,
+          "captures": 1,
+          "c2sShare": 0.071,
+          "s2cShare": 0.011
+        },
+        {
+          "s2cOpcode": 363,
+          "s2cOpcodeHex": "0x016b",
+          "pairCount": 9,
+          "captures": 1,
+          "c2sShare": 0.071,
+          "s2cShare": 0.01
+        },
+        {
+          "s2cOpcode": 377,
+          "s2cOpcodeHex": "0x0179",
+          "pairCount": 9,
+          "captures": 1,
+          "c2sShare": 0.071,
+          "s2cShare": 0.011
+        },
+        {
+          "s2cOpcode": 380,
+          "s2cOpcodeHex": "0x017c",
+          "pairCount": 9,
+          "captures": 1,
+          "c2sShare": 0.071,
+          "s2cShare": 0.025
+        },
+        {
+          "s2cOpcode": 381,
+          "s2cOpcodeHex": "0x017d",
+          "pairCount": 9,
+          "captures": 1,
+          "c2sShare": 0.071,
+          "s2cShare": 0.025
+        },
+        {
+          "s2cOpcode": 382,
+          "s2cOpcodeHex": "0x017e",
+          "pairCount": 9,
+          "captures": 1,
+          "c2sShare": 0.071,
+          "s2cShare": 0.025
+        },
+        {
+          "s2cOpcode": 387,
+          "s2cOpcodeHex": "0x0183",
+          "pairCount": 9,
+          "captures": 1,
+          "c2sShare": 0.071,
+          "s2cShare": 0.024
+        },
+        {
+          "s2cOpcode": 397,
+          "s2cOpcodeHex": "0x018d",
+          "pairCount": 5,
+          "captures": 3,
+          "c2sShare": 0.04,
+          "s2cShare": 0.008
+        }
+      ]
+    },
+    {
+      "c2sOpcode": 302,
+      "c2sOpcodeHex": "0x012e",
+      "c2sTotal": 200,
+      "topResponses": [
+        {
+          "s2cOpcode": 400,
+          "s2cOpcodeHex": "0x0190",
+          "pairCount": 113,
+          "captures": 1,
+          "c2sShare": 0.565,
+          "s2cShare": 0.02
+        },
+        {
+          "s2cOpcode": 1,
+          "s2cOpcodeHex": "0x0001",
+          "pairCount": 76,
+          "captures": 16,
+          "c2sShare": 0.38,
+          "s2cShare": 0.022
+        },
+        {
+          "s2cOpcode": 304,
+          "s2cOpcodeHex": "0x0130",
+          "pairCount": 16,
+          "captures": 3,
+          "c2sShare": 0.08,
+          "s2cShare": 0.08
+        },
+        {
+          "s2cOpcode": 359,
+          "s2cOpcodeHex": "0x0167",
+          "pairCount": 16,
+          "captures": 1,
+          "c2sShare": 0.08,
+          "s2cShare": 0.205
+        },
+        {
+          "s2cOpcode": 397,
+          "s2cOpcodeHex": "0x018d",
+          "pairCount": 9,
+          "captures": 4,
+          "c2sShare": 0.045,
+          "s2cShare": 0.015
+        },
+        {
+          "s2cOpcode": 358,
+          "s2cOpcodeHex": "0x0166",
+          "pairCount": 8,
+          "captures": 2,
+          "c2sShare": 0.04,
+          "s2cShare": 0.235
+        },
+        {
+          "s2cOpcode": 311,
+          "s2cOpcodeHex": "0x0137",
+          "pairCount": 6,
+          "captures": 3,
+          "c2sShare": 0.03,
+          "s2cShare": 0.003
+        },
+        {
+          "s2cOpcode": 360,
+          "s2cOpcodeHex": "0x0168",
+          "pairCount": 6,
+          "captures": 2,
+          "c2sShare": 0.03,
+          "s2cShare": 0.146
+        },
+        {
+          "s2cOpcode": 208,
+          "s2cOpcodeHex": "0x00d0",
+          "pairCount": 4,
+          "captures": 2,
+          "c2sShare": 0.02,
+          "s2cShare": 0.003
+        },
+        {
+          "s2cOpcode": 361,
+          "s2cOpcodeHex": "0x0169",
+          "pairCount": 4,
+          "captures": 1,
+          "c2sShare": 0.02,
+          "s2cShare": 0.078
+        },
+        {
+          "s2cOpcode": 218,
+          "s2cOpcodeHex": "0x00da",
+          "pairCount": 3,
+          "captures": 1,
+          "c2sShare": 0.015,
+          "s2cShare": 0.097
+        },
+        {
+          "s2cOpcode": 324,
+          "s2cOpcodeHex": "0x0144",
+          "pairCount": 2,
+          "captures": 2,
+          "c2sShare": 0.01,
+          "s2cShare": 0.002
+        },
+        {
+          "s2cOpcode": 326,
+          "s2cOpcodeHex": "0x0146",
+          "pairCount": 1,
+          "captures": 1,
+          "c2sShare": 0.005,
+          "s2cShare": 0.007
+        },
+        {
+          "s2cOpcode": 327,
+          "s2cOpcodeHex": "0x0147",
+          "pairCount": 1,
+          "captures": 1,
+          "c2sShare": 0.005,
+          "s2cShare": 0.007
+        },
+        {
+          "s2cOpcode": 328,
+          "s2cOpcodeHex": "0x0148",
+          "pairCount": 1,
+          "captures": 1,
+          "c2sShare": 0.005,
+          "s2cShare": 0.019
+        },
+        {
+          "s2cOpcode": 365,
+          "s2cOpcodeHex": "0x016d",
+          "pairCount": 1,
+          "captures": 1,
+          "c2sShare": 0.005,
+          "s2cShare": 0.013
+        },
+        {
+          "s2cOpcode": 366,
+          "s2cOpcodeHex": "0x016e",
+          "pairCount": 1,
+          "captures": 1,
+          "c2sShare": 0.005,
+          "s2cShare": 0.013
+        },
+        {
+          "s2cOpcode": 204,
+          "s2cOpcodeHex": "0x00cc",
+          "pairCount": 1,
+          "captures": 1,
+          "c2sShare": 0.005,
+          "s2cShare": 0.001
+        },
+        {
+          "s2cOpcode": 206,
+          "s2cOpcodeHex": "0x00ce",
+          "pairCount": 1,
+          "captures": 1,
+          "c2sShare": 0.005,
+          "s2cShare": 0.001
+        },
+        {
+          "s2cOpcode": 214,
+          "s2cOpcodeHex": "0x00d6",
+          "pairCount": 1,
+          "captures": 1,
+          "c2sShare": 0.005,
+          "s2cShare": 0.001
+        }
+      ]
+    },
+    {
+      "c2sOpcode": 303,
+      "c2sOpcodeHex": "0x012f",
+      "c2sTotal": 44,
+      "topResponses": [
+        {
+          "s2cOpcode": 311,
+          "s2cOpcodeHex": "0x0137",
+          "pairCount": 18,
+          "captures": 9,
+          "c2sShare": 0.409,
+          "s2cShare": 0.009
+        },
+        {
+          "s2cOpcode": 1,
+          "s2cOpcodeHex": "0x0001",
+          "pairCount": 13,
+          "captures": 9,
+          "c2sShare": 0.295,
+          "s2cShare": 0.004
+        }
+      ]
+    },
+    {
+      "c2sOpcode": 307,
+      "c2sOpcodeHex": "0x0133",
+      "c2sTotal": 268,
+      "topResponses": [
+        {
+          "s2cOpcode": 311,
+          "s2cOpcodeHex": "0x0137",
+          "pairCount": 180,
+          "captures": 9,
+          "c2sShare": 0.672,
+          "s2cShare": 0.09
+        },
+        {
+          "s2cOpcode": 204,
+          "s2cOpcodeHex": "0x00cc",
+          "pairCount": 161,
+          "captures": 8,
+          "c2sShare": 0.601,
+          "s2cShare": 0.196
+        },
+        {
+          "s2cOpcode": 308,
+          "s2cOpcodeHex": "0x0134",
+          "pairCount": 161,
+          "captures": 7,
+          "c2sShare": 0.601,
+          "s2cShare": 0.178
+        },
+        {
+          "s2cOpcode": 324,
+          "s2cOpcodeHex": "0x0144",
+          "pairCount": 161,
+          "captures": 7,
+          "c2sShare": 0.601,
+          "s2cShare": 0.164
+        },
+        {
+          "s2cOpcode": 379,
+          "s2cOpcodeHex": "0x017b",
+          "pairCount": 161,
+          "captures": 8,
+          "c2sShare": 0.601,
+          "s2cShare": 0.193
+        },
+        {
+          "s2cOpcode": 214,
+          "s2cOpcodeHex": "0x00d6",
+          "pairCount": 160,
+          "captures": 7,
+          "c2sShare": 0.597,
+          "s2cShare": 0.212
+        },
+        {
+          "s2cOpcode": 317,
+          "s2cOpcodeHex": "0x013d",
+          "pairCount": 160,
+          "captures": 7,
+          "c2sShare": 0.597,
+          "s2cShare": 0.195
+        },
+        {
+          "s2cOpcode": 325,
+          "s2cOpcodeHex": "0x0145",
+          "pairCount": 160,
+          "captures": 7,
+          "c2sShare": 0.597,
+          "s2cShare": 0.195
+        },
+        {
+          "s2cOpcode": 377,
+          "s2cOpcodeHex": "0x0179",
+          "pairCount": 160,
+          "captures": 7,
+          "c2sShare": 0.597,
+          "s2cShare": 0.195
+        },
+        {
+          "s2cOpcode": 208,
+          "s2cOpcodeHex": "0x00d0",
+          "pairCount": 159,
+          "captures": 7,
+          "c2sShare": 0.593,
+          "s2cShare": 0.129
+        },
+        {
+          "s2cOpcode": 206,
+          "s2cOpcodeHex": "0x00ce",
+          "pairCount": 155,
+          "captures": 8,
+          "c2sShare": 0.578,
+          "s2cShare": 0.167
+        },
+        {
+          "s2cOpcode": 363,
+          "s2cOpcodeHex": "0x016b",
+          "pairCount": 150,
+          "captures": 7,
+          "c2sShare": 0.56,
+          "s2cShare": 0.169
+        },
+        {
+          "s2cOpcode": 387,
+          "s2cOpcodeHex": "0x0183",
+          "pairCount": 147,
+          "captures": 6,
+          "c2sShare": 0.549,
+          "s2cShare": 0.396
+        },
+        {
+          "s2cOpcode": 380,
+          "s2cOpcodeHex": "0x017c",
+          "pairCount": 143,
+          "captures": 7,
+          "c2sShare": 0.534,
+          "s2cShare": 0.396
+        },
+        {
+          "s2cOpcode": 381,
+          "s2cOpcodeHex": "0x017d",
+          "pairCount": 143,
+          "captures": 7,
+          "c2sShare": 0.534,
+          "s2cShare": 0.396
+        },
+        {
+          "s2cOpcode": 382,
+          "s2cOpcodeHex": "0x017e",
+          "pairCount": 143,
+          "captures": 7,
+          "c2sShare": 0.534,
+          "s2cShare": 0.396
+        },
+        {
+          "s2cOpcode": 310,
+          "s2cOpcodeHex": "0x0136",
+          "pairCount": 111,
+          "captures": 7,
+          "c2sShare": 0.414,
+          "s2cShare": 0.186
+        },
+        {
+          "s2cOpcode": 378,
+          "s2cOpcodeHex": "0x017a",
+          "pairCount": 93,
+          "captures": 5,
+          "c2sShare": 0.347,
+          "s2cShare": 0.342
+        },
+        {
+          "s2cOpcode": 1,
+          "s2cOpcodeHex": "0x0001",
+          "pairCount": 67,
+          "captures": 13,
+          "c2sShare": 0.25,
+          "s2cShare": 0.02
+        },
+        {
+          "s2cOpcode": 367,
+          "s2cOpcodeHex": "0x016f",
+          "pairCount": 26,
+          "captures": 3,
+          "c2sShare": 0.097,
+          "s2cShare": 0.133
+        }
+      ]
+    },
+    {
+      "c2sOpcode": 463,
+      "c2sOpcodeHex": "0x01cf",
+      "c2sTotal": 2,
+      "topResponses": [
+        {
+          "s2cOpcode": 397,
+          "s2cOpcodeHex": "0x018d",
+          "pairCount": 1,
+          "captures": 1,
+          "c2sShare": 0.5,
+          "s2cShare": 0.002
+        }
+      ]
+    },
+    {
+      "c2sOpcode": 477,
+      "c2sOpcodeHex": "0x01dd",
+      "c2sTotal": 1,
+      "topResponses": [
+        {
+          "s2cOpcode": 1,
+          "s2cOpcodeHex": "0x0001",
+          "pairCount": 1,
+          "captures": 1,
+          "c2sShare": 1.0,
+          "s2cShare": 0.0
+        }
+      ]
+    }
+  ]
+}

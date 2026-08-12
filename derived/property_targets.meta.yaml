@@ -1,0 +1,13 @@
+dataset: property_targets
+kind: generated
+evidence_class: packet-capture
+schema_version: 1
+output:
+  file: derived/property_targets.json
+  sha256: e9960a8048b6584314a2ec75e36f15b299cb142ea26f54f0362518ede2e29ead
+generator:
+  tool: tools/extractors/extract_property_targets.py
+  version: '3'
+inputs:
+- source: pcap-1.23b
+  content_sha256: 3e39bfbffdf5a7efa0f42fc221f42dc2d1d28af8f19378d28921a3b903c0c7ee

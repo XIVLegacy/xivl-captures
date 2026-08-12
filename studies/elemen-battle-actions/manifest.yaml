@@ -1,0 +1,53 @@
+id: elemen-battle-actions
+title: eLeMeN FF14 1.x Battle Class Actions - Web Tables
+evidence_class: web-tables
+status: distilled
+content_kind: action-mechanic
+system: battle-regimen
+tags:
+- web-reference
+- wiki-tier
+- calibration
+- class-action
+- disciplines-of-war
+- disciplines-of-magic
+- trait
+- battle-regimen
+- part-damage
+- action-mechanic
+- elemen
+- patch-1.x
+search_hints:
+- 1.x class actions Disciplines of War Magic
+- Gladiator Pugilist Marauder Lancer Archer Conjurer Thaumaturge
+- action level TP cast recast duration equip-condition
+- trait 特性 Enhanced Physical Attack
+- job-specific action Cover Divine Veil Hallowed Ground
+- part-damage weaponskill map 部位損傷
+- Battle Regimen 付加効果を持つ戦術 バトルレジメン combo
+- Fast Blade Spirits Within Path of the Storm Power Surge
+- xtx_command action name cross-check client id
+- eLeMeN elemen.sakura.ne.jp class action
+- combo tree コンボ
+notes: 'Web-table transcription of the eLeMeN - FF14 (elemen.sakura.ne.jp) "データ資料 > クラス" section: the seven Disciplines of War/Magic action pages (class/action/~patch2.00_*) plus the shared class/battle tactics page (class/battle/, 付加効果を持つ戦術). Three derived CSVs: battle-actions.csv (226 rows: one per class action / job action / trait, with level, TP, cast, recast, effect duration, equip-condition, and the site description), part-damage-map.csv (15 rows: class x body-part -> weaponskill), and tactics-battle-regimen.csv (6 Battle Regimen combo-bonus effects). content_kind is action-mechanic; system battle-regimen. Evidence tier: wiki, so CALIBRATION-grade (packet captures > video breakdown > wiki). Client-first: xivl-client-data ships the action names + descriptions (xtx_command.csv) as primary evidence, and every EN here is joined from that sheet (JP col2 -> EN col3, id col0), not authored - 226/226 actions and 15/15 part-damage WS resolve to a client EN, zero authored (?). The numeric command.csv sheet is sparse (no TP/cast/duration/level), so this set''s unique value is those observation-only fields. Shared trait/action names carry one client id per class; the ids are assigned by canonical class order (Pugilist < Gladiator < Marauder < Archer < Lancer < Thaumaturge < Conjurer), never first-wins - see derived/evidence-map.md, which also logs the differing-EN twins (Power Surge/Speed Surge, Path of the Storm/Storm''s Path, Disembowel/Dragon''s Grasp, ...). ~patch2.00 is the site''s forward-facing label; the content is the final 1.x (patch 1.23b) state at the 2012-11-11 world-down, not ARR. The site 403s naive fetchers (curl/WebFetch); pages were read with a browser UA and captured into elemen-site-archive as the archival copy (web.archive Save-Page-Now not relied on). Source HTML preserved in elemen-site-archive, see its derived/url-map.csv. Crafter/gatherer action pages, the ~patch1.20/~patch1.22 historical snapshots (incl. the removed 盾術 class), and class/level are deliberately out of scope for a future intake. Harvested 2026-07-17.'
+related_implementation_docs: []
+source_refs:
+- source: elemen-battle-actions
+- source: elemen-site-archive
+  citation: full site mirror
+primary_paths:
+- derived/evidence-map.md
+- derived/battle-actions.csv
+- derived/part-damage-map.csv
+- derived/tactics-battle-regimen.csv
+- derived/glossary.md
+- derived/file-inventory.csv
+distilled:
+  distilled: true
+  distilled_artifacts:
+  - derived/battle-actions.csv
+  - derived/part-damage-map.csv
+  - derived/tactics-battle-regimen.csv
+  - derived/glossary.md
+  - derived/evidence-map.md
+  - derived/file-inventory.csv

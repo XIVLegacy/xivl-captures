@@ -1,0 +1,2794 @@
+item_id,item_name_en,client_tables,reason
+0,[en],_item itemData,no-english-name
+1,[en],_item itemData,no-english-name
+1000001,Gil,_item itemData,no-ge-page
+1000002,Crystal,_item itemData,no-ge-page
+1000011,Wind Crystal,_item itemData,no-ge-page
+1000101,Pugilists' Guild Mark,_item itemData,no-ge-page
+1000102,Gladiators' Guild Mark,_item itemData,no-ge-page
+1000103,Marauders' Guild Mark,_item itemData,no-ge-page
+1000104,[en],_item itemData,no-english-name
+1000105,[en],_item itemData,no-english-name
+1000106,Archers' Guild Mark,_item itemData,no-ge-page
+1000107,Lancers' Guild Mark,_item itemData,no-ge-page
+1000108,[en],_item itemData,no-english-name
+1000109,[en],_item itemData,no-english-name
+1000110,Thaumaturges' Guild Mark,_item itemData,no-ge-page
+1000111,Conjurers' Guild Mark,_item itemData,no-ge-page
+1000112,[en],_item itemData,no-english-name
+1000113,Carpenters' Guild Mark,_item itemData,no-ge-page
+1000114,Blacksmiths' Guild Mark,_item itemData,no-ge-page
+1000115,Armorers' Guild Mark,_item itemData,no-ge-page
+1000116,Goldsmiths' Guild Mark,_item itemData,no-ge-page
+1000117,Leatherworkers' Guild Mark,_item itemData,no-ge-page
+1000118,Weavers' Guild Mark,_item itemData,no-ge-page
+1000119,Alchemists' Guild Mark,_item itemData,no-ge-page
+1000120,Culinarians' Guild Mark,_item itemData,no-ge-page
+1000121,Miners' Guild Mark,_item itemData,no-ge-page
+1000122,Botanists' Guild Mark,_item itemData,no-ge-page
+1000123,Fishermen's Guild Mark,_item itemData,no-ge-page
+1000124,[en],_item itemData,no-english-name
+1000201,Storm Seal,_item itemData,no-ge-page
+1000202,Serpent Seal,_item itemData,no-ge-page
+1000203,Flame Seal,_item itemData,no-ge-page
+2000001,Key,_item itemData,no-ge-page
+2000002,Pendant,_item itemData,no-ge-page
+2001000,[en],_item itemData,no-english-name
+2001001,Materia Assimilator,_item itemData,no-ge-page
+2001002,Materia Melder,_item itemData,no-ge-page
+2001003,Augmented Materia Melder,_item itemData,no-ge-page
+2001004,Storm Chocobo Issuance,_item itemData,no-ge-page
+2001005,Serpent Chocobo Issuance,_item itemData,no-ge-page
+2001006,Flame Chocobo Issuance,_item itemData,no-ge-page
+2001007,Chocobo Whistle,_item itemData,no-ge-page
+2001008,Airship Ticket,_item itemData,no-ge-page
+2001009,Lapis Cross,_item itemData,no-ge-page
+2001010,Emerald Leaf,_item itemData,no-ge-page
+2001011,Gold Scales,_item itemData,no-ge-page
+2001012,[en],_item itemData,no-english-name
+2001013,Goobbue Horn,_item itemData,no-ge-page
+2001014,Lominsan Aetherpass,_item itemData,no-ge-page
+2001015,Gridanian Aetherpass,_item itemData,no-ge-page
+2001016,Ul'dahn Aetherpass,_item itemData,no-ge-page
+2001017,Lominsan Half Barding,_item itemData,no-ge-page
+2001018,Lominsan Barding,_item itemData,no-ge-page
+2001019,Lominsan Crested Barding,_item itemData,no-ge-page
+2001020,Gridanian Half Barding,_item itemData,no-ge-page
+2001021,Gridanian Barding,_item itemData,no-ge-page
+2001022,Gridanian Crested Barding,_item itemData,no-ge-page
+2001023,Ul'dahn Half Barding,_item itemData,no-ge-page
+2001024,Ul'dahn Barding,_item itemData,no-ge-page
+2001025,Ul'dahn Crested Barding,_item itemData,no-ge-page
+2001026,On the Properties of Beastmen,_item itemData,no-ge-page
+2001027,Soiled Promissory Note,_item itemData,no-ge-page
+2001028,Aquamarine Cross,_item itemData,no-ge-page
+2001029,Emerald Bough,_item itemData,no-ge-page
+2001030,Platinum Scales,_item itemData,no-ge-page
+3010024,[en],_item equipment itemData,no-english-name
+3011128,River Crab,_item equipment itemData,no-ge-page
+3011538,Dried Marjoram,_item equipment itemData,no-ge-page
+3020004,[en],_item equipment itemData,no-english-name
+3020005,[en],_item equipment itemData,no-english-name
+3020101,Ether,_item equipment itemData,no-ge-page
+3020104,Hyper Ether,_item equipment itemData,no-ge-page
+3020105,Fire Ether,_item equipment itemData,no-ge-page
+3020106,Water Ether,_item equipment itemData,no-ge-page
+3020107,Wind Ether,_item equipment itemData,no-ge-page
+3020108,Earth Ether,_item equipment itemData,no-ge-page
+3020109,Lightning Ether,_item equipment itemData,no-ge-page
+3020110,Ice Ether,_item equipment itemData,no-ge-page
+3020309,Venom Potion,_item equipment itemData,no-ge-page
+3020503,[en],_item equipment itemData,no-english-name
+3020506,Sanction,_item equipment itemData,no-ge-page
+3020602,Flame Tracer,_item equipment itemData,no-ge-page
+3020605,Gridanian Sparkler,_item equipment itemData,no-ge-page
+3020606,Ul'dahn Sparkler,_item equipment itemData,no-ge-page
+3920010,Horn Arrow,_item equipment itemData weapon,no-ge-page
+3920013,Wolf Arrow,_item equipment itemData weapon,no-ge-page
+3920014,Jade Arrow,_item equipment itemData weapon,no-ge-page
+4020308,[en],_item equipment itemData weapon,no-english-name
+4030009,[en],_item equipment itemData weapon,no-english-name
+4050001,[en],_item equipment itemData weapon,no-english-name
+4060001,[en],_item equipment itemData weapon,no-english-name
+4080108,[en],_item equipment itemData weapon,no-english-name
+4080302,Shellsplitter,_item equipment itemData weapon,no-ge-page
+4090001,[en],_item equipment itemData weapon,no-english-name
+4100107,[en],_item equipment itemData weapon,no-english-name
+4100509,[en],_item equipment itemData weapon,no-english-name
+4100811,[en],_item equipment itemData weapon,no-english-name
+4100812,[en],_item equipment itemData weapon,no-english-name
+4100813,[en],_item equipment itemData weapon,no-english-name
+5010001,[en],_item equipment itemData weapon,no-english-name
+5020115,[en],_item equipment itemData weapon,no-english-name
+5040001,[en],_item equipment itemData weapon,no-english-name
+6020013,[en],_item equipment itemData weapon,no-english-name
+6020016,[en],_item equipment itemData weapon,no-english-name
+6060011,Silver Needle,_item equipment itemData weapon,no-ge-page
+7010014,[en],_item equipment itemData weapon,no-english-name
+8010006,Steel Celata (Blue),_item armor equipment itemData,no-ge-page
+8010007,Cobalt Celata (Blue),_item armor equipment itemData,no-ge-page
+8010010,Cobalt Celata (Red),_item armor equipment itemData,no-ge-page
+8010011,[en],_item armor equipment itemData,no-english-name
+8010012,Darksteel Celata,_item armor equipment itemData,no-ge-page
+8010013,Darksteel Celata (White),_item armor equipment itemData,no-ge-page
+8010014,Darksteel Celata (Gold),_item armor equipment itemData,no-ge-page
+8010015,[en],_item armor equipment itemData,no-english-name
+8010116,Woolen Hat (Purple),_item armor equipment itemData,no-ge-page
+8010117,Woolen Hat of Intelligence (Purple),_item armor equipment itemData,no-ge-page
+8010118,Woolen Hat (Grey),_item armor equipment itemData,no-ge-page
+8010119,Woolen Hat of the Mind (Grey),_item armor equipment itemData,no-ge-page
+8010121,Felt Hat of the Mind (Green),_item armor equipment itemData,no-ge-page
+8010122,Felt Hat (Green),_item armor equipment itemData,no-ge-page
+8010123,Felt Hat of Intelligence (Red),_item armor equipment itemData,no-ge-page
+8010124,Felt Hat (Red),_item armor equipment itemData,no-ge-page
+8010126,Linen Hat of the Mind (Red),_item armor equipment itemData,no-ge-page
+8010127,Linen Hat of Intelligence (Blue),_item armor equipment itemData,no-ge-page
+8010128,Linen Hat (Red),_item armor equipment itemData,no-ge-page
+8010131,Linen Hat (Blue),_item armor equipment itemData,no-ge-page
+8010133,Linen Hat of the Mind (Blue),_item armor equipment itemData,no-ge-page
+8010135,Linen Hat of Intelligence (Red),_item armor equipment itemData,no-ge-page
+8010137,Woolen Hat of Intelligence (Grey),_item armor equipment itemData,no-ge-page
+8010139,Woolen Hat of the Mind (Purple),_item armor equipment itemData,no-ge-page
+8010140,Felt Hat (Blue),_item armor equipment itemData,no-ge-page
+8010141,Felt Hat (Brown),_item armor equipment itemData,no-ge-page
+8010143,Felt Hat of the Mind (Red),_item armor equipment itemData,no-ge-page
+8010144,Felt Hat of the Mind (Blue),_item armor equipment itemData,no-ge-page
+8010145,Felt Hat of the Mind (Brown),_item armor equipment itemData,no-ge-page
+8010147,Felt Hat of Intelligence (Green),_item armor equipment itemData,no-ge-page
+8010148,Felt Hat of Intelligence (Blue),_item armor equipment itemData,no-ge-page
+8010149,Felt Hat of Intelligence (Brown),_item armor equipment itemData,no-ge-page
+8010204,[en],_item armor equipment itemData,no-english-name
+8010205,[en],_item armor equipment itemData,no-english-name
+8010206,[en],_item armor equipment itemData,no-english-name
+8010207,[en],_item armor equipment itemData,no-english-name
+8010208,[en],_item armor equipment itemData,no-english-name
+8010209,[en],_item armor equipment itemData,no-english-name
+8010211,Steel Goggles (Yellow),_item armor equipment itemData,no-ge-page
+8010212,Steel Goggles (Black),_item armor equipment itemData,no-ge-page
+8010213,[en],_item armor equipment itemData,no-english-name
+8010214,[en],_item armor equipment itemData,no-english-name
+8010215,[en],_item armor equipment itemData,no-english-name
+8010216,[en],_item armor equipment itemData,no-english-name
+8010217,Dated Brass Preserves (Red),_item armor equipment itemData,no-ge-page
+8010218,Dated Brass Preserves (Green),_item armor equipment itemData,no-ge-page
+8010219,Dated Iron Preserves (Red),_item armor equipment itemData,no-ge-page
+8010220,Dated Iron Preserves (Green),_item armor equipment itemData,no-ge-page
+8010221,Cobalt Preserves (Red),_item armor equipment itemData,no-ge-page
+8010222,Cobalt Preserves (Green),_item armor equipment itemData,no-ge-page
+8010223,Darksteel Eyeguards (Red),_item armor equipment itemData,no-ge-page
+8010224,Darksteel Eyeguards (Green),_item armor equipment itemData,no-ge-page
+8010302,[en],_item armor equipment itemData,no-english-name
+8010303,[en],_item armor equipment itemData,no-english-name
+8010305,[en],_item armor equipment itemData,no-english-name
+8010306,[en],_item armor equipment itemData,no-english-name
+8010307,[en],_item armor equipment itemData,no-english-name
+8010308,[en],_item armor equipment itemData,no-english-name
+8010309,[en],_item armor equipment itemData,no-english-name
+8010310,[en],_item armor equipment itemData,no-english-name
+8010311,[en],_item armor equipment itemData,no-english-name
+8010312,[en],_item armor equipment itemData,no-english-name
+8010314,[en],_item armor equipment itemData,no-english-name
+8010315,[en],_item armor equipment itemData,no-english-name
+8010316,[en],_item armor equipment itemData,no-english-name
+8010317,[en],_item armor equipment itemData,no-english-name
+8010318,[en],_item armor equipment itemData,no-english-name
+8010319,[en],_item armor equipment itemData,no-english-name
+8010320,[en],_item armor equipment itemData,no-english-name
+8010321,[en],_item armor equipment itemData,no-english-name
+8010322,[en],_item armor equipment itemData,no-english-name
+8010323,[en],_item armor equipment itemData,no-english-name
+8010324,[en],_item armor equipment itemData,no-english-name
+8010325,[en],_item armor equipment itemData,no-english-name
+8010326,[en],_item armor equipment itemData,no-english-name
+8010327,[en],_item armor equipment itemData,no-english-name
+8010328,[en],_item armor equipment itemData,no-english-name
+8010329,[en],_item armor equipment itemData,no-english-name
+8010330,[en],_item armor equipment itemData,no-english-name
+8010401,Dated Copper Circlet (Sunstone),_item armor equipment itemData,no-ge-page
+8010402,Dated Copper Circlet (Lapis Lazuli),_item armor equipment itemData,no-ge-page
+8010403,Dated Copper Circlet (Sphene),_item armor equipment itemData,no-ge-page
+8010404,Dated Copper Circlet (Malachite),_item armor equipment itemData,no-ge-page
+8010405,Dated Copper Circlet (Fluorite),_item armor equipment itemData,no-ge-page
+8010406,Dated Copper Circlet (Danburite),_item armor equipment itemData,no-ge-page
+8010407,Dated Brass Circlet (Sunstone),_item armor equipment itemData,no-ge-page
+8010408,Dated Brass Circlet (Lapis Lazuli),_item armor equipment itemData,no-ge-page
+8010409,Dated Brass Circlet (Sphene),_item armor equipment itemData,no-ge-page
+8010410,Dated Brass Circlet (Malachite),_item armor equipment itemData,no-ge-page
+8010411,Dated Brass Circlet (Fluorite),_item armor equipment itemData,no-ge-page
+8010412,Dated Brass Circlet (Danburite),_item armor equipment itemData,no-ge-page
+8010413,Dated Silver Circlet (Garnet),_item armor equipment itemData,no-ge-page
+8010414,Dated Silver Circlet (Aquamarine),_item armor equipment itemData,no-ge-page
+8010415,Dated Silver Circlet (Heliodor),_item armor equipment itemData,no-ge-page
+8010416,Dated Silver Circlet (Peridot),_item armor equipment itemData,no-ge-page
+8010417,Dated Silver Circlet (Amethyst),_item armor equipment itemData,no-ge-page
+8010418,Dated Silver Circlet (Goshenite),_item armor equipment itemData,no-ge-page
+8010419,Brass Circlet (Sunstone),_item armor equipment itemData,no-ge-page
+8010420,Brass Circlet (Lapis Lazuli),_item armor equipment itemData,no-ge-page
+8010421,Brass Circlet (Sphene),_item armor equipment itemData,no-ge-page
+8010422,Brass Circlet (Malachite),_item armor equipment itemData,no-ge-page
+8010423,Brass Circlet (Fluorite),_item armor equipment itemData,no-ge-page
+8010424,Brass Circlet (Danburite),_item armor equipment itemData,no-ge-page
+8010425,Dated Darksilver Circlet (Garnet),_item armor equipment itemData,no-ge-page
+8010426,Dated Darksilver Circlet (Aquamarine),_item armor equipment itemData,no-ge-page
+8010427,Dated Darksilver Circlet (Heliodor),_item armor equipment itemData,no-ge-page
+8010428,Dated Darksilver Circlet (Peridot),_item armor equipment itemData,no-ge-page
+8010429,Dated Darksilver Circlet (Amethyst),_item armor equipment itemData,no-ge-page
+8010430,Dated Darksilver Circlet (Goshenite),_item armor equipment itemData,no-ge-page
+8010431,Dated Electrum Circlet (Rubellite),_item armor equipment itemData,no-ge-page
+8010432,Dated Electrum Circlet (Turquoise),_item armor equipment itemData,no-ge-page
+8010433,Dated Electrum Circlet (Amber),_item armor equipment itemData,no-ge-page
+8010434,Dated Electrum Circlet (Tourmaline),_item armor equipment itemData,no-ge-page
+8010435,Dated Electrum Circlet (Spinel),_item armor equipment itemData,no-ge-page
+8010436,Dated Electrum Circlet (Zircon),_item armor equipment itemData,no-ge-page
+8010437,Silver Circlet (Garnet),_item armor equipment itemData,no-ge-page
+8010438,Silver Circlet (Aquamarine),_item armor equipment itemData,no-ge-page
+8010439,Silver Circlet (Heliodor),_item armor equipment itemData,no-ge-page
+8010440,Silver Circlet (Peridot),_item armor equipment itemData,no-ge-page
+8010441,Silver Circlet (Amethyst),_item armor equipment itemData,no-ge-page
+8010442,Silver Circlet (Goshenite),_item armor equipment itemData,no-ge-page
+8010443,Mythril Circlet (Rubellite),_item armor equipment itemData,no-ge-page
+8010444,Mythril Circlet (Turquoise),_item armor equipment itemData,no-ge-page
+8010445,Mythril Circlet (Amber),_item armor equipment itemData,no-ge-page
+8010446,Mythril Circlet (Tourmaline),_item armor equipment itemData,no-ge-page
+8010447,Mythril Circlet (Spinel),_item armor equipment itemData,no-ge-page
+8010448,Mythril Circlet (Zircon),_item armor equipment itemData,no-ge-page
+8010449,Electrum Circlet (Rubellite),_item armor equipment itemData,no-ge-page
+8010450,Electrum Circlet (Turquoise),_item armor equipment itemData,no-ge-page
+8010451,Electrum Circlet (Amber),_item armor equipment itemData,no-ge-page
+8010452,Electrum Circlet (Tourmaline),_item armor equipment itemData,no-ge-page
+8010453,Electrum Circlet (Spinel),_item armor equipment itemData,no-ge-page
+8010454,Electrum Circlet (Zircon),_item armor equipment itemData,no-ge-page
+8010455,[en],_item armor equipment itemData,no-english-name
+8010456,[en],_item armor equipment itemData,no-english-name
+8010457,[en],_item armor equipment itemData,no-english-name
+8010458,[en],_item armor equipment itemData,no-english-name
+8010459,[en],_item armor equipment itemData,no-english-name
+8010460,[en],_item armor equipment itemData,no-english-name
+8010461,[en],_item armor equipment itemData,no-english-name
+8010462,[en],_item armor equipment itemData,no-english-name
+8010463,[en],_item armor equipment itemData,no-english-name
+8010464,[en],_item armor equipment itemData,no-english-name
+8010465,[en],_item armor equipment itemData,no-english-name
+8010466,[en],_item armor equipment itemData,no-english-name
+8010467,[en],_item armor equipment itemData,no-english-name
+8010468,[en],_item armor equipment itemData,no-english-name
+8010469,[en],_item armor equipment itemData,no-english-name
+8010470,[en],_item armor equipment itemData,no-english-name
+8010471,[en],_item armor equipment itemData,no-english-name
+8010472,[en],_item armor equipment itemData,no-english-name
+8010473,Leather Vizard,_item armor equipment itemData,no-ge-page
+8010475,Leather Vizard (Green),_item armor equipment itemData,no-ge-page
+8010476,Leather Vizard (Green),_item armor equipment itemData,no-ge-page
+8010477,Leather Vizard (Green),_item armor equipment itemData,no-ge-page
+8010478,[en],_item armor equipment itemData,no-english-name
+8010479,[en],_item armor equipment itemData,no-english-name
+8010480,[en],_item armor equipment itemData,no-english-name
+8010481,[en],_item armor equipment itemData,no-english-name
+8010482,[en],_item armor equipment itemData,no-english-name
+8010521,Hempen Coif of Casting (Brown),_item armor equipment itemData,no-ge-page
+8010522,Hempen Coif of Toiling (Grey),_item armor equipment itemData,no-ge-page
+8010524,Cotton Coif of Casting (Yellow),_item armor equipment itemData,no-ge-page
+8010525,Cotton Coif of Toiling (Green),_item armor equipment itemData,no-ge-page
+8010527,Woolen Coif of Casting (Blue),_item armor equipment itemData,no-ge-page
+8010528,Woolen Coif of Toiling (Yellow),_item armor equipment itemData,no-ge-page
+8010530,Felt Coif of Toiling (Black),_item armor equipment itemData,no-ge-page
+8010531,Felt Coif of Casting (Grey),_item armor equipment itemData,no-ge-page
+8010532,Hempen Coif (Brown),_item armor equipment itemData,no-ge-page
+8010533,Hempen Coif (Grey),_item armor equipment itemData,no-ge-page
+8010535,Hempen Coif of Casting (Grey),_item armor equipment itemData,no-ge-page
+8010537,Hempen Coif of Toiling (Brown),_item armor equipment itemData,no-ge-page
+8010538,Cotton Coif (Yellow),_item armor equipment itemData,no-ge-page
+8010539,Cotton Coif (Green),_item armor equipment itemData,no-ge-page
+8010541,Cotton Coif of Casting (Green),_item armor equipment itemData,no-ge-page
+8010543,Cotton Coif of Toiling (Yellow),_item armor equipment itemData,no-ge-page
+8010544,Woolen Coif (Blue),_item armor equipment itemData,no-ge-page
+8010549,Woolen Coif (Yellow),_item armor equipment itemData,no-ge-page
+8010551,Woolen Coif of Casting (Yellow),_item armor equipment itemData,no-ge-page
+8010553,Woolen Coif of Toiling (Blue),_item armor equipment itemData,no-ge-page
+8010554,Felt Coif (Black),_item armor equipment itemData,no-ge-page
+8010555,Felt Coif (Grey),_item armor equipment itemData,no-ge-page
+8010556,Felt Coif (Purple),_item armor equipment itemData,no-ge-page
+8010557,Felt Coif (Red),_item armor equipment itemData,no-ge-page
+8010559,Felt Coif of Toiling (Grey),_item armor equipment itemData,no-ge-page
+8010560,Felt Coif of Toiling (Purple),_item armor equipment itemData,no-ge-page
+8010561,Felt Coif of Toiling (Red),_item armor equipment itemData,no-ge-page
+8010563,Felt Coif of Casting (Black),_item armor equipment itemData,no-ge-page
+8010564,Felt Coif of Casting (Purple),_item armor equipment itemData,no-ge-page
+8010565,Felt Coif of Casting (Red),_item armor equipment itemData,no-ge-page
+8010621,Woolen Beret of Dexterity (Grey),_item armor equipment itemData,no-ge-page
+8010622,Woolen Beret of Intelligence (Purple),_item armor equipment itemData,no-ge-page
+8010623,Woolen Beret of Vitality (Black),_item armor equipment itemData,no-ge-page
+8010625,Felt Beret of Dexterity (Blue),_item armor equipment itemData,no-ge-page
+8010626,Felt Beret of Intelligence (Red),_item armor equipment itemData,no-ge-page
+8010627,Felt Beret of Vitality (Brown),_item armor equipment itemData,no-ge-page
+8010628,Woolen Beret (Grey),_item armor equipment itemData,no-ge-page
+8010629,Woolen Beret (Purple),_item armor equipment itemData,no-ge-page
+8010630,Woolen Beret (Black),_item armor equipment itemData,no-ge-page
+8010632,Woolen Beret of Dexterity (Purple),_item armor equipment itemData,no-ge-page
+8010633,Woolen Beret of Dexterity (Black),_item armor equipment itemData,no-ge-page
+8010635,Woolen Beret of Intelligence (Grey),_item armor equipment itemData,no-ge-page
+8010636,Woolen Beret of Intelligence (Black),_item armor equipment itemData,no-ge-page
+8010638,Woolen Beret of Vitality (Grey),_item armor equipment itemData,no-ge-page
+8010639,Woolen Beret of Vitality (Purple),_item armor equipment itemData,no-ge-page
+8010640,Felt Beret (Blue),_item armor equipment itemData,no-ge-page
+8010641,Felt Beret (Red),_item armor equipment itemData,no-ge-page
+8010642,Felt Beret (Brown),_item armor equipment itemData,no-ge-page
+8010643,Felt Beret (Green),_item armor equipment itemData,no-ge-page
+8010645,Felt Beret of Dexterity (Red),_item armor equipment itemData,no-ge-page
+8010647,Felt Beret of Dexterity (Brown),_item armor equipment itemData,no-ge-page
+8010648,Felt Beret of Dexterity (Green),_item armor equipment itemData,no-ge-page
+8010650,Felt Beret of Intelligence (Blue),_item armor equipment itemData,no-ge-page
+8010651,Felt Beret of Intelligence (Brown),_item armor equipment itemData,no-ge-page
+8010652,Felt Beret of Intelligence (Green),_item armor equipment itemData,no-ge-page
+8010654,Felt Beret of Vitality (Blue),_item armor equipment itemData,no-ge-page
+8010655,Felt Beret of Vitality (Red),_item armor equipment itemData,no-ge-page
+8010656,Felt Beret of Vitality (Green),_item armor equipment itemData,no-ge-page
+8010701,Elm Mask,_item armor equipment itemData,no-ge-page
+8010702,Maple Mask,_item armor equipment itemData,no-ge-page
+8010704,[en],_item armor equipment itemData,no-english-name
+8010705,[en],_item armor equipment itemData,no-english-name
+8010706,[en],_item armor equipment itemData,no-english-name
+8010709,[en],_item armor equipment itemData,no-english-name
+8010710,[en],_item armor equipment itemData,no-english-name
+8010714,[en],_item armor equipment itemData,no-english-name
+8010803,Dated Brass Spectacles (Yellow),_item armor equipment itemData,no-ge-page
+8010804,Iron Spectacles,_item armor equipment itemData,no-ge-page
+8010805,Iron Spectacles (Yellow),_item armor equipment itemData,no-ge-page
+8010809,Silver Spectacles (Yellow),_item armor equipment itemData,no-ge-page
+8010811,Mythril Spectacles (Blue),_item armor equipment itemData,no-ge-page
+8010813,[en],_item armor equipment itemData,no-english-name
+8010814,[en],_item armor equipment itemData,no-english-name
+8010815,[en],_item armor equipment itemData,no-english-name
+8010816,[en],_item armor equipment itemData,no-english-name
+8010817,[en],_item armor equipment itemData,no-english-name
+8010818,[en],_item armor equipment itemData,no-english-name
+8010819,[en],_item armor equipment itemData,no-english-name
+8010820,[en],_item armor equipment itemData,no-english-name
+8010821,[en],_item armor equipment itemData,no-english-name
+8010824,Electrum Monocle (White),_item armor equipment itemData,no-ge-page
+8010825,[en],_item armor equipment itemData,no-english-name
+8010826,[en],_item armor equipment itemData,no-english-name
+8010827,[en],_item armor equipment itemData,no-english-name
+8010828,[en],_item armor equipment itemData,no-english-name
+8010834,Dated Weathered Spectacles (Black),_item armor equipment itemData,no-ge-page
+8010835,Dated Weathered Spectacles (Green),_item armor equipment itemData,no-ge-page
+8010836,Weathered Spectacles (White),_item armor equipment itemData,no-ge-page
+8010837,[en],_item armor equipment itemData,no-english-name
+8010901,Dated Hempen Sugarloaf Hat (Brown),_item armor equipment itemData,no-ge-page
+8010902,Dated Hempen Sugarloaf Hat (Grey),_item armor equipment itemData,no-ge-page
+8010903,Dated Hempen Sugarloaf Hat (Beige),_item armor equipment itemData,no-ge-page
+8010904,Dated Cotton Sugarloaf Hat (Red),_item armor equipment itemData,no-ge-page
+8010905,Dated Cotton Sugarloaf Hat (Green),_item armor equipment itemData,no-ge-page
+8010906,Dated Cotton Sugarloaf Hat (Blue),_item armor equipment itemData,no-ge-page
+8010907,Dated Velveteen Sugarloaf Hat (Black),_item armor equipment itemData,no-ge-page
+8010908,Dated Velveteen Sugarloaf Hat (Red),_item armor equipment itemData,no-ge-page
+8010909,Dated Velveteen Sugarloaf Hat (Green),_item armor equipment itemData,no-ge-page
+8010911,Cotton Sugarloaf Hat (Brown),_item armor equipment itemData,no-ge-page
+8010912,Cotton Sugarloaf Hat of the Mind (Green),_item armor equipment itemData,no-ge-page
+8010913,Cotton Sugarloaf Hat of Intelligence (Blue),_item armor equipment itemData,no-ge-page
+8010915,Velveteen Sugarloaf Hat (Black),_item armor equipment itemData,no-ge-page
+8010916,Velveteen Sugarloaf Hat of the Mind (Red),_item armor equipment itemData,no-ge-page
+8010917,Velveteen Sugarloaf Hat of Intelligence (Green),_item armor equipment itemData,no-ge-page
+8010918,Cotton Sugarloaf Hat (Green),_item armor equipment itemData,no-ge-page
+8010919,Cotton Sugarloaf Hat (Blue),_item armor equipment itemData,no-ge-page
+8010921,Cotton Sugarloaf Hat of the Mind (Brown),_item armor equipment itemData,no-ge-page
+8010922,Cotton Sugarloaf Hat of the Mind (Blue),_item armor equipment itemData,no-ge-page
+8010924,Cotton Sugarloaf Hat of Intelligence (Brown),_item armor equipment itemData,no-ge-page
+8010925,Cotton Sugarloaf Hat of Intelligence (Green),_item armor equipment itemData,no-ge-page
+8010926,Velveteen Sugarloaf Hat (Red),_item armor equipment itemData,no-ge-page
+8010927,Velveteen Sugarloaf Hat (Green),_item armor equipment itemData,no-ge-page
+8010929,Velveteen Sugarloaf Hat of the Mind (Black),_item armor equipment itemData,no-ge-page
+8010930,Velveteen Sugarloaf Hat of the Mind (Green),_item armor equipment itemData,no-ge-page
+8010933,Velveteen Sugarloaf Hat of Intelligence (Black),_item armor equipment itemData,no-ge-page
+8010934,Velveteen Sugarloaf Hat of Intelligence (Red),_item armor equipment itemData,no-ge-page
+8011017,Velveteen Bandana (Black),_item armor equipment itemData,no-ge-page
+8011018,Velveteen Bandana (Green),_item armor equipment itemData,no-ge-page
+8011020,Velveteen Bandana (Red),_item armor equipment itemData,no-ge-page
+8011021,Velveteen Bandana (Yellow),_item armor equipment itemData,no-ge-page
+8011201,Dated Hunting Hat (Brown),_item armor equipment itemData,no-ge-page
+8011202,Dated Hunting Hat (Grey),_item armor equipment itemData,no-ge-page
+8011203,Dated Hunting Hat (Beige),_item armor equipment itemData,no-ge-page
+8011221,Ranger's Hat (Red),_item armor equipment itemData,no-ge-page
+8011223,Rainmaker's Hat (Blue),_item armor equipment itemData,no-ge-page
+8011316,Velveteen Turban of Slaying (Yellow),_item armor equipment itemData,no-ge-page
+8011317,Velveteen Turban of Invoking (Green),_item armor equipment itemData,no-ge-page
+8011319,Linen Turban of Slaying (Yellow),_item armor equipment itemData,no-ge-page
+8011320,Linen Turban of Invoking (Blue),_item armor equipment itemData,no-ge-page
+8011322,Woolen Turban of Invoking (Purple),_item armor equipment itemData,no-ge-page
+8011324,Velveteen Turban (Yellow),_item armor equipment itemData,no-ge-page
+8011325,Velveteen Turban (Green),_item armor equipment itemData,no-ge-page
+8011327,Velveteen Turban of Slaying (Green),_item armor equipment itemData,no-ge-page
+8011329,Velveteen Turban of Invoking (Yellow),_item armor equipment itemData,no-ge-page
+8011330,Linen Turban (Yellow),_item armor equipment itemData,no-ge-page
+8011331,Linen Turban (Blue),_item armor equipment itemData,no-ge-page
+8011333,Linen Turban of Slaying (Blue),_item armor equipment itemData,no-ge-page
+8011335,Linen Turban of Invoking (Yellow),_item armor equipment itemData,no-ge-page
+8011336,Woolen Turban (Purple),_item armor equipment itemData,no-ge-page
+8011337,Woolen Turban (Red),_item armor equipment itemData,no-ge-page
+8011338,Woolen Turban (Grey),_item armor equipment itemData,no-ge-page
+8011340,Woolen Turban of Invoking (Red),_item armor equipment itemData,no-ge-page
+8011341,Woolen Turban of Invoking (Grey),_item armor equipment itemData,no-ge-page
+8011405,Iron Elmo (Brown),_item armor equipment itemData,no-ge-page
+8011409,Cobalt Elmo (Red),_item armor equipment itemData,no-ge-page
+8011504,Dated Leather Pot Helm (Black),_item armor equipment itemData,no-ge-page
+8011505,Dated Leather Pot Helm (Ochre),_item armor equipment itemData,no-ge-page
+8011506,Dated Leather Pot Helm (Green),_item armor equipment itemData,no-ge-page
+8011507,Dated Leather Pot Helm (Red),_item armor equipment itemData,no-ge-page
+8011508,Dated Toadskin Pot Helm (Sunstone),_item armor equipment itemData,no-ge-page
+8011509,Dated Toadskin Pot Helm (Lapis Lazuli),_item armor equipment itemData,no-ge-page
+8011510,Dated Toadskin Pot Helm (Sphene),_item armor equipment itemData,no-ge-page
+8011511,Dated Toadskin Pot Helm (Malachite),_item armor equipment itemData,no-ge-page
+8011512,Dated Toadskin Pot Helm (Fluorite),_item armor equipment itemData,no-ge-page
+8011513,Dated Toadskin Pot Helm (Danburite),_item armor equipment itemData,no-ge-page
+8011516,Dodoskin Pot Helm (Grey),_item armor equipment itemData,no-ge-page
+8011518,Leather Pot Helm (Black),_item armor equipment itemData,no-ge-page
+8011608,Steel Sallet (Green),_item armor equipment itemData,no-ge-page
+8011609,Storm Private's Sallet,_item armor equipment itemData,no-ge-page
+8011711,Mythril Chain Coif (Black),_item armor equipment itemData,no-ge-page
+8011713,Cobalt Chain Coif (Red),_item armor equipment itemData,no-ge-page
+8011816,Cotton Scarf (Brown),_item armor equipment itemData,no-ge-page
+8011817,Cotton Scarf (Blue),_item armor equipment itemData,no-ge-page
+8012012,Stablehand's Hat,_item armor equipment itemData,no-ge-page
+8012013,Stablemaid's Hat,_item armor equipment itemData,no-ge-page
+8012015,Angler's Hat of Strength (Yellow),_item armor equipment itemData,no-ge-page
+8012016,Angler's Hat of Dexterity (Blue),_item armor equipment itemData,no-ge-page
+8012017,Straw Hat (Black),_item armor equipment itemData,no-ge-page
+8012018,Straw Hat (White),_item armor equipment itemData,no-ge-page
+8012019,Angler's Hat (Yellow),_item armor equipment itemData,no-ge-page
+8012020,Angler's Hat (Blue),_item armor equipment itemData,no-ge-page
+8012022,Angler's Hat of Strength (Blue),_item armor equipment itemData,no-ge-page
+8012024,Angler's Hat of Dexterity (Yellow),_item armor equipment itemData,no-ge-page
+8012309,Linen Deerstalker of Piety (Brown),_item armor equipment itemData,no-ge-page
+8012310,Linen Deerstalker of Intelligence (Yellow),_item armor equipment itemData,no-ge-page
+8012311,Linen Deerstalker of Dexterity (Blue),_item armor equipment itemData,no-ge-page
+8012313,Woolen Deerstalker of Piety (Grey),_item armor equipment itemData,no-ge-page
+8012314,Woolen Deerstalker of Intelligence (Red),_item armor equipment itemData,no-ge-page
+8012315,Woolen Deerstalker of Dexterity (Black),_item armor equipment itemData,no-ge-page
+8012316,Linen Deerstalker (Brown),_item armor equipment itemData,no-ge-page
+8012317,Linen Deerstalker (Yellow),_item armor equipment itemData,no-ge-page
+8012318,Linen Deerstalker (Blue),_item armor equipment itemData,no-ge-page
+8012320,Linen Deerstalker of Piety (Yellow),_item armor equipment itemData,no-ge-page
+8012321,Linen Deerstalker of Piety (Blue),_item armor equipment itemData,no-ge-page
+8012323,Linen Deerstalker of Intelligence (Brown),_item armor equipment itemData,no-ge-page
+8012324,Linen Deerstalker of Intelligence (Blue),_item armor equipment itemData,no-ge-page
+8012326,Linen Deerstalker of Dexterity (Brown),_item armor equipment itemData,no-ge-page
+8012327,Linen Deerstalker of Dexterity (Yellow),_item armor equipment itemData,no-ge-page
+8012328,Woolen Deerstalker (Grey),_item armor equipment itemData,no-ge-page
+8012329,Woolen Deerstalker (Red),_item armor equipment itemData,no-ge-page
+8012330,Woolen Deerstalker (Black),_item armor equipment itemData,no-ge-page
+8012331,Woolen Deerstalker (Purple),_item armor equipment itemData,no-ge-page
+8012333,Woolen Deerstalker of Piety (Red),_item armor equipment itemData,no-ge-page
+8012334,Woolen Deerstalker of Piety (Black),_item armor equipment itemData,no-ge-page
+8012335,Woolen Deerstalker of Piety (Purple),_item armor equipment itemData,no-ge-page
+8012337,Woolen Deerstalker of Intelligence (Grey),_item armor equipment itemData,no-ge-page
+8012338,Woolen Deerstalker of Intelligence (Black),_item armor equipment itemData,no-ge-page
+8012339,Woolen Deerstalker of Intelligence (Purple),_item armor equipment itemData,no-ge-page
+8012341,Woolen Deerstalker of Dexterity (Grey),_item armor equipment itemData,no-ge-page
+8012342,Woolen Deerstalker of Dexterity (Red),_item armor equipment itemData,no-ge-page
+8012343,Woolen Deerstalker of Dexterity (Purple),_item armor equipment itemData,no-ge-page
+8012406,Dated Leather Calot (Black),_item armor equipment itemData,no-ge-page
+8012407,Dated Leather Calot (Ochre),_item armor equipment itemData,no-ge-page
+8012408,Dated Leather Calot (Green),_item armor equipment itemData,no-ge-page
+8012409,Dated Leather Calot (Red),_item armor equipment itemData,no-ge-page
+8012411,Sheepskin Calot (Brown),_item armor equipment itemData,no-ge-page
+8012601,Black Usagi Kabuto,_item armor equipment itemData,no-ge-page
+8012602,Silver Usagi Kabuto,_item armor equipment itemData,no-ge-page
+8012717,Velveteen Wedge Cap of Crafting (Red),_item armor equipment itemData,no-ge-page
+8012718,Velveteen Wedge Cap of Gathering (Yellow),_item armor equipment itemData,no-ge-page
+8012720,Linen Wedge Cap of Crafting (Blue),_item armor equipment itemData,no-ge-page
+8012721,Linen Wedge Cap of Gathering (Brown),_item armor equipment itemData,no-ge-page
+8012722,Velveteen Wedge Cap (Red),_item armor equipment itemData,no-ge-page
+8012723,Velveteen Wedge Cap (Yellow),_item armor equipment itemData,no-ge-page
+8012725,Velveteen Wedge Cap of Crafting (Yellow),_item armor equipment itemData,no-ge-page
+8012727,Velveteen Wedge Cap of Gathering (Red),_item armor equipment itemData,no-ge-page
+8012728,Linen Wedge Cap (Blue),_item armor equipment itemData,no-ge-page
+8012729,Linen Wedge Cap (Brown),_item armor equipment itemData,no-ge-page
+8012730,Linen Wedge Cap (Red),_item armor equipment itemData,no-ge-page
+8012731,Linen Wedge Cap (Yellow),_item armor equipment itemData,no-ge-page
+8012733,Linen Wedge Cap of Crafting (Brown),_item armor equipment itemData,no-ge-page
+8012734,Linen Wedge Cap of Crafting (Red),_item armor equipment itemData,no-ge-page
+8012735,Linen Wedge Cap of Crafting (Yellow),_item armor equipment itemData,no-ge-page
+8012737,Linen Wedge Cap of Gathering (Blue),_item armor equipment itemData,no-ge-page
+8012738,Linen Wedge Cap of Gathering (Red),_item armor equipment itemData,no-ge-page
+8012739,Linen Wedge Cap of Gathering (Yellow),_item armor equipment itemData,no-ge-page
+8012903,Cobalt Mesail (Red),_item armor equipment itemData,no-ge-page
+8012904,Cobalt Mesail (Blue),_item armor equipment itemData,no-ge-page
+8013002,Woolen Cavalier's Hat (Purple),_item armor equipment itemData,no-ge-page
+8013004,Felt Cavalier's Hat (Brown),_item armor equipment itemData,no-ge-page
+8013006,Felt Cavalier's Hat (Green),_item armor equipment itemData,no-ge-page
+8013007,Felt Cavalier's Hat (Blue),_item armor equipment itemData,no-ge-page
+8013008,Felt Cavalier's Hat (Red),_item armor equipment itemData,no-ge-page
+8013102,Dodoskin Skullcap (Black),_item armor equipment itemData,no-ge-page
+8013602,Darklight Eyepatch,_item armor equipment itemData,no-ge-page
+8013603,Vanya Hat,_item armor equipment itemData,no-ge-page
+8013604,Vanya Hat (Yellow),_item armor equipment itemData,no-ge-page
+8013605,Vanya Hat (Black),_item armor equipment itemData,no-ge-page
+8013606,Vanya Hat (Purple),_item armor equipment itemData,no-ge-page
+8013607,Vanya Hat (Red),_item armor equipment itemData,no-ge-page
+8030016,Linen Doublet (Blue),_item armor equipment itemData,no-ge-page
+8030017,Linen Doublet of Vitality (Blue),_item armor equipment itemData,no-ge-page
+8030018,Linen Doublet of Strength (Brown),_item armor equipment itemData,no-ge-page
+8030019,Linen Doublet of Dexterity (Yellow),_item armor equipment itemData,no-ge-page
+8030021,Woolen Doublet of Vitality (Black),_item armor equipment itemData,no-ge-page
+8030022,Woolen Doublet of Strength (Purple),_item armor equipment itemData,no-ge-page
+8030023,Woolen Doublet of Dexterity (Red),_item armor equipment itemData,no-ge-page
+8030024,Linen Doublet (Brown),_item armor equipment itemData,no-ge-page
+8030025,Linen Doublet (Yellow),_item armor equipment itemData,no-ge-page
+8030027,Linen Doublet of Vitality (Brown),_item armor equipment itemData,no-ge-page
+8030028,Linen Doublet of Vitality (Yellow),_item armor equipment itemData,no-ge-page
+8030030,Linen Doublet of Strength (Blue),_item armor equipment itemData,no-ge-page
+8030031,Linen Doublet of Strength (Yellow),_item armor equipment itemData,no-ge-page
+8030037,Linen Doublet of Dexterity (Blue),_item armor equipment itemData,no-ge-page
+8030038,Linen Doublet of Dexterity (Brown),_item armor equipment itemData,no-ge-page
+8030039,Woolen Doublet (Black),_item armor equipment itemData,no-ge-page
+8030040,Woolen Doublet (Purple),_item armor equipment itemData,no-ge-page
+8030041,Woolen Doublet (Red),_item armor equipment itemData,no-ge-page
+8030043,Woolen Doublet of Vitality (Purple),_item armor equipment itemData,no-ge-page
+8030044,Woolen Doublet of Vitality (Red),_item armor equipment itemData,no-ge-page
+8030046,Woolen Doublet of Strength (Black),_item armor equipment itemData,no-ge-page
+8030047,Woolen Doublet of Strength (Red),_item armor equipment itemData,no-ge-page
+8030049,Woolen Doublet of Dexterity (Black),_item armor equipment itemData,no-ge-page
+8030050,Woolen Doublet of Dexterity (Purple),_item armor equipment itemData,no-ge-page
+8030110,Steel Cuirass (Blue),_item armor equipment itemData,no-ge-page
+8030111,Cobalt Cuirass (Blue),_item armor equipment itemData,no-ge-page
+8030114,Cobalt Cuirass (Red),_item armor equipment itemData,no-ge-page
+8030115,[en],_item armor equipment itemData,no-english-name
+8030116,Darksteel Cuirass,_item armor equipment itemData,no-ge-page
+8030117,Darksteel Cuirass (White),_item armor equipment itemData,no-ge-page
+8030118,Darksteel Cuirass (Gold),_item armor equipment itemData,no-ge-page
+8030119,[en],_item armor equipment itemData,no-english-name
+8030221,Linen Robe of the Mind (Red),_item armor equipment itemData,no-ge-page
+8030222,Linen Robe of Casting (Blue),_item armor equipment itemData,no-ge-page
+8030223,Linen Robe (Red),_item armor equipment itemData,no-ge-page
+8030224,Linen Robe (Blue),_item armor equipment itemData,no-ge-page
+8030226,Woolen Robe (Purple),_item armor equipment itemData,no-ge-page
+8030227,Woolen Robe of Casting (Purple),_item armor equipment itemData,no-ge-page
+8030228,Woolen Robe (Grey),_item armor equipment itemData,no-ge-page
+8030229,Woolen Robe of the Mind (Grey),_item armor equipment itemData,no-ge-page
+8030231,Felt Robe of Casting (Green),_item armor equipment itemData,no-ge-page
+8030232,Felt Robe (Green),_item armor equipment itemData,no-ge-page
+8030233,Felt Robe of the Mind (Red),_item armor equipment itemData,no-ge-page
+8030235,Linen Robe of the Mind (Blue),_item armor equipment itemData,no-ge-page
+8030237,Linen Robe of Casting (Red),_item armor equipment itemData,no-ge-page
+8030239,Woolen Robe of Casting (Grey),_item armor equipment itemData,no-ge-page
+8030241,Woolen Robe of the Mind (Purple),_item armor equipment itemData,no-ge-page
+8030242,Felt Robe (Red),_item armor equipment itemData,no-ge-page
+8030243,Felt Robe (Blue),_item armor equipment itemData,no-ge-page
+8030249,Felt Robe (Brown),_item armor equipment itemData,no-ge-page
+8030251,Felt Robe of Casting (Red),_item armor equipment itemData,no-ge-page
+8030252,Felt Robe of Casting (Blue),_item armor equipment itemData,no-ge-page
+8030253,Felt Robe of Casting (Brown),_item armor equipment itemData,no-ge-page
+8030255,Felt Robe of the Mind (Green),_item armor equipment itemData,no-ge-page
+8030256,Felt Robe of the Mind (Blue),_item armor equipment itemData,no-ge-page
+8030257,Felt Robe of the Mind (Brown),_item armor equipment itemData,no-ge-page
+8030321,Steel Chainmail (Yellow),_item armor equipment itemData,no-ge-page
+8030322,[en],_item armor equipment itemData,no-english-name
+8030323,[en],_item armor equipment itemData,no-english-name
+8030324,[en],_item armor equipment itemData,no-english-name
+8030325,[en],_item armor equipment itemData,no-english-name
+8030326,[en],_item armor equipment itemData,no-english-name
+8030327,[en],_item armor equipment itemData,no-english-name
+8030328,[en],_item armor equipment itemData,no-english-name
+8030329,[en],_item armor equipment itemData,no-english-name
+8030330,[en],_item armor equipment itemData,no-english-name
+8030331,[en],_item armor equipment itemData,no-english-name
+8030332,[en],_item armor equipment itemData,no-english-name
+8030333,[en],_item armor equipment itemData,no-english-name
+8030334,[en],_item armor equipment itemData,no-english-name
+8030335,Felt Tabard,_item armor equipment itemData,no-ge-page
+8030336,Felt Tabard (Teal),_item armor equipment itemData,no-ge-page
+8030337,Felt Tabard (Blue),_item armor equipment itemData,no-ge-page
+8030338,Felt Tabard (Red),_item armor equipment itemData,no-ge-page
+8030339,Felt Tabard (Brown),_item armor equipment itemData,no-ge-page
+8030340,[en],_item armor equipment itemData,no-english-name
+8030341,[en],_item armor equipment itemData,no-english-name
+8030342,[en],_item armor equipment itemData,no-english-name
+8030343,[en],_item armor equipment itemData,no-english-name
+8030344,[en],_item armor equipment itemData,no-english-name
+8030345,[en],_item armor equipment itemData,no-english-name
+8030346,[en],_item armor equipment itemData,no-english-name
+8030347,[en],_item armor equipment itemData,no-english-name
+8030348,[en],_item armor equipment itemData,no-english-name
+8030415,Hempen Dalmatica (Brown),_item armor equipment itemData,no-ge-page
+8030416,Hempen Dalmatica (Red),_item armor equipment itemData,no-ge-page
+8030418,Hempen Dalmatica of Casting (Red),_item armor equipment itemData,no-ge-page
+8030421,Hempen Dalmatica of Casting (Brown),_item armor equipment itemData,no-ge-page
+8030422,Hempen Dalmatica of Toiling (Red),_item armor equipment itemData,no-ge-page
+8030424,Cotton Dalmatica of Casting (Yellow),_item armor equipment itemData,no-ge-page
+8030425,Cotton Dalmatica of Toiling (Blue),_item armor equipment itemData,no-ge-page
+8030426,Hempen Dalmatica of Toiling (Brown),_item armor equipment itemData,no-ge-page
+8030427,Cotton Dalmatica (Yellow),_item armor equipment itemData,no-ge-page
+8030428,Cotton Dalmatica (Blue),_item armor equipment itemData,no-ge-page
+8030430,Cotton Dalmatica of Casting (Blue),_item armor equipment itemData,no-ge-page
+8030432,Cotton Dalmatica of Toiling (Yellow),_item armor equipment itemData,no-ge-page
+8030433,[en],_item armor equipment itemData,no-english-name
+8030434,[en],_item armor equipment itemData,no-english-name
+8030435,[en],_item armor equipment itemData,no-english-name
+8030436,[en],_item armor equipment itemData,no-english-name
+8030437,[en],_item armor equipment itemData,no-english-name
+8030438,[en],_item armor equipment itemData,no-english-name
+8030439,[en],_item armor equipment itemData,no-english-name
+8030440,[en],_item armor equipment itemData,no-english-name
+8030441,[en],_item armor equipment itemData,no-english-name
+8030442,[en],_item armor equipment itemData,no-english-name
+8030443,[en],_item armor equipment itemData,no-english-name
+8030444,[en],_item armor equipment itemData,no-english-name
+8030446,Weathered Dalmatica (Grey),_item armor equipment itemData,no-ge-page
+8030521,Woolen Gown of the Mind (Grey),_item armor equipment itemData,no-ge-page
+8030522,Woolen Gown of Vitality (Purple),_item armor equipment itemData,no-ge-page
+8030523,Woolen Gown of Intelligence (Black),_item armor equipment itemData,no-ge-page
+8030525,Felt Gown of the Mind (Blue),_item armor equipment itemData,no-ge-page
+8030526,Felt Gown of Vitality (Red),_item armor equipment itemData,no-ge-page
+8030527,Felt Gown of Intelligence (Brown),_item armor equipment itemData,no-ge-page
+8030528,Woolen Gown (Grey),_item armor equipment itemData,no-ge-page
+8030529,Woolen Gown (Purple),_item armor equipment itemData,no-ge-page
+8030530,Woolen Gown (Black),_item armor equipment itemData,no-ge-page
+8030532,Woolen Gown of the Mind (Purple),_item armor equipment itemData,no-ge-page
+8030533,Woolen Gown of the Mind (Black),_item armor equipment itemData,no-ge-page
+8030535,Woolen Gown of Vitality (Grey),_item armor equipment itemData,no-ge-page
+8030536,Woolen Gown of Vitality (Black),_item armor equipment itemData,no-ge-page
+8030538,Woolen Gown of Intelligence (Grey),_item armor equipment itemData,no-ge-page
+8030539,Woolen Gown of Intelligence (Purple),_item armor equipment itemData,no-ge-page
+8030540,Felt Gown (Blue),_item armor equipment itemData,no-ge-page
+8030541,Felt Gown (Red),_item armor equipment itemData,no-ge-page
+8030542,Felt Gown (Brown),_item armor equipment itemData,no-ge-page
+8030543,Felt Gown (Green),_item armor equipment itemData,no-ge-page
+8030545,Felt Gown of the Mind (Red),_item armor equipment itemData,no-ge-page
+8030546,Weathered Gown (Grey),_item armor equipment itemData,no-ge-page
+8030547,Weathered Gown (Beige),_item armor equipment itemData,no-ge-page
+8030549,Felt Gown of the Mind (Brown),_item armor equipment itemData,no-ge-page
+8030550,Felt Gown of the Mind (Green),_item armor equipment itemData,no-ge-page
+8030552,Felt Gown of Vitality (Blue),_item armor equipment itemData,no-ge-page
+8030553,Felt Gown of Vitality (Brown),_item armor equipment itemData,no-ge-page
+8030554,Felt Gown of Vitality (Green),_item armor equipment itemData,no-ge-page
+8030556,Felt Gown of Intelligence (Blue),_item armor equipment itemData,no-ge-page
+8030557,Felt Gown of Intelligence (Red),_item armor equipment itemData,no-ge-page
+8030558,Felt Gown of Intelligence (Green),_item armor equipment itemData,no-ge-page
+8030622,Ranger's Tunic (Red),_item armor equipment itemData,no-ge-page
+8030624,Rainmaker's Tunic (Blue),_item armor equipment itemData,no-ge-page
+8030718,Velveteen Shirt of Slaying (Yellow),_item armor equipment itemData,no-ge-page
+8030719,Velveteen Shirt of Invoking (Green),_item armor equipment itemData,no-ge-page
+8030721,Linen Shirt of Slaying (Yellow),_item armor equipment itemData,no-ge-page
+8030722,Linen Shirt of Invoking (Blue),_item armor equipment itemData,no-ge-page
+8030724,Woolen Shirt of Invoking (Purple),_item armor equipment itemData,no-ge-page
+8030726,Velveteen Shirt (Yellow),_item armor equipment itemData,no-ge-page
+8030727,Velveteen Shirt (Green),_item armor equipment itemData,no-ge-page
+8030729,Velveteen Shirt of Slaying (Green),_item armor equipment itemData,no-ge-page
+8030731,Velveteen Shirt of Invoking (Yellow),_item armor equipment itemData,no-ge-page
+8030732,Linen Shirt (Yellow),_item armor equipment itemData,no-ge-page
+8030733,Linen Shirt (Blue),_item armor equipment itemData,no-ge-page
+8030735,Linen Shirt of Slaying (Blue),_item armor equipment itemData,no-ge-page
+8030737,Linen Shirt of Invoking (Yellow),_item armor equipment itemData,no-ge-page
+8030738,Woolen Shirt (Purple),_item armor equipment itemData,no-ge-page
+8030739,Woolen Shirt (Red),_item armor equipment itemData,no-ge-page
+8030740,Woolen Shirt (Grey),_item armor equipment itemData,no-ge-page
+8030742,Woolen Shirt of Invoking (Red),_item armor equipment itemData,no-ge-page
+8030743,Woolen Shirt of Invoking (Grey),_item armor equipment itemData,no-ge-page
+8030820,Hempen Acton (Grey),_item armor equipment itemData,no-ge-page
+8030822,Cotton Acton (Brown),_item armor equipment itemData,no-ge-page
+8030921,Leather Jacket (Green),_item armor equipment itemData,no-ge-page
+8030923,Toadskin Jacket (Black),_item armor equipment itemData,no-ge-page
+8031023,Boarskin Jerkin of Vitality (Red),_item armor equipment itemData,no-ge-page
+8031024,Boarskin Jerkin of Strength (Grey),_item armor equipment itemData,no-ge-page
+8031025,Boarskin Jerkin of Dexterity (Black),_item armor equipment itemData,no-ge-page
+8031027,Raptorskin Jerkin of Vitality (Red),_item armor equipment itemData,no-ge-page
+8031028,Raptorskin Jerkin of Strength (Green),_item armor equipment itemData,no-ge-page
+8031029,Raptorskin Jerkin of Dexterity (Blue),_item armor equipment itemData,no-ge-page
+8031030,Boarskin Jerkin (Red),_item armor equipment itemData,no-ge-page
+8031031,Boarskin Jerkin (Grey),_item armor equipment itemData,no-ge-page
+8031032,Boarskin Jerkin (Black),_item armor equipment itemData,no-ge-page
+8031034,Boarskin Jerkin of Vitality (Grey),_item armor equipment itemData,no-ge-page
+8031035,Boarskin Jerkin of Vitality (Black),_item armor equipment itemData,no-ge-page
+8031037,Boarskin Jerkin of Strength (Red),_item armor equipment itemData,no-ge-page
+8031038,Boarskin Jerkin of Strength (Black),_item armor equipment itemData,no-ge-page
+8031040,Boarskin Jerkin of Dexterity (Red),_item armor equipment itemData,no-ge-page
+8031041,Boarskin Jerkin of Dexterity (Grey),_item armor equipment itemData,no-ge-page
+8031042,Raptorskin Jerkin (Red),_item armor equipment itemData,no-ge-page
+8031043,Raptorskin Jerkin (Green),_item armor equipment itemData,no-ge-page
+8031044,Raptorskin Jerkin (Blue),_item armor equipment itemData,no-ge-page
+8031045,Raptorskin Jerkin (Brown),_item armor equipment itemData,no-ge-page
+8031047,Raptorskin Jerkin of Vitality (Green),_item armor equipment itemData,no-ge-page
+8031048,Raptorskin Jerkin of Vitality (Blue),_item armor equipment itemData,no-ge-page
+8031049,Raptorskin Jerkin of Vitality (Brown),_item armor equipment itemData,no-ge-page
+8031051,Raptorskin Jerkin of Strength (Red),_item armor equipment itemData,no-ge-page
+8031052,Raptorskin Jerkin of Strength (Blue),_item armor equipment itemData,no-ge-page
+8031053,Raptorskin Jerkin of Strength (Brown),_item armor equipment itemData,no-ge-page
+8031055,Raptorskin Jerkin of Dexterity (Red),_item armor equipment itemData,no-ge-page
+8031056,Raptorskin Jerkin of Dexterity (Green),_item armor equipment itemData,no-ge-page
+8031057,Raptorskin Jerkin of Dexterity (Brown),_item armor equipment itemData,no-ge-page
+8031122,Cotton Tabard (Green),_item armor equipment itemData,no-ge-page
+8031225,Hempen Doublet Vest of Gathering (Grey),_item armor equipment itemData,no-ge-page
+8031226,Hempen Doublet Vest of Crafting (Brown),_item armor equipment itemData,no-ge-page
+8031228,Cotton Doublet Vest of Gathering (Brown),_item armor equipment itemData,no-ge-page
+8031229,Cotton Doublet Vest of Crafting (Yellow),_item armor equipment itemData,no-ge-page
+8031231,Velveteen Doublet Vest of Gathering (Green),_item armor equipment itemData,no-ge-page
+8031232,Velveteen Doublet Vest of Crafting (Black),_item armor equipment itemData,no-ge-page
+8031233,Hempen Doublet Vest (Grey),_item armor equipment itemData,no-ge-page
+8031234,Hempen Doublet Vest (Brown),_item armor equipment itemData,no-ge-page
+8031236,Hempen Doublet Vest of Gathering (Brown),_item armor equipment itemData,no-ge-page
+8031238,Hempen Doublet Vest of Crafting (Grey),_item armor equipment itemData,no-ge-page
+8031239,Cotton Doublet Vest (Brown),_item armor equipment itemData,no-ge-page
+8031240,Cotton Doublet Vest (Yellow),_item armor equipment itemData,no-ge-page
+8031242,Cotton Doublet Vest of Gathering (Yellow),_item armor equipment itemData,no-ge-page
+8031244,Cotton Doublet Vest of Crafting (Brown),_item armor equipment itemData,no-ge-page
+8031245,Velveteen Doublet Vest (Green),_item armor equipment itemData,no-ge-page
+8031246,Velveteen Doublet Vest (Black),_item armor equipment itemData,no-ge-page
+8031248,Velveteen Doublet Vest of Gathering (Black),_item armor equipment itemData,no-ge-page
+8031250,Velveteen Doublet Vest of Crafting (Green),_item armor equipment itemData,no-ge-page
+8031316,Hempen Tunic (Brown),_item armor equipment itemData,no-ge-page
+8031418,Cotton Halfrobe (Green),_item armor equipment itemData,no-ge-page
+8031420,Velveteen Robe (Black),_item armor equipment itemData,no-ge-page
+8031515,Dodoskin Harness (Grey),_item armor equipment itemData,no-ge-page
+8031517,Boarskin Harness (Blue),_item armor equipment itemData,no-ge-page
+8031519,Peisteskin Harness (Black),_item armor equipment itemData,no-ge-page
+8031521,Raptorskin Harness (Blue),_item armor equipment itemData,no-ge-page
+8031522,Raptorskin Harness (White),_item armor equipment itemData,no-ge-page
+8031523,Raptorskin Harness (Red),_item armor equipment itemData,no-ge-page
+8031611,Horn Scale Mail (White),_item armor equipment itemData,no-ge-page
+8031613,Tortoiseshell Scale Mail (White),_item armor equipment itemData,no-ge-page
+8031721,Mythril Haubergeon (Black),_item armor equipment itemData,no-ge-page
+8031723,Cobalt Haubergeon (Red),_item armor equipment itemData,no-ge-page
+8031823,Linen Cowl (Brown),_item armor equipment itemData,no-ge-page
+8031824,Linen Cowl (Yellow),_item armor equipment itemData,no-ge-page
+8031826,Woolen Cowl (Black),_item armor equipment itemData,no-ge-page
+8031827,Woolen Cowl (Red),_item armor equipment itemData,no-ge-page
+8031828,Woolen Cowl (Grey),_item armor equipment itemData,no-ge-page
+8031916,Cotton Shepherd's Tunic (Green),_item armor equipment itemData,no-ge-page
+8031917,Cotton Shepherd's Tunic (Yellow),_item armor equipment itemData,no-ge-page
+8032010,Linen Smock of the Mind (Brown),_item armor equipment itemData,no-ge-page
+8032011,Linen Smock of Piety (Yellow),_item armor equipment itemData,no-ge-page
+8032012,Linen Smock of Piety (Blue),_item armor equipment itemData,no-ge-page
+8032014,Woolen Smock of the Mind (Grey),_item armor equipment itemData,no-ge-page
+8032015,Woolen Smock of Piety (Red),_item armor equipment itemData,no-ge-page
+8032016,Woolen Smock of Piety (Black),_item armor equipment itemData,no-ge-page
+8032017,Linen Smock (Brown),_item armor equipment itemData,no-ge-page
+8032018,Linen Smock (Yellow),_item armor equipment itemData,no-ge-page
+8032019,Linen Smock (Blue),_item armor equipment itemData,no-ge-page
+8032021,Linen Smock of the Mind (Yellow),_item armor equipment itemData,no-ge-page
+8032022,Linen Smock of the Mind (Blue),_item armor equipment itemData,no-ge-page
+8032024,Linen Smock of Piety (Brown),_item armor equipment itemData,no-ge-page
+8032025,Woolen Smock (Grey),_item armor equipment itemData,no-ge-page
+8032026,Woolen Smock (Red),_item armor equipment itemData,no-ge-page
+8032027,Woolen Smock (Black),_item armor equipment itemData,no-ge-page
+8032028,Woolen Smock (Purple),_item armor equipment itemData,no-ge-page
+8032030,Woolen Smock of the Mind (Red),_item armor equipment itemData,no-ge-page
+8032031,Woolen Smock of the Mind (Black),_item armor equipment itemData,no-ge-page
+8032032,Woolen Smock of the Mind (Purple),_item armor equipment itemData,no-ge-page
+8032034,Woolen Smock of Piety (Grey),_item armor equipment itemData,no-ge-page
+8032035,Woolen Smock of Piety (Purple),_item armor equipment itemData,no-ge-page
+8032222,Velveteen Coatee of Crafting (Red),_item armor equipment itemData,no-ge-page
+8032223,Velveteen Coatee of Gathering (Yellow),_item armor equipment itemData,no-ge-page
+8032225,Linen Coatee of Crafting (Blue),_item armor equipment itemData,no-ge-page
+8032226,Linen Coatee of Gathering (Brown),_item armor equipment itemData,no-ge-page
+8032227,Velveteen Coatee (Red),_item armor equipment itemData,no-ge-page
+8032228,Velveteen Coatee (Yellow),_item armor equipment itemData,no-ge-page
+8032230,Velveteen Coatee of Crafting (Yellow),_item armor equipment itemData,no-ge-page
+8032232,Velveteen Coatee of Gathering (Red),_item armor equipment itemData,no-ge-page
+8032233,Linen Coatee (Blue),_item armor equipment itemData,no-ge-page
+8032234,Linen Coatee (Brown),_item armor equipment itemData,no-ge-page
+8032235,Linen Coatee (Red),_item armor equipment itemData,no-ge-page
+8032236,Linen Coatee (Yellow),_item armor equipment itemData,no-ge-page
+8032238,Linen Coatee of Crafting (Brown),_item armor equipment itemData,no-ge-page
+8032239,Linen Coatee of Crafting (Red),_item armor equipment itemData,no-ge-page
+8032240,Linen Coatee of Crafting (Yellow),_item armor equipment itemData,no-ge-page
+8032242,Linen Coatee of Gathering (Blue),_item armor equipment itemData,no-ge-page
+8032243,Linen Coatee of Gathering (Red),_item armor equipment itemData,no-ge-page
+8032244,Linen Coatee of Gathering (Yellow),_item armor equipment itemData,no-ge-page
+8032304,Woolen Bliaud (Purple),_item armor equipment itemData,no-ge-page
+8032306,Felt Bliaud (Brown),_item armor equipment itemData,no-ge-page
+8032308,Felt Bliaud (Green),_item armor equipment itemData,no-ge-page
+8032309,Felt Bliaud (Blue),_item armor equipment itemData,no-ge-page
+8032310,Felt Bliaud (Red),_item armor equipment itemData,no-ge-page
+8032502,Hempen Kurta (Grey),_item armor equipment itemData,no-ge-page
+8032803,Darklight Corselet,_item armor equipment itemData,no-ge-page
+8032804,Darklight Cowl,_item armor equipment itemData,no-ge-page
+8032806,Heavy Darksteel Armor (White),_item armor equipment itemData,no-ge-page
+8032807,Heavy Darksteel Armor (Red),_item armor equipment itemData,no-ge-page
+8032808,Heavy Darksteel Armor (Green),_item armor equipment itemData,no-ge-page
+8032809,Heavy Darksteel Armor (Blue),_item armor equipment itemData,no-ge-page
+8032811,Gryphonskin Jerkin (White),_item armor equipment itemData,no-ge-page
+8032812,Gryphonskin Jerkin (Black),_item armor equipment itemData,no-ge-page
+8032813,Gryphonskin Jerkin (Red),_item armor equipment itemData,no-ge-page
+8032814,Gryphonskin Jerkin (Yellow),_item armor equipment itemData,no-ge-page
+8032815,Vanya Robe,_item armor equipment itemData,no-ge-page
+8032816,Vanya Robe (Yellow),_item armor equipment itemData,no-ge-page
+8032817,Vanya Robe (Black),_item armor equipment itemData,no-ge-page
+8032818,Vanya Robe (Purple),_item armor equipment itemData,no-ge-page
+8032819,Vanya Robe (Red),_item armor equipment itemData,no-ge-page
+8040016,Hempen Undershirt (Brown),_item armor equipment itemData,no-ge-page
+8040018,Hempen Undershirt (Grey),_item armor equipment itemData,no-ge-page
+8040019,Hempen Undershirt (Beige),_item armor equipment itemData,no-ge-page
+8040020,Hempen Breastcloth (Brown),_item armor equipment itemData,no-ge-page
+8040022,Hempen Breastcloth (Grey),_item armor equipment itemData,no-ge-page
+8040023,Hempen Breastcloth (Beige),_item armor equipment itemData,no-ge-page
+8040024,Hempen Chestband (Brown),_item armor equipment itemData,no-ge-page
+8040026,Hempen Chestband (Grey),_item armor equipment itemData,no-ge-page
+8040027,Hempen Chestband (Beige),_item armor equipment itemData,no-ge-page
+8040028,Hempen Undersleeves (Brown),_item armor equipment itemData,no-ge-page
+8040030,Hempen Undersleeves (Grey),_item armor equipment itemData,no-ge-page
+8040031,Hempen Undersleeves (Beige),_item armor equipment itemData,no-ge-page
+8040032,Hempen Bodice (Brown),_item armor equipment itemData,no-ge-page
+8040034,Hempen Bodice (Grey),_item armor equipment itemData,no-ge-page
+8040035,Hempen Bodice (Beige),_item armor equipment itemData,no-ge-page
+8040036,Hempen Camise (Brown),_item armor equipment itemData,no-ge-page
+8040038,Hempen Camise (Grey),_item armor equipment itemData,no-ge-page
+8040039,Hempen Camise (Beige),_item armor equipment itemData,no-ge-page
+8040040,Hempen Camisole (Brown),_item armor equipment itemData,no-ge-page
+8040042,Hempen Camisole (Grey),_item armor equipment itemData,no-ge-page
+8040043,Hempen Camisole (Beige),_item armor equipment itemData,no-ge-page
+8040044,Hempen Halftop (Brown),_item armor equipment itemData,no-ge-page
+8040046,Hempen Halftop (Grey),_item armor equipment itemData,no-ge-page
+8040047,Hempen Halftop (Beige),_item armor equipment itemData,no-ge-page
+8040048,Hempen Singlet (Brown),_item armor equipment itemData,no-ge-page
+8040050,Hempen Singlet (Grey),_item armor equipment itemData,no-ge-page
+8040051,Hempen Singlet (Beige),_item armor equipment itemData,no-ge-page
+8040053,Cotton Undershirt (Brown),_item armor equipment itemData,no-ge-page
+8040054,Cotton Undershirt (Yellow),_item armor equipment itemData,no-ge-page
+8040055,Cotton Undershirt (Green),_item armor equipment itemData,no-ge-page
+8040056,Cotton Undershirt (Blue),_item armor equipment itemData,no-ge-page
+8040058,Cotton Breastcloth (Brown),_item armor equipment itemData,no-ge-page
+8040059,Cotton Breastcloth (Yellow),_item armor equipment itemData,no-ge-page
+8040060,Cotton Breastcloth (Green),_item armor equipment itemData,no-ge-page
+8040061,Cotton Breastcloth (Blue),_item armor equipment itemData,no-ge-page
+8040063,Cotton Chestband (Brown),_item armor equipment itemData,no-ge-page
+8040064,Cotton Chestband (Yellow),_item armor equipment itemData,no-ge-page
+8040065,Cotton Chestband (Green),_item armor equipment itemData,no-ge-page
+8040066,Cotton Chestband (Blue),_item armor equipment itemData,no-ge-page
+8040068,Cotton Undersleeves (Brown),_item armor equipment itemData,no-ge-page
+8040069,Cotton Undersleeves (Yellow),_item armor equipment itemData,no-ge-page
+8040070,Cotton Undersleeves (Green),_item armor equipment itemData,no-ge-page
+8040071,Cotton Undersleeves (Blue),_item armor equipment itemData,no-ge-page
+8040073,Cotton Bodice (Brown),_item armor equipment itemData,no-ge-page
+8040074,Cotton Bodice (Yellow),_item armor equipment itemData,no-ge-page
+8040075,Cotton Bodice (Green),_item armor equipment itemData,no-ge-page
+8040076,Cotton Bodice (Blue),_item armor equipment itemData,no-ge-page
+8040078,Cotton Camise (Brown),_item armor equipment itemData,no-ge-page
+8040079,Cotton Camise (Yellow),_item armor equipment itemData,no-ge-page
+8040080,Cotton Camise (Green),_item armor equipment itemData,no-ge-page
+8040081,Cotton Camise (Blue),_item armor equipment itemData,no-ge-page
+8040083,Cotton Camisole (Brown),_item armor equipment itemData,no-ge-page
+8040084,Cotton Camisole (Yellow),_item armor equipment itemData,no-ge-page
+8040085,Cotton Camisole (Green),_item armor equipment itemData,no-ge-page
+8040086,Cotton Camisole (Blue),_item armor equipment itemData,no-ge-page
+8040088,Cotton Halftop (Brown),_item armor equipment itemData,no-ge-page
+8040089,Cotton Halftop (Yellow),_item armor equipment itemData,no-ge-page
+8040090,Cotton Halftop (Green),_item armor equipment itemData,no-ge-page
+8040091,Cotton Halftop (Blue),_item armor equipment itemData,no-ge-page
+8040093,Cotton Singlet (Brown),_item armor equipment itemData,no-ge-page
+8040094,Cotton Singlet (Yellow),_item armor equipment itemData,no-ge-page
+8040095,Cotton Singlet (Green),_item armor equipment itemData,no-ge-page
+8040096,Cotton Singlet (Blue),_item armor equipment itemData,no-ge-page
+8050016,Linen Slops of Vitality (Yellow),_item armor equipment itemData,no-ge-page
+8050017,Linen Slops of the Mind (Brown),_item armor equipment itemData,no-ge-page
+8050018,Linen Slops of Strength (Blue),_item armor equipment itemData,no-ge-page
+8050020,Woolen Slops of Vitality (Red),_item armor equipment itemData,no-ge-page
+8050021,Woolen Slops of the Mind (Black),_item armor equipment itemData,no-ge-page
+8050022,Woolen Slops of Strength (Purple),_item armor equipment itemData,no-ge-page
+8050023,Linen Slops (Yellow),_item armor equipment itemData,no-ge-page
+8050024,Linen Slops (Brown),_item armor equipment itemData,no-ge-page
+8050025,Linen Slops (Blue),_item armor equipment itemData,no-ge-page
+8050027,Linen Slops of Vitality (Brown),_item armor equipment itemData,no-ge-page
+8050033,Linen Slops of Vitality (Blue),_item armor equipment itemData,no-ge-page
+8050035,Linen Slops of the Mind (Yellow),_item armor equipment itemData,no-ge-page
+8050036,Linen Slops of the Mind (Blue),_item armor equipment itemData,no-ge-page
+8050038,Linen Slops of Strength (Yellow),_item armor equipment itemData,no-ge-page
+8050039,Linen Slops of Strength (Brown),_item armor equipment itemData,no-ge-page
+8050040,Woolen Slops (Red),_item armor equipment itemData,no-ge-page
+8050041,Woolen Slops (Black),_item armor equipment itemData,no-ge-page
+8050042,Woolen Slops (Purple),_item armor equipment itemData,no-ge-page
+8050044,Woolen Slops of Vitality (Black),_item armor equipment itemData,no-ge-page
+8050045,Woolen Slops of Vitality (Purple),_item armor equipment itemData,no-ge-page
+8050047,Woolen Slops of the Mind (Red),_item armor equipment itemData,no-ge-page
+8050048,Woolen Slops of the Mind (Purple),_item armor equipment itemData,no-ge-page
+8050050,Woolen Slops of Strength (Red),_item armor equipment itemData,no-ge-page
+8050051,Woolen Slops of Strength (Black),_item armor equipment itemData,no-ge-page
+8050121,Velveteen Trousers (Red),_item armor equipment itemData,no-ge-page
+8050123,Woolen Trousers (Purple),_item armor equipment itemData,no-ge-page
+8050124,[en],_item armor equipment itemData,no-english-name
+8050126,Linen Trousers (Blue),_item armor equipment itemData,no-ge-page
+8050127,Felt Trousers (Green),_item armor equipment itemData,no-ge-page
+8050128,Felt Trousers (Blue),_item armor equipment itemData,no-ge-page
+8050129,Felt Trousers (Brown),_item armor equipment itemData,no-ge-page
+8050131,Felt Trousers (Red),_item armor equipment itemData,no-ge-page
+8050134,[en],_item armor equipment itemData,no-english-name
+8050135,[en],_item armor equipment itemData,no-english-name
+8050136,[en],_item armor equipment itemData,no-english-name
+8050137,[en],_item armor equipment itemData,no-english-name
+8050138,[en],_item armor equipment itemData,no-english-name
+8050139,[en],_item armor equipment itemData,no-english-name
+8050140,[en],_item armor equipment itemData,no-english-name
+8050141,[en],_item armor equipment itemData,no-english-name
+8050142,[en],_item armor equipment itemData,no-english-name
+8050143,[en],_item armor equipment itemData,no-english-name
+8050144,[en],_item armor equipment itemData,no-english-name
+8050145,[en],_item armor equipment itemData,no-english-name
+8050146,[en],_item armor equipment itemData,no-english-name
+8050147,[en],_item armor equipment itemData,no-english-name
+8050213,Dated Canvas Breeches (Brown),_item armor equipment itemData,no-ge-page
+8050221,Hempen Breeches of Casting (Brown),_item armor equipment itemData,no-ge-page
+8050222,Hempen Breeches of Toiling (Grey),_item armor equipment itemData,no-ge-page
+8050224,Cotton Breeches of Casting (Yellow),_item armor equipment itemData,no-ge-page
+8050225,Cotton Breeches of Toiling (Brown),_item armor equipment itemData,no-ge-page
+8050226,Hempen Breeches (Brown),_item armor equipment itemData,no-ge-page
+8050227,Hempen Breeches (Grey),_item armor equipment itemData,no-ge-page
+8050229,Hempen Breeches of Casting (Grey),_item armor equipment itemData,no-ge-page
+8050231,Hempen Breeches of Toiling (Brown),_item armor equipment itemData,no-ge-page
+8050232,Cotton Breeches (Yellow),_item armor equipment itemData,no-ge-page
+8050233,Cotton Breeches (Brown),_item armor equipment itemData,no-ge-page
+8050235,Cotton Breeches of Casting (Brown),_item armor equipment itemData,no-ge-page
+8050237,Cotton Breeches of Toiling (Yellow),_item armor equipment itemData,no-ge-page
+8050238,[en],_item armor equipment itemData,no-english-name
+8050239,[en],_item armor equipment itemData,no-english-name
+8050240,[en],_item armor equipment itemData,no-english-name
+8050241,[en],_item armor equipment itemData,no-english-name
+8050321,Woolen Chausses of Dexterity (Grey),_item armor equipment itemData,no-ge-page
+8050322,Woolen Chausses of Intelligence (Purple),_item armor equipment itemData,no-ge-page
+8050323,Woolen Chausses of Vitality (Black),_item armor equipment itemData,no-ge-page
+8050325,Felt Chausses of Dexterity (Blue),_item armor equipment itemData,no-ge-page
+8050326,Felt Chausses of Intelligence (Red),_item armor equipment itemData,no-ge-page
+8050327,Felt Chausses of Vitality (Brown),_item armor equipment itemData,no-ge-page
+8050328,Woolen Chausses (Grey),_item armor equipment itemData,no-ge-page
+8050329,Woolen Chausses (Purple),_item armor equipment itemData,no-ge-page
+8050330,Woolen Chausses (Black),_item armor equipment itemData,no-ge-page
+8050332,Woolen Chausses of Dexterity (Purple),_item armor equipment itemData,no-ge-page
+8050333,Woolen Chausses of Dexterity (Black),_item armor equipment itemData,no-ge-page
+8050335,Woolen Chausses of Intelligence (Grey),_item armor equipment itemData,no-ge-page
+8050336,Woolen Chausses of Intelligence (Black),_item armor equipment itemData,no-ge-page
+8050338,Woolen Chausses of Vitality (Grey),_item armor equipment itemData,no-ge-page
+8050339,Woolen Chausses of Vitality (Purple),_item armor equipment itemData,no-ge-page
+8050340,Felt Chausses (Blue),_item armor equipment itemData,no-ge-page
+8050341,Felt Chausses (Red),_item armor equipment itemData,no-ge-page
+8050342,Felt Chausses (Brown),_item armor equipment itemData,no-ge-page
+8050343,Felt Chausses (Green),_item armor equipment itemData,no-ge-page
+8050349,Felt Chausses of Dexterity (Red),_item armor equipment itemData,no-ge-page
+8050350,Felt Chausses of Dexterity (Brown),_item armor equipment itemData,no-ge-page
+8050351,Felt Chausses of Dexterity (Green),_item armor equipment itemData,no-ge-page
+8050353,Felt Chausses of Intelligence (Blue),_item armor equipment itemData,no-ge-page
+8050354,Felt Chausses of Intelligence (Brown),_item armor equipment itemData,no-ge-page
+8050355,Felt Chausses of Intelligence (Green),_item armor equipment itemData,no-ge-page
+8050357,Felt Chausses of Vitality (Blue),_item armor equipment itemData,no-ge-page
+8050358,Felt Chausses of Vitality (Red),_item armor equipment itemData,no-ge-page
+8050359,Felt Chausses of Vitality (Green),_item armor equipment itemData,no-ge-page
+8050421,Boarskin Culottes of the Mind (Red),_item armor equipment itemData,no-ge-page
+8050422,Boarskin Culottes of Intelligence (Grey),_item armor equipment itemData,no-ge-page
+8050423,Boarskin Culottes of Piety (Black),_item armor equipment itemData,no-ge-page
+8050425,Raptorskin Culottes of the Mind (Red),_item armor equipment itemData,no-ge-page
+8050426,Raptorskin Culottes of Intelligence (Grey),_item armor equipment itemData,no-ge-page
+8050427,Raptorskin Culottes of Piety (Purple),_item armor equipment itemData,no-ge-page
+8050428,Boarskin Culottes (Red),_item armor equipment itemData,no-ge-page
+8050429,Boarskin Culottes (Grey),_item armor equipment itemData,no-ge-page
+8050430,Boarskin Culottes (Black),_item armor equipment itemData,no-ge-page
+8050432,Boarskin Culottes of the Mind (Grey),_item armor equipment itemData,no-ge-page
+8050433,Boarskin Culottes of the Mind (Black),_item armor equipment itemData,no-ge-page
+8050435,Boarskin Culottes of Intelligence (Red),_item armor equipment itemData,no-ge-page
+8050436,Boarskin Culottes of Intelligence (Black),_item armor equipment itemData,no-ge-page
+8050438,Boarskin Culottes of Piety (Red),_item armor equipment itemData,no-ge-page
+8050439,Boarskin Culottes of Piety (Grey),_item armor equipment itemData,no-ge-page
+8050440,Raptorskin Culottes (Red),_item armor equipment itemData,no-ge-page
+8050441,Raptorskin Culottes (Grey),_item armor equipment itemData,no-ge-page
+8050442,Raptorskin Culottes (Purple),_item armor equipment itemData,no-ge-page
+8050443,Raptorskin Culottes (Black),_item armor equipment itemData,no-ge-page
+8050445,Raptorskin Culottes of the Mind (Grey),_item armor equipment itemData,no-ge-page
+8050446,Raptorskin Culottes of the Mind (Purple),_item armor equipment itemData,no-ge-page
+8050447,Raptorskin Culottes of the Mind (Black),_item armor equipment itemData,no-ge-page
+8050451,Raptorskin Culottes of Intelligence (Red),_item armor equipment itemData,no-ge-page
+8050452,Raptorskin Culottes of Intelligence (Purple),_item armor equipment itemData,no-ge-page
+8050453,Raptorskin Culottes of Intelligence (Black),_item armor equipment itemData,no-ge-page
+8050455,Raptorskin Culottes of Piety (Red),_item armor equipment itemData,no-ge-page
+8050456,Raptorskin Culottes of Piety (Grey),_item armor equipment itemData,no-ge-page
+8050457,Raptorskin Culottes of Piety (Black),_item armor equipment itemData,no-ge-page
+8050501,Dated Sheepskin Subligar (Brown),_item armor equipment itemData,no-ge-page
+8050502,Dated Sheepskin Subligar (Grey),_item armor equipment itemData,no-ge-page
+8050504,Dodoskin Subligar (Green),_item armor equipment itemData,no-ge-page
+8050505,Dated Dodoskin Subligar (Yellow),_item armor equipment itemData,no-ge-page
+8050506,Dated Dodoskin Subligar (Green),_item armor equipment itemData,no-ge-page
+8050507,Dated Leather Subligar (Black),_item armor equipment itemData,no-ge-page
+8050508,Dated Leather Subligar (Green),_item armor equipment itemData,no-ge-page
+8050510,Boarskin Subligar (Blue),_item armor equipment itemData,no-ge-page
+8050512,Peisteskin Subligar (Black),_item armor equipment itemData,no-ge-page
+8050514,Raptorskin Subligar (Black),_item armor equipment itemData,no-ge-page
+8050515,[en],_item armor equipment itemData,no-english-name
+8050516,[en],_item armor equipment itemData,no-english-name
+8050517,[en],_item armor equipment itemData,no-english-name
+8050518,[en],_item armor equipment itemData,no-english-name
+8050601,Dated Hempen Kecks (Brown),_item armor equipment itemData,no-ge-page
+8050602,Dated Hempen Kecks (Grey),_item armor equipment itemData,no-ge-page
+8050610,Hempen Kecks (Grey),_item armor equipment itemData,no-ge-page
+8050612,Cotton Kecks (Blue),_item armor equipment itemData,no-ge-page
+8050614,Woolen Kecks (Red),_item armor equipment itemData,no-ge-page
+8050616,Felt Kecks (Blue),_item armor equipment itemData,no-ge-page
+8050701,Dated Hempen Sarouel (Brown),_item armor equipment itemData,no-ge-page
+8050702,Dated Hempen Sarouel (Grey),_item armor equipment itemData,no-ge-page
+8050703,Dated Hempen Sarouel (Beige),_item armor equipment itemData,no-ge-page
+8050708,Dated Velveteen Sarouel (Black),_item armor equipment itemData,no-ge-page
+8050709,Dated Velveteen Sarouel (Red),_item armor equipment itemData,no-ge-page
+8050710,Dated Velveteen Sarouel (Yellow),_item armor equipment itemData,no-ge-page
+8050711,Dated Velveteen Sarouel (Green),_item armor equipment itemData,no-ge-page
+8050713,Velveteen Sarouel of Slaying (Yellow),_item armor equipment itemData,no-ge-page
+8050714,Velveteen Sarouel of Invoking (Green),_item armor equipment itemData,no-ge-page
+8050715,Velveteen Sarouel of Toiling (Red),_item armor equipment itemData,no-ge-page
+8050717,Linen Sarouel of Slaying (Yellow),_item armor equipment itemData,no-ge-page
+8050718,Linen Sarouel of Invoking (Blue),_item armor equipment itemData,no-ge-page
+8050719,Linen Sarouel of Toiling (Brown),_item armor equipment itemData,no-ge-page
+8050721,Woolen Sarouel of Slaying (Grey),_item armor equipment itemData,no-ge-page
+8050722,Woolen Sarouel of Invoking (Purple),_item armor equipment itemData,no-ge-page
+8050723,Woolen Sarouel of Toiling (Black),_item armor equipment itemData,no-ge-page
+8050724,Velveteen Sarouel (Yellow),_item armor equipment itemData,no-ge-page
+8050725,Velveteen Sarouel (Green),_item armor equipment itemData,no-ge-page
+8050726,Velveteen Sarouel (Red),_item armor equipment itemData,no-ge-page
+8050730,Velveteen Sarouel of Slaying (Green),_item armor equipment itemData,no-ge-page
+8050731,Velveteen Sarouel of Slaying (Red),_item armor equipment itemData,no-ge-page
+8050733,Velveteen Sarouel of Invoking (Yellow),_item armor equipment itemData,no-ge-page
+8050734,Velveteen Sarouel of Invoking (Red),_item armor equipment itemData,no-ge-page
+8050736,Velveteen Sarouel of Toiling (Yellow),_item armor equipment itemData,no-ge-page
+8050737,Velveteen Sarouel of Toiling (Green),_item armor equipment itemData,no-ge-page
+8050738,Linen Sarouel (Yellow),_item armor equipment itemData,no-ge-page
+8050739,Linen Sarouel (Blue),_item armor equipment itemData,no-ge-page
+8050740,Linen Sarouel (Brown),_item armor equipment itemData,no-ge-page
+8050742,Linen Sarouel of Slaying (Blue),_item armor equipment itemData,no-ge-page
+8050743,Linen Sarouel of Slaying (Brown),_item armor equipment itemData,no-ge-page
+8050745,Linen Sarouel of Invoking (Yellow),_item armor equipment itemData,no-ge-page
+8050746,Linen Sarouel of Invoking (Brown),_item armor equipment itemData,no-ge-page
+8050748,Linen Sarouel of Toiling (Yellow),_item armor equipment itemData,no-ge-page
+8050749,Linen Sarouel of Toiling (Blue),_item armor equipment itemData,no-ge-page
+8050750,Woolen Sarouel (Grey),_item armor equipment itemData,no-ge-page
+8050751,Woolen Sarouel (Purple),_item armor equipment itemData,no-ge-page
+8050752,Woolen Sarouel (Black),_item armor equipment itemData,no-ge-page
+8050753,Woolen Sarouel (Red),_item armor equipment itemData,no-ge-page
+8050755,Woolen Sarouel of Slaying (Purple),_item armor equipment itemData,no-ge-page
+8050756,Woolen Sarouel of Slaying (Black),_item armor equipment itemData,no-ge-page
+8050757,Woolen Sarouel of Slaying (Red),_item armor equipment itemData,no-ge-page
+8050759,Woolen Sarouel of Invoking (Grey),_item armor equipment itemData,no-ge-page
+8050760,Woolen Sarouel of Invoking (Black),_item armor equipment itemData,no-ge-page
+8050761,Woolen Sarouel of Invoking (Red),_item armor equipment itemData,no-ge-page
+8050763,Woolen Sarouel of Toiling (Grey),_item armor equipment itemData,no-ge-page
+8050764,Woolen Sarouel of Toiling (Purple),_item armor equipment itemData,no-ge-page
+8050765,Woolen Sarouel of Toiling (Red),_item armor equipment itemData,no-ge-page
+8050810,Boarskin Skirt (Red),_item armor equipment itemData,no-ge-page
+8050902,Woolen Gaskins (Purple),_item armor equipment itemData,no-ge-page
+8050904,Felt Gaskins (Brown),_item armor equipment itemData,no-ge-page
+8050905,Felt Gaskins (Green),_item armor equipment itemData,no-ge-page
+8050906,Felt Gaskins (Blue),_item armor equipment itemData,no-ge-page
+8050907,Felt Gaskins (Red),_item armor equipment itemData,no-ge-page
+8051019,Velveteen Tights (Black),_item armor equipment itemData,no-ge-page
+8051021,Linen Tights (Yellow),_item armor equipment itemData,no-ge-page
+8051023,Woolen Tights (Black),_item armor equipment itemData,no-ge-page
+8051116,Hempen Shepherd's Slops (Brown),_item armor equipment itemData,no-ge-page
+8051117,Hempen Shepherd's Slops (Red),_item armor equipment itemData,no-ge-page
+8051119,Cotton Shepherd's Slops (Green),_item armor equipment itemData,no-ge-page
+8051120,Cotton Shepherd's Slops (Yellow),_item armor equipment itemData,no-ge-page
+8051217,Velveteen Bottom (Red),_item armor equipment itemData,no-ge-page
+8051218,Velveteen Bottom (Yellow),_item armor equipment itemData,no-ge-page
+8051220,Linen Bottom (Blue),_item armor equipment itemData,no-ge-page
+8051221,Linen Bottom (Brown),_item armor equipment itemData,no-ge-page
+8051223,Linen Bottom (Red),_item armor equipment itemData,no-ge-page
+8051224,Linen Bottom (Yellow),_item armor equipment itemData,no-ge-page
+8051504,Heavy Darksteel Flanchard (White),_item armor equipment itemData,no-ge-page
+8051505,Heavy Darksteel Flanchard (Red),_item armor equipment itemData,no-ge-page
+8051506,Heavy Darksteel Flanchard (Green),_item armor equipment itemData,no-ge-page
+8051507,Heavy Darksteel Flanchard (Blue),_item armor equipment itemData,no-ge-page
+8051509,Gryphonskin Trousers (White),_item armor equipment itemData,no-ge-page
+8051510,Gryphonskin Trousers (Black),_item armor equipment itemData,no-ge-page
+8051511,Gryphonskin Trousers (Red),_item armor equipment itemData,no-ge-page
+8051512,Gryphonskin Trousers (Yellow),_item armor equipment itemData,no-ge-page
+8060016,Hempen Halftights (Brown),_item armor equipment itemData,no-ge-page
+8060018,Hempen Halftights (Grey),_item armor equipment itemData,no-ge-page
+8060019,Hempen Halftights (Beige),_item armor equipment itemData,no-ge-page
+8060020,Hempen Pagne (Brown),_item armor equipment itemData,no-ge-page
+8060022,Hempen Pagne (Grey),_item armor equipment itemData,no-ge-page
+8060023,Hempen Pagne (Beige),_item armor equipment itemData,no-ge-page
+8060024,Hempen Loinguard (Brown),_item armor equipment itemData,no-ge-page
+8060026,Hempen Loinguard (Grey),_item armor equipment itemData,no-ge-page
+8060027,Hempen Loinguard (Beige),_item armor equipment itemData,no-ge-page
+8060028,Hempen Braies (Brown),_item armor equipment itemData,no-ge-page
+8060030,Hempen Braies (Grey),_item armor equipment itemData,no-ge-page
+8060031,Hempen Braies (Beige),_item armor equipment itemData,no-ge-page
+8060032,Hempen Stockings (Brown),_item armor equipment itemData,no-ge-page
+8060034,Hempen Stockings (Grey),_item armor equipment itemData,no-ge-page
+8060035,Hempen Stockings (Beige),_item armor equipment itemData,no-ge-page
+8060036,Hempen Shorts (Brown),_item armor equipment itemData,no-ge-page
+8060038,Hempen Shorts (Grey),_item armor equipment itemData,no-ge-page
+8060039,Hempen Shorts (Beige),_item armor equipment itemData,no-ge-page
+8060040,Hempen Drawers (Brown),_item armor equipment itemData,no-ge-page
+8060042,Hempen Drawers (Grey),_item armor equipment itemData,no-ge-page
+8060043,Hempen Drawers (Beige),_item armor equipment itemData,no-ge-page
+8060044,Hempen Pantalettes (Brown),_item armor equipment itemData,no-ge-page
+8060046,Hempen Pantalettes (Grey),_item armor equipment itemData,no-ge-page
+8060047,Hempen Pantalettes (Beige),_item armor equipment itemData,no-ge-page
+8060048,Hempen Trunks (Brown),_item armor equipment itemData,no-ge-page
+8060050,Hempen Trunks (Grey),_item armor equipment itemData,no-ge-page
+8060051,Hempen Trunks (Beige),_item armor equipment itemData,no-ge-page
+8060053,Cotton Halftights (Brown),_item armor equipment itemData,no-ge-page
+8060054,Cotton Halftights (Yellow),_item armor equipment itemData,no-ge-page
+8060055,Cotton Halftights (Green),_item armor equipment itemData,no-ge-page
+8060056,Cotton Halftights (Blue),_item armor equipment itemData,no-ge-page
+8060058,Cotton Pagne (Brown),_item armor equipment itemData,no-ge-page
+8060059,Cotton Pagne (Yellow),_item armor equipment itemData,no-ge-page
+8060060,Cotton Pagne (Green),_item armor equipment itemData,no-ge-page
+8060061,Cotton Pagne (Blue),_item armor equipment itemData,no-ge-page
+8060063,Cotton Loinguard (Brown),_item armor equipment itemData,no-ge-page
+8060064,Cotton Loinguard (Yellow),_item armor equipment itemData,no-ge-page
+8060065,Cotton Loinguard (Green),_item armor equipment itemData,no-ge-page
+8060066,Cotton Loinguard (Blue),_item armor equipment itemData,no-ge-page
+8060068,Cotton Braies (Brown),_item armor equipment itemData,no-ge-page
+8060069,Cotton Braies (Yellow),_item armor equipment itemData,no-ge-page
+8060070,Cotton Braies (Green),_item armor equipment itemData,no-ge-page
+8060071,Cotton Braies (Blue),_item armor equipment itemData,no-ge-page
+8060073,Cotton Stockings (Brown),_item armor equipment itemData,no-ge-page
+8060074,Cotton Stockings (Yellow),_item armor equipment itemData,no-ge-page
+8060075,Cotton Stockings (Green),_item armor equipment itemData,no-ge-page
+8060076,Cotton Stockings (Blue),_item armor equipment itemData,no-ge-page
+8060078,Cotton Shorts (Brown),_item armor equipment itemData,no-ge-page
+8060079,Cotton Shorts (Yellow),_item armor equipment itemData,no-ge-page
+8060080,Cotton Shorts (Green),_item armor equipment itemData,no-ge-page
+8060081,Cotton Shorts (Blue),_item armor equipment itemData,no-ge-page
+8060083,Cotton Drawers (Brown),_item armor equipment itemData,no-ge-page
+8060084,Cotton Drawers (Yellow),_item armor equipment itemData,no-ge-page
+8060085,Cotton Drawers (Green),_item armor equipment itemData,no-ge-page
+8060086,Cotton Drawers (Blue),_item armor equipment itemData,no-ge-page
+8060088,Cotton Pantalettes (Brown),_item armor equipment itemData,no-ge-page
+8060089,Cotton Pantalettes (Yellow),_item armor equipment itemData,no-ge-page
+8060090,Cotton Pantalettes (Green),_item armor equipment itemData,no-ge-page
+8060091,Cotton Pantalettes (Blue),_item armor equipment itemData,no-ge-page
+8060093,Cotton Trunks (Brown),_item armor equipment itemData,no-ge-page
+8060094,Cotton Trunks (Yellow),_item armor equipment itemData,no-ge-page
+8060095,Cotton Trunks (Green),_item armor equipment itemData,no-ge-page
+8060096,Cotton Trunks (Blue),_item armor equipment itemData,no-ge-page
+8070008,Boarskin Smithy's Gloves (Red),_item armor equipment itemData,no-ge-page
+8070009,[en],_item armor equipment itemData,no-english-name
+8070010,[en],_item armor equipment itemData,no-english-name
+8070011,[en],_item armor equipment itemData,no-english-name
+8070012,[en],_item armor equipment itemData,no-english-name
+8070013,[en],_item armor equipment itemData,no-english-name
+8070015,Raptorskin Smithy's Gloves (Grey),_item armor equipment itemData,no-ge-page
+8070016,Raptorskin Smithy's Gloves (Green),_item armor equipment itemData,no-ge-page
+8070017,Raptorskin Smithy's Gloves (Blue),_item armor equipment itemData,no-ge-page
+8070018,[en],_item armor equipment itemData,no-english-name
+8070110,Steel Gauntlets (Blue),_item armor equipment itemData,no-ge-page
+8070111,Cobalt Gauntlets (Blue),_item armor equipment itemData,no-ge-page
+8070114,Cobalt Gauntlets (Red),_item armor equipment itemData,no-ge-page
+8070115,[en],_item armor equipment itemData,no-english-name
+8070116,[en],_item armor equipment itemData,no-english-name
+8070117,[en],_item armor equipment itemData,no-english-name
+8070118,[en],_item armor equipment itemData,no-english-name
+8070119,[en],_item armor equipment itemData,no-english-name
+8070203,[en],_item armor equipment itemData,no-english-name
+8070204,[en],_item armor equipment itemData,no-english-name
+8070205,[en],_item armor equipment itemData,no-english-name
+8070206,[en],_item armor equipment itemData,no-english-name
+8070207,[en],_item armor equipment itemData,no-english-name
+8070219,Iron Vambraces (Brown),_item armor equipment itemData,no-ge-page
+8070221,Steel Vambraces (Red),_item armor equipment itemData,no-ge-page
+8070223,Mythril Vambraces (Red),_item armor equipment itemData,no-ge-page
+8070225,Cobalt Vambraces (Red),_item armor equipment itemData,no-ge-page
+8070226,Cobalt Vambraces (Blue),_item armor equipment itemData,no-ge-page
+8070227,Cobalt Vambraces (Green),_item armor equipment itemData,no-ge-page
+8070228,[en],_item armor equipment itemData,no-english-name
+8070229,[en],_item armor equipment itemData,no-english-name
+8070230,[en],_item armor equipment itemData,no-english-name
+8070231,[en],_item armor equipment itemData,no-english-name
+8070232,[en],_item armor equipment itemData,no-english-name
+8070233,[en],_item armor equipment itemData,no-english-name
+8070234,[en],_item armor equipment itemData,no-english-name
+8070235,[en],_item armor equipment itemData,no-english-name
+8070236,[en],_item armor equipment itemData,no-english-name
+8070237,[en],_item armor equipment itemData,no-english-name
+8070238,[en],_item armor equipment itemData,no-english-name
+8070239,[en],_item armor equipment itemData,no-english-name
+8070240,[en],_item armor equipment itemData,no-english-name
+8070241,[en],_item armor equipment itemData,no-english-name
+8070242,[en],_item armor equipment itemData,no-english-name
+8070321,Hempen Halfgloves (Red),_item armor equipment itemData,no-ge-page
+8070323,Cotton Halfgloves (Green),_item armor equipment itemData,no-ge-page
+8070325,Woolen Halfgloves of Dexterity (Grey),_item armor equipment itemData,no-ge-page
+8070326,Woolen Halfgloves of Intelligence (Purple),_item armor equipment itemData,no-ge-page
+8070327,Woolen Halfgloves of Vitality (Black),_item armor equipment itemData,no-ge-page
+8070329,Felt Halfgloves of Dexterity (Blue),_item armor equipment itemData,no-ge-page
+8070330,Felt Halfgloves of Intelligence (Red),_item armor equipment itemData,no-ge-page
+8070331,Felt Halfgloves of Vitality (Brown),_item armor equipment itemData,no-ge-page
+8070332,Woolen Halfgloves (Grey),_item armor equipment itemData,no-ge-page
+8070333,Woolen Halfgloves (Purple),_item armor equipment itemData,no-ge-page
+8070334,Woolen Halfgloves (Black),_item armor equipment itemData,no-ge-page
+8070336,Woolen Halfgloves of Dexterity (Purple),_item armor equipment itemData,no-ge-page
+8070337,Woolen Halfgloves of Dexterity (Black),_item armor equipment itemData,no-ge-page
+8070339,Woolen Halfgloves of Intelligence (Grey),_item armor equipment itemData,no-ge-page
+8070340,Woolen Halfgloves of Intelligence (Black),_item armor equipment itemData,no-ge-page
+8070342,Woolen Halfgloves of Vitality (Grey),_item armor equipment itemData,no-ge-page
+8070343,Woolen Halfgloves of Vitality (Purple),_item armor equipment itemData,no-ge-page
+8070344,Felt Halfgloves (Blue),_item armor equipment itemData,no-ge-page
+8070345,Felt Halfgloves (Red),_item armor equipment itemData,no-ge-page
+8070347,Felt Halfgloves (Brown),_item armor equipment itemData,no-ge-page
+8070348,Felt Halfgloves (Green),_item armor equipment itemData,no-ge-page
+8070350,Felt Halfgloves of Dexterity (Red),_item armor equipment itemData,no-ge-page
+8070351,Felt Halfgloves of Dexterity (Brown),_item armor equipment itemData,no-ge-page
+8070352,Felt Halfgloves of Dexterity (Green),_item armor equipment itemData,no-ge-page
+8070354,Felt Halfgloves of Intelligence (Blue),_item armor equipment itemData,no-ge-page
+8070355,Felt Halfgloves of Intelligence (Brown),_item armor equipment itemData,no-ge-page
+8070356,Felt Halfgloves of Intelligence (Green),_item armor equipment itemData,no-ge-page
+8070358,Felt Halfgloves of Vitality (Blue),_item armor equipment itemData,no-ge-page
+8070359,Felt Halfgloves of Vitality (Red),_item armor equipment itemData,no-ge-page
+8070360,Felt Halfgloves of Vitality (Green),_item armor equipment itemData,no-ge-page
+8070417,Hempen Work Gloves (Brown),_item armor equipment itemData,no-ge-page
+8070419,Cotton Work Gloves (Yellow),_item armor equipment itemData,no-ge-page
+8070421,Woolen Work Gloves of Vitality (Red),_item armor equipment itemData,no-ge-page
+8070422,Woolen Work Gloves of Strength (Grey),_item armor equipment itemData,no-ge-page
+8070423,Woolen Work Gloves of Dexterity (Black),_item armor equipment itemData,no-ge-page
+8070425,Felt Work Gloves of Vitality (Red),_item armor equipment itemData,no-ge-page
+8070426,Felt Work Gloves of Strength (Green),_item armor equipment itemData,no-ge-page
+8070427,Felt Work Gloves of Dexterity (Blue),_item armor equipment itemData,no-ge-page
+8070428,Woolen Work Gloves (Red),_item armor equipment itemData,no-ge-page
+8070429,Woolen Work Gloves (Grey),_item armor equipment itemData,no-ge-page
+8070430,Woolen Work Gloves (Black),_item armor equipment itemData,no-ge-page
+8070432,Woolen Work Gloves of Vitality (Grey),_item armor equipment itemData,no-ge-page
+8070433,Woolen Work Gloves of Vitality (Black),_item armor equipment itemData,no-ge-page
+8070435,Woolen Work Gloves of Strength (Red),_item armor equipment itemData,no-ge-page
+8070436,Woolen Work Gloves of Strength (Black),_item armor equipment itemData,no-ge-page
+8070438,Woolen Work Gloves of Dexterity (Red),_item armor equipment itemData,no-ge-page
+8070439,Woolen Work Gloves of Dexterity (Grey),_item armor equipment itemData,no-ge-page
+8070440,Felt Work Gloves (Red),_item armor equipment itemData,no-ge-page
+8070441,Felt Work Gloves (Green),_item armor equipment itemData,no-ge-page
+8070442,Felt Work Gloves (Blue),_item armor equipment itemData,no-ge-page
+8070443,Felt Work Gloves (Brown),_item armor equipment itemData,no-ge-page
+8070445,Felt Work Gloves of Vitality (Green),_item armor equipment itemData,no-ge-page
+8070446,Felt Work Gloves of Vitality (Blue),_item armor equipment itemData,no-ge-page
+8070447,Felt Work Gloves of Vitality (Brown),_item armor equipment itemData,no-ge-page
+8070449,Felt Work Gloves of Strength (Red),_item armor equipment itemData,no-ge-page
+8070450,Felt Work Gloves of Strength (Blue),_item armor equipment itemData,no-ge-page
+8070451,Felt Work Gloves of Strength (Brown),_item armor equipment itemData,no-ge-page
+8070453,Felt Work Gloves of Dexterity (Red),_item armor equipment itemData,no-ge-page
+8070454,Felt Work Gloves of Dexterity (Green),_item armor equipment itemData,no-ge-page
+8070455,Felt Work Gloves of Dexterity (Brown),_item armor equipment itemData,no-ge-page
+8070503,Dated Fingerless Leather Gloves (Black),_item armor equipment itemData,no-ge-page
+8070504,Dated Fingerless Leather Gloves (Red),_item armor equipment itemData,no-ge-page
+8070505,Dated Fingerless Leather Gloves (Ochre),_item armor equipment itemData,no-ge-page
+8070506,Dated Fingerless Leather Gloves (Green),_item armor equipment itemData,no-ge-page
+8070507,Dated Fingerless Toadskin Gloves (Black),_item armor equipment itemData,no-ge-page
+8070508,Dated Fingerless Toadskin Gloves (Red),_item armor equipment itemData,no-ge-page
+8070509,Dated Fingerless Toadskin Gloves (Ochre),_item armor equipment itemData,no-ge-page
+8070510,Dated Fingerless Toadskin Gloves (Green),_item armor equipment itemData,no-ge-page
+8070515,Fingerless Leather Gloves of Slaying (Red),_item armor equipment itemData,no-ge-page
+8070516,Fingerless Leather Gloves of Toiling (Green),_item armor equipment itemData,no-ge-page
+8070518,Fingerless Boarskin Gloves of Slaying (Red),_item armor equipment itemData,no-ge-page
+8070519,Fingerless Boarskin Gloves of Toiling (Green),_item armor equipment itemData,no-ge-page
+8070521,Fingerless Peisteskin Gloves of Slaying (White),_item armor equipment itemData,no-ge-page
+8070522,Fingerless Peisteskin Gloves of Toiling (Blue),_item armor equipment itemData,no-ge-page
+8070524,Fingerless Raptorskin Gloves of Slaying (White),_item armor equipment itemData,no-ge-page
+8070525,Fingerless Raptorskin Gloves of Toiling (Blue),_item armor equipment itemData,no-ge-page
+8070527,Fingerless Leather Gloves (Red),_item armor equipment itemData,no-ge-page
+8070528,Fingerless Leather Gloves (Green),_item armor equipment itemData,no-ge-page
+8070530,Fingerless Leather Gloves of Slaying (Green),_item armor equipment itemData,no-ge-page
+8070532,Fingerless Leather Gloves of Toiling (Red),_item armor equipment itemData,no-ge-page
+8070533,Fingerless Boarskin Gloves (Red),_item armor equipment itemData,no-ge-page
+8070534,Fingerless Boarskin Gloves (Green),_item armor equipment itemData,no-ge-page
+8070536,Fingerless Boarskin Gloves of Slaying (Green),_item armor equipment itemData,no-ge-page
+8070538,Fingerless Boarskin Gloves of Toiling (Red),_item armor equipment itemData,no-ge-page
+8070539,Fingerless Peisteskin Gloves (White),_item armor equipment itemData,no-ge-page
+8070540,Fingerless Peisteskin Gloves (Blue),_item armor equipment itemData,no-ge-page
+8070542,Fingerless Peisteskin Gloves of Slaying (Blue),_item armor equipment itemData,no-ge-page
+8070544,Fingerless Peisteskin Gloves of Toiling (White),_item armor equipment itemData,no-ge-page
+8070545,Fingerless Raptorskin Gloves (White),_item armor equipment itemData,no-ge-page
+8070546,Fingerless Raptorskin Gloves (Blue),_item armor equipment itemData,no-ge-page
+8070547,Fingerless Raptorskin Gloves (Red),_item armor equipment itemData,no-ge-page
+8070549,Fingerless Raptorskin Gloves of Slaying (Blue),_item armor equipment itemData,no-ge-page
+8070550,Fingerless Raptorskin Gloves of Slaying (Red),_item armor equipment itemData,no-ge-page
+8070552,Fingerless Raptorskin Gloves of Toiling (White),_item armor equipment itemData,no-ge-page
+8070553,Fingerless Raptorskin Gloves of Toiling (Red),_item armor equipment itemData,no-ge-page
+8070701,Dated Sheepskin Bracers (Brown),_item armor equipment itemData,no-ge-page
+8070702,Dated Sheepskin Bracers (Grey),_item armor equipment itemData,no-ge-page
+8070703,Dated Sheepskin Bracers (Beige),_item armor equipment itemData,no-ge-page
+8070721,Woolen Bracers (Red),_item armor equipment itemData,no-ge-page
+8070723,Felt Bracers (Blue),_item armor equipment itemData,no-ge-page
+8070808,Sheepskin Mitts (Grey),_item armor equipment itemData,no-ge-page
+8070810,Leather Mitts (Black),_item armor equipment itemData,no-ge-page
+8070812,[en],_item armor equipment itemData,no-english-name
+8070903,Dated Leather Armguards (Black),_item armor equipment itemData,no-ge-page
+8070904,Dated Leather Armguards (Ochre),_item armor equipment itemData,no-ge-page
+8070905,Dated Leather Armguards (Green),_item armor equipment itemData,no-ge-page
+8070906,Dated Leather Armguards (Red),_item armor equipment itemData,no-ge-page
+8070907,Dated Spiked Leather Armguards (Black),_item armor equipment itemData,no-ge-page
+8070908,Dated Spiked Leather Armguards (Ochre),_item armor equipment itemData,no-ge-page
+8070909,Dated Spiked Leather Armguards (Green),_item armor equipment itemData,no-ge-page
+8070910,Dated Spiked Leather Armguards (Red),_item armor equipment itemData,no-ge-page
+8070912,Leather Armguards (Green),_item armor equipment itemData,no-ge-page
+8070914,Toadskin Armguards (Black),_item armor equipment itemData,no-ge-page
+8071014,Sheepskin Wristguards (Brown),_item armor equipment itemData,no-ge-page
+8071016,Dodoskin Wristguards (Black),_item armor equipment itemData,no-ge-page
+8071117,Velveteen Shortgloves (Red),_item armor equipment itemData,no-ge-page
+8071118,Velveteen Shortgloves (Yellow),_item armor equipment itemData,no-ge-page
+8071120,Linen Shortgloves (Blue),_item armor equipment itemData,no-ge-page
+8071121,Linen Shortgloves (Brown),_item armor equipment itemData,no-ge-page
+8071122,Linen Shortgloves (Red),_item armor equipment itemData,no-ge-page
+8071123,Linen Shortgloves (Yellow),_item armor equipment itemData,no-ge-page
+8071203,Leather Ringbands (Green),_item armor equipment itemData,no-ge-page
+8071205,Boarskin Ringbands (Brown),_item armor equipment itemData,no-ge-page
+8071506,Heavy Darksteel Gauntlets (White),_item armor equipment itemData,no-ge-page
+8071507,Heavy Darksteel Gauntlets (Red),_item armor equipment itemData,no-ge-page
+8071508,Heavy Darksteel Gauntlets (Green),_item armor equipment itemData,no-ge-page
+8071509,Heavy Darksteel Gauntlets (Blue),_item armor equipment itemData,no-ge-page
+8071511,Gryphonskin Gloves (White),_item armor equipment itemData,no-ge-page
+8071512,Gryphonskin Gloves (Black),_item armor equipment itemData,no-ge-page
+8071513,Gryphonskin Gloves (Red),_item armor equipment itemData,no-ge-page
+8071514,Gryphonskin Gloves (Yellow),_item armor equipment itemData,no-ge-page
+8071516,Vanya Gloves (Yellow),_item armor equipment itemData,no-ge-page
+8071517,Vanya Gloves (Black),_item armor equipment itemData,no-ge-page
+8071518,Vanya Gloves (Purple),_item armor equipment itemData,no-ge-page
+8071519,Vanya Gloves (Red),_item armor equipment itemData,no-ge-page
+8080007,[en],_item armor equipment itemData,no-english-name
+8080008,Boarskin Thighboots (Red),_item armor equipment itemData,no-ge-page
+8080009,Raptorskin Thighboots (Green),_item armor equipment itemData,no-ge-page
+8080010,Raptorskin Thighboots (Blue),_item armor equipment itemData,no-ge-page
+8080012,Raptorskin Thighboots (Grey),_item armor equipment itemData,no-ge-page
+8080013,[en],_item armor equipment itemData,no-english-name
+8080014,[en],_item armor equipment itemData,no-english-name
+8080017,Weathered Thighboots (Grey),_item armor equipment itemData,no-ge-page
+8080110,Steel Sabatons (Blue),_item armor equipment itemData,no-ge-page
+8080111,Cobalt Sabatons (Blue),_item armor equipment itemData,no-ge-page
+8080114,Cobalt Sabatons (Red),_item armor equipment itemData,no-ge-page
+8080117,Darksteel Sabatons (White),_item armor equipment itemData,no-ge-page
+8080118,Darksteel Sabatons (Gold),_item armor equipment itemData,no-ge-page
+8080119,[en],_item armor equipment itemData,no-english-name
+8080221,Sheepskin Duckbills of Casting (Brown),_item armor equipment itemData,no-ge-page
+8080222,Sheepskin Duckbills of Toiling (Red),_item armor equipment itemData,no-ge-page
+8080223,Sheepskin Duckbills of Toiling (Grey),_item armor equipment itemData,no-ge-page
+8080225,Padded Sheepskin Duckbills of Casting (Yellow),_item armor equipment itemData,no-ge-page
+8080226,Padded Sheepskin Duckbills of Toiling (Blue),_item armor equipment itemData,no-ge-page
+8080227,Padded Sheepskin Duckbills of Toiling (Green),_item armor equipment itemData,no-ge-page
+8080228,Sheepskin Duckbills (Brown),_item armor equipment itemData,no-ge-page
+8080229,Sheepskin Duckbills (Red),_item armor equipment itemData,no-ge-page
+8080230,Sheepskin Duckbills (Grey),_item armor equipment itemData,no-ge-page
+8080232,Sheepskin Duckbills of Casting (Red),_item armor equipment itemData,no-ge-page
+8080233,Sheepskin Duckbills of Casting (Grey),_item armor equipment itemData,no-ge-page
+8080235,Sheepskin Duckbills of Toiling (Brown),_item armor equipment itemData,no-ge-page
+8080236,Padded Sheepskin Duckbills (Yellow),_item armor equipment itemData,no-ge-page
+8080237,Padded Sheepskin Duckbills (Blue),_item armor equipment itemData,no-ge-page
+8080238,Padded Sheepskin Duckbills (Green),_item armor equipment itemData,no-ge-page
+8080240,Padded Sheepskin Duckbills of Casting (Blue),_item armor equipment itemData,no-ge-page
+8080241,Padded Sheepskin Duckbills of Casting (Green),_item armor equipment itemData,no-ge-page
+8080243,Padded Sheepskin Duckbills of Toiling (Yellow),_item armor equipment itemData,no-ge-page
+8080244,[en],_item armor equipment itemData,no-english-name
+8080321,Oak Pattens of the Mind (Grey),_item armor equipment itemData,no-ge-page
+8080322,Oak Pattens of Vitality (Purple),_item armor equipment itemData,no-ge-page
+8080323,Oak Pattens of Intelligence (Black),_item armor equipment itemData,no-ge-page
+8080325,Mahogany Pattens of the Mind (Blue),_item armor equipment itemData,no-ge-page
+8080326,Mahogany Pattens of Vitality (Red),_item armor equipment itemData,no-ge-page
+8080327,Mahogany Pattens of Intelligence (Brown),_item armor equipment itemData,no-ge-page
+8080328,Oak Pattens (Grey),_item armor equipment itemData,no-ge-page
+8080329,Oak Pattens (Purple),_item armor equipment itemData,no-ge-page
+8080330,Oak Pattens (Black),_item armor equipment itemData,no-ge-page
+8080332,Oak Pattens of the Mind (Purple),_item armor equipment itemData,no-ge-page
+8080333,Oak Pattens of the Mind (Black),_item armor equipment itemData,no-ge-page
+8080335,Oak Pattens of Vitality (Grey),_item armor equipment itemData,no-ge-page
+8080336,Oak Pattens of Vitality (Black),_item armor equipment itemData,no-ge-page
+8080338,Oak Pattens of Intelligence (Grey),_item armor equipment itemData,no-ge-page
+8080339,Oak Pattens of Intelligence (Purple),_item armor equipment itemData,no-ge-page
+8080340,Mahogany Pattens (Blue),_item armor equipment itemData,no-ge-page
+8080341,Mahogany Pattens (Red),_item armor equipment itemData,no-ge-page
+8080342,Mahogany Pattens (Brown),_item armor equipment itemData,no-ge-page
+8080343,Mahogany Pattens (Green),_item armor equipment itemData,no-ge-page
+8080345,Mahogany Pattens of the Mind (Red),_item armor equipment itemData,no-ge-page
+8080347,Weathered Pattens (Grey),_item armor equipment itemData,no-ge-page
+8080350,Mahogany Pattens of the Mind (Brown),_item armor equipment itemData,no-ge-page
+8080351,Mahogany Pattens of the Mind (Green),_item armor equipment itemData,no-ge-page
+8080353,Mahogany Pattens of Vitality (Blue),_item armor equipment itemData,no-ge-page
+8080354,Mahogany Pattens of Vitality (Brown),_item armor equipment itemData,no-ge-page
+8080355,Mahogany Pattens of Vitality (Green),_item armor equipment itemData,no-ge-page
+8080357,Mahogany Pattens of Intelligence (Blue),_item armor equipment itemData,no-ge-page
+8080358,Mahogany Pattens of Intelligence (Red),_item armor equipment itemData,no-ge-page
+8080359,Mahogany Pattens of Intelligence (Green),_item armor equipment itemData,no-ge-page
+8080425,Weathered Workboots (Grey),_item armor equipment itemData,no-ge-page
+8080428,Boarskin Workboots of the Mind (Brown),_item armor equipment itemData,no-ge-page
+8080429,Boarskin Workboots of Intelligence (White),_item armor equipment itemData,no-ge-page
+8080430,Boarskin Workboots of Piety (Blue),_item armor equipment itemData,no-ge-page
+8080432,Raptorskin Workboots of the Mind (Brown),_item armor equipment itemData,no-ge-page
+8080433,Raptorskin Workboots of Intelligence (Yellow),_item armor equipment itemData,no-ge-page
+8080434,Raptorskin Workboots of Piety (Blue),_item armor equipment itemData,no-ge-page
+8080435,Boarskin Workboots (Brown),_item armor equipment itemData,no-ge-page
+8080436,Boarskin Workboots (White),_item armor equipment itemData,no-ge-page
+8080437,Boarskin Workboots (Blue),_item armor equipment itemData,no-ge-page
+8080439,Boarskin Workboots of the Mind (White),_item armor equipment itemData,no-ge-page
+8080440,Boarskin Workboots of the Mind (Blue),_item armor equipment itemData,no-ge-page
+8080442,Boarskin Workboots of Intelligence (Brown),_item armor equipment itemData,no-ge-page
+8080443,Boarskin Workboots of Intelligence (Blue),_item armor equipment itemData,no-ge-page
+8080445,Boarskin Workboots of Piety (Brown),_item armor equipment itemData,no-ge-page
+8080446,Boarskin Workboots of Piety (White),_item armor equipment itemData,no-ge-page
+8080447,Raptorskin Workboots (Brown),_item armor equipment itemData,no-ge-page
+8080448,Raptorskin Workboots (Yellow),_item armor equipment itemData,no-ge-page
+8080449,Raptorskin Workboots (Blue),_item armor equipment itemData,no-ge-page
+8080450,Raptorskin Workboots (Red),_item armor equipment itemData,no-ge-page
+8080452,Raptorskin Workboots of the Mind (Yellow),_item armor equipment itemData,no-ge-page
+8080453,Raptorskin Workboots of the Mind (Blue),_item armor equipment itemData,no-ge-page
+8080454,Raptorskin Workboots of the Mind (Red),_item armor equipment itemData,no-ge-page
+8080456,Raptorskin Workboots of Intelligence (Brown),_item armor equipment itemData,no-ge-page
+8080457,Raptorskin Workboots of Intelligence (Blue),_item armor equipment itemData,no-ge-page
+8080458,Raptorskin Workboots of Intelligence (Red),_item armor equipment itemData,no-ge-page
+8080460,Raptorskin Workboots of Piety (Brown),_item armor equipment itemData,no-ge-page
+8080461,Raptorskin Workboots of Piety (Yellow),_item armor equipment itemData,no-ge-page
+8080462,Raptorskin Workboots of Piety (Red),_item armor equipment itemData,no-ge-page
+8080504,Dated Leather Crakows (Black),_item armor equipment itemData,no-ge-page
+8080505,Dated Leather Crakows (Red),_item armor equipment itemData,no-ge-page
+8080506,Dated Leather Crakows (Ochre),_item armor equipment itemData,no-ge-page
+8080507,Dated Leather Crakows (Green),_item armor equipment itemData,no-ge-page
+8080508,Dated Toadskin Crakows (Black),_item armor equipment itemData,no-ge-page
+8080509,Dated Toadskin Crakows (Red),_item armor equipment itemData,no-ge-page
+8080510,Dated Toadskin Crakows (Ochre),_item armor equipment itemData,no-ge-page
+8080511,Dated Toadskin Crakows (Green),_item armor equipment itemData,no-ge-page
+8080512,Hermes' Shoes,_item armor equipment itemData,no-ge-page
+8080514,Leather Crakows of Slaying (Red),_item armor equipment itemData,no-ge-page
+8080515,Leather Crakows of Toiling (Green),_item armor equipment itemData,no-ge-page
+8080516,Leather Crakows of Invoking (Brown),_item armor equipment itemData,no-ge-page
+8080518,Boarskin Crakows of Slaying (Red),_item armor equipment itemData,no-ge-page
+8080519,Boarskin Crakows of Toiling (Green),_item armor equipment itemData,no-ge-page
+8080520,Boarskin Crakows of Invoking (Brown),_item armor equipment itemData,no-ge-page
+8080522,Peisteskin Crakows of Slaying (White),_item armor equipment itemData,no-ge-page
+8080523,Peisteskin Crakows of Toiling (Blue),_item armor equipment itemData,no-ge-page
+8080524,Peisteskin Crakows of Invoking (Red),_item armor equipment itemData,no-ge-page
+8080526,Leather Crakows (Red),_item armor equipment itemData,no-ge-page
+8080527,Leather Crakows (Green),_item armor equipment itemData,no-ge-page
+8080528,Leather Crakows (Brown),_item armor equipment itemData,no-ge-page
+8080530,Leather Crakows of Slaying (Green),_item armor equipment itemData,no-ge-page
+8080531,Leather Crakows of Slaying (Brown),_item armor equipment itemData,no-ge-page
+8080533,Leather Crakows of Toiling (Red),_item armor equipment itemData,no-ge-page
+8080534,Leather Crakows of Toiling (Brown),_item armor equipment itemData,no-ge-page
+8080536,Leather Crakows of Invoking (Red),_item armor equipment itemData,no-ge-page
+8080537,Leather Crakows of Invoking (Green),_item armor equipment itemData,no-ge-page
+8080538,Boarskin Crakows (Red),_item armor equipment itemData,no-ge-page
+8080539,Boarskin Crakows (Green),_item armor equipment itemData,no-ge-page
+8080540,Boarskin Crakows (Brown),_item armor equipment itemData,no-ge-page
+8080542,Boarskin Crakows of Slaying (Green),_item armor equipment itemData,no-ge-page
+8080543,Boarskin Crakows of Slaying (Brown),_item armor equipment itemData,no-ge-page
+8080545,Boarskin Crakows of Toiling (Red),_item armor equipment itemData,no-ge-page
+8080546,Boarskin Crakows of Toiling (Brown),_item armor equipment itemData,no-ge-page
+8080548,Boarskin Crakows of Invoking (Red),_item armor equipment itemData,no-ge-page
+8080549,Boarskin Crakows of Invoking (Green),_item armor equipment itemData,no-ge-page
+8080550,Peisteskin Crakows (White),_item armor equipment itemData,no-ge-page
+8080551,Peisteskin Crakows (Blue),_item armor equipment itemData,no-ge-page
+8080552,Peisteskin Crakows (Red),_item armor equipment itemData,no-ge-page
+8080554,Peisteskin Crakows of Slaying (Blue),_item armor equipment itemData,no-ge-page
+8080555,Peisteskin Crakows of Slaying (Red),_item armor equipment itemData,no-ge-page
+8080557,Peisteskin Crakows of Toiling (White),_item armor equipment itemData,no-ge-page
+8080558,Peisteskin Crakows of Toiling (Red),_item armor equipment itemData,no-ge-page
+8080560,Peisteskin Crakows of Invoking (White),_item armor equipment itemData,no-ge-page
+8080561,Peisteskin Crakows of Invoking (Blue),_item armor equipment itemData,no-ge-page
+8080601,Weathered Shoes (Taupe),_item armor equipment itemData,no-ge-page
+8080616,Sheepskin Shoes (Brown),_item armor equipment itemData,no-ge-page
+8080618,Dodoskin Shoes (Black),_item armor equipment itemData,no-ge-page
+8080711,Boarskin Moccasins (Black),_item armor equipment itemData,no-ge-page
+8080713,Hunting Moccasins (White),_item armor equipment itemData,no-ge-page
+8080820,Iron-plated Jackboots (Black),_item armor equipment itemData,no-ge-page
+8080822,Steel-plated Jackboots (Black),_item armor equipment itemData,no-ge-page
+8080824,Mythril-plated Jackboots (White),_item armor equipment itemData,no-ge-page
+8080826,Cobalt-plated Jackboots (Red),_item armor equipment itemData,no-ge-page
+8080827,Cobalt-plated Jackboots (Blue),_item armor equipment itemData,no-ge-page
+8081017,Dodoskin Caligae (Black),_item armor equipment itemData,no-ge-page
+8081019,Steel-plated Caligae (Blue),_item armor equipment itemData,no-ge-page
+8081021,Mythril-plated Caligae (Brown),_item armor equipment itemData,no-ge-page
+8081023,Cobalt-plated Caligae (Grey),_item armor equipment itemData,no-ge-page
+8081105,Dated Dodoskin Leggings (Grey),_item armor equipment itemData,no-ge-page
+8081106,Dated Dodoskin Leggings (Beige),_item armor equipment itemData,no-ge-page
+8081107,Dated Dodoskin Leggings (Brown),_item armor equipment itemData,no-ge-page
+8081113,Dated Toadskin Leggings (Auburn),_item armor equipment itemData,no-ge-page
+8081114,Dated Toadskin Leggings (Pink),_item armor equipment itemData,no-ge-page
+8081115,Dated Toadskin Leggings (Brown),_item armor equipment itemData,no-ge-page
+8081116,Dated Toadskin Leggings (Blue),_item armor equipment itemData,no-ge-page
+8081119,Sheepskin Leggings (Grey),_item armor equipment itemData,no-ge-page
+8081121,Leather Leggings (Brown),_item armor equipment itemData,no-ge-page
+8081208,Judge's Sollerets,_item armor equipment itemData,no-ge-page
+8081211,Mythril Sollerets (Black),_item armor equipment itemData,no-ge-page
+8081213,Cobalt Sollerets (Red),_item armor equipment itemData,no-ge-page
+8081312,Dodoskin Espadrilles (Black),_item armor equipment itemData,no-ge-page
+8081617,Velveteen Gaiters (Red),_item armor equipment itemData,no-ge-page
+8081618,Velveteen Gaiters (Yellow),_item armor equipment itemData,no-ge-page
+8081620,Linen Gaiters (Blue),_item armor equipment itemData,no-ge-page
+8081621,Linen Gaiters (Brown),_item armor equipment itemData,no-ge-page
+8081622,Linen Gaiters (Red),_item armor equipment itemData,no-ge-page
+8081623,Linen Gaiters (Yellow),_item armor equipment itemData,no-ge-page
+8081905,Gryphonskin Thighboots (White),_item armor equipment itemData,no-ge-page
+8081906,Gryphonskin Thighboots (Black),_item armor equipment itemData,no-ge-page
+8081907,Gryphonskin Thighboots (Red),_item armor equipment itemData,no-ge-page
+8081908,Gryphonskin Thighboots (Yellow),_item armor equipment itemData,no-ge-page
+8081910,Vanya Crakows (Yellow),_item armor equipment itemData,no-ge-page
+8081911,Vanya Crakows (Black),_item armor equipment itemData,no-ge-page
+8081912,Vanya Crakows (Purple),_item armor equipment itemData,no-ge-page
+8081913,Vanya Crakows (Red),_item armor equipment itemData,no-ge-page
+8090009,Boarskin Tool Belt (Red),_item armor equipment itemData,no-ge-page
+8090109,[en],_item armor equipment itemData,no-english-name
+8090110,[en],_item armor equipment itemData,no-english-name
+8090205,Boarskin Satchel Belt (Blue),_item armor equipment itemData,no-ge-page
+8090406,Velveteen Rope Belt (Black),_item armor equipment itemData,no-ge-page
+8090601,Dated Leather Belt (Red),_item armor equipment itemData,no-ge-page
+8090602,Dated Leather Belt (Ochre),_item armor equipment itemData,no-ge-page
+8090603,Dated Leather Belt (Green),_item armor equipment itemData,no-ge-page
+8090606,Boarskin Belt (Brown),_item armor equipment itemData,no-ge-page
+8090702,Dated Velveteen Longsash (Red),_item armor equipment itemData,no-ge-page
+8090703,Dated Velveteen Longsash (Yellow),_item armor equipment itemData,no-ge-page
+8090705,Velveteen Longsash (Red),_item armor equipment itemData,no-ge-page
+8090803,Kobold Iron Tassets,_item armor equipment itemData,no-ge-page
+8090805,[en],_item armor equipment itemData,no-english-name
+8090806,[en],_item armor equipment itemData,no-english-name
+8090903,Voyager's Belt (Green),_item armor equipment itemData,no-ge-page
+9010044,Rubellite Bracelets,_item accessory armor equipment itemData weapon,no-ge-page
+9030039,Rubellite Earrings,_item accessory armor equipment itemData weapon,no-ge-page
+9030065,[en],_item accessory armor equipment itemData weapon,no-english-name
+9040045,Rubellite Choker,_item accessory armor equipment itemData weapon,no-ge-page
+9050002,Dated Copper Ring,_item accessory armor equipment itemData weapon,no-ge-page
+9050003,Dated Brass Ring,_item accessory armor equipment itemData weapon,no-ge-page
+9050004,Dated Silver Ring,_item accessory armor equipment itemData weapon,no-ge-page
+9050045,Rubellite Ring,_item accessory armor equipment itemData weapon,no-ge-page
+10002092,Iron Scales,_item itemData,no-ge-page
+10003052,Brass Rings,_item itemData,no-ge-page
+10007124,[en],_item itemData,no-english-name
+10009310,Clear Glass Lens,_item itemData,no-ge-page
+10009311,Green Glass Lens,_item itemData,no-ge-page
+10009312,Red Glass Lens,_item itemData,no-ge-page
+10010724,All-purpose Green Dye,_item itemData,no-ge-page
+10011110,Greentide Psashp,_item itemData,no-ge-page
+10011111,Redtide Psashp,_item itemData,no-ge-page
+10011112,Goldtide Psashp,_item itemData,no-ge-page
+10011125,[en],_item itemData,no-english-name
+10011199,Supple Spruce Branch,_item itemData,no-ge-page
+10012014,Red Bombard Ash,_item itemData,no-ge-page
+10012015,Blue Bombard Ash,_item itemData,no-ge-page
+10012016,Green Bombard Ash,_item itemData,no-ge-page
+10012017,Black Bombard Ash,_item itemData,no-ge-page
+10012018,Red Lion,_item itemData,no-ge-page
+10012019,Blue Spinner,_item itemData,no-ge-page
+10012020,Green Comet,_item itemData,no-ge-page
+10012021,Azeyma's Candle,_item itemData,no-ge-page
+10100133,Sagacious Aim Materia I,_item itemData,no-ge-page
+10100134,Sagacious Aim Materia II,_item itemData,no-ge-page
+10100135,Sagacious Aim Materia III,_item itemData,no-ge-page
+10100136,Sagacious Aim Materia IV,_item itemData,no-ge-page
+10100181,Manawall Materia I,_item itemData,no-ge-page
+10100182,Manawall Materia II,_item itemData,no-ge-page
+10100183,Manawall Materia III,_item itemData,no-ge-page
+10100184,Manawall Materia IV,_item itemData,no-ge-page
+10100225,Ahriman Gaze Materia I,_item itemData,no-ge-page
+10100226,Ahriman Gaze Materia II,_item itemData,no-ge-page
+10100227,Ahriman Gaze Materia III,_item itemData,no-ge-page
+10100228,Ahriman Gaze Materia IV,_item itemData,no-ge-page
+10100229,Bloodflow Materia I,_item itemData,no-ge-page
+10100230,Bloodflow Materia II,_item itemData,no-ge-page
+10100231,Bloodflow Materia III,_item itemData,no-ge-page
+10100232,Bloodflow Materia IV,_item itemData,no-ge-page
+10100233,Manaflow Materia I,_item itemData,no-ge-page
+10100234,Manaflow Materia II,_item itemData,no-ge-page
+10100235,Manaflow Materia III,_item itemData,no-ge-page
+10100236,Manaflow Materia IV,_item itemData,no-ge-page
+10100237,Mettleflow Materia I,_item itemData,no-ge-page
+10100238,Mettleflow Materia II,_item itemData,no-ge-page
+10100239,Mettleflow Materia III,_item itemData,no-ge-page
+10100240,Mettleflow Materia IV,_item itemData,no-ge-page
+10100249,Everspike Materia I,_item itemData,no-ge-page
+10100250,Everspike Materia II,_item itemData,no-ge-page
+10100251,Everspike Materia III,_item itemData,no-ge-page
+10100252,Everspike Materia IV,_item itemData,no-ge-page
+10100253,Soldier's Step Materia I,_item itemData,no-ge-page
+10100254,Soldier's Step Materia II,_item itemData,no-ge-page
+10100255,Soldier's Step Materia III,_item itemData,no-ge-page
+10100256,Soldier's Step Materia IV,_item itemData,no-ge-page
+10100257,Sorcerer's Step Materia I,_item itemData,no-ge-page
+10100258,Sorcerer's Step Materia II,_item itemData,no-ge-page
+10100259,Sorcerer's Step Materia III,_item itemData,no-ge-page
+10100260,Sorcerer's Step Materia IV,_item itemData,no-ge-page
+10100261,Sprinter's Step Materia I,_item itemData,no-ge-page
+10100262,Sprinter's Step Materia II,_item itemData,no-ge-page
+10100263,Sprinter's Step Materia III,_item itemData,no-ge-page
+10100264,Sprinter's Step Materia IV,_item itemData,no-ge-page
+10100265,Savant's Step Materia I,_item itemData,no-ge-page
+10100266,Savant's Step Materia II,_item itemData,no-ge-page
+10100267,Savant's Step Materia III,_item itemData,no-ge-page
+10100268,Savant's Step Materia IV,_item itemData,no-ge-page
+10100273,Breath of Fire Materia I,_item itemData,no-ge-page
+10100274,Breath of Fire Materia II,_item itemData,no-ge-page
+10100275,Breath of Fire Materia III,_item itemData,no-ge-page
+10100276,Breath of Fire Materia IV,_item itemData,no-ge-page
+10100277,Breath of Ice Materia I,_item itemData,no-ge-page
+10100278,Breath of Ice Materia II,_item itemData,no-ge-page
+10100279,Breath of Ice Materia III,_item itemData,no-ge-page
+10100280,Breath of Ice Materia IV,_item itemData,no-ge-page
+10100281,Breath of Wind Materia I,_item itemData,no-ge-page
+10100282,Breath of Wind Materia II,_item itemData,no-ge-page
+10100283,Breath of Wind Materia III,_item itemData,no-ge-page
+10100284,Breath of Wind Materia IV,_item itemData,no-ge-page
+10100285,Breath of Earth Materia I,_item itemData,no-ge-page
+10100286,Breath of Earth Materia II,_item itemData,no-ge-page
+10100287,Breath of Earth Materia III,_item itemData,no-ge-page
+10100288,Breath of Earth Materia IV,_item itemData,no-ge-page
+10100289,Breath of Lightning Materia I,_item itemData,no-ge-page
+10100290,Breath of Lightning Materia II,_item itemData,no-ge-page
+10100291,Breath of Lightning Materia III,_item itemData,no-ge-page
+10100292,Breath of Lightning Materia IV,_item itemData,no-ge-page
+10100293,Breath of Water Materia I,_item itemData,no-ge-page
+10100294,Breath of Water Materia II,_item itemData,no-ge-page
+10100295,Breath of Water Materia III,_item itemData,no-ge-page
+10100296,Breath of Water Materia IV,_item itemData,no-ge-page
+10100297,Bloodbringer Materia I,_item itemData,no-ge-page
+10100298,Bloodbringer Materia II,_item itemData,no-ge-page
+10100299,Bloodbringer Materia III,_item itemData,no-ge-page
+10100300,Bloodbringer Materia IV,_item itemData,no-ge-page
+10100301,Manabringer Materia I,_item itemData,no-ge-page
+10100302,Manabringer Materia II,_item itemData,no-ge-page
+10100303,Manabringer Materia III,_item itemData,no-ge-page
+10100304,Manabringer Materia IV,_item itemData,no-ge-page
+10100305,Mettlebringer Materia I,_item itemData,no-ge-page
+10100306,Mettlebringer Materia II,_item itemData,no-ge-page
+10100307,Mettlebringer Materia III,_item itemData,no-ge-page
+10100308,Mettlebringer Materia IV,_item itemData,no-ge-page
+10100309,Mana Martyr Materia I,_item itemData,no-ge-page
+10100310,Mana Martyr Materia II,_item itemData,no-ge-page
+10100311,Mana Martyr Materia III,_item itemData,no-ge-page
+10100312,Mana Martyr Materia IV,_item itemData,no-ge-page
+10100313,Mettle Martyr Materia I,_item itemData,no-ge-page
+10100314,Mettle Martyr Materia II,_item itemData,no-ge-page
+10100315,Mettle Martyr Materia III,_item itemData,no-ge-page
+10100316,Mettle Martyr Materia IV,_item itemData,no-ge-page
+10100317,Byregot's Hammer Materia I,_item itemData,no-ge-page
+10100318,Byregot's Hammer Materia II,_item itemData,no-ge-page
+10100319,Byregot's Hammer Materia III,_item itemData,no-ge-page
+10100320,Byregot's Hammer Materia IV,_item itemData,no-ge-page
+10100321,Menphina's Whisper Materia I,_item itemData,no-ge-page
+10100322,Menphina's Whisper Materia II,_item itemData,no-ge-page
+10100323,Menphina's Whisper Materia III,_item itemData,no-ge-page
+10100324,Menphina's Whisper Materia IV,_item itemData,no-ge-page
+10100353,[en],_item itemData,no-english-name
+10100354,[en],_item itemData,no-english-name
+10100355,[en],_item itemData,no-english-name
+10100356,[en],_item itemData,no-english-name
+10303002,Brass Spear Clasp,_item itemData,no-ge-page
+10303014,Feather Clasp,_item itemData,no-ge-page
+10303102,Brass Spear Butt,_item itemData,no-ge-page
+10308401,Hempen Halfrobe Front,_item itemData,no-ge-page
+10308402,Hempen Halfrobe Front (Brown),_item itemData,no-ge-page
+10308403,Hempen Halfrobe Front (Grey),_item itemData,no-ge-page
+10308404,Hempen Halfrobe Front (Beige),_item itemData,no-ge-page
+10308405,Cotton Halfrobe Front,_item itemData,no-ge-page
+10308406,Cotton Halfrobe Front (Red),_item itemData,no-ge-page
+10308407,Cotton Halfrobe Front (Yellow),_item itemData,no-ge-page
+10308408,Cotton Halfrobe Front (Green),_item itemData,no-ge-page
+10308409,Cotton Halfrobe Front (Blue),_item itemData,no-ge-page
+10309401,Hempen Halfrobe Back,_item itemData,no-ge-page
+10309402,Hempen Halfrobe Back (Brown),_item itemData,no-ge-page
+10309403,Hempen Halfrobe Back (Grey),_item itemData,no-ge-page
+10309404,Hempen Halfrobe Back (Beige),_item itemData,no-ge-page
+10309405,Cotton Halfrobe Back,_item itemData,no-ge-page
+10309406,Cotton Halfrobe Back (Red),_item itemData,no-ge-page
+10309407,Cotton Halfrobe Back (Yellow),_item itemData,no-ge-page
+10309408,Cotton Halfrobe Back (Green),_item itemData,no-ge-page
+10309409,Cotton Halfrobe Back (Blue),_item itemData,no-ge-page
+11000001,Balloonfish,_item itemData,no-ge-page
+11000002,Standard-Issue Flintlock,_item itemData,no-ge-page
+11000003,Faerie Remora,_item itemData,no-ge-page
+11000011,Vymelli Horn,_item itemData,no-ge-page
+11000015,Twisted Aldgoat Horn,_item itemData,no-ge-page
+11000016,Alchemical Pheromones,_item itemData,no-ge-page
+11000017,Ladybug Tears,_item itemData,no-ge-page
+11000018,Spiny Turnip Leaves,_item itemData,no-ge-page
+11000021,Leather Chocobo Saddle,_item itemData,no-ge-page
+11000022,Whistling Windwheel,_item itemData,no-ge-page
+11000023,Seastone,_item itemData,no-ge-page
+11000024,Reverberating Steel,_item itemData,no-ge-page
+11000025,Barrel Feed,_item itemData,no-ge-page
+11000027,Sable Salve,_item itemData,no-ge-page
+11000028,Gods' Quiver Petition,_item itemData,no-ge-page
+11000029,Colorful Building Block,_item itemData,no-ge-page
+11000030,Writ of Access,_item itemData,no-ge-page
+11000031,Seaspray Quiche,_item itemData,no-ge-page
+11000032,Mirage Token,_item itemData,no-ge-page
+11000033,Deep-red Ruby,_item itemData,no-ge-page
+11000034,Skull Island,_item itemData,no-ge-page
+11000035,Aged Rum,_item itemData,no-ge-page
+11000036,Far Eastern Sourleaf,_item itemData,no-ge-page
+11000037,Frondale's Funds,_item itemData,no-ge-page
+11000038,Penelope's Background,_item itemData,no-ge-page
+11000039,Penelope's Evaluation,_item itemData,no-ge-page
+11000040,Oak Atrium Ghost,_item itemData,no-ge-page
+11000041,Starfall Grass,_item itemData,no-ge-page
+11000042,Pirate Ship Tale,_item itemData,no-ge-page
+11000043,Yarzon Faeces,_item itemData,no-ge-page
+11000047,Fen[@1F]Yll Birkin Bag,_item itemData,no-ge-page
+11000048,Damaged Fen[@1F]Yll Boots,_item itemData,no-ge-page
+11000049,Vintage Fen[@1F]Yll Boots,_item itemData,no-ge-page
+11000052,Sound-proofing Rubber,_item itemData,no-ge-page
+11000057,Thanalan Spider Silk,_item itemData,no-ge-page
+11000065,Fairweather Fetish,_item itemData,no-ge-page
+11000066,Large Leaf,_item itemData,no-ge-page
+11000068,Light Branch,_item itemData,no-ge-page
+11000071,Devilbelly Meatball,_item itemData,no-ge-page
+11000072,Devilshroom,_item itemData,no-ge-page
+11000073,Foulbelly Meatball,_item itemData,no-ge-page
+11000074,Queer-smelling Meat,_item itemData,no-ge-page
+11000075,Sweet-smelling Spice,_item itemData,no-ge-page
+11000078,Frondale's Poultice,_item itemData,no-ge-page
+11000079,Faustigeant's Salve,_item itemData,no-ge-page
+11000081,Niellefresne's Gold Dust,_item itemData,no-ge-page
+11000082,Wind Ward,_item itemData,no-ge-page
+11000083,Earth Ward,_item itemData,no-ge-page
+11000084,Water Ward,_item itemData,no-ge-page
+11000085,Nostalgic Ink,_item itemData,no-ge-page
+11000088,Treant Vine,_item itemData,no-ge-page
+11000089,Velodyna Cosmos,_item itemData,no-ge-page
+11000090,Purification Mask,_item itemData,no-ge-page
+11000091,Podling,_item itemData,no-ge-page
+11000092,Balloon Cargo,_item itemData,no-ge-page
+11000093,Ixal Diary,_item itemData,no-ge-page
+11000094,Amalj'aa Ashes,_item itemData,no-ge-page
+11000095,Crystal Bag,_item itemData,no-ge-page
+11000096,Unaspected Crystal,_item itemData,no-ge-page
+11000099,Lady Lewena's Gil,_item itemData,no-ge-page
+11000100,Shiny Chip,_item itemData,no-ge-page
+11000101,Mysterious Leather Bag,_item itemData,no-ge-page
+11000102,Charred Red Newt,_item itemData,no-ge-page
+11000103,Bent Glasses,_item itemData,no-ge-page
+11000104,Island Coconut,_item itemData,no-ge-page
+11000105,Mimidoa Drill,_item itemData,no-ge-page
+11000106,Mimidoa Barrow,_item itemData,no-ge-page
+11000110,Adorable Miner Sketch,_item itemData,no-ge-page
+11000111,Graceful Miner Sketch,_item itemData,no-ge-page
+11000112,Dashing Miner Sketch,_item itemData,no-ge-page
+11000114,Violet Augite,_item itemData,no-ge-page
+11000115,Mismatched Stones,_item itemData,no-ge-page
+11000116,Heartstrike Replica,_item itemData,no-ge-page
+11000117,Pure Metal Ore,_item itemData,no-ge-page
+11000119,Silverwater,_item itemData,no-ge-page
+11000120,Sealed Correspondence,_item itemData,no-ge-page
+11000122,Shattered Brooch,_item itemData,no-ge-page
+11000123,Pearl Clover Blossom,_item itemData,no-ge-page
+11000124,F'lhaminn's Flower,_item itemData,no-ge-page
+11000127,Pixie Remora,_item itemData,no-ge-page
+11000128,Pearl Clover Seeds,_item itemData,no-ge-page
+11000129,Pearl Clover Fruit,_item itemData,no-ge-page
+11000131,Pirate Ship Funds,_item itemData,no-ge-page
+11000132,Kraken Register,_item itemData,no-ge-page
+11000133,Wawalago Message,_item itemData,no-ge-page
+11000134,Platinum Mirage Ledger,_item itemData,no-ge-page
+11000135,Meracydian Olives,_item itemData,no-ge-page
+11000136,Letter to Nenekko,_item itemData,no-ge-page
+11000137,Amajina Ceruleum,_item itemData,no-ge-page
+11000138,Pearl Clover Seedling,_item itemData,no-ge-page
+11000139,Midnight Slippers,_item itemData,no-ge-page
+11000142,Tinolqa Popoto,_item itemData,no-ge-page
+11000143,Blinking Eye,_item itemData,no-ge-page
+11000145,Tawdry Torque,_item itemData,no-ge-page
+11000146,Cedar Marionette,_item itemData,no-ge-page
+11000147,Nacre Ring,_item itemData,no-ge-page
+11000148,Reaver Wristlet,_item itemData,no-ge-page
+11000149,Musk Roseling Pollen,_item itemData,no-ge-page
+11000150,Beryl Crab Shell,_item itemData,no-ge-page
+11000151,White Ash,_item itemData,no-ge-page
+11000152,Wolf Tail Trophy,_item itemData,no-ge-page
+11000153,Cursed Lens,_item itemData,no-ge-page
+11000154,Slumber Nut,_item itemData,no-ge-page
+11000155,Skryvner Signet Ring,_item itemData,no-ge-page
+11000156,Sunsilk Muslin,_item itemData,no-ge-page
+11000157,Milkworm,_item itemData,no-ge-page
+11000158,Thanalan Natron,_item itemData,no-ge-page
+11000159,Menphina Stew,_item itemData,no-ge-page
+11000160,Lonsygg's Journal Scrap,_item itemData,no-ge-page
+11000161,Weaver Lily,_item itemData,no-ge-page
+11000162,Treehollow Brew,_item itemData,no-ge-page
+11000163,Séance Stone,_item itemData,no-ge-page
+11000164,Sable Tooth,_item itemData,no-ge-page
+11000165,Novice's Clasp,_item itemData,no-ge-page
+11000166,Theda's Ring,_item itemData,no-ge-page
+11000167,List of Companions,_item itemData,no-ge-page
+11000168,List of Champions,_item itemData,no-ge-page
+11000169,List of the Impoverished,_item itemData,no-ge-page
+11000170,List of Adoring Masses,_item itemData,no-ge-page
+11000171,List of the Elite,_item itemData,no-ge-page
+11000172,Milvaneth Talisman,_item itemData,no-ge-page
+11000173,Barbarous Choker,_item itemData,no-ge-page
+11000174,Conch Shell,_item itemData,no-ge-page
+11000175,Arrest Warrant,_item itemData,no-ge-page
+11000176,Fishtack,_item itemData,no-ge-page
+11000177,Sheepbur Seed,_item itemData,no-ge-page
+11000178,[en],_item itemData,no-english-name
+11000179,[en],_item itemData,no-english-name
+11000180,[en],_item itemData,no-english-name
+11000181,[en],_item itemData,no-english-name
+11000182,[en],_item itemData,no-english-name
+11000183,[en],_item itemData,no-english-name
+11000184,[en],_item itemData,no-english-name
+11000185,[en],_item itemData,no-english-name
+11000186,[en],_item itemData,no-english-name
+11000187,[en],_item itemData,no-english-name
+11000188,[en],_item itemData,no-english-name
+11000189,[en],_item itemData,no-english-name
+11000190,[en],_item itemData,no-english-name
+11000191,[en],_item itemData,no-english-name
+11000192,[en],_item itemData,no-english-name
+11000193,[en],_item itemData,no-english-name
+11000194,[en],_item itemData,no-english-name
+11000195,[en],_item itemData,no-english-name
+11000196,[en],_item itemData,no-english-name
+11000197,[en],_item itemData,no-english-name
+11000198,[en],_item itemData,no-english-name
+11000199,[en],_item itemData,no-english-name
+11000200,[en],_item itemData,no-english-name
+11000201,Lassae Ledger,_item itemData,no-ge-page
+11000202,Sourleaf Nectar,_item itemData,no-ge-page
+11000203,Death Sentence,_item itemData,no-ge-page
+11000204,Redbelly Wasp Map,_item itemData,no-ge-page
+11000205,[en],_item itemData,no-english-name
+11000206,Yellow Marble,_item itemData,no-ge-page
+11000207,Radz[@1F]at[@1F]Han Reserve,_item itemData,no-ge-page
+11000208,Airship Pass (GRD-LMS),_item itemData,no-ge-page
+11000209,Airship Pass (ULD-LMS),_item itemData,no-ge-page
+11000210,Fossil-fused Dark Matter,_item itemData,no-ge-page
+11000211,Keystone of the Bloom,_item itemData,no-ge-page
+11000212,Keystone of the Bud,_item itemData,no-ge-page
+11000213,Keystone of the Bough,_item itemData,no-ge-page
+11000214,Keystone of the Leaf,_item itemData,no-ge-page
+11000215,Keystone of the Trunk,_item itemData,no-ge-page
+11000216,Keystones,_item itemData,no-ge-page
+11000217,Ensorcelled Snowball,_item itemData,no-ge-page
+11000218,Heart of Winter,_item itemData,no-ge-page
+11000219,Young Dodo Leather,_item itemData,no-ge-page
+11000220,Bloody Ring,_item itemData,no-ge-page
+11000221,Needle Box,_item itemData,no-ge-page
+11000222,Sibold's Bouquet,_item itemData,no-ge-page
+11000223,Inkwell,_item itemData,no-ge-page
+11000224,Well-worn Bag,_item itemData,no-ge-page
+11000225,Divine Impetus,_item itemData,no-ge-page
+11000226,Coblyn Larva,_item itemData,no-ge-page
+11000227,Brass Kobold Strongbox Key,_item itemData,no-ge-page
+11000228,Mistbeard Insignia Ring,_item itemData,no-ge-page
+11000229,Mottled Crystal,_item itemData,no-ge-page
+11000230,Bomb Bane,_item itemData,no-ge-page
+11000231,[en],_item itemData,no-english-name
+11000232,[en],_item itemData,no-english-name
+11000233,[en],_item itemData,no-english-name
+11000234,[en],_item itemData,no-english-name
+11000235,[en],_item itemData,no-english-name
+11000236,[en],_item itemData,no-english-name
+11000237,[en],_item itemData,no-english-name
+11000238,[en],_item itemData,no-english-name
+11000239,[en],_item itemData,no-english-name
+11000240,[en],_item itemData,no-english-name
+11000241,[en],_item itemData,no-english-name
+11000242,[en],_item itemData,no-english-name
+11000243,[en],_item itemData,no-english-name
+11000244,[en],_item itemData,no-english-name
+11000245,[en],_item itemData,no-english-name
+11000246,[en],_item itemData,no-english-name
+11000247,[en],_item itemData,no-english-name
+11000248,[en],_item itemData,no-english-name
+11000249,[en],_item itemData,no-english-name
+11000250,[en],_item itemData,no-english-name
+11000251,Ailith's Oath,_item itemData,no-ge-page
+11000252,Taylor's Letter,_item itemData,no-ge-page
+11000253,Woolvale Arms Contract,_item itemData,no-ge-page
+11000254,Signed Agreement,_item itemData,no-ge-page
+11000255,Straight Edge Traders Contract,_item itemData,no-ge-page
+11000256,Gigas Forge Contract,_item itemData,no-ge-page
+11000257,Imperial Letter,_item itemData,no-ge-page
+11000258,Magitek Designs,_item itemData,no-ge-page
+11000259,Magitek Transceiver,_item itemData,no-ge-page
+11000260,Magitek Recording Plate,_item itemData,no-ge-page
+11000261,Shattered Gauntlet,_item itemData,no-ge-page
+11000262,Magitek Cooling Plate,_item itemData,no-ge-page
+11000263,Blackened Accumulator,_item itemData,no-ge-page
+11000264,Draconian Rosary,_item itemData,no-ge-page
+11000265,Norwick Knight's Sigil,_item itemData,no-ge-page
+11000266,Silver-winged Kabuto,_item itemData,no-ge-page
+11000267,Stillglade Fane Petition,_item itemData,no-ge-page
+11000268,Sealed Urn,_item itemData,no-ge-page
+11000269,Faces of Mercy Medallion,_item itemData,no-ge-page
+11000270,Magitek Dowsing Rod,_item itemData,no-ge-page
+11000271,Ceremony Invitation,_item itemData,no-ge-page
+11000272,Earthbreaker,_item itemData,no-ge-page
+11000273,[en],_item itemData,no-english-name
+11000274,[en],_item itemData,no-english-name
+11000275,[en],_item itemData,no-english-name
+11000276,[en],_item itemData,no-english-name
+11000277,[en],_item itemData,no-english-name
+11000278,[en],_item itemData,no-english-name
+11000279,[en],_item itemData,no-english-name
+11000280,[en],_item itemData,no-english-name
+11000281,[en],_item itemData,no-english-name
+11000282,[en],_item itemData,no-english-name
+11000283,[en],_item itemData,no-english-name
+11000284,[en],_item itemData,no-english-name
+11000285,[en],_item itemData,no-english-name
+11000286,[en],_item itemData,no-english-name
+11000287,[en],_item itemData,no-english-name
+11000288,[en],_item itemData,no-english-name
+11000289,[en],_item itemData,no-english-name
+11000290,[en],_item itemData,no-english-name
+11000291,[en],_item itemData,no-english-name
+11000292,[en],_item itemData,no-english-name
+11000293,[en],_item itemData,no-english-name
+11000294,[en],_item itemData,no-english-name
+11000295,[en],_item itemData,no-english-name
+11000296,[en],_item itemData,no-english-name
+11000297,[en],_item itemData,no-english-name
+11000298,[en],_item itemData,no-english-name
+11000299,[en],_item itemData,no-english-name
+11000300,[en],_item itemData,no-english-name
+11000301,Mature Funguar Spore Sac,_item itemData,no-ge-page
+11000302,Scarlet Oil,_item itemData,no-ge-page
+11000303,Stinky Yellow Liquid,_item itemData,no-ge-page
+11000304,Althyk Lavender,_item itemData,no-ge-page
+11000305,[en],_item itemData,no-english-name
+11000306,[en],_item itemData,no-english-name
+11000307,[en],_item itemData,no-english-name
+11000308,[en],_item itemData,no-english-name
+11000309,[en],_item itemData,no-english-name
+11000310,[en],_item itemData,no-english-name
+11000311,[en],_item itemData,no-english-name
+11000312,[en],_item itemData,no-english-name
+11000313,[en],_item itemData,no-english-name
+11000314,[en],_item itemData,no-english-name
+11000315,[en],_item itemData,no-english-name
+11000316,[en],_item itemData,no-english-name
+11000317,[en],_item itemData,no-english-name
+11000318,[en],_item itemData,no-english-name
+11000319,[en],_item itemData,no-english-name
+11000320,[en],_item itemData,no-english-name
+11000321,[en],_item itemData,no-english-name
+11000322,[en],_item itemData,no-english-name
+11000323,[en],_item itemData,no-english-name
+11000324,[en],_item itemData,no-english-name
+11000325,[en],_item itemData,no-english-name
+11000326,[en],_item itemData,no-english-name
+11000327,[en],_item itemData,no-english-name
+11000328,[en],_item itemData,no-english-name
+11000329,[en],_item itemData,no-english-name
+11000330,[en],_item itemData,no-english-name
+11000331,[en],_item itemData,no-english-name
+11000332,[en],_item itemData,no-english-name
+11000333,[en],_item itemData,no-english-name
+11000334,[en],_item itemData,no-english-name
+11000335,[en],_item itemData,no-english-name
+11000336,[en],_item itemData,no-english-name
+11000337,[en],_item itemData,no-english-name
+11000338,[en],_item itemData,no-english-name
+11000339,[en],_item itemData,no-english-name
+11000340,[en],_item itemData,no-english-name
+11000341,[en],_item itemData,no-english-name
+11000342,[en],_item itemData,no-english-name
+11000343,[en],_item itemData,no-english-name
+11000344,[en],_item itemData,no-english-name
+11000345,[en],_item itemData,no-english-name
+11000346,[en],_item itemData,no-english-name
+11000347,[en],_item itemData,no-english-name
+11000348,[en],_item itemData,no-english-name
+11000349,[en],_item itemData,no-english-name
+11000350,[en],_item itemData,no-english-name
+11000351,Inferno Lamp,_item itemData,no-ge-page
+11000352,Vortex Fletchings,_item itemData,no-ge-page
+11000363,The Book of Reinette,_item itemData,no-ge-page
+11000367,White-hot Ember,_item itemData,no-ge-page
+11000368,Howling Gale,_item itemData,no-ge-page
+11000369,Relic Weapon,_item itemData,no-ge-page
+11000370,[en],_item itemData,no-english-name
+11000371,[en],_item itemData,no-english-name
+11000372,[en],_item itemData,no-english-name
+11000373,[en],_item itemData,no-english-name
+11000374,[en],_item itemData,no-english-name
+11000375,[en],_item itemData,no-english-name
+11000376,[en],_item itemData,no-english-name
+11000377,[en],_item itemData,no-english-name
+11000378,[en],_item itemData,no-english-name
+11000379,[en],_item itemData,no-english-name
+11000380,[en],_item itemData,no-english-name
+11000381,[en],_item itemData,no-english-name
+11000382,[en],_item itemData,no-english-name
+11000383,[en],_item itemData,no-english-name
+11000384,[en],_item itemData,no-english-name
+11000385,[en],_item itemData,no-english-name
+11000386,[en],_item itemData,no-english-name
+11000387,[en],_item itemData,no-english-name
+11000388,[en],_item itemData,no-english-name
+11000389,[en],_item itemData,no-english-name
+11000390,[en],_item itemData,no-english-name
+11000391,[en],_item itemData,no-english-name
+11000392,[en],_item itemData,no-english-name
+11000393,[en],_item itemData,no-english-name
+11000394,[en],_item itemData,no-english-name
+11000395,[en],_item itemData,no-english-name
+11000396,[en],_item itemData,no-english-name
+11000397,[en],_item itemData,no-english-name
+11000398,[en],_item itemData,no-english-name
+11000399,[en],_item itemData,no-english-name
+11000400,[en],_item itemData,no-english-name
+11000401,Leather Armor Scrap,_item itemData,no-ge-page
+11000402,Hypnotic Scales,_item itemData,no-ge-page
+11000403,Sketch of Challinie,_item itemData,no-ge-page
+11000404,Cobalt Eye,_item itemData,no-ge-page
+11000405,Prismatic Eye,_item itemData,no-ge-page
+11000406,Omnomite,_item itemData,no-ge-page
+11000407,Dart Slug Anti-venom,_item itemData,no-ge-page
+11000408,Coblyn Choler,_item itemData,no-ge-page
+11000409,Leather Balloon Panel,_item itemData,no-ge-page
+11000410,Treated Kite Plume,_item itemData,no-ge-page
+11000411,Eye of Garuda,_item itemData,no-ge-page
+11000412,Tears of Nymeia,_item itemData,no-ge-page
+11000413,Wind Echo Crystal,_item itemData,no-ge-page
+11000414,Water Echo Crystal,_item itemData,no-ge-page
+11000415,Earth Echo Crystal,_item itemData,no-ge-page
+11000416,Lightning Echo Crystal,_item itemData,no-ge-page
+11000417,Ice Echo Crystal,_item itemData,no-ge-page
+11000418,Fire Echo Crystal,_item itemData,no-ge-page
+11000419,Inferno Flambeau,_item itemData,no-ge-page
+11000420,Harmonizing Crystal,_item itemData,no-ge-page
+11000421,Imperial Disruptor,_item itemData,no-ge-page
+11000422,Mist Emitter,_item itemData,no-ge-page
+11000423,Imperial Disruptor,_item itemData,no-ge-page
+11000424,[en],_item itemData,no-english-name
+11000425,War Merit,_item itemData,no-ge-page
+11000426,War Merit,_item itemData,no-ge-page
+11000427,War Merit,_item itemData,no-ge-page
+11000428,Magitek Amplifier,_item itemData,no-ge-page
+11000429,Nightshade Oil,_item itemData,no-ge-page
+11000430,Suncake,_item itemData,no-ge-page
+11000431,Vortex Feather,_item itemData,no-ge-page
+11000432,Vortex Catcher,_item itemData,no-ge-page
+11000433,Garlean Schematics,_item itemData,no-ge-page
+11000434,Imperial Strongbox Key,_item itemData,no-ge-page
+11000435,Kan[@1F]E[@1F]Senna's Missive,_item itemData,no-ge-page
+11000436,Merlwyb's Missive,_item itemData,no-ge-page
+11000437,Raubahn's Missive,_item itemData,no-ge-page
+11000438,[en],_item itemData,no-english-name
+11000439,[en],_item itemData,no-english-name
+11000440,[en],_item itemData,no-english-name
+11000441,[en],_item itemData,no-english-name
+11000442,[en],_item itemData,no-english-name
+11000443,[en],_item itemData,no-english-name
+11000444,[en],_item itemData,no-english-name
+11000445,[en],_item itemData,no-english-name
+11000446,[en],_item itemData,no-english-name
+11000447,[en],_item itemData,no-english-name
+11000448,[en],_item itemData,no-english-name
+11000449,[en],_item itemData,no-english-name
+11000450,[en],_item itemData,no-english-name
+11000451,[en],_item itemData,no-english-name
+11000452,[en],_item itemData,no-english-name
+11000453,[en],_item itemData,no-english-name
+11000454,[en],_item itemData,no-english-name
+11000455,[en],_item itemData,no-english-name
+11000456,[en],_item itemData,no-english-name
+11000457,[en],_item itemData,no-english-name
+11000458,[en],_item itemData,no-english-name
+11000459,[en],_item itemData,no-english-name
+11000460,[en],_item itemData,no-english-name
+11000461,[en],_item itemData,no-english-name
+11000462,[en],_item itemData,no-english-name
+11000463,[en],_item itemData,no-english-name
+11000464,[en],_item itemData,no-english-name
+11000465,[en],_item itemData,no-english-name
+11000466,[en],_item itemData,no-english-name
+11000467,[en],_item itemData,no-english-name
+11000468,[en],_item itemData,no-english-name
+11000469,[en],_item itemData,no-english-name
+11000470,[en],_item itemData,no-english-name
+11000471,[en],_item itemData,no-english-name
+11000472,[en],_item itemData,no-english-name
+11000473,[en],_item itemData,no-english-name
+11000474,[en],_item itemData,no-english-name
+11000475,[en],_item itemData,no-english-name
+11000476,[en],_item itemData,no-english-name
+11000477,[en],_item itemData,no-english-name
+11000478,[en],_item itemData,no-english-name
+11000479,[en],_item itemData,no-english-name
+11000480,[en],_item itemData,no-english-name
+11000481,[en],_item itemData,no-english-name
+11000482,[en],_item itemData,no-english-name
+11000483,[en],_item itemData,no-english-name
+11000484,[en],_item itemData,no-english-name
+11000485,[en],_item itemData,no-english-name
+11000486,[en],_item itemData,no-english-name
+11000487,[en],_item itemData,no-english-name
+11000488,[en],_item itemData,no-english-name
+11000489,[en],_item itemData,no-english-name
+11000490,[en],_item itemData,no-english-name
+11000491,[en],_item itemData,no-english-name
+11000492,[en],_item itemData,no-english-name
+11000493,[en],_item itemData,no-english-name
+11000494,[en],_item itemData,no-english-name
+11000495,[en],_item itemData,no-english-name
+11000496,[en],_item itemData,no-english-name
+11000497,[en],_item itemData,no-english-name
+11000498,[en],_item itemData,no-english-name
+11000499,[en],_item itemData,no-english-name
+11000500,[en],_item itemData,no-english-name
+11000501,[en],_item itemData,no-english-name
+11000502,[en],_item itemData,no-english-name
+11000503,[en],_item itemData,no-english-name
+11000504,[en],_item itemData,no-english-name
+11000505,[en],_item itemData,no-english-name
+11000506,[en],_item itemData,no-english-name
+11000507,[en],_item itemData,no-english-name
+11000508,[en],_item itemData,no-english-name
+11000509,[en],_item itemData,no-english-name
+11000510,[en],_item itemData,no-english-name
+11000511,[en],_item itemData,no-english-name
+11000512,[en],_item itemData,no-english-name
+11000513,[en],_item itemData,no-english-name
+11000514,[en],_item itemData,no-english-name
+11000515,[en],_item itemData,no-english-name
+11000516,[en],_item itemData,no-english-name
+11000517,[en],_item itemData,no-english-name
+11000518,[en],_item itemData,no-english-name
+11000519,[en],_item itemData,no-english-name
+11000520,[en],_item itemData,no-english-name
+11000521,[en],_item itemData,no-english-name
+11000522,[en],_item itemData,no-english-name
+11000523,[en],_item itemData,no-english-name
+11000524,[en],_item itemData,no-english-name
+11000525,[en],_item itemData,no-english-name
+11000526,[en],_item itemData,no-english-name
+11000527,[en],_item itemData,no-english-name
+11000528,[en],_item itemData,no-english-name
+11000529,[en],_item itemData,no-english-name
+11000530,[en],_item itemData,no-english-name
+11000531,[en],_item itemData,no-english-name
+11000532,[en],_item itemData,no-english-name
+11000533,[en],_item itemData,no-english-name
+11000534,[en],_item itemData,no-english-name
+11000535,[en],_item itemData,no-english-name
+11000536,[en],_item itemData,no-english-name
+11000537,[en],_item itemData,no-english-name
+11000538,[en],_item itemData,no-english-name
+11000539,[en],_item itemData,no-english-name
+11000540,[en],_item itemData,no-english-name
+11000541,[en],_item itemData,no-english-name
+11000542,[en],_item itemData,no-english-name
+11000543,[en],_item itemData,no-english-name
+11000544,[en],_item itemData,no-english-name
+11000545,[en],_item itemData,no-english-name
+11000546,[en],_item itemData,no-english-name
+11000547,[en],_item itemData,no-english-name
+11000548,[en],_item itemData,no-english-name
+11000549,[en],_item itemData,no-english-name
+11000550,[en],_item itemData,no-english-name
+11000551,Nirvana,_item itemData,no-ge-page
+11000552,Brand-new Aetheriometer,_item itemData,no-ge-page
+11000553,Outdated Aetheriometer,_item itemData,no-ge-page
+11000554,Widargelt's Aetheriometer,_item itemData,no-ge-page
+11000555,Experimental Aetheriometer,_item itemData,no-ge-page
+11000556,Gem of Shatotto,_item itemData,no-ge-page
+11000557,Pukno Poki's Charm,_item itemData,no-ge-page
+11000558,Engraved Crystal,_item itemData,no-ge-page
+11000559,Ashes of the Fallen,_item itemData,no-ge-page
+11000560,[en],_item itemData,no-english-name
+11000561,[en],_item itemData,no-english-name
+11000562,[en],_item itemData,no-english-name
+11000563,[en],_item itemData,no-english-name
+11000564,[en],_item itemData,no-english-name
+11000565,[en],_item itemData,no-english-name
+11000566,[en],_item itemData,no-english-name
+11000567,[en],_item itemData,no-english-name
+11000568,[en],_item itemData,no-english-name
+11000569,[en],_item itemData,no-english-name
+11000570,[en],_item itemData,no-english-name
+11000571,[en],_item itemData,no-english-name
+11000572,[en],_item itemData,no-english-name
+11000573,[en],_item itemData,no-english-name
+11000574,[en],_item itemData,no-english-name
+11000575,[en],_item itemData,no-english-name
+11000576,[en],_item itemData,no-english-name
+11000577,[en],_item itemData,no-english-name
+11000578,[en],_item itemData,no-english-name
+11000579,[en],_item itemData,no-english-name
+11000580,[en],_item itemData,no-english-name
+11000581,[en],_item itemData,no-english-name
+11000582,[en],_item itemData,no-english-name
+11000583,[en],_item itemData,no-english-name
+11000584,[en],_item itemData,no-english-name
+11000585,[en],_item itemData,no-english-name
+11000586,[en],_item itemData,no-english-name
+11000587,[en],_item itemData,no-english-name
+11000588,[en],_item itemData,no-english-name
+11000589,[en],_item itemData,no-english-name
+11000590,[en],_item itemData,no-english-name
+11000591,[en],_item itemData,no-english-name
+11000592,[en],_item itemData,no-english-name
+11000593,[en],_item itemData,no-english-name
+11000594,[en],_item itemData,no-english-name
+11000595,[en],_item itemData,no-english-name
+11000596,[en],_item itemData,no-english-name
+11000597,[en],_item itemData,no-english-name
+11000598,[en],_item itemData,no-english-name
+11000599,[en],_item itemData,no-english-name
+11000600,[en],_item itemData,no-english-name
+11000601,[en],_item itemData,no-english-name
+11000602,[en],_item itemData,no-english-name
+11000603,[en],_item itemData,no-english-name
+11000604,[en],_item itemData,no-english-name
+11000605,[en],_item itemData,no-english-name
+11000606,[en],_item itemData,no-english-name
+11000607,[en],_item itemData,no-english-name
+11000608,[en],_item itemData,no-english-name
+11000609,[en],_item itemData,no-english-name
+11000610,[en],_item itemData,no-english-name
+11000611,[en],_item itemData,no-english-name
+11000612,[en],_item itemData,no-english-name
+11000613,[en],_item itemData,no-english-name
+11000614,[en],_item itemData,no-english-name
+11000615,[en],_item itemData,no-english-name
+11000616,[en],_item itemData,no-english-name
+11000617,[en],_item itemData,no-english-name
+11000618,[en],_item itemData,no-english-name
+11000619,[en],_item itemData,no-english-name
+11000620,[en],_item itemData,no-english-name
+11000621,[en],_item itemData,no-english-name
+11000622,[en],_item itemData,no-english-name
+11000623,[en],_item itemData,no-english-name
+11000624,[en],_item itemData,no-english-name
+11000625,[en],_item itemData,no-english-name
+11000626,[en],_item itemData,no-english-name
+11000627,[en],_item itemData,no-english-name
+11000628,[en],_item itemData,no-english-name
+11000629,[en],_item itemData,no-english-name
+11000630,[en],_item itemData,no-english-name
+11000631,[en],_item itemData,no-english-name
+11000632,[en],_item itemData,no-english-name
+11000633,[en],_item itemData,no-english-name
+11000634,[en],_item itemData,no-english-name
+11000635,[en],_item itemData,no-english-name
+11000636,[en],_item itemData,no-english-name
+11000637,[en],_item itemData,no-english-name
+11000638,[en],_item itemData,no-english-name
+11000639,[en],_item itemData,no-english-name
+11000640,[en],_item itemData,no-english-name
+11000641,[en],_item itemData,no-english-name
+11000642,[en],_item itemData,no-english-name
+11000643,[en],_item itemData,no-english-name
+11000644,[en],_item itemData,no-english-name
+11000645,[en],_item itemData,no-english-name
+11000646,[en],_item itemData,no-english-name
+11000647,[en],_item itemData,no-english-name
+11000648,[en],_item itemData,no-english-name
+11000649,[en],_item itemData,no-english-name
+11000650,[en],_item itemData,no-english-name
+11000651,[en],_item itemData,no-english-name
+11000652,[en],_item itemData,no-english-name
+11000653,[en],_item itemData,no-english-name
+11000654,[en],_item itemData,no-english-name
+11000655,[en],_item itemData,no-english-name
+11000656,[en],_item itemData,no-english-name
+11000657,[en],_item itemData,no-english-name
+11000658,[en],_item itemData,no-english-name
+11000659,[en],_item itemData,no-english-name
+11000660,[en],_item itemData,no-english-name
+11000661,[en],_item itemData,no-english-name
+11000662,[en],_item itemData,no-english-name
+11000663,[en],_item itemData,no-english-name
+11000664,[en],_item itemData,no-english-name
+11000665,[en],_item itemData,no-english-name
+11000666,[en],_item itemData,no-english-name
+11000667,[en],_item itemData,no-english-name
+11000668,[en],_item itemData,no-english-name
+11000669,[en],_item itemData,no-english-name
+11000670,[en],_item itemData,no-english-name
+11000671,[en],_item itemData,no-english-name
+11000672,[en],_item itemData,no-english-name
+11000673,[en],_item itemData,no-english-name
+11000674,[en],_item itemData,no-english-name
+11000675,[en],_item itemData,no-english-name
+11000676,[en],_item itemData,no-english-name
+11000677,[en],_item itemData,no-english-name
+11000678,[en],_item itemData,no-english-name
+11000679,[en],_item itemData,no-english-name
+11000680,[en],_item itemData,no-english-name
+11000681,[en],_item itemData,no-english-name
+11000682,[en],_item itemData,no-english-name
+11000683,[en],_item itemData,no-english-name
+11000684,[en],_item itemData,no-english-name
+11000685,[en],_item itemData,no-english-name
+11000686,[en],_item itemData,no-english-name
+11000687,[en],_item itemData,no-english-name
+11000688,[en],_item itemData,no-english-name
+11000689,[en],_item itemData,no-english-name
+11000690,[en],_item itemData,no-english-name
+11000691,[en],_item itemData,no-english-name
+11000692,[en],_item itemData,no-english-name
+11000693,[en],_item itemData,no-english-name
+11000694,[en],_item itemData,no-english-name
+11000695,[en],_item itemData,no-english-name
+11000696,[en],_item itemData,no-english-name
+11000697,[en],_item itemData,no-english-name
+11000698,[en],_item itemData,no-english-name
+11000699,[en],_item itemData,no-english-name
+11000700,[en],_item itemData,no-english-name
+11000701,[en],_item itemData,no-english-name
+11000702,[en],_item itemData,no-english-name
+11000703,[en],_item itemData,no-english-name
+11000704,[en],_item itemData,no-english-name
+11000705,[en],_item itemData,no-english-name
+11000706,[en],_item itemData,no-english-name
+11000707,[en],_item itemData,no-english-name
+11000708,[en],_item itemData,no-english-name
+11000709,[en],_item itemData,no-english-name
+11000710,[en],_item itemData,no-english-name
+11000711,[en],_item itemData,no-english-name
+11000712,[en],_item itemData,no-english-name
+11000713,[en],_item itemData,no-english-name
+11000714,[en],_item itemData,no-english-name
+11000715,[en],_item itemData,no-english-name
+11000716,[en],_item itemData,no-english-name
+11000717,[en],_item itemData,no-english-name
+11000718,[en],_item itemData,no-english-name
+11000719,[en],_item itemData,no-english-name
+11000720,[en],_item itemData,no-english-name
+11000721,[en],_item itemData,no-english-name
+11000722,[en],_item itemData,no-english-name
+11000723,[en],_item itemData,no-english-name
+11000724,[en],_item itemData,no-english-name
+11000725,[en],_item itemData,no-english-name
+11000726,[en],_item itemData,no-english-name
+11000727,[en],_item itemData,no-english-name
+11000728,[en],_item itemData,no-english-name
+11000729,[en],_item itemData,no-english-name
+11000730,[en],_item itemData,no-english-name
+11000731,[en],_item itemData,no-english-name
+11000732,[en],_item itemData,no-english-name
+11000733,[en],_item itemData,no-english-name
+11000734,[en],_item itemData,no-english-name
+11000735,[en],_item itemData,no-english-name
+11000736,[en],_item itemData,no-english-name
+11000737,[en],_item itemData,no-english-name
+11000738,[en],_item itemData,no-english-name
+11000739,[en],_item itemData,no-english-name
+11000740,[en],_item itemData,no-english-name
+11000741,[en],_item itemData,no-english-name
+11000742,[en],_item itemData,no-english-name
+11000743,[en],_item itemData,no-english-name
+11000744,[en],_item itemData,no-english-name
+11000745,[en],_item itemData,no-english-name
+11000746,[en],_item itemData,no-english-name
+11000747,[en],_item itemData,no-english-name
+11000748,[en],_item itemData,no-english-name
+11000749,[en],_item itemData,no-english-name
+11000750,[en],_item itemData,no-english-name
+11000751,[en],_item itemData,no-english-name
+11000752,[en],_item itemData,no-english-name
+11000753,[en],_item itemData,no-english-name
+11000754,[en],_item itemData,no-english-name
+11000755,[en],_item itemData,no-english-name
+11000756,[en],_item itemData,no-english-name
+11000757,[en],_item itemData,no-english-name
+11000758,[en],_item itemData,no-english-name
+11000759,[en],_item itemData,no-english-name
+11000760,[en],_item itemData,no-english-name
+11000761,[en],_item itemData,no-english-name
+11000762,[en],_item itemData,no-english-name
+11000763,[en],_item itemData,no-english-name
+11000764,[en],_item itemData,no-english-name
+11000765,[en],_item itemData,no-english-name
+11000766,[en],_item itemData,no-english-name
+11000767,[en],_item itemData,no-english-name
+11000768,[en],_item itemData,no-english-name
+11000769,[en],_item itemData,no-english-name
+11000770,[en],_item itemData,no-english-name
+11000771,[en],_item itemData,no-english-name
+11000772,[en],_item itemData,no-english-name
+11000773,[en],_item itemData,no-english-name
+11000774,[en],_item itemData,no-english-name
+11000775,[en],_item itemData,no-english-name
+11000776,[en],_item itemData,no-english-name
+11000777,[en],_item itemData,no-english-name
+11000778,[en],_item itemData,no-english-name
+11000779,[en],_item itemData,no-english-name
+11000780,[en],_item itemData,no-english-name
+11000781,[en],_item itemData,no-english-name
+11000782,[en],_item itemData,no-english-name
+11000783,[en],_item itemData,no-english-name
+11000784,[en],_item itemData,no-english-name
+11000785,[en],_item itemData,no-english-name
+11000786,[en],_item itemData,no-english-name
+11000787,[en],_item itemData,no-english-name
+11000788,[en],_item itemData,no-english-name
+11000789,[en],_item itemData,no-english-name
+11000790,[en],_item itemData,no-english-name
+11000791,[en],_item itemData,no-english-name
+11000792,[en],_item itemData,no-english-name
+11000793,[en],_item itemData,no-english-name
+11000794,[en],_item itemData,no-english-name
+11000795,[en],_item itemData,no-english-name
+11000796,[en],_item itemData,no-english-name
+11000797,[en],_item itemData,no-english-name
+11000798,[en],_item itemData,no-english-name
+11000799,[en],_item itemData,no-english-name
+11000800,[en],_item itemData,no-english-name
+11000801,[en],_item itemData,no-english-name
+11000802,[en],_item itemData,no-english-name
+11000803,[en],_item itemData,no-english-name
+11000804,[en],_item itemData,no-english-name
+11000805,[en],_item itemData,no-english-name
+11000806,[en],_item itemData,no-english-name
+11000807,[en],_item itemData,no-english-name
+11000808,[en],_item itemData,no-english-name
+11000809,[en],_item itemData,no-english-name
+11000810,[en],_item itemData,no-english-name
+11000811,[en],_item itemData,no-english-name
+11000812,[en],_item itemData,no-english-name
+11000813,[en],_item itemData,no-english-name
+11000814,[en],_item itemData,no-english-name
+11000815,[en],_item itemData,no-english-name
+11000816,[en],_item itemData,no-english-name
+11000817,[en],_item itemData,no-english-name
+11000818,[en],_item itemData,no-english-name
+11000819,[en],_item itemData,no-english-name
+11000820,[en],_item itemData,no-english-name
+11000821,[en],_item itemData,no-english-name
+11000822,[en],_item itemData,no-english-name
+11000823,[en],_item itemData,no-english-name
+11000824,[en],_item itemData,no-english-name
+11000825,[en],_item itemData,no-english-name
+11000826,[en],_item itemData,no-english-name
+11000827,[en],_item itemData,no-english-name
+11000828,[en],_item itemData,no-english-name
+11000829,[en],_item itemData,no-english-name
+11000830,[en],_item itemData,no-english-name
+11000831,[en],_item itemData,no-english-name
+11000832,[en],_item itemData,no-english-name
+11000833,[en],_item itemData,no-english-name
+11000834,[en],_item itemData,no-english-name
+11000835,[en],_item itemData,no-english-name
+11000836,[en],_item itemData,no-english-name
+11000837,[en],_item itemData,no-english-name
+11000838,[en],_item itemData,no-english-name
+11000839,[en],_item itemData,no-english-name
+11000840,[en],_item itemData,no-english-name
+11000841,[en],_item itemData,no-english-name
+11000842,[en],_item itemData,no-english-name
+11000843,[en],_item itemData,no-english-name
+11000844,[en],_item itemData,no-english-name
+11000845,[en],_item itemData,no-english-name
+11000846,[en],_item itemData,no-english-name
+11000847,[en],_item itemData,no-english-name
+11000848,[en],_item itemData,no-english-name
+11000849,[en],_item itemData,no-english-name
+11000850,[en],_item itemData,no-english-name
+11000851,[en],_item itemData,no-english-name
+11000852,[en],_item itemData,no-english-name
+11000853,[en],_item itemData,no-english-name
+11000854,[en],_item itemData,no-english-name
+11000855,[en],_item itemData,no-english-name
+11000856,[en],_item itemData,no-english-name
+11000857,[en],_item itemData,no-english-name
+11000858,[en],_item itemData,no-english-name
+11000859,[en],_item itemData,no-english-name
+11000860,[en],_item itemData,no-english-name
+11000861,[en],_item itemData,no-english-name
+11000862,[en],_item itemData,no-english-name
+11000863,[en],_item itemData,no-english-name
+11000864,[en],_item itemData,no-english-name
+11000865,[en],_item itemData,no-english-name
+11000866,[en],_item itemData,no-english-name
+11000867,[en],_item itemData,no-english-name
+11000868,[en],_item itemData,no-english-name
+11000869,[en],_item itemData,no-english-name
+11000870,[en],_item itemData,no-english-name
+11000871,[en],_item itemData,no-english-name
+11000872,[en],_item itemData,no-english-name
+11000873,[en],_item itemData,no-english-name
+11000874,[en],_item itemData,no-english-name
+11000875,[en],_item itemData,no-english-name
+11000876,[en],_item itemData,no-english-name
+11000877,[en],_item itemData,no-english-name
+11000878,[en],_item itemData,no-english-name
+11000879,[en],_item itemData,no-english-name
+11000880,[en],_item itemData,no-english-name
+11000881,[en],_item itemData,no-english-name
+11000882,[en],_item itemData,no-english-name
+11000883,[en],_item itemData,no-english-name
+11000884,[en],_item itemData,no-english-name
+11000885,[en],_item itemData,no-english-name
+11000886,[en],_item itemData,no-english-name
+11000887,[en],_item itemData,no-english-name
+11000888,[en],_item itemData,no-english-name
+11000889,[en],_item itemData,no-english-name
+11000890,[en],_item itemData,no-english-name
+11000891,[en],_item itemData,no-english-name
+11000892,[en],_item itemData,no-english-name
+11000893,[en],_item itemData,no-english-name
+11000894,[en],_item itemData,no-english-name
+11000895,[en],_item itemData,no-english-name
+11000896,[en],_item itemData,no-english-name
+11000897,[en],_item itemData,no-english-name
+11000898,[en],_item itemData,no-english-name
+11000899,[en],_item itemData,no-english-name
+11000900,[en],_item itemData,no-english-name
+11000901,[en],_item itemData,no-english-name
+11000902,[en],_item itemData,no-english-name
+11000903,[en],_item itemData,no-english-name
+11000904,[en],_item itemData,no-english-name
+11000905,[en],_item itemData,no-english-name
+11000906,[en],_item itemData,no-english-name
+11000907,[en],_item itemData,no-english-name
+11000908,[en],_item itemData,no-english-name
+11000909,[en],_item itemData,no-english-name
+11000910,[en],_item itemData,no-english-name
+11000911,[en],_item itemData,no-english-name
+11000912,[en],_item itemData,no-english-name
+11000913,[en],_item itemData,no-english-name
+11000914,[en],_item itemData,no-english-name
+11000915,[en],_item itemData,no-english-name
+11000916,[en],_item itemData,no-english-name
+11000917,[en],_item itemData,no-english-name
+11000918,[en],_item itemData,no-english-name
+11000919,[en],_item itemData,no-english-name
+11000920,[en],_item itemData,no-english-name
+11000921,[en],_item itemData,no-english-name
+11000922,[en],_item itemData,no-english-name
+11000923,[en],_item itemData,no-english-name
+11000924,[en],_item itemData,no-english-name
+11000925,[en],_item itemData,no-english-name
+11000926,[en],_item itemData,no-english-name
+11000927,[en],_item itemData,no-english-name
+11000928,[en],_item itemData,no-english-name
+11000929,[en],_item itemData,no-english-name
+11000930,[en],_item itemData,no-english-name
+11000931,[en],_item itemData,no-english-name
+11000932,[en],_item itemData,no-english-name
+11000933,[en],_item itemData,no-english-name
+11000934,[en],_item itemData,no-english-name
+11000935,[en],_item itemData,no-english-name
+11000936,[en],_item itemData,no-english-name
+11000937,[en],_item itemData,no-english-name
+11000938,[en],_item itemData,no-english-name
+11000939,[en],_item itemData,no-english-name
+11000940,[en],_item itemData,no-english-name
+11000941,[en],_item itemData,no-english-name
+11000942,[en],_item itemData,no-english-name
+11000943,[en],_item itemData,no-english-name
+11000944,[en],_item itemData,no-english-name
+11000945,[en],_item itemData,no-english-name
+11000946,[en],_item itemData,no-english-name
+11000947,[en],_item itemData,no-english-name
+11000948,[en],_item itemData,no-english-name
+11000949,[en],_item itemData,no-english-name
+11000950,[en],_item itemData,no-english-name
+11000951,[en],_item itemData,no-english-name
+11000952,[en],_item itemData,no-english-name
+11000953,[en],_item itemData,no-english-name
+11000954,[en],_item itemData,no-english-name
+11000955,[en],_item itemData,no-english-name
+11000956,[en],_item itemData,no-english-name
+11000957,[en],_item itemData,no-english-name
+11000958,[en],_item itemData,no-english-name
+11000959,[en],_item itemData,no-english-name
+11000960,[en],_item itemData,no-english-name
+11000961,[en],_item itemData,no-english-name
+11000962,[en],_item itemData,no-english-name
+11000963,[en],_item itemData,no-english-name
+11000964,[en],_item itemData,no-english-name
+11000965,[en],_item itemData,no-english-name
+11000966,[en],_item itemData,no-english-name
+11000967,[en],_item itemData,no-english-name
+11000968,[en],_item itemData,no-english-name
+11000969,[en],_item itemData,no-english-name
+11000970,[en],_item itemData,no-english-name
+11000971,[en],_item itemData,no-english-name
+11000972,[en],_item itemData,no-english-name
+11000973,[en],_item itemData,no-english-name
+11000974,[en],_item itemData,no-english-name
+11000975,[en],_item itemData,no-english-name
+11000976,[en],_item itemData,no-english-name
+11000977,[en],_item itemData,no-english-name
+11000978,[en],_item itemData,no-english-name
+11000979,[en],_item itemData,no-english-name
+11000980,[en],_item itemData,no-english-name
+11000981,[en],_item itemData,no-english-name
+11000982,[en],_item itemData,no-english-name
+11000983,[en],_item itemData,no-english-name
+11000984,[en],_item itemData,no-english-name
+11000985,[en],_item itemData,no-english-name
+11000986,[en],_item itemData,no-english-name
+11000987,[en],_item itemData,no-english-name
+11000988,[en],_item itemData,no-english-name
+11000989,[en],_item itemData,no-english-name
+11000990,[en],_item itemData,no-english-name
+11000991,[en],_item itemData,no-english-name
+11000992,[en],_item itemData,no-english-name
+11000993,[en],_item itemData,no-english-name
+11000994,[en],_item itemData,no-english-name
+11000995,[en],_item itemData,no-english-name
+11000996,[en],_item itemData,no-english-name
+11000997,[en],_item itemData,no-english-name
+11000998,[en],_item itemData,no-english-name
+11000999,[en],_item itemData,no-english-name
+12000005,Mystic Gem,_item itemData,no-ge-page
+12000006,Wisp Dust,_item itemData,no-ge-page
+12000007,Bomb Shrapnel,_item itemData,no-ge-page
+12000008,Poison Pollen,_item itemData,no-ge-page
+12000009,Stolen Cargo,_item itemData,no-ge-page
+12000010,Fish Bone,_item itemData,no-ge-page
+12000011,Sweet Pollen,_item itemData,no-ge-page
+12000012,Elemental Shard,_item itemData,no-ge-page
+12000013,Natural Poison,_item itemData,no-ge-page
+12000014,Lemming Tail,_item itemData,no-ge-page
+12000017,Mermaid Charm,_item itemData,no-ge-page
+12000018,Rod,_item itemData,no-ge-page
+12000019,Flowersbreath,_item itemData,no-ge-page
+12000020,Gewgaw,_item itemData,no-ge-page
+12000021,Scalepuk Skin,_item itemData,no-ge-page
+12000022,Butterfly Nuts,_item itemData,no-ge-page
+12000023,Nipper Shell,_item itemData,no-ge-page
+12000024,Nightwolf Hide,_item itemData,no-ge-page
+12000025,Stray Dodo Feather,_item itemData,no-ge-page
+12000026,Game Dodo Meat,_item itemData,no-ge-page
+12000027,Flowering Roseling Petal,_item itemData,no-ge-page
+12000028,Ocean Roseling Leaf,_item itemData,no-ge-page
+12000029,Dorbeetle Egg,_item itemData,no-ge-page
+12000030,Bloodbeetle Wing,_item itemData,no-ge-page
+12000031,Gorgebug Mandible,_item itemData,no-ge-page
+12000033,Pack Rat Tail,_item itemData,no-ge-page
+12000034,Wingrat Wing,_item itemData,no-ge-page
+12000035,Rabid Wingrat Blood,_item itemData,no-ge-page
+12000036,Boggart Robe,_item itemData,no-ge-page
+12000037,Seadevil Filet,_item itemData,no-ge-page
+12000038,Jellyfish Stinger,_item itemData,no-ge-page
+12000039,Bloodless Chiglet Carcass,_item itemData,no-ge-page
+12000040,Carrion Chiglet Humours,_item itemData,no-ge-page
+12000041,Tiny Bauble,_item itemData,no-ge-page
+12000048,Blue Landtrap Vine,_item itemData,no-ge-page
+12000051,Kidney Ore,_item itemData,no-ge-page
+12000052,Fire Orb,_item itemData,no-ge-page
+12000053,Ice Orb,_item itemData,no-ge-page
+12000054,Wind Orb,_item itemData,no-ge-page
+12000056,Lightning Orb,_item itemData,no-ge-page
+12000057,Water Orb,_item itemData,no-ge-page
+12000059,Blackmarket Bog Pepper,_item itemData,no-ge-page
+12000080,Antelope Tail,_item itemData,no-ge-page
+12000081,Hippocerf Beak,_item itemData,no-ge-page
+12000082,Purple Acid,_item itemData,no-ge-page
+12000085,Compound Gnat Eye,_item itemData,no-ge-page
+12000086,Poisonous Spines,_item itemData,no-ge-page
+12000088,Crab Apron,_item itemData,no-ge-page
+12000090,Sharp Fang,_item itemData,no-ge-page
+12000091,Bomb Eye,_item itemData,no-ge-page
+12000092,Ahriman Tooth,_item itemData,no-ge-page
+12000093,Dodo Wing Feather,_item itemData,no-ge-page
+12000095,Blue Iron Ore,_item itemData,no-ge-page
+12000097,Imp Ring,_item itemData,no-ge-page
+12000098,Devilet Ring,_item itemData,no-ge-page
+12000099,Beetle Powder,_item itemData,no-ge-page
+12000100,Aphids,_item itemData,no-ge-page
+12000101,Evenfall Firefly,_item itemData,no-ge-page
+12000102,Violet Chestnut,_item itemData,no-ge-page
+12000103,Twin Chestnut,_item itemData,no-ge-page
+12000104,Fallen Chestnut,_item itemData,no-ge-page
+12000105,Doom Cricket,_item itemData,no-ge-page
+12000106,Snail Horn,_item itemData,no-ge-page
+12000107,Snail Horn,_item itemData,no-ge-page
+12000109,Wight Cloth,_item itemData,no-ge-page
+12000110,Angler Eye,_item itemData,no-ge-page
+12000112,Aurelia Feeler,_item itemData,no-ge-page
+12000113,Anemone Feeler,_item itemData,no-ge-page
+12000114,Yellow Yarzon Offal,_item itemData,no-ge-page
+12000115,Chocobo Blood,_item itemData,no-ge-page
+12000118,Black Worm,_item itemData,no-ge-page
+12000120,Lightning Gem,_item itemData,no-ge-page
+12000121,Wolf Tail,_item itemData,no-ge-page
+12000124,Gigantoad Leg,_item itemData,no-ge-page
+12000125,Condor Tailfeather,_item itemData,no-ge-page
+12000126,Vulture Tailfeather,_item itemData,no-ge-page
+12000129,Ant Mandible,_item itemData,no-ge-page
+12000131,Demon Mosquito,_item itemData,no-ge-page
+12000132,Orchidfly,_item itemData,no-ge-page
+12000133,Leafy Wing,_item itemData,no-ge-page
+12000135,Rusted Ring,_item itemData,no-ge-page
+12000138,Stolen Finery,_item itemData,no-ge-page
+12000139,Necklace of Fingers,_item itemData,no-ge-page
+12000186,Roseling Bushel,_item itemData,no-ge-page
+12000188,Stolen Tome,_item itemData,no-ge-page
+12000189,[en],_item itemData,no-english-name
+12000190,[en],_item itemData,no-english-name
+12000191,[en],_item itemData,no-english-name
+12000192,[en],_item itemData,no-english-name
+12000193,[en],_item itemData,no-english-name
+12000194,[en],_item itemData,no-english-name
+12000195,[en],_item itemData,no-english-name
+12000196,[en],_item itemData,no-english-name
+12000197,[en],_item itemData,no-english-name
+12000198,[en],_item itemData,no-english-name
+12000199,[en],_item itemData,no-english-name
+12000200,Luminous Crystal,_item itemData,no-ge-page
+13000001,"[@SHEET(xtx/command,26679,2)]",_item itemData,no-ge-page
+13000002,"[@SHEET(xtx/command,26678,2)]",_item itemData,no-ge-page
+13000003,"[@SHEET(xtx/command,26858,2)]",_item itemData,no-ge-page
+13000004,"[@SHEET(xtx/command,26859,2)]",_item itemData,no-ge-page
+13000005,"[@SHEET(xtx/command,27039,2)]",_item itemData,no-ge-page
+13000006,"[@SHEET(xtx/command,27038,2)]",_item itemData,no-ge-page
+13000007,"[@SHEET(xtx/command,27577,2)]",_item itemData,no-ge-page
+13000008,"[@SHEET(xtx/command,27579,2)]",_item itemData,no-ge-page
+13000009,"[@SHEET(xtx/command,27758,2)]",_item itemData,no-ge-page
+13000010,"[@SHEET(xtx/command,27759,2)]",_item itemData,no-ge-page
+13000011,"[@SHEET(xtx/command,28589,2)]",_item itemData,no-ge-page
+13000012,"[@SHEET(xtx/command,28588,2)]",_item itemData,no-ge-page
+13000013,"[@SHEET(xtx/command,28929,2)]",_item itemData,no-ge-page
+13000014,"[@SHEET(xtx/command,28928,2)]",_item itemData,no-ge-page
+13000015,"[@SHEET(xtx/command,29467,2)]",_item itemData,no-ge-page
+13000016,"[@SHEET(xtx/command,29469,2)]",_item itemData,no-ge-page
+13000017,"[@SHEET(xtx/command,29471,2)]",_item itemData,no-ge-page
+13000018,"[@SHEET(xtx/command,29473,2)]",_item itemData,no-ge-page
+13000019,"[@SHEET(xtx/command,29475,2)]",_item itemData,no-ge-page
+13000020,"[@SHEET(xtx/command,29477,2)]",_item itemData,no-ge-page
+13000021,"[@SHEET(xtx/command,29479,2)]",_item itemData,no-ge-page
+13000022,"[@SHEET(xtx/command,29468,2)]",_item itemData,no-ge-page
+13000023,"[@SHEET(xtx/command,29470,2)]",_item itemData,no-ge-page
+13000024,"[@SHEET(xtx/command,29472,2)]",_item itemData,no-ge-page
+13000025,"[@SHEET(xtx/command,29474,2)]",_item itemData,no-ge-page
+13000026,"[@SHEET(xtx/command,29476,2)]",_item itemData,no-ge-page
+13000027,"[@SHEET(xtx/command,29478,2)]",_item itemData,no-ge-page
+13000028,"[@SHEET(xtx/command,29480,2)]",_item itemData,no-ge-page
+13000029,"[@SHEET(xtx/command,29483,2)]",_item itemData,no-ge-page
+13000030,"[@SHEET(xtx/command,29484,2)]",_item itemData,no-ge-page
+13000031,"[@SHEET(xtx/command,29482,2)]",_item itemData,no-ge-page
+13000032,"[@SHEET(xtx/command,29489,2)]",_item itemData,no-ge-page
+13000033,"[@SHEET(xtx/command,29490,2)]",_item itemData,no-ge-page
+13000034,"[@SHEET(xtx/command,29488,2)]",_item itemData,no-ge-page
+13000035,"[@SHEET(xtx/command,29486,2)]",_item itemData,no-ge-page
+13000036,"[@SHEET(xtx/command,29487,2)]",_item itemData,no-ge-page
+13000037,"[@SHEET(xtx/command,29485,2)]",_item itemData,no-ge-page
+13000038,"[@SHEET(xtx/command,29492,2)]",_item itemData,no-ge-page
+13000039,"[@SHEET(xtx/command,29493,2)]",_item itemData,no-ge-page
+13000040,"[@SHEET(xtx/command,29491,2)]",_item itemData,no-ge-page
+13000041,"[@SHEET(xtx/command,29721,2)]",_item itemData,no-ge-page
+13000042,"[@SHEET(xtx/command,29722,2)]",_item itemData,no-ge-page
+13000043,"[@SHEET(xtx/command,29723,2)]",_item itemData,no-ge-page
+13000044,"[@SHEET(xtx/command,29724,2)]",_item itemData,no-ge-page
+13000045,"[@SHEET(xtx/command,29725,2)]",_item itemData,no-ge-page
+13000046,"[@SHEET(xtx/command,29726,2)]",_item itemData,no-ge-page
+13000047,"[@SHEET(xtx/command,29730,2)]",_item itemData,no-ge-page
+13000048,"[@SHEET(xtx/command,29731,2)]",_item itemData,no-ge-page
+13000049,"[@SHEET(xtx/command,29732,2)]",_item itemData,no-ge-page
+13000050,"[@SHEET(xtx/command,29733,2)]",_item itemData,no-ge-page
+13000051,"[@SHEET(xtx/command,29734,2)]",_item itemData,no-ge-page
+13000052,"[@SHEET(xtx/command,29735,2)]",_item itemData,no-ge-page
+13000053,"[@SHEET(xtx/command,29736,2)]",_item itemData,no-ge-page
+13000054,"[@SHEET(xtx/command,29737,2)]",_item itemData,no-ge-page
+13000055,"[@SHEET(xtx/command,29738,2)]",_item itemData,no-ge-page
+13000056,"[@SHEET(xtx/command,29739,2)]",_item itemData,no-ge-page
+13000057,"[@SHEET(xtx/command,29740,2)]",_item itemData,no-ge-page
+13000058,"[@SHEET(xtx/command,29741,2)]",_item itemData,no-ge-page
+13000059,"[@SHEET(xtx/command,29833,2)]",_item itemData,no-ge-page
+13000060,"[@SHEET(xtx/command,29834,2)]",_item itemData,no-ge-page
+13000061,"[@SHEET(xtx/command,29835,2)]",_item itemData,no-ge-page
+13000062,"[@SHEET(xtx/command,29843,2)]",_item itemData,no-ge-page
+13000063,"[@SHEET(xtx/command,29844,2)]",_item itemData,no-ge-page
+13000064,"[@SHEET(xtx/command,29845,2)]",_item itemData,no-ge-page
+13000065,"[@SHEET(xtx/command,29853,2)]",_item itemData,no-ge-page
+13000066,"[@SHEET(xtx/command,29854,2)]",_item itemData,no-ge-page
+13000067,"[@SHEET(xtx/command,29855,2)]",_item itemData,no-ge-page
+13000068,"[@SHEET(xtx/command,29862,2)]",_item itemData,no-ge-page
+13000069,"[@SHEET(xtx/command,29863,2)]",_item itemData,no-ge-page
+13000070,"[@SHEET(xtx/command,29864,2)]",_item itemData,no-ge-page
+13000071,"[@SHEET(xtx/command,29865,2)]",_item itemData,no-ge-page
+13000072,"[@SHEET(xtx/command,29866,2)]",_item itemData,no-ge-page
+13000073,"[@SHEET(xtx/command,29867,2)]",_item itemData,no-ge-page
+13000074,"[@SHEET(xtx/command,29868,2)]",_item itemData,no-ge-page
+13000075,"[@SHEET(xtx/command,29869,2)]",_item itemData,no-ge-page
+13000076,"[@SHEET(xtx/command,29870,2)]",_item itemData,no-ge-page
+13000077,"[@SHEET(xtx/command,29871,2)]",_item itemData,no-ge-page
+13000078,"[@SHEET(xtx/command,29872,2)]",_item itemData,no-ge-page
+13000079,"[@SHEET(xtx/command,29504,2)]",_item itemData,no-ge-page
+13000080,"[@SHEET(xtx/command,29505,2)]",_item itemData,no-ge-page
+13000081,"[@SHEET(xtx/command,29507,2)]",_item itemData,no-ge-page
+13000082,"[@SHEET(xtx/command,29508,2)]",_item itemData,no-ge-page
+13000083,"[@SHEET(xtx/command,29511,2)]",_item itemData,no-ge-page
+13000084,"[@SHEET(xtx/command,29513,2)]",_item itemData,no-ge-page
+13000085,"[@SHEET(xtx/command,29519,2)]",_item itemData,no-ge-page
+13000086,"[@SHEET(xtx/command,29520,2)]",_item itemData,no-ge-page
+13000087,"[@SHEET(xtx/command,29521,2)]",_item itemData,no-ge-page
+13000088,"[@SHEET(xtx/command,29522,2)]",_item itemData,no-ge-page
+13000089,"[@SHEET(xtx/command,29523,2)]",_item itemData,no-ge-page
+13000090,"[@SHEET(xtx/command,29524,2)]",_item itemData,no-ge-page
+13000091,"[@SHEET(xtx/command,29525,2)]",_item itemData,no-ge-page
+13000092,"[@SHEET(xtx/command,29526,2)]",_item itemData,no-ge-page
+13000093,"[@SHEET(xtx/command,29527,2)]",_item itemData,no-ge-page
+13000094,"[@SHEET(xtx/command,29528,2)]",_item itemData,no-ge-page
+13000095,"[@SHEET(xtx/command,29530,2)]",_item itemData,no-ge-page
+13000096,"[@SHEET(xtx/command,29532,2)]",_item itemData,no-ge-page
+13000097,"[@SHEET(xtx/command,29537,2)]",_item itemData,no-ge-page
+13000098,"[@SHEET(xtx/command,29538,2)]",_item itemData,no-ge-page
+13000099,"[@SHEET(xtx/command,29544,2)]",_item itemData,no-ge-page
+13000100,"[@SHEET(xtx/command,29547,2)]",_item itemData,no-ge-page
+13000101,"[@SHEET(xtx/command,29548,2)]",_item itemData,no-ge-page
+13000102,"[@SHEET(xtx/command,29549,2)]",_item itemData,no-ge-page
+13000103,"[@SHEET(xtx/command,29550,2)]",_item itemData,no-ge-page
+13000104,"[@SHEET(xtx/command,29551,2)]",_item itemData,no-ge-page
+13000105,"[@SHEET(xtx/command,29552,2)]",_item itemData,no-ge-page

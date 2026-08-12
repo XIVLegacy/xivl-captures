@@ -1,0 +1,31 @@
+id: elemen-consumable-effects
+title: eLeMeN FF14 1.x Food and Medicine Effect Magnitudes - Web Tables
+evidence_class: web-tables
+distribution: restricted
+provenance:
+  sources:
+  - url: http://elemen.sakura.ne.jp/ff14_dated_archives/etc/food/index.html
+    archive_url: ''
+    site: eLeMeN - FF14
+    key: elemen-food
+  - url: http://elemen.sakura.ne.jp/ff14_dated_archives/etc/medicine/index.html
+    archive_url: ''
+    site: eLeMeN - FF14
+    key: elemen-medicine
+storage:
+  original_state: in-repo
+  storage_id: repo
+  path: objects/
+  master_archive:
+    file: elemen-consumable-effects-objects.zip
+    sha256: d8a6f9841754efa0d5a7d5c62afa8143477a4441cfcae06abf5e6ae02383811a
+    size_bytes: 5487
+    holds: all 2 files under objects/, deflate, fixed timestamps
+    cold_store_path: archives/elemen-consumable-effects/elemen-consumable-effects-objects.zip
+members:
+- file: pages/food-effects.md
+  sha256: a92108da25ad3e1456ab4495e2da6464dcd533f3843bd62b4cc2b9a499360cc4
+  size_bytes: 11738
+- file: pages/medicine-effects.md
+  sha256: 3d13646f81934bd853aed251efe8134e26e5a51e0bf857ccbb0396fd307641d4
+  size_bytes: 8692

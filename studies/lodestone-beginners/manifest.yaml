@@ -1,0 +1,41 @@
+id: lodestone-beginners
+title: FFXIV 1.x Lodestone - A Beginner's Guide to Eorzea
+evidence_class: web-tables
+status: distilled
+content_kind: action-mechanic
+tags:
+- web-reference
+- beginners-guide
+- onboarding
+- new-player-tips
+- official
+- square-enix
+- lodestone-1x
+- first-party
+- wiki-consumable
+search_hints:
+- beginners guide to eorzea
+- new player tips onboarding
+- passive active mode battle basics
+- guildleves getting around
+- setting actions action bar
+- getting around maps enemies
+- guildleves local levequests
+- trading items gil
+- disciple of the hand stats
+notes: 'Clean Markdown transcription of the 12 "A Beginner''s Guide to Eorzea" columns from the 1.x Lodestone, harvested from the same Jan-2015 master archive as the manual and dev-patch sets. Dev-written new-player gameplay tips and Q&A (Oct 2010 - Feb 2011): getting around, maps/enemies/class rank, the interaction menu, guildleves, battle basics and passive/active mode, setting actions to the action bar, trading, Disciple of the Hand stats, and more. ~12k words, 215 images, one .md per column, chronological in derived/index.md. Feeds bahamut-wiki onboarding/getting-started authoring (a wiki area currently deferred, wiki-structure.md); the wiki authors reword from these. Evidence tier: first-party tips of design intent - stronger than community wiki, but observed packet/video still outranks it for runtime values. Prose is ASCII-normalized, including the columns'' filled/hollow-circle list bullets (decorative here, unlike the manual''s materia grade markers) mapped to "-". These columns overlap the manual''s how-to-play content and are the informal companion to it.'
+related_implementation_docs: []
+source_refs:
+- source: lodestone-beginners
+primary_paths:
+- derived/index.md
+- derived/evidence-map.md
+- derived/file-inventory.csv
+canonical_evidence:
+- derived/index.md
+distilled:
+  distilled: true
+  distilled_artifacts:
+  - derived/index.md
+  - derived/evidence-map.md
+  - derived/file-inventory.csv

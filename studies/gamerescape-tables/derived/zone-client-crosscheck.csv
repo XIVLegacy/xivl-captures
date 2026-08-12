@@ -1,0 +1,52 @@
+ge_zone,ge_sightings,classification,match_pass,client_place_name_ids,client_display_name,client_zone_ids,client_zone_group_ids,bahamut_zones
+Western Thanalan,113,client-zone,exact,3003,western Thanalan,172 211,304,172=Western Thanalan
+North Shroud,95,client-zone,exact,2009,north Shroud,152 207 247 258 259,204,152=North Shroud 207=North Shroud
+Central Shroud,93,client-zone,exact,2007,central Shroud,150 162 164 165 166 167 168,202,150=Central Shroud 162=Central Shroud 164=Central Shroud 165=Central Shroud 166=Central Shroud 167=Central Shroud 168=Central Shroud
+Lower La Noscea,91,client-zone,exact,1001,lower La Noscea,128 141,102,128=Lower La Noscea 141=Lower La Noscea
+Eastern La Noscea,89,client-zone,exact,1003,eastern La Noscea,130 205,104,130=Eastern La Noscea 205=Eastern La Noscea
+Western La Noscea,82,client-zone,exact,1002,western La Noscea,129 204 248 260 261,103,129=Western La Noscea 204=Western La Noscea
+Eastern Thanalan,70,client-zone,exact,3002,eastern Thanalan,171 210 249 262 263,303,171=Eastern Thanalan
+South Shroud,69,client-zone,exact,2011,south Shroud,154 208,206,154=South Shroud 208=South Shroud
+Central Thanalan,57,client-zone,exact,3001,central Thanalan,170 182,302,170=Central Thanalan
+East Shroud,57,client-zone,exact,2008,east Shroud,151,203,151=East Shroud
+Southern Thanalan,57,client-zone,exact,3005,southern Thanalan,174,306,174=Southern Thanalan
+Coerthas Central Highlands,51,client-zone,exact,4004,Coerthas central highlands,143,401,143=Coerthas Central Highlands
+Mor Dhona,45,client-zone,exact,106,Mor Dhona,190 266,501,190=Mor Dhona 266=Mor Dhona
+Upper La Noscea,45,client-zone,exact,1004,upper La Noscea,135,105,135=Upper La Noscea
+The Mun-Tuy Cellars,37,client-zone,normalised,2101,MunTuy Cellars,157,207,157=The Mun-Tuy Cellars
+Northern Thanalan,36,client-zone,exact,3004,northern Thanalan,173,305,173=Northern Thanalan
+West Shroud,35,client-zone,exact,2010,west Shroud,153,205,153=West Shroud
+Coerthas Eastern Lowlands,33,client-zone,exact,4006,Coerthas eastern lowlands,145,403,145=Coerthas Eastern Lowlands
+Cassiopeia Hollow,31,client-zone,exact,1113,Cassiopeia Hollow,132,108,132=Cassiopeia Hollow
+Castrum Novum,30,client-place-not-a-zone,exact,5009,Castrum Novum,,,
+Nanawa Mines,28,client-zone,exact,3101,Nanawa Mines,176,307,176=Nanawa Mines
+Mistbeard Cove,24,client-zone,exact,1101,Mistbeard Cove,131,107,131=Mistbeard Cove
+Coerthas Central Lowlands,18,client-zone,exact,4007,Coerthas central lowlands,147,404,147=Coerthas Central Lowlands
+The Tam-Tara Deepcroft,17,client-zone,normalised,2113,TamTara Deepcroft,158,208,158=The Tam-Tara Deepcroft
+Coerthas Western Highlands,16,client-zone,exact,4008,Coerthas western highlands,148,405,148=Coerthas Western Highlands
+Shposhae,16,client-zone,exact,1122,Shposhae,235,109,235=Shposhae
+The Dzemael Darkhold,15,client-zone,normalised,4102,Dzemael Darkhold,231,406,231=Dzemael Darkhold
+The Thousand Maws of Toto-Rak,14,client-zone,normalised,2123,Thousand Maws of TotoRak,159,209,159=The Thousand Maws of Toto-Rak
+Coerthas Eastern Highlands,13,client-zone,exact,4005,Coerthas eastern highlands,144,402,144=Coerthas Eastern Highlands
+Natalan,13,client-place-not-a-zone,exact,4503,Natalan,,,
+Zahar'ak,12,client-place-not-a-zone,exact,3521,Zahar'ak,,,
+Copperbell Mines,11,client-zone,exact,3112,Copperbell Mines,178,308,178=Copperbell Mines
+Locke's Lie,10,client-zone,exact,1041,Locke's Lie,236 269,112,236=Locke's Lie
+U'Ghamaro Mines,9,client-zone,exact,1125,U'Ghamaro Mines,137,110,137=U'Ghamaro Mines
+Cutter's Cry,8,client-zone,exact,3123,Cutter's Cry,246 254 255,309,246=Cutter's Cry 254=Cutter's Cry 255=Cutter's Cry
+The Aurum Vale,7,client-zone,normalised,4104,Aurum Vale,245 252 253,407,245=The Aurum Vale 252=The Aurum Vale 253=The Aurum Vale
+The Battle for Hyrstmill,7,not-in-client,,,,,,
+Thornmarch,7,client-zone,exact,2532,Thornmarch,238,,238=Thornmarch
+The Battle for the Golden Bazaar,6,not-in-client,,,,,,
+Ul'dah,6,client-zone,exact,3051,Ul'dah,175 184 185 186 187 188 209,301,175=Ul'dah 184=Ul'dah 185=Ul'dah 186=Ul'dah 187=Ul'dah 188=Ul'dah 209=Ul'dah
+Turtleback Island,5,client-zone,exact,1011,Turtleback Island,237 270,113,
+Rivenroad,4,client-zone,exact,4073,Rivenroad,257 267 268,408,257=Rivenroad 267=Rivenroad 268=Rivenroad
+The Bowl of Embers,4,client-zone,normalised,3038,Bowl of Embers,240 265,,240=The Bowl of Embers
+The Howling Eye,4,client-zone,normalised,4519,Howling Eye,239 250 256,,239=The Howling Eye 250=The Howling Eye 256=The Howling Eye
+Coerthas,3,client-zone,exact,105,Coerthas,146,,
+Mun-Tuy Cellars,2,client-zone,normalised,2101,MunTuy Cellars,157,207,157=The Mun-Tuy Cellars
+Gridania,1,client-zone,exact,2001,Gridania,155 206,201,155=Gridania 206=Gridania
+Limsa Lominsa,1,client-zone,exact,1051,Limsa Lominsa,133 230,101,133=Limsa Lominsa 230=Limsa Lominsa
+Murmur Rills,1,client-place-not-a-zone,exact,2030,Murmur Rills,,,
+Paglth'an,1,client-place-not-a-zone,exact,118,Paglth'an,,,
+Y'shtola's Ship (Instance),1,not-in-client,,,,,,

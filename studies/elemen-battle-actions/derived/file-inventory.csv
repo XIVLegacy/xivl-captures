@@ -1,0 +1,10 @@
+page_file,kind,class_jp,source_page,data_rows
+sources/elemen-battle-actions/objects/pages/Gladiator.md,class-action,剣術,class/action/~patch2.00_Gladiator.html,32
+sources/elemen-battle-actions/objects/pages/Pugilist.md,class-action,闘術,class/action/~patch2.00_Pugilist.html,32
+sources/elemen-battle-actions/objects/pages/Marauder.md,class-action,斧術,class/action/~patch2.00_Marauder.html,32
+sources/elemen-battle-actions/objects/pages/Lancer.md,class-action,槍術,class/action/~patch2.00_Lancer.html,32
+sources/elemen-battle-actions/objects/pages/Archer.md,class-action,弓術,class/action/~patch2.00_Archer.html,34
+sources/elemen-battle-actions/objects/pages/Conjurer.md,class-action,幻術,class/action/~patch2.00_Conjurer.html,32
+sources/elemen-battle-actions/objects/pages/Thaumaturge.md,class-action,呪術,class/action/~patch2.00_Thaumaturge.html,32
+sources/elemen-battle-actions/objects/pages/_battle_tactics.md,tactics,付加効果を持つ戦術,class/battle/index.html,21
+sources/elemen-battle-actions/objects/pages/_action_index.md,index,-,class/action/index.html,0

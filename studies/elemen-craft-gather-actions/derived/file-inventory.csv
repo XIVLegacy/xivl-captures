@@ -1,0 +1,12 @@
+page_file,discipline,class_jp,source_page,action_rows
+sources/elemen-craft-gather-actions/objects/pages/Carpenter.md,hand,木工,class/action/~patch2.00_Carpenter.html,10
+sources/elemen-craft-gather-actions/objects/pages/Blacksmith.md,hand,鍛冶,class/action/~patch2.00_Blacksmith.html,10
+sources/elemen-craft-gather-actions/objects/pages/Armorer.md,hand,板金,class/action/~patch2.00_Armorer.html,10
+sources/elemen-craft-gather-actions/objects/pages/Goldsmith.md,hand,彫金,class/action/~patch2.00_Goldsmith.html,10
+sources/elemen-craft-gather-actions/objects/pages/Leatherworker.md,hand,革細工,class/action/~patch2.00_Leatherworker.html,10
+sources/elemen-craft-gather-actions/objects/pages/Weaver.md,hand,裁縫,class/action/~patch2.00_Weaver.html,11
+sources/elemen-craft-gather-actions/objects/pages/Alchemist.md,hand,練成,class/action/~patch2.00_Alchemist.html,11
+sources/elemen-craft-gather-actions/objects/pages/Culinarian.md,hand,調理,class/action/~patch2.00_Culinarian.html,11
+sources/elemen-craft-gather-actions/objects/pages/Miner.md,land,採掘,class/action/~patch2.00_Miner.html,28
+sources/elemen-craft-gather-actions/objects/pages/Botanist.md,land,園芸,class/action/~patch2.00_Botanist.html,28
+sources/elemen-craft-gather-actions/objects/pages/Fisher.md,land,漁釣,class/action/~patch2.00_Fisher.html,28

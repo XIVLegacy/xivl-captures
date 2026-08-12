@@ -1,0 +1,55 @@
+id: elemen-consumable-effects
+title: eLeMeN FF14 1.x Food and Medicine Effect Magnitudes - Web Tables
+evidence_class: web-tables
+status: distilled
+content_kind: status-effect-mechanic
+tags:
+- web-reference
+- wiki-tier
+- calibration
+- status-effect-mechanic
+- food-effect
+- medicine-effect
+- consumable
+- buff-magnitude
+- recovery-formula
+- recast-time
+- elemen
+- patch-1.x
+search_hints:
+- food effect attribute percentage cap 上限 buff magnitude 食事効果
+- medicine HP MP recovery percentage cap potion ether elixir formula 薬品効果
+- status cure debuff self-enhancement potion tonic elixir stat buff tier
+- food EXP +3% duration 30:00 recast 0:05 HQ +10% universal rule
+- consumable recast time itemData cross-check client authoritative
+- xtx_itemName xtx_text_paramName xtx_status client cross-check
+- eLeMeN elemen.sakura.ne.jp food medicine consumable effect
+- food effect attribute percentage cap 上限 physical attack STR buff magnitude
+- status cure debuff item eye drops echo drops antidote gold needle
+- self-enhancement potion tonic elixir stat buff cap tier 薬 妙薬 秘薬
+- enmity item protect shell phoenix down raise consumable
+- consumable recast time itemData field 62 cross-check client
+- eLeMeN elemen.sakura.ne.jp food medicine 食事効果 薬品効果
+notes: 'Web-table harvest of the eLeMeN - FF14 (elemen.sakura.ne.jp) etc/food (食事効果, 108 items) and etc/medicine (薬品効果, 66 items) sections, scoped client-first. The 1.23b client ships item names (xtx_itemName), consumable category, effect duration and recast time (itemData physical fields 60 and 62) - all dropped or used only to corroborate. The web-unique payload is the per-item effect magnitude: food per-attribute buff spec attribute:+X%(cap Y) (1-3 attributes per dish, grouped by primary stat) plus the universal food rules (EXP +3%, duration 30:00, recast 0:05, HQ +10%, raw ingredients EXP-only, cap-proximity log messages); medicine HP/MP recovery +X%(cap Y) (percent of max, not fixed), status cure/debuff specs, self-enhancement stat buffs stat:+X%(cap Y) with per-tier caps, enmity deltas, Protect/Shell grants, and raises. None of these magnitudes appear in any populated itemData column (verified). Cross-check per studies/elemen-bestiary/derived/client-crosscheck.md (NFKC): item names 174/174 resolved to xtx_itemName (the 5 medicines carry a ◆◆ site marker for special-acquisition items, stripped before the join, kept verbatim in item_marker); 28 attribute tokens to xtx_text_paramName and 8 status tokens to xtx_status, all resolved (glossary.md carries ids). Recast/duration cross-validated against itemData: all 108 food and 57/66 medicine agree exactly. The 9 status-cure medicines (治療薬類) list recast 1:10-1:20 on the site but the client itemData carries 3:00-4:30 - a documented cross-source contradiction; per the tier rule the client value is authoritative and the site value appears to predate the 1.23b cure rebalance (consistent with the site''s shopitem section carrying patch-1.22 prices). Both values are kept per row so the divergence is visible. Evidence tier: wiki, CALIBRATION-grade - the effect magnitudes cannot be checked against the client (server-side) and should be corroborated against pcap/client before promotion. effect_jp is authoritative; effect_en is a convenience gloss. The site 403s naive fetchers; pages were fetched with a browser UA and cached in elemen-site-archive. Source HTML preserved in elemen-site-archive, see its derived/url-map.csv. Harvested 2026-07-18.'
+related_implementation_docs: []
+source_refs:
+- source: elemen-consumable-effects
+- source: elemen-site-archive
+  citation: full site mirror
+primary_paths:
+- derived/evidence-map.md
+- derived/food-effects.csv
+- derived/medicine-effects.csv
+- derived/glossary.md
+- derived/file-inventory.csv
+canonical_evidence:
+- derived/food-effects.csv
+- derived/medicine-effects.csv
+distilled:
+  distilled: true
+  distilled_artifacts:
+  - derived/food-effects.csv
+  - derived/medicine-effects.csv
+  - derived/glossary.md
+  - derived/evidence-map.md
+  - derived/file-inventory.csv

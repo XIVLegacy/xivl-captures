@@ -1,0 +1,548 @@
+{
+  "captureCount": 53,
+  "inventory": {
+    "totalItemsObserved": 481,
+    "distinctItemIds": 69,
+    "items": [
+      {
+        "itemId": 1000001,
+        "itemIdHex": "0x000f4241",
+        "totalOccurrences": 22,
+        "capturesSeen": 13,
+        "sampleQuantity": 1346698
+      },
+      {
+        "itemId": 1000006,
+        "itemIdHex": "0x000f4246",
+        "totalOccurrences": 14,
+        "capturesSeen": 11,
+        "sampleQuantity": 1685
+      },
+      {
+        "itemId": 1000004,
+        "itemIdHex": "0x000f4244",
+        "totalOccurrences": 13,
+        "capturesSeen": 10,
+        "sampleQuantity": 1424
+      },
+      {
+        "itemId": 1000005,
+        "itemIdHex": "0x000f4245",
+        "totalOccurrences": 13,
+        "capturesSeen": 9,
+        "sampleQuantity": 1635
+      },
+      {
+        "itemId": 1000010,
+        "itemIdHex": "0x000f424a",
+        "totalOccurrences": 13,
+        "capturesSeen": 9,
+        "sampleQuantity": 142
+      },
+      {
+        "itemId": 1000003,
+        "itemIdHex": "0x000f4243",
+        "totalOccurrences": 12,
+        "capturesSeen": 9,
+        "sampleQuantity": 1532
+      },
+      {
+        "itemId": 10009206,
+        "itemIdHex": "0x0098ba76",
+        "totalOccurrences": 12,
+        "capturesSeen": 9,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 1000008,
+        "itemIdHex": "0x000f4248",
+        "totalOccurrences": 12,
+        "capturesSeen": 9,
+        "sampleQuantity": 1384
+      },
+      {
+        "itemId": 1000013,
+        "itemIdHex": "0x000f424d",
+        "totalOccurrences": 12,
+        "capturesSeen": 9,
+        "sampleQuantity": 128
+      },
+      {
+        "itemId": 10007507,
+        "itemIdHex": "0x0098b3d3",
+        "totalOccurrences": 11,
+        "capturesSeen": 8,
+        "sampleQuantity": 5
+      },
+      {
+        "itemId": 10009102,
+        "itemIdHex": "0x0098ba0e",
+        "totalOccurrences": 11,
+        "capturesSeen": 8,
+        "sampleQuantity": 9
+      },
+      {
+        "itemId": 10009505,
+        "itemIdHex": "0x0098bba1",
+        "totalOccurrences": 11,
+        "capturesSeen": 8,
+        "sampleQuantity": 17
+      },
+      {
+        "itemId": 10009507,
+        "itemIdHex": "0x0098bba3",
+        "totalOccurrences": 11,
+        "capturesSeen": 8,
+        "sampleQuantity": 13
+      },
+      {
+        "itemId": 10013001,
+        "itemIdHex": "0x0098c949",
+        "totalOccurrences": 11,
+        "capturesSeen": 8,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 10013002,
+        "itemIdHex": "0x0098c94a",
+        "totalOccurrences": 11,
+        "capturesSeen": 8,
+        "sampleQuantity": 5
+      },
+      {
+        "itemId": 10013003,
+        "itemIdHex": "0x0098c94b",
+        "totalOccurrences": 11,
+        "capturesSeen": 8,
+        "sampleQuantity": 8
+      },
+      {
+        "itemId": 1000007,
+        "itemIdHex": "0x000f4247",
+        "totalOccurrences": 11,
+        "capturesSeen": 8,
+        "sampleQuantity": 1022
+      },
+      {
+        "itemId": 1000009,
+        "itemIdHex": "0x000f4249",
+        "totalOccurrences": 11,
+        "capturesSeen": 8,
+        "sampleQuantity": 227
+      },
+      {
+        "itemId": 1000011,
+        "itemIdHex": "0x000f424b",
+        "totalOccurrences": 11,
+        "capturesSeen": 8,
+        "sampleQuantity": 123
+      },
+      {
+        "itemId": 1000012,
+        "itemIdHex": "0x000f424c",
+        "totalOccurrences": 11,
+        "capturesSeen": 8,
+        "sampleQuantity": 166
+      },
+      {
+        "itemId": 1000014,
+        "itemIdHex": "0x000f424e",
+        "totalOccurrences": 11,
+        "capturesSeen": 8,
+        "sampleQuantity": 58
+      },
+      {
+        "itemId": 1000015,
+        "itemIdHex": "0x000f424f",
+        "totalOccurrences": 11,
+        "capturesSeen": 8,
+        "sampleQuantity": 2
+      },
+      {
+        "itemId": 1000016,
+        "itemIdHex": "0x000f4250",
+        "totalOccurrences": 11,
+        "capturesSeen": 8,
+        "sampleQuantity": 3
+      },
+      {
+        "itemId": 1000017,
+        "itemIdHex": "0x000f4251",
+        "totalOccurrences": 11,
+        "capturesSeen": 8,
+        "sampleQuantity": 2
+      },
+      {
+        "itemId": 1000018,
+        "itemIdHex": "0x000f4252",
+        "totalOccurrences": 11,
+        "capturesSeen": 8,
+        "sampleQuantity": 3
+      },
+      {
+        "itemId": 1000019,
+        "itemIdHex": "0x000f4253",
+        "totalOccurrences": 11,
+        "capturesSeen": 8,
+        "sampleQuantity": 4
+      },
+      {
+        "itemId": 1000020,
+        "itemIdHex": "0x000f4254",
+        "totalOccurrences": 11,
+        "capturesSeen": 8,
+        "sampleQuantity": 3
+      },
+      {
+        "itemId": 1000201,
+        "itemIdHex": "0x000f4309",
+        "totalOccurrences": 11,
+        "capturesSeen": 8,
+        "sampleQuantity": 2050
+      },
+      {
+        "itemId": 1000202,
+        "itemIdHex": "0x000f430a",
+        "totalOccurrences": 11,
+        "capturesSeen": 8,
+        "sampleQuantity": 520
+      },
+      {
+        "itemId": 1000203,
+        "itemIdHex": "0x000f430b",
+        "totalOccurrences": 11,
+        "capturesSeen": 8,
+        "sampleQuantity": 1300
+      },
+      {
+        "itemId": 2000201,
+        "itemIdHex": "0x001e8549",
+        "totalOccurrences": 11,
+        "capturesSeen": 8,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 2000202,
+        "itemIdHex": "0x001e854a",
+        "totalOccurrences": 11,
+        "capturesSeen": 8,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 2000205,
+        "itemIdHex": "0x001e854d",
+        "totalOccurrences": 11,
+        "capturesSeen": 8,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 2000206,
+        "itemIdHex": "0x001e854e",
+        "totalOccurrences": 11,
+        "capturesSeen": 8,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 2000207,
+        "itemIdHex": "0x001e854f",
+        "totalOccurrences": 11,
+        "capturesSeen": 8,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 2001005,
+        "itemIdHex": "0x001e886d",
+        "totalOccurrences": 11,
+        "capturesSeen": 8,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 2001007,
+        "itemIdHex": "0x001e886f",
+        "totalOccurrences": 11,
+        "capturesSeen": 8,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 10009211,
+        "itemIdHex": "0x0098ba7b",
+        "totalOccurrences": 5,
+        "capturesSeen": 1,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 10007504,
+        "itemIdHex": "0x0098b3d0",
+        "totalOccurrences": 4,
+        "capturesSeen": 2,
+        "sampleQuantity": 30
+      },
+      {
+        "itemId": 3011006,
+        "itemIdHex": "0x002df1be",
+        "totalOccurrences": 3,
+        "capturesSeen": 2,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 8011608,
+        "itemIdHex": "0x007a3f58",
+        "totalOccurrences": 2,
+        "capturesSeen": 2,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 6060006,
+        "itemIdHex": "0x005c77e6",
+        "totalOccurrences": 2,
+        "capturesSeen": 2,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 3011307,
+        "itemIdHex": "0x002df2eb",
+        "totalOccurrences": 2,
+        "capturesSeen": 2,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 4030013,
+        "itemIdHex": "0x003d7e3d",
+        "totalOccurrences": 2,
+        "capturesSeen": 2,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 4040405,
+        "itemIdHex": "0x003da6d5",
+        "totalOccurrences": 2,
+        "capturesSeen": 2,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 10005202,
+        "itemIdHex": "0x0098aad2",
+        "totalOccurrences": 2,
+        "capturesSeen": 1,
+        "sampleQuantity": 11
+      },
+      {
+        "itemId": 10007016,
+        "itemIdHex": "0x0098b1e8",
+        "totalOccurrences": 2,
+        "capturesSeen": 2,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 8050611,
+        "itemIdHex": "0x007ad7b3",
+        "totalOccurrences": 2,
+        "capturesSeen": 2,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 8080819,
+        "itemIdHex": "0x007b4db3",
+        "totalOccurrences": 2,
+        "capturesSeen": 2,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 4100604,
+        "itemIdHex": "0x003e91fc",
+        "totalOccurrences": 1,
+        "capturesSeen": 1,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 8030423,
+        "itemIdHex": "0x007a88d7",
+        "totalOccurrences": 1,
+        "capturesSeen": 1,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 8031609,
+        "itemIdHex": "0x007a8d79",
+        "totalOccurrences": 1,
+        "capturesSeen": 1,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 8011108,
+        "itemIdHex": "0x007a3d64",
+        "totalOccurrences": 1,
+        "capturesSeen": 1,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 7020002,
+        "itemIdHex": "0x006b1de2",
+        "totalOccurrences": 1,
+        "capturesSeen": 1,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 7020108,
+        "itemIdHex": "0x006b1e4c",
+        "totalOccurrences": 1,
+        "capturesSeen": 1,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 10009610,
+        "itemIdHex": "0x0098bc0a",
+        "totalOccurrences": 1,
+        "capturesSeen": 1,
+        "sampleQuantity": 2
+      },
+      {
+        "itemId": 8032501,
+        "itemIdHex": "0x007a90f5",
+        "totalOccurrences": 1,
+        "capturesSeen": 1,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 10006111,
+        "itemIdHex": "0x0098ae5f",
+        "totalOccurrences": 1,
+        "capturesSeen": 1,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 4080008,
+        "itemIdHex": "0x003e4188",
+        "totalOccurrences": 1,
+        "capturesSeen": 1,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 5030006,
+        "itemIdHex": "0x004cc076",
+        "totalOccurrences": 1,
+        "capturesSeen": 1,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 8011404,
+        "itemIdHex": "0x007a3e8c",
+        "totalOccurrences": 1,
+        "capturesSeen": 1,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 10007013,
+        "itemIdHex": "0x0098b1e5",
+        "totalOccurrences": 1,
+        "capturesSeen": 1,
+        "sampleQuantity": 3
+      },
+      {
+        "itemId": 8030920,
+        "itemIdHex": "0x007a8ac8",
+        "totalOccurrences": 1,
+        "capturesSeen": 1,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 8070218,
+        "itemIdHex": "0x007b244a",
+        "totalOccurrences": 1,
+        "capturesSeen": 1,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 8090608,
+        "itemIdHex": "0x007b73f0",
+        "totalOccurrences": 1,
+        "capturesSeen": 1,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 9050052,
+        "itemIdHex": "0x008a17c4",
+        "totalOccurrences": 1,
+        "capturesSeen": 1,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 3011302,
+        "itemIdHex": "0x002df2e6",
+        "totalOccurrences": 1,
+        "capturesSeen": 1,
+        "sampleQuantity": 1
+      },
+      {
+        "itemId": 3020410,
+        "itemIdHex": "0x002e167a",
+        "totalOccurrences": 1,
+        "capturesSeen": 1,
+        "sampleQuantity": 3
+      },
+      {
+        "itemId": 2000203,
+        "itemIdHex": "0x001e854b",
+        "totalOccurrences": 1,
+        "capturesSeen": 1,
+        "sampleQuantity": 1
+      }
+    ]
+  },
+  "eventStarts": {
+    "totalStarts": 126,
+    "distinctEvents": 10,
+    "events": [
+      {
+        "eventName": "commandDefault",
+        "count": 44,
+        "capturesSeen": 3
+      },
+      {
+        "eventName": "commandForced",
+        "count": 28,
+        "capturesSeen": 8
+      },
+      {
+        "eventName": "commandRequest",
+        "count": 19,
+        "capturesSeen": 14
+      },
+      {
+        "eventName": "talkDefault",
+        "count": 17,
+        "capturesSeen": 14
+      },
+      {
+        "eventName": "commandJudgeMode",
+        "count": 5,
+        "capturesSeen": 4
+      },
+      {
+        "eventName": "commandContent",
+        "count": 4,
+        "capturesSeen": 4
+      },
+      {
+        "eventName": "caution",
+        "count": 3,
+        "capturesSeen": 3
+      },
+      {
+        "eventName": "exit",
+        "count": 3,
+        "capturesSeen": 3
+      },
+      {
+        "eventName": "noticeEvent",
+        "count": 2,
+        "capturesSeen": 1
+      },
+      {
+        "eventName": "regionChange",
+        "count": 1,
+        "capturesSeen": 1
+      }
+    ]
+  }
+}

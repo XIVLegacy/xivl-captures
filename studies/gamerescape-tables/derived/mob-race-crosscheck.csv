@@ -1,0 +1,83 @@
+client_race_id,client_race_name,ge_family,mobs,share_of_race,share_of_family
+1001,Puk,Puk,14,1.0000,1.0000
+1002,Raptor,Raptor,8,1.0000,1.0000
+1003,Antelope,Antelope,9,1.0000,1.0000
+1004,Hippogryph,Hippogryph,8,1.0000,1.0000
+1005,Opo-opo,Opo-opo,13,0.9286,1.0000
+1005,Opo-opo,Opo-Opo,1,0.0714,1.0000
+1006,Gnat,Gnat,12,1.0000,1.0000
+1007,Basilisk,Basilisk,12,1.0000,1.0000
+1008,Buffalo,Buffalo,3,1.0000,1.0000
+1009,Sabotender,Cactuar,9,1.0000,1.0000
+1010,Morbol,Morbol,3,1.0000,1.0000
+1011,Crab,Diremite,19,1.0000,1.0000
+1012,Vulture,Vulture,8,1.0000,1.0000
+1013,Salamander,Salamander,14,1.0000,1.0000
+1014,Wolf/Hyena/Hellhound,Wolf,27,1.0000,1.0000
+1015,Boar,Boar,10,1.0000,1.0000
+1016,Bomb,Bomb,13,0.9286,1.0000
+1016,Bomb,Wisp,1,0.0714,0.0588
+1017,Ahriman,Ahriman,15,1.0000,1.0000
+1018,Zombie,Fomor,14,1.0000,1.0000
+1019,Wight,Wight,8,1.0000,1.0000
+1020,Cockatrice,Cockatrice,12,1.0000,1.0000
+1021,Coblyn,Coblyn,10,1.0000,1.0000
+1022,Drake,Drake,19,1.0000,1.0000
+1023,Aldgoats,Aldgoat,13,1.0000,1.0000
+1024,Juggernaut,Juggernaut,1,1.0000,1.0000
+1025,Ogre,Ogre,5,1.0000,1.0000
+1026,Imp,Imp,8,1.0000,1.0000
+1027,Flytrap,Landtrap,24,1.0000,1.0000
+1028,Treant,Treant,3,1.0000,1.0000
+1029,Apkallu,Apkallu,4,1.0000,1.0000
+1030,Antling,Antling,11,1.0000,1.0000
+1031,Gigantoad,Toad,8,1.0000,1.0000
+1032,Couerl,Coeurl,1,1.0000,1.0000
+1033,Goobbue,Goobbue,4,1.0000,1.0000
+1034,Flan,Flan,4,1.0000,1.0000
+1035,Gargoyle,Gargoyle,2,1.0000,1.0000
+1039,Weevil,Beetle,11,1.0000,1.0000
+1040,Rat,Rodent,27,1.0000,1.0000
+1041,Bat,Bat,10,1.0000,1.0000
+1042,Slug,Slug,14,1.0000,1.0000
+1043,Ghost,Ghost,16,1.0000,1.0000
+1044,Phurble,Snurble,4,1.0000,1.0000
+1045,Angler,Angler,15,1.0000,1.0000
+1046,Fire Elemental,Elemental,2,1.0000,0.2000
+1047,Ice Elemental,Elemental,2,1.0000,0.2000
+1048,Air Elemental,Elemental,1,1.0000,0.1000
+1049,Earth Elemental,Elemental,2,1.0000,0.2000
+1050,Lightning Elemental,Elemental,1,1.0000,0.1000
+1051,Water Elemental,Elemental,1,1.0000,0.1000
+1052,Elemental,Elemental,1,1.0000,0.1000
+1053,Swarm,Swarm,10,1.0000,1.0000
+1054,Jellyfish,Aurelia,12,1.0000,1.0000
+1055,Yarzon,Yarzon,13,1.0000,1.0000
+1056,Chigoe,Chigoe,11,1.0000,1.0000
+1057,Hedgemole,Mole,15,1.0000,1.0000
+1058,Firefly,Firefly,5,1.0000,1.0000
+1059,Funguar,Funguar,12,1.0000,1.0000
+1060,Sheep,Ram,12,1.0000,1.0000
+1062,Spriggan,Spriggan,11,1.0000,1.0000
+1063,Qiqirn,Qiqirn,8,1.0000,1.0000
+1064,Ixal,Ixal,24,1.0000,1.0000
+1065,Amlaj'aa,Amalj'aa,14,1.0000,1.0000
+1066,Kobold,Kobold,24,1.0000,1.0000
+1067,Sylph,Sylph,5,1.0000,1.0000
+1069,Ascian,Ascian,1,1.0000,1.0000
+1070,Imperial,Enemy Humanoid,3,1.0000,1.0000
+1073,Ifrit,Primal,1,0.5000,0.5000
+1073,Ifrit,Unknown,1,0.5000,0.2000
+1076,Crab,Crab,18,1.0000,1.0000
+1087,キマイラ (仮),Chimera,1,1.0000,1.0000
+1089,Golem (1.2),Golem,2,1.0000,1.0000
+1090,キラーマシン(仮),Magitek Armor,1,1.0000,1.0000
+1095,Garuda,Primal,1,0.5000,0.5000
+1095,Garuda,Unknown,1,0.5000,0.2000
+1099,妖火 (仮),Wisp,16,1.0000,0.9412
+1100,ウィル・オー・ウィスプ (仮),Plasmoid,2,1.0000,1.0000
+1103,Goblin,Goblin,7,1.0000,1.0000
+1104,モーグリ,Moogle,7,1.0000,1.0000
+1107,サイクロプス,Cyclopes,1,1.0000,1.0000
+1108,オブジェクト,Unknown,2,1.0000,0.4000
+1109,アニマオブジェクト,Unknown,1,1.0000,0.2000

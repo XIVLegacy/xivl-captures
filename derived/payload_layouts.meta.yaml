@@ -1,0 +1,13 @@
+dataset: payload_layouts
+kind: generated
+evidence_class: packet-capture
+schema_version: 1
+output:
+  file: derived/payload_layouts.json
+  sha256: 068cf0f13e9abfe43b465716d3ab9399635fcd83b7c5a9c72fe19e9dc83996f7
+generator:
+  tool: tools/analyze_payload_layouts.py
+  version: '1'
+inputs:
+- dataset: payload_samples
+  sha256: 3d08a4ed4407738c02ce13b0fe853b6e8dba6340930e59dc94734055f8b8da38

@@ -1,0 +1,6 @@
+path,kind,rows
+derived/food-effects.csv,normalized-table,108
+derived/medicine-effects.csv,normalized-table,66
+derived/glossary.md,glossary,
+sources/elemen-consumable-effects/objects/pages/food-effects.md,verbatim-transcription,108
+sources/elemen-consumable-effects/objects/pages/medicine-effects.md,verbatim-transcription,66

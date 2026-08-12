@@ -1,0 +1,63 @@
+id: elemen-playguide
+title: eLeMeN FF14 1.x Play Guide - Weather Legend, Aethernet, Market Tax - Web Tables
+evidence_class: web-tables
+status: distilled
+content_kind: zone-mechanic
+tags:
+- web-reference
+- wiki-tier
+- calibration
+- playguide
+- weather-legend
+- weather-icon
+- aethernet
+- market-tax
+- game-units
+- moon-phase
+- race-base-stats
+- tribe-stats
+- lore
+- elemen
+- patch-1.x
+search_hints:
+- weather icon legend name clear fair cloudy decode weatherN
+- zone-guide weather token legend xtx__fixedPhrase cross-check
+- aethernet intra-city teleport shard guard npc coords
+- market indirect tax street category reduction rule
+- in-game length weight unit yalm malm onze metric
+- race tribe base stats STR VIT DEX INT MND PIE elemental resistance xtx_tribe
+- Midlander Highlander Wildwood Duskwight Plainsfolk Dunesfolk Sea Wolf Hellsguard
+- playguide faq lore races guardian classjob verbatim
+- eLeMeN elemen.sakura.ne.jp playguide
+- weather icon legend name 快晴 晴れ 曇り clear fair cloudy decode weatherN
+- moon phase lunar cycle names 新月 満月
+- Midlander Highlander Wildwood Duskwight Plainsfolk Dunesfolk Seeker Keeper Sea Wolf Hellsguard
+- xtx_tribe xtx_displayName xtx_placeName xtx__fixedPhrase client cross-check
+notes: 'Full mirror of the eLeMeN - FF14 (elemen.sakura.ne.jp) etc/playguide section (the game''s play-guide: FAQ, lore, tutorial, plus structured data tables), scoped client-first. The section is dominantly FAQ/lore/tutorial prose (character creation, world lore, races, guardian deities, class/job concepts, mounts, collections, inns, and aetheryte/class/quest/guildleve Q&A) - client-string-derivable or non-behavioral, captured verbatim under sources/elemen-playguide/objects/pages/ (17 pages) as the mirror but not normalized. Six sets carry structured evidence and are normalized into derived CSVs, cross-checked to the client where a name table exists: (1) weather-legend.csv - faq_tips names the weather icons weather1-9 (快晴/晴れ/曇り/霧/暴風/雨/雷雨/砂嵐/妖霧, 10-19 名称不明), which DECODES the [weatherN] tokens elemen-zone-guide left opaque (there is no weather table in the client); each name joins xtx__fixedPhrase.csv (JP col3 -> EN col5, id col0) 9/9 - clear/fair/cloudy/foggy/blustery/rainy/ stormy/sandy/gloomy. (2) aethernet.csv - the 3 cities'' aethernet shard networks (24 shards: destination, sub-area + coords, gate-guard NPC); guards join xtx_displayName 19/19, destinations join xtx_placeName 18/24 (the 6 gaps are the central エーテライト・プラザ + minor landmarks). (3) market-tax.csv - the 19 market streets -> the item categories each reduces indirect tax on (a server economy rule; categories verbatim JP, streets romanized). (4) units.csv - in-game length (ilm/fulm/yalm/malm) and weight (onze/ponze/tonze) units with metric equivalents. (5) moon-phases.csv - the 8 lunar-cycle phase names (JP only; not in any client name table). (6) race-base-stats.csv - the 15 gendered tribe rows from races.md (5 races x their 1.x tribes; STR/VIT/DEX/INT/MND/PIE + 6 elemental resistances, numbers verbatim), tribe EN joined to the client xtx_tribe.csv (JP+gender col4 -> EN col5, id col0) 15/15. The client tribe sheet ships exactly these 15 gendered rows, corroborating the 1.x gender locks (Highlander M-only, both Miqo''te tribes F-only, both Roegadyn tribes M-only); the EN is the client''s own tribe string (ARR-era spelling: Wildwood/Duskwight/ Hellsguard/Sea Wolf/Seeker of the Sun/Keeper of the Moon), not the site''s 1.0 romaji. Evidence tier: wiki, CALIBRATION-grade. Edition: play-guide content tracks the final 1.x state; weather names, aethernet guards, and place joins resolve against the 1.23b client tables. server.html (the world/server list, lowest-value page) is intentionally not captured - the host WAF blocks that specific resource (HTTP blackhole, HTTPS 403) regardless of headers/scheme/encoding, and it is a low-value server list; skipped by decision. Of the remaining 18, index.html is the section nav page (archived in elemen-site-archive); the 17 content pages are the mirror. The site 403s naive fetchers; pages were read with a browser UA and captured into elemen-site-archive. Source HTML preserved in elemen-site-archive, see its derived/url-map.csv. Harvested 2026-07-18.'
+related_implementation_docs: []
+source_refs:
+- source: elemen-playguide
+- source: elemen-site-archive
+  citation: full site mirror
+primary_paths:
+- derived/evidence-map.md
+- derived/weather-legend.csv
+- derived/aethernet.csv
+- derived/market-tax.csv
+- derived/units.csv
+- derived/moon-phases.csv
+- derived/race-base-stats.csv
+- derived/glossary.md
+- derived/file-inventory.csv
+distilled:
+  distilled: true
+  distilled_artifacts:
+  - derived/weather-legend.csv
+  - derived/aethernet.csv
+  - derived/market-tax.csv
+  - derived/units.csv
+  - derived/moon-phases.csv
+  - derived/race-base-stats.csv
+  - derived/glossary.md
+  - derived/evidence-map.md
+  - derived/file-inventory.csv

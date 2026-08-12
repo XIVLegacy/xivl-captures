@@ -1,0 +1,2800 @@
+{
+  "version": "1.23b",
+  "seedTable": "external non-public Bahamut source consulted at research time: bahamut/sql/server_spawn_locations.sql",
+  "seedRows": 1013,
+  "tolerances": {
+    "exactM": 0.05,
+    "confirmM": 1.0
+  },
+  "coveredZones": [
+    145,
+    150,
+    151,
+    152,
+    154,
+    155,
+    162,
+    172,
+    206,
+    244
+  ],
+  "divergenceMethodNote": "Divergence is only assertable for identity-anchored actors (a uniquely-classed static object matched to a specific seed row); position nearest-neighbour cannot separate a displaced seed NPC from a different ambient actor. Every identity-anchored actor matched its seed row exactly (delta 0.000), so zero divergences were found. Retail wins where a divergence is ever confirmed by this method.",
+  "summary": {
+    "confirmed": 115,
+    "confirmedExact": 110,
+    "confirmedNear": 5,
+    "divergent": 0,
+    "unobservable": 898,
+    "unobservableCoveredZone": 156,
+    "unobservableUncoveredZone": 742,
+    "nearRejectedWrongTable": 1
+  },
+  "confirmedByZone": {
+    "152": 2,
+    "155": 22,
+    "206": 91
+  },
+  "confirmed": [
+    {
+      "id": 981,
+      "uniqueId": "miraudont",
+      "zone": 152,
+      "seed": [
+        -1047.55,
+        20.6,
+        -1744.68,
+        -0.38
+      ],
+      "observed": [
+        -1047.55,
+        20.6,
+        -1744.68,
+        -0.38
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Fld03_04@09800",
+      "capture": "gridania_to_coerthas.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 983,
+      "uniqueId": "bubunakka",
+      "zone": 152,
+      "seed": [
+        -1046.8,
+        20.39,
+        -1768.75,
+        -0.78
+      ],
+      "observed": [
+        -1046.8,
+        20.39,
+        -1768.75,
+        -0.78
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceCampMaster",
+      "observedInstance": "pplCampMast_fst0Fld03_03@09800",
+      "capture": "gridania_to_coerthas.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 594,
+      "uniqueId": "edasshym",
+      "zone": 155,
+      "seed": [
+        63.63,
+        4.0,
+        -1216.16,
+        1.07
+      ],
+      "observed": [
+        63.63,
+        4.0,
+        -1216.16,
+        1.07
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01_0w@09B00",
+      "capture": "from_gridania_to_blackshroud.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 595,
+      "uniqueId": "anene",
+      "zone": 155,
+      "seed": [
+        65.15,
+        4.2,
+        -1219.57,
+        2.42
+      ],
+      "observed": [
+        65.15,
+        4.2,
+        -1219.57,
+        2.42
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01_0b@09B00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 597,
+      "uniqueId": "sylbyrt",
+      "zone": 155,
+      "seed": [
+        67.66,
+        4.2,
+        -1223.57,
+        -0.58
+      ],
+      "observed": [
+        67.66,
+        4.2,
+        -1223.57,
+        -0.58
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01_0c@09B00",
+      "capture": "move_out_of_room.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 599,
+      "uniqueId": "pfarahr",
+      "zone": 155,
+      "seed": [
+        64.18,
+        -6.8,
+        -1217.46,
+        0.6
+      ],
+      "observed": [
+        64.18,
+        -6.8,
+        -1217.46,
+        0.6
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01_0w@09B00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 600,
+      "uniqueId": "fryswyde",
+      "zone": 155,
+      "seed": [
+        53.55,
+        -7.0,
+        -1216.54,
+        1.61
+      ],
+      "observed": [
+        53.55,
+        -7.0,
+        -1216.54,
+        1.61
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01_0y@09B00",
+      "capture": "from_gridania_to_blackshroud.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 601,
+      "uniqueId": "memama",
+      "zone": 155,
+      "seed": [
+        65.26,
+        -6.75,
+        -1217.68,
+        0.5
+      ],
+      "observed": [
+        65.26,
+        -6.75,
+        -1217.68,
+        0.5
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01_0v@09B00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 602,
+      "uniqueId": "willielmus",
+      "zone": 155,
+      "seed": [
+        53.82,
+        -7.0,
+        -1213.1,
+        1.57
+      ],
+      "observed": [
+        53.82,
+        -7.0,
+        -1213.1,
+        1.57
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01_0z@09B00",
+      "capture": "from_gridania_to_blackshroud.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 604,
+      "uniqueId": "flavielle",
+      "zone": 155,
+      "seed": [
+        75.4,
+        4.2,
+        -1220.13,
+        -1.43
+      ],
+      "observed": [
+        75.4,
+        4.2,
+        -1220.13,
+        -1.43
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01_0s@09B00",
+      "capture": "move_out_of_room.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 610,
+      "uniqueId": "task_board",
+      "zone": 155,
+      "seed": [
+        75.73,
+        5.5,
+        -1201.37,
+        0.0
+      ],
+      "observed": [
+        75.73,
+        5.5,
+        -1201.37,
+        0.0
+      ],
+      "delta": 0.0,
+      "observedBase": "TaskBoard",
+      "observedInstance": "taskBoard_fst0Twn01_0P@09B00",
+      "capture": "from_gridania_to_blackshroud.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 612,
+      "uniqueId": "seikfrae",
+      "zone": 155,
+      "seed": [
+        62.33,
+        4.0,
+        -1194.06,
+        -2.53
+      ],
+      "observed": [
+        62.33,
+        4.0,
+        -1194.06,
+        -2.53
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01_0D@09B00",
+      "capture": "move_out_of_room.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 613,
+      "uniqueId": "anselm",
+      "zone": 155,
+      "seed": [
+        66.94,
+        4.0,
+        -1194.13,
+        -2.32
+      ],
+      "observed": [
+        66.94,
+        4.0,
+        -1194.13,
+        -2.32
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01_0k@09B00",
+      "capture": "from_gridania_to_blackshroud.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 614,
+      "uniqueId": "penelope",
+      "zone": 155,
+      "seed": [
+        58.08,
+        3.8,
+        -1183.33,
+        2.93
+      ],
+      "observed": [
+        58.08,
+        3.8,
+        -1183.33,
+        2.93
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01_0v@09B00",
+      "capture": "from_gridania_to_blackshroud.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 615,
+      "uniqueId": "beaudonet",
+      "zone": 155,
+      "seed": [
+        54.04,
+        -7.0,
+        -1218.46,
+        -0.59
+      ],
+      "observed": [
+        54.04,
+        -7.0,
+        -1218.46,
+        -0.59
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01_0x@09B00",
+      "capture": "move_out_of_room.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 632,
+      "uniqueId": "miniaeth_adv",
+      "zone": 155,
+      "seed": [
+        98.77,
+        3.59,
+        -1213.67,
+        2.47
+      ],
+      "observed": [
+        98.77,
+        3.59,
+        -1213.67,
+        2.47
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01_0E@09B00",
+      "capture": "from_gridania_to_blackshroud.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 722,
+      "uniqueId": "ulta",
+      "zone": 155,
+      "seed": [
+        192.07,
+        -0.85,
+        -1159.97,
+        0.78
+      ],
+      "observed": [
+        192.07,
+        -0.85,
+        -1159.97,
+        0.78
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01_0v@09B00",
+      "capture": "from_gridania_to_blackshroud.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 723,
+      "uniqueId": "mathye",
+      "zone": 155,
+      "seed": [
+        179.56,
+        2.75,
+        -1144.66,
+        -2.97
+      ],
+      "observed": [
+        179.56,
+        2.75,
+        -1144.66,
+        -2.97
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01_0p@09B00",
+      "capture": "from_gridania_to_blackshroud.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 724,
+      "uniqueId": "lonsygg",
+      "zone": 155,
+      "seed": [
+        162.79,
+        -1.48,
+        -1153.32,
+        1.94
+      ],
+      "observed": [
+        162.79,
+        -1.48,
+        -1153.32,
+        1.94
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01_0t@09B00",
+      "capture": "from_gridania_to_blackshroud.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 1021,
+      "uniqueId": "man0g0_sylbyrt",
+      "zone": 155,
+      "seed": [
+        67.66,
+        4.2,
+        -1223.57,
+        -0.58
+      ],
+      "observed": [
+        67.66,
+        4.2,
+        -1223.57,
+        -0.58
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01_0c@09B00",
+      "capture": "move_out_of_room.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 1022,
+      "uniqueId": "man0g0_seikfrae",
+      "zone": 155,
+      "seed": [
+        62.33,
+        4.0,
+        -1194.06,
+        -2.53
+      ],
+      "observed": [
+        62.33,
+        4.0,
+        -1194.06,
+        -2.53
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01_0D@09B00",
+      "capture": "move_out_of_room.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 1025,
+      "uniqueId": "man0g0_anene",
+      "zone": 155,
+      "seed": [
+        65.15,
+        4.2,
+        -1219.57,
+        2.42
+      ],
+      "observed": [
+        65.15,
+        4.2,
+        -1219.57,
+        2.42
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01_0b@09B00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 1026,
+      "uniqueId": "man0g0_edasshym",
+      "zone": 155,
+      "seed": [
+        63.63,
+        4.0,
+        -1216.16,
+        1.07
+      ],
+      "observed": [
+        63.63,
+        4.0,
+        -1216.16,
+        1.07
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01_0w@09B00",
+      "capture": "from_gridania_to_blackshroud.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 1029,
+      "uniqueId": "man0g0_penelope",
+      "zone": 155,
+      "seed": [
+        58.08,
+        3.8,
+        -1183.33,
+        2.93
+      ],
+      "observed": [
+        58.08,
+        3.8,
+        -1183.33,
+        2.93
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01_0v@09B00",
+      "capture": "from_gridania_to_blackshroud.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 541,
+      "uniqueId": "",
+      "zone": 206,
+      "seed": [
+        -192.57,
+        23.48,
+        -1407.58,
+        0.0
+      ],
+      "observed": [
+        -192.57,
+        23.48,
+        -1407.58,
+        0.0
+      ],
+      "delta": 0.0,
+      "observedBase": "MarketEntrance",
+      "observedInstance": "marketEntr_fst0Twn01a_2B@0CE00",
+      "capture": "move_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 542,
+      "uniqueId": "eldid",
+      "zone": 206,
+      "seed": [
+        -195.3,
+        23.96,
+        -1410.34,
+        0.98
+      ],
+      "observed": [
+        -195.3,
+        23.96,
+        -1410.34,
+        0.98
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_1L@0CE00",
+      "capture": "move_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 543,
+      "uniqueId": "bgkeepout_market",
+      "zone": 206,
+      "seed": [
+        -195.3,
+        23.96,
+        -1410.34,
+        0.0
+      ],
+      "observed": [
+        -195.3,
+        23.96,
+        -1410.34,
+        0.98
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_1L@0CE00",
+      "capture": "move_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 544,
+      "uniqueId": "dbhonja",
+      "zone": 206,
+      "seed": [
+        -202.69,
+        20.0,
+        -1456.36,
+        -2.69
+      ],
+      "observed": [
+        -202.69,
+        20.0,
+        -1456.36,
+        -2.69
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceShopSalesman",
+      "observedInstance": "pplShopSal_fst0Twn01a_24@0CE00",
+      "capture": "move_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 545,
+      "uniqueId": "kipopo",
+      "zone": 206,
+      "seed": [
+        -206.5,
+        20.5,
+        -1454.97,
+        -2.64
+      ],
+      "observed": [
+        -206.5,
+        20.5,
+        -1454.97,
+        -2.64
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_0T@0CE00",
+      "capture": "move_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 547,
+      "uniqueId": "opyltyl",
+      "zone": 206,
+      "seed": [
+        -205.68,
+        20.0,
+        -1454.72,
+        3.08
+      ],
+      "observed": [
+        -206.5,
+        20.5,
+        -1454.97,
+        -2.64
+      ],
+      "delta": 0.9924,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_0T@0CE00",
+      "capture": "move_around_gridania.pcapng",
+      "tier": "near"
+    },
+    {
+      "id": 550,
+      "uniqueId": "onguen",
+      "zone": 206,
+      "seed": [
+        -200.76,
+        20.0,
+        -1465.8,
+        -1.15
+      ],
+      "observed": [
+        -200.76,
+        20.0,
+        -1465.8,
+        -1.15
+      ],
+      "delta": 0.0,
+      "observedBase": "DoorStandard",
+      "observedInstance": "doorStd_fst0Twn01a_31@0CE00",
+      "capture": "move_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 553,
+      "uniqueId": "",
+      "zone": 206,
+      "seed": [
+        -202.91,
+        18.09,
+        -1477.51,
+        -1.42
+      ],
+      "observed": [
+        -202.91,
+        18.09,
+        -1477.51,
+        -1.42
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_2r@0CE00",
+      "capture": "move_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 554,
+      "uniqueId": "mestonnaux",
+      "zone": 206,
+      "seed": [
+        -211.76,
+        18.1,
+        -1473.52,
+        1.86
+      ],
+      "observed": [
+        -211.76,
+        18.1,
+        -1473.52,
+        1.86
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_1p@0CE00",
+      "capture": "move_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 555,
+      "uniqueId": "",
+      "zone": 206,
+      "seed": [
+        -212.97,
+        18.2,
+        -1477.5,
+        0.0
+      ],
+      "observed": [
+        -212.97,
+        18.2,
+        -1477.5,
+        0.0
+      ],
+      "delta": 0.0,
+      "observedBase": "ObjectEventDoor",
+      "observedInstance": "objEventDo_fst0Twn01a_2y@0CE00",
+      "capture": "move_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 556,
+      "uniqueId": "vnabyano",
+      "zone": 206,
+      "seed": [
+        -200.33,
+        18.25,
+        -1484.97,
+        -2.49
+      ],
+      "observed": [
+        -200.33,
+        18.25,
+        -1484.97,
+        -2.49
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_26@0CE00",
+      "capture": "move_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 558,
+      "uniqueId": "owyne",
+      "zone": 206,
+      "seed": [
+        -119.34,
+        16.24,
+        -1340.91,
+        -0.11
+      ],
+      "observed": [
+        -119.34,
+        16.24,
+        -1340.91,
+        -0.11
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_1I@0CE00",
+      "capture": "move_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 559,
+      "uniqueId": "",
+      "zone": 206,
+      "seed": [
+        -110.96,
+        16.96,
+        -1342.49,
+        -0.66
+      ],
+      "observed": [
+        -110.96,
+        16.96,
+        -1342.49,
+        -0.66
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_2D@0CE00",
+      "capture": "move_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 560,
+      "uniqueId": "serpent_private_white",
+      "zone": 206,
+      "seed": [
+        -106.59,
+        17.14,
+        -1341.73,
+        -2.62
+      ],
+      "observed": [
+        -106.59,
+        17.14,
+        -1341.73,
+        -2.62
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_27@0CE00",
+      "capture": "move_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 561,
+      "uniqueId": "",
+      "zone": 206,
+      "seed": [
+        -105.7,
+        17.13,
+        -1342.14,
+        1.82
+      ],
+      "observed": [
+        -106.59,
+        17.14,
+        -1341.73,
+        -2.62
+      ],
+      "delta": 0.9799,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_27@0CE00",
+      "capture": "move_around_gridania.pcapng",
+      "tier": "near"
+    },
+    {
+      "id": 562,
+      "uniqueId": "sybell",
+      "zone": 206,
+      "seed": [
+        -112.2,
+        16.08,
+        -1334.29,
+        -1.61
+      ],
+      "observed": [
+        -112.2,
+        16.08,
+        -1334.29,
+        -1.61
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_1J@0CE00",
+      "capture": "move_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 563,
+      "uniqueId": "gridania_aetheryte",
+      "zone": 206,
+      "seed": [
+        -130.63,
+        16.08,
+        -1323.99,
+        0.0
+      ],
+      "observed": [
+        -130.63,
+        16.08,
+        -1323.99,
+        0.0
+      ],
+      "delta": 0.0,
+      "observedBase": "AetheryteParent",
+      "observedInstance": "aetheryteP_fst0Twn01a_2R@0CE00",
+      "capture": "move_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 564,
+      "uniqueId": "whistling_miller",
+      "zone": 206,
+      "seed": [
+        -70.0,
+        19.0,
+        -1474.0,
+        0.0
+      ],
+      "observed": [
+        -70.0,
+        19.0,
+        -1474.0,
+        0.0
+      ],
+      "delta": 0.0,
+      "observedBase": "DoorStandard",
+      "observedInstance": "doorStd_fst0Twn01a_2W@0CE00",
+      "capture": "move_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 565,
+      "uniqueId": "littlejohn",
+      "zone": 206,
+      "seed": [
+        -61.5,
+        19.0,
+        -1479.4,
+        -1.1
+      ],
+      "observed": [
+        -61.5,
+        19.0,
+        -1479.4,
+        -1.1
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceShopSalesman",
+      "observedInstance": "pplShopSal_fst0Twn01a_0g@0CE00",
+      "capture": "move_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 566,
+      "uniqueId": "serpent_private_stone",
+      "zone": 206,
+      "seed": [
+        -82.66,
+        19.06,
+        -1500.24,
+        -2.27
+      ],
+      "observed": [
+        -82.66,
+        19.06,
+        -1500.24,
+        -2.27
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_29@0CE00",
+      "capture": "move_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 568,
+      "uniqueId": "",
+      "zone": 206,
+      "seed": [
+        -63.56,
+        18.13,
+        -1565.32,
+        0.0
+      ],
+      "observed": [
+        -63.56,
+        18.13,
+        -1565.32,
+        0.0
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_2I@0CE00",
+      "capture": "move_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 569,
+      "uniqueId": "",
+      "zone": 206,
+      "seed": [
+        -70.85,
+        17.43,
+        -1577.22,
+        0.0
+      ],
+      "observed": [
+        -70.85,
+        17.43,
+        -1577.22,
+        0.0
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_2C@0CE00",
+      "capture": "move_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 570,
+      "uniqueId": "",
+      "zone": 206,
+      "seed": [
+        2.69,
+        22.13,
+        -1566.29,
+        0.0
+      ],
+      "observed": [
+        2.69,
+        22.13,
+        -1566.29,
+        0.0
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_1F@0CE00",
+      "capture": "move_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 572,
+      "uniqueId": "louisoix",
+      "zone": 206,
+      "seed": [
+        16.62,
+        22.24,
+        -1560.96,
+        -2.53
+      ],
+      "observed": [
+        16.62,
+        22.24,
+        -1560.96,
+        -2.53
+      ],
+      "delta": 0.0,
+      "observedBase": "InstanceRaidGuide",
+      "observedInstance": "instanceRa_fst0Twn01a_25@0CE00",
+      "capture": "move_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 573,
+      "uniqueId": "noes",
+      "zone": 206,
+      "seed": [
+        -1.75,
+        21.34,
+        -1597.88,
+        -0.07
+      ],
+      "observed": [
+        -1.75,
+        21.34,
+        -1597.88,
+        -0.07
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_0U@0CE00",
+      "capture": "move_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 622,
+      "uniqueId": "guild_ltw",
+      "zone": 206,
+      "seed": [
+        87.0,
+        20.0,
+        -1452.0,
+        0.0
+      ],
+      "observed": [
+        87.0,
+        20.0,
+        -1452.0,
+        0.0
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_1b@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 624,
+      "uniqueId": "centaurs_eye",
+      "zone": 206,
+      "seed": [
+        136.0,
+        25.0,
+        -1542.0,
+        0.0
+      ],
+      "observed": [
+        136.0,
+        25.0,
+        -1542.0,
+        0.0
+      ],
+      "delta": 0.0,
+      "observedBase": "DoorStandard",
+      "observedInstance": "doorStd_fst0Twn01a_2Y@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 626,
+      "uniqueId": "guild_arc",
+      "zone": 206,
+      "seed": [
+        227.0,
+        12.0,
+        -1264.0,
+        0.0
+      ],
+      "observed": [
+        227.0,
+        12.0,
+        -1264.0,
+        0.0
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_2u@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 631,
+      "uniqueId": "frances",
+      "zone": 206,
+      "seed": [
+        11.85,
+        8.75,
+        -1266.45,
+        1.48
+      ],
+      "observed": [
+        11.85,
+        8.75,
+        -1266.45,
+        1.48
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_0B@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 634,
+      "uniqueId": "miniaeth_ltw",
+      "zone": 206,
+      "seed": [
+        86.45,
+        20.16,
+        -1423.46,
+        -0.13
+      ],
+      "observed": [
+        87.4,
+        20.16,
+        -1423.39,
+        -0.22
+      ],
+      "delta": 0.9526,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_2p@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "near"
+    },
+    {
+      "id": 635,
+      "uniqueId": "miniaeth_arc",
+      "zone": 206,
+      "seed": [
+        202.02,
+        9.53,
+        -1246.36,
+        1.53
+      ],
+      "observed": [
+        201.78,
+        9.53,
+        -1245.48,
+        1.53
+      ],
+      "delta": 0.9121,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_2a@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "near"
+    },
+    {
+      "id": 637,
+      "uniqueId": "osgar",
+      "zone": 206,
+      "seed": [
+        22.4,
+        8.75,
+        -1261.95,
+        -1.92
+      ],
+      "observed": [
+        22.4,
+        8.75,
+        -1261.95,
+        -1.92
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceShopSalesman",
+      "observedInstance": "pplShopSal_fst0Twn01a_03@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 639,
+      "uniqueId": "ulric",
+      "zone": 206,
+      "seed": [
+        10.31,
+        8.75,
+        -1258.0,
+        2.43
+      ],
+      "observed": [
+        10.31,
+        8.75,
+        -1258.0,
+        2.43
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceShopSalesman",
+      "observedInstance": "pplShopSal_fst0Twn01a_22@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 640,
+      "uniqueId": "roderic",
+      "zone": 206,
+      "seed": [
+        28.1,
+        12.05,
+        -1318.0,
+        0.68
+      ],
+      "observed": [
+        28.1,
+        12.05,
+        -1318.0,
+        0.68
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceShopSalesman",
+      "observedInstance": "pplShopSal_fst0Twn01a_0j@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 642,
+      "uniqueId": "foinine",
+      "zone": 206,
+      "seed": [
+        185.0,
+        27.7,
+        -1374.5,
+        1.3
+      ],
+      "observed": [
+        185.0,
+        27.7,
+        -1374.5,
+        1.3
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceShopSalesman",
+      "observedInstance": "pplShopSal_fst0Twn01a_0a@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 643,
+      "uniqueId": "gagaulu",
+      "zone": 206,
+      "seed": [
+        196.7,
+        28.16,
+        -1370.25,
+        -1.97
+      ],
+      "observed": [
+        196.7,
+        28.16,
+        -1370.25,
+        -1.97
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceShopSalesman",
+      "observedInstance": "pplShopSal_fst0Twn01a_08@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 644,
+      "uniqueId": "zelia",
+      "zone": 206,
+      "seed": [
+        187.8,
+        27.7,
+        -1382.0,
+        1.3
+      ],
+      "observed": [
+        187.8,
+        27.7,
+        -1382.0,
+        1.3
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceShopSalesman",
+      "observedInstance": "pplShopSal_fst0Twn01a_0d@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 645,
+      "uniqueId": "doelle",
+      "zone": 206,
+      "seed": [
+        222.79,
+        12.0,
+        -1275.95,
+        0.77
+      ],
+      "observed": [
+        222.79,
+        12.0,
+        -1275.95,
+        0.77
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceShopSalesman",
+      "observedInstance": "pplShopSal_fst0Twn01a_20@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 646,
+      "uniqueId": "humphrey",
+      "zone": 206,
+      "seed": [
+        190.3,
+        27.7,
+        -1389.6,
+        1.2
+      ],
+      "observed": [
+        190.3,
+        27.7,
+        -1389.6,
+        1.2
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceShopSalesman",
+      "observedInstance": "pplShopSal_fst0Twn01a_06@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 647,
+      "uniqueId": "stanilde",
+      "zone": 206,
+      "seed": [
+        202.3,
+        27.7,
+        -1385.2,
+        -1.94
+      ],
+      "observed": [
+        202.3,
+        27.7,
+        -1385.2,
+        -1.94
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceItemRepairer",
+      "observedInstance": "pplItemRep_fst0Twn01a_1z@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 648,
+      "uniqueId": "wulfthryth",
+      "zone": 206,
+      "seed": [
+        190.2,
+        27.7,
+        -1426.3,
+        1.89
+      ],
+      "observed": [
+        190.2,
+        27.7,
+        -1426.3,
+        1.89
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceShopSalesman",
+      "observedInstance": "pplShopSal_fst0Twn01a_0e@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 649,
+      "uniqueId": "mumuko",
+      "zone": 206,
+      "seed": [
+        202.1,
+        28.15,
+        -1430.7,
+        -1.18
+      ],
+      "observed": [
+        202.1,
+        28.15,
+        -1430.7,
+        -1.18
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceShopSalesman",
+      "observedInstance": "pplShopSal_fst0Twn01a_0i@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 651,
+      "uniqueId": "animuili",
+      "zone": 206,
+      "seed": [
+        114.0,
+        20.0,
+        -1391.0,
+        -3.05
+      ],
+      "observed": [
+        114.0,
+        20.0,
+        -1391.0,
+        -3.05
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceShopSalesman",
+      "observedInstance": "pplShopSal_fst0Twn01a_0i@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 652,
+      "uniqueId": "matheonien",
+      "zone": 206,
+      "seed": [
+        184.6,
+        27.7,
+        -1441.3,
+        1.85
+      ],
+      "observed": [
+        184.6,
+        27.7,
+        -1441.3,
+        1.85
+      ],
+      "delta": 0.0,
+      "observedBase": "RetainerFurniture",
+      "observedInstance": "rtnFurnitu_fst0Twn01a_2T@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 653,
+      "uniqueId": "ahldiym",
+      "zone": 206,
+      "seed": [
+        196.9,
+        27.7,
+        -1445.8,
+        -1.2
+      ],
+      "observed": [
+        196.9,
+        27.7,
+        -1445.8,
+        -1.2
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceShopSalesman",
+      "observedInstance": "pplShopSal_fst0Twn01a_09@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 654,
+      "uniqueId": "twyrmoht",
+      "zone": 206,
+      "seed": [
+        136.01,
+        25.0,
+        -1530.8,
+        -3.13
+      ],
+      "observed": [
+        136.01,
+        25.0,
+        -1530.8,
+        -3.13
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_0o@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 656,
+      "uniqueId": "spaerfedar",
+      "zone": 206,
+      "seed": [
+        93.11,
+        20.0,
+        -1451.79,
+        -1.87
+      ],
+      "observed": [
+        93.11,
+        20.0,
+        -1451.79,
+        -1.87
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_16@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 657,
+      "uniqueId": "voyce",
+      "zone": 206,
+      "seed": [
+        98.67,
+        20.0,
+        -1453.98,
+        -2.11
+      ],
+      "observed": [
+        98.67,
+        20.0,
+        -1453.98,
+        -2.11
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_0p@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 658,
+      "uniqueId": "zaesoeya",
+      "zone": 206,
+      "seed": [
+        36.0,
+        17.29,
+        -1368.0,
+        0.32
+      ],
+      "observed": [
+        36.0,
+        17.29,
+        -1368.0,
+        0.32
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_1O@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 659,
+      "uniqueId": "hfudzol",
+      "zone": 206,
+      "seed": [
+        32.52,
+        17.29,
+        -1359.72,
+        2.15
+      ],
+      "observed": [
+        32.52,
+        17.29,
+        -1359.72,
+        2.15
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceShopSalesman",
+      "observedInstance": "pplShopSal_fst0Twn01a_1Y@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 660,
+      "uniqueId": "yolaine",
+      "zone": 206,
+      "seed": [
+        36.55,
+        17.29,
+        -1357.4,
+        2.74
+      ],
+      "observed": [
+        36.55,
+        17.29,
+        -1357.4,
+        2.74
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_18@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 661,
+      "uniqueId": "clarembald",
+      "zone": 206,
+      "seed": [
+        179.15,
+        27.5,
+        -1579.22,
+        -1.66
+      ],
+      "observed": [
+        179.15,
+        27.5,
+        -1579.22,
+        -1.66
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_0G@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 663,
+      "uniqueId": "cassandra",
+      "zone": 206,
+      "seed": [
+        233.02,
+        12.0,
+        -1267.0,
+        -1.63
+      ],
+      "observed": [
+        233.02,
+        12.0,
+        -1267.0,
+        -1.63
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_0u@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 664,
+      "uniqueId": "meara",
+      "zone": 206,
+      "seed": [
+        204.21,
+        27.7,
+        -1438.26,
+        -1.5
+      ],
+      "observed": [
+        204.21,
+        27.7,
+        -1438.26,
+        -1.5
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceShopSalesman",
+      "observedInstance": "pplShopSal_fst0Twn01a_07@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 665,
+      "uniqueId": "retainerbell_gridania2",
+      "zone": 206,
+      "seed": [
+        190.95,
+        27.5,
+        -1401.98,
+        -2.71
+      ],
+      "observed": [
+        190.95,
+        27.5,
+        -1401.98,
+        -2.71
+      ],
+      "delta": 0.0,
+      "observedBase": "RetainerFurniture",
+      "observedInstance": "rtnFurnitu_fst0Twn01a_2T@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 666,
+      "uniqueId": "sys_chocoview_grid",
+      "zone": 206,
+      "seed": [
+        68.44,
+        10.87,
+        -1244.42,
+        2.45
+      ],
+      "observed": [
+        68.44,
+        10.87,
+        -1244.42,
+        2.45
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_2U@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 667,
+      "uniqueId": "fruhdhem",
+      "zone": 206,
+      "seed": [
+        65.02,
+        11.79,
+        -1241.79,
+        -2.76
+      ],
+      "observed": [
+        65.02,
+        11.79,
+        -1241.79,
+        -2.76
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_0X@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 668,
+      "uniqueId": "serpent_lieutenant_marette",
+      "zone": 206,
+      "seed": [
+        33.7,
+        10.22,
+        -1294.37,
+        -1.59
+      ],
+      "observed": [
+        33.77,
+        10.22,
+        -1294.37,
+        -1.59
+      ],
+      "delta": 0.07,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_2l@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "near"
+    },
+    {
+      "id": 670,
+      "uniqueId": "chocobo",
+      "zone": 206,
+      "seed": [
+        64.29,
+        11.79,
+        -1240.98,
+        -2.93
+      ],
+      "observed": [
+        64.29,
+        11.79,
+        -1240.98,
+        -2.93
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_0W@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 671,
+      "uniqueId": "specialevent_obj",
+      "zone": 206,
+      "seed": [
+        39.0,
+        10.0,
+        -1293.0,
+        -1.57
+      ],
+      "observed": [
+        39.0,
+        10.0,
+        -1293.0,
+        -1.57
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_2i@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 676,
+      "uniqueId": "zuzupoja",
+      "zone": 206,
+      "seed": [
+        7.36,
+        8.75,
+        -1257.89,
+        -1.32
+      ],
+      "observed": [
+        7.36,
+        8.75,
+        -1257.89,
+        -1.32
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_1c@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 677,
+      "uniqueId": "marcette",
+      "zone": 206,
+      "seed": [
+        22.84,
+        10.9,
+        -1306.83,
+        1.06
+      ],
+      "observed": [
+        22.84,
+        10.9,
+        -1306.83,
+        1.06
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_1P@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 678,
+      "uniqueId": "gagaroon",
+      "zone": 206,
+      "seed": [
+        198.6,
+        25.21,
+        -1341.66,
+        2.79
+      ],
+      "observed": [
+        198.6,
+        25.21,
+        -1341.66,
+        2.79
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceBlackMarketeer",
+      "observedInstance": "pplBlackMa_fst0Twn01a_2h@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 679,
+      "uniqueId": "lefwyne",
+      "zone": 206,
+      "seed": [
+        180.42,
+        25.82,
+        -1400.37,
+        2.87
+      ],
+      "observed": [
+        180.42,
+        25.82,
+        -1400.37,
+        2.78
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_1N@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 680,
+      "uniqueId": "aubrenard",
+      "zone": 206,
+      "seed": [
+        179.74,
+        25.82,
+        -1415.51,
+        -1.07
+      ],
+      "observed": [
+        179.74,
+        25.82,
+        -1415.51,
+        -1.07
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_1A@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 681,
+      "uniqueId": "",
+      "zone": 206,
+      "seed": [
+        108.78,
+        20.0,
+        -1467.61,
+        0.0
+      ],
+      "observed": [
+        108.78,
+        20.0,
+        -1467.61,
+        0.0
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_1O@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 682,
+      "uniqueId": "tatagoi",
+      "zone": 206,
+      "seed": [
+        106.26,
+        20.0,
+        -1472.57,
+        0.04
+      ],
+      "observed": [
+        106.26,
+        20.0,
+        -1472.57,
+        0.04
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_19@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 684,
+      "uniqueId": "beli",
+      "zone": 206,
+      "seed": [
+        93.63,
+        20.0,
+        -1482.87,
+        0.8
+      ],
+      "observed": [
+        93.63,
+        20.0,
+        -1482.87,
+        0.8
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_16@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 685,
+      "uniqueId": "ylessa",
+      "zone": 206,
+      "seed": [
+        59.41,
+        28.32,
+        -1656.06,
+        0.38
+      ],
+      "observed": [
+        59.41,
+        28.32,
+        -1656.06,
+        0.38
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_1M@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 686,
+      "uniqueId": "bgkeepout_lilyhills",
+      "zone": 206,
+      "seed": [
+        63.83,
+        30.98,
+        -1679.51,
+        0.0
+      ],
+      "observed": [
+        63.83,
+        30.98,
+        -1679.51,
+        0.0
+      ],
+      "delta": 0.0,
+      "observedBase": "BgKeepout",
+      "observedInstance": "bgKeepout_fst0Twn01a_2F@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 687,
+      "uniqueId": "swaenhylt",
+      "zone": 206,
+      "seed": [
+        17.61,
+        21.75,
+        -1432.55,
+        1.55
+      ],
+      "observed": [
+        17.61,
+        21.75,
+        -1432.55,
+        1.55
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_1W@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 690,
+      "uniqueId": "serpent_private_carver",
+      "zone": 206,
+      "seed": [
+        87.4,
+        20.16,
+        -1423.39,
+        -0.22
+      ],
+      "observed": [
+        87.4,
+        20.16,
+        -1423.39,
+        -0.22
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_2p@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 692,
+      "uniqueId": "dadalo",
+      "zone": 206,
+      "seed": [
+        100.79,
+        21.1,
+        -1466.96,
+        -2.1
+      ],
+      "observed": [
+        100.79,
+        21.1,
+        -1466.96,
+        -2.1
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_0q@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 693,
+      "uniqueId": "alixe",
+      "zone": 206,
+      "seed": [
+        103.75,
+        20.4,
+        -1468.51,
+        2.18
+      ],
+      "observed": [
+        103.75,
+        20.4,
+        -1468.51,
+        2.18
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_0q@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 694,
+      "uniqueId": "kain",
+      "zone": 206,
+      "seed": [
+        100.33,
+        20.22,
+        -1482.5,
+        -0.5
+      ],
+      "observed": [
+        100.33,
+        20.22,
+        -1482.5,
+        -0.5
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_0q@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 695,
+      "uniqueId": "pukiki",
+      "zone": 206,
+      "seed": [
+        33.04,
+        17.29,
+        -1366.27,
+        0.83
+      ],
+      "observed": [
+        33.04,
+        17.29,
+        -1366.27,
+        0.83
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_1a@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 696,
+      "uniqueId": "dyrstbrod",
+      "zone": 206,
+      "seed": [
+        106.66,
+        22.0,
+        -1483.73,
+        -0.74
+      ],
+      "observed": [
+        106.66,
+        22.0,
+        -1483.73,
+        -0.74
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_18@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 697,
+      "uniqueId": "serpent_private_holmes",
+      "zone": 206,
+      "seed": [
+        201.78,
+        9.53,
+        -1245.48,
+        1.53
+      ],
+      "observed": [
+        201.78,
+        9.53,
+        -1245.48,
+        1.53
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_2a@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 698,
+      "uniqueId": "maisenta",
+      "zone": 206,
+      "seed": [
+        221.77,
+        9.4,
+        -1230.49,
+        -2.29
+      ],
+      "observed": [
+        221.77,
+        9.4,
+        -1230.49,
+        -2.29
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_1Q@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 700,
+      "uniqueId": "mianne",
+      "zone": 206,
+      "seed": [
+        238.73,
+        12.0,
+        -1266.18,
+        -1.6
+      ],
+      "observed": [
+        238.73,
+        12.0,
+        -1266.18,
+        -1.6
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_2v@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 702,
+      "uniqueId": "bubuku",
+      "zone": 206,
+      "seed": [
+        242.76,
+        13.0,
+        -1267.73,
+        1.57
+      ],
+      "observed": [
+        242.76,
+        13.0,
+        -1267.73,
+        1.57
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_0M@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 703,
+      "uniqueId": "odhinek",
+      "zone": 206,
+      "seed": [
+        241.82,
+        13.0,
+        -1276.62,
+        1.14
+      ],
+      "observed": [
+        241.82,
+        13.0,
+        -1276.62,
+        1.14
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_0x@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 704,
+      "uniqueId": "chloe",
+      "zone": 206,
+      "seed": [
+        243.35,
+        12.0,
+        -1283.07,
+        0.54
+      ],
+      "observed": [
+        243.35,
+        12.0,
+        -1283.07,
+        0.54
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_1r@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 705,
+      "uniqueId": "piers",
+      "zone": 206,
+      "seed": [
+        258.39,
+        14.0,
+        -1267.15,
+        -0.04
+      ],
+      "observed": [
+        258.39,
+        14.0,
+        -1267.15,
+        -0.04
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_0N@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 706,
+      "uniqueId": "alaire",
+      "zone": 206,
+      "seed": [
+        263.37,
+        14.2,
+        -1273.47,
+        1.37
+      ],
+      "observed": [
+        263.37,
+        14.2,
+        -1273.47,
+        1.37
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_0y@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 713,
+      "uniqueId": "aerstsyn",
+      "zone": 206,
+      "seed": [
+        196.18,
+        27.9,
+        -1582.29,
+        1.55
+      ],
+      "observed": [
+        196.18,
+        27.9,
+        -1582.29,
+        1.55
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_0P@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 714,
+      "uniqueId": "zpahtalo",
+      "zone": 206,
+      "seed": [
+        203.5,
+        29.5,
+        -1585.41,
+        -1.49
+      ],
+      "observed": [
+        203.5,
+        29.5,
+        -1585.41,
+        -1.49
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_1C@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 718,
+      "uniqueId": "ceinguled",
+      "zone": 206,
+      "seed": [
+        190.09,
+        27.5,
+        -1595.32,
+        -0.07
+      ],
+      "observed": [
+        190.09,
+        27.5,
+        -1595.32,
+        -0.07
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_1g@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 719,
+      "uniqueId": "prosperlain",
+      "zone": 206,
+      "seed": [
+        92.74,
+        24.92,
+        -1573.54,
+        1.97
+      ],
+      "observed": [
+        92.74,
+        24.92,
+        -1573.54,
+        1.97
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_1B@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 720,
+      "uniqueId": "serpent_private_kirk",
+      "zone": 206,
+      "seed": [
+        163.75,
+        25.06,
+        -1558.3,
+        -1.17
+      ],
+      "observed": [
+        163.75,
+        25.06,
+        -1558.3,
+        -1.17
+      ],
+      "delta": 0.0,
+      "observedBase": "PopulaceStandard",
+      "observedInstance": "pplStd_fst0Twn01a_2b@0CE00",
+      "capture": "moving_around_gridania.pcapng",
+      "tier": "exact"
+    },
+    {
+      "id": 775,
+      "uniqueId": "gridania_aetheryte",
+      "zone": 206,
+      "seed": [
+        -130.63,
+        16.08,
+        -1323.99,
+        0.0
+      ],
+      "observed": [
+        -130.63,
+        16.08,
+        -1323.99,
+        0.0
+      ],
+      "delta": 0.0,
+      "observedBase": "AetheryteParent",
+      "observedInstance": "aetheryteP_fst0Twn01a_2R@0CE00",
+      "capture": "move_around_gridania.pcapng",
+      "tier": "exact"
+    }
+  ],
+  "nearRejectedWrongTable": [
+    {
+      "id": 778,
+      "uniqueId": "camp_emeraldmoss_aetheryte",
+      "zone": 152,
+      "seed": [
+        -1052.0,
+        20.6,
+        -1760.0,
+        0.0
+      ],
+      "observed": [
+        -1052.0,
+        20.0,
+        -1760.0,
+        0.0
+      ],
+      "delta": 0.6,
+      "observedBase": "MiningPoint",
+      "observedInstance": "miningPoint_fst0Fld03_0O@09800",
+      "capture": "gridania_to_coerthas.pcapng",
+      "tier": "near"
+    }
+  ],
+  "unobservableCensusByZone": {
+    "230": {
+      "place": "Limsa Lominsa",
+      "rows": 227,
+      "covered": false
+    },
+    "209": {
+      "place": "Ul",
+      "rows": 142,
+      "covered": false
+    },
+    "175": {
+      "place": "Ul",
+      "rows": 118,
+      "covered": false
+    },
+    "155": {
+      "place": "Gridania",
+      "rows": 56,
+      "covered": true
+    },
+    "133": {
+      "place": "Limsa Lominsa",
+      "rows": 46,
+      "covered": false
+    },
+    "206": {
+      "place": "Gridania",
+      "rows": 45,
+      "covered": true
+    },
+    "129": {
+      "place": "Western La Noscea",
+      "rows": 22,
+      "covered": false
+    },
+    "193": {
+      "place": "Rhotano Sea",
+      "rows": 19,
+      "covered": false
+    },
+    "0": {
+      "place": "[@1F]",
+      "rows": 17,
+      "covered": false
+    },
+    "184": {
+      "place": "Ul",
+      "rows": 16,
+      "covered": false
+    },
+    "244": {
+      "place": "Inn Room",
+      "rows": 15,
+      "covered": true
+    },
+    "154": {
+      "place": "South Shroud",
+      "rows": 13,
+      "covered": true
+    },
+    "171": {
+      "place": "Eastern Thanalan",
+      "rows": 13,
+      "covered": false
+    },
+    "128": {
+      "place": "Lower La Noscea",
+      "rows": 11,
+      "covered": false
+    },
+    "159": {
+      "place": "The Thousand Maws of Toto[@1F]Rak",
+      "rows": 11,
+      "covered": false
+    },
+    "137": {
+      "place": "U",
+      "rows": 10,
+      "covered": false
+    },
+    "151": {
+      "place": "East Shroud",
+      "rows": 8,
+      "covered": true
+    },
+    "152": {
+      "place": "North Shroud",
+      "rows": 8,
+      "covered": true
+    },
+    "170": {
+      "place": "Central Thanalan",
+      "rows": 8,
+      "covered": false
+    },
+    "200": {
+      "place": "Strait of Merlthor",
+      "rows": 8,
+      "covered": false
+    },
+    "130": {
+      "place": "Eastern La Noscea",
+      "rows": 8,
+      "covered": false
+    },
+    "231": {
+      "place": "Dzemael Darkhold",
+      "rows": 8,
+      "covered": false
+    },
+    "180": {
+      "place": "Market Wards",
+      "rows": 7,
+      "covered": false
+    },
+    "190": {
+      "place": "Mor Dhona",
+      "rows": 5,
+      "covered": false
+    },
+    "245": {
+      "place": "The Aurum Vale",
+      "rows": 5,
+      "covered": false
+    },
+    "172": {
+      "place": "Western Thanalan",
+      "rows": 4,
+      "covered": true
+    },
+    "150": {
+      "place": "Central Shroud",
+      "rows": 4,
+      "covered": true
+    },
+    "135": {
+      "place": "Upper La Noscea",
+      "rows": 4,
+      "covered": false
+    },
+    "173": {
+      "place": "Northern Thanalan",
+      "rows": 4,
+      "covered": false
+    },
+    "174": {
+      "place": "Southern Thanalan",
+      "rows": 4,
+      "covered": false
+    },
+    "153": {
+      "place": "West Shroud",
+      "rows": 4,
+      "covered": false
+    },
+    "143": {
+      "place": "Coerthas Central Highlands",
+      "rows": 4,
+      "covered": false
+    },
+    "144": {
+      "place": "Coerthas Eastern Highlands",
+      "rows": 4,
+      "covered": false
+    },
+    "147": {
+      "place": "Coerthas Central Lowlands",
+      "rows": 4,
+      "covered": false
+    },
+    "148": {
+      "place": "Coerthas Western Highlands",
+      "rows": 4,
+      "covered": false
+    },
+    "145": {
+      "place": "Coerthas Eastern Lowlands",
+      "rows": 3,
+      "covered": true
+    },
+    "1": {
+      "place": "?",
+      "rows": 3,
+      "covered": false
+    },
+    "166": {
+      "place": "Central Shroud",
+      "rows": 3,
+      "covered": false
+    },
+    "141": {
+      "place": "Lower La Noscea",
+      "rows": 1,
+      "covered": false
+    },
+    "131": {
+      "place": "Mistbeard Cove",
+      "rows": 1,
+      "covered": false
+    },
+    "132": {
+      "place": "Cassiopeia Hollow",
+      "rows": 1,
+      "covered": false
+    }
+  }
+}

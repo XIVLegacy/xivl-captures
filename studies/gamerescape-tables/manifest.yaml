@@ -1,0 +1,279 @@
+id: gamerescape-tables
+title: Gamer Escape FFXIV 1.x Item and Mob Tables - Web Tables
+evidence_class: web-tables
+status: distilled
+content_kind: character-mechanic
+tags:
+- web-reference
+- wiki-tier
+- calibration
+- gamerescape
+- item-table
+- mob-table
+- spawn-location
+- removed-content
+- patch-attribution
+- materia
+- crafting-recipe
+- notorious-monster
+search_hints:
+- gamerescape
+- gamer escape ffxiv wiki
+- 1.x item table
+- item stats defense damage delay
+- wear durability
+- resale price gil
+- materia effect meld slots
+- repair class repair level
+- hq bonus attribute
+- patch introduced 1.19a 1.20b 1.22b 1.22c
+- removed before arr
+- obsolete phasedout
+- 1.x mob table
+- monster family subfamily subspecies
+- mob hp range level range
+- elemental weakness aggressive
+- notorious monster
+- mob spawn zone coords
+- mob drops behaviors
+- behavior flags A P S H TH L TS M aggressive passive detects sight sound links
+- mob notes template definition revision id detects by magic true sight
+- infobox mob family superfamily category page family defaults
+- mob behavior resolved three tiers family override precedence
+- crafting recipe wikitext
+- infobox item infobox mob mob row wikitext template
+- client column map unnamed columns bare integer header
+- weapon armor itemData equipment accessory column index
+- xtx_itemName xtx_text_paramName param id 15016 15018
+- materia.csv grade rank magnitude meld slot boolean
+- materia row id itemData 140 primary second parameter
+- materiaBook spiritbond catalyst dark matter meld purge
+- mutamix materia remover first meld never fails hq grade suffix
+- guild shop materia menu 56 line names linear rank ramp
+- sanction grand company gear condition 16007 16010 seal commission
+- sanction bestowed company buffer sanction-ready gear
+- populace csv one column default talk 9xxxxxx test npc ids
+- xtx_tribe clan gender id equipment 70 fits races 15 clans
+- mob gap bracket flanking actor id neighbour level zone hint
+- bracket basis above race high below race low run position
+- ge coverage thins along the id run last quarter median position
+- nael van darnus moggle mog sabotender alegre absent from corpus scope
+- 23 allocation band level 35 floor band_level_floor high band
+- imperial speculator 22 to 52 block exception to the band floor
+- within band gradient confound allocation order versus band structure
+- 23 band instanced dungeon dzemael darkhold toto-rak cutters cry aurum vale
+- band zone hint race pinned to one dungeon castrum novum legion exception
+- actor id is 2 band race variant and the band digit is a spawn container
+- band 21 persistent 22 guildleve or quest 23 instanced dungeon spawn_container
+- 277 of 280 band 22 mobs sighted only inside a leve or quest against 12 of 376
+- ge sighting tags are client guildleve and quest names 223 of 248 exact cells
+- bands renumber variants per race so a band is not an overflow page
+- quest_marker and passiveGL_craft reference only band 22 mob actors
+- 169 of the 270 gap names are guildleve content which is why ge missed them
+- leve_candidates flanking hint names the leve 0.516 from 2 candidates 117 rows
+- leve_one_sided single neighbour hint 0.238 against 0.177 null 45 rows own column
+- leve_basis above band high below band low no tagged band mate flanked
+- one sided leve lift 0.061 clears the floor the level bracket failed at 0.036
+- scoping a one sided measurement over every point reads 0.358 wrong population
+- seven band 22 gap names have no tagged race mate cloud dragon torama ochu
+- xtx_guildleve column 11 english leve name column 15 english objective briefing
+- client leve briefing text names mobs 110 attributed agreeing with ge 33 of 37
+- client_leve column outranks the interpolated leve hints on both mob tables
+- a leve briefing can name a persistent mob so a mention is not a container claim
+- goblin robber losing ones thread hellhound arms race quest tier attribution
+- five names exhausted cloud dragon sephiroth dragon lynx torama ochu
+- client_proper_name splits the client leve attribution 11 of 11 against 22 of 26
+- a briefing uses a species word generically pack of ravenous marmots not the actor
+- container reading survives the source swap band 21 moves 0.032 to 0.061 only
+- all twelve band 21 client attributions are species words not named individuals
+- proper named attributions leave band 21 at its ge only share exactly 0.032
+- all 29 individual naming attributions hold a band 22 actor no exceptions
+- wanted coiled adder briefing names sundrakes so the scan reaches the base species
+- whether 1.0 leves targeted persistent mobs is open not answered here
+- xtx_placeName 907 names join the leve scan as decoys never attributed
+- cassiopeia hollow and kobold garrison were place names read as mob attributions
+- seven mismatches are the briefing naming a species while the leve spawns a variant
+- will-o'-the-wisp two client spellings one per band apostrophe misplaced in band 22
+- ixali battle balloon and zombie-like creature are prose the scan cannot read
+- dragon race 1068 four band 21 actors race-name-only both briefings are prose
+- heat of the moment airship outruns the dragons the leve recovers jettisoned cargo
+- all 14 non band 22 attributions explained none is a leve target count pinned
+- not-a-monster and mount-or-companion causes are 100 percent band 22 seventy of seventy
+- placeholder and second-roster-filler causes are entirely band 21
+- ashdrake battle drake biast wyvern cloud dragon are the fightable 1.x dragons
+- twelve single name races four never reach band 22 dragon atomos and two ??? races
+- crab dragon zombie all carry full actorclass_graphic rows not unused shells
+- 26 mutual actor to name id transpositions crab beryl crab zombie dapper cadaver
+- name id arithmetic returns the wrong mob name follow the actorclass pointer
+- mob-name-id-transpositions.csv 26 pairs variant distance only 1 2 or 4
+- race 1002 raptors reorder a block of four anole grass raptor lindwurm velociraptor
+- one transposition displays kobold either way and has no observable effect
+- qiqirn and ixali are capitalised tribe adjectives not individual names
+- every transposed pair is within one race and one band 26 of 26 no unrelated class
+- a string test relates only 8 of 26 names 1.0 renames within a family
+- cadaver and zombie bomb and grenade opo-opo race files galago lemur jackanapes
+- xtx_quest column 7 description is the wrong field it narrates not states objectives
+- quest objectives live in journalxtxWil Fst Sea Roc sheets column 1 english
+- 273 quests 1585 journal entries 115 mobs attributed 24 of 25 agree with ge
+- client_quest column on both mob tables quest side twin of client_leve
+- quests reuse the persistent field population leves spawn their own roster
+- 29 of 29 leve individuals are band 22 against 38 of 55 quest individuals
+- audhumbla cactuar jack daddy longlegs quest targets with no leve deployment
+- band 22 mobs span ten or more levels 0.480 against 0.018 persistent difficulty steps
+- wide leve spans are multiples of four evenly stepped difficulty ladder
+- frenzied aurelia spawns from the quest shapeless melody per ge notes field
+- gorged djigga and hairless hare untagged leve mobs placed by span and adjacency
+- hairless hare interleaves salt hare actor ids one leve roster slug family sea hare
+- notes scanning rejected persistent mobs are involved in quests not spawned by them
+- block 1800 seven line ranks three tiers five deployments castrum novum
+- ge missing sagittarius all three tiers imperial elite viith legion
+- one ge mob name spans bands so its zone list is a union of deployments
+- display name id is not a transform of the actor id follow the pointer
+- no actor to zone spawn or level table anywhere in the client dump
+- race 1070 imperial officer ranks centurion pilus prior primus ordinarius
+- infobox quest pages 273 all 2011 2012 contemporaneous 1.x evidence tier
+- infobox npc pages 1335 race clan occupation affiliation coordinates 2010
+- actor id prefix 16 merchant space 15 shop service 10 general population
+- xtx_displayName five languages singular plural english 2 3 german 7 9 french 14 15
+- grand company npcs english shows rank french german show the person
+- client_plural english plural hand written irregular ala mhigan axemen
+- storm captain roemannsyn wrong surname join fenced by absence fixture
+- imperial centurion futures perfect instanced quest content not a field mob
+- quest attribution maximal match billygoat contained in longer name
+- quest minimum level floor 0.898 support strongest level statement
+- client capitalisation decides floor eligibility not word count 0.867 vs 0.595
+- infobox field parser regex swallowed every other line 52 versus 263
+- undocumented mob name relation sibling base prefix race undocumented
+- leave one out lift random same race pair leakage withheld mob
+- place prefixed mob name bloodshore coerthas sagolii not automatable
+- actor id sequence is not a level ladder 59 percent concordant
+- untranslated race erimakitokage kaashii kuroko provisional kari
+- key item block 2001xxx icon 798 treatise job soul barding
+- item id prefix encodes equip kind 801 head 808 feet
+- additional effect id equipment 137 rowena runestone relic
+- level requirement hard itemData 46 required vs optimal level
+- paired arrow damage weapon 141 bow ammunition ladder
+- unmapped ge fields base item base material dye colors sibling variants
+- required matter item itemData 65 dark matter grade level band
+- bonus slot id value pair damage type enum
+- item name join client item id
+- mob name join actorclass displayName monsterRace
+- client ships no mob levels hp element
+- monster race taxonomy provisional kari
+- actor id encodes monster race id digits 3-5 offset 1000
+- two crab races 1011 1076 diremite join by race id not name
+- rodent rat landtrap flytrap cactuar sabotender fomor zombie family synonym
+- unnamed race block 1800 1801 1802 1803 1890 1620 1910 enemy humanoid
+- atomos race 1110 missing row monsterRace truncated primal single creature
+- displayName row 2 kahen variable name sentinel runtime assigned quest actor
+- undocumented client mob roster likely cause ge gap faction filler chocobo
+- chocobo race 1105 choco coco salty slugger rental companion not a mob
+- kobold nth order patriarch matriarch hierarchy numbering
+- named boss gap arges brontes coincounter steropes cyclops sibling
+- chirada suparna garuda primal undocumented boss tier actor
+- race name only base actor no epithet bat boar antling coblyn
+- actorclass_graphic columns 15 to 21 humanoid appearance marker no monster
+- faction namespace imperial legion brigand pirate serpent reaver sahagin
+- serpent reaver claw fin eye rank not body part mistbeard cove level 45
+- lunatic cult lamb shepherd priest split across blocks 1801 1803
+- organization spans two race blocks allocation not closed set
+- race block 1890 scripted named opponent notorious monster duel squad
+- coliseum challenger job quest champion curious gorge estinien jenlyns
+- race block 1900 friendly combat npc hamlet militia grand company scout
+- populaceWaveAttack hamlet defense imperial invasion militia captain
+- actor id range insufficient mob filter use the race field
+- zaharak amaljaa split across race 1065 and block 1620
+- zaharak garrison clerical office chandler feretrar ostiary scriniary
+- burned brother sister scrivner ifrit convert amaljaa
+- notorious monster capitalised name actor id range
+- zone name reconcile placeName zoneParam zoneGroupParam
+- coerthas zone vs sub-zone ambiguity
+- non-breaking hyphen control code place name
+- locke's lie rivenroad castrum novum mistbeard cove cassiopeia hollow
+- shposhae paglth'an natalan murmur rills mun-tuy cellars
+- coerthas central eastern western highlands lowlands zone naming
+notes: 'Normalized transcription of the Gamer Escape FFXIV wiki''s 1.0-era item and mob data, mined from an 11,227-page raw-wikitext corpus. content_kind is the slug''s kind; the payload is item / mob / spawn reference data and is reached through tags. Evidence tier: wiki (packet captures > video breakdown > wiki), so values are CALIBRATION-grade - check xivl-client-data first for anything the client itself ships (item and mob names, ids, and much of the numeric stat block are primary evidence there). What this set carries that no live FFXIV wiki documents: per-item patch_introduced (1,087 of 5,665 items, including the sub-patches 1.19a, 1.20b, 1.22b and 1.22c that no longer appear anywhere), and removed_before_arr (2,593 of 5,665 items, from the source page''s Obsolete/PhasedOut template) marking 1.x content that did not survive into A Realm Reborn. Mined by walking brace-balanced {{Infobox Item}} / {{Infobox Mob}} / {{Mob Row}} / {{Infobox Mob Family}} calls and splitting depth-zero params, so nested templates do not truncate a field. Header names are this set''s normalized lower_snake_case forms with units carried in the name (delay_seconds, resale_price_gil, wear_durability_points, blunt_attack_pct), not the GE param names. items.csv was also joined by English item name to the client item tables in xivl-client-data to name their bare-integer columns; that product is derived/client-column-map.csv plus two mismatch lists, documented in derived/client-column-map-notes.md.'
+related_implementation_docs: []
+source_refs:
+- source: gamerescape-tables
+primary_paths:
+- derived/evidence-map.md
+- derived/items.csv
+- derived/client-column-map.csv
+- derived/client-column-map-notes.md
+- derived/mob-client-crosscheck-notes.md
+- derived/zone-client-crosscheck-notes.md
+- derived/materia-notes.md
+- derived/mobs.csv
+- derived/mob-locations.csv
+- derived/mob-families.csv
+canonical_evidence:
+- derived/items.csv
+- derived/mobs.csv
+- derived/mob-locations.csv
+- derived/mob-families.csv
+- derived/evidence-map.md
+- derived/file-inventory.csv
+- derived/client-column-map.csv
+- derived/client-column-map-notes.md
+- derived/ge-items-without-client-row.csv
+- derived/client-items-without-ge-page.csv
+- derived/mob-client-crosscheck.csv
+- derived/mob-client-crosscheck-notes.md
+- derived/ge-mobs-without-client-actor.csv
+- derived/client-mobs-without-ge-page.csv
+- derived/mob-family-crosscheck.csv
+- derived/mob-race-crosscheck.csv
+- derived/mob-race-blocks.csv
+- derived/mob-behavior-resolved.csv
+- derived/mob-behavior-codes.csv
+- derived/mob-gap-brackets.csv
+- derived/mob-name-id-transpositions.csv
+- derived/mob-quest-attribution.csv
+- derived/npcs.csv
+- derived/npc-client-crosscheck.csv
+- derived/npc-client-crosscheck-notes.md
+- derived/ge-npcs-without-client-actor.csv
+- derived/zone-client-crosscheck.csv
+- derived/zone-client-crosscheck-notes.md
+- derived/client-zones-without-ge-sightings.csv
+- derived/materia-column-map.csv
+- derived/materia-decoded.csv
+- derived/materia-notes.md
+distilled:
+  distilled: true
+  checksum_file: derived/checksums.sha256
+  distilled_artifacts:
+  - derived/items.csv
+  - derived/mobs.csv
+  - derived/mob-locations.csv
+  - derived/mob-families.csv
+  - derived/evidence-map.md
+  - derived/file-inventory.csv
+  - derived/client-column-map.csv
+  - derived/client-column-map-notes.md
+  - derived/ge-items-without-client-row.csv
+  - derived/client-items-without-ge-page.csv
+  - derived/mob-client-crosscheck.csv
+  - derived/mob-client-crosscheck-notes.md
+  - derived/ge-mobs-without-client-actor.csv
+  - derived/client-mobs-without-ge-page.csv
+  - derived/mob-family-crosscheck.csv
+  - derived/mob-race-crosscheck.csv
+  - derived/mob-race-blocks.csv
+  - derived/mob-behavior-resolved.csv
+  - derived/mob-behavior-codes.csv
+  - derived/mob-gap-brackets.csv
+  - derived/mob-name-id-transpositions.csv
+  - derived/mob-quest-attribution.csv
+  - derived/npcs.csv
+  - derived/npc-client-crosscheck.csv
+  - derived/npc-client-crosscheck-notes.md
+  - derived/ge-npcs-without-client-actor.csv
+  - derived/zone-client-crosscheck.csv
+  - derived/zone-client-crosscheck-notes.md
+  - derived/client-zones-without-ge-sightings.csv
+  - derived/materia-column-map.csv
+  - derived/materia-decoded.csv
+  - derived/materia-notes.md
+  - derived/checksums.sha256

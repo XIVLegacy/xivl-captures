@@ -1,0 +1,10 @@
+dataset: spawn_location_validation
+kind: frozen
+evidence_class: packet-capture
+schema_version: 1
+output:
+  file: derived/spawn_location_validation.json
+  sha256: ca8ec5a4dff0c019427e8384d96d37d0b460124e22a8a5eecfa0eb24fdbbb077
+provenance:
+  note: Frozen historical artifact from a one-time spawn-location divergence study.
+    This repo retains its result as packet-capture evidence.

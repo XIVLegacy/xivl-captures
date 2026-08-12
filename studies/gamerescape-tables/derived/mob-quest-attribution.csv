@@ -1,0 +1,72 @@
+client_display_name,likely_cause,client_race_id,client_proper_name,quest_pages,quest_level_floor,quest_classification,ge_page_title,ge_revision_id,ge_revision_timestamp
+agitated aurelia,ge-gap,1054,0,1,20,Sidequest,Moonstruck,233370,2012-02-11T12:18:18Z
+amalj'aa,race-name-only,1065,1,13,,Grand Company Quest | Grand Company Sidequest | Job Quest | Main Scenario Quest | Sidequest,Clasping to Hope | Freedom Isn't Free | Hearing Voices (1.x) | International Relations | It Kills with Fire (Gridania) | It Kills with Fire (Limsa Lominsa) | It Kills with Fire (Ul'dah) | Lord Errant | Rustproof | Sanguine Studies | Toll of the Warden | Traumaturgy | When Alchemists Cry,233816 | 55904 | 94267 | 92984 | 97101 | 96800 | 97377 | 488506 | 29370 | 234346 | 405971 | 8110 | 96534,2012-01-14T15:47:41Z | 2012-01-14T15:55:03Z | 2012-09-12T20:55:59Z | 2012-08-25T01:40:24Z | 2012-07-30T22:02:41Z | 2012-07-30T22:19:42Z | 2012-08-27T20:03:40Z | 2012-05-21T06:32:53Z | 2012-01-14T15:50:15Z | 2012-01-14T15:50:19Z | 2012-01-14T16:00:59Z | 2012-06-19T17:24:35Z | 2012-07-06T16:22:02Z
+amalj'aa drudge,ge-gap,1065,1,1,28,Sidequest,Rustproof,29370,2012-01-14T15:50:15Z
+amalj'aa warrior,ge-gap,1065,1,1,27,Sidequest,Sanguine Studies,234346,2012-01-14T15:50:19Z
+angry lead coblyn,ge-gap,1021,0,1,25,Grand Company Sidequest,Prying Eyes,95549,2012-07-30T22:13:32Z
+audhumbla,named-boss-gap,1008,1,1,45,Job Quest,Proof Is the Pudding,166770,2012-07-11T05:07:16Z
+bandit archer,faction-filler,1801,0,1,45,Job Quest,The Wheel of Disaster,105583,2012-07-03T18:12:09Z
+bandit butcher,faction-filler,1890,0,1,45,Job Quest,The Wheel of Disaster,105583,2012-07-03T18:12:09Z
+bandit grappler,faction-filler,1890,0,1,45,Job Quest,The Wheel of Disaster,105583,2012-07-03T18:12:09Z
+bandit lancer,faction-filler,1890,0,1,45,Job Quest,The Wheel of Disaster,105583,2012-07-03T18:12:09Z
+bandit pathfinder,faction-filler,1801,0,1,30,Class Quest,The Foreboding Forest,153340,2012-06-21T04:28:15Z
+bandit scout,faction-filler,1801,0,1,30,Class Quest,The Foreboding Forest,153340,2012-06-21T04:28:15Z
+bloodhound,ge-gap,1014,0,1,,Main Scenario Quest,Of Men They Sing,157498,2012-06-13T04:02:35Z
+brazen-faced broker,not-a-monster,1900,0,2,,Class Quest,Culture Shock | Necessary Evils,410645 | 477458,2012-08-19T15:49:00Z | 2012-08-21T02:46:55Z
+burchard,not-a-monster,1900,1,2,,Class Quest | Main Scenario Quest,Souls Gone Wild | Unalienable Rights,468719 | 435473,2012-01-14T16:06:09Z | 2012-06-01T03:03:32Z
+charledore the steadfast,faction-filler,1890,1,1,25,Grand Company Quest,Know Your Enemy,93588,2012-07-06T16:04:29Z
+clay golem,ge-gap,1089,0,1,25,Grand Company Quest,Their Finest Hour,92627,2012-07-30T21:51:43Z
+clever dodo,ge-gap,1020,0,1,15,Sidequest,No Other Dodo Will Do,13056,2012-08-01T11:34:18Z
+coincounter,named-boss-gap,1107,1,1,45,Sidequest,What Glitters Always Isn't Gold,2521,2012-07-28T02:40:08Z
+deadly nightshade,ge-gap,1027,0,1,,Grand Company Sidequest,Oil Crisis,335678,2012-06-25T16:04:36Z
+death-marked billygoat,ge-gap,1023,0,1,20,Class Quest,The Big Payback,289979,2012-09-08T00:52:04Z
+deepvoid slave,ge-gap,1025,0,2,45,Class Quest | Job Quest,Five Easy Pieces | In Search of Succor,168777 | 107381,2012-09-25T22:25:06Z | 2012-07-03T18:12:11Z
+elemental,race-name-only,1052,0,33,,Class Quest | Grand Company Quest | Grand Company Sidequest | Job Quest | Main Scenario Quest | Sidequest,A Moogle Bouquet | A Slippery Stone | A Taste for Death | A Wailing Welcome | Appetite for Destruction (1.x) | Beckon of the Elementals | Breaking the Seals | Dendrological Duties | Disorganized Crime | Eternal Recurrence | Fade to White | Gridanian Roots | Imperial Devices (Limsa Lominsa) | In Search of Succor | Lost in Rage | Playing with Fire | Scrubbing the Soul | Shadow of the Raven | Souls Gone Wild | Stone Deaf | The Call of Nature | The Chorus of Cataclysm | The Dreamer's Dilemma (Gridania) | The Dreamer's Dilemma (Limsa Lominsa) | The Dreamer's Dilemma (Ul'dah) | The Heat is On | The Mail Must Get Through (Quest) | The Mouths of Babes | The Silent Partners | The Wheel of Disaster | Two Vans are Better than One | When Sheep Attack | Whispers in the Wood,180934 | 97736 | 335746 | 345958 | 93369 | 173826 | 49462 | 303970 | 89783 | 95375 | 271957 | 289404 | 60162 | 107381 | 104509 | 199502 | 224827 | 199647 | 468719 | 225172 | 486378 | 164111 | 6277 | 6535 | 5984 | 47356 | 54132 | 315426 | 334351 | 105583 | 320356 | 60900 | 127351,2012-03-16T02:01:50Z | 2012-07-06T15:46:51Z | 2012-08-02T12:39:52Z | 2012-08-19T13:00:27Z | 2012-07-06T15:49:49Z | 2012-08-20T02:56:53Z | 2012-09-10T16:11:40Z | 2012-06-24T05:32:28Z | 2012-07-06T15:52:58Z | 2012-07-30T21:57:27Z | 2012-03-28T06:24:19Z | 2012-08-08T20:26:26Z | 2012-07-27T15:52:56Z | 2012-07-03T18:12:11Z | 2012-07-25T01:27:09Z | 2012-07-13T15:04:23Z | 2012-01-14T15:50:18Z | 2012-07-30T22:04:38Z | 2012-01-14T16:06:09Z | 2012-06-07T17:03:13Z | 2012-09-03T02:07:39Z | 2012-06-06T19:41:03Z | 2012-03-06T05:58:53Z | 2012-03-06T05:59:50Z | 2012-03-31T04:08:04Z | 2012-03-08T05:02:30Z | 2012-07-10T17:34:46Z | 2012-05-21T05:47:37Z | 2012-05-12T08:17:11Z | 2012-07-03T18:12:09Z | 2012-07-30T22:04:06Z | 2012-07-18T03:30:21Z | 2012-08-13T20:40:50Z
+enraged nannygoat,ge-gap,1023,0,1,20,Class Quest,The Big Payback,289979,2012-09-08T00:52:04Z
+escaped lemming,ge-gap,1040,0,1,30,Class Quest,Two-man Crew,5555,2012-06-23T07:38:28Z
+f'lhaminn,not-a-monster,1900,1,6,,Class Quest | Main Scenario Quest,Calamity Cometh | Court in the Sands | F'lhaminn's Flower | Golden Sacrifices | She Walks in Beauty | Struck Through the Heart,178775 | 472292 | 157102 | 128959 | 340812 | 202406,2012-08-16T20:54:46Z | 2012-01-14T16:06:26Z | 2012-03-16T02:00:19Z | 2012-01-14T16:05:27Z | 2012-05-09T05:28:59Z | 2012-07-05T19:58:54Z
+gnawing gnat,ge-gap,1006,0,1,30,Sidequest,Say it with Wolf Tails,200966,2012-06-07T16:38:33Z
+goblin robber,ge-gap,1103,0,1,25,Sidequest,Losing One's Thread,12704,2012-09-19T03:00:23Z
+good king moggle mog xii,ge-gap,1104,1,1,45,Sidequest,A Feast of Fools,290343,2012-07-05T20:54:30Z
+greinfarr,not-a-monster,1900,1,4,,Class Quest | Main Scenario Quest,Calamity Cometh | Golden Sacrifices | Struck Through the Heart | Unalienable Rights,178775 | 128959 | 202406 | 435473,2012-08-16T20:54:46Z | 2012-01-14T16:05:27Z | 2012-07-05T19:58:54Z | 2012-06-01T03:03:32Z
+grinnaux,not-a-monster,1900,1,1,,Main Scenario Quest,Beckon of the Elementals,173826,2012-08-20T02:56:53Z
+handeloup,not-a-monster,1900,1,1,,Main Scenario Quest,Beckon of the Elementals,173826,2012-08-20T02:56:53Z
+hellhound,ge-gap,1098,0,1,,Grand Company Quest,Arms Race,31207,2012-07-10T17:37:43Z
+immortal bladedancer,faction-filler,1890,1,1,25,Grand Company Quest,Ceruleum Shock,93105,2012-07-06T15:52:04Z
+immortal lightspinner,faction-filler,1890,1,1,25,Grand Company Quest,Ceruleum Shock,93105,2012-07-06T15:52:04Z
+immortal shadowspinner,faction-filler,1890,1,1,25,Grand Company Quest,Ceruleum Shock,93105,2012-07-06T15:52:04Z
+immortal speardancer,faction-filler,1890,1,1,25,Grand Company Quest,Ceruleum Shock,93105,2012-07-06T15:52:04Z
+imperial bestiarius,faction-filler,1800,0,1,22,Grand Company Quest,Engineering Victory,59803,2012-07-10T17:39:18Z
+imperial centurion,ge-gap,1070,0,1,46,Main Scenario Quest,Futures Perfect,176321,2012-07-28T00:41:55Z
+imperial funditor,faction-filler,1800,0,1,22,Grand Company Quest,Engineering Victory,59803,2012-07-10T17:39:18Z
+imperial sagittarius,faction-filler,1800,0,1,40,Grand Company Quest,Two Vans are Better than One,320356,2012-07-30T22:04:06Z
+ixali cloudwalker,ge-gap,1064,1,1,45,Grand Company Sidequest,You Don't Have the Rite,296811,2012-07-30T22:03:51Z
+ixali limbcutter,ge-gap,1064,1,1,45,Grand Company Sidequest,You Don't Have the Rite,296811,2012-07-30T22:03:51Z
+ixali soilseer,ge-gap,1064,1,1,45,Grand Company Sidequest,You Don't Have the Rite,296811,2012-07-30T22:03:51Z
+kikkiroon irongut,ge-gap,1063,1,1,,Grand Company Sidequest,It's a Piece of Cake to Bake a Poison Cake,258435,2012-06-29T17:30:03Z
+lord of swiftperch,ge-gap,1040,1,1,20,Class Quest,Bloody Baptism,328943,2012-06-23T01:59:51Z
+lunatic lamb,faction-filler,1801,0,1,45,Sidequest,Blood Price (Quest),13252,2012-08-15T01:29:56Z
+lunatic shepherd,faction-filler,1803,0,1,45,Sidequest,Blood Price (Quest),13252,2012-08-15T01:29:56Z
+mature funguar,ge-gap,1059,0,1,11,Sidequest,Spores on the Brain,35237,2012-02-01T10:27:54Z
+merodaulyn,not-a-monster,1900,1,1,,Main Scenario Quest,Never the Twain Shall Meet,164725,2012-08-19T23:33:19Z
+minemite,ge-gap,1021,0,1,,Main Scenario Quest,Calamity Cometh,178775,2012-08-16T20:54:46Z
+moenskaet the honorbound,faction-filler,1890,1,1,36,Class Quest,Captain's Orders,181584,2012-06-23T07:38:43Z
+nael deus darnus,ge-gap,1109,1,4,45,Grand Company Quest | Sidequest,"The Raven, Nevermore | To Kill a Raven (Gridania) | To Kill a Raven (Limsa Lominsa) | To Kill a Raven (Ul'dah)",49456 | 14459 | 13887 | 13596,2012-08-14T05:12:28Z | 2012-08-13T21:30:39Z | 2012-08-13T21:30:37Z | 2012-08-13T21:30:38Z
+nael van darnus,ge-gap,1109,1,13,22,Grand Company Quest | Grand Company Sidequest | Sidequest,Alive | Into the Dark (Ul'dah) | It Kills with Fire (Gridania) | It Kills with Fire (Limsa Lominsa) | It Kills with Fire (Ul'dah) | Living on a Prayer | Shadow of the Raven | The Mail Must Get Through (Quest) | To Kill a Raven (Gridania) | To Kill a Raven (Limsa Lominsa) | To Kill a Raven (Ul'dah) | Two Vans are Better than One | United We Stand (Gridania),283258 | 44182 | 97101 | 96800 | 97377 | 49260 | 199647 | 54132 | 14459 | 13887 | 13596 | 320356 | 333001,2012-07-30T22:20:15Z | 2012-07-10T17:37:27Z | 2012-07-30T22:02:41Z | 2012-07-30T22:19:42Z | 2012-08-27T20:03:40Z | 2012-08-20T06:24:57Z | 2012-07-30T22:04:38Z | 2012-07-10T17:34:46Z | 2012-08-13T21:30:39Z | 2012-08-13T21:30:37Z | 2012-08-13T21:30:38Z | 2012-07-30T22:04:06Z | 2012-07-30T15:13:58Z
+nannygoat,ge-gap,1023,0,1,,Class Quest,The Big Payback,289979,2012-09-08T00:52:04Z
+niellefresne,not-a-monster,1900,1,5,,Class Quest | Main Scenario Quest,Calamity Cometh | F'lhaminn's Flower | Flowers for All | Golden Sacrifices | Struck Through the Heart,178775 | 157102 | 470951 | 128959 | 202406,2012-08-16T20:54:46Z | 2012-03-16T02:00:19Z | 2012-07-20T15:49:18Z | 2012-01-14T16:05:27Z | 2012-07-05T19:58:54Z
+orchard chigoe,ge-gap,1056,0,1,20,Class Quest,A Wailing Welcome,345958,2012-08-19T13:00:27Z
+overweening thaumaturge,faction-filler,1890,0,1,30,Class Quest,Revelry in Rivalry,477520,2012-09-09T23:29:34Z
+papalymo,not-a-monster,1900,1,6,,Grand Company Quest | Main Scenario Quest | Sidequest,Beckon of the Elementals | Breaking the Seals | Don't Hate the Messenger (Gridania) | Living on a Prayer | Their Finest Hour | Whispers in the Wood,173826 | 49462 | 332544 | 49260 | 92627 | 127351,2012-08-20T02:56:53Z | 2012-09-10T16:11:40Z | 2012-07-30T15:13:56Z | 2012-08-20T06:24:57Z | 2012-07-30T21:51:43Z | 2012-08-13T20:40:50Z
+rowland of the 99 blades,faction-filler,1890,1,1,45,Job Quest,The Wheel of Disaster,105583,2012-07-03T18:12:09Z
+shrieker,ge-gap,1059,0,2,,Grand Company Sidequest | Main Scenario Quest,A Taste for Death | Forever Taken,335746 | 423188,2012-08-02T12:39:52Z | 2012-09-25T02:58:43Z
+sourleaf roselet,ge-gap,1027,0,1,31,Sidequest,To Deskunk A Beer,57504,2012-06-07T17:09:33Z
+sthalmann,not-a-monster,1900,1,4,,Main Scenario Quest,Legends Adrift | Never the Twain Shall Meet | Shapeless Melody | Treasures of the Main,338474 | 164725 | 338096 | 337871,2012-08-13T19:52:58Z | 2012-08-19T23:33:19Z | 2012-08-13T02:43:18Z | 2012-08-12T22:46:04Z
+thancred,not-a-monster,1900,1,7,,Grand Company Quest | Main Scenario Quest,Burning Man | Calamity Cometh | Career Opportunities (Quest) | Court in the Sands | Don't Hate the Messenger (Ul'dah) | Flowers for All | Golden Sacrifices,92916 | 178775 | 30786 | 472292 | 332691 | 470951 | 128959,2012-07-27T14:45:19Z | 2012-08-16T20:54:46Z | 2012-07-10T17:37:30Z | 2012-01-14T16:06:26Z | 2012-09-16T04:17:10Z | 2012-07-20T15:49:18Z | 2012-01-14T16:05:27Z
+toll puk,ge-gap,1001,0,1,10,Sidequest,Bridging the Gap,197067,2012-06-07T16:14:52Z
+tower lemming,ge-gap,1040,0,1,20,Class Quest,Bloody Baptism,328943,2012-06-23T01:59:51Z
+unsavory character,faction-filler,1801,0,2,15,Sidequest,Scrubbing the Soul | Winds of Change,224827 | 232681,2012-01-14T15:50:18Z | 2012-02-06T05:12:27Z
+woodsent doe,ge-gap,1003,0,1,30,Class Quest,Culture Shock,410645,2012-08-19T15:49:00Z
+woodsent elemental,ge-gap,1046,0,1,36,Class Quest,Necessary Evils,477458,2012-08-21T02:46:55Z
+woodsent pteroc,ge-gap,1001,0,1,30,Class Quest,Culture Shock,410645,2012-08-19T15:49:00Z
+y'shtola,not-a-monster,1900,1,7,,Grand Company Quest | Main Scenario Quest,An Officer and a Wise Man | Don't Hate the Messenger (Limsa Lominsa) | Don't Hate the Messenger (Ul'dah) | Legends Adrift | Never the Twain Shall Meet | Shapeless Melody | The Price of Integrity,92347 | 332435 | 332691 | 338474 | 164725 | 338096 | 56790,2012-07-30T22:18:02Z | 2012-08-25T02:31:38Z | 2012-09-16T04:17:10Z | 2012-08-13T19:52:58Z | 2012-08-19T23:33:19Z | 2012-08-13T02:43:18Z | 2012-07-10T17:39:10Z

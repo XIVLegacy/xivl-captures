@@ -1,0 +1,77 @@
+id: build_pcap_products
+runner:
+  tool: tools/build_pcap_products.py
+  version: "1"
+outputs:
+- dataset: observations
+  generator:
+    tool: tools/extractors/extract_observations.py
+    version: "1"
+  inputs:
+  - source: pcap-1.23b
+- dataset: lane_observations
+  generator:
+    tool: tools/extractors/extract_observations.py
+    version: "1"
+  inputs:
+  - source: pcap-1.23b
+- dataset: sequences
+  generator:
+    tool: tools/extractors/extract_sequences.py
+    version: "1"
+  inputs:
+  - source: pcap-1.23b
+- dataset: timing
+  generator:
+    tool: tools/extractors/extract_timing.py
+    version: "1"
+  inputs:
+  - source: pcap-1.23b
+- dataset: payload_samples
+  generator:
+    tool: tools/extractors/extract_payload_samples.py
+    version: "1"
+  inputs:
+  - source: pcap-1.23b
+- dataset: content_samples
+  generator:
+    tool: tools/extractors/extract_content_samples.py
+    version: "1"
+  inputs:
+  - source: pcap-1.23b
+- dataset: property_targets
+  generator:
+    tool: tools/extractors/extract_property_targets.py
+    version: "3"
+  inputs:
+  - source: pcap-1.23b
+- dataset: request_response_pairs
+  generator:
+    tool: tools/extractors/extract_request_response_pairs.py
+    version: "1"
+  inputs:
+  - source: pcap-1.23b
+- dataset: gam_keys
+  generator:
+    tool: tools/extractors/extract_gam_keys.py
+    version: "1"
+  inputs:
+  - source: pcap-1.23b
+- dataset: spawn_observations
+  generator:
+    tool: tools/extractors/extract_spawn_observations.py
+    version: "1"
+  inputs:
+  - source: pcap-1.23b
+- dataset: gam_hash_names
+  generator:
+    tool: tools/name_gam_hashes.py
+    version: "3"
+  inputs:
+  - dataset: gam_keys
+- dataset: payload_layouts
+  generator:
+    tool: tools/analyze_payload_layouts.py
+    version: "1"
+  inputs:
+  - dataset: payload_samples

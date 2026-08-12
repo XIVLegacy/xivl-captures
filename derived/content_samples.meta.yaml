@@ -1,0 +1,13 @@
+dataset: content_samples
+kind: generated
+evidence_class: packet-capture
+schema_version: 1
+output:
+  file: derived/content_samples.json
+  sha256: 20216c09ae92f0b1f614b6584c26436d907933987145afc9464b8b282a01a8a4
+generator:
+  tool: tools/extractors/extract_content_samples.py
+  version: '1'
+inputs:
+- source: pcap-1.23b
+  content_sha256: 3e39bfbffdf5a7efa0f42fc221f42dc2d1d28af8f19378d28921a3b903c0c7ee

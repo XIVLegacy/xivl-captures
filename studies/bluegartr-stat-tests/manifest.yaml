@@ -1,0 +1,86 @@
+id: bluegartr-stat-tests
+title: bluegartr FFXIV 1.x Community Stat Testing - Web Tables
+evidence_class: web-tables
+status: distilled
+content_kind: action-mechanic
+tags:
+- web-reference
+- wiki-tier
+- calibration
+- bluegartr
+- forum-thread
+- critical-hit-rate
+- critical-damage-bonus
+- enmity
+- physical-damage-taken
+- magic-evasion
+- cure-potency
+- trait-point-cap
+- patch-attribution
+- kanican
+- patch-1.19
+- patch-1.20
+- patch-1.21
+- patch-1.22
+- patch-1.23
+search_hints:
+- bluegartr
+- stats and how they work
+- trait point cap
+- critical hit rate cap 20%
+- crit rate per point 0.036 0.16
+- critical damage bonus 175% cap 115% floor
+- crit potency
+- rampage hp return
+- thundaga combo critical potency
+- enmity table 4 19 114 55 363
+- cure enmity 0.625 0.6 per hp
+- chameleon nerve drops freeze invincible
+- antagonize flat blade skull sunder spirits within combo bonus
+- enmity bar green yellow red flashing
+- physical damage taken formula def vit
+- 2:3 def vit ratio
+- damage floor dlvl
+- block rate block damage reduction
+- magic evasion resist tiers -25 -50 -75
+- enfeeble land rate cap 75%
+- magic evasion down stone
+- cure iii healing magic potency mnd
+- healer's robe cure enhancement
+- kaeko seiken valk stanislaw niiro
+- 1.22a crit hotfix 2012-05-23
+notes: 'Distillation of two bluegartr FFXIV 1.x threads into seven topic tables plus a patch-dating reference. Evidence tier: wiki (packet captures > video breakdown > wiki), so every value is CALIBRATION-grade - community players parsing their own combat log, samples of a few hundred to a few thousand swings, no methodology review. Every row carries `patch` and `patch_basis` because the threads span 1.18b to 1.23b and the mechanics changed mid-thread: 1.20 reworked essentially every formula, 1.22 completely redid block damage reduction, and a 2012-05-23 hotfix inside the 1.22a window rewrote the critical hit rating / critical attack power / magic critical rating algorithms. `patch_basis: stated` means the tester named the patch; `post-date` means it was derived from the post date against derived/patch-dating.csv. Ten contradictions are recorded in derived/evidence-map.md rather than resolved, including a self-contradiction inside a single post about whether crit potency applies before or after the 175% cap and 115% floor, and a +62-vs-+72 gear mismatch inside what reads as one crit-rate trial. The widely repeated "every multiple of 5 a stat tiers up" claim is treated as a display-rounding artifact and is deliberately absent from the CSVs - see the evidence map. Every numeric image in both threads is dead (imageshack, imgbox, abload, photobucket); the largest losses are Kaeko''s per-action enmity table, the critical-damage-bonus-by-dLVL table, and the damage-floor-by-dLVL plot. The same author cross-posted four of these topics to LiveJournal in fuller form with recovered screenshots - see the kanican-tables set, and use this set for patch attribution and the 1.21-1.23a material kanican never covered. Out of scope on purpose, per the intake rule against mirroring whole articles: INT vs magic attack, weapon DPS and stat caps, the AF "Enhances" inventory, Regen and Stoneskin, Sentinel and Vengeance, Store TP, crafting stats, accuracy vs DEX. Harvested 2026-07-30.'
+related_implementation_docs: []
+source_refs:
+- source: bluegartr-stat-tests
+primary_paths:
+- derived/evidence-map.md
+- derived/critical-hit-rate.csv
+- derived/enmity.csv
+- derived/physical-damage-taken.csv
+- derived/patch-dating.csv
+canonical_evidence:
+- derived/evidence-map.md
+- derived/critical-hit-rate.csv
+- derived/critical-damage-bonus.csv
+- derived/enmity.csv
+- derived/physical-damage-taken.csv
+- derived/magic-evasion.csv
+- derived/cure-potency.csv
+- derived/trait-point-cap.csv
+- derived/patch-dating.csv
+distilled:
+  distilled: true
+  checksum_file: derived/checksums.sha256
+  distilled_artifacts:
+  - derived/evidence-map.md
+  - derived/critical-hit-rate.csv
+  - derived/critical-damage-bonus.csv
+  - derived/enmity.csv
+  - derived/physical-damage-taken.csv
+  - derived/magic-evasion.csv
+  - derived/cure-potency.csv
+  - derived/trait-point-cap.csv
+  - derived/patch-dating.csv
+  - derived/file-inventory.csv
+  - derived/checksums.sha256

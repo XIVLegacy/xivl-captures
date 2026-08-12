@@ -1,0 +1,9 @@
+dataset: opcode_names
+kind: promoted
+evidence_class: packet-capture
+schema_version: 1
+output:
+  file: derived/opcode_names.json
+  sha256: c6b5bdc43a4fb18ea7253432542ef151051bdba288926b57f55e4cda1fcc50ae
+provenance:
+  citation: xivl-opcodes:opcodes.json

@@ -1,0 +1,71 @@
+id: project-meteor-wiki
+title: Project Meteor Wiki - RE Residual
+evidence_class: web-tables
+status: distilled
+content_kind: action-mechanic
+tags:
+- web-reference
+- wiki-tier
+- calibration
+- project-meteor
+- reverse-engineering
+- design-notes
+- mp-cost-formula
+- quest-xp-reward
+- animation-vfx
+- animationid-bitpacking
+- retail-patcher
+- ffxiv-login
+- zipatch
+search_hints:
+- command mp cost formula calculateCommandCost level banded
+- quest xp reward calcSkillPoint expTable
+- animationId bit packing vfx category animation folder em1 mgc wsc
+- retail patcher ffxivboot vercheck ver01.ffxiv.com SqexPatchSystem
+- rsa_verify bypass ffxivlogin string obfuscation sqex0002
+- project meteor wiki fragmenterworks
+- level banded mp cost
+- animation id bit packing
+- animation category folder
+- em1 mgc wsc vfx
+notes: >-
+  Tiny selective harvest of the Project Meteor (FFXIV Classic,
+  fragmenterworks) wiki from a local MediaWiki export of 316 ns-0 pages held at
+  reference-repos/ffxivclassic-wiki. Only the additive reverse-engineering and
+  design-notes residual was kept: three pages (Math Formula, Animations and VFX,
+  Retail Patcher and Login). Every other page was dropped as covered better in
+  the XIVLegacy research repositories: the Game Opcodes and Packet Headers
+  series (xivl-opcodes), quest and lore pages (xivl-client-data quest sheets),
+  the ID and model tables (xivl-client-data),
+  ZiPatch File Structure (bahamut-launcher zipatch.rs), and Debug Commands and
+  NPC Actors (bahamut GM commands plus xivl-client-data actorclass). See
+  derived/evidence-map.md for the per-page call. Evidence tier: wiki, so
+  CALIBRATION-grade (packet captures > video breakdown > wiki). The source wiki
+  states NO license (verified live 2026-07-17: no footer notice, empty About and
+  General-disclaimer, siteinfo.rights null; a bare MediaWiki does not default to
+  CC-BY-SA), so facts and formula values are paraphrased into our own words and
+  no third-party prose is transcribed verbatim. This is the evidence layer only;
+  bahamut-wiki (authored-content-first) may reference and reword later.
+  Harvested 2026-07-17. ../../sources/project-meteor-wiki/objects/tool-inputs/
+  additionally holds two upstream pages kept VERBATIM as historical data-table
+  evidence: 0004-weather.wikitext (per-region weather presence table) and
+  0181-full-quests.wikitext (bahamut
+  build_quest_manifest.py -> tools/data/quests.json; the one-shot parser was
+  deleted after the extraction on 2026-07-19). These are the only files any
+  tool read from the export. Factual data tables remain raw evidence, distinct
+  from the three paraphrased design-notes pages.
+related_implementation_docs: []
+source_refs:
+- source: project-meteor-wiki
+primary_paths:
+- derived/index.md
+- derived/evidence-map.md
+canonical_evidence:
+- derived/evidence-map.md
+- derived/index.md
+distilled:
+  distilled: true
+  distilled_artifacts:
+  - derived/index.md
+  - derived/evidence-map.md
+  - derived/file-inventory.csv

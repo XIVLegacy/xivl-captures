@@ -1,0 +1,29 @@
+zone_slug,zone_jp,linked_region_jp,linked_region_en_client,weather_icons,weather_behavior
+LimsaLominsa,リムサ・ロミンサ,ラノシア（地域）,La Noscea,[weather2][weather3][weather4][weather17],"[weather2][weather3][weather4][weather17] / 「ラノシア（地域）」と連動（0時,8時16時のタイミングで変化） / 「ラノシア（地域）」の天候が[weather5][weather6]の場合、リムサ・ロミンサの天候は[weather3]になる / 「商業区」の天候は独立しており、常に[weather1] / 「黒渦団：軍令部」は天候が存在せず、天候のアイコンが消える / スペシャルイベント期間中の特殊天候（雪/桜/晴天/ハロウィン）の場合、特殊な天候アイコンが表示される / ・ 雪[weather11]（2011年の「星芒祭」（関連 : FINAL FANTASY XIV, The Lodestone）以降） / ・ 桜[weather13]（2012年の「プリンセスデー」（関連 : FINAL FANTASY XIV, The Lodestone）以降） / ・ 晴天/ハロウィン（天候アイコン無し）"
+Ishgard,イシュガルド,,,,
+Gridania,グリダニア,黒衣森（地域）,The Black Shroud,,"[weather1][weather2][weather3][weather4][weather17] / 「黒衣森（地域）」と連動（0時,8時,16時のタイミングで変化） / 「黒衣森（地域）」の天候が[weather6][weather7]の場合、グリダニアの天候は[weather3]になる / 辻店区の天候は独立しており、常に[weather1] / 「双蛇党：統合司令部」は天候が存在せず、天候のアイコンが消える / スペシャルイベント期間中の特殊天候（雪/桜/晴天/ハロウィン）の場合、特殊な天候アイコンが表示される / ・ 雪[weather11]（2011年の「星芒祭」（関連 : FINAL FANTASY XIV, The Lodestone）以降） / ・ 桜[weather13]（2012年の「プリンセスデー」（関連 : FINAL FANTASY XIV, The Lodestone）以降） / ・ 晴天/ハロウィン（天候アイコン無し）"
+Ul_dah,ウルダハ,ザナラーン（地域）,Thanalan,,"[weather1][weather2][weather3][weather4][weather17] / 「ザナラーン（地域）」と連動（0時,8時,16時のタイミングで変化） / 「ザナラーン（地域）」の天候が[weather6][weather8]の場合、ウルダハの天候は[weather3]になる / 旅商区の天候は独立しており、常に[weather1] / 「不滅隊：作戦本部」は天候が存在せず、天候のアイコンが消える / スペシャルイベント期間中の特殊天候（雪/桜/晴天/ハロウィン）の場合、特殊な天候アイコンが表示される / ・ 雪[weather11]（2011年の「星芒祭」（関連 : FINAL FANTASY XIV, The Lodestone）以降） / ・ 桜[weather13]（2012年の「プリンセスデー」（関連 : FINAL FANTASY XIV, The Lodestone）以降） / ・ 晴天/ハロウィン（天候アイコン無し）"
+LaNoscea,ラノシア,ラノシア（地域）,La Noscea,[weather2][weather3][weather4][weather5][weather6][weather17],"[weather2][weather3][weather4][weather5][weather6][weather17] / 「ラノシア（地域）」と連動（0時,8時,16時のタイミングで変化）"
+Coerthas,クルザス,クルザス（地域）,Coerthas,[weather2][weather3][weather4][weather5][weather6][weather17],"[weather2][weather3][weather4][weather5][weather6][weather17] / 「クルザス（地域）」と連動（0時,8時,16時のタイミングで変化）"
+BlackShroud,黒衣森（コクエノモリ）,黒衣森（地域）,The Black Shroud,[weather1][weather2][weather3][weather4][weather6][weather7][weather17],"[weather1][weather2][weather3][weather4][weather6][weather7][weather17] / 「黒衣森（地域）」と連動（0時,8時,16時のタイミングで変化）"
+Thanalan,ザナラーン,ザナラーン（地域）,Thanalan,[weather1][weather2][weather3][weather4][weather6][weather8][weather17],"[weather1][weather2][weather3][weather4][weather6][weather8][weather17] / 「ザナラーン（地域）」と連動（0時,8時,16時のタイミングで変化）"
+MorDhona,モードゥナ,モードゥナ（地域）,Mor Dhona,[weather2][weather3][weather4][weather6][weather9][weather17],"[weather2][weather3][weather4][weather6][weather9][weather17] / 「モードゥナ（地域）」と連動（0時,8時,16時のタイミングで変化）"
+TheCieldalaes,シェルダレー諸島,,,[weather2],[weather2]
+MistbeardCove,霧髭入江,ラノシア（地域）,La Noscea,[weather2][weather3][weather4][weather5][weather6][weather17],"[weather2][weather3][weather4][weather5][weather6][weather17] / 「ラノシア（地域）」と連動（0時,8時,16時のタイミングで変化）"
+CassiopeiaHollow,浮海月の巌穴,ラノシア（地域）,La Noscea,[weather2][weather3][weather4][weather5][weather6][weather17],"[weather2][weather3][weather4][weather5][weather6][weather17] / 「ラノシア（地域）」と連動（0時,8時,16時のタイミングで変化）"
+U_GhamaroMines,ウ・ガマロ武装鉱山,ラノシア（地域）,La Noscea,[weather2][weather3][weather4][weather5][weather6][weather17],"[weather2][weather3][weather4][weather5][weather6][weather17] / 「ラノシア（地域）」と連動（0時,8時,16時のタイミングで変化）"
+Shposhae,シュポシェの霊窟,ラノシア（地域）,La Noscea,[weather2][weather3][weather4][weather5][weather6][weather17],"[weather2][weather3][weather4][weather5][weather6][weather17] / 「ラノシア（地域）」と連動（0時,8時,16時のタイミングで変化）"
+StraitofMerlthor,メルトール海峡,,,[weather2][weather4][weather7][weather17],[weather2][weather4][weather7][weather17]
+DzemaelDarkhold,ゼーメル要塞,クルザス（地域）,Coerthas,[weather2][weather3][weather4][weather5][weather6][weather17],"[weather2][weather3][weather4][weather5][weather6][weather17] / 「クルザス（地域）」と連動（0時,8時,16時のタイミングで変化）"
+TheAurumVale,オーラムヴェイル,クルザス（地域）,Coerthas,[weather2][weather3][weather4][weather5][weather6][weather17],"[weather2][weather3][weather4][weather5][weather6][weather17] / 「クルザス（地域）」と連動（0時,8時,16時のタイミングで変化）"
+TheHowlingEye,ハウリングアイ石塔群,,,[weather14],[weather14]
+Rivenroad,リヴェンロード,,,[weather15][weather16],[weather15][weather16]
+TheMun-TuyCellars,ムントゥイ醸造庫,黒衣森（地域）,The Black Shroud,[weather1][weather2][weather3][weather4][weather6][weather7][weather17],"[weather1][weather2][weather3][weather4][weather6][weather7][weather17] / 「黒衣森（地域）」と連動（0時,8時,16時のタイミングで変化）"
+TheTam-TaraDeepcroft,タムタラの墓所,黒衣森（地域）,The Black Shroud,[weather1][weather2][weather3][weather4][weather6][weather7][weather17],"[weather1][weather2][weather3][weather4][weather6][weather7][weather17] / 「黒衣森（地域）」と連動（0時,8時,16時のタイミングで変化）"
+TheThousandMawsofToto-Rak,トトラクの千獄,黒衣森（地域）,The Black Shroud,[weather1][weather2][weather3][weather4][weather6][weather7][weather17],"[weather1][weather2][weather3][weather4][weather6][weather7][weather17] / 「黒衣森（地域）」と連動（0時,8時,16時のタイミングで変化）"
+Thornmarch,茨の園,,,[weather12],[weather12]
+NanawaMines,ナナワ銀山,ザナラーン（地域）,Thanalan,[weather1][weather2][weather3][weather4][weather6][weather8][weather17],"[weather1][weather2][weather3][weather4][weather6][weather8][weather17] / 「ザナラーン（地域）」と連動（0時,8時,16時のタイミングで変化）"
+CopperbellMines,カッパーベル銅山,ザナラーン（地域）,Thanalan,[weather1][weather2][weather3][weather4][weather6][weather8][weather17],"[weather1][weather2][weather3][weather4][weather6][weather8][weather17] / 「ザナラーン（地域）」と連動（0時,8時,16時のタイミングで変化）"
+TheBowlofEmbers,炎帝祭跡,,,[weather10],[weather10]
+Cutter_sCry,カッターズクライ,ザナラーン（地域）,Thanalan,[weather1][weather2][weather3][weather4][weather6][weather8][weather17],"[weather1][weather2][weather3][weather4][weather6][weather8][weather17] / 「ザナラーン（地域）」と連動（0時,8時,16時のタイミングで変化）"
+Ship,船,,,[weather7],[weather7]

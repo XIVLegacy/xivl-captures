@@ -1,0 +1,44 @@
+id: elemen-shop-inventory
+title: eLeMeN FF14 1.x Shop Item-to-NPC Sales Edges - Web Tables
+evidence_class: web-tables
+status: distilled
+content_kind: shop-vendor
+tags:
+- web-reference
+- wiki-tier
+- calibration
+- shop-vendor
+- item-sales
+- npc-vendor
+- shop-inventory
+- hamlet-stockpile-price
+- elemen
+- patch-1.x
+search_hints:
+- item to selling npc reverse index shop vendor
+- which npc sells item shopBase binding recover
+- shop item npc sales edge 1.x calibration
+- hamlet stockpile rank price 備蓄ランク scaled
+- xtx_itemName xtx_displayName client cross-check
+- shopItem shopBase price client redundant
+- db_shop.js elemen etc shopitem
+- vendor roster item inventory 1.23b
+- eLeMeN elemen.sakura.ne.jp shop item sales location
+notes: 'Web-table harvest of the eLeMeN - FF14 (elemen.sakura.ne.jp) etc/shopitem section (item -> selling-NPC reverse index, backed by js/db_shop.js), scoped client-first to the one web-unique slice. A recon (2026-07-18) found the section is a 518-item x 154-NPC sales matrix. Dropped as client-primary: item names (xtx_itemName.csv), flat gil prices (shopItem.csv), and the seller NPC roster (already in the sibling set elemen-zone-guide, derived/shops.csv). Kept the one web-unique slice: the item<->NPC "who sells what" edges (2087). The client ships shopBase.csv -> shopItem.csv (a shop''s inventory grouping + price) and xtx_itemName, but the binding from a named NPC to a shopBase inventory is not in any decoded xivl-client-data sheet (actorclass columns empty; populace*Shop* are greeting dialogue) - it lives in the actor-behavior binary. These edges are what elemen-zone-guide left open when it dropped per-NPC item inventories; recovering them lets a named shop NPC be matched to its client shopBase by item-set intersection. One derived CSV, shop-sales.csv, one row per edge: item (JP + client EN + id), seller NPC (JP + client EN + id), seller city/region + area + coords, and the source''s verbatim price string. Client cross-check: items join xtx_itemName.csv (JP col5 -> EN col6, id col0) and NPCs join xtx_displayName.csv (JP col1 -> EN col2, id col0), whitespace-insensitive NFKC - 518/518 items and 2076/2087 edges resolved. Item-name variant overrides logged in item_match_note: the source writes name separators as _ where the client uses ・ (word), ＆, （X） (dye variant), or [X] (dye code) - e.g. ウェザード_クロスペインハンマー = ウェザード・クロスペインハンマー, 別珍_レイヴン = 別珍（レイヴン）, ウェザードサイブーツ_GR = ウェザードサイブーツ[GR]. One genuine client gap: 酒保商人フォルガード (Coerthas, no xtx_displayName row, same gap as elemen-zone-guide) - 11 edges with a blank client id. The source_price column is kept verbatim because 15 hamlet items (ハムレット関連) carry rank-scaled pricing A/B/C（備蓄ランク0/1/2） that is NOT a flat shopItem.csv value; the 503 flat-price rows duplicate shopItem.csv and are the source''s own annotation, not a re-derivation. Evidence tier: wiki, CALIBRATION-grade. Edition: the section is annotated patch 1.22 (one patch before the 2012-11-11 world-down); the item/NPC joins to the 1.x client tables confirm the era. The site 403s naive fetchers; the index page and js/db_shop.js were read with a browser UA and preserved in elemen-site-archive. Source HTML preserved in elemen-site-archive, see its derived/url-map.csv. Harvested 2026-07-18.'
+related_implementation_docs: []
+source_refs:
+- source: elemen-shop-inventory
+- source: elemen-site-archive
+  citation: full site mirror
+primary_paths:
+- derived/evidence-map.md
+- derived/shop-sales.csv
+- derived/glossary.md
+- derived/file-inventory.csv
+distilled:
+  distilled: true
+  distilled_artifacts:
+  - derived/shop-sales.csv
+  - derived/glossary.md
+  - derived/evidence-map.md
+  - derived/file-inventory.csv

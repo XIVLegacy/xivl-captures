@@ -1,0 +1,44 @@
+id: primal-battle-ifrit-bowl-of-embers
+title: The Bowl of Embers (Ifrit) - Video Breakdown
+evidence_class: notes-and-transcripts
+status: distilled
+content_kind: primal-battle
+zones:
+- the bowl of embers
+system: instanced-content
+tags:
+- video-breakdown
+- primal
+- ifrit
+- infernal-nail
+- damage-tuning
+search_hints:
+- ifrit
+- the bowl of embers
+- bowl of embers
+- primal
+- vulcan burst
+- incinerate
+- eruption
+- crimson cyclone
+- hellfire
+- infernal nail
+- conjurer
+- siphon mp
+- aegis boon
+- outmaneuver
+- featherfoot
+- video breakdown
+- damage tuning
+notes: 'Calibration run for the video-breakdown handoff prompt. AI breakdown of a retail 1.x video (vidssave.com FFXIV 1.0 Ifrit fight 1080P.mp4, ~12:40) of the Ifrit primal in The Bowl of Embers: the point-of-view player (Conjurer Lv30) in a four-player Light Party, one member tanking (player and party character names generalized to roles). Evidence tier: packet captures > video breakdown > wiki - no xivl-opcodes packet set covers Ifrit, so derived/evidence-map.md records verification against the xivl-client-data client strings instead. All five Ifrit readied actions (Vulcan Burst, Incinerate, Eruption, Crimson Cyclone, Hellfire) and Infernal Nail resolve to real 1.23b strings; zero hallucinations or ARR substitutions. Unique residual value: Ifrit damage magnitudes (auto-attack, Vulcan Burst, Eruption, Incinerate, Hellfire, Crimson Cyclone), heal/recovery amounts, the Siphon MP drain, and the fight pacing (Infernal Nail phase ~7:00, single Hellfire ~8:00). The source video is not archived.'
+related_implementation_docs: []
+source_refs:
+- source: primal-battle-ifrit-bowl-of-embers
+primary_paths:
+- derived/evidence-map.md
+canonical_evidence:
+- derived/evidence-map.md
+distilled:
+  distilled: true
+  distilled_artifacts:
+  - derived/evidence-map.md

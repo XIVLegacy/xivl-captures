@@ -1,0 +1,19 @@
+# Agent / AI tooling
+.claude/
+.agents/
+AGENTS.md
+CLAUDE.md
+docs/ai_agents/local/
+
+config/cold-storage.local.yaml
+__pycache__/
+*.pyc
+
+# Cold-storage destination (originals >25 MB live here, gitignored). See
+# config/cold-storage.example.yaml and integrating-new-captures.md
+# "Step 12: Apply Retention And Verify".
+/archives/
+
+# Public repository exclusions
+/sources/*/objects/
+/derived/gam_name_candidates.*

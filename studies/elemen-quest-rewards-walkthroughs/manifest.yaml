@@ -1,0 +1,49 @@
+id: elemen-quest-rewards-walkthroughs
+title: eLeMeN FF14 1.x Quest EXP Rewards and Walkthroughs - Web Tables
+evidence_class: web-tables
+status: distilled
+content_kind: side-quest
+tags:
+- web-reference
+- wiki-tier
+- calibration
+- quest
+- main-quest
+- class-quest
+- job-quest
+- grand-company-quest
+- quest-exp-reward
+- walkthrough
+- reward-patch-history
+- elemen
+- patch-1.x
+search_hints:
+- 1.x quest exp reward amount server-side
+- quest experience reward 経験値 up to level-scaled
+- quest walkthrough step order choice prereq chain
+- reward patch history パッチ1.20 報酬に経験値が追加
+- main sub class job grand-company quest
+- xtx_quest client quest id cross-check
+- quest exp economy calibration 1.23b
+- prev next quest 前のクエスト 次のクエスト chain
+- eLeMeN elemen.sakura.ne.jp quest
+notes: 'Web-table harvest of the eLeMeN - FF14 (elemen.sakura.ne.jp) quest section, scoped client-first to the two web-unique slices. A recon (2026-07-18) found the client ships quest names + full dialogue (xtx_quest.csv, 1.9 MB, 735 quests), NPC + coords (quest_marker.csv), and gil + item rewards (quest_new_reward.csv) as primary evidence - all dropped. Kept: (1) the quest EXP reward amounts - joining 262 quests to their client reward row, gil is present but EXP is absent in ~83% (e.g. 気合がっつり gil 10000 present, exp 1120 absent), so the 1.x quest EXP economy is server-side like elemen-level-exp; and (2) the per-quest walkthroughs (step order, choices, prereq chain) plus the reward patch-history annotations the client never carried (the in-game journal text is client-primary and was dropped). Two derived CSVs: quest-exp-rewards.csv (281 quests all 5 categories: category, group, name JP + client EN, client_quest_id, recommended_level, exp_reward, exp_class) and quest-walkthroughs.csv (112 quests main/class/job: prereq, exp_reward, prev/next quest, reward_patch_notes, walkthrough_steps). content_kind side-quest is the umbrella; the set spans main/sub/GC/class/job (see the category column and tags). Evidence tier: wiki, CALIBRATION-grade (the EXP is 経験値：～N, up-to/ level-scaled). Client cross-check: every name joins xtx_quest.csv (JP col2 -> EN col3, id col0), whitespace-insensitive NFKC - 281/281 reward rows and 112/112 walkthrough rows resolve to a client quest id, most directly, a few via audited variant overrides (kanji/kana typos 努め/務め, 頼り/便り, 卵/タマゴ; and ` new!` / spacing suffixes) - see derived/glossary.md. The final 1.x (patch 1.23b) edition is confirmed by the 281/281 join, not ARR. The site 403s naive fetchers; pages were read with a browser UA and captured into elemen-site-archive (5 index + 112 detail) as the archival copy. Source HTML preserved in elemen-site-archive, see its derived/url-map.csv. Harvested 2026-07-18.'
+related_implementation_docs: []
+source_refs:
+- source: elemen-quest-rewards-walkthroughs
+- source: elemen-site-archive
+  citation: full site mirror
+primary_paths:
+- derived/evidence-map.md
+- derived/quest-exp-rewards.csv
+- derived/quest-walkthroughs.csv
+- derived/glossary.md
+- derived/file-inventory.csv
+distilled:
+  distilled: true
+  distilled_artifacts:
+  - derived/quest-exp-rewards.csv
+  - derived/quest-walkthroughs.csv
+  - derived/glossary.md
+  - derived/evidence-map.md
+  - derived/file-inventory.csv

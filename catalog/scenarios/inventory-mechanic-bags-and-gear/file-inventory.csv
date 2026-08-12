@@ -1,0 +1,7 @@
+pcap,capture_path,bytes,sha256,n_opcodes,opcodes,service_mix
+inventory.pcapng,sources/pcap-1.23b/objects/inventory.pcapng,27908,f667bfc1cb87afec3c5c5f56b031254101aff012577f6f35c7cbf133815b6878,5,0x0001;0x00ca;0x00cf;0x012f;0x0137,map=6
+open_gear_menu.pcapng,sources/pcap-1.23b/objects/open_gear_menu.pcapng,25940,6b7dee09f59d03d9706ca1c81586dce667cd4d806ee2a2b72d89432d617afc2e,5,0x0001;0x00ca;0x00cf;0x012f;0x0137,map=6
+change_bodyarmor.pcapng,sources/pcap-1.23b/objects/change_bodyarmor.pcapng,54536,55ee6035d24e80b97c9354a0800b86a52d0a99e1200cf6875a5b56009215021a,17,0x0001;0x00ca;0x00cf;0x00d0;0x00d6;0x012d;0x012f;0x0137;0x0139;0x0144;0x0146;0x0147;0x0149;0x014d;0x015b;0x016d;0x016e,map=18
+change_helm.pcapng,sources/pcap-1.23b/objects/change_helm.pcapng,39660,af1e465076c3acf6188f24f084622b22beccc932bb96effd517b2d9a44606e08,18,0x0001;0x00ca;0x00cf;0x00d0;0x00d6;0x012d;0x012f;0x0137;0x0139;0x0144;0x0146;0x0147;0x0148;0x014d;0x0152;0x015b;0x016d;0x016e,map=19
+gear_changesoul.pcapng,sources/pcap-1.23b/objects/gear_changesoul.pcapng,23784,62af2cde3a4683fba3e09cc3dfed8001d74303b120381de577b05df492926780,12,0x0001;0x00ca;0x00cf;0x00d0;0x00da;0x012d;0x012f;0x0137;0x0139;0x0144;0x015a;0x01a4,map=13
+gear_changeweapon.pcapng,sources/pcap-1.23b/objects/gear_changeweapon.pcapng,21352,3eec2c2993feeb2b8c47c1e1f553335638a7262ec13b561e2d52d768f0798080,18,0x0001;0x00ca;0x00cf;0x00d0;0x00d6;0x012d;0x012f;0x0137;0x0139;0x0144;0x0146;0x0147;0x0149;0x014d;0x015a;0x015b;0x016d;0x016e,map=19

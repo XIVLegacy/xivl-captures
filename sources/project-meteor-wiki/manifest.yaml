@@ -1,0 +1,47 @@
+id: project-meteor-wiki
+title: Project Meteor Wiki - RE Residual
+evidence_class: web-tables
+distribution: restricted
+provenance:
+  sources:
+  - title: Math Formula
+    url: http://ffxivclassic.fragmenterworks.com/wiki/index.php/Math_Formula
+    revid: 32
+    timestamp: 2017-10-26 14:31:41+00:00
+    site: Project Meteor Wiki (fragmenterworks)
+  - title: Animations and VFX
+    url: http://ffxivclassic.fragmenterworks.com/wiki/index.php/Animations_and_VFX
+    revid: 1957
+    timestamp: 2025-03-21 19:57:44+00:00
+    site: Project Meteor Wiki (fragmenterworks)
+  - title: Retail Patcher and Login
+    url: http://ffxivclassic.fragmenterworks.com/wiki/index.php/Retail_Patcher_and_Login
+    revid: 836
+    timestamp: 2019-06-07 01:17:38+00:00
+    site: Project Meteor Wiki (fragmenterworks)
+storage:
+  original_state: in-repo
+  storage_id: repo
+  path: objects/
+  master_archive:
+    file: project-meteor-wiki-objects.zip
+    sha256: dfe39127aefa3c06f2ebc51efa82d5aea5cf4fa7401ef23e538e68915ee2d216
+    size_bytes: 17543
+    holds: all 5 files under objects/, deflate, fixed timestamps
+    cold_store_path: archives/project-meteor-wiki/project-meteor-wiki-objects.zip
+members:
+- file: pages/animations-and-vfx.md
+  sha256: f03bcdc4877479724fa79a0c7688c7e06c78f0370bd3eace1b1faede78896740
+  size_bytes: 6839
+- file: pages/math-formula.md
+  sha256: 5a798053fc7fab8dd3e054b10a5424800d594306fc0f392ca4674929a59aff29
+  size_bytes: 3674
+- file: pages/retail-patcher-and-login.md
+  sha256: ec2b4702cfc0754276305cd2c6b1ca6fa7ad065361b5da501a424b8126f2df19
+  size_bytes: 7490
+- file: tool-inputs/0004-weather.wikitext
+  sha256: 9611825d49fd09a169539bc993f82b4c30713e1be5044e80f89925731eb70c18
+  size_bytes: 7490
+- file: tool-inputs/0181-full-quests.wikitext
+  sha256: eaff133b7cecc64cbb374362947bdd5fb7aa1ac94f19a0d61883c37e170365b5
+  size_bytes: 33167

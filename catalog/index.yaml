@@ -1,0 +1,1860 @@
+# Generated registry; taxonomy: catalog/integrating-new-captures.md.
+# Inputs: source/study manifests, pcap scenarios, and derived/*.meta.yaml.
+# Edit canonical inputs and run tools/build_catalog_index.py; do not hand-edit.
+sources:
+- id: bluegartr-stat-tests
+  title: bluegartr FFXIV 1.x Community Stat Testing - Web Tables
+  evidence_class: web-tables
+  distribution: restricted
+  original_state: in-repo
+  storage_id: repo
+  member_count: 2
+- id: elemen-battle-actions
+  title: eLeMeN FF14 1.x Battle Class Actions - Web Tables
+  evidence_class: web-tables
+  distribution: restricted
+  original_state: in-repo
+  storage_id: repo
+  member_count: 9
+- id: elemen-battlecraft-leve-objectives
+  title: eLeMeN FF14 1.x Regional Battlecraft Leve Objectives - Web Tables
+  evidence_class: web-tables
+  distribution: restricted
+  original_state: in-repo
+  storage_id: repo
+  member_count: 3
+- id: elemen-bestiary
+  title: eLeMeN FF14 1.x Bestiary and NM - Web Tables
+  evidence_class: web-tables
+  distribution: restricted
+  original_state: in-repo
+  storage_id: repo
+  member_count: 72
+- id: elemen-consumable-effects
+  title: eLeMeN FF14 1.x Food and Medicine Effect Magnitudes - Web Tables
+  evidence_class: web-tables
+  distribution: restricted
+  original_state: in-repo
+  storage_id: repo
+  member_count: 2
+- id: elemen-craft-gather-actions
+  title: eLeMeN FF14 1.x Crafter and Gatherer Actions - Web Tables
+  evidence_class: web-tables
+  distribution: restricted
+  original_state: in-repo
+  storage_id: repo
+  member_count: 11
+- id: elemen-history-removed
+  title: eLeMeN FF14 1.x History - Removed-System Milestones - Web Tables
+  evidence_class: web-tables
+  distribution: restricted
+  original_state: in-repo
+  storage_id: repo
+  member_count: 1
+- id: elemen-instanced-content-entry-rules
+  title: eLeMeN FF14 1.x Instanced-Content Entry Rules - Web Tables
+  evidence_class: web-tables
+  distribution: restricted
+  original_state: in-repo
+  storage_id: repo
+  member_count: 1
+- id: elemen-level-exp
+  title: eLeMeN FF14 1.x Level / EXP Growth - Web Tables
+  evidence_class: web-tables
+  distribution: restricted
+  original_state: in-repo
+  storage_id: repo
+  member_count: 1
+- id: elemen-playguide
+  title: eLeMeN FF14 1.x Play Guide - Weather Legend, Aethernet, Market Tax - Web Tables
+  evidence_class: web-tables
+  distribution: restricted
+  original_state: in-repo
+  storage_id: repo
+  member_count: 17
+- id: elemen-quest-rewards-walkthroughs
+  title: eLeMeN FF14 1.x Quest EXP Rewards and Walkthroughs - Web Tables
+  evidence_class: web-tables
+  distribution: restricted
+  original_state: in-repo
+  storage_id: repo
+  member_count: 4
+- id: elemen-shop-inventory
+  title: eLeMeN FF14 1.x Shop Item-to-NPC Sales Edges - Web Tables
+  evidence_class: web-tables
+  distribution: restricted
+  original_state: in-repo
+  storage_id: repo
+  member_count: 1
+- id: elemen-site-archive
+  title: eLeMeN FF14 1.x Site Archive - HTML Mirror of Digested Sections
+  evidence_class: archive
+  distribution: restricted
+  original_state: in-repo
+  storage_id: repo
+  member_count: 271
+- id: elemen-zone-guide
+  title: eLeMeN FF14 1.x Zone Guide - Weather, Aetheryte, Adjacency - Web Tables
+  evidence_class: web-tables
+  distribution: restricted
+  original_state: in-repo
+  storage_id: repo
+  member_count: 3
+- id: gamerescape-tables
+  title: Gamer Escape FFXIV 1.x Item and Mob Tables - Web Tables
+  evidence_class: web-tables
+  distribution: local-only
+  original_state: local-only
+  storage_id: local-research-corpus
+  member_count: 0
+- id: kanican-tables
+  title: kanican FFXIV 1.x Combat Theorycrafting - Web Tables
+  evidence_class: web-tables
+  distribution: restricted
+  original_state: in-repo
+  storage_id: repo
+  member_count: 51
+- id: lodestone-beginners
+  title: FFXIV 1.x Lodestone - A Beginner's Guide to Eorzea
+  evidence_class: web-tables
+  distribution: restricted
+  original_state: in-repo
+  storage_id: repo
+  member_count: 227
+- id: lodestone-dev-patch
+  title: FFXIV 1.x Lodestone Dev Posts and Patch Notes
+  evidence_class: web-tables
+  distribution: restricted
+  original_state: in-repo
+  storage_id: repo
+  member_count: 229
+- id: lodestone-lore
+  title: FFXIV 1.x Lodestone Lore - GC Newsletters, The Last Word, Events
+  evidence_class: web-tables
+  distribution: restricted
+  original_state: in-repo
+  storage_id: repo
+  member_count: 215
+- id: lodestone-manual
+  title: FFXIV 1.0 Lodestone Official Game Manual
+  evidence_class: web-tables
+  distribution: restricted
+  original_state: in-repo
+  storage_id: repo
+  member_count: 366
+- id: pcap-1.23b
+  title: FFXIV 1.23b Retail Packet-Capture Corpus
+  evidence_class: packet-capture
+  distribution: restricted
+  original_state: in-repo
+  storage_id: repo
+  member_count: 54
+- id: primal-battle-ifrit-bowl-of-embers
+  title: The Bowl of Embers (Ifrit) - Video Breakdown
+  evidence_class: notes-and-transcripts
+  distribution: public
+  original_state: in-repo
+  storage_id: repo
+  member_count: 1
+- id: project-meteor-wiki
+  title: Project Meteor Wiki - RE Residual
+  evidence_class: web-tables
+  distribution: restricted
+  original_state: in-repo
+  storage_id: repo
+  member_count: 5
+studies:
+- id: bluegartr-stat-tests
+  title: bluegartr FFXIV 1.x Community Stat Testing - Web Tables
+  status: distilled
+  evidence_class: web-tables
+  content_kind: action-mechanic
+  tags:
+  - web-reference
+  - wiki-tier
+  - calibration
+  - bluegartr
+  - forum-thread
+  - critical-hit-rate
+  - critical-damage-bonus
+  - enmity
+  - physical-damage-taken
+  - magic-evasion
+  - cure-potency
+  - trait-point-cap
+  - patch-attribution
+  - kanican
+  - patch-1.19
+  - patch-1.20
+  - patch-1.21
+  - patch-1.22
+  - patch-1.23
+  search_hints:
+  - bluegartr
+  - stats and how they work
+  - trait point cap
+  - critical hit rate cap 20%
+  - crit rate per point 0.036 0.16
+  - critical damage bonus 175% cap 115% floor
+  - crit potency
+  - rampage hp return
+  - thundaga combo critical potency
+  - enmity table 4 19 114 55 363
+  - cure enmity 0.625 0.6 per hp
+  - chameleon nerve drops freeze invincible
+  - antagonize flat blade skull sunder spirits within combo bonus
+  - enmity bar green yellow red flashing
+  - physical damage taken formula def vit
+  - 2:3 def vit ratio
+  - damage floor dlvl
+  - block rate block damage reduction
+  - magic evasion resist tiers -25 -50 -75
+  - enfeeble land rate cap 75%
+  - magic evasion down stone
+  - cure iii healing magic potency mnd
+  - healer's robe cure enhancement
+  - kaeko seiken valk stanislaw niiro
+  - 1.22a crit hotfix 2012-05-23
+  primary_paths:
+  - studies/bluegartr-stat-tests/derived/evidence-map.md
+  - studies/bluegartr-stat-tests/derived/critical-hit-rate.csv
+  - studies/bluegartr-stat-tests/derived/enmity.csv
+  - studies/bluegartr-stat-tests/derived/physical-damage-taken.csv
+  - studies/bluegartr-stat-tests/derived/patch-dating.csv
+  source_refs:
+  - source: bluegartr-stat-tests
+- id: elemen-battle-actions
+  title: eLeMeN FF14 1.x Battle Class Actions - Web Tables
+  status: distilled
+  evidence_class: web-tables
+  content_kind: action-mechanic
+  system: battle-regimen
+  tags:
+  - web-reference
+  - wiki-tier
+  - calibration
+  - class-action
+  - disciplines-of-war
+  - disciplines-of-magic
+  - trait
+  - battle-regimen
+  - part-damage
+  - action-mechanic
+  - elemen
+  - patch-1.x
+  search_hints:
+  - 1.x class actions Disciplines of War Magic
+  - Gladiator Pugilist Marauder Lancer Archer Conjurer Thaumaturge
+  - action level TP cast recast duration equip-condition
+  - trait 特性 Enhanced Physical Attack
+  - job-specific action Cover Divine Veil Hallowed Ground
+  - part-damage weaponskill map 部位損傷
+  - Battle Regimen 付加効果を持つ戦術 バトルレジメン combo
+  - Fast Blade Spirits Within Path of the Storm Power Surge
+  - xtx_command action name cross-check client id
+  - eLeMeN elemen.sakura.ne.jp class action
+  - combo tree コンボ
+  primary_paths:
+  - studies/elemen-battle-actions/derived/evidence-map.md
+  - studies/elemen-battle-actions/derived/battle-actions.csv
+  - studies/elemen-battle-actions/derived/part-damage-map.csv
+  - studies/elemen-battle-actions/derived/tactics-battle-regimen.csv
+  - studies/elemen-battle-actions/derived/glossary.md
+  - studies/elemen-battle-actions/derived/file-inventory.csv
+  source_refs:
+  - source: elemen-battle-actions
+  - source: elemen-site-archive
+    citation: full site mirror
+- id: elemen-battlecraft-leve-objectives
+  title: eLeMeN FF14 1.x Regional Battlecraft Leve Objectives - Web Tables
+  status: distilled
+  evidence_class: web-tables
+  content_kind: battlecraft-leve
+  system: guildleve
+  tags:
+  - web-reference
+  - wiki-tier
+  - calibration
+  - guildleve
+  - regional-leve
+  - battlecraft
+  - leve-objective
+  - wave-choreography
+  - elemen
+  - patch-1.x
+  search_hints:
+  - 1.x regional battlecraft guildleve objectives
+  - leve wave choreography spawn add flee
+  - 当たり探し find the right one lottery leve
+  - 倒すと追加 defeat then add spawn
+  - guildleve objective 概要 mob count party
+  - Limsa Lominsa Gridania Ul'dah battlecraft camps
+  - xtx_guildleve client leve id cross-check
+  - regional leve My Very First Adventure Mole Patrol
+  - eLeMeN elemen.sakura.ne.jp guildleve regional battlecraft
+  primary_paths:
+  - studies/elemen-battlecraft-leve-objectives/derived/evidence-map.md
+  - studies/elemen-battlecraft-leve-objectives/derived/battlecraft-leve-objectives.csv
+  - studies/elemen-battlecraft-leve-objectives/derived/glossary.md
+  - studies/elemen-battlecraft-leve-objectives/derived/file-inventory.csv
+  source_refs:
+  - source: elemen-battlecraft-leve-objectives
+  - source: elemen-site-archive
+    citation: full site mirror
+- id: elemen-bestiary
+  title: eLeMeN FF14 1.x Bestiary and NM - Web Tables
+  status: distilled
+  evidence_class: web-tables
+  content_kind: notorious-monster
+  tags:
+  - web-reference
+  - wiki-tier
+  - calibration
+  - bestiary
+  - mob-skill-list
+  - notorious-monster
+  - taxonomy
+  - crystal-drop
+  - special-move
+  - item-drop
+  - nm-spawn
+  - spawn-location
+  - elemen
+  - patch-1.x
+  search_hints:
+  - 1.x bestiary monster taxonomy 類 綱 属 種
+  - crystal drop priority by element
+  - 特殊技 special move cast color range interrupt effect
+  - mob skill list notorious monster NM
+  - ranged attack usage per genus
+  - 網 vs 綱 in-game vs official setting class
+  - weakness resistance inferred attribute
+  - eLeMeN elemen.sakura.ne.jp bestiary nm
+  - Aldgoat Coeurl Morbol Goobbue Chimera
+  - Great Buffalo Lone Coeurl Cactuar Jack Dodore
+  - english translation gloss cast color element status effect
+  - NM item drop table rare drop ◆ equipment material xtx_itemName
+  - NM spawn location zone coords condition xtx_displayName xtx_placeName
+  - モンスター 生息域 出現条件 アイテム habitat spawn drop
+  - crystal drop priority element
+  - 特殊技 special move table
+  - cast effect color 赤 黄 紫 青
+  - 網 vs 綱 official setting
+  - NM spawn location zone coords condition window xtx_displayName
+  primary_paths:
+  - studies/elemen-bestiary/derived/evidence-map.md
+  - studies/elemen-bestiary/derived/bestiary-taxonomy.csv
+  - studies/elemen-bestiary/derived/mob-skill-list.csv
+  - studies/elemen-bestiary/derived/species-client-map.csv
+  - studies/elemen-bestiary/derived/mob-drops.csv
+  - studies/elemen-bestiary/derived/nm-spawns.csv
+  - studies/elemen-bestiary/derived/glossary.md
+  - studies/elemen-bestiary/derived/file-inventory.csv
+  source_refs:
+  - source: elemen-bestiary
+  - source: elemen-site-archive
+    citation: full site mirror
+- id: elemen-consumable-effects
+  title: eLeMeN FF14 1.x Food and Medicine Effect Magnitudes - Web Tables
+  status: distilled
+  evidence_class: web-tables
+  content_kind: status-effect-mechanic
+  tags:
+  - web-reference
+  - wiki-tier
+  - calibration
+  - status-effect-mechanic
+  - food-effect
+  - medicine-effect
+  - consumable
+  - buff-magnitude
+  - recovery-formula
+  - recast-time
+  - elemen
+  - patch-1.x
+  search_hints:
+  - food effect attribute percentage cap 上限 buff magnitude 食事効果
+  - medicine HP MP recovery percentage cap potion ether elixir formula 薬品効果
+  - status cure debuff self-enhancement potion tonic elixir stat buff tier
+  - food EXP +3% duration 30:00 recast 0:05 HQ +10% universal rule
+  - consumable recast time itemData cross-check client authoritative
+  - xtx_itemName xtx_text_paramName xtx_status client cross-check
+  - eLeMeN elemen.sakura.ne.jp food medicine consumable effect
+  - food effect attribute percentage cap 上限 physical attack STR buff magnitude
+  - status cure debuff item eye drops echo drops antidote gold needle
+  - self-enhancement potion tonic elixir stat buff cap tier 薬 妙薬 秘薬
+  - enmity item protect shell phoenix down raise consumable
+  - consumable recast time itemData field 62 cross-check client
+  - eLeMeN elemen.sakura.ne.jp food medicine 食事効果 薬品効果
+  primary_paths:
+  - studies/elemen-consumable-effects/derived/evidence-map.md
+  - studies/elemen-consumable-effects/derived/food-effects.csv
+  - studies/elemen-consumable-effects/derived/medicine-effects.csv
+  - studies/elemen-consumable-effects/derived/glossary.md
+  - studies/elemen-consumable-effects/derived/file-inventory.csv
+  source_refs:
+  - source: elemen-consumable-effects
+  - source: elemen-site-archive
+    citation: full site mirror
+- id: elemen-craft-gather-actions
+  title: eLeMeN FF14 1.x Crafter and Gatherer Actions - Web Tables
+  status: distilled
+  evidence_class: web-tables
+  content_kind: action-mechanic
+  tags:
+  - web-reference
+  - wiki-tier
+  - calibration
+  - class-action
+  - disciples-of-the-hand
+  - disciples-of-the-land
+  - crafter
+  - gatherer
+  - godsend
+  - action-mechanic
+  - elemen
+  - patch-1.x
+  search_hints:
+  - 1.x crafter gatherer actions Disciples of the Hand Land
+  - Carpenter Blacksmith Armorer Goldsmith Leatherworker Weaver Alchemist Culinarian
+  - Miner Botanist Fisher
+  - godsend ゴッドセンド crafting gathering ability
+  - action level TP cast recast duration equip-condition
+  - Hasty Hand Grandmastery Tender Touch Sharp Vision Earthen Favor
+  - Nald'thal's Ward Menphina's Ward Deep Vigor
+  - xtx_command action name cross-check client id 29xxx
+  - eLeMeN elemen.sakura.ne.jp class action crafter gatherer
+  primary_paths:
+  - studies/elemen-craft-gather-actions/derived/evidence-map.md
+  - studies/elemen-craft-gather-actions/derived/craft-gather-actions.csv
+  - studies/elemen-craft-gather-actions/derived/glossary.md
+  - studies/elemen-craft-gather-actions/derived/file-inventory.csv
+  source_refs:
+  - source: elemen-craft-gather-actions
+  - source: elemen-site-archive
+    citation: full site mirror
+- id: elemen-history-removed
+  title: eLeMeN FF14 1.x History - Removed-System Milestones - Web Tables
+  status: distilled
+  evidence_class: web-tables
+  content_kind: character-mechanic
+  tags:
+  - web-reference
+  - wiki-tier
+  - calibration
+  - history
+  - milestone
+  - removed-content
+  - physical-level
+  - shield-class
+  - seasonal-event
+  - lodestone-history
+  - elemen
+  - patch-1.x
+  search_hints:
+  - lodestone history removed milestone unobtainable 現在は取得不可能
+  - removed shield class 盾 physical level フィジカル ladder
+  - past seasonal event item swimsuit yukata removed from client
+  - history feed superseded by achievement system xtx_achievement
+  - xtx_itemName event item cross-check removed content
+  - character progression milestone 1.x calibration
+  - eLeMeN elemen.sakura.ne.jp history
+  primary_paths:
+  - studies/elemen-history-removed/derived/evidence-map.md
+  - studies/elemen-history-removed/derived/history-removed.csv
+  - studies/elemen-history-removed/derived/glossary.md
+  - studies/elemen-history-removed/derived/file-inventory.csv
+  source_refs:
+  - source: elemen-history-removed
+  - source: elemen-site-archive
+    citation: full site mirror
+- id: elemen-instanced-content-entry-rules
+  title: eLeMeN FF14 1.x Instanced-Content Entry Rules - Web Tables
+  status: distilled
+  evidence_class: web-tables
+  content_kind: instanced-dungeon
+  tags:
+  - web-reference
+  - wiki-tier
+  - calibration
+  - entry-rules
+  - instanced-dungeon
+  - primal-battle
+  - stronghold-field
+  - level-restriction
+  - party-limit
+  - rechallenge-cooldown
+  - gamecontents
+  - elemen
+  - patch-1.x
+  search_hints:
+  - instanced raid entry rule level restriction party limit time limit rechallenge
+  - primal battle garuda ifrit moggle mog normal hard extreme entry gate
+  - stronghold field castrum novum ughamaro natalan zaharak recommended level
+  - aurum vale cutters cry dzemael darkhold toto rak instanced dungeon
+  - xtx_raidDungeon xtx_placeName xtx_monsterRace client cross-check
+  - gamecontents materia grand company skipped client-redundant
+  - eLeMeN elemen.sakura.ne.jp gamecontents instanced content entry
+  - re-challenge cooldown 15 min success 5 min failure 再挑戦 制限時間
+  primary_paths:
+  - studies/elemen-instanced-content-entry-rules/derived/evidence-map.md
+  - studies/elemen-instanced-content-entry-rules/derived/instanced-content-entry-rules.csv
+  - studies/elemen-instanced-content-entry-rules/derived/glossary.md
+  - studies/elemen-instanced-content-entry-rules/derived/file-inventory.csv
+  source_refs:
+  - source: elemen-instanced-content-entry-rules
+  - source: elemen-site-archive
+    citation: full site mirror
+- id: elemen-level-exp
+  title: eLeMeN FF14 1.x Level / EXP Growth - Web Tables
+  status: distilled
+  evidence_class: web-tables
+  content_kind: character-mechanic
+  progression_track: class-rank
+  tags:
+  - web-reference
+  - wiki-tier
+  - calibration
+  - level-curve
+  - exp-curve
+  - exp-economy
+  - physical-bonus
+  - attribute-allotment
+  - link-chain-rest-bonus
+  - character-mechanic
+  - elemen
+  - patch-1.x
+  search_hints:
+  - 1.x level exp growth curve
+  - exp to next level 570 700 880 threshold
+  - physical bonus point attribute allotment
+  - max value per parameter allot
+  - max base exp per kill by party size
+  - link bonus chain bonus rest bonus exp
+  - レベル 経験値 フィジカルボーナス
+  - 修錬値 ランク physical level removed patch 1.19
+  - character growth exp economy 1.23b
+  - eLeMeN elemen.sakura.ne.jp class level
+  primary_paths:
+  - studies/elemen-level-exp/derived/evidence-map.md
+  - studies/elemen-level-exp/derived/level-growth.csv
+  - studies/elemen-level-exp/derived/max-exp-per-kill.csv
+  - studies/elemen-level-exp/derived/exp-bonuses.csv
+  - studies/elemen-level-exp/derived/glossary.md
+  - studies/elemen-level-exp/derived/file-inventory.csv
+  source_refs:
+  - source: elemen-level-exp
+  - source: elemen-site-archive
+    citation: full site mirror
+- id: elemen-playguide
+  title: eLeMeN FF14 1.x Play Guide - Weather Legend, Aethernet, Market Tax - Web Tables
+  status: distilled
+  evidence_class: web-tables
+  content_kind: zone-mechanic
+  tags:
+  - web-reference
+  - wiki-tier
+  - calibration
+  - playguide
+  - weather-legend
+  - weather-icon
+  - aethernet
+  - market-tax
+  - game-units
+  - moon-phase
+  - race-base-stats
+  - tribe-stats
+  - lore
+  - elemen
+  - patch-1.x
+  search_hints:
+  - weather icon legend name clear fair cloudy decode weatherN
+  - zone-guide weather token legend xtx__fixedPhrase cross-check
+  - aethernet intra-city teleport shard guard npc coords
+  - market indirect tax street category reduction rule
+  - in-game length weight unit yalm malm onze metric
+  - race tribe base stats STR VIT DEX INT MND PIE elemental resistance xtx_tribe
+  - Midlander Highlander Wildwood Duskwight Plainsfolk Dunesfolk Sea Wolf Hellsguard
+  - playguide faq lore races guardian classjob verbatim
+  - eLeMeN elemen.sakura.ne.jp playguide
+  - weather icon legend name 快晴 晴れ 曇り clear fair cloudy decode weatherN
+  - moon phase lunar cycle names 新月 満月
+  - Midlander Highlander Wildwood Duskwight Plainsfolk Dunesfolk Seeker Keeper Sea Wolf Hellsguard
+  - xtx_tribe xtx_displayName xtx_placeName xtx__fixedPhrase client cross-check
+  primary_paths:
+  - studies/elemen-playguide/derived/evidence-map.md
+  - studies/elemen-playguide/derived/weather-legend.csv
+  - studies/elemen-playguide/derived/aethernet.csv
+  - studies/elemen-playguide/derived/market-tax.csv
+  - studies/elemen-playguide/derived/units.csv
+  - studies/elemen-playguide/derived/moon-phases.csv
+  - studies/elemen-playguide/derived/race-base-stats.csv
+  - studies/elemen-playguide/derived/glossary.md
+  - studies/elemen-playguide/derived/file-inventory.csv
+  source_refs:
+  - source: elemen-playguide
+  - source: elemen-site-archive
+    citation: full site mirror
+- id: elemen-quest-rewards-walkthroughs
+  title: eLeMeN FF14 1.x Quest EXP Rewards and Walkthroughs - Web Tables
+  status: distilled
+  evidence_class: web-tables
+  content_kind: side-quest
+  tags:
+  - web-reference
+  - wiki-tier
+  - calibration
+  - quest
+  - main-quest
+  - class-quest
+  - job-quest
+  - grand-company-quest
+  - quest-exp-reward
+  - walkthrough
+  - reward-patch-history
+  - elemen
+  - patch-1.x
+  search_hints:
+  - 1.x quest exp reward amount server-side
+  - quest experience reward 経験値 up to level-scaled
+  - quest walkthrough step order choice prereq chain
+  - reward patch history パッチ1.20 報酬に経験値が追加
+  - main sub class job grand-company quest
+  - xtx_quest client quest id cross-check
+  - quest exp economy calibration 1.23b
+  - prev next quest 前のクエスト 次のクエスト chain
+  - eLeMeN elemen.sakura.ne.jp quest
+  primary_paths:
+  - studies/elemen-quest-rewards-walkthroughs/derived/evidence-map.md
+  - studies/elemen-quest-rewards-walkthroughs/derived/quest-exp-rewards.csv
+  - studies/elemen-quest-rewards-walkthroughs/derived/quest-walkthroughs.csv
+  - studies/elemen-quest-rewards-walkthroughs/derived/glossary.md
+  - studies/elemen-quest-rewards-walkthroughs/derived/file-inventory.csv
+  source_refs:
+  - source: elemen-quest-rewards-walkthroughs
+  - source: elemen-site-archive
+    citation: full site mirror
+- id: elemen-shop-inventory
+  title: eLeMeN FF14 1.x Shop Item-to-NPC Sales Edges - Web Tables
+  status: distilled
+  evidence_class: web-tables
+  content_kind: shop-vendor
+  tags:
+  - web-reference
+  - wiki-tier
+  - calibration
+  - shop-vendor
+  - item-sales
+  - npc-vendor
+  - shop-inventory
+  - hamlet-stockpile-price
+  - elemen
+  - patch-1.x
+  search_hints:
+  - item to selling npc reverse index shop vendor
+  - which npc sells item shopBase binding recover
+  - shop item npc sales edge 1.x calibration
+  - hamlet stockpile rank price 備蓄ランク scaled
+  - xtx_itemName xtx_displayName client cross-check
+  - shopItem shopBase price client redundant
+  - db_shop.js elemen etc shopitem
+  - vendor roster item inventory 1.23b
+  - eLeMeN elemen.sakura.ne.jp shop item sales location
+  primary_paths:
+  - studies/elemen-shop-inventory/derived/evidence-map.md
+  - studies/elemen-shop-inventory/derived/shop-sales.csv
+  - studies/elemen-shop-inventory/derived/glossary.md
+  - studies/elemen-shop-inventory/derived/file-inventory.csv
+  source_refs:
+  - source: elemen-shop-inventory
+  - source: elemen-site-archive
+    citation: full site mirror
+- id: elemen-site-archive
+  title: eLeMeN FF14 1.x Site Archive - HTML Mirror of Digested Sections
+  status: indexed
+  evidence_class: archive
+  tags:
+  - web-reference
+  - site-archive
+  - preservation
+  - provenance
+  - html-mirror
+  - wiki-tier
+  - elemen
+  - patch-1.x
+  search_hints:
+  - elemen site archive html mirror preservation provenance
+  - eLeMeN elemen.sakura.ne.jp ff14_dated_archives original pages
+  - source page mirror for elemen-* web-tables sets
+  - monster bestiary quest area playguide food medicine gamecontents html
+  - db_shop.js shop data original
+  - offline copy of elemen fan site 1.23b world-down
+  primary_paths:
+  - studies/elemen-site-archive/README.md
+  - studies/elemen-site-archive/derived/url-map.csv
+  - studies/elemen-site-archive/derived/file-inventory.csv
+  source_refs:
+  - source: elemen-site-archive
+- id: elemen-zone-guide
+  title: eLeMeN FF14 1.x Zone Guide - Weather, Aetheryte, Adjacency - Web Tables
+  status: distilled
+  evidence_class: web-tables
+  content_kind: zone-mechanic
+  tags:
+  - web-reference
+  - wiki-tier
+  - calibration
+  - zone
+  - weather
+  - aetheryte
+  - teleport-economy
+  - adjacency
+  - transport
+  - service-npc
+  - shop-vendor
+  - submap-patch-history
+  - elemen
+  - patch-1.x
+  search_hints:
+  - 1.x zone weather runtime behavior region linkage change timing
+  - eorzea time 0 8 16 weather change no client weather table
+  - aetheryte teleport gil cost 500 1000 2000 4000 served landmarks
+  - zone adjacency transport ferry airship 定期船 飛空艇
+  - service npc repair leve linkshell retainer bell coords
+  - shop npc roster venue category coords patch
+  - submap implementation patch date 実装
+  - xtx_placeName xtx_displayName client cross-check
+  - zone economy calibration 1.23b opaque params
+  - eLeMeN elemen.sakura.ne.jp area map shop
+  - eorzea time 0 8 16 weather change tenki
+  - no client weather table opaque params calibration 1.23b
+  primary_paths:
+  - studies/elemen-zone-guide/derived/evidence-map.md
+  - studies/elemen-zone-guide/derived/weather.csv
+  - studies/elemen-zone-guide/derived/aetheryte.csv
+  - studies/elemen-zone-guide/derived/adjacency.csv
+  - studies/elemen-zone-guide/derived/service-npcs.csv
+  - studies/elemen-zone-guide/derived/shops.csv
+  - studies/elemen-zone-guide/derived/submaps.csv
+  - studies/elemen-zone-guide/derived/zones.csv
+  - studies/elemen-zone-guide/derived/glossary.md
+  - studies/elemen-zone-guide/derived/file-inventory.csv
+  source_refs:
+  - source: elemen-zone-guide
+  - source: elemen-site-archive
+    citation: full site mirror
+- id: gamerescape-tables
+  title: Gamer Escape FFXIV 1.x Item and Mob Tables - Web Tables
+  status: distilled
+  evidence_class: web-tables
+  content_kind: character-mechanic
+  tags:
+  - web-reference
+  - wiki-tier
+  - calibration
+  - gamerescape
+  - item-table
+  - mob-table
+  - spawn-location
+  - removed-content
+  - patch-attribution
+  - materia
+  - crafting-recipe
+  - notorious-monster
+  search_hints:
+  - gamerescape
+  - gamer escape ffxiv wiki
+  - 1.x item table
+  - item stats defense damage delay
+  - wear durability
+  - resale price gil
+  - materia effect meld slots
+  - repair class repair level
+  - hq bonus attribute
+  - patch introduced 1.19a 1.20b 1.22b 1.22c
+  - removed before arr
+  - obsolete phasedout
+  - 1.x mob table
+  - monster family subfamily subspecies
+  - mob hp range level range
+  - elemental weakness aggressive
+  - notorious monster
+  - mob spawn zone coords
+  - mob drops behaviors
+  - behavior flags A P S H TH L TS M aggressive passive detects sight sound links
+  - mob notes template definition revision id detects by magic true sight
+  - infobox mob family superfamily category page family defaults
+  - mob behavior resolved three tiers family override precedence
+  - crafting recipe wikitext
+  - infobox item infobox mob mob row wikitext template
+  - client column map unnamed columns bare integer header
+  - weapon armor itemData equipment accessory column index
+  - xtx_itemName xtx_text_paramName param id 15016 15018
+  - materia.csv grade rank magnitude meld slot boolean
+  - materia row id itemData 140 primary second parameter
+  - materiaBook spiritbond catalyst dark matter meld purge
+  - mutamix materia remover first meld never fails hq grade suffix
+  - guild shop materia menu 56 line names linear rank ramp
+  - sanction grand company gear condition 16007 16010 seal commission
+  - sanction bestowed company buffer sanction-ready gear
+  - populace csv one column default talk 9xxxxxx test npc ids
+  - xtx_tribe clan gender id equipment 70 fits races 15 clans
+  - mob gap bracket flanking actor id neighbour level zone hint
+  - bracket basis above race high below race low run position
+  - ge coverage thins along the id run last quarter median position
+  - nael van darnus moggle mog sabotender alegre absent from corpus scope
+  - 23 allocation band level 35 floor band_level_floor high band
+  - imperial speculator 22 to 52 block exception to the band floor
+  - within band gradient confound allocation order versus band structure
+  - 23 band instanced dungeon dzemael darkhold toto-rak cutters cry aurum vale
+  - band zone hint race pinned to one dungeon castrum novum legion exception
+  - actor id is 2 band race variant and the band digit is a spawn container
+  - band 21 persistent 22 guildleve or quest 23 instanced dungeon spawn_container
+  - 277 of 280 band 22 mobs sighted only inside a leve or quest against 12 of 376
+  - ge sighting tags are client guildleve and quest names 223 of 248 exact cells
+  - bands renumber variants per race so a band is not an overflow page
+  - quest_marker and passiveGL_craft reference only band 22 mob actors
+  - 169 of the 270 gap names are guildleve content which is why ge missed them
+  - leve_candidates flanking hint names the leve 0.516 from 2 candidates 117 rows
+  - leve_one_sided single neighbour hint 0.238 against 0.177 null 45 rows own column
+  - leve_basis above band high below band low no tagged band mate flanked
+  - one sided leve lift 0.061 clears the floor the level bracket failed at 0.036
+  - scoping a one sided measurement over every point reads 0.358 wrong population
+  - seven band 22 gap names have no tagged race mate cloud dragon torama ochu
+  - xtx_guildleve column 11 english leve name column 15 english objective briefing
+  - client leve briefing text names mobs 110 attributed agreeing with ge 33 of 37
+  - client_leve column outranks the interpolated leve hints on both mob tables
+  - a leve briefing can name a persistent mob so a mention is not a container claim
+  - goblin robber losing ones thread hellhound arms race quest tier attribution
+  - five names exhausted cloud dragon sephiroth dragon lynx torama ochu
+  - client_proper_name splits the client leve attribution 11 of 11 against 22 of 26
+  - a briefing uses a species word generically pack of ravenous marmots not the actor
+  - container reading survives the source swap band 21 moves 0.032 to 0.061 only
+  - all twelve band 21 client attributions are species words not named individuals
+  - proper named attributions leave band 21 at its ge only share exactly 0.032
+  - all 29 individual naming attributions hold a band 22 actor no exceptions
+  - wanted coiled adder briefing names sundrakes so the scan reaches the base species
+  - whether 1.0 leves targeted persistent mobs is open not answered here
+  - xtx_placeName 907 names join the leve scan as decoys never attributed
+  - cassiopeia hollow and kobold garrison were place names read as mob attributions
+  - seven mismatches are the briefing naming a species while the leve spawns a variant
+  - will-o'-the-wisp two client spellings one per band apostrophe misplaced in band 22
+  - ixali battle balloon and zombie-like creature are prose the scan cannot read
+  - dragon race 1068 four band 21 actors race-name-only both briefings are prose
+  - heat of the moment airship outruns the dragons the leve recovers jettisoned cargo
+  - all 14 non band 22 attributions explained none is a leve target count pinned
+  - not-a-monster and mount-or-companion causes are 100 percent band 22 seventy of seventy
+  - placeholder and second-roster-filler causes are entirely band 21
+  - ashdrake battle drake biast wyvern cloud dragon are the fightable 1.x dragons
+  - twelve single name races four never reach band 22 dragon atomos and two ??? races
+  - crab dragon zombie all carry full actorclass_graphic rows not unused shells
+  - 26 mutual actor to name id transpositions crab beryl crab zombie dapper cadaver
+  - name id arithmetic returns the wrong mob name follow the actorclass pointer
+  - mob-name-id-transpositions.csv 26 pairs variant distance only 1 2 or 4
+  - race 1002 raptors reorder a block of four anole grass raptor lindwurm velociraptor
+  - one transposition displays kobold either way and has no observable effect
+  - qiqirn and ixali are capitalised tribe adjectives not individual names
+  - every transposed pair is within one race and one band 26 of 26 no unrelated class
+  - a string test relates only 8 of 26 names 1.0 renames within a family
+  - cadaver and zombie bomb and grenade opo-opo race files galago lemur jackanapes
+  - xtx_quest column 7 description is the wrong field it narrates not states objectives
+  - quest objectives live in journalxtxWil Fst Sea Roc sheets column 1 english
+  - 273 quests 1585 journal entries 115 mobs attributed 24 of 25 agree with ge
+  - client_quest column on both mob tables quest side twin of client_leve
+  - quests reuse the persistent field population leves spawn their own roster
+  - 29 of 29 leve individuals are band 22 against 38 of 55 quest individuals
+  - audhumbla cactuar jack daddy longlegs quest targets with no leve deployment
+  - band 22 mobs span ten or more levels 0.480 against 0.018 persistent difficulty steps
+  - wide leve spans are multiples of four evenly stepped difficulty ladder
+  - frenzied aurelia spawns from the quest shapeless melody per ge notes field
+  - gorged djigga and hairless hare untagged leve mobs placed by span and adjacency
+  - hairless hare interleaves salt hare actor ids one leve roster slug family sea hare
+  - notes scanning rejected persistent mobs are involved in quests not spawned by them
+  - block 1800 seven line ranks three tiers five deployments castrum novum
+  - ge missing sagittarius all three tiers imperial elite viith legion
+  - one ge mob name spans bands so its zone list is a union of deployments
+  - display name id is not a transform of the actor id follow the pointer
+  - no actor to zone spawn or level table anywhere in the client dump
+  - race 1070 imperial officer ranks centurion pilus prior primus ordinarius
+  - infobox quest pages 273 all 2011 2012 contemporaneous 1.x evidence tier
+  - infobox npc pages 1335 race clan occupation affiliation coordinates 2010
+  - actor id prefix 16 merchant space 15 shop service 10 general population
+  - xtx_displayName five languages singular plural english 2 3 german 7 9 french 14 15
+  - grand company npcs english shows rank french german show the person
+  - client_plural english plural hand written irregular ala mhigan axemen
+  - storm captain roemannsyn wrong surname join fenced by absence fixture
+  - imperial centurion futures perfect instanced quest content not a field mob
+  - quest attribution maximal match billygoat contained in longer name
+  - quest minimum level floor 0.898 support strongest level statement
+  - client capitalisation decides floor eligibility not word count 0.867 vs 0.595
+  - infobox field parser regex swallowed every other line 52 versus 263
+  - undocumented mob name relation sibling base prefix race undocumented
+  - leave one out lift random same race pair leakage withheld mob
+  - place prefixed mob name bloodshore coerthas sagolii not automatable
+  - actor id sequence is not a level ladder 59 percent concordant
+  - untranslated race erimakitokage kaashii kuroko provisional kari
+  - key item block 2001xxx icon 798 treatise job soul barding
+  - item id prefix encodes equip kind 801 head 808 feet
+  - additional effect id equipment 137 rowena runestone relic
+  - level requirement hard itemData 46 required vs optimal level
+  - paired arrow damage weapon 141 bow ammunition ladder
+  - unmapped ge fields base item base material dye colors sibling variants
+  - required matter item itemData 65 dark matter grade level band
+  - bonus slot id value pair damage type enum
+  - item name join client item id
+  - mob name join actorclass displayName monsterRace
+  - client ships no mob levels hp element
+  - monster race taxonomy provisional kari
+  - actor id encodes monster race id digits 3-5 offset 1000
+  - two crab races 1011 1076 diremite join by race id not name
+  - rodent rat landtrap flytrap cactuar sabotender fomor zombie family synonym
+  - unnamed race block 1800 1801 1802 1803 1890 1620 1910 enemy humanoid
+  - atomos race 1110 missing row monsterRace truncated primal single creature
+  - displayName row 2 kahen variable name sentinel runtime assigned quest actor
+  - undocumented client mob roster likely cause ge gap faction filler chocobo
+  - chocobo race 1105 choco coco salty slugger rental companion not a mob
+  - kobold nth order patriarch matriarch hierarchy numbering
+  - named boss gap arges brontes coincounter steropes cyclops sibling
+  - chirada suparna garuda primal undocumented boss tier actor
+  - race name only base actor no epithet bat boar antling coblyn
+  - actorclass_graphic columns 15 to 21 humanoid appearance marker no monster
+  - faction namespace imperial legion brigand pirate serpent reaver sahagin
+  - serpent reaver claw fin eye rank not body part mistbeard cove level 45
+  - lunatic cult lamb shepherd priest split across blocks 1801 1803
+  - organization spans two race blocks allocation not closed set
+  - race block 1890 scripted named opponent notorious monster duel squad
+  - coliseum challenger job quest champion curious gorge estinien jenlyns
+  - race block 1900 friendly combat npc hamlet militia grand company scout
+  - populaceWaveAttack hamlet defense imperial invasion militia captain
+  - actor id range insufficient mob filter use the race field
+  - zaharak amaljaa split across race 1065 and block 1620
+  - zaharak garrison clerical office chandler feretrar ostiary scriniary
+  - burned brother sister scrivner ifrit convert amaljaa
+  - notorious monster capitalised name actor id range
+  - zone name reconcile placeName zoneParam zoneGroupParam
+  - coerthas zone vs sub-zone ambiguity
+  - non-breaking hyphen control code place name
+  - locke's lie rivenroad castrum novum mistbeard cove cassiopeia hollow
+  - shposhae paglth'an natalan murmur rills mun-tuy cellars
+  - coerthas central eastern western highlands lowlands zone naming
+  primary_paths:
+  - studies/gamerescape-tables/derived/evidence-map.md
+  - studies/gamerescape-tables/derived/items.csv
+  - studies/gamerescape-tables/derived/client-column-map.csv
+  - studies/gamerescape-tables/derived/client-column-map-notes.md
+  - studies/gamerescape-tables/derived/mob-client-crosscheck-notes.md
+  - studies/gamerescape-tables/derived/zone-client-crosscheck-notes.md
+  - studies/gamerescape-tables/derived/materia-notes.md
+  - studies/gamerescape-tables/derived/mobs.csv
+  - studies/gamerescape-tables/derived/mob-locations.csv
+  - studies/gamerescape-tables/derived/mob-families.csv
+  source_refs:
+  - source: gamerescape-tables
+- id: kanican-tables
+  title: kanican FFXIV 1.x Combat Theorycrafting - Web Tables
+  status: distilled
+  evidence_class: web-tables
+  content_kind: action-mechanic
+  tags:
+  - web-reference
+  - wiki-tier
+  - calibration
+  - patch-1.18
+  - patch-1.20
+  - cure-formula
+  - healing
+  - magic-evasion
+  - physical-damage-taken
+  - critical-damage-bonus
+  - enmity
+  - combat-sp
+  - kanican
+  search_hints:
+  - cure formula
+  - cura
+  - healing magic potency
+  - magic evasion
+  - meva
+  - magic resist tiers
+  - physical damage taken
+  - defense mitigation
+  - critical damage bonus
+  - critical potency
+  - crit bonus cap
+  - enmity
+  - combat sp
+  - skill points
+  - kanican
+  - kaeko leta
+  - stat testing
+  - rampage
+  - thundaga
+  primary_paths:
+  - studies/kanican-tables/derived/evidence-map.md
+  - studies/kanican-tables/derived/formulas.md
+  - studies/kanican-tables/derived/healing-cure-cura.csv
+  - studies/kanican-tables/derived/critical-damage-bonus.csv
+  source_refs:
+  - source: kanican-tables
+- id: lodestone-beginners
+  title: FFXIV 1.x Lodestone - A Beginner's Guide to Eorzea
+  status: distilled
+  evidence_class: web-tables
+  content_kind: action-mechanic
+  tags:
+  - web-reference
+  - beginners-guide
+  - onboarding
+  - new-player-tips
+  - official
+  - square-enix
+  - lodestone-1x
+  - first-party
+  - wiki-consumable
+  search_hints:
+  - beginners guide to eorzea
+  - new player tips onboarding
+  - passive active mode battle basics
+  - guildleves getting around
+  - setting actions action bar
+  - getting around maps enemies
+  - guildleves local levequests
+  - trading items gil
+  - disciple of the hand stats
+  primary_paths:
+  - studies/lodestone-beginners/derived/index.md
+  - studies/lodestone-beginners/derived/evidence-map.md
+  - studies/lodestone-beginners/derived/file-inventory.csv
+  source_refs:
+  - source: lodestone-beginners
+- id: lodestone-dev-patch
+  title: FFXIV 1.x Lodestone Dev Posts and Patch Notes
+  status: distilled
+  evidence_class: web-tables
+  content_kind: action-mechanic
+  tags:
+  - web-reference
+  - dev-communication
+  - patch-notes
+  - official
+  - square-enix
+  - lodestone-1x
+  - first-party
+  - ask-the-devs
+  - producer-letters
+  - battle-reform
+  - enmity
+  - auto-attack
+  - version-update
+  - patch-history
+  - materia
+  - guildleve
+  - notorious-monster
+  - primal-battle
+  - wiki-consumable
+  search_hints:
+  - patch notes 1.15 1.16 1.18
+  - battle reform auto-attack enmity
+  - ask the devs
+  - letter from the producer
+  - guildleve reform materia
+  - notorious monsters primals
+  - fatigue system removal surplus
+  - comprehensive version update details
+  - materia introduction
+  - introducing settlements
+  - chocobos and airships
+  - instanced raids
+  - ifrit garuda good king moggle mog
+  - enmity calculation change
+  - raise weakness revision
+  primary_paths:
+  - studies/lodestone-dev-patch/derived/dev-patch-index.md
+  - studies/lodestone-dev-patch/derived/evidence-map.md
+  - studies/lodestone-dev-patch/derived/file-inventory.csv
+  source_refs:
+  - source: lodestone-dev-patch
+- id: lodestone-lore
+  title: FFXIV 1.x Lodestone Lore - GC Newsletters, The Last Word, Events
+  status: distilled
+  evidence_class: web-tables
+  content_kind: main-scenario
+  tags:
+  - web-reference
+  - lore
+  - flavor
+  - grand-company-newsletter
+  - the-last-word
+  - seasonal-event
+  - official
+  - square-enix
+  - lodestone-1x
+  - first-party
+  - calamity-arc
+  - wiki-lore
+  search_hints:
+  - grand company newsletter mythril eye raven harbor herald
+  - the last word news serial calamity
+  - garlean empire mor dhona dalamud
+  - seasonal events starlight valentione hatching-tide
+  - the mythril eye immortal flames
+  - the raven twin adder
+  - the harbor herald maelstrom
+  - seventh umbral era calamity dalamud
+  - garlean empire mor dhona base
+  - heavensturn moonfire all saints foundation day
+  primary_paths:
+  - studies/lodestone-lore/derived/index.md
+  - studies/lodestone-lore/derived/evidence-map.md
+  - studies/lodestone-lore/derived/file-inventory.csv
+  source_refs:
+  - source: lodestone-lore
+- id: lodestone-manual
+  title: FFXIV 1.0 Lodestone Official Game Manual
+  status: distilled
+  evidence_class: web-tables
+  content_kind: action-mechanic
+  tags:
+  - web-reference
+  - official-manual
+  - square-enix
+  - lodestone-1x
+  - game-manual
+  - first-party
+  - battle
+  - classes-and-jobs
+  - gathering
+  - crafting
+  - materia
+  - guildleve
+  - aetheryte-travel
+  - grand-company
+  - wiki-consumable
+  search_hints:
+  - official game manual
+  - lodestone guide
+  - flow of battle
+  - auto-attack
+  - enmity
+  - being KO'd weakness brink of death
+  - attribute points allotment
+  - aetheryte teleport return
+  - guildleves levequest
+  - synthesis repair materia
+  - hamlet defense
+  - text commands macros
+  - actions traits abilities action bar
+  - classes and jobs disciples
+  - synthesis crafting repair materia
+  - mining logging fishing gathering
+  - grand company maelstrom twin adder immortal flames
+  primary_paths:
+  - studies/lodestone-manual/derived/wiki-target-index.md
+  - studies/lodestone-manual/derived/evidence-map.md
+  - studies/lodestone-manual/derived/file-inventory.csv
+  source_refs:
+  - source: lodestone-manual
+- id: primal-battle-ifrit-bowl-of-embers
+  title: The Bowl of Embers (Ifrit) - Video Breakdown
+  status: distilled
+  evidence_class: notes-and-transcripts
+  content_kind: primal-battle
+  system: instanced-content
+  zones:
+  - the bowl of embers
+  tags:
+  - video-breakdown
+  - primal
+  - ifrit
+  - infernal-nail
+  - damage-tuning
+  search_hints:
+  - ifrit
+  - the bowl of embers
+  - bowl of embers
+  - primal
+  - vulcan burst
+  - incinerate
+  - eruption
+  - crimson cyclone
+  - hellfire
+  - infernal nail
+  - conjurer
+  - siphon mp
+  - aegis boon
+  - outmaneuver
+  - featherfoot
+  - video breakdown
+  - damage tuning
+  primary_paths:
+  - studies/primal-battle-ifrit-bowl-of-embers/derived/evidence-map.md
+  source_refs:
+  - source: primal-battle-ifrit-bowl-of-embers
+- id: project-meteor-wiki
+  title: Project Meteor Wiki - RE Residual
+  status: distilled
+  evidence_class: web-tables
+  content_kind: action-mechanic
+  tags:
+  - web-reference
+  - wiki-tier
+  - calibration
+  - project-meteor
+  - reverse-engineering
+  - design-notes
+  - mp-cost-formula
+  - quest-xp-reward
+  - animation-vfx
+  - animationid-bitpacking
+  - retail-patcher
+  - ffxiv-login
+  - zipatch
+  search_hints:
+  - command mp cost formula calculateCommandCost level banded
+  - quest xp reward calcSkillPoint expTable
+  - animationId bit packing vfx category animation folder em1 mgc wsc
+  - retail patcher ffxivboot vercheck ver01.ffxiv.com SqexPatchSystem
+  - rsa_verify bypass ffxivlogin string obfuscation sqex0002
+  - project meteor wiki fragmenterworks
+  - level banded mp cost
+  - animation id bit packing
+  - animation category folder
+  - em1 mgc wsc vfx
+  primary_paths:
+  - studies/project-meteor-wiki/derived/index.md
+  - studies/project-meteor-wiki/derived/evidence-map.md
+  source_refs:
+  - source: project-meteor-wiki
+scenarios:
+- id: action-mechanic-combat-and-actions
+  title: Combat and Action Bar
+  content_kind: action-mechanic
+  tags:
+  - combat
+  - auto-attack
+  - weaponskill
+  - battle-stance
+  - action-bar
+  - traits
+  - packet-capture
+  - pcap-reference
+  - patch-1.23b
+  - opcode-names
+  members:
+  - combat_autoattack.pcapng
+  - combat_skills.pcapng
+  - battle_mode_passive_mode.pcapng
+  - action_and_traits.pcapng
+  search_hints:
+  - action and traits
+  - application::lua::script::client::command::network::changeactorextrastatreceiver
+  - application::lua::script::client::command::network::changeshadowactorflagreceiver
+  - application::lua::script::client::command::network::endclientordereventreceiver
+  - application::lua::script::client::command::network::hatestatusreceiver
+  - application::lua::script::client::command::network::sendlogreceiver
+  - application::lua::script::client::command::network::setdisplaynamereceiver
+  - application::lua::script::client::command::network::setnoticeeventconditionreceiver
+  - application::lua::script::client::command::network::settargettimereceiver
+  - application::lua::script::client::command::network::syncmemoryreceiver
+  - application::lua::script::client::command::system::changeactorsubstatmodeborderreceiver
+  - application::lua::script::client::command::system::changeactorsubstatstatusreceiver
+  - battle mode passive mode
+  - combat autoattack
+  - combat skills
+- id: aetheryte-mechanic-teleport-flows
+  title: Aetheryte Teleport Flows
+  content_kind: aetheryte-mechanic
+  system: aetheryte-travel
+  zones:
+  - gridania
+  - camp nine ivies
+  - camp tranquil
+  tags:
+  - teleport
+  - aetheryte
+  - return
+  - inn
+  - the-roost
+  - packet-capture
+  - pcap-reference
+  - patch-1.23b
+  - opcode-names
+  members:
+  - teleport_to_camp_nine_ivies.pcapng
+  - teleport_to_camp_tranquil.pcapng
+  - teleport_to_gridania.pcapng
+  - return_to_inn.pcapng
+  search_hints:
+  - application::lua::script::client::command::network::achievementpointreceiver
+  - application::lua::script::client::command::network::achievementtitlereceiver
+  - application::lua::script::client::command::network::changeactorextrastatreceiver
+  - application::lua::script::client::command::network::changeshadowactorflagreceiver
+  - application::lua::script::client::command::network::endclientordereventreceiver
+  - application::lua::script::client::command::network::grandcompanyreceiver
+  - application::lua::script::client::command::network::jobchangereceiver
+  - application::lua::script::client::command::network::sendlogreceiver
+  - application::lua::script::client::command::network::setdisplaynamereceiver
+  - application::lua::script::client::command::network::seteventstatusreceiver
+  - application::lua::script::client::command::network::setnoticeeventconditionreceiver
+  - application::lua::script::client::command::network::setpusheventconditionwithcirclereceiver
+  - application::lua::script::client::command::network::settalkeventconditionreceiver
+  - application::lua::script::client::command::network::startserverordereventfunctionreceiver
+  - application::lua::script::client::command::network::syncmemoryreceiver
+  - application::lua::script::client::command::system::changeactorsubstatmodeborderreceiver
+  - application::lua::script::client::command::system::changeactorsubstatstatusreceiver
+  - application::lua::script::client::command::system::chocoboreceiver
+  - return to inn
+  - teleport to camp nine ivies
+  - teleport to camp tranquil
+  - teleport to gridania
+- id: battlecraft-leve-accept-and-complete
+  title: Guildleve - Accept and Complete
+  content_kind: battlecraft-leve
+  system: guildleve
+  tags:
+  - guildleve
+  - leve
+  - regional-leve
+  - local-leve
+  - battlecraft
+  - packet-capture
+  - pcap-reference
+  - patch-1.23b
+  - opcode-names
+  members:
+  - accept_leve.pcapng
+  - accept_local_leve.pcapng
+  - local_leve_complete.pcapng
+  - party_battle_leve.pcapng
+  search_hints:
+  - accept leve
+  - accept local leve
+  - application::lua::script::client::command::network::achievementtitlereceiver
+  - application::lua::script::client::command::network::changeactorextrastatreceiver
+  - application::lua::script::client::command::network::changeshadowactorflagreceiver
+  - application::lua::script::client::command::network::endclientordereventreceiver
+  - application::lua::script::client::command::network::grandcompanyreceiver
+  - application::lua::script::client::command::network::hatestatusreceiver
+  - application::lua::script::client::command::network::jobchangereceiver
+  - application::lua::script::client::command::network::sendlogreceiver
+  - application::lua::script::client::command::network::setdisplaynamereceiver
+  - application::lua::script::client::command::network::seteventstatusreceiver
+  - application::lua::script::client::command::network::setnoticeeventconditionreceiver
+  - application::lua::script::client::command::network::setpusheventconditionwithcirclereceiver
+  - application::lua::script::client::command::network::settalkeventconditionreceiver
+  - application::lua::script::client::command::network::settargettimereceiver
+  - application::lua::script::client::command::network::startserverordereventfunctionreceiver
+  - application::lua::script::client::command::network::syncmemoryreceiver
+  - application::lua::script::client::command::network::userdatareceiver
+  - application::lua::script::client::command::system::changeactorsubstatmodeborderreceiver
+  - application::lua::script::client::command::system::changeactorsubstatstatusreceiver
+  - local leve complete
+  - party battle leve
+- id: character-mechanic-attributes-and-class
+  title: Attributes and Class Switching
+  content_kind: character-mechanic
+  tags:
+  - attributes
+  - stat-allocation
+  - class-change
+  - botanist
+  - weaver
+  - packet-capture
+  - pcap-reference
+  - patch-1.23b
+  - opcode-names
+  members:
+  - add_str.pcapng
+  - attributes.pcapng
+  - change_to_botanist.pcapng
+  - switch_to_weaver.pcapng
+  search_hints:
+  - add str
+  - application::lua::script::client::command::network::endclientordereventreceiver
+  - application::lua::script::client::command::network::jobchangereceiver
+  - application::lua::script::client::command::network::sendlogreceiver
+  - application::lua::script::client::command::network::startserverordereventfunctionreceiver
+  - application::lua::script::client::command::network::syncmemoryreceiver
+  - application::lua::script::client::command::system::changeactorsubstatmodeborderreceiver
+  - attributes
+  - change to botanist
+  - switch to weaver
+- id: chat-mechanic-say-shout-and-npc-talk
+  title: Chat Channels - Say, Shout, NPC Talk
+  content_kind: chat-mechanic
+  tags:
+  - chat
+  - say
+  - shout
+  - npc-dialogue
+  - communication
+  - packet-capture
+  - pcap-reference
+  - patch-1.23b
+  - opcode-names
+  members:
+  - chat_say.pcapng
+  - chat_shout.pcapng
+  - small_talk_louisoix.pcapng
+  search_hints:
+  - application::lua::script::client::command::network::changeactorextrastatreceiver
+  - application::lua::script::client::command::network::changeshadowactorflagreceiver
+  - application::lua::script::client::command::network::endclientordereventreceiver
+  - application::lua::script::client::command::network::setdisplaynamereceiver
+  - application::lua::script::client::command::network::seteventstatusreceiver
+  - application::lua::script::client::command::network::setnoticeeventconditionreceiver
+  - application::lua::script::client::command::network::settalkeventconditionreceiver
+  - application::lua::script::client::command::network::settargettimereceiver
+  - application::lua::script::client::command::network::startserverordereventfunctionreceiver
+  - application::lua::script::client::command::network::syncmemoryreceiver
+  - application::lua::script::client::command::system::changeactorsubstatmodeborderreceiver
+  - application::lua::script::client::command::system::changeactorsubstatstatusreceiver
+  - chat say
+  - chat shout
+  - small talk louisoix
+- id: chocobo-mechanic-mount-unmount
+  title: Chocobo Mount / Unmount
+  content_kind: chocobo-mechanic
+  system: chocobo
+  tags:
+  - chocobo
+  - mount
+  - unmount
+  - packet-capture
+  - pcap-reference
+  - patch-1.23b
+  - opcode-names
+  members:
+  - mount_unmount_chocobo.pcapng
+  search_hints:
+  - application::lua::script::client::command::network::endclientordereventreceiver
+  - application::lua::script::client::command::network::sendlogreceiver
+  - application::lua::script::client::command::system::chocobogradereceiver
+  - mount unmount chocobo
+- id: cutscene-mechanic-book
+  title: Cutscene - Reading a Book
+  content_kind: cutscene-mechanic
+  tags:
+  - cutscene
+  - event
+  - book
+  - packet-capture
+  - pcap-reference
+  - patch-1.23b
+  - opcode-names
+  members:
+  - cutscene_book.pcapng
+  search_hints:
+  - application::lua::script::client::command::network::settargettimereceiver
+  - cutscene book
+- id: emote-mechanic-dance-and-kneel
+  title: Emotes - Dance, Kneel
+  content_kind: emote-mechanic
+  tags:
+  - emote
+  - dance
+  - kneel
+  - packet-capture
+  - pcap-reference
+  - patch-1.23b
+  - opcode-names
+  members:
+  - emote_dance.pcapng
+  - emote_kneel.pcapng
+  search_hints:
+  - emote dance
+  - emote kneel
+- id: gathering-node-wood-and-harvest
+  title: Gathering - Logging and Harvesting
+  content_kind: gathering-node
+  tags:
+  - gathering
+  - logging
+  - harvesting
+  - botanist
+  - packet-capture
+  - pcap-reference
+  - patch-1.23b
+  - opcode-names
+  members:
+  - gather_wood.pcapng
+  - harvest.pcapng
+  search_hints:
+  - application::lua::script::client::command::network::changeactorextrastatreceiver
+  - application::lua::script::client::command::network::changeshadowactorflagreceiver
+  - application::lua::script::client::command::network::endclientordereventreceiver
+  - application::lua::script::client::command::network::kickclientordereventreceiver
+  - application::lua::script::client::command::network::sendlogreceiver
+  - application::lua::script::client::command::network::setdisplaynamereceiver
+  - application::lua::script::client::command::network::setnoticeeventconditionreceiver
+  - application::lua::script::client::command::network::settargettimereceiver
+  - application::lua::script::client::command::network::startserverordereventfunctionreceiver
+  - application::lua::script::client::command::network::syncmemoryreceiver
+  - application::lua::script::client::command::system::changeactorsubstatmodeborderreceiver
+  - application::lua::script::client::command::system::changeactorsubstatstatusreceiver
+  - gather wood
+  - harvest
+- id: inventory-mechanic-bags-and-gear
+  title: Inventory and Gear Changes
+  content_kind: inventory-mechanic
+  tags:
+  - inventory
+  - equipment
+  - gear-change
+  - soul-crystal
+  - armor
+  - weapon
+  - packet-capture
+  - pcap-reference
+  - patch-1.23b
+  - opcode-names
+  members:
+  - inventory.pcapng
+  - open_gear_menu.pcapng
+  - change_bodyarmor.pcapng
+  - change_helm.pcapng
+  - gear_changesoul.pcapng
+  - gear_changeweapon.pcapng
+  search_hints:
+  - application::lua::script::client::command::network::jobchangereceiver
+  - application::lua::script::client::command::network::sendlogreceiver
+  - application::lua::script::client::command::network::syncmemoryreceiver
+  - application::lua::script::client::command::system::changeactorsubstatmodeborderreceiver
+  - change bodyarmor
+  - change helm
+  - gear changesoul
+  - gear changeweapon
+  - inventory
+  - open gear menu
+- id: job-quest-war-updates
+  title: War Quest Updates
+  content_kind: job-quest
+  progression_track: job-quest
+  tags:
+  - quest
+  - quest-update
+  - war-quest
+  - packet-capture
+  - pcap-reference
+  - patch-1.23b
+  - opcode-names
+  members:
+  - war_quest_update1.pcapng
+  - war_quest_update2.pcapng
+  - war_quest_update3.pcapng
+  search_hints:
+  - application::lua::script::client::command::network::achievementtitlereceiver
+  - application::lua::script::client::command::network::changeactorextrastatreceiver
+  - application::lua::script::client::command::network::changeshadowactorflagreceiver
+  - application::lua::script::client::command::network::endclientordereventreceiver
+  - application::lua::script::client::command::network::grandcompanyreceiver
+  - application::lua::script::client::command::network::hatestatusreceiver
+  - application::lua::script::client::command::network::jobchangereceiver
+  - application::lua::script::client::command::network::kickclientordereventreceiver
+  - application::lua::script::client::command::network::sendlogreceiver
+  - application::lua::script::client::command::network::setdisplaynamereceiver
+  - application::lua::script::client::command::network::seteventstatusreceiver
+  - application::lua::script::client::command::network::setnoticeeventconditionreceiver
+  - application::lua::script::client::command::network::setpusheventconditionwithcirclereceiver
+  - application::lua::script::client::command::network::settargettimereceiver
+  - application::lua::script::client::command::network::startserverordereventfunctionreceiver
+  - application::lua::script::client::command::network::syncmemoryreceiver
+  - application::lua::script::client::command::network::userdatareceiver
+  - application::lua::script::client::command::system::changeactorsubstatmodeborderreceiver
+  - application::lua::script::client::command::system::changeactorsubstatstatusreceiver
+  - war quest update1
+  - war quest update2
+  - war quest update3
+- id: movement-mechanic-gridania-locomotion
+  title: Player Movement in Gridania
+  content_kind: movement-mechanic
+  city_state: gridania
+  zones:
+  - gridania
+  tags:
+  - movement
+  - locomotion
+  - position-update
+  - packet-capture
+  - pcap-reference
+  - patch-1.23b
+  - opcode-names
+  members:
+  - move_around_gridania.pcapng
+  - moving_around_gridania.pcapng
+  search_hints:
+  - application::lua::script::client::command::network::achievementpointreceiver
+  - application::lua::script::client::command::network::achievementtitlereceiver
+  - application::lua::script::client::command::network::changeactorextrastatreceiver
+  - application::lua::script::client::command::network::changeshadowactorflagreceiver
+  - application::lua::script::client::command::network::grandcompanyreceiver
+  - application::lua::script::client::command::network::jobchangereceiver
+  - application::lua::script::client::command::network::setdisplaynamereceiver
+  - application::lua::script::client::command::network::seteventstatusreceiver
+  - application::lua::script::client::command::network::setnoticeeventconditionreceiver
+  - application::lua::script::client::command::network::setpusheventconditionwithcirclereceiver
+  - application::lua::script::client::command::network::setpusheventconditionwithfanreceiver
+  - application::lua::script::client::command::network::setpusheventconditionwithtriggerboxreceiver
+  - application::lua::script::client::command::network::settalkeventconditionreceiver
+  - application::lua::script::client::command::network::syncmemoryreceiver
+  - application::lua::script::client::command::system::changeactorsubstatmodeborderreceiver
+  - application::lua::script::client::command::system::changeactorsubstatstatusreceiver
+  - application::lua::script::client::command::system::chocoboreceiver
+  - move around gridania
+  - moving around gridania
+- id: session-mechanic-login-and-idle
+  title: Login Handshake and In-World Idle
+  content_kind: session-mechanic
+  tags:
+  - session
+  - login
+  - handshake
+  - keepalive
+  - idle
+  - packet-capture
+  - pcap-reference
+  - patch-1.23b
+  - opcode-names
+  members:
+  - login.pcapng
+  - idling.pcapng
+  search_hints:
+  - idling
+  - login
+- id: shop-vendor-buy-sell-repair
+  title: Vendor - Buy, Sell, Repair
+  content_kind: shop-vendor
+  tags:
+  - shop
+  - vendor
+  - buy
+  - sell
+  - repair
+  - gil
+  - packet-capture
+  - pcap-reference
+  - patch-1.23b
+  - opcode-names
+  members:
+  - buy_square_maple_shield.pcapng
+  - sell_item.pcapng
+  - repair_items.pcapng
+  search_hints:
+  - application::lua::script::client::command::network::endclientordereventreceiver
+  - application::lua::script::client::command::network::sendlogreceiver
+  - application::lua::script::client::command::network::settargettimereceiver
+  - application::lua::script::client::command::network::startserverordereventfunctionreceiver
+  - application::lua::script::client::command::system::changeactorsubstatmodeborderreceiver
+  - buy square maple shield
+  - repair items
+  - sell item
+- id: side-quest-accept-and-journal
+  title: Quest - Accept, Journal, Update
+  content_kind: side-quest
+  tags:
+  - quest
+  - accept
+  - journal
+  - quest-update
+  - packet-capture
+  - pcap-reference
+  - patch-1.23b
+  - opcode-names
+  members:
+  - accept_quest.pcapng
+  - quest_journal.pcapng
+  - quest_update.pcapng
+  search_hints:
+  - accept quest
+  - application::lua::script::client::command::network::endclientordereventreceiver
+  - application::lua::script::client::command::network::sendlogreceiver
+  - application::lua::script::client::command::network::settargettimereceiver
+  - application::lua::script::client::command::network::startserverordereventfunctionreceiver
+  - application::lua::script::client::command::network::syncmemoryreceiver
+  - application::lua::script::client::command::network::userdatareceiver
+  - quest journal
+  - quest update
+- id: social-mechanic-party-and-friends
+  title: Party and Friend List
+  content_kind: social-mechanic
+  tags:
+  - party
+  - invite
+  - friend-list
+  - social
+  - group
+  - packet-capture
+  - pcap-reference
+  - patch-1.23b
+  - opcode-names
+  members:
+  - invite_join_party.pcapng
+  - idle_in_party.pcapng
+  - friendlist_search.pcapng
+  search_hints:
+  - application::lua::script::client::command::network::changeactorextrastatreceiver
+  - application::lua::script::client::command::network::sendlogreceiver
+  - application::lua::script::client::command::network::syncmemoryreceiver
+  - friendlist search
+  - idle in party
+  - invite join party
+- id: zone-mechanic-cross-zone-travel
+  title: Cross-Zone Travel (Gridania / Black Shroud / Coerthas)
+  content_kind: zone-mechanic
+  zones:
+  - gridania
+  - black shroud
+  - coerthas
+  tags:
+  - zone-travel
+  - zone-handoff
+  - region-change
+  - map-ui
+  - packet-capture
+  - pcap-reference
+  - patch-1.23b
+  - opcode-names
+  members:
+  - gridania_to_coerthas.pcapng
+  - from_gridania_to_blackshroud.pcapng
+  search_hints:
+  - application::lua::script::client::command::network::achievementpointreceiver
+  - application::lua::script::client::command::network::achievementtitlereceiver
+  - application::lua::script::client::command::network::changeactorextrastatreceiver
+  - application::lua::script::client::command::network::changeshadowactorflagreceiver
+  - application::lua::script::client::command::network::endclientordereventreceiver
+  - application::lua::script::client::command::network::grandcompanyreceiver
+  - application::lua::script::client::command::network::jobchangereceiver
+  - application::lua::script::client::command::network::sendlogreceiver
+  - application::lua::script::client::command::network::setdisplaynamereceiver
+  - application::lua::script::client::command::network::seteventstatusreceiver
+  - application::lua::script::client::command::network::setnoticeeventconditionreceiver
+  - application::lua::script::client::command::network::setpusheventconditionwithcirclereceiver
+  - application::lua::script::client::command::network::settalkeventconditionreceiver
+  - application::lua::script::client::command::network::syncmemoryreceiver
+  - application::lua::script::client::command::system::changeactorsubstatmodeborderreceiver
+  - application::lua::script::client::command::system::changeactorsubstatstatusreceiver
+  - application::lua::script::client::command::system::chocobogradereceiver
+  - application::lua::script::client::command::system::chocoboreceiver
+  - from gridania to blackshroud
+  - gridania to coerthas
+- id: zone-mechanic-inn-room
+  title: Inn Room (The Roost)
+  content_kind: zone-mechanic
+  city_state: gridania
+  zones:
+  - the roost
+  tags:
+  - inn-room
+  - housing
+  - the-roost
+  - private-quarters
+  - packet-capture
+  - pcap-reference
+  - patch-1.23b
+  - opcode-names
+  members:
+  - move_out_of_room.pcapng
+  - checkbed.pcapng
+  - check_room_map.pcapng
+  search_hints:
+  - application::lua::script::client::command::network::achievementpointreceiver
+  - application::lua::script::client::command::network::achievementtitlereceiver
+  - application::lua::script::client::command::network::changeactorextrastatreceiver
+  - application::lua::script::client::command::network::changeshadowactorflagreceiver
+  - application::lua::script::client::command::network::endclientordereventreceiver
+  - application::lua::script::client::command::network::grandcompanyreceiver
+  - application::lua::script::client::command::network::jobchangereceiver
+  - application::lua::script::client::command::network::sendlogreceiver
+  - application::lua::script::client::command::network::setdisplaynamereceiver
+  - application::lua::script::client::command::network::seteventstatusreceiver
+  - application::lua::script::client::command::network::setnoticeeventconditionreceiver
+  - application::lua::script::client::command::network::setpusheventconditionwithcirclereceiver
+  - application::lua::script::client::command::network::setpusheventconditionwithfanreceiver
+  - application::lua::script::client::command::network::settalkeventconditionreceiver
+  - application::lua::script::client::command::network::settargettimereceiver
+  - application::lua::script::client::command::network::startserverordereventfunctionreceiver
+  - application::lua::script::client::command::network::syncmemoryreceiver
+  - application::lua::script::client::command::system::changeactorsubstatmodeborderreceiver
+  - application::lua::script::client::command::system::changeactorsubstatstatusreceiver
+  - application::lua::script::client::command::system::chocoboreceiver
+  - check room map
+  - checkbed
+  - move out of room
+- id: zone-mechanic-map-ui
+  title: Map UI Projection (Gridania, Coerthas)
+  content_kind: zone-mechanic
+  zones:
+  - gridania
+  - coerthas
+  tags:
+  - map-ui
+  - map-screen
+  - ui-projection
+  - packet-capture
+  - pcap-reference
+  - patch-1.23b
+  - opcode-names
+  members:
+  - gridania_map.pcapng
+  - coerthas_map.pcapng
+  search_hints:
+  - coerthas map
+  - gridania map
+derived:
+- id: content_samples
+  kind: generated
+  evidence_class: packet-capture
+  output_file: derived/content_samples.json
+- id: gam_hash_names
+  kind: generated
+  evidence_class: packet-capture
+  output_file: derived/gam_hash_names.json
+- id: gam_keys
+  kind: generated
+  evidence_class: packet-capture
+  output_file: derived/gam_keys.json
+- id: lane_observations
+  kind: generated
+  evidence_class: packet-capture
+  output_file: derived/lane_observations.json
+- id: observations
+  kind: generated
+  evidence_class: packet-capture
+  output_file: derived/observations.json
+- id: opcode_names
+  kind: promoted
+  evidence_class: packet-capture
+  output_file: derived/opcode_names.json
+- id: payload_layouts
+  kind: generated
+  evidence_class: packet-capture
+  output_file: derived/payload_layouts.json
+- id: payload_samples
+  kind: generated
+  evidence_class: packet-capture
+  output_file: derived/payload_samples.json
+- id: property_targets
+  kind: generated
+  evidence_class: packet-capture
+  output_file: derived/property_targets.json
+- id: request_response_pairs
+  kind: generated
+  evidence_class: packet-capture
+  output_file: derived/request_response_pairs.json
+- id: sequences
+  kind: generated
+  evidence_class: packet-capture
+  output_file: derived/sequences.json
+- id: spawn_location_validation
+  kind: frozen
+  evidence_class: packet-capture
+  output_file: derived/spawn_location_validation.json
+- id: spawn_observations
+  kind: generated
+  evidence_class: packet-capture
+  output_file: derived/spawn_observations.json
+- id: timing
+  kind: generated
+  evidence_class: packet-capture
+  output_file: derived/timing.json

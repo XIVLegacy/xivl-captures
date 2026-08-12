@@ -1,0 +1,85 @@
+nm_jp,nm_en_client,nm_client_actor_id,monster_family_jp,monster_family_en_client,drop_group,rarity_mark,item_jp,item_en_client,item_client_id,note,source
+エルダーモスホーン,Elder Mosshorn,3102311,アルドゴート,Aldgoats,0,,モスホーンの角,Mossy Horn,10006119,,sources/elemen-bestiary/objects/pages/NM_Thanalan.md :: エルダーモスホーン
+炎拳のアリグ・ロー,Flamefist Ahlygg Roh,3106557,アマルジャ,Amlaj'aa,0,◆◆,ザハラクの黄金の鍵,Gold Zahar'ak Coffer Key,10011139,,sources/elemen-bestiary/objects/pages/NM_Thanalan.md :: 炎拳のアリグ・ロー
+カクタージャック,Cactuar Jack,3100913,カクター,Sabotender,0,◆◆,セストソル,Fists of the Sixth Sun,4020204,,sources/elemen-bestiary/objects/pages/NM_Thanalan.md :: カクタージャック
+カクタージャック,Cactuar Jack,3100913,カクター,Sabotender,1,◆◆,コンキスタドールエルモ,Conquistador Elmo,8011403,,sources/elemen-bestiary/objects/pages/NM_Thanalan.md :: カクタージャック
+カクタージャック,Cactuar Jack,3100913,カクター,Sabotender,2,,アリゲーターペア,Alligator Pear,3011459,,sources/elemen-bestiary/objects/pages/NM_Thanalan.md :: カクタージャック
+カクタージャック,Cactuar Jack,3100913,カクター,Sabotender,2,,ワイルドオニオン,Wild Onion,3011308,,sources/elemen-bestiary/objects/pages/NM_Thanalan.md :: カクタージャック
+ダディーロングレッグ,Daddy Longlegs,3105515,ヤーゾン,Yarzon,0,◆◆,エルムロードタスク,Elmlord's Tusk,4040203,,sources/elemen-bestiary/objects/pages/NM_Thanalan.md :: ダディーロングレッグ
+弾指のココルン,Kokoroon Quickfingers,3106312,キキルン,Qiqirn,0,◆◆,ネストピッカー,Kokoroon's Nestpicker,4070209,,sources/elemen-bestiary/objects/pages/NM_Thanalan.md :: 弾指のココルン
+弾指のココルン,Kokoroon Quickfingers,3106312,キキルン,Qiqirn,1,◆◆,ココルンメイル,Kokoroon's Darkshell Mail,8031607,,sources/elemen-bestiary/objects/pages/NM_Thanalan.md :: 弾指のココルン
+ネストコマンダー,Nest Commander,3103009,アントリング,Antling,0,◆◆,ナイトホークバイザー,Nighthawk Visor,8010474,,sources/elemen-bestiary/objects/pages/NM_Thanalan.md :: ネストコマンダー
+ネストコマンダー,Nest Commander,3103009,アントリング,Antling,1,,ベルベティーンサルエル,Velveteen Sarouel,8050712,,sources/elemen-bestiary/objects/pages/NM_Thanalan.md :: ネストコマンダー
+ネストコマンダー,Nest Commander,3103009,アントリング,Antling,1,,ベルベティーンタイツ,Velveteen Tights,8051018,,sources/elemen-bestiary/objects/pages/NM_Thanalan.md :: ネストコマンダー
+ネストコマンダー,Nest Commander,3103009,アントリング,Antling,1,,ベルベティーンタイツ[BK],Velveteen Tights (Black),8051019,,sources/elemen-bestiary/objects/pages/NM_Thanalan.md :: ネストコマンダー
+ネストコマンダー,Nest Commander,3103009,アントリング,Antling,1,,ベルベティーンボトム[RD],Velveteen Bottom (Red),8051217,,sources/elemen-bestiary/objects/pages/NM_Thanalan.md :: ネストコマンダー
+ネストコマンダー,Nest Commander,3103009,アントリング,Antling,1,,オーガパンプキン,Ogre Pumpkin,3011302,,sources/elemen-bestiary/objects/pages/NM_Thanalan.md :: ネストコマンダー
+ネストコマンダー,Nest Commander,3103009,アントリング,Antling,1,,蟻酸,Formic Acid,10009211,,sources/elemen-bestiary/objects/pages/NM_Thanalan.md :: ネストコマンダー
+ネストコマンダー,Nest Commander,3103009,アントリング,Antling,1,,ドレイクの鱗,Drake Scales,10006015,,sources/elemen-bestiary/objects/pages/NM_Thanalan.md :: ネストコマンダー
+バルディ,Bardi,3101415,ウルフ,Wolf/Hyena/Hellhound,0,◆◆,ディヴァインハット,Divining Hat,8010130,,sources/elemen-bestiary/objects/pages/NM_Thanalan.md :: バルディ
+バルディ,Bardi,3101415,ウルフ,Wolf/Hyena/Hellhound,1,,スチールヴァンブレイス,Steel Vambraces,8070220,,sources/elemen-bestiary/objects/pages/NM_Thanalan.md :: バルディ
+ピュラウスタ,Pyrausta,3100117,プーク,Puk,0,◆◆,ハウリングタロン,Howling Talons,4020304,,sources/elemen-bestiary/objects/pages/NM_Thanalan.md :: ピュラウスタ
+アンノウンソルジャー,Unknown Soldier,3104323,ゴースト,Ghost,0,◆◆,アナテマ,Anathema,5020208,,sources/elemen-bestiary/objects/pages/NM_LaNoscea.md :: アンノウンソルジャー
+アンノウンソルジャー,Unknown Soldier,3104323,ゴースト,Ghost,1,◆◆,パラディントラウザー,Paladin's Trousers,8050151,,sources/elemen-bestiary/objects/pages/NM_LaNoscea.md :: アンノウンソルジャー
+オールドシックスアームズ,Old Six-Arms,3107616,メガロクラブ,GAP,0,◆◆,シェルスプリッター,Shellsplitter,4080302,,sources/elemen-bestiary/objects/pages/NM_LaNoscea.md :: オールドシックスアームズ
+オールドシックスアームズ,Old Six-Arms,3107616,メガロクラブ,GAP,1,◆◆,ヴェネラーブレーサー,Venerer's Bracers,8070719,,sources/elemen-bestiary/objects/pages/NM_LaNoscea.md :: オールドシックスアームズ
+グルタナスガーティ,Gluttonous Gertrude,3102012,ドードー,GAP,0,◆◆,サヴェージシールド,Shield of the Savage,4100603,,sources/elemen-bestiary/objects/pages/NM_LaNoscea.md :: グルタナスガーティ
+グレートバッファロー,Great Buffalo,3100801,バッファロー,Buffalo,0,,バッファローの角,Buffalo Horn,10006120,,sources/elemen-bestiary/objects/pages/NM_LaNoscea.md :: グレートバッファロー
+グレートバッファロー,Great Buffalo,3100801,バッファロー,Buffalo,1,,バルディッシュヘッド（ブラッディ）,Bloody Bardiche Head,10300046,,sources/elemen-bestiary/objects/pages/NM_LaNoscea.md :: グレートバッファロー
+グレートバッファロー,Great Buffalo,3100801,バッファロー,Buffalo,2,,ランスヘッド（ブラッディ）,Bloody Lance Head,10300045,,sources/elemen-bestiary/objects/pages/NM_LaNoscea.md :: グレートバッファロー
+シアリングシェリダン,Shearing Sheridan,3107618,メガロクラブ,GAP,0,◆,プランダードキャバリエハット,Plundered Cavalier's Hat,8013005,,sources/elemen-bestiary/objects/pages/NM_LaNoscea.md :: シアリングシェリダン
+シアリングシェリダン,Shearing Sheridan,3107618,メガロクラブ,GAP,1,,メガロクラブの足,Megalocrab Leg,3011009,,sources/elemen-bestiary/objects/pages/NM_LaNoscea.md :: シアリングシェリダン
+ジャイアントレモラ,Giant Remora,3104513,オロボン,GAP,0,◆,パイレーツバンダナ,Pirate's Bandana,8011019,,sources/elemen-bestiary/objects/pages/NM_LaNoscea.md :: ジャイアントレモラ
+ジャイアントレモラ,Giant Remora,3104513,オロボン,GAP,1,,オロボンの肝臓,Orobon Liver,3011010,,sources/elemen-bestiary/objects/pages/NM_LaNoscea.md :: ジャイアントレモラ
+スリプリーサイクス,Slippery Sykes,3104214,スラッグ,Slug,0,◆◆,サラシアンタージェ,Thalassian Targe,4100004,,sources/elemen-bestiary/objects/pages/NM_LaNoscea.md :: スリプリーサイクス
+バロメッツ,Barometz,3102720,フライングトラップ,Flytrap,0,◆◆,クリムゾンタイド,Crimson Tide,4080006,,sources/elemen-bestiary/objects/pages/NM_LaNoscea.md :: バロメッツ
+バロメッツ,Barometz,3102720,フライングトラップ,Flytrap,1,,スチールゴーグル,Steel Goggles,8010210,,sources/elemen-bestiary/objects/pages/NM_LaNoscea.md :: バロメッツ
+バロメッツ,Barometz,3102720,フライングトラップ,Flytrap,1,,ベルベティーンウェッジキャップ,Velveteen Wedge Cap,8012716,,sources/elemen-bestiary/objects/pages/NM_LaNoscea.md :: バロメッツ
+バロメッツ,Barometz,3102720,フライングトラップ,Flytrap,2,,グロースフォーミュラ・アルファ,Growth Formula Alpha,10009206,,sources/elemen-bestiary/objects/pages/NM_LaNoscea.md :: バロメッツ
+バロメッツ,Barometz,3102720,フライングトラップ,Flytrap,2,,ローズリングの葉,Red Landtrap Leaf,10009501,,sources/elemen-bestiary/objects/pages/NM_LaNoscea.md :: バロメッツ
+ペイトリアーク03 ズ・ガ,Third Order Patriarch Zu Ga,3106628,コボルド,Kobold,0,◆◆,ウ・ガマロの黄金の鍵,Gold U'Ghamaro Coffer Key,10011144,,sources/elemen-bestiary/objects/pages/NM_LaNoscea.md :: ペイトリアーク03 ズ・ガ
+ボムバロン,Bomb Baron,3101612,ボム,Bomb,0,◆◆,フレイムタン,Flametongue,4030404,パッチ1.18でNM「プリンスオブペスト」のドロップから変更,sources/elemen-bestiary/objects/pages/NM_LaNoscea.md :: ボムバロン
+ローンクァール,Lone Coeurl,3103203,クァール,Couerl,0,◆◆,クァールアイ,Coeurl's Eye,8010301,,sources/elemen-bestiary/objects/pages/NM_LaNoscea.md :: ローンクァール
+アルシュ,Alux,3102611,インプ,Imp,0,◆◆,プレプレ,Kple Kple,5030304,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: アルシュ
+カプリシャスキャシー,Capricious Cassie,3101011,モルボル,Morbol,0,,シルバーフランシスカ,Silver Francisca,3910204,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: カプリシャスキャシー
+カプリシャスキャシー,Capricious Cassie,3101011,モルボル,Morbol,0,,バッファローの粗皮,Buffalo Hide,10007004,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: カプリシャスキャシー
+クィーングーグー,Queen Gougou,3100515,オポオポ,Opo-opo,0,,エッグプラント,Wizard Eggplant,3011306,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: クィーングーグー
+クィーングーグー,Queen Gougou,3100515,オポオポ,Opo-opo,0,,サンレモン,Sun Lemon,3011456,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: クィーングーグー
+クィーングーグー,Queen Gougou,3100515,オポオポ,Opo-opo,0,,ドラゴンペッパー,Dragon Pepper,3011512,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: クィーングーグー
+クィーングーグー,Queen Gougou,3100515,オポオポ,Opo-opo,0,,レンティル,Lalafellin Lentil,3011414,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: クィーングーグー
+クィーンボリート,Queen Bolete,3105915,ファンガー,Funguar,0,◆◆,エターナルシェード,Eternal Shade,8030917,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: クィーンボリート
+クィーンボリート,Queen Bolete,3105915,ファンガー,Funguar,1,,コットンハーフローブ,Cotton Halfrobe,8031417,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: クィーンボリート
+クィーンボリート,Queen Bolete,3105915,ファンガー,Funguar,1,,ベルベティーンシャツ,Velveteen Shirt,8030717,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: クィーンボリート
+クィーンボリート,Queen Bolete,3105915,ファンガー,Funguar,1,,トードジャケット,Toadskin Jacket,8030922,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: クィーンボリート
+クィーンボリート,Queen Bolete,3105915,ファンガー,Funguar,1,,草綿,Cotton Boll,10005203,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: クィーンボリート
+クィーンボリート,Queen Bolete,3105915,ファンガー,Funguar,1,,シュリークシュルーム,Shriekshroom,3011407,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: クィーンボリート
+ジャッカネイプス,Jackanapes,3100512,オポオポ,Opo-opo,0,◆◆,アウリッシュボウ,Bow of Owls,4070007,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: ジャッカネイプス
+ジャッカネイプス,Jackanapes,3100512,オポオポ,Opo-opo,1,,トードジャケット,Toadskin Jacket,8030922,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: ジャッカネイプス
+ジャッカネイプス,Jackanapes,3100512,オポオポ,Opo-opo,1,,ジェードピー,Jade Peas,3011413,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: ジャッカネイプス
+ジャッカネイプス,Jackanapes,3100512,オポオポ,Opo-opo,1,,ズッキーニ,Ramhorn Zucchini,3011313,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: ジャッカネイプス
+シロッコ,Sirocco,3100311,アンテロープ,Antelope,0,◆◆,タウルススタッフ,Taurus Staff,5020107,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: シロッコ
+シロッコ,Sirocco,3100311,アンテロープ,Antelope,1,,スチールクラッドブーツ,Steel-plated Jackboots,8080821,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: シロッコ
+シロッコ,Sirocco,3100311,アンテロープ,Antelope,1,,ダックビルDX,Padded Sheepskin Duckbills,8080224,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: シロッコ
+スパイトフル,Spiteful,3106221,スプリガン,Spriggan,0,,銀鉱,Silver Ore,10001009,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: スパイトフル
+パイア,Phaia,3101511,ボア,Boar,0,◆◆,ボアズベイン,Boar's Bane,4040303,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: パイア
+パイア,Phaia,3101511,ボア,Boar,1,◆◆,ペナンスベルト,Penance,8090607,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: パイア
+パイア,Phaia,3101511,ボア,Boar,2,,アクアマリンリング,Aquamarine Ring,9050039,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: パイア
+パイア,Phaia,3101511,ボア,Boar,3,,ボタンマッシュルーム,Button Mushroom,3011406,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: パイア
+ブアタ,Buata,3101513,ボア,Boar,0,,クルザスカロット,Coerthas Carrot,3011309,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: ブアタ
+ブアタ,Buata,3101513,ボア,Boar,0,,ボアの粗皮,Boar Hide,10007018,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: ブアタ
+ブアタ,Buata,3101513,ボア,Boar,0,,ボタンマッシュルーム,Button Mushroom,3011406,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: ブアタ
+ブアタ,Buata,3101513,ボア,Boar,0,,ポポト,Popoto,3011307,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: ブアタ
+太っ腹のホットポックス,Haughtpox Bloatbelly,3110312,ゴブリン,Goblin,0,,ブロークンアイオリアンシミター,Broken Aeolian Scimitar,10303305,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: 太っ腹のホットポックス
+太っ腹のホットポックス,Haughtpox Bloatbelly,3110312,ゴブリン,Goblin,1,,ゴブリン緋金車貨,Gold Gobcog,10011124,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: 太っ腹のホットポックス
+プリンスオブペスト,Prince of Pestilence,3100612,ナット,Gnat,0,◆◆,フロストバイター,Frostbite,4030202,パッチ1.18でNM「ボムバロン」のドロップから変更,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: プリンスオブペスト
+プリンスオブペスト,Prince of Pestilence,3100612,ナット,Gnat,1,◆◆,シアーズカウル,Seer's Cowl,8031820,,sources/elemen-bestiary/objects/pages/NM_BlackShroud.md :: プリンスオブペスト
+ウラエウス,Uraeus,3100717,バジリスク,Basilisk,0,,ウラエウスの粗皮,Uraeus Skin,10007026,,sources/elemen-bestiary/objects/pages/NM_Coerthas.md :: ウラエウス
+ウラエウス,Uraeus,3100717,バジリスク,Basilisk,1,,飛竜黒曜石,Wyvern Obsidian,10001103,,sources/elemen-bestiary/objects/pages/NM_Coerthas.md :: ウラエウス
+スピットファイア,Spitfire,3106209,スプリガン,Spriggan,0,◆◆,ブラッドクライ,Bloodcry,5030112,,sources/elemen-bestiary/objects/pages/NM_Coerthas.md :: スピットファイア
+スピットファイア,Spitfire,3106209,スプリガン,Spriggan,1,◆◆,エンジニアレギンス,Engineer's Leggings,8081117,,sources/elemen-bestiary/objects/pages/NM_Coerthas.md :: スピットファイア
+ダウニーダンスタン,Downy Dunstan,3106019,シープ,Sheep,0,◆◆,ロイヤリストブリオー,Loyalist's Bliaud,8032301,,sources/elemen-bestiary/objects/pages/NM_Coerthas.md :: ダウニーダンスタン
+ダウニーダンスタン,Downy Dunstan,3106019,シープ,Sheep,1,,カラクールフリース,Karakul Fleece,10005504,,sources/elemen-bestiary/objects/pages/NM_Coerthas.md :: ダウニーダンスタン
+ダウニーダンスタン,Downy Dunstan,3106019,シープ,Sheep,1,,マトンのロイン,Mutton Loin,3011005,,sources/elemen-bestiary/objects/pages/NM_Coerthas.md :: ダウニーダンスタン
+ダウニーダンスタン,Downy Dunstan,3106019,シープ,Sheep,1,,ラムの角,Ram Horn,10006118,,sources/elemen-bestiary/objects/pages/NM_Coerthas.md :: ダウニーダンスタン
+断頭のロゾル・トトロック,Lozol Totoloq the Decapitator,3106433,イクサル,Ixal,0,◆◆,ナタランの黄金の鍵,Gold Natalan Coffer Key,10011150,,sources/elemen-bestiary/objects/pages/NM_Coerthas.md :: 断頭のロゾル・トトロック
+ドドレ,Dodore,3101710,アーリマン,Ahriman,0,,ドドレの翼,Dodore Wing,10009602,,sources/elemen-bestiary/objects/pages/NM_MorDhona.md :: ドドレ
