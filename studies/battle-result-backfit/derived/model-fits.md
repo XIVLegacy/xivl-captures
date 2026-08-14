@@ -31,7 +31,8 @@ Neither ordering can be evaluated here. None of the 41 matched observations
 contains Crit Potency, level, dLVL, gear, or buff state, and the broad ratio
 range extends below the claimed floor and approaches the claimed cap. The
 result carries ratio shape only; it cannot identify the order of operations or
-a critical-rate anchor.
+a critical-rate anchor. Unknown gear, buffs, and scenario mixing remain
+uncontrolled for this fit.
 
 ## Block and parry reduction
 
@@ -46,14 +47,16 @@ The calibration record contains five block-reduction samples ranging from
 different 1.22 formula with a 20%-75% stated reduction range
 (`../../bluegartr-stat-tests/derived/physical-damage-taken.csv:13-17,21`). The
 packet sets contain no Block, VIT, level, dLVL, gear, or buff controls. Their
-0.658730 descriptive ratio therefore does not fit or refute that formula.
+0.658730 descriptive ratio therefore does not fit or refute that formula;
+scenario mixing is also uncontrolled.
 
 Three of seven parry rows have strict normals. Those three parry rows and five
 normals yield an aggregate mean ratio of 0.704100, with set ratios spanning
 0.720000-1.178571 (`model-fit-accounting.json:70-79`;
 `matched-set-ratios.csv:19-21`). Four parry rows are unmatched. No calibration
 row supplies a competing parry formula, and the packet rows supply no parry
-stat or level controls, so only the observed shape is retained.
+stat or level controls, so only the observed shape is retained. Unknown gear,
+buffs, and scenario mixing remain uncontrolled for this fit.
 
 For context, 21 of 29 miss rows share strict keys with 65 normal rows. Their
 descriptive fraction inside those matched sets is 0.244186; it is not a
@@ -73,7 +76,7 @@ observed/base ratios 0.151000, 0.166000, and 0.152000
 (`recovery-model-observations.csv:3-4,7`). Values 151 and 152 share source,
 target, command, scenario, and message identity; 166 has a different source
 actor (`hp-recovery-clusters.csv:8-9`). None has MND, VIT, healing potency,
-level, gear, or buff controls.
+level, gear, or buff controls; scenario mixing also remains uncontrolled.
 
 The competing calibration shapes are a speculative Cure III affine formula
 from 1.19, per-stat Cure increments from 1.20a, and confounded no-AF versus AF
@@ -95,14 +98,14 @@ The calibration record proposes a DEF/VIT curve from measurements including
 69 VIT, 99 DEF, and 214 DEF changes, plus the candidate expression using
 `DEF + 0.67 * VIT` (`../../bluegartr-stat-tests/derived/physical-damage-taken.csv:2-8`).
 The backfit has 622 rows, zero actor-stat joins, and zero stat-controlled pairs
-(`model-fit-accounting.json:42-46`). Unknown gear and buffs prevent even an
-indirect endpoint comparison. The DEF/VIT curve is therefore not fit; this is
-an explicit evidence ceiling rather than a negative result.
+(`model-fit-accounting.json:42-46`). Unknown gear, buffs, and scenario mixing
+prevent even an indirect endpoint comparison. The DEF/VIT curve is therefore
+not fit; this is an explicit evidence ceiling rather than a negative result.
 
 ## Stage 3 result
 
 No fitted coefficient is promotable. The corpus carries descriptive critical,
 block, parry, and miss shapes; three Cure recovery observations against one
 static command magnitude; four separate Aegis observations; and zero DEF/VIT
-or healing-stat controls. Stage 4 must issue contradiction verdicts from these
-exact ceilings rather than selecting a number.
+or healing-stat controls. Stage 4 closed the contradiction verdicts from these
+exact ceilings without selecting a number (`promotion-decision.md`).

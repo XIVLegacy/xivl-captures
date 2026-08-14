@@ -1,7 +1,7 @@
 id: battle-result-backfit
 title: Battle Result Packet Backfit
 evidence_class: packet-capture
-status: indexed
+status: distilled
 content_kind: action-mechanic
 tags:
 - battle-result
@@ -21,10 +21,10 @@ search_hints:
 - blocked damage
 - hp recovery
 notes: >-
-  Active four-stage backfit. Stages 1-3 decoded the complete retained packet
-  family, characterized distributions, identified strict matched sets, and
-  tested bounded model shapes. No actor stats, formulas, command behavior, or
-  tuning values are promoted.
+  Completed four-stage backfit. The retained packet family is decoded,
+  distributed, matched, fit within evidence limits, and closed with five
+  INSUFFICIENT-DATA contradiction verdicts. No runtime formula, coefficient,
+  command behavior, or tuning value is promoted.
 source_refs:
 - source: pcap-1.23b
 primary_paths:
@@ -40,6 +40,7 @@ primary_paths:
 - derived/matched-set-ratios.csv
 - derived/recovery-model-observations.csv
 - derived/model-fit-accounting.json
+- derived/promotion-decision.md
 canonical_evidence:
 - derived/accounting.json
 - derived/battle-result-rows.csv
@@ -53,3 +54,4 @@ canonical_evidence:
 - derived/matched-set-ratios.csv
 - derived/recovery-model-observations.csv
 - derived/model-fit-accounting.json
+- derived/promotion-decision.md
