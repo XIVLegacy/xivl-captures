@@ -13,7 +13,7 @@ it is not renamed damage, healing, or another behavior without message evidence.
 |---|---|---|
 | 1. Decode and accounting | complete | 531 packets, 622 rows, zero source-ID or row-count/target-count invariant failures |
 | 2. Distribution analysis | complete | Outcome distributions and strict command/source/target comparison sets are recorded |
-| 3. Competing model fits | pending | DEF/VIT, critical, block, and Cure hypotheses remain unfit |
+| 3. Competing model fits | complete | Matched-set ratios and explicit model-fit ceilings are recorded; no coefficient is promoted |
 | 4. Promotion decision | pending | No runtime formula or tuning value is promoted |
 
 ## Start here
@@ -33,6 +33,13 @@ it is not renamed damage, healing, or another behavior without message evidence.
   HP-recovery clusters.
 - `derived/distribution-accounting.json` - deterministic Stage 2 input hash and
   reconciliation totals.
+- `derived/model-fits.md` - Stage 3 competing-model tests and evidence ceilings.
+- `derived/matched-set-ratios.csv` - exact descriptive ratios for critical,
+  positive block, and parry matched sets.
+- `derived/recovery-model-observations.csv` - Cure observations against the
+  static base magnitude and the separate Aegis Boon identity.
+- `derived/model-fit-accounting.json` - deterministic Stage 3 inputs, ratios,
+  row counts, and uncontrolled-corpus contract.
 
 Regenerate or verify these files with explicit evidence inputs:
 
@@ -49,6 +56,13 @@ Regenerate or verify the self-contained Stage 2 products after Stage 1:
 ```text
 python tools/analyze_battle_result_distributions.py
 python tools/analyze_battle_result_distributions.py --check
+```
+
+Regenerate or verify the self-contained Stage 3 products after Stage 2:
+
+```text
+python tools/analyze_battle_result_fits.py
+python tools/analyze_battle_result_fits.py --check
 ```
 
 ## Source material
@@ -114,6 +128,8 @@ effect IDs never select a class.
 
 Stage 2 published bounded distributions for message-identified normal,
 critical, block, parry, miss, and HP-recovery rows with strict scenario,
-command, source, and target strata. Stage 3 must test competing
-formula claims and mark each requested claim `SUPPORTED`, `CONTRADICTED`, or
-`INSUFFICIENT-DATA`; absent actor/stat joins must remain a hard ceiling.
+command, source, and target strata. Stage 3 retained descriptive ratios and
+tested the competing critical, block, Cure, and DEF/VIT model shapes without
+promoting coefficients. Stage 4 must mark each requested contradiction
+`SUPPORTED`, `REFUTED`, or `INSUFFICIENT-DATA`; absent actor/stat joins remain
+a hard ceiling.

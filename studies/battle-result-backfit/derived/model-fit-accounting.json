@@ -1,0 +1,88 @@
+{
+  "aegis_boon": {
+    "hp_recovery_rows": 4,
+    "observed_values": [
+      136,
+      144,
+      148,
+      161
+    ],
+    "stat_controlled_pairs": 0
+  },
+  "block": {
+    "aggregate_mean_ratio": "0.658730",
+    "excluded_zero_outcome_rows": 4,
+    "matched_sets": 8,
+    "normal_rows_in_ratio": 16,
+    "outcome_rows_in_ratio": 10,
+    "per_set_ratio_max": "1.071429",
+    "per_set_ratio_min": "0.515267",
+    "ratio_eligible_sets": 7
+  },
+  "critical": {
+    "aggregate_mean_ratio": "1.485976",
+    "excluded_zero_outcome_rows": 0,
+    "matched_sets": 9,
+    "normal_rows_in_ratio": 27,
+    "outcome_rows_in_ratio": 14,
+    "per_set_ratio_max": "1.730475",
+    "per_set_ratio_min": "1.047619",
+    "ratio_eligible_sets": 9
+  },
+  "cure": {
+    "base_magnitude": 1000,
+    "hp_recovery_rows": 3,
+    "observed_values": [
+      151,
+      152,
+      166
+    ],
+    "stat_controlled_pairs": 0
+  },
+  "def_vit": {
+    "rows_with_actor_stat_join": 0,
+    "source_rows": 622,
+    "stat_controlled_pairs": 0
+  },
+  "inputs": {
+    "battle_result_rows": {
+      "path": "studies/battle-result-backfit/derived/battle-result-rows.csv",
+      "sha256": "d67cb49d9489df127b3f374ee85792c43a6feffecbd4e2314072c0622b22e494"
+    },
+    "command_battle_params": {
+      "base_magnitude": 1000,
+      "path": "xivl-client-data:derived/command_battle_params.csv",
+      "sha256": "9a81350dbd88d61c90a715f1859a1899d3d86c77c6bb52994371b69e1094a444",
+      "source_csv_line": 1101,
+      "validated_row": "27346,Cure"
+    },
+    "matched_comparison_sets": {
+      "path": "studies/battle-result-backfit/derived/matched-comparison-sets.csv",
+      "sha256": "83d0e46a749023b4fb8ae4f89fc3211e0afe73c49c6e02039ab065c3e176af5b"
+    }
+  },
+  "miss": {
+    "descriptive_fraction": "0.244186",
+    "matched_sets": 19,
+    "miss_rows": 21,
+    "normal_rows": 65
+  },
+  "parry": {
+    "aggregate_mean_ratio": "0.704100",
+    "excluded_zero_outcome_rows": 0,
+    "matched_sets": 3,
+    "normal_rows_in_ratio": 5,
+    "outcome_rows_in_ratio": 3,
+    "per_set_ratio_max": "1.178571",
+    "per_set_ratio_min": "0.720000",
+    "ratio_eligible_sets": 3
+  },
+  "ratio_contract": "Ratios compare set-level arithmetic means inside the strict Stage 2 key; they are descriptive packet observations, not fitted coefficients or temporal pairs.",
+  "schema_version": 1,
+  "uncontrolled_corpus": [
+    "gear",
+    "buffs",
+    "level and dLVL",
+    "scenario mixing"
+  ]
+}
