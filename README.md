@@ -41,7 +41,8 @@ Pull requests are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) before you op
 
 <a href="LICENSE-DATA"><img src="https://i.creativecommons.org/l/by/4.0/88x31.png" alt="Creative Commons Attribution 4.0 International license"></a>
 
-Tools and pipeline definitions use the [MIT License](LICENSE). Evidence data
-and research findings use [CC BY 4.0](LICENSE-DATA). This project is
-unaffiliated with and unendorsed by the publisher. All trademarks belong to
-their respective owners.
+Tools, pipelines, configuration, and support files use the
+[MIT License](LICENSE). Project-authored evidence, schemas, documentation, and
+research use [CC BY 4.0](LICENSE-DATA). Identified source material retains its
+existing rights status. This project is unaffiliated with and unendorsed by
+the publisher. All trademarks belong to their respective owners.
