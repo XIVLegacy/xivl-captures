@@ -1,0 +1,36 @@
+id: battle-result-backfit
+title: Battle Result Packet Backfit
+evidence_class: packet-capture
+status: indexed
+content_kind: action-mechanic
+tags:
+- battle-result
+- packet-decoding
+- damage
+- critical-hit
+- block
+- cure
+search_hints:
+- "0x0139"
+- "0x013a"
+- "0x013b"
+- "0x013c"
+- battle result rows
+- normal damage
+- critical damage
+- blocked damage
+- hp recovery
+notes: >-
+  Active four-stage backfit. Stage 1 decoded the complete retained packet family
+  into 622 rows and joined localized worldMaster row identity. No actor stats,
+  formulas, command behavior, or tuning values are promoted.
+source_refs:
+- source: pcap-1.23b
+primary_paths:
+- derived/accounting.json
+- derived/battle-result-rows.csv
+- derived/world-master-messages.csv
+canonical_evidence:
+- derived/accounting.json
+- derived/battle-result-rows.csv
+- derived/world-master-messages.csv

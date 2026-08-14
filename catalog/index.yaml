@@ -164,6 +164,34 @@ sources:
   storage_id: repo
   member_count: 5
 studies:
+- id: battle-result-backfit
+  title: Battle Result Packet Backfit
+  status: indexed
+  evidence_class: packet-capture
+  content_kind: action-mechanic
+  tags:
+  - battle-result
+  - packet-decoding
+  - damage
+  - critical-hit
+  - block
+  - cure
+  search_hints:
+  - '0x0139'
+  - '0x013a'
+  - '0x013b'
+  - '0x013c'
+  - battle result rows
+  - normal damage
+  - critical damage
+  - blocked damage
+  - hp recovery
+  primary_paths:
+  - studies/battle-result-backfit/derived/accounting.json
+  - studies/battle-result-backfit/derived/battle-result-rows.csv
+  - studies/battle-result-backfit/derived/world-master-messages.csv
+  source_refs:
+  - source: pcap-1.23b
 - id: bluegartr-stat-tests
   title: bluegartr FFXIV 1.x Community Stat Testing - Web Tables
   status: distilled
