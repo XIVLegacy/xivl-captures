@@ -1,0 +1,8 @@
+identity,command_id,world_master_text_id,base_magnitude,observed_value,observed_to_base_ratio,scenario_id,source_actor_id,target_actor_id,row_index,source_csv_line
+aegis_boon,23003,33008,,136,,battlecraft-leve-accept-and-complete,1158679889,43722707,107,109
+cure,27346,30320,1000,151,0.151000,battlecraft-leve-accept-and-complete,43722707,43722707,174,176
+cure,27346,30320,1000,166,0.166000,battlecraft-leve-accept-and-complete,43723073,43722707,176,178
+aegis_boon,23003,33008,,161,,battlecraft-leve-accept-and-complete,1158679892,43722707,209,211
+aegis_boon,23005,33008,,148,,battlecraft-leve-accept-and-complete,1158679895,43722707,312,314
+cure,27346,30320,1000,152,0.152000,battlecraft-leve-accept-and-complete,43722707,43722707,396,398
+aegis_boon,23005,33008,,144,,battlecraft-leve-accept-and-complete,1158679897,43722707,416,418

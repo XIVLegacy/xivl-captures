@@ -21,9 +21,10 @@ search_hints:
 - blocked damage
 - hp recovery
 notes: >-
-  Active four-stage backfit. Stages 1-2 decoded the complete retained packet
-  family, characterized distributions, and identified strict matched sets. No
-  actor stats, formulas, command behavior, or tuning values are promoted.
+  Active four-stage backfit. Stages 1-3 decoded the complete retained packet
+  family, characterized distributions, identified strict matched sets, and
+  tested bounded model shapes. No actor stats, formulas, command behavior, or
+  tuning values are promoted.
 source_refs:
 - source: pcap-1.23b
 primary_paths:
@@ -35,6 +36,10 @@ primary_paths:
 - derived/distribution-summary.csv
 - derived/matched-comparison-sets.csv
 - derived/hp-recovery-clusters.csv
+- derived/model-fits.md
+- derived/matched-set-ratios.csv
+- derived/recovery-model-observations.csv
+- derived/model-fit-accounting.json
 canonical_evidence:
 - derived/accounting.json
 - derived/battle-result-rows.csv
@@ -44,3 +49,7 @@ canonical_evidence:
 - derived/distribution-summary.csv
 - derived/matched-comparison-sets.csv
 - derived/hp-recovery-clusters.csv
+- derived/model-fits.md
+- derived/matched-set-ratios.csv
+- derived/recovery-model-observations.csv
+- derived/model-fit-accounting.json

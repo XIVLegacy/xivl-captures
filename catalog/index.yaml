@@ -195,6 +195,10 @@ studies:
   - studies/battle-result-backfit/derived/distribution-summary.csv
   - studies/battle-result-backfit/derived/matched-comparison-sets.csv
   - studies/battle-result-backfit/derived/hp-recovery-clusters.csv
+  - studies/battle-result-backfit/derived/model-fits.md
+  - studies/battle-result-backfit/derived/matched-set-ratios.csv
+  - studies/battle-result-backfit/derived/recovery-model-observations.csv
+  - studies/battle-result-backfit/derived/model-fit-accounting.json
   source_refs:
   - source: pcap-1.23b
 - id: bluegartr-stat-tests

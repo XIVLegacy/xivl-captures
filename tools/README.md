@@ -25,6 +25,9 @@ The supported commands for direct maintainer use are:
 - `python tools/analyze_battle_result_distributions.py` - regenerate the
   self-contained Stage 2 distribution and matched-set products from the Stage 1
   row table; add `--check` for a byte-for-byte replay check.
+- `python tools/analyze_battle_result_fits.py` - regenerate the self-contained
+  Stage 3 matched-set ratios, recovery observations, and fit accounting from
+  committed Stage 1-2 products; add `--check` for a byte-for-byte replay check.
 - `python tools/validate_framing.py [capture.pcapng ...]` - verify the outer
   frame compression invariant.
 - `python tools/promote_opcode_names.py --source <opcodes.json>` - replace the
