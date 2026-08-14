@@ -26,10 +26,11 @@ Generated from `catalog/index.yaml`. Primary axis: `content_kind`.
 
 - `aetheryte-mechanic-teleport-flows`
 
-## battlecraft-leve (2)
+## battlecraft-leve (3)
 
-### Studies (1)
+### Studies (2)
 
+- `director-wire-identity`
 - `elemen-battlecraft-leve-objectives`
 
 ### Scenarios (1)
