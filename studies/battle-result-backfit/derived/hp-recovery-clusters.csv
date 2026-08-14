@@ -1,0 +1,10 @@
+scenario_id,command_id,source_actor_id,target_actor_id,world_master_text_id,row_count,min_value,max_value,unique_value_count,duplicate_excess_count,value_counts,within_cluster_pair_count,source_row_indices,source_csv_lines
+battlecraft-leve-accept-and-complete,23003,1158679889,43722707,33008,1,136,136,1,0,136:1,0,107,109
+battlecraft-leve-accept-and-complete,23003,1158679892,43722707,33008,1,161,161,1,0,161:1,0,209,211
+battlecraft-leve-accept-and-complete,23005,1158679895,43722707,33008,1,148,148,1,0,148:1,0,312,314
+battlecraft-leve-accept-and-complete,23005,1158679897,43722707,33008,1,144,144,1,0,144:1,0,416,418
+battlecraft-leve-accept-and-complete,27100,43722707,43722707,30320,4,204,215,4,0,204:1;206:1;210:1;215:1,6,152;228;369;423,154;230;371;425
+battlecraft-leve-accept-and-complete,27100,43723073,43723073,30320,2,199,201,2,0,199:1;201:1,1,264;453,266;455
+battlecraft-leve-accept-and-complete,27346,43722707,43722707,30320,2,151,152,2,0,151:1;152:1,1,174;396,176;398
+battlecraft-leve-accept-and-complete,27346,43723073,43722707,30320,1,166,166,1,0,166:1,0,176,178
+job-quest-war-updates,27100,43723073,43723073,30320,1,241,241,1,0,241:1,0,535,537

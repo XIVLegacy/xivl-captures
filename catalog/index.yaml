@@ -190,6 +190,11 @@ studies:
   - studies/battle-result-backfit/derived/accounting.json
   - studies/battle-result-backfit/derived/battle-result-rows.csv
   - studies/battle-result-backfit/derived/world-master-messages.csv
+  - studies/battle-result-backfit/derived/distribution-analysis.md
+  - studies/battle-result-backfit/derived/distribution-accounting.json
+  - studies/battle-result-backfit/derived/distribution-summary.csv
+  - studies/battle-result-backfit/derived/matched-comparison-sets.csv
+  - studies/battle-result-backfit/derived/hp-recovery-clusters.csv
   source_refs:
   - source: pcap-1.23b
 - id: bluegartr-stat-tests

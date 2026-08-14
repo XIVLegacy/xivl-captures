@@ -21,16 +21,26 @@ search_hints:
 - blocked damage
 - hp recovery
 notes: >-
-  Active four-stage backfit. Stage 1 decoded the complete retained packet family
-  into 622 rows and joined localized worldMaster row identity. No actor stats,
-  formulas, command behavior, or tuning values are promoted.
+  Active four-stage backfit. Stages 1-2 decoded the complete retained packet
+  family, characterized distributions, and identified strict matched sets. No
+  actor stats, formulas, command behavior, or tuning values are promoted.
 source_refs:
 - source: pcap-1.23b
 primary_paths:
 - derived/accounting.json
 - derived/battle-result-rows.csv
 - derived/world-master-messages.csv
+- derived/distribution-analysis.md
+- derived/distribution-accounting.json
+- derived/distribution-summary.csv
+- derived/matched-comparison-sets.csv
+- derived/hp-recovery-clusters.csv
 canonical_evidence:
 - derived/accounting.json
 - derived/battle-result-rows.csv
 - derived/world-master-messages.csv
+- derived/distribution-analysis.md
+- derived/distribution-accounting.json
+- derived/distribution-summary.csv
+- derived/matched-comparison-sets.csv
+- derived/hp-recovery-clusters.csv
