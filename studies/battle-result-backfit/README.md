@@ -2,7 +2,7 @@
 
 ## Study contents
 
-This active study backfits the clientbound battle-result family `0x0139`
+This completed study backfits the clientbound battle-result family `0x0139`
 through `0x013C` into one row-oriented packet evidence set. Stage 1 decoded all
 531 retained family packets into 622 target rows, preserved deterministic
 capture-local order, and joined nonzero message IDs to the 1.23b
@@ -14,7 +14,7 @@ it is not renamed damage, healing, or another behavior without message evidence.
 | 1. Decode and accounting | complete | 531 packets, 622 rows, zero source-ID or row-count/target-count invariant failures |
 | 2. Distribution analysis | complete | Outcome distributions and strict command/source/target comparison sets are recorded |
 | 3. Competing model fits | complete | Matched-set ratios and explicit model-fit ceilings are recorded; no coefficient is promoted |
-| 4. Promotion decision | pending | No runtime formula or tuning value is promoted |
+| 4. Promotion decision | complete | All five requested contradictions are INSUFFICIENT-DATA; no runtime formula or tuning value is promoted |
 
 ## Start here
 
@@ -40,6 +40,8 @@ it is not renamed damage, healing, or another behavior without message evidence.
   static base magnitude and the separate Aegis Boon identity.
 - `derived/model-fit-accounting.json` - deterministic Stage 3 inputs, ratios,
   row counts, and uncontrolled-corpus contract.
+- `derived/promotion-decision.md` - Stage 4 per-contradiction verdicts and
+  matched-set inventory.
 
 Regenerate or verify these files with explicit evidence inputs:
 
@@ -126,10 +128,9 @@ effect IDs never select a class.
 
 ## Further research
 
-Stage 2 published bounded distributions for message-identified normal,
-critical, block, parry, miss, and HP-recovery rows with strict scenario,
-command, source, and target strata. Stage 3 retained descriptive ratios and
-tested the competing critical, block, Cure, and DEF/VIT model shapes without
-promoting coefficients. Stage 4 must mark each requested contradiction
-`SUPPORTED`, `REFUTED`, or `INSUFFICIENT-DATA`; absent actor/stat joins remain
-a hard ceiling.
+Stages 2-3 published bounded distributions, strict matched sets, descriptive
+ratios, and competing-model tests for message-identified outcomes. Stage 4
+closed crit-rate anchor, crit-potency ordering, block reduction, Cure model,
+and DEF/VIT curve as `INSUFFICIENT-DATA`. The owning verdict table is
+`derived/promotion-decision.md`; absent actor/stat joins remain the hard
+ceiling.

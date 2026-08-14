@@ -166,7 +166,7 @@ sources:
 studies:
 - id: battle-result-backfit
   title: Battle Result Packet Backfit
-  status: indexed
+  status: distilled
   evidence_class: packet-capture
   content_kind: action-mechanic
   tags:
@@ -199,6 +199,7 @@ studies:
   - studies/battle-result-backfit/derived/matched-set-ratios.csv
   - studies/battle-result-backfit/derived/recovery-model-observations.csv
   - studies/battle-result-backfit/derived/model-fit-accounting.json
+  - studies/battle-result-backfit/derived/promotion-decision.md
   source_refs:
   - source: pcap-1.23b
 - id: bluegartr-stat-tests
