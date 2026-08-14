@@ -261,6 +261,30 @@ studies:
   - studies/bluegartr-stat-tests/derived/patch-dating.csv
   source_refs:
   - source: bluegartr-stat-tests
+- id: director-wire-identity
+  title: Director Wire Identity Verification
+  status: distilled
+  evidence_class: packet-capture
+  content_kind: battlecraft-leve
+  tags:
+  - director
+  - group
+  - packet-decoding
+  - guildleve
+  search_hints:
+  - '0x017c'
+  - '0x017f'
+  - '0x0183'
+  - group type 30001
+  - director actor id
+  primary_paths:
+  - studies/director-wire-identity/derived/accounting.json
+  - studies/director-wire-identity/derived/group-packets.csv
+  - studies/director-wire-identity/derived/group-members.csv
+  - studies/director-wire-identity/derived/event-role-candidates.csv
+  - studies/director-wire-identity/derived/verdicts.md
+  source_refs:
+  - source: pcap-1.23b
 - id: elemen-battle-actions
   title: eLeMeN FF14 1.x Battle Class Actions - Web Tables
   status: distilled

@@ -1,0 +1,34 @@
+id: director-wire-identity
+title: Director Wire Identity Verification
+evidence_class: packet-capture
+status: distilled
+content_kind: battlecraft-leve
+tags:
+- director
+- group
+- packet-decoding
+- guildleve
+search_hints:
+- "0x017c"
+- "0x017f"
+- "0x0183"
+- group type 30001
+- director actor id
+notes: >-
+  Bounded retail-capture verification of director-role actor IDs, Group header
+  type values, member lists, and competing packet offsets. Server-derived
+  names and constants are excluded from the evidence chain.
+source_refs:
+- source: pcap-1.23b
+primary_paths:
+- derived/accounting.json
+- derived/group-packets.csv
+- derived/group-members.csv
+- derived/event-role-candidates.csv
+- derived/verdicts.md
+canonical_evidence:
+- derived/accounting.json
+- derived/group-packets.csv
+- derived/group-members.csv
+- derived/event-role-candidates.csv
+- derived/verdicts.md

@@ -38,6 +38,7 @@ findings.
 ## Study bundles
 
 - [Battle Result Packet Backfit](../studies/battle-result-backfit/)
+- [Director Wire Identity Verification](../studies/director-wire-identity/)
 - [bluegartr FFXIV 1.x Community Stat Testing - Web Tables](../studies/bluegartr-stat-tests/)
 - [eLeMeN FF14 1.x Battle Class Actions - Web Tables](../studies/elemen-battle-actions/)
 - [eLeMeN FF14 1.x Regional Battlecraft Leve Objectives - Web Tables](../studies/elemen-battlecraft-leve-objectives/)
