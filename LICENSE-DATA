@@ -32,13 +32,19 @@ A human-readable summary is at:
 
 WHAT THIS COVERS
 
-This license applies to the evidence data and research findings under:
+This license applies to the project-authored evidence data, schemas,
+documentation, and research findings under:
 
-  sources/, studies/, derived/, catalog/
+  sources/, studies/, derived/, catalog/, schemas/, docs/
 
 Source code is licensed separately under the MIT License; see LICENSE. That
-covers tools/ and pipelines/, which are meant to be run and adapted by other
-projects and so should not carry an attribution requirement on their output.
+covers tools/, pipelines/, config/, and repository support files. The tools
+and pipeline definitions are meant to be run and adapted by other projects and
+so should not carry an attribution requirement on their output.
+
+This license grants only rights held by the XIVLegacy Dev Team. Source
+material that identifies a different rights holder or license retains that
+status.
 
 DISCLAIMER
 
