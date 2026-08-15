@@ -1,7 +1,7 @@
 id: lobby-handshake-triage
 title: Lobby Handshake Decryptability Triage
 evidence_class: packet-capture
-status: raw-only
+status: validated
 content_kind: session-mechanic
 tags:
 - session
@@ -13,6 +13,7 @@ tags:
 - packet-decryptability
 - server-utc
 - client-number
+- decrypt-refuted
 search_hints:
 - login.pcapng
 - secure.square-enix.com
@@ -25,10 +26,12 @@ notes: >-
   Bounded inventory of the canonical 1.23b session and zone-transition
   captures. login.pcapng contains TLS account traffic and raw lobby traffic;
   the latter provides packet/frame locators for a possible Blowfish body and
-  for the clear initial client-number fields. This study records no decrypted
-  body bytes or server-side comparison policy.
+  for the clear initial client-number and ticket fields. A capture-native
+  raw-MD5 Blowfish-ECB recipe and common encoding variants were refuted. This
+  study records no decrypted lobby body or server-side comparison policy.
 source_refs:
 - source: pcap-1.23b
 primary_paths:
 - derived/triage.md
 - derived/server-utc.md
+- derived/decrypt-recipe.md
