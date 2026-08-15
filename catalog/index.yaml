@@ -1287,6 +1287,26 @@ studies:
   - studies/project-meteor-wiki/derived/evidence-map.md
   source_refs:
   - source: project-meteor-wiki
+- id: property-stream-hash-catalog
+  title: Actor Property Stream Hash Catalog
+  status: indexed
+  evidence_class: packet-capture
+  content_kind: character-mechanic
+  tags:
+  - property-stream
+  - actor-state
+  - murmur2
+  - packet-decoding
+  search_hints:
+  - '0x0137'
+  - SetActorPropertyPacket
+  - property hash
+  - typed property stream
+  primary_paths:
+  - studies/property-stream-hash-catalog/derived/accounting.json
+  - studies/property-stream-hash-catalog/derived/property-records.csv
+  source_refs:
+  - source: pcap-1.23b
 scenarios:
 - id: action-mechanic-combat-and-actions
   title: Combat and Action Bar

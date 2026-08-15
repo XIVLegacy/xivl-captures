@@ -37,13 +37,14 @@ Generated from `catalog/index.yaml`. Primary axis: `content_kind`.
 
 - `battlecraft-leve-accept-and-complete`
 
-## character-mechanic (4)
+## character-mechanic (5)
 
-### Studies (3)
+### Studies (4)
 
 - `elemen-history-removed`
 - `elemen-level-exp`
 - `gamerescape-tables`
+- `property-stream-hash-catalog`
 
 ### Scenarios (1)
 
