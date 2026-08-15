@@ -27,4 +27,4 @@ Union across the member captures. `name` is the derived/opcode_names.json entry 
 ## Gaps / caveats
 
 - Opcode identity and framing only; decoded payload field semantics live in this repo's `derived/` (payload_layouts.json and friends).
-- login.pcapng is confirmed pure TLS (both directions open with the TLS handshake record `16 03 01`, a ClientHello/ServerHello to secure.square-enix.com); it is encrypted and carries no decodable game opcodes, so it is excluded from the canonical decode and contributes zero opcodes here.
+- login.pcapng contains TLS account-service connections and later raw lobby connections on TCP 54994. The lobby bodies remain undecoded after a tested decrypt recipe was refuted, so the capture is excluded from the canonical game decode and contributes zero observed opcodes here.

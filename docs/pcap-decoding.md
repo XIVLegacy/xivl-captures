@@ -33,8 +33,8 @@ Frame-clean connections are retained, classified as `main`, `chat`, or
 keeps the existing corpus view, while the lane product preserves connection
 attribution.
 
-`login.pcapng` is TLS traffic to `secure.square-enix.com`, not game protocol
-evidence, and is excluded from the game-protocol extraction.
+`login.pcapng` contains TLS account-service traffic and later raw lobby traffic
+whose bodies remain undecoded. It is excluded from game-protocol extraction.
 
 ### Outer frames
 

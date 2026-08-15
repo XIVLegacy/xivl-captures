@@ -28,7 +28,7 @@ This is a **packet-capture reference scenario**. The raw pcaps live in this repo
 
 - This scenario carries opcode identity, direction, service, and payload lengths only - not decoded field semantics (those live in this repo's `derived/payload_layouts.json`).
 - Service split across members: map 5.
-- Caveat: login.pcapng is confirmed pure TLS (both directions open with the TLS handshake record `16 03 01`, a ClientHello/ServerHello to secure.square-enix.com); it is encrypted and carries no decodable game opcodes, so it is excluded from the canonical decode and contributes zero opcodes here.
+- Caveat: login.pcapng contains TLS account-service connections and later raw lobby connections on TCP 54994. The lobby bodies remain undecoded after a tested decrypt recipe was refuted, so the capture is excluded from the canonical game decode and contributes zero observed opcodes here.
 
 ## Next agent steps
 

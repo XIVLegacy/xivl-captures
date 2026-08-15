@@ -1061,7 +1061,7 @@ studies:
   - source: kanican-tables
 - id: lobby-handshake-triage
   title: Lobby Handshake Decryptability Triage
-  status: raw-only
+  status: validated
   evidence_class: packet-capture
   content_kind: session-mechanic
   tags:
@@ -1074,6 +1074,7 @@ studies:
   - packet-decryptability
   - server-utc
   - client-number
+  - decrypt-refuted
   search_hints:
   - login.pcapng
   - secure.square-enix.com
@@ -1085,6 +1086,7 @@ studies:
   primary_paths:
   - studies/lobby-handshake-triage/derived/triage.md
   - studies/lobby-handshake-triage/derived/server-utc.md
+  - studies/lobby-handshake-triage/derived/decrypt-recipe.md
   source_refs:
   - source: pcap-1.23b
 - id: lodestone-beginners
