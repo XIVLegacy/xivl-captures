@@ -24,6 +24,9 @@ it is not renamed damage, healing, or another behavior without message evidence.
   deterministic capture-local wire order.
 - `derived/world-master-messages.csv` - observed message IDs, counts, bounded
   classifications, and join status.
+- `derived/world-master-message-contexts.json` - every observed nonzero message
+  ID joined to its English text and exact opcode, command, actor-ID, value,
+  effect, text-parameter, capture, scenario, and source-row context.
 - `derived/distribution-analysis.md` - Stage 2 distributions, repeated values,
   matched-set counts, and the Stage 3 evidence ceiling.
 - `derived/distribution-summary.csv` - complete command, scenario, source,
