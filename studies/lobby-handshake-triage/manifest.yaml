@@ -1,0 +1,28 @@
+id: lobby-handshake-triage
+title: Lobby Handshake Decryptability Triage
+evidence_class: packet-capture
+status: raw-only
+content_kind: session-mechanic
+tags:
+- session
+- login
+- handshake
+- lobby
+- tls
+- blowfish
+- packet-decryptability
+search_hints:
+- login.pcapng
+- secure.square-enix.com
+- 202.67.50.8:54994
+- raw lobby frame
+- Blowfish target
+notes: >-
+  Bounded inventory of the canonical 1.23b session and zone-transition
+  captures. login.pcapng contains TLS account traffic and raw lobby traffic;
+  the latter provides a packet/frame locator for a possible Blowfish body.
+  This study records no decrypted bytes or cipher parameters.
+source_refs:
+- source: pcap-1.23b
+primary_paths:
+- derived/triage.md

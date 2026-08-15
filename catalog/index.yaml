@@ -1058,6 +1058,29 @@ studies:
   - studies/kanican-tables/derived/critical-damage-bonus.csv
   source_refs:
   - source: kanican-tables
+- id: lobby-handshake-triage
+  title: Lobby Handshake Decryptability Triage
+  status: raw-only
+  evidence_class: packet-capture
+  content_kind: session-mechanic
+  tags:
+  - session
+  - login
+  - handshake
+  - lobby
+  - tls
+  - blowfish
+  - packet-decryptability
+  search_hints:
+  - login.pcapng
+  - secure.square-enix.com
+  - 202.67.50.8:54994
+  - raw lobby frame
+  - Blowfish target
+  primary_paths:
+  - studies/lobby-handshake-triage/derived/triage.md
+  source_refs:
+  - source: pcap-1.23b
 - id: lodestone-beginners
   title: FFXIV 1.x Lodestone - A Beginner's Guide to Eorzea
   status: distilled
