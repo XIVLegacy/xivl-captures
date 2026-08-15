@@ -104,7 +104,11 @@ Generated from `catalog/index.yaml`. Primary axis: `content_kind`.
 
 - `lodestone-lore`
 
-## movement-mechanic (1)
+## movement-mechanic (2)
+
+### Studies (1)
+
+- `movement-speed-band-observations`
 
 ### Scenarios (1)
 
