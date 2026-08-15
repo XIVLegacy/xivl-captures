@@ -31,6 +31,10 @@ The supported commands for direct maintainer use are:
 - `python tools/extractors/extract_director_wire_identity.py` - regenerate the
   director-role, Group packet, member-list, and type-distribution study; add
   `--check` for a byte-for-byte replay check.
+- `python tools/extractors/extract_property_stream_catalog.py` - regenerate
+  the complete record-level s2c `0x0137` property-stream study, including raw
+  values, packet positions, wrapped source/destination actors, scenarios, and
+  hash profiles.
 - `python tools/validate_framing.py [capture.pcapng ...]` - verify the outer
   frame compression invariant.
 - `python tools/promote_opcode_names.py --source <opcodes.json>` - replace the
