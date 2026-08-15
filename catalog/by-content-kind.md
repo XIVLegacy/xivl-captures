@@ -50,7 +50,11 @@ Generated from `catalog/index.yaml`. Primary axis: `content_kind`.
 
 - `character-mechanic-attributes-and-class`
 
-## chat-mechanic (1)
+## chat-mechanic (2)
+
+### Studies (1)
+
+- `m9-corpus-research`
 
 ### Scenarios (1)
 

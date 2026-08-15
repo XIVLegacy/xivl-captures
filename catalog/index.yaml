@@ -1247,6 +1247,33 @@ studies:
   - studies/lodestone-manual/derived/file-inventory.csv
   source_refs:
   - source: lodestone-manual
+- id: m9-corpus-research
+  title: M9 Autotranslate and Chat Relay Search
+  status: distilled
+  evidence_class: packet-capture
+  content_kind: chat-mechanic
+  tags:
+  - chat
+  - autotranslate
+  - fixed-phrase
+  - packet-decoding
+  - bounded-absence
+  - corpus-search
+  search_hints:
+  - '0x0003'
+  - '0x00c9'
+  - xtx__fixedPhrase
+  - autotranslate selection
+  - chat relay
+  - bounded absence
+  primary_paths:
+  - studies/m9-corpus-research/derived/verdicts.md
+  - studies/m9-corpus-research/derived/search-accounting.md
+  - studies/m9-corpus-research/derived/corpus-inventory.csv
+  - studies/m9-corpus-research/derived/chat-relay-specimens.csv
+  source_refs:
+  - source: pcap-1.23b
+    citation: sources/pcap-1.23b/manifest.yaml
 - id: movement-speed-band-observations
   title: Movement Speed Band Observations
   status: distilled
