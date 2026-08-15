@@ -11,18 +11,24 @@ tags:
 - tls
 - blowfish
 - packet-decryptability
+- server-utc
+- client-number
 search_hints:
 - login.pcapng
 - secure.square-enix.com
 - 202.67.50.8:54994
 - raw lobby frame
 - Blowfish target
+- "1356916754"
+- InitialSessionData
 notes: >-
   Bounded inventory of the canonical 1.23b session and zone-transition
   captures. login.pcapng contains TLS account traffic and raw lobby traffic;
-  the latter provides a packet/frame locator for a possible Blowfish body.
-  This study records no decrypted bytes or cipher parameters.
+  the latter provides packet/frame locators for a possible Blowfish body and
+  for the clear initial client-number fields. This study records no decrypted
+  body bytes or server-side comparison policy.
 source_refs:
 - source: pcap-1.23b
 primary_paths:
 - derived/triage.md
+- derived/server-utc.md
