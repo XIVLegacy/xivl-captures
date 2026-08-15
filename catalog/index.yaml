@@ -1216,6 +1216,24 @@ studies:
   - studies/lodestone-manual/derived/file-inventory.csv
   source_refs:
   - source: lodestone-manual
+- id: movement-speed-band-observations
+  title: Movement Speed Band Observations
+  status: distilled
+  evidence_class: packet-capture
+  content_kind: movement-mechanic
+  tags:
+  - movement
+  - mount
+  - speed
+  - packet-decoding
+  search_hints:
+  - '0x00d0'
+  - SetActorSpeedPacket
+  - movement speed
+  primary_paths:
+  - studies/movement-speed-band-observations/derived/observed-bands.md
+  source_refs:
+  - source: pcap-1.23b
 - id: primal-battle-ifrit-bowl-of-embers
   title: The Bowl of Embers (Ifrit) - Video Breakdown
   status: distilled
