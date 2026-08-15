@@ -31,6 +31,7 @@ primary_paths:
 - derived/accounting.json
 - derived/battle-result-rows.csv
 - derived/world-master-messages.csv
+- derived/world-master-message-contexts.json
 - derived/distribution-analysis.md
 - derived/distribution-accounting.json
 - derived/distribution-summary.csv
@@ -45,6 +46,7 @@ canonical_evidence:
 - derived/accounting.json
 - derived/battle-result-rows.csv
 - derived/world-master-messages.csv
+- derived/world-master-message-contexts.json
 - derived/distribution-analysis.md
 - derived/distribution-accounting.json
 - derived/distribution-summary.csv

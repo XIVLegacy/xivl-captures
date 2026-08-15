@@ -103,6 +103,19 @@ MESSAGE_CLASSES = {
     33954: ("non_fit", "experience earned variant 5"),
 }
 
+OUTCOME_FAMILIES = {
+    30108: "defeat", 30109: "recovery_state", 30112: "body_part",
+    30116: "defeat", 30126: "command_ready", 30128: "cast_start",
+    30209: "command_failure", 30301: "damage_hit", 30302: "damage_critical",
+    30303: "damage_body_part", 30306: "damage_blocked",
+    30308: "damage_parried", 30311: "miss", 30320: "hp_recovery",
+    30328: "status_gain", 30330: "status_gain", 30331: "status_loss",
+    30332: "hp_absorption", 30335: "status_gain", 30338: "status_loss",
+    33008: "hp_recovery", 33909: "skill_progression", 33919: "exp_chain",
+    33921: "skill_progression", 33934: "experience", 33935: "experience",
+    33936: "experience", 33950: "experience", 33954: "experience",
+}
+
 
 def sha256_file(path: Path) -> str:
     digest = hashlib.sha256()
@@ -357,6 +370,65 @@ def render_messages(rows: list[dict], world_rows: dict[int, str]) -> bytes:
     return handle.getvalue().encode("ascii")
 
 
+def _counter_map(values) -> dict[str, int]:
+    return {str(key): value for key, value in sorted(Counter(values).items())}
+
+
+def render_message_contexts(rows: list[dict], world_rows: dict[int, str]) -> bytes:
+    entries = []
+    message_ids = sorted({
+        row["world_master_text_id"]
+        for row in rows
+        if row["world_master_text_id"]
+    })
+    for message_id in message_ids:
+        selected = [row for row in rows if row["world_master_text_id"] == message_id]
+        message_class, label = classify(message_id, world_rows)
+        entries.append({
+            "worldMasterTextId": message_id,
+            "englishText": world_rows[message_id],
+            "messageClass": message_class,
+            "messageLabel": label,
+            "outcomeFamily": OUTCOME_FAMILIES.get(message_id, "unclassified"),
+            "observedRows": len(selected),
+            "distinctCaptures": len({row["capture"] for row in selected}),
+            "captures": sorted({row["capture"] for row in selected}),
+            "scenarios": _counter_map(row["scenario_id"] for row in selected),
+            "opcodes": _counter_map(row["opcode"] for row in selected),
+            "commandIds": _counter_map(row["command_id"] for row in selected),
+            "sourceActorIds": _counter_map(row["source_actor_id"] for row in selected),
+            "targetActorIds": _counter_map(row["target_actor_id"] for row in selected),
+            "numericValuePresence": {
+                "zeroRows": sum(row["numeric_value"] == 0 for row in selected),
+                "nonzeroRows": sum(row["numeric_value"] != 0 for row in selected),
+            },
+            "effectIdPresence": {
+                "zeroRows": sum(row["effect_id"] == 0 for row in selected),
+                "nonzeroRows": sum(row["effect_id"] != 0 for row in selected),
+            },
+            "textParamValues": _counter_map(row["text_param"] for row in selected),
+            "rowIndexes": [row["row_index"] for row in selected],
+        })
+    document = {
+        "schemaVersion": 1,
+        "evidenceClass": "packet-capture",
+        "corpusStatus": "closed-frozen",
+        "actorTypeStatus": "INSUFFICIENT_DATA; retained rows identify actors only by numeric ID",
+        "boundedAbsences": {
+            "0x013B": "No retained packet or row",
+        },
+        "totals": {
+            "packets": 531,
+            "rows": len(rows),
+            "nonzeroTextIdRows": sum(row["world_master_text_id"] != 0 for row in rows),
+            "zeroTextIdRows": sum(row["world_master_text_id"] == 0 for row in rows),
+            "distinctNonzeroTextIds": len(entries),
+        },
+        "entries": entries,
+    }
+    return (json.dumps(document, indent=2, sort_keys=True, ensure_ascii=True) + "\n").encode("ascii")
+
+
 def build_outputs(client_data_repo: Path, field_model: Path) -> dict[str, bytes]:
     world_path = client_data_repo / "csv" / "worldMaster.csv"
     command_path = client_data_repo / "derived" / "command_battle_params.csv"
@@ -394,6 +466,7 @@ def build_outputs(client_data_repo: Path, field_model: Path) -> dict[str, bytes]
     return {
         "battle-result-rows.csv": render_csv(rows),
         "world-master-messages.csv": render_messages(rows, world_rows),
+        "world-master-message-contexts.json": render_message_contexts(rows, world_rows),
         "accounting.json": (json.dumps(accounting, indent=2, sort_keys=True) + "\n").encode("ascii"),
     }
 
