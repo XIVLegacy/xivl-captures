@@ -1072,14 +1072,19 @@ studies:
   - tls
   - blowfish
   - packet-decryptability
+  - server-utc
+  - client-number
   search_hints:
   - login.pcapng
   - secure.square-enix.com
   - 202.67.50.8:54994
   - raw lobby frame
   - Blowfish target
+  - '1356916754'
+  - InitialSessionData
   primary_paths:
   - studies/lobby-handshake-triage/derived/triage.md
+  - studies/lobby-handshake-triage/derived/server-utc.md
   source_refs:
   - source: pcap-1.23b
 - id: lodestone-beginners
