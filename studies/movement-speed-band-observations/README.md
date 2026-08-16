@@ -2,7 +2,7 @@
 
 ## Study contents
 
-This bounded packet study records exact float pairs observed in clientbound
+This bounded packet study records exact four-slot profiles observed in clientbound
 map `0x00d0` `SetActorSpeedPacket` records from the Chocobo mount/unmount
 capture and two Gridania movement captures. It does not infer a server formula,
 world units, walk/run semantics, or a scalar-to-band conversion.
@@ -23,14 +23,15 @@ records its 168-byte sub-event shape (`catalog/scenarios/chocobo-mechanic-mount-
 
 ## Verdict
 
-The retained wire values are the exact pairs and counts in
-`derived/observed-bands.md`. The rejected reference-server simplification
-`0/5/10/10` is not a retail observation. The evidence establishes values only;
-it does not establish how a server chooses or converts them.
+The explicit mount transition carries indexed values `3.6/9/9/0`, equivalent
+to `0/3.6/9/9` when the zero baseline is written first. The alternative
+`0/5/10/10` simplification is refuted for all three nonzero bands. The evidence
+establishes values only; it does not establish how a server chooses or converts
+them.
 
 ## Promoted conclusions
 
-The study promotes only the observed `0x00d0` field bytes, decoded float pairs,
+The study promotes only the observed `0x00d0` field bytes, decoded float profiles,
 packet offsets, and counts recorded in `derived/observed-bands.md`. The labels
 for mount and on-foot rows are capture-local sequence context.
 
