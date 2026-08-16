@@ -13,9 +13,10 @@ search_hints:
 - SetActorSpeedPacket
 - movement speed
 notes: >-
-  Bounded packet observations of the two four-byte fields carried by
-  SetActorSpeedPacket. Values remain wire observations; no scalar conversion,
-  movement unit, or server formula is promoted.
+  Bounded packet observations of the four indexed float32 fields carried by
+  SetActorSpeedPacket. The explicit mount transition carries 3.6/9/9/0.
+  Values remain wire observations; no scalar conversion, movement unit, or
+  server formula is promoted.
 source_refs:
 - source: pcap-1.23b
 primary_paths:
