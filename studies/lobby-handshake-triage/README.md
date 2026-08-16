@@ -19,6 +19,8 @@ This bounded packet-capture study inventories the canonical session and zone-tra
 
 ## Promoted conclusions
 
+- The stage-0 transport verdict is `GO`: `login.pcapng` contains the preserved
+  raw lobby target, so the closed corpus is not limited to TLS lobby traffic.
 - `login.pcapng` is mixed: TLS account traffic is present, and the same capture also contains raw 54994 lobby frames.
 - The 54994 server-to-client frames provide a raw Blowfish target candidate; no decryption or key claim is made.
 - The other inventoried members expose raw 54992 game framing and no TLS handshake; they do not add a separate lobby ciphertext target.
