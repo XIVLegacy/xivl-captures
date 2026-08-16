@@ -2,14 +2,14 @@
 
 ## Study contents
 
-This bounded packet-capture study inventories the canonical session and zone-transition members that could contain a lobby or pre-zone handshake. It records the TLS-versus-raw classification, raw lobby ciphertext targets, and an inconclusive capture-native decrypt recipe test.
+This bounded packet-capture study inventories the canonical session and zone-transition members that could contain a lobby or pre-zone handshake. It records the TLS-versus-raw classification, raw lobby ciphertext targets, and the confirmed capture-native decrypt recipe.
 
 ## Start here
 
 - `derived/triage.md` - inventory, verdict, and packet/frame locators.
 - `derived/server-utc.md` - client-number wire fields and bounded constant census.
 - `derived/decrypt-recipe.md` - capture-native key inputs, ciphertext locators,
-  bounded isolation matrix, and inconclusive verdict.
+  confirmed recipe, recovered plaintext, and historical failure record.
 
 ## Source material
 
@@ -23,15 +23,16 @@ This bounded packet-capture study inventories the canonical session and zone-tra
 - The stage-0 transport verdict is `GO`: `login.pcapng` contains the preserved
   raw lobby target, so the closed corpus is not limited to TLS lobby traffic.
 - `login.pcapng` is mixed: TLS account traffic is present, and the same capture also contains raw 54994 lobby frames.
-- The 54994 server-to-client frames provide a raw Blowfish target candidate; no decryption or key claim is made.
+- The 54994 server-to-client frames are decoded by the confirmed 44-byte MD5 and Blowfish ECB recipe recorded in `derived/decrypt-recipe.md`.
 - The other inventoried members expose raw 54992 game framing and no TLS handshake; they do not add a separate lobby ciphertext target.
 - The first raw lobby connection carries client number 1356916754 in both the
   initial server frame and InitialSessionData; the repeat connection carries
   1356916763 at the same offsets.
 - Both client requests carry the ticket phrase `Test Ticket Data` in plaintext.
-- Raw-MD5 Blowfish with the capture-native inputs does not produce coherent
-  lobby plaintext; bounded body, mode, encoding, ticket-width, and constant
-  variants also fail. This does not isolate the `1000` input as wrong.
+- The recipe recovers `FINAL FANTASY XIV`, version `2012.09.19.0001`, session
+  tokens, character names, and a world-server handoff string from both lobby
+  connections. The client implementation is cataloged by `BCS-Y-0008` and
+  `BCS-Y-0013`, including the `MOVSX` key-schedule behavior.
 
 ## Topics
 
@@ -44,14 +45,13 @@ This bounded packet-capture study inventories the canonical session and zone-tra
 
 ## Evidence gaps
 
-- The cipher, key, mode, and plaintext for the raw 54994 body remain unverified;
-  the tested construction fails, but the `1000` input remains inconclusive.
+- The canonical decoder still excludes `login.pcapng` pending an implementation
+  of the confirmed recipe.
 - Server-side client-number comparison and rejection policy remain unverified.
 - Packet numbers are 1-based capture positions; stream offsets and frame boundaries come from the repository lane/frame reconstruction.
 - The canonical decoder excludes `login.pcapng`; this triage preserves its mixed transport evidence without changing generated products.
 
 ## Further research
 
-- Establish one missing key-material or cipher-setup detail from independent
-  retail-client evidence, then rerun the four fixed targets using the locators
-  in `derived/triage.md`.
+- Implement the confirmed recipe in the canonical decoder, then decide whether
+  `login.pcapng` should be included in canonical opcode observation.
