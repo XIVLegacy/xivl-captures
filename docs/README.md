@@ -60,7 +60,7 @@ findings.
 - [FFXIV 1.x Lodestone Dev Posts and Patch Notes](../studies/lodestone-dev-patch/)
 - [FFXIV 1.x Lodestone Lore - GC Newsletters, The Last Word, Events](../studies/lodestone-lore/)
 - [FFXIV 1.0 Lodestone Official Game Manual](../studies/lodestone-manual/)
-- [Lobby Handshake Decryptability Triage](../studies/lobby-handshake-triage/)
+- [Lobby Handshake Decryptability and Recipe Test](../studies/lobby-handshake-triage/)
 - [Movement Speed Band Observations](../studies/movement-speed-band-observations/)
 - [The Bowl of Embers (Ifrit) - Video Breakdown](../studies/primal-battle-ifrit-bowl-of-embers/)
 - [Project Meteor Wiki - RE Residual](../studies/project-meteor-wiki/)

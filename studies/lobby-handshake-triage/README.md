@@ -2,13 +2,14 @@
 
 ## Study contents
 
-This bounded packet-capture study inventories the canonical session and zone-transition members that could contain a lobby or pre-zone handshake. It records the TLS-versus-raw classification, raw lobby ciphertext targets, and a refuted capture-native decrypt recipe.
+This bounded packet-capture study inventories the canonical session and zone-transition members that could contain a lobby or pre-zone handshake. It records the TLS-versus-raw classification, raw lobby ciphertext targets, and an inconclusive capture-native decrypt recipe test.
 
 ## Start here
 
 - `derived/triage.md` - inventory, verdict, and packet/frame locators.
 - `derived/server-utc.md` - client-number wire fields and bounded constant census.
-- `derived/decrypt-recipe.md` - capture-native key inputs, ciphertext locators, and recipe verdict.
+- `derived/decrypt-recipe.md` - capture-native key inputs, ciphertext locators,
+  bounded isolation matrix, and inconclusive verdict.
 
 ## Source material
 
@@ -28,9 +29,9 @@ This bounded packet-capture study inventories the canonical session and zone-tra
   initial server frame and InitialSessionData; the repeat connection carries
   1356916763 at the same offsets.
 - Both client requests carry the ticket phrase `Test Ticket Data` in plaintext.
-- Raw-MD5 Blowfish-ECB with the capture-native inputs does not produce coherent
-  lobby plaintext; common mode, digest-encoding, and ticket-width variants also
-  fail.
+- Raw-MD5 Blowfish with the capture-native inputs does not produce coherent
+  lobby plaintext; bounded body, mode, encoding, ticket-width, and constant
+  variants also fail. This does not isolate the `1000` input as wrong.
 
 ## Topics
 
@@ -44,11 +45,13 @@ This bounded packet-capture study inventories the canonical session and zone-tra
 ## Evidence gaps
 
 - The cipher, key, mode, and plaintext for the raw 54994 body remain unverified;
-  the tested recipe is refuted.
+  the tested construction fails, but the `1000` input remains inconclusive.
 - Server-side client-number comparison and rejection policy remain unverified.
 - Packet numbers are 1-based capture positions; stream offsets and frame boundaries come from the repository lane/frame reconstruction.
 - The canonical decoder excludes `login.pcapng`; this triage preserves its mixed transport evidence without changing generated products.
 
 ## Further research
 
-- A consumer may test a materially different, independently sourced decrypt using the raw locators in `derived/triage.md`; retain the failed parameters in `derived/decrypt-recipe.md`.
+- Establish one missing key-material or cipher-setup detail from independent
+  retail-client evidence, then rerun the four fixed targets using the locators
+  in `derived/triage.md`.
