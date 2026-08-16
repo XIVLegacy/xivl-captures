@@ -34,7 +34,9 @@ keeps the existing corpus view, while the lane product preserves connection
 attribution.
 
 `login.pcapng` contains TLS account-service traffic and later raw lobby traffic
-whose bodies remain undecoded. It is excluded from game-protocol extraction.
+whose bodies are decodable by the confirmed recipe recorded in
+`studies/lobby-handshake-triage/`. It remains excluded from game-protocol
+extraction pending a decoder implementation.
 
 ### Outer frames
 

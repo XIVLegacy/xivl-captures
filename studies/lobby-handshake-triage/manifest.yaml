@@ -13,7 +13,7 @@ tags:
 - packet-decryptability
 - server-utc
 - client-number
-- decrypt-inconclusive
+- decrypt-recovered
 search_hints:
 - login.pcapng
 - secure.square-enix.com
@@ -26,11 +26,11 @@ notes: >-
   Bounded inventory of the canonical 1.23b session and zone-transition
   captures. login.pcapng contains TLS account traffic and raw lobby traffic;
   the latter provides packet/frame locators for a possible Blowfish body and
-  for the clear initial client-number and ticket fields. A capture-native
-  raw-MD5 Blowfish recipe and bounded body, encoding, mode, and constant
-  variants recovered no plaintext. The result is inconclusive for the 1000
-  constant because no alternative succeeded. This study records no decrypted
-  lobby body or server-side comparison policy.
+  for the clear initial client-number and ticket fields. The confirmed recipe
+  hashes the full 44-byte zero-padded session field with MD5, uses Blowfish ECB
+  with sign-extended key bytes, and recovers plaintext on both connections.
+  The 1000 constant is confirmed; server-side comparison policy remains
+  unverified.
 source_refs:
 - source: pcap-1.23b
 primary_paths:

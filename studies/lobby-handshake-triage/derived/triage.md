@@ -2,12 +2,32 @@
 
 ## Verdict: GO
 
-`login.pcapng` contains a raw lobby target candidate. Its account service is TLS-wrapped, but two later TCP connections to `202.67.50.8:54994` carry the 1.23b outer frame and sub-event headers in the clear, followed by body bytes that are not decoded here. The candidate ciphertext regions are recorded below; no Blowfish decryption, key recovery, or plaintext assertion was attempted.
+`login.pcapng` contains two raw lobby connections. Its account service is
+TLS-wrapped, but the later TCP connections to `202.67.50.8:54994` carry the
+1.23b outer frame and sub-event headers in the clear, followed by bodies that
+are decoded by the confirmed recipe in `derived/decrypt-recipe.md`.
 
 The closed corpus therefore does not impose a TLS-only ceiling on lobby key
 research. `login.pcapng` is the specific non-TLS lobby capture available to a
-decrypt lane. This transport verdict does not confirm any key-generation
-constant; the separately recorded recipe test did not recover plaintext.
+decrypt lane. The recipe confirms the key construction and plaintext, while
+the capture remains outside the canonical game decode pending a decoder
+implementation.
+
+## Decrypt confirmation
+
+The recipe uses a 44-byte MD5 input consisting of little-endian
+`0x12345678`, the little-endian `clientNumber`, little-endian `1000`, the exact
+16-byte `Test Ticket Data` string, and 16 zero bytes. It uses raw MD5 bytes as
+a 16-round Blowfish ECB key, with the `MOVSX` sign-extension behavior recorded
+by `BCS-Y-0013` (`BF_set_key` at `0x0045ABF0`). The key install is cataloged by
+`BCS-Y-0008` (`LobbyCryptEngine::SetSessionKey` at `0x00DA1670`).
+
+The first and repeat connections use client numbers 1356916754
+(`0x50E0E812`) and 1356916763 (`0x50E0E81B`), producing keys
+`b4ee3f6c016f5bd971500db185a2ab43` and
+`17a66dfb75f3d3663d9deb1e06c42791`. The recovered bodies contain the literal
+`FINAL FANTASY XIV`, version `2012.09.19.0001`, a session token, character
+names, and a world-server handoff string.
 
 ## Canonical inventory
 
@@ -36,4 +56,7 @@ The stream/frame offsets above are from `tools/extractors/extract_streams.py` la
 
 ## Boundary
 
-This record establishes only that a raw 54994 lobby body is available for a future decrypt attempt. It does not identify Blowfish parameters or derive a key. The observed raw lane contradicts the existing pure-TLS caveat in `sources/pcap-1.23b/manifest.yaml:204-208`; generated catalog and scenario files remain outside this triage scope.
+This record establishes the raw 54994 lobby bodies and points to their
+confirmed decryption recipe. The capture remains outside the canonical game
+decode pending a decoder implementation. The observed raw lane corrected the
+older pure-TLS caveat in `sources/pcap-1.23b/manifest.yaml:204-208`.

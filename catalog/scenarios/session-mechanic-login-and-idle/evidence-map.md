@@ -27,4 +27,4 @@ Union across the member captures. `name` is the derived/opcode_names.json entry 
 ## Gaps / caveats
 
 - Opcode identity and framing only; decoded payload field semantics live in this repo's `derived/` (payload_layouts.json and friends).
-- login.pcapng contains TLS account-service connections and later raw lobby connections on TCP 54994. The lobby bodies remain undecoded after a tested decrypt recipe was refuted, so the capture is excluded from the canonical game decode and contributes zero observed opcodes here.
+- login.pcapng contains TLS account-service connections and later raw lobby connections on TCP 54994. The lobby bodies are decodable by the confirmed recipe in the lobby-handshake study, but the capture remains outside the canonical game decode pending a decoder implementation and contributes zero observed opcodes here.

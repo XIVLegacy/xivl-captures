@@ -1074,7 +1074,7 @@ studies:
   - packet-decryptability
   - server-utc
   - client-number
-  - decrypt-inconclusive
+  - decrypt-recovered
   search_hints:
   - login.pcapng
   - secure.square-enix.com
