@@ -1,8 +1,13 @@
 # Lobby Handshake Triage Record
 
-## Verdict
+## Verdict: GO
 
 `login.pcapng` contains a raw lobby target candidate. Its account service is TLS-wrapped, but two later TCP connections to `202.67.50.8:54994` carry the 1.23b outer frame and sub-event headers in the clear, followed by body bytes that are not decoded here. The candidate ciphertext regions are recorded below; no Blowfish decryption, key recovery, or plaintext assertion was attempted.
+
+The closed corpus therefore does not impose a TLS-only ceiling on lobby key
+research. `login.pcapng` is the specific non-TLS lobby capture available to a
+decrypt lane. This transport verdict does not confirm any key-generation
+constant; the separately recorded recipe test did not recover plaintext.
 
 ## Canonical inventory
 
