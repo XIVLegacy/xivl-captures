@@ -13,7 +13,7 @@ tags:
 - packet-decryptability
 - server-utc
 - client-number
-- decrypt-refuted
+- decrypt-inconclusive
 search_hints:
 - login.pcapng
 - secure.square-enix.com
@@ -27,8 +27,10 @@ notes: >-
   captures. login.pcapng contains TLS account traffic and raw lobby traffic;
   the latter provides packet/frame locators for a possible Blowfish body and
   for the clear initial client-number and ticket fields. A capture-native
-  raw-MD5 Blowfish-ECB recipe and common encoding variants were refuted. This
-  study records no decrypted lobby body or server-side comparison policy.
+  raw-MD5 Blowfish recipe and bounded body, encoding, mode, and constant
+  variants recovered no plaintext. The result is inconclusive for the 1000
+  constant because no alternative succeeded. This study records no decrypted
+  lobby body or server-side comparison policy.
 source_refs:
 - source: pcap-1.23b
 primary_paths:
