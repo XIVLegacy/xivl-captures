@@ -132,8 +132,8 @@ def scan() -> tuple[list[dict], list[dict], list[dict], dict]:
             "Numeric fields remain wire observations unless the static client layout names them.",
         ],
     }
-    expected = {"0x017A": 272, "0x017C": 361, "0x017D": 361, "0x017E": 361,
-                "0x017F": 27, "0x0183": 371, "0x0187": 42, "0x018B": 287}
+    expected = {"0x017A": 275, "0x017C": 365, "0x017D": 365, "0x017E": 365,
+                "0x017F": 31, "0x0183": 371, "0x0187": 44, "0x018B": 287}
     if dict(sorted(counts.items())) != expected:
         raise ValueError(f"corpus counts changed: {dict(sorted(counts.items()))}")
     return packets, members, roles, account

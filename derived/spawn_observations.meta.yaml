@@ -4,7 +4,7 @@ evidence_class: packet-capture
 schema_version: 1
 output:
   file: derived/spawn_observations.json
-  sha256: bc5637103d399dfc8031fc69041315d603fedf948730c2d3fe86088b35c4eaa2
+  sha256: 69f7a21ef4b7bd0c48cafc1c7db68884b9273bfa3fd03043303633106e940581
 generator:
   tool: tools/extractors/extract_spawn_observations.py
   version: '1'

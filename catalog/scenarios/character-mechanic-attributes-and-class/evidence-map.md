@@ -1,6 +1,10 @@
 # Attributes and Class Switching - Evidence Map
 
-Reference scenario. Raw captures live in this repo's `sources/pcap-1.23b/objects/`; this map distils their opcode evidence by joining this repo's own `derived/observations.json` (numeric truth) against `derived/opcode_names.json` (names, promoted from xivl-opcodes:opcodes.json).
+This map joins two repository-owned products:
+
+- `derived/observations.json` supplies numeric observations.
+- `derived/opcode_names.json` supplies names promoted from xivl-opcodes:opcodes.json.
+- Raw captures live in `sources/pcap-1.23b/objects/`.
 
 ## Captures (4)
 
@@ -24,7 +28,7 @@ Union across the member captures. `name` is the derived/opcode_names.json entry 
 | `0x00e3` | map | clientbound | SetActorQuestGraphicPacket | - | 40 |
 | `0x012d` | map | serverbound | EventStartPacket | - | 216 |
 | `0x012e` | map | serverbound | EventUpdatePacket | - | 120 |
-| `0x012f` | map | serverbound | ActorWorkUpdatePacket | - | 72 |
+| `0x012f` | map | serverbound | WorkStateUpdatePacket | - | 72 |
 | `0x0130` | map | clientbound | RunEventFunctionPacket | Application::Lua::Script::Client::Command::Network::StartServerOrderEventFunctionReceiver | 176 |
 | `0x0131` | map | clientbound | EndEventPacket | Application::Lua::Script::Client::Command::Network::EndClientOrderEventReceiver | 80 |
 | `0x0137` | map | clientbound | SetActorPropetyPacket | Application::Lua::Script::Client::Command::Network::SyncMemoryReceiver | 168 |
@@ -41,12 +45,12 @@ Union across the member captures. `name` is the derived/opcode_names.json entry 
 | `0x015b` | map | clientbound | _0x015B | Application::Lua::Script::Client::Command::Network::SendLogReceiver | 112 |
 | `0x016d` | map | clientbound | InventoryBeginChangePacket | - | 40 |
 | `0x016e` | map | clientbound | InventoryEndChangePacket | - | 40 |
-| `0x018d` | map | clientbound | _0x018D | - | 696 |
+| `0x018d` | map | clientbound | PartyMapMarkerUpdatePacket | - | 696 |
 | `0x01a4` | map | clientbound | SetCurrentJobPacket | Application::Lua::Script::Client::Command::Network::JobChangeReceiver | 40 |
 
 ## Verification
 
-- Every opcode above is sourced from this repo's own `derived/observations.json` (numeric truth) joined against `derived/opcode_names.json` (names) for the member pcaps - no hand-asserted opcodes.
+- Every opcode above comes from `derived/observations.json` joined with `derived/opcode_names.json` for the member pcaps. No opcode is added manually.
 - Member sizes and sha256 were taken from this repo's `sources/pcap-1.23b/objects/`; the canonical hashes live in `sources/pcap-1.23b/manifest.yaml`.
 
 ## Gaps / caveats

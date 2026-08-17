@@ -35,6 +35,7 @@
     "inventory.pcapng",
     "invite_join_party.pcapng",
     "local_leve_complete.pcapng",
+    "login.pcapng",
     "mount_unmount_chocobo.pcapng",
     "move_around_gridania.pcapng",
     "move_out_of_room.pcapng",
@@ -60,7 +61,7 @@
       "c2s": {
         "0x00ca": {
           "opcode": 202,
-          "totalCount": 16757,
+          "totalCount": 16867,
           "innerSizes": [
             20
           ],
@@ -99,6 +100,7 @@
             "inventory.pcapng",
             "invite_join_party.pcapng",
             "local_leve_complete.pcapng",
+            "login.pcapng",
             "mount_unmount_chocobo.pcapng",
             "move_around_gridania.pcapng",
             "move_out_of_room.pcapng",
@@ -122,7 +124,7 @@
         },
         "0x0001": {
           "opcode": 1,
-          "totalCount": 3329,
+          "totalCount": 3371,
           "innerSizes": [
             20
           ],
@@ -161,6 +163,7 @@
             "inventory.pcapng",
             "invite_join_party.pcapng",
             "local_leve_complete.pcapng",
+            "login.pcapng",
             "mount_unmount_chocobo.pcapng",
             "move_around_gridania.pcapng",
             "move_out_of_room.pcapng",
@@ -348,7 +351,7 @@
         },
         "0x0133": {
           "opcode": 307,
-          "totalCount": 268,
+          "totalCount": 270,
           "innerSizes": [
             20
           ],
@@ -359,6 +362,7 @@
             "gridania_to_coerthas.pcapng",
             "invite_join_party.pcapng",
             "local_leve_complete.pcapng",
+            "login.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
             "party_battle_leve.pcapng",
@@ -403,12 +407,13 @@
         },
         "0x0007": {
           "opcode": 7,
-          "totalCount": 8,
+          "totalCount": 24,
           "innerSizes": [
             20
           ],
           "observedIn": [
             "gridania_to_coerthas.pcapng",
+            "login.pcapng",
             "move_out_of_room.pcapng",
             "party_battle_leve.pcapng",
             "return_to_inn.pcapng",
@@ -417,12 +422,62 @@
             "teleport_to_gridania.pcapng",
             "war_quest_update2.pcapng"
           ]
+        },
+        "0x0002": {
+          "opcode": 2,
+          "totalCount": 1,
+          "innerSizes": [
+            20
+          ],
+          "observedIn": [
+            "login.pcapng"
+          ]
+        },
+        "0x0006": {
+          "opcode": 6,
+          "totalCount": 1,
+          "innerSizes": [
+            20
+          ],
+          "observedIn": [
+            "login.pcapng"
+          ]
+        },
+        "0x01cb": {
+          "opcode": 459,
+          "totalCount": 1,
+          "innerSizes": [
+            20
+          ],
+          "observedIn": [
+            "login.pcapng"
+          ]
+        },
+        "0x01ce": {
+          "opcode": 462,
+          "totalCount": 1,
+          "innerSizes": [
+            20
+          ],
+          "observedIn": [
+            "login.pcapng"
+          ]
+        },
+        "0x01d3": {
+          "opcode": 467,
+          "totalCount": 1,
+          "innerSizes": [
+            20
+          ],
+          "observedIn": [
+            "login.pcapng"
+          ]
         }
       },
       "s2c": {
         "0x0001": {
           "opcode": 1,
-          "totalCount": 3418,
+          "totalCount": 3458,
           "innerSizes": [
             20
           ],
@@ -461,6 +516,7 @@
             "inventory.pcapng",
             "invite_join_party.pcapng",
             "local_leve_complete.pcapng",
+            "login.pcapng",
             "mount_unmount_chocobo.pcapng",
             "move_around_gridania.pcapng",
             "move_out_of_room.pcapng",
@@ -484,7 +540,7 @@
         },
         "0x00cf": {
           "opcode": 207,
-          "totalCount": 14991,
+          "totalCount": 15100,
           "innerSizes": [
             20
           ],
@@ -523,6 +579,7 @@
             "inventory.pcapng",
             "invite_join_party.pcapng",
             "local_leve_complete.pcapng",
+            "login.pcapng",
             "move_around_gridania.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
@@ -707,7 +764,7 @@
         },
         "0x0137": {
           "opcode": 311,
-          "totalCount": 1992,
+          "totalCount": 2014,
           "innerSizes": [
             20
           ],
@@ -734,6 +791,7 @@
             "harvest.pcapng",
             "inventory.pcapng",
             "local_leve_complete.pcapng",
+            "login.pcapng",
             "move_around_gridania.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
@@ -828,7 +886,7 @@
         },
         "0x0144": {
           "opcode": 324,
-          "totalCount": 982,
+          "totalCount": 992,
           "innerSizes": [
             20
           ],
@@ -847,6 +905,7 @@
             "gridania_to_coerthas.pcapng",
             "harvest.pcapng",
             "local_leve_complete.pcapng",
+            "login.pcapng",
             "move_around_gridania.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
@@ -864,7 +923,7 @@
         },
         "0x00d0": {
           "opcode": 208,
-          "totalCount": 1237,
+          "totalCount": 1247,
           "innerSizes": [
             20
           ],
@@ -883,6 +942,7 @@
             "gridania_to_coerthas.pcapng",
             "harvest.pcapng",
             "local_leve_complete.pcapng",
+            "login.pcapng",
             "mount_unmount_chocobo.pcapng",
             "move_around_gridania.pcapng",
             "move_out_of_room.pcapng",
@@ -932,7 +992,7 @@
         },
         "0x0134": {
           "opcode": 308,
-          "totalCount": 902,
+          "totalCount": 912,
           "innerSizes": [
             20
           ],
@@ -944,6 +1004,7 @@
             "gather_wood.pcapng",
             "gridania_to_coerthas.pcapng",
             "local_leve_complete.pcapng",
+            "login.pcapng",
             "mount_unmount_chocobo.pcapng",
             "move_around_gridania.pcapng",
             "move_out_of_room.pcapng",
@@ -982,7 +1043,7 @@
         },
         "0x016d": {
           "opcode": 365,
-          "totalCount": 80,
+          "totalCount": 81,
           "innerSizes": [
             20
           ],
@@ -999,6 +1060,7 @@
             "gridania_to_coerthas.pcapng",
             "harvest.pcapng",
             "local_leve_complete.pcapng",
+            "login.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
             "party_battle_leve.pcapng",
@@ -1015,7 +1077,7 @@
         },
         "0x0146": {
           "opcode": 326,
-          "totalCount": 151,
+          "totalCount": 158,
           "innerSizes": [
             20
           ],
@@ -1032,6 +1094,7 @@
             "gridania_to_coerthas.pcapng",
             "harvest.pcapng",
             "local_leve_complete.pcapng",
+            "login.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
             "party_battle_leve.pcapng",
@@ -1072,7 +1135,7 @@
         },
         "0x0147": {
           "opcode": 327,
-          "totalCount": 151,
+          "totalCount": 158,
           "innerSizes": [
             20
           ],
@@ -1089,6 +1152,7 @@
             "gridania_to_coerthas.pcapng",
             "harvest.pcapng",
             "local_leve_complete.pcapng",
+            "login.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
             "party_battle_leve.pcapng",
@@ -1105,7 +1169,7 @@
         },
         "0x016e": {
           "opcode": 366,
-          "totalCount": 80,
+          "totalCount": 81,
           "innerSizes": [
             20
           ],
@@ -1122,6 +1186,7 @@
             "gridania_to_coerthas.pcapng",
             "harvest.pcapng",
             "local_leve_complete.pcapng",
+            "login.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
             "party_battle_leve.pcapng",
@@ -1161,7 +1226,7 @@
         },
         "0x0149": {
           "opcode": 329,
-          "totalCount": 40,
+          "totalCount": 43,
           "innerSizes": [
             20
           ],
@@ -1171,6 +1236,7 @@
             "from_gridania_to_blackshroud.pcapng",
             "gear_changeweapon.pcapng",
             "gridania_to_coerthas.pcapng",
+            "login.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
             "return_to_inn.pcapng",
@@ -1197,7 +1263,7 @@
         },
         "0x00d6": {
           "opcode": 214,
-          "totalCount": 754,
+          "totalCount": 760,
           "innerSizes": [
             20
           ],
@@ -1211,6 +1277,7 @@
             "gear_changeweapon.pcapng",
             "gridania_to_coerthas.pcapng",
             "local_leve_complete.pcapng",
+            "login.pcapng",
             "move_around_gridania.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
@@ -1302,7 +1369,7 @@
         },
         "0x017a": {
           "opcode": 378,
-          "totalCount": 272,
+          "totalCount": 275,
           "innerSizes": [
             20
           ],
@@ -1313,6 +1380,7 @@
             "gridania_to_coerthas.pcapng",
             "invite_join_party.pcapng",
             "local_leve_complete.pcapng",
+            "login.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
             "party_battle_leve.pcapng",
@@ -1326,7 +1394,7 @@
         },
         "0x000c": {
           "opcode": 12,
-          "totalCount": 25,
+          "totalCount": 26,
           "innerSizes": [
             20
           ],
@@ -1336,6 +1404,7 @@
             "from_gridania_to_blackshroud.pcapng",
             "gridania_to_coerthas.pcapng",
             "local_leve_complete.pcapng",
+            "login.pcapng",
             "mount_unmount_chocobo.pcapng",
             "move_out_of_room.pcapng",
             "party_battle_leve.pcapng",
@@ -1347,7 +1416,7 @@
         },
         "0x0187": {
           "opcode": 391,
-          "totalCount": 42,
+          "totalCount": 44,
           "innerSizes": [
             20
           ],
@@ -1357,6 +1426,7 @@
             "from_gridania_to_blackshroud.pcapng",
             "gridania_to_coerthas.pcapng",
             "invite_join_party.pcapng",
+            "login.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
             "party_battle_leve.pcapng",
@@ -1395,7 +1465,7 @@
         },
         "0x00ca": {
           "opcode": 202,
-          "totalCount": 821,
+          "totalCount": 831,
           "innerSizes": [
             20
           ],
@@ -1405,6 +1475,7 @@
             "gather_wood.pcapng",
             "gridania_to_coerthas.pcapng",
             "local_leve_complete.pcapng",
+            "login.pcapng",
             "move_around_gridania.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
@@ -1420,7 +1491,7 @@
         },
         "0x016b": {
           "opcode": 363,
-          "totalCount": 887,
+          "totalCount": 896,
           "innerSizes": [
             20
           ],
@@ -1430,6 +1501,7 @@
             "gather_wood.pcapng",
             "gridania_to_coerthas.pcapng",
             "local_leve_complete.pcapng",
+            "login.pcapng",
             "move_around_gridania.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
@@ -1445,7 +1517,7 @@
         },
         "0x00ce": {
           "opcode": 206,
-          "totalCount": 930,
+          "totalCount": 940,
           "innerSizes": [
             20
           ],
@@ -1456,6 +1528,7 @@
             "gridania_to_coerthas.pcapng",
             "harvest.pcapng",
             "local_leve_complete.pcapng",
+            "login.pcapng",
             "move_around_gridania.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
@@ -1471,7 +1544,7 @@
         },
         "0x013d": {
           "opcode": 317,
-          "totalCount": 821,
+          "totalCount": 831,
           "innerSizes": [
             20
           ],
@@ -1481,6 +1554,7 @@
             "gather_wood.pcapng",
             "gridania_to_coerthas.pcapng",
             "local_leve_complete.pcapng",
+            "login.pcapng",
             "move_around_gridania.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
@@ -1496,7 +1570,7 @@
         },
         "0x017c": {
           "opcode": 380,
-          "totalCount": 361,
+          "totalCount": 365,
           "innerSizes": [
             20
           ],
@@ -1507,6 +1581,7 @@
             "gridania_to_coerthas.pcapng",
             "invite_join_party.pcapng",
             "local_leve_complete.pcapng",
+            "login.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
             "party_battle_leve.pcapng",
@@ -1520,7 +1595,7 @@
         },
         "0x017d": {
           "opcode": 381,
-          "totalCount": 361,
+          "totalCount": 365,
           "innerSizes": [
             20
           ],
@@ -1531,6 +1606,7 @@
             "gridania_to_coerthas.pcapng",
             "invite_join_party.pcapng",
             "local_leve_complete.pcapng",
+            "login.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
             "party_battle_leve.pcapng",
@@ -1563,7 +1639,7 @@
         },
         "0x017e": {
           "opcode": 382,
-          "totalCount": 361,
+          "totalCount": 365,
           "innerSizes": [
             20
           ],
@@ -1574,6 +1650,7 @@
             "gridania_to_coerthas.pcapng",
             "invite_join_party.pcapng",
             "local_leve_complete.pcapng",
+            "login.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
             "party_battle_leve.pcapng",
@@ -1587,7 +1664,7 @@
         },
         "0x0179": {
           "opcode": 377,
-          "totalCount": 821,
+          "totalCount": 831,
           "innerSizes": [
             20
           ],
@@ -1597,6 +1674,7 @@
             "gather_wood.pcapng",
             "gridania_to_coerthas.pcapng",
             "local_leve_complete.pcapng",
+            "login.pcapng",
             "move_around_gridania.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
@@ -1612,7 +1690,7 @@
         },
         "0x0145": {
           "opcode": 325,
-          "totalCount": 822,
+          "totalCount": 832,
           "innerSizes": [
             20
           ],
@@ -1623,6 +1701,7 @@
             "gridania_to_coerthas.pcapng",
             "invite_join_party.pcapng",
             "local_leve_complete.pcapng",
+            "login.pcapng",
             "move_around_gridania.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
@@ -1638,7 +1717,7 @@
         },
         "0x017b": {
           "opcode": 379,
-          "totalCount": 834,
+          "totalCount": 844,
           "innerSizes": [
             20
           ],
@@ -1648,6 +1727,7 @@
             "gather_wood.pcapng",
             "gridania_to_coerthas.pcapng",
             "local_leve_complete.pcapng",
+            "login.pcapng",
             "move_around_gridania.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
@@ -1663,7 +1743,7 @@
         },
         "0x00cc": {
           "opcode": 204,
-          "totalCount": 821,
+          "totalCount": 831,
           "innerSizes": [
             20
           ],
@@ -1673,6 +1753,7 @@
             "gather_wood.pcapng",
             "gridania_to_coerthas.pcapng",
             "local_leve_complete.pcapng",
+            "login.pcapng",
             "move_around_gridania.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
@@ -1860,13 +1941,14 @@
         },
         "0x012e": {
           "opcode": 302,
-          "totalCount": 393,
+          "totalCount": 397,
           "innerSizes": [
             20
           ],
           "observedIn": [
             "from_gridania_to_blackshroud.pcapng",
             "gridania_to_coerthas.pcapng",
+            "login.pcapng",
             "move_around_gridania.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
@@ -1880,13 +1962,14 @@
         },
         "0x0136": {
           "opcode": 310,
-          "totalCount": 597,
+          "totalCount": 603,
           "innerSizes": [
             20
           ],
           "observedIn": [
             "from_gridania_to_blackshroud.pcapng",
             "gridania_to_coerthas.pcapng",
+            "login.pcapng",
             "move_around_gridania.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
@@ -1901,13 +1984,14 @@
         },
         "0x016f": {
           "opcode": 367,
-          "totalCount": 196,
+          "totalCount": 198,
           "innerSizes": [
             20
           ],
           "observedIn": [
             "from_gridania_to_blackshroud.pcapng",
             "gridania_to_coerthas.pcapng",
+            "login.pcapng",
             "move_around_gridania.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
@@ -1921,13 +2005,14 @@
         },
         "0x0010": {
           "opcode": 16,
-          "totalCount": 12,
+          "totalCount": 13,
           "innerSizes": [
             20
           ],
           "observedIn": [
             "from_gridania_to_blackshroud.pcapng",
             "gridania_to_coerthas.pcapng",
+            "login.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
             "return_to_inn.pcapng",
@@ -1956,13 +2041,14 @@
         },
         "0x0005": {
           "opcode": 5,
-          "totalCount": 11,
+          "totalCount": 12,
           "innerSizes": [
             20
           ],
           "observedIn": [
             "from_gridania_to_blackshroud.pcapng",
             "gridania_to_coerthas.pcapng",
+            "login.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
             "return_to_inn.pcapng",
@@ -1973,13 +2059,14 @@
         },
         "0x0132": {
           "opcode": 306,
-          "totalCount": 88,
+          "totalCount": 96,
           "innerSizes": [
             20
           ],
           "observedIn": [
             "from_gridania_to_blackshroud.pcapng",
             "gridania_to_coerthas.pcapng",
+            "login.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
             "return_to_inn.pcapng",
@@ -1990,13 +2077,14 @@
         },
         "0x000f": {
           "opcode": 15,
-          "totalCount": 13,
+          "totalCount": 14,
           "innerSizes": [
             20
           ],
           "observedIn": [
             "from_gridania_to_blackshroud.pcapng",
             "gridania_to_coerthas.pcapng",
+            "login.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
             "party_battle_leve.pcapng",
@@ -2009,7 +2097,7 @@
         },
         "0x017f": {
           "opcode": 383,
-          "totalCount": 27,
+          "totalCount": 31,
           "innerSizes": [
             20
           ],
@@ -2017,6 +2105,7 @@
             "from_gridania_to_blackshroud.pcapng",
             "gridania_to_coerthas.pcapng",
             "invite_join_party.pcapng",
+            "login.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
             "party_battle_leve.pcapng",
@@ -2029,13 +2118,14 @@
         },
         "0x014b": {
           "opcode": 331,
-          "totalCount": 71,
+          "totalCount": 77,
           "innerSizes": [
             20
           ],
           "observedIn": [
             "from_gridania_to_blackshroud.pcapng",
             "gridania_to_coerthas.pcapng",
+            "login.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
             "return_to_inn.pcapng",
@@ -2047,13 +2137,14 @@
         },
         "0x014a": {
           "opcode": 330,
-          "totalCount": 11,
+          "totalCount": 12,
           "innerSizes": [
             20
           ],
           "observedIn": [
             "from_gridania_to_blackshroud.pcapng",
             "gridania_to_coerthas.pcapng",
+            "login.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
             "return_to_inn.pcapng",
@@ -2064,13 +2155,14 @@
         },
         "0x014e": {
           "opcode": 334,
-          "totalCount": 23,
+          "totalCount": 25,
           "innerSizes": [
             20
           ],
           "observedIn": [
             "from_gridania_to_blackshroud.pcapng",
             "gridania_to_coerthas.pcapng",
+            "login.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
             "return_to_inn.pcapng",
@@ -2082,13 +2174,14 @@
         },
         "0x0194": {
           "opcode": 404,
-          "totalCount": 13,
+          "totalCount": 14,
           "innerSizes": [
             20
           ],
           "observedIn": [
             "from_gridania_to_blackshroud.pcapng",
             "gridania_to_coerthas.pcapng",
+            "login.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
             "party_battle_leve.pcapng",
@@ -2101,13 +2194,14 @@
         },
         "0x019d": {
           "opcode": 413,
-          "totalCount": 13,
+          "totalCount": 14,
           "innerSizes": [
             20
           ],
           "observedIn": [
             "from_gridania_to_blackshroud.pcapng",
             "gridania_to_coerthas.pcapng",
+            "login.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
             "party_battle_leve.pcapng",
@@ -2120,7 +2214,7 @@
         },
         "0x01a4": {
           "opcode": 420,
-          "totalCount": 17,
+          "totalCount": 18,
           "innerSizes": [
             20
           ],
@@ -2128,6 +2222,7 @@
             "from_gridania_to_blackshroud.pcapng",
             "gear_changesoul.pcapng",
             "gridania_to_coerthas.pcapng",
+            "login.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
             "party_battle_leve.pcapng",
@@ -2141,13 +2236,14 @@
         },
         "0x0196": {
           "opcode": 406,
-          "totalCount": 11,
+          "totalCount": 12,
           "innerSizes": [
             20
           ],
           "observedIn": [
             "from_gridania_to_blackshroud.pcapng",
             "gridania_to_coerthas.pcapng",
+            "login.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
             "return_to_inn.pcapng",
@@ -2158,13 +2254,14 @@
         },
         "0x0198": {
           "opcode": 408,
-          "totalCount": 11,
+          "totalCount": 12,
           "innerSizes": [
             20
           ],
           "observedIn": [
             "from_gridania_to_blackshroud.pcapng",
             "gridania_to_coerthas.pcapng",
+            "login.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
             "return_to_inn.pcapng",
@@ -2175,13 +2272,14 @@
         },
         "0x0199": {
           "opcode": 409,
-          "totalCount": 11,
+          "totalCount": 12,
           "innerSizes": [
             20
           ],
           "observedIn": [
             "from_gridania_to_blackshroud.pcapng",
             "gridania_to_coerthas.pcapng",
+            "login.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
             "return_to_inn.pcapng",
@@ -2192,13 +2290,14 @@
         },
         "0x019a": {
           "opcode": 410,
-          "totalCount": 11,
+          "totalCount": 12,
           "innerSizes": [
             20
           ],
           "observedIn": [
             "from_gridania_to_blackshroud.pcapng",
             "gridania_to_coerthas.pcapng",
+            "login.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
             "return_to_inn.pcapng",
@@ -2209,13 +2308,14 @@
         },
         "0x019b": {
           "opcode": 411,
-          "totalCount": 11,
+          "totalCount": 12,
           "innerSizes": [
             20
           ],
           "observedIn": [
             "from_gridania_to_blackshroud.pcapng",
             "gridania_to_coerthas.pcapng",
+            "login.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
             "return_to_inn.pcapng",
@@ -2226,13 +2326,14 @@
         },
         "0x019c": {
           "opcode": 412,
-          "totalCount": 11,
+          "totalCount": 12,
           "innerSizes": [
             20
           ],
           "observedIn": [
             "from_gridania_to_blackshroud.pcapng",
             "gridania_to_coerthas.pcapng",
+            "login.pcapng",
             "move_out_of_room.pcapng",
             "moving_around_gridania.pcapng",
             "return_to_inn.pcapng",
@@ -2408,6 +2509,97 @@
             "war_quest_update2.pcapng"
           ]
         },
+        "0x0002": {
+          "opcode": 2,
+          "totalCount": 1,
+          "innerSizes": [
+            20
+          ],
+          "observedIn": [
+            "login.pcapng"
+          ]
+        },
+        "0x0003": {
+          "opcode": 3,
+          "totalCount": 9,
+          "innerSizes": [
+            20
+          ],
+          "observedIn": [
+            "login.pcapng"
+          ]
+        },
+        "0x01a3": {
+          "opcode": 419,
+          "totalCount": 2,
+          "innerSizes": [
+            20
+          ],
+          "observedIn": [
+            "login.pcapng",
+            "return_to_inn.pcapng"
+          ]
+        },
+        "0x01a7": {
+          "opcode": 423,
+          "totalCount": 1,
+          "innerSizes": [
+            20
+          ],
+          "observedIn": [
+            "login.pcapng"
+          ]
+        },
+        "0x018a": {
+          "opcode": 394,
+          "totalCount": 1,
+          "innerSizes": [
+            20
+          ],
+          "observedIn": [
+            "login.pcapng"
+          ]
+        },
+        "0x0189": {
+          "opcode": 393,
+          "totalCount": 1,
+          "innerSizes": [
+            20
+          ],
+          "observedIn": [
+            "login.pcapng"
+          ]
+        },
+        "0x01cb": {
+          "opcode": 459,
+          "totalCount": 1,
+          "innerSizes": [
+            20
+          ],
+          "observedIn": [
+            "login.pcapng"
+          ]
+        },
+        "0x01ce": {
+          "opcode": 462,
+          "totalCount": 1,
+          "innerSizes": [
+            20
+          ],
+          "observedIn": [
+            "login.pcapng"
+          ]
+        },
+        "0x01d3": {
+          "opcode": 467,
+          "totalCount": 1,
+          "innerSizes": [
+            20
+          ],
+          "observedIn": [
+            "login.pcapng"
+          ]
+        },
         "0x0175": {
           "opcode": 373,
           "totalCount": 1,
@@ -2465,16 +2657,6 @@
           "observedIn": [
             "moving_around_gridania.pcapng",
             "teleport_to_camp_tranquil.pcapng"
-          ]
-        },
-        "0x01a3": {
-          "opcode": 419,
-          "totalCount": 1,
-          "innerSizes": [
-            20
-          ],
-          "observedIn": [
-            "return_to_inn.pcapng"
           ]
         },
         "0x0153": {

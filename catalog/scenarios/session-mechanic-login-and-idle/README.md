@@ -13,7 +13,7 @@ This is a **packet-capture reference scenario**. The raw pcaps live in this repo
 
 ## Raw materials
 
-- `sources/pcap-1.23b/objects/login.pcapng` (856,236 B, 0 opcodes).
+- `sources/pcap-1.23b/objects/login.pcapng` (856,236 B, 58 opcodes).
 - `sources/pcap-1.23b/objects/idling.pcapng` (42,608 B, 4 opcodes).
 
 ## Key entities/topics
@@ -27,8 +27,8 @@ This is a **packet-capture reference scenario**. The raw pcaps live in this repo
 ## Gaps
 
 - This scenario carries opcode identity, direction, service, and payload lengths only - not decoded field semantics (those live in this repo's `derived/payload_layouts.json`).
-- Service split across members: map 5.
-- Caveat: login.pcapng contains TLS account-service connections and later raw lobby connections on TCP 54994. The lobby bodies are decodable by the confirmed recipe in the lobby-handshake study, but the capture remains outside the canonical game decode pending a decoder implementation and contributes zero observed opcodes here.
+- Service split across members: map 69, world 11.
+- Caveat: login.pcapng contains TLS account-service connections, raw lobby connections on TCP 54994, and raw game connections on TCP 54992. The 54992 game lanes are included in the canonical decode. The 54994 lobby lanes are a different protocol and remain outside the game decode; their recipe is recorded in studies/lobby-handshake-triage/. TLS account-service traffic also remains outside the game decode.
 
 ## Next agent steps
 

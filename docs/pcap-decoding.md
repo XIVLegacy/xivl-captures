@@ -33,10 +33,10 @@ Frame-clean connections are retained, classified as `main`, `chat`, or
 keeps the existing corpus view, while the lane product preserves connection
 attribution.
 
-`login.pcapng` contains TLS account-service traffic and later raw lobby traffic
-whose bodies are decodable by the confirmed recipe recorded in
-`studies/lobby-handshake-triage/`. It remains excluded from game-protocol
-extraction pending a decoder implementation.
+`login.pcapng` contains TLS account-service traffic, raw 54994 lobby traffic,
+and raw 54992 game traffic. The 54992 lanes enter the canonical game decode;
+the 54994 lanes are a different protocol and remain excluded, with their
+recipe recorded in `studies/lobby-handshake-triage/`, while TLS remains out.
 
 ### Outer frames
 

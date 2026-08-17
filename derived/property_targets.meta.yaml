@@ -4,7 +4,7 @@ evidence_class: packet-capture
 schema_version: 1
 output:
   file: derived/property_targets.json
-  sha256: e9960a8048b6584314a2ec75e36f15b299cb142ea26f54f0362518ede2e29ead
+  sha256: 1af8c148c6dd2defe758fd06bf17f353b19667e64bfbb15d03f39bb4bcbbdf9b
 generator:
   tool: tools/extractors/extract_property_targets.py
   version: '3'

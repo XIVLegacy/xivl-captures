@@ -1777,6 +1777,21 @@ scenarios:
   - login.pcapng
   - idling.pcapng
   search_hints:
+  - application::lua::script::client::command::network::achievementpointreceiver
+  - application::lua::script::client::command::network::achievementtitlereceiver
+  - application::lua::script::client::command::network::changeactorextrastatreceiver
+  - application::lua::script::client::command::network::changeshadowactorflagreceiver
+  - application::lua::script::client::command::network::grandcompanyreceiver
+  - application::lua::script::client::command::network::jobchangereceiver
+  - application::lua::script::client::command::network::setdisplaynamereceiver
+  - application::lua::script::client::command::network::seteventstatusreceiver
+  - application::lua::script::client::command::network::setnoticeeventconditionreceiver
+  - application::lua::script::client::command::network::setpusheventconditionwithcirclereceiver
+  - application::lua::script::client::command::network::settalkeventconditionreceiver
+  - application::lua::script::client::command::network::syncmemoryreceiver
+  - application::lua::script::client::command::system::changeactorsubstatmodeborderreceiver
+  - application::lua::script::client::command::system::changeactorsubstatstatusreceiver
+  - application::lua::script::client::command::system::chocoboreceiver
   - idling
   - login
 - id: shop-vendor-buy-sell-repair

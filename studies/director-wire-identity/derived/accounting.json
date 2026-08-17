@@ -10,12 +10,12 @@
   },
   "event_start_count": 126,
   "group_type_candidate_distribution": {
-    "10001": 14,
+    "10001": 16,
     "10002": 265,
     "30001": 65,
     "30006": 4,
     "50001": 2,
-    "80001": 11
+    "80001": 13
   },
   "inputs": {
     "captures": [
@@ -156,6 +156,10 @@
         "sha256": "4f0793f354140478725bf2c30642a3458a854460f47fb11a7af635c8881d95cd"
       },
       {
+        "name": "login.pcapng",
+        "sha256": "28e06b54fe559870031f077f8549b9244caafa7e5177dbca08a7feae6c2b1b62"
+      },
+      {
         "name": "mount_unmount_chocobo.pcapng",
         "sha256": "e77c06799f07029feb054792eac30baa431da15a61937b1a39bcd025e4db4072"
       },
@@ -238,20 +242,20 @@
   ],
   "literal_30001_occurrences": 65,
   "member_actor_high_nibble_distribution": {
-    "0x017F:0": 31,
-    "0x017F:14": 11,
+    "0x017F:0": 35,
+    "0x017F:14": 12,
     "0x0183:0": 136,
     "0x0183:4": 768
   },
-  "member_rows": 946,
+  "member_rows": 951,
   "packet_counts": {
-    "0x017A": 272,
-    "0x017C": 361,
-    "0x017D": 361,
-    "0x017E": 361,
-    "0x017F": 27,
+    "0x017A": 275,
+    "0x017C": 365,
+    "0x017D": 365,
+    "0x017E": 365,
+    "0x017F": 31,
     "0x0183": 371,
-    "0x0187": 42,
+    "0x0187": 44,
     "0x018B": 287
   },
   "role_member_match_actor_ids": [
