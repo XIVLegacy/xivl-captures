@@ -4,7 +4,7 @@ evidence_class: packet-capture
 schema_version: 1
 output:
   file: derived/request_response_pairs.json
-  sha256: 28b7a6704c0f79191111c79682d0aac44cbfe1583d310cf8331303c6f8ba00a7
+  sha256: ae89a27f5f243404ef5b35bf68230f5c2fe6b23526bb1b0bbe06674145416f2f
 generator:
   tool: tools/extractors/extract_request_response_pairs.py
   version: '1'

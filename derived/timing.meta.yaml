@@ -4,7 +4,7 @@ evidence_class: packet-capture
 schema_version: 1
 output:
   file: derived/timing.json
-  sha256: 76cb6a4b95f1860ee2eb9d02d33c648f3c2c6f7f886b730687b32cb85560b5f8
+  sha256: 01552cbf7fb1570a8c010b31df19d643e0c8e2080819e99783aacc0d30169611
 generator:
   tool: tools/extractors/extract_timing.py
   version: '1'

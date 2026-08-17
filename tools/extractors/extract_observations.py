@@ -18,7 +18,7 @@ from _json_io import write_json  # noqa: E402
 warnings.filterwarnings("ignore")
 
 sys.path.insert(0, str(Path(__file__).parent))
-from extract_streams import reconstruct, reconstruct_lanes, parse_outer_frames  # type: ignore
+from extract_streams import reconstruct_lanes, parse_outer_frames  # type: ignore
 
 
 PRIORITY_CAPTURES = [
@@ -28,8 +28,6 @@ PRIORITY_CAPTURES = [
     "idle_in_party.pcapng",
     "gridania_to_coerthas.pcapng",
 ]
-# Safety: login.pcapng is TLS to secure.square-enix.com, not 1.x game protocol, so it is excluded.
-EXCLUDE_CAPTURES = {"login.pcapng"}
 DEFAULT_CAP_DIR = Path(__file__).resolve().parent.parent.parent / "sources" / "pcap-1.23b" / "objects"
 # Bump when extraction changes output; record the version in pipelines/*.yaml and derived/*.meta.yaml.
 GENERATOR_VERSION = "1"
@@ -39,11 +37,33 @@ DEFAULT_LANE_OUT = Path(__file__).parent.parent.parent / "derived" / "lane_obser
 
 
 def default_corpus_paths() -> list[Path]:
-    """Sorted corpus pcaps, minus EXCLUDE_CAPTURES."""
-    return sorted(
-        p for p in DEFAULT_CAP_DIR.glob("*.pcapng")
-        if p.name not in EXCLUDE_CAPTURES
+    """Return all sorted corpus pcaps; lane filtering happens after reconstruction."""
+    return sorted(DEFAULT_CAP_DIR.glob("*.pcapng"))
+
+
+GAME_SERVER_PORT = 54992
+TLS_RECORD_SIGNATURE = b"\x16\x03"
+
+
+def _is_game_lane(connection: dict) -> bool:
+    """Select clear 54992 game lanes without admitting lobby or TLS bytes."""
+    if connection["server_endpoint"][1] != GAME_SERVER_PORT:
+        return False
+    return not any(
+        blob.startswith(TLS_RECORD_SIGNATURE)
+        for blob in connection["streams"].values()
     )
+
+
+def _game_lane_streams(path: Path) -> dict[str, bytes]:
+    """Merge only selected game lanes for the capture-level products."""
+    merged = {"c2s": b"", "s2c": b""}
+    for connection in reconstruct_lanes(path):
+        if not _is_game_lane(connection):
+            continue
+        for direction, blob in connection["streams"].items():
+            merged[direction] += blob
+    return {direction: blob for direction, blob in merged.items() if blob}
 
 
 SUB_EVENT_HEADER_LEN = 16  # Wire header: [size:2][type:2][src:4][dst:4][counter:4].
@@ -94,7 +114,7 @@ def parse_sub_events(body: bytes) -> list[dict]:
 
 def walk_capture(path: Path) -> dict:
     """Return the observation log for one capture."""
-    streams = reconstruct(path)
+    streams = _game_lane_streams(path)
     obs = {"capture": path.name, "directions": {}}
     for direction, blob in streams.items():
         if not blob:
@@ -151,6 +171,8 @@ def walk_capture_lanes(path: Path) -> dict:
     """Return inner-opcode observations without merging TCP connections."""
     result = {"capture": path.name, "connections": []}
     for connection in reconstruct_lanes(path):
+        if not _is_game_lane(connection):
+            continue
         record = {
             "lane": connection["lane"],
             "clientEndpoint": f"{connection['client_endpoint'][0]}:{connection['client_endpoint'][1]}",

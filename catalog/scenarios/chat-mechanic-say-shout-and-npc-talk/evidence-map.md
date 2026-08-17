@@ -42,8 +42,8 @@ Union across the member captures. `name` is the derived/opcode_names.json entry 
 | `0x016b` | map | clientbound | SetNoticeEventCondition | Application::Lua::Script::Client::Command::Network::SetNoticeEventConditionReceiver | 72 |
 | `0x0179` | map | clientbound | SetActorStatusAllPacket | Application::Lua::Script::Client::Command::System::ChangeActorSubStatStatusReceiver | 72 |
 | `0x017b` | map | clientbound | SetActorIsZoningPacket | Application::Lua::Script::Client::Command::Network::ChangeShadowActorFlagReceiver | 40 |
-| `0x018b` | map | clientbound | _0x018B | - | 88 |
-| `0x018d` | map | clientbound | _0x018D | - | 696 |
+| `0x018b` | map | clientbound | SetGroupLayoutIDPacket | - | 88 |
+| `0x018d` | map | clientbound | PartyMapMarkerUpdatePacket | - | 696 |
 
 ## Verification
 

@@ -4,19 +4,19 @@
     "0x00ca",
     "0x00cf"
   ],
-  "captureCount": 53,
+  "captureCount": 54,
   "c2sOpcodes": [
     {
       "c2sOpcode": 1,
       "c2sOpcodeHex": "0x0001",
-      "c2sTotal": 3329,
+      "c2sTotal": 3371,
       "topResponses": [
         {
           "s2cOpcode": 400,
           "s2cOpcodeHex": "0x0190",
           "pairCount": 1288,
           "captures": 5,
-          "c2sShare": 0.387,
+          "c2sShare": 0.382,
           "s2cShare": 0.231
         },
         {
@@ -24,16 +24,16 @@
           "s2cOpcodeHex": "0x0137",
           "pairCount": 423,
           "captures": 24,
-          "c2sShare": 0.127,
-          "s2cShare": 0.212
+          "c2sShare": 0.125,
+          "s2cShare": 0.21
         },
         {
           "s2cOpcode": 208,
           "s2cOpcodeHex": "0x00d0",
           "pairCount": 242,
           "captures": 15,
-          "c2sShare": 0.073,
-          "s2cShare": 0.196
+          "c2sShare": 0.072,
+          "s2cShare": 0.194
         },
         {
           "s2cOpcode": 324,
@@ -41,31 +41,31 @@
           "pairCount": 208,
           "captures": 16,
           "c2sShare": 0.062,
-          "s2cShare": 0.212
+          "s2cShare": 0.21
         },
         {
           "s2cOpcode": 206,
           "s2cOpcodeHex": "0x00ce",
           "pairCount": 197,
           "captures": 12,
-          "c2sShare": 0.059,
-          "s2cShare": 0.212
+          "c2sShare": 0.058,
+          "s2cShare": 0.21
         },
         {
           "s2cOpcode": 363,
           "s2cOpcodeHex": "0x016b",
           "pairCount": 190,
           "captures": 11,
-          "c2sShare": 0.057,
-          "s2cShare": 0.214
+          "c2sShare": 0.056,
+          "s2cShare": 0.212
         },
         {
           "s2cOpcode": 308,
           "s2cOpcodeHex": "0x0134",
           "pairCount": 187,
           "captures": 14,
-          "c2sShare": 0.056,
-          "s2cShare": 0.207
+          "c2sShare": 0.055,
+          "s2cShare": 0.205
         },
         {
           "s2cOpcode": 379,
@@ -73,63 +73,71 @@
           "pairCount": 184,
           "captures": 12,
           "c2sShare": 0.055,
-          "s2cShare": 0.221
+          "s2cShare": 0.218
         },
         {
           "s2cOpcode": 204,
           "s2cOpcodeHex": "0x00cc",
           "pairCount": 182,
           "captures": 11,
-          "c2sShare": 0.055,
-          "s2cShare": 0.222
+          "c2sShare": 0.054,
+          "s2cShare": 0.219
         },
         {
           "s2cOpcode": 325,
           "s2cOpcodeHex": "0x0145",
           "pairCount": 180,
           "captures": 12,
-          "c2sShare": 0.054,
-          "s2cShare": 0.219
+          "c2sShare": 0.053,
+          "s2cShare": 0.216
         },
         {
           "s2cOpcode": 377,
           "s2cOpcodeHex": "0x0179",
           "pairCount": 180,
           "captures": 12,
-          "c2sShare": 0.054,
-          "s2cShare": 0.219
+          "c2sShare": 0.053,
+          "s2cShare": 0.217
         },
         {
           "s2cOpcode": 317,
           "s2cOpcodeHex": "0x013d",
           "pairCount": 176,
           "captures": 12,
-          "c2sShare": 0.053,
-          "s2cShare": 0.214
+          "c2sShare": 0.052,
+          "s2cShare": 0.212
         },
         {
           "s2cOpcode": 214,
           "s2cOpcodeHex": "0x00d6",
           "pairCount": 163,
           "captures": 13,
-          "c2sShare": 0.049,
-          "s2cShare": 0.216
+          "c2sShare": 0.048,
+          "s2cShare": 0.214
         },
         {
           "s2cOpcode": 310,
           "s2cOpcodeHex": "0x0136",
           "pairCount": 160,
           "captures": 7,
-          "c2sShare": 0.048,
-          "s2cShare": 0.268
+          "c2sShare": 0.047,
+          "s2cShare": 0.265
         },
         {
           "s2cOpcode": 397,
           "s2cOpcodeHex": "0x018d",
           "pairCount": 123,
           "captures": 22,
-          "c2sShare": 0.037,
+          "c2sShare": 0.036,
           "s2cShare": 0.208
+        },
+        {
+          "s2cOpcode": 378,
+          "s2cOpcodeHex": "0x017a",
+          "pairCount": 114,
+          "captures": 10,
+          "c2sShare": 0.034,
+          "s2cShare": 0.415
         },
         {
           "s2cOpcode": 395,
@@ -138,14 +146,6 @@
           "captures": 7,
           "c2sShare": 0.034,
           "s2cShare": 0.394
-        },
-        {
-          "s2cOpcode": 378,
-          "s2cOpcodeHex": "0x017a",
-          "pairCount": 113,
-          "captures": 9,
-          "c2sShare": 0.034,
-          "s2cShare": 0.415
         },
         {
           "s2cOpcode": 313,
@@ -160,15 +160,15 @@
           "s2cOpcodeHex": "0x012e",
           "pairCount": 85,
           "captures": 7,
-          "c2sShare": 0.026,
-          "s2cShare": 0.216
+          "c2sShare": 0.025,
+          "s2cShare": 0.214
         },
         {
           "s2cOpcode": 203,
           "s2cOpcodeHex": "0x00cb",
           "pairCount": 69,
           "captures": 7,
-          "c2sShare": 0.021,
+          "c2sShare": 0.02,
           "s2cShare": 0.096
         }
       ]
@@ -189,17 +189,184 @@
       ]
     },
     {
-      "c2sOpcode": 7,
-      "c2sOpcodeHex": "0x0007",
-      "c2sTotal": 8,
+      "c2sOpcode": 6,
+      "c2sOpcodeHex": "0x0006",
+      "c2sTotal": 1,
       "topResponses": [
         {
-          "s2cOpcode": 1,
-          "s2cOpcodeHex": "0x0001",
-          "pairCount": 5,
-          "captures": 5,
-          "c2sShare": 0.625,
-          "s2cShare": 0.001
+          "s2cOpcode": 2,
+          "s2cOpcodeHex": "0x0002",
+          "pairCount": 1,
+          "captures": 1,
+          "c2sShare": 1.0,
+          "s2cShare": 1.0
+        }
+      ]
+    },
+    {
+      "c2sOpcode": 7,
+      "c2sOpcodeHex": "0x0007",
+      "c2sTotal": 24,
+      "topResponses": [
+        {
+          "s2cOpcode": 306,
+          "s2cOpcodeHex": "0x0132",
+          "pairCount": 48,
+          "captures": 1,
+          "c2sShare": 2.0,
+          "s2cShare": 0.5
+        },
+        {
+          "s2cOpcode": 206,
+          "s2cOpcodeHex": "0x00ce",
+          "pairCount": 33,
+          "captures": 1,
+          "c2sShare": 1.375,
+          "s2cShare": 0.035
+        },
+        {
+          "s2cOpcode": 208,
+          "s2cOpcodeHex": "0x00d0",
+          "pairCount": 33,
+          "captures": 1,
+          "c2sShare": 1.375,
+          "s2cShare": 0.026
+        },
+        {
+          "s2cOpcode": 308,
+          "s2cOpcodeHex": "0x0134",
+          "pairCount": 33,
+          "captures": 1,
+          "c2sShare": 1.375,
+          "s2cShare": 0.036
+        },
+        {
+          "s2cOpcode": 317,
+          "s2cOpcodeHex": "0x013d",
+          "pairCount": 33,
+          "captures": 1,
+          "c2sShare": 1.375,
+          "s2cShare": 0.04
+        },
+        {
+          "s2cOpcode": 324,
+          "s2cOpcodeHex": "0x0144",
+          "pairCount": 30,
+          "captures": 1,
+          "c2sShare": 1.25,
+          "s2cShare": 0.03
+        },
+        {
+          "s2cOpcode": 325,
+          "s2cOpcodeHex": "0x0145",
+          "pairCount": 30,
+          "captures": 1,
+          "c2sShare": 1.25,
+          "s2cShare": 0.036
+        },
+        {
+          "s2cOpcode": 377,
+          "s2cOpcodeHex": "0x0179",
+          "pairCount": 30,
+          "captures": 1,
+          "c2sShare": 1.25,
+          "s2cShare": 0.036
+        },
+        {
+          "s2cOpcode": 379,
+          "s2cOpcodeHex": "0x017b",
+          "pairCount": 30,
+          "captures": 1,
+          "c2sShare": 1.25,
+          "s2cShare": 0.036
+        },
+        {
+          "s2cOpcode": 363,
+          "s2cOpcodeHex": "0x016b",
+          "pairCount": 27,
+          "captures": 1,
+          "c2sShare": 1.125,
+          "s2cShare": 0.03
+        },
+        {
+          "s2cOpcode": 311,
+          "s2cOpcodeHex": "0x0137",
+          "pairCount": 25,
+          "captures": 1,
+          "c2sShare": 1.042,
+          "s2cShare": 0.012
+        },
+        {
+          "s2cOpcode": 331,
+          "s2cOpcodeHex": "0x014b",
+          "pairCount": 24,
+          "captures": 1,
+          "c2sShare": 1.0,
+          "s2cShare": 0.312
+        },
+        {
+          "s2cOpcode": 204,
+          "s2cOpcodeHex": "0x00cc",
+          "pairCount": 24,
+          "captures": 1,
+          "c2sShare": 1.0,
+          "s2cShare": 0.029
+        },
+        {
+          "s2cOpcode": 214,
+          "s2cOpcodeHex": "0x00d6",
+          "pairCount": 21,
+          "captures": 1,
+          "c2sShare": 0.875,
+          "s2cShare": 0.028
+        },
+        {
+          "s2cOpcode": 380,
+          "s2cOpcodeHex": "0x017c",
+          "pairCount": 12,
+          "captures": 1,
+          "c2sShare": 0.5,
+          "s2cShare": 0.033
+        },
+        {
+          "s2cOpcode": 381,
+          "s2cOpcodeHex": "0x017d",
+          "pairCount": 12,
+          "captures": 1,
+          "c2sShare": 0.5,
+          "s2cShare": 0.033
+        },
+        {
+          "s2cOpcode": 382,
+          "s2cOpcodeHex": "0x017e",
+          "pairCount": 12,
+          "captures": 1,
+          "c2sShare": 0.5,
+          "s2cShare": 0.033
+        },
+        {
+          "s2cOpcode": 383,
+          "s2cOpcodeHex": "0x017f",
+          "pairCount": 12,
+          "captures": 1,
+          "c2sShare": 0.5,
+          "s2cShare": 0.387
+        },
+        {
+          "s2cOpcode": 302,
+          "s2cOpcodeHex": "0x012e",
+          "pairCount": 12,
+          "captures": 1,
+          "c2sShare": 0.5,
+          "s2cShare": 0.03
+        },
+        {
+          "s2cOpcode": 15,
+          "s2cOpcodeHex": "0x000f",
+          "pairCount": 6,
+          "captures": 1,
+          "c2sShare": 0.25,
+          "s2cShare": 0.429
         }
       ]
     },
@@ -214,7 +381,7 @@
           "pairCount": 3,
           "captures": 1,
           "c2sShare": 0.273,
-          "s2cShare": 0.002
+          "s2cShare": 0.001
         },
         {
           "s2cOpcode": 1,
@@ -285,7 +452,7 @@
           "pairCount": 21,
           "captures": 2,
           "c2sShare": 0.318,
-          "s2cShare": 0.011
+          "s2cShare": 0.01
         },
         {
           "s2cOpcode": 208,
@@ -333,7 +500,7 @@
           "pairCount": 12,
           "captures": 1,
           "c2sShare": 0.182,
-          "s2cShare": 0.015
+          "s2cShare": 0.014
         },
         {
           "s2cOpcode": 308,
@@ -357,7 +524,7 @@
           "pairCount": 12,
           "captures": 1,
           "c2sShare": 0.182,
-          "s2cShare": 0.015
+          "s2cShare": 0.014
         },
         {
           "s2cOpcode": 377,
@@ -365,7 +532,7 @@
           "pairCount": 12,
           "captures": 1,
           "c2sShare": 0.182,
-          "s2cShare": 0.015
+          "s2cShare": 0.014
         },
         {
           "s2cOpcode": 379,
@@ -460,7 +627,7 @@
           "pairCount": 23,
           "captures": 2,
           "c2sShare": 0.195,
-          "s2cShare": 0.019
+          "s2cShare": 0.018
         },
         {
           "s2cOpcode": 363,
@@ -468,7 +635,7 @@
           "pairCount": 20,
           "captures": 2,
           "c2sShare": 0.169,
-          "s2cShare": 0.023
+          "s2cShare": 0.022
         },
         {
           "s2cOpcode": 206,
@@ -540,7 +707,7 @@
           "pairCount": 18,
           "captures": 2,
           "c2sShare": 0.153,
-          "s2cShare": 0.022
+          "s2cShare": 0.021
         },
         {
           "s2cOpcode": 380,
@@ -603,7 +770,7 @@
           "pairCount": 23,
           "captures": 3,
           "c2sShare": 0.183,
-          "s2cShare": 0.012
+          "s2cShare": 0.011
         },
         {
           "s2cOpcode": 208,
@@ -858,7 +1025,7 @@
           "pairCount": 1,
           "captures": 1,
           "c2sShare": 0.005,
-          "s2cShare": 0.007
+          "s2cShare": 0.006
         },
         {
           "s2cOpcode": 327,
@@ -866,7 +1033,7 @@
           "pairCount": 1,
           "captures": 1,
           "c2sShare": 0.005,
-          "s2cShare": 0.007
+          "s2cShare": 0.006
         },
         {
           "s2cOpcode": 328,
@@ -882,7 +1049,7 @@
           "pairCount": 1,
           "captures": 1,
           "c2sShare": 0.005,
-          "s2cShare": 0.013
+          "s2cShare": 0.012
         },
         {
           "s2cOpcode": 366,
@@ -890,7 +1057,7 @@
           "pairCount": 1,
           "captures": 1,
           "c2sShare": 0.005,
-          "s2cShare": 0.013
+          "s2cShare": 0.012
         },
         {
           "s2cOpcode": 204,
@@ -944,110 +1111,110 @@
     {
       "c2sOpcode": 307,
       "c2sOpcodeHex": "0x0133",
-      "c2sTotal": 268,
+      "c2sTotal": 270,
       "topResponses": [
         {
           "s2cOpcode": 311,
           "s2cOpcodeHex": "0x0137",
           "pairCount": 180,
           "captures": 9,
-          "c2sShare": 0.672,
-          "s2cShare": 0.09
+          "c2sShare": 0.667,
+          "s2cShare": 0.089
         },
         {
           "s2cOpcode": 204,
           "s2cOpcodeHex": "0x00cc",
           "pairCount": 161,
           "captures": 8,
-          "c2sShare": 0.601,
-          "s2cShare": 0.196
+          "c2sShare": 0.596,
+          "s2cShare": 0.194
         },
         {
           "s2cOpcode": 308,
           "s2cOpcodeHex": "0x0134",
           "pairCount": 161,
           "captures": 7,
-          "c2sShare": 0.601,
-          "s2cShare": 0.178
+          "c2sShare": 0.596,
+          "s2cShare": 0.177
         },
         {
           "s2cOpcode": 324,
           "s2cOpcodeHex": "0x0144",
           "pairCount": 161,
           "captures": 7,
-          "c2sShare": 0.601,
-          "s2cShare": 0.164
+          "c2sShare": 0.596,
+          "s2cShare": 0.162
         },
         {
           "s2cOpcode": 379,
           "s2cOpcodeHex": "0x017b",
           "pairCount": 161,
           "captures": 8,
-          "c2sShare": 0.601,
-          "s2cShare": 0.193
+          "c2sShare": 0.596,
+          "s2cShare": 0.191
         },
         {
           "s2cOpcode": 214,
           "s2cOpcodeHex": "0x00d6",
           "pairCount": 160,
           "captures": 7,
-          "c2sShare": 0.597,
-          "s2cShare": 0.212
+          "c2sShare": 0.593,
+          "s2cShare": 0.211
         },
         {
           "s2cOpcode": 317,
           "s2cOpcodeHex": "0x013d",
           "pairCount": 160,
           "captures": 7,
-          "c2sShare": 0.597,
-          "s2cShare": 0.195
+          "c2sShare": 0.593,
+          "s2cShare": 0.193
         },
         {
           "s2cOpcode": 325,
           "s2cOpcodeHex": "0x0145",
           "pairCount": 160,
           "captures": 7,
-          "c2sShare": 0.597,
-          "s2cShare": 0.195
+          "c2sShare": 0.593,
+          "s2cShare": 0.192
         },
         {
           "s2cOpcode": 377,
           "s2cOpcodeHex": "0x0179",
           "pairCount": 160,
           "captures": 7,
-          "c2sShare": 0.597,
-          "s2cShare": 0.195
+          "c2sShare": 0.593,
+          "s2cShare": 0.193
         },
         {
           "s2cOpcode": 208,
           "s2cOpcodeHex": "0x00d0",
           "pairCount": 159,
           "captures": 7,
-          "c2sShare": 0.593,
-          "s2cShare": 0.129
+          "c2sShare": 0.589,
+          "s2cShare": 0.128
         },
         {
           "s2cOpcode": 206,
           "s2cOpcodeHex": "0x00ce",
           "pairCount": 155,
           "captures": 8,
-          "c2sShare": 0.578,
-          "s2cShare": 0.167
+          "c2sShare": 0.574,
+          "s2cShare": 0.165
         },
         {
           "s2cOpcode": 363,
           "s2cOpcodeHex": "0x016b",
           "pairCount": 150,
           "captures": 7,
-          "c2sShare": 0.56,
-          "s2cShare": 0.169
+          "c2sShare": 0.556,
+          "s2cShare": 0.167
         },
         {
           "s2cOpcode": 387,
           "s2cOpcodeHex": "0x0183",
           "pairCount": 147,
           "captures": 6,
-          "c2sShare": 0.549,
+          "c2sShare": 0.544,
           "s2cShare": 0.396
         },
         {
@@ -1055,47 +1222,47 @@
           "s2cOpcodeHex": "0x017c",
           "pairCount": 143,
           "captures": 7,
-          "c2sShare": 0.534,
-          "s2cShare": 0.396
+          "c2sShare": 0.53,
+          "s2cShare": 0.392
         },
         {
           "s2cOpcode": 381,
           "s2cOpcodeHex": "0x017d",
           "pairCount": 143,
           "captures": 7,
-          "c2sShare": 0.534,
-          "s2cShare": 0.396
+          "c2sShare": 0.53,
+          "s2cShare": 0.392
         },
         {
           "s2cOpcode": 382,
           "s2cOpcodeHex": "0x017e",
           "pairCount": 143,
           "captures": 7,
-          "c2sShare": 0.534,
-          "s2cShare": 0.396
+          "c2sShare": 0.53,
+          "s2cShare": 0.392
         },
         {
           "s2cOpcode": 310,
           "s2cOpcodeHex": "0x0136",
           "pairCount": 111,
           "captures": 7,
-          "c2sShare": 0.414,
-          "s2cShare": 0.186
+          "c2sShare": 0.411,
+          "s2cShare": 0.184
         },
         {
           "s2cOpcode": 378,
           "s2cOpcodeHex": "0x017a",
-          "pairCount": 93,
-          "captures": 5,
-          "c2sShare": 0.347,
+          "pairCount": 94,
+          "captures": 6,
+          "c2sShare": 0.348,
           "s2cShare": 0.342
         },
         {
           "s2cOpcode": 1,
           "s2cOpcodeHex": "0x0001",
-          "pairCount": 67,
-          "captures": 13,
-          "c2sShare": 0.25,
+          "pairCount": 68,
+          "captures": 14,
+          "c2sShare": 0.252,
           "s2cShare": 0.02
         },
         {
@@ -1103,8 +1270,159 @@
           "s2cOpcodeHex": "0x016f",
           "pairCount": 26,
           "captures": 3,
-          "c2sShare": 0.097,
-          "s2cShare": 0.133
+          "c2sShare": 0.096,
+          "s2cShare": 0.131
+        }
+      ]
+    },
+    {
+      "c2sOpcode": 459,
+      "c2sOpcodeHex": "0x01cb",
+      "c2sTotal": 1,
+      "topResponses": [
+        {
+          "s2cOpcode": 306,
+          "s2cOpcodeHex": "0x0132",
+          "pairCount": 8,
+          "captures": 1,
+          "c2sShare": 8.0,
+          "s2cShare": 0.083
+        },
+        {
+          "s2cOpcode": 331,
+          "s2cOpcodeHex": "0x014b",
+          "pairCount": 4,
+          "captures": 1,
+          "c2sShare": 4.0,
+          "s2cShare": 0.052
+        },
+        {
+          "s2cOpcode": 380,
+          "s2cOpcodeHex": "0x017c",
+          "pairCount": 2,
+          "captures": 1,
+          "c2sShare": 2.0,
+          "s2cShare": 0.005
+        },
+        {
+          "s2cOpcode": 381,
+          "s2cOpcodeHex": "0x017d",
+          "pairCount": 2,
+          "captures": 1,
+          "c2sShare": 2.0,
+          "s2cShare": 0.005
+        },
+        {
+          "s2cOpcode": 382,
+          "s2cOpcodeHex": "0x017e",
+          "pairCount": 2,
+          "captures": 1,
+          "c2sShare": 2.0,
+          "s2cShare": 0.005
+        },
+        {
+          "s2cOpcode": 383,
+          "s2cOpcodeHex": "0x017f",
+          "pairCount": 2,
+          "captures": 1,
+          "c2sShare": 2.0,
+          "s2cShare": 0.065
+        },
+        {
+          "s2cOpcode": 15,
+          "s2cOpcodeHex": "0x000f",
+          "pairCount": 1,
+          "captures": 1,
+          "c2sShare": 1.0,
+          "s2cShare": 0.071
+        },
+        {
+          "s2cOpcode": 206,
+          "s2cOpcodeHex": "0x00ce",
+          "pairCount": 1,
+          "captures": 1,
+          "c2sShare": 1.0,
+          "s2cShare": 0.001
+        },
+        {
+          "s2cOpcode": 208,
+          "s2cOpcodeHex": "0x00d0",
+          "pairCount": 1,
+          "captures": 1,
+          "c2sShare": 1.0,
+          "s2cShare": 0.001
+        },
+        {
+          "s2cOpcode": 214,
+          "s2cOpcodeHex": "0x00d6",
+          "pairCount": 1,
+          "captures": 1,
+          "c2sShare": 1.0,
+          "s2cShare": 0.001
+        },
+        {
+          "s2cOpcode": 308,
+          "s2cOpcodeHex": "0x0134",
+          "pairCount": 1,
+          "captures": 1,
+          "c2sShare": 1.0,
+          "s2cShare": 0.001
+        },
+        {
+          "s2cOpcode": 317,
+          "s2cOpcodeHex": "0x013d",
+          "pairCount": 1,
+          "captures": 1,
+          "c2sShare": 1.0,
+          "s2cShare": 0.001
+        },
+        {
+          "s2cOpcode": 324,
+          "s2cOpcodeHex": "0x0144",
+          "pairCount": 1,
+          "captures": 1,
+          "c2sShare": 1.0,
+          "s2cShare": 0.001
+        },
+        {
+          "s2cOpcode": 325,
+          "s2cOpcodeHex": "0x0145",
+          "pairCount": 1,
+          "captures": 1,
+          "c2sShare": 1.0,
+          "s2cShare": 0.001
+        },
+        {
+          "s2cOpcode": 326,
+          "s2cOpcodeHex": "0x0146",
+          "pairCount": 1,
+          "captures": 1,
+          "c2sShare": 1.0,
+          "s2cShare": 0.006
+        },
+        {
+          "s2cOpcode": 365,
+          "s2cOpcodeHex": "0x016d",
+          "pairCount": 1,
+          "captures": 1,
+          "c2sShare": 1.0,
+          "s2cShare": 0.012
+        },
+        {
+          "s2cOpcode": 377,
+          "s2cOpcodeHex": "0x0179",
+          "pairCount": 1,
+          "captures": 1,
+          "c2sShare": 1.0,
+          "s2cShare": 0.001
+        },
+        {
+          "s2cOpcode": 379,
+          "s2cOpcodeHex": "0x017b",
+          "pairCount": 1,
+          "captures": 1,
+          "c2sShare": 1.0,
+          "s2cShare": 0.001
         }
       ]
     },

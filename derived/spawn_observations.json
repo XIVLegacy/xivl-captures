@@ -1,10 +1,10 @@
 {
   "version": "1.23b",
   "source": "s2c 0x00ca/0x00cc/0x00ce joined by actorId; first placement per actor",
-  "captureCount": 53,
-  "positionedSpawns": 496,
-  "withInstantiate": 391,
-  "withZoneTag": 390,
+  "captureCount": 54,
+  "positionedSpawns": 497,
+  "withInstantiate": 392,
+  "withZoneTag": 391,
   "records": [
     {
       "capture": "combat_autoattack.pcapng",
@@ -2005,6 +2005,20 @@
       "y": 5.469,
       "z": -509.113,
       "rotation": -1.2353,
+      "hadInstantiate": true,
+      "hadAddActor": true
+    },
+    {
+      "capture": "login.pcapng",
+      "actorId": "0x50e0e838",
+      "instanceName": "pplStd_prv0Inn01_06@0F400",
+      "baseClass": "PopulaceStandard",
+      "classPath": "/Chara/Npc/Populace/PopulaceStandard",
+      "zoneTag": "prv0Inn01",
+      "x": 157.55,
+      "y": 0.0,
+      "z": 165.05,
+      "rotation": -1.53,
       "hadInstantiate": true,
       "hadAddActor": true
     },

@@ -24,7 +24,7 @@ Union across the member captures. `name` is the derived/opcode_names.json entry 
 | `0x00e3` | map | clientbound | SetActorQuestGraphicPacket | - | 40 |
 | `0x012d` | map | serverbound | EventStartPacket | - | 216 |
 | `0x012e` | map | serverbound | EventUpdatePacket | - | 120 |
-| `0x012f` | map | serverbound | ActorWorkUpdatePacket | - | 72 |
+| `0x012f` | map | serverbound | WorkStateUpdatePacket | - | 72 |
 | `0x0130` | map | clientbound | RunEventFunctionPacket | Application::Lua::Script::Client::Command::Network::StartServerOrderEventFunctionReceiver | 176 |
 | `0x0131` | map | clientbound | EndEventPacket | Application::Lua::Script::Client::Command::Network::EndClientOrderEventReceiver | 80 |
 | `0x0137` | map | clientbound | SetActorPropetyPacket | Application::Lua::Script::Client::Command::Network::SyncMemoryReceiver | 168 |
@@ -41,7 +41,7 @@ Union across the member captures. `name` is the derived/opcode_names.json entry 
 | `0x015b` | map | clientbound | _0x015B | Application::Lua::Script::Client::Command::Network::SendLogReceiver | 112 |
 | `0x016d` | map | clientbound | InventoryBeginChangePacket | - | 40 |
 | `0x016e` | map | clientbound | InventoryEndChangePacket | - | 40 |
-| `0x018d` | map | clientbound | _0x018D | - | 696 |
+| `0x018d` | map | clientbound | PartyMapMarkerUpdatePacket | - | 696 |
 | `0x01a4` | map | clientbound | SetCurrentJobPacket | Application::Lua::Script::Client::Command::Network::JobChangeReceiver | 40 |
 
 ## Verification

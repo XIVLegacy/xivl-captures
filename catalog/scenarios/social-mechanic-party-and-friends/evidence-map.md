@@ -25,7 +25,7 @@ Union across the member captures. `name` is the derived/opcode_names.json entry 
 | `0x00ca` | map | serverbound | UpdatePlayerPositionPacket | - | 64 |
 | `0x00cf` | map | clientbound | MoveActorToPositionPacket | - | 80 |
 | `0x012d` | map | serverbound | EventStartPacket | - | 216 |
-| `0x012f` | map | serverbound | ActorWorkUpdatePacket | - | 72 |
+| `0x012f` | map | serverbound | WorkStateUpdatePacket | - | 72 |
 | `0x0133` | map | serverbound | GroupWorkUpdatePacket | - | 72 |
 | `0x0137` | map | clientbound | SetActorPropetyPacket | Application::Lua::Script::Client::Command::Network::SyncMemoryReceiver | 168 |
 | `0x0143` | map | clientbound | DeleteGroupPacket | - | 64 |
@@ -36,12 +36,12 @@ Union across the member captures. `name` is the derived/opcode_names.json entry 
 | `0x017d` | map | clientbound | GroupMembersBeginPacket | - | 64 |
 | `0x017e` | map | clientbound | GroupMembersEndPacket | - | 56 |
 | `0x017f` | map | clientbound | GroupMembersX08Packet | - | 440 |
-| `0x0187` | map | clientbound | _0x0187 | - | 96 |
-| `0x018d` | map | clientbound | _0x018D | - | 696 |
-| `0x01cf` | map | clientbound | FriendStatusPacket | - | 1640 |
+| `0x0187` | map | clientbound | SetOccupancyGroupPacket | - | 96 |
+| `0x018d` | map | clientbound | PartyMapMarkerUpdatePacket | - | 696 |
+| `0x01cf` | map | clientbound | _0x01CF | - | 1640 |
 | `0x01cf` | map | serverbound | _0x01CFHandler | - | 40 |
 | `0x01dd` | map | serverbound | _0x01DD | - | 296 |
-| `0x01df` | map | clientbound | PlayerSearchInfoResultPacket | - | 968 |
+| `0x01df` | map | clientbound | _0x01DF | - | 968 |
 | `0x01e0` | map | clientbound | PlayerSearchCommentResultPacket | - | 648 |
 
 ## Verification

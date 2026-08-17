@@ -163,7 +163,7 @@ def scan() -> tuple[list[dict], dict]:
                   "boundaries": ["value_u_le and value_f32 are parallel packet interpretations, not promoted property semantics.",
                                  "source_actor_id and destination_actor_id are wrapped subevent header fields; the packet-only study does not rename either as the property subject.",
                                  "target_marker is independent stream context."]}
-    if (packet_count, len(rows), len(by_hash), len(packet_by_capture)) != (1992, 8918, 263, 36):
+    if (packet_count, len(rows), len(by_hash), len(packet_by_capture)) != (2014, 9118, 263, 37):
         raise ValueError(f"corpus reconciliation changed: {packet_count}/{len(rows)}/{len(by_hash)}/{len(packet_by_capture)}")
     return rows, accounting
 

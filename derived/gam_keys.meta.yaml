@@ -4,7 +4,7 @@ evidence_class: packet-capture
 schema_version: 1
 output:
   file: derived/gam_keys.json
-  sha256: 4d00471a17b08bc136548936a67812ce68680b1237e8f3f3644f4fa99c6ccdba
+  sha256: 32a99e51e57185aea146b170ee242d6cae5fd4e1eca75654001f53501bb0aa6c
 generator:
   tool: tools/extractors/extract_gam_keys.py
   version: '1'

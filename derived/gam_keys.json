@@ -1,17 +1,17 @@
 {
-  "packetCount": 1992,
-  "capturesWithSetActorProperty": 36,
+  "packetCount": 2014,
+  "capturesWithSetActorProperty": 37,
   "distinctIds": 263,
   "distinctTargets": 25,
   "ids": [
     {
       "id": 3779792040,
       "idHex": "0xe14b0ca8",
-      "count": 775,
+      "count": 781,
       "sizes": {
-        "1": 775
+        "1": 781
       },
-      "captures": 16,
+      "captures": 17,
       "sampleValues": [
         "01",
         "01",
@@ -23,11 +23,11 @@
     {
       "id": 557383025,
       "idHex": "0x2138fd71",
-      "count": 672,
+      "count": 677,
       "sizes": {
-        "1": 672
+        "1": 677
       },
-      "captures": 16,
+      "captures": 17,
       "sampleValues": [
         "01",
         "01",
@@ -55,11 +55,11 @@
     {
       "id": 1110621354,
       "idHex": "0x4232bcaa",
-      "count": 614,
+      "count": 615,
       "sizes": {
-        "2": 614
+        "2": 615
       },
-      "captures": 20,
+      "captures": 21,
       "sampleValues": [
         "1103",
         "5d01",
@@ -71,11 +71,11 @@
     {
       "id": 4227583921,
       "idHex": "0xfbfbcfb1",
-      "count": 598,
+      "count": 602,
       "sizes": {
-        "1": 598
+        "1": 602
       },
-      "captures": 16,
+      "captures": 17,
       "sampleValues": [
         "01",
         "01",
@@ -87,11 +87,11 @@
     {
       "id": 335058704,
       "idHex": "0x13f89710",
-      "count": 346,
+      "count": 347,
       "sizes": {
-        "2": 346
+        "2": 347
       },
-      "captures": 18,
+      "captures": 19,
       "sampleValues": [
         "3002",
         "8002",
@@ -103,11 +103,11 @@
     {
       "id": 2077096809,
       "idHex": "0x7bcdfb69",
-      "count": 296,
+      "count": 297,
       "sizes": {
-        "2": 296
+        "2": 297
       },
-      "captures": 19,
+      "captures": 20,
       "sampleValues": [
         "1103",
         "1202",
@@ -119,11 +119,11 @@
     {
       "id": 1016452549,
       "idHex": "0x3c95d5c5",
-      "count": 295,
+      "count": 296,
       "sizes": {
-        "2": 295
+        "2": 296
       },
-      "captures": 18,
+      "captures": 19,
       "sampleValues": [
         "3002",
         "8002",
@@ -135,17 +135,33 @@
     {
       "id": 3237375479,
       "idHex": "0xc0f66df7",
-      "count": 285,
+      "count": 286,
       "sizes": {
-        "4": 285
+        "4": 286
       },
-      "captures": 17,
+      "captures": 18,
       "sampleValues": [
         "d7a3a840",
         "1f85b340",
         "ccccac40",
         "d7a3a840",
         "ae47a140"
+      ]
+    },
+    {
+      "id": 2070369043,
+      "idHex": "0x7b675313",
+      "count": 281,
+      "sizes": {
+        "1": 281
+      },
+      "captures": 15,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
       ]
     },
     {
@@ -165,29 +181,13 @@
       ]
     },
     {
-      "id": 2070369043,
-      "idHex": "0x7b675313",
-      "count": 280,
-      "sizes": {
-        "1": 280
-      },
-      "captures": 14,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
       "id": 1966263844,
       "idHex": "0x7532ce24",
-      "count": 274,
+      "count": 275,
       "sizes": {
-        "1": 274
+        "1": 275
       },
-      "captures": 15,
+      "captures": 16,
       "sampleValues": [
         "28",
         "03",
@@ -199,11 +199,11 @@
     {
       "id": 2516989320,
       "idHex": "0x96063588",
-      "count": 274,
+      "count": 275,
       "sizes": {
-        "2": 274
+        "2": 275
       },
-      "captures": 15,
+      "captures": 16,
       "sampleValues": [
         "1800",
         "1a00",
@@ -231,11 +231,11 @@
     {
       "id": 63920984,
       "idHex": "0x03cf5b58",
-      "count": 68,
+      "count": 69,
       "sizes": {
-        "2": 68
+        "2": 69
       },
-      "captures": 9,
+      "captures": 10,
       "sampleValues": [
         "264e",
         "224e",
@@ -247,11 +247,11 @@
     {
       "id": 1088574212,
       "idHex": "0x40e25304",
-      "count": 68,
+      "count": 69,
       "sizes": {
-        "1": 68
+        "1": 69
       },
-      "captures": 9,
+      "captures": 10,
       "sampleValues": [
         "06",
         "06",
@@ -263,11 +263,11 @@
     {
       "id": 771473722,
       "idHex": "0x2dfbc13a",
-      "count": 52,
+      "count": 53,
       "sizes": {
-        "2": 52
+        "2": 53
       },
-      "captures": 15,
+      "captures": 16,
       "sampleValues": [
         "1c00",
         "4f00",
@@ -279,11 +279,11 @@
     {
       "id": 524135621,
       "idHex": "0x1f3dacc5",
-      "count": 52,
+      "count": 53,
       "sizes": {
-        "2": 52
+        "2": 53
       },
-      "captures": 15,
+      "captures": 16,
       "sampleValues": [
         "4500",
         "a900",
@@ -295,11 +295,11 @@
     {
       "id": 2446148839,
       "idHex": "0x91cd44e7",
-      "count": 50,
+      "count": 51,
       "sizes": {
-        "2": 50
+        "2": 51
       },
-      "captures": 13,
+      "captures": 14,
       "sampleValues": [
         "9700",
         "b600",
@@ -309,29 +309,13 @@
       ]
     },
     {
-      "id": 2360250587,
-      "idHex": "0x8cae90db",
-      "count": 43,
-      "sizes": {
-        "2": 43
-      },
-      "captures": 13,
-      "sampleValues": [
-        "9300",
-        "8d00",
-        "a100",
-        "9200",
-        "a900"
-      ]
-    },
-    {
       "id": 3599859372,
       "idHex": "0xd6917eac",
-      "count": 41,
+      "count": 46,
       "sizes": {
-        "4": 41
+        "4": 46
       },
-      "captures": 21,
+      "captures": 22,
       "sampleValues": [
         "1020aa3e",
         "4ee5a93e",
@@ -341,13 +325,29 @@
       ]
     },
     {
+      "id": 2360250587,
+      "idHex": "0x8cae90db",
+      "count": 44,
+      "sizes": {
+        "2": 44
+      },
+      "captures": 14,
+      "sampleValues": [
+        "9300",
+        "8d00",
+        "a100",
+        "9200",
+        "a900"
+      ]
+    },
+    {
       "id": 2353325419,
       "idHex": "0x8c44e56b",
-      "count": 36,
+      "count": 37,
       "sizes": {
-        "4": 36
+        "4": 37
       },
-      "captures": 13,
+      "captures": 14,
       "sampleValues": [
         "f3ebe050",
         "ffffffff",
@@ -359,41 +359,9 @@
     {
       "id": 1834365881,
       "idHex": "0x6d5633b9",
-      "count": 31,
+      "count": 32,
       "sizes": {
-        "4": 31
-      },
-      "captures": 10,
-      "sampleValues": [
-        "ffffffff",
-        "ffffffff",
-        "ffffffff",
-        "ffffffff",
-        "ffffffff"
-      ]
-    },
-    {
-      "id": 2375503644,
-      "idHex": "0x8d974f1c",
-      "count": 28,
-      "sizes": {
-        "4": 28
-      },
-      "captures": 13,
-      "sampleValues": [
-        "a5fee050",
-        "e5ebe050",
-        "0c23e050",
-        "edefe050",
-        "edefe050"
-      ]
-    },
-    {
-      "id": 2352180643,
-      "idHex": "0x8c336da3",
-      "count": 28,
-      "sizes": {
-        "4": 28
+        "4": 32
       },
       "captures": 11,
       "sampleValues": [
@@ -405,19 +373,67 @@
       ]
     },
     {
-      "id": 2898628393,
-      "idHex": "0xacc58f29",
-      "count": 24,
+      "id": 2375503644,
+      "idHex": "0x8d974f1c",
+      "count": 29,
       "sizes": {
-        "4": 24
+        "4": 29
+      },
+      "captures": 14,
+      "sampleValues": [
+        "a5fee050",
+        "e5ebe050",
+        "0c23e050",
+        "edefe050",
+        "edefe050"
+      ]
+    },
+    {
+      "id": 2352180643,
+      "idHex": "0x8c336da3",
+      "count": 29,
+      "sizes": {
+        "4": 29
       },
       "captures": 12,
+      "sampleValues": [
+        "ffffffff",
+        "ffffffff",
+        "ffffffff",
+        "ffffffff",
+        "ffffffff"
+      ]
+    },
+    {
+      "id": 2898628393,
+      "idHex": "0xacc58f29",
+      "count": 25,
+      "sizes": {
+        "4": 25
+      },
+      "captures": 13,
       "sampleValues": [
         "08240000",
         "8f240000",
         "81230000",
         "8f240000",
         "8f240000"
+      ]
+    },
+    {
+      "id": 1383262953,
+      "idHex": "0x5272eae9",
+      "count": 23,
+      "sizes": {
+        "4": 23
+      },
+      "captures": 13,
+      "sampleValues": [
+        "affee050",
+        "fcebe050",
+        "0c23e050",
+        "01f0e050",
+        "01f0e050"
       ]
     },
     {
@@ -455,29 +471,13 @@
       ]
     },
     {
-      "id": 1383262953,
-      "idHex": "0x5272eae9",
-      "count": 22,
-      "sizes": {
-        "4": 22
-      },
-      "captures": 12,
-      "sampleValues": [
-        "affee050",
-        "fcebe050",
-        "0c23e050",
-        "01f0e050",
-        "01f0e050"
-      ]
-    },
-    {
       "id": 1685727656,
       "idHex": "0x647a29a8",
-      "count": 20,
+      "count": 21,
       "sizes": {
-        "2": 20
+        "2": 21
       },
-      "captures": 15,
+      "captures": 16,
       "sampleValues": [
         "7400",
         "1800",
@@ -489,11 +489,11 @@
     {
       "id": 3326273425,
       "idHex": "0xc642e791",
-      "count": 20,
+      "count": 21,
       "sizes": {
-        "4": 20
+        "4": 21
       },
-      "captures": 12,
+      "captures": 13,
       "sampleValues": [
         "13ece050",
         "0c23e050",
@@ -505,17 +505,65 @@
     {
       "id": 375562687,
       "idHex": "0x1662a1bf",
-      "count": 19,
+      "count": 20,
       "sizes": {
-        "4": 19
+        "4": 20
       },
-      "captures": 11,
+      "captures": 12,
       "sampleValues": [
         "2fece050",
         "0c23e050",
         "10f0e050",
         "10f0e050",
         "10f0e050"
+      ]
+    },
+    {
+      "id": 3586467146,
+      "idHex": "0xd5c5254a",
+      "count": 20,
+      "sizes": {
+        "4": 20
+      },
+      "captures": 11,
+      "sampleValues": [
+        "ffffffff",
+        "ffffffff",
+        "ffffffff",
+        "ffffffff",
+        "ffffffff"
+      ]
+    },
+    {
+      "id": 1097167276,
+      "idHex": "0x416571ac",
+      "count": 19,
+      "sizes": {
+        "2": 19
+      },
+      "captures": 15,
+      "sampleValues": [
+        "6300",
+        "1500",
+        "6600",
+        "6e00",
+        "6e00"
+      ]
+    },
+    {
+      "id": 680033238,
+      "idHex": "0x28887bd6",
+      "count": 19,
+      "sizes": {
+        "4": 19
+      },
+      "captures": 12,
+      "sampleValues": [
+        "befee050",
+        "0c23e050",
+        "e8efe050",
+        "e8efe050",
+        "e8efe050"
       ]
     },
     {
@@ -551,61 +599,13 @@
       ]
     },
     {
-      "id": 3586467146,
-      "idHex": "0xd5c5254a",
+      "id": 2645753223,
+      "idHex": "0x9db2fd87",
       "count": 19,
       "sizes": {
         "4": 19
       },
-      "captures": 10,
-      "sampleValues": [
-        "ffffffff",
-        "ffffffff",
-        "ffffffff",
-        "ffffffff",
-        "ffffffff"
-      ]
-    },
-    {
-      "id": 1097167276,
-      "idHex": "0x416571ac",
-      "count": 18,
-      "sizes": {
-        "2": 18
-      },
-      "captures": 14,
-      "sampleValues": [
-        "6300",
-        "1500",
-        "6600",
-        "6e00",
-        "6e00"
-      ]
-    },
-    {
-      "id": 680033238,
-      "idHex": "0x28887bd6",
-      "count": 18,
-      "sizes": {
-        "4": 18
-      },
-      "captures": 11,
-      "sampleValues": [
-        "befee050",
-        "0c23e050",
-        "e8efe050",
-        "e8efe050",
-        "e8efe050"
-      ]
-    },
-    {
-      "id": 2645753223,
-      "idHex": "0x9db2fd87",
-      "count": 18,
-      "sizes": {
-        "4": 18
-      },
-      "captures": 12,
+      "captures": 13,
       "sampleValues": [
         "09ece050",
         "0c23e050",
@@ -617,11 +617,11 @@
     {
       "id": 1328963143,
       "idHex": "0x4f365e47",
-      "count": 18,
+      "count": 19,
       "sizes": {
-        "4": 18
+        "4": 19
       },
-      "captures": 12,
+      "captures": 13,
       "sampleValues": [
         "0c23e050",
         "01f0e050",
@@ -633,11 +633,11 @@
     {
       "id": 2587330065,
       "idHex": "0x9a378611",
-      "count": 17,
+      "count": 18,
       "sizes": {
-        "4": 17
+        "4": 18
       },
-      "captures": 12,
+      "captures": 13,
       "sampleValues": [
         "23b3df50",
         "0c23e050",
@@ -649,11 +649,11 @@
     {
       "id": 3125920993,
       "idHex": "0xba51c4e1",
-      "count": 17,
+      "count": 18,
       "sizes": {
-        "2": 17
+        "2": 18
       },
-      "captures": 13,
+      "captures": 14,
       "sampleValues": [
         "a500",
         "a900",
@@ -665,11 +665,11 @@
     {
       "id": 397096943,
       "idHex": "0x17ab37ef",
-      "count": 17,
+      "count": 18,
       "sizes": {
-        "2": 17
+        "2": 18
       },
-      "captures": 13,
+      "captures": 14,
       "sampleValues": [
         "ae00",
         "aa00",
@@ -681,11 +681,11 @@
     {
       "id": 242237761,
       "idHex": "0x0e704141",
-      "count": 17,
+      "count": 18,
       "sizes": {
-        "2": 17
+        "2": 18
       },
-      "captures": 13,
+      "captures": 14,
       "sampleValues": [
         "1500",
         "4c00",
@@ -697,11 +697,11 @@
     {
       "id": 2737396122,
       "idHex": "0xa329599a",
-      "count": 17,
+      "count": 18,
       "sizes": {
-        "2": 17
+        "2": 18
       },
-      "captures": 13,
+      "captures": 14,
       "sampleValues": [
         "4300",
         "a900",
@@ -713,11 +713,11 @@
     {
       "id": 3581788804,
       "idHex": "0xd57dc284",
-      "count": 17,
+      "count": 18,
       "sizes": {
-        "2": 17
+        "2": 18
       },
-      "captures": 13,
+      "captures": 14,
       "sampleValues": [
         "4300",
         "ae00",
@@ -729,11 +729,11 @@
     {
       "id": 31605957,
       "idHex": "0x01e244c5",
-      "count": 17,
+      "count": 18,
       "sizes": {
-        "4": 17
+        "4": 18
       },
-      "captures": 10,
+      "captures": 11,
       "sampleValues": [
         "ffffffff",
         "ffffffff",
@@ -745,11 +745,11 @@
     {
       "id": 2476640330,
       "idHex": "0x939e884a",
-      "count": 17,
+      "count": 18,
       "sizes": {
-        "2": 17
+        "2": 18
       },
-      "captures": 13,
+      "captures": 14,
       "sampleValues": [
         "5c00",
         "7b00",
@@ -761,11 +761,11 @@
     {
       "id": 1802372125,
       "idHex": "0x6b6e041d",
-      "count": 17,
+      "count": 18,
       "sizes": {
-        "2": 17
+        "2": 18
       },
-      "captures": 13,
+      "captures": 14,
       "sampleValues": [
         "ad00",
         "d300",
@@ -777,11 +777,11 @@
     {
       "id": 77618606,
       "idHex": "0x04a05dae",
-      "count": 17,
+      "count": 18,
       "sizes": {
-        "4": 17
+        "4": 18
       },
-      "captures": 11,
+      "captures": 12,
       "sampleValues": [
         "0c23e050",
         "3df0e050",
@@ -793,11 +793,11 @@
     {
       "id": 2322033268,
       "idHex": "0x8a676a74",
-      "count": 16,
+      "count": 17,
       "sizes": {
-        "4": 16
+        "4": 17
       },
-      "captures": 12,
+      "captures": 13,
       "sampleValues": [
         "00000000",
         "3a6af0a0",
@@ -809,11 +809,11 @@
     {
       "id": 465857030,
       "idHex": "0x1bc46a06",
-      "count": 16,
+      "count": 17,
       "sizes": {
-        "1": 16
+        "1": 17
       },
-      "captures": 12,
+      "captures": 13,
       "sampleValues": [
         "00",
         "01",
@@ -825,11 +825,11 @@
     {
       "id": 1358934180,
       "idHex": "0x50ffb0a4",
-      "count": 16,
+      "count": 17,
       "sizes": {
-        "4": 16
+        "4": 17
       },
-      "captures": 10,
+      "captures": 11,
       "sampleValues": [
         "ffffffff",
         "ffffffff",
@@ -841,11 +841,11 @@
     {
       "id": 1825241267,
       "idHex": "0x6ccaf8b3",
-      "count": 16,
+      "count": 17,
       "sizes": {
-        "2": 16
+        "2": 17
       },
-      "captures": 12,
+      "captures": 13,
       "sampleValues": [
         "4300",
         "5e00",
@@ -857,11 +857,11 @@
     {
       "id": 2043145471,
       "idHex": "0x79c7ecff",
-      "count": 16,
+      "count": 17,
       "sizes": {
-        "2": 16
+        "2": 17
       },
-      "captures": 12,
+      "captures": 13,
       "sampleValues": [
         "9600",
         "b500",
@@ -873,11 +873,11 @@
     {
       "id": 3783101562,
       "idHex": "0xe17d8c7a",
-      "count": 16,
+      "count": 17,
       "sizes": {
-        "2": 16
+        "2": 17
       },
-      "captures": 12,
+      "captures": 13,
       "sampleValues": [
         "9600",
         "b500",
@@ -889,11 +889,11 @@
     {
       "id": 541915458,
       "idHex": "0x204cf942",
-      "count": 16,
+      "count": 17,
       "sizes": {
-        "2": 16
+        "2": 17
       },
-      "captures": 12,
+      "captures": 13,
       "sampleValues": [
         "9600",
         "b500",
@@ -905,11 +905,11 @@
     {
       "id": 472575091,
       "idHex": "0x1c2aec73",
-      "count": 16,
+      "count": 17,
       "sizes": {
-        "2": 16
+        "2": 17
       },
-      "captures": 12,
+      "captures": 13,
       "sampleValues": [
         "9600",
         "b500",
@@ -921,11 +921,11 @@
     {
       "id": 1606774038,
       "idHex": "0x5fc56d16",
-      "count": 16,
+      "count": 17,
       "sizes": {
-        "2": 16
+        "2": 17
       },
-      "captures": 12,
+      "captures": 13,
       "sampleValues": [
         "a000",
         "bf00",
@@ -937,11 +937,11 @@
     {
       "id": 1686126232,
       "idHex": "0x64803e98",
-      "count": 16,
+      "count": 17,
       "sizes": {
-        "2": 16
+        "2": 17
       },
-      "captures": 12,
+      "captures": 13,
       "sampleValues": [
         "9600",
         "b500",
@@ -953,11 +953,11 @@
     {
       "id": 296858157,
       "idHex": "0x11b1b22d",
-      "count": 16,
+      "count": 17,
       "sizes": {
-        "2": 16
+        "2": 17
       },
-      "captures": 12,
+      "captures": 13,
       "sampleValues": [
         "9d00",
         "bc00",
@@ -969,17 +969,113 @@
     {
       "id": 3952130731,
       "idHex": "0xeb90baab",
-      "count": 16,
+      "count": 17,
       "sizes": {
-        "2": 16
+        "2": 17
       },
-      "captures": 12,
+      "captures": 13,
       "sampleValues": [
         "a600",
         "cc00",
         "cc00",
         "cc00",
         "cc00"
+      ]
+    },
+    {
+      "id": 3599737057,
+      "idHex": "0xd68fa0e1",
+      "count": 16,
+      "sizes": {
+        "4": 16
+      },
+      "captures": 12,
+      "sampleValues": [
+        "0c23e050",
+        "23b3df50",
+        "23b3df50",
+        "0ff1e050",
+        "33f0e050"
+      ]
+    },
+    {
+      "id": 1096319405,
+      "idHex": "0x415881ad",
+      "count": 16,
+      "sizes": {
+        "4": 16
+      },
+      "captures": 11,
+      "sampleValues": [
+        "ffffffff",
+        "ffffffff",
+        "ffffffff",
+        "ffffffff",
+        "ffffffff"
+      ]
+    },
+    {
+      "id": 1635872254,
+      "idHex": "0x61816dfe",
+      "count": 16,
+      "sizes": {
+        "4": 16
+      },
+      "captures": 11,
+      "sampleValues": [
+        "ffffffff",
+        "ffffffff",
+        "ffffffff",
+        "ffffffff",
+        "ffffffff"
+      ]
+    },
+    {
+      "id": 709841863,
+      "idHex": "0x2a4f53c7",
+      "count": 16,
+      "sizes": {
+        "4": 16
+      },
+      "captures": 11,
+      "sampleValues": [
+        "2d040000",
+        "9c010000",
+        "0a020000",
+        "2d040000",
+        "2d040000"
+      ]
+    },
+    {
+      "id": 917836329,
+      "idHex": "0x36b51229",
+      "count": 16,
+      "sizes": {
+        "4": 16
+      },
+      "captures": 12,
+      "sampleValues": [
+        "0c23e050",
+        "01f0e050",
+        "01f0e050",
+        "01f0e050",
+        "01f0e050"
+      ]
+    },
+    {
+      "id": 2681559248,
+      "idHex": "0x9fd558d0",
+      "count": 16,
+      "sizes": {
+        "4": 16
+      },
+      "captures": 12,
+      "sampleValues": [
+        "0c23e050",
+        "33f0e050",
+        "0ff1e050",
+        "33f0e050",
+        "33f0e050"
       ]
     },
     {
@@ -1015,99 +1111,259 @@
       ]
     },
     {
-      "id": 3599737057,
-      "idHex": "0xd68fa0e1",
+      "id": 3390254021,
+      "idHex": "0xca132bc5",
       "count": 15,
       "sizes": {
         "4": 15
       },
-      "captures": 11,
+      "captures": 12,
       "sampleValues": [
-        "0c23e050",
-        "23b3df50",
-        "23b3df50",
-        "0ff1e050",
-        "33f0e050"
+        "6256f0a0",
+        "366af0a0",
+        "0e6af0a0",
+        "0e6af0a0",
+        "0e6af0a0"
       ]
     },
     {
-      "id": 1096319405,
-      "idHex": "0x415881ad",
+      "id": 3609017102,
+      "idHex": "0xd71d3b0e",
+      "count": 15,
+      "sizes": {
+        "4": 15
+      },
+      "captures": 12,
+      "sampleValues": [
+        "7374f0a0",
+        "376af0a0",
+        "106af0a0",
+        "106af0a0",
+        "106af0a0"
+      ]
+    },
+    {
+      "id": 4131584372,
+      "idHex": "0xf642f974",
+      "count": 15,
+      "sizes": {
+        "4": 15
+      },
+      "captures": 12,
+      "sampleValues": [
+        "9174f0a0",
+        "396af0a0",
+        "166af0a0",
+        "166af0a0",
+        "166af0a0"
+      ]
+    },
+    {
+      "id": 3368263768,
+      "idHex": "0xc8c3a058",
+      "count": 15,
+      "sizes": {
+        "1": 15
+      },
+      "captures": 12,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 2918124322,
+      "idHex": "0xadef0b22",
+      "count": 15,
+      "sizes": {
+        "1": 15
+      },
+      "captures": 12,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 623301497,
+      "idHex": "0x2526d379",
+      "count": 15,
+      "sizes": {
+        "1": 15
+      },
+      "captures": 12,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 1184105402,
+      "idHex": "0x469403ba",
+      "count": 15,
+      "sizes": {
+        "4": 15
+      },
+      "captures": 12,
+      "sampleValues": [
+        "dc69f0a0",
+        "146af0a0",
+        "066af0a0",
+        "146af0a0",
+        "146af0a0"
+      ]
+    },
+    {
+      "id": 794476748,
+      "idHex": "0x2f5ac0cc",
+      "count": 15,
+      "sizes": {
+        "4": 15
+      },
+      "captures": 12,
+      "sampleValues": [
+        "806af0a0",
+        "066af0a0",
+        "096af0a0",
+        "066af0a0",
+        "066af0a0"
+      ]
+    },
+    {
+      "id": 606224673,
+      "idHex": "0x24224121",
+      "count": 15,
+      "sizes": {
+        "4": 15
+      },
+      "captures": 12,
+      "sampleValues": [
+        "2e6af0a0",
+        "046af0a0",
+        "db6af0a0",
+        "046af0a0",
+        "046af0a0"
+      ]
+    },
+    {
+      "id": 3891074976,
+      "idHex": "0xe7ed17a0",
+      "count": 15,
+      "sizes": {
+        "4": 15
+      },
+      "captures": 12,
+      "sampleValues": [
+        "2d6af0a0",
+        "096af0a0",
+        "146af0a0",
+        "096af0a0",
+        "096af0a0"
+      ]
+    },
+    {
+      "id": 4074799092,
+      "idHex": "0xf2e07ff4",
+      "count": 15,
+      "sizes": {
+        "4": 15
+      },
+      "captures": 12,
+      "sampleValues": [
+        "3e6af0a0",
+        "0a6af0a0",
+        "0f6af0a0",
+        "0a6af0a0",
+        "0a6af0a0"
+      ]
+    },
+    {
+      "id": 61791867,
+      "idHex": "0x03aede7b",
+      "count": 15,
+      "sizes": {
+        "4": 15
+      },
+      "captures": 12,
+      "sampleValues": [
+        "2c6af0a0",
+        "126af0a0",
+        "d56af0a0",
+        "126af0a0",
+        "126af0a0"
+      ]
+    },
+    {
+      "id": 1730081457,
+      "idHex": "0x671ef2b1",
+      "count": 15,
+      "sizes": {
+        "1": 15
+      },
+      "captures": 12,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 1261075735,
+      "idHex": "0x4b2a7d17",
+      "count": 15,
+      "sizes": {
+        "1": 15
+      },
+      "captures": 12,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 2242575988,
+      "idHex": "0x85aafe74",
+      "count": 15,
+      "sizes": {
+        "1": 15
+      },
+      "captures": 12,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 2722598565,
+      "idHex": "0xa2478ea5",
       "count": 15,
       "sizes": {
         "4": 15
       },
       "captures": 10,
       "sampleValues": [
-        "ffffffff",
-        "ffffffff",
-        "ffffffff",
-        "ffffffff",
-        "ffffffff"
-      ]
-    },
-    {
-      "id": 1635872254,
-      "idHex": "0x61816dfe",
-      "count": 15,
-      "sizes": {
-        "4": 15
-      },
-      "captures": 10,
-      "sampleValues": [
-        "ffffffff",
-        "ffffffff",
-        "ffffffff",
-        "ffffffff",
-        "ffffffff"
-      ]
-    },
-    {
-      "id": 709841863,
-      "idHex": "0x2a4f53c7",
-      "count": 15,
-      "sizes": {
-        "4": 15
-      },
-      "captures": 10,
-      "sampleValues": [
-        "2d040000",
-        "9c010000",
-        "0a020000",
-        "2d040000",
-        "2d040000"
-      ]
-    },
-    {
-      "id": 917836329,
-      "idHex": "0x36b51229",
-      "count": 15,
-      "sizes": {
-        "4": 15
-      },
-      "captures": 11,
-      "sampleValues": [
         "0c23e050",
-        "01f0e050",
-        "01f0e050",
-        "01f0e050",
-        "01f0e050"
-      ]
-    },
-    {
-      "id": 2681559248,
-      "idHex": "0x9fd558d0",
-      "count": 15,
-      "sizes": {
-        "4": 15
-      },
-      "captures": 11,
-      "sampleValues": [
         "0c23e050",
-        "33f0e050",
-        "0ff1e050",
-        "33f0e050",
-        "33f0e050"
+        "0c23e050",
+        "0c23e050",
+        "0c23e050"
       ]
     },
     {
@@ -1127,56 +1383,40 @@
       ]
     },
     {
-      "id": 3390254021,
-      "idHex": "0xca132bc5",
+      "id": 230008255,
+      "idHex": "0x0db5a5bf",
+      "count": 14,
+      "sizes": {
+        "1": 14
+      },
+      "captures": 11,
+      "sampleValues": [
+        "0a",
+        "0a",
+        "0a",
+        "0a",
+        "05"
+      ]
+    },
+    {
+      "id": 2508214769,
+      "idHex": "0x958051f1",
       "count": 14,
       "sizes": {
         "4": 14
       },
       "captures": 11,
       "sampleValues": [
-        "6256f0a0",
-        "366af0a0",
-        "0e6af0a0",
-        "0e6af0a0",
-        "0e6af0a0"
+        "7c6af0a0",
+        "056af0a0",
+        "056af0a0",
+        "056af0a0",
+        "056af0a0"
       ]
     },
     {
-      "id": 3609017102,
-      "idHex": "0xd71d3b0e",
-      "count": 14,
-      "sizes": {
-        "4": 14
-      },
-      "captures": 11,
-      "sampleValues": [
-        "7374f0a0",
-        "376af0a0",
-        "106af0a0",
-        "106af0a0",
-        "106af0a0"
-      ]
-    },
-    {
-      "id": 4131584372,
-      "idHex": "0xf642f974",
-      "count": 14,
-      "sizes": {
-        "4": 14
-      },
-      "captures": 11,
-      "sampleValues": [
-        "9174f0a0",
-        "396af0a0",
-        "166af0a0",
-        "166af0a0",
-        "166af0a0"
-      ]
-    },
-    {
-      "id": 3368263768,
-      "idHex": "0xc8c3a058",
+      "id": 4242529452,
+      "idHex": "0xfcdfdcac",
       "count": 14,
       "sizes": {
         "1": 14
@@ -1191,8 +1431,8 @@
       ]
     },
     {
-      "id": 2918124322,
-      "idHex": "0xadef0b22",
+      "id": 2562519058,
+      "idHex": "0x98bcf012",
       "count": 14,
       "sizes": {
         "1": 14
@@ -1207,8 +1447,8 @@
       ]
     },
     {
-      "id": 623301497,
-      "idHex": "0x2526d379",
+      "id": 1594822244,
+      "idHex": "0x5f0f0e64",
       "count": 14,
       "sizes": {
         "1": 14
@@ -1223,104 +1463,8 @@
       ]
     },
     {
-      "id": 1184105402,
-      "idHex": "0x469403ba",
-      "count": 14,
-      "sizes": {
-        "4": 14
-      },
-      "captures": 11,
-      "sampleValues": [
-        "dc69f0a0",
-        "146af0a0",
-        "066af0a0",
-        "146af0a0",
-        "146af0a0"
-      ]
-    },
-    {
-      "id": 794476748,
-      "idHex": "0x2f5ac0cc",
-      "count": 14,
-      "sizes": {
-        "4": 14
-      },
-      "captures": 11,
-      "sampleValues": [
-        "806af0a0",
-        "066af0a0",
-        "096af0a0",
-        "066af0a0",
-        "066af0a0"
-      ]
-    },
-    {
-      "id": 606224673,
-      "idHex": "0x24224121",
-      "count": 14,
-      "sizes": {
-        "4": 14
-      },
-      "captures": 11,
-      "sampleValues": [
-        "2e6af0a0",
-        "046af0a0",
-        "db6af0a0",
-        "046af0a0",
-        "046af0a0"
-      ]
-    },
-    {
-      "id": 3891074976,
-      "idHex": "0xe7ed17a0",
-      "count": 14,
-      "sizes": {
-        "4": 14
-      },
-      "captures": 11,
-      "sampleValues": [
-        "2d6af0a0",
-        "096af0a0",
-        "146af0a0",
-        "096af0a0",
-        "096af0a0"
-      ]
-    },
-    {
-      "id": 4074799092,
-      "idHex": "0xf2e07ff4",
-      "count": 14,
-      "sizes": {
-        "4": 14
-      },
-      "captures": 11,
-      "sampleValues": [
-        "3e6af0a0",
-        "0a6af0a0",
-        "0f6af0a0",
-        "0a6af0a0",
-        "0a6af0a0"
-      ]
-    },
-    {
-      "id": 61791867,
-      "idHex": "0x03aede7b",
-      "count": 14,
-      "sizes": {
-        "4": 14
-      },
-      "captures": 11,
-      "sampleValues": [
-        "2c6af0a0",
-        "126af0a0",
-        "d56af0a0",
-        "126af0a0",
-        "126af0a0"
-      ]
-    },
-    {
-      "id": 1730081457,
-      "idHex": "0x671ef2b1",
+      "id": 456593790,
+      "idHex": "0x1b37117e",
       "count": 14,
       "sizes": {
         "1": 14
@@ -1335,45 +1479,13 @@
       ]
     },
     {
-      "id": 1261075735,
-      "idHex": "0x4b2a7d17",
-      "count": 14,
-      "sizes": {
-        "1": 14
-      },
-      "captures": 11,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 2242575988,
-      "idHex": "0x85aafe74",
-      "count": 14,
-      "sizes": {
-        "1": 14
-      },
-      "captures": 11,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 2722598565,
-      "idHex": "0xa2478ea5",
+      "id": 284622204,
+      "idHex": "0x10f6fd7c",
       "count": 14,
       "sizes": {
         "4": 14
       },
-      "captures": 9,
+      "captures": 10,
       "sampleValues": [
         "0c23e050",
         "0c23e050",
@@ -1479,40 +1591,24 @@
       ]
     },
     {
-      "id": 230008255,
-      "idHex": "0x0db5a5bf",
-      "count": 13,
-      "sizes": {
-        "1": 13
-      },
-      "captures": 10,
-      "sampleValues": [
-        "0a",
-        "0a",
-        "0a",
-        "0a",
-        "0a"
-      ]
-    },
-    {
-      "id": 2508214769,
-      "idHex": "0x958051f1",
+      "id": 2162154130,
+      "idHex": "0x80dfda92",
       "count": 13,
       "sizes": {
         "4": 13
       },
       "captures": 10,
       "sampleValues": [
-        "7c6af0a0",
-        "056af0a0",
-        "056af0a0",
-        "056af0a0",
-        "056af0a0"
+        "d26af0a0",
+        "d26af0a0",
+        "d26af0a0",
+        "d26af0a0",
+        "d26af0a0"
       ]
     },
     {
-      "id": 4242529452,
-      "idHex": "0xfcdfdcac",
+      "id": 1489861824,
+      "idHex": "0x58cd7cc0",
       "count": 13,
       "sizes": {
         "1": 13
@@ -1527,67 +1623,99 @@
       ]
     },
     {
-      "id": 2562519058,
-      "idHex": "0x98bcf012",
+      "id": 2982928489,
+      "idHex": "0xb1cbe069",
       "count": 13,
       "sizes": {
         "1": 13
       },
       "captures": 10,
       "sampleValues": [
+        "04",
         "01",
         "01",
         "01",
-        "01",
-        "01"
+        "04"
       ]
     },
     {
-      "id": 1594822244,
-      "idHex": "0x5f0f0e64",
+      "id": 4171750065,
+      "idHex": "0xf8a7dab1",
       "count": 13,
       "sizes": {
         "1": 13
       },
       "captures": 10,
       "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
+        "05",
+        "03",
+        "03",
+        "03",
+        "05"
       ]
     },
     {
-      "id": 456593790,
-      "idHex": "0x1b37117e",
+      "id": 553549119,
+      "idHex": "0x20fe7d3f",
       "count": 13,
       "sizes": {
         "1": 13
       },
       "captures": 10,
       "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
+        "05",
+        "03",
+        "03",
+        "03",
+        "05"
       ]
     },
     {
-      "id": 284622204,
-      "idHex": "0x10f6fd7c",
+      "id": 2273710597,
+      "idHex": "0x87861205",
       "count": 13,
       "sizes": {
-        "4": 13
+        "2": 13
       },
-      "captures": 9,
+      "captures": 10,
       "sampleValues": [
-        "0c23e050",
-        "0c23e050",
-        "0c23e050",
-        "0c23e050",
-        "0c23e050"
+        "c730",
+        "c730",
+        "c730",
+        "c730",
+        "c730"
+      ]
+    },
+    {
+      "id": 2717047715,
+      "idHex": "0xa1f2dba3",
+      "count": 13,
+      "sizes": {
+        "2": 13
+      },
+      "captures": 10,
+      "sampleValues": [
+        "c530",
+        "c530",
+        "c530",
+        "c530",
+        "c530"
+      ]
+    },
+    {
+      "id": 2134387472,
+      "idHex": "0x7f382b10",
+      "count": 13,
+      "sizes": {
+        "2": 13
+      },
+      "captures": 10,
+      "sampleValues": [
+        "c630",
+        "c630",
+        "c630",
+        "c630",
+        "c630"
       ]
     },
     {
@@ -1607,24 +1735,8 @@
       ]
     },
     {
-      "id": 2162154130,
-      "idHex": "0x80dfda92",
-      "count": 12,
-      "sizes": {
-        "4": 12
-      },
-      "captures": 9,
-      "sampleValues": [
-        "d26af0a0",
-        "d26af0a0",
-        "d26af0a0",
-        "d26af0a0",
-        "d26af0a0"
-      ]
-    },
-    {
-      "id": 1489861824,
-      "idHex": "0x58cd7cc0",
+      "id": 214583236,
+      "idHex": "0x0cca47c4",
       "count": 12,
       "sizes": {
         "1": 12
@@ -1639,99 +1751,1443 @@
       ]
     },
     {
-      "id": 2982928489,
-      "idHex": "0xb1cbe069",
+      "id": 3009819017,
+      "idHex": "0xb3663189",
       "count": 12,
       "sizes": {
         "1": 12
       },
       "captures": 9,
       "sampleValues": [
-        "04",
         "01",
         "01",
         "01",
-        "04"
+        "01",
+        "01"
       ]
     },
     {
-      "id": 4171750065,
-      "idHex": "0xf8a7dab1",
+      "id": 2512189834,
+      "idHex": "0x95bcf98a",
       "count": 12,
       "sizes": {
         "1": 12
       },
       "captures": 9,
       "sampleValues": [
-        "05",
-        "03",
-        "03",
-        "03",
-        "05"
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
       ]
     },
     {
-      "id": 553549119,
-      "idHex": "0x20fe7d3f",
+      "id": 4258395870,
+      "idHex": "0xfdd1f6de",
       "count": 12,
       "sizes": {
         "1": 12
       },
       "captures": 9,
       "sampleValues": [
-        "05",
-        "03",
-        "03",
-        "03",
-        "05"
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
       ]
     },
     {
-      "id": 2273710597,
-      "idHex": "0x87861205",
+      "id": 3696165881,
+      "idHex": "0xdc4f03f9",
+      "count": 12,
+      "sizes": {
+        "1": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 1100554186,
+      "idHex": "0x41991fca",
+      "count": 12,
+      "sizes": {
+        "1": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 1463803980,
+      "idHex": "0x573fe04c",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "0000803f",
+        "0000803f",
+        "0000803f",
+        "0000803f",
+        "0000803f"
+      ]
+    },
+    {
+      "id": 3147614069,
+      "idHex": "0xbb9cc775",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "0000803e",
+        "0000803e",
+        "0000803e",
+        "0000803e",
+        "0000803e"
+      ]
+    },
+    {
+      "id": 3684960416,
+      "idHex": "0xdba408a0",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "ce180000",
+        "ce180000",
+        "ce180000",
+        "ce180000",
+        "ce180000"
+      ]
+    },
+    {
+      "id": 239673571,
+      "idHex": "0x0e4920e3",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "b51f0000",
+        "b51f0000",
+        "b51f0000",
+        "b51f0000",
+        "b51f0000"
+      ]
+    },
+    {
+      "id": 3751403523,
+      "idHex": "0xdf99e003",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "c4780000",
+        "c4780000",
+        "c4780000",
+        "c4780000",
+        "c4780000"
+      ]
+    },
+    {
+      "id": 2066680468,
+      "idHex": "0x7b2f0a94",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "ab0e0000",
+        "ab0e0000",
+        "ab0e0000",
+        "ab0e0000",
+        "ab0e0000"
+      ]
+    },
+    {
+      "id": 1954711545,
+      "idHex": "0x748287f9",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "fd6a0000",
+        "fd6a0000",
+        "fd6a0000",
+        "fd6a0000",
+        "fd6a0000"
+      ]
+    },
+    {
+      "id": 1615324349,
+      "idHex": "0x6047e4bd",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "63c70000",
+        "63c70000",
+        "63c70000",
+        "63c70000",
+        "63c70000"
+      ]
+    },
+    {
+      "id": 3882140765,
+      "idHex": "0xe764c45d",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "0952f0a0",
+        "0952f0a0",
+        "0952f0a0",
+        "0952f0a0",
+        "0952f0a0"
+      ]
+    },
+    {
+      "id": 3983401025,
+      "idHex": "0xed6de041",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "0a52f0a0",
+        "0a52f0a0",
+        "0a52f0a0",
+        "0a52f0a0",
+        "0a52f0a0"
+      ]
+    },
+    {
+      "id": 2299102566,
+      "idHex": "0x89098566",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "e32ef0a0",
+        "e32ef0a0",
+        "e32ef0a0",
+        "e32ef0a0",
+        "e32ef0a0"
+      ]
+    },
+    {
+      "id": 1633789505,
+      "idHex": "0x6161a641",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "e42ef0a0",
+        "e42ef0a0",
+        "e42ef0a0",
+        "e42ef0a0",
+        "e42ef0a0"
+      ]
+    },
+    {
+      "id": 4028073911,
+      "idHex": "0xf01787b7",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "0d52f0a0",
+        "0d52f0a0",
+        "0d52f0a0",
+        "0d52f0a0",
+        "0d52f0a0"
+      ]
+    },
+    {
+      "id": 1767349671,
+      "idHex": "0x69579da7",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "0e52f0a0",
+        "0e52f0a0",
+        "0e52f0a0",
+        "0e52f0a0",
+        "0e52f0a0"
+      ]
+    },
+    {
+      "id": 2108177118,
+      "idHex": "0x7da83ade",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "0f52f0a0",
+        "0f52f0a0",
+        "0f52f0a0",
+        "0f52f0a0",
+        "0f52f0a0"
+      ]
+    },
+    {
+      "id": 2903951278,
+      "idHex": "0xad16c7ae",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "e92ef0a0",
+        "e92ef0a0",
+        "e92ef0a0",
+        "e92ef0a0",
+        "e92ef0a0"
+      ]
+    },
+    {
+      "id": 3046718940,
+      "idHex": "0xb5993ddc",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "ea2ef0a0",
+        "ea2ef0a0",
+        "ea2ef0a0",
+        "ea2ef0a0",
+        "ea2ef0a0"
+      ]
+    },
+    {
+      "id": 952676495,
+      "idHex": "0x38c8b08f",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "e52ef0a0",
+        "e52ef0a0",
+        "e52ef0a0",
+        "e52ef0a0",
+        "e52ef0a0"
+      ]
+    },
+    {
+      "id": 972260559,
+      "idHex": "0x39f384cf",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "e72ef0a0",
+        "e72ef0a0",
+        "e72ef0a0",
+        "e72ef0a0",
+        "e72ef0a0"
+      ]
+    },
+    {
+      "id": 4032015386,
+      "idHex": "0xf053ac1a",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "eb2ef0a0",
+        "eb2ef0a0",
+        "eb2ef0a0",
+        "eb2ef0a0",
+        "eb2ef0a0"
+      ]
+    },
+    {
+      "id": 3372503575,
+      "idHex": "0xc9045217",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "fc55f0a0",
+        "fc55f0a0",
+        "fc55f0a0",
+        "fc55f0a0",
+        "fc55f0a0"
+      ]
+    },
+    {
+      "id": 1192059354,
+      "idHex": "0x470d61da",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "fd55f0a0",
+        "fd55f0a0",
+        "fd55f0a0",
+        "fd55f0a0",
+        "fd55f0a0"
+      ]
+    },
+    {
+      "id": 2130548708,
+      "idHex": "0x7efd97e4",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "3973f0a0",
+        "3973f0a0",
+        "3973f0a0",
+        "3973f0a0",
+        "3973f0a0"
+      ]
+    },
+    {
+      "id": 1041917455,
+      "idHex": "0x3e1a660f",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "ff55f0a0",
+        "ff55f0a0",
+        "ff55f0a0",
+        "ff55f0a0",
+        "ff55f0a0"
+      ]
+    },
+    {
+      "id": 2146496100,
+      "idHex": "0x7ff0ee64",
+      "count": 12,
+      "sizes": {
+        "1": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 2670167444,
+      "idHex": "0x9f278594",
+      "count": 12,
+      "sizes": {
+        "1": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 474091372,
+      "idHex": "0x1c420f6c",
+      "count": 12,
+      "sizes": {
+        "1": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 1764113591,
+      "idHex": "0x69263cb7",
+      "count": 12,
+      "sizes": {
+        "1": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 1510621236,
+      "idHex": "0x5a0a4034",
+      "count": 12,
+      "sizes": {
+        "1": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 3317992024,
+      "idHex": "0xc5c48a58",
+      "count": 12,
+      "sizes": {
+        "1": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 2387484594,
+      "idHex": "0x8e4e1fb2",
+      "count": 12,
+      "sizes": {
+        "1": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 831010496,
+      "idHex": "0x318836c0",
+      "count": 12,
+      "sizes": {
+        "1": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 1100678255,
+      "idHex": "0x419b046f",
+      "count": 12,
+      "sizes": {
+        "1": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 2321333339,
+      "idHex": "0x8a5cbc5b",
+      "count": 12,
+      "sizes": {
+        "1": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 2880932814,
+      "idHex": "0xabb78bce",
+      "count": 12,
+      "sizes": {
+        "1": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 1795555429,
+      "idHex": "0x6b060065",
+      "count": 12,
+      "sizes": {
+        "1": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 410209477,
+      "idHex": "0x18734cc5",
+      "count": 12,
+      "sizes": {
+        "1": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 215836392,
+      "idHex": "0x0cdd66e8",
+      "count": 12,
+      "sizes": {
+        "1": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 3116449174,
+      "idHex": "0xb9c13d96",
+      "count": 12,
+      "sizes": {
+        "1": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 1617295458,
+      "idHex": "0x6065f862",
+      "count": 12,
+      "sizes": {
+        "1": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 2798921412,
+      "idHex": "0xa6d426c4",
+      "count": 12,
+      "sizes": {
+        "1": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 2093025364,
+      "idHex": "0x7cc10854",
+      "count": 12,
+      "sizes": {
+        "1": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 4116514725,
+      "idHex": "0xf55d07a5",
+      "count": 12,
+      "sizes": {
+        "1": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 3830872120,
+      "idHex": "0xe4567838",
+      "count": 12,
+      "sizes": {
+        "1": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 734881962,
+      "idHex": "0x2bcd68aa",
+      "count": 12,
+      "sizes": {
+        "1": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "20",
+        "20",
+        "20",
+        "20",
+        "20"
+      ]
+    },
+    {
+      "id": 3165141691,
+      "idHex": "0xbca83abb",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "32b3df50",
+        "32b3df50",
+        "32b3df50",
+        "32b3df50",
+        "32b3df50"
+      ]
+    },
+    {
+      "id": 1169709091,
+      "idHex": "0x45b85823",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "faacdf50",
+        "faacdf50",
+        "faacdf50",
+        "faacdf50",
+        "faacdf50"
+      ]
+    },
+    {
+      "id": 1485035334,
+      "idHex": "0x5883d746",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "3aaddf50",
+        "3aaddf50",
+        "3aaddf50",
+        "3aaddf50",
+        "3aaddf50"
+      ]
+    },
+    {
+      "id": 3987568943,
+      "idHex": "0xedad792f",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "a1d4ca50",
+        "a1d4ca50",
+        "a1d4ca50",
+        "a1d4ca50",
+        "a1d4ca50"
+      ]
+    },
+    {
+      "id": 1570618950,
+      "idHex": "0x5d9dbe46",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "79745550",
+        "79745550",
+        "79745550",
+        "79745550",
+        "79745550"
+      ]
+    },
+    {
+      "id": 582770783,
+      "idHex": "0x22bc605f",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "79745550",
+        "79745550",
+        "79745550",
+        "79745550",
+        "79745550"
+      ]
+    },
+    {
+      "id": 3955162090,
+      "idHex": "0xebbefbea",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "79745550",
+        "79745550",
+        "79745550",
+        "79745550",
+        "79745550"
+      ]
+    },
+    {
+      "id": 3763906956,
+      "idHex": "0xe058a98c",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "79745550",
+        "79745550",
+        "79745550",
+        "79745550",
+        "79745550"
+      ]
+    },
+    {
+      "id": 1013400887,
+      "idHex": "0x3c674537",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "79745550",
+        "79745550",
+        "79745550",
+        "79745550",
+        "79745550"
+      ]
+    },
+    {
+      "id": 1238292429,
+      "idHex": "0x49ced7cd",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "79745550",
+        "79745550",
+        "79745550",
+        "79745550",
+        "79745550"
+      ]
+    },
+    {
+      "id": 1674883291,
+      "idHex": "0x63d4b0db",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "79745550",
+        "79745550",
+        "79745550",
+        "79745550",
+        "79745550"
+      ]
+    },
+    {
+      "id": 2143859037,
+      "idHex": "0x7fc8b15d",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "79745550",
+        "79745550",
+        "79745550",
+        "79745550",
+        "79745550"
+      ]
+    },
+    {
+      "id": 1805411383,
+      "idHex": "0x6b9c6437",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "79745550",
+        "79745550",
+        "79745550",
+        "79745550",
+        "79745550"
+      ]
+    },
+    {
+      "id": 2488749322,
+      "idHex": "0x94574d0a",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "79745550",
+        "79745550",
+        "79745550",
+        "79745550",
+        "79745550"
+      ]
+    },
+    {
+      "id": 2548534350,
+      "idHex": "0x97e78c4e",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "79745550",
+        "79745550",
+        "79745550",
+        "79745550",
+        "79745550"
+      ]
+    },
+    {
+      "id": 1303461415,
+      "idHex": "0x4db13e27",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "79745550",
+        "79745550",
+        "79745550",
+        "79745550",
+        "79745550"
+      ]
+    },
+    {
+      "id": 1149539330,
+      "idHex": "0x44849402",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "0000803f",
+        "0000803f",
+        "0000803f",
+        "0000803f",
+        "0000803f"
+      ]
+    },
+    {
+      "id": 431347460,
+      "idHex": "0x19b5d704",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "0000803f",
+        "0000803f",
+        "0000803f",
+        "0000803f",
+        "0000803f"
+      ]
+    },
+    {
+      "id": 466168723,
+      "idHex": "0x1bc92b93",
       "count": 12,
       "sizes": {
         "2": 12
       },
       "captures": 9,
       "sampleValues": [
-        "c730",
-        "c730",
-        "c730",
-        "c730",
-        "c730"
+        "ffff",
+        "ffff",
+        "ffff",
+        "ffff",
+        "ffff"
       ]
     },
     {
-      "id": 2717047715,
-      "idHex": "0xa1f2dba3",
+      "id": 505142057,
+      "idHex": "0x1e1bdb29",
       "count": 12,
       "sizes": {
         "2": 12
       },
       "captures": 9,
       "sampleValues": [
-        "c530",
-        "c530",
-        "c530",
-        "c530",
-        "c530"
+        "ffff",
+        "ffff",
+        "ffff",
+        "ffff",
+        "ffff"
       ]
     },
     {
-      "id": 2134387472,
-      "idHex": "0x7f382b10",
+      "id": 2890963,
+      "idHex": "0x002c1cd3",
       "count": 12,
       "sizes": {
-        "2": 12
+        "4": 12
       },
       "captures": 9,
       "sampleValues": [
-        "c630",
-        "c630",
-        "c630",
-        "c630",
-        "c630"
+        "1109f5a0",
+        "1109f5a0",
+        "1109f5a0",
+        "1109f5a0",
+        "1109f5a0"
+      ]
+    },
+    {
+      "id": 1769270693,
+      "idHex": "0x6974eda5",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "00b4f1a0",
+        "00b4f1a0",
+        "00b4f1a0",
+        "00b4f1a0",
+        "00b4f1a0"
+      ]
+    },
+    {
+      "id": 1558112016,
+      "idHex": "0x5cdee710",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "38b0f1a0",
+        "38b0f1a0",
+        "38b0f1a0",
+        "38b0f1a0",
+        "38b0f1a0"
+      ]
+    },
+    {
+      "id": 530628087,
+      "idHex": "0x1fa0bdf7",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "3eb0f1a0",
+        "3eb0f1a0",
+        "3eb0f1a0",
+        "3eb0f1a0",
+        "3eb0f1a0"
+      ]
+    },
+    {
+      "id": 1460539526,
+      "idHex": "0x570e1086",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "34b0f1a0",
+        "34b0f1a0",
+        "34b0f1a0",
+        "34b0f1a0",
+        "34b0f1a0"
+      ]
+    },
+    {
+      "id": 3489605856,
+      "idHex": "0xcfff28e0",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "acb0f1a0",
+        "acb0f1a0",
+        "acb0f1a0",
+        "acb0f1a0",
+        "acb0f1a0"
+      ]
+    },
+    {
+      "id": 3559084054,
+      "idHex": "0xd4235016",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "43b0f1a0",
+        "43b0f1a0",
+        "43b0f1a0",
+        "43b0f1a0",
+        "43b0f1a0"
+      ]
+    },
+    {
+      "id": 1476791028,
+      "idHex": "0x58060af4",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "abb0f1a0",
+        "abb0f1a0",
+        "abb0f1a0",
+        "abb0f1a0",
+        "abb0f1a0"
+      ]
+    },
+    {
+      "id": 121374376,
+      "idHex": "0x073c06a8",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "3fb0f1a0",
+        "3fb0f1a0",
+        "3fb0f1a0",
+        "3fb0f1a0",
+        "3fb0f1a0"
+      ]
+    },
+    {
+      "id": 2902573957,
+      "idHex": "0xad01c385",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "b5b0f1a0",
+        "b5b0f1a0",
+        "b5b0f1a0",
+        "b5b0f1a0",
+        "b5b0f1a0"
+      ]
+    },
+    {
+      "id": 3565551274,
+      "idHex": "0xd485feaa",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "4ab0f1a0",
+        "4ab0f1a0",
+        "4ab0f1a0",
+        "4ab0f1a0",
+        "4ab0f1a0"
+      ]
+    },
+    {
+      "id": 2877432731,
+      "idHex": "0xab82239b",
+      "count": 12,
+      "sizes": {
+        "4": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "42b0f1a0",
+        "42b0f1a0",
+        "42b0f1a0",
+        "42b0f1a0",
+        "42b0f1a0"
+      ]
+    },
+    {
+      "id": 2721796115,
+      "idHex": "0xa23b5013",
+      "count": 12,
+      "sizes": {
+        "1": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 349697981,
+      "idHex": "0x14d7f7bd",
+      "count": 12,
+      "sizes": {
+        "1": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 3801628165,
+      "idHex": "0xe2983e05",
+      "count": 12,
+      "sizes": {
+        "1": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "01",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 2001339071,
+      "idHex": "0x774a02bf",
+      "count": 12,
+      "sizes": {
+        "1": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "06",
+        "06",
+        "06",
+        "06",
+        "06"
+      ]
+    },
+    {
+      "id": 1521735984,
+      "idHex": "0x5ab3d930",
+      "count": 12,
+      "sizes": {
+        "1": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "0c",
+        "0c",
+        "0c",
+        "0c",
+        "0c"
+      ]
+    },
+    {
+      "id": 2183959894,
+      "idHex": "0x822c9556",
+      "count": 12,
+      "sizes": {
+        "1": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "09",
+        "09",
+        "09",
+        "09",
+        "09"
+      ]
+    },
+    {
+      "id": 251364052,
+      "idHex": "0x0efb82d4",
+      "count": 12,
+      "sizes": {
+        "1": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "02",
+        "02",
+        "02",
+        "02",
+        "02"
+      ]
+    },
+    {
+      "id": 2866373459,
+      "idHex": "0xaad96353",
+      "count": 12,
+      "sizes": {
+        "1": 12
+      },
+      "captures": 9,
+      "sampleValues": [
+        "02",
+        "02",
+        "02",
+        "02",
+        "02"
       ]
     },
     {
@@ -1764,1462 +3220,6 @@
         "0500",
         "0500",
         "0500"
-      ]
-    },
-    {
-      "id": 214583236,
-      "idHex": "0x0cca47c4",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 3009819017,
-      "idHex": "0xb3663189",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 2512189834,
-      "idHex": "0x95bcf98a",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 4258395870,
-      "idHex": "0xfdd1f6de",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 3696165881,
-      "idHex": "0xdc4f03f9",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 1100554186,
-      "idHex": "0x41991fca",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 1463803980,
-      "idHex": "0x573fe04c",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "0000803f",
-        "0000803f",
-        "0000803f",
-        "0000803f",
-        "0000803f"
-      ]
-    },
-    {
-      "id": 3147614069,
-      "idHex": "0xbb9cc775",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "0000803e",
-        "0000803e",
-        "0000803e",
-        "0000803e",
-        "0000803e"
-      ]
-    },
-    {
-      "id": 3684960416,
-      "idHex": "0xdba408a0",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "ce180000",
-        "ce180000",
-        "ce180000",
-        "ce180000",
-        "ce180000"
-      ]
-    },
-    {
-      "id": 239673571,
-      "idHex": "0x0e4920e3",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "b51f0000",
-        "b51f0000",
-        "b51f0000",
-        "b51f0000",
-        "b51f0000"
-      ]
-    },
-    {
-      "id": 3751403523,
-      "idHex": "0xdf99e003",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "c4780000",
-        "c4780000",
-        "c4780000",
-        "c4780000",
-        "c4780000"
-      ]
-    },
-    {
-      "id": 2066680468,
-      "idHex": "0x7b2f0a94",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "ab0e0000",
-        "ab0e0000",
-        "ab0e0000",
-        "ab0e0000",
-        "ab0e0000"
-      ]
-    },
-    {
-      "id": 1954711545,
-      "idHex": "0x748287f9",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "fd6a0000",
-        "fd6a0000",
-        "fd6a0000",
-        "fd6a0000",
-        "fd6a0000"
-      ]
-    },
-    {
-      "id": 1615324349,
-      "idHex": "0x6047e4bd",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "63c70000",
-        "63c70000",
-        "63c70000",
-        "63c70000",
-        "63c70000"
-      ]
-    },
-    {
-      "id": 3882140765,
-      "idHex": "0xe764c45d",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "0952f0a0",
-        "0952f0a0",
-        "0952f0a0",
-        "0952f0a0",
-        "0952f0a0"
-      ]
-    },
-    {
-      "id": 3983401025,
-      "idHex": "0xed6de041",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "0a52f0a0",
-        "0a52f0a0",
-        "0a52f0a0",
-        "0a52f0a0",
-        "0a52f0a0"
-      ]
-    },
-    {
-      "id": 2299102566,
-      "idHex": "0x89098566",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "e32ef0a0",
-        "e32ef0a0",
-        "e32ef0a0",
-        "e32ef0a0",
-        "e32ef0a0"
-      ]
-    },
-    {
-      "id": 1633789505,
-      "idHex": "0x6161a641",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "e42ef0a0",
-        "e42ef0a0",
-        "e42ef0a0",
-        "e42ef0a0",
-        "e42ef0a0"
-      ]
-    },
-    {
-      "id": 4028073911,
-      "idHex": "0xf01787b7",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "0d52f0a0",
-        "0d52f0a0",
-        "0d52f0a0",
-        "0d52f0a0",
-        "0d52f0a0"
-      ]
-    },
-    {
-      "id": 1767349671,
-      "idHex": "0x69579da7",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "0e52f0a0",
-        "0e52f0a0",
-        "0e52f0a0",
-        "0e52f0a0",
-        "0e52f0a0"
-      ]
-    },
-    {
-      "id": 2108177118,
-      "idHex": "0x7da83ade",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "0f52f0a0",
-        "0f52f0a0",
-        "0f52f0a0",
-        "0f52f0a0",
-        "0f52f0a0"
-      ]
-    },
-    {
-      "id": 2903951278,
-      "idHex": "0xad16c7ae",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "e92ef0a0",
-        "e92ef0a0",
-        "e92ef0a0",
-        "e92ef0a0",
-        "e92ef0a0"
-      ]
-    },
-    {
-      "id": 3046718940,
-      "idHex": "0xb5993ddc",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "ea2ef0a0",
-        "ea2ef0a0",
-        "ea2ef0a0",
-        "ea2ef0a0",
-        "ea2ef0a0"
-      ]
-    },
-    {
-      "id": 952676495,
-      "idHex": "0x38c8b08f",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "e52ef0a0",
-        "e52ef0a0",
-        "e52ef0a0",
-        "e52ef0a0",
-        "e52ef0a0"
-      ]
-    },
-    {
-      "id": 972260559,
-      "idHex": "0x39f384cf",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "e72ef0a0",
-        "e72ef0a0",
-        "e72ef0a0",
-        "e72ef0a0",
-        "e72ef0a0"
-      ]
-    },
-    {
-      "id": 4032015386,
-      "idHex": "0xf053ac1a",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "eb2ef0a0",
-        "eb2ef0a0",
-        "eb2ef0a0",
-        "eb2ef0a0",
-        "eb2ef0a0"
-      ]
-    },
-    {
-      "id": 3372503575,
-      "idHex": "0xc9045217",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "fc55f0a0",
-        "fc55f0a0",
-        "fc55f0a0",
-        "fc55f0a0",
-        "fc55f0a0"
-      ]
-    },
-    {
-      "id": 1192059354,
-      "idHex": "0x470d61da",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "fd55f0a0",
-        "fd55f0a0",
-        "fd55f0a0",
-        "fd55f0a0",
-        "fd55f0a0"
-      ]
-    },
-    {
-      "id": 2130548708,
-      "idHex": "0x7efd97e4",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "3973f0a0",
-        "3973f0a0",
-        "3973f0a0",
-        "3973f0a0",
-        "3973f0a0"
-      ]
-    },
-    {
-      "id": 1041917455,
-      "idHex": "0x3e1a660f",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "ff55f0a0",
-        "ff55f0a0",
-        "ff55f0a0",
-        "ff55f0a0",
-        "ff55f0a0"
-      ]
-    },
-    {
-      "id": 2146496100,
-      "idHex": "0x7ff0ee64",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 2670167444,
-      "idHex": "0x9f278594",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 474091372,
-      "idHex": "0x1c420f6c",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 1764113591,
-      "idHex": "0x69263cb7",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 1510621236,
-      "idHex": "0x5a0a4034",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 3317992024,
-      "idHex": "0xc5c48a58",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 2387484594,
-      "idHex": "0x8e4e1fb2",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 831010496,
-      "idHex": "0x318836c0",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 1100678255,
-      "idHex": "0x419b046f",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 2321333339,
-      "idHex": "0x8a5cbc5b",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 2880932814,
-      "idHex": "0xabb78bce",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 1795555429,
-      "idHex": "0x6b060065",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 410209477,
-      "idHex": "0x18734cc5",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 215836392,
-      "idHex": "0x0cdd66e8",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 3116449174,
-      "idHex": "0xb9c13d96",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 1617295458,
-      "idHex": "0x6065f862",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 2798921412,
-      "idHex": "0xa6d426c4",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 2093025364,
-      "idHex": "0x7cc10854",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 4116514725,
-      "idHex": "0xf55d07a5",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 3830872120,
-      "idHex": "0xe4567838",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 734881962,
-      "idHex": "0x2bcd68aa",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "20",
-        "20",
-        "20",
-        "20",
-        "20"
-      ]
-    },
-    {
-      "id": 3165141691,
-      "idHex": "0xbca83abb",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "32b3df50",
-        "32b3df50",
-        "32b3df50",
-        "32b3df50",
-        "32b3df50"
-      ]
-    },
-    {
-      "id": 1169709091,
-      "idHex": "0x45b85823",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "faacdf50",
-        "faacdf50",
-        "faacdf50",
-        "faacdf50",
-        "faacdf50"
-      ]
-    },
-    {
-      "id": 1485035334,
-      "idHex": "0x5883d746",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "3aaddf50",
-        "3aaddf50",
-        "3aaddf50",
-        "3aaddf50",
-        "3aaddf50"
-      ]
-    },
-    {
-      "id": 3987568943,
-      "idHex": "0xedad792f",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "a1d4ca50",
-        "a1d4ca50",
-        "a1d4ca50",
-        "a1d4ca50",
-        "a1d4ca50"
-      ]
-    },
-    {
-      "id": 1570618950,
-      "idHex": "0x5d9dbe46",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "79745550",
-        "79745550",
-        "79745550",
-        "79745550",
-        "79745550"
-      ]
-    },
-    {
-      "id": 582770783,
-      "idHex": "0x22bc605f",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "79745550",
-        "79745550",
-        "79745550",
-        "79745550",
-        "79745550"
-      ]
-    },
-    {
-      "id": 3955162090,
-      "idHex": "0xebbefbea",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "79745550",
-        "79745550",
-        "79745550",
-        "79745550",
-        "79745550"
-      ]
-    },
-    {
-      "id": 3763906956,
-      "idHex": "0xe058a98c",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "79745550",
-        "79745550",
-        "79745550",
-        "79745550",
-        "79745550"
-      ]
-    },
-    {
-      "id": 1013400887,
-      "idHex": "0x3c674537",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "79745550",
-        "79745550",
-        "79745550",
-        "79745550",
-        "79745550"
-      ]
-    },
-    {
-      "id": 1238292429,
-      "idHex": "0x49ced7cd",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "79745550",
-        "79745550",
-        "79745550",
-        "79745550",
-        "79745550"
-      ]
-    },
-    {
-      "id": 1674883291,
-      "idHex": "0x63d4b0db",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "79745550",
-        "79745550",
-        "79745550",
-        "79745550",
-        "79745550"
-      ]
-    },
-    {
-      "id": 2143859037,
-      "idHex": "0x7fc8b15d",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "79745550",
-        "79745550",
-        "79745550",
-        "79745550",
-        "79745550"
-      ]
-    },
-    {
-      "id": 1805411383,
-      "idHex": "0x6b9c6437",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "79745550",
-        "79745550",
-        "79745550",
-        "79745550",
-        "79745550"
-      ]
-    },
-    {
-      "id": 2488749322,
-      "idHex": "0x94574d0a",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "79745550",
-        "79745550",
-        "79745550",
-        "79745550",
-        "79745550"
-      ]
-    },
-    {
-      "id": 2548534350,
-      "idHex": "0x97e78c4e",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "79745550",
-        "79745550",
-        "79745550",
-        "79745550",
-        "79745550"
-      ]
-    },
-    {
-      "id": 1303461415,
-      "idHex": "0x4db13e27",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "79745550",
-        "79745550",
-        "79745550",
-        "79745550",
-        "79745550"
-      ]
-    },
-    {
-      "id": 1149539330,
-      "idHex": "0x44849402",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "0000803f",
-        "0000803f",
-        "0000803f",
-        "0000803f",
-        "0000803f"
-      ]
-    },
-    {
-      "id": 431347460,
-      "idHex": "0x19b5d704",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "0000803f",
-        "0000803f",
-        "0000803f",
-        "0000803f",
-        "0000803f"
-      ]
-    },
-    {
-      "id": 466168723,
-      "idHex": "0x1bc92b93",
-      "count": 11,
-      "sizes": {
-        "2": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "ffff",
-        "ffff",
-        "ffff",
-        "ffff",
-        "ffff"
-      ]
-    },
-    {
-      "id": 505142057,
-      "idHex": "0x1e1bdb29",
-      "count": 11,
-      "sizes": {
-        "2": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "ffff",
-        "ffff",
-        "ffff",
-        "ffff",
-        "ffff"
-      ]
-    },
-    {
-      "id": 2890963,
-      "idHex": "0x002c1cd3",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "1109f5a0",
-        "1109f5a0",
-        "1109f5a0",
-        "1109f5a0",
-        "1109f5a0"
-      ]
-    },
-    {
-      "id": 1769270693,
-      "idHex": "0x6974eda5",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "00b4f1a0",
-        "00b4f1a0",
-        "00b4f1a0",
-        "00b4f1a0",
-        "00b4f1a0"
-      ]
-    },
-    {
-      "id": 1558112016,
-      "idHex": "0x5cdee710",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "38b0f1a0",
-        "38b0f1a0",
-        "38b0f1a0",
-        "38b0f1a0",
-        "38b0f1a0"
-      ]
-    },
-    {
-      "id": 530628087,
-      "idHex": "0x1fa0bdf7",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "3eb0f1a0",
-        "3eb0f1a0",
-        "3eb0f1a0",
-        "3eb0f1a0",
-        "3eb0f1a0"
-      ]
-    },
-    {
-      "id": 1460539526,
-      "idHex": "0x570e1086",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "34b0f1a0",
-        "34b0f1a0",
-        "34b0f1a0",
-        "34b0f1a0",
-        "34b0f1a0"
-      ]
-    },
-    {
-      "id": 3489605856,
-      "idHex": "0xcfff28e0",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "acb0f1a0",
-        "acb0f1a0",
-        "acb0f1a0",
-        "acb0f1a0",
-        "acb0f1a0"
-      ]
-    },
-    {
-      "id": 3559084054,
-      "idHex": "0xd4235016",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "43b0f1a0",
-        "43b0f1a0",
-        "43b0f1a0",
-        "43b0f1a0",
-        "43b0f1a0"
-      ]
-    },
-    {
-      "id": 1476791028,
-      "idHex": "0x58060af4",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "abb0f1a0",
-        "abb0f1a0",
-        "abb0f1a0",
-        "abb0f1a0",
-        "abb0f1a0"
-      ]
-    },
-    {
-      "id": 121374376,
-      "idHex": "0x073c06a8",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "3fb0f1a0",
-        "3fb0f1a0",
-        "3fb0f1a0",
-        "3fb0f1a0",
-        "3fb0f1a0"
-      ]
-    },
-    {
-      "id": 2902573957,
-      "idHex": "0xad01c385",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "b5b0f1a0",
-        "b5b0f1a0",
-        "b5b0f1a0",
-        "b5b0f1a0",
-        "b5b0f1a0"
-      ]
-    },
-    {
-      "id": 3565551274,
-      "idHex": "0xd485feaa",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "4ab0f1a0",
-        "4ab0f1a0",
-        "4ab0f1a0",
-        "4ab0f1a0",
-        "4ab0f1a0"
-      ]
-    },
-    {
-      "id": 2877432731,
-      "idHex": "0xab82239b",
-      "count": 11,
-      "sizes": {
-        "4": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "42b0f1a0",
-        "42b0f1a0",
-        "42b0f1a0",
-        "42b0f1a0",
-        "42b0f1a0"
-      ]
-    },
-    {
-      "id": 2721796115,
-      "idHex": "0xa23b5013",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 349697981,
-      "idHex": "0x14d7f7bd",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 3801628165,
-      "idHex": "0xe2983e05",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "01",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 2001339071,
-      "idHex": "0x774a02bf",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "06",
-        "06",
-        "06",
-        "06",
-        "06"
-      ]
-    },
-    {
-      "id": 1521735984,
-      "idHex": "0x5ab3d930",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "0c",
-        "0c",
-        "0c",
-        "0c",
-        "0c"
-      ]
-    },
-    {
-      "id": 2183959894,
-      "idHex": "0x822c9556",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "09",
-        "09",
-        "09",
-        "09",
-        "09"
-      ]
-    },
-    {
-      "id": 251364052,
-      "idHex": "0x0efb82d4",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "02",
-        "02",
-        "02",
-        "02",
-        "02"
-      ]
-    },
-    {
-      "id": 2866373459,
-      "idHex": "0xaad96353",
-      "count": 11,
-      "sizes": {
-        "1": 11
-      },
-      "captures": 8,
-      "sampleValues": [
-        "02",
-        "02",
-        "02",
-        "02",
-        "02"
       ]
     },
     {
@@ -3305,11 +3305,11 @@
     {
       "id": 3399430373,
       "idHex": "0xca9f30e5",
-      "count": 6,
+      "count": 7,
       "sizes": {
-        "4": 6
+        "4": 7
       },
-      "captures": 6,
+      "captures": 7,
       "sampleValues": [
         "2f6af0a0",
         "00000000",
@@ -3321,11 +3321,11 @@
     {
       "id": 2337251748,
       "idHex": "0x8b4fa1a4",
-      "count": 6,
+      "count": 7,
       "sizes": {
-        "1": 6
+        "1": 7
       },
-      "captures": 6,
+      "captures": 7,
       "sampleValues": [
         "01",
         "00",
@@ -4083,8 +4083,8 @@
   "targets": [
     {
       "target": "/_init",
-      "count": 916,
-      "captures": 16
+      "count": 934,
+      "captures": 17
     },
     {
       "target": "charaWork/status",
@@ -4102,14 +4102,14 @@
       "captures": 11
     },
     {
+      "target": "playerWork/expBonus",
+      "count": 34,
+      "captures": 17
+    },
+    {
       "target": "npcWork/hate",
       "count": 31,
       "captures": 4
-    },
-    {
-      "target": "playerWork/expBonus",
-      "count": 30,
-      "captures": 16
     },
     {
       "target": "charaWork/timingCommand",

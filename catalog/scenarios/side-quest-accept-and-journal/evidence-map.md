@@ -30,7 +30,7 @@ Union across the member captures. `name` is the derived/opcode_names.json entry 
 | `0x0133` | map | clientbound | GenericDataPacket | Application::Lua::Script::Client::Command::Network::UserDataReceiver | 224 |
 | `0x0137` | map | clientbound | SetActorPropetyPacket | Application::Lua::Script::Client::Command::Network::SyncMemoryReceiver | 168 |
 | `0x0167` | map | clientbound | _0x0167 | Application::Lua::Script::Client::Command::Network::SendLogReceiver | 56 |
-| `0x018d` | map | clientbound | _0x018D | - | 696 |
+| `0x018d` | map | clientbound | PartyMapMarkerUpdatePacket | - | 696 |
 
 ## Verification
 

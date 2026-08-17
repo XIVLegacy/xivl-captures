@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Validate capture references and deterministic pcap digestion.
 
-All observation witnesses must resolve to corpus objects, and login.pcapng is
-excluded as TLS traffic. `--redecode` requires byte-identical observation and
-lane products from the local corpus.
+All observation witnesses must resolve to corpus objects. Clear server port
+54992 lanes are admitted; port 54994 and streams beginning with 0x16 0x03 are
+rejected. `--redecode` requires byte-identical observation and lane products
+from the local corpus.
 
 Usage:
     python tools/validate_digestion.py
@@ -25,7 +26,6 @@ CAPTURES = REPO_ROOT / "sources" / "pcap-1.23b" / "objects"
 OBSERVATIONS = REPO_ROOT / "derived" / "observations.json"
 LANE_OBSERVATIONS = REPO_ROOT / "derived" / "lane_observations.json"
 PCAP_BUILDER = REPO_ROOT / "tools" / "build_pcap_products.py"
-EXCLUDED = {"login.pcapng"}
 CORPUS_MANIFEST = REPO_ROOT / "sources" / "pcap-1.23b" / "manifest.yaml"
 
 
@@ -69,8 +69,6 @@ def main() -> int:
 
     for name in sorted(listed - disk):
         errors.append(f"observations.json captures[] lists `{name}` with no file under sources/pcap-1.23b/objects/")
-    for name in sorted(EXCLUDED & listed):
-        errors.append(f"observations.json must not include excluded capture `{name}`")
     for ref in sorted(observed_refs(obs) - disk):
         errors.append(f"observedIn references `{ref}` with no file under sources/pcap-1.23b/objects/")
     if lane_obs.get("captures") != obs.get("captures"):
@@ -80,7 +78,7 @@ def main() -> int:
             errors.append(f"lane_observations.json missing `{lane}` lane")
 
     if args.redecode and args.public_shape:
-        print("ERROR: --redecode is unavailable when raw captures are excluded", file=sys.stderr)
+        print("ERROR: --redecode requires local capture objects", file=sys.stderr)
         return 1
 
     if args.redecode:
@@ -98,7 +96,7 @@ def main() -> int:
 
     location = "declared in the manifest" if args.public_shape else "on disk"
     print(f"digestion OK: {len(disk)} captures {location}, {len(listed)} decoded "
-          f"(login excluded), {len(observed_refs(obs))} distinct observedIn refs resolve."
+          f"(with lane filtering), {len(observed_refs(obs))} distinct observedIn refs resolve."
           + (" Re-decode byte-identical." if args.redecode else ""))
     return 0
 

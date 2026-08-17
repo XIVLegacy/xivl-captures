@@ -17,7 +17,7 @@ Union across the member captures. `name` is the derived/opcode_names.json entry 
 | `0x0001` | map | serverbound | PingPacket | - | 56 |
 | `0x00ca` | map | serverbound | UpdatePlayerPositionPacket | - | 64 |
 | `0x00cf` | map | clientbound | MoveActorToPositionPacket | - | 80 |
-| `0x018d` | map | clientbound | _0x018D | - | 696 |
+| `0x018d` | map | clientbound | PartyMapMarkerUpdatePacket | - | 696 |
 
 ## Verification
 

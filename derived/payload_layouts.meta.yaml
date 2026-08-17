@@ -4,10 +4,10 @@ evidence_class: packet-capture
 schema_version: 1
 output:
   file: derived/payload_layouts.json
-  sha256: 068cf0f13e9abfe43b465716d3ab9399635fcd83b7c5a9c72fe19e9dc83996f7
+  sha256: 24b0e86a34a629d7103cac9a1c6860064590ed1d7000f63b57f23fd7a7b4ec39
 generator:
   tool: tools/analyze_payload_layouts.py
   version: '1'
 inputs:
 - dataset: payload_samples
-  sha256: 3d08a4ed4407738c02ce13b0fe853b6e8dba6340930e59dc94734055f8b8da38
+  sha256: 890bbc0a61244572ea47d081b0b4da8dcc313333bc548b4556f84497e3418c36

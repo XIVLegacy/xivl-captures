@@ -1,6 +1,6 @@
 {
   "source": "xivl-opcodes:opcodes.json",
-  "source_sha256": "c7bee837ffbdb9807c54a3f9d2e5818a8d3d9a005631010e48dbc64deb206a1d",
+  "source_sha256": "1f6d31d2b7a9970302cd14a1096227c2a5e22399a36b80a9c6e3aba988b8def0",
   "evidenceTier": "curated identification layer promoted as local evidence; no freshness promise against the sibling catalog",
   "entries": [
     {
@@ -225,6 +225,7 @@
         "inventory.pcapng",
         "invite_join_party.pcapng",
         "local_leve_complete.pcapng",
+        "login.pcapng",
         "mount_unmount_chocobo.pcapng",
         "move_around_gridania.pcapng",
         "move_out_of_room.pcapng",
@@ -316,7 +317,9 @@
       "name": "_0x02Packet",
       "retail_class_name": null,
       "confidence": "implemented",
-      "observedIn": []
+      "observedIn": [
+        "login.pcapng"
+      ]
     },
     {
       "service": "map",
@@ -334,7 +337,9 @@
       "name": "SendMessagePacket",
       "retail_class_name": null,
       "confidence": "implemented",
-      "observedIn": []
+      "observedIn": [
+        "login.pcapng"
+      ]
     },
     {
       "service": "map",
@@ -401,7 +406,9 @@
       "name": "LangaugeCodePacket",
       "retail_class_name": null,
       "confidence": "implemented",
-      "observedIn": []
+      "observedIn": [
+        "login.pcapng"
+      ]
     },
     {
       "service": "map",
@@ -495,6 +502,7 @@
         "from_gridania_to_blackshroud.pcapng",
         "gridania_to_coerthas.pcapng",
         "local_leve_complete.pcapng",
+        "login.pcapng",
         "mount_unmount_chocobo.pcapng",
         "move_out_of_room.pcapng",
         "party_battle_leve.pcapng",
@@ -541,6 +549,7 @@
       "observedIn": [
         "from_gridania_to_blackshroud.pcapng",
         "gridania_to_coerthas.pcapng",
+        "login.pcapng",
         "move_out_of_room.pcapng",
         "moving_around_gridania.pcapng",
         "party_battle_leve.pcapng",
@@ -561,6 +570,7 @@
       "observedIn": [
         "from_gridania_to_blackshroud.pcapng",
         "gridania_to_coerthas.pcapng",
+        "login.pcapng",
         "move_out_of_room.pcapng",
         "moving_around_gridania.pcapng",
         "return_to_inn.pcapng",
@@ -807,7 +817,7 @@
       "opcodeHex": "0x00ce",
       "name": "_0x00CEHandler",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": [
         "cutscene_book.pcapng"
       ]
@@ -1165,7 +1175,7 @@
       "opcodeHex": "0x012d",
       "name": "EventStartPacket",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": [
         "accept_leve.pcapng",
         "accept_local_leve.pcapng",
@@ -1277,9 +1287,9 @@
       "service": "map",
       "direction": "serverbound",
       "opcodeHex": "0x012f",
-      "name": "ActorWorkUpdatePacket",
+      "name": "WorkStateUpdatePacket",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": [
         "action_and_traits.pcapng",
         "attributes.pcapng",
@@ -1437,6 +1447,7 @@
         "gridania_to_coerthas.pcapng",
         "invite_join_party.pcapng",
         "local_leve_complete.pcapng",
+        "login.pcapng",
         "move_out_of_room.pcapng",
         "moving_around_gridania.pcapng",
         "party_battle_leve.pcapng",
@@ -1490,9 +1501,9 @@
       "service": "map",
       "direction": "serverbound",
       "opcodeHex": "0x0135",
-      "name": "BindingSubscribeRequestPacket",
+      "name": "AchievementRateRequestPacket",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": []
     },
     {
@@ -1569,7 +1580,7 @@
       "opcodeHex": "0x0139",
       "name": "CommandResultX01Packet",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": [
         "action_and_traits.pcapng",
         "battle_mode_passive_mode.pcapng",
@@ -1598,9 +1609,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x013a",
-      "name": "BattleActionX10Packet",
+      "name": "CommandResultX10Packet",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": [
         "combat_autoattack.pcapng",
         "combat_skills.pcapng",
@@ -1614,9 +1625,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x013b",
-      "name": "BattleActionX18Packet",
+      "name": "CommandResultX18Packet",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": []
     },
     {
@@ -1625,7 +1636,7 @@
       "opcodeHex": "0x013c",
       "name": "CommandResultX00Packet",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": [
         "gather_wood.pcapng",
         "gridania_to_coerthas.pcapng",
@@ -2464,6 +2475,7 @@
         "gridania_to_coerthas.pcapng",
         "invite_join_party.pcapng",
         "local_leve_complete.pcapng",
+        "login.pcapng",
         "move_out_of_room.pcapng",
         "moving_around_gridania.pcapng",
         "party_battle_leve.pcapng",
@@ -2515,6 +2527,7 @@
         "gridania_to_coerthas.pcapng",
         "invite_join_party.pcapng",
         "local_leve_complete.pcapng",
+        "login.pcapng",
         "move_out_of_room.pcapng",
         "moving_around_gridania.pcapng",
         "party_battle_leve.pcapng",
@@ -2540,6 +2553,7 @@
         "gridania_to_coerthas.pcapng",
         "invite_join_party.pcapng",
         "local_leve_complete.pcapng",
+        "login.pcapng",
         "move_out_of_room.pcapng",
         "moving_around_gridania.pcapng",
         "party_battle_leve.pcapng",
@@ -2565,6 +2579,7 @@
         "gridania_to_coerthas.pcapng",
         "invite_join_party.pcapng",
         "local_leve_complete.pcapng",
+        "login.pcapng",
         "move_out_of_room.pcapng",
         "moving_around_gridania.pcapng",
         "party_battle_leve.pcapng",
@@ -2587,6 +2602,7 @@
         "from_gridania_to_blackshroud.pcapng",
         "gridania_to_coerthas.pcapng",
         "invite_join_party.pcapng",
+        "login.pcapng",
         "move_out_of_room.pcapng",
         "moving_around_gridania.pcapng",
         "party_battle_leve.pcapng",
@@ -2675,9 +2691,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x0187",
-      "name": "_0x0187",
+      "name": "SetOccupancyGroupPacket",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": [
         "combat_autoattack.pcapng",
         "combat_skills.pcapng",
@@ -2710,7 +2726,9 @@
       "name": "CreateNamedGroupMultiple",
       "retail_class_name": null,
       "confidence": "implemented",
-      "observedIn": []
+      "observedIn": [
+        "login.pcapng"
+      ]
     },
     {
       "service": "map",
@@ -2718,16 +2736,18 @@
       "opcodeHex": "0x018a",
       "name": "_0x018A",
       "retail_class_name": null,
-      "confidence": "implemented",
-      "observedIn": []
+      "confidence": "decomp_routed",
+      "observedIn": [
+        "login.pcapng"
+      ]
     },
     {
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x018b",
-      "name": "_0x018B",
+      "name": "SetGroupLayoutIDPacket",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": [
         "combat_autoattack.pcapng",
         "combat_skills.pcapng",
@@ -2748,9 +2768,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x018d",
-      "name": "_0x018D",
+      "name": "PartyMapMarkerUpdatePacket",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": [
         "accept_leve.pcapng",
         "accept_local_leve.pcapng",
@@ -2807,7 +2827,7 @@
       "opcodeHex": "0x018f",
       "name": "_0x018F",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": [
         "combat_autoattack.pcapng",
         "combat_skills.pcapng",
@@ -2825,7 +2845,7 @@
       "opcodeHex": "0x0190",
       "name": "_0x0190",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": [
         "combat_autoattack.pcapng",
         "combat_skills.pcapng",
@@ -2843,7 +2863,7 @@
       "opcodeHex": "0x0191",
       "name": "_0x0191",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": [
         "combat_autoattack.pcapng",
         "combat_skills.pcapng",
@@ -2870,7 +2890,7 @@
       "opcodeHex": "0x0193",
       "name": "_0x0193",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": [
         "gridania_to_coerthas.pcapng",
         "move_out_of_room.pcapng",
@@ -2922,7 +2942,7 @@
       "opcodeHex": "0x0196",
       "name": "SetSpecialEventWorkPacket",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": [
         "from_gridania_to_blackshroud.pcapng",
         "gridania_to_coerthas.pcapng",
@@ -3174,9 +3194,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x01c3",
-      "name": "StartRecruitingResponse",
+      "name": "_0x01C3",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": []
     },
     {
@@ -3192,9 +3212,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x01c4",
-      "name": "EndRecruitmentPacket",
+      "name": "_0x01C4",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": []
     },
     {
@@ -3210,9 +3230,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x01c5",
-      "name": "RecruiterStatePacket",
+      "name": "_0x01C5",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": []
     },
     {
@@ -3226,11 +3246,29 @@
     },
     {
       "service": "map",
+      "direction": "clientbound",
+      "opcodeHex": "0x01c6",
+      "name": "_0x01C6",
+      "retail_class_name": null,
+      "confidence": "decomp_routed",
+      "observedIn": []
+    },
+    {
+      "service": "map",
       "direction": "serverbound",
       "opcodeHex": "0x01c6",
       "name": "_0x01C6Handler",
       "retail_class_name": null,
       "confidence": "implemented",
+      "observedIn": []
+    },
+    {
+      "service": "map",
+      "direction": "clientbound",
+      "opcodeHex": "0x01c7",
+      "name": "_0x01C7",
+      "retail_class_name": null,
+      "confidence": "decomp_routed",
       "observedIn": []
     },
     {
@@ -3246,9 +3284,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x01c8",
-      "name": "CurrentRecruitmentDetailsPacket",
+      "name": "_0x01C8",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": []
     },
     {
@@ -3264,9 +3302,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x01c9",
-      "name": "BlacklistAddedPacket",
+      "name": "_0x01C9",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": []
     },
     {
@@ -3282,9 +3320,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x01ca",
-      "name": "BlacklistRemovedPacket",
+      "name": "_0x01CA",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": []
     },
     {
@@ -3300,9 +3338,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x01cb",
-      "name": "SendBlacklistPacket",
+      "name": "_0x01CB",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": []
     },
     {
@@ -3318,9 +3356,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x01cc",
-      "name": "FriendlistAddedPacket",
+      "name": "_0x01CC",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": []
     },
     {
@@ -3336,9 +3374,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x01cd",
-      "name": "FriendlistRemovedPacket",
+      "name": "_0x01CD",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": []
     },
     {
@@ -3354,9 +3392,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x01ce",
-      "name": "SendFriendlistPacket",
+      "name": "_0x01CE",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": []
     },
     {
@@ -3372,9 +3410,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x01cf",
-      "name": "FriendStatusPacket",
+      "name": "_0x01CF",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": [
         "friendlist_search.pcapng",
         "invite_join_party.pcapng"
@@ -3396,9 +3434,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x01d0",
-      "name": "FaqListResponsePacket",
+      "name": "_0x01D0",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": []
     },
     {
@@ -3414,9 +3452,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x01d1",
-      "name": "FaqBodyResponsePacket",
+      "name": "_0x01D1",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": []
     },
     {
@@ -3432,9 +3470,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x01d2",
-      "name": "IssueListResponsePacket",
+      "name": "_0x01D2",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": []
     },
     {
@@ -3450,9 +3488,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x01d3",
-      "name": "StartGMTicketPacket",
+      "name": "_0x01D3",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": []
     },
     {
@@ -3468,9 +3506,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x01d4",
-      "name": "GMTicketPacket",
+      "name": "_0x01D4",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": []
     },
     {
@@ -3486,9 +3524,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x01d5",
-      "name": "GMTicketSentResponsePacket",
+      "name": "_0x01D5",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": []
     },
     {
@@ -3504,9 +3542,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x01d6",
-      "name": "EndGMTicketPacket",
+      "name": "_0x01D6",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": []
     },
     {
@@ -3522,9 +3560,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x01d7",
-      "name": "ItemSearchResultsBeginPacket",
+      "name": "_0x01D7",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": []
     },
     {
@@ -3540,9 +3578,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x01d8",
-      "name": "ItemSearchResultsBodyPacket",
+      "name": "_0x01D8",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": []
     },
     {
@@ -3558,9 +3596,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x01d9",
-      "name": "ItemSearchResultsEndPacket",
+      "name": "_0x01D9",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": []
     },
     {
@@ -3576,9 +3614,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x01da",
-      "name": "RetainerResultEndPacket",
+      "name": "_0x01DA",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": []
     },
     {
@@ -3594,9 +3632,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x01db",
-      "name": "RetainerResultBodyPacket",
+      "name": "_0x01DB",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": []
     },
     {
@@ -3612,9 +3650,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x01dc",
-      "name": "RetainerResultUpdatePacket",
+      "name": "_0x01DC",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": []
     },
     {
@@ -3630,9 +3668,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x01dd",
-      "name": "RetainerSearchHistoryPacket",
+      "name": "_0x01DD",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": []
     },
     {
@@ -3648,6 +3686,15 @@
     },
     {
       "service": "map",
+      "direction": "clientbound",
+      "opcodeHex": "0x01de",
+      "name": "_0x01DE",
+      "retail_class_name": null,
+      "confidence": "decomp_routed",
+      "observedIn": []
+    },
+    {
+      "service": "map",
       "direction": "serverbound",
       "opcodeHex": "0x01de",
       "name": "_0x01DE",
@@ -3659,9 +3706,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x01df",
-      "name": "PlayerSearchInfoResultPacket",
+      "name": "_0x01DF",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": [
         "friendlist_search.pcapng"
       ]
@@ -3711,7 +3758,9 @@
       "name": "_0x2Packet",
       "retail_class_name": null,
       "confidence": "implemented",
-      "observedIn": []
+      "observedIn": [
+        "login.pcapng"
+      ]
     },
     {
       "service": "world",
@@ -3720,7 +3769,9 @@
       "name": "SendMessagePacket",
       "retail_class_name": null,
       "confidence": "implemented",
-      "observedIn": []
+      "observedIn": [
+        "login.pcapng"
+      ]
     },
     {
       "service": "world",
@@ -3729,7 +3780,9 @@
       "name": "_0x0006Handler",
       "retail_class_name": null,
       "confidence": "implemented",
-      "observedIn": []
+      "observedIn": [
+        "login.pcapng"
+      ]
     },
     {
       "service": "world",
@@ -3787,6 +3840,7 @@
         "gridania_to_coerthas.pcapng",
         "invite_join_party.pcapng",
         "local_leve_complete.pcapng",
+        "login.pcapng",
         "move_out_of_room.pcapng",
         "moving_around_gridania.pcapng",
         "party_battle_leve.pcapng",
@@ -3812,6 +3866,7 @@
         "gridania_to_coerthas.pcapng",
         "invite_join_party.pcapng",
         "local_leve_complete.pcapng",
+        "login.pcapng",
         "move_out_of_room.pcapng",
         "moving_around_gridania.pcapng",
         "party_battle_leve.pcapng",
@@ -3837,6 +3892,7 @@
         "gridania_to_coerthas.pcapng",
         "invite_join_party.pcapng",
         "local_leve_complete.pcapng",
+        "login.pcapng",
         "move_out_of_room.pcapng",
         "moving_around_gridania.pcapng",
         "party_battle_leve.pcapng",
@@ -3862,6 +3918,7 @@
         "gridania_to_coerthas.pcapng",
         "invite_join_party.pcapng",
         "local_leve_complete.pcapng",
+        "login.pcapng",
         "move_out_of_room.pcapng",
         "moving_around_gridania.pcapng",
         "party_battle_leve.pcapng",
@@ -3887,6 +3944,7 @@
         "gridania_to_coerthas.pcapng",
         "invite_join_party.pcapng",
         "local_leve_complete.pcapng",
+        "login.pcapng",
         "move_out_of_room.pcapng",
         "moving_around_gridania.pcapng",
         "party_battle_leve.pcapng",
@@ -3909,6 +3967,7 @@
         "from_gridania_to_blackshroud.pcapng",
         "gridania_to_coerthas.pcapng",
         "invite_join_party.pcapng",
+        "login.pcapng",
         "move_out_of_room.pcapng",
         "moving_around_gridania.pcapng",
         "party_battle_leve.pcapng",
@@ -3962,7 +4021,9 @@
       "name": "CreateNamedGroupMultiple",
       "retail_class_name": null,
       "confidence": "implemented",
-      "observedIn": []
+      "observedIn": [
+        "login.pcapng"
+      ]
     },
     {
       "service": "world",
@@ -3971,7 +4032,9 @@
       "name": "SetActiveLinkshellPacket",
       "retail_class_name": null,
       "confidence": "implemented",
-      "observedIn": []
+      "observedIn": [
+        "login.pcapng"
+      ]
     },
     {
       "service": "world_map_backend",
@@ -3979,7 +4042,7 @@
       "opcodeHex": "0x1000",
       "name": "SessionBeginConfirmPacket",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "blocked",
       "observedIn": []
     },
     {
@@ -3988,7 +4051,7 @@
       "opcodeHex": "0x1000",
       "name": "SessionBeginPacket",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "blocked",
       "observedIn": []
     },
     {
@@ -3997,7 +4060,7 @@
       "opcodeHex": "0x1001",
       "name": "SessionEndConfirmPacket",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "blocked",
       "observedIn": []
     },
     {
@@ -4006,7 +4069,7 @@
       "opcodeHex": "0x1001",
       "name": "SessionEndPacket",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "blocked",
       "observedIn": []
     },
     {
@@ -4015,7 +4078,7 @@
       "opcodeHex": "0x1002",
       "name": "WorldRequestZoneChangePacket",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "blocked",
       "observedIn": []
     },
     {
@@ -4024,7 +4087,7 @@
       "opcodeHex": "0x1003",
       "name": "MapDrainPendingSendsPacket",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "blocked",
       "observedIn": []
     },
     {
@@ -4033,7 +4096,7 @@
       "opcodeHex": "0x100a",
       "name": "ErrorPacket",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "blocked",
       "observedIn": []
     },
     {
@@ -4060,7 +4123,7 @@
       "opcodeHex": "0x1020",
       "name": "PartyModifyPacket",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "blocked",
       "observedIn": []
     },
     {
@@ -4069,7 +4132,7 @@
       "opcodeHex": "0x1020",
       "name": "PartySyncPacket",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "blocked",
       "observedIn": []
     },
     {
@@ -4078,7 +4141,7 @@
       "opcodeHex": "0x1021",
       "name": "PartyLeavePacket",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "blocked",
       "observedIn": []
     },
     {
@@ -4087,7 +4150,7 @@
       "opcodeHex": "0x1022",
       "name": "PartyInvitePacket",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "blocked",
       "observedIn": []
     },
     {
@@ -4096,7 +4159,7 @@
       "opcodeHex": "0x1023",
       "name": "GroupInviteResultPacket",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "blocked",
       "observedIn": []
     },
     {
@@ -4105,7 +4168,7 @@
       "opcodeHex": "0x1025",
       "name": "CreateLinkshellPacket",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "blocked",
       "observedIn": []
     },
     {
@@ -4114,7 +4177,7 @@
       "opcodeHex": "0x1025",
       "name": "LinkshellResultPacket",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "blocked",
       "observedIn": []
     },
     {
@@ -4123,7 +4186,7 @@
       "opcodeHex": "0x1026",
       "name": "ModifyLinkshellPacket",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "blocked",
       "observedIn": []
     },
     {
@@ -4132,7 +4195,7 @@
       "opcodeHex": "0x1027",
       "name": "DeleteLinkshellPacket",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "blocked",
       "observedIn": []
     },
     {
@@ -4141,7 +4204,7 @@
       "opcodeHex": "0x1028",
       "name": "LinkshellChangePacket",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "blocked",
       "observedIn": []
     },
     {
@@ -4150,7 +4213,7 @@
       "opcodeHex": "0x1029",
       "name": "LinkshellInvitePacket",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "blocked",
       "observedIn": []
     },
     {
@@ -4159,7 +4222,7 @@
       "opcodeHex": "0x1030",
       "name": "LinkshellInviteCancelPacket",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "blocked",
       "observedIn": []
     },
     {
@@ -4168,7 +4231,7 @@
       "opcodeHex": "0x1031",
       "name": "LinkshellLeavePacket",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "blocked",
       "observedIn": []
     },
     {
@@ -4177,7 +4240,7 @@
       "opcodeHex": "0x1032",
       "name": "LinkshellRankChangePacket",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "blocked",
       "observedIn": []
     },
     {

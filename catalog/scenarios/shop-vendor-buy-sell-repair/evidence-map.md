@@ -40,7 +40,7 @@ Union across the member captures. `name` is the derived/opcode_names.json entry 
 | `0x0169` | map | clientbound | _0x0169 | Application::Lua::Script::Client::Command::Network::SendLogReceiver | 72 |
 | `0x016d` | map | clientbound | InventoryBeginChangePacket | - | 40 |
 | `0x016e` | map | clientbound | InventoryEndChangePacket | - | 40 |
-| `0x018d` | map | clientbound | _0x018D | - | 696 |
+| `0x018d` | map | clientbound | PartyMapMarkerUpdatePacket | - | 696 |
 | `0x018f` | map | clientbound | _0x018F | - | 40 |
 | `0x0190` | map | clientbound | _0x0190 | - | 136 |
 | `0x0191` | map | clientbound | _0x0191 | - | 40 |

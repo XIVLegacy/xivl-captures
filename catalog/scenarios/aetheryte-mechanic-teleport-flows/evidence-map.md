@@ -81,8 +81,8 @@ Union across the member captures. `name` is the derived/opcode_names.json entry 
 | `0x017e` | map | clientbound | GroupMembersEndPacket | - | 56 |
 | `0x017f` | map | clientbound | GroupMembersX08Packet | - | 440 |
 | `0x0183` | map | clientbound | ContentMembersX08Packet | - | 152 |
-| `0x0187` | map | clientbound | _0x0187 | - | 96 |
-| `0x018d` | map | clientbound | _0x018D | - | 696 |
+| `0x0187` | map | clientbound | SetOccupancyGroupPacket | - | 96 |
+| `0x018d` | map | clientbound | PartyMapMarkerUpdatePacket | - | 696 |
 | `0x0193` | map | clientbound | _0x0193 | - | 40 |
 | `0x0194` | map | clientbound | SetGrandCompanyPacket | Application::Lua::Script::Client::Command::Network::GrandCompanyReceiver | 40 |
 | `0x0196` | map | clientbound | SetSpecialEventWorkPacket | - | 56 |
