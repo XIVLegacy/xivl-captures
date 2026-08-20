@@ -72,8 +72,10 @@ python tools/analyze_battle_result_fits.py --check
 
 ## Source material
 
-- `sources/pcap-1.23b/manifest.yaml` supplies the 53 game-protocol captures and
-  their scenario membership. `login.pcapng` remains excluded because it is TLS.
+- `sources/pcap-1.23b/manifest.yaml` supplies the 54 game-protocol captures and
+  their scenario membership. The raw 54992 game lanes in `login.pcapng` enter
+  the canonical game decode. Its raw 54994 lobby lanes and TLS account traffic
+  remain outside that decoder.
 - The explicit field-model input supplies the static 0x0139-0x013C wire shapes,
   capacities, and field boundaries.
 - The explicit client-data input supplies `csv/worldMaster.csv` for localized

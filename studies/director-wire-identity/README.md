@@ -2,7 +2,7 @@
 
 ## Study contents
 
-This study independently tests four wire hypotheses against the 53 retained
+This study independently tests four wire hypotheses against the 54 retained
 retail 1.23b captures. It decodes all observed `0x017A`, `0x017C`, `0x017D`,
 `0x017E`, `0x017F`, `0x0183`, `0x0187`, and `0x018B` packets, all c2s
 `0x012D` EventStart role rows, and both member-list forms. Numeric packet
@@ -23,13 +23,15 @@ python tools/extractors/extract_director_wire_identity.py
 python tools/extractors/extract_director_wire_identity.py --check
 ```
 
-The extractor deliberately excludes login captures through the repository's
-canonical `default_corpus_paths()` boundary. Group application payload begins
-after the 8-byte inner header and 8-byte game-message preamble.
+The extractor uses the repository's canonical `default_corpus_paths()`
+boundary, including the raw 54992 game lanes from `login.pcapng`. It does not
+decode the capture's raw 54994 lobby lanes or TLS account traffic. Group
+application payload begins after the 8-byte inner header and 8-byte
+game-message preamble.
 
 ## Source material
 
-The sole runtime source is the repository's `pcap-1.23b` set: 53 canonical
+The sole runtime source is the repository's `pcap-1.23b` set: 54 canonical
 retail captures selected by `default_corpus_paths()`. The static cross-check is
 linked by repository-qualified path and is not treated as packet evidence.
 

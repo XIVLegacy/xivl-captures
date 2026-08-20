@@ -55,8 +55,9 @@ specimen locators, bounded negative result, and evidence ceiling.
 - The binary prefix and tail semantics in Map `0x0003` remain unknown.
 - World `0x00c9` prefix fields are observed values; their semantic names remain
   limited to the independent client evidence cited in `derived/verdicts.md`.
-- `login.pcapng` contains TLS account traffic and raw lobby traffic but no
-  canonically decoded game lane. Its raw TCP payload was still byte-scanned.
+- `login.pcapng` contains canonically decoded raw 54992 game lanes. Its raw
+  54994 lobby lanes and TLS account traffic remain outside the game decoder;
+  the study also byte-scanned its raw TCP payload.
 
 ## Further research
 
