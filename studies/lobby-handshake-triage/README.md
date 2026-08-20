@@ -22,7 +22,8 @@ This bounded packet-capture study inventories the canonical session and zone-tra
 
 - The stage-0 transport verdict is `GO`: `login.pcapng` contains the preserved
   raw lobby target, so the closed corpus is not limited to TLS lobby traffic.
-- `login.pcapng` is mixed: TLS account traffic is present, and the same capture also contains raw 54994 lobby frames.
+- `login.pcapng` is mixed: TLS account traffic is present, and the same capture
+  also contains raw 54994 lobby frames and raw 54992 game frames.
 - The 54994 server-to-client frames are decoded by the confirmed 44-byte MD5 and Blowfish ECB recipe recorded in `derived/decrypt-recipe.md`.
 - The other inventoried members expose raw 54992 game framing and no TLS handshake; they do not add a separate lobby ciphertext target.
 - The first raw lobby connection carries client number 1356916754 in both the
@@ -45,13 +46,13 @@ This bounded packet-capture study inventories the canonical session and zone-tra
 
 ## Evidence gaps
 
-- The canonical decoder still excludes `login.pcapng` pending an implementation
-  of the confirmed recipe.
+- The canonical game decoder includes the raw 54992 lanes from `login.pcapng`.
+  Its raw 54994 lobby lanes remain outside that decoder even though their
+  decrypt recipe is confirmed. TLS account traffic also remains outside.
 - Server-side client-number comparison and rejection policy remain unverified.
 - Packet numbers are 1-based capture positions; stream offsets and frame boundaries come from the repository lane/frame reconstruction.
-- The canonical decoder excludes `login.pcapng`; this triage preserves its mixed transport evidence without changing generated products.
 
 ## Further research
 
-- Implement the confirmed recipe in the canonical decoder, then decide whether
-  `login.pcapng` should be included in canonical opcode observation.
+- Server-side acceptance, rejection, and client-number skew policy require
+  evidence beyond capture-native decryption.
