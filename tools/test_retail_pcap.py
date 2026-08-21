@@ -138,6 +138,11 @@ def contract_and_output_tests() -> None:
         "every hosted Python command is bounded",
         bool(python_commands) and all("timeout " in line for line in python_commands),
     )
+    check(
+        "hosted refresh failure prints only its sanitized summary",
+        "awk '/^=== refresh.py summary ===/ { emit = 1 } emit'" in workflow
+        and 'cat "${private_root}/refresh.log"' not in workflow,
+    )
     timeout_files = (
         "refresh.py",
         "test_retail_pcap.py",
