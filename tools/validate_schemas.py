@@ -141,9 +141,9 @@ def check_retail_contracts(results: list) -> None:
             continue
         validate_doc(document, schema, label, results)
 
-    attestation_path = CONFIG_DIR / "retail_evidence" / "pcap-1.23b-products-v1.json"
+    attestation_path = CONFIG_DIR / "retail_evidence" / "pcap-1.23b-products.json"
     if attestation_path.exists():
-        label = "schema: config/retail_evidence/pcap-1.23b-products-v1.json"
+        label = "schema: config/retail_evidence/pcap-1.23b-products.json"
         try:
             document = json.loads(attestation_path.read_text(encoding="ascii"))
             schema = load_json_schema("retail-evidence-attestation.schema.json")
