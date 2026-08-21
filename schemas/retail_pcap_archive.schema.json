@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/XIVLegacy/xivl-captures/schemas/retail_pcap_archive.schema.json",
+  "title": "PCAP archive shape",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["member_count", "uncompressed_size", "members"],
+  "properties": {
+    "member_count": {"const": 54},
+    "uncompressed_size": {"const": 7242352},
+    "members": {
+      "type": "array",
+      "minItems": 54,
+      "maxItems": 54,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["file", "size_bytes", "sha256"],
+        "properties": {
+          "file": {"type": "string", "pattern": "^[a-z0-9_]+\\.pcapng$"},
+          "size_bytes": {"type": "integer", "minimum": 0},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+        }
+      }
+    }
+  }
+}

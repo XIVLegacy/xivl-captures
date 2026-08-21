@@ -39,3 +39,8 @@ correctness beyond the captured packet and source inputs.
 
 Report any unverified edge, the missing artifact, and the maintainer run needed
 next. Do not claim client, network, or live validation that did not run.
+
+The optional PCAP lane validates its fixed public contract with
+`python tools/verify_retail_pcap.py` and validates the private archive with
+`tools/extract_retail_pcap_archive.py` before extraction. Private packet bytes
+and decoded payloads remain outside public artifacts and logs.

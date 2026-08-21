@@ -22,6 +22,8 @@ findings.
   doctrine for code and manifest comments.
 - [Verification](ai_agents/verification.md) - the repository gate and
   documentation checks.
+- [Retail input validation](ai_agents/retail-input-validation.md) - the
+  restricted PCAP corpus lane and its claim limits.
 
 ## Discovery entry points
 

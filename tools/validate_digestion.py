@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -22,7 +23,10 @@ from pathlib import Path
 import yaml
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-CAPTURES = REPO_ROOT / "sources" / "pcap-1.23b" / "objects"
+CAPTURES = Path(os.environ.get(
+    "XIVL_PCAP_OBJECTS_DIR",
+    str(REPO_ROOT / "sources" / "pcap-1.23b" / "objects"),
+))
 OBSERVATIONS = REPO_ROOT / "derived" / "observations.json"
 LANE_OBSERVATIONS = REPO_ROOT / "derived" / "lane_observations.json"
 PCAP_BUILDER = REPO_ROOT / "tools" / "build_pcap_products.py"
@@ -82,12 +86,16 @@ def main() -> int:
         return 1
 
     if args.redecode:
-        proc = subprocess.run(
-            [sys.executable, str(PCAP_BUILDER), "--check",
-             "--product", "observations", "--product", "lane_observations"],
-            cwd=REPO_ROOT, capture_output=True, text=True)
-        if proc.returncode != 0:
-            errors.append("re-decode is NOT byte-identical to committed observation products")
+        try:
+            proc = subprocess.run(
+                [sys.executable, str(PCAP_BUILDER), "--check",
+                 "--product", "observations", "--product", "lane_observations"],
+                cwd=REPO_ROOT, capture_output=True, text=True, timeout=300)
+        except subprocess.TimeoutExpired:
+            errors.append("re-decode timed out")
+        else:
+            if proc.returncode != 0:
+                errors.append("re-decode is NOT byte-identical to committed observation products")
 
     if errors:
         for e in errors:

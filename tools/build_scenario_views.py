@@ -34,7 +34,7 @@ CORPUS_MANIFEST = SOURCES_DIR / "manifest.yaml"
 # Numeric facts use this repo's canonical decode; opcode names use the promoted mapping's `source` field.
 OPCODE_NAMES_JSON = DATA_DIR / "opcode_names.json"
 OBSERVATIONS_JSON = DATA_DIR / "observations.json"
-CAPTURES_DIR = SOURCES_DIR / "objects"
+CAPTURES_DIR = Path(os.environ.get("XIVL_PCAP_OBJECTS_DIR", str(SOURCES_DIR / "objects")))
 SCENARIOS_DIR = REPO_ROOT / "catalog" / "scenarios"
 
 # Logical repo-relative label used in prose and CSV columns; CAPTURES_DIR does the actual resolution.

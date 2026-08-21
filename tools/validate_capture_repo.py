@@ -20,7 +20,7 @@ REPO_ROOT_DEFAULT = Path(__file__).resolve().parents[1]
 VALID_STATUSES = {"indexed", "distilled", "validated", "raw-only"}
 # Referenced sources are checked when present; local-only pointers are never checked.
 VALID_ORIGINAL_STATES = {"in-repo", "cold-stored", "cold-storage-pending",
-                         "referenced-sibling", "local-only"}
+                         "referenced-sibling", "local-only", "private-repository"}
 
 # Leve scope and objectives are tags; discipline determines content kind.
 VALID_CONTENT_KINDS = {
@@ -289,7 +289,9 @@ def validate_source(
                 f"{source_id}: in-repo storage should use storage_id `repo` (plain git) "
                 "or `repo-lfs` (actual LFS object)"
             )
-        objects_dir = source_dir / "objects"
+        objects_dir = Path(os.environ["XIVL_PCAP_OBJECTS_DIR"]) if (
+            source_id == "pcap-1.23b" and os.environ.get("XIVL_PCAP_OBJECTS_DIR")
+        ) else source_dir / "objects"
         if not objects_dir.is_dir() and not CORPUS_ABSENT:
             errors.append(f"{source_id}: in-repo source is missing an objects/ dir")
 

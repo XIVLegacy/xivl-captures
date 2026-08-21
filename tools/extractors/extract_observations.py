@@ -6,6 +6,7 @@ This artifact assigns no opcode names or services.
 from __future__ import annotations
 
 import argparse
+import os
 import struct
 import sys
 import warnings
@@ -28,7 +29,10 @@ PRIORITY_CAPTURES = [
     "idle_in_party.pcapng",
     "gridania_to_coerthas.pcapng",
 ]
-DEFAULT_CAP_DIR = Path(__file__).resolve().parent.parent.parent / "sources" / "pcap-1.23b" / "objects"
+DEFAULT_CAP_DIR = Path(os.environ.get(
+    "XIVL_PCAP_OBJECTS_DIR",
+    str(Path(__file__).resolve().parent.parent.parent / "sources" / "pcap-1.23b" / "objects"),
+))
 # Bump when extraction changes output; record the version in pipelines/*.yaml and derived/*.meta.yaml.
 GENERATOR_VERSION = "1"
 

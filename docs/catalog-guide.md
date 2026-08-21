@@ -34,7 +34,9 @@ the full class table and the tier rule.
 
 - `sources/<id>/manifest.yaml` owns source identity, provenance, storage,
   evidence class, and member hashes. `sources/<id>/objects/` holds original
-  files only when retention policy permits them.
+  files only when retention policy permits them; the `pcap-1.23b` manifest
+  instead names its restricted private archive as canonical and treats local
+  objects and archives as caches.
 - `studies/<id>/manifest.yaml`, `README.md`, and `derived/` own the distilled
   analysis for a source or a cross-source investigation.
 - `derived/*.json` and their `*.meta.yaml` sidecars own canonical decoded or
@@ -49,9 +51,10 @@ pipeline that it describes.
 
 ## Public and restricted material
 
-The restricted boundary is `sources/*/objects/` plus `archives/`. These trees
-contain original or cold-stored material that may be licensed, local-only, or
-otherwise unsuitable for the public surface.
+The restricted boundary is `sources/*/objects/`, `archives/`, and the named
+private retail-input repository. These trees contain original or cold-stored
+material that may be licensed, local-only, or otherwise unsuitable for the
+public surface.
 
 The public surface is the manifests, member and output hashes, `studies/`,
 `derived/`, `pipelines/`, `schemas/`, and `catalog/`. Public checkouts retain

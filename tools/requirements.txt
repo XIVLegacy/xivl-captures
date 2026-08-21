@@ -7,6 +7,6 @@
 #     meta sidecars, pipeline manifests, evidence-classes.yaml).
 #
 #   python -m pip install -r tools/requirements.txt
-scapy>=2.5.0
-jsonschema>=4.0.0
-PyYAML>=6.0
+scapy==2.7.0
+jsonschema==4.26.0
+PyYAML==6.0.3

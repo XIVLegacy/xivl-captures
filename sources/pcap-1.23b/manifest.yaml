@@ -17,15 +17,19 @@ provenance:
     coincidence or shared ancestry; the capture still testifies to retail
     behavior.
 storage:
-  original_state: in-repo
-  storage_id: repo
-  path: objects/
+  original_state: private-repository
+  storage_id: XIVLegacy/xivl-private-assets
+  path: captures/pcap-1.23b/pcap-1.23b-objects.zip
+  repository: XIVLegacy/xivl-private-assets
+  commit: aeb52f6dbde95a793ee6d52be28de9f28a885b15
   master_archive:
     file: pcap-1.23b-objects.zip
     sha256: 20a78b9f40ff2393037c9a160c957783cf590b4f01797493d22fcd2039e9cbff
     size_bytes: 2622720
-    holds: all 54 files under objects/, deflate, fixed timestamps
-    cold_store_path: archives/pcap-1.23b/pcap-1.23b-objects.zip
+    holds: all 54 root-level files under the restricted private archive, deflate, fixed timestamps
+    cache_paths:
+    - sources/pcap-1.23b/objects/
+    - archives/pcap-1.23b/pcap-1.23b-objects.zip
 members:
 - file: accept_leve.pcapng
   sha256: 42b87e6c095db130def1de5bc382e428b4f4c12c8069c4682d6fa4bc7681967a

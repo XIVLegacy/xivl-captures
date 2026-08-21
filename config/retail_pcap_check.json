@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "check": {
+    "id": "pcap-1.23b-products-v1",
+    "version": 1
+  },
+  "input_id": "pcap-corpus-1.23b",
+  "expected": {
+    "member_count": 54,
+    "uncompressed_size": 7242352,
+    "product_count": 27
+  }
+}

@@ -26,6 +26,7 @@ except ImportError:
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SCHEMAS_DIR = REPO_ROOT / "schemas"
+CONFIG_DIR = REPO_ROOT / "config"
 SOURCES_DIR = REPO_ROOT / "sources"
 STUDIES_DIR = REPO_ROOT / "studies"
 DATA_DIR = REPO_ROOT / "derived"
@@ -33,6 +34,12 @@ PIPELINES_DIR = REPO_ROOT / "pipelines"
 CATALOG_DIR = REPO_ROOT / "catalog"
 PCAP_MANIFEST = SOURCES_DIR / "pcap-1.23b" / "manifest.yaml"
 CORPUS_ABSENT = os.environ.get("XIVL_CORPUS_ABSENT") == "1"
+
+
+def pcap_objects_dir(default: Path) -> Path:
+    """Resolve private corpus bytes outside the public checkout when requested."""
+    override = os.environ.get("XIVL_PCAP_OBJECTS_DIR")
+    return Path(override) if override else default
 
 ID_CEILING = 48
 PATH_CEILING = 180
@@ -118,6 +125,34 @@ def check_sources(results: list, evidence_classes: set[str]) -> dict[str, dict]:
     return manifests
 
 
+def check_retail_contracts(results: list) -> None:
+    """Validate the credential-free shape of the optional PCAP lane."""
+    contracts = (
+        (CONFIG_DIR / "retail_inputs.json", SCHEMAS_DIR / "retail_inputs.schema.json"),
+        (CONFIG_DIR / "retail_pcap_check.json", SCHEMAS_DIR / "retail_pcap_check.schema.json"),
+    )
+    for document_path, schema_path in contracts:
+        label = f"schema: {document_path.relative_to(REPO_ROOT).as_posix()}"
+        try:
+            document = json.loads(document_path.read_text(encoding="ascii"))
+            schema = json.loads(schema_path.read_text(encoding="ascii"))
+        except (OSError, UnicodeError, ValueError) as exc:
+            results.append((label, False, f"retail contract unreadable ({exc.__class__.__name__})"))
+            continue
+        validate_doc(document, schema, label, results)
+
+    attestation_path = CONFIG_DIR / "retail_evidence" / "pcap-1.23b-products-v1.json"
+    if attestation_path.exists():
+        label = "schema: config/retail_evidence/pcap-1.23b-products-v1.json"
+        try:
+            document = json.loads(attestation_path.read_text(encoding="ascii"))
+            schema = load_json_schema("retail-evidence-attestation.schema.json")
+        except (OSError, UnicodeError, ValueError) as exc:
+            results.append((label, False, f"attestation unreadable ({exc.__class__.__name__})"))
+        else:
+            validate_doc(document, schema, label, results)
+
+
 def check_source_boundary(source_dir: Path, doc: dict, results: list) -> None:
     """Keep source files under objects and forbid objects for local-only or cold-stored sources."""
     label_stray = f"boundary: sources/{source_dir.name} no stray files beside manifest.yaml"
@@ -131,7 +166,7 @@ def check_source_boundary(source_dir: Path, doc: dict, results: list) -> None:
     else:
         results.append((label_stray, True, ""))
 
-    objects_dir = source_dir / "objects"
+    objects_dir = pcap_objects_dir(source_dir / "objects") if source_dir.name == "pcap-1.23b" else source_dir / "objects"
     distribution = doc.get("distribution")
     if distribution == "local-only":
         label = f"boundary: sources/{source_dir.name} local-only implies no objects/"
@@ -167,7 +202,7 @@ def check_source_boundary(source_dir: Path, doc: dict, results: list) -> None:
 
 def check_source_objects(source_dir: Path, doc: dict, results: list, timing: list) -> None:
     """Hash exact object membership or validate an allowed object-free state."""
-    objects_dir = source_dir / "objects"
+    objects_dir = pcap_objects_dir(source_dir / "objects") if source_dir.name == "pcap-1.23b" else source_dir / "objects"
     label = f"objects hash-verify: sources/{source_dir.name}"
     members = doc.get("members") or []
 
@@ -468,8 +503,9 @@ def check_path_lengths(results: list) -> None:
     try:
         proc = subprocess.run(
             ["git", "ls-files"], cwd=REPO_ROOT, capture_output=True, text=True, check=True,
+            timeout=30,
         )
-    except (OSError, subprocess.CalledProcessError) as exc:
+    except (OSError, subprocess.SubprocessError) as exc:
         results.append(("path ceiling: git ls-files", False, f"could not enumerate tracked files: {exc}"))
         return
     too_long = [line for line in proc.stdout.splitlines() if line and len(line) > PATH_CEILING]
@@ -498,6 +534,7 @@ def main() -> int:
     results: list[tuple[str, bool, str]] = []
     evidence_classes = load_evidence_classes()
 
+    check_retail_contracts(results)
     check_sources(results, evidence_classes)
     sidecar_names = check_dataset_meta(results, evidence_classes)
     check_data_sidecar_pairing(results, sidecar_names)
