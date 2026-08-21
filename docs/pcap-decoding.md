@@ -7,8 +7,9 @@ fields remain observation-only until evidence supports a semantic name.
 
 ## Product map
 
-- `sources/pcap-1.23b/objects/` holds the original capture objects when the
-  retention policy permits them. The objects are immutable.
+- The restricted `pcap-1.23b` archive in the private retail-input repository
+  is canonical. Local `sources/pcap-1.23b/objects/` files are immutable cache
+  copies restored from the public member hashes.
 - `derived/observations.json` is the merged per-capture inventory of outer
   frame types, sub-event types, inner opcodes, lengths, and capture witnesses.
 - `derived/lane_observations.json` keeps the main, chat, and unknown connection

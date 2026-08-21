@@ -18,7 +18,10 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 TOOLS = REPO_ROOT / "tools"
 DATA = REPO_ROOT / "derived"
-RESTRICTED_OBJECTS = REPO_ROOT / "sources" / "pcap-1.23b" / "objects"
+RESTRICTED_OBJECTS = Path(os.environ.get(
+    "XIVL_PCAP_OBJECTS_DIR",
+    str(REPO_ROOT / "sources" / "pcap-1.23b" / "objects"),
+))
 
 PCAP_PRODUCTS = [
     "observations.json",
@@ -44,10 +47,22 @@ PROPERTY_STREAM_CATALOG = TOOLS / "extractors" / "extract_property_stream_catalo
 PARSE_ONLY_PRODUCTS = [
     ("spawn_location_validation.json", "frozen historical artifact"),
 ]
+SUBPROCESS_TIMEOUT_SECONDS = 300
 
 def run(cmd: list, label: str) -> tuple[bool, str]:
-    proc = subprocess.run([sys.executable] + [str(c) for c in cmd],
-                          cwd=REPO_ROOT, capture_output=True, text=True)
+    try:
+        proc = subprocess.run(
+            [sys.executable] + [str(c) for c in cmd],
+            cwd=REPO_ROOT,
+            capture_output=True,
+            text=True,
+            timeout=SUBPROCESS_TIMEOUT_SECONDS,
+        )
+    except subprocess.TimeoutExpired:
+        print(f"--- {label} output ---")
+        print("subprocess timed out")
+        print(f"--- end {label} output ---")
+        return False, "subprocess timed out"
     ok = proc.returncode == 0
     out = (proc.stdout or "") + (proc.stderr or "")
     if not ok:
@@ -101,6 +116,7 @@ def do_public_check() -> int:
     results: list[tuple[str, str, bool, str]] = []
 
     checks = [
+        ([TOOLS / "verify_retail_pcap.py", "--check-contract"], "retail PCAP contract"),
         ([TOOLS / "validate_capture_repo.py"], "public manifest/catalog cross-check"),
         ([TOOLS / "check_markdown_links.py"], "public in-repo links"),
         # Reads only README.md and manifest.yaml, both tracked, so the study
@@ -155,6 +171,9 @@ def do_public_check() -> int:
 
 def do_check() -> int:
     results: list[tuple[str, str, bool, str]] = []
+
+    ok, _ = run([TOOLS / "verify_retail_pcap.py", "--check-contract"], "retail PCAP contract")
+    results.append(("retail PCAP contract", "validate", ok, "" if ok else "see output above"))
 
     ok, _ = run([TOOLS / "validate_capture_repo.py"], "validate_capture_repo.py")
     results.append(("validate_capture_repo.py (studies/sources/catalog cross-check)", "validate", ok,

@@ -23,6 +23,9 @@ default and to a per-machine override when needed.
   storage after distillation. Source gameplay videos are usually NOT archived
   at all (record the title/URL in the manifest `notes`). This only applies when
   a video file is deliberately kept.
+- `XIVLegacy/xivl-retail-client-inputs` - the restricted private archive named
+  by the `pcap-1.23b` manifest. Its local `objects/` and `archives/` copies are
+  caches and are not a second evidence authority.
 
 ## Restore Flow
 

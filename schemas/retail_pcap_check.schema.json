@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/XIVLegacy/xivl-captures/schemas/retail_pcap_check.schema.json",
+  "title": "PCAP retail check contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "check", "input_id", "expected"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "check": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "version"],
+      "properties": {
+        "id": {"const": "pcap-1.23b-products-v1"},
+        "version": {"const": 1}
+      }
+    },
+    "input_id": {"const": "pcap-corpus-1.23b"},
+    "expected": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["member_count", "uncompressed_size", "product_count"],
+      "properties": {
+        "member_count": {"const": 54},
+        "uncompressed_size": {"const": 7242352},
+        "product_count": {"const": 27}
+      }
+    }
+  }
+}

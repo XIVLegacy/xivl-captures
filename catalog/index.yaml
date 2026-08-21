@@ -146,8 +146,8 @@ sources:
   title: FFXIV 1.23b Retail Packet-Capture Corpus
   evidence_class: packet-capture
   distribution: restricted
-  original_state: in-repo
-  storage_id: repo
+  original_state: private-repository
+  storage_id: XIVLegacy/xivl-retail-client-inputs
   member_count: 54
 - id: primal-battle-ifrit-bowl-of-embers
   title: The Bowl of Embers (Ifrit) - Video Breakdown

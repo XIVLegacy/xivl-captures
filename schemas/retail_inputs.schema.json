@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/XIVLegacy/xivl-captures/schemas/retail_inputs.schema.json",
+  "title": "Restricted retail input grant",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "inputs"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "inputs": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "filename", "size", "sha256", "source", "archive", "allowed_checks"],
+        "properties": {
+          "id": {"const": "pcap-corpus-1.23b"},
+          "filename": {"const": "pcap-1.23b-objects.zip"},
+          "size": {"const": 2622720},
+          "sha256": {"const": "20a78b9f40ff2393037c9a160c957783cf590b4f01797493d22fcd2039e9cbff"},
+          "source": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["repository", "commit", "path"],
+            "properties": {
+              "repository": {"const": "XIVLegacy/xivl-retail-client-inputs"},
+              "commit": {"const": "abfddb3e8434af4ae36d55269088e489cc8050e5"},
+              "path": {"const": "captures/pcap-1.23b/pcap-1.23b-objects.zip"}
+            }
+          },
+          "archive": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["member_count", "uncompressed_size", "suffix"],
+            "properties": {
+              "member_count": {"const": 54},
+              "uncompressed_size": {"const": 7242352},
+              "suffix": {"const": ".pcapng"}
+            }
+          },
+          "allowed_checks": {
+            "type": "array",
+            "prefixItems": [{"const": "pcap-1.23b-products-v1"}],
+            "minItems": 1,
+            "maxItems": 1
+          }
+        }
+      }
+    }
+  }
+}
