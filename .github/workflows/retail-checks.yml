@@ -222,7 +222,10 @@ jobs:
           staging_root="${GITHUB_WORKSPACE}/_retail-staging"
           mkdir -p "${staging_root}"
           export XIVL_PCAP_OBJECTS_DIR="${private_root}/corpus"
-          timeout 300s python tools/refresh.py --check > "${private_root}/refresh.log" 2>&1
+          if ! timeout 300s python tools/refresh.py --check > "${private_root}/refresh.log" 2>&1; then
+            awk '/^=== refresh.py summary ===/ { emit = 1 } emit' "${private_root}/refresh.log"
+            exit 1
+          fi
           timeout 300s python tools/test_retail_pcap.py --archive "${private_root}/input/pcap-1.23b-objects.zip" > "${private_root}/mutation.log" 2>&1
           timeout 120s python tools/verify_retail_pcap.py --archive "${private_root}/input/pcap-1.23b-objects.zip" \
             > "${staging_root}/retail-evidence-attestation.json" 2> "${private_root}/verifier.log"
