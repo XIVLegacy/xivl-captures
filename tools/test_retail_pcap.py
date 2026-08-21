@@ -143,6 +143,10 @@ def contract_and_output_tests() -> None:
         "awk '/^=== refresh.py summary ===/ { emit = 1 } emit'" in workflow
         and 'cat "${private_root}/refresh.log"' not in workflow,
     )
+    check(
+        "hosted refresh keeps unrelated private corpora absent",
+        "export XIVL_CORPUS_ABSENT=1" in workflow,
+    )
     timeout_files = (
         "refresh.py",
         "test_retail_pcap.py",
