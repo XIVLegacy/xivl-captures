@@ -20,7 +20,7 @@ observations must not contain player names or chat text; those fields are
 stripped from published datasets and must stay stripped.
 
 AI-assisted contributions are welcome, but the contributor owns the result. A
-contributor who cannot explain their diff, evidence, and verification in detail
+contributor who cannot explain their diff and evidence in detail
 should not open a pull request.
 
 ## Code and documentation
@@ -42,23 +42,14 @@ is not a durable evidence record.
 The [evidence and claims guide](docs/ai_agents/evidence-and-claims.md) is the
 authority for this rule.
 
-## Verification
-
-The [verification guide](docs/ai_agents/verification.md) owns the validation
-contract, and the [checks workflow](.github/workflows/checks.yml) owns the
-CI-covered checks.
-
-Report any check that could not run and why. Do not claim raw-corpus validation
-from a public checkout when validation ran in public-shape mode.
-
 ## Pull requests
 
 Fork the repository and open a pull request onto `main`. Keep each pull request
 small and focused on one study, dataset, documentation batch, or tool change.
 Use a draft pull request for work in progress.
 
-CI must be green before merge. Describe the stable evidence ids, changed
-artifacts, and verification result a reviewer needs. Commit subjects are one
+CI must be green before merge. Describe the stable evidence ids and changed
+artifacts a reviewer needs. Commit subjects are one
 line and 50 characters or fewer, with no body, trailers, or attribution lines.
 
 ## Issues and community

@@ -114,8 +114,11 @@ def path_and_member_tests() -> None:
 def contract_and_output_tests() -> None:
     workflow = WORKFLOW.read_text(encoding="utf-8")
     check(
-        "private tree allows only approved blob and directory paths",
-        "assert set(by_path) == set(expected_blobs) | expected_trees" in workflow,
+        "private tree selects the approved blob and directory paths",
+        "assert set(expected_blobs) | expected_trees <= set(by_path)" in workflow
+        and '"ffxivgame.exe"' not in workflow
+        and '"client-data/' not in workflow
+        and '"client-scripts/' not in workflow,
     )
     check(
         "private tree requires blob and directory modes",

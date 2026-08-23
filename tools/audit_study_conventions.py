@@ -7,14 +7,12 @@ of tools/refresh.py.
 
 Usage:
     python tools/audit_study_conventions.py
-    python tools/audit_study_conventions.py --json
 """
 
 from __future__ import annotations
 
 import argparse
 import hashlib
-import json
 import sys
 from pathlib import Path
 
@@ -197,7 +195,6 @@ def main() -> int:
         description="Audit study conventions (README shape, manifest/catalog agreement, "
         "checksums, path hygiene) not covered by validate_capture_repo.py."
     )
-    parser.add_argument("--json", action="store_true", help="emit results as JSON")
     args = parser.parse_args()
 
     # Titles/search_hints may contain Japanese; UTF-8 output avoids cp1252 console aborts.
@@ -205,15 +202,6 @@ def main() -> int:
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
     study_count, problems = audit()
-
-    if args.json:
-        payload = {
-            "studyCount": study_count,
-            "problemCount": len(problems),
-            "problems": problems,
-        }
-        print(json.dumps(payload, indent=2, ensure_ascii=False))
-        return 1 if problems else 0
 
     if problems:
         for problem in problems:

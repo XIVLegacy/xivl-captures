@@ -169,11 +169,6 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="With --recall, list every missing anchor for every capture with gaps.",
     )
-    parser.add_argument(
-        "--recall-json",
-        action="store_true",
-        help="With --recall, emit per-capture missing anchors as JSON (for tooling/audit).",
-    )
     return parser.parse_args()
 
 
@@ -325,10 +320,6 @@ def validate_source(
                             f"{source_id}: cold-stored source has {len(members)} members; "
                             "expected exactly 1 to hash-verify against the single cold file"
                         )
-
-    if original_state == "local-only":
-        # Local-only pointers are documentary and may be absent.
-        pass
 
     if original_state == "referenced-sibling":
         # Verify a referenced source only when its checkout is present.
@@ -599,8 +590,8 @@ def _hint_covers(hints: list[str], term: str) -> bool:
 
 
 def validate_search_hints_recall(
-    repo_root: Path, df_max: int | None = None, worst: int = 40,
-    verbose: bool = False, as_json: bool = False,
+    repo_root: Path, worst: int = 40,
+    verbose: bool = False,
 ) -> None:
     catalog = load_yaml(repo_root / "catalog" / "index.yaml") or {}
     entries: dict[str, dict] = {}
@@ -625,8 +616,7 @@ def validate_search_hints_recall(
     for text in evidence.values():
         for name in _set_terms(text)[0]:
             doc_freq[name] = doc_freq.get(name, 0) + 1
-    if df_max is None:
-        df_max = max(15, round(0.03 * len(evidence)))
+    df_max = max(15, round(0.03 * len(evidence)))
 
     # Score names separately from secondary event and message references.
     rows: list[tuple[int, str, list[str], list[str]]] = []
@@ -658,21 +648,6 @@ def validate_search_hints_recall(
     ref_pct = (100.0 * ref_covered / ref_total) if ref_total else 100.0
     name_gaps = sum(1 for r in rows if r[0])
 
-    if as_json:
-        import json
-        payload = {
-            "df_max": df_max,
-            "evidence_maps": len(evidence),
-            "names": {"total": name_total, "covered": name_covered, "pct": round(name_pct, 1)},
-            "refs": {"total": ref_total, "covered": ref_covered, "pct": round(ref_pct, 1)},
-            "captures": [
-                {"id": capture_id, "missing_names": miss_names, "missing_refs": miss_refs}
-                for _, capture_id, miss_names, miss_refs in rows
-            ],
-        }
-        print(json.dumps(payload, indent=2, ensure_ascii=False))
-        return
-
     print("search_hints recall (advisory) - evidence-map.md anchors covered by search_hints/tags")
     print(f"  corpus: {len(evidence)} evidence-maps (DF suppression > {df_max} captures)")
     print(f"  NAMES (NPC/enemy/item): {name_covered}/{name_total} covered ({name_pct:.1f}%), "
@@ -701,7 +676,6 @@ def main() -> int:
     if args.recall:
         validate_search_hints_recall(
             repo_root, worst=args.recall_show, verbose=args.recall_verbose,
-            as_json=args.recall_json,
         )
         return 0
     local_config_path = repo_root / "config" / "cold-storage.local.yaml"

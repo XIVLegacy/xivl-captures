@@ -5,10 +5,8 @@ Every connection that decodes into outer frames is merged by direction.
 
 from __future__ import annotations
 
-import argparse
 from collections import Counter
 import struct
-import sys
 import warnings
 import zlib
 from pathlib import Path
@@ -161,22 +159,10 @@ def reconstruct_with_index(pcap_path: Path):
     return streams, index
 
 
-def reconstruct(pcap_path: Path, max_bytes: int = 0) -> dict[str, bytes]:
+def reconstruct(pcap_path: Path) -> dict[str, bytes]:
     """Return {direction: bytes} where direction is c2s or s2c."""
     streams, _index = reconstruct_with_index(pcap_path)
-    if max_bytes:
-        streams = {direction: blob[:max_bytes] for direction, blob in streams.items()}
     return streams
-
-
-def hex_dump(blob: bytes, width: int = 16, indent: str = "  ") -> str:
-    lines = []
-    for i in range(0, len(blob), width):
-        chunk = blob[i : i + width]
-        hex_part = " ".join(f"{b:02x}" for b in chunk)
-        ascii_part = "".join(chr(b) if 32 <= b < 127 else "." for b in chunk)
-        lines.append(f"{indent}{i:06x}  {hex_part:<{width * 3}}  {ascii_part}")
-    return "\n".join(lines)
 
 
 # Outer frame model: see docs/pcap-decoding.md "Outer frames" for the field offsets and marker byte values.
@@ -229,64 +215,3 @@ def maybe_inflate(body: bytes) -> bytes | None:
         return zlib.decompress(body)
     except zlib.error:
         return None
-
-
-def render_frames(direction: str, blob: bytes, max_frames: int = 0) -> str:
-    """Render parsed frames for one stream direction."""
-    frames = parse_outer_frames(blob)
-    if max_frames:
-        frames = frames[:max_frames]
-    out = [f"=== {direction}: {len(frames)} frames parsed (stream length {len(blob)} bytes) ==="]
-    for i, f in enumerate(frames):
-        marker = " ".join(f"{b:02x}" for b in f["marker"])
-        ts = " ".join(f"{b:02x}" for b in f["timestamp"])
-        out.append(
-            f"  frame[{i}] off=0x{f['offset']:x} size={f['size']} "
-            f"marker=[{marker}] type=0x{f['type']:04x} ts=[{ts}] "
-            f"body_len={len(f['body'])}"
-        )
-        inflated = maybe_inflate(f["body"])
-        if inflated is not None:
-            out.append(f"    body: zlib, inflated to {len(inflated)} bytes")
-            out.append(hex_dump(inflated[:128], indent="      "))
-        else:
-            out.append(hex_dump(f["body"][:128], indent="      "))
-    return "\n".join(out)
-
-
-def main() -> int:
-    ap = argparse.ArgumentParser(description="Reconstruct FFXIV 1.23b TCP streams.")
-    ap.add_argument("pcap", help="Path to a .pcapng file")
-    ap.add_argument("--bytes", type=int, default=512, help="Max bytes per direction (0 for all)")
-    ap.add_argument("--frames", action="store_true", help="Parse outer frames and dump per-frame summary instead of raw hex")
-    ap.add_argument("--max-frames", type=int, default=0, help="Limit frames shown in --frames mode (0 = all)")
-    args = ap.parse_args()
-
-    pcap_path = Path(args.pcap)
-    if not pcap_path.is_file():
-        print(f"not a file: {pcap_path}", file=sys.stderr)
-        return 1
-
-    max_bytes = 0 if args.frames else args.bytes
-    streams = reconstruct(pcap_path, max_bytes=max_bytes)
-    if not streams:
-        print("No TCP payload found.", file=sys.stderr)
-        return 1
-
-    for direction in ("c2s", "s2c"):
-        blob = streams.get(direction)
-        if blob is None:
-            print(f"=== {direction}: (not captured) ===\n")
-            continue
-        if args.frames:
-            print(render_frames(direction, blob, max_frames=args.max_frames))
-        else:
-            print(f"=== {direction}: {len(blob)} bytes shown ===")
-            print(hex_dump(blob))
-        print()
-
-    return 0
-
-
-if __name__ == "__main__":
-    sys.exit(main())

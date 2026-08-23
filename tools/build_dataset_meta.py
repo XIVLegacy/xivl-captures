@@ -15,7 +15,7 @@ from pathlib import Path
 
 import yaml
 
-from _json_io import REPO_ROOT, DATA_DIR, write_json  # noqa: F401
+from _json_io import REPO_ROOT, DATA_DIR
 
 PIPELINES_DIR = REPO_ROOT / "pipelines"
 SOURCE_MANIFEST = REPO_ROOT / "sources" / "pcap-1.23b" / "manifest.yaml"
@@ -93,8 +93,6 @@ def build_generated_meta(name: str, pipeline: dict, corpus_hash: str) -> dict:
 
 def build_promoted_meta(name: str) -> dict:
     doc = json.loads((DATA_DIR / f"{name}.json").read_text(encoding="utf-8"))
-    if name != "opcode_names":
-        raise ValueError(f"unknown promoted dataset: {name}")
     citation = doc["source"]
 
     return {

@@ -21,6 +21,7 @@ import json
 import os
 import shutil
 import sys
+import textwrap
 from collections import Counter
 from functools import lru_cache
 from pathlib import Path
@@ -54,10 +55,6 @@ def _dump(obj) -> str:
         obj, Dumper=_NoAlias, sort_keys=False, default_flow_style=False,
         allow_unicode=True, width=100,
     )
-
-
-# Scenario definitions come from sources/pcap-1.23b/manifest.yaml; members resolve under CAPTURES_DIR and facets are validated.
-FACET_KEYS = ("system", "city_state", "progression_track", "zones")
 
 
 def load_corpus_manifest() -> dict:
@@ -278,57 +275,102 @@ def mapping_source() -> str:
     return mapping["source"]
 
 
+def wrap_prose(text: str, *, bullet: bool = False) -> list[str]:
+    """Wrap generated README prose at phrase boundaries."""
+    wrapped = textwrap.wrap(
+        text,
+        width=88,
+        initial_indent="- " if bullet else "",
+        subsequent_indent="  " if bullet else "",
+        break_long_words=False,
+        break_on_hyphens=False,
+    )
+    for index in range(1, len(wrapped)):
+        stripped = wrapped[index].lstrip()
+        if not stripped.startswith(("and ", "or ", "but ", "as ")):
+            continue
+        previous, last_word = wrapped[index - 1].rsplit(" ", 1)
+        indent = wrapped[index][: len(wrapped[index]) - len(stripped)]
+        wrapped[index - 1] = previous
+        wrapped[index] = f"{indent}{last_word} {stripped}"
+    return wrapped
+
+
 def render_readme(s: dict, stats: dict) -> str:
     members = s["members"]
     svc_total = Counter()
     for m in members:
         svc_total.update(stats[m]["service_mix"])
-    lines = [f"# {s['title']}", "",
-             "## What this scenario contains", "",
-             s["blurb"], "",
-             "This is a **packet-capture reference scenario**. The raw pcaps live in "
-             f"this repo's shared `{SIBLING_LABEL}/` corpus; this view distils the opcode "
-             "evidence those captures carry. Evidence tier: packet captures > video breakdown > "
-             "wiki; this is packet evidence.", "",
-             "## Load first", "",
-             "- `evidence-map.md` - the per-capture opcode rollup, names "
-             "from `derived/opcode_names.json`, plus caveats and gaps.",
-             "- `file-inventory.csv` - one row per member pcap (bytes, "
-             "sha256, observed opcodes).", "",
-             "## Raw materials", ""]
+    lines = [f"# {s['title']}", "", "## What this scenario contains", ""]
+    lines.extend(wrap_prose(s["blurb"]))
+    lines.extend(["", "This view summarizes opcode evidence from packet captures.", ""])
+    lines.extend(wrap_prose(f"Raw captures: `{SIBLING_LABEL}/`.", bullet=True))
+    lines.extend(wrap_prose(
+        "Evidence class: packet captures, which outrank video breakdowns and wiki sources.",
+        bullet=True,
+    ))
+    lines.extend(["", "## Load first", ""])
+    lines.extend(wrap_prose(
+        "`evidence-map.md` - the per-capture opcode rollup, names from "
+        "`derived/opcode_names.json`, plus caveats and gaps.",
+        bullet=True,
+    ))
+    lines.extend(wrap_prose(
+        "`file-inventory.csv` - one row per member pcap (bytes, sha256, observed opcodes).",
+        bullet=True,
+    ))
+    lines.extend(["", "## Raw materials", ""])
     for m in members:
         st = stats[m]
-        lines.append(f"- `{SIBLING_LABEL}/{m}` ({fmt_int(st['size'])} B, "
-                     f"{len(st['opcode_hexes'])} opcodes).")
+        lines.extend(wrap_prose(
+            f"`{SIBLING_LABEL}/{m}` ({fmt_int(st['size'])} B, "
+            f"{len(st['opcode_hexes'])} opcodes).",
+            bullet=True,
+        ))
     lines += ["", "## Key entities/topics", ""]
     for tag in s["tags"]:
-        lines.append(f"- {tag}")
-    lines += ["", "## Gaps", "",
-              "- This scenario carries opcode identity, direction, service, and payload "
-              "lengths only - not decoded field semantics (those live in this repo's "
-              "`derived/payload_layouts.json`).",
-              f"- Service split across members: "
-              f"{', '.join(f'{k} {v}' for k, v in sorted(svc_total.items()))}."]
+        lines.extend(wrap_prose(tag, bullet=True))
+    lines += ["", "## Gaps", ""]
+    lines.extend(wrap_prose(
+        "This scenario carries opcode identity, direction, service, and payload lengths "
+        "only - not decoded field semantics (those live in this repo's "
+        "`derived/payload_layouts.json`).",
+        bullet=True,
+    ))
+    lines.extend(wrap_prose(
+        f"Service split across members: "
+        f"{', '.join(f'{k} {v}' for k, v in sorted(svc_total.items()))}.",
+        bullet=True,
+    ))
     if s.get("caveat"):
-        lines.append(f"- Caveat: {s['caveat']}")
-    lines += ["", "## Next agent steps", "",
-              "- Use `file-inventory.csv` to pick the member pcap that "
-              f"isolates the opcode you need, then open it from `{SIBLING_LABEL}/` "
-              "for byte-level work.",
-              "- Cross-check any opcode here against its full entry in this "
-              "repo's `derived/opcode_names.json` before promoting a claim; that "
-              f"mapping was promoted from {mapping_source()} and carries no "
-              "freshness promise against the sibling catalog.", ""]
+        lines.extend(wrap_prose(f"Caveat: {s['caveat']}", bullet=True))
+    lines += ["", "## Using this view", ""]
+    lines.extend(wrap_prose(
+        "Use `file-inventory.csv` to choose a member pcap for the opcode, then open it "
+        f"from `{SIBLING_LABEL}/` for byte-level work.",
+        bullet=True,
+    ))
+    lines.extend(wrap_prose(
+        "Cross-check the full opcode entry in this repo's `derived/opcode_names.json` "
+        "before citing it.",
+        bullet=True,
+    ))
+    lines.extend(wrap_prose(
+        f"Mapping provenance: {mapping_source()}. The promoted copy is not synchronized "
+        "automatically.",
+        bullet=True,
+    ))
+    lines.append("")
     return "\n".join(lines)
 
 
 def render_evidence_map(s: dict, stats: dict, opcodes: list[dict]) -> str:
     members = s["members"]
     lines = [f"# {s['title']} - Evidence Map", "",
-             f"Reference scenario. Raw captures live in this repo's `{SIBLING_LABEL}/`; this "
-             "map distils their opcode evidence by joining this repo's own "
-             "`derived/observations.json` (numeric truth) against "
-             f"`derived/opcode_names.json` (names, promoted from {mapping_source()}).", "",
+             "This map joins two repository-owned products:", "",
+             "- `derived/observations.json` supplies numeric observations.",
+             f"- `derived/opcode_names.json` supplies names promoted from {mapping_source()}.",
+             f"- Raw captures live in `{SIBLING_LABEL}/`.", "",
              f"## Captures ({len(members)})", ""]
     for m in members:
         st = stats[m]
@@ -348,10 +390,9 @@ def render_evidence_map(s: dict, stats: dict, opcodes: list[dict]) -> str:
         lines.append(f"| `{o['hex']}` | {o['service']} | {o['direction']} | "
                      f"{name} | {retail_class} | {lengths} |")
     lines += ["", "## Verification", "",
-              "- Every opcode above is sourced from this repo's own "
-              "`derived/observations.json` (numeric truth) joined against "
-              "`derived/opcode_names.json` (names) for the member pcaps - no "
-              "hand-asserted opcodes.",
+              "- Every opcode above comes from `derived/observations.json` "
+              "joined with `derived/opcode_names.json` for the member pcaps. "
+              "No opcode is added manually.",
               "- Member sizes and sha256 were taken from this repo's "
               f"`{SIBLING_LABEL}/`; the canonical hashes live in "
               "`sources/pcap-1.23b/manifest.yaml`.", "",

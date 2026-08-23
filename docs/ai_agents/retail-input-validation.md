@@ -17,6 +17,12 @@ revision, uses the `retail-evidence` environment, and retains only the
 schema-valid `retail-pcap-attestation` artifact containing
 `retail-evidence-attestation.json`.
 
+The private-tree preflight allows only the authorized PCAP archive path and its
+parent trees. It requires an untruncated tree response, regular-file type and
+mode, the pinned size and blob identity, and the archive SHA-256 before
+extraction. Other assets in the shared private repository are outside this
+lane's grant.
+
 The extractor validates the complete archive before writing any member. It
 rejects duplicate names, directories, links, encrypted entries, traversal or
 absolute paths, non-PCAP files, compression ratios outside the fixed bound,
@@ -30,6 +36,9 @@ blocks, uncaptured behavior, semantic names beyond existing evidence, TLS
 plaintext, or live-server behavior outside the recorded sessions. Logs and
 attestations contain only fixed stage names, counts, timings, and verdicts;
 they do not contain packet fields, payloads, addresses, names, chat, or hex.
+
+The lane also runs the four explicit repository unit-test modules before
+retail extraction.
 
 ## Reproduced result
 

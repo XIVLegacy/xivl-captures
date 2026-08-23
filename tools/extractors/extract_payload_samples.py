@@ -100,7 +100,6 @@ def walk_capture_payloads(path: Path) -> list[dict]:
 def main() -> int:
     ap = argparse.ArgumentParser(description="Sample raw payload bytes per opcode.")
     ap.add_argument("--out", default=str(DEFAULT_OUT), help="Output JSON path.")
-    ap.add_argument("--max-samples", type=int, default=MAX_SAMPLES_PER_KEY)
     args = ap.parse_args()
 
     paths = default_corpus_paths()
@@ -115,7 +114,7 @@ def main() -> int:
         for r in walk_capture_payloads(p):
             key = (r["direction"], r["opcode"])
             existing = samples.setdefault(key, [])
-            if len(existing) >= args.max_samples:
+            if len(existing) >= MAX_SAMPLES_PER_KEY:
                 continue
             if per_capture_counts.get(key, 0) >= MAX_SAMPLES_PER_CAPTURE:
                 continue
@@ -130,7 +129,7 @@ def main() -> int:
 
     out_struct = {
         "captureCount": capture_count,
-        "maxSamplesPerKey": args.max_samples,
+        "maxSamplesPerKey": MAX_SAMPLES_PER_KEY,
         "samples": {
             "c2s": {},
             "s2c": {},

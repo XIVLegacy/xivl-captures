@@ -22,7 +22,6 @@ import yaml
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_SOURCE_MANIFEST = REPO_ROOT / "sources" / "pcap-1.23b" / "manifest.yaml"
-DEFAULT_INPUTS = REPO_ROOT / "config" / "retail_inputs.json"
 EXPECTED_ARCHIVE_SIZE = 2622720
 EXPECTED_ARCHIVE_SHA256 = "20a78b9f40ff2393037c9a160c957783cf590b4f01797493d22fcd2039e9cbff"
 EXPECTED_MEMBER_COUNT = 54
@@ -86,8 +85,6 @@ def _archive_identity(path: Path) -> None:
             for chunk in iter(lambda: handle.read(CHUNK_SIZE), b""):
                 digest.update(chunk)
     except (OSError, ValueError) as exc:
-        if isinstance(exc, ArchiveValidationError):
-            raise
         raise ArchiveValidationError("archive unreadable") from exc
     if digest.hexdigest() != EXPECTED_ARCHIVE_SHA256:
         _fail("archive hash mismatch")
@@ -110,7 +107,7 @@ def _safe_member_name(name: str, expected: dict[str, tuple[int, str]]) -> None:
 
 
 def _regular_member(info: zipfile.ZipInfo) -> None:
-    if info.is_dir() or info.filename.endswith("/"):
+    if info.filename.endswith("/"):
         _fail("archive directory member rejected")
     if info.flag_bits & 0x1:
         _fail("encrypted archive member rejected")

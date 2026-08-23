@@ -179,14 +179,13 @@ def csv_bytes(rows: list[dict]) -> bytes:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true")
-    parser.add_argument("--out-dir", type=Path, default=OUT)
     args = parser.parse_args()
     rows, accounting = scan()
     outputs = {"property-records.csv": csv_bytes(rows),
                "accounting.json": (json.dumps(accounting, indent=2, sort_keys=True) + "\n").encode("ascii")}
     stale = []
     for name, data in outputs.items():
-        path = args.out_dir / name
+        path = OUT / name
         if args.check:
             if not path.is_file() or path.read_bytes() != data:
                 stale.append(str(path))

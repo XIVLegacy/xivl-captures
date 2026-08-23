@@ -22,13 +22,6 @@ sys.path.insert(0, str(Path(__file__).parent))
 from extract_streams import reconstruct_lanes, parse_outer_frames  # type: ignore
 
 
-PRIORITY_CAPTURES = [
-    "chat_say.pcapng",
-    "chat_shout.pcapng",
-    "inventory.pcapng",
-    "idle_in_party.pcapng",
-    "gridania_to_coerthas.pcapng",
-]
 DEFAULT_CAP_DIR = Path(os.environ.get(
     "XIVL_PCAP_OBJECTS_DIR",
     str(Path(__file__).resolve().parent.parent.parent / "sources" / "pcap-1.23b" / "objects"),
@@ -351,19 +344,12 @@ def render_summary(aggregate_data: dict) -> str:
 def main() -> int:
     ap = argparse.ArgumentParser(description="Opcode/length observation extractor.")
     ap.add_argument("captures", nargs="*", help="Paths to .pcapng files (default: full corpus).")
-    ap.add_argument(
-        "--priority-only",
-        action="store_true",
-        help="Restrict to the 5 priority captures (chat, inventory, idle, zone-change).",
-    )
     ap.add_argument("--out", default=str(DEFAULT_OUT), help="Output JSON path.")
     ap.add_argument("--lane-out", default=str(DEFAULT_LANE_OUT), help="Per-lane output JSON path.")
     args = ap.parse_args()
 
     if args.captures:
         paths = [Path(p) for p in args.captures]
-    elif args.priority_only:
-        paths = [DEFAULT_CAP_DIR / n for n in PRIORITY_CAPTURES]
     else:
         paths = default_corpus_paths()
 

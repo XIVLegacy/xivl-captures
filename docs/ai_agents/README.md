@@ -2,7 +2,7 @@
 
 Contributions to xivl-captures follow the same repository contract whether
 the contributor is a human or an agent. The contributor owns the change and
-must be able to explain its evidence, scope, and verification.
+must be able to explain its evidence and scope.
 
 This repository records retail-observation evidence. Agent output, summaries,
 search results, and uncited notes are leads, not evidence. Start with the
@@ -49,8 +49,7 @@ the evidence resolves them.
 The [comments and prose doctrine](comments-and-prose.md) is canonical for
 comments in tools, extractors, pipelines, schemas, and tracked workflow
 manifests. The [evidence and claims guide](evidence-and-claims.md) is
-canonical for citations and uncertainty. The [verification guide](verification.md)
-is canonical for the refresh checks and their limits.
+canonical for citations and uncertainty.
 
 ## Tracked policy docs
 
@@ -79,4 +78,3 @@ repository does not have.
 | Catalog consumer page | [docs/catalog-guide.md](../catalog-guide.md) |
 | Evidence classes and claims | [evidence-and-claims.md](evidence-and-claims.md) |
 | Comments and prose | [comments-and-prose.md](comments-and-prose.md) |
-| Verification and repository checks | [verification.md](verification.md) |

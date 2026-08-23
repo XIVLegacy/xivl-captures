@@ -37,6 +37,88 @@ PCAP_PRODUCTS = [
     "gam_hash_names.json",
     "payload_layouts.json",
 ]
+# These are the deterministic products reproduced by the retail PCAP lane.
+# Keep this list aligned with the checks below so its contract count has a
+# producer rather than a hand-maintained literal.
+VERIFIED_PRODUCTS = tuple(
+    [f"derived/{name}" for name in PCAP_PRODUCTS]
+    + [
+        "derived/opcode_names.json",
+        "derived/spawn_location_validation.json",
+        "studies/battle-result-backfit/derived/distribution-summary.csv",
+        "studies/battle-result-backfit/derived/matched-comparison-sets.csv",
+        "studies/battle-result-backfit/derived/hp-recovery-clusters.csv",
+        "studies/battle-result-backfit/derived/distribution-accounting.json",
+        "studies/battle-result-backfit/derived/matched-set-ratios.csv",
+        "studies/battle-result-backfit/derived/recovery-model-observations.csv",
+        "studies/battle-result-backfit/derived/model-fit-accounting.json",
+        "studies/director-wire-identity/derived/group-packets.csv",
+        "studies/director-wire-identity/derived/group-members.csv",
+        "studies/director-wire-identity/derived/event-role-candidates.csv",
+        "studies/director-wire-identity/derived/accounting.json",
+        "studies/property-stream-hash-catalog/derived/property-records.csv",
+        "studies/property-stream-hash-catalog/derived/accounting.json",
+    ]
+)
+UNIT_TEST_MODULES = (
+    "tools.tests.test_analyze_battle_result_distributions",
+    "tools.tests.test_analyze_battle_result_fits",
+    "tools.tests.test_extract_battle_results",
+    "tools.tests.test_extract_property_stream_catalog",
+)
+
+# The three gate modes share these command-level checks. Product-specific
+# stages remain below because their result rows combine related commands.
+CHECK_PLANS = {
+    "public": (
+        ([TOOLS / "verify_retail_pcap.py", "--check-contract"], "retail PCAP contract", (("retail PCAP contract", "validate"),)),
+        ([TOOLS / "validate_capture_repo.py", "--check-storage"], "public manifest/catalog cross-check", (("public manifest/catalog cross-check", "validate"),)),
+        ([TOOLS / "check_markdown_links.py"], "public in-repo links", (("public in-repo links", "validate"),)),
+        ([TOOLS / "audit_study_conventions.py"], "public study conventions", (("public study conventions", "validate"),)),
+        ([TOOLS / "soften_source_links.py", "--check"], "public study source citations", (("public study source citations", "validate"),)),
+        ([TOOLS / "build_checksums.py", "--check"], "public study checksums", (("public study checksums", "validate"),)),
+        ([TOOLS / "build_catalog.py", "--check"], "public catalog chain", (
+            ("public scenario views", "validate"),
+            ("public catalog registry", "validate"),
+            ("public catalog axes", "validate"),
+        )),
+        ([TOOLS / "validate_digestion.py", "--public-shape"], "public digestion references", (("public digestion references", "validate"),)),
+        ([TOOLS / "validate_schemas.py"], "public schemas and boundaries", (("public schemas and boundaries", "validate"),)),
+        ([TOOLS / "build_dataset_meta.py", "--check"], "public dataset metadata", (("public dataset metadata", "validate"),)),
+    ),
+    "check": (
+        ([TOOLS / "verify_retail_pcap.py", "--check-contract"], "retail PCAP contract", (("retail PCAP contract", "validate"),)),
+        ([TOOLS / "validate_capture_repo.py", "--check-storage"], "validate_capture_repo.py", (("validate_capture_repo.py (studies/sources/catalog cross-check)", "validate"),)),
+        ([TOOLS / "check_markdown_links.py"], "check_markdown_links.py", (("check_markdown_links.py (in-repo link resolution)", "validate"),)),
+        ([TOOLS / "audit_study_conventions.py"], "audit_study_conventions.py", (("audit_study_conventions.py (study README and manifest shape)", "validate"),)),
+        ([TOOLS / "soften_source_links.py", "--check"], "soften_source_links.py --check", (("shipping study source citations", "validate"),)),
+        ([TOOLS / "build_checksums.py", "--check"], "build_checksums.py --check", (("study derived/ checksum anchors", "regen"),)),
+        ([TOOLS / "build_catalog.py", "--check"], "build_catalog.py --check", (
+            ("pcap-reference scenario views", "regen"),
+            ("catalog/index.yaml + catalog/aliases.yaml", "regen"),
+            ("catalog/by-*.md axis views", "regen"),
+        )),
+    ),
+    "check-post": (
+        ([TOOLS / "validate_schemas.py"], "validate_schemas.py", (("validate_schemas.py (schemas/sources/data-meta/pipelines)", "validate"),)),
+        ([TOOLS / "build_dataset_meta.py", "--check"], "build_dataset_meta.py --check", (("derived/*.meta.yaml sidecars", "regen"),)),
+    ),
+    "write": (
+        ([TOOLS / "build_catalog.py"], "build_catalog.py", (
+            ("pcap-reference scenario views", "write"),
+            ("catalog/index.yaml + catalog/aliases.yaml", "write"),
+            ("catalog/by-*.md axis views", "write"),
+        )),
+        ([TOOLS / "validate_capture_repo.py", "--check-storage"], "validate_capture_repo.py", (("validate_capture_repo.py (studies/sources/catalog cross-check)", "validate"),)),
+        ([TOOLS / "check_markdown_links.py"], "check_markdown_links.py", (("check_markdown_links.py (in-repo link resolution)", "validate"),)),
+        ([TOOLS / "soften_source_links.py"], "soften_source_links.py", (("shipping study source citations", "write"),)),
+        ([TOOLS / "build_checksums.py"], "build_checksums.py", (("study derived/ checksum anchors", "write"),)),
+    ),
+    "write-post": (
+        ([TOOLS / "build_dataset_meta.py"], "build_dataset_meta.py", (("derived/*.meta.yaml sidecars", "write"),)),
+        ([TOOLS / "validate_schemas.py"], "validate_schemas.py", (("validate_schemas.py (schemas/sources/data-meta/pipelines)", "validate"),)),
+    ),
+}
 PCAP_BUILDER = TOOLS / "build_pcap_products.py"
 BATTLE_RESULT_DISTRIBUTIONS = TOOLS / "analyze_battle_result_distributions.py"
 BATTLE_RESULT_FITS = TOOLS / "analyze_battle_result_fits.py"
@@ -49,7 +131,7 @@ PARSE_ONLY_PRODUCTS = [
 ]
 SUBPROCESS_TIMEOUT_SECONDS = 300
 
-def run(cmd: list, label: str) -> tuple[bool, str]:
+def run(cmd: list, label: str) -> bool:
     try:
         proc = subprocess.run(
             [sys.executable] + [str(c) for c in cmd],
@@ -62,14 +144,22 @@ def run(cmd: list, label: str) -> tuple[bool, str]:
         print(f"--- {label} output ---")
         print("subprocess timed out")
         print(f"--- end {label} output ---")
-        return False, "subprocess timed out"
+        return False
     ok = proc.returncode == 0
     out = (proc.stdout or "") + (proc.stderr or "")
     if not ok:
         print(f"--- {label} output ---")
         print(out.rstrip())
         print(f"--- end {label} output ---")
-    return ok, out.strip().splitlines()[-1] if out.strip() else ""
+    return ok
+
+
+def run_plan(mode: str, results: list[tuple[str, str, bool, str]]) -> None:
+    for cmd, label, entries in CHECK_PLANS[mode]:
+        ok = run(cmd, label)
+        note = "" if ok else "see output above"
+        for product, level in entries:
+            results.append((product, level, ok, note))
 
 
 def parse_only_check(name: str, reason: str, results: list) -> None:
@@ -115,56 +205,30 @@ def sidecar_hash_check(results: list) -> None:
 def do_public_check() -> int:
     results: list[tuple[str, str, bool, str]] = []
 
-    checks = [
-        ([TOOLS / "verify_retail_pcap.py", "--check-contract"], "retail PCAP contract"),
-        ([TOOLS / "validate_capture_repo.py"], "public manifest/catalog cross-check"),
-        ([TOOLS / "check_markdown_links.py"], "public in-repo links"),
-        # Reads only README.md and manifest.yaml, both tracked, so the study
-        # contract is enforced with the restricted corpus absent too.
-        ([TOOLS / "audit_study_conventions.py"], "public study conventions"),
-        ([TOOLS / "soften_source_links.py", "--check"], "public study source citations"),
-        ([TOOLS / "build_checksums.py", "--check"], "public study checksums"),
-        ([TOOLS / "build_catalog.py", "--check"], "public catalog chain"),
-        ([TOOLS / "validate_digestion.py", "--public-shape"], "public digestion references"),
-    ]
-    for cmd, label in checks:
-        ok, _ = run(cmd, label)
-        if label == "public catalog chain":
-            for product in (
-                "public scenario views",
-                "public catalog registry",
-                "public catalog axes",
-            ):
-                results.append((product, "validate", ok, "" if ok else "see output above"))
-        else:
-            results.append((label, "validate", ok, "" if ok else "see output above"))
+    ok = run(["-m", "unittest", *UNIT_TEST_MODULES], "explicit unit tests")
+    results.append(("explicit unit tests", "validate", ok, "" if ok else "see output above"))
+
+    run_plan("public", results)
 
     for json_path in sorted(DATA.glob("*.json")):
         parse_only_check(json_path.name, "retained public product", results)
     sidecar_hash_check(results)
 
-    ok, _ = run([PCAP_BUILDER, "--check"], "public pcap products")
+    ok = run([PCAP_BUILDER, "--check"], "public pcap products")
     for name in ("gam_hash_names.json", "payload_layouts.json"):
         results.append((f"derived/{name}", "regen", ok,
                         "" if ok else "regenerated bytes differ, see output above"))
 
-    ok, _ = run(
+    ok = run(
         [BATTLE_RESULT_DISTRIBUTIONS, "--check"],
         "public battle-result distributions",
     )
     results.append(("battle-result Stage 2 products", "regen", ok,
                     "" if ok else "regenerated bytes differ, see output above"))
 
-    ok, _ = run([BATTLE_RESULT_FITS, "--check"], "public battle-result fits")
+    ok = run([BATTLE_RESULT_FITS, "--check"], "public battle-result fits")
     results.append(("battle-result Stage 3 products", "regen", ok,
                     "" if ok else "regenerated bytes differ, see output above"))
-
-    for cmd, label in [
-        ([TOOLS / "validate_schemas.py"], "public schemas and boundaries"),
-        ([TOOLS / "build_dataset_meta.py", "--check"], "public dataset metadata"),
-    ]:
-        ok, _ = run(cmd, label)
-        results.append((label, "validate", ok, "" if ok else "see output above"))
 
     return report(results)
 
@@ -172,40 +236,13 @@ def do_public_check() -> int:
 def do_check() -> int:
     results: list[tuple[str, str, bool, str]] = []
 
-    ok, _ = run([TOOLS / "verify_retail_pcap.py", "--check-contract"], "retail PCAP contract")
-    results.append(("retail PCAP contract", "validate", ok, "" if ok else "see output above"))
+    ok = run(["-m", "unittest", *UNIT_TEST_MODULES], "explicit unit tests")
+    results.append(("explicit unit tests", "validate", ok, "" if ok else "see output above"))
 
-    ok, _ = run([TOOLS / "validate_capture_repo.py"], "validate_capture_repo.py")
-    results.append(("validate_capture_repo.py (studies/sources/catalog cross-check)", "validate", ok,
-                    "" if ok else "see output above"))
+    run_plan("check", results)
 
-    ok, _ = run([TOOLS / "check_markdown_links.py"], "check_markdown_links.py")
-    results.append(("check_markdown_links.py (in-repo link resolution)", "validate", ok,
-                    "" if ok else "see output above"))
-
-    # Reads only README.md and manifest.yaml, so it holds in both modes.
-    ok, _ = run([TOOLS / "audit_study_conventions.py"], "audit_study_conventions.py")
-    results.append(("audit_study_conventions.py (study README and manifest shape)",
-                    "validate", ok, "" if ok else "see output above"))
-
-    ok, _ = run([TOOLS / "soften_source_links.py", "--check"], "soften_source_links.py --check")
-    results.append(("shipping study source citations", "validate", ok,
-                    "" if ok else "hard links remain, see output above"))
-
-    ok, _ = run([TOOLS / "build_checksums.py", "--check"], "build_checksums.py --check")
-    results.append(("study derived/ checksum anchors", "regen", ok,
-                    "" if ok else "stale, see output above"))
-
-    ok, _ = run([TOOLS / "build_catalog.py", "--check"], "build_catalog.py --check")
-    results.append(("pcap-reference scenario views", "regen", ok,
-                    "" if ok else "stale, see output above"))
-    results.append(("catalog/index.yaml + catalog/aliases.yaml", "regen", ok,
-                    "" if ok else "stale, see output above"))
-    results.append(("catalog/by-*.md axis views", "regen", ok,
-                    "" if ok else "stale, see output above"))
-
-    ok, _ = run([PCAP_BUILDER, "--check"], "build_pcap_products.py --check")
-    digestion_ok, _ = run([TOOLS / "validate_digestion.py"], "validate_digestion.py")
+    ok = run([PCAP_BUILDER, "--check"], "build_pcap_products.py --check")
+    digestion_ok = run([TOOLS / "validate_digestion.py"], "validate_digestion.py")
     products_ok = ok and digestion_ok
     for name in PCAP_PRODUCTS:
         results.append((f"derived/{name}", "regen", products_ok,
@@ -214,37 +251,31 @@ def do_check() -> int:
     for name, reason in PARSE_ONLY_PRODUCTS:
         parse_only_check(name, reason, results)
 
-    ok, _ = run(
+    ok = run(
         [BATTLE_RESULT_DISTRIBUTIONS, "--check"],
         "analyze_battle_result_distributions.py --check",
     )
     results.append(("battle-result Stage 2 products", "regen", ok,
                     "" if ok else "regenerated bytes differ, see output above"))
 
-    ok, _ = run(
+    ok = run(
         [BATTLE_RESULT_FITS, "--check"],
         "analyze_battle_result_fits.py --check",
     )
     results.append(("battle-result Stage 3 products", "regen", ok,
                     "" if ok else "regenerated bytes differ, see output above"))
 
-    ok, _ = run([DIRECTOR_WIRE_IDENTITY, "--check"],
+    ok = run([DIRECTOR_WIRE_IDENTITY, "--check"],
                 "extract_director_wire_identity.py --check")
     results.append(("director wire identity products", "regen", ok,
                     "" if ok else "regenerated bytes differ, see output above"))
 
-    ok, _ = run([PROPERTY_STREAM_CATALOG, "--check"],
+    ok = run([PROPERTY_STREAM_CATALOG, "--check"],
                 "extract_property_stream_catalog.py --check")
     results.append(("property-stream catalog products", "regen", ok,
                     "" if ok else "regenerated bytes differ, see output above"))
 
-    ok, _ = run([TOOLS / "validate_schemas.py"], "validate_schemas.py")
-    results.append(("validate_schemas.py (schemas/sources/data-meta/pipelines)", "validate", ok,
-                    "" if ok else "see output above"))
-
-    ok, _ = run([TOOLS / "build_dataset_meta.py", "--check"], "build_dataset_meta.py --check")
-    results.append(("derived/*.meta.yaml sidecars", "regen", ok,
-                    "" if ok else "stale, see output above"))
+    run_plan("check-post", results)
 
     return report(results)
 
@@ -252,32 +283,10 @@ def do_check() -> int:
 def do_write() -> int:
     results: list[tuple[str, str, bool, str]] = []
 
-    ok, _ = run([TOOLS / "build_catalog.py"], "build_catalog.py")
-    results.append(("pcap-reference scenario views", "write", ok,
-                    "" if ok else "see output above"))
-    results.append(("catalog/index.yaml + catalog/aliases.yaml", "write", ok,
-                    "" if ok else "see output above"))
-    results.append(("catalog/by-*.md axis views", "write", ok,
-                    "" if ok else "see output above"))
+    run_plan("write", results)
 
-    ok, _ = run([TOOLS / "validate_capture_repo.py"], "validate_capture_repo.py")
-    results.append(("validate_capture_repo.py (studies/sources/catalog cross-check)", "validate", ok,
-                    "" if ok else "see output above"))
-
-    ok, _ = run([TOOLS / "check_markdown_links.py"], "check_markdown_links.py")
-    results.append(("check_markdown_links.py (in-repo link resolution)", "validate", ok,
-                    "" if ok else "see output above"))
-
-    ok, _ = run([TOOLS / "soften_source_links.py"], "soften_source_links.py")
-    results.append(("shipping study source citations", "write", ok,
-                    "" if ok else "see output above"))
-
-    ok, _ = run([TOOLS / "build_checksums.py"], "build_checksums.py")
-    results.append(("study derived/ checksum anchors", "write", ok,
-                    "" if ok else "see output above"))
-
-    ok, _ = run([PCAP_BUILDER], "build_pcap_products.py")
-    digestion_ok, _ = run([TOOLS / "validate_digestion.py"], "validate_digestion.py")
+    ok = run([PCAP_BUILDER], "build_pcap_products.py")
+    digestion_ok = run([TOOLS / "validate_digestion.py"], "validate_digestion.py")
     products_ok = ok and digestion_ok
     for name in PCAP_PRODUCTS:
         results.append((f"derived/{name}", "write", products_ok,
@@ -285,31 +294,26 @@ def do_write() -> int:
     for name, reason in PARSE_ONLY_PRODUCTS:
         parse_only_check(name, reason, results)
 
-    ok, _ = run(
+    ok = run(
         [BATTLE_RESULT_DISTRIBUTIONS],
         "analyze_battle_result_distributions.py",
     )
     results.append(("battle-result Stage 2 products", "write", ok,
                     "" if ok else "generation failed, see output above"))
 
-    ok, _ = run([BATTLE_RESULT_FITS], "analyze_battle_result_fits.py")
+    ok = run([BATTLE_RESULT_FITS], "analyze_battle_result_fits.py")
     results.append(("battle-result Stage 3 products", "write", ok,
                     "" if ok else "generation failed, see output above"))
 
-    ok, _ = run([DIRECTOR_WIRE_IDENTITY], "extract_director_wire_identity.py")
+    ok = run([DIRECTOR_WIRE_IDENTITY], "extract_director_wire_identity.py")
     results.append(("director wire identity products", "write", ok,
                     "" if ok else "generation failed, see output above"))
 
-    ok, _ = run([PROPERTY_STREAM_CATALOG], "extract_property_stream_catalog.py")
+    ok = run([PROPERTY_STREAM_CATALOG], "extract_property_stream_catalog.py")
     results.append(("property-stream catalog products", "write", ok,
                     "" if ok else "generation failed, see output above"))
 
-    ok, _ = run([TOOLS / "build_dataset_meta.py"], "build_dataset_meta.py")
-    results.append(("derived/*.meta.yaml sidecars", "write", ok, "" if ok else "see output above"))
-
-    ok, _ = run([TOOLS / "validate_schemas.py"], "validate_schemas.py")
-    results.append(("validate_schemas.py (schemas/sources/data-meta/pipelines)", "validate", ok,
-                    "" if ok else "see output above"))
+    run_plan("write-post", results)
 
     return report(results)
 

@@ -151,7 +151,6 @@ def csv_bytes(rows: list[dict]) -> bytes:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true")
-    parser.add_argument("--out-dir", type=Path, default=OUT)
     args = parser.parse_args()
     packets, members, roles, accounting = scan()
     outputs = {"group-packets.csv": csv_bytes(packets), "group-members.csv": csv_bytes(members),
@@ -159,7 +158,7 @@ def main() -> int:
                "accounting.json": (json.dumps(accounting, indent=2, sort_keys=True) + "\n").encode("ascii")}
     stale = []
     for name, data in outputs.items():
-        target = args.out_dir / name
+        target = OUT / name
         if args.check:
             if not target.is_file() or target.read_bytes() != data:
                 stale.append(str(target))

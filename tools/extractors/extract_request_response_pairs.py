@@ -89,7 +89,6 @@ def pair_within_window(
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default=str(DEFAULT_OUT))
-    ap.add_argument("--window-ms", type=int, default=WINDOW_MS)
     args = ap.parse_args()
 
     paths = default_corpus_paths()
@@ -110,7 +109,7 @@ def main() -> int:
                 c2s_totals[op] += 1
             elif d == "s2c" and op not in NOISE_OPCODES:
                 s2c_totals[op] += 1
-        cap_pairs = pair_within_window(events, args.window_ms)
+        cap_pairs = pair_within_window(events, WINDOW_MS)
         for k, n in cap_pairs.items():
             total_pairs[k] += n
             pair_captures[k].add(p.name)
@@ -133,7 +132,7 @@ def main() -> int:
         per_c2s[c2s_op].sort(key=lambda r: -r["pairCount"])
 
     out_struct: dict = {
-        "windowMs": args.window_ms,
+        "windowMs": WINDOW_MS,
         "noiseOpcodesExcluded": [f"0x{op:04x}" for op in sorted(NOISE_OPCODES)],
         "captureCount": capture_count,
         "c2sOpcodes": [],
@@ -154,7 +153,7 @@ def main() -> int:
     print(f"wrote {out_path}")
     print()
     print(
-        f"Top c2s -> s2c bindings (window={args.window_ms}ms, "
+        f"Top c2s -> s2c bindings (window={WINDOW_MS}ms, "
         f"sorted by pair count):"
     )
     flat: list[tuple[int, int, dict]] = []

@@ -16,15 +16,11 @@ EXCLUDED_DERIVED_IDS = frozenset({"gam_name_candidates"})
 def is_present_without_corpus(relative_path: str | Path) -> bool:
     """Return whether a path is expected to exist with no corpus present."""
     parts = Path(relative_path).as_posix().split("/")
-    if not parts:
-        return True
-
     if parts[0] == "archives":
         return False
 
-    if parts[0] == "sources" and len(parts) >= 2:
-        if len(parts) >= 3 and parts[2] == "objects":
-            return False
+    if len(parts) >= 3 and parts[0] == "sources" and parts[2] == "objects":
+        return False
 
     if parts[0] == "derived" and len(parts) == 2:
         name = parts[1]

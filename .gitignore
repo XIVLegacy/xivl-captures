@@ -20,5 +20,3 @@ __pycache__/
 
 # Retail-input lane scratch and sanitized review roots
 /_retail-staging/
-/.retail-pcap-private/
-/.retail-pcap-review/

@@ -98,38 +98,30 @@ def _dependency_closure(selected: set[str]) -> set[str]:
 
 def _run_group(group: str, stage: Path) -> int:
     out = lambda name: str(stage / f"{name}.json")
-    if group == "observations":
-        return _invoke_main(
+    commands = {
+        "observations": (
             extract_observations.main,
             ["--out", out("observations"), "--lane-out", out("lane_observations")],
-        )
-    if group == "sequences":
-        return _invoke_main(extract_sequences.main, ["--out", out(group)])
-    if group == "timing":
-        return _invoke_main(extract_timing.main, ["--out", out(group)])
-    if group == "payload_samples":
-        return _invoke_main(extract_payload_samples.main, ["--out", out(group)])
-    if group == "content_samples":
-        return _invoke_main(extract_content_samples.main, ["--out", out(group)])
-    if group == "property_targets":
-        return _invoke_main(extract_property_targets.main, ["--out", out(group)])
-    if group == "request_response_pairs":
-        return _invoke_main(extract_request_response_pairs.main, ["--out", out(group)])
-    if group == "gam_keys":
-        return _invoke_main(extract_gam_keys.main, ["--out", out(group)])
-    if group == "spawn_observations":
-        return _invoke_main(extract_spawn_observations.main, ["--out", out(group)])
-    if group == "gam_hash_names":
-        return _invoke_main(
+        ),
+        "sequences": (extract_sequences.main, ["--out", out(group)]),
+        "timing": (extract_timing.main, ["--out", out(group)]),
+        "payload_samples": (extract_payload_samples.main, ["--out", out(group)]),
+        "content_samples": (extract_content_samples.main, ["--out", out(group)]),
+        "property_targets": (extract_property_targets.main, ["--out", out(group)]),
+        "request_response_pairs": (extract_request_response_pairs.main, ["--out", out(group)]),
+        "gam_keys": (extract_gam_keys.main, ["--out", out(group)]),
+        "spawn_observations": (extract_spawn_observations.main, ["--out", out(group)]),
+        "gam_hash_names": (
             name_gam_hashes.main,
             ["--in", out("gam_keys"), "--out", out(group)],
-        )
-    if group == "payload_layouts":
-        return _invoke_main(
+        ),
+        "payload_layouts": (
             analyze_payload_layouts.main,
             ["--in", out("payload_samples"), "--out", out(group)],
-        )
-    raise ValueError(f"unknown product group: {group}")
+        ),
+    }
+    main, argv = commands[group]
+    return _invoke_main(main, argv)
 
 
 def _validate_reads() -> list[str]:
@@ -206,29 +198,18 @@ def execute(
     *,
     check: bool,
     output_dir: Path,
-    reducer_overrides: dict[str, object] | None = None,
 ) -> int:
-    """Generate selected products. Reducer overrides exist for atomicity tests."""
+    """Generate selected products."""
     global LAST_READ_COUNTS
-
-    unknown = selected - set(PRODUCTS)
-    if unknown:
-        print("ERROR: unknown product(s): " + ", ".join(sorted(unknown)), file=sys.stderr)
-        return 2
-    if not selected:
-        print("ERROR: no products selected", file=sys.stderr)
-        return 2
 
     corpus_paths = extract_observations.default_corpus_paths()
     if not corpus_paths:
         if not check:
             print("ERROR: corpus is absent; write mode is unavailable", file=sys.stderr)
             return 2
-        LAST_READ_COUNTS = {}
         return _public_check(selected, output_dir)
 
     needed = _dependency_closure(selected)
-    overrides = reducer_overrides or {}
     extract_streams.reset_packet_cache()
     errors = []
     try:
@@ -237,9 +218,8 @@ def execute(
             for group, outputs in GROUPS:
                 if not outputs & needed:
                     continue
-                override = overrides.get(group)
                 try:
-                    status = int(override(stage) if override else _run_group(group, stage))
+                    status = int(_run_group(group, stage))
                 except Exception as exc:  # Atomic publication requires reducer isolation.
                     errors.append(f"{group} reducer raised: {exc}")
                     break
@@ -296,13 +276,9 @@ def main() -> int:
         "--product", action="append", choices=PRODUCTS,
         help="select one product; repeat for more (default: all products)",
     )
-    parser.add_argument(
-        "--output-dir", type=Path, default=DATA_DIR,
-        help=argparse.SUPPRESS,
-    )
     args = parser.parse_args()
     selected = set(args.product or PRODUCTS)
-    return execute(selected, check=args.check, output_dir=args.output_dir)
+    return execute(selected, check=args.check, output_dir=DATA_DIR)
 
 
 if __name__ == "__main__":

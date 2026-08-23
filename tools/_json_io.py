@@ -7,15 +7,10 @@ trailing newline so regeneration stays byte-stable across platforms.
 from __future__ import annotations
 
 import json
-import os
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_ROOT / "derived"
-OBJECTS_DIR = Path(os.environ.get(
-    "XIVL_PCAP_OBJECTS_DIR",
-    str(REPO_ROOT / "sources" / "pcap-1.23b" / "objects"),
-))
 
 
 def write_json(path, obj) -> None:

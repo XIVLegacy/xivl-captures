@@ -20,10 +20,8 @@ findings.
   provenance, and claim boundaries.
 - [Comments and prose](ai_agents/comments-and-prose.md) - the deletion-default
   doctrine for code and manifest comments.
-- [Verification](ai_agents/verification.md) - the repository gate and
-  documentation checks.
 - [Retail input validation](ai_agents/retail-input-validation.md) - the
-  restricted PCAP corpus lane and its claim limits.
+  restricted PCAP corpus check and its claim limits.
 
 ## Discovery entry points
 
@@ -41,7 +39,10 @@ findings.
 
 - [Battle Result Packet Backfit](../studies/battle-result-backfit/)
 - [Director Wire Identity Verification](../studies/director-wire-identity/)
+- [Guildleve Journal Command Wire Census](../studies/guildleve-journal-command-wire/)
+- [Regional Guildleve Publisher Contract](../studies/regional-guildleve-publisher-contract/)
 - [Actor Property Stream Hash Catalog](../studies/property-stream-hash-catalog/)
+- [Equipment Property Correlation](../studies/equipment-property-correlation/)
 - [bluegartr FFXIV 1.x Community Stat Testing - Web Tables](../studies/bluegartr-stat-tests/)
 - [eLeMeN FF14 1.x Battle Class Actions - Web Tables](../studies/elemen-battle-actions/)
 - [eLeMeN FF14 1.x Regional Battlecraft Leve Objectives - Web Tables](../studies/elemen-battlecraft-leve-objectives/)
@@ -63,7 +64,10 @@ findings.
 - [FFXIV 1.x Lodestone Lore - GC Newsletters, The Last Word, Events](../studies/lodestone-lore/)
 - [FFXIV 1.0 Lodestone Official Game Manual](../studies/lodestone-manual/)
 - [Lobby Handshake Decryptability and Recipe Test](../studies/lobby-handshake-triage/)
+- [Login 0x018A Main-Lane Neighborhood](../studies/login-018a-neighborhood/)
 - [Movement Speed Band Observations](../studies/movement-speed-band-observations/)
+- [Status Wire Projection Census](../studies/status-wire-projection-census/)
+- [World Party-Chat 0x00C9 Contract](../studies/world-party-chat-00c9-contract/)
 - [The Bowl of Embers (Ifrit) - Video Breakdown](../studies/primal-battle-ifrit-bowl-of-embers/)
 - [Project Meteor Wiki - RE Residual](../studies/project-meteor-wiki/)
 

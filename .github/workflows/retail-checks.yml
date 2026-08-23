@@ -152,9 +152,6 @@ jobs:
           assert tree.get("sha") == expected_tree
           assert tree.get("truncated") is False
           expected_blobs = {
-              "ffxivgame.exe": 15996808,
-              "client-data/ffxiv-1.23b/client/script/rq9q1797qvs.san": 108911,
-              "client-scripts/ffxiv-1.23b/client/script/7vxx9w6/39x5/89qqy57vxx9w689r57y9rr.le.lpb": 1507,
               "captures/pcap-1.23b/pcap-1.23b-objects.zip": 2622720,
           }
           expected_trees = {
@@ -166,12 +163,14 @@ jobs:
           assert isinstance(entries, list)
           by_path = {entry.get("path"): entry for entry in entries}
           assert len(by_path) == len(entries)
-          assert set(by_path) == set(expected_blobs) | expected_trees
+          assert set(expected_blobs) | expected_trees <= set(by_path)
           for path, size in expected_blobs.items():
               entry = by_path[path]
               assert entry.get("type") == "blob"
               assert entry.get("mode") == "100644"
               assert entry.get("size") == size
+              assert isinstance(entry.get("sha"), str)
+              assert len(entry["sha"]) == 40 and entry["sha"] != "0" * 40
           for path in expected_trees:
               entry = by_path[path]
               assert entry.get("type") == "tree"

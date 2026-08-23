@@ -240,13 +240,13 @@ def main() -> int:
     parser.add_argument("--rows", type=Path, default=DEFAULT_ROWS)
     parser.add_argument("--matches", type=Path, default=DEFAULT_MATCHES)
     parser.add_argument("--accounting", type=Path, default=DEFAULT_ACCOUNTING)
-    parser.add_argument("--out-dir", type=Path, default=DEFAULT_OUT)
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
     outputs = build_outputs(args.rows.resolve(), args.matches.resolve(), args.accounting.resolve())
+    out_dir = DEFAULT_OUT
     stale = []
     for name, content in outputs.items():
-        target = args.out_dir / name
+        target = out_dir / name
         if args.check:
             if not target.is_file() or target.read_bytes() != content:
                 stale.append(str(target))

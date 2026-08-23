@@ -21,7 +21,6 @@ XIV 1.23b.
 
 - [Documentation home](docs/README.md)
 - [Evidence and claims](docs/ai_agents/evidence-and-claims.md)
-- [Verification](docs/ai_agents/verification.md)
 - [Catalog and evidence](docs/catalog-guide.md)
 - [Packet decoding and wire order](docs/pcap-decoding.md)
 - [Tooling and regeneration](tools/README.md)
