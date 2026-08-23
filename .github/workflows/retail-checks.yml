@@ -55,7 +55,6 @@ jobs:
   pcap-corpus:
     name: PCAP Corpus Checks
     needs: retail-preflight
-    if: github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     environment:
@@ -80,144 +79,36 @@ jobs:
       - name: Fetch the immutable private archive
         id: fetch
         continue-on-error: true
-        shell: bash
-        env:
-          RETAIL_INPUTS_REPOSITORY: ${{ vars.RETAIL_INPUTS_REPOSITORY }}
-          RETAIL_INPUTS_TOKEN: ${{ secrets.RETAIL_INPUTS_TOKEN }}
-        run: |
-          set -euo pipefail
-          umask 077
-          private_root="${RUNNER_TEMP}/retail-pcap-private-${GITHUB_RUN_ID}"
-          api_root="${private_root}/api"
-          input_root="${private_root}/input"
-          mkdir -p "${api_root}" "${input_root}"
-          chmod 700 "${private_root}"
-          printf '%s\n' "${private_root}" > "${RUNNER_TEMP}/retail-pcap-root"
-          auth_config="${private_root}/curl-auth.config"
-          trap 'rm -f -- "${auth_config}"' EXIT
-          repository="XIVLegacy/xivl-private-assets"
-          commit="aeb52f6dbde95a793ee6d52be28de9f28a885b15"
-          test "${RETAIL_INPUTS_REPOSITORY}" = "${repository}"
-          test -n "${RETAIL_INPUTS_TOKEN}"
-          printf 'header = "Authorization: Bearer %s"\n' "${RETAIL_INPUTS_TOKEN}" > "${auth_config}"
-          chmod 600 "${auth_config}"
-          request() {
-            local label="$1" endpoint="$2" output="$3" status curl_status
-            set +e
-            status="$(curl --silent --fail --location --max-time 180 \
-              --max-filesize 6000000 --config "${auth_config}" \
-              --header "Accept: application/vnd.github+json" \
-              --header "X-GitHub-Api-Version: 2022-11-28" \
-              --output "${output}" --write-out '%{http_code}' \
-              "https://api.github.com/repos/${repository}/${endpoint}" \
-              2> "${api_root}/${label}.err")"
-            curl_status=$?
-            set -e
-            if test "${curl_status}" -ne 0 || [[ "${status}" != 2?? ]]; then
-              rm -f -- "${output}"
-              printf 'Private API stage failed (%s)\n' "${label}" >&2
-              return 1
-            fi
-          }
-          request commit "git/commits/${commit}" "${api_root}/commit.json"
-          request compare "compare/${commit}...main" "${api_root}/compare.json"
-          PRIVATE_ROOT="${private_root}" API_ROOT="${api_root}" timeout 30s python - <<'PY'
-          import json
-          import os
-          from pathlib import Path
+        uses: XIVLegacy/xivl-tools/.github/actions/fetch-retail-input@4920dece45e88fcb14424de1f5c4fdee94ae6d02
+        with:
+          token: ${{ secrets.RETAIL_INPUTS_TOKEN }}
+          commit: aeb52f6dbde95a793ee6d52be28de9f28a885b15
+          path: captures/pcap-1.23b/pcap-1.23b-objects.zip
+          size: 2622720
+          sha256: 20a78b9f40ff2393037c9a160c957783cf590b4f01797493d22fcd2039e9cbff
+          output-path: ${{ runner.temp }}/retail-pcap-private-${{ github.run_id }}/input/pcap-1.23b-objects.zip
+          parent-trees: '["captures","captures/pcap-1.23b"]'
 
-          root = Path(os.environ["PRIVATE_ROOT"])
-          api = Path(os.environ["API_ROOT"])
-          commit = "aeb52f6dbde95a793ee6d52be28de9f28a885b15"
-          commit_doc = json.loads((api / "commit.json").read_text(encoding="ascii"))
-          compare_doc = json.loads((api / "compare.json").read_text(encoding="ascii"))
-          assert commit_doc.get("sha") == commit
-          tree_sha = commit_doc.get("tree", {}).get("sha")
-          assert isinstance(tree_sha, str) and len(tree_sha) == 40
-          assert compare_doc.get("status") in {"ahead", "identical"}
-          assert compare_doc.get("merge_base_commit", {}).get("sha") == commit
-          (root / "tree-sha").write_text(tree_sha + "\n", encoding="ascii")
-          PY
-          IFS= read -r tree_sha < "${private_root}/tree-sha"
-          request tree "git/trees/${tree_sha}?recursive=1" "${api_root}/tree.json"
-          PRIVATE_ROOT="${private_root}" API_ROOT="${api_root}" timeout 30s python - <<'PY'
-          import json
-          import os
-          from pathlib import Path
-
-          root = Path(os.environ["PRIVATE_ROOT"])
-          api = Path(os.environ["API_ROOT"])
-          tree = json.loads((api / "tree.json").read_text(encoding="ascii"))
-          expected_tree = (root / "tree-sha").read_text(encoding="ascii").strip()
-          assert tree.get("sha") == expected_tree
-          assert tree.get("truncated") is False
-          expected_blobs = {
-              "captures/pcap-1.23b/pcap-1.23b-objects.zip": 2622720,
-          }
-          expected_trees = {
-              "/".join(path.split("/")[:depth])
-              for path in expected_blobs
-              for depth in range(1, len(path.split("/")))
-          }
-          entries = tree.get("tree")
-          assert isinstance(entries, list)
-          by_path = {entry.get("path"): entry for entry in entries}
-          assert len(by_path) == len(entries)
-          assert set(expected_blobs) | expected_trees <= set(by_path)
-          for path, size in expected_blobs.items():
-              entry = by_path[path]
-              assert entry.get("type") == "blob"
-              assert entry.get("mode") == "100644"
-              assert entry.get("size") == size
-              assert isinstance(entry.get("sha"), str)
-              assert len(entry["sha"]) == 40 and entry["sha"] != "0" * 40
-          for path in expected_trees:
-              entry = by_path[path]
-              assert entry.get("type") == "tree"
-              assert entry.get("mode") == "040000"
-          archive = by_path["captures/pcap-1.23b/pcap-1.23b-objects.zip"]
-          (root / "archive-blob-sha").write_text(archive["sha"] + "\n", encoding="ascii")
-          PY
-          IFS= read -r blob_sha < "${private_root}/archive-blob-sha"
-          request blob "git/blobs/${blob_sha}" "${api_root}/blob.json"
-          API_ROOT="${api_root}" INPUT_ROOT="${input_root}" BLOB_SHA="${blob_sha}" timeout 30s python - <<'PY'
-          import base64
-          import json
-          import os
-          from pathlib import Path
-
-          document = json.loads((Path(os.environ["API_ROOT"]) / "blob.json").read_text(encoding="ascii"))
-          assert document.get("sha") == os.environ["BLOB_SHA"]
-          assert document.get("size") == 2622720
-          assert document.get("encoding") == "base64"
-          data = base64.b64decode("".join(document["content"].split()), validate=True)
-          assert len(data) == 2622720
-          (Path(os.environ["INPUT_ROOT"]) / "pcap-1.23b-objects.zip").write_bytes(data)
-          PY
-
-      - name: Verify archive identity and extract private corpus
-        id: identity
+      - name: Extract the private corpus
+        id: extract
         if: steps.fetch.outcome == 'success'
         continue-on-error: true
         shell: bash
         run: |
           set -euo pipefail
-          private_root="$(cat "${RUNNER_TEMP}/retail-pcap-root" 2>/dev/null || true)"
-          test -n "${private_root}"
+          private_root="${RUNNER_TEMP}/retail-pcap-private-${GITHUB_RUN_ID}"
           archive="${private_root}/input/pcap-1.23b-objects.zip"
           corpus="${private_root}/corpus"
-          test "$(stat --format=%s "${archive}")" = "2622720"
-          test "$(sha256sum "${archive}" | cut -d ' ' -f 1)" = "20a78b9f40ff2393037c9a160c957783cf590b4f01797493d22fcd2039e9cbff"
           timeout 180s python tools/extract_retail_pcap_archive.py "${archive}" "${corpus}" > "${private_root}/extract.log"
 
       - name: Reproduce all deterministic PCAP products
         id: analysis
-        if: steps.identity.outcome == 'success'
+        if: steps.extract.outcome == 'success'
         continue-on-error: true
         shell: bash
         run: |
           set -euo pipefail
-          private_root="$(cat "${RUNNER_TEMP}/retail-pcap-root")"
+          private_root="${RUNNER_TEMP}/retail-pcap-private-${GITHUB_RUN_ID}"
           staging_root="${GITHUB_WORKSPACE}/_retail-staging"
           mkdir -p "${staging_root}"
           export XIVL_CORPUS_ABSENT=1
@@ -239,37 +130,29 @@ jobs:
           timeout 30s python tools/verify_retail_pcap.py --failure-attestation \
             > "${GITHUB_WORKSPACE}/_retail-staging/retail-evidence-attestation.json"
 
-      - name: Remove all private analysis material
-        id: cleanup
+      - name: Finalize the retained retail attestation
+        id: finalize
         if: always()
         continue-on-error: true
-        shell: bash
-        run: |
-          set -euo pipefail
-          private_root_file="${RUNNER_TEMP}/retail-pcap-root"
-          if test -f "${private_root_file}"; then
-            IFS= read -r private_root < "${private_root_file}"
-            rm -rf -- "${private_root}"
-            rm -f -- "${private_root_file}"
-          fi
+        uses: XIVLegacy/xivl-tools/.github/actions/finalize-retail-attestation@4920dece45e88fcb14424de1f5c4fdee94ae6d02
+        with:
+          scratch-root: ${{ runner.temp }}/retail-pcap-private-${{ github.run_id }}
+          staging-root: ${{ github.workspace }}/_retail-staging
 
       - name: Validate the only retained file
         id: retained
-        if: always() && !cancelled() && steps.cleanup.outcome == 'success' && hashFiles('_retail-staging/retail-evidence-attestation.json') != ''
+        if: always() && !cancelled() && steps.finalize.outcome == 'success'
         run: timeout 30s python tools/verify_retail_pcap.py --validate-retained-output _retail-staging
 
       - name: Upload the sanitized attestation
-        if: always() && !cancelled() && steps.cleanup.outcome == 'success' && steps.retained.outcome == 'success'
+        if: always() && !cancelled() && steps.finalize.outcome == 'success' && steps.retained.outcome == 'success'
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: retail-pcap-attestation
           path: _retail-staging/retail-evidence-attestation.json
           if-no-files-found: error
           retention-days: 30
-          compression-level: 0
-          overwrite: false
-          include-hidden-files: false
 
       - name: Preserve a failed evidence result
-        if: always() && !cancelled() && (steps.fetch.outcome != 'success' || steps.identity.outcome != 'success' || steps.analysis.outcome != 'success' || steps.cleanup.outcome != 'success' || steps.retained.outcome != 'success')
+        if: always() && !cancelled() && (steps.fetch.outcome != 'success' || steps.extract.outcome != 'success' || steps.analysis.outcome != 'success' || steps.finalize.outcome != 'success' || steps.retained.outcome != 'success')
         run: exit 1

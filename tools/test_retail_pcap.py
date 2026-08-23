@@ -114,16 +114,33 @@ def path_and_member_tests() -> None:
 def contract_and_output_tests() -> None:
     workflow = WORKFLOW.read_text(encoding="utf-8")
     check(
-        "private tree selects the approved blob and directory paths",
-        "assert set(expected_blobs) | expected_trees <= set(by_path)" in workflow
+        "shared retail fetch action is pinned",
+        "XIVLegacy/xivl-tools/.github/actions/fetch-retail-input@4920dece45e88fcb14424de1f5c4fdee94ae6d02" in workflow
+        and "XIVLegacy/xivl-tools/.github/actions/finalize-retail-attestation@4920dece45e88fcb14424de1f5c4fdee94ae6d02" in workflow,
+    )
+    check(
+        "fetch passes the approved PCAP identity",
+        "commit: aeb52f6dbde95a793ee6d52be28de9f28a885b15" in workflow
+        and "path: captures/pcap-1.23b/pcap-1.23b-objects.zip" in workflow
+        and "size: 2622720" in workflow
+        and "sha256: 20a78b9f40ff2393037c9a160c957783cf590b4f01797493d22fcd2039e9cbff" in workflow
+        and "output-path: ${{ runner.temp }}/retail-pcap-private-${{ github.run_id }}/input/pcap-1.23b-objects.zip" in workflow
+        and "parent-trees: '[\"captures\",\"captures/pcap-1.23b\"]'" in workflow,
+    )
+    check(
+        "private fetch remains limited to the PCAP asset",
+        "RETAIL_INPUTS_" + "REPOSITORY" not in workflow
         and '"ffxivgame.exe"' not in workflow
         and '"client-data/' not in workflow
         and '"client-scripts/' not in workflow,
     )
     check(
-        "private tree requires blob and directory modes",
-        'assert entry.get("mode") == "100644"' in workflow
-        and 'assert entry.get("mode") == "040000"' in workflow,
+        "PCAP extraction and finalization gates are explicit",
+        "id: extract" in workflow
+        and "steps.extract.outcome" in workflow
+        and "id: finalize" in workflow
+        and "steps.finalize.outcome" in workflow
+        and "hashFiles" not in workflow,
     )
     check(
         "hosted dependencies use an exact hash lock without cache",
