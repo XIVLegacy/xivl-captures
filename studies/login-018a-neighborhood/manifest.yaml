@@ -1,0 +1,27 @@
+id: login-018a-neighborhood
+title: Login 0x018A Main-Lane Neighborhood
+evidence_class: packet-capture
+status: distilled
+content_kind: session-mechanic
+tags:
+- login
+- zone-entry
+- packet-order
+- packet-decoding
+- main-lane
+search_hints:
+- "0x018a"
+- login opcode chronology
+- main lane neighborhood
+notes: >-
+  Bounded same-connection chronology around the sole admitted login s2c
+  0x018A event. The study retains the numeric opcode placeholder and separates
+  lane-local order, cross-direction capture timing, and raw outer-field deltas.
+source_refs:
+- source: pcap-1.23b
+primary_paths:
+- derived/timeline.csv
+- derived/accounting.json
+canonical_evidence:
+- derived/timeline.csv
+- derived/accounting.json

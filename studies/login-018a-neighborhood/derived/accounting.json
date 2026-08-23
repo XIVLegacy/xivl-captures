@@ -1,0 +1,107 @@
+{
+  "admission": {
+    "admitted_connections": 2,
+    "admitted_lane_counts": {
+      "chat": 1,
+      "main": 1
+    },
+    "game_server_port": 54992,
+    "raw_frame_shaped_connections": 6,
+    "raw_server_port_counts": {
+      "443": 2,
+      "54992": 2,
+      "54994": 2
+    },
+    "raw_tls_signature_connections": 2,
+    "rejected_connections": 4
+  },
+  "anchor": {
+    "admitted_occurrences": 1,
+    "capture_packet_index": 977,
+    "direction": "s2c",
+    "direction_event_index": 226,
+    "frame_index": 21,
+    "frame_start_capture_packet_index": 977,
+    "frame_start_packet_candidates": [
+      977
+    ],
+    "frame_stream_offset": 9097,
+    "inner_body_sha256": "adb89225cfbd6b906a7178a6f7954aa460fdb1fdd8e054639917cd34dbe7cf18",
+    "inner_body_size": 120,
+    "lane": "main",
+    "lane_index": 0,
+    "opcode": "0x018A",
+    "opcode_name": "_0x018A",
+    "outer_timestamp_or_seq_hex": "a41e8bee3b010000",
+    "subevent_index": 6,
+    "subevent_offset": 656,
+    "subevent_sha256": "5525cde8cf9851c96f50b1c4200e7b6c8cf04f2d99664b24515ad19677d36854",
+    "subevent_size": 136
+  },
+  "boundaries": [
+    "Connections and directions are never concatenated for chronology.",
+    "Frame arrival uses the earliest capture point at which all frame bytes are present; first-byte witnesses are retained separately.",
+    "The outer 8-byte value supplies numeric deltas only; it is not promoted as a wall-clock timestamp.",
+    "Opcode 0x018A retains its catalog placeholder because packet chronology does not establish a packet noun."
+  ],
+  "cross_direction_bracket": {
+    "capture_arrival_agrees_with_wire_value_order": true,
+    "following_c2s": {
+      "capture_delta_us": 257778,
+      "capture_packet_index": 981,
+      "frame_index": 8,
+      "frame_start_capture_packet_index": 981,
+      "frame_start_packet_candidates": [
+        981
+      ],
+      "opcodes": [
+        "0x01CE",
+        "0x0007",
+        "0x0001"
+      ],
+      "outer_value_delta": 151
+    },
+    "previous_c2s": {
+      "capture_delta_us": -107421,
+      "capture_packet_index": 976,
+      "frame_index": 7,
+      "frame_start_capture_packet_index": 976,
+      "frame_start_packet_candidates": [
+        976
+      ],
+      "opcodes": [
+        "0x0007",
+        "0x0007",
+        "0x0007"
+      ],
+      "outer_value_delta": -214
+    }
+  },
+  "input": {
+    "capture": "login.pcapng",
+    "capture_sha256": "28e06b54fe559870031f077f8549b9244caafa7e5177dbca08a7feae6c2b1b62",
+    "opcode_names_file": "derived/opcode_names.json",
+    "opcode_names_sha256": "d9de608bdcbae8670f50aa3b5712d4b3f2170e3116931e78e500796e9b11119d"
+  },
+  "main_connection_reconstruction": {
+    "c2s": {
+      "captured_payload_segments": 87,
+      "duplicate_start_segments": 0,
+      "unique_reconstructed_starts": 87
+    },
+    "s2c": {
+      "captured_payload_segments": 160,
+      "duplicate_start_segments": 78,
+      "unique_reconstructed_starts": 82
+    }
+  },
+  "same_lane_window": {
+    "after": 6,
+    "before": 6,
+    "immediate_following_opcode": "0x0189",
+    "immediate_previous_opcode": "0x0137",
+    "row_count": 13
+  },
+  "schema_version": 1,
+  "study": "login-018a-neighborhood"
+}

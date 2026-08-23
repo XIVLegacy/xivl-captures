@@ -1247,6 +1247,26 @@ studies:
   - studies/lodestone-manual/derived/file-inventory.csv
   source_refs:
   - source: lodestone-manual
+- id: login-018a-neighborhood
+  title: Login 0x018A Main-Lane Neighborhood
+  status: distilled
+  evidence_class: packet-capture
+  content_kind: session-mechanic
+  tags:
+  - login
+  - zone-entry
+  - packet-order
+  - packet-decoding
+  - main-lane
+  search_hints:
+  - '0x018a'
+  - login opcode chronology
+  - main lane neighborhood
+  primary_paths:
+  - studies/login-018a-neighborhood/derived/timeline.csv
+  - studies/login-018a-neighborhood/derived/accounting.json
+  source_refs:
+  - source: pcap-1.23b
 - id: m9-corpus-research
   title: M9 Autotranslate and Chat Relay Search
   status: distilled
