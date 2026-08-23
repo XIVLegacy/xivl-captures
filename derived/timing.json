@@ -851,17 +851,6 @@
         "minMs": 0.0,
         "maxMs": 59874.0
       },
-      "0xb3d9": {
-        "opcode": 46041,
-        "totalCount": 2,
-        "deltaSamples": 1,
-        "capturesSeen": 1,
-        "meanMs": 0.0,
-        "medianMs": 0.0,
-        "p95Ms": 0.0,
-        "minMs": 0.0,
-        "maxMs": 0.0
-      },
       "0x0003": {
         "opcode": 3,
         "totalCount": 9,

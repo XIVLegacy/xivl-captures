@@ -4,6 +4,6 @@ evidence_class: packet-capture
 schema_version: 1
 output:
   file: derived/opcode_names.json
-  sha256: 8efeb8c63e10ac6eb566b9aa11fab59daf44371494ee820cfa11a01f14945b7d
+  sha256: d9de608bdcbae8670f50aa3b5712d4b3f2170e3116931e78e500796e9b11119d
 provenance:
   citation: xivl-opcodes:opcodes.json

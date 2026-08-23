@@ -1,6 +1,6 @@
 {
   "source": "xivl-opcodes:opcodes.json",
-  "source_sha256": "1f6d31d2b7a9970302cd14a1096227c2a5e22399a36b80a9c6e3aba988b8def0",
+  "source_sha256": "46003891e031bb94b4e7b7cbe4c3108ce00bbc385f9ea72a019d335024173799",
   "evidenceTier": "curated identification layer promoted as local evidence; no freshness promise against the sibling catalog",
   "entries": [
     {
@@ -3758,9 +3758,7 @@
       "name": "_0x2Packet",
       "retail_class_name": null,
       "confidence": "implemented",
-      "observedIn": [
-        "login.pcapng"
-      ]
+      "observedIn": []
     },
     {
       "service": "world",
@@ -3769,9 +3767,7 @@
       "name": "SendMessagePacket",
       "retail_class_name": null,
       "confidence": "implemented",
-      "observedIn": [
-        "login.pcapng"
-      ]
+      "observedIn": []
     },
     {
       "service": "world",
@@ -3780,9 +3776,7 @@
       "name": "_0x0006Handler",
       "retail_class_name": null,
       "confidence": "implemented",
-      "observedIn": [
-        "login.pcapng"
-      ]
+      "observedIn": []
     },
     {
       "service": "world",
@@ -3840,7 +3834,6 @@
         "gridania_to_coerthas.pcapng",
         "invite_join_party.pcapng",
         "local_leve_complete.pcapng",
-        "login.pcapng",
         "move_out_of_room.pcapng",
         "moving_around_gridania.pcapng",
         "party_battle_leve.pcapng",
@@ -3866,7 +3859,6 @@
         "gridania_to_coerthas.pcapng",
         "invite_join_party.pcapng",
         "local_leve_complete.pcapng",
-        "login.pcapng",
         "move_out_of_room.pcapng",
         "moving_around_gridania.pcapng",
         "party_battle_leve.pcapng",
@@ -3892,7 +3884,6 @@
         "gridania_to_coerthas.pcapng",
         "invite_join_party.pcapng",
         "local_leve_complete.pcapng",
-        "login.pcapng",
         "move_out_of_room.pcapng",
         "moving_around_gridania.pcapng",
         "party_battle_leve.pcapng",
@@ -3918,7 +3909,6 @@
         "gridania_to_coerthas.pcapng",
         "invite_join_party.pcapng",
         "local_leve_complete.pcapng",
-        "login.pcapng",
         "move_out_of_room.pcapng",
         "moving_around_gridania.pcapng",
         "party_battle_leve.pcapng",
@@ -3944,7 +3934,6 @@
         "gridania_to_coerthas.pcapng",
         "invite_join_party.pcapng",
         "local_leve_complete.pcapng",
-        "login.pcapng",
         "move_out_of_room.pcapng",
         "moving_around_gridania.pcapng",
         "party_battle_leve.pcapng",
@@ -3967,7 +3956,6 @@
         "from_gridania_to_blackshroud.pcapng",
         "gridania_to_coerthas.pcapng",
         "invite_join_party.pcapng",
-        "login.pcapng",
         "move_out_of_room.pcapng",
         "moving_around_gridania.pcapng",
         "party_battle_leve.pcapng",
@@ -4021,9 +4009,7 @@
       "name": "CreateNamedGroupMultiple",
       "retail_class_name": null,
       "confidence": "implemented",
-      "observedIn": [
-        "login.pcapng"
-      ]
+      "observedIn": []
     },
     {
       "service": "world",
@@ -4032,9 +4018,7 @@
       "name": "SetActiveLinkshellPacket",
       "retail_class_name": null,
       "confidence": "implemented",
-      "observedIn": [
-        "login.pcapng"
-      ]
+      "observedIn": []
     },
     {
       "service": "world_map_backend",

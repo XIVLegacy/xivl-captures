@@ -70365,30 +70365,20 @@
       ]
     },
     "login.pcapng": {
-      "length": 572,
+      "length": 560,
       "collapsed": [
         {
           "direction": "c2s",
-          "opcodeHex": "0x6794",
+          "opcodeHex": "0x0002",
           "runLength": 1
         },
         {
-          "direction": "c2s",
-          "opcodeHex": "0x97d2",
+          "direction": "s2c",
+          "opcodeHex": "0x0005",
           "runLength": 1
         },
         {
-          "direction": "c2s",
-          "opcodeHex": "0x88e1",
-          "runLength": 1
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x1d7e",
-          "runLength": 1
-        },
-        {
-          "direction": "c2s",
+          "direction": "s2c",
           "opcodeHex": "0x0002",
           "runLength": 1
         },
@@ -70396,6 +70386,11 @@
           "direction": "c2s",
           "opcodeHex": "0x0006",
           "runLength": 1
+        },
+        {
+          "direction": "s2c",
+          "opcodeHex": "0x0003",
+          "runLength": 6
         },
         {
           "direction": "c2s",
@@ -70410,307 +70405,12 @@
         {
           "direction": "c2s",
           "opcodeHex": "0x0007",
-          "runLength": 9
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x01ce",
-          "runLength": 1
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x0007",
-          "runLength": 1
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x0001",
-          "runLength": 1
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x01d3",
-          "runLength": 1
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x0001",
-          "runLength": 18
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x0133",
-          "runLength": 2
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x0007",
-          "runLength": 3
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x0001",
-          "runLength": 1
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x0007",
-          "runLength": 3
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x00ca",
-          "runLength": 3
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x0001",
-          "runLength": 1
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x00ca",
           "runLength": 6
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x0001",
-          "runLength": 1
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x00ca",
-          "runLength": 6
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x0001",
-          "runLength": 1
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x00ca",
-          "runLength": 5
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x0001",
-          "runLength": 1
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x00ca",
-          "runLength": 5
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x0001",
-          "runLength": 1
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x00ca",
-          "runLength": 6
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x0001",
-          "runLength": 1
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x00ca",
-          "runLength": 6
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x0001",
-          "runLength": 1
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x00ca",
-          "runLength": 4
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x0001",
-          "runLength": 1
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x00ca",
-          "runLength": 6
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x0001",
-          "runLength": 1
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x00ca",
-          "runLength": 6
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x0001",
-          "runLength": 1
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x00ca",
-          "runLength": 6
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x0001",
-          "runLength": 1
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x00ca",
-          "runLength": 4
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x0001",
-          "runLength": 1
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x00ca",
-          "runLength": 6
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x0001",
-          "runLength": 1
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x00ca",
-          "runLength": 6
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x0001",
-          "runLength": 1
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x00ca",
-          "runLength": 6
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x0001",
-          "runLength": 1
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x00ca",
-          "runLength": 4
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x0001",
-          "runLength": 1
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x00ca",
-          "runLength": 6
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x0001",
-          "runLength": 1
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x00ca",
-          "runLength": 6
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x0001",
-          "runLength": 1
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x00ca",
-          "runLength": 6
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x0001",
-          "runLength": 1
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x00ca",
-          "runLength": 5
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x0001",
-          "runLength": 1
-        },
-        {
-          "direction": "c2s",
-          "opcodeHex": "0x00ca",
-          "runLength": 2
-        },
-        {
-          "direction": "s2c",
-          "opcodeHex": "0x56a3",
-          "runLength": 1
-        },
-        {
-          "direction": "s2c",
-          "opcodeHex": "0x39d2",
-          "runLength": 1
-        },
-        {
-          "direction": "s2c",
-          "opcodeHex": "0xb3d9",
-          "runLength": 2
-        },
-        {
-          "direction": "s2c",
-          "opcodeHex": "0xbb83",
-          "runLength": 1
-        },
-        {
-          "direction": "s2c",
-          "opcodeHex": "0x19d4",
-          "runLength": 1
-        },
-        {
-          "direction": "s2c",
-          "opcodeHex": "0x0a5a",
-          "runLength": 1
-        },
-        {
-          "direction": "s2c",
-          "opcodeHex": "0x96f6",
-          "runLength": 1
-        },
-        {
-          "direction": "s2c",
-          "opcodeHex": "0x0005",
-          "runLength": 1
-        },
-        {
-          "direction": "s2c",
-          "opcodeHex": "0x0002",
-          "runLength": 1
         },
         {
           "direction": "s2c",
           "opcodeHex": "0x0003",
-          "runLength": 9
+          "runLength": 3
         },
         {
           "direction": "s2c",
@@ -70738,6 +70438,11 @@
           "runLength": 1
         },
         {
+          "direction": "c2s",
+          "opcodeHex": "0x0007",
+          "runLength": 3
+        },
+        {
           "direction": "s2c",
           "opcodeHex": "0x017c",
           "runLength": 1
@@ -70755,6 +70460,21 @@
         {
           "direction": "s2c",
           "opcodeHex": "0x017e",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x01ce",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x0007",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x0001",
           "runLength": 1
         },
         {
@@ -70878,9 +70598,144 @@
           "runLength": 1
         },
         {
+          "direction": "c2s",
+          "opcodeHex": "0x01d3",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x0001",
+          "runLength": 8
+        },
+        {
           "direction": "s2c",
           "opcodeHex": "0x014b",
-          "runLength": 6
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x0001",
+          "runLength": 7
+        },
+        {
+          "direction": "s2c",
+          "opcodeHex": "0x014b",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x0001",
+          "runLength": 3
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x0133",
+          "runLength": 2
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x0007",
+          "runLength": 3
+        },
+        {
+          "direction": "s2c",
+          "opcodeHex": "0x014b",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x0001",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x0007",
+          "runLength": 3
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 3
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x0001",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 3
+        },
+        {
+          "direction": "s2c",
+          "opcodeHex": "0x014b",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 3
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x0001",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 5
+        },
+        {
+          "direction": "s2c",
+          "opcodeHex": "0x014b",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x0001",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 5
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x0001",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 2
+        },
+        {
+          "direction": "s2c",
+          "opcodeHex": "0x014b",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 3
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x0001",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 3
         },
         {
           "direction": "s2c",
@@ -70940,6 +70795,21 @@
         {
           "direction": "s2c",
           "opcodeHex": "0x0147",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 3
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x0001",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
           "runLength": 1
         },
         {
@@ -71040,7 +70910,47 @@
         {
           "direction": "s2c",
           "opcodeHex": "0x0137",
-          "runLength": 12
+          "runLength": 9
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 5
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x0001",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 4
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x0001",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 6
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x0001",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 3
+        },
+        {
+          "direction": "s2c",
+          "opcodeHex": "0x0137",
+          "runLength": 3
         },
         {
           "direction": "s2c",
@@ -71233,6 +71143,31 @@
           "runLength": 1
         },
         {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 3
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x0001",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 6
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x0001",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 1
+        },
+        {
           "direction": "s2c",
           "opcodeHex": "0x00cf",
           "runLength": 1
@@ -71435,6 +71370,31 @@
         {
           "direction": "s2c",
           "opcodeHex": "0x016b",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 3
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x0001",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 6
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x0001",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
           "runLength": 1
         },
         {
@@ -71618,6 +71578,21 @@
           "runLength": 1
         },
         {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 5
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x0001",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 3
+        },
+        {
           "direction": "s2c",
           "opcodeHex": "0x0144",
           "runLength": 1
@@ -71678,9 +71653,29 @@
           "runLength": 1
         },
         {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 3
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x0001",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 1
+        },
+        {
           "direction": "s2c",
           "opcodeHex": "0x0001",
           "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 2
         },
         {
           "direction": "s2c",
@@ -71698,6 +71693,21 @@
           "runLength": 5
         },
         {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x0001",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 1
+        },
+        {
           "direction": "s2c",
           "opcodeHex": "0x0001",
           "runLength": 1
@@ -71708,6 +71718,11 @@
           "runLength": 1
         },
         {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 2
+        },
+        {
           "direction": "s2c",
           "opcodeHex": "0x0001",
           "runLength": 1
@@ -71716,6 +71731,11 @@
           "direction": "s2c",
           "opcodeHex": "0x00cf",
           "runLength": 5
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 2
         },
         {
           "direction": "s2c",
@@ -71728,6 +71748,21 @@
           "runLength": 1
         },
         {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x0001",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 1
+        },
+        {
           "direction": "s2c",
           "opcodeHex": "0x0001",
           "runLength": 1
@@ -71738,14 +71773,44 @@
           "runLength": 5
         },
         {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 2
+        },
+        {
           "direction": "s2c",
           "opcodeHex": "0x0001",
-          "runLength": 3
+          "runLength": 2
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 2
+        },
+        {
+          "direction": "s2c",
+          "opcodeHex": "0x0001",
+          "runLength": 1
         },
         {
           "direction": "s2c",
           "opcodeHex": "0x00cf",
           "runLength": 5
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x0001",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 1
         },
         {
           "direction": "s2c",
@@ -71758,6 +71823,11 @@
           "runLength": 1
         },
         {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 2
+        },
+        {
           "direction": "s2c",
           "opcodeHex": "0x0001",
           "runLength": 1
@@ -71768,9 +71838,29 @@
           "runLength": 5
         },
         {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 2
+        },
+        {
           "direction": "s2c",
           "opcodeHex": "0x0001",
           "runLength": 2
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x0001",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 1
         },
         {
           "direction": "s2c",
@@ -71780,7 +71870,17 @@
         {
           "direction": "s2c",
           "opcodeHex": "0x0001",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
           "runLength": 2
+        },
+        {
+          "direction": "s2c",
+          "opcodeHex": "0x0001",
+          "runLength": 1
         },
         {
           "direction": "s2c",
@@ -71788,9 +71888,29 @@
           "runLength": 5
         },
         {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
+          "runLength": 2
+        },
+        {
           "direction": "s2c",
           "opcodeHex": "0x0001",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x0001",
+          "runLength": 1
+        },
+        {
+          "direction": "c2s",
+          "opcodeHex": "0x00ca",
           "runLength": 2
+        },
+        {
+          "direction": "s2c",
+          "opcodeHex": "0x0001",
+          "runLength": 1
         },
         {
           "direction": "s2c",
@@ -186710,7 +186830,7 @@
         }
       ],
       "captureCount": 17,
-      "totalOccurrences": 778,
+      "totalOccurrences": 777,
       "exampleCaptures": [
         "combat_autoattack.pcapng",
         "from_gridania_to_blackshroud.pcapng",
@@ -186798,7 +186918,7 @@
         }
       ],
       "captureCount": 17,
-      "totalOccurrences": 536,
+      "totalOccurrences": 535,
       "exampleCaptures": [
         "combat_autoattack.pcapng",
         "from_gridania_to_blackshroud.pcapng",
@@ -187150,7 +187270,7 @@
         }
       ],
       "captureCount": 13,
-      "totalOccurrences": 539,
+      "totalOccurrences": 538,
       "exampleCaptures": [
         "from_gridania_to_blackshroud.pcapng",
         "gridania_to_coerthas.pcapng",
@@ -187194,7 +187314,7 @@
         }
       ],
       "captureCount": 13,
-      "totalOccurrences": 465,
+      "totalOccurrences": 464,
       "exampleCaptures": [
         "from_gridania_to_blackshroud.pcapng",
         "gridania_to_coerthas.pcapng",
@@ -187238,7 +187358,7 @@
         }
       ],
       "captureCount": 13,
-      "totalOccurrences": 460,
+      "totalOccurrences": 459,
       "exampleCaptures": [
         "from_gridania_to_blackshroud.pcapng",
         "gridania_to_coerthas.pcapng",
@@ -187282,7 +187402,7 @@
         }
       ],
       "captureCount": 13,
-      "totalOccurrences": 459,
+      "totalOccurrences": 458,
       "exampleCaptures": [
         "from_gridania_to_blackshroud.pcapng",
         "gridania_to_coerthas.pcapng",
@@ -187634,7 +187754,7 @@
         }
       ],
       "captureCount": 12,
-      "totalOccurrences": 300,
+      "totalOccurrences": 299,
       "exampleCaptures": [
         "from_gridania_to_blackshroud.pcapng",
         "gridania_to_coerthas.pcapng",
@@ -187678,7 +187798,7 @@
         }
       ],
       "captureCount": 12,
-      "totalOccurrences": 300,
+      "totalOccurrences": 299,
       "exampleCaptures": [
         "from_gridania_to_blackshroud.pcapng",
         "gridania_to_coerthas.pcapng",
@@ -188338,7 +188458,7 @@
         }
       ],
       "captureCount": 11,
-      "totalOccurrences": 165,
+      "totalOccurrences": 164,
       "exampleCaptures": [
         "from_gridania_to_blackshroud.pcapng",
         "gridania_to_coerthas.pcapng",
@@ -188382,7 +188502,7 @@
         }
       ],
       "captureCount": 11,
-      "totalOccurrences": 163,
+      "totalOccurrences": 162,
       "exampleCaptures": [
         "from_gridania_to_blackshroud.pcapng",
         "gridania_to_coerthas.pcapng",
@@ -188470,7 +188590,7 @@
         }
       ],
       "captureCount": 11,
-      "totalOccurrences": 78,
+      "totalOccurrences": 75,
       "exampleCaptures": [
         "from_gridania_to_blackshroud.pcapng",
         "gear_changeweapon.pcapng",
@@ -189496,50 +189616,6 @@
       "motif": [
         {
           "direction": "s2c",
-          "opcode": 206,
-          "opcodeHex": "0x00ce"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 317,
-          "opcodeHex": "0x013d"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 308,
-          "opcodeHex": "0x0134"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 324,
-          "opcodeHex": "0x0144"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 377,
-          "opcodeHex": "0x0179"
-        }
-      ],
-      "captureCount": 10,
-      "totalOccurrences": 59,
-      "exampleCaptures": [
-        "from_gridania_to_blackshroud.pcapng",
-        "gridania_to_coerthas.pcapng",
-        "login.pcapng",
-        "move_out_of_room.pcapng",
-        "moving_around_gridania.pcapng"
-      ]
-    },
-    {
-      "length": 6,
-      "motif": [
-        {
-          "direction": "s2c",
           "opcode": 207,
           "opcodeHex": "0x00cf"
         },
@@ -189584,6 +189660,50 @@
       "motif": [
         {
           "direction": "s2c",
+          "opcode": 206,
+          "opcodeHex": "0x00ce"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 317,
+          "opcodeHex": "0x013d"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 308,
+          "opcodeHex": "0x0134"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 324,
+          "opcodeHex": "0x0144"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 377,
+          "opcodeHex": "0x0179"
+        }
+      ],
+      "captureCount": 10,
+      "totalOccurrences": 58,
+      "exampleCaptures": [
+        "from_gridania_to_blackshroud.pcapng",
+        "gridania_to_coerthas.pcapng",
+        "login.pcapng",
+        "move_out_of_room.pcapng",
+        "moving_around_gridania.pcapng"
+      ]
+    },
+    {
+      "length": 6,
+      "motif": [
+        {
+          "direction": "s2c",
           "opcode": 208,
           "opcodeHex": "0x00d0"
         },
@@ -189614,51 +189734,7 @@
         }
       ],
       "captureCount": 10,
-      "totalOccurrences": 54,
-      "exampleCaptures": [
-        "from_gridania_to_blackshroud.pcapng",
-        "gridania_to_coerthas.pcapng",
-        "login.pcapng",
-        "move_out_of_room.pcapng",
-        "moving_around_gridania.pcapng"
-      ]
-    },
-    {
-      "length": 6,
-      "motif": [
-        {
-          "direction": "s2c",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 208,
-          "opcodeHex": "0x00d0"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 206,
-          "opcodeHex": "0x00ce"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 317,
-          "opcodeHex": "0x013d"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 308,
-          "opcodeHex": "0x0134"
-        }
-      ],
-      "captureCount": 10,
-      "totalOccurrences": 38,
+      "totalOccurrences": 53,
       "exampleCaptures": [
         "from_gridania_to_blackshroud.pcapng",
         "gridania_to_coerthas.pcapng",
@@ -189716,6 +189792,50 @@
       "motif": [
         {
           "direction": "s2c",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 208,
+          "opcodeHex": "0x00d0"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 206,
+          "opcodeHex": "0x00ce"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 317,
+          "opcodeHex": "0x013d"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 308,
+          "opcodeHex": "0x0134"
+        }
+      ],
+      "captureCount": 10,
+      "totalOccurrences": 37,
+      "exampleCaptures": [
+        "from_gridania_to_blackshroud.pcapng",
+        "gridania_to_coerthas.pcapng",
+        "login.pcapng",
+        "move_out_of_room.pcapng",
+        "moving_around_gridania.pcapng"
+      ]
+    },
+    {
+      "length": 6,
+      "motif": [
+        {
+          "direction": "s2c",
           "opcode": 311,
           "opcodeHex": "0x0137"
         },
@@ -189746,51 +189866,7 @@
         }
       ],
       "captureCount": 10,
-      "totalOccurrences": 26,
-      "exampleCaptures": [
-        "from_gridania_to_blackshroud.pcapng",
-        "gridania_to_coerthas.pcapng",
-        "login.pcapng",
-        "move_out_of_room.pcapng",
-        "moving_around_gridania.pcapng"
-      ]
-    },
-    {
-      "length": 6,
-      "motif": [
-        {
-          "direction": "s2c",
-          "opcode": 204,
-          "opcodeHex": "0x00cc"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 311,
-          "opcodeHex": "0x0137"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 208,
-          "opcodeHex": "0x00d0"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 206,
-          "opcodeHex": "0x00ce"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        }
-      ],
-      "captureCount": 10,
-      "totalOccurrences": 24,
+      "totalOccurrences": 25,
       "exampleCaptures": [
         "from_gridania_to_blackshroud.pcapng",
         "gridania_to_coerthas.pcapng",
@@ -190596,6 +190672,50 @@
       "motif": [
         {
           "direction": "s2c",
+          "opcode": 311,
+          "opcodeHex": "0x0137"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 311,
+          "opcodeHex": "0x0137"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 311,
+          "opcodeHex": "0x0137"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 311,
+          "opcodeHex": "0x0137"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 311,
+          "opcodeHex": "0x0137"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        }
+      ],
+      "captureCount": 10,
+      "totalOccurrences": 13,
+      "exampleCaptures": [
+        "from_gridania_to_blackshroud.pcapng",
+        "gear_changesoul.pcapng",
+        "gridania_to_coerthas.pcapng",
+        "login.pcapng",
+        "move_out_of_room.pcapng"
+      ]
+    },
+    {
+      "length": 6,
+      "motif": [
+        {
+          "direction": "s2c",
           "opcode": 379,
           "opcodeHex": "0x017b"
         },
@@ -190992,6 +191112,50 @@
       "motif": [
         {
           "direction": "s2c",
+          "opcode": 311,
+          "opcodeHex": "0x0137"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        }
+      ],
+      "captureCount": 9,
+      "totalOccurrences": 71,
+      "exampleCaptures": [
+        "combat_autoattack.pcapng",
+        "gridania_to_coerthas.pcapng",
+        "local_leve_complete.pcapng",
+        "login.pcapng",
+        "move_around_gridania.pcapng"
+      ]
+    },
+    {
+      "length": 6,
+      "motif": [
+        {
+          "direction": "s2c",
           "opcode": 202,
           "opcodeHex": "0x00ca"
         },
@@ -191124,6 +191288,50 @@
       "motif": [
         {
           "direction": "s2c",
+          "opcode": 204,
+          "opcodeHex": "0x00cc"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 311,
+          "opcodeHex": "0x0137"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 208,
+          "opcodeHex": "0x00d0"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 206,
+          "opcodeHex": "0x00ce"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        }
+      ],
+      "captureCount": 9,
+      "totalOccurrences": 23,
+      "exampleCaptures": [
+        "from_gridania_to_blackshroud.pcapng",
+        "gridania_to_coerthas.pcapng",
+        "move_out_of_room.pcapng",
+        "moving_around_gridania.pcapng",
+        "return_to_inn.pcapng"
+      ]
+    },
+    {
+      "length": 6,
+      "motif": [
+        {
+          "direction": "s2c",
           "opcode": 327,
           "opcodeHex": "0x0147"
         },
@@ -191205,6 +191413,226 @@
         "change_to_botanist.pcapng",
         "check_room_map.pcapng",
         "combat_autoattack.pcapng"
+      ]
+    },
+    {
+      "length": 6,
+      "motif": [
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 331,
+          "opcodeHex": "0x014b"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 1,
+          "opcodeHex": "0x0001"
+        }
+      ],
+      "captureCount": 9,
+      "totalOccurrences": 20,
+      "exampleCaptures": [
+        "gridania_to_coerthas.pcapng",
+        "login.pcapng",
+        "move_out_of_room.pcapng",
+        "moving_around_gridania.pcapng",
+        "return_to_inn.pcapng"
+      ]
+    },
+    {
+      "length": 6,
+      "motif": [
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 331,
+          "opcodeHex": "0x014b"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 1,
+          "opcodeHex": "0x0001"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        }
+      ],
+      "captureCount": 9,
+      "totalOccurrences": 20,
+      "exampleCaptures": [
+        "gridania_to_coerthas.pcapng",
+        "login.pcapng",
+        "move_out_of_room.pcapng",
+        "moving_around_gridania.pcapng",
+        "return_to_inn.pcapng"
+      ]
+    },
+    {
+      "length": 6,
+      "motif": [
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 331,
+          "opcodeHex": "0x014b"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 1,
+          "opcodeHex": "0x0001"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        }
+      ],
+      "captureCount": 9,
+      "totalOccurrences": 20,
+      "exampleCaptures": [
+        "gridania_to_coerthas.pcapng",
+        "login.pcapng",
+        "move_out_of_room.pcapng",
+        "moving_around_gridania.pcapng",
+        "return_to_inn.pcapng"
+      ]
+    },
+    {
+      "length": 6,
+      "motif": [
+        {
+          "direction": "s2c",
+          "opcode": 331,
+          "opcodeHex": "0x014b"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 1,
+          "opcodeHex": "0x0001"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        }
+      ],
+      "captureCount": 9,
+      "totalOccurrences": 20,
+      "exampleCaptures": [
+        "gridania_to_coerthas.pcapng",
+        "login.pcapng",
+        "move_out_of_room.pcapng",
+        "moving_around_gridania.pcapng",
+        "return_to_inn.pcapng"
+      ]
+    },
+    {
+      "length": 6,
+      "motif": [
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 331,
+          "opcodeHex": "0x014b"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        }
+      ],
+      "captureCount": 9,
+      "totalOccurrences": 19,
+      "exampleCaptures": [
+        "gridania_to_coerthas.pcapng",
+        "login.pcapng",
+        "move_out_of_room.pcapng",
+        "moving_around_gridania.pcapng",
+        "return_to_inn.pcapng"
       ]
     },
     {
@@ -191469,6 +191897,50 @@
         "accept_quest.pcapng",
         "buy_square_maple_shield.pcapng",
         "checkbed.pcapng"
+      ]
+    },
+    {
+      "length": 6,
+      "motif": [
+        {
+          "direction": "s2c",
+          "opcode": 311,
+          "opcodeHex": "0x0137"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 1,
+          "opcodeHex": "0x0001"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        }
+      ],
+      "captureCount": 9,
+      "totalOccurrences": 13,
+      "exampleCaptures": [
+        "attributes.pcapng",
+        "combat_skills.pcapng",
+        "friendlist_search.pcapng",
+        "gear_changesoul.pcapng",
+        "harvest.pcapng"
       ]
     },
     {
@@ -191951,50 +192423,6 @@
         "from_gridania_to_blackshroud.pcapng",
         "gridania_to_coerthas.pcapng",
         "login.pcapng",
-        "move_out_of_room.pcapng",
-        "moving_around_gridania.pcapng"
-      ]
-    },
-    {
-      "length": 6,
-      "motif": [
-        {
-          "direction": "s2c",
-          "opcode": 311,
-          "opcodeHex": "0x0137"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 311,
-          "opcodeHex": "0x0137"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 311,
-          "opcodeHex": "0x0137"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 311,
-          "opcodeHex": "0x0137"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 311,
-          "opcodeHex": "0x0137"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        }
-      ],
-      "captureCount": 9,
-      "totalOccurrences": 12,
-      "exampleCaptures": [
-        "from_gridania_to_blackshroud.pcapng",
-        "gear_changesoul.pcapng",
-        "gridania_to_coerthas.pcapng",
         "move_out_of_room.pcapng",
         "moving_around_gridania.pcapng"
       ]
@@ -193192,50 +193620,6 @@
       "motif": [
         {
           "direction": "s2c",
-          "opcode": 311,
-          "opcodeHex": "0x0137"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        }
-      ],
-      "captureCount": 8,
-      "totalOccurrences": 70,
-      "exampleCaptures": [
-        "combat_autoattack.pcapng",
-        "gridania_to_coerthas.pcapng",
-        "local_leve_complete.pcapng",
-        "move_around_gridania.pcapng",
-        "moving_around_gridania.pcapng"
-      ]
-    },
-    {
-      "length": 6,
-      "motif": [
-        {
-          "direction": "s2c",
           "opcode": 363,
           "opcodeHex": "0x016b"
         },
@@ -193280,50 +193664,6 @@
       "motif": [
         {
           "direction": "s2c",
-          "opcode": 311,
-          "opcodeHex": "0x0137"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 1,
-          "opcodeHex": "0x0001"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        }
-      ],
-      "captureCount": 8,
-      "totalOccurrences": 28,
-      "exampleCaptures": [
-        "accept_local_leve.pcapng",
-        "action_and_traits.pcapng",
-        "change_helm.pcapng",
-        "combat_autoattack.pcapng",
-        "gear_changeweapon.pcapng"
-      ]
-    },
-    {
-      "length": 6,
-      "motif": [
-        {
-          "direction": "s2c",
           "opcode": 399,
           "opcodeHex": "0x018f"
         },
@@ -193361,6 +193701,50 @@
         "gather_wood.pcapng",
         "harvest.pcapng",
         "local_leve_complete.pcapng"
+      ]
+    },
+    {
+      "length": 6,
+      "motif": [
+        {
+          "direction": "s2c",
+          "opcode": 311,
+          "opcodeHex": "0x0137"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 1,
+          "opcodeHex": "0x0001"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        }
+      ],
+      "captureCount": 8,
+      "totalOccurrences": 27,
+      "exampleCaptures": [
+        "accept_local_leve.pcapng",
+        "action_and_traits.pcapng",
+        "change_helm.pcapng",
+        "combat_autoattack.pcapng",
+        "gear_changeweapon.pcapng"
       ]
     },
     {
@@ -193460,19 +193844,19 @@
           "opcodeHex": "0x00ca"
         },
         {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
           "direction": "s2c",
           "opcode": 331,
           "opcodeHex": "0x014b"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
         },
         {
           "direction": "c2s",
@@ -193488,99 +193872,11 @@
       "captureCount": 8,
       "totalOccurrences": 19,
       "exampleCaptures": [
+        "from_gridania_to_blackshroud.pcapng",
         "gridania_to_coerthas.pcapng",
+        "login.pcapng",
         "move_out_of_room.pcapng",
-        "moving_around_gridania.pcapng",
-        "return_to_inn.pcapng",
-        "sell_item.pcapng"
-      ]
-    },
-    {
-      "length": 6,
-      "motif": [
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 331,
-          "opcodeHex": "0x014b"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 1,
-          "opcodeHex": "0x0001"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        }
-      ],
-      "captureCount": 8,
-      "totalOccurrences": 19,
-      "exampleCaptures": [
-        "gridania_to_coerthas.pcapng",
-        "move_out_of_room.pcapng",
-        "moving_around_gridania.pcapng",
-        "return_to_inn.pcapng",
-        "sell_item.pcapng"
-      ]
-    },
-    {
-      "length": 6,
-      "motif": [
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 331,
-          "opcodeHex": "0x014b"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 1,
-          "opcodeHex": "0x0001"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        }
-      ],
-      "captureCount": 8,
-      "totalOccurrences": 19,
-      "exampleCaptures": [
-        "gridania_to_coerthas.pcapng",
-        "move_out_of_room.pcapng",
-        "moving_around_gridania.pcapng",
-        "return_to_inn.pcapng",
-        "sell_item.pcapng"
+        "moving_around_gridania.pcapng"
       ]
     },
     {
@@ -193598,18 +193894,18 @@
         },
         {
           "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "c2s",
           "opcode": 1,
           "opcodeHex": "0x0001"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
         },
         {
           "direction": "c2s",
@@ -193620,11 +193916,11 @@
       "captureCount": 8,
       "totalOccurrences": 19,
       "exampleCaptures": [
+        "from_gridania_to_blackshroud.pcapng",
         "gridania_to_coerthas.pcapng",
+        "login.pcapng",
         "move_out_of_room.pcapng",
-        "moving_around_gridania.pcapng",
-        "return_to_inn.pcapng",
-        "sell_item.pcapng"
+        "moving_around_gridania.pcapng"
       ]
     },
     {
@@ -193651,23 +193947,23 @@
           "opcodeHex": "0x00ca"
         },
         {
-          "direction": "s2c",
-          "opcode": 331,
-          "opcodeHex": "0x014b"
-        },
-        {
           "direction": "c2s",
           "opcode": 202,
           "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 331,
+          "opcodeHex": "0x014b"
         }
       ],
       "captureCount": 8,
-      "totalOccurrences": 18,
+      "totalOccurrences": 16,
       "exampleCaptures": [
         "gridania_to_coerthas.pcapng",
+        "login.pcapng",
         "move_out_of_room.pcapng",
         "moving_around_gridania.pcapng",
-        "return_to_inn.pcapng",
         "sell_item.pcapng"
       ]
     },
@@ -194027,50 +194323,6 @@
       "length": 6,
       "motif": [
         {
-          "direction": "s2c",
-          "opcode": 311,
-          "opcodeHex": "0x0137"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 1,
-          "opcodeHex": "0x0001"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        }
-      ],
-      "captureCount": 8,
-      "totalOccurrences": 12,
-      "exampleCaptures": [
-        "attributes.pcapng",
-        "combat_skills.pcapng",
-        "friendlist_search.pcapng",
-        "gear_changesoul.pcapng",
-        "harvest.pcapng"
-      ]
-    },
-    {
-      "length": 6,
-      "motif": [
-        {
           "direction": "c2s",
           "opcode": 202,
           "opcodeHex": "0x00ca"
@@ -194153,6 +194405,94 @@
         "gridania_to_coerthas.pcapng",
         "local_leve_complete.pcapng",
         "move_around_gridania.pcapng"
+      ]
+    },
+    {
+      "length": 6,
+      "motif": [
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 326,
+          "opcodeHex": "0x0146"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 329,
+          "opcodeHex": "0x0149"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 327,
+          "opcodeHex": "0x0147"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 326,
+          "opcodeHex": "0x0146"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 334,
+          "opcodeHex": "0x014e"
+        }
+      ],
+      "captureCount": 8,
+      "totalOccurrences": 11,
+      "exampleCaptures": [
+        "from_gridania_to_blackshroud.pcapng",
+        "gridania_to_coerthas.pcapng",
+        "login.pcapng",
+        "move_out_of_room.pcapng",
+        "moving_around_gridania.pcapng"
+      ]
+    },
+    {
+      "length": 6,
+      "motif": [
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 329,
+          "opcodeHex": "0x0149"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 327,
+          "opcodeHex": "0x0147"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 326,
+          "opcodeHex": "0x0146"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 327,
+          "opcodeHex": "0x0147"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 326,
+          "opcodeHex": "0x0146"
+        }
+      ],
+      "captureCount": 8,
+      "totalOccurrences": 11,
+      "exampleCaptures": [
+        "from_gridania_to_blackshroud.pcapng",
+        "gridania_to_coerthas.pcapng",
+        "login.pcapng",
+        "move_out_of_room.pcapng",
+        "moving_around_gridania.pcapng"
       ]
     },
     {
@@ -194593,6 +194933,50 @@
         "local_leve_complete.pcapng",
         "quest_update.pcapng",
         "repair_items.pcapng"
+      ]
+    },
+    {
+      "length": 6,
+      "motif": [
+        {
+          "direction": "s2c",
+          "opcode": 327,
+          "opcodeHex": "0x0147"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 326,
+          "opcodeHex": "0x0146"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 330,
+          "opcodeHex": "0x014a"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 329,
+          "opcodeHex": "0x0149"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 327,
+          "opcodeHex": "0x0147"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        }
+      ],
+      "captureCount": 8,
+      "totalOccurrences": 10,
+      "exampleCaptures": [
+        "from_gridania_to_blackshroud.pcapng",
+        "gridania_to_coerthas.pcapng",
+        "login.pcapng",
+        "move_out_of_room.pcapng",
+        "moving_around_gridania.pcapng"
       ]
     },
     {
@@ -195166,270 +195550,6 @@
         "harvest.pcapng",
         "local_leve_complete.pcapng"
       ]
-    },
-    {
-      "length": 6,
-      "motif": [
-        {
-          "direction": "s2c",
-          "opcode": 400,
-          "opcodeHex": "0x0190"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 400,
-          "opcodeHex": "0x0190"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 400,
-          "opcodeHex": "0x0190"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 400,
-          "opcodeHex": "0x0190"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        }
-      ],
-      "captureCount": 7,
-      "totalOccurrences": 71,
-      "exampleCaptures": [
-        "combat_autoattack.pcapng",
-        "combat_skills.pcapng",
-        "gather_wood.pcapng",
-        "harvest.pcapng",
-        "local_leve_complete.pcapng"
-      ]
-    },
-    {
-      "length": 6,
-      "motif": [
-        {
-          "direction": "s2c",
-          "opcode": 204,
-          "opcodeHex": "0x00cc"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 311,
-          "opcodeHex": "0x0137"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 1,
-          "opcodeHex": "0x0001"
-        }
-      ],
-      "captureCount": 7,
-      "totalOccurrences": 69,
-      "exampleCaptures": [
-        "from_gridania_to_blackshroud.pcapng",
-        "gather_wood.pcapng",
-        "gridania_to_coerthas.pcapng",
-        "move_around_gridania.pcapng",
-        "moving_around_gridania.pcapng"
-      ]
-    },
-    {
-      "length": 6,
-      "motif": [
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 400,
-          "opcodeHex": "0x0190"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 400,
-          "opcodeHex": "0x0190"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 400,
-          "opcodeHex": "0x0190"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 400,
-          "opcodeHex": "0x0190"
-        }
-      ],
-      "captureCount": 7,
-      "totalOccurrences": 52,
-      "exampleCaptures": [
-        "combat_autoattack.pcapng",
-        "combat_skills.pcapng",
-        "gather_wood.pcapng",
-        "harvest.pcapng",
-        "local_leve_complete.pcapng"
-      ]
-    },
-    {
-      "length": 6,
-      "motif": [
-        {
-          "direction": "c2s",
-          "opcode": 1,
-          "opcodeHex": "0x0001"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 400,
-          "opcodeHex": "0x0190"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 400,
-          "opcodeHex": "0x0190"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 400,
-          "opcodeHex": "0x0190"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 400,
-          "opcodeHex": "0x0190"
-        }
-      ],
-      "captureCount": 7,
-      "totalOccurrences": 37,
-      "exampleCaptures": [
-        "combat_autoattack.pcapng",
-        "combat_skills.pcapng",
-        "gather_wood.pcapng",
-        "harvest.pcapng",
-        "local_leve_complete.pcapng"
-      ]
-    },
-    {
-      "length": 6,
-      "motif": [
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 1,
-          "opcodeHex": "0x0001"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 400,
-          "opcodeHex": "0x0190"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 400,
-          "opcodeHex": "0x0190"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 400,
-          "opcodeHex": "0x0190"
-        }
-      ],
-      "captureCount": 7,
-      "totalOccurrences": 34,
-      "exampleCaptures": [
-        "combat_autoattack.pcapng",
-        "combat_skills.pcapng",
-        "gather_wood.pcapng",
-        "harvest.pcapng",
-        "local_leve_complete.pcapng"
-      ]
-    },
-    {
-      "length": 6,
-      "motif": [
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 400,
-          "opcodeHex": "0x0190"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 400,
-          "opcodeHex": "0x0190"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 400,
-          "opcodeHex": "0x0190"
-        }
-      ],
-      "captureCount": 7,
-      "totalOccurrences": 29,
-      "exampleCaptures": [
-        "combat_autoattack.pcapng",
-        "combat_skills.pcapng",
-        "gather_wood.pcapng",
-        "harvest.pcapng",
-        "local_leve_complete.pcapng"
-      ]
     }
   ],
   "backgroundMotifs": [
@@ -195468,7 +195588,7 @@
         }
       ],
       "captureCount": 52,
-      "totalOccurrences": 784,
+      "totalOccurrences": 772,
       "exampleCaptures": [
         "accept_leve.pcapng",
         "accept_local_leve.pcapng",
@@ -195512,7 +195632,7 @@
         }
       ],
       "captureCount": 52,
-      "totalOccurrences": 671,
+      "totalOccurrences": 661,
       "exampleCaptures": [
         "accept_leve.pcapng",
         "accept_local_leve.pcapng",
@@ -195556,7 +195676,7 @@
         }
       ],
       "captureCount": 51,
-      "totalOccurrences": 723,
+      "totalOccurrences": 710,
       "exampleCaptures": [
         "accept_leve.pcapng",
         "accept_local_leve.pcapng",
@@ -195600,7 +195720,7 @@
         }
       ],
       "captureCount": 51,
-      "totalOccurrences": 647,
+      "totalOccurrences": 636,
       "exampleCaptures": [
         "accept_leve.pcapng",
         "accept_local_leve.pcapng",
@@ -195644,7 +195764,7 @@
         }
       ],
       "captureCount": 50,
-      "totalOccurrences": 721,
+      "totalOccurrences": 711,
       "exampleCaptures": [
         "accept_leve.pcapng",
         "accept_local_leve.pcapng",
@@ -195688,7 +195808,7 @@
         }
       ],
       "captureCount": 49,
-      "totalOccurrences": 699,
+      "totalOccurrences": 689,
       "exampleCaptures": [
         "accept_leve.pcapng",
         "accept_local_leve.pcapng",
@@ -195732,7 +195852,51 @@
         }
       ],
       "captureCount": 49,
-      "totalOccurrences": 453,
+      "totalOccurrences": 443,
+      "exampleCaptures": [
+        "accept_leve.pcapng",
+        "accept_local_leve.pcapng",
+        "accept_quest.pcapng",
+        "action_and_traits.pcapng",
+        "add_str.pcapng"
+      ]
+    },
+    {
+      "length": 6,
+      "motif": [
+        {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 1,
+          "opcodeHex": "0x0001"
+        }
+      ],
+      "captureCount": 49,
+      "totalOccurrences": 292,
       "exampleCaptures": [
         "accept_leve.pcapng",
         "accept_local_leve.pcapng",
@@ -195776,7 +195940,7 @@
         }
       ],
       "captureCount": 48,
-      "totalOccurrences": 570,
+      "totalOccurrences": 569,
       "exampleCaptures": [
         "accept_leve.pcapng",
         "accept_local_leve.pcapng",
@@ -195804,10 +195968,34 @@
           "opcodeHex": "0x00cf"
         },
         {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        },
+        {
           "direction": "c2s",
           "opcode": 202,
           "opcodeHex": "0x00ca"
         },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        }
+      ],
+      "captureCount": 46,
+      "totalOccurrences": 724,
+      "exampleCaptures": [
+        "accept_leve.pcapng",
+        "accept_local_leve.pcapng",
+        "accept_quest.pcapng",
+        "action_and_traits.pcapng",
+        "attributes.pcapng"
+      ]
+    },
+    {
+      "length": 6,
+      "motif": [
         {
           "direction": "c2s",
           "opcode": 202,
@@ -195815,18 +196003,38 @@
         },
         {
           "direction": "s2c",
-          "opcode": 1,
-          "opcodeHex": "0x0001"
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
         }
       ],
-      "captureCount": 48,
-      "totalOccurrences": 288,
+      "captureCount": 46,
+      "totalOccurrences": 520,
       "exampleCaptures": [
         "accept_leve.pcapng",
         "accept_local_leve.pcapng",
         "accept_quest.pcapng",
         "action_and_traits.pcapng",
-        "add_str.pcapng"
+        "attributes.pcapng"
       ]
     },
     {
@@ -195853,9 +196061,9 @@
           "opcodeHex": "0x00cf"
         },
         {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
         },
         {
           "direction": "c2s",
@@ -195864,95 +196072,7 @@
         }
       ],
       "captureCount": 45,
-      "totalOccurrences": 720,
-      "exampleCaptures": [
-        "accept_leve.pcapng",
-        "accept_local_leve.pcapng",
-        "accept_quest.pcapng",
-        "action_and_traits.pcapng",
-        "attributes.pcapng"
-      ]
-    },
-    {
-      "length": 6,
-      "motif": [
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        }
-      ],
-      "captureCount": 45,
-      "totalOccurrences": 519,
-      "exampleCaptures": [
-        "accept_leve.pcapng",
-        "accept_local_leve.pcapng",
-        "accept_quest.pcapng",
-        "action_and_traits.pcapng",
-        "attributes.pcapng"
-      ]
-    },
-    {
-      "length": 6,
-      "motif": [
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        }
-      ],
-      "captureCount": 44,
-      "totalOccurrences": 1012,
+      "totalOccurrences": 1018,
       "exampleCaptures": [
         "accept_leve.pcapng",
         "accept_local_leve.pcapng",
@@ -195995,8 +196115,8 @@
           "opcodeHex": "0x00ca"
         }
       ],
-      "captureCount": 44,
-      "totalOccurrences": 329,
+      "captureCount": 45,
+      "totalOccurrences": 331,
       "exampleCaptures": [
         "accept_leve.pcapng",
         "accept_local_leve.pcapng",
@@ -196039,8 +196159,8 @@
           "opcodeHex": "0x00cf"
         }
       ],
-      "captureCount": 44,
-      "totalOccurrences": 211,
+      "captureCount": 45,
+      "totalOccurrences": 216,
       "exampleCaptures": [
         "accept_leve.pcapng",
         "accept_local_leve.pcapng",
@@ -196083,8 +196203,8 @@
           "opcodeHex": "0x00cf"
         }
       ],
-      "captureCount": 43,
-      "totalOccurrences": 342,
+      "captureCount": 44,
+      "totalOccurrences": 348,
       "exampleCaptures": [
         "accept_leve.pcapng",
         "accept_local_leve.pcapng",
@@ -196171,14 +196291,146 @@
           "opcodeHex": "0x0001"
         }
       ],
-      "captureCount": 40,
-      "totalOccurrences": 160,
+      "captureCount": 41,
+      "totalOccurrences": 162,
       "exampleCaptures": [
         "accept_leve.pcapng",
         "accept_local_leve.pcapng",
         "action_and_traits.pcapng",
         "attributes.pcapng",
         "change_bodyarmor.pcapng"
+      ]
+    },
+    {
+      "length": 6,
+      "motif": [
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 1,
+          "opcodeHex": "0x0001"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 1,
+          "opcodeHex": "0x0001"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        }
+      ],
+      "captureCount": 40,
+      "totalOccurrences": 128,
+      "exampleCaptures": [
+        "accept_leve.pcapng",
+        "accept_quest.pcapng",
+        "action_and_traits.pcapng",
+        "add_str.pcapng",
+        "attributes.pcapng"
+      ]
+    },
+    {
+      "length": 6,
+      "motif": [
+        {
+          "direction": "c2s",
+          "opcode": 1,
+          "opcodeHex": "0x0001"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 1,
+          "opcodeHex": "0x0001"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        }
+      ],
+      "captureCount": 40,
+      "totalOccurrences": 125,
+      "exampleCaptures": [
+        "accept_leve.pcapng",
+        "accept_local_leve.pcapng",
+        "accept_quest.pcapng",
+        "action_and_traits.pcapng",
+        "add_str.pcapng"
+      ]
+    },
+    {
+      "length": 6,
+      "motif": [
+        {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 1,
+          "opcodeHex": "0x0001"
+        }
+      ],
+      "captureCount": 39,
+      "totalOccurrences": 319,
+      "exampleCaptures": [
+        "accept_leve.pcapng",
+        "accept_local_leve.pcapng",
+        "action_and_traits.pcapng",
+        "attributes.pcapng",
+        "buy_square_maple_shield.pcapng"
       ]
     },
     {
@@ -196216,7 +196468,7 @@
         }
       ],
       "captureCount": 39,
-      "totalOccurrences": 177,
+      "totalOccurrences": 171,
       "exampleCaptures": [
         "accept_local_leve.pcapng",
         "accept_quest.pcapng",
@@ -196289,8 +196541,8 @@
         },
         {
           "direction": "s2c",
-          "opcode": 1,
-          "opcodeHex": "0x0001"
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
         },
         {
           "direction": "s2c",
@@ -196303,100 +196555,12 @@
           "opcodeHex": "0x00cf"
         }
       ],
-      "captureCount": 39,
-      "totalOccurrences": 127,
+      "captureCount": 37,
+      "totalOccurrences": 203,
       "exampleCaptures": [
         "accept_leve.pcapng",
-        "accept_quest.pcapng",
         "action_and_traits.pcapng",
         "add_str.pcapng",
-        "attributes.pcapng"
-      ]
-    },
-    {
-      "length": 6,
-      "motif": [
-        {
-          "direction": "c2s",
-          "opcode": 1,
-          "opcodeHex": "0x0001"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 1,
-          "opcodeHex": "0x0001"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        }
-      ],
-      "captureCount": 39,
-      "totalOccurrences": 124,
-      "exampleCaptures": [
-        "accept_leve.pcapng",
-        "accept_local_leve.pcapng",
-        "accept_quest.pcapng",
-        "action_and_traits.pcapng",
-        "add_str.pcapng"
-      ]
-    },
-    {
-      "length": 6,
-      "motif": [
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 1,
-          "opcodeHex": "0x0001"
-        }
-      ],
-      "captureCount": 38,
-      "totalOccurrences": 317,
-      "exampleCaptures": [
-        "accept_leve.pcapng",
-        "accept_local_leve.pcapng",
-        "action_and_traits.pcapng",
         "attributes.pcapng",
         "buy_square_maple_shield.pcapng"
       ]
@@ -196450,11 +196614,6 @@
       "motif": [
         {
           "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "c2s",
           "opcode": 1,
           "opcodeHex": "0x0001"
         },
@@ -196462,45 +196621,6 @@
           "direction": "c2s",
           "opcode": 202,
           "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        }
-      ],
-      "captureCount": 36,
-      "totalOccurrences": 202,
-      "exampleCaptures": [
-        "accept_leve.pcapng",
-        "action_and_traits.pcapng",
-        "add_str.pcapng",
-        "attributes.pcapng",
-        "buy_square_maple_shield.pcapng"
-      ]
-    },
-    {
-      "length": 6,
-      "motif": [
-        {
-          "direction": "s2c",
-          "opcode": 1,
-          "opcodeHex": "0x0001"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 1,
-          "opcodeHex": "0x0001"
         },
         {
           "direction": "s2c",
@@ -196524,57 +196644,57 @@
         }
       ],
       "captureCount": 36,
-      "totalOccurrences": 123,
-      "exampleCaptures": [
-        "accept_leve.pcapng",
-        "accept_quest.pcapng",
-        "action_and_traits.pcapng",
-        "attributes.pcapng",
-        "buy_square_maple_shield.pcapng"
-      ]
-    },
-    {
-      "length": 6,
-      "motif": [
-        {
-          "direction": "c2s",
-          "opcode": 1,
-          "opcodeHex": "0x0001"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        }
-      ],
-      "captureCount": 35,
-      "totalOccurrences": 196,
+      "totalOccurrences": 197,
       "exampleCaptures": [
         "accept_leve.pcapng",
         "action_and_traits.pcapng",
         "attributes.pcapng",
         "buy_square_maple_shield.pcapng",
         "change_to_botanist.pcapng"
+      ]
+    },
+    {
+      "length": 6,
+      "motif": [
+        {
+          "direction": "s2c",
+          "opcode": 1,
+          "opcodeHex": "0x0001"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 1,
+          "opcodeHex": "0x0001"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        }
+      ],
+      "captureCount": 36,
+      "totalOccurrences": 119,
+      "exampleCaptures": [
+        "accept_leve.pcapng",
+        "accept_quest.pcapng",
+        "action_and_traits.pcapng",
+        "attributes.pcapng",
+        "buy_square_maple_shield.pcapng"
       ]
     },
     {
@@ -196656,7 +196776,7 @@
         }
       ],
       "captureCount": 35,
-      "totalOccurrences": 79,
+      "totalOccurrences": 77,
       "exampleCaptures": [
         "accept_leve.pcapng",
         "action_and_traits.pcapng",
@@ -196743,8 +196863,8 @@
           "opcodeHex": "0x00cf"
         }
       ],
-      "captureCount": 32,
-      "totalOccurrences": 75,
+      "captureCount": 33,
+      "totalOccurrences": 77,
       "exampleCaptures": [
         "action_and_traits.pcapng",
         "add_str.pcapng",
@@ -196875,8 +196995,8 @@
           "opcodeHex": "0x00cf"
         }
       ],
-      "captureCount": 27,
-      "totalOccurrences": 95,
+      "captureCount": 28,
+      "totalOccurrences": 96,
       "exampleCaptures": [
         "action_and_traits.pcapng",
         "add_str.pcapng",
@@ -196919,8 +197039,8 @@
           "opcodeHex": "0x00ca"
         }
       ],
-      "captureCount": 27,
-      "totalOccurrences": 62,
+      "captureCount": 28,
+      "totalOccurrences": 63,
       "exampleCaptures": [
         "accept_quest.pcapng",
         "action_and_traits.pcapng",
@@ -197051,8 +197171,8 @@
           "opcodeHex": "0x0001"
         }
       ],
-      "captureCount": 25,
-      "totalOccurrences": 81,
+      "captureCount": 26,
+      "totalOccurrences": 83,
       "exampleCaptures": [
         "attributes.pcapng",
         "change_bodyarmor.pcapng",
@@ -197119,6 +197239,50 @@
           "opcodeHex": "0x00cf"
         },
         {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 1,
+          "opcodeHex": "0x0001"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        }
+      ],
+      "captureCount": 25,
+      "totalOccurrences": 52,
+      "exampleCaptures": [
+        "accept_quest.pcapng",
+        "action_and_traits.pcapng",
+        "attributes.pcapng",
+        "change_helm.pcapng",
+        "check_room_map.pcapng"
+      ]
+    },
+    {
+      "length": 6,
+      "motif": [
+        {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        },
+        {
           "direction": "c2s",
           "opcode": 202,
           "opcodeHex": "0x00ca"
@@ -197153,19 +197317,19 @@
       "length": 6,
       "motif": [
         {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
         },
         {
           "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
+          "opcode": 1,
+          "opcodeHex": "0x0001"
         },
         {
           "direction": "s2c",
@@ -197184,12 +197348,56 @@
         }
       ],
       "captureCount": 24,
-      "totalOccurrences": 51,
+      "totalOccurrences": 64,
+      "exampleCaptures": [
+        "action_and_traits.pcapng",
+        "change_bodyarmor.pcapng",
+        "change_helm.pcapng",
+        "chat_say.pcapng",
+        "chat_shout.pcapng"
+      ]
+    },
+    {
+      "length": 6,
+      "motif": [
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 1,
+          "opcodeHex": "0x0001"
+        },
+        {
+          "direction": "s2c",
+          "opcode": 1,
+          "opcodeHex": "0x0001"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 1,
+          "opcodeHex": "0x0001"
+        }
+      ],
+      "captureCount": 24,
+      "totalOccurrences": 57,
       "exampleCaptures": [
         "accept_quest.pcapng",
-        "action_and_traits.pcapng",
         "attributes.pcapng",
-        "change_helm.pcapng",
+        "buy_square_maple_shield.pcapng",
+        "change_to_botanist.pcapng",
         "check_room_map.pcapng"
       ]
     },
@@ -197373,6 +197581,11 @@
       "length": 6,
       "motif": [
         {
+          "direction": "s2c",
+          "opcode": 207,
+          "opcodeHex": "0x00cf"
+        },
+        {
           "direction": "c2s",
           "opcode": 202,
           "opcodeHex": "0x00ca"
@@ -197391,11 +197604,6 @@
           "direction": "s2c",
           "opcode": 1,
           "opcodeHex": "0x0001"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
         },
         {
           "direction": "c2s",
@@ -197406,55 +197614,11 @@
       "captureCount": 23,
       "totalOccurrences": 63,
       "exampleCaptures": [
-        "action_and_traits.pcapng",
+        "attributes.pcapng",
         "change_bodyarmor.pcapng",
         "change_helm.pcapng",
         "chat_say.pcapng",
         "chat_shout.pcapng"
-      ]
-    },
-    {
-      "length": 6,
-      "motif": [
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 1,
-          "opcodeHex": "0x0001"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 1,
-          "opcodeHex": "0x0001"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 1,
-          "opcodeHex": "0x0001"
-        }
-      ],
-      "captureCount": 23,
-      "totalOccurrences": 56,
-      "exampleCaptures": [
-        "accept_quest.pcapng",
-        "attributes.pcapng",
-        "buy_square_maple_shield.pcapng",
-        "change_to_botanist.pcapng",
-        "check_room_map.pcapng"
       ]
     },
     {
@@ -197549,14 +197713,14 @@
       "length": 6,
       "motif": [
         {
-          "direction": "s2c",
-          "opcode": 207,
-          "opcodeHex": "0x00cf"
-        },
-        {
           "direction": "c2s",
           "opcode": 202,
           "opcodeHex": "0x00ca"
+        },
+        {
+          "direction": "c2s",
+          "opcode": 1,
+          "opcodeHex": "0x0001"
         },
         {
           "direction": "c2s",
@@ -197569,9 +197733,9 @@
           "opcodeHex": "0x0001"
         },
         {
-          "direction": "s2c",
-          "opcode": 1,
-          "opcodeHex": "0x0001"
+          "direction": "c2s",
+          "opcode": 202,
+          "opcodeHex": "0x00ca"
         },
         {
           "direction": "c2s",
@@ -197580,57 +197744,13 @@
         }
       ],
       "captureCount": 22,
-      "totalOccurrences": 61,
-      "exampleCaptures": [
-        "attributes.pcapng",
-        "change_bodyarmor.pcapng",
-        "change_helm.pcapng",
-        "chat_say.pcapng",
-        "chat_shout.pcapng"
-      ]
-    },
-    {
-      "length": 6,
-      "motif": [
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 1,
-          "opcodeHex": "0x0001"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 1,
-          "opcodeHex": "0x0001"
-        },
-        {
-          "direction": "c2s",
-          "opcode": 202,
-          "opcodeHex": "0x00ca"
-        },
-        {
-          "direction": "s2c",
-          "opcode": 1,
-          "opcodeHex": "0x0001"
-        }
-      ],
-      "captureCount": 22,
-      "totalOccurrences": 47,
+      "totalOccurrences": 58,
       "exampleCaptures": [
         "accept_leve.pcapng",
         "accept_local_leve.pcapng",
-        "attributes.pcapng",
+        "change_to_botanist.pcapng",
         "check_room_map.pcapng",
-        "cutscene_book.pcapng"
+        "coerthas_map.pcapng"
       ]
     }
   ]

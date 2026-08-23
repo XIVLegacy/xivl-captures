@@ -65,6 +65,7 @@ UNIT_TEST_MODULES = (
     "tools.tests.test_analyze_battle_result_fits",
     "tools.tests.test_extract_battle_results",
     "tools.tests.test_extract_property_stream_catalog",
+    "tools.tests.test_extract_streams",
 )
 
 # The three gate modes share these command-level checks. Product-specific

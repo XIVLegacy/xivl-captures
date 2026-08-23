@@ -29,7 +29,7 @@ from extract_observations import (  # type: ignore
 )
 
 # Bump when extraction changes output; record the version in pipelines/*.yaml and derived/*.meta.yaml.
-GENERATOR_VERSION = "1"
+GENERATOR_VERSION = "2"
 
 DEFAULT_OUT = Path(__file__).parent.parent.parent / "derived" / "payload_samples.json"
 # Sampling caps keep high-frequency opcodes from crowding out cross-capture variance evidence.

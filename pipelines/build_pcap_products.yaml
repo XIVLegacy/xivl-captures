@@ -18,19 +18,19 @@ outputs:
 - dataset: sequences
   generator:
     tool: tools/extractors/extract_sequences.py
-    version: "1"
+    version: "2"
   inputs:
   - source: pcap-1.23b
 - dataset: timing
   generator:
     tool: tools/extractors/extract_timing.py
-    version: "1"
+    version: "2"
   inputs:
   - source: pcap-1.23b
 - dataset: payload_samples
   generator:
     tool: tools/extractors/extract_payload_samples.py
-    version: "1"
+    version: "2"
   inputs:
   - source: pcap-1.23b
 - dataset: content_samples

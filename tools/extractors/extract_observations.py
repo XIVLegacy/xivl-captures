@@ -38,26 +38,10 @@ def default_corpus_paths() -> list[Path]:
     return sorted(DEFAULT_CAP_DIR.glob("*.pcapng"))
 
 
-GAME_SERVER_PORT = 54992
-TLS_RECORD_SIGNATURE = b"\x16\x03"
-
-
-def _is_game_lane(connection: dict) -> bool:
-    """Select clear 54992 game lanes without admitting lobby or TLS bytes."""
-    if connection["server_endpoint"][1] != GAME_SERVER_PORT:
-        return False
-    return not any(
-        blob.startswith(TLS_RECORD_SIGNATURE)
-        for blob in connection["streams"].values()
-    )
-
-
 def _game_lane_streams(path: Path) -> dict[str, bytes]:
     """Merge only selected game lanes for the capture-level products."""
     merged = {"c2s": b"", "s2c": b""}
     for connection in reconstruct_lanes(path):
-        if not _is_game_lane(connection):
-            continue
         for direction, blob in connection["streams"].items():
             merged[direction] += blob
     return {direction: blob for direction, blob in merged.items() if blob}
@@ -168,8 +152,6 @@ def walk_capture_lanes(path: Path) -> dict:
     """Return inner-opcode observations without merging TCP connections."""
     result = {"capture": path.name, "connections": []}
     for connection in reconstruct_lanes(path):
-        if not _is_game_lane(connection):
-            continue
         record = {
             "lane": connection["lane"],
             "clientEndpoint": f"{connection['client_endpoint'][0]}:{connection['client_endpoint'][1]}",

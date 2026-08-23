@@ -4,10 +4,10 @@ evidence_class: packet-capture
 schema_version: 1
 output:
   file: derived/payload_samples.json
-  sha256: 890bbc0a61244572ea47d081b0b4da8dcc313333bc548b4556f84497e3418c36
+  sha256: 2f790fb4045b0772d049a8b4957f67fd530b4b7bb89967e0e08ccee94b3134e6
 generator:
   tool: tools/extractors/extract_payload_samples.py
-  version: '1'
+  version: '2'
 inputs:
 - source: pcap-1.23b
   content_sha256: 3e39bfbffdf5a7efa0f42fc221f42dc2d1d28af8f19378d28921a3b903c0c7ee

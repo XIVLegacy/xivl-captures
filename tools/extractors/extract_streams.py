@@ -1,6 +1,7 @@
-"""Reconstruct and inspect the main and chat TCP lanes in a 1.23b capture.
+"""Reconstruct and inspect clear port-54992 game lanes in a 1.23b capture.
 
-Every connection that decodes into outer frames is merged by direction.
+TLS and non-game server ports remain available only through the raw connection
+reconstructor and never enter canonical reducers.
 """
 
 from __future__ import annotations
@@ -16,6 +17,8 @@ from scapy.all import rdpcap, IP, TCP  # noqa: E402
 
 
 FFXIV_SERVER_PORTS = {54992, 54993, 54994}  # Observed 1.23b server ports; other pairs use the lower-port heuristic.
+GAME_SERVER_PORT = 54992
+TLS_RECORD_SIGNATURE = b"\x16\x03"
 
 _PACKET_CACHE: dict[Path, object] = {}
 _PACKET_READ_COUNTS: Counter[Path] = Counter()
@@ -73,8 +76,8 @@ def _server_endpoint(ep_a: tuple[str, int], ep_b: tuple[str, int]) -> tuple[str,
     return ep_a if port_a < port_b else ep_b
 
 
-def reconstruct_lanes(pcap_path: Path) -> list[dict]:
-    """Classify compressed s2c lanes as main, raw s2c lanes as chat, or unknown."""
+def reconstruct_connections(pcap_path: Path) -> list[dict]:
+    """Return every frame-shaped TCP connection before protocol admission."""
     pcap = read_packets(pcap_path)
 
     conns: dict[tuple, list[tuple[tuple, tuple, int, bytes, int]]] = {}
@@ -126,6 +129,25 @@ def reconstruct_lanes(pcap_path: Path) -> list[dict]:
             "index": indexes,
         })
     return lanes
+
+
+def _is_game_connection(connection: dict) -> bool:
+    """Accept clear port-54992 game traffic and reject lobby or TLS streams."""
+    if connection["server_endpoint"][1] != GAME_SERVER_PORT:
+        return False
+    return not any(
+        blob.startswith(TLS_RECORD_SIGNATURE)
+        for blob in connection["streams"].values()
+    )
+
+
+def reconstruct_lanes(pcap_path: Path) -> list[dict]:
+    """Return classified lanes from clear port-54992 game connections only."""
+    return [
+        connection
+        for connection in reconstruct_connections(pcap_path)
+        if _is_game_connection(connection)
+    ]
 
 
 def reconstruct_with_index(pcap_path: Path):

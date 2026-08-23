@@ -4,10 +4,10 @@ evidence_class: packet-capture
 schema_version: 1
 output:
   file: derived/timing.json
-  sha256: 01552cbf7fb1570a8c010b31df19d643e0c8e2080819e99783aacc0d30169611
+  sha256: c5cbba366738491119482bfe47f0c5b42cc05f4db0a31d84bcaa171a5868603a
 generator:
   tool: tools/extractors/extract_timing.py
-  version: '1'
+  version: '2'
 inputs:
 - source: pcap-1.23b
   content_sha256: 3e39bfbffdf5a7efa0f42fc221f42dc2d1d28af8f19378d28921a3b903c0c7ee

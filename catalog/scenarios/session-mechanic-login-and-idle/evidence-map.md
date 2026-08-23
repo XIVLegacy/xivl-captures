@@ -1,29 +1,22 @@
 # Login Handshake and In-World Idle - Evidence Map
 
-Reference scenario. Raw captures live in this repo's `sources/pcap-1.23b/objects/`; this map distils their opcode evidence by joining this repo's own `derived/observations.json` (numeric truth) against `derived/opcode_names.json` (names, promoted from xivl-opcodes:opcodes.json).
+This map joins two repository-owned products:
+
+- `derived/observations.json` supplies numeric observations.
+- `derived/opcode_names.json` supplies names promoted from xivl-opcodes:opcodes.json.
+- Raw captures live in `sources/pcap-1.23b/objects/`.
 
 ## Captures (2)
 
-- `login.pcapng` - 856,236 B, 58 distinct opcodes (map 64, world 11).
+- `login.pcapng` - 856,236 B, 58 distinct opcodes (map 64).
 - `idling.pcapng` - 42,608 B, 4 distinct opcodes (map 5).
 
-## Observed opcodes (76 distinct)
+## Observed opcodes (65 distinct)
 
 Union across the member captures. `name` is the derived/opcode_names.json entry name; `retail class` is the retail_class_name attribution when known.
 
 | opcode | service | direction | name | retail class | payload lengths |
 |---|---|---|---|---|---|
-| `0x0002` | world | clientbound | _0x2Packet | - | 48 |
-| `0x0003` | world | clientbound | SendMessagePacket | - | 584 |
-| `0x0006` | world | serverbound | _0x0006Handler | - | 40 |
-| `0x0133` | world | serverbound | GroupWorkUpdatePacket | - | 72 |
-| `0x017a` | world | clientbound | SynchGroupWorkValuesPacket | - | 176 |
-| `0x017c` | world | clientbound | GroupHeaderPacket | - | 152 |
-| `0x017d` | world | clientbound | GroupMembersBeginPacket | - | 64 |
-| `0x017e` | world | clientbound | GroupMembersEndPacket | - | 56 |
-| `0x017f` | world | clientbound | GroupMembersX08Packet | - | 440 |
-| `0x0189` | world | clientbound | CreateNamedGroupMultiple | - | 552 |
-| `0x018a` | world | clientbound | SetActiveLinkshellPacket | - | 136 |
 | `0x0001` | map | clientbound | PongPacket | - | 64 |
 | `0x0001` | map | serverbound | PingPacket | - | 56 |
 | `0x0002` | map | clientbound | _0x02Packet | - | 48 |
@@ -92,7 +85,7 @@ Union across the member captures. `name` is the derived/opcode_names.json entry 
 
 ## Verification
 
-- Every opcode above is sourced from this repo's own `derived/observations.json` (numeric truth) joined against `derived/opcode_names.json` (names) for the member pcaps - no hand-asserted opcodes.
+- Every opcode above comes from `derived/observations.json` joined with `derived/opcode_names.json` for the member pcaps. No opcode is added manually.
 - Member sizes and sha256 were taken from this repo's `sources/pcap-1.23b/objects/`; the canonical hashes live in `sources/pcap-1.23b/manifest.yaml`.
 
 ## Gaps / caveats

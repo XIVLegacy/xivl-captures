@@ -4,10 +4,10 @@ evidence_class: packet-capture
 schema_version: 1
 output:
   file: derived/sequences.json
-  sha256: 586e0517b07fb1b64bf5fd9ecca5525c5bbde69d4f9dc1b2a934544bfff6084d
+  sha256: 9e3e2798c2d279ae0995168626d1347cd9ec68af10c4ea26d7fe85d92d50e7b7
 generator:
   tool: tools/extractors/extract_sequences.py
-  version: '1'
+  version: '2'
 inputs:
 - source: pcap-1.23b
   content_sha256: 3e39bfbffdf5a7efa0f42fc221f42dc2d1d28af8f19378d28921a3b903c0c7ee
