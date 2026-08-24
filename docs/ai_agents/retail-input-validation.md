@@ -1,9 +1,9 @@
 # Retail input validation
 
-The optional `pcap-1.23b-products-v1` lane checks the deterministic capture
+The optional `pcap-1.23b-products-v1` workflow checks the deterministic capture
 products against the exact restricted `pcap-corpus-1.23b` archive. The normal
-asset-free gate remains sufficient for pull requests and public branch health;
-this lane is a separate, manually dispatched evidence check.
+asset-free checks remain sufficient for pull requests and public branch health;
+this workflow is a separate, manually dispatched evidence check.
 
 The public contract is in `config/retail_inputs.json` and
 `config/retail_pcap_check.json`. It pins the archive SHA-256, size, private
@@ -20,10 +20,10 @@ schema-valid `retail-pcap-attestation` artifact containing
 The shared `fetch-retail-input` action is pinned to
 `XIVLegacy/xivl-tools/.github/actions/fetch-retail-input@4920dece45e88fcb14424de1f5c4fdee94ae6d02`.
 It receives the approved commit, PCAP path, size, SHA-256, output path, and
-parent trees from this lane. It allows only the authorized archive path and
+parent trees from this check. It allows only the authorized archive path and
 requires an untruncated tree response, regular-file type and mode, the pinned
 size and blob identity, and the archive SHA-256 before extraction. Other assets
-in the shared private repository are outside this lane's grant.
+in the shared private repository are outside this check's grant.
 
 The extractor validates the complete archive before writing any member. It
 rejects duplicate names, directories, links, encrypted entries, traversal or
@@ -41,7 +41,7 @@ plaintext, or live-server behavior outside the recorded sessions. Logs and
 attestations contain only fixed stage names, counts, timings, and verdicts;
 they do not contain packet fields, payloads, addresses, names, chat, or hex.
 
-The lane also runs the four explicit repository unit-test modules before
+The workflow also runs the seven explicit repository unit-test modules before
 retail extraction.
 
 ## Reproduced result
@@ -49,9 +49,8 @@ retail extraction.
 Manual run `32528392471` passed on 2026-08-21 for public commit
 `ec0529193bf766709d53da0be6a4c4bb760bb20e`. Its preflight completed in 16
 seconds and its evidence job in 63 seconds. The downloaded pass attestation
-was byte-identical to a local regeneration for the same commit and is tracked
-as
-[`pcap-1.23b-products.json`](../../config/retail_evidence/pcap-1.23b-products.json).
+was byte-identical to a local regeneration for the same commit. The tracked
+result is [`pcap-1.23b-products.json`](../../config/retail_evidence/pcap-1.23b-products.json).
 The retained file is 306 bytes with SHA-256
 `cca5f8f2a66220c06353dd337ed6b368420fa980aed2546751330de67884f001`.
 Artifact allowlist, schema, cleanup, negative-control, and public-log leakage

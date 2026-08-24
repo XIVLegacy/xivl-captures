@@ -1013,6 +1013,32 @@ studies:
   - studies/gamerescape-tables/derived/mob-families.csv
   source_refs:
   - source: gamerescape-tables
+- id: guildleve-journal-command-wire
+  title: Guildleve Journal Command Wire Census
+  status: distilled
+  evidence_class: packet-capture
+  content_kind: battlecraft-leve
+  tags:
+  - guildleve
+  - journal
+  - command
+  - packet-decoding
+  - bounded-absence
+  - corpus-search
+  search_hints:
+  - command 24241
+  - '0x5eb1'
+  - JournalCommand
+  - guildleve break
+  - guildleve retry
+  - journal subindex
+  primary_paths:
+  - studies/guildleve-journal-command-wire/derived/verdicts.md
+  - studies/guildleve-journal-command-wire/derived/accounting.json
+  - studies/guildleve-journal-command-wire/derived/command-matches.csv
+  source_refs:
+  - source: pcap-1.23b
+    citation: sources/pcap-1.23b/manifest.yaml
 - id: kanican-tables
   title: kanican FFXIV 1.x Combat Theorycrafting - Web Tables
   status: distilled
