@@ -1,0 +1,29 @@
+id: map-00da-00e1-comparison
+title: Map 0x00DA and 0x00E1 Wire Comparison
+evidence_class: packet-capture
+status: distilled
+tags:
+- packet-decoding
+- packet-order
+- map-clientbound
+search_hints:
+- "0x00da"
+- "0x00e0"
+- "0x00e1"
+- clientbound payload comparison
+notes: >-
+  Complete retained-corpus census and bounded same-connection chronology for
+  three numeric opcode identities. Capture filenames are not used as semantic
+  evidence, and the study assigns no packet noun or causal role.
+source_refs:
+- source: pcap-1.23b
+primary_paths:
+- derived/verdicts.md
+- derived/occurrences.csv
+- derived/neighborhoods.csv
+- derived/accounting.json
+canonical_evidence:
+- derived/verdicts.md
+- derived/occurrences.csv
+- derived/neighborhoods.csv
+- derived/accounting.json

@@ -1320,6 +1320,26 @@ studies:
   source_refs:
   - source: pcap-1.23b
     citation: sources/pcap-1.23b/manifest.yaml
+- id: map-00da-00e1-comparison
+  title: Map 0x00DA and 0x00E1 Wire Comparison
+  status: distilled
+  evidence_class: packet-capture
+  tags:
+  - packet-decoding
+  - packet-order
+  - map-clientbound
+  search_hints:
+  - '0x00da'
+  - '0x00e0'
+  - '0x00e1'
+  - clientbound payload comparison
+  primary_paths:
+  - studies/map-00da-00e1-comparison/derived/verdicts.md
+  - studies/map-00da-00e1-comparison/derived/occurrences.csv
+  - studies/map-00da-00e1-comparison/derived/neighborhoods.csv
+  - studies/map-00da-00e1-comparison/derived/accounting.json
+  source_refs:
+  - source: pcap-1.23b
 - id: movement-speed-band-observations
   title: Movement Speed Band Observations
   status: distilled
