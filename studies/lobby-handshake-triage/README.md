@@ -10,6 +10,10 @@ This bounded packet-capture study inventories the canonical session and zone-tra
 - `derived/server-utc.md` - client-number wire fields and bounded constant census.
 - `derived/decrypt-recipe.md` - capture-native key inputs, ciphertext locators,
   confirmed recipe, recovered plaintext, and historical failure record.
+- `derived/acknowledgement-structure.md` - sanitized server acknowledgement
+  boundaries, repeated structure, and interpretation limits.
+- `derived/lobby-acknowledgement-structure.json` - schema-validated structural
+  fixture with all payload values redacted.
 
 ## Source material
 
@@ -25,6 +29,9 @@ This bounded packet-capture study inventories the canonical session and zone-tra
 - `login.pcapng` is mixed: TLS account traffic is present, and the same capture
   also contains raw 54994 lobby frames and raw 54992 game frames.
 - The 54994 server-to-client frames are decoded by the confirmed 44-byte MD5 and Blowfish ECB recipe recorded in `derived/decrypt-recipe.md`.
+- Both retained server acknowledgements are 672-byte records with 32 clear
+  header bytes and a 640-byte encrypted payload. Their exact comparison spans
+  and repeated-value offsets are retained without payload values.
 - The other inventoried members expose raw 54992 game framing and no TLS handshake; they do not add a separate lobby ciphertext target.
 - The first raw lobby connection carries client number 1356916754 in both the
   initial server frame and InitialSessionData; the repeat connection carries
@@ -50,6 +57,8 @@ This bounded packet-capture study inventories the canonical session and zone-tra
   Its raw 54994 lobby lanes remain outside that decoder even though their
   decrypt recipe is confirmed. TLS account traffic also remains outside.
 - Server-side client-number comparison and rejection policy remain unverified.
+- The acknowledgement payload's opaque repeated values have no supported field
+  interpretation beyond their offsets and cross-session variance.
 - Packet numbers are 1-based capture positions; stream offsets and frame boundaries come from the repository lane/frame reconstruction.
 
 ## Further research

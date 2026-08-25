@@ -1,0 +1,134 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xivlegacy.github.io/xivl-captures/schemas/lobby-acknowledgement-structure.schema.json",
+  "title": "Sanitized lobby acknowledgement structure",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["format", "source", "sessions", "record", "crossSession", "redactedClasses"],
+  "properties": {
+    "format": {"const": "xivl-lobby-acknowledgement-structure-v1"},
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "artifact", "sha256", "retainedSessionCount"],
+      "properties": {
+        "id": {"const": "pcap-1.23b"},
+        "artifact": {"const": "login.pcapng"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "retainedSessionCount": {"const": 2}
+      }
+    },
+    "sessions": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {"$ref": "#/$defs/session"}
+    },
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["outerLength", "outerHeader", "subrecord", "encryptedPayload"],
+      "properties": {
+        "outerLength": {"const": 672},
+        "outerHeader": {"$ref": "#/$defs/outerHeader"},
+        "subrecord": {"$ref": "#/$defs/subrecord"},
+        "encryptedPayload": {"$ref": "#/$defs/encryptedPayload"}
+      }
+    },
+    "crossSession": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["byteComparisonSpans", "repeatedAlignedValueGroups"],
+      "properties": {
+        "byteComparisonSpans": {
+          "type": "array",
+          "minItems": 2,
+          "items": {"$ref": "#/$defs/comparisonSpan"}
+        },
+        "repeatedAlignedValueGroups": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/repeatedGroup"}
+        }
+      }
+    },
+    "redactedClasses": {
+      "type": "array",
+      "minItems": 5,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    }
+  },
+  "$defs": {
+    "session": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["streamOffset", "outerLength", "followingStreamOffset"],
+      "properties": {
+        "streamOffset": {"const": 40},
+        "outerLength": {"const": 672},
+        "followingStreamOffset": {"const": 712}
+      }
+    },
+    "outerHeader": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["offset", "length", "markerHex", "sizeFieldOffset", "subrecordCountFieldOffset", "subrecordCount"],
+      "properties": {
+        "offset": {"const": 0},
+        "length": {"const": 16},
+        "markerHex": {"const": "00000000"},
+        "sizeFieldOffset": {"const": 4},
+        "subrecordCountFieldOffset": {"const": 6},
+        "subrecordCount": {"const": 1}
+      }
+    },
+    "subrecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["offset", "length", "headerLength", "typeFieldOffset", "type"],
+      "properties": {
+        "offset": {"const": 16},
+        "length": {"const": 656},
+        "headerLength": {"const": 16},
+        "typeFieldOffset": {"const": 18},
+        "type": {"const": 10}
+      }
+    },
+    "encryptedPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["offset", "length", "blockSize"],
+      "properties": {
+        "offset": {"const": 32},
+        "length": {"const": 640},
+        "blockSize": {"const": 8}
+      }
+    },
+    "comparisonSpan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "offset", "length"],
+      "properties": {
+        "kind": {"enum": ["invariant", "dynamic"]},
+        "offset": {"type": "integer", "minimum": 0, "maximum": 671},
+        "length": {"type": "integer", "minimum": 1, "maximum": 672}
+      }
+    },
+    "repeatedGroup": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["offsets", "unitLength", "valueVariesAcrossSessions"],
+      "properties": {
+        "offsets": {
+          "type": "array",
+          "minItems": 2,
+          "uniqueItems": true,
+          "items": {"type": "integer", "minimum": 32, "maximum": 664, "multipleOf": 8}
+        },
+        "unitLength": {"const": 8},
+        "valueVariesAcrossSessions": {"type": "boolean"}
+      }
+    }
+  }
+}

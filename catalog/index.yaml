@@ -1101,6 +1101,7 @@ studies:
   - server-utc
   - client-number
   - decrypt-recovered
+  - acknowledgement-structure
   search_hints:
   - login.pcapng
   - secure.square-enix.com
@@ -1113,6 +1114,8 @@ studies:
   - studies/lobby-handshake-triage/derived/triage.md
   - studies/lobby-handshake-triage/derived/server-utc.md
   - studies/lobby-handshake-triage/derived/decrypt-recipe.md
+  - studies/lobby-handshake-triage/derived/acknowledgement-structure.md
+  - studies/lobby-handshake-triage/derived/lobby-acknowledgement-structure.json
   source_refs:
   - source: pcap-1.23b
 - id: lodestone-beginners

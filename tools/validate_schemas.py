@@ -54,6 +54,17 @@ def load_evidence_classes() -> set[str]:
     return {c["id"] for c in doc["classes"]}
 
 
+def check_lobby_acknowledgement_fixture(results: list) -> None:
+    path = STUDIES_DIR / "lobby-handshake-triage" / "derived" / "lobby-acknowledgement-structure.json"
+    schema = load_json_schema("lobby-acknowledgement-structure.schema.json")
+    try:
+        document = json.loads(path.read_text(encoding="ascii"))
+    except (OSError, UnicodeError, ValueError) as exc:
+        results.append(("schema: sanitized lobby acknowledgement structure", False, str(exc)))
+        return
+    validate_doc(document, schema, "schema: sanitized lobby acknowledgement structure", results)
+
+
 def check_id_ceiling(value: str, context: str, results: list) -> None:
     ok = isinstance(value, str) and 1 <= len(value) <= ID_CEILING
     results.append((context, ok, "" if ok else f"id {value!r} exceeds the {ID_CEILING}-char ceiling"))
@@ -540,6 +551,7 @@ def main() -> int:
     check_data_sidecar_pairing(results, sidecar_names)
     check_pipelines(results)
     check_studies(results, evidence_classes)
+    check_lobby_acknowledgement_fixture(results)
     check_catalog_generated(results)
     check_path_lengths(results)
 
