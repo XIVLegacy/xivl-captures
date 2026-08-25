@@ -1,0 +1,964 @@
+{
+  "crossSession": {
+    "acknowledgementComparison": {
+      "byteComparisonSpans": [
+        {
+          "kind": "invariant",
+          "length": 32,
+          "offset": 0
+        },
+        {
+          "kind": "dynamic",
+          "length": 2,
+          "offset": 32
+        },
+        {
+          "kind": "invariant",
+          "length": 6,
+          "offset": 34
+        },
+        {
+          "kind": "dynamic",
+          "length": 3,
+          "offset": 40
+        },
+        {
+          "kind": "invariant",
+          "length": 9,
+          "offset": 43
+        },
+        {
+          "kind": "dynamic",
+          "length": 1,
+          "offset": 52
+        },
+        {
+          "kind": "invariant",
+          "length": 2,
+          "offset": 53
+        },
+        {
+          "kind": "dynamic",
+          "length": 1,
+          "offset": 55
+        },
+        {
+          "kind": "invariant",
+          "length": 91,
+          "offset": 56
+        },
+        {
+          "kind": "dynamic",
+          "length": 2,
+          "offset": 147
+        },
+        {
+          "kind": "invariant",
+          "length": 3,
+          "offset": 149
+        },
+        {
+          "kind": "dynamic",
+          "length": 3,
+          "offset": 152
+        },
+        {
+          "kind": "invariant",
+          "length": 5,
+          "offset": 155
+        },
+        {
+          "kind": "dynamic",
+          "length": 3,
+          "offset": 160
+        },
+        {
+          "kind": "invariant",
+          "length": 53,
+          "offset": 163
+        },
+        {
+          "kind": "dynamic",
+          "length": 2,
+          "offset": 216
+        },
+        {
+          "kind": "invariant",
+          "length": 30,
+          "offset": 218
+        },
+        {
+          "kind": "dynamic",
+          "length": 1,
+          "offset": 248
+        },
+        {
+          "kind": "invariant",
+          "length": 59,
+          "offset": 249
+        },
+        {
+          "kind": "dynamic",
+          "length": 2,
+          "offset": 308
+        },
+        {
+          "kind": "invariant",
+          "length": 2,
+          "offset": 310
+        },
+        {
+          "kind": "dynamic",
+          "length": 1,
+          "offset": 312
+        },
+        {
+          "kind": "invariant",
+          "length": 31,
+          "offset": 313
+        },
+        {
+          "kind": "dynamic",
+          "length": 3,
+          "offset": 344
+        },
+        {
+          "kind": "invariant",
+          "length": 9,
+          "offset": 347
+        },
+        {
+          "kind": "dynamic",
+          "length": 1,
+          "offset": 356
+        },
+        {
+          "kind": "invariant",
+          "length": 2,
+          "offset": 357
+        },
+        {
+          "kind": "dynamic",
+          "length": 1,
+          "offset": 359
+        },
+        {
+          "kind": "invariant",
+          "length": 8,
+          "offset": 360
+        },
+        {
+          "kind": "dynamic",
+          "length": 2,
+          "offset": 368
+        },
+        {
+          "kind": "invariant",
+          "length": 6,
+          "offset": 370
+        },
+        {
+          "kind": "dynamic",
+          "length": 3,
+          "offset": 376
+        },
+        {
+          "kind": "invariant",
+          "length": 15,
+          "offset": 379
+        },
+        {
+          "kind": "dynamic",
+          "length": 2,
+          "offset": 394
+        },
+        {
+          "kind": "invariant",
+          "length": 39,
+          "offset": 396
+        },
+        {
+          "kind": "dynamic",
+          "length": 1,
+          "offset": 435
+        },
+        {
+          "kind": "invariant",
+          "length": 60,
+          "offset": 436
+        },
+        {
+          "kind": "dynamic",
+          "length": 3,
+          "offset": 496
+        },
+        {
+          "kind": "invariant",
+          "length": 21,
+          "offset": 499
+        },
+        {
+          "kind": "dynamic",
+          "length": 3,
+          "offset": 520
+        },
+        {
+          "kind": "invariant",
+          "length": 21,
+          "offset": 523
+        },
+        {
+          "kind": "dynamic",
+          "length": 3,
+          "offset": 544
+        },
+        {
+          "kind": "invariant",
+          "length": 33,
+          "offset": 547
+        },
+        {
+          "kind": "dynamic",
+          "length": 2,
+          "offset": 580
+        },
+        {
+          "kind": "invariant",
+          "length": 10,
+          "offset": 582
+        },
+        {
+          "kind": "dynamic",
+          "length": 2,
+          "offset": 592
+        },
+        {
+          "kind": "invariant",
+          "length": 6,
+          "offset": 594
+        },
+        {
+          "kind": "dynamic",
+          "length": 3,
+          "offset": 600
+        },
+        {
+          "kind": "invariant",
+          "length": 21,
+          "offset": 603
+        },
+        {
+          "kind": "dynamic",
+          "length": 2,
+          "offset": 624
+        },
+        {
+          "kind": "invariant",
+          "length": 2,
+          "offset": 626
+        },
+        {
+          "kind": "dynamic",
+          "length": 2,
+          "offset": 628
+        },
+        {
+          "kind": "invariant",
+          "length": 26,
+          "offset": 630
+        },
+        {
+          "kind": "dynamic",
+          "length": 1,
+          "offset": 656
+        },
+        {
+          "kind": "invariant",
+          "length": 3,
+          "offset": 657
+        },
+        {
+          "kind": "dynamic",
+          "length": 2,
+          "offset": 660
+        },
+        {
+          "kind": "invariant",
+          "length": 10,
+          "offset": 662
+        }
+      ],
+      "repeatedAlignedValueGroups": [
+        {
+          "offsets": [
+            32,
+            368
+          ],
+          "unitLength": 8,
+          "valueVariesAcrossSessions": true
+        },
+        {
+          "offsets": [
+            40,
+            344
+          ],
+          "unitLength": 8,
+          "valueVariesAcrossSessions": true
+        },
+        {
+          "offsets": [
+            160,
+            376,
+            496,
+            520,
+            544,
+            600
+          ],
+          "unitLength": 8,
+          "valueVariesAcrossSessions": true
+        },
+        {
+          "offsets": [
+            272,
+            336
+          ],
+          "unitLength": 8,
+          "valueVariesAcrossSessions": false
+        },
+        {
+          "offsets": [
+            296,
+            360
+          ],
+          "unitLength": 8,
+          "valueVariesAcrossSessions": false
+        },
+        {
+          "offsets": [
+            400,
+            480,
+            528
+          ],
+          "unitLength": 8,
+          "valueVariesAcrossSessions": false
+        },
+        {
+          "offsets": [
+            448,
+            464
+          ],
+          "unitLength": 8,
+          "valueVariesAcrossSessions": false
+        },
+        {
+          "offsets": [
+            552,
+            584,
+            632,
+            664
+          ],
+          "unitLength": 8,
+          "valueVariesAcrossSessions": false
+        }
+      ]
+    },
+    "sharedFrameShapes": [
+      {
+        "direction": "c2s",
+        "id": "c2s-0003-0005",
+        "occurrences": [
+          {
+            "frameIndex": 1,
+            "sessionId": "session-1",
+            "streamOffset": 648
+          },
+          {
+            "frameIndex": 2,
+            "sessionId": "session-2",
+            "streamOffset": 688
+          }
+        ],
+        "outerLength": 192,
+        "subrecords": [
+          {
+            "clearType": 3,
+            "declaredLength": 176,
+            "encryptedLength": 160,
+            "innerOpcode": 5
+          }
+        ]
+      },
+      {
+        "direction": "c2s",
+        "id": "c2s-0008",
+        "occurrences": [
+          {
+            "frameIndex": 2,
+            "sessionId": "session-1",
+            "streamOffset": 840
+          },
+          {
+            "frameIndex": 1,
+            "sessionId": "session-2",
+            "streamOffset": 648
+          }
+        ],
+        "outerLength": 40,
+        "subrecords": [
+          {
+            "clearType": 8,
+            "declaredLength": 24,
+            "encryptedLength": 0
+          }
+        ]
+      },
+      {
+        "direction": "c2s",
+        "id": "c2s-0009",
+        "occurrences": [
+          {
+            "frameIndex": 0,
+            "sessionId": "session-1",
+            "streamOffset": 0
+          },
+          {
+            "frameIndex": 0,
+            "sessionId": "session-2",
+            "streamOffset": 0
+          }
+        ],
+        "outerLength": 648,
+        "subrecords": [
+          {
+            "clearType": 9,
+            "declaredLength": 632,
+            "encryptedLength": 0
+          }
+        ]
+      },
+      {
+        "direction": "s2c",
+        "id": "s2c-0003-000c",
+        "occurrences": [
+          {
+            "frameIndex": 2,
+            "sessionId": "session-1",
+            "streamOffset": 712
+          },
+          {
+            "frameIndex": 2,
+            "sessionId": "session-2",
+            "streamOffset": 712
+          }
+        ],
+        "outerLength": 640,
+        "subrecords": [
+          {
+            "clearType": 3,
+            "declaredLength": 624,
+            "encryptedLength": 608,
+            "innerOpcode": 12
+          }
+        ]
+      },
+      {
+        "direction": "s2c",
+        "id": "s2c-0007",
+        "occurrences": [
+          {
+            "frameIndex": 0,
+            "sessionId": "session-1",
+            "streamOffset": 0
+          },
+          {
+            "frameIndex": 0,
+            "sessionId": "session-2",
+            "streamOffset": 0
+          }
+        ],
+        "outerLength": 40,
+        "subrecords": [
+          {
+            "clearType": 7,
+            "declaredLength": 24,
+            "encryptedLength": 0
+          }
+        ]
+      },
+      {
+        "direction": "s2c",
+        "id": "s2c-000a",
+        "occurrences": [
+          {
+            "frameIndex": 1,
+            "sessionId": "session-1",
+            "streamOffset": 40
+          },
+          {
+            "frameIndex": 1,
+            "sessionId": "session-2",
+            "streamOffset": 40
+          }
+        ],
+        "outerLength": 672,
+        "subrecords": [
+          {
+            "clearType": 10,
+            "declaredLength": 656,
+            "encryptedLength": 640
+          }
+        ]
+      }
+    ],
+    "sharedPostAcknowledgementSubrecords": [
+      {
+        "clearType": 3,
+        "direction": "c2s",
+        "innerOpcode": 5
+      },
+      {
+        "clearType": 8,
+        "direction": "c2s"
+      },
+      {
+        "clearType": 3,
+        "direction": "s2c",
+        "innerOpcode": 12
+      }
+    ]
+  },
+  "crypto": {
+    "blockSize": 8,
+    "observedZeroExtentClearTypes": [
+      8
+    ],
+    "preKeyPlaintextClearTypes": [
+      7,
+      9
+    ],
+    "subrecordPayloadOffset": 16,
+    "transformedLengthMask": 65504,
+    "transformedPayloadClearTypes": [
+      3,
+      10
+    ]
+  },
+  "format": "xivl-lobby-record-census-v1",
+  "inventory": {
+    "completeFrameCount": 16,
+    "subrecordCount": 20
+  },
+  "redactedClasses": [
+    "session tokens",
+    "character and session names",
+    "network addresses and ports",
+    "cryptographic keys and key inputs",
+    "opaque payload values and plaintext hashes"
+  ],
+  "sessions": [
+    {
+      "directions": [
+        {
+          "completeFrameLength": 880,
+          "direction": "c2s",
+          "frames": [
+            {
+              "frameIndex": 0,
+              "outerLength": 648,
+              "streamOffset": 0,
+              "subrecordCount": 1,
+              "subrecords": [
+                {
+                  "clearType": 9,
+                  "declaredLength": 632,
+                  "encryptedExtent": {
+                    "length": 0,
+                    "offset": 16
+                  },
+                  "frameOffset": 16,
+                  "streamOffset": 16,
+                  "subrecordIndex": 0
+                }
+              ]
+            },
+            {
+              "frameIndex": 1,
+              "outerLength": 192,
+              "streamOffset": 648,
+              "subrecordCount": 1,
+              "subrecords": [
+                {
+                  "clearType": 3,
+                  "declaredLength": 176,
+                  "encryptedExtent": {
+                    "length": 160,
+                    "offset": 16
+                  },
+                  "frameOffset": 16,
+                  "innerOpcode": 5,
+                  "streamOffset": 664,
+                  "subrecordIndex": 0
+                }
+              ]
+            },
+            {
+              "frameIndex": 2,
+              "outerLength": 40,
+              "streamOffset": 840,
+              "subrecordCount": 1,
+              "subrecords": [
+                {
+                  "clearType": 8,
+                  "declaredLength": 24,
+                  "encryptedExtent": {
+                    "length": 0,
+                    "offset": 16
+                  },
+                  "frameOffset": 16,
+                  "streamOffset": 856,
+                  "subrecordIndex": 0
+                }
+              ]
+            }
+          ],
+          "streamLength": 880
+        },
+        {
+          "completeFrameLength": 1352,
+          "direction": "s2c",
+          "frames": [
+            {
+              "frameIndex": 0,
+              "outerLength": 40,
+              "streamOffset": 0,
+              "subrecordCount": 1,
+              "subrecords": [
+                {
+                  "clearType": 7,
+                  "declaredLength": 24,
+                  "encryptedExtent": {
+                    "length": 0,
+                    "offset": 16
+                  },
+                  "frameOffset": 16,
+                  "streamOffset": 16,
+                  "subrecordIndex": 0
+                }
+              ]
+            },
+            {
+              "frameIndex": 1,
+              "outerLength": 672,
+              "streamOffset": 40,
+              "subrecordCount": 1,
+              "subrecords": [
+                {
+                  "clearType": 10,
+                  "declaredLength": 656,
+                  "encryptedExtent": {
+                    "length": 640,
+                    "offset": 16
+                  },
+                  "frameOffset": 16,
+                  "streamOffset": 56,
+                  "subrecordIndex": 0
+                }
+              ]
+            },
+            {
+              "frameIndex": 2,
+              "outerLength": 640,
+              "streamOffset": 712,
+              "subrecordCount": 1,
+              "subrecords": [
+                {
+                  "clearType": 3,
+                  "declaredLength": 624,
+                  "encryptedExtent": {
+                    "length": 608,
+                    "offset": 16
+                  },
+                  "frameOffset": 16,
+                  "innerOpcode": 12,
+                  "streamOffset": 728,
+                  "subrecordIndex": 0
+                }
+              ]
+            }
+          ],
+          "streamLength": 1352
+        }
+      ],
+      "id": "session-1"
+    },
+    {
+      "directions": [
+        {
+          "completeFrameLength": 1016,
+          "direction": "c2s",
+          "frames": [
+            {
+              "frameIndex": 0,
+              "outerLength": 648,
+              "streamOffset": 0,
+              "subrecordCount": 1,
+              "subrecords": [
+                {
+                  "clearType": 9,
+                  "declaredLength": 632,
+                  "encryptedExtent": {
+                    "length": 0,
+                    "offset": 16
+                  },
+                  "frameOffset": 16,
+                  "streamOffset": 16,
+                  "subrecordIndex": 0
+                }
+              ]
+            },
+            {
+              "frameIndex": 1,
+              "outerLength": 40,
+              "streamOffset": 648,
+              "subrecordCount": 1,
+              "subrecords": [
+                {
+                  "clearType": 8,
+                  "declaredLength": 24,
+                  "encryptedExtent": {
+                    "length": 0,
+                    "offset": 16
+                  },
+                  "frameOffset": 16,
+                  "streamOffset": 664,
+                  "subrecordIndex": 0
+                }
+              ]
+            },
+            {
+              "frameIndex": 2,
+              "outerLength": 192,
+              "streamOffset": 688,
+              "subrecordCount": 1,
+              "subrecords": [
+                {
+                  "clearType": 3,
+                  "declaredLength": 176,
+                  "encryptedExtent": {
+                    "length": 160,
+                    "offset": 16
+                  },
+                  "frameOffset": 16,
+                  "innerOpcode": 5,
+                  "streamOffset": 704,
+                  "subrecordIndex": 0
+                }
+              ]
+            },
+            {
+              "frameIndex": 3,
+              "outerLength": 64,
+              "streamOffset": 880,
+              "subrecordCount": 1,
+              "subrecords": [
+                {
+                  "clearType": 3,
+                  "declaredLength": 48,
+                  "encryptedExtent": {
+                    "length": 32,
+                    "offset": 16
+                  },
+                  "frameOffset": 16,
+                  "innerOpcode": 3,
+                  "streamOffset": 896,
+                  "subrecordIndex": 0
+                }
+              ]
+            },
+            {
+              "frameIndex": 4,
+              "outerLength": 72,
+              "streamOffset": 944,
+              "subrecordCount": 1,
+              "subrecords": [
+                {
+                  "clearType": 3,
+                  "declaredLength": 56,
+                  "encryptedExtent": {
+                    "length": 32,
+                    "offset": 16
+                  },
+                  "frameOffset": 16,
+                  "innerOpcode": 4,
+                  "streamOffset": 960,
+                  "subrecordIndex": 0
+                }
+              ]
+            }
+          ],
+          "streamLength": 1016
+        },
+        {
+          "completeFrameLength": 4624,
+          "direction": "s2c",
+          "frames": [
+            {
+              "frameIndex": 0,
+              "outerLength": 40,
+              "streamOffset": 0,
+              "subrecordCount": 1,
+              "subrecords": [
+                {
+                  "clearType": 7,
+                  "declaredLength": 24,
+                  "encryptedExtent": {
+                    "length": 0,
+                    "offset": 16
+                  },
+                  "frameOffset": 16,
+                  "streamOffset": 16,
+                  "subrecordIndex": 0
+                }
+              ]
+            },
+            {
+              "frameIndex": 1,
+              "outerLength": 672,
+              "streamOffset": 40,
+              "subrecordCount": 1,
+              "subrecords": [
+                {
+                  "clearType": 10,
+                  "declaredLength": 656,
+                  "encryptedExtent": {
+                    "length": 640,
+                    "offset": 16
+                  },
+                  "frameOffset": 16,
+                  "streamOffset": 56,
+                  "subrecordIndex": 0
+                }
+              ]
+            },
+            {
+              "frameIndex": 2,
+              "outerLength": 640,
+              "streamOffset": 712,
+              "subrecordCount": 1,
+              "subrecords": [
+                {
+                  "clearType": 3,
+                  "declaredLength": 624,
+                  "encryptedExtent": {
+                    "length": 608,
+                    "offset": 16
+                  },
+                  "frameOffset": 16,
+                  "innerOpcode": 12,
+                  "streamOffset": 728,
+                  "subrecordIndex": 0
+                }
+              ]
+            },
+            {
+              "frameIndex": 3,
+              "outerLength": 3072,
+              "streamOffset": 1352,
+              "subrecordCount": 5,
+              "subrecords": [
+                {
+                  "clearType": 3,
+                  "declaredLength": 528,
+                  "encryptedExtent": {
+                    "length": 512,
+                    "offset": 16
+                  },
+                  "frameOffset": 16,
+                  "innerOpcode": 21,
+                  "streamOffset": 1368,
+                  "subrecordIndex": 0
+                },
+                {
+                  "clearType": 3,
+                  "declaredLength": 528,
+                  "encryptedExtent": {
+                    "length": 512,
+                    "offset": 16
+                  },
+                  "frameOffset": 544,
+                  "innerOpcode": 21,
+                  "streamOffset": 1896,
+                  "subrecordIndex": 1
+                },
+                {
+                  "clearType": 3,
+                  "declaredLength": 528,
+                  "encryptedExtent": {
+                    "length": 512,
+                    "offset": 16
+                  },
+                  "frameOffset": 1072,
+                  "innerOpcode": 22,
+                  "streamOffset": 2424,
+                  "subrecordIndex": 2
+                },
+                {
+                  "clearType": 3,
+                  "declaredLength": 496,
+                  "encryptedExtent": {
+                    "length": 480,
+                    "offset": 16
+                  },
+                  "frameOffset": 1600,
+                  "innerOpcode": 23,
+                  "streamOffset": 2952,
+                  "subrecordIndex": 3
+                },
+                {
+                  "clearType": 3,
+                  "declaredLength": 976,
+                  "encryptedExtent": {
+                    "length": 960,
+                    "offset": 16
+                  },
+                  "frameOffset": 2096,
+                  "innerOpcode": 13,
+                  "streamOffset": 3448,
+                  "subrecordIndex": 4
+                }
+              ]
+            },
+            {
+              "frameIndex": 4,
+              "outerLength": 200,
+              "streamOffset": 4424,
+              "subrecordCount": 1,
+              "subrecords": [
+                {
+                  "clearType": 3,
+                  "declaredLength": 184,
+                  "encryptedExtent": {
+                    "length": 160,
+                    "offset": 16
+                  },
+                  "frameOffset": 16,
+                  "innerOpcode": 15,
+                  "streamOffset": 4440,
+                  "subrecordIndex": 0
+                }
+              ]
+            }
+          ],
+          "streamLength": 4624
+        }
+      ],
+      "id": "session-2"
+    }
+  ],
+  "source": {
+    "artifact": "login.pcapng",
+    "id": "pcap-1.23b",
+    "retainedSessionCount": 2,
+    "sha256": "28e06b54fe559870031f077f8549b9244caafa7e5177dbca08a7feae6c2b1b62"
+  }
+}

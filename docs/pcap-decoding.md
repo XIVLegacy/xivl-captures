@@ -36,8 +36,9 @@ attribution.
 
 `login.pcapng` contains TLS account-service traffic, raw 54994 lobby traffic,
 and raw 54992 game traffic. The 54992 lanes enter the canonical game decode;
-the 54994 lanes are a different protocol and remain excluded, with their
-recipe recorded in `studies/lobby-handshake-triage/`, while TLS remains out.
+the 54994 lanes are a different protocol and remain excluded from game
+products, with their decrypt recipe and separate structural census recorded in
+`studies/lobby-handshake-triage/`, while TLS remains out.
 
 ### Outer frames
 
@@ -89,5 +90,5 @@ deterministic connection order. It does not recover capture-wide arrival order.
 
 `python tools/validate_framing.py` checks the compression-flag invariant over
 the default priority captures or over explicit capture paths. The repository
-gate checks the committed aggregate products and their provenance. Neither
+validation checks the committed aggregate products and their provenance. Neither
 check proves live client or server behavior beyond the captured inputs.

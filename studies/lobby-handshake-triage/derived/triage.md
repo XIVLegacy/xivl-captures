@@ -9,9 +9,9 @@ are decoded by the confirmed recipe in `derived/decrypt-recipe.md`.
 
 The closed corpus therefore does not impose a TLS-only ceiling on lobby key
 research. `login.pcapng` is the specific non-TLS lobby capture available to a
-decrypt lane. The recipe confirms the key construction and plaintext, while
-the capture remains outside the canonical game decode pending a decoder
-implementation.
+decryption analysis. The recipe confirms the key construction and plaintext. The
+separate lobby census retains numeric 54994 structure, while the canonical
+game decoder continues to admit only clear 54992 game lanes.
 
 ## Decrypt confirmation
 
@@ -57,6 +57,7 @@ The stream/frame offsets above are from `tools/extractors/extract_streams.py` la
 ## Boundary
 
 This record establishes the raw 54994 lobby bodies and points to their
-confirmed decryption recipe. The capture remains outside the canonical game
-decode pending a decoder implementation. The observed raw lane corrected the
-older pure-TLS caveat in `sources/pcap-1.23b/manifest.yaml:204-208`.
+confirmed decryption recipe and separate structural census. The lobby protocol
+remains outside the canonical game decode by design. The observed raw lane
+corrected the older pure-TLS caveat in
+`sources/pcap-1.23b/manifest.yaml:204-208`.

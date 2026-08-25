@@ -10,10 +10,10 @@ This bounded packet-capture study inventories the canonical session and zone-tra
 - `derived/server-utc.md` - client-number wire fields and bounded constant census.
 - `derived/decrypt-recipe.md` - capture-native key inputs, ciphertext locators,
   confirmed recipe, recovered plaintext, and historical failure record.
-- `derived/acknowledgement-structure.md` - sanitized server acknowledgement
-  boundaries, repeated structure, and interpretation limits.
-- `derived/lobby-acknowledgement-structure.json` - schema-validated structural
-  fixture with all payload values redacted.
+- `derived/record-census.md` - complete decrypted frame and subrecord census,
+  cross-session correspondence, supported routes, and consumer boundaries.
+- `derived/lobby-record-census.json` - schema-validated structural fixture with
+  all payload values and plaintext hashes redacted.
 
 ## Source material
 
@@ -28,7 +28,12 @@ This bounded packet-capture study inventories the canonical session and zone-tra
   raw lobby target, so the closed corpus is not limited to TLS lobby traffic.
 - `login.pcapng` is mixed: TLS account traffic is present, and the same capture
   also contains raw 54994 lobby frames and raw 54992 game frames.
-- The 54994 server-to-client frames are decoded by the confirmed 44-byte MD5 and Blowfish ECB recipe recorded in `derived/decrypt-recipe.md`.
+- Every complete port-54994 frame in both directions is reconstructed, and each
+  applicable 32-byte-aligned payload extent is decoded by the confirmed
+  44-byte MD5 and Blowfish ECB recipe recorded in `derived/decrypt-recipe.md`.
+- The retained streams contain 16 complete outer frames and 20 complete
+  subrecords. Type-`0x0003` inner routes directly support session, account,
+  character, world, import, retainer, and select-character dispatch boundaries.
 - Both retained server acknowledgements are 672-byte records with 32 clear
   header bytes and a 640-byte encrypted payload. Their exact comparison spans
   and repeated-value offsets are retained without payload values.
@@ -57,8 +62,9 @@ This bounded packet-capture study inventories the canonical session and zone-tra
   Its raw 54994 lobby lanes remain outside that decoder even though their
   decrypt recipe is confirmed. TLS account traffic also remains outside.
 - Server-side client-number comparison and rejection policy remain unverified.
-- The acknowledgement payload's opaque repeated values have no supported field
-  interpretation beyond their offsets and cross-session variance.
+- Clear types `0x0007` and `0x0008` have no promoted consumer case beyond the
+  envelope parser and dispatcher. The acknowledgement payload's opaque repeated
+  values have no supported interpretation beyond offsets and variance.
 - Packet numbers are 1-based capture positions; stream offsets and frame boundaries come from the repository lane/frame reconstruction.
 
 ## Further research
