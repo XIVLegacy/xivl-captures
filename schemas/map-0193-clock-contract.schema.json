@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xivlegacy.local/xivl-captures/schemas/map-0193-clock-contract.schema.json",
+  "title": "Sanitized Map 0x0193 clock/value accounting",
+  "type": "object",
+  "required": ["study_id", "corpus", "exclusions", "distributions", "clock_correlations", "chronology", "per_capture", "boundaries"],
+  "properties": {
+    "study_id": {"const": "map-0193-clock-contract"},
+    "corpus": {
+      "type": "object",
+      "required": ["captures", "corpus_sha256", "frame_shaped_connections", "admitted_lanes", "admitted_main_lanes", "admitted_chat_lanes", "decoded_target_events", "target_s2c_events", "target_c2s_events", "all_connection_retransmitted_overlap_bytes", "excluded_connection_retransmitted_overlap_bytes", "retransmitted_overlap_bytes", "retransmitted_c2s_overlap_bytes", "retransmitted_s2c_overlap_bytes", "discarded_trailing_stream_bytes", "discarded_c2s_trailing_stream_bytes", "discarded_s2c_trailing_stream_bytes", "admitted_unparsed_frame_body_bytes", "compressed_frame_inflate_failures", "subevent_truncations", "wrapped_short_inner_headers"],
+      "properties": {
+        "captures": {"const": 54},
+        "corpus_sha256": {"const": "1293490808399dd5e1015d921a388f0fe4931dfa3ef678f30d790f5296025e6a"},
+        "frame_shaped_connections": {"const": 88},
+        "admitted_lanes": {"const": 84},
+        "admitted_main_lanes": {"const": 54},
+        "admitted_chat_lanes": {"const": 30},
+        "decoded_target_events": {"const": 9},
+        "target_s2c_events": {"const": 9},
+        "target_c2s_events": {"const": 0},
+        "all_connection_retransmitted_overlap_bytes": {"const": 33424},
+        "excluded_connection_retransmitted_overlap_bytes": {"const": 102},
+        "retransmitted_overlap_bytes": {"const": 33322},
+        "retransmitted_c2s_overlap_bytes": {"const": 288},
+        "retransmitted_s2c_overlap_bytes": {"const": 33034},
+        "discarded_trailing_stream_bytes": {"const": 228},
+        "discarded_c2s_trailing_stream_bytes": {"const": 0},
+        "discarded_s2c_trailing_stream_bytes": {"const": 228},
+        "admitted_unparsed_frame_body_bytes": {"const": 0},
+        "compressed_frame_inflate_failures": {"const": 0},
+        "subevent_truncations": {"const": 0},
+        "wrapped_short_inner_headers": {"const": 0}
+      },
+      "additionalProperties": {"type": "integer", "minimum": 0}
+    },
+    "exclusions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tls_signature_connections", "lobby_54994_connections", "other_non_game_connections", "unexpected_subevent_size", "unexpected_application_shape", "nonzero_packet_header_reserved"],
+      "properties": {
+        "tls_signature_connections": {"const": 2},
+        "lobby_54994_connections": {"const": 2},
+        "other_non_game_connections": {"const": 0},
+        "unexpected_subevent_size": {"const": 0},
+        "unexpected_application_shape": {"const": 0},
+        "nonzero_packet_header_reserved": {"const": 0}
+      }
+    },
+    "distributions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["events_by_capture", "events_by_lane", "events_by_direction", "subopcodes", "application_values", "subopcode_value_pairs", "special_sentinel", "compound_target_frames", "repeated_same_pair_events"],
+      "properties": {
+        "events_by_capture": {"type": "object", "minProperties": 8, "maxProperties": 8, "propertyNames": {"pattern": "^[a-z0-9_]+\\.pcapng$"}, "additionalProperties": {"type": "integer", "minimum": 1}},
+        "events_by_lane": {"const": {"main": 9}},
+        "events_by_direction": {"const": {"s2c": 9}},
+        "subopcodes": {"const": {"0x12": 1, "0x14": 8}},
+        "application_values": {"const": {"2": 6, "15": 2, "900": 1}},
+        "subopcode_value_pairs": {"const": {"0x12/900": 1, "0x14/15": 2, "0x14/2": 6}},
+        "special_sentinel": {"const": {"no": 9}},
+        "compound_target_frames": {"const": 1},
+        "repeated_same_pair_events": {"const": 0}
+      }
+    },
+    "clock_correlations": {
+      "const": {
+        "capture_completion_pairs": 9,
+        "derived_sum_delta_us_max": 900013696,
+        "derived_sum_delta_us_min": 1373132,
+        "header_clock_delta_us_max": 192541,
+        "header_clock_delta_us_max_abs": 626868,
+        "header_clock_delta_us_min": -626868,
+        "header_clock_equals_outer_floor_pairs": 9,
+        "outer_value_scaled_delta_us_max": 219541,
+        "outer_value_scaled_delta_us_min": -31882,
+        "same_capture_lobby_clock_pairs": 0,
+        "same_session_server_utc_pairs": 0,
+        "target_events_in_login_capture": 0
+      }
+    },
+    "chronology": {
+      "const": {
+        "compound_target_frames": 1,
+        "neighborhood_radius": 3,
+        "neighborhood_rows": 54,
+        "repeated_same_pair_events": 0
+      }
+    },
+    "per_capture": {
+      "type": "object",
+      "minProperties": 54,
+      "maxProperties": 54,
+      "propertyNames": {"pattern": "^[a-z0-9_]+\\.pcapng$"},
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["decoded_events", "frame_shaped_connections", "admitted_lanes", "admitted_main_lanes", "admitted_chat_lanes", "target_s2c_events", "target_c2s_events", "retransmitted_overlap_bytes", "discarded_trailing_stream_bytes", "exclusions"],
+        "properties": {
+          "decoded_events": {"type": "integer", "minimum": 0},
+          "frame_shaped_connections": {"type": "integer", "minimum": 1},
+          "admitted_lanes": {"type": "integer", "minimum": 1},
+          "admitted_main_lanes": {"const": 1},
+          "admitted_chat_lanes": {"type": "integer", "minimum": 0, "maximum": 1},
+          "target_s2c_events": {"type": "integer", "minimum": 0, "maximum": 2},
+          "target_c2s_events": {"const": 0},
+          "retransmitted_overlap_bytes": {"type": "integer", "minimum": 0},
+          "discarded_trailing_stream_bytes": {"type": "integer", "minimum": 0},
+          "exclusions": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 1}}
+        }
+      }
+    },
+    "boundaries": {"type": "array", "minItems": 7, "maxItems": 7, "items": {"type": "string"}}
+  },
+  "additionalProperties": false
+}

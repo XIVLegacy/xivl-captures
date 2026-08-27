@@ -1343,6 +1343,25 @@ studies:
   - studies/map-00da-00e1-comparison/derived/accounting.json
   source_refs:
   - source: pcap-1.23b
+- id: map-0193-clock-contract
+  title: Map 0x0193 Clock/Value Contract
+  status: distilled
+  evidence_class: packet-capture
+  tags:
+  - packet-decoding
+  - map-clientbound
+  - clock-correlation
+  search_hints:
+  - '0x0193'
+  - packet header clock
+  - modular endpoint
+  primary_paths:
+  - studies/map-0193-clock-contract/derived/accounting.json
+  - studies/map-0193-clock-contract/derived/occurrences.csv
+  - studies/map-0193-clock-contract/derived/neighborhoods.csv
+  - studies/map-0193-clock-contract/derived/verdicts.md
+  source_refs:
+  - source: pcap-1.23b
 - id: movement-speed-band-observations
   title: Movement Speed Band Observations
   status: distilled

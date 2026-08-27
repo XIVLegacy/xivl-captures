@@ -479,6 +479,16 @@ def check_party_marker_chronology(results: list) -> None:
     validate_doc(json.loads(path.read_text(encoding="ascii")), schema, label, results)
 
 
+def check_map_0193_clock_contract(results: list) -> None:
+    schema = load_json_schema("map-0193-clock-contract.schema.json")
+    path = STUDIES_DIR / "map-0193-clock-contract" / "derived" / "accounting.json"
+    label = "schema: map-0193-clock-contract accounting"
+    if not path.is_file():
+        results.append((label, False, "accounting.json missing"))
+        return
+    validate_doc(json.loads(path.read_text(encoding="ascii")), schema, label, results)
+
+
 def check_catalog_generated(results: list) -> None:
     """Reject catalog files outside the declared generated and authored shape."""
     label = "catalog: only generated/allowed files present"
@@ -562,6 +572,7 @@ def main() -> int:
     check_pipelines(results)
     check_studies(results, evidence_classes)
     check_party_marker_chronology(results)
+    check_map_0193_clock_contract(results)
     check_lobby_record_census(results)
     check_catalog_generated(results)
     check_path_lengths(results)
