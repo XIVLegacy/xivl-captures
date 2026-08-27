@@ -1452,6 +1452,25 @@ studies:
   - studies/property-stream-hash-catalog/derived/property-records.csv
   source_refs:
   - source: pcap-1.23b
+- id: status-wire-projection-census
+  title: Status Wire Projection Census
+  status: distilled
+  evidence_class: packet-capture
+  tags:
+  - packet-decoding
+  - map-clientbound
+  - status-projection
+  search_hints:
+  - '0x0179'
+  - status wire id
+  - status word projection
+  primary_paths:
+  - studies/status-wire-projection-census/derived/accounting.json
+  - studies/status-wire-projection-census/derived/occurrences.csv
+  - studies/status-wire-projection-census/derived/status-projections.csv
+  - studies/status-wire-projection-census/derived/verdicts.md
+  source_refs:
+  - source: pcap-1.23b
 scenarios:
 - id: action-mechanic-combat-and-actions
   title: Combat and Action Bar
