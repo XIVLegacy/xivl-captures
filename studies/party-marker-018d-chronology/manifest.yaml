@@ -1,0 +1,40 @@
+id: party-marker-018d-chronology
+title: Party Marker 0x018D Chronology
+evidence_class: packet-capture
+status: distilled
+tags:
+- packet-decoding
+- packet-order
+- map-clientbound
+- party-marker
+search_hints:
+- "0x018d"
+- party marker chronology
+- repeated marker snapshot
+notes: >-
+  Exhaustive sanitized census and bounded same-lane chronology for every s2c
+  0x018D event in the complete retained corpus. Identifier-shaped values use
+  capture-local pseudonyms and the study assigns no causal or policy meaning.
+source_refs:
+- source: pcap-1.23b
+primary_paths:
+- derived/verdicts.md
+- derived/accounting.json
+- derived/occurrences.csv
+- derived/marker-records.csv
+- derived/neighborhoods.csv
+canonical_evidence:
+- derived/verdicts.md
+- derived/accounting.json
+- derived/occurrences.csv
+- derived/marker-records.csv
+- derived/neighborhoods.csv
+distilled:
+  distilled: true
+  checksum_file: derived/checksums.sha256
+  distilled_artifacts:
+  - derived/verdicts.md
+  - derived/accounting.json
+  - derived/occurrences.csv
+  - derived/marker-records.csv
+  - derived/neighborhoods.csv

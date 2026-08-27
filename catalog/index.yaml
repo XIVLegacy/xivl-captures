@@ -1361,6 +1361,27 @@ studies:
   - studies/movement-speed-band-observations/derived/observed-bands.md
   source_refs:
   - source: pcap-1.23b
+- id: party-marker-018d-chronology
+  title: Party Marker 0x018D Chronology
+  status: distilled
+  evidence_class: packet-capture
+  tags:
+  - packet-decoding
+  - packet-order
+  - map-clientbound
+  - party-marker
+  search_hints:
+  - '0x018d'
+  - party marker chronology
+  - repeated marker snapshot
+  primary_paths:
+  - studies/party-marker-018d-chronology/derived/verdicts.md
+  - studies/party-marker-018d-chronology/derived/accounting.json
+  - studies/party-marker-018d-chronology/derived/occurrences.csv
+  - studies/party-marker-018d-chronology/derived/marker-records.csv
+  - studies/party-marker-018d-chronology/derived/neighborhoods.csv
+  source_refs:
+  - source: pcap-1.23b
 - id: primal-battle-ifrit-bowl-of-embers
   title: The Bowl of Embers (Ifrit) - Video Breakdown
   status: distilled

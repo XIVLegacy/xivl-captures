@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xivlegacy.local/xivl-captures/schemas/party-marker-chronology.schema.json",
+  "title": "Sanitized party-marker chronology accounting",
+  "type": "object",
+  "required": ["study_id", "corpus", "exclusions", "distributions", "correlations", "per_capture", "boundaries"],
+  "properties": {
+    "study_id": {"const": "party-marker-018d-chronology"},
+    "corpus": {
+      "type": "object",
+      "required": ["captures", "corpus_sha256", "frame_shaped_connections", "admitted_lanes", "admitted_main_lanes", "admitted_chat_lanes", "decoded_target_events", "target_s2c_events", "target_c2s_events", "all_connection_retransmitted_overlap_bytes", "excluded_connection_retransmitted_overlap_bytes", "retransmitted_overlap_bytes", "retransmitted_c2s_overlap_bytes", "retransmitted_s2c_overlap_bytes", "discarded_trailing_stream_bytes", "discarded_c2s_trailing_stream_bytes", "discarded_s2c_trailing_stream_bytes"],
+      "properties": {
+        "captures": {"const": 54},
+        "corpus_sha256": {"const": "1293490808399dd5e1015d921a388f0fe4931dfa3ef678f30d790f5296025e6a"},
+        "frame_shaped_connections": {"const": 88},
+        "admitted_lanes": {"const": 84},
+        "admitted_main_lanes": {"const": 54},
+        "admitted_chat_lanes": {"const": 30},
+        "decoded_target_events": {"const": 592},
+        "target_s2c_events": {"const": 592},
+        "target_c2s_events": {"const": 0},
+        "all_connection_retransmitted_overlap_bytes": {"const": 33424},
+        "excluded_connection_retransmitted_overlap_bytes": {"const": 102},
+        "retransmitted_overlap_bytes": {"const": 33322},
+        "retransmitted_c2s_overlap_bytes": {"const": 288},
+        "retransmitted_s2c_overlap_bytes": {"const": 33034},
+        "discarded_trailing_stream_bytes": {"const": 228},
+        "discarded_c2s_trailing_stream_bytes": {"const": 0},
+        "discarded_s2c_trailing_stream_bytes": {"const": 228}
+      },
+      "additionalProperties": {"type": "integer", "minimum": 0}
+    },
+    "exclusions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["count_exceeds_reserved_capacity", "lobby_54994_connections", "nonfinite_record_float", "nonzero_reserved_tail", "other_non_game_connections", "tls_signature_connections", "unexpected_application_shape", "unexpected_subevent_size"],
+      "properties": {
+        "count_exceeds_reserved_capacity": {"const": 0},
+        "lobby_54994_connections": {"const": 2},
+        "nonfinite_record_float": {"const": 0},
+        "nonzero_reserved_tail": {"const": 0},
+        "other_non_game_connections": {"const": 0},
+        "tls_signature_connections": {"const": 2},
+        "unexpected_application_shape": {"const": 0},
+        "unexpected_subevent_size": {"const": 0}
+      }
+    },
+    "distributions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["events_by_capture", "events_by_lane", "marker_counts", "chronology_shapes", "records", "unique_capture_local_snapshots"],
+      "properties": {
+        "events_by_capture": {"type": "object", "minProperties": 38, "maxProperties": 38, "propertyNames": {"pattern": "^[a-z0-9_]+\\.pcapng$"}, "additionalProperties": {"type": "integer", "minimum": 1}},
+        "events_by_lane": {"const": {"main": 592}},
+        "marker_counts": {"const": {"1": 415, "2": 177}},
+        "chronology_shapes": {"const": {"changed-same-count-nonempty": 371, "first-observed-nonempty": 38, "increased-count-nonempty": 1, "repeated-nonempty": 182}},
+        "records": {"const": 769},
+        "unique_capture_local_snapshots": {"const": 410}
+      }
+    },
+    "correlations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["bounded_neighborhood", "first_marker_order", "tested_opcode_sets"],
+      "properties": {
+        "bounded_neighborhood": {
+          "const": {
+            "actor_lifecycle": {"occurrences_immediately_after": 36, "occurrences_immediately_before": 20, "occurrences_within_5_after": 112, "occurrences_within_5_before": 92},
+            "group_layout_018b": {"occurrences_immediately_after": 22, "occurrences_immediately_before": 10, "occurrences_within_5_after": 66, "occurrences_within_5_before": 43},
+            "group_update": {"occurrences_immediately_after": 32, "occurrences_immediately_before": 25, "occurrences_within_5_after": 85, "occurrences_within_5_before": 75},
+            "setup_0193": {"occurrences_immediately_after": 1, "occurrences_immediately_before": 0, "occurrences_within_5_after": 2, "occurrences_within_5_before": 0},
+            "zone_transition": {"occurrences_immediately_after": 0, "occurrences_immediately_before": 0, "occurrences_within_5_after": 0, "occurrences_within_5_before": 0}
+          }
+        },
+        "first_marker_order": {
+          "const": {
+            "actor_lifecycle": {"lanes_with_any_prior": 5, "lanes_with_first_marker": 38, "lanes_with_immediate_prior": 1},
+            "group_layout_018b": {"lanes_with_any_prior": 3, "lanes_with_first_marker": 38, "lanes_with_immediate_prior": 1},
+            "group_update": {"lanes_with_any_prior": 5, "lanes_with_first_marker": 38, "lanes_with_immediate_prior": 2},
+            "setup_0193": {"lanes_with_any_prior": 1, "lanes_with_first_marker": 38, "lanes_with_immediate_prior": 0},
+            "zone_transition": {"lanes_with_any_prior": 1, "lanes_with_first_marker": 38, "lanes_with_immediate_prior": 0}
+          }
+        },
+        "tested_opcode_sets": {
+          "const": {
+            "actor_lifecycle": ["0x0007", "0x00ca", "0x00cb", "0x00cc"],
+            "group_layout_018b": ["0x018b"],
+            "group_update": ["0x0143", "0x017a", "0x017c", "0x017d", "0x017e", "0x017f", "0x0183", "0x0187", "0x018b"],
+            "setup_0193": ["0x0193"],
+            "zone_transition": ["0x0005", "0x0006", "0x0007", "0x0008", "0x000f", "0x0010"]
+          }
+        }
+      }
+    },
+    "per_capture": {
+      "type": "object",
+      "minProperties": 54,
+      "maxProperties": 54,
+      "propertyNames": {"pattern": "^[a-z0-9_]+\\.pcapng$"},
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["frame_shaped_connections", "decoded_events", "admitted_lanes", "admitted_main_lanes", "admitted_chat_lanes", "all_connection_retransmitted_overlap_bytes", "excluded_connection_retransmitted_overlap_bytes", "retransmitted_overlap_bytes", "discarded_trailing_stream_bytes", "target_s2c_events", "target_c2s_events", "exclusions"],
+        "properties": {
+          "frame_shaped_connections": {"type": "integer", "minimum": 1},
+          "decoded_events": {"type": "integer", "minimum": 0},
+          "admitted_lanes": {"type": "integer", "minimum": 1},
+          "admitted_main_lanes": {"type": "integer", "minimum": 1},
+          "admitted_chat_lanes": {"type": "integer", "minimum": 0},
+          "all_connection_retransmitted_overlap_bytes": {"type": "integer", "minimum": 0},
+          "excluded_connection_retransmitted_overlap_bytes": {"type": "integer", "minimum": 0},
+          "retransmitted_overlap_bytes": {"type": "integer", "minimum": 0},
+          "discarded_trailing_stream_bytes": {"type": "integer", "minimum": 0},
+          "target_s2c_events": {"type": "integer", "minimum": 0},
+          "target_c2s_events": {"const": 0},
+          "exclusions": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 1}}
+        }
+      }
+    },
+    "boundaries": {"type": "array", "minItems": 6, "maxItems": 6, "items": {"type": "string"}}
+  },
+  "additionalProperties": false,
+  "$defs": {}
+}

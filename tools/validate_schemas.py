@@ -469,6 +469,16 @@ def check_studies(results: list, evidence_classes: set[str]) -> None:
             check_id_ceiling(doc["id"], f"id ceiling: studies/{study_dir.name} id", results)
 
 
+def check_party_marker_chronology(results: list) -> None:
+    schema = load_json_schema("party-marker-chronology.schema.json")
+    path = STUDIES_DIR / "party-marker-018d-chronology" / "derived" / "accounting.json"
+    label = "schema: party-marker-018d-chronology accounting"
+    if not path.is_file():
+        results.append((label, False, "accounting.json missing"))
+        return
+    validate_doc(json.loads(path.read_text(encoding="ascii")), schema, label, results)
+
+
 def check_catalog_generated(results: list) -> None:
     """Reject catalog files outside the declared generated and authored shape."""
     label = "catalog: only generated/allowed files present"
@@ -551,6 +561,7 @@ def main() -> int:
     check_data_sidecar_pairing(results, sidecar_names)
     check_pipelines(results)
     check_studies(results, evidence_classes)
+    check_party_marker_chronology(results)
     check_lobby_record_census(results)
     check_catalog_generated(results)
     check_path_lengths(results)

@@ -24,7 +24,7 @@
       "properties": {
         "member_count": {"const": 54},
         "uncompressed_size": {"const": 7242352},
-        "product_count": {"const": 40}
+        "product_count": {"const": 45}
       }
     }
   }
