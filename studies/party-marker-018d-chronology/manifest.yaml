@@ -23,12 +23,18 @@ primary_paths:
 - derived/occurrences.csv
 - derived/marker-records.csv
 - derived/neighborhoods.csv
+- derived/field-census.json
+- derived/row-reuse.csv
+- derived/field-verdicts.md
 canonical_evidence:
 - derived/verdicts.md
 - derived/accounting.json
 - derived/occurrences.csv
 - derived/marker-records.csv
 - derived/neighborhoods.csv
+- derived/field-census.json
+- derived/row-reuse.csv
+- derived/field-verdicts.md
 distilled:
   distilled: true
   checksum_file: derived/checksums.sha256
@@ -38,3 +44,6 @@ distilled:
   - derived/occurrences.csv
   - derived/marker-records.csv
   - derived/neighborhoods.csv
+  - derived/field-census.json
+  - derived/row-reuse.csv
+  - derived/field-verdicts.md

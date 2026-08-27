@@ -1399,6 +1399,9 @@ studies:
   - studies/party-marker-018d-chronology/derived/occurrences.csv
   - studies/party-marker-018d-chronology/derived/marker-records.csv
   - studies/party-marker-018d-chronology/derived/neighborhoods.csv
+  - studies/party-marker-018d-chronology/derived/field-census.json
+  - studies/party-marker-018d-chronology/derived/row-reuse.csv
+  - studies/party-marker-018d-chronology/derived/field-verdicts.md
   source_refs:
   - source: pcap-1.23b
 - id: primal-battle-ifrit-bowl-of-embers

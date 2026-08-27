@@ -479,6 +479,16 @@ def check_party_marker_chronology(results: list) -> None:
     validate_doc(json.loads(path.read_text(encoding="ascii")), schema, label, results)
 
 
+def check_party_marker_field_census(results: list) -> None:
+    schema = load_json_schema("party-marker-field-census.schema.json")
+    path = STUDIES_DIR / "party-marker-018d-chronology" / "derived" / "field-census.json"
+    label = "schema: party-marker-018d field census"
+    if not path.is_file():
+        results.append((label, False, "field-census.json missing"))
+        return
+    validate_doc(json.loads(path.read_text(encoding="ascii")), schema, label, results)
+
+
 def check_map_0193_clock_contract(results: list) -> None:
     schema = load_json_schema("map-0193-clock-contract.schema.json")
     path = STUDIES_DIR / "map-0193-clock-contract" / "derived" / "accounting.json"
@@ -572,6 +582,7 @@ def main() -> int:
     check_pipelines(results)
     check_studies(results, evidence_classes)
     check_party_marker_chronology(results)
+    check_party_marker_field_census(results)
     check_map_0193_clock_contract(results)
     check_lobby_record_census(results)
     check_catalog_generated(results)

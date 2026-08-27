@@ -67,7 +67,7 @@ OCCURRENCE_FIELDS = (
 RECORD_FIELDS = (
     "occurrence", "capture", "record_index", "field_u32_00", "field_u32_08",
     "field_u32_0c", "field_f32_14", "field_f32_18", "field_f32_1c",
-    "field_f32_20",
+    "hypothesis_f32_20_unprojected",
 )
 NEIGHBOR_FIELDS = (
     "occurrence", "capture", "lane_index", "lane", "relative_event",
@@ -170,9 +170,13 @@ def decode_application(subevent_size: int, sub_body: bytes) -> tuple[dict | None
     if any(application[COUNT_OFFSET + 1:]):
         return None, "nonzero_reserved_tail"
     records = []
+    physical_rows = tuple(
+        application[RECORD_OFFSET + index * RECORD_SIZE:
+                    RECORD_OFFSET + (index + 1) * RECORD_SIZE]
+        for index in range(RECORD_CAPACITY)
+    )
     for index in range(count):
-        row = application[RECORD_OFFSET + index * RECORD_SIZE:
-                          RECORD_OFFSET + (index + 1) * RECORD_SIZE]
+        row = physical_rows[index]
         fields = (
             struct.unpack_from("<I", row, 0x00)[0],
             struct.unpack_from("<I", row, 0x08)[0],
@@ -182,13 +186,15 @@ def decode_application(subevent_size: int, sub_body: bytes) -> tuple[dict | None
             struct.unpack_from("<f", row, 0x1C)[0],
             struct.unpack_from("<f", row, 0x20)[0],
         )
-        if not all(math.isfinite(value) for value in fields[3:]):
+        if not all(math.isfinite(value) for value in fields[3:6]):
             return None, "nonfinite_record_float"
         records.append(fields)
     return {
         "header": struct.unpack_from("<III", application),
         "count": count,
         "records": tuple(records),
+        "physical_rows": physical_rows,
+        "reserved_tail": application[COUNT_OFFSET + 1:],
         "snapshot_key": hashlib.sha256(application).digest(),
     }, ""
 
@@ -262,6 +268,7 @@ def _decode_capture(path: Path) -> tuple[list[dict], list[dict], Counter, Counte
                         "lane_event_index": lane_event_index,
                         "frame_index": frame_index,
                         "subevent_index": subevent_index,
+                        "outer_value": struct.unpack("<Q", frame["timestamp"])[0],
                         "opcode": opcode,
                     }
                     if direction == "s2c":
@@ -383,7 +390,7 @@ def _build_rows(all_targets: list[dict], all_timeline: list[dict]) -> tuple[list
                     "field_f32_14": format(record[3], ".9g"),
                     "field_f32_18": format(record[4], ".9g"),
                     "field_f32_1c": format(record[5], ".9g"),
-                    "field_f32_20": format(record[6], ".9g"),
+                    "hypothesis_f32_20_unprojected": format(record[6], ".9g"),
                 })
             group = timeline_groups[(capture, event["lane_index"], event["lane"])]
             position = next(
@@ -568,11 +575,11 @@ reconstruction. The count is 1 in {counts.get('1', 0)} events and 2 in
 
 Every admitted event uses the 664-byte application layout: three leading u32
 fields, sixteen reserved 0x28-byte record slots, a u8 count at `+0x290`, and a
-seven-byte reserved tail. The union of evidenced record positions at `+0x00`,
-`+0x08`, `+0x0C`, `+0x14`, `+0x18`, `+0x1C`, and `+0x20` is retained because
-the canonical manifests disagree between `+0x0C` and `+0x20` for the sixth
-client-read position. Identifier-shaped dwords are capture-local pseudonyms;
-the four floating-point projections remain numeric.
+seven-byte reserved tail. The client-read positions are u32 values at `+0x00`,
+`+0x08`, and `+0x0C`, plus f32 values at `+0x14`, `+0x18`, and `+0x1C`.
+Identifier-shaped dwords are capture-local pseudonyms. The f32 view at `+0x20`
+is retained only as a bounded structural hypothesis over the unprojected
+`+0x20..+0x27` span.
 
 All snapshot labels describe only packet chronology. A decreased-count or
 `empty-after-nonempty` row is removal-shaped, but does not prove server intent

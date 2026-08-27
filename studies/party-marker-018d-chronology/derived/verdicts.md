@@ -16,11 +16,11 @@ reconstruction. The count is 1 in 415 events and 2 in
 
 Every admitted event uses the 664-byte application layout: three leading u32
 fields, sixteen reserved 0x28-byte record slots, a u8 count at `+0x290`, and a
-seven-byte reserved tail. The union of evidenced record positions at `+0x00`,
-`+0x08`, `+0x0C`, `+0x14`, `+0x18`, `+0x1C`, and `+0x20` is retained because
-the canonical manifests disagree between `+0x0C` and `+0x20` for the sixth
-client-read position. Identifier-shaped dwords are capture-local pseudonyms;
-the four floating-point projections remain numeric.
+seven-byte reserved tail. The client-read positions are u32 values at `+0x00`,
+`+0x08`, and `+0x0C`, plus f32 values at `+0x14`, `+0x18`, and `+0x1C`.
+Identifier-shaped dwords are capture-local pseudonyms. The f32 view at `+0x20`
+is retained only as a bounded structural hypothesis over the unprojected
+`+0x20..+0x27` span.
 
 All snapshot labels describe only packet chronology. A decreased-count or
 `empty-after-nonempty` row is removal-shaped, but does not prove server intent

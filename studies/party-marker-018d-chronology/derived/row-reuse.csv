@@ -1,0 +1,15 @@
+capture_a,capture_b,shared_distinct_rows
+add_str.pcapng,chat_say.pcapng,1
+add_str.pcapng,chat_shout.pcapng,1
+add_str.pcapng,coerthas_map.pcapng,1
+battle_mode_passive_mode.pcapng,combat_autoattack.pcapng,1
+buy_square_maple_shield.pcapng,moving_around_gridania.pcapng,1
+buy_square_maple_shield.pcapng,sell_item.pcapng,1
+chat_say.pcapng,chat_shout.pcapng,1
+chat_say.pcapng,coerthas_map.pcapng,1
+chat_shout.pcapng,coerthas_map.pcapng,1
+idling.pcapng,teleport_to_camp_nine_ivies.pcapng,1
+invite_join_party.pcapng,war_quest_update2.pcapng,1
+move_around_gridania.pcapng,teleport_to_gridania.pcapng,1
+moving_around_gridania.pcapng,sell_item.pcapng,1
+quest_update.pcapng,small_talk_louisoix.pcapng,1

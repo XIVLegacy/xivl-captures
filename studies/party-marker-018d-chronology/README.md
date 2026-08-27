@@ -15,12 +15,20 @@ and bounded same-lane opcode neighborhoods.
 - `derived/marker-records.csv` - one row per count-admitted marker record.
 - `derived/neighborhoods.csv` - five preceding and following s2c opcode events.
 - `derived/verdicts.md` - promoted chronology conclusions and claim boundary.
+- `derived/field-census.json` - normalized integer, float, tuple, physical-row,
+  ordering, timing, and sanitization statistics.
+- `derived/row-reuse.csv` - public capture pairs that share complete rows,
+  without raw rows or comparison keys.
+- `derived/field-verdicts.md` - field-domain conclusions, rejected nouns, and
+  the remaining semantic discriminator.
 
 Regenerate or verify the products:
 
 ```text
 python tools/extractors/extract_party_marker_chronology.py
 python tools/extractors/extract_party_marker_chronology.py --check
+python tools/analyze_party_marker_fields.py
+python tools/analyze_party_marker_fields.py --check
 ```
 
 ## Source material
@@ -29,29 +37,30 @@ The packet source is `pcap-1.23b`, selected by the canonical sorted corpus
 reducer and admitted by the shared clear TCP 54992 lane filter. TCP sequence
 reconstruction removes retransmitted duplicate bytes before framing.
 
-The client-read packet layout is pinned to `xivl-opcodes` commit
-`fabeab871efd59bdf1098850e5053a8570b3a2ba`,
-`data/client_opcode_semantics.json#s2c-018d`. The pointer lifecycle and handler
-boundary are pinned to `xivl-decomp` commit
-`9af4faf31d4f020ac449f7595cf0b0e0d49a0dbd`,
-`docs/actor/action-queue.md#element-container-0x4d8-pointer-lifecycle`.
-Regeneration is repository-local; neither sibling checkout is a runtime input.
+The client-read packet layout is sourced from
+`xivl-opcodes:data/s2c_018d_wire_layout.json`. The presentation consumer is
+sourced from `xivl-decomp:docs/net/s2c-018d-client-consumer.md`. Regeneration is
+repository-local; neither sibling repository is a runtime input.
 
 The layout contains three leading u32 values, sixteen reserved 0x28-byte
 records, a u8 count at application offset `+0x290`, and a seven-byte reserved
-tail. The canonical manifests agree on the 0x28-byte stride and six-dword
-transposition but conflict between `+0x0C` and `+0x20` for one position. The
-study therefore decodes the evidenced union: u32 positions `+0x00`, `+0x08`,
-and `+0x0C`, plus f32 positions `+0x14`, `+0x18`, `+0x1C`, and `+0x20`. It
-keeps every position neutral because the capture does not establish nouns for
-unknown values or coordinates.
+tail. The client projects u32 positions `+0x00`, `+0x08`, and `+0x0C`, plus f32
+positions `+0x14`, `+0x18`, and `+0x1C`. The field census also tests `+0x20` as
+a bounded f32 hypothesis within the unprojected `+0x20..+0x27` span. It keeps
+every field neutral because no independent public artifact establishes a field
+noun.
 
 ## Promoted conclusions
 
 The promoted conclusions are the exhaustive event and exclusion counts, count
 distribution, sanitized record projection, repeated-snapshot census, bounded
 opcode neighborhoods, and the absence of a consistent tested first-marker
-predecessor. The concise verdict is in `derived/verdicts.md`.
+predecessor. The field census adds every aligned integer view across the 0x28
+row, three client-read float32 views, one explicit hypothesis view, inactive
+physical-row zeroing, tuple and cross-capture reuse, same-frame ordering, and
+bucketed relative timing. The
+concise verdicts are in `derived/verdicts.md` and
+`derived/field-verdicts.md`.
 
 The tested zone-transition set is `0x0005`, `0x0006`, `0x0007`, `0x0008`,
 `0x000F`, and `0x0010`. Actor lifecycle is bounded to `0x0007`, `0x00CA`,
@@ -66,6 +75,8 @@ records these sets so later regeneration cannot silently change the boundary.
 - Sanitized marker-record projection
 - Same-lane bounded packet chronology
 - Repeated packet snapshots
+- Sanitized row-field and physical-slot census
+- Float32 and tuple repetition profiles
 - Zone, group, setup, and actor-lifecycle correlations
 
 ## Evidence gaps

@@ -32,13 +32,16 @@ def sub_body(data):
 
 
 class PartyMarkerChronologyTests(unittest.TestCase):
-    def test_decodes_only_client_read_record_fields(self):
+    def test_decodes_client_reads_and_labeled_hypothesis(self):
         decoded, reason = marker.decode_application(marker.EXPECTED_SUBEVENT_SIZE, sub_body(application()))
         self.assertEqual(reason, "")
         self.assertEqual(decoded["header"], (1, 2, 3))
         self.assertEqual(decoded["count"], 1)
         self.assertEqual(decoded["records"][0][:3], (4, 5, 6))
         self.assertEqual(decoded["records"][0][3:], (1.25, 2.5, -3.75, 4.5))
+        self.assertEqual(len(decoded["physical_rows"]), marker.RECORD_CAPACITY)
+        self.assertFalse(any(decoded["physical_rows"][1]))
+        self.assertEqual(decoded["reserved_tail"], bytes(7))
 
     def test_rejects_mutated_size(self):
         decoded, reason = marker.decode_application(1, sub_body(application()))
@@ -65,6 +68,13 @@ class PartyMarkerChronologyTests(unittest.TestCase):
         decoded, reason = marker.decode_application(marker.EXPECTED_SUBEVENT_SIZE, sub_body(data))
         self.assertIsNone(decoded)
         self.assertEqual(reason, "nonfinite_record_float")
+
+    def test_unprojected_float_hypothesis_does_not_reject_event(self):
+        data = application()
+        struct.pack_into("<f", data, marker.RECORD_OFFSET + 0x20, math.inf)
+        decoded, reason = marker.decode_application(marker.EXPECTED_SUBEVENT_SIZE, sub_body(data))
+        self.assertEqual(reason, "")
+        self.assertTrue(math.isinf(decoded["records"][0][6]))
 
     def test_snapshot_shapes_are_chronology_only(self):
         first = {"lane_index": 0, "lane": "main", "header": (1, 2, 3), "records": ((4, 5, 6, 1.0, 2.0, 3.0, 4.0),), "count": 1, "snapshot_key": b"first"}

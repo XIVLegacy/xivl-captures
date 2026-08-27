@@ -1,4 +1,4 @@
-occurrence,capture,record_index,field_u32_00,field_u32_08,field_u32_0c,field_f32_14,field_f32_18,field_f32_1c,field_f32_20
+occurrence,capture,record_index,field_u32_00,field_u32_08,field_u32_0c,field_f32_14,field_f32_18,field_f32_1c,hypothesis_f32_20_unprojected
 occurrence-001,accept_leve.pcapng,0,value-001,value-005,value-006,59.9616966,4,-1204.78613,-1.27599955
 occurrence-002,accept_leve.pcapng,0,value-001,value-005,value-006,59.9616966,4,-1204.78613,-1.27599955
 occurrence-003,accept_leve.pcapng,0,value-001,value-005,value-006,59.9616966,4,-1204.78613,-1.27599955

@@ -1,0 +1,207 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xivlegacy.local/xivl-captures/schemas/party-marker-field-census.schema.json",
+  "title": "Sanitized party-marker field census",
+  "type": "object",
+  "required": ["study_id", "coverage", "layout", "integer_profiles", "header_dword_profiles", "float_profiles", "position_profiles", "physical_slots", "row_bytes", "tuple_repetition", "row_reuse", "count_and_tail", "same_frame_order", "sanitized_timing", "hypotheses", "boundaries"],
+  "properties": {
+    "study_id": {"const": "party-marker-018d-chronology"},
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["captures", "corpus_sha256", "events", "logical_rows", "count_one_events", "count_two_events", "record_bytes_profiled", "integer_profiles", "float_profiles", "target_s2c_events", "target_c2s_events"],
+      "properties": {
+        "captures": {"const": 54},
+        "corpus_sha256": {"const": "1293490808399dd5e1015d921a388f0fe4931dfa3ef678f30d790f5296025e6a"},
+        "events": {"const": 592},
+        "logical_rows": {"const": 769},
+        "count_one_events": {"const": 415},
+        "count_two_events": {"const": 177},
+        "record_bytes_profiled": {"const": 30760},
+        "integer_profiles": {"const": 70},
+        "float_profiles": {"const": 4},
+        "target_s2c_events": {"const": 592},
+        "target_c2s_events": {"const": 0}
+      }
+    },
+    "layout": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["application_bytes", "leading_header_bytes", "record_offset", "record_stride", "physical_record_capacity", "count_offset", "tail_bytes", "client_read_offsets", "hypothesis_float_offset_in_unprojected_span"],
+      "properties": {
+        "application_bytes": {"const": 664},
+        "leading_header_bytes": {"const": 16},
+        "record_offset": {"const": 16},
+        "record_stride": {"const": 40},
+        "physical_record_capacity": {"const": 16},
+        "count_offset": {"const": 656},
+        "tail_bytes": {"const": 7},
+        "client_read_offsets": {"const": ["+0x00", "+0x08", "+0x0c", "+0x14", "+0x18", "+0x1c"]},
+        "hypothesis_float_offset_in_unprojected_span": {"const": "+0x20"}
+      }
+    },
+    "integer_profiles": {"type": "array", "minItems": 70, "maxItems": 70, "items": {"$ref": "#/$defs/integerProfile"}},
+    "header_dword_profiles": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"$ref": "#/$defs/integerProfile"}},
+    "float_profiles": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"$ref": "#/$defs/floatProfile"}},
+    "position_profiles": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"$ref": "#/$defs/positionProfile"}},
+    "physical_slots": {"type": "array", "minItems": 16, "maxItems": 16, "items": {"$ref": "#/$defs/physicalSlot"}},
+    "row_bytes": {
+      "type": "object", "additionalProperties": false,
+      "required": ["all_zero_offsets", "nonzero_samples_by_offset"],
+      "properties": {
+        "all_zero_offsets": {"const": ["+0x04", "+0x05", "+0x06", "+0x07", "+0x0b", "+0x0c", "+0x0d", "+0x0e", "+0x0f", "+0x24", "+0x25", "+0x26", "+0x27"]},
+        "nonzero_samples_by_offset": {"$ref": "#/$defs/offsetCountMap"}
+      }
+    },
+    "tuple_repetition": {
+      "type": "object", "additionalProperties": false,
+      "required": ["full_wire_row", "client_read_projection", "extended_projection_with_hypothesis_float", "four_float_projection", "events_with_duplicate_active_rows"],
+      "properties": {
+        "full_wire_row": {"$ref": "#/$defs/tupleProfile"},
+        "client_read_projection": {"$ref": "#/$defs/tupleProfile"},
+        "extended_projection_with_hypothesis_float": {"$ref": "#/$defs/tupleProfile"},
+        "four_float_projection": {"$ref": "#/$defs/tupleProfile"},
+        "events_with_duplicate_active_rows": {"const": 0}
+      }
+    },
+    "row_reuse": {
+      "type": "object", "additionalProperties": false,
+      "required": ["distinct_full_wire_rows", "repeated_row_groups", "rows_in_repeated_groups", "cross_capture_row_groups", "rows_in_cross_capture_groups", "capture_pairs_with_shared_rows"],
+      "properties": {
+        "distinct_full_wire_rows": {"const": 480},
+        "repeated_row_groups": {"const": 76},
+        "rows_in_repeated_groups": {"const": 365},
+        "cross_capture_row_groups": {"const": 7},
+        "rows_in_cross_capture_groups": {"const": 48},
+        "capture_pairs_with_shared_rows": {"const": 14}
+      }
+    },
+    "count_and_tail": {
+      "type": "object", "additionalProperties": false,
+      "required": ["count_distribution", "tail_samples", "zero_tail_samples", "nonzero_tail_samples", "inactive_physical_rows", "inactive_zero_rows", "inactive_nonzero_rows"],
+      "properties": {
+        "count_distribution": {"const": {"1": 415, "2": 177}},
+        "tail_samples": {"const": 592},
+        "zero_tail_samples": {"const": 592},
+        "nonzero_tail_samples": {"const": 0},
+        "inactive_physical_rows": {"const": 8703},
+        "inactive_zero_rows": {"const": 8703},
+        "inactive_nonzero_rows": {"const": 0}
+      }
+    },
+    "same_frame_order": {
+      "type": "object", "additionalProperties": false,
+      "required": ["frames_with_target", "targets_per_frame", "target_ordinal_distribution", "intra_frame_subevent_gap_distribution"],
+      "properties": {
+        "frames_with_target": {"const": 592},
+        "targets_per_frame": {"const": {"1": 592}},
+        "target_ordinal_distribution": {"const": {"1": 592}},
+        "intra_frame_subevent_gap_distribution": {"const": {}}
+      }
+    },
+    "sanitized_timing": {
+      "type": "object", "additionalProperties": false,
+      "required": ["consecutive_lane_pairs", "outer_delta_buckets", "frame_delta_distribution", "exact_outer_values_published", "exact_capture_times_published"],
+      "properties": {
+        "consecutive_lane_pairs": {"const": 554},
+        "outer_delta_buckets": {"const": {"1000-4999": 6, "5000-29999": 548}},
+        "frame_delta_distribution": {"type": "object", "propertyNames": {"pattern": "^[0-9]+$"}, "additionalProperties": {"type": "integer", "minimum": 1}},
+        "exact_outer_values_published": {"const": false},
+        "exact_capture_times_published": {"const": false}
+      }
+    },
+    "hypotheses": {
+      "type": "object", "additionalProperties": false,
+      "required": ["key_like_stability", "coordinate_like_ranges", "per_row_identity", "count_slot_behavior", "semantic_nouns"],
+      "properties": {
+        "key_like_stability": {"type": "string"},
+        "coordinate_like_ranges": {"type": "string"},
+        "per_row_identity": {"type": "string"},
+        "count_slot_behavior": {"type": "string"},
+        "semantic_nouns": {"type": "string"}
+      }
+    },
+    "boundaries": {"type": "array", "minItems": 7, "maxItems": 7, "items": {"type": "string"}}
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "countMap": {"type": "object", "propertyNames": {"pattern": "^[a-z0-9-]+$"}, "additionalProperties": {"type": "integer", "minimum": 0}},
+    "offsetCountMap": {"type": "object", "minProperties": 40, "maxProperties": 40, "propertyNames": {"pattern": "^\\+0x[0-9a-f]{2}$"}, "additionalProperties": {"type": "integer", "minimum": 0, "maximum": 769}},
+    "integerProfile": {
+      "type": "object", "additionalProperties": false,
+      "required": ["offset", "width", "samples", "distinct_values", "zero_count", "all_ones_sentinel_count", "unsigned_magnitude_distribution", "signed_sign_distribution", "value_frequency_groups"],
+      "properties": {
+        "offset": {"type": "string", "pattern": "^\\+0x[0-9a-f]{2}$"},
+        "width": {"enum": [1, 2, 4]},
+        "samples": {"enum": [592, 769]},
+        "distinct_values": {"type": "integer", "minimum": 1},
+        "zero_count": {"type": "integer", "minimum": 0},
+        "all_ones_sentinel_count": {"type": "integer", "minimum": 0},
+        "unsigned_magnitude_distribution": {"$ref": "#/$defs/countMap"},
+        "signed_sign_distribution": {"type": "object", "additionalProperties": false, "required": ["negative", "zero", "positive"], "properties": {"negative": {"type": "integer", "minimum": 0}, "zero": {"type": "integer", "minimum": 0}, "positive": {"type": "integer", "minimum": 0}}},
+        "value_frequency_groups": {"type": "object", "propertyNames": {"pattern": "^[0-9]+$"}, "additionalProperties": {"type": "integer", "minimum": 1}},
+        "unsigned_value_distribution": {"type": "object", "propertyNames": {"pattern": "^(?:[0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$"}, "additionalProperties": {"type": "integer", "minimum": 1}}
+      }
+    },
+    "floatProfile": {
+      "type": "object", "additionalProperties": false,
+      "required": ["offset", "samples", "valid_float32_bit_patterns", "finite", "nan", "positive_infinity", "negative_infinity", "negative_finite", "positive_finite", "positive_zero", "negative_zero", "subnormal", "distinct_bit_patterns", "bit_pattern_frequency_groups", "finite_min", "finite_max"],
+      "properties": {
+        "offset": {"enum": ["+0x14", "+0x18", "+0x1c", "+0x20"]},
+        "samples": {"const": 769}, "valid_float32_bit_patterns": {"const": 769}, "finite": {"const": 769},
+        "nan": {"const": 0}, "positive_infinity": {"const": 0}, "negative_infinity": {"const": 0},
+        "negative_finite": {"type": "integer", "minimum": 0}, "positive_finite": {"type": "integer", "minimum": 0},
+        "positive_zero": {"type": "integer", "minimum": 0}, "negative_zero": {"type": "integer", "minimum": 0},
+        "subnormal": {"const": 0}, "distinct_bit_patterns": {"type": "integer", "minimum": 1},
+        "bit_pattern_frequency_groups": {"type": "object", "propertyNames": {"pattern": "^[0-9]+$"}, "additionalProperties": {"type": "integer", "minimum": 1}},
+        "finite_min": {"type": "string"}, "finite_max": {"type": "string"}
+      }
+    },
+    "tupleProfile": {
+      "type": "object", "additionalProperties": false,
+      "required": ["samples", "distinct_tuples", "repeated_tuple_groups", "samples_in_repeated_groups", "maximum_group_size", "frequency_groups"],
+      "properties": {
+        "samples": {"type": "integer", "minimum": 1}, "distinct_tuples": {"type": "integer", "minimum": 1},
+        "repeated_tuple_groups": {"type": "integer", "minimum": 0}, "samples_in_repeated_groups": {"type": "integer", "minimum": 0},
+        "maximum_group_size": {"type": "integer", "minimum": 1},
+        "frequency_groups": {"type": "object", "propertyNames": {"pattern": "^[0-9]+$"}, "additionalProperties": {"type": "integer", "minimum": 1}}
+      }
+    },
+    "positionProfile": {
+      "type": "object", "additionalProperties": false,
+      "required": ["event_count", "record_index", "samples", "zero_rows", "distinct_rows", "client_field_distinct_values", "client_field_zero_counts", "client_integer_signed_sign_distributions", "client_float_sign_distributions", "client_read_tuple", "extended_tuple"],
+      "properties": {
+        "event_count": {"enum": [1, 2]}, "record_index": {"enum": [0, 1]}, "samples": {"type": "integer", "minimum": 1},
+        "zero_rows": {"type": "integer", "minimum": 0}, "distinct_rows": {"type": "integer", "minimum": 1},
+        "client_field_distinct_values": {"$ref": "#/$defs/clientOffsetCountMap"},
+        "client_field_zero_counts": {"$ref": "#/$defs/clientOffsetCountMap"},
+        "client_integer_signed_sign_distributions": {"$ref": "#/$defs/signMap"},
+        "client_float_sign_distributions": {"$ref": "#/$defs/signMap"},
+        "client_read_tuple": {"$ref": "#/$defs/tupleProfile"}, "extended_tuple": {"$ref": "#/$defs/tupleProfile"}
+      }
+    },
+    "physicalSlot": {
+      "type": "object", "additionalProperties": false,
+      "required": ["slot", "active_events", "active_zero_rows", "inactive_events", "inactive_zero_rows", "inactive_nonzero_rows"],
+      "properties": {
+        "slot": {"type": "integer", "minimum": 0, "maximum": 15}, "active_events": {"type": "integer", "minimum": 0},
+        "active_zero_rows": {"type": "integer", "minimum": 0}, "inactive_events": {"type": "integer", "minimum": 0},
+        "inactive_zero_rows": {"type": "integer", "minimum": 0}, "inactive_nonzero_rows": {"const": 0}
+      }
+    },
+    "clientOffsetCountMap": {
+      "type": "object", "minProperties": 6, "maxProperties": 6,
+      "propertyNames": {"enum": ["+0x00", "+0x08", "+0x0c", "+0x14", "+0x18", "+0x1c"]},
+      "additionalProperties": {"type": "integer", "minimum": 0}
+    },
+    "signMap": {
+      "type": "object", "minProperties": 3, "maxProperties": 3,
+      "propertyNames": {"enum": ["+0x00", "+0x08", "+0x0c", "+0x14", "+0x18", "+0x1c"]},
+      "additionalProperties": {
+        "type": "object", "additionalProperties": false,
+        "required": ["negative", "zero", "positive"],
+        "properties": {"negative": {"type": "integer", "minimum": 0}, "zero": {"type": "integer", "minimum": 0}, "positive": {"type": "integer", "minimum": 0}}
+      }
+    }
+  }
+}
