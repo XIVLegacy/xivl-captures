@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Audit study conventions outside the canonical gate.
+"""Audit study conventions that are not covered by the catalog validator.
 
 Checks required README headings, manifest/catalog agreement, declared checksum
-files, and repository-relative paths. This command is advisory and is not part
-of tools/refresh.py.
+entry shape and paths, and repository-relative paths. Exact checksum coverage
+and digests are owned by build_checksums.py.
 
 Usage:
     python tools/audit_study_conventions.py
@@ -12,7 +12,6 @@ Usage:
 from __future__ import annotations
 
 import argparse
-import hashlib
 import sys
 from pathlib import Path
 
@@ -86,14 +85,6 @@ def check_field_agreement(
     return True
 
 
-def sha256_file(path: Path) -> str:
-    digest = hashlib.sha256()
-    with path.open("rb") as handle:
-        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
-            digest.update(chunk)
-    return digest.hexdigest()
-
-
 def check_checksum_file(study_id: str, study_dir: Path, manifest: dict, problems: list[str]) -> None:
     distilled = manifest.get("distilled")
     if not isinstance(distilled, dict):
@@ -115,7 +106,7 @@ def check_checksum_file(study_id: str, study_dir: Path, manifest: dict, problems
                 f"{study_id}: {checksum_file}:{line_no}: malformed line `{line}`"
             )
             continue
-        digest, rel_path = parts
+        _digest, rel_path = parts
         if rel_path.startswith("*"):
             rel_path = rel_path[1:]
         target = study_dir / rel_path
@@ -124,10 +115,6 @@ def check_checksum_file(study_id: str, study_dir: Path, manifest: dict, problems
                 f"{study_id}: {checksum_file}:{line_no}: target `{rel_path}` does not exist"
             )
             continue
-        if sha256_file(target) != digest:
-            problems.append(
-                f"{study_id}: {checksum_file}:{line_no}: checksum mismatch for `{rel_path}`"
-            )
 
 
 def _collect_path_fields(obj: object) -> list[tuple[str, str]]:
@@ -193,7 +180,7 @@ def audit() -> tuple[int, list[str]]:
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Audit study conventions (README shape, manifest/catalog agreement, "
-        "checksums, path hygiene) not covered by validate_capture_repo.py."
+        "checksum entry shape, path hygiene) not covered by validate_capture_repo.py."
     )
     args = parser.parse_args()
 
