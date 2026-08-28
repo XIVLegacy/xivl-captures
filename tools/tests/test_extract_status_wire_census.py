@@ -2,6 +2,8 @@ import sys
 import unittest
 from pathlib import Path
 
+import yaml
+
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "tools" / "extractors"))
 
@@ -77,8 +79,10 @@ class StatusWireCensusTests(unittest.TestCase):
             jsonschema.Draft202012Validator(schema).validate(mutated)
 
     def test_incomplete_corpus_membership_fails_closed(self):
-        paths = census.default_corpus_paths()
+        manifest = yaml.safe_load(census.SOURCE_MANIFEST.read_text(encoding="utf-8"))
+        paths = [Path(member["file"]) for member in manifest["members"]]
         self.assertEqual(len(paths), 54)
+        census.validate_corpus_paths(paths)
         with self.assertRaisesRegex(ValueError, "membership mismatch"):
             census.validate_corpus_paths(paths[:-1])
 
