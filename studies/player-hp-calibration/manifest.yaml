@@ -1,0 +1,35 @@
+id: player-hp-calibration
+title: Player HP Calibration Anchors
+evidence_class: packet-capture
+status: distilled
+content_kind: character-mechanic
+tags:
+- property-stream
+- actor-state
+- hp-calibration
+- same-frame-correlation
+search_hints:
+- "43723073"
+- "0x0137"
+- state_mainSkill
+- state_mainSkillLevel
+- generalParameter
+- hpMax
+notes: >-
+  Twelve complete same-frame self/self header groups reduce to two repeated
+  six-occurrence wire leads. Header equality does not identify the property
+  subject.
+source_refs:
+- source: pcap-1.23b
+primary_paths:
+- derived/evidence-map.md
+- derived/anchors.csv
+canonical_evidence:
+- derived/evidence-map.md
+- derived/anchors.csv
+distilled:
+  distilled: true
+  checksum_file: derived/checksums.sha256
+  distilled_artifacts:
+  - derived/evidence-map.md
+  - derived/anchors.csv

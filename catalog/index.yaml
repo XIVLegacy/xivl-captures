@@ -1404,6 +1404,28 @@ studies:
   - studies/party-marker-018d-chronology/derived/field-verdicts.md
   source_refs:
   - source: pcap-1.23b
+- id: player-hp-calibration
+  title: Player HP Calibration Anchors
+  status: distilled
+  evidence_class: packet-capture
+  content_kind: character-mechanic
+  tags:
+  - property-stream
+  - actor-state
+  - hp-calibration
+  - same-frame-correlation
+  search_hints:
+  - '43723073'
+  - '0x0137'
+  - state_mainSkill
+  - state_mainSkillLevel
+  - generalParameter
+  - hpMax
+  primary_paths:
+  - studies/player-hp-calibration/derived/evidence-map.md
+  - studies/player-hp-calibration/derived/anchors.csv
+  source_refs:
+  - source: pcap-1.23b
 - id: primal-battle-ifrit-bowl-of-embers
   title: The Bowl of Embers (Ifrit) - Video Breakdown
   status: distilled
