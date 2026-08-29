@@ -1369,6 +1369,26 @@ studies:
   - studies/map-00da-00e1-comparison/derived/accounting.json
   source_refs:
   - source: pcap-1.23b
+- id: map-0190-transaction-census
+  title: Map 0x018F/0x0190/0x0191 Transaction Census
+  status: distilled
+  evidence_class: packet-capture
+  tags:
+  - packet-decoding
+  - map-clientbound
+  - transaction-census
+  search_hints:
+  - '0x018F'
+  - '0x0190'
+  - '0x0191'
+  - aggregate record vectors
+  - unread tail
+  primary_paths:
+  - studies/map-0190-transaction-census/derived/accounting.json
+  - studies/map-0190-transaction-census/derived/spans.csv
+  - studies/map-0190-transaction-census/derived/verdicts.md
+  source_refs:
+  - source: pcap-1.23b
 - id: map-0193-clock-contract
   title: Map 0x0193 Clock/Value Contract
   status: distilled

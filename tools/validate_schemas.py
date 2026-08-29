@@ -499,6 +499,16 @@ def check_map_0193_clock_contract(results: list) -> None:
     validate_doc(json.loads(path.read_text(encoding="ascii")), schema, label, results)
 
 
+def check_map_0190_transaction_census(results: list) -> None:
+    schema = load_json_schema("map-0190-transaction-census.schema.json")
+    path = STUDIES_DIR / "map-0190-transaction-census" / "derived" / "accounting.json"
+    label = "schema: map-0190-transaction-census accounting"
+    if not path.is_file():
+        results.append((label, False, "accounting.json missing"))
+        return
+    validate_doc(json.loads(path.read_text(encoding="ascii")), schema, label, results)
+
+
 def check_catalog_generated(results: list) -> None:
     """Reject catalog files outside the declared generated and authored shape."""
     label = "catalog: only generated/allowed files present"
@@ -584,6 +594,7 @@ def main() -> int:
     check_party_marker_chronology(results)
     check_party_marker_field_census(results)
     check_map_0193_clock_contract(results)
+    check_map_0190_transaction_census(results)
     check_lobby_record_census(results)
     check_catalog_generated(results)
     check_path_lengths(results)
