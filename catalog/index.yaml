@@ -807,7 +807,7 @@ studies:
   - source: elemen-site-archive
     citation: full site mirror
 - id: equipment-property-correlation
-  title: Equipment Property Correlation
+  title: Equipment Transition Census
   status: distilled
   evidence_class: packet-capture
   content_kind: inventory-mechanic
@@ -820,11 +820,16 @@ studies:
   - '0x0137'
   - '0x0148'
   - '0x0149'
-  - '0x014D'
+  - 0x014A-0x014C
+  - 0x014D-0x0151
+  - '0x016D'
+  - '0x016E'
   - generalParameter
   primary_paths:
   - studies/equipment-property-correlation/derived/evidence-map.md
+  - studies/equipment-property-correlation/derived/capture-accounting.csv
   - studies/equipment-property-correlation/derived/matrix.csv
+  - studies/equipment-property-correlation/derived/property-joins.csv
   source_refs:
   - source: pcap-1.23b
 - id: gamerescape-tables

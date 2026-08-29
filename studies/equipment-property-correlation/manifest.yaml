@@ -1,5 +1,5 @@
 id: equipment-property-correlation
-title: Equipment Property Correlation
+title: Equipment Transition Census
 evidence_class: packet-capture
 status: distilled
 content_kind: inventory-mechanic
@@ -12,22 +12,32 @@ search_hints:
 - "0x0137"
 - "0x0148"
 - "0x0149"
-- "0x014D"
+- "0x014A-0x014C"
+- "0x014D-0x0151"
+- "0x016D"
+- "0x016E"
 - generalParameter
 notes: >-
-  One exact before/after helm correlation, two after-only projections, and one
-  NO-GO capture. Indexed generalParameter labels carry no inferred semantics.
+  Sanitized full-corpus equipment transition census with exact joins, bounded
+  candidates, aggregate snapshots, missing carriers, and no inferred property
+  semantics.
 source_refs:
 - source: pcap-1.23b
 primary_paths:
 - derived/evidence-map.md
+- derived/capture-accounting.csv
 - derived/matrix.csv
+- derived/property-joins.csv
 canonical_evidence:
 - derived/evidence-map.md
+- derived/capture-accounting.csv
 - derived/matrix.csv
+- derived/property-joins.csv
 distilled:
   distilled: true
   checksum_file: derived/checksums.sha256
   distilled_artifacts:
+  - derived/capture-accounting.csv
   - derived/evidence-map.md
   - derived/matrix.csv
+  - derived/property-joins.csv
