@@ -1,0 +1,33 @@
+id: equipment-property-correlation
+title: Equipment Property Correlation
+evidence_class: packet-capture
+status: distilled
+content_kind: inventory-mechanic
+tags:
+- property-stream
+- equipment
+- inventory
+- same-capture-correlation
+search_hints:
+- "0x0137"
+- "0x0148"
+- "0x0149"
+- "0x014D"
+- generalParameter
+notes: >-
+  One exact before/after helm correlation, two after-only projections, and one
+  NO-GO capture. Indexed generalParameter labels carry no inferred semantics.
+source_refs:
+- source: pcap-1.23b
+primary_paths:
+- derived/evidence-map.md
+- derived/matrix.csv
+canonical_evidence:
+- derived/evidence-map.md
+- derived/matrix.csv
+distilled:
+  distilled: true
+  checksum_file: derived/checksums.sha256
+  distilled_artifacts:
+  - derived/evidence-map.md
+  - derived/matrix.csv

@@ -92,7 +92,11 @@ Generated from `catalog/index.yaml`. Primary axis: `content_kind`.
 
 - `elemen-instanced-content-entry-rules`
 
-## inventory-mechanic (1)
+## inventory-mechanic (2)
+
+### Studies (1)
+
+- `equipment-property-correlation`
 
 ### Scenarios (1)
 

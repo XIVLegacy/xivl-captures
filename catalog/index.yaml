@@ -806,6 +806,27 @@ studies:
   - source: elemen-zone-guide
   - source: elemen-site-archive
     citation: full site mirror
+- id: equipment-property-correlation
+  title: Equipment Property Correlation
+  status: distilled
+  evidence_class: packet-capture
+  content_kind: inventory-mechanic
+  tags:
+  - property-stream
+  - equipment
+  - inventory
+  - same-capture-correlation
+  search_hints:
+  - '0x0137'
+  - '0x0148'
+  - '0x0149'
+  - '0x014D'
+  - generalParameter
+  primary_paths:
+  - studies/equipment-property-correlation/derived/evidence-map.md
+  - studies/equipment-property-correlation/derived/matrix.csv
+  source_refs:
+  - source: pcap-1.23b
 - id: gamerescape-tables
   title: Gamer Escape FFXIV 1.x Item and Mob Tables - Web Tables
   status: distilled
