@@ -1563,6 +1563,33 @@ studies:
   - studies/property-stream-hash-catalog/derived/property-records.csv
   source_refs:
   - source: pcap-1.23b
+- id: regional-guildleve-publisher-contract
+  title: Regional Guildleve Publisher Contract
+  status: distilled
+  evidence_class: packet-capture
+  content_kind: battlecraft-leve
+  tags:
+  - guildleve
+  - regional-leve
+  - publisher
+  - reward
+  - journal
+  - packet-decoding
+  - bounded-absence
+  search_hints:
+  - party_battle_leve
+  - eventGLStart
+  - eventGuildleveReward
+  - eventTalkGuildleveWarp
+  - guildleve 12487
+  - publisher acceptance
+  primary_paths:
+  - studies/regional-guildleve-publisher-contract/derived/verdicts.md
+  - studies/regional-guildleve-publisher-contract/derived/timeline.csv
+  - studies/regional-guildleve-publisher-contract/derived/accounting.json
+  source_refs:
+  - source: pcap-1.23b
+    citation: sources/pcap-1.23b/manifest.yaml
 - id: status-wire-projection-census
   title: Status Wire Projection Census
   status: distilled

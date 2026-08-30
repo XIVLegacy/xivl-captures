@@ -1,0 +1,44 @@
+id: regional-guildleve-publisher-contract
+title: Regional Guildleve Publisher Contract
+evidence_class: packet-capture
+status: distilled
+content_kind: battlecraft-leve
+tags:
+- guildleve
+- regional-leve
+- publisher
+- reward
+- journal
+- packet-decoding
+- bounded-absence
+search_hints:
+- party_battle_leve
+- eventGLStart
+- eventGuildleveReward
+- eventTalkGuildleveWarp
+- guildleve 12487
+- publisher acceptance
+notes: >-
+  Capture-ordered activation, completion, reward-presentation, and retirement
+  timeline for an already-retained regional battlecraft Guildleve. Publisher
+  acceptance, authoritative hand-in, reward grant, and journal mutation remain
+  insufficient.
+source_refs:
+- source: pcap-1.23b
+  citation: sources/pcap-1.23b/manifest.yaml
+primary_paths:
+- derived/verdicts.md
+- derived/timeline.csv
+- derived/accounting.json
+canonical_evidence:
+- derived/verdicts.md
+- derived/timeline.csv
+- derived/accounting.json
+distilled:
+  distilled: true
+  checksum_file: derived/checksums.sha256
+  distilled_artifacts:
+  - derived/verdicts.md
+  - derived/timeline.csv
+  - derived/accounting.json
+  - derived/checksums.sha256

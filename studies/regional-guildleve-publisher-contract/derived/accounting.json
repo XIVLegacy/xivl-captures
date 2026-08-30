@@ -1,0 +1,43 @@
+{
+  "boundaries": [
+    "Capture packet indexes order the earliest packet that completes each reconstructed outer frame; they are capture-arrival witnesses, not server causality.",
+    "The opening event functions are aetheryte activation of an already retained guildleve, not publisher acceptance.",
+    "Reward presentation does not establish reward grant, publisher identity, hand-in authorization, persistence, or journal mutation.",
+    "No packet field in the selected timeline identifies insertion, removal, or retention of journal row 12487."
+  ],
+  "decode": {
+    "c2s_frames": 1827,
+    "c2s_wrapped_subevents": 4282,
+    "lane_counts": {
+      "chat": 1,
+      "main": 1
+    },
+    "s2c_frames": 3516,
+    "s2c_wrapped_subevents": 13400
+  },
+  "identities": {
+    "activation_owner_actor_id": "0x4510000c",
+    "director_actor_id": "0x45100d44",
+    "guildleve_id": 12487,
+    "player_actor_id": "0x029b2941",
+    "reward_owner_actor_id": "0x45100d5b"
+  },
+  "input": {
+    "capture": "party_battle_leve.pcapng",
+    "capture_sha256": "6327e5e1f5cbd51a9baaa9bcbacf53ca51c50a98fe4b66ae3e6bdecd9198089f",
+    "capture_size_bytes": 1429864
+  },
+  "observed_run_event_functions": [
+    "eventAetheryteChildSelect",
+    "eventGLDifficulty",
+    "eventGLSelect",
+    "eventGLSelectDetail",
+    "eventGLStart",
+    "eventGuildleveReward",
+    "eventTalkGuildleveWarp"
+  ],
+  "publisher_acceptance_functions": [],
+  "schema_version": 1,
+  "study": "regional-guildleve-publisher-contract",
+  "timeline_rows": 23
+}
