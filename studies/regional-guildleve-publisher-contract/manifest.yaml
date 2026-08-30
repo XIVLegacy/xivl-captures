@@ -7,22 +7,30 @@ tags:
 - guildleve
 - regional-leve
 - publisher
+- acceptance
 - reward
 - journal
 - packet-decoding
 - bounded-absence
 search_hints:
+- accept_leve
+- accept_local_leve
 - party_battle_leve
+- eventTalkCard
+- eventTalkDetail
 - eventGLStart
 - eventGuildleveReward
 - eventTalkGuildleveWarp
+- guildleve 12482
+- guildleve 12483
 - guildleve 12487
 - publisher acceptance
 notes: >-
-  Capture-ordered activation, completion, reward-presentation, and retirement
-  timeline for an already-retained regional battlecraft Guildleve. Publisher
-  acceptance, authoritative hand-in, reward grant, and journal mutation remain
-  insufficient.
+  Capture-ordered regional publisher offers, client confirmation, and
+  synchronized journal insertion, with an independent local-publisher
+  comparison and retained-row activation/completion boundary. Allowance,
+  durable persistence, publisher mutation, activation linkage, authoritative
+  hand-in, reward grant, and journal removal remain insufficient.
 source_refs:
 - source: pcap-1.23b
   citation: sources/pcap-1.23b/manifest.yaml

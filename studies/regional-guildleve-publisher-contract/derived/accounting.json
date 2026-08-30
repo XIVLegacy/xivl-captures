@@ -1,43 +1,148 @@
 {
-  "boundaries": [
-    "Capture packet indexes order the earliest packet that completes each reconstructed outer frame; they are capture-arrival witnesses, not server causality.",
-    "The opening event functions are aetheryte activation of an already retained guildleve, not publisher acceptance.",
-    "Reward presentation does not establish reward grant, publisher identity, hand-in authorization, persistence, or journal mutation.",
-    "No packet field in the selected timeline identifies insertion, removal, or retention of journal row 12487."
-  ],
-  "decode": {
-    "c2s_frames": 1827,
-    "c2s_wrapped_subevents": 4282,
-    "lane_counts": {
-      "chat": 1,
-      "main": 1
+  "acceptance_captures": [
+    {
+      "capture": "accept_leve.pcapng",
+      "capture_sha256": "42b87e6c095db130def1de5bc382e428b4f4c12c8069c4682d6fa4bc7681967a",
+      "capture_size_bytes": 59576,
+      "decode": {
+        "c2s_admitted_unparsed_stream_bytes": 0,
+        "c2s_frames": 91,
+        "c2s_wrapped_subevents": 233,
+        "lane_counts": {
+          "chat": 1,
+          "main": 1
+        },
+        "s2c_admitted_unparsed_stream_bytes": 0,
+        "s2c_frames": 72,
+        "s2c_wrapped_subevents": 215
+      },
+      "transaction_window": {
+        "first_capture_packet_index": 49,
+        "last_capture_packet_index": 261,
+        "main_lane_subevents": 350,
+        "opcode_counts": {
+          "c2s:0x0001": 24,
+          "c2s:0x00ca": 142,
+          "c2s:0x00cc": 1,
+          "c2s:0x00cd": 1,
+          "c2s:0x012d": 1,
+          "c2s:0x012e": 10,
+          "s2c:0x0001": 24,
+          "s2c:0x00cf": 120,
+          "s2c:0x00d2": 1,
+          "s2c:0x0130": 10,
+          "s2c:0x0131": 1,
+          "s2c:0x0137": 2,
+          "s2c:0x0161": 4,
+          "s2c:0x0167": 4,
+          "s2c:0x018d": 5
+        },
+        "selected_timeline_rows": 24
+      }
     },
-    "s2c_frames": 3516,
-    "s2c_wrapped_subevents": 13400
-  },
-  "identities": {
-    "activation_owner_actor_id": "0x4510000c",
-    "director_actor_id": "0x45100d44",
-    "guildleve_id": 12487,
-    "player_actor_id": "0x029b2941",
-    "reward_owner_actor_id": "0x45100d5b"
-  },
-  "input": {
-    "capture": "party_battle_leve.pcapng",
-    "capture_sha256": "6327e5e1f5cbd51a9baaa9bcbacf53ca51c50a98fe4b66ae3e6bdecd9198089f",
-    "capture_size_bytes": 1429864
-  },
-  "observed_run_event_functions": [
-    "eventAetheryteChildSelect",
-    "eventGLDifficulty",
-    "eventGLSelect",
-    "eventGLSelectDetail",
-    "eventGLStart",
-    "eventGuildleveReward",
-    "eventTalkGuildleveWarp"
+    {
+      "capture": "accept_local_leve.pcapng",
+      "capture_sha256": "3b4b071d88742a5d3c94a1e29ca6a4074cb6b9a9a60207118302fe22f932bd7c",
+      "capture_size_bytes": 50676,
+      "decode": {
+        "c2s_admitted_unparsed_stream_bytes": 0,
+        "c2s_frames": 75,
+        "c2s_wrapped_subevents": 193,
+        "lane_counts": {
+          "main": 1
+        },
+        "s2c_admitted_unparsed_stream_bytes": 0,
+        "s2c_frames": 59,
+        "s2c_wrapped_subevents": 181
+      },
+      "transaction_window": {
+        "first_capture_packet_index": 34,
+        "last_capture_packet_index": 218,
+        "main_lane_subevents": 314,
+        "opcode_counts": {
+          "c2s:0x0001": 22,
+          "c2s:0x00ca": 126,
+          "c2s:0x00cc": 1,
+          "c2s:0x00cd": 1,
+          "c2s:0x012d": 1,
+          "c2s:0x012e": 9,
+          "s2c:0x0001": 22,
+          "s2c:0x00cf": 110,
+          "s2c:0x00d2": 1,
+          "s2c:0x00d9": 3,
+          "s2c:0x0130": 9,
+          "s2c:0x0131": 1,
+          "s2c:0x0137": 1,
+          "s2c:0x0167": 2,
+          "s2c:0x018d": 5
+        },
+        "selected_timeline_rows": 21
+      }
+    }
   ],
-  "publisher_acceptance_functions": [],
-  "schema_version": 1,
-  "study": "regional-guildleve-publisher-contract",
-  "timeline_rows": 23
+  "boundaries": [
+    "Capture packet indexes order frame-completion witnesses and do not independently establish causality.",
+    "The regional detail true results are client confirmation intent; the matching synchronized journal-slot writes are the first server acknowledgement visible in the capture.",
+    "Synchronized journal insertion does not prove durable persistence, allowance consumption, publisher-state mutation, reward policy, or hand-in.",
+    "The local capture shares the event envelope but uses a different function family and journal-slot representation."
+  ],
+  "capture_roles": {
+    "accept_leve.pcapng": "regional publisher acceptance",
+    "accept_local_leve.pcapng": "local publisher acceptance comparison",
+    "party_battle_leve.pcapng": "already-retained regional activation and completion comparison"
+  },
+  "packet_exclusions": {
+    "0x0001": "keepalive",
+    "0x00ca/0x00cf": "movement",
+    "0x00cc/0x00cd": "targeting around interaction start",
+    "0x00d2/0x00d9": "unbound presentation sidecars",
+    "0x0161/0x0167": "opaque adjacent state records with no acceptance field attribution",
+    "0x018d": "map-marker traffic with no acceptance field attribution",
+    "non-main regional lane": "two chat-lane records with no inner game opcode"
+  },
+  "party_activation_comparison": {
+    "boundaries": [
+      "Capture packet indexes order the earliest packet that completes each reconstructed outer frame; they are capture-arrival witnesses, not server causality.",
+      "The opening event functions are aetheryte activation of an already retained guildleve, not publisher acceptance.",
+      "Reward presentation does not establish reward grant, publisher identity, hand-in authorization, persistence, or journal mutation.",
+      "No packet field in the selected timeline identifies insertion, removal, or retention of journal row 12487."
+    ],
+    "decode": {
+      "c2s_frames": 1827,
+      "c2s_wrapped_subevents": 4282,
+      "lane_counts": {
+        "chat": 1,
+        "main": 1
+      },
+      "s2c_frames": 3516,
+      "s2c_wrapped_subevents": 13400
+    },
+    "identities": {
+      "activation_owner_actor_id": "0x4510000c",
+      "director_actor_id": "0x45100d44",
+      "guildleve_id": 12487,
+      "player_actor_id": "0x029b2941",
+      "reward_owner_actor_id": "0x45100d5b"
+    },
+    "input": {
+      "capture": "party_battle_leve.pcapng",
+      "capture_sha256": "6327e5e1f5cbd51a9baaa9bcbacf53ca51c50a98fe4b66ae3e6bdecd9198089f",
+      "capture_size_bytes": 1429864
+    },
+    "observed_run_event_functions": [
+      "eventAetheryteChildSelect",
+      "eventGLDifficulty",
+      "eventGLSelect",
+      "eventGLSelectDetail",
+      "eventGLStart",
+      "eventGuildleveReward",
+      "eventTalkGuildleveWarp"
+    ],
+    "publisher_acceptance_functions": [],
+    "schema_version": 1,
+    "study": "regional-guildleve-publisher-contract",
+    "timeline_rows": 23
+  },
+  "schema_version": 2,
+  "study": "regional-guildleve-publisher-contract"
 }

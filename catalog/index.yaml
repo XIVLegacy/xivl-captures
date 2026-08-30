@@ -1572,15 +1572,22 @@ studies:
   - guildleve
   - regional-leve
   - publisher
+  - acceptance
   - reward
   - journal
   - packet-decoding
   - bounded-absence
   search_hints:
+  - accept_leve
+  - accept_local_leve
   - party_battle_leve
+  - eventTalkCard
+  - eventTalkDetail
   - eventGLStart
   - eventGuildleveReward
   - eventTalkGuildleveWarp
+  - guildleve 12482
+  - guildleve 12483
   - guildleve 12487
   - publisher acceptance
   primary_paths:
