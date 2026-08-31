@@ -163,6 +163,13 @@ sources:
   original_state: in-repo
   storage_id: repo
   member_count: 5
+- id: se-forum-bloodletter-35795
+  title: SE Forum Bloodletter Claims - Web Table
+  evidence_class: web-tables
+  distribution: restricted
+  original_state: in-repo
+  storage_id: repo
+  member_count: 1
 - id: se-forum-paladin-enmity
   title: SE Forum Paladin Enmity Claims - Web Table
   evidence_class: web-tables
@@ -1618,6 +1625,34 @@ studies:
   source_refs:
   - source: pcap-1.23b
     citation: sources/pcap-1.23b/manifest.yaml
+- id: se-forum-bloodletter-35795
+  title: SE forum Bloodletter Claims
+  status: distilled
+  evidence_class: web-tables
+  content_kind: action-mechanic
+  tags:
+  - web-reference
+  - wiki-tier
+  - calibration
+  - official-forum
+  - forum-thread
+  - archer
+  - bloodletter
+  - piety
+  - damage-over-time
+  - landing-chance
+  search_hints:
+  - STR DEX PIE ATK Testing
+  - forum thread 35795
+  - Bloodletter PIE damage over time
+  - Bloodletter landing chance
+  - Bloodletter Gloom Arrow combo
+  - command 27235
+  primary_paths:
+  - studies/se-forum-bloodletter-35795/derived/evidence-map.md
+  - studies/se-forum-bloodletter-35795/derived/bloodletter-claims.csv
+  source_refs:
+  - source: se-forum-bloodletter-35795
 - id: se-forum-paladin-enmity
   title: SE forum Paladin Enmity Claims
   status: distilled

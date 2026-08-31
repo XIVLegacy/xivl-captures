@@ -1,0 +1,23 @@
+id: se-forum-bloodletter-35795
+title: SE Forum Bloodletter Claims - Web Table
+evidence_class: web-tables
+distribution: restricted
+provenance:
+  sources:
+  - key: se-forum-35795
+    title: STR/DEX/PIE/ATK Testing
+    url: https://forum.square-enix.com/ffxiv/threads/35795-STR-DEX-PIE-ATK-Testing
+    site: official FFXIV forum
+    authors: Estellios, Radiator, Coglin, and Mihana
+    post_ids: 524768, 527471, 527478, 533127, and 570492
+    post_date_range: 2012-01-21 through 2012-03-01
+    retrieved_date: 2026-08-31
+    note: 'The source is a player discussion hosted on the official forum. The selected posts have no named patch marker. The selected excerpt retains post metadata and a copyright-bounded question and answer; all other located claims are paraphrased.'
+storage:
+  original_state: in-repo
+  storage_id: repo
+  path: objects/
+members:
+- file: pages/thread-35795-bloodletter-posts.md
+  sha256: fa4a31b78f8ad3ff623fa7c438b6899d8349e9542f6a143ad5d0d732194cc940
+  size_bytes: 1194

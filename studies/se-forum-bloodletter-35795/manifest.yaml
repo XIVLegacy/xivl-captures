@@ -1,0 +1,41 @@
+id: se-forum-bloodletter-35795
+title: SE forum Bloodletter Claims
+evidence_class: web-tables
+status: distilled
+content_kind: action-mechanic
+tags:
+- web-reference
+- wiki-tier
+- calibration
+- official-forum
+- forum-thread
+- archer
+- bloodletter
+- piety
+- damage-over-time
+- landing-chance
+search_hints:
+- STR DEX PIE ATK Testing
+- forum thread 35795
+- Bloodletter PIE damage over time
+- Bloodletter landing chance
+- Bloodletter Gloom Arrow combo
+- command 27235
+notes: 'Narrow transcription of Bloodletter and Piety claims from five posts in the official FFXIV forum thread "STR/DEX/PIE/ATK Testing." Evidence tier: wiki, so every source row remains CALIBRATION grade. The selected posts have no patch marker and provide no controlled trial. Existing retail records own action identity and qualitative behavior but do not confirm the Piety claims or numeric effect policy. Retrieved 2026-08-31.'
+related_implementation_docs: []
+source_refs:
+- source: se-forum-bloodletter-35795
+primary_paths:
+- derived/evidence-map.md
+- derived/bloodletter-claims.csv
+canonical_evidence:
+- derived/evidence-map.md
+- derived/bloodletter-claims.csv
+distilled:
+  distilled: true
+  checksum_file: derived/checksums.sha256
+  distilled_artifacts:
+  - derived/evidence-map.md
+  - derived/bloodletter-claims.csv
+  - derived/file-inventory.csv
+  - derived/checksums.sha256
