@@ -1616,6 +1616,30 @@ studies:
   - studies/status-wire-projection-census/derived/verdicts.md
   source_refs:
   - source: pcap-1.23b
+- id: world-party-chat-00c9-contract
+  title: World Party-Chat 0x00C9 Contract
+  status: distilled
+  evidence_class: packet-capture
+  content_kind: chat-mechanic
+  tags:
+  - chat
+  - party
+  - packet-decoding
+  - world-chat-lane
+  search_hints:
+  - '0x00c9'
+  - World party chat
+  - sender name
+  - chat relay
+  primary_paths:
+  - studies/world-party-chat-00c9-contract/derived/accounting.json
+  - studies/world-party-chat-00c9-contract/derived/occurrences.csv
+  - studies/world-party-chat-00c9-contract/derived/field-matrix.csv
+  - studies/world-party-chat-00c9-contract/derived/normalized-fixtures.json
+  - studies/world-party-chat-00c9-contract/derived/verdicts.md
+  source_refs:
+  - source: pcap-1.23b
+    citation: sources/pcap-1.23b/manifest.yaml
 scenarios:
 - id: action-mechanic-combat-and-actions
   title: Combat and Action Bar

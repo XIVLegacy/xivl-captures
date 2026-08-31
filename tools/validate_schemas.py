@@ -509,6 +509,16 @@ def check_map_0190_transaction_census(results: list) -> None:
     validate_doc(json.loads(path.read_text(encoding="ascii")), schema, label, results)
 
 
+def check_world_party_chat_00c9_contract(results: list) -> None:
+    schema = load_json_schema("world-party-chat-00c9-contract.schema.json")
+    path = STUDIES_DIR / "world-party-chat-00c9-contract" / "derived" / "accounting.json"
+    label = "schema: world-party-chat-00c9-contract accounting"
+    if not path.is_file():
+        results.append((label, False, "accounting.json missing"))
+        return
+    validate_doc(json.loads(path.read_text(encoding="ascii")), schema, label, results)
+
+
 def check_catalog_generated(results: list) -> None:
     """Reject catalog files outside the declared generated and authored shape."""
     label = "catalog: only generated/allowed files present"
@@ -520,7 +530,7 @@ def check_catalog_generated(results: list) -> None:
         "README.md", "index.yaml", "aliases.yaml", "by-content-kind.md",
         "by-zone.md", "by-system.md", "by-progression.md",
         "by-city-state.md", "integrating-new-captures.md",
-        "video-breakdown-handoff.md",
+        "video-breakdown-template.md",
     }
     allowed_scenario_files = {"README.md", "evidence-map.md", "file-inventory.csv"}
 
@@ -595,6 +605,7 @@ def main() -> int:
     check_party_marker_field_census(results)
     check_map_0193_clock_contract(results)
     check_map_0190_transaction_census(results)
+    check_world_party_chat_00c9_contract(results)
     check_lobby_record_census(results)
     check_catalog_generated(results)
     check_path_lengths(results)

@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xivlegacy.local/xivl-captures/schemas/world-party-chat-00c9-contract.schema.json",
+  "title": "Sanitized World party-chat 0x00C9 accounting",
+  "type": "object",
+  "required": ["study_id", "corpus", "directions", "cross_capture_context", "per_capture", "boundaries"],
+  "properties": {
+    "study_id": {"const": "world-party-chat-00c9-contract"},
+    "corpus": {
+      "type": "object",
+      "required": ["captures", "corpus_sha256", "frame_shaped_connections", "admitted_lanes", "admitted_main_lanes", "admitted_chat_lanes", "decoded_target_events", "target_c2s_events", "target_s2c_events"],
+      "properties": {
+        "captures": {"const": 54},
+        "corpus_sha256": {"const": "1293490808399dd5e1015d921a388f0fe4931dfa3ef678f30d790f5296025e6a"},
+        "frame_shaped_connections": {"const": 88},
+        "admitted_lanes": {"const": 84},
+        "admitted_main_lanes": {"const": 54},
+        "admitted_chat_lanes": {"const": 30},
+        "decoded_target_events": {"const": 37},
+        "target_c2s_events": {"const": 11},
+        "target_s2c_events": {"const": 26}
+      },
+      "additionalProperties": {"type": "integer", "minimum": 0}
+    },
+    "directions": {
+      "const": {
+        "c2s": {
+          "captures": {"party_battle_leve.pcapng": 9, "war_quest_update2.pcapng": 2},
+          "context_distinct": 1, "counter_distinct": 1, "destination_actor_distinct": 1,
+          "events": 11, "message_distinct": 11, "message_length_max": 92,
+          "message_length_min": 3, "name_distinct": 0, "outer_sizes": {"568": 11},
+          "single_subevent_frames": 11, "source_actor_distinct": 1,
+          "subevent_sizes": {"552": 11}, "tail_distinct": 2,
+          "zero_counters": 0, "zero_tails": 0
+        },
+        "s2c": {
+          "captures": {"party_battle_leve.pcapng": 25, "war_quest_update2.pcapng": 1},
+          "context_distinct": 2, "counter_distinct": 1, "destination_actor_distinct": 1,
+          "events": 26, "message_distinct": 26, "message_length_max": 115,
+          "message_length_min": 2, "name_distinct": 1, "outer_sizes": {"600": 26},
+          "single_subevent_frames": 26, "source_actor_distinct": 1,
+          "subevent_sizes": {"584": 26}, "tail_distinct": 1,
+          "zero_counters": 26, "zero_tails": 26
+        }
+      }
+    },
+    "cross_capture_context": {
+      "const": {
+        "c2s_s2c_source_actor_values_equal": false,
+        "c2s_source_equals_destination": true,
+        "c2s_source_equals_s2c_destination": true,
+        "message_values_shared_across_directions": 1,
+        "party_capture_context_sets_equal_across_directions": true,
+        "s2c_context_tokens": 2,
+        "s2c_sender_name_tokens": 1,
+        "s2c_source_equals_destination": false,
+        "target_captures": 2,
+        "war_capture_context_sets_equal_across_directions": false
+      }
+    },
+    "per_capture": {
+      "type": "object",
+      "minProperties": 54,
+      "maxProperties": 54,
+      "propertyNames": {"pattern": "^[a-z0-9_]+\\.pcapng$"},
+      "properties": {
+        "party_battle_leve.pcapng": {
+          "type": "object",
+          "properties": {"decoded_target_events": {"const": 34}, "target_c2s_events": {"const": 9}, "target_s2c_events": {"const": 25}},
+          "required": ["decoded_target_events", "target_c2s_events", "target_s2c_events"]
+        },
+        "war_quest_update2.pcapng": {
+          "type": "object",
+          "properties": {"decoded_target_events": {"const": 3}, "target_c2s_events": {"const": 2}, "target_s2c_events": {"const": 1}},
+          "required": ["decoded_target_events", "target_c2s_events", "target_s2c_events"]
+        }
+      },
+      "additionalProperties": {"type": "object"}
+    },
+    "boundaries": {"type": "array", "minItems": 7, "maxItems": 7, "items": {"type": "string"}}
+  },
+  "additionalProperties": false
+}

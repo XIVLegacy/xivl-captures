@@ -1,0 +1,619 @@
+{
+  "boundaries": [
+    "Opaque actor and context values are normalized to equality-preserving tokens and are not published.",
+    "Sender names and message bytes are never published or hashed; only tokens, lengths, termination, padding, and UTF-8 roundtrip status are retained.",
+    "The unnamed c2s tail is nonzero and non-monotonic; no sequence interpretation is supported.",
+    "The wrapper counter is one invariant nonzero token c2s and zero s2c; no sequence behavior is observed.",
+    "The context u32 varies across s2c capture contexts and is not promoted as a stable sender identifier.",
+    "Audience membership, moderation, persistence, delivery policy, and server causality are outside this study.",
+    "Only World chat-lane 0x00C9 framing is established; Map 0x0003 is a separate route."
+  ],
+  "corpus": {
+    "admitted_chat_lanes": 30,
+    "admitted_lanes": 84,
+    "admitted_main_lanes": 54,
+    "c2s_frames": 8970,
+    "c2s_subevents": 21201,
+    "captures": 54,
+    "corpus_sha256": "1293490808399dd5e1015d921a388f0fe4931dfa3ef678f30d790f5296025e6a",
+    "decoded_target_events": 37,
+    "excluded_lobby_connections": 2,
+    "excluded_tls_connections": 2,
+    "frame_shaped_connections": 88,
+    "s2c_frames": 10790,
+    "s2c_subevents": 44663,
+    "target_c2s_events": 11,
+    "target_s2c_events": 26
+  },
+  "cross_capture_context": {
+    "c2s_s2c_source_actor_values_equal": false,
+    "c2s_source_equals_destination": true,
+    "c2s_source_equals_s2c_destination": true,
+    "message_values_shared_across_directions": 1,
+    "party_capture_context_sets_equal_across_directions": true,
+    "s2c_context_tokens": 2,
+    "s2c_sender_name_tokens": 1,
+    "s2c_source_equals_destination": false,
+    "target_captures": 2,
+    "war_capture_context_sets_equal_across_directions": false
+  },
+  "directions": {
+    "c2s": {
+      "captures": {
+        "party_battle_leve.pcapng": 9,
+        "war_quest_update2.pcapng": 2
+      },
+      "context_distinct": 1,
+      "counter_distinct": 1,
+      "destination_actor_distinct": 1,
+      "events": 11,
+      "message_distinct": 11,
+      "message_length_max": 92,
+      "message_length_min": 3,
+      "name_distinct": 0,
+      "outer_sizes": {
+        "568": 11
+      },
+      "single_subevent_frames": 11,
+      "source_actor_distinct": 1,
+      "subevent_sizes": {
+        "552": 11
+      },
+      "tail_distinct": 2,
+      "zero_counters": 0,
+      "zero_tails": 0
+    },
+    "s2c": {
+      "captures": {
+        "party_battle_leve.pcapng": 25,
+        "war_quest_update2.pcapng": 1
+      },
+      "context_distinct": 2,
+      "counter_distinct": 1,
+      "destination_actor_distinct": 1,
+      "events": 26,
+      "message_distinct": 26,
+      "message_length_max": 115,
+      "message_length_min": 2,
+      "name_distinct": 1,
+      "outer_sizes": {
+        "600": 26
+      },
+      "single_subevent_frames": 26,
+      "source_actor_distinct": 1,
+      "subevent_sizes": {
+        "584": 26
+      },
+      "tail_distinct": 1,
+      "zero_counters": 26,
+      "zero_tails": 26
+    }
+  },
+  "per_capture": {
+    "accept_leve.pcapng": {
+      "admitted_chat_lanes": 1,
+      "admitted_lanes": 2,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 91,
+      "c2s_subevents": 234,
+      "frame_shaped_connections": 2,
+      "s2c_frames": 72,
+      "s2c_subevents": 216
+    },
+    "accept_local_leve.pcapng": {
+      "admitted_lanes": 1,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 75,
+      "c2s_subevents": 193,
+      "frame_shaped_connections": 1,
+      "s2c_frames": 59,
+      "s2c_subevents": 181
+    },
+    "accept_quest.pcapng": {
+      "admitted_chat_lanes": 1,
+      "admitted_lanes": 2,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 49,
+      "c2s_subevents": 121,
+      "frame_shaped_connections": 2,
+      "s2c_frames": 35,
+      "s2c_subevents": 112
+    },
+    "action_and_traits.pcapng": {
+      "admitted_lanes": 1,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 63,
+      "c2s_subevents": 157,
+      "frame_shaped_connections": 1,
+      "s2c_frames": 40,
+      "s2c_subevents": 98
+    },
+    "add_str.pcapng": {
+      "admitted_lanes": 1,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 38,
+      "c2s_subevents": 91,
+      "frame_shaped_connections": 1,
+      "s2c_frames": 28,
+      "s2c_subevents": 46
+    },
+    "attributes.pcapng": {
+      "admitted_lanes": 1,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 45,
+      "c2s_subevents": 110,
+      "frame_shaped_connections": 1,
+      "s2c_frames": 29,
+      "s2c_subevents": 64
+    },
+    "battle_mode_passive_mode.pcapng": {
+      "admitted_chat_lanes": 1,
+      "admitted_lanes": 2,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 23,
+      "c2s_subevents": 55,
+      "frame_shaped_connections": 2,
+      "s2c_frames": 19,
+      "s2c_subevents": 59
+    },
+    "buy_square_maple_shield.pcapng": {
+      "admitted_chat_lanes": 1,
+      "admitted_lanes": 2,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 83,
+      "c2s_subevents": 207,
+      "frame_shaped_connections": 2,
+      "s2c_frames": 59,
+      "s2c_subevents": 188
+    },
+    "change_bodyarmor.pcapng": {
+      "admitted_lanes": 1,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 55,
+      "c2s_subevents": 141,
+      "frame_shaped_connections": 1,
+      "s2c_frames": 34,
+      "s2c_subevents": 91
+    },
+    "change_helm.pcapng": {
+      "admitted_lanes": 1,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 66,
+      "c2s_subevents": 173,
+      "frame_shaped_connections": 1,
+      "s2c_frames": 43,
+      "s2c_subevents": 120
+    },
+    "change_to_botanist.pcapng": {
+      "admitted_chat_lanes": 1,
+      "admitted_lanes": 2,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 65,
+      "c2s_subevents": 173,
+      "frame_shaped_connections": 2,
+      "s2c_frames": 49,
+      "s2c_subevents": 182
+    },
+    "chat_say.pcapng": {
+      "admitted_lanes": 1,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 16,
+      "c2s_subevents": 38,
+      "frame_shaped_connections": 1,
+      "s2c_frames": 10,
+      "s2c_subevents": 16
+    },
+    "chat_shout.pcapng": {
+      "admitted_lanes": 1,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 14,
+      "c2s_subevents": 34,
+      "frame_shaped_connections": 1,
+      "s2c_frames": 10,
+      "s2c_subevents": 16
+    },
+    "check_room_map.pcapng": {
+      "admitted_lanes": 1,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 47,
+      "c2s_subevents": 110,
+      "frame_shaped_connections": 1,
+      "s2c_frames": 27,
+      "s2c_subevents": 59
+    },
+    "checkbed.pcapng": {
+      "admitted_lanes": 1,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 24,
+      "c2s_subevents": 64,
+      "frame_shaped_connections": 1,
+      "s2c_frames": 17,
+      "s2c_subevents": 38
+    },
+    "coerthas_map.pcapng": {
+      "admitted_chat_lanes": 1,
+      "admitted_lanes": 2,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 32,
+      "c2s_subevents": 74,
+      "frame_shaped_connections": 2,
+      "s2c_frames": 20,
+      "s2c_subevents": 32
+    },
+    "combat_autoattack.pcapng": {
+      "admitted_chat_lanes": 1,
+      "admitted_lanes": 2,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 118,
+      "c2s_subevents": 286,
+      "frame_shaped_connections": 2,
+      "s2c_frames": 156,
+      "s2c_subevents": 899
+    },
+    "combat_skills.pcapng": {
+      "admitted_lanes": 1,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 80,
+      "c2s_subevents": 181,
+      "frame_shaped_connections": 1,
+      "s2c_frames": 117,
+      "s2c_subevents": 535
+    },
+    "cutscene_book.pcapng": {
+      "admitted_chat_lanes": 1,
+      "admitted_lanes": 2,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 214,
+      "c2s_subevents": 511,
+      "frame_shaped_connections": 2,
+      "s2c_frames": 118,
+      "s2c_subevents": 267
+    },
+    "emote_dance.pcapng": {
+      "admitted_chat_lanes": 1,
+      "admitted_lanes": 2,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 51,
+      "c2s_subevents": 120,
+      "frame_shaped_connections": 2,
+      "s2c_frames": 29,
+      "s2c_subevents": 65
+    },
+    "emote_kneel.pcapng": {
+      "admitted_lanes": 1,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 40,
+      "c2s_subevents": 95,
+      "frame_shaped_connections": 1,
+      "s2c_frames": 22,
+      "s2c_subevents": 50
+    },
+    "friendlist_search.pcapng": {
+      "admitted_chat_lanes": 1,
+      "admitted_lanes": 2,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 61,
+      "c2s_subevents": 148,
+      "frame_shaped_connections": 2,
+      "s2c_frames": 39,
+      "s2c_subevents": 82
+    },
+    "from_gridania_to_blackshroud.pcapng": {
+      "admitted_chat_lanes": 1,
+      "admitted_lanes": 2,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 311,
+      "c2s_subevents": 735,
+      "frame_shaped_connections": 2,
+      "s2c_frames": 288,
+      "s2c_subevents": 930
+    },
+    "gather_wood.pcapng": {
+      "admitted_chat_lanes": 1,
+      "admitted_lanes": 2,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 224,
+      "c2s_subevents": 509,
+      "frame_shaped_connections": 2,
+      "s2c_frames": 241,
+      "s2c_subevents": 901
+    },
+    "gear_changesoul.pcapng": {
+      "admitted_lanes": 1,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 42,
+      "c2s_subevents": 111,
+      "frame_shaped_connections": 1,
+      "s2c_frames": 28,
+      "s2c_subevents": 68
+    },
+    "gear_changeweapon.pcapng": {
+      "admitted_lanes": 1,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 36,
+      "c2s_subevents": 101,
+      "frame_shaped_connections": 1,
+      "s2c_frames": 28,
+      "s2c_subevents": 79
+    },
+    "gridania_map.pcapng": {
+      "admitted_lanes": 1,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 30,
+      "c2s_subevents": 74,
+      "frame_shaped_connections": 1,
+      "s2c_frames": 17,
+      "s2c_subevents": 62
+    },
+    "gridania_to_coerthas.pcapng": {
+      "admitted_chat_lanes": 1,
+      "admitted_lanes": 2,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 1310,
+      "c2s_subevents": 3234,
+      "frame_shaped_connections": 2,
+      "s2c_frames": 1372,
+      "s2c_subevents": 6873
+    },
+    "harvest.pcapng": {
+      "admitted_chat_lanes": 1,
+      "admitted_lanes": 2,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 72,
+      "c2s_subevents": 156,
+      "frame_shaped_connections": 2,
+      "s2c_frames": 90,
+      "s2c_subevents": 677
+    },
+    "idle_in_party.pcapng": {
+      "admitted_lanes": 1,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 29,
+      "c2s_subevents": 68,
+      "frame_shaped_connections": 1,
+      "s2c_frames": 18,
+      "s2c_subevents": 63
+    },
+    "idling.pcapng": {
+      "admitted_chat_lanes": 1,
+      "admitted_lanes": 2,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 78,
+      "c2s_subevents": 183,
+      "frame_shaped_connections": 2,
+      "s2c_frames": 52,
+      "s2c_subevents": 80
+    },
+    "inventory.pcapng": {
+      "admitted_chat_lanes": 1,
+      "admitted_lanes": 2,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 47,
+      "c2s_subevents": 114,
+      "frame_shaped_connections": 2,
+      "s2c_frames": 28,
+      "s2c_subevents": 64
+    },
+    "invite_join_party.pcapng": {
+      "admitted_chat_lanes": 1,
+      "admitted_lanes": 2,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 149,
+      "c2s_subevents": 354,
+      "frame_shaped_connections": 2,
+      "s2c_frames": 102,
+      "s2c_subevents": 347
+    },
+    "local_leve_complete.pcapng": {
+      "admitted_chat_lanes": 1,
+      "admitted_lanes": 2,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 504,
+      "c2s_subevents": 1075,
+      "frame_shaped_connections": 2,
+      "s2c_frames": 525,
+      "s2c_subevents": 2292
+    },
+    "login.pcapng": {
+      "admitted_chat_lanes": 1,
+      "admitted_lanes": 2,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 90,
+      "c2s_subevents": 180,
+      "excluded_lobby_connections": 2,
+      "excluded_tls_connections": 2,
+      "frame_shaped_connections": 6,
+      "s2c_frames": 92,
+      "s2c_subevents": 390
+    },
+    "mount_unmount_chocobo.pcapng": {
+      "admitted_lanes": 1,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 34,
+      "c2s_subevents": 77,
+      "frame_shaped_connections": 1,
+      "s2c_frames": 18,
+      "s2c_subevents": 32
+    },
+    "move_around_gridania.pcapng": {
+      "admitted_chat_lanes": 1,
+      "admitted_lanes": 2,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 303,
+      "c2s_subevents": 710,
+      "frame_shaped_connections": 2,
+      "s2c_frames": 273,
+      "s2c_subevents": 1057
+    },
+    "move_out_of_room.pcapng": {
+      "admitted_lanes": 1,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 81,
+      "c2s_subevents": 167,
+      "frame_shaped_connections": 1,
+      "s2c_frames": 134,
+      "s2c_subevents": 1169
+    },
+    "moving_around_gridania.pcapng": {
+      "admitted_chat_lanes": 1,
+      "admitted_lanes": 2,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 1205,
+      "c2s_subevents": 2845,
+      "frame_shaped_connections": 2,
+      "s2c_frames": 1329,
+      "s2c_subevents": 7233
+    },
+    "open_gear_menu.pcapng": {
+      "admitted_lanes": 1,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 51,
+      "c2s_subevents": 128,
+      "frame_shaped_connections": 1,
+      "s2c_frames": 29,
+      "s2c_subevents": 67
+    },
+    "party_battle_leve.pcapng": {
+      "admitted_chat_lanes": 1,
+      "admitted_lanes": 2,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 1827,
+      "c2s_subevents": 4297,
+      "decoded_target_events": 34,
+      "frame_shaped_connections": 2,
+      "s2c_frames": 3516,
+      "s2c_subevents": 13415,
+      "target_c2s_events": 9,
+      "target_s2c_events": 25
+    },
+    "quest_journal.pcapng": {
+      "admitted_lanes": 1,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 56,
+      "c2s_subevents": 134,
+      "frame_shaped_connections": 1,
+      "s2c_frames": 32,
+      "s2c_subevents": 72
+    },
+    "quest_update.pcapng": {
+      "admitted_chat_lanes": 1,
+      "admitted_lanes": 2,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 112,
+      "c2s_subevents": 273,
+      "frame_shaped_connections": 2,
+      "s2c_frames": 73,
+      "s2c_subevents": 152
+    },
+    "repair_items.pcapng": {
+      "admitted_chat_lanes": 1,
+      "admitted_lanes": 2,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 95,
+      "c2s_subevents": 241,
+      "frame_shaped_connections": 2,
+      "s2c_frames": 88,
+      "s2c_subevents": 440
+    },
+    "return_to_inn.pcapng": {
+      "admitted_lanes": 1,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 50,
+      "c2s_subevents": 107,
+      "frame_shaped_connections": 1,
+      "s2c_frames": 63,
+      "s2c_subevents": 315
+    },
+    "sell_item.pcapng": {
+      "admitted_chat_lanes": 1,
+      "admitted_lanes": 2,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 82,
+      "c2s_subevents": 209,
+      "frame_shaped_connections": 2,
+      "s2c_frames": 68,
+      "s2c_subevents": 212
+    },
+    "small_talk_louisoix.pcapng": {
+      "admitted_lanes": 1,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 35,
+      "c2s_subevents": 90,
+      "frame_shaped_connections": 1,
+      "s2c_frames": 27,
+      "s2c_subevents": 67
+    },
+    "switch_to_weaver.pcapng": {
+      "admitted_lanes": 1,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 48,
+      "c2s_subevents": 125,
+      "frame_shaped_connections": 1,
+      "s2c_frames": 40,
+      "s2c_subevents": 197
+    },
+    "teleport_to_camp_nine_ivies.pcapng": {
+      "admitted_chat_lanes": 1,
+      "admitted_lanes": 2,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 104,
+      "c2s_subevents": 231,
+      "frame_shaped_connections": 2,
+      "s2c_frames": 107,
+      "s2c_subevents": 476
+    },
+    "teleport_to_camp_tranquil.pcapng": {
+      "admitted_chat_lanes": 1,
+      "admitted_lanes": 2,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 86,
+      "c2s_subevents": 190,
+      "frame_shaped_connections": 2,
+      "s2c_frames": 84,
+      "s2c_subevents": 489
+    },
+    "teleport_to_gridania.pcapng": {
+      "admitted_lanes": 1,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 80,
+      "c2s_subevents": 178,
+      "frame_shaped_connections": 1,
+      "s2c_frames": 96,
+      "s2c_subevents": 489
+    },
+    "war_quest_update1.pcapng": {
+      "admitted_chat_lanes": 1,
+      "admitted_lanes": 2,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 70,
+      "c2s_subevents": 170,
+      "frame_shaped_connections": 2,
+      "s2c_frames": 62,
+      "s2c_subevents": 181
+    },
+    "war_quest_update2.pcapng": {
+      "admitted_chat_lanes": 1,
+      "admitted_lanes": 2,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 210,
+      "c2s_subevents": 412,
+      "decoded_target_events": 3,
+      "frame_shaped_connections": 2,
+      "s2c_frames": 671,
+      "s2c_subevents": 1836,
+      "target_c2s_events": 2,
+      "target_s2c_events": 1
+    },
+    "war_quest_update3.pcapng": {
+      "admitted_chat_lanes": 1,
+      "admitted_lanes": 2,
+      "admitted_main_lanes": 1,
+      "c2s_frames": 169,
+      "c2s_subevents": 407,
+      "frame_shaped_connections": 2,
+      "s2c_frames": 167,
+      "s2c_subevents": 522
+    }
+  },
+  "study_id": "world-party-chat-00c9-contract"
+}

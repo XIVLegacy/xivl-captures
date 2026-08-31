@@ -1,0 +1,43 @@
+id: world-party-chat-00c9-contract
+title: World Party-Chat 0x00C9 Contract
+evidence_class: packet-capture
+status: distilled
+content_kind: chat-mechanic
+tags:
+- chat
+- party
+- packet-decoding
+- world-chat-lane
+search_hints:
+- "0x00c9"
+- World party chat
+- sender name
+- chat relay
+notes: >-
+  Exhaustive sanitized direction-specific contract for every retained World
+  chat-lane 0x00C9 event, with normalized fixtures and a Bahamut adoption
+  boundary.
+source_refs:
+- source: pcap-1.23b
+  citation: sources/pcap-1.23b/manifest.yaml
+primary_paths:
+- derived/accounting.json
+- derived/occurrences.csv
+- derived/field-matrix.csv
+- derived/normalized-fixtures.json
+- derived/verdicts.md
+canonical_evidence:
+- derived/accounting.json
+- derived/occurrences.csv
+- derived/field-matrix.csv
+- derived/normalized-fixtures.json
+- derived/verdicts.md
+distilled:
+  distilled: true
+  checksum_file: derived/checksums.sha256
+  distilled_artifacts:
+  - derived/accounting.json
+  - derived/occurrences.csv
+  - derived/field-matrix.csv
+  - derived/normalized-fixtures.json
+  - derived/verdicts.md
