@@ -10,6 +10,10 @@ assert SPEC and SPEC.loader
 SPEC.loader.exec_module(MODULE)
 
 
+@unittest.skipUnless(
+    (ROOT / "sources" / "pcap-1.23b" / "objects").is_dir(),
+    "restricted corpus absent",
+)
 class EquipmentTransitionCensusTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
