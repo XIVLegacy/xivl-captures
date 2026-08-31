@@ -1,0 +1,24 @@
+id: se-forum-paladin-enmity
+title: SE Forum Paladin Enmity Claims - Web Table
+evidence_class: web-tables
+distribution: restricted
+provenance:
+  sources:
+  - key: se-forum-47393
+    title: Tachi's Guide to Paladin (post 1.22b)
+    url: https://forum.square-enix.com/ffxiv/threads/47393-Tachi-s-Guide-to-Paladin-%28post-1.22b%29
+    site: official FFXIV forum
+    author: Tango
+    post_number: 1
+    post_date: 2012-06-09
+    last_edited_date: 2012-06-16
+    retrieved_date: 2026-08-31
+    note: 'The source is a community guide written by a player and hosted on the official forum. The 1.22b scope comes from the thread title only. The selected excerpt retains post metadata and only the Provoke, Rampart, and Sentinel fragments used by the derived ledger.'
+storage:
+  original_state: in-repo
+  storage_id: repo
+  path: objects/
+members:
+- file: pages/thread-47393-post-1.md
+  sha256: c2db7069c022b1bc254b1c4ecfd387aa2b9759d8daebd79a027b80d2d347d8e3
+  size_bytes: 810

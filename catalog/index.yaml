@@ -163,6 +163,13 @@ sources:
   original_state: in-repo
   storage_id: repo
   member_count: 5
+- id: se-forum-paladin-enmity
+  title: SE Forum Paladin Enmity Claims - Web Table
+  evidence_class: web-tables
+  distribution: restricted
+  original_state: in-repo
+  storage_id: repo
+  member_count: 1
 studies:
 - id: battle-result-backfit
   title: Battle Result Packet Backfit
@@ -1597,6 +1604,32 @@ studies:
   source_refs:
   - source: pcap-1.23b
     citation: sources/pcap-1.23b/manifest.yaml
+- id: se-forum-paladin-enmity
+  title: SE forum Paladin Enmity Claims
+  status: distilled
+  evidence_class: web-tables
+  content_kind: action-mechanic
+  tags:
+  - web-reference
+  - wiki-tier
+  - calibration
+  - official-forum
+  - forum-thread
+  - paladin
+  - enmity
+  - patch-1.22b
+  search_hints:
+  - Tachi's Guide to Paladin
+  - forum thread 47393
+  - Provoke 750 enmity
+  - Rampart 180 enmity per member
+  - Sentinel 100 enmity per weaponskill
+  - post 1.22b Paladin enmity cycle
+  primary_paths:
+  - studies/se-forum-paladin-enmity/derived/evidence-map.md
+  - studies/se-forum-paladin-enmity/derived/paladin-enmity.csv
+  source_refs:
+  - source: se-forum-paladin-enmity
 - id: status-wire-projection-census
   title: Status Wire Projection Census
   status: distilled

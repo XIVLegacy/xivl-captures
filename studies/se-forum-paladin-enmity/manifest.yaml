@@ -1,0 +1,39 @@
+id: se-forum-paladin-enmity
+title: SE forum Paladin Enmity Claims
+evidence_class: web-tables
+status: distilled
+content_kind: action-mechanic
+tags:
+- web-reference
+- wiki-tier
+- calibration
+- official-forum
+- forum-thread
+- paladin
+- enmity
+- patch-1.22b
+search_hints:
+- Tachi's Guide to Paladin
+- forum thread 47393
+- Provoke 750 enmity
+- Rampart 180 enmity per member
+- Sentinel 100 enmity per weaponskill
+- post 1.22b Paladin enmity cycle
+notes: 'Narrow transcription of the Provoke, Rampart, and Sentinel enmity claims in post 1 of the official FFXIV forum thread "Tachi''s Guide to Paladin (post 1.22b)." Evidence tier: wiki, so all rows remain CALIBRATION grade. The 1.22b scope comes from the thread title only. Provoke conflicts with the approximate patch 1.21 value in bluegartr-stat-tests. The record preserves the conflict and does not choose or average a value. Retrieved 2026-08-31.'
+related_implementation_docs: []
+source_refs:
+- source: se-forum-paladin-enmity
+primary_paths:
+- derived/evidence-map.md
+- derived/paladin-enmity.csv
+canonical_evidence:
+- derived/evidence-map.md
+- derived/paladin-enmity.csv
+distilled:
+  distilled: true
+  checksum_file: derived/checksums.sha256
+  distilled_artifacts:
+  - derived/evidence-map.md
+  - derived/paladin-enmity.csv
+  - derived/file-inventory.csv
+  - derived/checksums.sha256
