@@ -2,7 +2,7 @@
 
 Filter this before using the CSVs. This set distills two bluegartr threads -
 "Stats and how they work." (604 posts, 2011-10-11 to 2013-06-10) and "Trait point
-cap?" (8 posts, 2011-09-02/03) - into seven topic tables. Everything here is
+cap?" (8 posts, 2011-09-02/03) - into eight topic tables. Everything here is
 **CALIBRATION** grade.
 
 ## Evidence tier and version - read first
@@ -47,7 +47,7 @@ cap?" (8 posts, 2011-09-02/03) - into seven topic tables. Everything here is
 - `cure-potency.csv` - 22 rows. Kaeko's three-build Cure III dataset (n=608,
   post 39) is fully transcribed including criticals.
 - `magic-evasion.csv`, `critical-damage-bonus.csv`, `trait-point-cap.csv`,
-  `patch-dating.csv`.
+  `power-surge.csv`, `patch-dating.csv`.
 
 ## Unique value
 
@@ -60,6 +60,42 @@ cap?" (8 posts, 2011-09-02/03) - into seven topic tables. Everything here is
 - Patch-by-patch **drift**: the same mechanic measured before and after 1.20,
   1.21, 1.22 and the 1.22a crit hotfix. This is the set's real contribution -
   it shows which 1.x numbers are safe to carry to 1.23b and which are not.
+- A bounded **Power Surge displayed-stat ladder** under patch 1.22a. It is a
+  calibration observation, not a formula or target-version value.
+
+## Power Surge claims and limits
+
+Post 429 labels its test as patch 1.22a. One character using mostly artifact
+armor and a Mogfork displayed 574 attack before Power Surge, then 689, 805, and
+920 at tiers one through three. The observed deltas were 115, 116, and 115. The
+author described the increase as roughly 115 per tier and reported an
+approximate 158 defense loss at tier one. Defense then remained at 386 in the
+listed setup. Two tested base attack values led the author to reject simple
+percentage scaling.
+
+The same post estimates roughly five minutes to reach tier three while stating
+that the tier-two to tier-three transition was not watched. Adjacent post 431
+mentions trying Jump and weapon skills and says more than three weapon skills
+were needed. Neither post supplies the exact qualifying-action count, timestamps,
+raw log, hidden precision, rounding rule, or controlled equipment comparison.
+
+Related records own only separate parts of the action contract:
+
+- `elemen-battle-actions:derived/battle-actions.csv` identifies Power Surge as
+  command 27261, records three stages, names weapon skills or Jump as the
+  extension trigger, says reuse ends the effect, and makes Life Surge mutually
+  exclusive. These are web-table CALIBRATION claims, not packet observations.
+- The same Elemen table says Enhanced Power Surge, trait 27281, increases the
+  effect by 1.5 times. This remains a web-table CALIBRATION claim. No retained
+  packet or video observation confirms the multiplier.
+- `status-wire-projection-census:derived/status-projections.csv` contains no
+  Power Surge status observation. Existing packet products therefore do not
+  establish the status sequence, exact magnitudes, tier thresholds, refresh,
+  reuse termination, or mutual-exclusion behavior.
+
+The Power Surge ledger preserves the forum claims at their source tier. It does
+not authorize attack values for 1.23b, a multiplier, a duration, a tier counter,
+or server policy.
 
 ## Contradictions - recorded, not resolved
 

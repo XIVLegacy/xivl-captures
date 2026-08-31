@@ -2,15 +2,17 @@
 
 ## Study contents
 
-Seven topic tables distilled from two bluegartr forum threads: **"Stats and how
+Eight topic tables distilled from two bluegartr forum threads: **"Stats and how
 they work."** (604 posts, 2011-10-11 to 2013-06-10) and **"Trait point cap?"**
 (8 posts, 2011-09-02/03). Critical hit rate, critical damage bonus, enmity,
 physical damage taken vs DEF/VIT and block, magic evasion, cure potency, and the
-trait point cap ladder.
+trait point cap ladder, plus a bounded Power Surge stat observation.
 
 Web-source evidence, **wiki tier** (packet captures > video breakdown > wiki).
-Everything here is **CALIBRATION** grade: players parsing their own combat log,
-no source access, samples of a few hundred to a few thousand swings.
+Everything here is **CALIBRATION** grade. Most tables come from players parsing
+their own combat logs in samples of a few hundred to a few thousand swings.
+The Power Surge rows instead preserve one displayed-stat observation and one
+uncontrolled progression report. None has source access or methodology review.
 
 **Every row carries the patch it was tested under.** The threads span 1.18b to
 1.23b and the mechanics moved underneath them - 1.20 reworked essentially every
@@ -39,6 +41,9 @@ numbers, and here for patch attribution, the discussion around them, and the
   of the 25 data-bearing posts, tables and minimal caveats only. The rest of the
   604-post thread stays at the source.
 - `sources/bluegartr-stat-tests/objects/pages/bg-106754-trait-point-cap.md` - the whole 8-post thread.
+- `sources/bluegartr-stat-tests/objects/pages/bg-107403-power-surge-posts.md` -
+  post metadata, one short source fragment, and non-verbatim locators for the
+  Power Surge observations.
 
 **Every numeric image in both threads is dead.** No graph, chart, table
 screenshot or parser output survived on imageshack, imgbox, abload or
@@ -68,11 +73,17 @@ tables remain CALIBRATION inputs. No individual formula is retail-confirmed.
 - cure potency: Cure III scaling, healing magic potency vs MND, CNJ-only MND,
   crit cure bonus, the Healer's Robe AF enhancement
 - trait point cap: trait points by rank, 1 through 50
+- Power Surge: displayed attack progression, the tier-one defense penalty, and
+  the limits of the observed progression timing
 
 ## Evidence gaps
 
 - No test in either thread ran on a 1.23b client. The closest anchors are the
   1.23a crit-rate parses.
+- The Power Surge observations are patch 1.22a. The displayed-stat observation
+  uses one uncontrolled character setup, while the progression report provides
+  no setup details. Neither establishes exact tier thresholds or an
+  enhanced-trait multiplier.
 - Critical damage bonus was never re-measured after the 2012-05-23 hotfix, so
   the 175% / 115% cap and floor are unverified for 1.22a onward.
 - Ten contradictions are recorded and left unresolved, including a self-

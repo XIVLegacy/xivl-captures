@@ -16,6 +16,9 @@ tags:
 - magic-evasion
 - cure-potency
 - trait-point-cap
+- power-surge
+- lancer
+- attack-defense-tradeoff
 - patch-attribution
 - kanican
 - patch-1.19
@@ -49,7 +52,10 @@ search_hints:
 - healer's robe cure enhancement
 - kaeko seiken valk stanislaw niiro
 - 1.22a crit hotfix 2012-05-23
-notes: 'Distillation of two bluegartr FFXIV 1.x threads into seven topic tables plus a patch-dating reference. Evidence tier: wiki (packet captures > video breakdown > wiki), so every value is CALIBRATION-grade - community players parsing their own combat log, samples of a few hundred to a few thousand swings, no methodology review. Every row carries `patch` and `patch_basis` because the threads span 1.18b to 1.23b and the mechanics changed mid-thread: 1.20 reworked essentially every formula, 1.22 completely redid block damage reduction, and a 2012-05-23 hotfix inside the 1.22a window rewrote the critical hit rating / critical attack power / magic critical rating algorithms. `patch_basis: stated` means the tester named the patch; `post-date` means it was derived from the post date against derived/patch-dating.csv. Ten contradictions are recorded in derived/evidence-map.md rather than resolved, including a self-contradiction inside a single post about whether crit potency applies before or after the 175% cap and 115% floor, and a +62-vs-+72 gear mismatch inside what reads as one crit-rate trial. The widely repeated "every multiple of 5 a stat tiers up" claim is treated as a display-rounding artifact and is deliberately absent from the CSVs - see the evidence map. Every numeric image in both threads is dead (imageshack, imgbox, abload, photobucket); the largest losses are Kaeko''s per-action enmity table, the critical-damage-bonus-by-dLVL table, and the damage-floor-by-dLVL plot. The same author cross-posted four of these topics to LiveJournal in fuller form with recovered screenshots - see the kanican-tables set, and use this set for patch attribution and the 1.21-1.23a material kanican never covered. Out of scope on purpose, per the intake rule against mirroring whole articles: INT vs magic attack, weapon DPS and stat caps, the AF "Enhances" inventory, Regen and Stoneskin, Sentinel and Vengeance, Store TP, crafting stats, accuracy vs DEX. Harvested 2026-07-30.'
+- Power Surge 1.22a displayed attack ladder 574 689 805 920
+- Power Surge 115 attack 158 defense
+- Power Surge tier progression Jump weapon skills
+notes: 'Distillation of two bluegartr FFXIV 1.x threads into eight topic tables plus a patch-dating reference. Evidence tier: wiki (packet captures > video breakdown > wiki), so every value is CALIBRATION-grade - community players parsing their own combat log, samples ranging from one uncontrolled character observation to several thousand swings, no methodology review. Every row carries `patch` and `patch_basis` because the threads span 1.18b to 1.23b and the mechanics changed mid-thread: 1.20 reworked essentially every formula, 1.22 completely redid block damage reduction, and a 2012-05-23 hotfix inside the 1.22a window rewrote the critical hit rating / critical attack power / magic critical rating algorithms. `patch_basis: stated` means the tester named the patch; `post-date` means it was derived from the post date against derived/patch-dating.csv. Ten contradictions are recorded in derived/evidence-map.md rather than resolved, including a self-contradiction inside a single post about whether crit potency applies before or after the 175% cap and 115% floor, and a +62-vs-+72 gear mismatch inside what reads as one crit-rate trial. The Power Surge rows preserve one patch 1.22a displayed-stat observation and one adjacent progression report without promoting either to target-version behavior. The widely repeated "every multiple of 5 a stat tiers up" claim is treated as a display-rounding artifact and is deliberately absent from the CSVs - see the evidence map. Every numeric image in both threads is dead (imageshack, imgbox, abload, photobucket); the largest losses are Kaeko''s per-action enmity table, the critical-damage-bonus-by-dLVL table, and the damage-floor-by-dLVL plot. The same author cross-posted four of these topics to LiveJournal in fuller form with recovered screenshots - see the kanican-tables set, and use this set for patch attribution and the 1.21-1.23a material kanican never covered. Out of scope on purpose, per the intake rule against mirroring whole articles: INT vs magic attack, weapon DPS and stat caps, the AF "Enhances" inventory, Regen and Stoneskin, Sentinel and Vengeance, Store TP, crafting stats, accuracy vs DEX. Original set harvested 2026-07-30; Power Surge excerpt retrieved 2026-08-31.'
 related_implementation_docs: []
 source_refs:
 - source: bluegartr-stat-tests
@@ -68,6 +74,7 @@ canonical_evidence:
 - derived/magic-evasion.csv
 - derived/cure-potency.csv
 - derived/trait-point-cap.csv
+- derived/power-surge.csv
 - derived/patch-dating.csv
 distilled:
   distilled: true
@@ -81,6 +88,7 @@ distilled:
   - derived/magic-evasion.csv
   - derived/cure-potency.csv
   - derived/trait-point-cap.csv
+  - derived/power-surge.csv
   - derived/patch-dating.csv
   - derived/file-inventory.csv
   - derived/checksums.sha256

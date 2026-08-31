@@ -8,7 +8,7 @@ sources:
   distribution: restricted
   original_state: in-repo
   storage_id: repo
-  member_count: 2
+  member_count: 3
 - id: elemen-battle-actions
   title: eLeMeN FF14 1.x Battle Class Actions - Web Tables
   evidence_class: web-tables
@@ -249,6 +249,9 @@ studies:
   - magic-evasion
   - cure-potency
   - trait-point-cap
+  - power-surge
+  - lancer
+  - attack-defense-tradeoff
   - patch-attribution
   - kanican
   - patch-1.19
@@ -282,6 +285,9 @@ studies:
   - healer's robe cure enhancement
   - kaeko seiken valk stanislaw niiro
   - 1.22a crit hotfix 2012-05-23
+  - Power Surge 1.22a displayed attack ladder 574 689 805 920
+  - Power Surge 115 attack 158 defense
+  - Power Surge tier progression Jump weapon skills
   primary_paths:
   - studies/bluegartr-stat-tests/derived/evidence-map.md
   - studies/bluegartr-stat-tests/derived/critical-hit-rate.csv

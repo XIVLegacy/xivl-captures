@@ -9,7 +9,7 @@ provenance:
     url: https://www.bluegartr.com/threads/107403-Stats-and-how-they-work
     archive_url: https://web.archive.org/web/20260716074044/https://www.bluegartr.com/threads/107403-Stats-and-how-they-work
     site: bluegartr forums
-    note: 604 posts across 31 pages, 2011-10-11 to 2013-06-10. The archive_url is a confirmed snapshot of the thread root; per-page snapshot coverage (/page2 .. /page31) was not verified - the Wayback availability API rate limited before the paged URLs could be checked.
+    note: 604 posts across 31 pages, 2011-10-11 to 2013-06-10. The archive_url is a confirmed snapshot of the thread root; per-page snapshot coverage (/page2 .. /page31) was not verified - the Wayback availability API rate limited before the paged URLs could be checked. Power Surge posts 429 and 431 were retrieved from the live rendered page on 2026-08-31 and retained as a separate selected excerpt.
   - key: bg-106754-trait-point-cap
     title: Trait point cap?
     url: https://www.bluegartr.com/threads/106754-Trait-point-cap
@@ -27,9 +27,9 @@ storage:
   path: objects/
   master_archive:
     file: bluegartr-stat-tests-objects.zip
-    sha256: 385568c072981a3cfa3adb4168d13df7b09697284a0d834d689cf1ea96f920d9
-    size_bytes: 11608
-    holds: all 2 files under objects/, deflate, fixed timestamps
+    sha256: 6c437d8e2ea9a422e7e640a7c5075d56b6fa8d6ede7214fd8cf865ac842088fd
+    size_bytes: 12526
+    holds: all 3 files under objects/, deflate, fixed timestamps
     cold_store_path: archives/bluegartr-stat-tests/bluegartr-stat-tests-objects.zip
 members:
 - file: pages/bg-106754-trait-point-cap.md
@@ -38,3 +38,6 @@ members:
 - file: pages/bg-107403-stats-and-how-they-work.md
   sha256: 6e58ac70ad4c31970a214d4881411344f5f7da34d8388ac040fe2049d38737ff
   size_bytes: 24599
+- file: pages/bg-107403-power-surge-posts.md
+  sha256: 1538551131cb39bb8a06dbff7a03341a5925a8f87e6964d7c6a8872485fd614d
+  size_bytes: 1469

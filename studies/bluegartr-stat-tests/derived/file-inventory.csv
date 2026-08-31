@@ -1,6 +1,7 @@
 relative_path,kind,source_key,rows,patches_covered,notes
 sources/bluegartr-stat-tests/objects/pages/bg-107403-stats-and-how-they-work.md,transcription,bg-107403-stats,,1.19 - 1.23a,"verbatim excerpts of the 25 data-bearing posts for this set's seven topics; the rest of the 604-post thread stays at the source"
 sources/bluegartr-stat-tests/objects/pages/bg-106754-trait-point-cap.md,transcription,bg-106754-trait-point-cap,,1.18b,"the whole 8-post thread; both trait tables verbatim"
+sources/bluegartr-stat-tests/objects/pages/bg-107403-power-surge-posts.md,selected-excerpt,bg-107403-stats,,1.22a,"post metadata, one short source fragment, and non-verbatim Power Surge locators"
 derived/critical-hit-rate.csv,normalized-table,bg-107403-stats,20,"1.19, 1.20, 1.20a, 1.21a, 1.22a, 1.23a","spans the 2012-05-23 crit-algorithm hotfix; per-point return jumps 4-5x across it"
 derived/critical-damage-bonus.csv,normalized-table,bg-107403-stats,13,"1.19, 1.20a, 1.22, 1.22a","the 175% cap / 115% floor rules; never re-measured after the 2012-05-23 hotfix"
 derived/enmity.csv,normalized-table,bg-107403-stats,32,"1.18, 1.20, 1.21, 1.21a, 1.23","mostly translations of a JP tester; Kaeko's own per-action table is a dead image"
@@ -8,4 +9,5 @@ derived/physical-damage-taken.csv,normalized-table,bg-107403-stats,20,"1.20, 1.2
 derived/magic-evasion.csv,normalized-table,bg-107403-stats,14,"1.19, 1.20, 1.20a","three resist tiers and the enfeeble land-rate cap"
 derived/cure-potency.csv,normalized-table,bg-107403-stats,22,"1.19, 1.20a, 1.21, 1.21a","Kaeko's n=608 Cure III dataset plus the Healer's Robe AF comparison"
 derived/trait-point-cap.csv,normalized-table,bg-106754-trait-point-cap,19,1.18b,"18 DoW/DoM rank rows plus one unconfirmed DoH row"
+derived/power-surge.csv,normalized-table,bg-107403-stats,8,1.22a,"one uncontrolled displayed-stat observation plus an adjacent tier-progression report"
 derived/patch-dating.csv,reference-table,bg-patch-note-threads,25,1.15a - 1.23b,"the dating reference behind every patch_basis=post-date assignment; 4 sub-patches have no staged thread"
