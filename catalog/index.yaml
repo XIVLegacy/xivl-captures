@@ -170,6 +170,13 @@ sources:
   original_state: in-repo
   storage_id: repo
   member_count: 1
+- id: se-forum-white-mage-41900
+  title: SE Forum White Mage Enhancing Magic Claims - Web Table
+  evidence_class: web-tables
+  distribution: restricted
+  original_state: in-repo
+  storage_id: repo
+  member_count: 1
 studies:
 - id: battle-result-backfit
   title: Battle Result Packet Backfit
@@ -1630,6 +1637,35 @@ studies:
   - studies/se-forum-paladin-enmity/derived/paladin-enmity.csv
   source_refs:
   - source: se-forum-paladin-enmity
+- id: se-forum-white-mage-41900
+  title: SE forum White Mage Enhancing Magic Claims
+  status: distilled
+  evidence_class: web-tables
+  content_kind: action-mechanic
+  tags:
+  - web-reference
+  - wiki-tier
+  - calibration
+  - official-forum
+  - forum-thread
+  - white-mage
+  - enhancing-magic
+  - regen
+  - stoneskin
+  - protect
+  - patch-1.22c
+  search_hints:
+  - White Mage A Guide
+  - forum thread 41900
+  - Regen enhancing magic potency
+  - Stoneskin enhancing magic potency
+  - Protect defense resistance steps
+  - AF Boots Regen 203 HP per tic
+  primary_paths:
+  - studies/se-forum-white-mage-41900/derived/evidence-map.md
+  - studies/se-forum-white-mage-41900/derived/enhancing-magic.csv
+  source_refs:
+  - source: se-forum-white-mage-41900
 - id: status-wire-projection-census
   title: Status Wire Projection Census
   status: distilled

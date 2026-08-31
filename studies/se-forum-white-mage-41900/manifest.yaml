@@ -1,0 +1,42 @@
+id: se-forum-white-mage-41900
+title: SE forum White Mage Enhancing Magic Claims
+evidence_class: web-tables
+status: distilled
+content_kind: action-mechanic
+tags:
+- web-reference
+- wiki-tier
+- calibration
+- official-forum
+- forum-thread
+- white-mage
+- enhancing-magic
+- regen
+- stoneskin
+- protect
+- patch-1.22c
+search_hints:
+- White Mage A Guide
+- forum thread 41900
+- Regen enhancing magic potency
+- Stoneskin enhancing magic potency
+- Protect defense resistance steps
+- AF Boots Regen 203 HP per tic
+notes: 'Narrow transcription of the Stoneskin, Protect, and Regen claims in post 1 of the official FFXIV forum thread "White Mage: A Guide." Evidence tier: wiki, so all rows remain CALIBRATION grade. The 1.22c scope comes from the post version marker and edit reason. Derived arithmetic explains recognizable averages without promoting them to formulas. Retrieved 2026-08-31.'
+related_implementation_docs: []
+source_refs:
+- source: se-forum-white-mage-41900
+primary_paths:
+- derived/evidence-map.md
+- derived/enhancing-magic.csv
+canonical_evidence:
+- derived/evidence-map.md
+- derived/enhancing-magic.csv
+distilled:
+  distilled: true
+  checksum_file: derived/checksums.sha256
+  distilled_artifacts:
+  - derived/evidence-map.md
+  - derived/enhancing-magic.csv
+  - derived/file-inventory.csv
+  - derived/checksums.sha256
