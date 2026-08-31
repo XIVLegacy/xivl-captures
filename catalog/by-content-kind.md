@@ -2,9 +2,9 @@
 
 Generated from `catalog/index.yaml`. Primary axis: `content_kind`.
 
-## action-mechanic (12)
+## action-mechanic (13)
 
-### Studies (11)
+### Studies (12)
 
 - `battle-result-backfit`
 - `bluegartr-stat-tests`
@@ -16,6 +16,7 @@ Generated from `catalog/index.yaml`. Primary axis: `content_kind`.
 - `lodestone-manual`
 - `project-meteor-wiki`
 - `se-forum-paladin-enmity`
+- `se-forum-second-wind-51208`
 - `se-forum-white-mage-41900`
 
 ### Scenarios (1)

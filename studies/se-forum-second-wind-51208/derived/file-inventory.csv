@@ -1,0 +1,3 @@
+relative_path,kind,source_key,rows,patches_covered,notes
+sources/se-forum-second-wind-51208/objects/pages/thread-51208-post-4.md,selected-excerpt,se-forum-51208,,unknown,"post 4 metadata and short fragments anchoring this study"
+derived/second-wind-claims.csv,normalized-table,se-forum-51208,7,unknown,"community calculation claims; the post has no patch marker"

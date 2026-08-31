@@ -1,0 +1,40 @@
+id: se-forum-second-wind-51208
+title: SE forum Second Wind Claims
+evidence_class: web-tables
+status: distilled
+content_kind: action-mechanic
+tags:
+- web-reference
+- wiki-tier
+- calibration
+- official-forum
+- forum-thread
+- pugilist
+- second-wind
+- hp-recovery
+- formula-limit
+search_hints:
+- 2nd wind modifier
+- forum thread 51208
+- Second Wind class level
+- Second Wind INT modifier
+- Second Wind 25 percent trait
+- command 27100 HP recovery
+notes: 'Narrow transcription of the Second Wind input and calculation claims in post 4 of the official FFXIV forum thread "2nd wind modifier." Evidence tier: wiki, so every source row remains CALIBRATION grade. The post has no patch marker. Existing packet and video studies provide related observations but lack the controls needed to derive a formula. Retrieved 2026-08-31.'
+related_implementation_docs: []
+source_refs:
+- source: se-forum-second-wind-51208
+primary_paths:
+- derived/evidence-map.md
+- derived/second-wind-claims.csv
+canonical_evidence:
+- derived/evidence-map.md
+- derived/second-wind-claims.csv
+distilled:
+  distilled: true
+  checksum_file: derived/checksums.sha256
+  distilled_artifacts:
+  - derived/evidence-map.md
+  - derived/second-wind-claims.csv
+  - derived/file-inventory.csv
+  - derived/checksums.sha256

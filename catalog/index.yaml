@@ -170,6 +170,13 @@ sources:
   original_state: in-repo
   storage_id: repo
   member_count: 1
+- id: se-forum-second-wind-51208
+  title: SE Forum Second Wind Claims - Web Table
+  evidence_class: web-tables
+  distribution: restricted
+  original_state: in-repo
+  storage_id: repo
+  member_count: 1
 - id: se-forum-white-mage-41900
   title: SE Forum White Mage Enhancing Magic Claims - Web Table
   evidence_class: web-tables
@@ -1637,6 +1644,33 @@ studies:
   - studies/se-forum-paladin-enmity/derived/paladin-enmity.csv
   source_refs:
   - source: se-forum-paladin-enmity
+- id: se-forum-second-wind-51208
+  title: SE forum Second Wind Claims
+  status: distilled
+  evidence_class: web-tables
+  content_kind: action-mechanic
+  tags:
+  - web-reference
+  - wiki-tier
+  - calibration
+  - official-forum
+  - forum-thread
+  - pugilist
+  - second-wind
+  - hp-recovery
+  - formula-limit
+  search_hints:
+  - 2nd wind modifier
+  - forum thread 51208
+  - Second Wind class level
+  - Second Wind INT modifier
+  - Second Wind 25 percent trait
+  - command 27100 HP recovery
+  primary_paths:
+  - studies/se-forum-second-wind-51208/derived/evidence-map.md
+  - studies/se-forum-second-wind-51208/derived/second-wind-claims.csv
+  source_refs:
+  - source: se-forum-second-wind-51208
 - id: se-forum-white-mage-41900
   title: SE forum White Mage Enhancing Magic Claims
   status: distilled
