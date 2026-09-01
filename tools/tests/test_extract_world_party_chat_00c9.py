@@ -102,7 +102,7 @@ class WorldPartyChatSchemaTests(unittest.TestCase):
             jsonschema.Draft202012Validator(self.schema).validate(mutated)
 
 
-@unittest.skipUnless((ROOT / "sources" / "pcap-1.23b" / "objects").is_dir(), "restricted corpus absent")
+@unittest.skipUnless(study.default_corpus_paths(), "restricted corpus absent")
 class WorldPartyChatRestrictedTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):

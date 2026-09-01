@@ -11,7 +11,7 @@ SPEC.loader.exec_module(MODULE)
 
 
 @unittest.skipUnless(
-    (ROOT / "sources" / "pcap-1.23b" / "objects").is_dir(),
+    MODULE.default_corpus_paths(),
     "restricted corpus absent",
 )
 class EquipmentTransitionCensusTests(unittest.TestCase):

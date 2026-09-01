@@ -8,6 +8,7 @@ import csv
 import hashlib
 import io
 import json
+import os
 import sys
 from collections import Counter
 from pathlib import Path
@@ -19,7 +20,11 @@ sys.path.insert(0, str(SCRIPT_DIR))
 from extract_00da_00e1_comparison import _decode_capture  # type: ignore  # noqa: E402
 from extract_property_stream_catalog import parse_records  # type: ignore  # noqa: E402
 
-CAPTURE = REPO_ROOT / "sources" / "pcap-1.23b" / "objects" / "party_battle_leve.pcapng"
+OBJECTS_DIR = Path(os.environ.get(
+    "XIVL_PCAP_OBJECTS_DIR",
+    str(REPO_ROOT / "sources" / "pcap-1.23b" / "objects"),
+))
+CAPTURE = OBJECTS_DIR / "party_battle_leve.pcapng"
 CAPTURE_SHA256 = "6327e5e1f5cbd51a9baaa9bcbacf53ca51c50a98fe4b66ae3e6bdecd9198089f"
 OUT = REPO_ROOT / "studies" / "regional-guildleve-publisher-contract" / "derived"
 PLAYER_ACTOR_ID = 0x029B2941
@@ -485,7 +490,7 @@ def _window_counts(events: list[dict], start: int, end: int) -> dict[str, int]:
 
 
 def _build_acceptance_capture(name: str, spec: dict) -> tuple[list[dict], dict]:
-    path = REPO_ROOT / "sources" / "pcap-1.23b" / "objects" / name
+    path = OBJECTS_DIR / name
     if sha256_file(path) != spec["sha256"]:
         raise ValueError(f"{name} identity mismatch")
     events, totals, lane_counts = _decode_capture(path)
