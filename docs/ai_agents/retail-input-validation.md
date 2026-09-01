@@ -17,8 +17,8 @@ revision, uses the `retail-evidence` environment, and retains only the
 schema-valid `retail-pcap-attestation` artifact containing
 `retail-evidence-attestation.json`.
 
-The shared `fetch-retail-input` action is pinned to
-`XIVLegacy/xivl-tools/.github/actions/fetch-retail-input@4920dece45e88fcb14424de1f5c4fdee94ae6d02`.
+The workflow invokes the shared `fetch-retail-input` action from
+`XIVLegacy/xivl-tools` at an immutable commit.
 It receives the approved commit, PCAP path, size, SHA-256, output path, and
 parent trees from this check. It allows only the authorized archive path and
 requires an untruncated tree response, regular-file type and mode, the pinned
@@ -29,9 +29,8 @@ The extractor validates the complete archive before writing any member. It
 rejects duplicate names, directories, links, encrypted entries, traversal or
 absolute paths, non-PCAP files, compression ratios outside the fixed bound,
 member drift, and uncompressed-size drift. Private bytes stay under one
-temporary root. The shared `finalize-retail-attestation` action, pinned to
-`XIVLegacy/xivl-tools/.github/actions/finalize-retail-attestation@4920dece45e88fcb14424de1f5c4fdee94ae6d02`,
-removes that root before artifact validation and upload.
+temporary root. The shared `finalize-retail-attestation` action removes that
+root before artifact validation and upload.
 
 The hosted claim is exact deterministic agreement between the 54-member PCAP
 archive and the already tracked products, catalogs, schemas, sidecars, and
