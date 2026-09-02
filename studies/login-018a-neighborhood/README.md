@@ -35,10 +35,10 @@ connections and two TCP 54994 lobby connections.
 
 Opcode labels come from the promoted local snapshot in
 `derived/opcode_names.json`. Its source at
-`XIVLegacy/xivl-opcodes@f46d8a2a69ef3c5386470922761a9bff559fed41:opcodes.json`
+[the immutable xivl-opcodes catalog](https://github.com/XIVLegacy/xivl-opcodes/blob/f46d8a2a69ef3c5386470922761a9bff559fed41/opcodes.json)
 attributes the retained event to the map main lane while deliberately keeping
 the `_0x018A` placeholder. The tracked dispatcher record at
-`XIVLegacy/xivl-decomp@2d15f6423f682f74bad9b06b5e98baaff9187b2a:config/ffxivgame.protocol_evidence.json`
+[the immutable xivl-decomp dispatcher record](https://github.com/XIVLegacy/xivl-decomp/blob/2d15f6423f682f74bad9b06b5e98baaff9187b2a/config/ffxivgame.protocol_evidence.json)
 establishes routing to `FUN_00576380` but explicitly does not establish the
 imported semantic suffix.
 

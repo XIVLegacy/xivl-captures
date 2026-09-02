@@ -45,17 +45,15 @@ captured packet that completes each selected outer frame. Capture completion
 order is not server causality. The regional capture's separate chat lane is
 excluded from the main-lane transaction accounting.
 
-The interpretation cross-check used these exact read-only revisions:
+The interpretation cross-check used these immutable sources:
 
-- `xivl-client-scripts` `d925bd787f9abbdff7419987460b70d17650df39`
-  - `docs/guildleve-journal-lifecycle.md`
-- `xivl-client-data` `fbca4715222fcaeb4b1c6ea8bb5166f59d59363f`
-  - `manifests/tables.json`, `tools/mappings/guildleve.py`
-- `xivl-client-structs` `b602c9d76c283d9e32116d51f63304d86adf583d`
-  - `manifests/guildleve_lifecycle.json`,
-    `manifests/gam_hash_names.json`
-- `xivl-opcodes` `cd0469403450f9a0911194703796b65ce0621ed8`
-  - `data/client_receivers.json`, `data/client_opcode_semantics.json`
+- [Guildleve journal lifecycle](https://github.com/XIVLegacy/xivl-client-scripts/blob/d925bd787f9abbdff7419987460b70d17650df39/docs/guildleve-journal-lifecycle.md)
+- Client-data [table catalog](https://github.com/XIVLegacy/xivl-client-data/blob/fbca4715222fcaeb4b1c6ea8bb5166f59d59363f/manifests/tables.json)
+  and [Guildleve mapping](https://github.com/XIVLegacy/xivl-client-data/blob/fbca4715222fcaeb4b1c6ea8bb5166f59d59363f/tools/mappings/guildleve.py)
+- Client-structs [Guildleve lifecycle catalog](https://github.com/XIVLegacy/xivl-client-structs/blob/b602c9d76c283d9e32116d51f63304d86adf583d/manifests/guildleve_lifecycle.json)
+  and [GAM hash names](https://github.com/XIVLegacy/xivl-client-structs/blob/b602c9d76c283d9e32116d51f63304d86adf583d/manifests/gam_hash_names.json)
+- Opcode [receiver catalog](https://github.com/XIVLegacy/xivl-opcodes/blob/cd0469403450f9a0911194703796b65ce0621ed8/data/client_receivers.json)
+  and [client semantics](https://github.com/XIVLegacy/xivl-opcodes/blob/cd0469403450f9a0911194703796b65ce0621ed8/data/client_opcode_semantics.json)
 
 These are immutable interpretation citations, not runtime or build
 dependencies.

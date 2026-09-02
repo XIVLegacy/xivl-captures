@@ -29,11 +29,11 @@ The packet source is `pcap-1.23b`, selected by the canonical sorted corpus
 reducer and admitted by the shared clear TCP 54992 lane filter. TCP sequence
 reconstruction removes retransmitted duplicate bytes before framing.
 
-The proven packet shape and native lookup are recorded at
-`xivl-opcodes` commit `e1166d508d07eaa7f9bc17c3328f957f2de396cb`,
-`data/client_opcode_semantics.json#s2c-0179`. The status-row join is pinned to
-`xivl-client-data` commit `438bfd6f4a28bd940a25745dc2d64bd9be4a38c7`,
-`derived/substat_status_crosswalk.csv` and `csv/xtx_status.csv`. The minimal
+The proven packet shape and native lookup are recorded in
+[client opcode semantics](https://github.com/XIVLegacy/xivl-opcodes/blob/e1166d508d07eaa7f9bc17c3328f957f2de396cb/data/client_opcode_semantics.json)
+under `s2c-0179`. The status-row join is pinned to the immutable
+[substat crosswalk](https://github.com/XIVLegacy/xivl-client-data/blob/438bfd6f4a28bd940a25745dc2d64bd9be4a38c7/derived/substat_status_crosswalk.csv).
+Its source sheet is the restricted `csv/xtx_status.csv`; the minimal
 study-owned snapshot under `inputs/` makes regeneration repository-local.
 
 The native translation is `row = 200000 + wire - adjustment`, where adjustment

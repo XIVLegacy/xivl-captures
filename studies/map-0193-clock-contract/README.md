@@ -31,15 +31,12 @@ reconstruction removes retransmitted duplicate bytes before framing. Capture
 time is assigned from the first packet that completes every byte of the
 reconstructed outer frame.
 
-The retail client route and arithmetic are recorded at `xivl-opcodes` commit
-`0a093847d97a23dbeea5347cb072c03f0f0c030f`,
-`data/client_opcode_semantics.json#s2c-0193`. The packet-header clock model is
-recorded at `xivl-decomp` commit
-`37eeb2ba68c7a0ab4cd7b1c79c92d346090a6a91`,
-`docs/actor/cast-timing-clock.md`. Lua endpoint subtraction and presentation
-divisions are recorded at `xivl-client-scripts` commit
-`c0624f13eb8a3641deeb6e2680cb8b5ce28c036f`,
-`manifests/myplayer_timer_consumers.json`.
+The retail client route and arithmetic are recorded in
+[client opcode semantics](https://github.com/XIVLegacy/xivl-opcodes/blob/0a093847d97a23dbeea5347cb072c03f0f0c030f/data/client_opcode_semantics.json)
+under `s2c-0193`. The packet-header clock model is recorded in
+[the native timing analysis](https://github.com/XIVLegacy/xivl-decomp/blob/37eeb2ba68c7a0ab4cd7b1c79c92d346090a6a91/docs/actor/cast-timing-clock.md).
+Lua endpoint subtraction and presentation divisions are recorded in
+[the timer consumer catalog](https://github.com/XIVLegacy/xivl-client-scripts/blob/c0624f13eb8a3641deeb6e2680cb8b5ce28c036f/manifests/myplayer_timer_consumers.json).
 
 Those sources establish different layers. Native code establishes arithmetic
 and storage. Lua establishes consumer presentation. This capture study tests
