@@ -2,9 +2,9 @@
 
 Generated from `catalog/index.yaml`. Primary axis: `content_kind`.
 
-## action-mechanic (14)
+## action-mechanic (13)
 
-### Studies (13)
+### Studies (12)
 
 - `battle-result-backfit`
 - `bluegartr-stat-tests`
@@ -14,7 +14,6 @@ Generated from `catalog/index.yaml`. Primary axis: `content_kind`.
 - `lodestone-beginners`
 - `lodestone-dev-patch`
 - `lodestone-manual`
-- `project-meteor-wiki`
 - `se-forum-bloodletter-35795`
 - `se-forum-paladin-enmity`
 - `se-forum-second-wind-51208`

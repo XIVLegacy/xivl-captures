@@ -30,9 +30,9 @@ reducer and admitted by the shared clear TCP 54992 lane filter. TCP sequence
 reconstruction removes retransmitted duplicate bytes before framing.
 
 The proven packet shape and native lookup are recorded at
-`xivl-opcodes` commit `419df34344b7cb4422040f401e10bcaeead6565a`,
+`xivl-opcodes` commit `e1166d508d07eaa7f9bc17c3328f957f2de396cb`,
 `data/client_opcode_semantics.json#s2c-0179`. The status-row join is pinned to
-`xivl-client-data` commit `46e21e44ef65c78cbabe48e6f25642efb12da6c6`,
+`xivl-client-data` commit `438bfd6f4a28bd940a25745dc2d64bd9be4a38c7`,
 `derived/substat_status_crosswalk.csv` and `csv/xtx_status.csv`. The minimal
 study-owned snapshot under `inputs/` makes regeneration repository-local.
 

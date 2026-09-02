@@ -32,13 +32,13 @@ time is assigned from the first packet that completes every byte of the
 reconstructed outer frame.
 
 The retail client route and arithmetic are recorded at `xivl-opcodes` commit
-`67b709d5ffd90b8dc10a699e608fa1216e40660d`,
+`0a093847d97a23dbeea5347cb072c03f0f0c030f`,
 `data/client_opcode_semantics.json#s2c-0193`. The packet-header clock model is
 recorded at `xivl-decomp` commit
-`7f58d65574ec6669482dbf7335f249ee1a562efa`,
+`37eeb2ba68c7a0ab4cd7b1c79c92d346090a6a91`,
 `docs/actor/cast-timing-clock.md`. Lua endpoint subtraction and presentation
 divisions are recorded at `xivl-client-scripts` commit
-`e1c6288f2fd9c310f5c734bbb74ef857b2d66c8b`,
+`c0624f13eb8a3641deeb6e2680cb8b5ce28c036f`,
 `manifests/myplayer_timer_consumers.json`.
 
 Those sources establish different layers. Native code establishes arithmetic

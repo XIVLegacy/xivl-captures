@@ -47,14 +47,14 @@ excluded from the main-lane transaction accounting.
 
 The interpretation cross-check used these exact read-only revisions:
 
-- `xivl-client-scripts` `3804eebcc43a48e6998371117aeeb0d04084d7a6`
+- `xivl-client-scripts` `d925bd787f9abbdff7419987460b70d17650df39`
   - `docs/guildleve-journal-lifecycle.md`
-- `xivl-client-data` `76d68d2036dc99bdda2917e65efcdef4f62f4b63`
+- `xivl-client-data` `fbca4715222fcaeb4b1c6ea8bb5166f59d59363f`
   - `manifests/tables.json`, `tools/mappings/guildleve.py`
-- `xivl-client-structs` `568135f3c2651d096840b896dc002e765eae57ed`
+- `xivl-client-structs` `b602c9d76c283d9e32116d51f63304d86adf583d`
   - `manifests/guildleve_lifecycle.json`,
     `manifests/gam_hash_names.json`
-- `xivl-opcodes` `d57bbc3d625e40746db2dc50f8af6a7292891467`
+- `xivl-opcodes` `cd0469403450f9a0911194703796b65ce0621ed8`
   - `data/client_receivers.json`, `data/client_opcode_semantics.json`
 
 These are immutable interpretation citations, not runtime or build

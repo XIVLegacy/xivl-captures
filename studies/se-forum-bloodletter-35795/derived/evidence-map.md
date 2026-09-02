@@ -76,7 +76,7 @@ application chance, or numeric effect values.
 
 Pinned public records:
 
-- [Bloodletter command parameters](https://github.com/XIVLegacy/xivl-client-data/blob/76d68d2036dc99bdda2917e65efcdef4f62f4b63/derived/command_battle_params.csv#L1015)
+- [Bloodletter command parameters](https://github.com/XIVLegacy/xivl-client-data/blob/fbca4715222fcaeb4b1c6ea8bb5166f59d59363f/derived/command_battle_params.csv#L1015)
 
 ## Claim limits
 

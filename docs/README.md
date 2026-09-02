@@ -69,7 +69,6 @@ findings.
 - [Status Wire Projection Census](../studies/status-wire-projection-census/)
 - [World Party-Chat 0x00C9 Contract](../studies/world-party-chat-00c9-contract/)
 - [The Bowl of Embers (Ifrit) - Video Breakdown](../studies/primal-battle-ifrit-bowl-of-embers/)
-- [Project Meteor Wiki - RE Residual](../studies/project-meteor-wiki/)
 
 ## Promoted study note
 

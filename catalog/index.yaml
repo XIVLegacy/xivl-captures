@@ -156,13 +156,6 @@ sources:
   original_state: in-repo
   storage_id: repo
   member_count: 1
-- id: project-meteor-wiki
-  title: Project Meteor Wiki - RE Residual
-  evidence_class: web-tables
-  distribution: restricted
-  original_state: in-repo
-  storage_id: repo
-  member_count: 5
 - id: se-forum-bloodletter-35795
   title: SE Forum Bloodletter Claims - Web Table
   evidence_class: web-tables
@@ -1542,41 +1535,6 @@ studies:
   - studies/primal-battle-ifrit-bowl-of-embers/derived/evidence-map.md
   source_refs:
   - source: primal-battle-ifrit-bowl-of-embers
-- id: project-meteor-wiki
-  title: Project Meteor Wiki - RE Residual
-  status: distilled
-  evidence_class: web-tables
-  content_kind: action-mechanic
-  tags:
-  - web-reference
-  - wiki-tier
-  - calibration
-  - project-meteor
-  - reverse-engineering
-  - design-notes
-  - mp-cost-formula
-  - quest-xp-reward
-  - animation-vfx
-  - animationid-bitpacking
-  - retail-patcher
-  - ffxiv-login
-  - zipatch
-  search_hints:
-  - command mp cost formula calculateCommandCost level banded
-  - quest xp reward calcSkillPoint expTable
-  - animationId bit packing vfx category animation folder em1 mgc wsc
-  - retail patcher ffxivboot vercheck ver01.ffxiv.com SqexPatchSystem
-  - rsa_verify bypass ffxivlogin string obfuscation sqex0002
-  - project meteor wiki fragmenterworks
-  - level banded mp cost
-  - animation id bit packing
-  - animation category folder
-  - em1 mgc wsc vfx
-  primary_paths:
-  - studies/project-meteor-wiki/derived/index.md
-  - studies/project-meteor-wiki/derived/evidence-map.md
-  source_refs:
-  - source: project-meteor-wiki
 - id: property-stream-hash-catalog
   title: Actor Property Stream Hash Catalog
   status: indexed
