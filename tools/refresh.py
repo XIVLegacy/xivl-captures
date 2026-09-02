@@ -128,7 +128,7 @@ CHECK_PLANS = {
         ([TOOLS / "verify_retail_pcap.py", "--check-contract"], "retail PCAP contract", (("retail PCAP contract", "validate"),)),
         ([TOOLS / "validate_capture_repo.py", "--check-storage"], "validate_capture_repo.py", (("validate_capture_repo.py (studies/sources/catalog cross-check)", "validate"),)),
         ([TOOLS / "check_markdown_links.py"], "check_markdown_links.py", (("check_markdown_links.py (in-repo link resolution)", "validate"),)),
-        ([TOOLS / "audit_study_conventions.py"], "audit_study_conventions.py", (("audit_study_conventions.py (study README and manifest shape)", "validate"),)),
+        ([TOOLS / "audit_study_conventions.py"], "audit_study_conventions.py", (("audit_study_conventions.py (study README presence and manifest contract)", "validate"),)),
         ([TOOLS / "soften_source_links.py", "--check"], "soften_source_links.py --check", (("shipping study source citations", "validate"),)),
         ([TOOLS / "build_checksums.py", "--check"], "build_checksums.py --check", (("study derived/ checksum anchors", "regen"),)),
         ([TOOLS / "build_catalog.py", "--check"], "build_catalog.py --check", (

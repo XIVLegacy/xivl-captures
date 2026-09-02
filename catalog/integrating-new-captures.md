@@ -161,22 +161,8 @@ mechanism / instance type; the activity, the NM-ness, and the leve scope go in
 
 ## Step 6: Update The Study `README.md`
 
-Every study needs `studies/<id>/README.md` with this section shape:
-
-- `## Study contents`
-- `## Start here`
-- `## Source material`
-- `## Promoted conclusions`
-- `## Topics`
-- `## Evidence gaps`
-- `## Further research`
-
-This is the repository-wide study contract, not a video-breakdown-only
-convention. New studies must conform; migration of existing studies is handled
-separately from intake.
-
-This is the human-friendly entry point. Keep it short, current, and
-skimmable. Further research records unresolved evidence questions.
+Every study needs `studies/<id>/README.md` as its human-friendly entry point.
+Keep it short, current, and skimmable, using headings that fit the material.
 
 ## Step 7: Build The Distilled Evidence Packet
 

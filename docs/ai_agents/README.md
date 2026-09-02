@@ -62,13 +62,11 @@ relevant studies/<id>/ bundle or the appropriate public catalog guide. Keep
 its source identifiers, hashes, citations, dates, and evidence class intact.
 Remove superseded process notes from the public tree.
 
-## Index contract
+## Documentation indexes
 
-docs/README.md lists every tracked docs page, including every page in this
-policy tier. This README lists every sibling policy page. Every listed target
-must exist, and every new or removed page must update the relevant index in
-the same change. Do not keep an empty policy shell for a surface this
-repository does not have.
+Documentation indexes provide entry points rather than exhaustive inventories.
+Every listed local target must exist. Do not keep an empty policy shell for a
+surface this repository does not have.
 
 ## Policy shelf
 

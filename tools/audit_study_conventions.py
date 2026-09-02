@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Audit study conventions that are not covered by the catalog validator.
 
-Checks required README headings, manifest/catalog agreement, declared checksum
-entry shape and paths, and repository-relative paths. Exact checksum coverage
-and digests are owned by build_checksums.py.
+Checks README presence, manifest/catalog agreement, declared checksum entry
+shape and paths, and repository-relative paths. Exact checksum coverage and
+digests are owned by build_checksums.py.
 
 Usage:
     python tools/audit_study_conventions.py
@@ -20,16 +20,6 @@ import yaml
 REPO_ROOT = Path(__file__).resolve().parents[1]
 STUDIES_DIR = REPO_ROOT / "studies"
 CATALOG_PATH = REPO_ROOT / "catalog" / "index.yaml"
-
-README_SECTIONS = [
-    "## Study contents",
-    "## Start here",
-    "## Source material",
-    "## Promoted conclusions",
-    "## Topics",
-    "## Evidence gaps",
-    "## Further research",
-]
 
 AGREE_FIELDS = [
     "title", "content_kind", "system", "city_state", "grand_company",
@@ -50,11 +40,6 @@ def check_readme(study_id: str, study_dir: Path, problems: list[str]) -> None:
     readme_path = study_dir / "README.md"
     if not readme_path.exists():
         problems.append(f"{study_id}: missing README.md")
-        return
-    text = readme_path.read_text(encoding="utf-8")
-    for section in README_SECTIONS:
-        if section not in text:
-            problems.append(f"{study_id}: README.md missing section `{section}`")
 
 
 def check_field_agreement(
@@ -179,7 +164,7 @@ def audit() -> tuple[int, list[str]]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Audit study conventions (README shape, manifest/catalog agreement, "
+        description="Audit study conventions (README presence, manifest/catalog agreement, "
         "checksum entry shape, path hygiene) not covered by validate_capture_repo.py."
     )
     args = parser.parse_args()

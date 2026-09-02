@@ -79,7 +79,7 @@ or focused advisory checks. `refresh.py` is their normal entry point.
   LF, single trailing newline) and repo-root/derived-dir path constants.
 - `analyze_payload_layouts.py` - infers per-opcode field layouts (constant,
   zero-pad, variable byte ranges) from `derived/payload_samples.json`.
-- `audit_study_conventions.py` - audits study README shape, manifest/catalog
+- `audit_study_conventions.py` - audits study README presence, manifest/catalog
   agreement, checksum entry shape and target paths, and path hygiene not covered by
   `validate_capture_repo.py`.
 - `build_catalog.py` - regenerates scenario views, `catalog/index.yaml`,
