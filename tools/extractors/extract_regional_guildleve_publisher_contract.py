@@ -160,7 +160,7 @@ def _fields(stage: str, event: dict, app: bytes) -> str:
             raise ValueError(f"unexpected initial content members {actors}")
         return f"member_count={count};member_actor_ids={';'.join(_hex32(actor) for actor in actors)}"
     if event["opcode_value"] == 0x0137:
-        records, declared, terminated = parse_records(app)
+        records, declared, terminated, _consumed = parse_records(app)
         wanted = {row["property_hash"]: row for row in records}
         signal = wanted.get("0xafedf257")
         start_time = wanted.get("0xd2c67973")
@@ -459,7 +459,7 @@ def _acceptance_fields(stage: str, event: dict, app: bytes, spec: dict) -> str:
             raise ValueError(f"unexpected EventUpdate result count at {stage}")
         return _lua_summary(app[17:])
     if opcode == 0x0137:
-        records, _declared, terminated = parse_records(app)
+        records, _declared, terminated, _consumed = parse_records(app)
         if terminated:
             raise ValueError(f"truncated property records at {stage}")
         fields = []

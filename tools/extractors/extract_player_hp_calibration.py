@@ -26,6 +26,12 @@ EXPECTED_LEADS = (
     ("lead-1", (4, 26, 102, 758), 6),
     ("lead-2", (3, 31, 110, 1016), 6),
 )
+EXPECTED_CANDIDATES = {
+    (4, 26, 102, 758): 6,
+    (3, 31, 110, 1011): 1,
+    (3, 31, 110, 1016): 6,
+    (34, 1, 20, 111): 1,
+}
 FIELDS = (
     "occurrence_index", "repeated_lead", "lead_occurrence", "capture",
     "lane_index", "frame_index", "wrapped_source_actor_id",
@@ -67,15 +73,20 @@ def extract_rows(input_path: Path = INPUT) -> list[dict[str, object]]:
         candidates.append((key, {row["property_hash"]: row for row in rows}))
 
     candidates.sort(key=lambda item: item[0])
-    expected = {values: count for _, values, count in EXPECTED_LEADS}
     observed = Counter(
         tuple(int(rows[prop_hash]["value_u_le"]) for _, prop_hash, _, _ in PROPERTY_SPECS)
         for _, rows in candidates
     )
-    if observed != expected:
+    if observed != EXPECTED_CANDIDATES:
         raise ValueError(f"player HP lead reconciliation changed: {dict(observed)}")
 
     lead_by_values = {values: label for label, values, _ in EXPECTED_LEADS}
+    candidates = [
+        (key, rows)
+        for key, rows in candidates
+        if tuple(int(rows[prop_hash]["value_u_le"]) for _, prop_hash, _, _ in PROPERTY_SPECS)
+        in lead_by_values
+    ]
     lead_counts: Counter[str] = Counter()
     output: list[dict[str, object]] = []
     for occurrence_index, (key, rows) in enumerate(candidates, 1):

@@ -42,7 +42,7 @@ outputs:
 - dataset: property_targets
   generator:
     tool: tools/extractors/extract_property_targets.py
-    version: "3"
+    version: "4"
   inputs:
   - source: pcap-1.23b
 - dataset: request_response_pairs
@@ -54,7 +54,7 @@ outputs:
 - dataset: gam_keys
   generator:
     tool: tools/extractors/extract_gam_keys.py
-    version: "1"
+    version: "2"
   inputs:
   - source: pcap-1.23b
 - dataset: spawn_observations

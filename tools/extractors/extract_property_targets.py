@@ -26,10 +26,11 @@ from extract_observations import (  # type: ignore
 from extract_gam_keys import (  # type: ignore
     OPCODE_SET_ACTOR_PROPERTY,
     PROPERTY_BLOCK_OFFSET,
+    target_marker_length,
 )
 
 # Bump when extraction changes output; record the version in pipelines/*.yaml and derived/*.meta.yaml.
-GENERATOR_VERSION = "3"
+GENERATOR_VERSION = "4"
 
 DEFAULT_OUT = Path(__file__).parent.parent.parent / "derived" / "property_targets.json"
 
@@ -49,12 +50,7 @@ def parse_property_block_with_targets(buf: bytes) -> list[tuple[str | None, int,
         b = buf[i]
         if b == 0:
             break
-        # Wire fact: target markers match extract_gam_keys.py's 0x60..0x9F and 0xA4..0xE3 ranges.
-        target_marker = None
-        if 0x60 <= b <= 0x9F:
-            target_marker = b - 0x60 if b < 0x82 else b - 0x82
-        elif 0xA4 <= b <= 0xE3:
-            target_marker = b - 0xA4
+        target_marker = target_marker_length(b)
         if target_marker is not None and i + 1 + target_marker <= end:
             possible = buf[i + 1 : i + 1 + target_marker]
             if all(32 <= x < 127 for x in possible):

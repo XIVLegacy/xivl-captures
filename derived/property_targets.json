@@ -1,8 +1,397 @@
 {
-  "totalRecords": 9118,
-  "distinctTargets": 15,
+  "totalRecords": 9307,
+  "distinctTargets": 20,
   "distinctPropertyIds": 263,
   "targets": [
+    {
+      "target": "charaWork/stateAtQuicklyForAll",
+      "recordCount": 132,
+      "distinctIds": 10,
+      "captures": [
+        "combat_autoattack.pcapng",
+        "combat_skills.pcapng",
+        "gear_changeweapon.pcapng",
+        "local_leve_complete.pcapng",
+        "party_battle_leve.pcapng",
+        "switch_to_weaver.pcapng",
+        "war_quest_update2.pcapng"
+      ],
+      "ids": [
+        {
+          "id": 1834365881,
+          "idHex": "0x6d5633b9",
+          "count": 27,
+          "sizes": {
+            "4": 27
+          },
+          "captures": [
+            "party_battle_leve.pcapng",
+            "war_quest_update2.pcapng"
+          ],
+          "resolvedNames": [],
+          "sampleValues": [
+            "851ce150",
+            "ffffffff",
+            "d31be150",
+            "ffffffff"
+          ]
+        },
+        {
+          "id": 2353325419,
+          "idHex": "0x8c44e56b",
+          "count": 21,
+          "sizes": {
+            "4": 21
+          },
+          "captures": [
+            "party_battle_leve.pcapng",
+            "war_quest_update2.pcapng"
+          ],
+          "resolvedNames": [],
+          "sampleValues": [
+            "9b1be150",
+            "ffffffff",
+            "d41be150",
+            "ffffffff"
+          ]
+        },
+        {
+          "id": 2352180643,
+          "idHex": "0x8c336da3",
+          "count": 19,
+          "sizes": {
+            "4": 19
+          },
+          "captures": [
+            "combat_skills.pcapng",
+            "party_battle_leve.pcapng",
+            "war_quest_update2.pcapng"
+          ],
+          "resolvedNames": [],
+          "sampleValues": [
+            "13ece050",
+            "e8ebe050",
+            "ffffffff",
+            "ffffffff"
+          ]
+        },
+        {
+          "id": 2392589758,
+          "idHex": "0x8e9c05be",
+          "count": 15,
+          "sizes": {
+            "1": 15
+          },
+          "captures": [
+            "combat_autoattack.pcapng",
+            "combat_skills.pcapng",
+            "party_battle_leve.pcapng",
+            "war_quest_update2.pcapng"
+          ],
+          "resolvedNames": [],
+          "sampleValues": [
+            "04",
+            "03",
+            "03",
+            "03"
+          ]
+        },
+        {
+          "id": 2516989320,
+          "idHex": "0x96063588",
+          "count": 13,
+          "sizes": {
+            "2": 13
+          },
+          "captures": [
+            "gear_changeweapon.pcapng",
+            "local_leve_complete.pcapng",
+            "party_battle_leve.pcapng",
+            "switch_to_weaver.pcapng"
+          ],
+          "resolvedNames": [],
+          "sampleValues": [
+            "1f00",
+            "0300",
+            "0400",
+            "1e00"
+          ]
+        },
+        {
+          "id": 1966263844,
+          "idHex": "0x7532ce24",
+          "count": 11,
+          "sizes": {
+            "1": 11
+          },
+          "captures": [
+            "gear_changeweapon.pcapng",
+            "party_battle_leve.pcapng",
+            "switch_to_weaver.pcapng"
+          ],
+          "resolvedNames": [],
+          "sampleValues": [
+            "03",
+            "03",
+            "03",
+            "03"
+          ]
+        },
+        {
+          "id": 3586467146,
+          "idHex": "0xd5c5254a",
+          "count": 10,
+          "sizes": {
+            "4": 10
+          },
+          "captures": [
+            "party_battle_leve.pcapng"
+          ],
+          "resolvedNames": [],
+          "sampleValues": [
+            "c51be150",
+            "ffffffff",
+            "131de150",
+            "ffffffff"
+          ]
+        },
+        {
+          "id": 1481625571,
+          "idHex": "0x584fcfe3",
+          "count": 9,
+          "sizes": {
+            "1": 9
+          },
+          "captures": [
+            "party_battle_leve.pcapng"
+          ],
+          "resolvedNames": [],
+          "sampleValues": [
+            "03",
+            "03",
+            "03",
+            "03"
+          ]
+        },
+        {
+          "id": 31605957,
+          "idHex": "0x01e244c5",
+          "count": 6,
+          "sizes": {
+            "4": 6
+          },
+          "captures": [
+            "party_battle_leve.pcapng"
+          ],
+          "resolvedNames": [],
+          "sampleValues": [
+            "ffffffff",
+            "461de150",
+            "ffffffff",
+            "701de150"
+          ]
+        },
+        {
+          "id": 1358934180,
+          "idHex": "0x50ffb0a4",
+          "count": 1,
+          "sizes": {
+            "4": 1
+          },
+          "captures": [
+            "party_battle_leve.pcapng"
+          ],
+          "resolvedNames": [],
+          "sampleValues": [
+            "4a1de150"
+          ]
+        }
+      ],
+      "resolvedIdCount": 0,
+      "unresolvedIdCount": 10
+    },
+    {
+      "target": "charaWork/commandDetailForSelf",
+      "recordCount": 52,
+      "distinctIds": 9,
+      "captures": [
+        "action_and_traits.pcapng",
+        "combat_skills.pcapng",
+        "gear_changesoul.pcapng",
+        "gear_changeweapon.pcapng",
+        "gridania_to_coerthas.pcapng",
+        "moving_around_gridania.pcapng",
+        "party_battle_leve.pcapng"
+      ],
+      "ids": [
+        {
+          "id": 486311866,
+          "idHex": "0x1cfc87ba",
+          "count": 18,
+          "sizes": {
+            "4": 18
+          },
+          "captures": [
+            "combat_skills.pcapng",
+            "party_battle_leve.pcapng"
+          ],
+          "resolvedNames": [],
+          "sampleValues": [
+            "376a0000",
+            "00000000",
+            "376a0000",
+            "376a0000"
+          ]
+        },
+        {
+          "id": 2989947822,
+          "idHex": "0xb236fbae",
+          "count": 7,
+          "sizes": {
+            "4": 7
+          },
+          "captures": [
+            "combat_skills.pcapng",
+            "party_battle_leve.pcapng"
+          ],
+          "resolvedNames": [],
+          "sampleValues": [
+            "0000803f",
+            "00000000",
+            "0000803f",
+            "00000000"
+          ]
+        },
+        {
+          "id": 2982928489,
+          "idHex": "0xb1cbe069",
+          "count": 7,
+          "sizes": {
+            "1": 7
+          },
+          "captures": [
+            "gear_changesoul.pcapng",
+            "gear_changeweapon.pcapng",
+            "gridania_to_coerthas.pcapng",
+            "moving_around_gridania.pcapng"
+          ],
+          "resolvedNames": [],
+          "sampleValues": [
+            "01",
+            "03",
+            "01",
+            "01"
+          ]
+        },
+        {
+          "id": 4171750065,
+          "idHex": "0xf8a7dab1",
+          "count": 7,
+          "sizes": {
+            "1": 7
+          },
+          "captures": [
+            "gear_changesoul.pcapng",
+            "gear_changeweapon.pcapng",
+            "gridania_to_coerthas.pcapng",
+            "moving_around_gridania.pcapng"
+          ],
+          "resolvedNames": [],
+          "sampleValues": [
+            "03",
+            "06",
+            "03",
+            "03"
+          ]
+        },
+        {
+          "id": 553549119,
+          "idHex": "0x20fe7d3f",
+          "count": 7,
+          "sizes": {
+            "1": 7
+          },
+          "captures": [
+            "gear_changesoul.pcapng",
+            "gear_changeweapon.pcapng",
+            "gridania_to_coerthas.pcapng",
+            "moving_around_gridania.pcapng"
+          ],
+          "resolvedNames": [],
+          "sampleValues": [
+            "03",
+            "06",
+            "03",
+            "03"
+          ]
+        },
+        {
+          "id": 3599859372,
+          "idHex": "0xd6917eac",
+          "count": 2,
+          "sizes": {
+            "4": 2
+          },
+          "captures": [
+            "action_and_traits.pcapng",
+            "combat_skills.pcapng"
+          ],
+          "resolvedNames": [],
+          "sampleValues": [
+            "1a29aa3e",
+            "6a84a53e"
+          ]
+        },
+        {
+          "id": 3313671696,
+          "idHex": "0xc5829e10",
+          "count": 2,
+          "sizes": {
+            "1": 2
+          },
+          "captures": [
+            "party_battle_leve.pcapng"
+          ],
+          "resolvedNames": [],
+          "sampleValues": [
+            "01",
+            "01"
+          ]
+        },
+        {
+          "id": 234480009,
+          "idHex": "0x0df9e189",
+          "count": 1,
+          "sizes": {
+            "4": 1
+          },
+          "captures": [
+            "party_battle_leve.pcapng"
+          ],
+          "resolvedNames": [],
+          "sampleValues": [
+            "31750000"
+          ]
+        },
+        {
+          "id": 4135822417,
+          "idHex": "0xf683a451",
+          "count": 1,
+          "sizes": {
+            "4": 1
+          },
+          "captures": [
+            "party_battle_leve.pcapng"
+          ],
+          "resolvedNames": [],
+          "sampleValues": [
+            "00000000"
+          ]
+        }
+      ],
+      "resolvedIdCount": 0,
+      "unresolvedIdCount": 9
+    },
     {
       "target": "charaWork/potencial",
       "recordCount": 50,
@@ -1435,6 +1824,49 @@
       "unresolvedIdCount": 3
     },
     {
+      "target": "charaWork/commandEquip",
+      "recordCount": 2,
+      "distinctIds": 2,
+      "captures": [
+        "gear_changeweapon.pcapng",
+        "switch_to_weaver.pcapng"
+      ],
+      "ids": [
+        {
+          "id": 3525996721,
+          "idHex": "0xd22a70b1",
+          "count": 1,
+          "sizes": {
+            "1": 1
+          },
+          "captures": [
+            "gear_changeweapon.pcapng"
+          ],
+          "resolvedNames": [],
+          "sampleValues": [
+            "01"
+          ]
+        },
+        {
+          "id": 3599859372,
+          "idHex": "0xd6917eac",
+          "count": 1,
+          "sizes": {
+            "4": 1
+          },
+          "captures": [
+            "switch_to_weaver.pcapng"
+          ],
+          "resolvedNames": [],
+          "sampleValues": [
+            "fd9e2b41"
+          ]
+        }
+      ],
+      "resolvedIdCount": 0,
+      "unresolvedIdCount": 2
+    },
+    {
       "target": "charaWork/timingCommand",
       "recordCount": 2,
       "distinctIds": 2,
@@ -1477,6 +1909,34 @@
       "unresolvedIdCount": 2
     },
     {
+      "target": "playerWork/combo",
+      "recordCount": 2,
+      "distinctIds": 1,
+      "captures": [
+        "party_battle_leve.pcapng"
+      ],
+      "ids": [
+        {
+          "id": 3599859372,
+          "idHex": "0xd6917eac",
+          "count": 2,
+          "sizes": {
+            "4": 2
+          },
+          "captures": [
+            "party_battle_leve.pcapng"
+          ],
+          "resolvedNames": [],
+          "sampleValues": [
+            "6f7cee3d",
+            "958e553d"
+          ]
+        }
+      ],
+      "resolvedIdCount": 0,
+      "unresolvedIdCount": 1
+    },
+    {
       "target": "playerWork/expBonus",
       "recordCount": 1,
       "distinctIds": 1,
@@ -1497,6 +1957,60 @@
           "resolvedNames": [],
           "sampleValues": [
             "01"
+          ]
+        }
+      ],
+      "resolvedIdCount": 0,
+      "unresolvedIdCount": 1
+    },
+    {
+      "target": "charaWork/currentContentGroup",
+      "recordCount": 1,
+      "distinctIds": 1,
+      "captures": [
+        "party_battle_leve.pcapng"
+      ],
+      "ids": [
+        {
+          "id": 1058271275,
+          "idHex": "0x3f13f02b",
+          "count": 1,
+          "sizes": {
+            "1": 1
+          },
+          "captures": [
+            "party_battle_leve.pcapng"
+          ],
+          "resolvedNames": [],
+          "sampleValues": [
+            "01"
+          ]
+        }
+      ],
+      "resolvedIdCount": 0,
+      "unresolvedIdCount": 1
+    },
+    {
+      "target": "charaWork/status",
+      "recordCount": 1,
+      "distinctIds": 1,
+      "captures": [
+        "party_battle_leve.pcapng"
+      ],
+      "ids": [
+        {
+          "id": 2392589758,
+          "idHex": "0x8e9c05be",
+          "count": 1,
+          "sizes": {
+            "1": 1
+          },
+          "captures": [
+            "party_battle_leve.pcapng"
+          ],
+          "resolvedNames": [],
+          "sampleValues": [
+            "04"
           ]
         }
       ],
@@ -1551,33 +2065,6 @@
           "resolvedNames": [],
           "sampleValues": [
             "00000000"
-          ]
-        }
-      ],
-      "resolvedIdCount": 0,
-      "unresolvedIdCount": 1
-    },
-    {
-      "target": "charaWork/commandEquip",
-      "recordCount": 1,
-      "distinctIds": 1,
-      "captures": [
-        "switch_to_weaver.pcapng"
-      ],
-      "ids": [
-        {
-          "id": 3599859372,
-          "idHex": "0xd6917eac",
-          "count": 1,
-          "sizes": {
-            "4": 1
-          },
-          "captures": [
-            "switch_to_weaver.pcapng"
-          ],
-          "resolvedNames": [],
-          "sampleValues": [
-            "fd9e2b41"
           ]
         }
       ],

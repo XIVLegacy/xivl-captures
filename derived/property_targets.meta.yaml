@@ -4,10 +4,10 @@ evidence_class: packet-capture
 schema_version: 1
 output:
   file: derived/property_targets.json
-  sha256: 1af8c148c6dd2defe758fd06bf17f353b19667e64bfbb15d03f39bb4bcbbdf9b
+  sha256: 5df105bf8f50dc2fd756d40a43ead2c5f95f65631de1b1c5a24cae3992715cfb
 generator:
   tool: tools/extractors/extract_property_targets.py
-  version: '3'
+  version: '4'
 inputs:
 - source: pcap-1.23b
   content_sha256: 3e39bfbffdf5a7efa0f42fc221f42dc2d1d28af8f19378d28921a3b903c0c7ee

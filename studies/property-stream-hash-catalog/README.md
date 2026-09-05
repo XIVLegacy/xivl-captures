@@ -3,10 +3,16 @@
 ## Study contents
 
 This study decodes every property record carried by s2c `0x0137` in the 53
-canonical retail 1.23b captures. The resulting 2,014 packets contain 9,118
+canonical retail 1.23b captures. The resulting 2,014 packets contain 9,307
 records, 263 distinct hashes, 37 contributing captures, and 14 scenario IDs.
 These totals are pinned in `derived/accounting.json`; each record is retained
 in `derived/property-records.csv`.
+
+Each application payload is 136 bytes. Byte 0 declares between 7 and 128
+stream bytes in the retained corpus. Every declared region is fully consumed
+by records and ASCII target markers, and all 164,365 bytes after those regions
+are zero. The observed maximum leaves seven zero bytes; the corpus does not
+establish whether larger declared values are accepted.
 
 ## Start here
 
@@ -29,9 +35,11 @@ and excludes the login artifact through that shared corpus boundary.
 ## Promoted conclusions
 
 The retained corpus contains property widths 1, 2, 4, 11, and 95 bytes with
-counts 3,891, 3,325, 1,658, 22, and 22 respectively. These are wire widths,
+counts 4,022, 3,371, 1,870, 22, and 22 respectively. These are wire widths,
 not signedness or native-type declarations. Each row preserves the raw value;
 the little-endian integer and four-byte float columns are parallel decode aids.
+The `0xa0` lead is observed before exactly two 30-byte ASCII target strings;
+the parser does not extrapolate unobserved `0xa1` through `0xa3` meanings.
 
 ## Topics
 

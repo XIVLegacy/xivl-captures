@@ -2,7 +2,7 @@
   "packetCount": 2014,
   "capturesWithSetActorProperty": 37,
   "distinctIds": 263,
-  "distinctTargets": 25,
+  "distinctTargets": 27,
   "ids": [
     {
       "id": 3779792040,
@@ -117,6 +117,22 @@
       ]
     },
     {
+      "id": 2392589758,
+      "idHex": "0x8e9c05be",
+      "count": 296,
+      "sizes": {
+        "1": 296
+      },
+      "captures": 11,
+      "sampleValues": [
+        "03",
+        "01",
+        "04",
+        "01",
+        "01"
+      ]
+    },
+    {
       "id": 1016452549,
       "idHex": "0x3c95d5c5",
       "count": 296,
@@ -130,6 +146,38 @@
         "0802",
         "3002",
         "b801"
+      ]
+    },
+    {
+      "id": 2516989320,
+      "idHex": "0x96063588",
+      "count": 288,
+      "sizes": {
+        "2": 288
+      },
+      "captures": 18,
+      "sampleValues": [
+        "1800",
+        "1a00",
+        "1700",
+        "1800",
+        "1500"
+      ]
+    },
+    {
+      "id": 1966263844,
+      "idHex": "0x7532ce24",
+      "count": 286,
+      "sizes": {
+        "1": 286
+      },
+      "captures": 18,
+      "sampleValues": [
+        "28",
+        "03",
+        "03",
+        "07",
+        "03"
       ]
     },
     {
@@ -165,59 +213,11 @@
       ]
     },
     {
-      "id": 2392589758,
-      "idHex": "0x8e9c05be",
-      "count": 280,
-      "sizes": {
-        "1": 280
-      },
-      "captures": 11,
-      "sampleValues": [
-        "03",
-        "01",
-        "01",
-        "01",
-        "01"
-      ]
-    },
-    {
-      "id": 1966263844,
-      "idHex": "0x7532ce24",
-      "count": 275,
-      "sizes": {
-        "1": 275
-      },
-      "captures": 16,
-      "sampleValues": [
-        "28",
-        "03",
-        "03",
-        "07",
-        "03"
-      ]
-    },
-    {
-      "id": 2516989320,
-      "idHex": "0x96063588",
-      "count": 275,
-      "sizes": {
-        "2": 275
-      },
-      "captures": 16,
-      "sampleValues": [
-        "1800",
-        "1a00",
-        "1700",
-        "1800",
-        "1500"
-      ]
-    },
-    {
       "id": 1481625571,
       "idHex": "0x584fcfe3",
-      "count": 260,
+      "count": 269,
       "sizes": {
-        "1": 260
+        "1": 269
       },
       "captures": 11,
       "sampleValues": [
@@ -258,6 +258,38 @@
         "06",
         "06",
         "06"
+      ]
+    },
+    {
+      "id": 1834365881,
+      "idHex": "0x6d5633b9",
+      "count": 59,
+      "sizes": {
+        "4": 59
+      },
+      "captures": 11,
+      "sampleValues": [
+        "ffffffff",
+        "ffffffff",
+        "ffffffff",
+        "ffffffff",
+        "ffffffff"
+      ]
+    },
+    {
+      "id": 2353325419,
+      "idHex": "0x8c44e56b",
+      "count": 58,
+      "sizes": {
+        "4": 58
+      },
+      "captures": 14,
+      "sampleValues": [
+        "f3ebe050",
+        "ffffffff",
+        "ffffffff",
+        "ffffffff",
+        "ffffffff"
       ]
     },
     {
@@ -311,17 +343,33 @@
     {
       "id": 3599859372,
       "idHex": "0xd6917eac",
-      "count": 46,
+      "count": 50,
       "sizes": {
-        "4": 46
+        "4": 50
       },
-      "captures": 22,
+      "captures": 23,
       "sampleValues": [
         "1020aa3e",
+        "1a29aa3e",
         "4ee5a93e",
         "e7fba93e",
-        "f204aa3e",
-        "12afa93e"
+        "f204aa3e"
+      ]
+    },
+    {
+      "id": 2352180643,
+      "idHex": "0x8c336da3",
+      "count": 48,
+      "sizes": {
+        "4": 48
+      },
+      "captures": 12,
+      "sampleValues": [
+        "13ece050",
+        "e8ebe050",
+        "ffffffff",
+        "ffffffff",
+        "ffffffff"
       ]
     },
     {
@@ -341,27 +389,11 @@
       ]
     },
     {
-      "id": 2353325419,
-      "idHex": "0x8c44e56b",
-      "count": 37,
+      "id": 3586467146,
+      "idHex": "0xd5c5254a",
+      "count": 30,
       "sizes": {
-        "4": 37
-      },
-      "captures": 14,
-      "sampleValues": [
-        "f3ebe050",
-        "ffffffff",
-        "ffffffff",
-        "ffffffff",
-        "ffffffff"
-      ]
-    },
-    {
-      "id": 1834365881,
-      "idHex": "0x6d5633b9",
-      "count": 32,
-      "sizes": {
-        "4": 32
+        "4": 30
       },
       "captures": 11,
       "sampleValues": [
@@ -389,22 +421,6 @@
       ]
     },
     {
-      "id": 2352180643,
-      "idHex": "0x8c336da3",
-      "count": 29,
-      "sizes": {
-        "4": 29
-      },
-      "captures": 12,
-      "sampleValues": [
-        "ffffffff",
-        "ffffffff",
-        "ffffffff",
-        "ffffffff",
-        "ffffffff"
-      ]
-    },
-    {
       "id": 2898628393,
       "idHex": "0xacc58f29",
       "count": 25,
@@ -418,6 +434,22 @@
         "81230000",
         "8f240000",
         "8f240000"
+      ]
+    },
+    {
+      "id": 31605957,
+      "idHex": "0x01e244c5",
+      "count": 24,
+      "sizes": {
+        "4": 24
+      },
+      "captures": 11,
+      "sampleValues": [
+        "ffffffff",
+        "ffffffff",
+        "ffffffff",
+        "ffffffff",
+        "ffffffff"
       ]
     },
     {
@@ -471,6 +503,38 @@
       ]
     },
     {
+      "id": 486311866,
+      "idHex": "0x1cfc87ba",
+      "count": 22,
+      "sizes": {
+        "4": 22
+      },
+      "captures": 2,
+      "sampleValues": [
+        "376a0000",
+        "00000000",
+        "376a0000",
+        "00000000",
+        "376a0000"
+      ]
+    },
+    {
+      "id": 2989947822,
+      "idHex": "0xb236fbae",
+      "count": 22,
+      "sizes": {
+        "4": 22
+      },
+      "captures": 2,
+      "sampleValues": [
+        "0000803f",
+        "00000000",
+        "0000803f",
+        "00000000",
+        "0000803f"
+      ]
+    },
+    {
       "id": 1685727656,
       "idHex": "0x647a29a8",
       "count": 21,
@@ -519,19 +583,51 @@
       ]
     },
     {
-      "id": 3586467146,
-      "idHex": "0xd5c5254a",
+      "id": 2982928489,
+      "idHex": "0xb1cbe069",
       "count": 20,
       "sizes": {
-        "4": 20
+        "1": 20
       },
-      "captures": 11,
+      "captures": 12,
       "sampleValues": [
-        "ffffffff",
-        "ffffffff",
-        "ffffffff",
-        "ffffffff",
-        "ffffffff"
+        "04",
+        "01",
+        "03",
+        "01",
+        "01"
+      ]
+    },
+    {
+      "id": 4171750065,
+      "idHex": "0xf8a7dab1",
+      "count": 20,
+      "sizes": {
+        "1": 20
+      },
+      "captures": 12,
+      "sampleValues": [
+        "05",
+        "03",
+        "06",
+        "03",
+        "03"
+      ]
+    },
+    {
+      "id": 553549119,
+      "idHex": "0x20fe7d3f",
+      "count": 20,
+      "sizes": {
+        "1": 20
+      },
+      "captures": 12,
+      "sampleValues": [
+        "05",
+        "03",
+        "06",
+        "03",
+        "03"
       ]
     },
     {
@@ -727,8 +823,8 @@
       ]
     },
     {
-      "id": 31605957,
-      "idHex": "0x01e244c5",
+      "id": 1358934180,
+      "idHex": "0x50ffb0a4",
       "count": 18,
       "sizes": {
         "4": 18
@@ -820,22 +916,6 @@
         "01",
         "01",
         "01"
-      ]
-    },
-    {
-      "id": 1358934180,
-      "idHex": "0x50ffb0a4",
-      "count": 17,
-      "sizes": {
-        "4": 17
-      },
-      "captures": 11,
-      "sampleValues": [
-        "ffffffff",
-        "ffffffff",
-        "ffffffff",
-        "ffffffff",
-        "ffffffff"
       ]
     },
     {
@@ -1367,22 +1447,6 @@
       ]
     },
     {
-      "id": 2989947822,
-      "idHex": "0xb236fbae",
-      "count": 15,
-      "sizes": {
-        "4": 15
-      },
-      "captures": 1,
-      "sampleValues": [
-        "0000803f",
-        "00000000",
-        "0000803f",
-        "00000000",
-        "00000000"
-      ]
-    },
-    {
       "id": 230008255,
       "idHex": "0x0db5a5bf",
       "count": 14,
@@ -1543,6 +1607,22 @@
       ]
     },
     {
+      "id": 3313671696,
+      "idHex": "0xc5829e10",
+      "count": 14,
+      "sizes": {
+        "1": 14
+      },
+      "captures": 1,
+      "sampleValues": [
+        "01",
+        "00",
+        "01",
+        "00",
+        "01"
+      ]
+    },
+    {
       "id": 1037595170,
       "idHex": "0x3dd87222",
       "count": 13,
@@ -1620,54 +1700,6 @@
         "01",
         "01",
         "01"
-      ]
-    },
-    {
-      "id": 2982928489,
-      "idHex": "0xb1cbe069",
-      "count": 13,
-      "sizes": {
-        "1": 13
-      },
-      "captures": 10,
-      "sampleValues": [
-        "04",
-        "01",
-        "01",
-        "01",
-        "04"
-      ]
-    },
-    {
-      "id": 4171750065,
-      "idHex": "0xf8a7dab1",
-      "count": 13,
-      "sizes": {
-        "1": 13
-      },
-      "captures": 10,
-      "sampleValues": [
-        "05",
-        "03",
-        "03",
-        "03",
-        "05"
-      ]
-    },
-    {
-      "id": 553549119,
-      "idHex": "0x20fe7d3f",
-      "count": 13,
-      "sizes": {
-        "1": 13
-      },
-      "captures": 10,
-      "sampleValues": [
-        "05",
-        "03",
-        "03",
-        "03",
-        "05"
       ]
     },
     {
@@ -3191,22 +3223,6 @@
       ]
     },
     {
-      "id": 3313671696,
-      "idHex": "0xc5829e10",
-      "count": 12,
-      "sizes": {
-        "1": 12
-      },
-      "captures": 1,
-      "sampleValues": [
-        "00",
-        "01",
-        "00",
-        "01",
-        "00"
-      ]
-    },
-    {
       "id": 127765863,
       "idHex": "0x079d8d67",
       "count": 11,
@@ -3255,6 +3271,22 @@
       ]
     },
     {
+      "id": 3525996721,
+      "idHex": "0xd22a70b1",
+      "count": 8,
+      "sizes": {
+        "1": 8
+      },
+      "captures": 5,
+      "sampleValues": [
+        "00",
+        "01",
+        "01",
+        "01",
+        "01"
+      ]
+    },
+    {
       "id": 2167950750,
       "idHex": "0x81384d9e",
       "count": 8,
@@ -3283,22 +3315,6 @@
         "00",
         "01",
         "00",
-        "01"
-      ]
-    },
-    {
-      "id": 3525996721,
-      "idHex": "0xd22a70b1",
-      "count": 7,
-      "sizes": {
-        "1": 7
-      },
-      "captures": 4,
-      "sampleValues": [
-        "00",
-        "01",
-        "01",
-        "01",
         "01"
       ]
     },
@@ -3536,17 +3552,17 @@
       ]
     },
     {
-      "id": 486311866,
-      "idHex": "0x1cfc87ba",
+      "id": 4135822417,
+      "idHex": "0xf683a451",
       "count": 4,
       "sizes": {
         "4": 4
       },
       "captures": 1,
       "sampleValues": [
+        "d26a0000",
         "00000000",
-        "00000000",
-        "00000000",
+        "d26a0000",
         "00000000"
       ]
     },
@@ -3607,6 +3623,20 @@
       ]
     },
     {
+      "id": 234480009,
+      "idHex": "0x0df9e189",
+      "count": 3,
+      "sizes": {
+        "4": 3
+      },
+      "captures": 2,
+      "sampleValues": [
+        "31750000",
+        "00000000",
+        "00000000"
+      ]
+    },
+    {
       "id": 1483445495,
       "idHex": "0x586b94f7",
       "count": 3,
@@ -3632,20 +3662,6 @@
         "01",
         "02",
         "03"
-      ]
-    },
-    {
-      "id": 4135822417,
-      "idHex": "0xf683a451",
-      "count": 3,
-      "sizes": {
-        "4": 3
-      },
-      "captures": 1,
-      "sampleValues": [
-        "d26a0000",
-        "d26a0000",
-        "00000000"
       ]
     },
     {
@@ -3870,6 +3886,19 @@
       ]
     },
     {
+      "id": 1058271275,
+      "idHex": "0x3f13f02b",
+      "count": 2,
+      "sizes": {
+        "1": 2
+      },
+      "captures": 1,
+      "sampleValues": [
+        "01",
+        "00"
+      ]
+    },
+    {
       "id": 3536222579,
       "idHex": "0xd2c67973",
       "count": 2,
@@ -3919,19 +3948,6 @@
       "sampleValues": [
         "01",
         "00"
-      ]
-    },
-    {
-      "id": 234480009,
-      "idHex": "0x0df9e189",
-      "count": 2,
-      "sizes": {
-        "4": 2
-      },
-      "captures": 2,
-      "sampleValues": [
-        "00000000",
-        "00000000"
       ]
     },
     {
@@ -4044,18 +4060,6 @@
       ]
     },
     {
-      "id": 1058271275,
-      "idHex": "0x3f13f02b",
-      "count": 1,
-      "sizes": {
-        "1": 1
-      },
-      "captures": 1,
-      "sampleValues": [
-        "00"
-      ]
-    },
-    {
       "id": 4238475213,
       "idHex": "0xfca1ffcd",
       "count": 1,
@@ -4087,9 +4091,24 @@
       "captures": 17
     },
     {
+      "target": "charaWork/stateAtQuicklyForAll",
+      "count": 730,
+      "captures": 15
+    },
+    {
       "target": "charaWork/status",
-      "count": 56,
+      "count": 134,
       "captures": 7
+    },
+    {
+      "target": "charaWork/commandDetailForSelf",
+      "count": 54,
+      "captures": 10
+    },
+    {
+      "target": "npcWork/hate",
+      "count": 47,
+      "captures": 4
     },
     {
       "target": "charaWork/battleParameter",
@@ -4103,17 +4122,12 @@
     },
     {
       "target": "playerWork/expBonus",
-      "count": 34,
-      "captures": 17
-    },
-    {
-      "target": "npcWork/hate",
-      "count": 31,
-      "captures": 4
+      "count": 38,
+      "captures": 18
     },
     {
       "target": "charaWork/timingCommand",
-      "count": 28,
+      "count": 30,
       "captures": 4
     },
     {
@@ -4123,8 +4137,13 @@
     },
     {
       "target": "playerWork/combo",
-      "count": 15,
-      "captures": 1
+      "count": 22,
+      "captures": 2
+    },
+    {
+      "target": "charaWork/stateForAll",
+      "count": 18,
+      "captures": 8
     },
     {
       "target": "charaWork/potencial",
@@ -4142,24 +4161,24 @@
       "captures": 1
     },
     {
+      "target": "work/guildleve",
+      "count": 9,
+      "captures": 4
+    },
+    {
       "target": "guildleveWork/infoVariable",
       "count": 9,
       "captures": 1
     },
     {
-      "target": "work/guildleve",
+      "target": "charaWork/commandEquip",
       "count": 8,
-      "captures": 4
+      "captures": 5
     },
     {
       "target": "charaWork/command",
       "count": 6,
       "captures": 5
-    },
-    {
-      "target": "charaWork/stateForAll",
-      "count": 5,
-      "captures": 4
     },
     {
       "target": "playerWork/journal",
@@ -4168,12 +4187,17 @@
     },
     {
       "target": "playerWork/castState",
-      "count": 3,
+      "count": 4,
       "captures": 1
     },
     {
       "target": "playerWork/consoleTray",
-      "count": 2,
+      "count": 3,
+      "captures": 3
+    },
+    {
+      "target": "charaWork/currentContentGroup",
+      "count": 3,
       "captures": 2
     },
     {
@@ -4182,22 +4206,12 @@
       "captures": 1
     },
     {
-      "target": "charaWork/currentContentGroup",
-      "count": 2,
-      "captures": 2
-    },
-    {
       "target": "npcWork/pushCommand",
       "count": 1,
       "captures": 1
     },
     {
       "target": "guildleveWork/signal",
-      "count": 1,
-      "captures": 1
-    },
-    {
-      "target": "charaWork/commandEquip",
       "count": 1,
       "captures": 1
     },

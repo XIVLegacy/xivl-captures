@@ -25,13 +25,24 @@ from extract_observations import (  # type: ignore
 )
 
 # Bump when extraction changes output; record the version in pipelines/*.yaml and derived/*.meta.yaml.
-GENERATOR_VERSION = "1"
+GENERATOR_VERSION = "2"
 
 DEFAULT_OUT = Path(__file__).parent.parent.parent / "derived" / "gam_keys.json"
 
 OPCODE_SET_ACTOR_PROPERTY = 0x0137
 # Wire fact: the property block follows the 8-byte inner header and 8-byte actor-id/zero preamble.
 PROPERTY_BLOCK_OFFSET = 16
+
+
+def target_marker_length(lead: int) -> int | None:
+    """Return the directly observed ASCII target length for a marker lead."""
+    if 0x60 <= lead <= 0x9F:
+        return lead - 0x60 if lead < 0x82 else lead - 0x82
+    if lead == 0xA0:
+        return 30
+    if 0xA4 <= lead <= 0xE3:
+        return lead - 0xA4
+    return None
 
 
 def parse_property_block(buf: bytes) -> tuple[list[dict], list[str], int]:
@@ -49,12 +60,7 @@ def parse_property_block(buf: bytes) -> tuple[list[dict], list[str], int]:
         b = buf[i]
         if b == 0:
             break
-        # Wire fact: target markers occupy 0x60..0x9F or 0xA4..0xE3; target length stays below 0x40.
-        target_marker = None
-        if 0x60 <= b <= 0x9F:
-            target_marker = b - 0x60 if b < 0x82 else b - 0x82
-        elif 0xA4 <= b <= 0xE3:
-            target_marker = b - 0xA4
+        target_marker = target_marker_length(b)
         if target_marker is not None and i + 1 + target_marker <= end:
             possible = buf[i + 1 : i + 1 + target_marker]
             if all(32 <= x < 127 for x in possible):

@@ -2,10 +2,12 @@
 
 ## Study contents
 
-This study retains the 12 complete same-frame correlations for four exact
+This study retains the 12 repeated same-frame correlations for four exact
 property hashes when both wrapped `0x0137` header actor fields equal the known
-sample player actor ID `43723073`. The observations collapse to two repeated
-leads with six occurrences each; they are not 12 independent curve points.
+sample player actor ID `43723073`. Two additional complete correlations occur
+only once and remain outside this repeated-lead table. The retained observations
+collapse to two leads with six occurrences each; they are not 12 independent
+curve points.
 
 ## Start here
 

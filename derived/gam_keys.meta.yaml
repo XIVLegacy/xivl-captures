@@ -4,10 +4,10 @@ evidence_class: packet-capture
 schema_version: 1
 output:
   file: derived/gam_keys.json
-  sha256: 32a99e51e57185aea146b170ee242d6cae5fd4e1eca75654001f53501bb0aa6c
+  sha256: 2cb5155cc8b744d10298766af29ce11d33eef4551fe82e2168b5eb08475430a3
 generator:
   tool: tools/extractors/extract_gam_keys.py
-  version: '1'
+  version: '2'
 inputs:
 - source: pcap-1.23b
   content_sha256: 3e39bfbffdf5a7efa0f42fc221f42dc2d1d28af8f19378d28921a3b903c0c7ee

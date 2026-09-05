@@ -18,7 +18,7 @@ REPO_ROOT = SCRIPT_DIR.parents[1]
 sys.path.insert(0, str(SCRIPT_DIR))
 
 from extract_battle_results import load_scenarios  # type: ignore  # noqa: E402
-from extract_gam_keys import parse_property_block  # type: ignore  # noqa: E402
+from extract_gam_keys import parse_property_block, target_marker_length  # type: ignore  # noqa: E402
 from extract_observations import INNER_HEADER_LEN, SUB_EVENT_CLASS_ACTOR_WRAPPED, SUB_EVENT_HEADER_LEN, default_corpus_paths  # type: ignore  # noqa: E402
 from extract_streams import maybe_inflate, parse_outer_frames, reconstruct_lanes  # type: ignore  # noqa: E402
 
@@ -35,10 +35,10 @@ def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def parse_records(block: bytes) -> tuple[list[dict], int, bool]:
+def parse_records(block: bytes) -> tuple[list[dict], int, bool, int]:
     rows: list[dict] = []
     if not block:
-        return rows, 0, False
+        return rows, 0, False, 0
     declared = block[0]
     end = min(len(block), 1 + declared)
     pos = 1
@@ -49,11 +49,7 @@ def parse_records(block: bytes) -> tuple[list[dict], int, bool]:
         if lead == 0:
             terminated = True
             break
-        marker_len = None
-        if 0x60 <= lead <= 0x9F:
-            marker_len = lead - 0x60 if lead < 0x82 else lead - 0x82
-        elif 0xA4 <= lead <= 0xE3:
-            marker_len = lead - 0xA4
+        marker_len = target_marker_length(lead)
         if marker_len is not None and pos + 1 + marker_len <= end:
             candidate = block[pos + 1:pos + 1 + marker_len]
             if all(32 <= byte < 127 for byte in candidate):
@@ -75,7 +71,7 @@ def parse_records(block: bytes) -> tuple[list[dict], int, bool]:
             row["value_f32"] = format(struct.unpack("<f", value)[0], ".9g")
         rows.append(row)
         pos += 5 + width
-    return rows, declared, terminated
+    return rows, declared, terminated, pos
 
 
 def scan() -> tuple[list[dict], dict]:
@@ -85,6 +81,9 @@ def scan() -> tuple[list[dict], dict]:
     packet_by_capture: Counter[str] = Counter()
     declared_totals: Counter[int] = Counter()
     terminated_packets = 0
+    fully_consumed_packets = 0
+    residual_padding_bytes = 0
+    nonzero_padding_packets = 0
     for capture in default_corpus_paths():
         packet_index = 0
         for lane_index, lane in enumerate(reconstruct_lanes(capture)):
@@ -104,7 +103,8 @@ def scan() -> tuple[list[dict], dict]:
                         if len(sub) >= APP_OFFSET and struct.unpack_from("<H", sub, 2)[0] == OPCODE:
                             if size != 168 or len(sub[APP_OFFSET:]) != 136:
                                 raise ValueError(f"{capture.name}: unexpected 0x0137 shape {size}/{len(sub[APP_OFFSET:])}")
-                            parsed, declared, terminated = parse_records(sub[APP_OFFSET:])
+                            block = sub[APP_OFFSET:]
+                            parsed, declared, terminated, consumed = parse_records(block)
                             # Reconcile with the retained canonical parser before promoting detailed rows.
                             canonical, _, canonical_declared = parse_property_block(sub[APP_OFFSET:])
                             if canonical_declared != declared or len(canonical) != len(parsed):
@@ -118,6 +118,10 @@ def scan() -> tuple[list[dict], dict]:
                             packet_by_capture[capture.name] += 1
                             declared_totals[declared] += 1
                             terminated_packets += int(terminated)
+                            fully_consumed_packets += int(consumed == 1 + declared)
+                            padding = block[1 + declared:]
+                            residual_padding_bytes += len(padding)
+                            nonzero_padding_packets += int(any(padding))
                             source_actor = struct.unpack_from("<I", body, off + 4)[0]
                             destination_actor = struct.unpack_from("<I", body, off + 8)[0]
                             for record_in_packet, row in enumerate(parsed):
@@ -157,14 +161,25 @@ def scan() -> tuple[list[dict], dict]:
                   "width_distribution": {str(k): v for k, v in sorted(Counter(r["value_width"] for r in rows).items())},
                   "declared_total_distribution": {str(k): v for k, v in sorted(declared_totals.items())},
                   "zero_terminated_packets": terminated_packets,
+                  "fully_consumed_declared_packets": fully_consumed_packets,
+                  "residual_padding_bytes": residual_padding_bytes,
+                  "nonzero_padding_packets": nonzero_padding_packets,
                   "packets_by_capture": dict(sorted(packet_by_capture.items())),
                   "hash_profiles": profiles,
                   "inputs": {"captures": [{"name": path.name, "sha256": sha256(path)} for path in default_corpus_paths()]},
                   "boundaries": ["value_u_le and value_f32 are parallel packet interpretations, not promoted property semantics.",
                                  "source_actor_id and destination_actor_id are wrapped subevent header fields; the packet-only study does not rename either as the property subject.",
                                  "target_marker is independent stream context."]}
-    if (packet_count, len(rows), len(by_hash), len(packet_by_capture)) != (2014, 9118, 263, 37):
+    if (packet_count, len(rows), len(by_hash), len(packet_by_capture)) != (2014, 9307, 263, 37):
         raise ValueError(f"corpus reconciliation changed: {packet_count}/{len(rows)}/{len(by_hash)}/{len(packet_by_capture)}")
+    if (
+        fully_consumed_packets != packet_count
+        or residual_padding_bytes != 164365
+        or nonzero_padding_packets != 0
+        or min(declared_totals) != 7
+        or max(declared_totals) != 128
+    ):
+        raise ValueError("property-stream payload layout reconciliation changed")
     return rows, accounting
 
 
