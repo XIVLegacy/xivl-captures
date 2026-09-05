@@ -25,13 +25,6 @@ XIV 1.23b.
 - [Packet decoding and wire order](docs/pcap-decoding.md)
 - [Tooling and regeneration](tools/README.md)
 
-## Community
-
-Join the [project Discord](https://discord.gg/PxK5RJYQjm) for questions and
-community support.
-Use [Issues](https://github.com/XIVLegacy/xivl-captures/issues) for bugs and
-research findings that need a durable record.
-
 ## Contributing
 
 Pull requests are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) before you open one.
