@@ -3,8 +3,8 @@
 ## Study contents
 
 This study decodes every property record carried by s2c `0x0137` in the 53
-canonical retail 1.23b captures. The resulting 1,992 packets contain 8,918
-records, 263 distinct hashes, 36 contributing captures, and 13 scenario IDs.
+canonical retail 1.23b captures. The resulting 2,014 packets contain 9,118
+records, 263 distinct hashes, 37 contributing captures, and 14 scenario IDs.
 These totals are pinned in `derived/accounting.json`; each record is retained
 in `derived/property-records.csv`.
 
