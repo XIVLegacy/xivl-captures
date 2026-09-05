@@ -7,7 +7,10 @@ output:
   sha256: 69f7a21ef4b7bd0c48cafc1c7db68884b9273bfa3fd03043303633106e940581
 generator:
   tool: tools/extractors/extract_spawn_observations.py
-  version: '1'
+  version: '2'
 inputs:
 - source: pcap-1.23b
   content_sha256: 3e39bfbffdf5a7efa0f42fc221f42dc2d1d28af8f19378d28921a3b903c0c7ee
+outputs:
+- file: derived/spawn_observations.csv
+  sha256: d4f68b277795a828d9373a03a81421af9940c8524517775593fa2581058eab93

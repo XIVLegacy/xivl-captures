@@ -492,6 +492,7 @@ products:
 - file: derived/request_response_pairs.json
 - file: derived/gam_keys.json
 - file: derived/spawn_observations.json
+- file: derived/spawn_observations.csv
 - file: derived/gam_hash_names.json
   derived_from: derived/gam_keys.json + derived/gam_name_candidates.json
 - file: derived/observations.json

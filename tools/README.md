@@ -86,14 +86,16 @@ or focused advisory checks. `refresh.py` is their normal entry point.
   `catalog/aliases.yaml`, and `catalog/by-*.md` in dependency order. The three
   phase modules remain internal compatibility surfaces for byte-stable output.
 - `build_pcap_products.py` - regenerates or byte-checks all 12 pcap-derived
-  products through one cached corpus traversal. `--product NAME` selects a
-  product and its dependencies without making the reducers reopen captures.
+  JSON products (plus the spawn-observations CSV companion) through one cached
+  corpus traversal. `--product NAME` selects a product and its dependencies
+  without making the reducers reopen captures.
 - `build_checksums.py` - regenerates or verifies (`--check`) each study's
   `derived/` checksum anchor for studies that declare a manifest
   `checksum_file`. The anchored set is every file under `derived/`; this tool
   owns checksum coverage and digest integrity.
 - `build_dataset_meta.py` - generates `derived/<name>.meta.yaml` provenance
-  sidecars for every committed `derived/*.json` product.
+  sidecars for every committed `derived/*.json` product, including hashes for
+  any format-specific companion outputs.
 - `check_markdown_links.py` - resolves every in-repo Markdown link target
   across `studies/`, `docs/`, `catalog/`, and top-level `*.md`; fails on any
   that dangles. Skips web links and intentional sibling-repo references.
@@ -149,7 +151,7 @@ explicit capture paths and default to a priority set when none are given.
 - `extract_sequences.py` - builds per-capture opcode sequences and finds
   cross-capture motifs.
 - `extract_spawn_observations.py` - extracts observed actor spawn positions
-  from the pcap corpus.
+  from the pcap corpus into the canonical JSON and a fixed-field CSV view.
 - `extract_streams.py` - reconstructs per-direction TCP streams, admits only
   clear port-54992 game lanes, and parses outer frames for internal reducers.
 - `extract_timing.py` - computes per-opcode inter-emission timing statistics

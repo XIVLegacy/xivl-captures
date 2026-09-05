@@ -60,7 +60,7 @@ outputs:
 - dataset: spawn_observations
   generator:
     tool: tools/extractors/extract_spawn_observations.py
-    version: "1"
+    version: "2"
   inputs:
   - source: pcap-1.23b
 - dataset: gam_hash_names

@@ -23,6 +23,13 @@ SOURCE_MANIFEST = REPO_ROOT / "sources" / "pcap-1.23b" / "manifest.yaml"
 PROMOTED_DATASETS = {"opcode_names"}
 FROZEN_DATASETS = {"spawn_location_validation"}
 
+# Some generated datasets publish a format-specific companion alongside the
+# canonical JSON. Keep this mapping here because pipeline outputs remain one
+# logical dataset and the sidecar must retain the JSON output for catalog users.
+ADDITIONAL_OUTPUTS = {
+    "spawn_observations": ("spawn_observations.csv",),
+}
+
 # Fixed historical provenance is not derivable from the file, so keep it with the frozen artifact definition.
 FROZEN_NOTES = {
     "spawn_location_validation": (
@@ -74,7 +81,7 @@ def build_generated_meta(name: str, pipeline: dict, corpus_hash: str) -> dict:
             dataset_path = DATA_DIR / f"{dataset_id}.json"
             inputs.append({"dataset": dataset_id, "sha256": sha256_file(dataset_path)})
 
-    return {
+    meta = {
         "dataset": name,
         "kind": "generated",
         "evidence_class": "packet-capture",
@@ -89,6 +96,16 @@ def build_generated_meta(name: str, pipeline: dict, corpus_hash: str) -> dict:
         },
         "inputs": inputs,
     }
+    additional = []
+    for filename in ADDITIONAL_OUTPUTS.get(name, ()):
+        path = DATA_DIR / filename
+        additional.append({
+            "file": f"derived/{filename}",
+            "sha256": sha256_file(path),
+        })
+    if additional:
+        meta["outputs"] = additional
+    return meta
 
 
 def build_promoted_meta(name: str) -> dict:

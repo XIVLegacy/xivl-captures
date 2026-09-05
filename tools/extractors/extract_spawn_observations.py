@@ -7,6 +7,9 @@ Position floats are at offsets 24, 28, 32, and 36. Zone tags remain verbatim.
 from __future__ import annotations
 
 import argparse
+import csv
+import io
+import json
 import re
 import struct
 import sys
@@ -23,9 +26,30 @@ from extract_payload_samples import walk_capture_payloads  # type: ignore
 from extract_observations import default_corpus_paths  # type: ignore
 
 # Bump when extraction changes output; record the version in pipelines/*.yaml and derived/*.meta.yaml.
-GENERATOR_VERSION = "1"
+GENERATOR_VERSION = "2"
 
 DEFAULT_OUT = Path(__file__).parent.parent.parent / "derived" / "spawn_observations.json"
+DEFAULT_CSV_OUT = DEFAULT_OUT.with_suffix(".csv")
+
+# This is the public row contract. Keep it explicit so CSV column order does
+# not depend on dictionary insertion order or a future JSON-only field.
+RECORD_FIELDS = (
+    "capture",
+    "actorId",
+    "instanceName",
+    "baseClass",
+    "classPath",
+    "zoneTag",
+    "x",
+    "y",
+    "z",
+    "rotation",
+    "hadInstantiate",
+    "hadAddActor",
+)
+CSV_FIELDS = RECORD_FIELDS
+_FLOAT_DIGITS = {"x": 3, "y": 3, "z": 3, "rotation": 4}
+_BOOLEAN_FIELDS = {"hadInstantiate", "hadAddActor"}
 
 OP_ADD, OP_INST, OP_POS = 202, 204, 206  # 0x00ca / 0x00cc / 0x00ce
 # Wire fact: instance-name zone tags look like `_fst0Twn01a_` or `_wil0Fld03_`.
@@ -90,9 +114,103 @@ def walk_capture_spawns(path: Path) -> list[dict]:
     return records
 
 
+def _csv_value(field: str, value: object) -> str:
+    """Render one record value using a stable, locale-independent spelling."""
+    if field in _BOOLEAN_FIELDS:
+        if not isinstance(value, bool):
+            raise ValueError(f"{field} must be boolean")
+        return "true" if value else "false"
+    if field in _FLOAT_DIGITS:
+        if isinstance(value, bool) or not isinstance(value, (int, float)):
+            raise ValueError(f"{field} must be numeric")
+        return f"{float(value):.{_FLOAT_DIGITS[field]}f}"
+    if not isinstance(value, str):
+        raise ValueError(f"{field} must be a string")
+    return value
+
+
+def render_csv(records: list[dict]) -> bytes:
+    """Render sorted spawn records as UTF-8 CSV with LF endings."""
+    output = io.StringIO(newline="")
+    writer = csv.DictWriter(
+        output,
+        fieldnames=RECORD_FIELDS,
+        extrasaction="raise",
+        lineterminator="\n",
+    )
+    writer.writeheader()
+    for record in records:
+        if not isinstance(record, dict) or set(record) != set(RECORD_FIELDS):
+            raise ValueError("record fields differ from the stable CSV fields")
+        writer.writerow({field: _csv_value(field, record[field]) for field in RECORD_FIELDS})
+    return output.getvalue().encode("utf-8")
+
+
+def write_csv(path: Path, records: list[dict]) -> None:
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_bytes(render_csv(records))
+
+
+def validate_csv(json_path: Path, csv_path: Path) -> list[str]:
+    """Validate a retained CSV against the JSON record order and values."""
+    errors: list[str] = []
+    try:
+        document = json.loads(Path(json_path).read_text(encoding="utf-8"))
+    except (OSError, UnicodeError, ValueError) as exc:
+        return [f"invalid spawn_observations JSON: {exc}"]
+    records = document.get("records") if isinstance(document, dict) else None
+    if not isinstance(records, list):
+        return ["spawn_observations JSON has no records list"]
+    try:
+        raw = Path(csv_path).read_bytes()
+        text = raw.decode("utf-8")
+    except (OSError, UnicodeError) as exc:
+        return [f"invalid spawn_observations CSV: {exc}"]
+    if "\r" in text:
+        errors.append("spawn_observations CSV contains CR line endings")
+    try:
+        rows = list(csv.reader(io.StringIO(text, newline="")))
+    except csv.Error as exc:
+        return [f"invalid spawn_observations CSV: {exc}"]
+    if not rows:
+        return ["spawn_observations CSV is empty"]
+    if rows[0] != list(RECORD_FIELDS):
+        errors.append("spawn_observations CSV header differs from the stable record fields")
+    data_rows = rows[1:]
+    if len(data_rows) != len(records):
+        errors.append(
+            f"spawn_observations CSV has {len(data_rows)} records; JSON has {len(records)}"
+        )
+    try:
+        canonical = render_csv(records)
+    except (KeyError, TypeError, ValueError) as exc:
+        errors.append(f"spawn_observations JSON records are invalid: {exc}")
+    else:
+        if raw != canonical:
+            errors.append("spawn_observations CSV bytes are not canonical")
+    for index, record in enumerate(records[:len(data_rows)]):
+        row = data_rows[index]
+        if len(row) != len(RECORD_FIELDS):
+            errors.append(
+                f"spawn_observations CSV row {index + 2} has {len(row)} fields; "
+                f"expected {len(RECORD_FIELDS)}"
+            )
+            continue
+        try:
+            expected = [_csv_value(field, record[field]) for field in RECORD_FIELDS]
+        except (KeyError, TypeError, ValueError) as exc:
+            errors.append(f"spawn_observations JSON record {index} is invalid: {exc}")
+            continue
+        if row != expected:
+            errors.append(f"spawn_observations CSV row {index + 2} differs from JSON")
+    return errors
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="Extract observed spawn positions from the pcap corpus.")
     ap.add_argument("--out", default=str(DEFAULT_OUT), help="Output JSON path.")
+    ap.add_argument("--csv-out", default=None, help="Output CSV path (defaults beside --out).")
     args = ap.parse_args()
 
     records: list[dict] = []
@@ -118,9 +236,12 @@ def main() -> int:
         "records": records,
     }
     out_path = Path(args.out)
+    csv_path = Path(args.csv_out) if args.csv_out else out_path.with_suffix(".csv")
     out_path.parent.mkdir(parents=True, exist_ok=True)
     write_json(out_path, out)
+    write_csv(csv_path, records)
     print(f"wrote {out_path}")
+    print(f"wrote {csv_path}")
     print(f"  captures: {capture_count}")
     print(f"  positioned spawns: {positioned}  (identified {identified}, zone-tagged {zone_tagged})")
     return 0
