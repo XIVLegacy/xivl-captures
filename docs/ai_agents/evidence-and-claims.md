@@ -2,8 +2,8 @@
 
 The canonical registry is
 [schemas/evidence-classes.yaml](../../schemas/evidence-classes.yaml). Its
-order is packet capture > video breakdown > wiki. Archive is preservation-only
-and has no evidence tier.
+order is packet capture > video breakdown > secondary research. Archive is
+preservation-only and has no evidence tier.
 
 ## Evidence classes
 
@@ -13,6 +13,7 @@ and has no evidence tier.
 | video-breakdown | 2 | AI breakdowns distilled from retail 1.x gameplay videos. |
 | notes-and-transcripts | 2 | Freeform notes and transcripts, mapped to the video breakdown tier. |
 | web-tables | 3 | Community 1.0-era web-source table transcriptions (stat growth, formulas). |
+| historical-research | 3 | Historical secondary research artifacts with field-level provisional claims. |
 | archive | no tier | Source preservation only. It is not ranked evidence (no tier). |
 
 The tier is a conflict rule, not a guarantee that every claim in a higher

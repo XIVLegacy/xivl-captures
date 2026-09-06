@@ -1,4 +1,4 @@
-# Evidence-class registry: packet > video > wiki; archive is preservation-only.
+# Evidence-class registry: packet > video > secondary research; archive is preservation-only.
 
 classes:
 - id: packet-capture
@@ -10,6 +10,9 @@ classes:
 - id: web-tables
   tier: 3
   description: Community 1.0-era web-source table transcriptions (stat growth, formulas).
+- id: historical-research
+  tier: 3
+  description: Historical secondary research artifacts with field-level provisional claims.
 - id: archive
   tier: null
   description: Source-preservation only; not ranked evidence (no tier).

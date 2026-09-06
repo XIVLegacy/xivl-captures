@@ -1,0 +1,32 @@
+id: historical-battlecommand-workbook
+title: Historical BattleCommand Workbook
+evidence_class: historical-research
+status: distilled
+content_kind: action-mechanic
+tags:
+- historical-secondary-research
+- battle-command
+- command-animation
+- command-geometry
+- provisional-field-evidence
+search_hints:
+- BattleCommand workbook
+- Project Meteor command research
+- Backflip Tail Chase Foul Bite
+- Bomb Toss Hail Mary Firecracker Shower
+- Chimera Breath Voice Dissent Chaotic Chorus Scorpion Sting
+notes: Provisional field-level evidence. Retail captures, video, client data, and client scripts supersede conflicting workbook values. Analyst notes and the unfinished weapon-skill table are leads.
+related_implementation_docs: []
+source_refs:
+- source: historical-battlecommand-workbook
+primary_paths:
+- derived/commands.json
+- derived/evidence-map.md
+canonical_evidence:
+- derived/commands.json
+- derived/evidence-map.md
+distilled:
+  distilled: true
+  distilled_artifacts:
+  - derived/commands.json
+  - derived/evidence-map.md

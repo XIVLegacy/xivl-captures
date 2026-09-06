@@ -107,6 +107,13 @@ sources:
   original_state: local-only
   storage_id: local-research-corpus
   member_count: 0
+- id: historical-battlecommand-workbook
+  title: Historical BattleCommand Workbook
+  evidence_class: historical-research
+  distribution: restricted
+  original_state: in-repo
+  storage_id: repo
+  member_count: 1
 - id: kanican-tables
   title: kanican FFXIV 1.x Combat Theorycrafting - Web Tables
   evidence_class: web-tables
@@ -1092,6 +1099,28 @@ studies:
   source_refs:
   - source: pcap-1.23b
     citation: sources/pcap-1.23b/manifest.yaml
+- id: historical-battlecommand-workbook
+  title: Historical BattleCommand Workbook
+  status: distilled
+  evidence_class: historical-research
+  content_kind: action-mechanic
+  tags:
+  - historical-secondary-research
+  - battle-command
+  - command-animation
+  - command-geometry
+  - provisional-field-evidence
+  search_hints:
+  - BattleCommand workbook
+  - Project Meteor command research
+  - Backflip Tail Chase Foul Bite
+  - Bomb Toss Hail Mary Firecracker Shower
+  - Chimera Breath Voice Dissent Chaotic Chorus Scorpion Sting
+  primary_paths:
+  - studies/historical-battlecommand-workbook/derived/commands.json
+  - studies/historical-battlecommand-workbook/derived/evidence-map.md
+  source_refs:
+  - source: historical-battlecommand-workbook
 - id: kanican-tables
   title: kanican FFXIV 1.x Combat Theorycrafting - Web Tables
   status: distilled

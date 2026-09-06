@@ -59,6 +59,9 @@ The supported commands for direct maintainer use are:
 - `python tools/extractors/extract_world_party_chat_00c9.py` - regenerate the
   exhaustive sanitized c2s/s2c World chat-lane `0x00C9` contract and synthetic
   fixtures; add `--check` for replay.
+- `python tools/extract_historical_battlecommand.py` - regenerate the
+  provisional, field-layered BattleCommand workbook extraction; add `--check`
+  for byte-stable replay.
 - `python tools/extractors/extract_property_stream_catalog.py` - regenerate
   the complete record-level s2c `0x0137` property-stream study, including raw
   values, packet positions, wrapped source/destination actors, scenarios, and

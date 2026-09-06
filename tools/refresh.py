@@ -105,6 +105,7 @@ UNIT_TEST_MODULES = (
     "tools.tests.test_extract_0190_transaction_census",
     "tools.tests.test_extract_world_party_chat_00c9",
     "tools.tests.test_extract_lobby_record_census",
+    "tools.tests.test_extract_historical_battlecommand",
 )
 
 # The three gate modes share these command-level checks. Product-specific

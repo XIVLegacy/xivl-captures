@@ -26,7 +26,7 @@ the generated views.
 ## Evidence classes and tier
 
 `schemas/evidence-classes.yaml` is the canonical evidence-class registry,
-ranked packet captures > video breakdowns > wiki. See
+ranked packet captures > video breakdowns > secondary research. See
 [docs/ai_agents/evidence-and-claims.md](ai_agents/evidence-and-claims.md) for
 the full class table and the tier rule.
 

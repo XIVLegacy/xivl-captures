@@ -1,0 +1,25 @@
+id: historical-battlecommand-workbook
+title: Historical BattleCommand Workbook
+evidence_class: historical-research
+distribution: restricted
+provenance:
+  sources:
+  - title: BattleCommand.ods
+    url: https://drive.google.com/file/d/1mZguMEMjgwsh26IrQ1veDJjDDZQOi86Y/view?usp=sharing
+    retrieved: '2026-09-06'
+  owner_reported:
+    origin: Created during the early Project Meteor period.
+    period: Close to the FFXIV 1.x shutdown era.
+  embedded_metadata:
+    saved_at: '2019-02-03T12:44:53.008000000'
+    generator: LibreOffice/6.1.2.1$Windows_X86_64 LibreOffice_project/65905a128db06ba48db947242809d14d3f9a93fe
+  provenance_boundary: The embedded save metadata does not establish the workbook's creation date. The earlier origin and period are owner-reported.
+storage:
+  original_state: in-repo
+  storage_id: repo
+  path: objects/
+members:
+- file: BattleCommand.ods
+  sha256: 66b214bc31de07b550eaa754e9bc6bb9f2ba414ee5a659dbe49cf14aabfb2d98
+  size_bytes: 583042
+notes: Redistribution terms were not embedded in the workbook, so the source is retained as restricted historical secondary research.

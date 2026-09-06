@@ -2,14 +2,15 @@
 
 Generated from `catalog/index.yaml`. Primary axis: `content_kind`.
 
-## action-mechanic (13)
+## action-mechanic (14)
 
-### Studies (12)
+### Studies (13)
 
 - `battle-result-backfit`
 - `bluegartr-stat-tests`
 - `elemen-battle-actions`
 - `elemen-craft-gather-actions`
+- `historical-battlecommand-workbook`
 - `kanican-tables`
 - `lodestone-beginners`
 - `lodestone-dev-patch`
