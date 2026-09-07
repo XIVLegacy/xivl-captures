@@ -3,9 +3,10 @@
 This guide is the standard process for adding a video breakdown to
 `xivl-captures`. A video breakdown is an observation document based on a
 retail 1.x gameplay video and the [`video-breakdown-template.md`](video-breakdown-template.md).
-It distills what packets never carry: damage magnitudes, heal amounts,
-timing/pacing, and visual
-state.
+It distills observations that may be absent from a matching retained packet
+scenario, including damage magnitudes, heal amounts, timing/pacing, and visual
+state. A matching packet scenario can carry some of these values, so compare
+the sources rather than treating any field as video-only.
 
 ## Goal
 
@@ -36,8 +37,11 @@ with an immutable citation.
 9. Record the evidence id, exact source or study path, and verdict here. A
    consumer project promotes conclusions on its own side with an immutable
    citation.
-10. Optionally run `python tools/refresh.py --check` for local feedback; hosted
-    CI enforces the validation chain on the pull request.
+10. For a public pull request, optionally run `python tools/refresh.py --check`
+    for local feedback; hosted CI enforces the validation chain. Before a local
+    maintainer commit, run one of the applicable refresh commands:
+    `python tools/refresh.py --check` or the same command with `--public-shape`,
+    including for prose changes that affect evidence citations.
 
 ## Step 1: Land The Document
 
@@ -245,9 +249,15 @@ A video breakdown is a distinct evidence class with its own tier rule:
 
 **Packet captures > video breakdown > wiki.** Where a breakdown disagrees with a
 packet source (`xivl-opcodes`), the packets win. Where it disagrees with the
-decoded client data (`xivl-client-data`), the client data wins. A breakdown's
-unique value is what packets never carry: damage magnitudes, heal amounts,
-timing/pacing, and visual state.
+decoded client data (`xivl-client-data`), the client data wins. A breakdown can
+add damage magnitudes, heal amounts, timing/pacing, and visual state when the
+matching retained packet scenario does not contain them; a packet may still
+carry some of those values.
+
+For a retained counterexample, the [Battle Result Backfit study](../studies/battle-result-backfit/README.md)
+records `numeric_value` values 151, 152, and 166 on rows joined to the Cure
+HP-recovery message. `numeric_value` remains a generic wire value; the
+message-specific identity supplies the HP-recovery interpretation.
 
 In this repo, the pcap corpus covers a fixed set of scenario families, so a
 breakdown's content often has no packet counterpart. So in practice the

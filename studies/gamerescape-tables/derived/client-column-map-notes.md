@@ -301,13 +301,14 @@ wiki field covers them, so for those the client sheet is the whole of the
 evidence.
 
 The 24 named-but-unused ids are the informative half, because they are mechanics
-the 1.23b client had vocabulary for and shipped on no item:
+the 1.23b client had vocabulary for but that appear on no item row in this client
+dataset:
 
 - **A complete damage-type resistance family, entirely unused**: `15066`-`15069`
   Slashing / Piercing / Blunt / Projectile Resistance - mirroring the four
   `weapon.106` damage types exactly - plus `15070`-`15073` Sonic, Breath,
   Physical and Magic Resistance.
-- **Status resistance shipped by halves**: Paralysis, Silence, Blind, Poison,
+- **Status resistance is used by halves**: Paralysis, Silence, Blind, Poison,
   Stun, Sleep and Heavy are used (1-5 items each); Slow, Petrification, Bind and
   Doom are defined and unused.
 - **`15059 Damage` and `15060 Delay` are never used as bonus ids**, because the
@@ -839,16 +840,16 @@ MP, magnitudes 5/7/8/10 for grade I on both, which is exactly GE's
 356 materia rows are not listed in `materia.csv` at all, and **every one of those
 96 carries 140 = 56**. They are 24 lines x 4 grades - `Bloodbringer`,
 `Manabringer`, the six `Breath of <element>` lines, `Byregot's Hammer` and the rest
-- and **not one of the 96 has a GE page**, so they read as content that was never
-released rather than as a decode gap. For them the column says nothing about the
-effect.
+- and **not one of the 96 has a GE page**, so this corpus cannot corroborate them.
+Whether they were released or used is unresolved; the result is not a decode gap,
+and the column says nothing about their effect.
 
-`Ahriman Gaze` is the one released line in that position. `materia.csv` row 57
+`Ahriman Gaze` is listed with four item ids in that position. `materia.csv` row 57
 lists its four item ids but is the **only row in the table that carries no
 parameter at all**, so `itemData` routes it to 56 instead - and GE's
-`Heavy Resistance` for Ahriman Gaze matches what row 56 grants. Whether it shares
-Chocobo Down's effect by design or by falling through is not decidable here, but
-the value is not wrong for it.
+`Heavy Resistance` for Ahriman Gaze matches what row 56 grants. The conflicting
+page-coverage statements are unresolved here, as is whether it shares Chocobo
+Down's effect by design or by falling through.
 
 GE corroborates the magnitudes but renders them too inconsistently to score
 strictly. On a formatting-agnostic comparison - the set of nonzero values at the
@@ -910,8 +911,10 @@ right test for a coarsening is the backward direction alone.
 
 Two incidental findings. Values `5`, `6`, `9`, `21` and `24` each hold exactly one
 untranslated (`[en]`) arm - one-handed for the first three, two-handed for the
-last two - so they are **reserved categories 1.23b never shipped**; the enum also
-skips 11-20, 25-28 and 37-38 entirely. And GE has a category typo: one row reads
+last two - so they are **categories represented only by these untranslated
+singleton rows in this 1.23b client data**; their semantics and shipping status
+are unresolved. The enum also skips 11-20, 25-28 and 37-38 entirely. And GE has a
+category typo: one row reads
 `Thamaturge's Arm`, which the client files under value 22 with the correctly
 spelled ones.
 

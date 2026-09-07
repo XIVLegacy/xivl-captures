@@ -151,9 +151,9 @@ use the client's own casing, which marks proper names.
 **34 are `race-name-only`**: the actor's display name is just its species, with no
 epithet - `bat`, `boar`, `antling`, `coblyn`, `crab`, `flan`, `kobold`, `rat`, `sheep`,
 `sylph`, `wolf` and so on. GE catalogues mobs by their in-world name, so an actor
-called only `bat` has nothing for GE to write a page about. The label states the test
-and not an inference: it does **not** claim the actor is unused, and `Titan`, `dragon`
-and `wyvern` sit in this class too.
+called only `bat` has no distinct name to match in this corpus. The label states
+the test and not an inference: it does **not** claim the actor is unused, and
+`Titan`, `dragon` and `wyvern` sit in this class too.
 
 **10 are `named-boss-gap`**, one-word proper names in races GE otherwise covers, and
 this is the part of the gap worth acting on. They come in **sets whose other members
@@ -166,18 +166,19 @@ GE documents**, which is what makes the class checkable rather than a guess:
 | 1008 Buffalo, 1035 Gargoyle, 1016 Bomb, 1032 Coeurl, 1025 Ogre | the ordinary mobs of each | `Audhumbla`, `Baraquel`, `Bombard`, `Fang`, `Porus` |
 
 Arges, Brontes and Steropes are the three cyclopes, and GE caught one of the three.
-Chirada and Suparna accompany Garuda. So these are named, boss-tier actors the wiki
-missed, and the siblings both identify them and confirm they are real content rather
-than leftovers. `--verify` asserts Arges and Brontes stay in the class and stay in the
-same race as the documented Steropes.
+Chirada and Suparna accompany Garuda. These are named client actors in races that
+GE also documents; the sibling rows identify the grouping but do not establish
+publication history or runtime use. `--verify` asserts Arges and Brontes stay in
+the class and stay in the same race as the documented Steropes.
 
 **The remaining 270** are ordinary epithet mobs - `Bloodshore eft`, `Coerthas
 spriggan`, `Amalj'aa archer`, `11th Order Patriarch Gu Bu` - and nothing
 distinguishes them from the documented population. They have the same median actor
-count (1) and the same rate of quest-range duplicates (4% against 5%), so they are not
-instanced or event-only content that GE skipped on purpose. They are simply pages the
-wiki never wrote. Closing them needs GE or retail observation - but the client can say
-roughly *what to go and look at*, which is the next section.
+count (1) and the same rate of quest-range duplicates (4% against 5%). Those
+measurements do not establish why the harvest has no corresponding page, or whether
+the actors were used in a particular release. Closing the corpus gaps needs GE or
+retail observation; the client can still suggest roughly *what to go and look at*,
+which is the next section.
 
 ### The 270 have no signal of their own, but they have neighbours
 
@@ -464,10 +465,11 @@ both tables present, at least one reference, and no reference outside band 22.
 | instanced-dungeon | 17 |
 | persistent + instanced-dungeon | 1 |
 
-**169 of the 270 hold a band-22 actor**, which is the largest single explanation of why
-GE never wrote them up: a leve mob is not standing in a zone to be found and written up
+**169 of the 270 hold a band-22 actor**, which may help explain why this harvest has no
+corresponding page: a leve mob is not standing in a zone to be found and written up
 the way a persistent one is, and GE's coverage of leve rosters is by leve rather than by
-mob. For those 169 the container is worth more than the level bracket beside it - it says
+mob. This is a target-selection interpretation, not evidence about publication history.
+For those 169 the container is worth more than the level bracket beside it - it says
 what kind of thing the name is, which the bracket never does.
 
 It also puts the earlier 23-band work in its place. The level floor and the dungeon
@@ -880,10 +882,12 @@ single-name races do reach band 22 and are ordinary in that light: `wyvern`, `ti
 `ascian`, `hellhound`, three elementals and `imperial juggernaut`. `--verify` pins the
 membership of the band-21-only four, because the membership is the finding.
 
-**`crab` and `zombie` are ordinary undocumented mobs, and there is nothing more to find.**
+**`crab` and `zombie` are ordinary client names absent from this corpus, and there is
+nothing more to infer from this comparison.**
 Their races are well populated - 25 distinct names over 38 actors for Crab, 18 over 33 for
 Zombie, both with band-22 rosters of their own - and the bare word sits mid-run rather than
-appended at the end. GE simply never wrote up a mob whose name is the race word.
+appended at the end. GE has no corresponding mob page for a mob whose name is the
+race word in this corpus.
 
 **They do share one quirk worth recording, because it is the mechanism behind a rule this
 file already states.** Both are in a *transposition*: actor `2107615` carries the name id

@@ -217,7 +217,7 @@ longer in that position - it now has one. Behavior flags are in the same positio
 across GE's own three tiers instead: `mob-behavior-resolved.csv` covers 780 of
 824 mobs. Method and rosters: `mob-client-crosscheck-notes.md`.
 
-For the 270 client mob names GE simply never wrote up, `mob-gap-brackets.csv`
+For the 270 client mob names with no corresponding page in this harvest, `mob-gap-brackets.csv`
 interpolates a level bracket and a zone shortlist from each name's documented
 actor-id neighbours. It is **a target list, not evidence**: right 53% of the time
 on level and 55% on zone leave-one-out, about 12 points better than picking any two
@@ -243,8 +243,9 @@ guildleve-or-quest, 23 instanced dungeon - published as `spawn_container` on
 mobs are sighted only inside a leve or quest against 12 of 376 in band 21, and 223 of
 GE's 248 sighting tags are an exact cell in the client's own `xtx_guildleve` /
 `xtx_quest` names. Read it as what kind of content spawned the mob, not as a level or a
-zone: **169 of the 270 gap names are leve content**, which is why they were never written
-up, and it says nothing about their level or spawn point.
+zone: **169 of the 270 gap names are leve content**, which may help explain the
+harvest gap but does not establish why a page is absent or whether the names were
+published or used. It says nothing about their level or spawn point.
 
 `leve_candidates` on the same file names the *leve* a band-22 gap mob likely belongs to,
 flanked from its nearest tagged band-22 race-mates: **0.516 from 2 candidates against a

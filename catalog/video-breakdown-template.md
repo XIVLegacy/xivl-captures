@@ -247,12 +247,13 @@ track only when the footage shows none of it (say so in Uncertainties).
    "past"/Echo version of a familiar place, or a solo private room; any
    confirmation prompt at the boundary (join/enter dialogs, party-size wording,
    exact text); and where the player reappeared afterward.
-10. **Rewards and Obtain Lines** - HIGHEST-PRIORITY quest evidence: reward
-    numbers have no other retail source, so a video that shows one is often
-    the only available anchor. Quote exactly: every `You obtain [item/key item]` line, gil and experience
-    amounts at quest completion (and the on-screen reward window contents if
-    shown), per-kill experience inside quest instances, and any rank/skill
-    point gains tied to the quest. Timestamp each.
+10. **Rewards and Obtain Lines** - HIGHEST-PRIORITY quest evidence: the retained
+    packet corpus may not cover a given scenario, so a video observation can be
+    the only source currently identified for a reward value. Quote exactly:
+    every `You obtain [item/key item]` line, gil and experience amounts at quest
+    completion (and the on-screen reward window contents if shown), per-kill
+    experience inside quest instances, and any rank/skill point gains tied to
+    the quest. Timestamp each.
 11. **Linkshell and System Messages** - NPC linkshell messages with sender
     name, exact text, and TWO timestamps: when the message notification
     arrived, and when the player actually read it (players may leave messages

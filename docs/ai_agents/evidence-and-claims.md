@@ -67,10 +67,13 @@ something else, a count is throat-clearing: it tells the reader nothing they
 can act on, and it invites doubt when their own run differs by one. Keep what
 was found. Drop the size of the haystack.
 
-A hedge is the strongest tell. "approximately", "roughly", "about", or a
-leading "~" before a figure means the author had already decided the figure
-did not matter. Make it exact or cut it. Where an exact source exists, name
-that source instead of restating its number in prose.
+Approximate markers such as "approximately", "roughly", "about", or "~" in an
+incidental scene-setting figure are still a reason to cut the number. An
+approximate figure in an authored observation may remain when the method or
+instrument resolution cannot support more precision; state the method and
+resolution with the figure, and do not turn it into an exact value by inference.
+Where an exact source exists, name that source instead of restating its number
+in prose.
 
 This governs prose the repository authors. A figure inside a quoted or
 transcribed source is source content and stays verbatim, hedge included.

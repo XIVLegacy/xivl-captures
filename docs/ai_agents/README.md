@@ -28,8 +28,12 @@ guide](../catalog-guide.md), and the [catalog registry](../../catalog/index.yaml
 - A documentation or comment change must not alter executable behavior.
   Python docstrings and command help are runtime prose. Change them only to
   correct their public contract, and report the text change explicitly. Hosted
-  CI runs the repository checks for every pull request. Local runs are optional
-  feedback, including for prose-only changes.
+  CI runs the repository checks for every pull request. Public fork and pull
+  request contributors may use local runs as optional feedback; the repository
+  owner's local workflow requires one of the applicable refresh commands:
+  `python tools/refresh.py --check` or the same command with `--public-shape`,
+  before a commit, including for prose-only changes that affect evidence
+  citations.
 - Use a single commit subject of <=50 chars with no parentheses or
   co-authored trailer.
 - Do not push unless the user explicitly asks.

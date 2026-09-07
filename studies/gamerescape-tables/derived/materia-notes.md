@@ -85,14 +85,15 @@ grade columns, and of those **256 carry the matching `itemData.140` key**.
 The 96 items it never names all carry `140 = 56`, the `Chocobo Down` row. They are
 24 lines x 4 grades - `Bloodbringer`, `Manabringer`, the six `Breath of <element>`
 lines, `Byregot's Hammer`, `Everspike`, `Mana Martyr` and the rest - and **none of
-the 96 has a GE page**, so they read as content that never shipped rather than as
-a gap in the decode. Their effect is not recoverable from this table.
+the 96 has a GE page**, so this corpus cannot corroborate them. Whether they were
+released or used is unresolved; their absence from `materia.csv` is not a decode
+gap. Their effect is not recoverable from this table.
 
-`Ahriman Gaze` is the one released line in that position: row 57 lists its four
-items but is the only row in the table carrying no parameter at all, so `itemData`
-routes it to 56. GE's `Heavy Resistance` for Ahriman Gaze is what row 56 grants,
-so the value is not wrong for it, but whether that is by design or by falling
-through is not decidable here.
+`Ahriman Gaze` is the line whose row 57 lists four item ids in that position. It is
+the only row in the table carrying no parameter at all, so `itemData` routes it to
+56. GE's `Heavy Resistance` for Ahriman Gaze is what row 56 grants as a recorded
+comparison, but the conflicting page-coverage statements are unresolved here, as
+is whether that value is by design or by falling through.
 
 ## materiaBook.csv is the rules, not a table
 
@@ -191,12 +192,14 @@ named items. The other nine:
 | 57 | Ahriman Gaze | the no-parameter row; no GE page either |
 | 82-88 | Sanguinary Might, Stellar Might, Sound of Serenity, Sound of Certainty, Sound of Suffering, Swiftwall, Evenflow | the highest and only contiguous id block in the table |
 
-**These are not unreleased content.** Eight of the nine have complete four-grade GE
-pages (Ahriman Gaze is the exception, as already recorded above), against 0.9825
-GE coverage for the lines that *are* sold. Since 82-88 are the table's highest ids
-and the only contiguous run above 68, the likeliest reading is that the menu is a
-fixed eighteen-row list that was never extended when those seven lines were added -
-but that is inference from the id layout, not something the file states.
+**The menu absence does not establish release status.** Eight of the nine have
+complete four-grade GE pages. Ahriman Gaze's page-coverage status conflicts with
+the table entry above and remains unresolved; the 0.9825 GE coverage figure applies
+to the lines that this comparison classifies as sold. Since 82-88 are the table's
+highest ids and the only contiguous run above 68, the likeliest reading is that the
+menu is a fixed eighteen-row list that was never extended when those seven lines
+were added - but that is inference from the id layout, not something the file
+states.
 
 ### The 1-to-16 ramp is real tuning, not placeholder data
 
@@ -230,8 +233,8 @@ fallback. Row 1 is a shipped debug string.
 - The eleven secondary-tool columns (see above). A decomp of the meld UI would
   settle them; nothing in the shipped data can.
 - The magnitudes are corroborated per item only where GE documents the item. The
-  24 unreleased lines have no external check of any kind. The line *names* have a
-  second, non-GE check for the 56 the guild-shop menu lists.
+  24 lines lacking GE coverage have no external check of any kind. The line *names*
+  have a second, non-GE check for the 56 the guild-shop menu lists.
 - `materia.csv` carries no meld success rate and no retention rate, and neither
   text gives a number. Between them they bound the curve only qualitatively: the
   first meld is certain (remover row 24) and each one after it is less likely
