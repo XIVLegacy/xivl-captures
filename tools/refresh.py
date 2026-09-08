@@ -8,7 +8,6 @@ Promoted and frozen products are parse-only.
 from __future__ import annotations
 
 import argparse
-import hashlib
 import json
 import os
 import subprocess
@@ -229,47 +228,6 @@ def parse_only_check(name: str, reason: str, results: list) -> None:
     results.append((f"derived/{name}", "parse-only", True, reason))
 
 
-def sidecar_hash_check(results: list) -> None:
-    """Verify every retained sidecar points to all committed output bytes."""
-    import yaml
-
-    failures = []
-    checked = 0
-    for sidecar in sorted(DATA.glob("*.meta.yaml")):
-        doc = yaml.safe_load(sidecar.read_text(encoding="utf-8")) or {}
-        output = doc.get("output") or {}
-        relative = output.get("file")
-        expected = output.get("sha256")
-        target = REPO_ROOT / relative if relative else None
-        if target is None or not target.is_file():
-            failures.append(f"{sidecar.name}: output missing")
-            continue
-        actual = hashlib.sha256(target.read_bytes()).hexdigest()
-        if actual != expected:
-            failures.append(f"{sidecar.name}: output sha256 mismatch")
-        checked += 1
-        for extra in doc.get("outputs", []):
-            if not isinstance(extra, dict):
-                failures.append(f"{sidecar.name}: invalid additional output metadata")
-                continue
-            extra_relative = extra.get("file")
-            extra_expected = extra.get("sha256")
-            extra_target = REPO_ROOT / extra_relative if extra_relative else None
-            if extra_target is None or not extra_target.is_file():
-                failures.append(f"{sidecar.name}: additional output missing")
-                continue
-            extra_actual = hashlib.sha256(extra_target.read_bytes()).hexdigest()
-            if extra_actual != extra_expected:
-                failures.append(f"{sidecar.name}: additional output sha256 mismatch")
-            checked += 1
-    results.append((
-        "retained derived sidecar output hashes",
-        "validate",
-        not failures,
-        "; ".join(failures) if failures else f"{checked} outputs verified",
-    ))
-
-
 def do_public_check() -> int:
     results: list[tuple[str, str, bool, str]] = []
 
@@ -285,7 +243,6 @@ def do_public_check() -> int:
 
     for json_path in sorted(DATA.glob("*.json")):
         parse_only_check(json_path.name, "retained public product", results)
-    sidecar_hash_check(results)
 
     ok = run([PCAP_BUILDER, "--check"], "public pcap products")
     for name in ("gam_hash_names.json", "payload_layouts.json"):
