@@ -7,6 +7,8 @@ findings.
 
 ## Documentation pages
 
+- [Style guide](style-guide.md) - authored code, structured-data, and
+  documentation conventions.
 - [Catalog and Evidence](catalog-guide.md) - public discovery,
   evidence tiers, layer ownership, and the public/restricted boundary.
 - [Packet Decode and Wire Order](pcap-decoding.md) - the pcap framing,

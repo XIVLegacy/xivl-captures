@@ -27,6 +27,7 @@ should not open a pull request.
 
 The policy pages under `docs/ai_agents/` are authoritative:
 
+- [Repository style](docs/style-guide.md)
 - [Contribution and documentation policy](docs/ai_agents/README.md)
 - [Evidence and claims](docs/ai_agents/evidence-and-claims.md)
 - [Comments and prose](docs/ai_agents/comments-and-prose.md)
