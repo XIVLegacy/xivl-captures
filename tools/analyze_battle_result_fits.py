@@ -19,17 +19,37 @@ DEFAULT_ACCOUNTING = STUDY_DIR / "derived" / "accounting.json"
 DEFAULT_OUT = STUDY_DIR / "derived"
 
 FIT_FIELDS = (
-    "comparison", "scenario_id", "command_id", "source_actor_id",
-    "target_actor_id", "normal_count", "outcome_count",
-    "positive_outcome_count", "excluded_zero_outcome_count", "normal_mean",
-    "outcome_mean", "outcome_to_normal_ratio", "normal_values",
-    "outcome_values", "normal_row_indices", "outcome_row_indices",
-    "normal_csv_lines", "outcome_csv_lines",
+    "comparison",
+    "scenario_id",
+    "command_id",
+    "source_actor_id",
+    "target_actor_id",
+    "normal_count",
+    "outcome_count",
+    "positive_outcome_count",
+    "excluded_zero_outcome_count",
+    "normal_mean",
+    "outcome_mean",
+    "outcome_to_normal_ratio",
+    "normal_values",
+    "outcome_values",
+    "normal_row_indices",
+    "outcome_row_indices",
+    "normal_csv_lines",
+    "outcome_csv_lines",
 )
 RECOVERY_FIELDS = (
-    "identity", "command_id", "world_master_text_id", "base_magnitude",
-    "observed_value", "observed_to_base_ratio", "scenario_id",
-    "source_actor_id", "target_actor_id", "row_index", "source_csv_line",
+    "identity",
+    "command_id",
+    "world_master_text_id",
+    "base_magnitude",
+    "observed_value",
+    "observed_to_base_ratio",
+    "scenario_id",
+    "source_actor_id",
+    "target_actor_id",
+    "row_index",
+    "source_csv_line",
 )
 RATIO_COMPARISONS = {
     "critical_vs_normal": False,
@@ -78,30 +98,36 @@ def build_ratio_rows(matches: list[dict[str, str]]) -> list[dict[str, object]]:
             continue
         normals = split_ints(row["normal_values"])
         outcomes = split_ints(row["outcome_values"])
-        selected = [value for value in outcomes if value > 0] if RATIO_COMPARISONS[comparison] else outcomes
+        selected = (
+            [value for value in outcomes if value > 0]
+            if RATIO_COMPARISONS[comparison]
+            else outcomes
+        )
         normal_mean = mean(normals)
         outcome_mean = mean(selected) if selected else None
         ratio = outcome_mean / normal_mean if outcome_mean is not None else None
-        output.append({
-            "comparison": comparison,
-            "scenario_id": row["scenario_id"],
-            "command_id": row["command_id"],
-            "source_actor_id": row["source_actor_id"],
-            "target_actor_id": row["target_actor_id"],
-            "normal_count": len(normals),
-            "outcome_count": len(outcomes),
-            "positive_outcome_count": len(selected),
-            "excluded_zero_outcome_count": len(outcomes) - len(selected),
-            "normal_mean": fmt(normal_mean),
-            "outcome_mean": fmt(outcome_mean),
-            "outcome_to_normal_ratio": fmt(ratio),
-            "normal_values": row["normal_values"],
-            "outcome_values": row["outcome_values"],
-            "normal_row_indices": row["normal_row_indices"],
-            "outcome_row_indices": row["outcome_row_indices"],
-            "normal_csv_lines": row["normal_csv_lines"],
-            "outcome_csv_lines": row["outcome_csv_lines"],
-        })
+        output.append(
+            {
+                "comparison": comparison,
+                "scenario_id": row["scenario_id"],
+                "command_id": row["command_id"],
+                "source_actor_id": row["source_actor_id"],
+                "target_actor_id": row["target_actor_id"],
+                "normal_count": len(normals),
+                "outcome_count": len(outcomes),
+                "positive_outcome_count": len(selected),
+                "excluded_zero_outcome_count": len(outcomes) - len(selected),
+                "normal_mean": fmt(normal_mean),
+                "outcome_mean": fmt(outcome_mean),
+                "outcome_to_normal_ratio": fmt(ratio),
+                "normal_values": row["normal_values"],
+                "outcome_values": row["outcome_values"],
+                "normal_row_indices": row["normal_row_indices"],
+                "outcome_row_indices": row["outcome_row_indices"],
+                "normal_csv_lines": row["normal_csv_lines"],
+                "outcome_csv_lines": row["outcome_csv_lines"],
+            }
+        )
     return output
 
 
@@ -115,26 +141,30 @@ def build_recovery_rows(rows: list[dict[str, str]]) -> list[dict[str, object]]:
         if command == CURE_COMMAND_ID and message == CURE_MESSAGE_ID:
             identity = "cure"
             base: int | str = CURE_BASE_MAGNITUDE
-            ratio = fmt(Decimal(int(row["numeric_value"])) / Decimal(CURE_BASE_MAGNITUDE))
+            ratio = fmt(
+                Decimal(int(row["numeric_value"])) / Decimal(CURE_BASE_MAGNITUDE)
+            )
         elif message == AEGIS_MESSAGE_ID:
             identity = "aegis_boon"
             base = ""
             ratio = ""
         else:
             continue
-        output.append({
-            "identity": identity,
-            "command_id": command,
-            "world_master_text_id": message,
-            "base_magnitude": base,
-            "observed_value": int(row["numeric_value"]),
-            "observed_to_base_ratio": ratio,
-            "scenario_id": row["scenario_id"],
-            "source_actor_id": int(row["source_actor_id"]),
-            "target_actor_id": int(row["target_actor_id"]),
-            "row_index": int(row["row_index"]),
-            "source_csv_line": int(row["row_index"]) + 2,
-        })
+        output.append(
+            {
+                "identity": identity,
+                "command_id": command,
+                "world_master_text_id": message,
+                "base_magnitude": base,
+                "observed_value": int(row["numeric_value"]),
+                "observed_to_base_ratio": ratio,
+                "scenario_id": row["scenario_id"],
+                "source_actor_id": int(row["source_actor_id"]),
+                "target_actor_id": int(row["target_actor_id"]),
+                "row_index": int(row["row_index"]),
+                "source_csv_line": int(row["row_index"]) + 2,
+            }
+        )
     return output
 
 
@@ -146,14 +176,19 @@ def render_csv(rows: list[dict[str, object]], fields: tuple[str, ...]) -> bytes:
     return handle.getvalue().encode("ascii")
 
 
-def aggregate_ratio(rows: list[dict[str, object]], comparison: str) -> dict[str, object]:
+def aggregate_ratio(
+    rows: list[dict[str, object]], comparison: str
+) -> dict[str, object]:
     selected = [row for row in rows if row["comparison"] == comparison]
     usable = [row for row in selected if row["outcome_to_normal_ratio"]]
     normal_values = [
         value for row in usable for value in split_ints(str(row["normal_values"]))
     ]
     outcome_values = [
-        value for row in usable for value in split_ints(str(row["outcome_values"])) if value > 0
+        value
+        for row in usable
+        for value in split_ints(str(row["outcome_values"]))
+        if value > 0
     ]
     ratios = [Decimal(str(row["outcome_to_normal_ratio"])) for row in usable]
     aggregate = mean(outcome_values) / mean(normal_values) if outcome_values else None
@@ -162,14 +197,18 @@ def aggregate_ratio(rows: list[dict[str, object]], comparison: str) -> dict[str,
         "ratio_eligible_sets": len(usable),
         "normal_rows_in_ratio": len(normal_values),
         "outcome_rows_in_ratio": len(outcome_values),
-        "excluded_zero_outcome_rows": sum(int(row["excluded_zero_outcome_count"]) for row in selected),
+        "excluded_zero_outcome_rows": sum(
+            int(row["excluded_zero_outcome_count"]) for row in selected
+        ),
         "aggregate_mean_ratio": fmt(aggregate),
         "per_set_ratio_min": fmt(min(ratios) if ratios else None),
         "per_set_ratio_max": fmt(max(ratios) if ratios else None),
     }
 
 
-def build_outputs(rows_path: Path, matches_path: Path, accounting_path: Path) -> dict[str, bytes]:
+def build_outputs(
+    rows_path: Path, matches_path: Path, accounting_path: Path
+) -> dict[str, bytes]:
     rows = load_csv(rows_path)
     matches = load_csv(matches_path)
     if len(rows) != 622:
@@ -190,8 +229,14 @@ def build_outputs(rows_path: Path, matches_path: Path, accounting_path: Path) ->
     fit_accounting = {
         "schema_version": 1,
         "inputs": {
-            "battle_result_rows": {"path": str(rows_path.relative_to(REPO_ROOT)).replace("\\", "/"), "sha256": sha256_file(rows_path)},
-            "matched_comparison_sets": {"path": str(matches_path.relative_to(REPO_ROOT)).replace("\\", "/"), "sha256": sha256_file(matches_path)},
+            "battle_result_rows": {
+                "path": str(rows_path.relative_to(REPO_ROOT)).replace("\\", "/"),
+                "sha256": sha256_file(rows_path),
+            },
+            "matched_comparison_sets": {
+                "path": str(matches_path.relative_to(REPO_ROOT)).replace("\\", "/"),
+                "sha256": sha256_file(matches_path),
+            },
             "command_battle_params": {
                 "path": command_input["path"],
                 "sha256": command_input["sha256"],
@@ -208,7 +253,9 @@ def build_outputs(rows_path: Path, matches_path: Path, accounting_path: Path) ->
             "matched_sets": len(miss_sets),
             "normal_rows": miss_normal,
             "miss_rows": miss_outcome,
-            "descriptive_fraction": fmt(Decimal(miss_outcome) / Decimal(miss_normal + miss_outcome)),
+            "descriptive_fraction": fmt(
+                Decimal(miss_outcome) / Decimal(miss_normal + miss_outcome)
+            ),
         },
         "cure": {
             "hp_recovery_rows": len(cure_rows),
@@ -231,7 +278,9 @@ def build_outputs(rows_path: Path, matches_path: Path, accounting_path: Path) ->
     return {
         "matched-set-ratios.csv": render_csv(ratio_rows, FIT_FIELDS),
         "recovery-model-observations.csv": render_csv(recovery_rows, RECOVERY_FIELDS),
-        "model-fit-accounting.json": (json.dumps(fit_accounting, indent=2, sort_keys=True) + "\n").encode("ascii"),
+        "model-fit-accounting.json": (
+            json.dumps(fit_accounting, indent=2, sort_keys=True) + "\n"
+        ).encode("ascii"),
     }
 
 
@@ -242,7 +291,9 @@ def main() -> int:
     parser.add_argument("--accounting", type=Path, default=DEFAULT_ACCOUNTING)
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
-    outputs = build_outputs(args.rows.resolve(), args.matches.resolve(), args.accounting.resolve())
+    outputs = build_outputs(
+        args.rows.resolve(), args.matches.resolve(), args.accounting.resolve()
+    )
     out_dir = DEFAULT_OUT
     stale = []
     for name, content in outputs.items():

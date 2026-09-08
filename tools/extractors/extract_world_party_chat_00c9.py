@@ -37,31 +37,78 @@ from extract_streams import (  # type: ignore  # noqa: E402
 STUDY_ID = "world-party-chat-00c9-contract"
 TARGET_OPCODE = 0x00C9
 SOURCE_MANIFEST = REPO_ROOT / "sources" / "pcap-1.23b" / "manifest.yaml"
-LOCATOR_SOURCE = REPO_ROOT / "studies" / "m9-corpus-research" / "derived" / "chat-relay-specimens.csv"
+LOCATOR_SOURCE = (
+    REPO_ROOT
+    / "studies"
+    / "m9-corpus-research"
+    / "derived"
+    / "chat-relay-specimens.csv"
+)
 OUT = REPO_ROOT / "studies" / STUDY_ID / "derived"
 
 EXPECTED = {
-    "c2s": {"subevent_size": 552, "application_size": 528, "name": None, "message": (12, 512), "tail": (524, 4)},
-    "s2c": {"subevent_size": 584, "application_size": 560, "name": (12, 32), "message": (44, 512), "tail": (556, 4)},
+    "c2s": {
+        "subevent_size": 552,
+        "application_size": 528,
+        "name": None,
+        "message": (12, 512),
+        "tail": (524, 4),
+    },
+    "s2c": {
+        "subevent_size": 584,
+        "application_size": 560,
+        "name": (12, 32),
+        "message": (44, 512),
+        "tail": (556, 4),
+    },
 }
 
 OCCURRENCE_FIELDS = (
-    "occurrence", "capture", "lane_index", "direction", "lane_frame_index",
-    "subevent_index", "subevent_size", "outer_size", "single_subevent_frame",
-    "source_actor_token", "destination_actor_token", "wrapper_counter_token",
-    "header_tag", "opcode", "header_reserved", "chat_group_selector",
-    "prefix_reserved", "context_token", "sender_name_token",
-    "sender_name_length", "message_token", "message_length",
-    "message_utf8_roundtrip", "tail_token", "tail_zero",
+    "occurrence",
+    "capture",
+    "lane_index",
+    "direction",
+    "lane_frame_index",
+    "subevent_index",
+    "subevent_size",
+    "outer_size",
+    "single_subevent_frame",
+    "source_actor_token",
+    "destination_actor_token",
+    "wrapper_counter_token",
+    "header_tag",
+    "opcode",
+    "header_reserved",
+    "chat_group_selector",
+    "prefix_reserved",
+    "context_token",
+    "sender_name_token",
+    "sender_name_length",
+    "message_token",
+    "message_length",
+    "message_utf8_roundtrip",
+    "tail_token",
+    "tail_zero",
 )
 
 FIELD_MATRIX_FIELDS = (
-    "direction", "layer", "offset_basis", "offset", "application_offset", "width", "wire_type",
-    "field", "observed_status", "observed_values", "consumer_boundary",
+    "direction",
+    "layer",
+    "offset_basis",
+    "offset",
+    "application_offset",
+    "width",
+    "wire_type",
+    "field",
+    "observed_status",
+    "observed_values",
+    "consumer_boundary",
 )
 
 IPV4_RE = re.compile(rb"(?<![0-9])(?:[0-9]{1,3}\.){3}[0-9]{1,3}(?![0-9])")
-SENSITIVE_RE = re.compile(rb"(?i)(?:authorization|password|private chat|account data|player name|session token)")
+SENSITIVE_RE = re.compile(
+    rb"(?i)(?:authorization|password|private chat|account data|player name|session token)"
+)
 
 
 def _csv_bytes(fields: tuple[str, ...], rows: list[dict]) -> bytes:
@@ -102,7 +149,9 @@ def validate_corpus_paths(paths: list[Path]) -> None:
     expected = sorted(member["file"] for member in manifest.get("members", []))
     actual = sorted(path.name for path in paths)
     if len(expected) != 54 or actual != expected:
-        raise ValueError(f"canonical corpus membership mismatch: expected {len(expected)}, found {len(actual)}")
+        raise ValueError(
+            f"canonical corpus membership mismatch: expected {len(expected)}, found {len(actual)}"
+        )
 
 
 def _text_field(field: bytes) -> dict:
@@ -125,30 +174,39 @@ def decode_subevent(direction: str, raw: bytes) -> dict:
     expected = EXPECTED[direction]
     if len(raw) != expected["subevent_size"]:
         raise ValueError("unexpected_subevent_size")
-    size, event_type, source_actor, destination_actor, counter = struct.unpack_from("<HHIII", raw, 0)
+    size, event_type, source_actor, destination_actor, counter = struct.unpack_from(
+        "<HHIII", raw, 0
+    )
     if size != len(raw) or event_type != SUB_EVENT_CLASS_ACTOR_WRAPPED:
         raise ValueError("unexpected_wrapper")
-    header_tag, opcode, header_reserved = struct.unpack_from("<HHI", raw, SUB_EVENT_HEADER_LEN)
+    header_tag, opcode, header_reserved = struct.unpack_from(
+        "<HHI", raw, SUB_EVENT_HEADER_LEN
+    )
     if opcode != TARGET_OPCODE:
         raise ValueError("unexpected_opcode")
     application = raw[24:]
     if len(application) != expected["application_size"]:
         raise ValueError("unexpected_application_size")
     selector, prefix_reserved, context = struct.unpack_from("<III", application, 0)
-    if header_tag != 0x0014 or header_reserved != 0 or selector != 10 or prefix_reserved != 0:
+    if (
+        header_tag != 0x0014
+        or header_reserved != 0
+        or selector != 10
+        or prefix_reserved != 0
+    ):
         raise ValueError("unexpected_invariant")
     name = None
     if expected["name"] is not None:
         offset, width = expected["name"]
-        name = _text_field(application[offset:offset + width])
+        name = _text_field(application[offset : offset + width])
         if not name["valid"]:
             raise ValueError("invalid_sender_name_" + name["reason"])
     message_offset, message_width = expected["message"]
-    message = _text_field(application[message_offset:message_offset + message_width])
+    message = _text_field(application[message_offset : message_offset + message_width])
     if not message["valid"]:
         raise ValueError("invalid_message_" + message["reason"])
     tail_offset, tail_width = expected["tail"]
-    tail = application[tail_offset:tail_offset + tail_width]
+    tail = application[tail_offset : tail_offset + tail_width]
     return {
         "size": size,
         "event_type": event_type,
@@ -188,7 +246,10 @@ def collect_records(paths: list[Path]) -> tuple[list[dict], dict, dict]:
         capture["frame_shaped_connections"] = len(connections)
         for connection in connections:
             if not _is_game_connection(connection):
-                if any(blob.startswith(b"\x16\x03") for blob in connection["streams"].values()):
+                if any(
+                    blob.startswith(b"\x16\x03")
+                    for blob in connection["streams"].values()
+                ):
                     capture["excluded_tls_connections"] += 1
                 elif connection["server_endpoint"][1] == 54994:
                     capture["excluded_lobby_connections"] += 1
@@ -231,28 +292,34 @@ def collect_records(paths: list[Path]) -> tuple[list[dict], dict, dict]:
                             capture["target_unexpected_outer_size"] += 1
                             continue
                         start = event["offset"]
-                        raw = body[start:start + event["size"]]
+                        raw = body[start : start + event["size"]]
                         try:
                             decoded = decode_subevent(direction, raw)
                         except ValueError as exc:
                             capture[str(exc)] += 1
                             continue
-                        records.append({
-                            "capture": path.name,
-                            "lane_index": lane_index,
-                            "direction": direction,
-                            "frame_index": frame_index,
-                            "global_frame_index": frame_base[direction] + frame_index,
-                            "global_frame_offset": stream_base[direction] + frame["offset"],
-                            "global_event_index": global_event_index,
-                            "body_offset": event["offset"],
-                            "subevent_index": subevent_index,
-                            "outer_size": frame["size"],
-                            "outer_marker": frame["marker"],
-                            "outer_type": frame["type"],
-                            "single_subevent_frame": len(events) == 1 and event["offset"] == 0 and event["size"] == len(body),
-                            **decoded,
-                        })
+                        records.append(
+                            {
+                                "capture": path.name,
+                                "lane_index": lane_index,
+                                "direction": direction,
+                                "frame_index": frame_index,
+                                "global_frame_index": frame_base[direction]
+                                + frame_index,
+                                "global_frame_offset": stream_base[direction]
+                                + frame["offset"],
+                                "global_event_index": global_event_index,
+                                "body_offset": event["offset"],
+                                "subevent_index": subevent_index,
+                                "outer_size": frame["size"],
+                                "outer_marker": frame["marker"],
+                                "outer_type": frame["type"],
+                                "single_subevent_frame": len(events) == 1
+                                and event["offset"] == 0
+                                and event["size"] == len(body),
+                                **decoded,
+                            }
+                        )
                         capture["decoded_target_events"] += 1
                 frame_base[direction] += len(frames)
                 event_base[direction] = direction_event_index
@@ -262,23 +329,36 @@ def collect_records(paths: list[Path]) -> tuple[list[dict], dict, dict]:
     return records, dict(sorted(totals.items())), per_capture
 
 
-def validate_locator_coverage(records: list[dict], locator_source: Path = LOCATOR_SOURCE) -> None:
+def validate_locator_coverage(
+    records: list[dict], locator_source: Path = LOCATOR_SOURCE
+) -> None:
     with locator_source.open(newline="", encoding="ascii") as handle:
-        rows = [row for row in csv.DictReader(handle) if row["opcode"].lower() == "0x00c9"]
+        rows = [
+            row for row in csv.DictReader(handle) if row["opcode"].lower() == "0x00c9"
+        ]
     expected = {
         (
-            row["capture"], row["direction"], int(row["event_index"]),
-            int(row["frame_index"]), int(row["frame_offset"], 16),
-            int(row["body_offset"], 16), int(row["source_actor"], 16),
+            row["capture"],
+            row["direction"],
+            int(row["event_index"]),
+            int(row["frame_index"]),
+            int(row["frame_offset"], 16),
+            int(row["body_offset"], 16),
+            int(row["source_actor"], 16),
             int(row["subevent_size"]),
         )
         for row in rows
     }
     actual = {
         (
-            record["capture"], record["direction"], record["global_event_index"],
-            record["global_frame_index"], record["global_frame_offset"],
-            record["body_offset"], record["source_actor"], record["size"],
+            record["capture"],
+            record["direction"],
+            record["global_event_index"],
+            record["global_frame_index"],
+            record["global_frame_offset"],
+            record["body_offset"],
+            record["source_actor"],
+            record["size"],
         )
         for record in records
     }
@@ -291,17 +371,28 @@ def validate_observed_contract(records: list[dict]) -> None:
     s2c_records = [record for record in records if record["direction"] == "s2c"]
     if len(c2s_records) != 11 or len(s2c_records) != 26:
         raise ValueError("direction accounting changed")
-    if len({record["counter"] for record in c2s_records}) != 1 or not all(record["counter"] != 0 for record in c2s_records):
+    if len({record["counter"] for record in c2s_records}) != 1 or not all(
+        record["counter"] != 0 for record in c2s_records
+    ):
         raise ValueError("c2s opaque counter contract changed")
     if not all(record["counter"] == 0 for record in s2c_records):
         raise ValueError("s2c zero counter contract changed")
-    if not all(record["source_actor"] == record["destination_actor"] for record in c2s_records):
+    if not all(
+        record["source_actor"] == record["destination_actor"] for record in c2s_records
+    ):
         raise ValueError("c2s wrapper actor equality changed")
-    if any(record["source_actor"] == record["destination_actor"] for record in s2c_records):
+    if any(
+        record["source_actor"] == record["destination_actor"] for record in s2c_records
+    ):
         raise ValueError("s2c wrapper actor inequality changed")
-    if {record["source_actor"] for record in c2s_records} != {record["destination_actor"] for record in s2c_records}:
+    if {record["source_actor"] for record in c2s_records} != {
+        record["destination_actor"] for record in s2c_records
+    }:
         raise ValueError("cross-direction wrapper actor relation changed")
-    if len({record["context"] for record in c2s_records}) != 1 or len({record["context"] for record in s2c_records}) != 2:
+    if (
+        len({record["context"] for record in c2s_records}) != 1
+        or len({record["context"] for record in s2c_records}) != 2
+    ):
         raise ValueError("opaque context distribution changed")
     if _context_sets_equal_by_capture(records) != {
         "party_battle_leve.pcapng": True,
@@ -310,7 +401,9 @@ def validate_observed_contract(records: list[dict]) -> None:
         raise ValueError("per-capture context relation changed")
     if len({record["name"]["bytes"] for record in s2c_records}) != 1:
         raise ValueError("s2c sender-name equality class changed")
-    if len({record["tail"] for record in c2s_records}) != 2 or any(not any(record["tail"]) for record in c2s_records):
+    if len({record["tail"] for record in c2s_records}) != 2 or any(
+        not any(record["tail"]) for record in c2s_records
+    ):
         raise ValueError("c2s opaque tail distribution changed")
     if any(any(record["tail"]) for record in s2c_records):
         raise ValueError("s2c zero tail contract changed")
@@ -347,52 +440,337 @@ def _context_sets_equal_by_capture(records: list[dict]) -> dict[str, bool]:
 
 def _field_matrix() -> list[dict]:
     shared = [
-        ("wrapper", "subevent", 0, "", 2, "u16le", "subevent_size", "direction-fixed", "c2s=552; s2c=584", "Use the direction-specific fixed size."),
-        ("wrapper", "subevent", 2, "", 2, "u16le", "subevent_type", "invariant", "0x0003", "Actor-wrapped subevent class."),
-        ("wrapper", "subevent", 4, "", 4, "u32le", "source_actor", "invariant-per-corpus", "one opaque value per direction; values differ", "Preserve as an opaque wrapper actor field; do not substitute the sender name field."),
-        ("wrapper", "subevent", 8, "", 4, "u32le", "destination_actor", "invariant-per-corpus", "one opaque value per direction", "Preserve as an opaque wrapper actor field; semantic ownership is not established."),
-        ("wrapper", "subevent", 12, "", 4, "u32le", "counter", "direction-specific", "c2s=one nonzero token; s2c=0", "Neither direction exhibits a sequence."),
-        ("game-message", "subevent", 16, "", 2, "u16le", "header_tag", "invariant", "0x0014", "This is a fixed tag, not a packet length."),
-        ("game-message", "subevent", 18, "", 2, "u16le", "opcode", "invariant", "0x00c9", "World party-chat opcode on the chat lane."),
-        ("game-message", "subevent", 20, "", 4, "u32le", "header_reserved", "invariant", "0", "Write zero."),
-        ("application", "subevent", 24, 0, 4, "u32le", "chat_group_selector", "invariant", "10", "Retail client evidence establishes a u32 selector; all retained rows use 10."),
-        ("application", "subevent", 28, 4, 4, "u32le", "unknown_zero_u32", "invariant", "0", "Write zero; no noun is supported."),
-        ("application", "subevent", 32, 8, 4, "u32le", "unknown_context_u32", "dynamic", "c2s=1 token; s2c=2 tokens", "Preserve or source explicitly; it is not proven to be a stable sender ID or sequence."),
+        (
+            "wrapper",
+            "subevent",
+            0,
+            "",
+            2,
+            "u16le",
+            "subevent_size",
+            "direction-fixed",
+            "c2s=552; s2c=584",
+            "Use the direction-specific fixed size.",
+        ),
+        (
+            "wrapper",
+            "subevent",
+            2,
+            "",
+            2,
+            "u16le",
+            "subevent_type",
+            "invariant",
+            "0x0003",
+            "Actor-wrapped subevent class.",
+        ),
+        (
+            "wrapper",
+            "subevent",
+            4,
+            "",
+            4,
+            "u32le",
+            "source_actor",
+            "invariant-per-corpus",
+            "one opaque value per direction; values differ",
+            "Preserve as an opaque wrapper actor field; do not substitute the sender name field.",
+        ),
+        (
+            "wrapper",
+            "subevent",
+            8,
+            "",
+            4,
+            "u32le",
+            "destination_actor",
+            "invariant-per-corpus",
+            "one opaque value per direction",
+            "Preserve as an opaque wrapper actor field; semantic ownership is not established.",
+        ),
+        (
+            "wrapper",
+            "subevent",
+            12,
+            "",
+            4,
+            "u32le",
+            "counter",
+            "direction-specific",
+            "c2s=one nonzero token; s2c=0",
+            "Neither direction exhibits a sequence.",
+        ),
+        (
+            "game-message",
+            "subevent",
+            16,
+            "",
+            2,
+            "u16le",
+            "header_tag",
+            "invariant",
+            "0x0014",
+            "This is a fixed tag, not a packet length.",
+        ),
+        (
+            "game-message",
+            "subevent",
+            18,
+            "",
+            2,
+            "u16le",
+            "opcode",
+            "invariant",
+            "0x00c9",
+            "World party-chat opcode on the chat lane.",
+        ),
+        (
+            "game-message",
+            "subevent",
+            20,
+            "",
+            4,
+            "u32le",
+            "header_reserved",
+            "invariant",
+            "0",
+            "Write zero.",
+        ),
+        (
+            "application",
+            "subevent",
+            24,
+            0,
+            4,
+            "u32le",
+            "chat_group_selector",
+            "invariant",
+            "10",
+            "Retail client evidence establishes a u32 selector; all retained rows use 10.",
+        ),
+        (
+            "application",
+            "subevent",
+            28,
+            4,
+            4,
+            "u32le",
+            "unknown_zero_u32",
+            "invariant",
+            "0",
+            "Write zero; no noun is supported.",
+        ),
+        (
+            "application",
+            "subevent",
+            32,
+            8,
+            4,
+            "u32le",
+            "unknown_context_u32",
+            "dynamic",
+            "c2s=1 token; s2c=2 tokens",
+            "Preserve or source explicitly; it is not proven to be a stable sender ID or sequence.",
+        ),
     ]
     rows = []
     for direction in ("c2s", "s2c"):
         outer_size = 568 if direction == "c2s" else 600
         outer_rows = [
-            ("outer", "outer-frame", 0, "", 4, "bytes[4]", "marker", "invariant", "01 00 00 00", "Raw chat-lane body in both directions."),
-            ("outer", "outer-frame", 4, "", 2, "u16le", "outer_size", "direction-fixed", str(outer_size), "Includes the 16-byte outer header."),
-            ("outer", "outer-frame", 6, "", 2, "u16le", "outer_type", "invariant", "1", "Observed chat-lane outer type."),
-            ("outer", "outer-frame", 8, "", 8, "u64le", "outer_value", "dynamic", "not published", "Preserve framing value; this study does not classify it as a message sequence."),
-            ("outer", "outer-frame", 16, "", outer_size - 16, "bytes", "body", "direction-fixed", "one subevent", "Raw body; no zlib inflation."),
+            (
+                "outer",
+                "outer-frame",
+                0,
+                "",
+                4,
+                "bytes[4]",
+                "marker",
+                "invariant",
+                "01 00 00 00",
+                "Raw chat-lane body in both directions.",
+            ),
+            (
+                "outer",
+                "outer-frame",
+                4,
+                "",
+                2,
+                "u16le",
+                "outer_size",
+                "direction-fixed",
+                str(outer_size),
+                "Includes the 16-byte outer header.",
+            ),
+            (
+                "outer",
+                "outer-frame",
+                6,
+                "",
+                2,
+                "u16le",
+                "outer_type",
+                "invariant",
+                "1",
+                "Observed chat-lane outer type.",
+            ),
+            (
+                "outer",
+                "outer-frame",
+                8,
+                "",
+                8,
+                "u64le",
+                "outer_value",
+                "dynamic",
+                "not published",
+                "Preserve framing value; this study does not classify it as a message sequence.",
+            ),
+            (
+                "outer",
+                "outer-frame",
+                16,
+                "",
+                outer_size - 16,
+                "bytes",
+                "body",
+                "direction-fixed",
+                "one subevent",
+                "Raw body; no zlib inflation.",
+            ),
         ]
         for row in outer_rows:
             rows.append(dict(zip(FIELD_MATRIX_FIELDS, (direction, *row))))
-        for layer, basis, offset, app_offset, width, wire_type, field, status, values, boundary in shared:
-            observed = values if field != "subevent_size" else ("552" if direction == "c2s" else "584")
+        for (
+            layer,
+            basis,
+            offset,
+            app_offset,
+            width,
+            wire_type,
+            field,
+            status,
+            values,
+            boundary,
+        ) in shared:
+            observed = (
+                values
+                if field != "subevent_size"
+                else ("552" if direction == "c2s" else "584")
+            )
             observed_status = status
             if field == "counter":
                 observed = "one nonzero token" if direction == "c2s" else "0"
             elif field == "unknown_context_u32":
                 observed = "1 token" if direction == "c2s" else "2 tokens"
-                observed_status = "invariant-per-corpus" if direction == "c2s" else "dynamic"
-            rows.append(dict(zip(FIELD_MATRIX_FIELDS, (direction, layer, basis, offset, app_offset, width, wire_type, field, observed_status, observed, boundary))))
+                observed_status = (
+                    "invariant-per-corpus" if direction == "c2s" else "dynamic"
+                )
+            rows.append(
+                dict(
+                    zip(
+                        FIELD_MATRIX_FIELDS,
+                        (
+                            direction,
+                            layer,
+                            basis,
+                            offset,
+                            app_offset,
+                            width,
+                            wire_type,
+                            field,
+                            observed_status,
+                            observed,
+                            boundary,
+                        ),
+                    )
+                )
+            )
         if direction == "c2s":
             extras = [
-                (36, 12, 512, "bytes[512]", "message", "dynamic", "11 distinct; lengths 3..92", "NUL-terminated, zero-padded, UTF-8-roundtripping in every retained row."),
-                (548, 524, 4, "bytes[4]", "unknown_tail", "dynamic", "2 nonzero tokens; non-monotonic", "Preserve unnamed; do not treat as a sequence."),
+                (
+                    36,
+                    12,
+                    512,
+                    "bytes[512]",
+                    "message",
+                    "dynamic",
+                    "11 distinct; lengths 3..92",
+                    "NUL-terminated, zero-padded, UTF-8-roundtripping in every retained row.",
+                ),
+                (
+                    548,
+                    524,
+                    4,
+                    "bytes[4]",
+                    "unknown_tail",
+                    "dynamic",
+                    "2 nonzero tokens; non-monotonic",
+                    "Preserve unnamed; do not treat as a sequence.",
+                ),
             ]
         else:
             extras = [
-                (36, 12, 32, "bytes[32]", "sender_name", "invariant-per-corpus", "1 token; length 21", "NUL-terminated, zero-padded sender name; no other sender-identity field is proven."),
-                (68, 44, 512, "bytes[512]", "message", "dynamic", "26 distinct; lengths 2..115", "NUL-terminated, zero-padded, UTF-8-roundtripping in every retained row."),
-                (580, 556, 4, "bytes[4]", "unknown_tail", "invariant", "all zero", "Write zero; no noun is supported."),
+                (
+                    36,
+                    12,
+                    32,
+                    "bytes[32]",
+                    "sender_name",
+                    "invariant-per-corpus",
+                    "1 token; length 21",
+                    "NUL-terminated, zero-padded sender name; no other sender-identity field is proven.",
+                ),
+                (
+                    68,
+                    44,
+                    512,
+                    "bytes[512]",
+                    "message",
+                    "dynamic",
+                    "26 distinct; lengths 2..115",
+                    "NUL-terminated, zero-padded, UTF-8-roundtripping in every retained row.",
+                ),
+                (
+                    580,
+                    556,
+                    4,
+                    "bytes[4]",
+                    "unknown_tail",
+                    "invariant",
+                    "all zero",
+                    "Write zero; no noun is supported.",
+                ),
             ]
-        for offset, app_offset, width, wire_type, field, status, values, boundary in extras:
-            rows.append(dict(zip(FIELD_MATRIX_FIELDS, (direction, "application", "subevent", offset, app_offset, width, wire_type, field, status, values, boundary))))
+        for (
+            offset,
+            app_offset,
+            width,
+            wire_type,
+            field,
+            status,
+            values,
+            boundary,
+        ) in extras:
+            rows.append(
+                dict(
+                    zip(
+                        FIELD_MATRIX_FIELDS,
+                        (
+                            direction,
+                            "application",
+                            "subevent",
+                            offset,
+                            app_offset,
+                            width,
+                            wire_type,
+                            field,
+                            status,
+                            values,
+                            boundary,
+                        ),
+                    )
+                )
+            )
     return rows
 
 
@@ -404,15 +782,19 @@ def _synthetic_subevent(direction: str) -> bytes:
     application = bytearray(expected["application_size"])
     struct.pack_into("<III", application, 0, 10, 0, 0x11121314)
     if direction == "s2c":
-        application[12:12 + len(b"Synthetic Sender\0")] = b"Synthetic Sender\0"
+        application[12 : 12 + len(b"Synthetic Sender\0")] = b"Synthetic Sender\0"
         message_offset = 44
     else:
         message_offset = 12
-    application[message_offset:message_offset + len(b"synthetic party message\0")] = b"synthetic party message\0"
+    application[message_offset : message_offset + len(b"synthetic party message\0")] = (
+        b"synthetic party message\0"
+    )
     if direction == "c2s":
         application[524:528] = b"\xa1\xb2\xc3\xd4"
     raw = bytearray(expected["subevent_size"])
-    struct.pack_into("<HHIII", raw, 0, len(raw), 3, source_actor, destination_actor, counter)
+    struct.pack_into(
+        "<HHIII", raw, 0, len(raw), 3, source_actor, destination_actor, counter
+    )
     struct.pack_into("<HHI", raw, 16, 0x14, TARGET_OPCODE, 0)
     raw[24:] = application
     return bytes(raw)
@@ -423,14 +805,16 @@ def _normalized_fixtures() -> dict:
     for direction in ("c2s", "s2c"):
         raw = _synthetic_subevent(direction)
         decode_subevent(direction, raw)
-        fixtures.append({
-            "direction": direction,
-            "encoding": "base64",
-            "synthetic": True,
-            "subevent_size": len(raw),
-            "sha256": hashlib.sha256(raw).hexdigest(),
-            "subevent": base64.b64encode(raw).decode("ascii"),
-        })
+        fixtures.append(
+            {
+                "direction": direction,
+                "encoding": "base64",
+                "synthetic": True,
+                "subevent_size": len(raw),
+                "sha256": hashlib.sha256(raw).hexdigest(),
+                "subevent": base64.b64encode(raw).decode("ascii"),
+            }
+        )
     return {
         "format": "xivl-world-party-chat-00c9-synthetic-v1",
         "privacy": "Generated values only; no retained actor, name, message, endpoint, clock, or raw payload value is present.",
@@ -448,9 +832,13 @@ def build_outputs(paths: list[Path] | None = None) -> dict[str, bytes]:
     validate_observed_contract(records)
 
     context_tokens = _token_map([record["context"] for record in records], "context")
-    name_values = [record["name"]["bytes"] for record in records if record["name"] is not None]
+    name_values = [
+        record["name"]["bytes"] for record in records if record["name"] is not None
+    ]
     name_tokens = _token_map(name_values, "sender-name")
-    message_tokens = _token_map([record["message"]["bytes"] for record in records], "message")
+    message_tokens = _token_map(
+        [record["message"]["bytes"] for record in records], "message"
+    )
     tail_tokens = _token_map([record["tail"] for record in records], "tail")
     counter_tokens = _token_map([record["counter"] for record in records], "counter")
     actor_tokens = _token_map(
@@ -464,47 +852,73 @@ def build_outputs(paths: list[Path] | None = None) -> dict[str, bytes]:
     occurrence_rows = []
     for occurrence, record in enumerate(records, 1):
         name = record["name"]
-        occurrence_rows.append({
-            "occurrence": occurrence,
-            "capture": record["capture"],
-            "lane_index": record["lane_index"],
-            "direction": record["direction"],
-            "lane_frame_index": record["frame_index"],
-            "subevent_index": record["subevent_index"],
-            "subevent_size": record["size"],
-            "outer_size": record["outer_size"],
-            "single_subevent_frame": str(record["single_subevent_frame"]).lower(),
-            "source_actor_token": actor_tokens[record["source_actor"]],
-            "destination_actor_token": actor_tokens[record["destination_actor"]],
-            "wrapper_counter_token": counter_tokens[record["counter"]],
-            "header_tag": "0x0014",
-            "opcode": "0x00c9",
-            "header_reserved": record["header_reserved"],
-            "chat_group_selector": record["selector"],
-            "prefix_reserved": record["prefix_reserved"],
-            "context_token": context_tokens[record["context"]],
-            "sender_name_token": name_tokens[name["bytes"]] if name is not None else "",
-            "sender_name_length": name["length"] if name is not None else "",
-            "message_token": message_tokens[record["message"]["bytes"]],
-            "message_length": record["message"]["length"],
-            "message_utf8_roundtrip": "true",
-            "tail_token": tail_tokens[record["tail"]],
-            "tail_zero": str(not any(record["tail"])).lower(),
-        })
+        occurrence_rows.append(
+            {
+                "occurrence": occurrence,
+                "capture": record["capture"],
+                "lane_index": record["lane_index"],
+                "direction": record["direction"],
+                "lane_frame_index": record["frame_index"],
+                "subevent_index": record["subevent_index"],
+                "subevent_size": record["size"],
+                "outer_size": record["outer_size"],
+                "single_subevent_frame": str(record["single_subevent_frame"]).lower(),
+                "source_actor_token": actor_tokens[record["source_actor"]],
+                "destination_actor_token": actor_tokens[record["destination_actor"]],
+                "wrapper_counter_token": counter_tokens[record["counter"]],
+                "header_tag": "0x0014",
+                "opcode": "0x00c9",
+                "header_reserved": record["header_reserved"],
+                "chat_group_selector": record["selector"],
+                "prefix_reserved": record["prefix_reserved"],
+                "context_token": context_tokens[record["context"]],
+                "sender_name_token": name_tokens[name["bytes"]]
+                if name is not None
+                else "",
+                "sender_name_length": name["length"] if name is not None else "",
+                "message_token": message_tokens[record["message"]["bytes"]],
+                "message_length": record["message"]["length"],
+                "message_utf8_roundtrip": "true",
+                "tail_token": tail_tokens[record["tail"]],
+                "tail_zero": str(not any(record["tail"])).lower(),
+            }
+        )
 
     by_direction = {}
     for direction in ("c2s", "s2c"):
         rows = [record for record in records if record["direction"] == direction]
         by_direction[direction] = {
             "events": len(rows),
-            "captures": dict(sorted(Counter(record["capture"] for record in rows).items())),
-            "subevent_sizes": {str(key): value for key, value in sorted(Counter(record["size"] for record in rows).items())},
-            "outer_sizes": {str(key): value for key, value in sorted(Counter(record["outer_size"] for record in rows).items())},
-            "single_subevent_frames": sum(record["single_subevent_frame"] for record in rows),
+            "captures": dict(
+                sorted(Counter(record["capture"] for record in rows).items())
+            ),
+            "subevent_sizes": {
+                str(key): value
+                for key, value in sorted(
+                    Counter(record["size"] for record in rows).items()
+                )
+            },
+            "outer_sizes": {
+                str(key): value
+                for key, value in sorted(
+                    Counter(record["outer_size"] for record in rows).items()
+                )
+            },
+            "single_subevent_frames": sum(
+                record["single_subevent_frame"] for record in rows
+            ),
             "source_actor_distinct": len({record["source_actor"] for record in rows}),
-            "destination_actor_distinct": len({record["destination_actor"] for record in rows}),
+            "destination_actor_distinct": len(
+                {record["destination_actor"] for record in rows}
+            ),
             "context_distinct": len({record["context"] for record in rows}),
-            "name_distinct": len({record["name"]["bytes"] for record in rows if record["name"] is not None}),
+            "name_distinct": len(
+                {
+                    record["name"]["bytes"]
+                    for record in rows
+                    if record["name"] is not None
+                }
+            ),
             "message_distinct": len({record["message"]["bytes"] for record in rows}),
             "message_length_min": min(record["message"]["length"] for record in rows),
             "message_length_max": max(record["message"]["length"] for record in rows),
@@ -523,32 +937,46 @@ def build_outputs(paths: list[Path] | None = None) -> dict[str, bytes]:
             "captures": len(paths),
             "corpus_sha256": _corpus_digest(paths),
             "decoded_target_events": len(records),
-            "target_c2s_events": sum(record["direction"] == "c2s" for record in records),
-            "target_s2c_events": sum(record["direction"] == "s2c" for record in records),
+            "target_c2s_events": sum(
+                record["direction"] == "c2s" for record in records
+            ),
+            "target_s2c_events": sum(
+                record["direction"] == "s2c" for record in records
+            ),
             **totals,
         },
         "directions": by_direction,
         "cross_capture_context": {
             "target_captures": len({record["capture"] for record in records}),
             "s2c_context_tokens": len({record["context"] for record in s2c_records}),
-            "s2c_sender_name_tokens": len({record["name"]["bytes"] for record in s2c_records}),
+            "s2c_sender_name_tokens": len(
+                {record["name"]["bytes"] for record in s2c_records}
+            ),
             "c2s_s2c_source_actor_values_equal": (
                 {record["source_actor"] for record in c2s_records}
                 == {record["source_actor"] for record in s2c_records}
             ),
             "c2s_source_equals_destination": all(
-                record["source_actor"] == record["destination_actor"] for record in c2s_records
+                record["source_actor"] == record["destination_actor"]
+                for record in c2s_records
             ),
             "s2c_source_equals_destination": all(
-                record["source_actor"] == record["destination_actor"] for record in s2c_records
+                record["source_actor"] == record["destination_actor"]
+                for record in s2c_records
             ),
             "c2s_source_equals_s2c_destination": (
                 {record["source_actor"] for record in c2s_records}
                 == {record["destination_actor"] for record in s2c_records}
             ),
-            "party_capture_context_sets_equal_across_directions": context_relations["party_battle_leve.pcapng"],
-            "war_capture_context_sets_equal_across_directions": context_relations["war_quest_update2.pcapng"],
-            "message_values_shared_across_directions": _shared_message_value_count(records),
+            "party_capture_context_sets_equal_across_directions": context_relations[
+                "party_battle_leve.pcapng"
+            ],
+            "war_capture_context_sets_equal_across_directions": context_relations[
+                "war_quest_update2.pcapng"
+            ],
+            "message_values_shared_across_directions": _shared_message_value_count(
+                records
+            ),
         },
         "per_capture": per_capture,
         "boundaries": [
@@ -621,10 +1049,14 @@ remaining context or tail bytes.
 """
 
     outputs = {
-        "accounting.json": (json.dumps(accounting, indent=2, sort_keys=True) + "\n").encode("ascii"),
+        "accounting.json": (
+            json.dumps(accounting, indent=2, sort_keys=True) + "\n"
+        ).encode("ascii"),
         "occurrences.csv": _csv_bytes(OCCURRENCE_FIELDS, occurrence_rows),
         "field-matrix.csv": _csv_bytes(FIELD_MATRIX_FIELDS, _field_matrix()),
-        "normalized-fixtures.json": (json.dumps(_normalized_fixtures(), indent=2, sort_keys=True) + "\n").encode("ascii"),
+        "normalized-fixtures.json": (
+            json.dumps(_normalized_fixtures(), indent=2, sort_keys=True) + "\n"
+        ).encode("ascii"),
         "verdicts.md": verdicts.encode("ascii"),
     }
     for data in outputs.values():
@@ -648,7 +1080,9 @@ def main() -> int:
             target.write_bytes(rendered)
     if stale:
         raise SystemExit("stale or missing: " + ", ".join(stale))
-    print(f"world party-chat 0x00c9 contract: {len(outputs)} products {'verified' if args.check else 'written'}")
+    print(
+        f"world party-chat 0x00c9 contract: {len(outputs)} products {'verified' if args.check else 'written'}"
+    )
     return 0
 
 

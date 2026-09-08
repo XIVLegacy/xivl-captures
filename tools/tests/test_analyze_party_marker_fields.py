@@ -37,12 +37,23 @@ class PartyMarkerFieldCensusTests(unittest.TestCase):
     def test_integer_profile_preserves_signed_and_unsigned_views(self):
         profile = census._integer_profile([0, 0x7F, 0x80, 0xFF], 1, 0)
         self.assertEqual(profile["all_ones_sentinel_count"], 1)
-        self.assertEqual(profile["signed_sign_distribution"], {
-            "negative": 2, "zero": 1, "positive": 1,
-        })
-        self.assertEqual(profile["unsigned_value_distribution"], {
-            "0": 1, "127": 1, "128": 1, "255": 1,
-        })
+        self.assertEqual(
+            profile["signed_sign_distribution"],
+            {
+                "negative": 2,
+                "zero": 1,
+                "positive": 1,
+            },
+        )
+        self.assertEqual(
+            profile["unsigned_value_distribution"],
+            {
+                "0": 1,
+                "127": 1,
+                "128": 1,
+                "255": 1,
+            },
+        )
 
     def test_float_profile_counts_nonfinite_mutations(self):
         rows = []
@@ -61,9 +72,15 @@ class PartyMarkerFieldCensusTests(unittest.TestCase):
     def test_profiles_cover_every_aligned_record_view(self):
         profiles = self.product["integer_profiles"]
         self.assertEqual(CounterByWidth(profiles), {1: 40, 2: 20, 4: 10})
-        self.assertEqual([row["offset"] for row in self.product["float_profiles"]], [
-            "+0x14", "+0x18", "+0x1c", "+0x20",
-        ])
+        self.assertEqual(
+            [row["offset"] for row in self.product["float_profiles"]],
+            [
+                "+0x14",
+                "+0x18",
+                "+0x1c",
+                "+0x20",
+            ],
+        )
 
     def test_inactive_rows_and_tail_are_zero(self):
         shape = self.product["count_and_tail"]

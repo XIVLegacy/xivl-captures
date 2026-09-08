@@ -7,6 +7,7 @@ use sorted sha256sum syntax with study-relative paths.
     python tools/build_checksums.py           # rewrite each checksum file
     python tools/build_checksums.py --check    # verify, write nothing, exit 1 if stale
 """
+
 from __future__ import annotations
 
 import argparse
@@ -52,9 +53,14 @@ def parse(text: str) -> dict[str, str]:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Regenerate or verify study checksum anchors.")
-    parser.add_argument("--check", action="store_true",
-                        help="verify only, write nothing, exit 1 if any anchor is stale")
+    parser = argparse.ArgumentParser(
+        description="Regenerate or verify study checksum anchors."
+    )
+    parser.add_argument(
+        "--check",
+        action="store_true",
+        help="verify only, write nothing, exit 1 if any anchor is stale",
+    )
     args = parser.parse_args()
 
     problems: list[str] = []
@@ -73,7 +79,9 @@ def main() -> int:
         want = parse(expected)
         for rel in sorted(set(want) | set(actual)):
             if rel not in actual:
-                problems.append(f"{study_dir.name}: {rel} not anchored (add to {checksum_file})")
+                problems.append(
+                    f"{study_dir.name}: {rel} not anchored (add to {checksum_file})"
+                )
             elif rel not in want:
                 problems.append(f"{study_dir.name}: {rel} listed but not on disk")
             elif actual[rel] != want[rel]:

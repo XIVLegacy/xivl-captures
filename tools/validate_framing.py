@@ -8,6 +8,7 @@ Usage:
 
 With no arguments, validates a default set of priority captures.
 """
+
 from __future__ import annotations
 
 import sys
@@ -29,10 +30,17 @@ PRIORITY_CAPTURES = [
     "idle_in_party.pcapng",
     "gridania_to_coerthas.pcapng",
 ]
-DEFAULT_CAP_DIR = Path(os.environ.get(
-    "XIVL_PCAP_OBJECTS_DIR",
-    str(Path(__file__).resolve().parent.parent / "sources" / "pcap-1.23b" / "objects"),
-))
+DEFAULT_CAP_DIR = Path(
+    os.environ.get(
+        "XIVL_PCAP_OBJECTS_DIR",
+        str(
+            Path(__file__).resolve().parent.parent
+            / "sources"
+            / "pcap-1.23b"
+            / "objects"
+        ),
+    )
+)
 
 
 def check(path: Path) -> dict:

@@ -54,7 +54,9 @@ def _read_json(path: Path) -> Any:
         return result
 
     try:
-        return json.loads(path.read_text(encoding="ascii"), object_pairs_hook=reject_duplicates)
+        return json.loads(
+            path.read_text(encoding="ascii"), object_pairs_hook=reject_duplicates
+        )
     except (OSError, UnicodeError, ValueError) as exc:
         raise VerificationError("JSON input unreadable") from exc
 
@@ -157,7 +159,9 @@ def verify_archive(
     try:
         import jsonschema
 
-        archive_schema = _read_json(REPO / "schemas" / "retail_pcap_archive.schema.json")
+        archive_schema = _read_json(
+            REPO / "schemas" / "retail_pcap_archive.schema.json"
+        )
         if any(jsonschema.Draft202012Validator(archive_schema).iter_errors(shape)):
             errors.append("private archive shape schema rejected")
     except (ImportError, VerificationError, ValueError):
@@ -233,7 +237,10 @@ def retained_output_errors(directory: Path) -> list[str]:
         raw.decode("ascii")
         document = json.loads(raw.decode("ascii"))
         canonical = (
-            json.dumps(document, ensure_ascii=True, sort_keys=True, separators=(",", ":")) + "\n"
+            json.dumps(
+                document, ensure_ascii=True, sort_keys=True, separators=(",", ":")
+            )
+            + "\n"
         ).encode("ascii")
         if raw != canonical:
             return ["retained attestation serialization invalid"]
@@ -296,7 +303,15 @@ def main(argv: list[str] | None = None) -> int:
             print("ERROR: attestation schema rejected", file=sys.stderr)
             return 1
         sys.stdout.buffer.write(
-            (json.dumps(attestation, ensure_ascii=True, sort_keys=True, separators=(",", ":")) + "\n").encode("ascii")
+            (
+                json.dumps(
+                    attestation,
+                    ensure_ascii=True,
+                    sort_keys=True,
+                    separators=(",", ":"),
+                )
+                + "\n"
+            ).encode("ascii")
         )
         return 0
     if args.archive is not None:
@@ -314,7 +329,12 @@ def main(argv: list[str] | None = None) -> int:
         errors.append("attestation schema rejected")
         attestation["result"] = {"status": "fail"}
     sys.stdout.buffer.write(
-        (json.dumps(attestation, ensure_ascii=True, sort_keys=True, separators=(",", ":")) + "\n").encode("ascii")
+        (
+            json.dumps(
+                attestation, ensure_ascii=True, sort_keys=True, separators=(",", ":")
+            )
+            + "\n"
+        ).encode("ascii")
     )
     for error in errors:
         print(f"ERROR: {error}", file=sys.stderr)

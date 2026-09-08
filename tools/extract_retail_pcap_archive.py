@@ -23,7 +23,9 @@ import yaml
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_SOURCE_MANIFEST = REPO_ROOT / "sources" / "pcap-1.23b" / "manifest.yaml"
 EXPECTED_ARCHIVE_SIZE = 2622720
-EXPECTED_ARCHIVE_SHA256 = "20a78b9f40ff2393037c9a160c957783cf590b4f01797493d22fcd2039e9cbff"
+EXPECTED_ARCHIVE_SHA256 = (
+    "20a78b9f40ff2393037c9a160c957783cf590b4f01797493d22fcd2039e9cbff"
+)
 EXPECTED_MEMBER_COUNT = 54
 EXPECTED_UNCOMPRESSED_SIZE = 7242352
 MAX_COMPRESSION_RATIO = 1000
@@ -48,7 +50,9 @@ def _read_yaml(path: Path) -> dict[str, Any]:
     return document
 
 
-def expected_members(manifest_path: Path = DEFAULT_SOURCE_MANIFEST) -> dict[str, tuple[int, str]]:
+def expected_members(
+    manifest_path: Path = DEFAULT_SOURCE_MANIFEST,
+) -> dict[str, tuple[int, str]]:
     document = _read_yaml(manifest_path)
     members = document.get("members")
     if not isinstance(members, list) or len(members) != EXPECTED_MEMBER_COUNT:
@@ -118,7 +122,10 @@ def _regular_member(info: zipfile.ZipInfo) -> None:
         _fail("archive directory member rejected")
     if info.compress_size == 0 and info.file_size:
         _fail("archive compression ratio invalid")
-    if info.compress_size and info.file_size / info.compress_size > MAX_COMPRESSION_RATIO:
+    if (
+        info.compress_size
+        and info.file_size / info.compress_size > MAX_COMPRESSION_RATIO
+    ):
         _fail("archive compression ratio invalid")
 
 
@@ -167,11 +174,13 @@ def inspect_archive(
                     _fail("archive member identity mismatch")
                 if magic != b"\x0a\x0d\x0d\x0a":
                     _fail("non-PCAP archive member rejected")
-                actual.append({
-                    "file": info.filename,
-                    "size_bytes": read_size,
-                    "sha256": digest.hexdigest(),
-                })
+                actual.append(
+                    {
+                        "file": info.filename,
+                        "size_bytes": read_size,
+                        "sha256": digest.hexdigest(),
+                    }
+                )
     except ArchiveValidationError:
         raise
     except (OSError, zipfile.BadZipFile, RuntimeError) as exc:
@@ -240,11 +249,15 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--manifest", type=Path, default=DEFAULT_SOURCE_MANIFEST)
     args = parser.parse_args(argv)
     try:
-        shape = extract_archive(args.archive, args.destination, manifest_path=args.manifest)
+        shape = extract_archive(
+            args.archive, args.destination, manifest_path=args.manifest
+        )
     except ArchiveValidationError as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 1
-    print(f"PASS: archive validated ({shape['member_count']} members, {shape['uncompressed_size']} bytes)")
+    print(
+        f"PASS: archive validated ({shape['member_count']} members, {shape['uncompressed_size']} bytes)"
+    )
     return 0
 
 

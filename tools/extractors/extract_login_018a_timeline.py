@@ -36,10 +36,12 @@ from extract_streams import (  # type: ignore  # noqa: E402
     reconstruct_lanes,
 )
 
-PCAP_OBJECTS = Path(os.environ.get(
-    "XIVL_PCAP_OBJECTS_DIR",
-    str(REPO_ROOT / "sources" / "pcap-1.23b" / "objects"),
-))
+PCAP_OBJECTS = Path(
+    os.environ.get(
+        "XIVL_PCAP_OBJECTS_DIR",
+        str(REPO_ROOT / "sources" / "pcap-1.23b" / "objects"),
+    )
+)
 CAPTURE = PCAP_OBJECTS / "login.pcapng"
 CAPTURE_SHA256 = "28e06b54fe559870031f077f8549b9244caafa7e5177dbca08a7feae6c2b1b62"
 OPCODE_NAMES = REPO_ROOT / "derived" / "opcode_names.json"
@@ -49,11 +51,25 @@ WINDOW_BEFORE = 6
 WINDOW_AFTER = 6
 
 CSV_FIELDS = [
-    "scope", "relative_event", "is_anchor", "lane_index", "lane", "direction",
-    "direction_event_index", "frame_index", "frame_stream_offset", "subevent_index",
-    "subevent_offset", "outer_timestamp_or_seq_hex", "outer_value_delta",
-    "capture_packet_index", "capture_delta_us", "opcode", "opcode_name",
-    "subevent_size", "subevent_sha256",
+    "scope",
+    "relative_event",
+    "is_anchor",
+    "lane_index",
+    "lane",
+    "direction",
+    "direction_event_index",
+    "frame_index",
+    "frame_stream_offset",
+    "subevent_index",
+    "subevent_offset",
+    "outer_timestamp_or_seq_hex",
+    "outer_value_delta",
+    "capture_packet_index",
+    "capture_delta_us",
+    "opcode",
+    "opcode_name",
+    "subevent_size",
+    "subevent_sha256",
 ]
 
 
@@ -88,7 +104,9 @@ def _packet_spans(path: Path, connection: dict, direction: str) -> list[dict]:
         expected = (server, client) if direction == "s2c" else (client, server)
         if (source, target) != expected:
             continue
-        matched.append((int(tcp.seq), len(payload), packet_index, _capture_time_us(packet)))
+        matched.append(
+            (int(tcp.seq), len(payload), packet_index, _capture_time_us(packet))
+        )
     if not matched:
         raise ValueError(f"no packets for {connection['lane']} {direction}")
     initial_sequence = min(row[0] for row in matched)
@@ -144,8 +162,11 @@ def _opcode_names() -> dict[tuple[str, int], str]:
     for entry in document.get("entries", []):
         if entry.get("service") == "map":
             direction = next(
-                (short for short, long_name in direction_names.items()
-                 if entry.get("direction") == long_name),
+                (
+                    short
+                    for short, long_name in direction_names.items()
+                    if entry.get("direction") == long_name
+                ),
                 None,
             )
             if direction is not None:
@@ -190,13 +211,17 @@ def collect_events(path: Path = CAPTURE) -> tuple[list[dict], list[dict], list[d
                         continue
                     offset = subevent["offset"]
                     size = subevent["size"]
-                    subevent_bytes = body[offset:offset + size]
+                    subevent_bytes = body[offset : offset + size]
                     inner_body = subevent_bytes[SUB_EVENT_HEADER_LEN:]
                     if len(inner_body) < INNER_HEADER_LEN:
                         continue
                     opcode = subevent["inner_opcode"]
                     event = {
-                        **{key: value for key, value in frame_record.items() if key != "events"},
+                        **{
+                            key: value
+                            for key, value in frame_record.items()
+                            if key != "events"
+                        },
                         "direction_event_index": direction_event_index,
                         "subevent_index": subevent_index,
                         "subevent_offset": offset,
@@ -226,21 +251,26 @@ def select_anchor(events: list[dict]) -> dict:
 
 
 def same_lane_window(
-    events: list[dict], anchor: dict, before: int = WINDOW_BEFORE, after: int = WINDOW_AFTER,
+    events: list[dict],
+    anchor: dict,
+    before: int = WINDOW_BEFORE,
+    after: int = WINDOW_AFTER,
 ) -> list[dict]:
     """Return a direction-local window that cannot cross a connection block."""
     lane_events = [
-        event for event in events
+        event
+        for event in events
         if event["lane_index"] == anchor["lane_index"]
         and event["direction"] == anchor["direction"]
     ]
     anchor_position = next(i for i, event in enumerate(lane_events) if event is anchor)
-    return lane_events[max(0, anchor_position - before):anchor_position + after + 1]
+    return lane_events[max(0, anchor_position - before) : anchor_position + after + 1]
 
 
 def _bracketing_frames(frames: list[dict], anchor: dict) -> tuple[dict, dict]:
     candidates = [
-        frame for frame in frames
+        frame
+        for frame in frames
         if frame["lane_index"] == anchor["lane_index"]
         and frame["direction"] == "c2s"
         and frame["wire_value"] != 0
@@ -255,7 +285,9 @@ def _bracketing_frames(frames: list[dict], anchor: dict) -> tuple[dict, dict]:
     )
     if not (
         previous["packet_index"] < anchor["packet_index"] < following["packet_index"]
-        and previous["capture_time_us"] < anchor["capture_time_us"] < following["capture_time_us"]
+        and previous["capture_time_us"]
+        < anchor["capture_time_us"]
+        < following["capture_time_us"]
     ):
         raise ValueError("wire-value bracket disagrees with capture arrival order")
     return previous, following
@@ -274,29 +306,33 @@ def _timeline_rows(events: list[dict], frames: list[dict], anchor: dict) -> list
         for event in group:
             relative = (
                 event["direction_event_index"] - anchor["direction_event_index"]
-                if scope == "same-lane-s2c-window" else ""
+                if scope == "same-lane-s2c-window"
+                else ""
             )
-            rows.append({
-                "scope": scope,
-                "relative_event": relative,
-                "is_anchor": "yes" if event is anchor else "no",
-                "lane_index": event["lane_index"],
-                "lane": event["lane"],
-                "direction": event["direction"],
-                "direction_event_index": event["direction_event_index"],
-                "frame_index": event["frame_index"],
-                "frame_stream_offset": event["frame_stream_offset"],
-                "subevent_index": event["subevent_index"],
-                "subevent_offset": event["subevent_offset"],
-                "outer_timestamp_or_seq_hex": event["outer_timestamp_or_seq_hex"],
-                "outer_value_delta": event["wire_value"] - anchor["wire_value"],
-                "capture_packet_index": event["packet_index"] + 1,
-                "capture_delta_us": event["capture_time_us"] - anchor["capture_time_us"],
-                "opcode": f"0x{event['opcode']:04X}",
-                "opcode_name": event["opcode_name"],
-                "subevent_size": event["subevent_size"],
-                "subevent_sha256": event["subevent_sha256"],
-            })
+            rows.append(
+                {
+                    "scope": scope,
+                    "relative_event": relative,
+                    "is_anchor": "yes" if event is anchor else "no",
+                    "lane_index": event["lane_index"],
+                    "lane": event["lane"],
+                    "direction": event["direction"],
+                    "direction_event_index": event["direction_event_index"],
+                    "frame_index": event["frame_index"],
+                    "frame_stream_offset": event["frame_stream_offset"],
+                    "subevent_index": event["subevent_index"],
+                    "subevent_offset": event["subevent_offset"],
+                    "outer_timestamp_or_seq_hex": event["outer_timestamp_or_seq_hex"],
+                    "outer_value_delta": event["wire_value"] - anchor["wire_value"],
+                    "capture_packet_index": event["packet_index"] + 1,
+                    "capture_delta_us": event["capture_time_us"]
+                    - anchor["capture_time_us"],
+                    "opcode": f"0x{event['opcode']:04X}",
+                    "opcode_name": event["opcode_name"],
+                    "subevent_size": event["subevent_size"],
+                    "subevent_sha256": event["subevent_sha256"],
+                }
+            )
     return rows
 
 
@@ -309,10 +345,19 @@ def build_outputs(path: Path = CAPTURE) -> tuple[bytes, bytes]:
     rows = _timeline_rows(events, frames, anchor)
 
     raw_connections = reconstruct_connections(path)
-    rejected = [connection for connection in raw_connections if not _is_game_connection(connection)]
-    raw_ports = Counter(connection["server_endpoint"][1] for connection in raw_connections)
+    rejected = [
+        connection
+        for connection in raw_connections
+        if not _is_game_connection(connection)
+    ]
+    raw_ports = Counter(
+        connection["server_endpoint"][1] for connection in raw_connections
+    )
     tls_heads = sum(
-        any(blob.startswith(TLS_RECORD_SIGNATURE) for blob in connection["streams"].values())
+        any(
+            blob.startswith(TLS_RECORD_SIGNATURE)
+            for blob in connection["streams"].values()
+        )
         for connection in raw_connections
     )
     admitted_counts = Counter(connection["lane"] for connection in connections)
@@ -338,7 +383,9 @@ def build_outputs(path: Path = CAPTURE) -> tuple[bytes, bytes]:
         "admission": {
             "game_server_port": GAME_SERVER_PORT,
             "raw_frame_shaped_connections": len(raw_connections),
-            "raw_server_port_counts": {str(port): count for port, count in sorted(raw_ports.items())},
+            "raw_server_port_counts": {
+                str(port): count for port, count in sorted(raw_ports.items())
+            },
             "raw_tls_signature_connections": tls_heads,
             "admitted_connections": len(connections),
             "admitted_lane_counts": dict(sorted(admitted_counts.items())),
@@ -348,7 +395,9 @@ def build_outputs(path: Path = CAPTURE) -> tuple[bytes, bytes]:
         "anchor": {
             "opcode": "0x018A",
             "opcode_name": anchor["opcode_name"],
-            "admitted_occurrences": sum(event["opcode"] == ANCHOR_OPCODE for event in events),
+            "admitted_occurrences": sum(
+                event["opcode"] == ANCHOR_OPCODE for event in events
+            ),
             "lane_index": anchor["lane_index"],
             "lane": anchor["lane"],
             "direction": anchor["direction"],
@@ -360,7 +409,9 @@ def build_outputs(path: Path = CAPTURE) -> tuple[bytes, bytes]:
             "outer_timestamp_or_seq_hex": anchor["outer_timestamp_or_seq_hex"],
             "capture_packet_index": anchor["packet_index"] + 1,
             "frame_start_capture_packet_index": anchor["start_packet_index"] + 1,
-            "frame_start_packet_candidates": [i + 1 for i in anchor["candidate_packet_indexes"]],
+            "frame_start_packet_candidates": [
+                i + 1 for i in anchor["candidate_packet_indexes"]
+            ],
             "subevent_size": anchor["subevent_size"],
             "subevent_sha256": anchor["subevent_sha256"],
             "inner_body_size": anchor["inner_body_size"],
@@ -371,11 +422,14 @@ def build_outputs(path: Path = CAPTURE) -> tuple[bytes, bytes]:
             "after": WINDOW_AFTER,
             "row_count": sum(row["scope"] == "same-lane-s2c-window" for row in rows),
             "immediate_previous_opcode": next(
-                row["opcode"] for row in rows
-                if row["scope"] == "same-lane-s2c-window" and row["relative_event"] == -1
+                row["opcode"]
+                for row in rows
+                if row["scope"] == "same-lane-s2c-window"
+                and row["relative_event"] == -1
             ),
             "immediate_following_opcode": next(
-                row["opcode"] for row in rows
+                row["opcode"]
+                for row in rows
                 if row["scope"] == "same-lane-s2c-window" and row["relative_event"] == 1
             ),
         },
@@ -385,8 +439,11 @@ def build_outputs(path: Path = CAPTURE) -> tuple[bytes, bytes]:
                 "outer_value_delta": previous["wire_value"] - anchor["wire_value"],
                 "capture_packet_index": previous["packet_index"] + 1,
                 "frame_start_capture_packet_index": previous["start_packet_index"] + 1,
-                "capture_delta_us": previous["capture_time_us"] - anchor["capture_time_us"],
-                "frame_start_packet_candidates": [i + 1 for i in previous["candidate_packet_indexes"]],
+                "capture_delta_us": previous["capture_time_us"]
+                - anchor["capture_time_us"],
+                "frame_start_packet_candidates": [
+                    i + 1 for i in previous["candidate_packet_indexes"]
+                ],
                 "opcodes": [f"0x{event['opcode']:04X}" for event in previous["events"]],
             },
             "following_c2s": {
@@ -394,9 +451,14 @@ def build_outputs(path: Path = CAPTURE) -> tuple[bytes, bytes]:
                 "outer_value_delta": following["wire_value"] - anchor["wire_value"],
                 "capture_packet_index": following["packet_index"] + 1,
                 "frame_start_capture_packet_index": following["start_packet_index"] + 1,
-                "capture_delta_us": following["capture_time_us"] - anchor["capture_time_us"],
-                "frame_start_packet_candidates": [i + 1 for i in following["candidate_packet_indexes"]],
-                "opcodes": [f"0x{event['opcode']:04X}" for event in following["events"]],
+                "capture_delta_us": following["capture_time_us"]
+                - anchor["capture_time_us"],
+                "frame_start_packet_candidates": [
+                    i + 1 for i in following["candidate_packet_indexes"]
+                ],
+                "opcodes": [
+                    f"0x{event['opcode']:04X}" for event in following["events"]
+                ],
             },
             "capture_arrival_agrees_with_wire_value_order": True,
         },
@@ -436,7 +498,9 @@ def main() -> int:
     if stale:
         print("stale login 0x018A timeline outputs:\n  " + "\n  ".join(stale))
         return 1
-    print(("verified" if args.check else "wrote") + " 2 login 0x018A timeline artifacts")
+    print(
+        ("verified" if args.check else "wrote") + " 2 login 0x018A timeline artifacts"
+    )
     return 0
 
 

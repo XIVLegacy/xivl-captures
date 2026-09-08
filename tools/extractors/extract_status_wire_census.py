@@ -45,20 +45,40 @@ CROSSWALK = STUDY / "inputs" / "status-crosswalk.csv"
 SOURCE_MANIFEST = REPO_ROOT / "sources" / "pcap-1.23b" / "manifest.yaml"
 
 OCCURRENCE_FIELDS = (
-    "capture", "lane_index", "lane", "capture_event_index", "lane_event_index",
-    "frame_index", "subevent_index", "source_actor", "target_actor",
-    "nonzero_status_count", "nonzero_slots", "wire_status_ids_hex",
+    "capture",
+    "lane_index",
+    "lane",
+    "capture_event_index",
+    "lane_event_index",
+    "frame_index",
+    "subevent_index",
+    "source_actor",
+    "target_actor",
+    "nonzero_status_count",
+    "nonzero_slots",
+    "wire_status_ids_hex",
 )
 PROJECTION_FIELDS = (
-    "wire_status_id_hex", "status_row_id", "status_word_hex", "status_name",
-    "all_wire_ids_for_row_hex", "chant_kind_1", "chant_kind_2",
-    "object_bits_8_11", "object_bits_14_15", "object_bits_12_13",
-    "occurrence_count", "capture_count",
+    "wire_status_id_hex",
+    "status_row_id",
+    "status_word_hex",
+    "status_name",
+    "all_wire_ids_for_row_hex",
+    "chant_kind_1",
+    "chant_kind_2",
+    "object_bits_8_11",
+    "object_bits_14_15",
+    "object_bits_12_13",
+    "occurrence_count",
+    "capture_count",
 )
 
 
 def _counter(values) -> dict[str, int]:
-    return {str(key): value for key, value in sorted(Counter(values).items(), key=lambda item: str(item[0]))}
+    return {
+        str(key): value
+        for key, value in sorted(Counter(values).items(), key=lambda item: str(item[0]))
+    }
 
 
 def decode_wire_id(wire_id: int) -> int:
@@ -86,18 +106,30 @@ def _load_crosswalk(path: Path) -> dict[int, dict[str, object]]:
             row_id = int(row["status_row_id"])
             if row_id in rows:
                 raise ValueError(f"duplicate crosswalk row {row_id}")
-            wire_ids = tuple(int(value, 16) for value in row["all_wire_ids_for_row_hex"].split())
-            if not wire_ids or any(decode_wire_id(value) != row_id for value in wire_ids):
-                raise ValueError(f"crosswalk row {row_id} has invalid reverse encodings")
+            wire_ids = tuple(
+                int(value, 16) for value in row["all_wire_ids_for_row_hex"].split()
+            )
+            if not wire_ids or any(
+                decode_wire_id(value) != row_id for value in wire_ids
+            ):
+                raise ValueError(
+                    f"crosswalk row {row_id} has invalid reverse encodings"
+                )
             fields = unpack_status_word(row_id)
             for key, value in fields.items():
                 if int(row[key]) != value:
                     raise ValueError(f"crosswalk row {row_id} has stale {key}")
-            rows[row_id] = {"status_name": row["status_name"], "wire_ids": wire_ids, **fields}
+            rows[row_id] = {
+                "status_name": row["status_name"],
+                "wire_ids": wire_ids,
+                **fields,
+            }
     return rows
 
 
-def validate_corpus_paths(paths: list[Path], manifest_path: Path = SOURCE_MANIFEST) -> None:
+def validate_corpus_paths(
+    paths: list[Path], manifest_path: Path = SOURCE_MANIFEST
+) -> None:
     manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8")) or {}
     expected = sorted(member["file"] for member in manifest.get("members", []))
     actual = sorted(path.name for path in paths)
@@ -107,7 +139,9 @@ def validate_corpus_paths(paths: list[Path], manifest_path: Path = SOURCE_MANIFE
         )
 
 
-def decode_status_ids(subevent_size: int, sub_body: bytes) -> tuple[tuple[int, ...] | None, str]:
+def decode_status_ids(
+    subevent_size: int, sub_body: bytes
+) -> tuple[tuple[int, ...] | None, str]:
     if subevent_size != EXPECTED_SUBEVENT_SIZE:
         return None, "unexpected_subevent_size"
     if len(sub_body) != INNER_HEADER_LEN + GAME_PREAMBLE_SIZE + APPLICATION_SIZE:
@@ -116,7 +150,9 @@ def decode_status_ids(subevent_size: int, sub_body: bytes) -> tuple[tuple[int, .
     return struct.unpack("<20H", application), ""
 
 
-def _raw_stream_accounting(path: Path, connection: dict, direction: str) -> tuple[int, int]:
+def _raw_stream_accounting(
+    path: Path, connection: dict, direction: str
+) -> tuple[int, int]:
     server = connection["server_endpoint"]
     client = connection["client_endpoint"]
     expected = (server, client) if direction == "s2c" else (client, server)
@@ -157,7 +193,9 @@ def _decode_capture(path: Path) -> tuple[list[dict], Counter, dict]:
     totals = Counter()
     exclusions = Counter()
     raw_connections = reconstruct_connections(path)
-    admitted = [connection for connection in raw_connections if _is_game_connection(connection)]
+    admitted = [
+        connection for connection in raw_connections if _is_game_connection(connection)
+    ]
     for connection in raw_connections:
         if _is_game_connection(connection):
             continue
@@ -174,7 +212,9 @@ def _decode_capture(path: Path) -> tuple[list[dict], Counter, dict]:
         totals[f"admitted_{connection['lane']}_lanes"] += 1
         for direction in ("c2s", "s2c"):
             blob = connection["streams"].get(direction, b"")
-            overlap_bytes, raw_unique_bytes = _raw_stream_accounting(path, connection, direction)
+            overlap_bytes, raw_unique_bytes = _raw_stream_accounting(
+                path, connection, direction
+            )
             totals["retransmitted_overlap_bytes"] += overlap_bytes
             totals["discarded_trailing_stream_bytes"] += raw_unique_bytes - len(blob)
             frames = parse_outer_frames(blob)
@@ -208,24 +248,32 @@ def _decode_capture(path: Path) -> tuple[list[dict], Counter, dict]:
                         capture_event_index += 1
                         continue
                     totals[f"target_{direction}_events"] += 1
-                    status_ids, malformed_reason = decode_status_ids(event["size"], sub_body)
+                    status_ids, malformed_reason = decode_status_ids(
+                        event["size"], sub_body
+                    )
                     if malformed_reason:
                         exclusions[malformed_reason] += 1
                     else:
                         assert status_ids is not None
-                        nonzero = [(slot + 1, value) for slot, value in enumerate(status_ids) if value]
-                        events.append({
-                            "capture": path.name,
-                            "lane_index": lane_index,
-                            "lane": connection["lane"],
-                            "capture_event_index": capture_event_index,
-                            "lane_event_index": lane_event_index,
-                            "frame_index": frame_index,
-                            "subevent_index": subevent_index,
-                            "source_actor_id": event["src_actor"],
-                            "target_actor_id": event["dst_actor"],
-                            "nonzero": nonzero,
-                        })
+                        nonzero = [
+                            (slot + 1, value)
+                            for slot, value in enumerate(status_ids)
+                            if value
+                        ]
+                        events.append(
+                            {
+                                "capture": path.name,
+                                "lane_index": lane_index,
+                                "lane": connection["lane"],
+                                "capture_event_index": capture_event_index,
+                                "lane_event_index": lane_event_index,
+                                "frame_index": frame_index,
+                                "subevent_index": subevent_index,
+                                "source_actor_id": event["src_actor"],
+                                "target_actor_id": event["dst_actor"],
+                                "nonzero": nonzero,
+                            }
+                        )
                         totals["decoded_target_events"] += 1
                     lane_event_index += 1
                     capture_event_index += 1
@@ -276,13 +324,17 @@ def build_outputs(crosswalk_path: Path = CROSSWALK) -> dict[str, bytes]:
         }
 
     for key in (
-        "compressed_frame_inflate_failures", "subevent_truncations",
-        "wrapped_short_inner_headers", "target_c2s_events",
+        "compressed_frame_inflate_failures",
+        "subevent_truncations",
+        "wrapped_short_inner_headers",
+        "target_c2s_events",
     ):
         totals[key] += 0
     for key in (
-        "tls_signature_connections", "lobby_54994_connections",
-        "other_non_game_connections", "unexpected_subevent_size",
+        "tls_signature_connections",
+        "lobby_54994_connections",
+        "other_non_game_connections",
+        "unexpected_subevent_size",
         "unexpected_application_shape",
     ):
         exclusions[key] += 0
@@ -293,60 +345,99 @@ def build_outputs(crosswalk_path: Path = CROSSWALK) -> dict[str, bytes]:
     status_slots = Counter()
     event_nonzero_counts = Counter()
     for event in all_events:
-        labels = _actor_labels([row for row in all_events if row["capture"] == event["capture"]])
+        labels = _actor_labels(
+            [row for row in all_events if row["capture"] == event["capture"]]
+        )
         for slot, wire_id in event["nonzero"]:
             wire_occurrences[wire_id] += 1
             wire_captures[wire_id].add(event["capture"])
             status_slots[slot] += 1
         event_nonzero_counts[len(event["nonzero"])] += 1
-        occurrence_rows.append({
-            "capture": event["capture"], "lane_index": event["lane_index"], "lane": event["lane"],
-            "capture_event_index": event["capture_event_index"], "lane_event_index": event["lane_event_index"],
-            "frame_index": event["frame_index"], "subevent_index": event["subevent_index"],
-            "source_actor": labels[event["source_actor_id"]], "target_actor": labels[event["target_actor_id"]],
-            "nonzero_status_count": len(event["nonzero"]),
-            "nonzero_slots": " ".join(str(slot) for slot, _ in event["nonzero"]),
-            "wire_status_ids_hex": " ".join(f"0x{wire_id:04x}" for _, wire_id in event["nonzero"]),
-        })
+        occurrence_rows.append(
+            {
+                "capture": event["capture"],
+                "lane_index": event["lane_index"],
+                "lane": event["lane"],
+                "capture_event_index": event["capture_event_index"],
+                "lane_event_index": event["lane_event_index"],
+                "frame_index": event["frame_index"],
+                "subevent_index": event["subevent_index"],
+                "source_actor": labels[event["source_actor_id"]],
+                "target_actor": labels[event["target_actor_id"]],
+                "nonzero_status_count": len(event["nonzero"]),
+                "nonzero_slots": " ".join(str(slot) for slot, _ in event["nonzero"]),
+                "wire_status_ids_hex": " ".join(
+                    f"0x{wire_id:04x}" for _, wire_id in event["nonzero"]
+                ),
+            }
+        )
 
     projection_rows = []
-    nibble_distributions: dict[str, Counter] = {key: Counter() for key in unpack_status_word(0)}
+    nibble_distributions: dict[str, Counter] = {
+        key: Counter() for key in unpack_status_word(0)
+    }
     name_correlations = Counter()
     for wire_id in sorted(wire_occurrences):
         row_id = decode_wire_id(wire_id)
         if row_id not in crosswalk:
-            raise ValueError(f"translated status row {row_id} is absent from the pinned crosswalk")
+            raise ValueError(
+                f"translated status row {row_id} is absent from the pinned crosswalk"
+            )
         row = crosswalk[row_id]
         for key in nibble_distributions:
             nibble_distributions[key][row[key]] += wire_occurrences[wire_id]
         name_correlations[row["status_name"]] += wire_occurrences[wire_id]
-        projection_rows.append({
-            "wire_status_id_hex": f"0x{wire_id:04x}", "status_row_id": row_id,
-            "status_word_hex": f"0x{row_id:08x}",
-            "status_name": row["status_name"],
-            "all_wire_ids_for_row_hex": " ".join(f"0x{value:04x}" for value in row["wire_ids"]),
-            **{key: row[key] for key in unpack_status_word(0)},
-            "occurrence_count": wire_occurrences[wire_id], "capture_count": len(wire_captures[wire_id]),
-        })
+        projection_rows.append(
+            {
+                "wire_status_id_hex": f"0x{wire_id:04x}",
+                "status_row_id": row_id,
+                "status_word_hex": f"0x{row_id:08x}",
+                "status_name": row["status_name"],
+                "all_wire_ids_for_row_hex": " ".join(
+                    f"0x{value:04x}" for value in row["wire_ids"]
+                ),
+                **{key: row[key] for key in unpack_status_word(0)},
+                "occurrence_count": wire_occurrences[wire_id],
+                "capture_count": len(wire_captures[wire_id]),
+            }
+        )
 
     accounting = {
         "study_id": STUDY_ID,
         "coverage": {
-            "captures": len(paths), "decoded_target_events": len(all_events),
+            "captures": len(paths),
+            "decoded_target_events": len(all_events),
             "unique_wire_status_ids": len(wire_occurrences),
-            "unique_status_row_ids": len({decode_wire_id(value) for value in wire_occurrences}),
+            "unique_status_row_ids": len(
+                {decode_wire_id(value) for value in wire_occurrences}
+            ),
             **{key: totals[key] for key in sorted(totals)},
         },
         "exclusions": {key: exclusions[key] for key in sorted(exclusions)},
         "distributions": {
             "events_by_capture": _counter(event["capture"] for event in all_events),
             "events_by_lane": _counter(event["lane"] for event in all_events),
-            "nonzero_statuses_per_event": _counter(value for value, count in event_nonzero_counts.items() for _ in range(count)),
-            "status_slots": {str(key): value for key, value in sorted(status_slots.items())},
-            "wire_status_ids": {f"0x{key:04x}": value for key, value in sorted(wire_occurrences.items())},
-            "status_row_ids": _counter(decode_wire_id(value) for value, count in wire_occurrences.items() for _ in range(count)),
+            "nonzero_statuses_per_event": _counter(
+                value
+                for value, count in event_nonzero_counts.items()
+                for _ in range(count)
+            ),
+            "status_slots": {
+                str(key): value for key, value in sorted(status_slots.items())
+            },
+            "wire_status_ids": {
+                f"0x{key:04x}": value for key, value in sorted(wire_occurrences.items())
+            },
+            "status_row_ids": _counter(
+                decode_wire_id(value)
+                for value, count in wire_occurrences.items()
+                for _ in range(count)
+            ),
             "status_names": dict(sorted(name_correlations.items())),
-            "nibbles": {key: {str(value): count for value, count in sorted(counter.items())} for key, counter in nibble_distributions.items()},
+            "nibbles": {
+                key: {str(value): count for value, count in sorted(counter.items())}
+                for key, counter in nibble_distributions.items()
+            },
         },
         "per_capture_chronology": per_capture,
         "boundaries": [
@@ -403,7 +494,9 @@ using a high reverse wire encoding would be required to compare encoding use.
     return {
         "occurrences.csv": _csv_bytes(OCCURRENCE_FIELDS, occurrence_rows),
         "status-projections.csv": _csv_bytes(PROJECTION_FIELDS, projection_rows),
-        "accounting.json": (json.dumps(accounting, indent=2, sort_keys=True) + "\n").encode("ascii"),
+        "accounting.json": (
+            json.dumps(accounting, indent=2, sort_keys=True) + "\n"
+        ).encode("ascii"),
         "verdicts.md": verdicts.encode("ascii"),
     }
 
@@ -425,7 +518,9 @@ def main() -> int:
             target.write_bytes(rendered)
     if stale:
         raise SystemExit("stale or missing: " + ", ".join(stale))
-    print(f"status wire census: {len(outputs)} products {'verified' if args.check else 'written'}")
+    print(
+        f"status wire census: {len(outputs)} products {'verified' if args.check else 'written'}"
+    )
     return 0
 
 

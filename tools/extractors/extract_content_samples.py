@@ -108,7 +108,12 @@ def walk_capture_content(path: Path) -> dict:
             continue
         for f in parse_outer_frames(blob):
             body = f["body"]
-            if direction == "s2c" and len(body) >= 2 and body[0] == 0x78 and body[1] == 0x9C:
+            if (
+                direction == "s2c"
+                and len(body) >= 2
+                and body[0] == 0x78
+                and body[1] == 0x9C
+            ):
                 try:
                     body = zlib.decompress(body)
                 except zlib.error:
@@ -116,7 +121,11 @@ def walk_capture_content(path: Path) -> dict:
             offset = 0
             while offset + SUB_EVENT_HEADER_LEN <= len(body):
                 size, ev_type = struct.unpack_from("<HH", body, offset)
-                if size == 0 or size < SUB_EVENT_HEADER_LEN or offset + size > len(body):
+                if (
+                    size == 0
+                    or size < SUB_EVENT_HEADER_LEN
+                    or offset + size > len(body)
+                ):
                     break
                 if ev_type == SUB_EVENT_CLASS_ACTOR_WRAPPED:
                     sub_body = body[offset + SUB_EVENT_HEADER_LEN : offset + size]
@@ -133,8 +142,14 @@ def walk_capture_content(path: Path) -> dict:
                                 OPCODE_INVENTORY_LIST_X16: 16,
                             }
                             items.extend(
-                                {**it, "capture": path.name, "opcodeHex": f"0x{inner_opcode:04x}"}
-                                for it in parse_inventory_items(sub_body, count_map[inner_opcode])
+                                {
+                                    **it,
+                                    "capture": path.name,
+                                    "opcodeHex": f"0x{inner_opcode:04x}",
+                                }
+                                for it in parse_inventory_items(
+                                    sub_body, count_map[inner_opcode]
+                                )
                             )
                         elif direction == "c2s" and inner_opcode == OPCODE_EVENT_START:
                             parsed = parse_event_start(sub_body)
@@ -216,8 +231,12 @@ def main() -> int:
     out_path.parent.mkdir(parents=True, exist_ok=True)
     write_json(out_path, out_struct)
     print(f"wrote {out_path}")
-    print(f"  inventory items: {len(all_items)} observations, {len(item_count_by_id)} distinct itemIds")
-    print(f"  event starts: {len(all_events)} observations, {len(event_count_by_name)} distinct names")
+    print(
+        f"  inventory items: {len(all_items)} observations, {len(item_count_by_id)} distinct itemIds"
+    )
+    print(
+        f"  event starts: {len(all_events)} observations, {len(event_count_by_name)} distinct names"
+    )
     print()
     print("Top 10 items by frequency:")
     for entry in items_summary[:10]:
@@ -228,7 +247,9 @@ def main() -> int:
     print()
     print("Top 10 event names:")
     for entry in events_summary[:10]:
-        print(f"  {entry['eventName']:<28}  count={entry['count']:>3}  in {entry['capturesSeen']:>2} captures")
+        print(
+            f"  {entry['eventName']:<28}  count={entry['count']:>3}  in {entry['capturesSeen']:>2} captures"
+        )
     return 0
 
 

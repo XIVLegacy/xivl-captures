@@ -22,19 +22,44 @@ CATALOG = REPO_ROOT / "catalog"
 
 # filename, title, field, list-valued, rendered note
 AXES = [
-    ("by-content-kind.md", "Content Kind", "content_kind", False,
-     "Generated from `catalog/index.yaml`. Primary axis: `content_kind`."),
-    ("by-zone.md", "Zone", "zones", True,
-     "Generated from `catalog/index.yaml`. Axis: `zones`."),
-    ("by-system.md", "System", "system", False,
-     "Generated from `catalog/index.yaml`. Axis: `system` (cross-cutting 1.x systems\n"
-     "such as guildleve, behest, battle-regimen, grand-company)."),
-    ("by-progression.md", "Progression", "progression_track", False,
-     "Generated from `catalog/index.yaml`. Axis: `progression_track` (class quest, job\n"
-     "quest, grand-company rank)."),
-    ("by-city-state.md", "City-State", "city_state", False,
-     "Generated from `catalog/index.yaml`. Axis: `city_state` (Limsa Lominsa,\n"
-     "Gridania, Ul'dah)."),
+    (
+        "by-content-kind.md",
+        "Content Kind",
+        "content_kind",
+        False,
+        "Generated from `catalog/index.yaml`. Primary axis: `content_kind`.",
+    ),
+    (
+        "by-zone.md",
+        "Zone",
+        "zones",
+        True,
+        "Generated from `catalog/index.yaml`. Axis: `zones`.",
+    ),
+    (
+        "by-system.md",
+        "System",
+        "system",
+        False,
+        "Generated from `catalog/index.yaml`. Axis: `system` (cross-cutting 1.x systems\n"
+        "such as guildleve, behest, battle-regimen, grand-company).",
+    ),
+    (
+        "by-progression.md",
+        "Progression",
+        "progression_track",
+        False,
+        "Generated from `catalog/index.yaml`. Axis: `progression_track` (class quest, job\n"
+        "quest, grand-company rank).",
+    ),
+    (
+        "by-city-state.md",
+        "City-State",
+        "city_state",
+        False,
+        "Generated from `catalog/index.yaml`. Axis: `city_state` (Limsa Lominsa,\n"
+        "Gridania, Ul'dah).",
+    ),
 ]
 
 
@@ -60,8 +85,14 @@ def _group(entries: list[dict], field: str, is_list: bool) -> dict[str, list[str
     return groups
 
 
-def render(title: str, field: str, is_list: bool, note: str,
-           studies: list[dict], scenarios: list[dict]) -> str:
+def render(
+    title: str,
+    field: str,
+    is_list: bool,
+    note: str,
+    studies: list[dict],
+    scenarios: list[dict],
+) -> str:
     study_groups = _group(studies, field, is_list)
     scenario_groups = _group(scenarios, field, is_list)
     values = sorted(set(study_groups) | set(scenario_groups))
@@ -112,14 +143,23 @@ def run(check: bool = False) -> int:
         print("All axis files are up to date.")
         return 0
 
-    print(("Rewrote: " + ", ".join(sorted(stale))) if stale else "No changes; all axis files already current.")
+    print(
+        ("Rewrote: " + ", ".join(sorted(stale)))
+        if stale
+        else "No changes; all axis files already current."
+    )
     return 0
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Regenerate catalog/by-*.md from index.yaml.")
-    parser.add_argument("--check", action="store_true",
-                        help="report whether any file is stale; do not write (exit 1 if stale)")
+    parser = argparse.ArgumentParser(
+        description="Regenerate catalog/by-*.md from index.yaml."
+    )
+    parser.add_argument(
+        "--check",
+        action="store_true",
+        help="report whether any file is stale; do not write (exit 1 if stale)",
+    )
     args = parser.parse_args()
     return run(check=args.check)
 

@@ -28,7 +28,9 @@ from extract_observations import default_corpus_paths  # type: ignore
 # Bump when extraction changes output; record the version in pipelines/*.yaml and derived/*.meta.yaml.
 GENERATOR_VERSION = "2"
 
-DEFAULT_OUT = Path(__file__).parent.parent.parent / "derived" / "spawn_observations.json"
+DEFAULT_OUT = (
+    Path(__file__).parent.parent.parent / "derived" / "spawn_observations.json"
+)
 DEFAULT_CSV_OUT = DEFAULT_OUT.with_suffix(".csv")
 
 # This is the public row contract. Keep it explicit so CSV column order does
@@ -142,7 +144,9 @@ def render_csv(records: list[dict]) -> bytes:
     for record in records:
         if not isinstance(record, dict) or set(record) != set(RECORD_FIELDS):
             raise ValueError("record fields differ from the stable CSV fields")
-        writer.writerow({field: _csv_value(field, record[field]) for field in RECORD_FIELDS})
+        writer.writerow(
+            {field: _csv_value(field, record[field]) for field in RECORD_FIELDS}
+        )
     return output.getvalue().encode("utf-8")
 
 
@@ -176,7 +180,9 @@ def validate_csv(json_path: Path, csv_path: Path) -> list[str]:
     if not rows:
         return ["spawn_observations CSV is empty"]
     if rows[0] != list(RECORD_FIELDS):
-        errors.append("spawn_observations CSV header differs from the stable record fields")
+        errors.append(
+            "spawn_observations CSV header differs from the stable record fields"
+        )
     data_rows = rows[1:]
     if len(data_rows) != len(records):
         errors.append(
@@ -189,7 +195,7 @@ def validate_csv(json_path: Path, csv_path: Path) -> list[str]:
     else:
         if raw != canonical:
             errors.append("spawn_observations CSV bytes are not canonical")
-    for index, record in enumerate(records[:len(data_rows)]):
+    for index, record in enumerate(records[: len(data_rows)]):
         row = data_rows[index]
         if len(row) != len(RECORD_FIELDS):
             errors.append(
@@ -208,9 +214,13 @@ def validate_csv(json_path: Path, csv_path: Path) -> list[str]:
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description="Extract observed spawn positions from the pcap corpus.")
+    ap = argparse.ArgumentParser(
+        description="Extract observed spawn positions from the pcap corpus."
+    )
     ap.add_argument("--out", default=str(DEFAULT_OUT), help="Output JSON path.")
-    ap.add_argument("--csv-out", default=None, help="Output CSV path (defaults beside --out).")
+    ap.add_argument(
+        "--csv-out", default=None, help="Output CSV path (defaults beside --out)."
+    )
     args = ap.parse_args()
 
     records: list[dict] = []
@@ -243,7 +253,9 @@ def main() -> int:
     print(f"wrote {out_path}")
     print(f"wrote {csv_path}")
     print(f"  captures: {capture_count}")
-    print(f"  positioned spawns: {positioned}  (identified {identified}, zone-tagged {zone_tagged})")
+    print(
+        f"  positioned spawns: {positioned}  (identified {identified}, zone-tagged {zone_tagged})"
+    )
     return 0
 
 

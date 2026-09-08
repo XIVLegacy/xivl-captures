@@ -22,15 +22,24 @@ sys.path.insert(0, str(Path(__file__).parent))
 from extract_streams import reconstruct_lanes, parse_outer_frames  # type: ignore
 
 
-DEFAULT_CAP_DIR = Path(os.environ.get(
-    "XIVL_PCAP_OBJECTS_DIR",
-    str(Path(__file__).resolve().parent.parent.parent / "sources" / "pcap-1.23b" / "objects"),
-))
+DEFAULT_CAP_DIR = Path(
+    os.environ.get(
+        "XIVL_PCAP_OBJECTS_DIR",
+        str(
+            Path(__file__).resolve().parent.parent.parent
+            / "sources"
+            / "pcap-1.23b"
+            / "objects"
+        ),
+    )
+)
 # Bump when extraction changes output; record the version in pipelines/*.yaml and derived/*.meta.yaml.
 GENERATOR_VERSION = "1"
 
 DEFAULT_OUT = Path(__file__).parent.parent.parent / "derived" / "observations.json"
-DEFAULT_LANE_OUT = Path(__file__).parent.parent.parent / "derived" / "lane_observations.json"
+DEFAULT_LANE_OUT = (
+    Path(__file__).parent.parent.parent / "derived" / "lane_observations.json"
+)
 
 
 def default_corpus_paths() -> list[Path]:
@@ -119,7 +128,12 @@ def walk_capture(path: Path) -> dict:
             ot_bucket["sizes"].add(f["size"])
 
             body = f["body"]
-            if direction == "s2c" and len(body) >= 2 and body[0] == 0x78 and body[1] == 0x9C:
+            if (
+                direction == "s2c"
+                and len(body) >= 2
+                and body[0] == 0x78
+                and body[1] == 0x9C
+            ):
                 try:
                     body = zlib.decompress(body)
                 except zlib.error:
@@ -169,8 +183,9 @@ def walk_capture_lanes(path: Path) -> dict:
                     if opcode is None:
                         continue
                     key = f"0x{opcode:04x}"
-                    bucket = opcodes.setdefault(key, {"opcode": opcode, "totalCount": 0,
-                                                      "innerSizes": set()})
+                    bucket = opcodes.setdefault(
+                        key, {"opcode": opcode, "totalCount": 0, "innerSizes": set()}
+                    )
                     bucket["totalCount"] += 1
                     bucket["innerSizes"].add(ev["inner_size"])
             for bucket in opcodes.values():
@@ -182,16 +197,28 @@ def walk_capture_lanes(path: Path) -> dict:
 
 def aggregate_lanes(per_capture: list[dict]) -> dict:
     """Aggregate inner opcodes by classified retail connection lane."""
-    out = {"version": "1.23b", "captures": [c["capture"] for c in per_capture],
-           "lanes": {lane: {direction: {} for direction in ("c2s", "s2c")}
-                     for lane in ("main", "chat", "unknown")}}
+    out = {
+        "version": "1.23b",
+        "captures": [c["capture"] for c in per_capture],
+        "lanes": {
+            lane: {direction: {} for direction in ("c2s", "s2c")}
+            for lane in ("main", "chat", "unknown")
+        },
+    }
     for cap in per_capture:
         for conn in cap["connections"]:
             for direction, data in conn["directions"].items():
                 dst = out["lanes"][conn["lane"]][direction]
                 for key, observed in data["inner_opcodes"].items():
-                    bucket = dst.setdefault(key, {"opcode": observed["opcode"], "totalCount": 0,
-                                                  "innerSizes": set(), "observedIn": set()})
+                    bucket = dst.setdefault(
+                        key,
+                        {
+                            "opcode": observed["opcode"],
+                            "totalCount": 0,
+                            "innerSizes": set(),
+                            "observedIn": set(),
+                        },
+                    )
                     bucket["totalCount"] += observed["totalCount"]
                     bucket["innerSizes"].update(observed["innerSizes"])
                     bucket["observedIn"].add(cap["capture"])
@@ -221,7 +248,12 @@ def aggregate(per_capture: list[dict]) -> dict:
                 key = f"0x{ot:04x}"
                 bucket = ot_dst.setdefault(
                     key,
-                    {"opcode": ot, "totalCount": 0, "payloadLengths": set(), "observedIn": set()},
+                    {
+                        "opcode": ot,
+                        "totalCount": 0,
+                        "payloadLengths": set(),
+                        "observedIn": set(),
+                    },
                 )
                 bucket["totalCount"] += ot_data["count"]
                 bucket["payloadLengths"].update(ot_data["sizes"])
@@ -325,9 +357,13 @@ def render_summary(aggregate_data: dict) -> str:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description="Opcode/length observation extractor.")
-    ap.add_argument("captures", nargs="*", help="Paths to .pcapng files (default: full corpus).")
+    ap.add_argument(
+        "captures", nargs="*", help="Paths to .pcapng files (default: full corpus)."
+    )
     ap.add_argument("--out", default=str(DEFAULT_OUT), help="Output JSON path.")
-    ap.add_argument("--lane-out", default=str(DEFAULT_LANE_OUT), help="Per-lane output JSON path.")
+    ap.add_argument(
+        "--lane-out", default=str(DEFAULT_LANE_OUT), help="Per-lane output JSON path."
+    )
     args = ap.parse_args()
 
     if args.captures:

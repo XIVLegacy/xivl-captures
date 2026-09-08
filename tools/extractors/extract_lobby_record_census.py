@@ -19,10 +19,15 @@ sys.path.insert(0, str(REPO_ROOT))
 
 from tools.extractors.extract_streams import reconstruct_connections  # noqa: E402
 
-SOURCE = Path(os.environ.get(
-    "XIVL_PCAP_OBJECTS_DIR",
-    str(REPO_ROOT / "sources/pcap-1.23b/objects"),
-)) / "login.pcapng"
+SOURCE = (
+    Path(
+        os.environ.get(
+            "XIVL_PCAP_OBJECTS_DIR",
+            str(REPO_ROOT / "sources/pcap-1.23b/objects"),
+        )
+    )
+    / "login.pcapng"
+)
 OUTPUT = REPO_ROOT / "studies/lobby-handshake-triage/derived/lobby-record-census.json"
 SOURCE_SHA256 = "28e06b54fe559870031f077f8549b9244caafa7e5177dbca08a7feae6c2b1b62"
 FORMAT = "xivl-lobby-record-census-v1"
@@ -94,7 +99,9 @@ def _decrypt(payload: bytes, client_number: int, ticket_field: bytes) -> bytes:
             "install tools/requirements.txt"
         ) from exc
 
-    cipher = Blowfish.new(_normalized_key(client_number, ticket_field), Blowfish.MODE_ECB)
+    cipher = Blowfish.new(
+        _normalized_key(client_number, ticket_field), Blowfish.MODE_ECB
+    )
     output = bytearray()
     for offset in range(0, len(payload), BLOCK_SIZE):
         block = payload[offset : offset + BLOCK_SIZE]
@@ -127,14 +134,21 @@ def _repeat_groups(records: list[bytes]) -> list[dict]:
             block = record[offset : offset + BLOCK_SIZE]
             if block != bytes(BLOCK_SIZE):
                 values.setdefault(block, []).append(offset)
-        per_record.append({tuple(offsets): value for value, offsets in values.items() if len(offsets) > 1})
+        per_record.append(
+            {
+                tuple(offsets): value
+                for value, offsets in values.items()
+                if len(offsets) > 1
+            }
+        )
 
     common_offsets = sorted(set(per_record[0]) & set(per_record[1]))
     return [
         {
             "offsets": list(offsets),
             "unitLength": BLOCK_SIZE,
-            "valueVariesAcrossSessions": per_record[0][offsets] != per_record[1][offsets],
+            "valueVariesAcrossSessions": per_record[0][offsets]
+            != per_record[1][offsets],
         }
         for offsets in common_offsets
     ]
@@ -186,14 +200,22 @@ def _parse_direction(
                 raise ValueError("lobby frame ends inside a subrecord header")
             declared_length = _read_u16(raw_frame, cursor)
             clear_type = _read_u16(raw_frame, cursor + 2)
-            if declared_length < SUBRECORD_HEADER_LENGTH or cursor + declared_length > outer_length:
+            if (
+                declared_length < SUBRECORD_HEADER_LENGTH
+                or cursor + declared_length > outer_length
+            ):
                 raise ValueError("lobby frame ends inside a subrecord")
-            payload = raw_frame[cursor + SUBRECORD_HEADER_LENGTH : cursor + declared_length]
+            payload = raw_frame[
+                cursor + SUBRECORD_HEADER_LENGTH : cursor + declared_length
+            ]
             encrypted_length = 0
             plaintext = payload
             if clear_type in TRANSFORMED_PAYLOAD_TYPES:
                 encrypted_length = len(payload) & TRANSFORMED_LENGTH_MASK
-                plaintext = _decrypt(payload[:encrypted_length], client_number, ticket_field) + payload[encrypted_length:]
+                plaintext = (
+                    _decrypt(payload[:encrypted_length], client_number, ticket_field)
+                    + payload[encrypted_length:]
+                )
             elif clear_type not in PRE_KEY_PLAINTEXT_TYPES | ZERO_EXTENT_TYPES:
                 raise ValueError(f"unclassified clear lobby type {clear_type}")
             record = {
@@ -213,7 +235,9 @@ def _parse_direction(
                 record["innerOpcode"] = _read_u16(plaintext, 2)
             frame["subrecords"].append(record)
             if clear_type == 10:
-                acknowledgement_records.append(raw_frame[cursor : cursor + 16] + plaintext)
+                acknowledgement_records.append(
+                    raw_frame[cursor : cursor + 16] + plaintext
+                )
             cursor += declared_length
         if cursor != outer_length:
             raise ValueError("subrecords do not cover their outer frame")
@@ -232,11 +256,13 @@ def _shared_shapes(sessions: list[dict]) -> list[dict]:
     for session in sessions:
         for direction in session["directions"]:
             for frame in direction["frames"]:
-                occurrences[_frame_signature(direction["direction"], frame)].append({
-                    "sessionId": session["id"],
-                    "frameIndex": frame["frameIndex"],
-                    "streamOffset": frame["streamOffset"],
-                })
+                occurrences[_frame_signature(direction["direction"], frame)].append(
+                    {
+                        "sessionId": session["id"],
+                        "frameIndex": frame["frameIndex"],
+                        "streamOffset": frame["streamOffset"],
+                    }
+                )
     shared = []
     for signature, found in occurrences.items():
         if len({item["sessionId"] for item in found}) != len(sessions):
@@ -244,21 +270,23 @@ def _shared_shapes(sessions: list[dict]) -> list[dict]:
         if signature not in SHARED_IDS:
             raise ValueError("shared lobby frame shape lacks a stable numeric id")
         direction, outer_length, records = signature
-        shared.append({
-            "id": SHARED_IDS[signature],
-            "direction": direction,
-            "outerLength": outer_length,
-            "subrecords": [
-                {
-                    "declaredLength": declared,
-                    "clearType": clear_type,
-                    "encryptedLength": encrypted,
-                    **({"innerOpcode": inner} if inner is not None else {}),
-                }
-                for declared, clear_type, encrypted, inner in records
-            ],
-            "occurrences": found,
-        })
+        shared.append(
+            {
+                "id": SHARED_IDS[signature],
+                "direction": direction,
+                "outerLength": outer_length,
+                "subrecords": [
+                    {
+                        "declaredLength": declared,
+                        "clearType": clear_type,
+                        "encryptedLength": encrypted,
+                        **({"innerOpcode": inner} if inner is not None else {}),
+                    }
+                    for declared, clear_type, encrypted, inner in records
+                ],
+                "occurrences": found,
+            }
+        )
     return sorted(shared, key=lambda item: item["id"])
 
 
@@ -272,7 +300,9 @@ def build_fixture(source: Path = SOURCE) -> dict:
         if connection["server_endpoint"][1] == 54994
     ]
     if len(connections) != 2:
-        raise ValueError(f"expected two retained lobby connections, found {len(connections)}")
+        raise ValueError(
+            f"expected two retained lobby connections, found {len(connections)}"
+        )
 
     sessions = []
     acknowledgement_records = []
@@ -282,7 +312,8 @@ def build_fixture(source: Path = SOURCE) -> dict:
             raise ValueError("initial client lobby record is too short")
         client_number = struct.unpack_from("<I", c2s, CLIENT_NUMBER_STREAM_OFFSET)[0]
         ticket_field = c2s[
-            TICKET_FIELD_STREAM_OFFSET : TICKET_FIELD_STREAM_OFFSET + TICKET_FIELD_LENGTH
+            TICKET_FIELD_STREAM_OFFSET : TICKET_FIELD_STREAM_OFFSET
+            + TICKET_FIELD_LENGTH
         ]
         directions = []
         session_acknowledgements = []
@@ -290,17 +321,24 @@ def build_fixture(source: Path = SOURCE) -> dict:
             stream = connection["streams"].get(direction)
             if stream is None:
                 raise ValueError(f"retained lobby connection lacks {direction}")
-            parsed, acknowledgements = _parse_direction(stream, direction, client_number, ticket_field)
+            parsed, acknowledgements = _parse_direction(
+                stream, direction, client_number, ticket_field
+            )
             directions.append(parsed)
             session_acknowledgements.extend(acknowledgements)
         initial = directions[0]["frames"][0]["subrecords"]
         if len(initial) != 1 or initial[0]["clearType"] != 9:
-            raise ValueError("client-number locator is not inside the initial type-0x0009 record")
+            raise ValueError(
+                "client-number locator is not inside the initial type-0x0009 record"
+            )
         if len(session_acknowledgements) != 1:
             raise ValueError("retained session lacks one acknowledgement")
         acknowledgement_frame = directions[1]["frames"][1]
         raw_header = connection["streams"]["s2c"][
-            acknowledgement_frame["streamOffset"] : acknowledgement_frame["streamOffset"] + 16
+            acknowledgement_frame["streamOffset"] : acknowledgement_frame[
+                "streamOffset"
+            ]
+            + 16
         ]
         acknowledgement_records.append(raw_header + session_acknowledgements[0])
         sessions.append({"id": f"session-{session_index}", "directions": directions})
@@ -370,7 +408,9 @@ def _validate_no_sensitive_strings(fixture: dict) -> None:
             except ValueError:
                 continue
             raise ValueError("fixture contains an IPv4 address")
-        if any(ord(character) < 0x20 and character not in "\t\n\r" for character in text):
+        if any(
+            ord(character) < 0x20 and character not in "\t\n\r" for character in text
+        ):
             raise ValueError("fixture contains a C0 control character")
         if not text.isascii():
             raise ValueError("fixture contains non-ASCII text")
@@ -379,12 +419,58 @@ def _validate_no_sensitive_strings(fixture: dict) -> None:
 def _expected_session_shapes() -> list:
     return [
         [
-            ("c2s", 880, [(0, 648, [(16, 632, 9, 0, None)]), (648, 192, [(16, 176, 3, 160, 5)]), (840, 40, [(16, 24, 8, 0, None)])]),
-            ("s2c", 1352, [(0, 40, [(16, 24, 7, 0, None)]), (40, 672, [(16, 656, 10, 640, None)]), (712, 640, [(16, 624, 3, 608, 12)])]),
+            (
+                "c2s",
+                880,
+                [
+                    (0, 648, [(16, 632, 9, 0, None)]),
+                    (648, 192, [(16, 176, 3, 160, 5)]),
+                    (840, 40, [(16, 24, 8, 0, None)]),
+                ],
+            ),
+            (
+                "s2c",
+                1352,
+                [
+                    (0, 40, [(16, 24, 7, 0, None)]),
+                    (40, 672, [(16, 656, 10, 640, None)]),
+                    (712, 640, [(16, 624, 3, 608, 12)]),
+                ],
+            ),
         ],
         [
-            ("c2s", 1016, [(0, 648, [(16, 632, 9, 0, None)]), (648, 40, [(16, 24, 8, 0, None)]), (688, 192, [(16, 176, 3, 160, 5)]), (880, 64, [(16, 48, 3, 32, 3)]), (944, 72, [(16, 56, 3, 32, 4)])]),
-            ("s2c", 4624, [(0, 40, [(16, 24, 7, 0, None)]), (40, 672, [(16, 656, 10, 640, None)]), (712, 640, [(16, 624, 3, 608, 12)]), (1352, 3072, [(16, 528, 3, 512, 21), (544, 528, 3, 512, 21), (1072, 528, 3, 512, 22), (1600, 496, 3, 480, 23), (2096, 976, 3, 960, 13)]), (4424, 200, [(16, 184, 3, 160, 15)])]),
+            (
+                "c2s",
+                1016,
+                [
+                    (0, 648, [(16, 632, 9, 0, None)]),
+                    (648, 40, [(16, 24, 8, 0, None)]),
+                    (688, 192, [(16, 176, 3, 160, 5)]),
+                    (880, 64, [(16, 48, 3, 32, 3)]),
+                    (944, 72, [(16, 56, 3, 32, 4)]),
+                ],
+            ),
+            (
+                "s2c",
+                4624,
+                [
+                    (0, 40, [(16, 24, 7, 0, None)]),
+                    (40, 672, [(16, 656, 10, 640, None)]),
+                    (712, 640, [(16, 624, 3, 608, 12)]),
+                    (
+                        1352,
+                        3072,
+                        [
+                            (16, 528, 3, 512, 21),
+                            (544, 528, 3, 512, 21),
+                            (1072, 528, 3, 512, 22),
+                            (1600, 496, 3, 480, 23),
+                            (2096, 976, 3, 960, 13),
+                        ],
+                    ),
+                    (4424, 200, [(16, 184, 3, 160, 15)]),
+                ],
+            ),
         ],
     ]
 
@@ -406,8 +492,12 @@ def _session_shapes(fixture: dict) -> list:
                     )
                     for record in frame.get("subrecords", [])
                 ]
-                frames.append((frame.get("streamOffset"), frame.get("outerLength"), records))
-            directions.append((direction.get("direction"), direction.get("streamLength"), frames))
+                frames.append(
+                    (frame.get("streamOffset"), frame.get("outerLength"), records)
+                )
+            directions.append(
+                (direction.get("direction"), direction.get("streamLength"), frames)
+            )
         shapes.append(directions)
     return shapes
 
@@ -443,24 +533,38 @@ def validate_fixture(fixture: dict) -> None:
         for direction in session["directions"]:
             cursor = 0
             for frame_index, frame in enumerate(direction["frames"]):
-                if frame.get("frameIndex") != frame_index or frame.get("streamOffset") != cursor:
+                if (
+                    frame.get("frameIndex") != frame_index
+                    or frame.get("streamOffset") != cursor
+                ):
                     raise ValueError("frames are not in exact stream order")
                 if frame.get("subrecordCount") != len(frame.get("subrecords", [])):
                     raise ValueError("subrecord count changed")
                 frame_cursor = OUTER_HEADER_LENGTH
                 for record_index, record in enumerate(frame["subrecords"]):
-                    if record.get("subrecordIndex") != record_index or record.get("frameOffset") != frame_cursor:
+                    if (
+                        record.get("subrecordIndex") != record_index
+                        or record.get("frameOffset") != frame_cursor
+                    ):
                         raise ValueError("subrecords are not in exact frame order")
-                    if record.get("streamOffset") != frame["streamOffset"] + frame_cursor:
+                    if (
+                        record.get("streamOffset")
+                        != frame["streamOffset"] + frame_cursor
+                    ):
                         raise ValueError("subrecord stream offset changed")
                     extent = record.get("encryptedExtent", {})
-                    if extent.get("offset") != SUBRECORD_HEADER_LENGTH or extent.get("length", -1) % 32:
+                    if (
+                        extent.get("offset") != SUBRECORD_HEADER_LENGTH
+                        or extent.get("length", -1) % 32
+                    ):
                         raise ValueError("encrypted extent changed")
                     frame_cursor += record["declaredLength"]
                 if frame_cursor != frame["outerLength"]:
                     raise ValueError("subrecords do not cover their outer frame")
                 cursor += frame["outerLength"]
-            if cursor != direction.get("streamLength") or cursor != direction.get("completeFrameLength"):
+            if cursor != direction.get("streamLength") or cursor != direction.get(
+                "completeFrameLength"
+            ):
                 raise ValueError("complete frame coverage changed")
 
     cross_session = fixture.get("crossSession", {})
@@ -472,7 +576,10 @@ def validate_fixture(fixture: dict) -> None:
             occurrence.get("sessionId") for occurrence in item["occurrences"]
         } != {"session-1", "session-2"}:
             raise ValueError("shared frame shape does not cover both sessions")
-    if cross_session.get("sharedPostAcknowledgementSubrecords") != EXPECTED_SHARED_POST_ACKNOWLEDGEMENT:
+    if (
+        cross_session.get("sharedPostAcknowledgementSubrecords")
+        != EXPECTED_SHARED_POST_ACKNOWLEDGEMENT
+    ):
         raise ValueError("shared post-acknowledgement census changed")
 
     comparison = cross_session.get("acknowledgementComparison", {})
@@ -481,7 +588,11 @@ def validate_fixture(fixture: dict) -> None:
         raise ValueError("acknowledgement clear invariant span changed")
     cursor = 0
     for span in spans:
-        if span.get("kind") not in {"invariant", "dynamic"} or span.get("offset") != cursor or span.get("length", 0) <= 0:
+        if (
+            span.get("kind") not in {"invariant", "dynamic"}
+            or span.get("offset") != cursor
+            or span.get("length", 0) <= 0
+        ):
             raise ValueError("acknowledgement spans are not a contiguous partition")
         cursor += span["length"]
     if cursor != 672 or not any(span["kind"] == "dynamic" for span in spans):
@@ -493,7 +604,9 @@ def validate_fixture(fixture: dict) -> None:
         offsets = group.get("offsets", [])
         if group.get("unitLength") != BLOCK_SIZE or len(offsets) < 2:
             raise ValueError("invalid repeated-value group")
-        if offsets != sorted(offsets) or any(offset < 32 or offset % BLOCK_SIZE for offset in offsets):
+        if offsets != sorted(offsets) or any(
+            offset < 32 or offset % BLOCK_SIZE for offset in offsets
+        ):
             raise ValueError("repeated-value offsets are invalid")
         if not isinstance(group.get("valueVariesAcrossSessions"), bool):
             raise ValueError("repeated-value variance is missing")
@@ -504,8 +617,14 @@ def validate_fixture(fixture: dict) -> None:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true", help="verify the committed fixture")
-    parser.add_argument("--public-shape", action="store_true", help="validate without restricted source bytes")
+    parser.add_argument(
+        "--check", action="store_true", help="verify the committed fixture"
+    )
+    parser.add_argument(
+        "--public-shape",
+        action="store_true",
+        help="validate without restricted source bytes",
+    )
     args = parser.parse_args()
 
     if OUTPUT.exists():
@@ -515,7 +634,9 @@ def main() -> int:
         print("lobby record census: committed fixture missing", file=sys.stderr)
         return 1
     if args.public_shape:
-        print("lobby record census: public fixture valid; restricted reproduction skipped")
+        print(
+            "lobby record census: public fixture valid; restricted reproduction skipped"
+        )
         return 0
 
     reproduced = build_fixture()

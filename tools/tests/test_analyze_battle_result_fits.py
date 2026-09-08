@@ -49,20 +49,24 @@ class FitTests(unittest.TestCase):
         self.assertEqual(fits[0]["outcome_to_normal_ratio"], "0.500000")
 
     def test_aggregate_uses_contributing_rows(self):
-        fits = build_ratio_rows([
-            match("critical_vs_normal", [10], [20]),
-            match("critical_vs_normal", [20, 30], [40]),
-        ])
+        fits = build_ratio_rows(
+            [
+                match("critical_vs_normal", [10], [20]),
+                match("critical_vs_normal", [20, 30], [40]),
+            ]
+        )
         summary = aggregate_ratio(fits, "critical_vs_normal")
         self.assertEqual(summary["normal_rows_in_ratio"], 3)
         self.assertEqual(summary["outcome_rows_in_ratio"], 2)
         self.assertEqual(summary["aggregate_mean_ratio"], "1.500000")
 
     def test_recovery_identity_controls_base_ratio(self):
-        observations = build_recovery_rows([
-            row(0, 27346, 30320, 151),
-            row(1, 23003, 33008, 136),
-        ])
+        observations = build_recovery_rows(
+            [
+                row(0, 27346, 30320, 151),
+                row(1, 23003, 33008, 136),
+            ]
+        )
         self.assertEqual(observations[0]["observed_to_base_ratio"], "0.151000")
         self.assertEqual(observations[1]["base_magnitude"], "")
         self.assertEqual(observations[1]["observed_to_base_ratio"], "")

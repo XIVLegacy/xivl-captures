@@ -11,7 +11,9 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 STUDIES_DIR = REPO_ROOT / "studies"
-NOTICE = "> Use the stable source-object citations below to locate this study's evidence."
+NOTICE = (
+    "> Use the stable source-object citations below to locate this study's evidence."
+)
 SOURCE_LINK = re.compile(
     r"\[([^\]\n]+)\]\((?:\.\./)+(sources/[^)\s]+/objects/[^)\s]+)\)"
 )
@@ -35,8 +37,9 @@ def transformed(text: str) -> tuple[str, int]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--check", action="store_true",
-                        help="report stale hard links without writing")
+    parser.add_argument(
+        "--check", action="store_true", help="report stale hard links without writing"
+    )
     args = parser.parse_args()
 
     stale: list[Path] = []

@@ -32,18 +32,24 @@ class SpawnObservationsCsvTest(unittest.TestCase):
         self.assertNotIn(b"\r", rendered)
         rows = list(csv.reader(io.StringIO(rendered.decode("utf-8"), newline="")))
         self.assertEqual(rows[0], list(spawn.RECORD_FIELDS))
-        self.assertEqual(rows[1][6:], ["1.200", "-0.000", "3.456", "-1.0000", "false", "true"])
+        self.assertEqual(
+            rows[1][6:], ["1.200", "-0.000", "3.456", "-1.0000", "false", "true"]
+        )
 
     def test_validate_csv_matches_json_order_and_values(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             json_path = root / "spawn_observations.json"
             csv_path = root / "spawn_observations.csv"
-            json_path.write_text(json.dumps({"records": self.records}), encoding="utf-8")
+            json_path.write_text(
+                json.dumps({"records": self.records}), encoding="utf-8"
+            )
             csv_path.write_bytes(spawn.render_csv(self.records))
             self.assertEqual(spawn.validate_csv(json_path, csv_path), [])
 
-            csv_path.write_bytes(spawn.render_csv(self.records).replace(b"a.pcapng", b"b.pcapng"))
+            csv_path.write_bytes(
+                spawn.render_csv(self.records).replace(b"a.pcapng", b"b.pcapng")
+            )
             self.assertTrue(spawn.validate_csv(json_path, csv_path))
 
 

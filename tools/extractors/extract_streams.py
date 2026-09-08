@@ -16,7 +16,11 @@ warnings.filterwarnings("ignore")
 from scapy.all import rdpcap, IP, TCP  # noqa: E402
 
 
-FFXIV_SERVER_PORTS = {54992, 54993, 54994}  # Observed 1.23b server ports; other pairs use the lower-port heuristic.
+FFXIV_SERVER_PORTS = {
+    54992,
+    54993,
+    54994,
+}  # Observed 1.23b server ports; other pairs use the lower-port heuristic.
 GAME_SERVER_PORT = 54992
 TLS_RECORD_SIGNATURE = b"\x16\x03"
 
@@ -90,7 +94,9 @@ def reconstruct_connections(pcap_path: Path) -> list[dict]:
         ep_src = (p[IP].src, p[TCP].sport)
         ep_dst = (p[IP].dst, p[TCP].dport)
         conn_key = tuple(sorted((ep_src, ep_dst)))
-        conns.setdefault(conn_key, []).append((ep_src, ep_dst, p[TCP].seq, payload, idx))
+        conns.setdefault(conn_key, []).append(
+            (ep_src, ep_dst, p[TCP].seq, payload, idx)
+        )
 
     lanes = []
     for conn_key in sorted(conns):
@@ -109,7 +115,9 @@ def reconstruct_connections(pcap_path: Path) -> list[dict]:
             clean = frame_clean_length(blob)
             if clean:
                 streams[direction] = blob[:clean]
-                indexes[direction] = [(offset, idx) for offset, idx in offmap if offset < clean]
+                indexes[direction] = [
+                    (offset, idx) for offset, idx in offmap if offset < clean
+                ]
 
         if not streams:
             continue
@@ -121,13 +129,15 @@ def reconstruct_connections(pcap_path: Path) -> list[dict]:
         else:
             lane = "unknown"
         client_ep = ep_b if server_ep == ep_a else ep_a
-        lanes.append({
-            "lane": lane,
-            "client_endpoint": client_ep,
-            "server_endpoint": server_ep,
-            "streams": streams,
-            "index": indexes,
-        })
+        lanes.append(
+            {
+                "lane": lane,
+                "client_endpoint": client_ep,
+                "server_endpoint": server_ep,
+                "streams": streams,
+                "index": indexes,
+            }
+        )
     return lanes
 
 
@@ -136,8 +146,7 @@ def _is_game_connection(connection: dict) -> bool:
     if connection["server_endpoint"][1] != GAME_SERVER_PORT:
         return False
     return not any(
-        blob.startswith(TLS_RECORD_SIGNATURE)
-        for blob in connection["streams"].values()
+        blob.startswith(TLS_RECORD_SIGNATURE) for blob in connection["streams"].values()
     )
 
 

@@ -22,8 +22,16 @@ STUDIES_DIR = REPO_ROOT / "studies"
 CATALOG_PATH = REPO_ROOT / "catalog" / "index.yaml"
 
 AGREE_FIELDS = [
-    "title", "content_kind", "system", "city_state", "grand_company",
-    "progression_track", "zones", "tags", "status", "search_hints",
+    "title",
+    "content_kind",
+    "system",
+    "city_state",
+    "grand_company",
+    "progression_track",
+    "zones",
+    "tags",
+    "status",
+    "search_hints",
 ]
 
 PATH_LIST_FIELDS = ["primary_paths", "canonical_evidence", "distilled_artifacts"]
@@ -70,7 +78,9 @@ def check_field_agreement(
     return True
 
 
-def check_checksum_file(study_id: str, study_dir: Path, manifest: dict, problems: list[str]) -> None:
+def check_checksum_file(
+    study_id: str, study_dir: Path, manifest: dict, problems: list[str]
+) -> None:
     distilled = manifest.get("distilled")
     if not isinstance(distilled, dict):
         return
@@ -81,7 +91,9 @@ def check_checksum_file(study_id: str, study_dir: Path, manifest: dict, problems
     if not checksum_path.exists():
         return
 
-    for line_no, raw_line in enumerate(checksum_path.read_text(encoding="utf-8").splitlines(), start=1):
+    for line_no, raw_line in enumerate(
+        checksum_path.read_text(encoding="utf-8").splitlines(), start=1
+    ):
         line = raw_line.strip()
         if not line:
             continue
@@ -130,17 +142,25 @@ def _bad_path(path_str: str) -> bool:
 def check_path_hygiene(scope: str, entry: dict, problems: list[str]) -> None:
     for field, path_str in _collect_path_fields(entry):
         if _bad_path(path_str):
-            problems.append(f"{scope}: field `{field}` has non-repo-relative path `{path_str}`")
+            problems.append(
+                f"{scope}: field `{field}` has non-repo-relative path `{path_str}`"
+            )
 
 
 def audit() -> tuple[int, list[str]]:
     problems: list[str] = []
     catalog = load_yaml(CATALOG_PATH)
-    catalog_entries = {entry.get("id"): entry for entry in (catalog.get("studies") or [])}
+    catalog_entries = {
+        entry.get("id"): entry for entry in (catalog.get("studies") or [])
+    }
 
     check_path_hygiene("catalog", catalog, problems)
 
-    study_dirs = sorted((p for p in STUDIES_DIR.iterdir() if p.is_dir()), key=lambda p: p.name) if STUDIES_DIR.is_dir() else []
+    study_dirs = (
+        sorted((p for p in STUDIES_DIR.iterdir() if p.is_dir()), key=lambda p: p.name)
+        if STUDIES_DIR.is_dir()
+        else []
+    )
     study_count = 0
     for study_dir in study_dirs:
         study_id = study_dir.name

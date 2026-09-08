@@ -34,7 +34,8 @@ def main() -> int:
         description="Regenerate scenario views, the catalog registry, aliases, and axes."
     )
     parser.add_argument(
-        "--check", action="store_true",
+        "--check",
+        action="store_true",
         help="report stale catalog outputs without writing",
     )
     args = parser.parse_args()

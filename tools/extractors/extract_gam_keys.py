@@ -72,7 +72,9 @@ def parse_property_block(buf: bytes) -> tuple[list[dict], list[str], int]:
             break
         prop_id = struct.unpack_from("<I", buf, i + 1)[0]
         value = buf[i + 5 : i + 5 + size]
-        kind_label = {1: "byte", 2: "short", 4: "int", 8: "long"}.get(size, f"buf{size}")
+        kind_label = {1: "byte", 2: "short", 4: "int", 8: "long"}.get(
+            size, f"buf{size}"
+        )
         entries.append(
             {
                 "id": prop_id,
@@ -103,7 +105,11 @@ def walk_capture_gam(path: Path) -> list[dict]:
             offset = 0
             while offset + SUB_EVENT_HEADER_LEN <= len(body):
                 size, ev_type = struct.unpack_from("<HH", body, offset)
-                if size == 0 or size < SUB_EVENT_HEADER_LEN or offset + size > len(body):
+                if (
+                    size == 0
+                    or size < SUB_EVENT_HEADER_LEN
+                    or offset + size > len(body)
+                ):
                     break
                 if ev_type == SUB_EVENT_CLASS_ACTOR_WRAPPED:
                     sub_body = body[offset + SUB_EVENT_HEADER_LEN : offset + size]
@@ -217,7 +223,9 @@ def main() -> int:
     print()
     print("Top 10 target strings:")
     for entry in targets_out[:10]:
-        print(f"  {entry['target']:<40}  count={entry['count']:>4}  in {entry['captures']:>2} captures")
+        print(
+            f"  {entry['target']:<40}  count={entry['count']:>4}  in {entry['captures']:>2} captures"
+        )
     return 0
 
 

@@ -27,7 +27,9 @@ from extract_observations import (  # type: ignore
 # Bump when extraction changes output; record the version in pipelines/*.yaml and derived/*.meta.yaml.
 GENERATOR_VERSION = "1"
 
-DEFAULT_OUT = Path(__file__).parent.parent.parent / "derived" / "request_response_pairs.json"
+DEFAULT_OUT = (
+    Path(__file__).parent.parent.parent / "derived" / "request_response_pairs.json"
+)
 
 # Safety constraint: a 200ms reply window covers retail round-trip/processing latency without unrelated traffic.
 WINDOW_MS = 200
@@ -48,7 +50,12 @@ def collect_unified_events(path: Path) -> list[tuple[int, str, int]]:
                 # Safety: timestamp-zero handshake frames cannot be response anchors.
                 continue
             body = f["body"]
-            if direction == "s2c" and len(body) >= 2 and body[0] == 0x78 and body[1] == 0x9C:
+            if (
+                direction == "s2c"
+                and len(body) >= 2
+                and body[0] == 0x78
+                and body[1] == 0x9C
+            ):
                 try:
                     body = zlib.decompress(body)
                 except zlib.error:
@@ -56,7 +63,11 @@ def collect_unified_events(path: Path) -> list[tuple[int, str, int]]:
             offset = 0
             while offset + SUB_EVENT_HEADER_LEN <= len(body):
                 size, ev_type = struct.unpack_from("<HH", body, offset)
-                if size == 0 or size < SUB_EVENT_HEADER_LEN or offset + size > len(body):
+                if (
+                    size == 0
+                    or size < SUB_EVENT_HEADER_LEN
+                    or offset + size > len(body)
+                ):
                     break
                 if ev_type == SUB_EVENT_CLASS_ACTOR_WRAPPED:
                     sub_body = body[offset + SUB_EVENT_HEADER_LEN : offset + size]
@@ -152,10 +163,7 @@ def main() -> int:
     write_json(out_path, out_struct)
     print(f"wrote {out_path}")
     print()
-    print(
-        f"Top c2s -> s2c bindings (window={WINDOW_MS}ms, "
-        f"sorted by pair count):"
-    )
+    print(f"Top c2s -> s2c bindings (window={WINDOW_MS}ms, sorted by pair count):")
     flat: list[tuple[int, int, dict]] = []
     for c2s_op, rows in per_c2s.items():
         for r in rows:

@@ -105,8 +105,12 @@ class _NoAlias(yaml.SafeDumper):
 
 def _dump(obj) -> str:
     return yaml.dump(
-        obj, Dumper=_NoAlias, sort_keys=False, default_flow_style=False,
-        allow_unicode=True, width=100,
+        obj,
+        Dumper=_NoAlias,
+        sort_keys=False,
+        default_flow_style=False,
+        allow_unicode=True,
+        width=100,
     )
 
 
@@ -169,7 +173,11 @@ def build_scenarios() -> list[dict]:
     inv = load_inversion()
     entries = []
     for s in corpus.get("scenarios") or []:
-        entry: dict = {"id": s["id"], "title": s["title"], "content_kind": s["content_kind"]}
+        entry: dict = {
+            "id": s["id"],
+            "title": s["title"],
+            "content_kind": s["content_kind"],
+        }
         for key in FACET_KEYS:
             if s.get(key) is not None:
                 entry[key] = s[key]
@@ -241,7 +249,7 @@ def build_aliases() -> dict:
         "data/": "derived/",
         "datasets/": "derived/",
         "sets/<id>/": "per-kind home; resolve <id> against the `ids:` map above "
-                      "(study/source for a split-set id, scenario for a scenario id)",
+        "(study/source for a split-set id, scenario for a scenario id)",
     }
 
     return {"ids": dict(sorted(ids.items())), "path_prefixes": path_prefixes}
@@ -272,8 +280,10 @@ def run(check: bool = False) -> int:
             print("STALE: " + ", ".join(stale))
             return 1
         n = sum(len(v) for v in sections.values())
-        print(f"Up to date: catalog/index.yaml ({n} entries across 4 sections), "
-              f"catalog/aliases.yaml ({len(aliases['ids'])} id entries).")
+        print(
+            f"Up to date: catalog/index.yaml ({n} entries across 4 sections), "
+            f"catalog/aliases.yaml ({len(aliases['ids'])} id entries)."
+        )
         return 0
 
     wrote = []
@@ -292,9 +302,13 @@ def run(check: bool = False) -> int:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Regenerate catalog/index.yaml and catalog/aliases.yaml.")
-    parser.add_argument("--check", action="store_true",
-                        help="report whether either file is stale; do not write (exit 1 if stale)")
+        description="Regenerate catalog/index.yaml and catalog/aliases.yaml."
+    )
+    parser.add_argument(
+        "--check",
+        action="store_true",
+        help="report whether either file is stale; do not write (exit 1 if stale)",
+    )
     args = parser.parse_args()
     return run(check=args.check)
 

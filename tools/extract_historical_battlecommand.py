@@ -111,69 +111,228 @@ class Field:
 
 FIELDS = (
     Field("command_id", "B", "workbook-field", as_int, "numeric command identifier"),
-    Field("command_id_hex", "E", "cached-formula", as_text, "cached hexadecimal rendering of B"),
-    Field("name", "D", "workbook-field", as_text, "unlabeled source column; retain as workbook name"),
+    Field(
+        "command_id_hex",
+        "E",
+        "cached-formula",
+        as_text,
+        "cached hexadecimal rendering of B",
+    ),
+    Field(
+        "name",
+        "D",
+        "workbook-field",
+        as_text,
+        "unlabeled source column; retain as workbook name",
+    ),
     Field("command_user", "F", "analyst-label", as_text, "secondary taxonomy"),
-    Field("genus_id", "G", "workbook-field", as_int, "numeric value; genus meaning follows the workbook header"),
+    Field(
+        "genus_id",
+        "G",
+        "workbook-field",
+        as_int,
+        "numeric value; genus meaning follows the workbook header",
+    ),
     Field("command_notes", "H", "analyst-note", as_text, "lead only"),
-    Field("animation_type", "I", "workbook-field", as_int, "header records an unresolved capture conflict"),
-    Field("model_animation", "J", "workbook-field", as_int, "numeric animation component"),
-    Field("effect_animation", "K", "workbook-field", as_int, "numeric animation component"),
-    Field("full_battle_animation", "L", "cached-formula", as_int, "cached composition of I, J, and K"),
-    Field("full_battle_animation_hex", "M", "cached-formula", as_text, "cached hexadecimal rendering of L"),
-    Field("command_type_code", "W", "workbook-field", as_int, "raw workbook taxonomy code"),
-    Field("max_range", "AZ", "workbook-field", as_float, "label also permits radius or line length"),
+    Field(
+        "animation_type",
+        "I",
+        "workbook-field",
+        as_int,
+        "header records an unresolved capture conflict",
+    ),
+    Field(
+        "model_animation", "J", "workbook-field", as_int, "numeric animation component"
+    ),
+    Field(
+        "effect_animation", "K", "workbook-field", as_int, "numeric animation component"
+    ),
+    Field(
+        "full_battle_animation",
+        "L",
+        "cached-formula",
+        as_int,
+        "cached composition of I, J, and K",
+    ),
+    Field(
+        "full_battle_animation_hex",
+        "M",
+        "cached-formula",
+        as_text,
+        "cached hexadecimal rendering of L",
+    ),
+    Field(
+        "command_type_code", "W", "workbook-field", as_int, "raw workbook taxonomy code"
+    ),
+    Field(
+        "max_range",
+        "AZ",
+        "workbook-field",
+        as_float,
+        "label also permits radius or line length",
+    ),
     Field("best_range", "BA", "workbook-field", as_float, "numeric range field"),
     Field("minimum_range", "BB", "workbook-field", as_float, "numeric range field"),
     Field("fallback_radius", "BC", "workbook-field", as_float, "numeric range field"),
-    Field("cast_time", "BL", "workbook-field", as_float, "unit is not stated by the workbook"),
-    Field("recast_time", "BO", "workbook-field", as_float, "unit is not stated by the workbook"),
-    Field("magic_potency", "BT", "workbook-field", as_int, "raw workbook label; retail consumers may use a narrower name"),
-    Field("damage_attribute", "CL", "workbook-field", as_int, "numeric damage attribute"),
-    Field("damage_attribute_weight", "CM", "workbook-field", as_float, "numeric workbook percentage field"),
+    Field(
+        "cast_time",
+        "BL",
+        "workbook-field",
+        as_float,
+        "unit is not stated by the workbook",
+    ),
+    Field(
+        "recast_time",
+        "BO",
+        "workbook-field",
+        as_float,
+        "unit is not stated by the workbook",
+    ),
+    Field(
+        "magic_potency",
+        "BT",
+        "workbook-field",
+        as_int,
+        "raw workbook label; retail consumers may use a narrower name",
+    ),
+    Field(
+        "damage_attribute", "CL", "workbook-field", as_int, "numeric damage attribute"
+    ),
+    Field(
+        "damage_attribute_weight",
+        "CM",
+        "workbook-field",
+        as_float,
+        "numeric workbook percentage field",
+    ),
     Field("damage_element", "CN", "workbook-field", as_int, "numeric damage element"),
-    Field("damage_element_weight", "CO", "workbook-field", as_float, "numeric workbook percentage field"),
+    Field(
+        "damage_element_weight",
+        "CO",
+        "workbook-field",
+        as_float,
+        "numeric workbook percentage field",
+    ),
     Field("target_self", "CZ", "workbook-field", as_bool, "raw target flag"),
     Field("target_ally", "DA", "workbook-field", as_bool, "raw target flag"),
     Field("target_enemy", "DB", "workbook-field", as_bool, "raw target flag"),
     Field("range_width", "DO", "analyst-custom", as_float, "provisional geometry"),
-    Field("battle_command_type", "DP", "analyst-custom", as_int, "provisional taxonomy"),
+    Field(
+        "battle_command_type", "DP", "analyst-custom", as_int, "provisional taxonomy"
+    ),
     Field("hit_count", "DQ", "analyst-custom", as_int, "provisional hit count"),
     Field("rotation_pi", "DR", "analyst-custom", as_float, "provisional geometry"),
     Field("rotation_note", "DS", "analyst-note", as_text, "lead only"),
-    Field("rotation_radians", "DT", "cached-formula", as_float, "cached DR multiplied by pi"),
+    Field(
+        "rotation_radians",
+        "DT",
+        "cached-formula",
+        as_float,
+        "cached DR multiplied by pi",
+    ),
     Field("cone_angle_pi", "DV", "analyst-custom", as_float, "provisional geometry"),
     Field("cone_note", "DW", "analyst-note", as_text, "lead only"),
-    Field("cone_angle_radians", "DX", "cached-formula", as_float, "cached DV multiplied by pi"),
-    Field("main_target_mask", "DY", "formula-or-override", as_int, "semantics unresolved"),
-    Field("valid_target_mask", "DZ", "formula-or-override", as_int, "semantics unresolved"),
-    Field("aoe_type", "EB", "formula-or-override", as_int, "provisional geometry taxonomy"),
+    Field(
+        "cone_angle_radians",
+        "DX",
+        "cached-formula",
+        as_float,
+        "cached DV multiplied by pi",
+    ),
+    Field(
+        "main_target_mask", "DY", "formula-or-override", as_int, "semantics unresolved"
+    ),
+    Field(
+        "valid_target_mask", "DZ", "formula-or-override", as_int, "semantics unresolved"
+    ),
+    Field(
+        "aoe_type", "EB", "formula-or-override", as_int, "provisional geometry taxonomy"
+    ),
     Field("aoe_target", "EC", "cached-formula", as_int, "provisional target taxonomy"),
     Field("height", "ED", "analyst-custom", as_float, "provisional geometry"),
-    Field("text_id", "EE", "analyst-custom", as_int, "mapping not independently corroborated"),
-    Field("cast_type", "EG", "formula-or-override", as_int, "header explicitly records uncertain meanings"),
-    Field("knockback_id", "EI", "analyst-custom", as_int, "mapping not independently corroborated"),
-    Field("interpreted_command_type_code", "EK", "formula-or-override", as_int, "depends on analyst taxonomy and unfinished weapon-skill list"),
-    Field("interpreted_command_type", "EM", "cached-formula", as_text, "depends on analyst taxonomy and unfinished weapon-skill list"),
-    Field("resistable", "EO", "formula-or-override", as_int, "derived from analyst command taxonomy"),
+    Field(
+        "text_id",
+        "EE",
+        "analyst-custom",
+        as_int,
+        "mapping not independently corroborated",
+    ),
+    Field(
+        "cast_type",
+        "EG",
+        "formula-or-override",
+        as_int,
+        "header explicitly records uncertain meanings",
+    ),
+    Field(
+        "knockback_id",
+        "EI",
+        "analyst-custom",
+        as_int,
+        "mapping not independently corroborated",
+    ),
+    Field(
+        "interpreted_command_type_code",
+        "EK",
+        "formula-or-override",
+        as_int,
+        "depends on analyst taxonomy and unfinished weapon-skill list",
+    ),
+    Field(
+        "interpreted_command_type",
+        "EM",
+        "cached-formula",
+        as_text,
+        "depends on analyst taxonomy and unfinished weapon-skill list",
+    ),
+    Field(
+        "resistable",
+        "EO",
+        "formula-or-override",
+        as_int,
+        "derived from analyst command taxonomy",
+    ),
 )
 
 WEAPON_SKILL_FIELDS = (
     Field("hits_self", "C", "unfinished-analyst-table", as_bool, "lead only"),
     Field("hits_allies", "D", "unfinished-analyst-table", as_bool, "lead only"),
     Field("hits_enemies", "E", "unfinished-analyst-table", as_bool, "lead only"),
-    Field("aoe_type", "F", "unfinished-analyst-table", as_int, "1 circle, 2 cone, 4 line per header"),
-    Field("aoe_location", "G", "unfinished-analyst-table", as_int, "1 target, 2 self per header"),
+    Field(
+        "aoe_type",
+        "F",
+        "unfinished-analyst-table",
+        as_int,
+        "1 circle, 2 cone, 4 line per header",
+    ),
+    Field(
+        "aoe_location",
+        "G",
+        "unfinished-analyst-table",
+        as_int,
+        "1 target, 2 self per header",
+    ),
     Field("unused", "H", "unfinished-analyst-table", as_int, "uninterpreted"),
-    Field("resistable_code", "I", "unfinished-analyst-table", as_int, "header is uncertain"),
-    Field("deals_damage", "J", "unfinished-analyst-table", as_int, "provisional damage flag"),
+    Field(
+        "resistable_code",
+        "I",
+        "unfinished-analyst-table",
+        as_int,
+        "header is uncertain",
+    ),
+    Field(
+        "deals_damage",
+        "J",
+        "unfinished-analyst-table",
+        as_int,
+        "provisional damage flag",
+    ),
 )
 
 
 def cell_text(cell: ET.Element) -> str:
     return "\n".join(
-        "".join(paragraph.itertext())
-        for paragraph in cell.findall(".//text:p", NS)
+        "".join(paragraph.itertext()) for paragraph in cell.findall(".//text:p", NS)
     )
 
 
@@ -342,9 +501,7 @@ def build_document(source: Path) -> dict[str, object]:
         for name, value in raw.items():
             if value is not None:
                 coverage[name] += 1
-        formula_count += sum(
-            1 for cell in row if cell.get("formula")
-        )
+        formula_count += sum(1 for cell in row if cell.get("formula"))
         normalization_issue_counts.update(issues.keys())
         record = {
             "source_row": source_row,
@@ -426,7 +583,9 @@ def build_document(source: Path) -> dict[str, object]:
             ),
             "unfinished_weapon_skill_duplicate_ids": duplicates,
             "field_nonempty_counts": dict(sorted(coverage.items())),
-            "normalization_issue_counts": dict(sorted(normalization_issue_counts.items())),
+            "normalization_issue_counts": dict(
+                sorted(normalization_issue_counts.items())
+            ),
             "unresolved_fields": [
                 "animation_type_capture_disagreement",
                 "cast_and_recast_units",

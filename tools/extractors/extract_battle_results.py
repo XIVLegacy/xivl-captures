@@ -36,21 +36,43 @@ from extract_streams import (  # type: ignore  # noqa: E402
     reconstruct_lanes,
 )
 
-OPCODES = {0x0139: ("X01", 1, 88), 0x013A: ("X10", 10, 216),
-           0x013B: ("X18", 18, 328), 0x013C: ("X00", 0, 72)}
+OPCODES = {
+    0x0139: ("X01", 1, 88),
+    0x013A: ("X10", 10, 216),
+    0x013B: ("X18", 18, 328),
+    0x013C: ("X00", 0, 72),
+}
 APP_PREFIX_LEN = INNER_HEADER_LEN + 8
 STUDY_DIR = REPO_ROOT / "studies" / "battle-result-backfit"
 DEFAULT_OUT = STUDY_DIR / "derived"
 PCAP_MANIFEST = REPO_ROOT / "sources" / "pcap-1.23b" / "manifest.yaml"
 
 CSV_FIELDS = [
-    "row_index", "capture", "scenario_id", "wire_index", "lane_index",
-    "frame_index", "outer_timestamp_or_seq_hex", "subevent_index", "subevent_offset",
-    "opcode", "shape",
-    "row_index_in_packet", "row_count", "source_actor_id", "target_actor_id",
-    "effect_or_animation_id", "command_id", "numeric_value",
-    "world_master_text_id", "message_class", "effect_id", "text_param",
-    "row_ordinal_or_filter", "header_control_value", "presentation_flags",
+    "row_index",
+    "capture",
+    "scenario_id",
+    "wire_index",
+    "lane_index",
+    "frame_index",
+    "outer_timestamp_or_seq_hex",
+    "subevent_index",
+    "subevent_offset",
+    "opcode",
+    "shape",
+    "row_index_in_packet",
+    "row_count",
+    "source_actor_id",
+    "target_actor_id",
+    "effect_or_animation_id",
+    "command_id",
+    "numeric_value",
+    "world_master_text_id",
+    "message_class",
+    "effect_id",
+    "text_param",
+    "row_ordinal_or_filter",
+    "header_control_value",
+    "presentation_flags",
 ]
 
 MESSAGE_CLASSES = {
@@ -104,16 +126,35 @@ MESSAGE_CLASSES = {
 }
 
 OUTCOME_FAMILIES = {
-    30108: "defeat", 30109: "recovery_state", 30112: "body_part",
-    30116: "defeat", 30126: "command_ready", 30128: "cast_start",
-    30209: "command_failure", 30301: "damage_hit", 30302: "damage_critical",
-    30303: "damage_body_part", 30306: "damage_blocked",
-    30308: "damage_parried", 30311: "miss", 30320: "hp_recovery",
-    30328: "status_gain", 30330: "status_gain", 30331: "status_loss",
-    30332: "hp_absorption", 30335: "status_gain", 30338: "status_loss",
-    33008: "hp_recovery", 33909: "skill_progression", 33919: "exp_chain",
-    33921: "skill_progression", 33934: "experience", 33935: "experience",
-    33936: "experience", 33950: "experience", 33954: "experience",
+    30108: "defeat",
+    30109: "recovery_state",
+    30112: "body_part",
+    30116: "defeat",
+    30126: "command_ready",
+    30128: "cast_start",
+    30209: "command_failure",
+    30301: "damage_hit",
+    30302: "damage_critical",
+    30303: "damage_body_part",
+    30306: "damage_blocked",
+    30308: "damage_parried",
+    30311: "miss",
+    30320: "hp_recovery",
+    30328: "status_gain",
+    30330: "status_gain",
+    30331: "status_loss",
+    30332: "hp_absorption",
+    30335: "status_gain",
+    30338: "status_loss",
+    33008: "hp_recovery",
+    33909: "skill_progression",
+    33919: "exp_chain",
+    33921: "skill_progression",
+    33934: "experience",
+    33935: "experience",
+    33936: "experience",
+    33950: "experience",
+    33954: "experience",
 }
 
 
@@ -160,8 +201,13 @@ def validate_field_model(path: Path) -> None:
         if variant["rowCapacity"] != capacity or variant["subpacketSize"] != size:
             raise ValueError(f"field model disagrees for 0x{opcode:04X}")
     queue = {field["name"]: field for field in model["queueEntry"]["fields"]}
-    expected = {"sourceActorId": 0, "effectOrAnimationId": 4,
-                "rowCount": 32, "commandId": 36, "presentationFlags": 38}
+    expected = {
+        "sourceActorId": 0,
+        "effectOrAnimationId": 4,
+        "rowCount": 32,
+        "commandId": 36,
+        "presentationFlags": 38,
+    }
     for name, offset in expected.items():
         if queue[name].get("wireOffset") != offset:
             raise ValueError(f"field model wire offset disagrees for {name}")
@@ -208,38 +254,46 @@ def decode_packet(app: bytes, opcode: int) -> tuple[dict, list[dict]]:
     rows: list[dict] = []
     if opcode == 0x0139:
         for i in range(count):
-            rows.append({
-                "target_actor_id": _u32(app, 0x28),
-                "numeric_value": _u16(app, 0x2C),
-                "world_master_text_id": _u16(app, 0x2E),
-                "effect_id": _u32(app, 0x30),
-                "text_param": _u8(app, 0x34),
-                "row_ordinal_or_filter": _u8(app, 0x35),
-            })
+            rows.append(
+                {
+                    "target_actor_id": _u32(app, 0x28),
+                    "numeric_value": _u16(app, 0x2C),
+                    "world_master_text_id": _u16(app, 0x2E),
+                    "effect_id": _u32(app, 0x30),
+                    "text_param": _u8(app, 0x34),
+                    "row_ordinal_or_filter": _u8(app, 0x35),
+                }
+            )
     elif opcode == 0x013A:
         for i in range(count):
-            rows.append({
-                "target_actor_id": _u32(app, 0x28 + i * 4),
-                "numeric_value": _u16(app, 0x50 + i * 2),
-                "world_master_text_id": _u16(app, 0x64 + i * 2),
-                "effect_id": _u32(app, 0x78 + i * 4),
-                "text_param": _u8(app, 0xA0 + i),
-                "row_ordinal_or_filter": _u8(app, 0xAA + i),
-            })
+            rows.append(
+                {
+                    "target_actor_id": _u32(app, 0x28 + i * 4),
+                    "numeric_value": _u16(app, 0x50 + i * 2),
+                    "world_master_text_id": _u16(app, 0x64 + i * 2),
+                    "effect_id": _u32(app, 0x78 + i * 4),
+                    "text_param": _u8(app, 0xA0 + i),
+                    "row_ordinal_or_filter": _u8(app, 0xAA + i),
+                }
+            )
     elif opcode == 0x013B:
         for i in range(count):
-            rows.append({
-                "target_actor_id": _u32(app, 0x28 + i * 4),
-                "numeric_value": _u16(app, 0x70 + i * 2),
-                "world_master_text_id": _u16(app, 0x94 + i * 2),
-                "effect_id": _u32(app, 0xB8 + i * 4),
-                "text_param": _u8(app, 0x100 + i),
-                "row_ordinal_or_filter": _u8(app, 0x112 + i),
-            })
+            rows.append(
+                {
+                    "target_actor_id": _u32(app, 0x28 + i * 4),
+                    "numeric_value": _u16(app, 0x70 + i * 2),
+                    "world_master_text_id": _u16(app, 0x94 + i * 2),
+                    "effect_id": _u32(app, 0xB8 + i * 4),
+                    "text_param": _u8(app, 0x100 + i),
+                    "row_ordinal_or_filter": _u8(app, 0x112 + i),
+                }
+            )
     return header, rows
 
 
-def extract(captures: list[Path], world_rows: dict[int, str]) -> tuple[list[dict], dict]:
+def extract(
+    captures: list[Path], world_rows: dict[int, str]
+) -> tuple[list[dict], dict]:
     scenario_by_capture = load_scenarios()
     rows: list[dict] = []
     packets: Counter[str] = Counter()
@@ -267,20 +321,23 @@ def extract(captures: list[Path], world_rows: dict[int, str]) -> tuple[list[dict
                     if size < SUB_EVENT_HEADER_LEN or offset + size > len(body):
                         break
                     if event_type == SUB_EVENT_CLASS_ACTOR_WRAPPED:
-                        sub_body = body[offset + SUB_EVENT_HEADER_LEN:offset + size]
+                        sub_body = body[offset + SUB_EVENT_HEADER_LEN : offset + size]
                         if len(sub_body) >= INNER_HEADER_LEN:
                             opcode = _u16(sub_body, 2)
                             if opcode in OPCODES:
                                 shape, _capacity, expected_size = OPCODES[opcode]
                                 if size != expected_size:
                                     raise ValueError(
-                                        f"{capture.name}: 0x{opcode:04X} size {size}, expected {expected_size}")
+                                        f"{capture.name}: 0x{opcode:04X} size {size}, expected {expected_size}"
+                                    )
                                 app = sub_body[APP_PREFIX_LEN:]
                                 header, decoded = decode_packet(app, opcode)
                                 src_header = _u32(body, offset + 4)
                                 if src_header != header["source_actor_id"]:
                                     source_mismatches += 1
-                                nonzero_targets = sum(r["target_actor_id"] != 0 for r in decoded)
+                                nonzero_targets = sum(
+                                    r["target_actor_id"] != 0 for r in decoded
+                                )
                                 if nonzero_targets != header["row_count"]:
                                     target_count_mismatches += 1
                                 key = f"0x{opcode:04X}"
@@ -290,24 +347,29 @@ def extract(captures: list[Path], world_rows: dict[int, str]) -> tuple[list[dict
                                 scenario_rows[scenario] += len(decoded)
                                 for row_in_packet, decoded_row in enumerate(decoded):
                                     message_class, _label = classify(
-                                        decoded_row["world_master_text_id"], world_rows)
-                                    rows.append({
-                                        "row_index": len(rows),
-                                        "capture": capture.name,
-                                        "scenario_id": scenario,
-                                        "wire_index": wire_index,
-                                        "lane_index": lane_index,
-                                        "frame_index": frame_index,
-                                        "outer_timestamp_or_seq_hex": frame["timestamp"].hex(),
-                                        "subevent_index": subevent_index,
-                                        "subevent_offset": offset,
-                                        "opcode": key,
-                                        "shape": shape,
-                                        "row_index_in_packet": row_in_packet,
-                                        **header,
-                                        **decoded_row,
-                                        "message_class": message_class,
-                                    })
+                                        decoded_row["world_master_text_id"], world_rows
+                                    )
+                                    rows.append(
+                                        {
+                                            "row_index": len(rows),
+                                            "capture": capture.name,
+                                            "scenario_id": scenario,
+                                            "wire_index": wire_index,
+                                            "lane_index": lane_index,
+                                            "frame_index": frame_index,
+                                            "outer_timestamp_or_seq_hex": frame[
+                                                "timestamp"
+                                            ].hex(),
+                                            "subevent_index": subevent_index,
+                                            "subevent_offset": offset,
+                                            "opcode": key,
+                                            "shape": shape,
+                                            "row_index_in_packet": row_in_packet,
+                                            **header,
+                                            **decoded_row,
+                                            "message_class": message_class,
+                                        }
+                                    )
                     wire_index += 1
                     subevent_index += 1
                     offset += size
@@ -331,18 +393,26 @@ def extract(captures: list[Path], world_rows: dict[int, str]) -> tuple[list[dict
             }
             for scenario, counts in sorted(scenario_packets.items())
         },
-        "message_class_counts": dict(sorted(Counter(r["message_class"] for r in rows).items())),
+        "message_class_counts": dict(
+            sorted(Counter(r["message_class"] for r in rows).items())
+        ),
         "world_master_text_id_counts": {
-            str(key): value for key, value in sorted(
-                Counter(r["world_master_text_id"] for r in rows).items())
+            str(key): value
+            for key, value in sorted(
+                Counter(r["world_master_text_id"] for r in rows).items()
+            )
         },
         "cure_command_27346": {
             "row_count": sum(r["command_id"] == 27346 for r in rows),
             "hp_recovery_rows": sum(
-                r["command_id"] == 27346 and r["message_class"] == "hp_recovery" for r in rows),
+                r["command_id"] == 27346 and r["message_class"] == "hp_recovery"
+                for r in rows
+            ),
             "hp_recovery_values": sorted(
-                r["numeric_value"] for r in rows
-                if r["command_id"] == 27346 and r["message_class"] == "hp_recovery"),
+                r["numeric_value"]
+                for r in rows
+                if r["command_id"] == 27346 and r["message_class"] == "hp_recovery"
+            ),
         },
     }
     return rows, accounting
@@ -361,11 +431,22 @@ def render_messages(rows: list[dict], world_rows: dict[int, str]) -> bytes:
     counts = Counter(r["world_master_text_id"] for r in rows)
     handle = io.StringIO(newline="")
     writer = csv.writer(handle, lineterminator="\n")
-    writer.writerow(["world_master_text_id", "observed_rows", "message_class", "message_label", "join_status"])
+    writer.writerow(
+        [
+            "world_master_text_id",
+            "observed_rows",
+            "message_class",
+            "message_label",
+            "join_status",
+        ]
+    )
     for message_id, count in sorted(counts.items()):
         message_class, label = classify(message_id, world_rows)
-        status = "zero_id" if message_id == 0 else (
-            "joined" if message_id in world_rows else "row_absent")
+        status = (
+            "zero_id"
+            if message_id == 0
+            else ("joined" if message_id in world_rows else "row_absent")
+        )
         writer.writerow([message_id, count, message_class, label, status])
     return handle.getvalue().encode("ascii")
 
@@ -376,39 +457,43 @@ def _counter_map(values) -> dict[str, int]:
 
 def render_message_contexts(rows: list[dict], world_rows: dict[int, str]) -> bytes:
     entries = []
-    message_ids = sorted({
-        row["world_master_text_id"]
-        for row in rows
-        if row["world_master_text_id"]
-    })
+    message_ids = sorted(
+        {row["world_master_text_id"] for row in rows if row["world_master_text_id"]}
+    )
     for message_id in message_ids:
         selected = [row for row in rows if row["world_master_text_id"] == message_id]
         message_class, label = classify(message_id, world_rows)
-        entries.append({
-            "worldMasterTextId": message_id,
-            "englishText": world_rows[message_id],
-            "messageClass": message_class,
-            "messageLabel": label,
-            "outcomeFamily": OUTCOME_FAMILIES.get(message_id, "unclassified"),
-            "observedRows": len(selected),
-            "distinctCaptures": len({row["capture"] for row in selected}),
-            "captures": sorted({row["capture"] for row in selected}),
-            "scenarios": _counter_map(row["scenario_id"] for row in selected),
-            "opcodes": _counter_map(row["opcode"] for row in selected),
-            "commandIds": _counter_map(row["command_id"] for row in selected),
-            "sourceActorIds": _counter_map(row["source_actor_id"] for row in selected),
-            "targetActorIds": _counter_map(row["target_actor_id"] for row in selected),
-            "numericValuePresence": {
-                "zeroRows": sum(row["numeric_value"] == 0 for row in selected),
-                "nonzeroRows": sum(row["numeric_value"] != 0 for row in selected),
-            },
-            "effectIdPresence": {
-                "zeroRows": sum(row["effect_id"] == 0 for row in selected),
-                "nonzeroRows": sum(row["effect_id"] != 0 for row in selected),
-            },
-            "textParamValues": _counter_map(row["text_param"] for row in selected),
-            "rowIndexes": [row["row_index"] for row in selected],
-        })
+        entries.append(
+            {
+                "worldMasterTextId": message_id,
+                "englishText": world_rows[message_id],
+                "messageClass": message_class,
+                "messageLabel": label,
+                "outcomeFamily": OUTCOME_FAMILIES.get(message_id, "unclassified"),
+                "observedRows": len(selected),
+                "distinctCaptures": len({row["capture"] for row in selected}),
+                "captures": sorted({row["capture"] for row in selected}),
+                "scenarios": _counter_map(row["scenario_id"] for row in selected),
+                "opcodes": _counter_map(row["opcode"] for row in selected),
+                "commandIds": _counter_map(row["command_id"] for row in selected),
+                "sourceActorIds": _counter_map(
+                    row["source_actor_id"] for row in selected
+                ),
+                "targetActorIds": _counter_map(
+                    row["target_actor_id"] for row in selected
+                ),
+                "numericValuePresence": {
+                    "zeroRows": sum(row["numeric_value"] == 0 for row in selected),
+                    "nonzeroRows": sum(row["numeric_value"] != 0 for row in selected),
+                },
+                "effectIdPresence": {
+                    "zeroRows": sum(row["effect_id"] == 0 for row in selected),
+                    "nonzeroRows": sum(row["effect_id"] != 0 for row in selected),
+                },
+                "textParamValues": _counter_map(row["text_param"] for row in selected),
+                "rowIndexes": [row["row_index"] for row in selected],
+            }
+        )
     document = {
         "schemaVersion": 1,
         "evidenceClass": "packet-capture",
@@ -426,7 +511,9 @@ def render_message_contexts(rows: list[dict], world_rows: dict[int, str]) -> byt
         },
         "entries": entries,
     }
-    return (json.dumps(document, indent=2, sort_keys=True, ensure_ascii=True) + "\n").encode("ascii")
+    return (
+        json.dumps(document, indent=2, sort_keys=True, ensure_ascii=True) + "\n"
+    ).encode("ascii")
 
 
 def build_outputs(client_data_repo: Path, field_model: Path) -> dict[str, bytes]:
@@ -442,7 +529,10 @@ def build_outputs(client_data_repo: Path, field_model: Path) -> dict[str, bytes]
     world_rows = load_world_master(world_path)
     rows, accounting = extract(captures, world_rows)
     accounting["inputs"] = {
-        "pcap_manifest": {"path": "sources/pcap-1.23b/manifest.yaml", "sha256": sha256_file(PCAP_MANIFEST)},
+        "pcap_manifest": {
+            "path": "sources/pcap-1.23b/manifest.yaml",
+            "sha256": sha256_file(PCAP_MANIFEST),
+        },
         "field_model": {
             "path": "xivl-client-structs:manifests/battle_result_field_semantics.json",
             "sha256": sha256_file(field_model),
@@ -462,12 +552,16 @@ def build_outputs(client_data_repo: Path, field_model: Path) -> dict[str, bytes]
     expected = {"0x0139": 438, "0x013A": 66, "0x013B": 0, "0x013C": 27}
     observed = {key: accounting["packet_counts"].get(key, 0) for key in expected}
     if observed != expected or accounting["row_total"] != 622:
-        raise ValueError(f"corpus accounting changed: packets={observed}, rows={accounting['row_total']}")
+        raise ValueError(
+            f"corpus accounting changed: packets={observed}, rows={accounting['row_total']}"
+        )
     return {
         "battle-result-rows.csv": render_csv(rows),
         "world-master-messages.csv": render_messages(rows, world_rows),
         "world-master-message-contexts.json": render_message_contexts(rows, world_rows),
-        "accounting.json": (json.dumps(accounting, indent=2, sort_keys=True) + "\n").encode("ascii"),
+        "accounting.json": (
+            json.dumps(accounting, indent=2, sort_keys=True) + "\n"
+        ).encode("ascii"),
     }
 
 

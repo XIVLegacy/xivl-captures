@@ -40,13 +40,19 @@ def promote(source_path: Path) -> dict:
             row["observedIn"] = sorted(e.get("observedIn") or [])
             entries.append(row)
 
-    entries.sort(key=lambda r: (r["service"] or "", int(r["opcodeHex"], 16), r["direction"] or ""))
+    entries.sort(
+        key=lambda r: (
+            r["service"] or "",
+            int(r["opcodeHex"], 16),
+            r["direction"] or "",
+        )
+    )
 
     return {
         "source": "xivl-opcodes:opcodes.json",
         "source_sha256": source_sha256,
         "evidenceTier": "curated identification layer promoted as local evidence; "
-                         "no freshness promise against the sibling catalog",
+        "no freshness promise against the sibling catalog",
         "entries": entries,
     }
 
@@ -54,9 +60,14 @@ def promote(source_path: Path) -> dict:
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Promote the identification layer of a xivl-opcodes "
-                     "opcodes.json into the local derived/opcode_names.json snapshot.")
-    parser.add_argument("--source", required=True, type=Path,
-                        help="path to the source opcodes.json (no default sibling path)")
+        "opcodes.json into the local derived/opcode_names.json snapshot."
+    )
+    parser.add_argument(
+        "--source",
+        required=True,
+        type=Path,
+        help="path to the source opcodes.json (no default sibling path)",
+    )
     args = parser.parse_args()
 
     if not args.source.exists():
@@ -65,7 +76,9 @@ def main() -> int:
 
     mapping = promote(args.source)
     write_json(OUT_PATH, mapping)
-    print(f"Wrote {len(mapping['entries'])} entries to {OUT_PATH.relative_to(DATA_DIR.parent)}")
+    print(
+        f"Wrote {len(mapping['entries'])} entries to {OUT_PATH.relative_to(DATA_DIR.parent)}"
+    )
     return 0
 
 

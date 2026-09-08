@@ -52,28 +52,57 @@ OUT = REPO_ROOT / "studies" / STUDY_ID / "derived"
 CATEGORIES = {
     "zone_transition": frozenset({0x0005, 0x0006, 0x0007, 0x0008, 0x000F, 0x0010}),
     "actor_lifecycle": frozenset({0x0007, 0x00CA, 0x00CB, 0x00CC}),
-    "group_update": frozenset({0x0143, 0x017A, 0x017C, 0x017D, 0x017E, 0x017F,
-                                0x0183, 0x0187, 0x018B}),
+    "group_update": frozenset(
+        {0x0143, 0x017A, 0x017C, 0x017D, 0x017E, 0x017F, 0x0183, 0x0187, 0x018B}
+    ),
     "group_layout_018b": frozenset({0x018B}),
     "setup_0193": frozenset({0x0193}),
 }
 
 OCCURRENCE_FIELDS = (
-    "occurrence", "capture", "lane_index", "lane", "lane_event_index",
-    "frame_index", "subevent_index", "source_actor", "target_actor",
-    "header_u32_00", "header_u32_04", "header_u32_08", "marker_count",
-    "snapshot", "chronology_shape", "prior_same_snapshot_distance",
+    "occurrence",
+    "capture",
+    "lane_index",
+    "lane",
+    "lane_event_index",
+    "frame_index",
+    "subevent_index",
+    "source_actor",
+    "target_actor",
+    "header_u32_00",
+    "header_u32_04",
+    "header_u32_08",
+    "marker_count",
+    "snapshot",
+    "chronology_shape",
+    "prior_same_snapshot_distance",
 )
 RECORD_FIELDS = (
-    "occurrence", "capture", "record_index", "field_u32_00", "field_u32_08",
-    "field_u32_0c", "field_f32_14", "field_f32_18", "field_f32_1c",
+    "occurrence",
+    "capture",
+    "record_index",
+    "field_u32_00",
+    "field_u32_08",
+    "field_u32_0c",
+    "field_f32_14",
+    "field_f32_18",
+    "field_f32_1c",
     "hypothesis_f32_20_unprojected",
 )
 NEIGHBOR_FIELDS = (
-    "occurrence", "capture", "lane_index", "lane", "relative_event",
-    "neighbor_lane_event_index", "same_frame", "neighbor_opcode",
-    "zone_transition", "actor_lifecycle", "group_update",
-    "group_layout_018b", "setup_0193",
+    "occurrence",
+    "capture",
+    "lane_index",
+    "lane",
+    "relative_event",
+    "neighbor_lane_event_index",
+    "same_frame",
+    "neighbor_opcode",
+    "zone_transition",
+    "actor_lifecycle",
+    "group_update",
+    "group_layout_018b",
+    "setup_0193",
 )
 IPV4_RE = re.compile(rb"(?<![0-9])(?:[0-9]{1,3}\.){3}[0-9]{1,3}(?![0-9])")
 RAW_ID_RE = re.compile(rb"0x[0-9a-fA-F]{8}(?![0-9a-fA-F])")
@@ -119,7 +148,9 @@ def _corpus_digest(paths: list[Path]) -> str:
     return digest.hexdigest()
 
 
-def validate_corpus_paths(paths: list[Path], manifest_path: Path = SOURCE_MANIFEST) -> None:
+def validate_corpus_paths(
+    paths: list[Path], manifest_path: Path = SOURCE_MANIFEST
+) -> None:
     manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8")) or {}
     expected = sorted(member["file"] for member in manifest.get("members", []))
     actual = sorted(path.name for path in paths)
@@ -130,7 +161,9 @@ def validate_corpus_paths(paths: list[Path], manifest_path: Path = SOURCE_MANIFE
         )
 
 
-def _segment_accounting(path: Path, connection: dict, direction: str) -> tuple[int, int]:
+def _segment_accounting(
+    path: Path, connection: dict, direction: str
+) -> tuple[int, int]:
     """Return retransmitted overlap and bytes outside complete reconstructed frames."""
     server = connection["server_endpoint"]
     client = connection["client_endpoint"]
@@ -154,7 +187,9 @@ def _segment_accounting(path: Path, connection: dict, direction: str) -> tuple[i
         else:
             merged[-1][1] = max(merged[-1][1], end)
     unique_bytes = sum(end - start for start, end in merged)
-    return payload_bytes - unique_bytes, unique_bytes - len(connection["streams"].get(direction, b""))
+    return payload_bytes - unique_bytes, unique_bytes - len(
+        connection["streams"].get(direction, b"")
+    )
 
 
 def decode_application(subevent_size: int, sub_body: bytes) -> tuple[dict | None, str]:
@@ -163,16 +198,18 @@ def decode_application(subevent_size: int, sub_body: bytes) -> tuple[dict | None
     expected_len = INNER_HEADER_LEN + GAME_PREAMBLE_SIZE + APPLICATION_SIZE
     if len(sub_body) != expected_len:
         return None, "unexpected_application_shape"
-    application = sub_body[INNER_HEADER_LEN + GAME_PREAMBLE_SIZE:]
+    application = sub_body[INNER_HEADER_LEN + GAME_PREAMBLE_SIZE :]
     count = application[COUNT_OFFSET]
     if count > RECORD_CAPACITY:
         return None, "count_exceeds_reserved_capacity"
-    if any(application[COUNT_OFFSET + 1:]):
+    if any(application[COUNT_OFFSET + 1 :]):
         return None, "nonzero_reserved_tail"
     records = []
     physical_rows = tuple(
-        application[RECORD_OFFSET + index * RECORD_SIZE:
-                    RECORD_OFFSET + (index + 1) * RECORD_SIZE]
+        application[
+            RECORD_OFFSET + index * RECORD_SIZE : RECORD_OFFSET
+            + (index + 1) * RECORD_SIZE
+        ]
         for index in range(RECORD_CAPACITY)
     )
     for index in range(count):
@@ -194,7 +231,7 @@ def decode_application(subevent_size: int, sub_body: bytes) -> tuple[dict | None
         "count": count,
         "records": tuple(records),
         "physical_rows": physical_rows,
-        "reserved_tail": application[COUNT_OFFSET + 1:],
+        "reserved_tail": application[COUNT_OFFSET + 1 :],
         "snapshot_key": hashlib.sha256(application).digest(),
     }, ""
 
@@ -206,7 +243,9 @@ def _decode_capture(path: Path) -> tuple[list[dict], list[dict], Counter, Counte
     exclusions = Counter()
     connections = reconstruct_connections(path)
     totals["frame_shaped_connections"] = len(connections)
-    admitted = [connection for connection in connections if _is_game_connection(connection)]
+    admitted = [
+        connection for connection in connections if _is_game_connection(connection)
+    ]
     totals["admitted_lanes"] = len(admitted)
     for connection in connections:
         connection_overlap = 0
@@ -255,7 +294,7 @@ def _decode_capture(path: Path) -> tuple[list[dict], list[dict], Counter, Counte
                         continue
                     totals[f"{direction}_wrapped_subevents"] += 1
                     start = event["offset"] + SUB_EVENT_HEADER_LEN
-                    sub_body = body[start:event["offset"] + event["size"]]
+                    sub_body = body[start : event["offset"] + event["size"]]
                     if len(sub_body) < INNER_HEADER_LEN:
                         totals["wrapped_short_inner_headers"] += 1
                         continue
@@ -280,12 +319,14 @@ def _decode_capture(path: Path) -> tuple[list[dict], list[dict], Counter, Counte
                             exclusions[reason] += 1
                         elif direction == "s2c":
                             assert decoded is not None
-                            targets.append({
-                                **timeline_event,
-                                "source_actor": event["src_actor"],
-                                "target_actor": event["dst_actor"],
-                                **decoded,
-                            })
+                            targets.append(
+                                {
+                                    **timeline_event,
+                                    "source_actor": event["src_actor"],
+                                    "target_actor": event["dst_actor"],
+                                    **decoded,
+                                }
+                            )
                             totals["decoded_target_events"] += 1
                     lane_event_index += 1
                 totals["admitted_unparsed_frame_body_bytes"] += len(body) - consumed
@@ -342,7 +383,9 @@ def _snapshot_shapes(events: list[dict]) -> None:
             last_seen[key] = position
 
 
-def _build_rows(all_targets: list[dict], all_timeline: list[dict]) -> tuple[list[dict], list[dict], list[dict]]:
+def _build_rows(
+    all_targets: list[dict], all_timeline: list[dict]
+) -> tuple[list[dict], list[dict], list[dict]]:
     occurrence_rows: list[dict] = []
     record_rows: list[dict] = []
     neighbor_rows: list[dict] = []
@@ -351,7 +394,9 @@ def _build_rows(all_targets: list[dict], all_timeline: list[dict]) -> tuple[list
         by_capture_targets[event["capture"]].append(event)
     timeline_groups: defaultdict[tuple[str, int, str], list[dict]] = defaultdict(list)
     for event in all_timeline:
-        timeline_groups[(event["capture"], event["lane_index"], event["lane"])].append(event)
+        timeline_groups[(event["capture"], event["lane_index"], event["lane"])].append(
+            event
+        )
 
     occurrence_number = 0
     for capture, events in sorted(by_capture_targets.items()):
@@ -361,40 +406,47 @@ def _build_rows(all_targets: list[dict], all_timeline: list[dict]) -> tuple[list
             occurrence_number += 1
             occurrence = f"occurrence-{occurrence_number:03d}"
             event["occurrence"] = occurrence
-            occurrence_rows.append({
-                "occurrence": occurrence,
-                "capture": capture,
-                "lane_index": event["lane_index"],
-                "lane": event["lane"],
-                "lane_event_index": event["lane_event_index"],
-                "frame_index": event["frame_index"],
-                "subevent_index": event["subevent_index"],
-                "source_actor": labels[event["source_actor"]],
-                "target_actor": labels[event["target_actor"]],
-                "header_u32_00": labels[event["header"][0]],
-                "header_u32_04": labels[event["header"][1]],
-                "header_u32_08": labels[event["header"][2]],
-                "marker_count": event["count"],
-                "snapshot": event["snapshot"],
-                "chronology_shape": event["chronology_shape"],
-                "prior_same_snapshot_distance": event["prior_same_snapshot_distance"],
-            })
-            for record_index, record in enumerate(event["records"]):
-                record_rows.append({
+            occurrence_rows.append(
+                {
                     "occurrence": occurrence,
                     "capture": capture,
-                    "record_index": record_index,
-                    "field_u32_00": labels[record[0]],
-                    "field_u32_08": labels[record[1]],
-                    "field_u32_0c": labels[record[2]],
-                    "field_f32_14": format(record[3], ".9g"),
-                    "field_f32_18": format(record[4], ".9g"),
-                    "field_f32_1c": format(record[5], ".9g"),
-                    "hypothesis_f32_20_unprojected": format(record[6], ".9g"),
-                })
+                    "lane_index": event["lane_index"],
+                    "lane": event["lane"],
+                    "lane_event_index": event["lane_event_index"],
+                    "frame_index": event["frame_index"],
+                    "subevent_index": event["subevent_index"],
+                    "source_actor": labels[event["source_actor"]],
+                    "target_actor": labels[event["target_actor"]],
+                    "header_u32_00": labels[event["header"][0]],
+                    "header_u32_04": labels[event["header"][1]],
+                    "header_u32_08": labels[event["header"][2]],
+                    "marker_count": event["count"],
+                    "snapshot": event["snapshot"],
+                    "chronology_shape": event["chronology_shape"],
+                    "prior_same_snapshot_distance": event[
+                        "prior_same_snapshot_distance"
+                    ],
+                }
+            )
+            for record_index, record in enumerate(event["records"]):
+                record_rows.append(
+                    {
+                        "occurrence": occurrence,
+                        "capture": capture,
+                        "record_index": record_index,
+                        "field_u32_00": labels[record[0]],
+                        "field_u32_08": labels[record[1]],
+                        "field_u32_0c": labels[record[2]],
+                        "field_f32_14": format(record[3], ".9g"),
+                        "field_f32_18": format(record[4], ".9g"),
+                        "field_f32_1c": format(record[5], ".9g"),
+                        "hypothesis_f32_20_unprojected": format(record[6], ".9g"),
+                    }
+                )
             group = timeline_groups[(capture, event["lane_index"], event["lane"])]
             position = next(
-                index for index, candidate in enumerate(group)
+                index
+                for index, candidate in enumerate(group)
                 if candidate["lane_event_index"] == event["lane_event_index"]
             )
             start = max(0, position - WINDOW_RADIUS)
@@ -404,30 +456,40 @@ def _build_rows(all_targets: list[dict], all_timeline: list[dict]) -> tuple[list
                     continue
                 neighbor = group[neighbor_position]
                 opcode = neighbor["opcode"]
-                neighbor_rows.append({
-                    "occurrence": occurrence,
-                    "capture": capture,
-                    "lane_index": event["lane_index"],
-                    "lane": event["lane"],
-                    "relative_event": neighbor_position - position,
-                    "neighbor_lane_event_index": neighbor["lane_event_index"],
-                    "same_frame": "yes" if neighbor["frame_index"] == event["frame_index"] else "no",
-                    "neighbor_opcode": f"0x{opcode:04x}",
-                    **{
-                        category: "yes" if opcode in opcodes else "no"
-                        for category, opcodes in CATEGORIES.items()
-                    },
-                })
+                neighbor_rows.append(
+                    {
+                        "occurrence": occurrence,
+                        "capture": capture,
+                        "lane_index": event["lane_index"],
+                        "lane": event["lane"],
+                        "relative_event": neighbor_position - position,
+                        "neighbor_lane_event_index": neighbor["lane_event_index"],
+                        "same_frame": "yes"
+                        if neighbor["frame_index"] == event["frame_index"]
+                        else "no",
+                        "neighbor_opcode": f"0x{opcode:04x}",
+                        **{
+                            category: "yes" if opcode in opcodes else "no"
+                            for category, opcodes in CATEGORIES.items()
+                        },
+                    }
+                )
     return occurrence_rows, record_rows, neighbor_rows
 
 
-def _correlations(targets: list[dict], timeline: list[dict], neighbors: list[dict]) -> dict:
+def _correlations(
+    targets: list[dict], timeline: list[dict], neighbors: list[dict]
+) -> dict:
     lane_timelines: defaultdict[tuple[str, int, str], list[dict]] = defaultdict(list)
     lane_targets: defaultdict[tuple[str, int, str], list[dict]] = defaultdict(list)
     for event in timeline:
-        lane_timelines[(event["capture"], event["lane_index"], event["lane"])].append(event)
+        lane_timelines[(event["capture"], event["lane_index"], event["lane"])].append(
+            event
+        )
     for event in targets:
-        lane_targets[(event["capture"], event["lane_index"], event["lane"])].append(event)
+        lane_targets[(event["capture"], event["lane_index"], event["lane"])].append(
+            event
+        )
 
     first_marker_order = {}
     for category, opcodes in CATEGORIES.items():
@@ -436,7 +498,8 @@ def _correlations(targets: list[dict], timeline: list[dict], neighbors: list[dic
         for key, events in lane_targets.items():
             first = events[0]
             preceding = [
-                event for event in lane_timelines[key]
+                event
+                for event in lane_timelines[key]
                 if event["lane_event_index"] < first["lane_event_index"]
             ]
             if any(event["opcode"] in opcodes for event in preceding):
@@ -452,22 +515,34 @@ def _correlations(targets: list[dict], timeline: list[dict], neighbors: list[dic
     bounded = {}
     for category in CATEGORIES:
         bounded[category] = {
-            "occurrences_within_5_before": len({
-                row["occurrence"] for row in neighbors
-                if row[category] == "yes" and int(row["relative_event"]) < 0
-            }),
-            "occurrences_within_5_after": len({
-                row["occurrence"] for row in neighbors
-                if row[category] == "yes" and int(row["relative_event"]) > 0
-            }),
-            "occurrences_immediately_before": len({
-                row["occurrence"] for row in neighbors
-                if row[category] == "yes" and int(row["relative_event"]) == -1
-            }),
-            "occurrences_immediately_after": len({
-                row["occurrence"] for row in neighbors
-                if row[category] == "yes" and int(row["relative_event"]) == 1
-            }),
+            "occurrences_within_5_before": len(
+                {
+                    row["occurrence"]
+                    for row in neighbors
+                    if row[category] == "yes" and int(row["relative_event"]) < 0
+                }
+            ),
+            "occurrences_within_5_after": len(
+                {
+                    row["occurrence"]
+                    for row in neighbors
+                    if row[category] == "yes" and int(row["relative_event"]) > 0
+                }
+            ),
+            "occurrences_immediately_before": len(
+                {
+                    row["occurrence"]
+                    for row in neighbors
+                    if row[category] == "yes" and int(row["relative_event"]) == -1
+                }
+            ),
+            "occurrences_immediately_after": len(
+                {
+                    row["occurrence"]
+                    for row in neighbors
+                    if row[category] == "yes" and int(row["relative_event"]) == 1
+                }
+            ),
         }
     return {
         "tested_opcode_sets": {
@@ -499,26 +574,40 @@ def build_outputs() -> dict[str, bytes]:
             "admitted_lanes": capture_totals["admitted_lanes"],
             "admitted_main_lanes": capture_totals["admitted_main_lanes"],
             "admitted_chat_lanes": capture_totals["admitted_chat_lanes"],
-            "retransmitted_overlap_bytes": capture_totals["retransmitted_overlap_bytes"],
-            "all_connection_retransmitted_overlap_bytes": capture_totals["all_connection_retransmitted_overlap_bytes"],
-            "excluded_connection_retransmitted_overlap_bytes": capture_totals["excluded_connection_retransmitted_overlap_bytes"],
-            "discarded_trailing_stream_bytes": capture_totals["discarded_trailing_stream_bytes"],
+            "retransmitted_overlap_bytes": capture_totals[
+                "retransmitted_overlap_bytes"
+            ],
+            "all_connection_retransmitted_overlap_bytes": capture_totals[
+                "all_connection_retransmitted_overlap_bytes"
+            ],
+            "excluded_connection_retransmitted_overlap_bytes": capture_totals[
+                "excluded_connection_retransmitted_overlap_bytes"
+            ],
+            "discarded_trailing_stream_bytes": capture_totals[
+                "discarded_trailing_stream_bytes"
+            ],
             "target_s2c_events": capture_totals["target_s2c_events"],
             "target_c2s_events": capture_totals["target_c2s_events"],
             "exclusions": dict(sorted(capture_exclusions.items())),
         }
 
     for key in (
-        "compressed_frame_inflate_failures", "subevent_truncations",
-        "wrapped_short_inner_headers", "target_c2s_events",
+        "compressed_frame_inflate_failures",
+        "subevent_truncations",
+        "wrapped_short_inner_headers",
+        "target_c2s_events",
         "admitted_unparsed_frame_body_bytes",
     ):
         totals[key] += 0
     for key in (
-        "tls_signature_connections", "lobby_54994_connections",
-        "other_non_game_connections", "unexpected_subevent_size",
-        "unexpected_application_shape", "count_exceeds_reserved_capacity",
-        "nonzero_reserved_tail", "nonfinite_record_float",
+        "tls_signature_connections",
+        "lobby_54994_connections",
+        "other_non_game_connections",
+        "unexpected_subevent_size",
+        "unexpected_application_shape",
+        "count_exceeds_reserved_capacity",
+        "nonzero_reserved_tail",
+        "nonfinite_record_float",
     ):
         exclusions[key] += 0
 
@@ -536,10 +625,18 @@ def build_outputs() -> dict[str, bytes]:
             "events_by_capture": _counter(event["capture"] for event in all_targets),
             "events_by_lane": _counter(event["lane"] for event in all_targets),
             "marker_counts": _counter(event["count"] for event in all_targets),
-            "chronology_shapes": _counter(row["chronology_shape"] for row in occurrence_rows),
+            "chronology_shapes": _counter(
+                row["chronology_shape"] for row in occurrence_rows
+            ),
             "records": len(record_rows),
             "unique_capture_local_snapshots": sum(
-                len({row["snapshot"] for row in occurrence_rows if row["capture"] == path.name})
+                len(
+                    {
+                        row["snapshot"]
+                        for row in occurrence_rows
+                        if row["capture"] == path.name
+                    }
+                )
                 for path in paths
             ),
         },
@@ -563,13 +660,13 @@ def build_outputs() -> dict[str, bytes]:
 
 The complete 54-capture corpus contains {len(all_targets)} decoded s2c `0x018D`
 events and {len(record_rows)} decoded marker records after canonical TCP
-reconstruction. The count is 1 in {counts.get('1', 0)} events and 2 in
-{counts.get('2', 0)} events. The chronology contains
-{shapes.get('first-observed-nonempty', 0)} first-observed nonempty snapshots,
-{shapes.get('changed-same-count-nonempty', 0)} changed same-count snapshots,
-{shapes.get('increased-count-nonempty', 0)} increased-count snapshots,
-{shapes.get('decreased-count-nonempty', 0)} decreased-count snapshots, and
-{shapes.get('repeated-nonempty', 0)} repeated nonempty snapshots.
+reconstruction. The count is 1 in {counts.get("1", 0)} events and 2 in
+{counts.get("2", 0)} events. The chronology contains
+{shapes.get("first-observed-nonempty", 0)} first-observed nonempty snapshots,
+{shapes.get("changed-same-count-nonempty", 0)} changed same-count snapshots,
+{shapes.get("increased-count-nonempty", 0)} increased-count snapshots,
+{shapes.get("decreased-count-nonempty", 0)} decreased-count snapshots, and
+{shapes.get("repeated-nonempty", 0)} repeated nonempty snapshots.
 
 ## Packet and snapshot shape
 
@@ -589,12 +686,12 @@ or client-side removal behavior. Neither shape occurs in this corpus.
 
 No tested category is a consistent predecessor across the 38 lanes with a
 marker event. Any prior actor-lifecycle or broader group-update event appears
-in {first_order['actor_lifecycle']['lanes_with_any_prior']} and
-{first_order['group_update']['lanes_with_any_prior']} lanes respectively;
+in {first_order["actor_lifecycle"]["lanes_with_any_prior"]} and
+{first_order["group_update"]["lanes_with_any_prior"]} lanes respectively;
 prior `0x018B`, `0x0193`, and zone-transition events appear in
-{first_order['group_layout_018b']['lanes_with_any_prior']},
-{first_order['setup_0193']['lanes_with_any_prior']}, and
-{first_order['zone_transition']['lanes_with_any_prior']} lanes. The detailed
+{first_order["group_layout_018b"]["lanes_with_any_prior"]},
+{first_order["setup_0193"]["lanes_with_any_prior"]}, and
+{first_order["zone_transition"]["lanes_with_any_prior"]} lanes. The detailed
 five-event preceding and following neighborhoods remain in
 `neighborhoods.csv`. These are chronology correlations, not evidence that a
 neighbor creates the nullable selector `0x0D` pointee or causes marker
@@ -626,7 +723,9 @@ required to establish removal behavior.
         "occurrences.csv": occurrence_csv,
         "marker-records.csv": record_csv,
         "neighborhoods.csv": neighborhood_csv,
-        "accounting.json": (json.dumps(accounting, indent=2, sort_keys=True) + "\n").encode("ascii"),
+        "accounting.json": (
+            json.dumps(accounting, indent=2, sort_keys=True) + "\n"
+        ).encode("ascii"),
         "verdicts.md": verdicts.encode("ascii"),
     }
 
@@ -647,7 +746,9 @@ def main() -> int:
             target.write_bytes(rendered)
     if stale:
         raise SystemExit("stale or missing: " + ", ".join(stale))
-    print(f"party marker chronology: {len(outputs)} products {'verified' if args.check else 'written'}")
+    print(
+        f"party marker chronology: {len(outputs)} products {'verified' if args.check else 'written'}"
+    )
     return 0
 
 

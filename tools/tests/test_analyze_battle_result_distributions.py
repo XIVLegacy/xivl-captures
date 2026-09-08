@@ -12,8 +12,16 @@ from analyze_battle_result_distributions import (  # noqa: E402
 )
 
 
-def row(index, message_class, value, scenario="s", command=1, source=2,
-        target=3, message_id=30301):
+def row(
+    index,
+    message_class,
+    value,
+    scenario="s",
+    command=1,
+    source=2,
+    target=3,
+    message_id=30301,
+):
     return {
         "row_index": index,
         "scenario_id": scenario,
@@ -34,7 +42,9 @@ class DistributionTests(unittest.TestCase):
             row(2, "critical_damage", 20),
             row(3, "critical_damage", 30, scenario="other"),
         ]
-        matches = [m for m in build_matches(rows) if m["comparison"] == "critical_vs_normal"]
+        matches = [
+            m for m in build_matches(rows) if m["comparison"] == "critical_vs_normal"
+        ]
         self.assertEqual(len(matches), 1)
         self.assertEqual(matches[0]["one_to_one_pair_capacity"], 1)
         self.assertEqual(matches[0]["candidate_pair_count"], 2)
@@ -42,11 +52,16 @@ class DistributionTests(unittest.TestCase):
         self.assertEqual(matches[0]["outcome_row_indices"], "2")
 
     def test_repetition_counts_duplicate_excess(self):
-        rows = [row(0, "normal_damage", 10), row(1, "normal_damage", 10),
-                row(2, "normal_damage", 12)]
+        rows = [
+            row(0, "normal_damage", 10),
+            row(1, "normal_damage", 10),
+            row(2, "normal_damage", 12),
+        ]
         overall = next(
-            item for item in build_distributions(rows)
-            if item["dimension"] == "overall" and item["message_class"] == "normal_damage"
+            item
+            for item in build_distributions(rows)
+            if item["dimension"] == "overall"
+            and item["message_class"] == "normal_damage"
         )
         self.assertEqual(overall["unique_value_count"], 2)
         self.assertEqual(overall["duplicate_excess_count"], 1)
@@ -60,8 +75,12 @@ class DistributionTests(unittest.TestCase):
         ]
         clusters = build_recovery_clusters(rows)
         self.assertEqual(len(clusters), 2)
-        self.assertEqual([cluster["world_master_text_id"] for cluster in clusters], [30320, 33008])
-        self.assertEqual([cluster["within_cluster_pair_count"] for cluster in clusters], [1, 0])
+        self.assertEqual(
+            [cluster["world_master_text_id"] for cluster in clusters], [30320, 33008]
+        )
+        self.assertEqual(
+            [cluster["within_cluster_pair_count"] for cluster in clusters], [1, 0]
+        )
 
 
 if __name__ == "__main__":

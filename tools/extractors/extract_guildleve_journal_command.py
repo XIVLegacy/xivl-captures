@@ -32,9 +32,20 @@ EVENT_START_OPCODE = 0x012D
 GAME_MESSAGE_PREAMBLE_LEN = 8
 OUT = REPO_ROOT / "studies" / "guildleve-journal-command-wire" / "derived"
 MATCH_FIELDS = [
-    "capture", "lane_index", "lane", "frame_index", "frame_offset",
-    "subevent_index", "subevent_offset", "subevent_size", "inner_opcode",
-    "field_domain", "field_offset", "width", "predicate", "value_hex",
+    "capture",
+    "lane_index",
+    "lane",
+    "frame_index",
+    "frame_offset",
+    "subevent_index",
+    "subevent_offset",
+    "subevent_size",
+    "inner_opcode",
+    "field_domain",
+    "field_offset",
+    "width",
+    "predicate",
+    "value_hex",
 ]
 
 
@@ -73,7 +84,13 @@ def scan() -> tuple[list[dict], dict]:
         ("command_u32_le", struct.pack("<I", COMMAND_ID)),
         ("static_actor_u32_le", struct.pack("<I", COMMAND_OWNER_ID)),
     )
-    for domain in ("frame_body", "subevent_header", "inner_header", "actor_payload", "application_payload"):
+    for domain in (
+        "frame_body",
+        "subevent_header",
+        "inner_header",
+        "actor_payload",
+        "application_payload",
+    ):
         for predicate, _needle in needles:
             needle_counts[f"{domain}:{predicate}"] = 0
 
@@ -94,7 +111,9 @@ def scan() -> tuple[list[dict], dict]:
                 body = frame["body"]
                 totals["c2s_frame_body_bytes"] += len(body)
                 for predicate, needle in needles:
-                    needle_counts[f"frame_body:{predicate}"] += len(find_all(body, needle))
+                    needle_counts[f"frame_body:{predicate}"] += len(
+                        find_all(body, needle)
+                    )
 
                 offset = 0
                 subevent_index = 0
@@ -104,11 +123,15 @@ def scan() -> tuple[list[dict], dict]:
                         break
                     totals["c2s_subevents"] += 1
                     capture_counts["c2s_subevents"] += 1
-                    subevent_header = body[offset:offset + SUB_EVENT_HEADER_LEN]
-                    subevent_payload = body[offset + SUB_EVENT_HEADER_LEN:offset + size]
+                    subevent_header = body[offset : offset + SUB_EVENT_HEADER_LEN]
+                    subevent_payload = body[
+                        offset + SUB_EVENT_HEADER_LEN : offset + size
+                    ]
                     totals["c2s_subevent_payload_bytes"] += len(subevent_payload)
                     for predicate, needle in needles:
-                        needle_counts[f"subevent_header:{predicate}"] += len(find_all(subevent_header, needle))
+                        needle_counts[f"subevent_header:{predicate}"] += len(
+                            find_all(subevent_header, needle)
+                        )
                     if event_type == SUB_EVENT_CLASS_ACTOR_WRAPPED:
                         totals["c2s_wrapped_subevents"] += 1
                         capture_counts["c2s_wrapped_subevents"] += 1
@@ -123,43 +146,57 @@ def scan() -> tuple[list[dict], dict]:
                             totals["c2s_actor_payload_bytes"] += len(payload)
                             totals["c2s_application_payload_bytes"] += len(application)
                             for predicate, needle in needles:
-                                needle_counts[f"inner_header:{predicate}"] += len(find_all(inner_header, needle))
-                                needle_counts[f"actor_payload:{predicate}"] += len(find_all(payload, needle))
+                                needle_counts[f"inner_header:{predicate}"] += len(
+                                    find_all(inner_header, needle)
+                                )
+                                needle_counts[f"actor_payload:{predicate}"] += len(
+                                    find_all(payload, needle)
+                                )
                             if opcode == EVENT_START_OPCODE:
                                 totals["event_start_rows"] += 1
-                                owner = struct.unpack_from("<I", application, 4)[0] if len(application) >= 8 else None
+                                owner = (
+                                    struct.unpack_from("<I", application, 4)[0]
+                                    if len(application) >= 8
+                                    else None
+                                )
                                 if owner == COMMAND_OWNER_ID:
                                     totals["target_event_start_rows"] += 1
                                 if owner is not None and (owner & 0xFFFF) == COMMAND_ID:
                                     totals["event_start_owner_low16_rows"] += 1
                             for predicate, needle in needles:
                                 for field_offset in find_all(application, needle):
-                                    needle_counts[f"application_payload:{predicate}"] += 1
-                                    matches.append({
-                                        "capture": capture.name,
-                                        "lane_index": lane_index,
-                                        "lane": lane["lane"],
-                                        "frame_index": frame_index,
-                                        "frame_offset": frame["offset"],
-                                        "subevent_index": subevent_index,
-                                        "subevent_offset": offset,
-                                        "subevent_size": size,
-                                        "inner_opcode": f"0x{opcode:04x}",
-                                        "field_domain": "application_payload",
-                                        "field_offset": field_offset,
-                                        "width": len(needle),
-                                        "predicate": predicate,
-                                        "value_hex": needle.hex(),
-                                    })
+                                    needle_counts[
+                                        f"application_payload:{predicate}"
+                                    ] += 1
+                                    matches.append(
+                                        {
+                                            "capture": capture.name,
+                                            "lane_index": lane_index,
+                                            "lane": lane["lane"],
+                                            "frame_index": frame_index,
+                                            "frame_offset": frame["offset"],
+                                            "subevent_index": subevent_index,
+                                            "subevent_offset": offset,
+                                            "subevent_size": size,
+                                            "inner_opcode": f"0x{opcode:04x}",
+                                            "field_domain": "application_payload",
+                                            "field_offset": field_offset,
+                                            "width": len(needle),
+                                            "predicate": predicate,
+                                            "value_hex": needle.hex(),
+                                        }
+                                    )
                     offset += size
                     subevent_index += 1
 
-        per_capture.append({
-            "name": capture.name,
-            "size_bytes": capture.stat().st_size,
-            "sha256": sha256(capture),
-            **dict(sorted(capture_counts.items())),
-        })
+        per_capture.append(
+            {
+                "name": capture.name,
+                "size_bytes": capture.stat().st_size,
+                "sha256": sha256(capture),
+                **dict(sorted(capture_counts.items())),
+            }
+        )
 
     expected = {
         "captures": 54,
@@ -176,11 +213,16 @@ def scan() -> tuple[list[dict], dict]:
         "event_start_owner_low16_rows": 0,
         "inner_opcode_0x5eb1": 0,
     }
-    actual = {"captures": len(paths), **{key: totals[key] for key in expected if key != "captures"}}
+    actual = {
+        "captures": len(paths),
+        **{key: totals[key] for key in expected if key != "captures"},
+    }
     if actual != expected:
         raise ValueError(f"corpus reconciliation changed: {actual}")
     if matches or any(needle_counts.values()):
-        raise ValueError(f"target byte census changed: {dict(sorted(needle_counts.items()))}")
+        raise ValueError(
+            f"target byte census changed: {dict(sorted(needle_counts.items()))}"
+        )
 
     accounting = {
         "schema_version": 1,
@@ -232,7 +274,9 @@ def main() -> int:
     matches, accounting = scan()
     outputs = {
         "command-matches.csv": csv_bytes(matches),
-        "accounting.json": (json.dumps(accounting, indent=2, sort_keys=True) + "\n").encode("ascii"),
+        "accounting.json": (
+            json.dumps(accounting, indent=2, sort_keys=True) + "\n"
+        ).encode("ascii"),
     }
     stale = []
     for name, data in outputs.items():
@@ -246,7 +290,10 @@ def main() -> int:
     if stale:
         print("stale guildleve journal command outputs:\n  " + "\n  ".join(stale))
         return 1
-    print(("verified" if args.check else "wrote") + f" {len(outputs)} guildleve journal command artifacts")
+    print(
+        ("verified" if args.check else "wrote")
+        + f" {len(outputs)} guildleve journal command artifacts"
+    )
     return 0
 
 

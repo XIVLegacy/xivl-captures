@@ -18,11 +18,19 @@ class BattleResultDecodeTests(unittest.TestCase):
         app[0x34:0x36] = bytes((6, 7))
         header, rows = decode_packet(bytes(app), 0x0139)
         self.assertEqual(header["command_id"], 27346)
-        self.assertEqual(rows, [{
-            "target_actor_id": 0x33333333, "numeric_value": 157,
-            "world_master_text_id": 30320, "effect_id": 44,
-            "text_param": 6, "row_ordinal_or_filter": 7,
-        }])
+        self.assertEqual(
+            rows,
+            [
+                {
+                    "target_actor_id": 0x33333333,
+                    "numeric_value": 157,
+                    "world_master_text_id": 30320,
+                    "effect_id": 44,
+                    "text_param": 6,
+                    "row_ordinal_or_filter": 7,
+                }
+            ],
+        )
 
     def test_x10_transposes_sparse_arrays(self):
         app = bytearray(184)
@@ -55,11 +63,17 @@ class BattleResultDecodeTests(unittest.TestCase):
         app[0x100] = 4
         app[0x112] = 5
         _header, rows = decode_packet(bytes(app), 0x013B)
-        self.assertEqual(rows[0], {
-            "target_actor_id": 401, "numeric_value": 402,
-            "world_master_text_id": 30301, "effect_id": 403,
-            "text_param": 4, "row_ordinal_or_filter": 5,
-        })
+        self.assertEqual(
+            rows[0],
+            {
+                "target_actor_id": 401,
+                "numeric_value": 402,
+                "world_master_text_id": 30301,
+                "effect_id": 403,
+                "text_param": 4,
+                "row_ordinal_or_filter": 5,
+            },
+        )
 
 
 if __name__ == "__main__":

@@ -33,7 +33,9 @@ class WorldPartyChatSyntheticTests(unittest.TestCase):
                 self.assertEqual(decoded["source_actor"], decoded["destination_actor"])
                 self.assertNotEqual(decoded["counter"], 0)
             else:
-                self.assertNotEqual(decoded["source_actor"], decoded["destination_actor"])
+                self.assertNotEqual(
+                    decoded["source_actor"], decoded["destination_actor"]
+                )
                 self.assertEqual(decoded["counter"], 0)
 
     def test_decoder_rejects_selector_mutation(self):
@@ -54,8 +56,15 @@ class WorldPartyChatSyntheticTests(unittest.TestCase):
 
     def test_field_matrix_covers_each_subevent_without_gaps(self):
         for direction, expected_size in (("c2s", 552), ("s2c", 584)):
-            rows = [row for row in study._field_matrix() if row["direction"] == direction and row["offset_basis"] == "subevent"]
-            spans = sorted((int(row["offset"]), int(row["offset"]) + int(row["width"])) for row in rows)
+            rows = [
+                row
+                for row in study._field_matrix()
+                if row["direction"] == direction and row["offset_basis"] == "subevent"
+            ]
+            spans = sorted(
+                (int(row["offset"]), int(row["offset"]) + int(row["width"]))
+                for row in rows
+            )
             cursor = 0
             for start, end in spans:
                 self.assertEqual(start, cursor)
@@ -77,8 +86,16 @@ class WorldPartyChatSyntheticTests(unittest.TestCase):
 class WorldPartyChatSchemaTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.schema = json.loads((ROOT / "schemas" / "world-party-chat-00c9-contract.schema.json").read_text(encoding="ascii"))
-        cls.accounting = json.loads((ROOT / "studies" / study.STUDY_ID / "derived" / "accounting.json").read_text(encoding="ascii"))
+        cls.schema = json.loads(
+            (ROOT / "schemas" / "world-party-chat-00c9-contract.schema.json").read_text(
+                encoding="ascii"
+            )
+        )
+        cls.accounting = json.loads(
+            (
+                ROOT / "studies" / study.STUDY_ID / "derived" / "accounting.json"
+            ).read_text(encoding="ascii")
+        )
 
     def test_accounting_schema(self):
         jsonschema.Draft202012Validator(self.schema).validate(self.accounting)
@@ -121,14 +138,18 @@ class WorldPartyChatRestrictedTests(unittest.TestCase):
 
     def test_counter_mutation_bites(self):
         mutated = copy.deepcopy(self.records)
-        next(record for record in mutated if record["direction"] == "c2s")["counter"] = 0
+        next(record for record in mutated if record["direction"] == "c2s")[
+            "counter"
+        ] = 0
         with self.assertRaisesRegex(ValueError, "counter contract"):
             study.validate_observed_contract(mutated)
 
     def test_message_overlap_mutation_bites(self):
         mutated = copy.deepcopy(self.records)
         c2s_values = {
-            record["message"]["bytes"] for record in mutated if record["direction"] == "c2s"
+            record["message"]["bytes"]
+            for record in mutated
+            if record["direction"] == "c2s"
         }
         shared = next(
             record
@@ -144,15 +165,23 @@ class WorldPartyChatRestrictedTests(unittest.TestCase):
         alternate = next(
             record["context"]
             for record in mutated
-            if record["capture"] == "war_quest_update2.pcapng" and record["direction"] == "s2c"
+            if record["capture"] == "war_quest_update2.pcapng"
+            and record["direction"] == "s2c"
         )
         next(
             record
             for record in mutated
-            if record["capture"] == "party_battle_leve.pcapng" and record["direction"] == "s2c"
+            if record["capture"] == "party_battle_leve.pcapng"
+            and record["direction"] == "s2c"
         )["context"] = alternate
         self.assertEqual(
-            len({record["context"] for record in mutated if record["direction"] == "s2c"}),
+            len(
+                {
+                    record["context"]
+                    for record in mutated
+                    if record["direction"] == "s2c"
+                }
+            ),
             2,
         )
         with self.assertRaisesRegex(ValueError, "per-capture context relation"):
@@ -170,7 +199,12 @@ class WorldPartyChatRestrictedTests(unittest.TestCase):
             self.assertEqual(rendered, (study.OUT / name).read_bytes())
         public = b"\n".join(self.outputs.values()).lower()
         for record in self.records:
-            for value in (record["source_actor"], record["destination_actor"], record["counter"], record["context"]):
+            for value in (
+                record["source_actor"],
+                record["destination_actor"],
+                record["counter"],
+                record["context"],
+            ):
                 if value:
                     self.assertNotIn(str(value).encode("ascii"), public)
                     self.assertNotIn(f"{value:08x}".encode("ascii"), public)
@@ -187,8 +221,8 @@ class WorldPartyChatRestrictedTests(unittest.TestCase):
             if value not in values:
                 values.append(value)
         sentinels = {
-            value: bytes((0x80 | (index >> 6), 0x80 | (index & 0x3f)))
-            + bytes([0xfe]) * (len(value) - 2)
+            value: bytes((0x80 | (index >> 6), 0x80 | (index & 0x3F)))
+            + bytes([0xFE]) * (len(value) - 2)
             for index, value in enumerate(values, 1)
         }
         for record in mutated:
@@ -204,7 +238,9 @@ class WorldPartyChatRestrictedTests(unittest.TestCase):
             self.assertNotIn(sentinel, public)
 
     def test_occurrence_rows_are_tokenized(self):
-        rows = list(csv.DictReader(io.StringIO(self.outputs["occurrences.csv"].decode("ascii"))))
+        rows = list(
+            csv.DictReader(io.StringIO(self.outputs["occurrences.csv"].decode("ascii")))
+        )
         self.assertEqual(len(rows), 37)
         self.assertIn("wrapper_counter_token", rows[0])
         self.assertNotIn("wrapper_counter", rows[0])

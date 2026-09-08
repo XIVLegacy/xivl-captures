@@ -49,11 +49,25 @@ LOW_VALUE_MAX = 255
 EQUIPMENT_CARRIERS = set(range(0x014D, 0x0152))
 
 SPAN_FIELDS = (
-    "span_id", "capture", "lane_index", "lane", "begin_frame", "begin_subevent",
-    "end_frame", "end_subevent", "record_count", "first_record_frame",
-    "first_record_subevent", "last_record_frame", "last_record_subevent",
-    "prior_same_lane_opcode", "next_same_lane_opcode", "intervening_non_target_opcodes",
-    "inventory_frame_overlap", "equipment_carrier_overlap", "change_frame_overlap",
+    "span_id",
+    "capture",
+    "lane_index",
+    "lane",
+    "begin_frame",
+    "begin_subevent",
+    "end_frame",
+    "end_subevent",
+    "record_count",
+    "first_record_frame",
+    "first_record_subevent",
+    "last_record_frame",
+    "last_record_subevent",
+    "prior_same_lane_opcode",
+    "next_same_lane_opcode",
+    "intervening_non_target_opcodes",
+    "inventory_frame_overlap",
+    "equipment_carrier_overlap",
+    "change_frame_overlap",
 )
 
 
@@ -74,14 +88,20 @@ def validate_public_bytes(data: bytes) -> None:
     if re.search(r"\b(?:\d{1,3}\.){3}\d{1,3}\b", text):
         raise ValueError("public product contains IPv4-like text")
     if re.search(r"\b0x[0-9a-fA-F]{8}\b", text):
-        raise ValueError("public product contains an unsanitized 32-bit hexadecimal value")
+        raise ValueError(
+            "public product contains an unsanitized 32-bit hexadecimal value"
+        )
     lowered = text.lower()
     forbidden = ("payload", "endpoint", "actor_id", "session_id", "ticket", "token")
     if any(term in lowered for term in forbidden):
-        raise ValueError("public product contains a forbidden raw or credential surface")
+        raise ValueError(
+            "public product contains a forbidden raw or credential surface"
+        )
 
 
-def validate_corpus_paths(paths: list[Path], manifest_path: Path = SOURCE_MANIFEST) -> None:
+def validate_corpus_paths(
+    paths: list[Path], manifest_path: Path = SOURCE_MANIFEST
+) -> None:
     manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8")) or {}
     expected = sorted(member["file"] for member in manifest.get("members", []))
     actual = sorted(path.name for path in paths)
@@ -92,7 +112,9 @@ def validate_corpus_paths(paths: list[Path], manifest_path: Path = SOURCE_MANIFE
         )
 
 
-def decode_application(opcode: int, subevent_size: int, sub_body: bytes) -> tuple[dict | None, str]:
+def decode_application(
+    opcode: int, subevent_size: int, sub_body: bytes
+) -> tuple[dict | None, str]:
     if opcode not in TARGETS:
         raise ValueError(f"unsupported target opcode 0x{opcode:04x}")
     if subevent_size != EXPECTED_SIZES[opcode]:
@@ -127,10 +149,12 @@ def _retransmitted_segments(path: Path) -> int:
         body = bytes(packet[TCP].payload)
         if not body:
             continue
-        endpoints = frozenset((
-            (packet[IP].src, int(packet[TCP].sport)),
-            (packet[IP].dst, int(packet[TCP].dport)),
-        ))
+        endpoints = frozenset(
+            (
+                (packet[IP].src, int(packet[TCP].sport)),
+                (packet[IP].dst, int(packet[TCP].dport)),
+            )
+        )
         if endpoints not in admitted:
             continue
         key = (
@@ -178,9 +202,7 @@ def _scan_capture(path: Path) -> tuple[list[list[dict]], Counter, Counter]:
                     totals[f"{direction}_subevents"] += 1
                     if event_type == SUB_EVENT_CLASS_ACTOR_WRAPPED:
                         totals[f"{direction}_wrapped_subevents"] += 1
-                        sub_body = body[
-                            offset + SUB_EVENT_HEADER_LEN:offset + size
-                        ]
+                        sub_body = body[offset + SUB_EVENT_HEADER_LEN : offset + size]
                         if len(sub_body) < INNER_HEADER_LEN:
                             totals["wrapped_short_inner_headers"] += 1
                         else:
@@ -197,7 +219,9 @@ def _scan_capture(path: Path) -> tuple[list[list[dict]], Counter, Counter]:
                             }
                             if opcode in TARGETS:
                                 totals[f"target_{direction}_0x{opcode:04x}"] += 1
-                                decoded, reason = decode_application(opcode, size, sub_body)
+                                decoded, reason = decode_application(
+                                    opcode, size, sub_body
+                                )
                                 if reason:
                                     exclusions[reason] += 1
                                     event["malformed_reason"] = reason
@@ -245,14 +269,16 @@ def segment_transactions(timeline: list[dict]) -> tuple[list[dict], Counter]:
             if opened is None:
                 issues["orphan_end"] += 1
                 continue
-            spans.append({
-                "begin": opened["event"],
-                "end": event,
-                "begin_position": opened["position"],
-                "end_position": position,
-                "records": records,
-                "timeline": timeline,
-            })
+            spans.append(
+                {
+                    "begin": opened["event"],
+                    "end": event,
+                    "begin_position": opened["position"],
+                    "end_position": position,
+                    "records": records,
+                    "timeline": timeline,
+                }
+            )
             opened = None
             records = []
     if opened is not None:
@@ -278,7 +304,9 @@ def _vector_analysis(records: list[dict]) -> dict:
     vectors = [tuple(record["vector"]) for record in records]
     vector_counts = Counter(vectors)
     nonzero_counts = [sum(value != 0 for value in vector) for vector in vectors]
-    position_nonzero = [sum(vector[index] != 0 for vector in vectors) for index in range(VECTOR_WORDS)]
+    position_nonzero = [
+        sum(vector[index] != 0 for vector in vectors) for index in range(VECTOR_WORDS)
+    ]
     low_values = Counter(
         value for vector in vectors for value in vector if 0 <= value <= LOW_VALUE_MAX
     )
@@ -304,7 +332,11 @@ def _vector_analysis(records: list[dict]) -> dict:
         vector = tuple(record["vector"])
         if key in prior_by_pair:
             comparisons += 1
-            changed = [index for index, pair in enumerate(zip(prior_by_pair[key], vector)) if pair[0] != pair[1]]
+            changed = [
+                index
+                for index, pair in enumerate(zip(prior_by_pair[key], vector))
+                if pair[0] != pair[1]
+            ]
             if not changed:
                 equal += 1
             for index in changed:
@@ -315,18 +347,26 @@ def _vector_analysis(records: list[dict]) -> dict:
     return {
         "record_vectors": len(vectors),
         "distinct_vectors": len(vector_counts),
-        "exact_repeated_vectors_beyond_first": sum(count - 1 for count in vector_counts.values()),
+        "exact_repeated_vectors_beyond_first": sum(
+            count - 1 for count in vector_counts.values()
+        ),
         "maximum_vector_multiplicity": max(vector_counts.values(), default=0),
         "all_zero_vectors": sum(not any(vector) for vector in vectors),
         "nonzero_word_count_histogram": _counter(nonzero_counts),
-        "position_nonzero_counts": {str(index): count for index, count in enumerate(position_nonzero)},
+        "position_nonzero_counts": {
+            str(index): count for index, count in enumerate(position_nonzero)
+        },
         "value_bands": dict(sorted(value_bands.items())),
-        "bounded_values_0_255": {str(value): count for value, count in sorted(low_values.items())},
+        "bounded_values_0_255": {
+            str(value): count for value, count in sorted(low_values.items())
+        },
         "same_capture_lane_key_pair_comparisons": comparisons,
         "equal_vector_comparisons": equal,
         "changed_vector_comparisons": comparisons - equal,
         "changed_word_count_histogram": dict(sorted(changed_word_counts.items())),
-        "changed_position_counts": dict(sorted(changed_positions.items(), key=lambda item: int(item[0]))),
+        "changed_position_counts": dict(
+            sorted(changed_positions.items(), key=lambda item: int(item[0]))
+        ),
     }
 
 
@@ -342,7 +382,8 @@ def _tail_analysis(records: list[dict]) -> dict:
             if any(tail[index] != 0 for tail in tails)
         },
         "varying_byte_positions": [
-            index for index in range(TAIL_SIZE)
+            index
+            for index in range(TAIL_SIZE)
             if len({tail[index] for tail in tails}) > 1
         ],
     }
@@ -374,35 +415,69 @@ def _span_rows(spans: list[dict]) -> list[dict]:
         end = span["end"]
         records = span["records"]
         timeline = span["timeline"]
-        inner = timeline[span["begin_position"] + 1:span["end_position"]]
-        non_targets = sorted({event["opcode"] for event in inner if event["opcode"] not in TARGETS})
-        prior = timeline[span["begin_position"] - 1]["opcode"] if span["begin_position"] else None
-        following = timeline[span["end_position"] + 1]["opcode"] if span["end_position"] + 1 < len(timeline) else None
-        rows.append({
-            "span_id": f"span-{span_id:03d}",
-            "capture": begin["capture"],
-            "lane_index": begin["lane_index"],
-            "lane": begin["lane"],
-            "begin_frame": begin["frame_index"],
-            "begin_subevent": begin["subevent_index"],
-            "end_frame": end["frame_index"],
-            "end_subevent": end["subevent_index"],
-            "record_count": len(records),
-            "first_record_frame": records[0]["frame_index"] if records else "",
-            "first_record_subevent": records[0]["subevent_index"] if records else "",
-            "last_record_frame": records[-1]["frame_index"] if records else "",
-            "last_record_subevent": records[-1]["subevent_index"] if records else "",
-            "prior_same_lane_opcode": f"0x{prior:04x}" if prior is not None else "",
-            "next_same_lane_opcode": f"0x{following:04x}" if following is not None else "",
-            "intervening_non_target_opcodes": ";".join(f"0x{opcode:04x}" for opcode in non_targets),
-            "inventory_frame_overlap": "yes" if _scope_overlap(
-                timeline, span["begin_position"], span["end_position"], 0x0146, 0x0147
-            ) else "no",
-            "equipment_carrier_overlap": "yes" if any(event["opcode"] in EQUIPMENT_CARRIERS for event in inner) else "no",
-            "change_frame_overlap": "yes" if _scope_overlap(
-                timeline, span["begin_position"], span["end_position"], 0x016D, 0x016E
-            ) else "no",
-        })
+        inner = timeline[span["begin_position"] + 1 : span["end_position"]]
+        non_targets = sorted(
+            {event["opcode"] for event in inner if event["opcode"] not in TARGETS}
+        )
+        prior = (
+            timeline[span["begin_position"] - 1]["opcode"]
+            if span["begin_position"]
+            else None
+        )
+        following = (
+            timeline[span["end_position"] + 1]["opcode"]
+            if span["end_position"] + 1 < len(timeline)
+            else None
+        )
+        rows.append(
+            {
+                "span_id": f"span-{span_id:03d}",
+                "capture": begin["capture"],
+                "lane_index": begin["lane_index"],
+                "lane": begin["lane"],
+                "begin_frame": begin["frame_index"],
+                "begin_subevent": begin["subevent_index"],
+                "end_frame": end["frame_index"],
+                "end_subevent": end["subevent_index"],
+                "record_count": len(records),
+                "first_record_frame": records[0]["frame_index"] if records else "",
+                "first_record_subevent": records[0]["subevent_index"]
+                if records
+                else "",
+                "last_record_frame": records[-1]["frame_index"] if records else "",
+                "last_record_subevent": records[-1]["subevent_index"]
+                if records
+                else "",
+                "prior_same_lane_opcode": f"0x{prior:04x}" if prior is not None else "",
+                "next_same_lane_opcode": f"0x{following:04x}"
+                if following is not None
+                else "",
+                "intervening_non_target_opcodes": ";".join(
+                    f"0x{opcode:04x}" for opcode in non_targets
+                ),
+                "inventory_frame_overlap": "yes"
+                if _scope_overlap(
+                    timeline,
+                    span["begin_position"],
+                    span["end_position"],
+                    0x0146,
+                    0x0147,
+                )
+                else "no",
+                "equipment_carrier_overlap": "yes"
+                if any(event["opcode"] in EQUIPMENT_CARRIERS for event in inner)
+                else "no",
+                "change_frame_overlap": "yes"
+                if _scope_overlap(
+                    timeline,
+                    span["begin_position"],
+                    span["end_position"],
+                    0x016D,
+                    0x016E,
+                )
+                else "no",
+            }
+        )
     return rows
 
 
@@ -426,7 +501,9 @@ def build_outputs() -> dict[str, bytes]:
             lane_spans, lane_issues = segment_transactions(timeline)
             capture_spans.extend(lane_spans)
             capture_issues.update(lane_issues)
-            capture_records.extend(record for span in lane_spans for record in span["records"])
+            capture_records.extend(
+                record for span in lane_spans for record in span["records"]
+            )
         spans.extend(capture_spans)
         records.extend(capture_records)
         issues.update(capture_issues)
@@ -450,33 +527,48 @@ def build_outputs() -> dict[str, bytes]:
     )
     consecutive_repeats = sum(
         left["application"] == right["application"]
-        for span in spans for left, right in zip(span["records"], span["records"][1:])
+        for span in spans
+        for left, right in zip(span["records"], span["records"][1:])
     )
     context_opcodes = Counter()
     inside_opcodes = Counter()
     for span in spans:
         timeline = span["timeline"]
         if span["begin_position"]:
-            context_opcodes[f"prior/0x{timeline[span['begin_position'] - 1]['opcode']:04x}"] += 1
+            context_opcodes[
+                f"prior/0x{timeline[span['begin_position'] - 1]['opcode']:04x}"
+            ] += 1
         if span["end_position"] + 1 < len(timeline):
-            context_opcodes[f"next/0x{timeline[span['end_position'] + 1]['opcode']:04x}"] += 1
-        for event in timeline[span["begin_position"] + 1:span["end_position"]]:
+            context_opcodes[
+                f"next/0x{timeline[span['end_position'] + 1]['opcode']:04x}"
+            ] += 1
+        for event in timeline[span["begin_position"] + 1 : span["end_position"]]:
             if event["opcode"] not in TARGETS:
                 inside_opcodes[f"0x{event['opcode']:04x}"] += 1
 
     for key in (
-        "compressed_frame_inflate_failures", "subevent_truncations",
-        "wrapped_short_inner_headers", "unparsed_frame_body_bytes",
-        "target_c2s_0x018f", "target_c2s_0x0190", "target_c2s_0x0191",
+        "compressed_frame_inflate_failures",
+        "subevent_truncations",
+        "wrapped_short_inner_headers",
+        "unparsed_frame_body_bytes",
+        "target_c2s_0x018f",
+        "target_c2s_0x0190",
+        "target_c2s_0x0191",
     ):
         totals[key] += 0
     for key in (
-        "unexpected_subevent_size", "unexpected_application_shape",
+        "unexpected_subevent_size",
+        "unexpected_application_shape",
     ):
         exclusions[key] += 0
     for key in (
-        "malformed_begin", "malformed_record", "malformed_end", "nested_begin",
-        "orphan_record", "orphan_end", "unterminated_span",
+        "malformed_begin",
+        "malformed_record",
+        "malformed_end",
+        "nested_begin",
+        "orphan_record",
+        "orphan_end",
+        "unterminated_span",
     ):
         issues[key] += 0
 
@@ -497,7 +589,9 @@ def build_outputs() -> dict[str, bytes]:
             "complete_spans": len(spans),
             "records_in_complete_spans": len(records),
             "retransmitted_segments": totals["retransmitted_segments"],
-            "compressed_frame_inflate_failures": totals["compressed_frame_inflate_failures"],
+            "compressed_frame_inflate_failures": totals[
+                "compressed_frame_inflate_failures"
+            ],
             "subevent_truncations": totals["subevent_truncations"],
             "wrapped_short_inner_headers": totals["wrapped_short_inner_headers"],
             "unparsed_frame_body_bytes": totals["unparsed_frame_body_bytes"],
@@ -507,13 +601,19 @@ def build_outputs() -> dict[str, bytes]:
         "span_distributions": {
             "records_per_span": _counter(len(span["records"]) for span in spans),
             "spans_by_capture": _counter(span["begin"]["capture"] for span in spans),
-            "zero_application_0x018f": sum(span["begin"]["zero_application"] for span in spans),
-            "zero_application_0x0191": sum(span["end"]["zero_application"] for span in spans),
+            "zero_application_0x018f": sum(
+                span["begin"]["zero_application"] for span in spans
+            ),
+            "zero_application_0x0191": sum(
+                span["end"]["zero_application"] for span in spans
+            ),
         },
         "application_layouts": {
             "0x018f": {
                 "application_size_bytes": 8,
-                "zero_application_events": sum(span["begin"]["zero_application"] for span in spans),
+                "zero_application_events": sum(
+                    span["begin"]["zero_application"] for span in spans
+                ),
             },
             "0x0190": {
                 "application_size_bytes": 0x68,
@@ -526,14 +626,20 @@ def build_outputs() -> dict[str, bytes]:
             },
             "0x0191": {
                 "application_size_bytes": 8,
-                "zero_application_events": sum(span["end"]["zero_application"] for span in spans),
+                "zero_application_events": sum(
+                    span["end"]["zero_application"] for span in spans
+                ),
             },
         },
         "key_distributions": {
             "key_dword_0": _multiplicity(record["key1"] for record in records),
             "key_dword_1": _multiplicity(record["key2"] for record in records),
-            "key_pairs": _multiplicity((record["key1"], record["key2"]) for record in records),
-            "equal_key_dwords": sum(record["key1"] == record["key2"] for record in records),
+            "key_pairs": _multiplicity(
+                (record["key1"], record["key2"]) for record in records
+            ),
+            "equal_key_dwords": sum(
+                record["key1"] == record["key2"] for record in records
+            ),
         },
         "vectors": _vector_analysis(records),
         "tails": _tail_analysis(records),
@@ -546,16 +652,26 @@ def build_outputs() -> dict[str, bytes]:
                 span_sequence_counts.values(), default=0
             ),
             "distinct_0x0190_applications": len(application_counts),
-            "exact_repeated_applications_beyond_first": sum(count - 1 for count in application_counts.values()),
-            "maximum_application_multiplicity": max(application_counts.values(), default=0),
+            "exact_repeated_applications_beyond_first": sum(
+                count - 1 for count in application_counts.values()
+            ),
+            "maximum_application_multiplicity": max(
+                application_counts.values(), default=0
+            ),
             "consecutive_exact_repeats_within_spans": consecutive_repeats,
         },
         "contexts": {
             "nearest_same_lane_opcodes": dict(sorted(context_opcodes.items())),
             "intervening_non_target_opcodes": dict(sorted(inside_opcodes.items())),
-            "spans_with_inventory_frame_overlap": sum(row["inventory_frame_overlap"] == "yes" for row in span_rows),
-            "spans_with_equipment_carrier_overlap": sum(row["equipment_carrier_overlap"] == "yes" for row in span_rows),
-            "spans_with_change_frame_overlap": sum(row["change_frame_overlap"] == "yes" for row in span_rows),
+            "spans_with_inventory_frame_overlap": sum(
+                row["inventory_frame_overlap"] == "yes" for row in span_rows
+            ),
+            "spans_with_equipment_carrier_overlap": sum(
+                row["equipment_carrier_overlap"] == "yes" for row in span_rows
+            ),
+            "spans_with_change_frame_overlap": sum(
+                row["change_frame_overlap"] == "yes" for row in span_rows
+            ),
         },
         "per_capture": per_capture,
         "boundaries": [
@@ -570,7 +686,9 @@ def build_outputs() -> dict[str, bytes]:
     }
     verdicts = _verdicts(accounting)
     rendered = {
-        "accounting.json": (json.dumps(accounting, indent=2, sort_keys=True) + "\n").encode("ascii"),
+        "accounting.json": (
+            json.dumps(accounting, indent=2, sort_keys=True) + "\n"
+        ).encode("ascii"),
         "spans.csv": _csv_bytes(SPAN_FIELDS, span_rows),
         "verdicts.md": verdicts.encode("ascii"),
     }
@@ -595,16 +713,16 @@ def _verdicts(accounting: dict) -> str:
 
 ## Complete corpus accounting
 
-The complete canonical 54-capture corpus contains {corpus['target_s2c_0x018f']}
-`0x018F`, {corpus['target_s2c_0x0190']} `0x0190`, and
-{corpus['target_s2c_0x0191']} `0x0191` events across all
-{corpus['admitted_lanes']} admitted lanes. They form {corpus['complete_spans']}
+The complete canonical 54-capture corpus contains {corpus["target_s2c_0x018f"]}
+`0x018F`, {corpus["target_s2c_0x0190"]} `0x0190`, and
+{corpus["target_s2c_0x0191"]} `0x0191` events across all
+{corpus["admitted_lanes"]} admitted lanes. They form {corpus["complete_spans"]}
 complete same-lane `0x018F -> 0x0190* -> 0x0191` spans containing
-{corpus['records_in_complete_spans']} records. Orphan records, orphan ends,
-nested begins, and unterminated spans are respectively {issues['orphan_record']},
-{issues['orphan_end']}, {issues['nested_begin']}, and
-{issues['unterminated_span']}. Shape exclusions total
-{sum(accounting['exclusions'].values())}.
+{corpus["records_in_complete_spans"]} records. Orphan records, orphan ends,
+nested begins, and unterminated spans are respectively {issues["orphan_record"]},
+{issues["orphan_end"]}, {issues["nested_begin"]}, and
+{issues["unterminated_span"]}. Shape exclusions total
+{sum(accounting["exclusions"].values())}.
 
 Record counts per span are 197 in 3 spans, 198 in 2, 199 in 18, and 200 in 5.
 The eight target-bearing capture contexts are {capture_spans}. Filenames are
@@ -616,37 +734,37 @@ MassSetItemModifier labels remain unproven and are not promoted here.
 ## Key, vector, and tail verdicts
 
 The two leading `0x0190` dwords are retained as unnamed keys. Key dword 0 has
-{keys['key_dword_0']['distinct_values']} distinct values and no zero event;
-{keys['key_dword_0']['repeated_values']} values repeat. Key dword 1 has one
-distinct value and is zero in all {keys['key_dword_1']['events']} records.
+{keys["key_dword_0"]["distinct_values"]} distinct values and no zero event;
+{keys["key_dword_0"]["repeated_values"]} values repeat. Key dword 1 has one
+distinct value and is zero in all {keys["key_dword_1"]["events"]} records.
 The pair distribution therefore matches key dword 0, and the two key dwords
 are never equal. Values are not exposed because their roles are unproven.
 
-Across all records there are {vectors['distinct_vectors']} distinct 16-dword
-vectors and {vectors['all_zero_vectors']} all-zero vectors. Exact vector
+Across all records there are {vectors["distinct_vectors"]} distinct 16-dword
+vectors and {vectors["all_zero_vectors"]} all-zero vectors. Exact vector
 repetitions beyond the first total
-{vectors['exact_repeated_vectors_beyond_first']}. Repeated same-capture,
-same-lane key pairs provide {vectors['same_capture_lane_key_pair_comparisons']}
-ordered comparisons: {vectors['equal_vector_comparisons']} are equal and
-{vectors['changed_vector_comparisons']} change. The accounting document records
+{vectors["exact_repeated_vectors_beyond_first"]}. Repeated same-capture,
+same-lane key pairs provide {vectors["same_capture_lane_key_pair_comparisons"]}
+ordered comparisons: {vectors["equal_vector_comparisons"]} are equal and
+{vectors["changed_vector_comparisons"]} change. The accounting document records
 every changed word position, sparsity histogram, per-position nonzero count,
 and bounded unsigned value distribution.
 Only positions 0, 1, 3, 4, and 8 are nonzero anywhere. Ordered changes occur
 only at positions 0 and 8. Among bounded values from 0 through 255, only 0 and
 1 occur; larger values remain grouped into unsigned numeric bands.
 
-The 32-byte unread tail has {tails['distinct_tails']} distinct byte strings;
-{tails['all_zero_tails']} of {tails['tails']} tails are all zero. Its varying
+The 32-byte unread tail has {tails["distinct_tails"]} distinct byte strings;
+{tails["all_zero_tails"]} of {tails["tails"]} tails are all zero. Its varying
 and nonzero byte positions are recorded without publishing tail bytes.
 
 TCP reconstruction removed transport duplicates before these event counts.
-The source corpus separately contains {corpus['retransmitted_segments']} exact
+The source corpus separately contains {corpus["retransmitted_segments"]} exact
 repeated admitted TCP segments. After reconstruction,
-{repetition['exact_repeated_spans_beyond_first']} complete span record sequences
+{repetition["exact_repeated_spans_beyond_first"]} complete span record sequences
 repeat beyond their first occurrence, while
-{repetition['exact_repeated_applications_beyond_first']} `0x0190` applications
+{repetition["exact_repeated_applications_beyond_first"]} `0x0190` applications
 repeat beyond their first occurrence, including
-{repetition['consecutive_exact_repeats_within_spans']} consecutive exact
+{repetition["consecutive_exact_repeats_within_spans"]} consecutive exact
 repetitions inside spans. Those are recurring decoded events, not retransmits.
 
 ## Context and claim boundary
@@ -654,9 +772,9 @@ repetitions inside spans. Those are recurring decoded events, not retransmits.
 The span ledger records the nearest prior and following wrapped opcode on the
 same reconstructed lane and all non-target opcodes intervening inside each
 span. Numeric inventory-frame, equipment-carrier, and change-frame opcodes
-occur inside {contexts['spans_with_inventory_frame_overlap']},
-{contexts['spans_with_equipment_carrier_overlap']}, and
-{contexts['spans_with_change_frame_overlap']} spans respectively. These are
+occur inside {contexts["spans_with_inventory_frame_overlap"]},
+{contexts["spans_with_equipment_carrier_overlap"]}, and
+{contexts["spans_with_change_frame_overlap"]} spans respectively. These are
 bounded order correlations, not causal or semantic assignments.
 
 No non-target opcode intervenes inside any complete span. `0x0137` is the

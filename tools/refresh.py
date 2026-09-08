@@ -17,10 +17,12 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 TOOLS = REPO_ROOT / "tools"
 DATA = REPO_ROOT / "derived"
-RESTRICTED_OBJECTS = Path(os.environ.get(
-    "XIVL_PCAP_OBJECTS_DIR",
-    str(REPO_ROOT / "sources" / "pcap-1.23b" / "objects"),
-))
+RESTRICTED_OBJECTS = Path(
+    os.environ.get(
+        "XIVL_PCAP_OBJECTS_DIR",
+        str(REPO_ROOT / "sources" / "pcap-1.23b" / "objects"),
+    )
+)
 
 PCAP_PRODUCTS = [
     "observations.json",
@@ -111,71 +113,210 @@ UNIT_TEST_MODULES = (
 # stages remain below because their result rows combine related commands.
 CHECK_PLANS = {
     "public": (
-        ([TOOLS / "verify_retail_pcap.py", "--check-contract"], "retail PCAP contract", (("retail PCAP contract", "validate"),)),
-        ([TOOLS / "validate_capture_repo.py", "--check-storage"], "public manifest/catalog cross-check", (("public manifest/catalog cross-check", "validate"),)),
-        ([TOOLS / "check_markdown_links.py"], "public in-repo links", (("public in-repo links", "validate"),)),
-        ([TOOLS / "audit_study_conventions.py"], "public study conventions", (("public study conventions", "validate"),)),
-        ([TOOLS / "soften_source_links.py", "--check"], "public study source citations", (("public study source citations", "validate"),)),
-        ([TOOLS / "build_checksums.py", "--check"], "public study checksums", (("public study checksums", "validate"),)),
-        ([TOOLS / "build_catalog.py", "--check"], "public catalog chain", (
-            ("public scenario views", "validate"),
-            ("public catalog registry", "validate"),
-            ("public catalog axes", "validate"),
-        )),
-        ([TOOLS / "validate_digestion.py", "--public-shape"], "public digestion references", (("public digestion references", "validate"),)),
-        ([TOOLS / "validate_schemas.py"], "public schemas and boundaries", (("public schemas and boundaries", "validate"),)),
-        ([TOOLS / "build_dataset_meta.py", "--check"], "public dataset metadata", (("public dataset metadata", "validate"),)),
+        (
+            [TOOLS / "verify_retail_pcap.py", "--check-contract"],
+            "retail PCAP contract",
+            (("retail PCAP contract", "validate"),),
+        ),
+        (
+            [TOOLS / "validate_capture_repo.py", "--check-storage"],
+            "public manifest/catalog cross-check",
+            (("public manifest/catalog cross-check", "validate"),),
+        ),
+        (
+            [TOOLS / "check_markdown_links.py"],
+            "public in-repo links",
+            (("public in-repo links", "validate"),),
+        ),
+        (
+            [TOOLS / "audit_study_conventions.py"],
+            "public study conventions",
+            (("public study conventions", "validate"),),
+        ),
+        (
+            [TOOLS / "soften_source_links.py", "--check"],
+            "public study source citations",
+            (("public study source citations", "validate"),),
+        ),
+        (
+            [TOOLS / "build_checksums.py", "--check"],
+            "public study checksums",
+            (("public study checksums", "validate"),),
+        ),
+        (
+            [TOOLS / "build_catalog.py", "--check"],
+            "public catalog chain",
+            (
+                ("public scenario views", "validate"),
+                ("public catalog registry", "validate"),
+                ("public catalog axes", "validate"),
+            ),
+        ),
+        (
+            [TOOLS / "validate_digestion.py", "--public-shape"],
+            "public digestion references",
+            (("public digestion references", "validate"),),
+        ),
+        (
+            [TOOLS / "validate_schemas.py"],
+            "public schemas and boundaries",
+            (("public schemas and boundaries", "validate"),),
+        ),
+        (
+            [TOOLS / "build_dataset_meta.py", "--check"],
+            "public dataset metadata",
+            (("public dataset metadata", "validate"),),
+        ),
     ),
     "check": (
-        ([TOOLS / "verify_retail_pcap.py", "--check-contract"], "retail PCAP contract", (("retail PCAP contract", "validate"),)),
-        ([TOOLS / "validate_capture_repo.py", "--check-storage"], "validate_capture_repo.py", (("validate_capture_repo.py (studies/sources/catalog cross-check)", "validate"),)),
-        ([TOOLS / "check_markdown_links.py"], "check_markdown_links.py", (("check_markdown_links.py (in-repo link resolution)", "validate"),)),
-        ([TOOLS / "audit_study_conventions.py"], "audit_study_conventions.py", (("audit_study_conventions.py (study README presence and manifest contract)", "validate"),)),
-        ([TOOLS / "soften_source_links.py", "--check"], "soften_source_links.py --check", (("shipping study source citations", "validate"),)),
-        ([TOOLS / "build_checksums.py", "--check"], "build_checksums.py --check", (("study derived/ checksum anchors", "regen"),)),
-        ([TOOLS / "build_catalog.py", "--check"], "build_catalog.py --check", (
-            ("pcap-reference scenario views", "regen"),
-            ("catalog/index.yaml + catalog/aliases.yaml", "regen"),
-            ("catalog/by-*.md axis views", "regen"),
-        )),
+        (
+            [TOOLS / "verify_retail_pcap.py", "--check-contract"],
+            "retail PCAP contract",
+            (("retail PCAP contract", "validate"),),
+        ),
+        (
+            [TOOLS / "validate_capture_repo.py", "--check-storage"],
+            "validate_capture_repo.py",
+            (
+                (
+                    "validate_capture_repo.py (studies/sources/catalog cross-check)",
+                    "validate",
+                ),
+            ),
+        ),
+        (
+            [TOOLS / "check_markdown_links.py"],
+            "check_markdown_links.py",
+            (("check_markdown_links.py (in-repo link resolution)", "validate"),),
+        ),
+        (
+            [TOOLS / "audit_study_conventions.py"],
+            "audit_study_conventions.py",
+            (
+                (
+                    "audit_study_conventions.py (study README presence and manifest contract)",
+                    "validate",
+                ),
+            ),
+        ),
+        (
+            [TOOLS / "soften_source_links.py", "--check"],
+            "soften_source_links.py --check",
+            (("shipping study source citations", "validate"),),
+        ),
+        (
+            [TOOLS / "build_checksums.py", "--check"],
+            "build_checksums.py --check",
+            (("study derived/ checksum anchors", "regen"),),
+        ),
+        (
+            [TOOLS / "build_catalog.py", "--check"],
+            "build_catalog.py --check",
+            (
+                ("pcap-reference scenario views", "regen"),
+                ("catalog/index.yaml + catalog/aliases.yaml", "regen"),
+                ("catalog/by-*.md axis views", "regen"),
+            ),
+        ),
     ),
     "check-post": (
-        ([TOOLS / "validate_schemas.py"], "validate_schemas.py", (("validate_schemas.py (schemas/sources/data-meta/pipelines)", "validate"),)),
-        ([TOOLS / "build_dataset_meta.py", "--check"], "build_dataset_meta.py --check", (("derived/*.meta.yaml sidecars", "regen"),)),
+        (
+            [TOOLS / "validate_schemas.py"],
+            "validate_schemas.py",
+            (
+                (
+                    "validate_schemas.py (schemas/sources/data-meta/pipelines)",
+                    "validate",
+                ),
+            ),
+        ),
+        (
+            [TOOLS / "build_dataset_meta.py", "--check"],
+            "build_dataset_meta.py --check",
+            (("derived/*.meta.yaml sidecars", "regen"),),
+        ),
     ),
     "write": (
-        ([TOOLS / "build_catalog.py"], "build_catalog.py", (
-            ("pcap-reference scenario views", "write"),
-            ("catalog/index.yaml + catalog/aliases.yaml", "write"),
-            ("catalog/by-*.md axis views", "write"),
-        )),
-        ([TOOLS / "validate_capture_repo.py", "--check-storage"], "validate_capture_repo.py", (("validate_capture_repo.py (studies/sources/catalog cross-check)", "validate"),)),
-        ([TOOLS / "check_markdown_links.py"], "check_markdown_links.py", (("check_markdown_links.py (in-repo link resolution)", "validate"),)),
-        ([TOOLS / "soften_source_links.py"], "soften_source_links.py", (("shipping study source citations", "write"),)),
-        ([TOOLS / "build_checksums.py"], "build_checksums.py", (("study derived/ checksum anchors", "write"),)),
+        (
+            [TOOLS / "build_catalog.py"],
+            "build_catalog.py",
+            (
+                ("pcap-reference scenario views", "write"),
+                ("catalog/index.yaml + catalog/aliases.yaml", "write"),
+                ("catalog/by-*.md axis views", "write"),
+            ),
+        ),
+        (
+            [TOOLS / "validate_capture_repo.py", "--check-storage"],
+            "validate_capture_repo.py",
+            (
+                (
+                    "validate_capture_repo.py (studies/sources/catalog cross-check)",
+                    "validate",
+                ),
+            ),
+        ),
+        (
+            [TOOLS / "check_markdown_links.py"],
+            "check_markdown_links.py",
+            (("check_markdown_links.py (in-repo link resolution)", "validate"),),
+        ),
+        (
+            [TOOLS / "soften_source_links.py"],
+            "soften_source_links.py",
+            (("shipping study source citations", "write"),),
+        ),
+        (
+            [TOOLS / "build_checksums.py"],
+            "build_checksums.py",
+            (("study derived/ checksum anchors", "write"),),
+        ),
     ),
     "write-post": (
-        ([TOOLS / "build_dataset_meta.py"], "build_dataset_meta.py", (("derived/*.meta.yaml sidecars", "write"),)),
-        ([TOOLS / "validate_schemas.py"], "validate_schemas.py", (("validate_schemas.py (schemas/sources/data-meta/pipelines)", "validate"),)),
+        (
+            [TOOLS / "build_dataset_meta.py"],
+            "build_dataset_meta.py",
+            (("derived/*.meta.yaml sidecars", "write"),),
+        ),
+        (
+            [TOOLS / "validate_schemas.py"],
+            "validate_schemas.py",
+            (
+                (
+                    "validate_schemas.py (schemas/sources/data-meta/pipelines)",
+                    "validate",
+                ),
+            ),
+        ),
     ),
 }
 PCAP_BUILDER = TOOLS / "build_pcap_products.py"
 BATTLE_RESULT_DISTRIBUTIONS = TOOLS / "analyze_battle_result_distributions.py"
 BATTLE_RESULT_FITS = TOOLS / "analyze_battle_result_fits.py"
 DIRECTOR_WIRE_IDENTITY = TOOLS / "extractors" / "extract_director_wire_identity.py"
-GUILDLEVE_JOURNAL_COMMAND = TOOLS / "extractors" / "extract_guildleve_journal_command.py"
-REGIONAL_GUILDLEVE_PUBLISHER_CONTRACT = TOOLS / "extractors" / "extract_regional_guildleve_publisher_contract.py"
+GUILDLEVE_JOURNAL_COMMAND = (
+    TOOLS / "extractors" / "extract_guildleve_journal_command.py"
+)
+REGIONAL_GUILDLEVE_PUBLISHER_CONTRACT = (
+    TOOLS / "extractors" / "extract_regional_guildleve_publisher_contract.py"
+)
 PROPERTY_STREAM_CATALOG = TOOLS / "extractors" / "extract_property_stream_catalog.py"
 PLAYER_HP_CALIBRATION = TOOLS / "extractors" / "extract_player_hp_calibration.py"
-EQUIPMENT_PROPERTY_CORRELATION = TOOLS / "extractors" / "extract_equipment_property_correlation.py"
+EQUIPMENT_PROPERTY_CORRELATION = (
+    TOOLS / "extractors" / "extract_equipment_property_correlation.py"
+)
 LOGIN_018A_TIMELINE = TOOLS / "extractors" / "extract_login_018a_timeline.py"
 MAP_00DA_00E1_COMPARISON = TOOLS / "extractors" / "extract_00da_00e1_comparison.py"
 STATUS_WIRE_CENSUS = TOOLS / "extractors" / "extract_status_wire_census.py"
 PARTY_MARKER_CHRONOLOGY = TOOLS / "extractors" / "extract_party_marker_chronology.py"
 PARTY_MARKER_FIELDS = TOOLS / "analyze_party_marker_fields.py"
 MAP_0193_CLOCK_CONTRACT = TOOLS / "extractors" / "extract_0193_clock_contract.py"
-MAP_0190_TRANSACTION_CENSUS = TOOLS / "extractors" / "extract_0190_transaction_census.py"
-WORLD_PARTY_CHAT_00C9_CONTRACT = TOOLS / "extractors" / "extract_world_party_chat_00c9.py"
+MAP_0190_TRANSACTION_CENSUS = (
+    TOOLS / "extractors" / "extract_0190_transaction_census.py"
+)
+WORLD_PARTY_CHAT_00C9_CONTRACT = (
+    TOOLS / "extractors" / "extract_world_party_chat_00c9.py"
+)
 LOBBY_RECORD_CENSUS = TOOLS / "extractors" / "extract_lobby_record_census.py"
 
 # Promoted or frozen products are parse-only.
@@ -183,6 +324,7 @@ PARSE_ONLY_PRODUCTS = [
     ("spawn_location_validation.json", "frozen historical artifact"),
 ]
 SUBPROCESS_TIMEOUT_SECONDS = 300
+
 
 def run(cmd: list, label: str) -> bool:
     try:
@@ -218,12 +360,21 @@ def run_plan(mode: str, results: list[tuple[str, str, bool, str]]) -> None:
 def parse_only_check(name: str, reason: str, results: list) -> None:
     committed = DATA / name
     if not committed.exists():
-        results.append((f"derived/{name}", "parse-only", False, f"{reason}; committed file missing"))
+        results.append(
+            (
+                f"derived/{name}",
+                "parse-only",
+                False,
+                f"{reason}; committed file missing",
+            )
+        )
         return
     try:
         json.loads(committed.read_text(encoding="utf-8"))
     except (OSError, ValueError) as exc:
-        results.append((f"derived/{name}", "parse-only", False, f"{reason}; invalid JSON ({exc})"))
+        results.append(
+            (f"derived/{name}", "parse-only", False, f"{reason}; invalid JSON ({exc})")
+        )
         return
     results.append((f"derived/{name}", "parse-only", True, reason))
 
@@ -232,41 +383,80 @@ def do_public_check() -> int:
     results: list[tuple[str, str, bool, str]] = []
 
     ok = run(["-m", "unittest", *UNIT_TEST_MODULES], "explicit unit tests")
-    results.append(("explicit unit tests", "validate", ok, "" if ok else "see output above"))
+    results.append(
+        ("explicit unit tests", "validate", ok, "" if ok else "see output above")
+    )
 
     run_plan("public", results)
 
-    ok = run([LOBBY_RECORD_CENSUS, "--check", "--public-shape"],
-             "public decrypted lobby record census")
-    results.append(("sanitized decrypted lobby record census", "validate", ok,
-                    "" if ok else "public fixture validation failed"))
+    ok = run(
+        [LOBBY_RECORD_CENSUS, "--check", "--public-shape"],
+        "public decrypted lobby record census",
+    )
+    results.append(
+        (
+            "sanitized decrypted lobby record census",
+            "validate",
+            ok,
+            "" if ok else "public fixture validation failed",
+        )
+    )
 
     for json_path in sorted(DATA.glob("*.json")):
         parse_only_check(json_path.name, "retained public product", results)
 
     ok = run([PCAP_BUILDER, "--check"], "public pcap products")
     for name in ("gam_hash_names.json", "payload_layouts.json"):
-        results.append((f"derived/{name}", "regen", ok,
-                        "" if ok else "regenerated bytes differ, see output above"))
+        results.append(
+            (
+                f"derived/{name}",
+                "regen",
+                ok,
+                "" if ok else "regenerated bytes differ, see output above",
+            )
+        )
     for name in PCAP_CSV_PRODUCTS:
-        results.append((f"derived/{name}", "regen", ok,
-                        "" if ok else "regenerated bytes differ, see output above"))
+        results.append(
+            (
+                f"derived/{name}",
+                "regen",
+                ok,
+                "" if ok else "regenerated bytes differ, see output above",
+            )
+        )
 
-    ok = run([PLAYER_HP_CALIBRATION, "--check"],
-             "public player HP calibration anchors")
-    results.append(("player HP calibration anchors", "regen", ok,
-                    "" if ok else "regenerated bytes differ, see output above"))
+    ok = run([PLAYER_HP_CALIBRATION, "--check"], "public player HP calibration anchors")
+    results.append(
+        (
+            "player HP calibration anchors",
+            "regen",
+            ok,
+            "" if ok else "regenerated bytes differ, see output above",
+        )
+    )
 
     ok = run(
         [BATTLE_RESULT_DISTRIBUTIONS, "--check"],
         "public battle-result distributions",
     )
-    results.append(("battle-result Stage 2 products", "regen", ok,
-                    "" if ok else "regenerated bytes differ, see output above"))
+    results.append(
+        (
+            "battle-result Stage 2 products",
+            "regen",
+            ok,
+            "" if ok else "regenerated bytes differ, see output above",
+        )
+    )
 
     ok = run([BATTLE_RESULT_FITS, "--check"], "public battle-result fits")
-    results.append(("battle-result Stage 3 products", "regen", ok,
-                    "" if ok else "regenerated bytes differ, see output above"))
+    results.append(
+        (
+            "battle-result Stage 3 products",
+            "regen",
+            ok,
+            "" if ok else "regenerated bytes differ, see output above",
+        )
+    )
 
     return report(results)
 
@@ -275,7 +465,9 @@ def do_check() -> int:
     results: list[tuple[str, str, bool, str]] = []
 
     ok = run(["-m", "unittest", *UNIT_TEST_MODULES], "explicit unit tests")
-    results.append(("explicit unit tests", "validate", ok, "" if ok else "see output above"))
+    results.append(
+        ("explicit unit tests", "validate", ok, "" if ok else "see output above")
+    )
 
     run_plan("check", results)
 
@@ -283,11 +475,27 @@ def do_check() -> int:
     digestion_ok = run([TOOLS / "validate_digestion.py"], "validate_digestion.py")
     products_ok = ok and digestion_ok
     for name in PCAP_PRODUCTS:
-        results.append((f"derived/{name}", "regen", products_ok,
-                        "" if products_ok else "regeneration or digestion failed, see output above"))
+        results.append(
+            (
+                f"derived/{name}",
+                "regen",
+                products_ok,
+                ""
+                if products_ok
+                else "regeneration or digestion failed, see output above",
+            )
+        )
     for name in PCAP_CSV_PRODUCTS:
-        results.append((f"derived/{name}", "regen", products_ok,
-                        "" if products_ok else "regeneration or digestion failed, see output above"))
+        results.append(
+            (
+                f"derived/{name}",
+                "regen",
+                products_ok,
+                ""
+                if products_ok
+                else "regeneration or digestion failed, see output above",
+            )
+        )
 
     for name, reason in PARSE_ONLY_PRODUCTS:
         parse_only_check(name, reason, results)
@@ -296,90 +504,206 @@ def do_check() -> int:
         [BATTLE_RESULT_DISTRIBUTIONS, "--check"],
         "analyze_battle_result_distributions.py --check",
     )
-    results.append(("battle-result Stage 2 products", "regen", ok,
-                    "" if ok else "regenerated bytes differ, see output above"))
+    results.append(
+        (
+            "battle-result Stage 2 products",
+            "regen",
+            ok,
+            "" if ok else "regenerated bytes differ, see output above",
+        )
+    )
 
     ok = run(
         [BATTLE_RESULT_FITS, "--check"],
         "analyze_battle_result_fits.py --check",
     )
-    results.append(("battle-result Stage 3 products", "regen", ok,
-                    "" if ok else "regenerated bytes differ, see output above"))
+    results.append(
+        (
+            "battle-result Stage 3 products",
+            "regen",
+            ok,
+            "" if ok else "regenerated bytes differ, see output above",
+        )
+    )
 
-    ok = run([DIRECTOR_WIRE_IDENTITY, "--check"],
-                "extract_director_wire_identity.py --check")
-    results.append(("director wire identity products", "regen", ok,
-                    "" if ok else "regenerated bytes differ, see output above"))
+    ok = run(
+        [DIRECTOR_WIRE_IDENTITY, "--check"], "extract_director_wire_identity.py --check"
+    )
+    results.append(
+        (
+            "director wire identity products",
+            "regen",
+            ok,
+            "" if ok else "regenerated bytes differ, see output above",
+        )
+    )
 
-    ok = run([GUILDLEVE_JOURNAL_COMMAND, "--check"],
-             "extract_guildleve_journal_command.py --check")
-    results.append(("guildleve journal command products", "regen", ok,
-                    "" if ok else "regenerated bytes differ, see output above"))
+    ok = run(
+        [GUILDLEVE_JOURNAL_COMMAND, "--check"],
+        "extract_guildleve_journal_command.py --check",
+    )
+    results.append(
+        (
+            "guildleve journal command products",
+            "regen",
+            ok,
+            "" if ok else "regenerated bytes differ, see output above",
+        )
+    )
 
-    ok = run([REGIONAL_GUILDLEVE_PUBLISHER_CONTRACT, "--check"],
-             "extract_regional_guildleve_publisher_contract.py --check")
-    results.append(("regional guildleve publisher contract", "regen", ok,
-                    "" if ok else "regenerated bytes differ, see output above"))
+    ok = run(
+        [REGIONAL_GUILDLEVE_PUBLISHER_CONTRACT, "--check"],
+        "extract_regional_guildleve_publisher_contract.py --check",
+    )
+    results.append(
+        (
+            "regional guildleve publisher contract",
+            "regen",
+            ok,
+            "" if ok else "regenerated bytes differ, see output above",
+        )
+    )
 
-    ok = run([PROPERTY_STREAM_CATALOG, "--check"],
-                "extract_property_stream_catalog.py --check")
-    results.append(("property-stream catalog products", "regen", ok,
-                    "" if ok else "regenerated bytes differ, see output above"))
+    ok = run(
+        [PROPERTY_STREAM_CATALOG, "--check"],
+        "extract_property_stream_catalog.py --check",
+    )
+    results.append(
+        (
+            "property-stream catalog products",
+            "regen",
+            ok,
+            "" if ok else "regenerated bytes differ, see output above",
+        )
+    )
 
-    ok = run([PLAYER_HP_CALIBRATION, "--check"],
-             "extract_player_hp_calibration.py --check")
-    results.append(("player HP calibration anchors", "regen", ok,
-                    "" if ok else "regenerated bytes differ, see output above"))
+    ok = run(
+        [PLAYER_HP_CALIBRATION, "--check"], "extract_player_hp_calibration.py --check"
+    )
+    results.append(
+        (
+            "player HP calibration anchors",
+            "regen",
+            ok,
+            "" if ok else "regenerated bytes differ, see output above",
+        )
+    )
 
-    ok = run([EQUIPMENT_PROPERTY_CORRELATION, "--check"],
-             "extract_equipment_property_correlation.py --check")
-    results.append(("equipment property correlation", "regen", ok,
-                    "" if ok else "regenerated bytes differ, see output above"))
+    ok = run(
+        [EQUIPMENT_PROPERTY_CORRELATION, "--check"],
+        "extract_equipment_property_correlation.py --check",
+    )
+    results.append(
+        (
+            "equipment property correlation",
+            "regen",
+            ok,
+            "" if ok else "regenerated bytes differ, see output above",
+        )
+    )
 
-    ok = run([LOGIN_018A_TIMELINE, "--check"],
-             "extract_login_018a_timeline.py --check")
-    results.append(("login 0x018A timeline products", "regen", ok,
-                    "" if ok else "regenerated bytes differ, see output above"))
+    ok = run([LOGIN_018A_TIMELINE, "--check"], "extract_login_018a_timeline.py --check")
+    results.append(
+        (
+            "login 0x018A timeline products",
+            "regen",
+            ok,
+            "" if ok else "regenerated bytes differ, see output above",
+        )
+    )
 
-    ok = run([MAP_00DA_00E1_COMPARISON, "--check"],
-             "extract_00da_00e1_comparison.py --check")
-    results.append(("0x00DA/0x00E1 comparison products", "regen", ok,
-                    "" if ok else "regenerated bytes differ, see output above"))
+    ok = run(
+        [MAP_00DA_00E1_COMPARISON, "--check"], "extract_00da_00e1_comparison.py --check"
+    )
+    results.append(
+        (
+            "0x00DA/0x00E1 comparison products",
+            "regen",
+            ok,
+            "" if ok else "regenerated bytes differ, see output above",
+        )
+    )
 
-    ok = run([STATUS_WIRE_CENSUS, "--check"],
-             "extract_status_wire_census.py --check")
-    results.append(("status wire projection census", "regen", ok,
-                    "" if ok else "regenerated bytes differ, see output above"))
+    ok = run([STATUS_WIRE_CENSUS, "--check"], "extract_status_wire_census.py --check")
+    results.append(
+        (
+            "status wire projection census",
+            "regen",
+            ok,
+            "" if ok else "regenerated bytes differ, see output above",
+        )
+    )
 
-    ok = run([PARTY_MARKER_CHRONOLOGY, "--check"],
-             "extract_party_marker_chronology.py --check")
-    results.append(("party marker 0x018D chronology", "regen", ok,
-                    "" if ok else "regenerated bytes differ, see output above"))
+    ok = run(
+        [PARTY_MARKER_CHRONOLOGY, "--check"],
+        "extract_party_marker_chronology.py --check",
+    )
+    results.append(
+        (
+            "party marker 0x018D chronology",
+            "regen",
+            ok,
+            "" if ok else "regenerated bytes differ, see output above",
+        )
+    )
 
-    ok = run([PARTY_MARKER_FIELDS, "--check"],
-             "analyze_party_marker_fields.py --check")
-    results.append(("party marker 0x018D field census", "regen", ok,
-                    "" if ok else "regenerated bytes differ, see output above"))
+    ok = run([PARTY_MARKER_FIELDS, "--check"], "analyze_party_marker_fields.py --check")
+    results.append(
+        (
+            "party marker 0x018D field census",
+            "regen",
+            ok,
+            "" if ok else "regenerated bytes differ, see output above",
+        )
+    )
 
-    ok = run([MAP_0193_CLOCK_CONTRACT, "--check"],
-             "extract_0193_clock_contract.py --check")
-    results.append(("Map 0x0193 clock/value contract", "regen", ok,
-                    "" if ok else "regenerated bytes differ, see output above"))
+    ok = run(
+        [MAP_0193_CLOCK_CONTRACT, "--check"], "extract_0193_clock_contract.py --check"
+    )
+    results.append(
+        (
+            "Map 0x0193 clock/value contract",
+            "regen",
+            ok,
+            "" if ok else "regenerated bytes differ, see output above",
+        )
+    )
 
-    ok = run([MAP_0190_TRANSACTION_CENSUS, "--check"],
-             "extract_0190_transaction_census.py --check")
-    results.append(("Map 0x0190 transaction census", "regen", ok,
-                    "" if ok else "regenerated bytes differ, see output above"))
+    ok = run(
+        [MAP_0190_TRANSACTION_CENSUS, "--check"],
+        "extract_0190_transaction_census.py --check",
+    )
+    results.append(
+        (
+            "Map 0x0190 transaction census",
+            "regen",
+            ok,
+            "" if ok else "regenerated bytes differ, see output above",
+        )
+    )
 
-    ok = run([WORLD_PARTY_CHAT_00C9_CONTRACT, "--check"],
-             "extract_world_party_chat_00c9.py --check")
-    results.append(("World party-chat 0x00C9 contract", "regen", ok,
-                    "" if ok else "regenerated bytes differ, see output above"))
+    ok = run(
+        [WORLD_PARTY_CHAT_00C9_CONTRACT, "--check"],
+        "extract_world_party_chat_00c9.py --check",
+    )
+    results.append(
+        (
+            "World party-chat 0x00C9 contract",
+            "regen",
+            ok,
+            "" if ok else "regenerated bytes differ, see output above",
+        )
+    )
 
-    ok = run([LOBBY_RECORD_CENSUS, "--check"],
-             "extract_lobby_record_census.py --check")
-    results.append(("sanitized decrypted lobby record census", "regen", ok,
-                    "" if ok else "regenerated bytes differ, see output above"))
+    ok = run([LOBBY_RECORD_CENSUS, "--check"], "extract_lobby_record_census.py --check")
+    results.append(
+        (
+            "sanitized decrypted lobby record census",
+            "regen",
+            ok,
+            "" if ok else "regenerated bytes differ, see output above",
+        )
+    )
 
     run_plan("check-post", results)
 
@@ -395,11 +719,27 @@ def do_write() -> int:
     digestion_ok = run([TOOLS / "validate_digestion.py"], "validate_digestion.py")
     products_ok = ok and digestion_ok
     for name in PCAP_PRODUCTS:
-        results.append((f"derived/{name}", "write", products_ok,
-                        "" if products_ok else "generation or digestion failed, see output above"))
+        results.append(
+            (
+                f"derived/{name}",
+                "write",
+                products_ok,
+                ""
+                if products_ok
+                else "generation or digestion failed, see output above",
+            )
+        )
     for name in PCAP_CSV_PRODUCTS:
-        results.append((f"derived/{name}", "write", products_ok,
-                        "" if products_ok else "generation or digestion failed, see output above"))
+        results.append(
+            (
+                f"derived/{name}",
+                "write",
+                products_ok,
+                ""
+                if products_ok
+                else "generation or digestion failed, see output above",
+            )
+        )
     for name, reason in PARSE_ONLY_PRODUCTS:
         parse_only_check(name, reason, results)
 
@@ -407,76 +747,179 @@ def do_write() -> int:
         [BATTLE_RESULT_DISTRIBUTIONS],
         "analyze_battle_result_distributions.py",
     )
-    results.append(("battle-result Stage 2 products", "write", ok,
-                    "" if ok else "generation failed, see output above"))
+    results.append(
+        (
+            "battle-result Stage 2 products",
+            "write",
+            ok,
+            "" if ok else "generation failed, see output above",
+        )
+    )
 
     ok = run([BATTLE_RESULT_FITS], "analyze_battle_result_fits.py")
-    results.append(("battle-result Stage 3 products", "write", ok,
-                    "" if ok else "generation failed, see output above"))
+    results.append(
+        (
+            "battle-result Stage 3 products",
+            "write",
+            ok,
+            "" if ok else "generation failed, see output above",
+        )
+    )
 
     ok = run([DIRECTOR_WIRE_IDENTITY], "extract_director_wire_identity.py")
-    results.append(("director wire identity products", "write", ok,
-                    "" if ok else "generation failed, see output above"))
+    results.append(
+        (
+            "director wire identity products",
+            "write",
+            ok,
+            "" if ok else "generation failed, see output above",
+        )
+    )
 
     ok = run([GUILDLEVE_JOURNAL_COMMAND], "extract_guildleve_journal_command.py")
-    results.append(("guildleve journal command products", "write", ok,
-                    "" if ok else "generation failed, see output above"))
+    results.append(
+        (
+            "guildleve journal command products",
+            "write",
+            ok,
+            "" if ok else "generation failed, see output above",
+        )
+    )
 
-    ok = run([REGIONAL_GUILDLEVE_PUBLISHER_CONTRACT],
-             "extract_regional_guildleve_publisher_contract.py")
-    results.append(("regional guildleve publisher contract", "write", ok,
-                    "" if ok else "generation failed, see output above"))
+    ok = run(
+        [REGIONAL_GUILDLEVE_PUBLISHER_CONTRACT],
+        "extract_regional_guildleve_publisher_contract.py",
+    )
+    results.append(
+        (
+            "regional guildleve publisher contract",
+            "write",
+            ok,
+            "" if ok else "generation failed, see output above",
+        )
+    )
 
     ok = run([PROPERTY_STREAM_CATALOG], "extract_property_stream_catalog.py")
-    results.append(("property-stream catalog products", "write", ok,
-                    "" if ok else "generation failed, see output above"))
+    results.append(
+        (
+            "property-stream catalog products",
+            "write",
+            ok,
+            "" if ok else "generation failed, see output above",
+        )
+    )
 
     ok = run([PLAYER_HP_CALIBRATION], "extract_player_hp_calibration.py")
-    results.append(("player HP calibration anchors", "write", ok,
-                    "" if ok else "generation failed, see output above"))
+    results.append(
+        (
+            "player HP calibration anchors",
+            "write",
+            ok,
+            "" if ok else "generation failed, see output above",
+        )
+    )
 
-    ok = run([EQUIPMENT_PROPERTY_CORRELATION],
-             "extract_equipment_property_correlation.py")
-    results.append(("equipment property correlation", "write", ok,
-                    "" if ok else "generation failed, see output above"))
+    ok = run(
+        [EQUIPMENT_PROPERTY_CORRELATION], "extract_equipment_property_correlation.py"
+    )
+    results.append(
+        (
+            "equipment property correlation",
+            "write",
+            ok,
+            "" if ok else "generation failed, see output above",
+        )
+    )
 
     ok = run([LOGIN_018A_TIMELINE], "extract_login_018a_timeline.py")
-    results.append(("login 0x018A timeline products", "write", ok,
-                    "" if ok else "generation failed, see output above"))
+    results.append(
+        (
+            "login 0x018A timeline products",
+            "write",
+            ok,
+            "" if ok else "generation failed, see output above",
+        )
+    )
 
     ok = run([MAP_00DA_00E1_COMPARISON], "extract_00da_00e1_comparison.py")
-    results.append(("0x00DA/0x00E1 comparison products", "write", ok,
-                    "" if ok else "generation failed, see output above"))
+    results.append(
+        (
+            "0x00DA/0x00E1 comparison products",
+            "write",
+            ok,
+            "" if ok else "generation failed, see output above",
+        )
+    )
 
     ok = run([STATUS_WIRE_CENSUS], "extract_status_wire_census.py")
-    results.append(("status wire projection census", "write", ok,
-                    "" if ok else "generation failed, see output above"))
+    results.append(
+        (
+            "status wire projection census",
+            "write",
+            ok,
+            "" if ok else "generation failed, see output above",
+        )
+    )
 
     ok = run([PARTY_MARKER_CHRONOLOGY], "extract_party_marker_chronology.py")
-    results.append(("party marker 0x018D chronology", "write", ok,
-                    "" if ok else "generation failed, see output above"))
+    results.append(
+        (
+            "party marker 0x018D chronology",
+            "write",
+            ok,
+            "" if ok else "generation failed, see output above",
+        )
+    )
 
     ok = run([PARTY_MARKER_FIELDS], "analyze_party_marker_fields.py")
-    results.append(("party marker 0x018D field census", "write", ok,
-                    "" if ok else "generation failed, see output above"))
+    results.append(
+        (
+            "party marker 0x018D field census",
+            "write",
+            ok,
+            "" if ok else "generation failed, see output above",
+        )
+    )
 
     ok = run([MAP_0193_CLOCK_CONTRACT], "extract_0193_clock_contract.py")
-    results.append(("Map 0x0193 clock/value contract", "write", ok,
-                    "" if ok else "generation failed, see output above"))
+    results.append(
+        (
+            "Map 0x0193 clock/value contract",
+            "write",
+            ok,
+            "" if ok else "generation failed, see output above",
+        )
+    )
 
-    ok = run([MAP_0190_TRANSACTION_CENSUS],
-             "extract_0190_transaction_census.py")
-    results.append(("Map 0x0190 transaction census", "write", ok,
-                    "" if ok else "generation failed, see output above"))
+    ok = run([MAP_0190_TRANSACTION_CENSUS], "extract_0190_transaction_census.py")
+    results.append(
+        (
+            "Map 0x0190 transaction census",
+            "write",
+            ok,
+            "" if ok else "generation failed, see output above",
+        )
+    )
 
-    ok = run([WORLD_PARTY_CHAT_00C9_CONTRACT],
-             "extract_world_party_chat_00c9.py")
-    results.append(("World party-chat 0x00C9 contract", "write", ok,
-                    "" if ok else "generation failed, see output above"))
+    ok = run([WORLD_PARTY_CHAT_00C9_CONTRACT], "extract_world_party_chat_00c9.py")
+    results.append(
+        (
+            "World party-chat 0x00C9 contract",
+            "write",
+            ok,
+            "" if ok else "generation failed, see output above",
+        )
+    )
 
     ok = run([LOBBY_RECORD_CENSUS], "extract_lobby_record_census.py")
-    results.append(("sanitized decrypted lobby record census", "write", ok,
-                    "" if ok else "generation failed, see output above"))
+    results.append(
+        (
+            "sanitized decrypted lobby record census",
+            "write",
+            ok,
+            "" if ok else "generation failed, see output above",
+        )
+    )
 
     run_plan("write-post", results)
 
@@ -501,11 +944,18 @@ def report(results: list) -> int:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Unified gate over every canonical xivl-captures product.")
-    parser.add_argument("--check", action="store_true",
-                        help="validate only, write nothing, exit 1 if anything is stale")
-    parser.add_argument("--public-shape", action="store_true",
-                        help="validate a filtered fresh-init tree with restricted evidence absent")
+        description="Unified gate over every canonical xivl-captures product."
+    )
+    parser.add_argument(
+        "--check",
+        action="store_true",
+        help="validate only, write nothing, exit 1 if anything is stale",
+    )
+    parser.add_argument(
+        "--public-shape",
+        action="store_true",
+        help="validate a filtered fresh-init tree with restricted evidence absent",
+    )
     args = parser.parse_args()
     if args.public_shape:
         if not args.check:

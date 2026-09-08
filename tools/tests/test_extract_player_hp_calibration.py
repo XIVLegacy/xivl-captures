@@ -26,11 +26,17 @@ class PlayerHpCalibrationTests(unittest.TestCase):
         )
         rows = MODULE.extract_rows()
         self.assertEqual(len(rows), 12)
-        self.assertEqual(Counter(row["repeated_lead"] for row in rows), {"lead-1": 6, "lead-2": 6})
+        self.assertEqual(
+            Counter(row["repeated_lead"] for row in rows), {"lead-1": 6, "lead-2": 6}
+        )
         self.assertEqual(
             {
-                (row["state_mainSkill_0"], row["state_mainSkillLevel"],
-                 row["generalParameter_5"], row["hpMax_0"])
+                (
+                    row["state_mainSkill_0"],
+                    row["state_mainSkillLevel"],
+                    row["generalParameter_5"],
+                    row["hpMax_0"],
+                )
                 for row in rows
             },
             {(4, 26, 102, 758), (3, 31, 110, 1016)},
@@ -41,7 +47,8 @@ class PlayerHpCalibrationTests(unittest.TestCase):
             rows = list(csv.DictReader(handle))
             fieldnames = handle.seek(0) or next(csv.reader(handle))
         target = next(
-            row for row in rows
+            row
+            for row in rows
             if row["capture"] == "login.pcapng"
             and row["frame_index"] == "17"
             and row["property_hash"] == "0x416571ac"
@@ -50,7 +57,9 @@ class PlayerHpCalibrationTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as raw:
             path = Path(raw) / "property-records.csv"
             with path.open("w", encoding="ascii", newline="") as handle:
-                writer = csv.DictWriter(handle, fieldnames=fieldnames, lineterminator="\n")
+                writer = csv.DictWriter(
+                    handle, fieldnames=fieldnames, lineterminator="\n"
+                )
                 writer.writeheader()
                 writer.writerows(rows)
             with self.assertRaisesRegex(ValueError, "lead reconciliation changed"):

@@ -19,8 +19,14 @@ REPO_ROOT_DEFAULT = Path(__file__).resolve().parents[1]
 
 VALID_STATUSES = {"indexed", "distilled", "validated", "raw-only"}
 # Referenced sources are checked when present; local-only pointers are never checked.
-VALID_ORIGINAL_STATES = {"in-repo", "cold-stored", "cold-storage-pending",
-                         "referenced-sibling", "local-only", "private-repository"}
+VALID_ORIGINAL_STATES = {
+    "in-repo",
+    "cold-stored",
+    "cold-storage-pending",
+    "referenced-sibling",
+    "local-only",
+    "private-repository",
+}
 
 # Leve scope and objectives are tags; discipline determines content kind.
 VALID_CONTENT_KINDS = {
@@ -98,7 +104,9 @@ VALID_PROGRESSION_TRACKS = {
 }
 
 
-def validate_taxonomy_fields(scope: str, entry_id: str, entry: dict, errors: list[str]) -> None:
+def validate_taxonomy_fields(
+    scope: str, entry_id: str, entry: dict, errors: list[str]
+) -> None:
     """Validate optional taxonomy fields and attribute errors to ``scope``."""
     content_kind = entry.get("content_kind")
     if content_kind is not None and content_kind not in VALID_CONTENT_KINDS:
@@ -117,7 +125,10 @@ def validate_taxonomy_fields(scope: str, entry_id: str, entry: dict, errors: lis
         errors.append(f"{scope}/{entry_id}: invalid grand_company `{grand_company}`")
 
     progression_track = entry.get("progression_track")
-    if progression_track is not None and progression_track not in VALID_PROGRESSION_TRACKS:
+    if (
+        progression_track is not None
+        and progression_track not in VALID_PROGRESSION_TRACKS
+    ):
         errors.append(
             f"{scope}/{entry_id}: invalid progression_track `{progression_track}`"
         )
@@ -146,7 +157,9 @@ def validate_taxonomy_fields(scope: str, entry_id: str, entry: dict, errors: lis
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Validate xivl-captures retention and path policy.")
+    parser = argparse.ArgumentParser(
+        description="Validate xivl-captures retention and path policy."
+    )
     parser.add_argument(
         "--check-storage",
         action="store_true",
@@ -185,7 +198,9 @@ def load_yaml(path: Path) -> dict:
         return yaml.safe_load(handle)
 
 
-def resolve_storage_root(repo_root: Path, storage_id: str, local_config: dict | None) -> Path | None:
+def resolve_storage_root(
+    repo_root: Path, storage_id: str, local_config: dict | None
+) -> Path | None:
     if storage_id in ("repo", "repo-lfs"):
         return repo_root
     if not local_config:
@@ -243,16 +258,22 @@ def validate_study(
     if is_distilled is not None and not isinstance(is_distilled, bool):
         errors.append(f"{study_id}: distilled.distilled must be true or false")
     if status in {"distilled", "validated"} and not is_distilled:
-        errors.append(f"{study_id}: status `{status}` requires distilled.distilled=true")
+        errors.append(
+            f"{study_id}: status `{status}` requires distilled.distilled=true"
+        )
 
     distilled_artifacts = distilled.get("distilled_artifacts") or []
     if is_distilled:
         if not distilled_artifacts:
-            errors.append(f"{study_id}: distilled study is missing distilled.distilled_artifacts entries")
+            errors.append(
+                f"{study_id}: distilled study is missing distilled.distilled_artifacts entries"
+            )
         for relative_path in distilled_artifacts:
             target = study_dir / relative_path
             if not target.exists():
-                errors.append(f"{study_id}: missing distilled artifact `{relative_path}`")
+                errors.append(
+                    f"{study_id}: missing distilled artifact `{relative_path}`"
+                )
 
 
 def validate_source(
@@ -284,26 +305,34 @@ def validate_source(
                 f"{source_id}: in-repo storage should use storage_id `repo` (plain git) "
                 "or `repo-lfs` (actual LFS object)"
             )
-        objects_dir = Path(os.environ["XIVL_PCAP_OBJECTS_DIR"]) if (
-            source_id == "pcap-1.23b" and os.environ.get("XIVL_PCAP_OBJECTS_DIR")
-        ) else source_dir / "objects"
+        objects_dir = (
+            Path(os.environ["XIVL_PCAP_OBJECTS_DIR"])
+            if (source_id == "pcap-1.23b" and os.environ.get("XIVL_PCAP_OBJECTS_DIR"))
+            else source_dir / "objects"
+        )
         if not objects_dir.is_dir() and not CORPUS_ABSENT:
             errors.append(f"{source_id}: in-repo source is missing an objects/ dir")
 
     if original_state == "cold-stored":
         if not storage_id or storage_id in ("repo", "repo-lfs"):
-            errors.append(f"{source_id}: cold-stored originals require a non-repo storage_id")
+            errors.append(
+                f"{source_id}: cold-stored originals require a non-repo storage_id"
+            )
         if not storage_path:
             errors.append(f"{source_id}: cold-stored originals require storage.path")
 
         if check_storage and storage_id and storage_path:
             storage_root = resolve_storage_root(repo_root, storage_id, local_config)
             if storage_root is None:
-                errors.append(f"{source_id}: storage_id `{storage_id}` could not be resolved locally")
+                errors.append(
+                    f"{source_id}: storage_id `{storage_id}` could not be resolved locally"
+                )
             else:
                 target = storage_root / storage_path
                 if not target.exists():
-                    errors.append(f"{source_id}: cold-stored file `{target}` is missing")
+                    errors.append(
+                        f"{source_id}: cold-stored file `{target}` is missing"
+                    )
                 else:
                     # Cold-stored member hashes verify the restored file directly.
                     members = manifest.get("members") or []
@@ -324,13 +353,19 @@ def validate_source(
     if original_state == "referenced-sibling":
         # Verify a referenced source only when its checkout is present.
         if not storage_id or storage_id in ("repo", "repo-lfs"):
-            errors.append(f"{source_id}: referenced-sibling originals require a non-repo storage_id")
+            errors.append(
+                f"{source_id}: referenced-sibling originals require a non-repo storage_id"
+            )
         if not storage_path:
-            errors.append(f"{source_id}: referenced-sibling originals require storage.path")
+            errors.append(
+                f"{source_id}: referenced-sibling originals require storage.path"
+            )
         else:
             target = source_dir / storage_path
             if target.parent.exists() and not target.exists():
-                errors.append(f"{source_id}: referenced sibling path `{storage_path}` is missing")
+                errors.append(
+                    f"{source_id}: referenced sibling path `{storage_path}` is missing"
+                )
 
 
 def validate_catalog(
@@ -357,14 +392,20 @@ def validate_catalog(
                 for relative_path in entry.get("primary_paths", []):
                     target = repo_root / relative_path
                     if not target.exists():
-                        errors.append(f"catalog/{section}/{entry_id}: missing primary path `{relative_path}`")
+                        errors.append(
+                            f"catalog/{section}/{entry_id}: missing primary path `{relative_path}`"
+                        )
             if section == "scenarios":
                 validate_taxonomy_fields("catalog-scenario", entry_id, entry, errors)
 
         for missing in sorted(disk_ids - catalog_ids):
-            errors.append(f"catalog/{section}: `{missing}` exists on disk but has no catalog entry")
+            errors.append(
+                f"catalog/{section}: `{missing}` exists on disk but has no catalog entry"
+            )
         for missing in sorted(catalog_ids - disk_ids):
-            errors.append(f"catalog/{section}: entry `{missing}` has no matching item on disk")
+            errors.append(
+                f"catalog/{section}: entry `{missing}` has no matching item on disk"
+            )
 
     study_ids = {p.parent.name for p in study_paths}
     source_ids = {p.parent.name for p in source_paths}
@@ -381,80 +422,307 @@ _BACKTICK = re.compile(r"`([^`]+)`")
 # Negative-claim sections must not contribute search anchors.
 _GAPS_HEADING = re.compile(
     r"^#{1,6}\s*(gaps?|negative|not\s+(covered|in|present)|"
-    r"limitations?|caveats?|missing|absent|out\s+of\s+scope)\b", re.I)
+    r"limitations?|caveats?|missing|absent|out\s+of\s+scope)\b",
+    re.I,
+)
 _ARTICLE = re.compile(r"^(a|an|the)\s+", re.I)
 # Event variants collapse to ``event N``; other namespaces remain distinct.
-_EVENT_REF = re.compile(r"^(events?(?:\s*para|\s*update)?|messages?|mes(?:sage)?num|msgnum|opcodes?|csid|cs)\s*(\d+)$", re.I)
+_EVENT_REF = re.compile(
+    r"^(events?(?:\s*para|\s*update)?|messages?|mes(?:sage)?num|msgnum|opcodes?|csid|cs)\s*(\d+)$",
+    re.I,
+)
 # Split compound names and references before classification.
 _COMPOUND = re.compile(r"^(.+?)\s+(events?|messages?|opcodes?|csid|cs)\s*(\d+)$", re.I)
 _OPTION_REF = re.compile(r"^options?\s*\d+$", re.I)
 _PARAM_REF = re.compile(
     r"^(endpara|startpara|params?|id|idx|index|frame|seq|lv|lvl|level|"
     r"messagenumber|messagenum|mesnum|msgnum|msg|actindex|act|eventnum|"
-    r"mode|animationsub|animation|anim|cat|category)\.?\s*\d+$", re.I)
+    r"mode|animationsub|animation|anim|cat|category)\.?\s*\d+$",
+    re.I,
+)
 _TRAILING_ID = re.compile(r"\s+\d{6,}$")
-_RANGE_REF = re.compile(r"^(events?|options?|messages?|opcodes?)\s*\d+\s*-\s*\d+$", re.I)
+_RANGE_REF = re.compile(
+    r"^(events?|options?|messages?|opcodes?)\s*\d+\s*-\s*\d+$", re.I
+)
 _VERSION = re.compile(r"^[a-z]+\s+[\d]+(\.\d+)+$", re.I)
 _RECOVERS = re.compile(r"^.+\s+recovers?\s+\d+\s+(mp|hp|tp)$", re.I)
 # Capture-tool names are not game-content anchors.
 _TOOL_REF = re.compile(
     r"^(packetlog(?:ger)?|packetdb|opcodelog|chatlog|hexdump|pcap|wireshark|"
-    r"actionlog|combatlog|info)(\s+v?\d{1,3})?$", re.I)
+    r"actionlog|combatlog|info)(\s+v?\d{1,3})?$",
+    re.I,
+)
 _MAP_GRID = re.compile(r"^[A-Za-z]-\d{1,2}$")
 # Combat-log outcomes are not search anchors.
-_LOG_TAIL = {"boost", "up", "down", "resists", "resist", "resisted",
-             "recovers", "recover", "recovered", "misses", "miss", "missed",
-             "evades", "evade", "evaded", "parries", "parry", "parried",
-             "blocks", "block", "blocked", "absorbs", "absorb", "absorbed",
-             "gains", "gain", "loses", "lose", "regains", "regain",
-             "suppressed", "enhanced", "incapacitated", "defeated", "engaged",
-             "dealt"}
+_LOG_TAIL = {
+    "boost",
+    "up",
+    "down",
+    "resists",
+    "resist",
+    "resisted",
+    "recovers",
+    "recover",
+    "recovered",
+    "misses",
+    "miss",
+    "missed",
+    "evades",
+    "evade",
+    "evaded",
+    "parries",
+    "parry",
+    "parried",
+    "blocks",
+    "block",
+    "blocked",
+    "absorbs",
+    "absorb",
+    "absorbed",
+    "gains",
+    "gain",
+    "loses",
+    "lose",
+    "regains",
+    "regain",
+    "suppressed",
+    "enhanced",
+    "incapacitated",
+    "defeated",
+    "engaged",
+    "dealt",
+}
 _NAME_OK = re.compile(r"^[A-Za-z][A-Za-z0-9 ':.\-]*$")
 _COORD = re.compile(r"[xyz]\s*=\s*-?\d")
 _HEX = re.compile(r"0x[0-9A-Fa-f]+$|[0-9A-Fa-f]{16,}$")
-_MONTHS = {"jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"}
+_MONTHS = {
+    "jan",
+    "feb",
+    "mar",
+    "apr",
+    "may",
+    "jun",
+    "jul",
+    "aug",
+    "sep",
+    "oct",
+    "nov",
+    "dec",
+}
 
 # Tool words remain noise even below the document-frequency threshold.
 _TOOL_WORDS = {
-    "waypoint", "packetlog", "packet log", "opcode", "opcodes", "chatlog",
-    "chat log", "combatlog", "combat log", "actionlog", "hexdump", "pcap",
-    "worldmaster", "world master", "subpacket", "sub packet", "no effect",
-    "zone dump", "zonedump", "packets", "zones", "zone", "history",
+    "waypoint",
+    "packetlog",
+    "packet log",
+    "opcode",
+    "opcodes",
+    "chatlog",
+    "chat log",
+    "combatlog",
+    "combat log",
+    "actionlog",
+    "hexdump",
+    "pcap",
+    "worldmaster",
+    "world master",
+    "subpacket",
+    "sub packet",
+    "no effect",
+    "zone dump",
+    "zonedump",
+    "packets",
+    "zones",
+    "zone",
+    "history",
 }
 
 # Exact generic-family matches are noise; specific names containing them survive.
 _GENERIC = {
-    "amalj'aa", "amaljaa", "ixal", "ixali", "kobold", "sylph", "qiqirn",
+    "amalj'aa",
+    "amaljaa",
+    "ixal",
+    "ixali",
+    "kobold",
+    "sylph",
+    "qiqirn",
     "goblin",
-    "puk", "raptor", "antelope", "hippogryph", "opo-opo", "gnat", "basilisk",
-    "buffalo", "sabotender", "morbol", "crab", "vulture", "salamander", "wolf",
-    "hyena", "hellhound", "boar", "bomb", "ahriman", "zombie", "wight",
-    "cockatrice", "coblyn", "drake", "aldgoat", "juggernaut", "ogre", "imp",
-    "flytrap", "treant", "apkallu", "antling", "gigantoad", "coeurl", "goobbue",
-    "flan", "gargoyle", "wyvern", "weevil", "rat", "bat", "slug", "ghost",
-    "phurble", "angler", "elemental", "swarm", "jellyfish", "yarzon", "chigoe",
-    "hedgemole", "firefly", "funguar", "sheep", "spriggan", "dragon", "golem",
-    "dodo", "marmot", "ladybug",
-    "aetheryte", "treasure coffer", "gate", "campfire", "levemete",
+    "puk",
+    "raptor",
+    "antelope",
+    "hippogryph",
+    "opo-opo",
+    "gnat",
+    "basilisk",
+    "buffalo",
+    "sabotender",
+    "morbol",
+    "crab",
+    "vulture",
+    "salamander",
+    "wolf",
+    "hyena",
+    "hellhound",
+    "boar",
+    "bomb",
+    "ahriman",
+    "zombie",
+    "wight",
+    "cockatrice",
+    "coblyn",
+    "drake",
+    "aldgoat",
+    "juggernaut",
+    "ogre",
+    "imp",
+    "flytrap",
+    "treant",
+    "apkallu",
+    "antling",
+    "gigantoad",
+    "coeurl",
+    "goobbue",
+    "flan",
+    "gargoyle",
+    "wyvern",
+    "weevil",
+    "rat",
+    "bat",
+    "slug",
+    "ghost",
+    "phurble",
+    "angler",
+    "elemental",
+    "swarm",
+    "jellyfish",
+    "yarzon",
+    "chigoe",
+    "hedgemole",
+    "firefly",
+    "funguar",
+    "sheep",
+    "spriggan",
+    "dragon",
+    "golem",
+    "dodo",
+    "marmot",
+    "ladybug",
+    "aetheryte",
+    "treasure coffer",
+    "gate",
+    "campfire",
+    "levemete",
 }
 
 # Lowercase prose words distinguish log fragments from proper names.
 _PROSE_WORDS = {
-    "has", "have", "is", "are", "was", "were", "will", "appears", "appear",
-    "using", "obtained", "nothing", "here", "this", "that", "you", "your",
-    "out", "ordinary", "cannot", "does", "do", "it", "they", "there", "but",
+    "has",
+    "have",
+    "is",
+    "are",
+    "was",
+    "were",
+    "will",
+    "appears",
+    "appear",
+    "using",
+    "obtained",
+    "nothing",
+    "here",
+    "this",
+    "that",
+    "you",
+    "your",
+    "out",
+    "ordinary",
+    "cannot",
+    "does",
+    "do",
+    "it",
+    "they",
+    "there",
+    "but",
     "chatlog",
-    "absorb", "absorbs", "anticipate", "anticipates", "attack", "attacks",
-    "begin", "begins", "belong", "belongs", "block", "blocks", "bound", "call",
-    "calls", "cast", "casting", "casts", "counter", "cover", "covers",
-    "critical", "damage", "dealt", "defeat", "defeated", "defeats", "disrupt",
-    "disrupts", "duty", "effect", "engaged", "evade", "evades", "expend",
-    "expends", "fail", "fails", "fall", "falls", "fold", "gain", "gains",
-    "heals", "hit", "hits", "incapacitated", "interrupt", "interrupts", "join",
-    "joins", "leave", "leaves", "lose", "loses", "miss", "misses", "parries",
-    "parry", "point", "points", "ready", "readies", "recover", "recovers",
-    "regain", "regains", "resist", "resists", "steal", "steals", "switch",
-    "switches", "take", "takes", "taking", "use", "uses", "vanish", "vanishes",
+    "absorb",
+    "absorbs",
+    "anticipate",
+    "anticipates",
+    "attack",
+    "attacks",
+    "begin",
+    "begins",
+    "belong",
+    "belongs",
+    "block",
+    "blocks",
+    "bound",
+    "call",
+    "calls",
+    "cast",
+    "casting",
+    "casts",
+    "counter",
+    "cover",
+    "covers",
+    "critical",
+    "damage",
+    "dealt",
+    "defeat",
+    "defeated",
+    "defeats",
+    "disrupt",
+    "disrupts",
+    "duty",
+    "effect",
+    "engaged",
+    "evade",
+    "evades",
+    "expend",
+    "expends",
+    "fail",
+    "fails",
+    "fall",
+    "falls",
+    "fold",
+    "gain",
+    "gains",
+    "heals",
+    "hit",
+    "hits",
+    "incapacitated",
+    "interrupt",
+    "interrupts",
+    "join",
+    "joins",
+    "leave",
+    "leaves",
+    "lose",
+    "loses",
+    "miss",
+    "misses",
+    "parries",
+    "parry",
+    "point",
+    "points",
+    "ready",
+    "readies",
+    "recover",
+    "recovers",
+    "regain",
+    "regains",
+    "resist",
+    "resists",
+    "steal",
+    "steals",
+    "switch",
+    "switches",
+    "take",
+    "takes",
+    "taking",
+    "use",
+    "uses",
+    "vanish",
+    "vanishes",
 }
 
 
@@ -500,7 +768,15 @@ def _classify_term(token: str) -> tuple[str | None, str]:
     m = _EVENT_REF.match(ts)
     if m:
         prefix = m.group(1).lower().replace(" ", "")
-        kind = "event" if prefix.startswith("event") else "message" if (prefix.startswith("mes") or prefix.startswith("msg")) else "opcode" if prefix.startswith("opcode") else prefix
+        kind = (
+            "event"
+            if prefix.startswith("event")
+            else "message"
+            if (prefix.startswith("mes") or prefix.startswith("msg"))
+            else "opcode"
+            if prefix.startswith("opcode")
+            else prefix
+        )
         return "ref", "%s %s" % (kind, m.group(2))
     if _OPTION_REF.match(ts) or _PARAM_REF.match(ts) or _RANGE_REF.match(ts):
         return None, ""
@@ -521,8 +797,21 @@ def _classify_term(token: str) -> tuple[str | None, str]:
         return None, ""
     if ts[:3].lower() in _MONTHS and re.search(r"\b(19|20)\d\d\b", ts):
         return None, ""
-    if "/" in ts or ts.endswith((".zip", ".log", ".lua", ".sqlite", ".csv",
-                                 ".md", ".txt", ".db", ".json", ".dat", ".bin")):
+    if "/" in ts or ts.endswith(
+        (
+            ".zip",
+            ".log",
+            ".lua",
+            ".sqlite",
+            ".csv",
+            ".md",
+            ".txt",
+            ".db",
+            ".json",
+            ".dat",
+            ".bin",
+        )
+    ):
         return None, ""
     if _HEX.match(ts):
         return None, ""
@@ -565,7 +854,15 @@ def _set_terms(text: str) -> tuple[set[str], set[str]]:
             if head_kind == "name":
                 names.add(head_norm)
             pfx = compound.group(2).lower()
-            kind = "event" if pfx.startswith("event") else "message" if (pfx.startswith("mes") or pfx.startswith("msg")) else "opcode" if pfx.startswith("opcode") else pfx
+            kind = (
+                "event"
+                if pfx.startswith("event")
+                else "message"
+                if (pfx.startswith("mes") or pfx.startswith("msg"))
+                else "opcode"
+                if pfx.startswith("opcode")
+                else pfx
+            )
             refs.add("%s %s" % (kind, compound.group(3)))
             continue
         kind, norm = _classify_term(ts)
@@ -590,7 +887,8 @@ def _hint_covers(hints: list[str], term: str) -> bool:
 
 
 def validate_search_hints_recall(
-    repo_root: Path, worst: int = 40,
+    repo_root: Path,
+    worst: int = 40,
     verbose: bool = False,
 ) -> None:
     catalog = load_yaml(repo_root / "catalog" / "index.yaml") or {}
@@ -603,12 +901,16 @@ def validate_search_hints_recall(
 
     evidence: dict[str, str] = {}
     for path in sorted((repo_root / "studies").glob("*/derived/evidence-map.md")):
-        evidence[path.parent.parent.name] = path.read_text(encoding="utf-8", errors="replace")
+        evidence[path.parent.parent.name] = path.read_text(
+            encoding="utf-8", errors="replace"
+        )
     for path in sorted((repo_root / "catalog" / "scenarios").glob("*/evidence-map.md")):
         evidence[path.parent.name] = path.read_text(encoding="utf-8", errors="replace")
 
     if not evidence:
-        print("search_hints recall (advisory): no evidence-map.md files yet - nothing to check.")
+        print(
+            "search_hints recall (advisory): no evidence-map.md files yet - nothing to check."
+        )
         return
 
     # Ubiquitous names cannot distinguish a capture.
@@ -629,15 +931,23 @@ def validate_search_hints_recall(
             no_entry += 1
             continue
         # Tags are the fallback only when computed search hints are absent.
-        raw_hints = entry.get("search_hints") if entry.get("search_hints") is not None else entry.get("tags")
+        raw_hints = (
+            entry.get("search_hints")
+            if entry.get("search_hints") is not None
+            else entry.get("tags")
+        )
         hints = [_norm_term(h) for h in (raw_hints or [])]
         names, refs = _set_terms(text)
         # Actions and ubiquitous names do not identify a capture.
-        names = {n for n in names if n not in action_vocab and doc_freq.get(n, 0) <= df_max}
+        names = {
+            n for n in names if n not in action_vocab and doc_freq.get(n, 0) <= df_max
+        }
         miss_names = sorted(n for n in names if not _hint_covers(hints, n))
         miss_refs = sorted(r for r in refs if not _hint_covers(hints, r))
-        name_total += len(names); name_covered += len(names) - len(miss_names)
-        ref_total += len(refs); ref_covered += len(refs) - len(miss_refs)
+        name_total += len(names)
+        name_covered += len(names) - len(miss_names)
+        ref_total += len(refs)
+        ref_covered += len(refs) - len(miss_refs)
         if names and not miss_names:
             perfect_names += 1
         if miss_names or miss_refs:
@@ -648,26 +958,48 @@ def validate_search_hints_recall(
     ref_pct = (100.0 * ref_covered / ref_total) if ref_total else 100.0
     name_gaps = sum(1 for r in rows if r[0])
 
-    print("search_hints recall (advisory) - evidence-map.md anchors covered by search_hints/tags")
-    print(f"  corpus: {len(evidence)} evidence-maps (DF suppression > {df_max} captures)")
-    print(f"  NAMES (NPC/enemy/item): {name_covered}/{name_total} covered ({name_pct:.1f}%), "
-          f"{perfect_names} captures complete, {name_gaps} with name gaps")
-    print(f"  EVENT/MSG refs:         {ref_covered}/{ref_total} covered ({ref_pct:.1f}%)")
+    print(
+        "search_hints recall (advisory) - evidence-map.md anchors covered by search_hints/tags"
+    )
+    print(
+        f"  corpus: {len(evidence)} evidence-maps (DF suppression > {df_max} captures)"
+    )
+    print(
+        f"  NAMES (NPC/enemy/item): {name_covered}/{name_total} covered ({name_pct:.1f}%), "
+        f"{perfect_names} captures complete, {name_gaps} with name gaps"
+    )
+    print(
+        f"  EVENT/MSG refs:         {ref_covered}/{ref_total} covered ({ref_pct:.1f}%)"
+    )
     if no_entry:
         print(f"  note: {no_entry} evidence-maps have no catalog entry (skipped)")
     shown = rows if verbose else rows[:worst]
     for _, capture_id, miss_names, miss_refs in shown:
         names_show = miss_names if verbose else miss_names[:15]
-        more = "" if verbose or len(miss_names) <= 15 else f" (+{len(miss_names) - 15} more)"
+        more = (
+            ""
+            if verbose or len(miss_names) <= 15
+            else f" (+{len(miss_names) - 15} more)"
+        )
         print(f"\n  {capture_id}")
         if miss_names:
-            print(f"    missing names ({len(miss_names)}){more}: " + ", ".join(names_show))
+            print(
+                f"    missing names ({len(miss_names)}){more}: " + ", ".join(names_show)
+            )
         if miss_refs:
             refs_show = miss_refs if verbose else miss_refs[:8]
-            rmore = "" if verbose or len(miss_refs) <= 8 else f" (+{len(miss_refs) - 8} more)"
-            print(f"    missing refs ({len(miss_refs)}){rmore}: " + ", ".join(refs_show))
+            rmore = (
+                ""
+                if verbose or len(miss_refs) <= 8
+                else f" (+{len(miss_refs) - 8} more)"
+            )
+            print(
+                f"    missing refs ({len(miss_refs)}){rmore}: " + ", ".join(refs_show)
+            )
     if not verbose and len(rows) > worst:
-        print(f"\n  ... {len(rows) - worst} more captures with gaps (use --recall-verbose)")
+        print(
+            f"\n  ... {len(rows) - worst} more captures with gaps (use --recall-verbose)"
+        )
 
 
 def main() -> int:
@@ -675,7 +1007,9 @@ def main() -> int:
     repo_root = REPO_ROOT_DEFAULT
     if args.recall:
         validate_search_hints_recall(
-            repo_root, worst=args.recall_show, verbose=args.recall_verbose,
+            repo_root,
+            worst=args.recall_show,
+            verbose=args.recall_verbose,
         )
         return 0
     local_config_path = repo_root / "config" / "cold-storage.local.yaml"
@@ -708,15 +1042,19 @@ def main() -> int:
         for p in sorted((repo_root / "derived").glob("*.meta.yaml"))
     }
 
-    validate_catalog(repo_root, study_paths, source_paths, scenario_ids, dataset_ids, errors)
+    validate_catalog(
+        repo_root, study_paths, source_paths, scenario_ids, dataset_ids, errors
+    )
 
     if errors:
         for error in errors:
             print(f"ERROR: {error}")
         return 1
 
-    print(f"Validated {len(study_paths)} studies, {len(source_paths)} sources, "
-          f"{len(scenario_ids)} scenarios, {len(dataset_ids)} derived.")
+    print(
+        f"Validated {len(study_paths)} studies, {len(source_paths)} sources, "
+        f"{len(scenario_ids)} scenarios, {len(dataset_ids)} derived."
+    )
     return 0
 
 

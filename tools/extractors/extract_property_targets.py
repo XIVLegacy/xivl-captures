@@ -35,7 +35,9 @@ GENERATOR_VERSION = "4"
 DEFAULT_OUT = Path(__file__).parent.parent.parent / "derived" / "property_targets.json"
 
 
-def parse_property_block_with_targets(buf: bytes) -> list[tuple[str | None, int, int, bytes]]:
+def parse_property_block_with_targets(
+    buf: bytes,
+) -> list[tuple[str | None, int, int, bytes]]:
     """Return property records with the active target, or ``None`` before a marker."""
     out: list[tuple[str | None, int, int, bytes]] = []
     if not buf:
@@ -91,7 +93,12 @@ def walk_capture(path: Path) -> list[dict]:
                     _is, inner_opcode = struct.unpack_from("<HH", sub_body, 0)
                     if inner_opcode == OPCODE_SET_ACTOR_PROPERTY:
                         block = sub_body[PROPERTY_BLOCK_OFFSET:]
-                        for target, prop_id, prop_size, value in parse_property_block_with_targets(block):
+                        for (
+                            target,
+                            prop_id,
+                            prop_size,
+                            value,
+                        ) in parse_property_block_with_targets(block):
                             records.append(
                                 {
                                     "capture": path.name,

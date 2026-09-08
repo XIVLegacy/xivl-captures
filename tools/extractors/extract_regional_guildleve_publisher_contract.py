@@ -20,10 +20,12 @@ sys.path.insert(0, str(SCRIPT_DIR))
 from extract_00da_00e1_comparison import _decode_capture  # type: ignore  # noqa: E402
 from extract_property_stream_catalog import parse_records  # type: ignore  # noqa: E402
 
-OBJECTS_DIR = Path(os.environ.get(
-    "XIVL_PCAP_OBJECTS_DIR",
-    str(REPO_ROOT / "sources" / "pcap-1.23b" / "objects"),
-))
+OBJECTS_DIR = Path(
+    os.environ.get(
+        "XIVL_PCAP_OBJECTS_DIR",
+        str(REPO_ROOT / "sources" / "pcap-1.23b" / "objects"),
+    )
+)
 CAPTURE = OBJECTS_DIR / "party_battle_leve.pcapng"
 CAPTURE_SHA256 = "6327e5e1f5cbd51a9baaa9bcbacf53ca51c50a98fe4b66ae3e6bdecd9198089f"
 OUT = REPO_ROOT / "studies" / "regional-guildleve-publisher-contract" / "derived"
@@ -34,11 +36,26 @@ DIRECTOR_ACTOR_ID = 0x45100D44
 GUILDLEVE_ID = 12487
 
 FIELDS = [
-    "capture", "sequence", "stage", "capture_packet_index", "capture_timestamp_utc",
-    "lane_index", "lane", "direction", "frame_index", "frame_stream_offset",
-    "subevent_index", "subevent_offset", "subevent_size", "opcode",
-    "transport_source_actor_id_hex", "transport_target_actor_id_hex",
-    "event_name", "function_name", "attributable_fields", "application_sha256",
+    "capture",
+    "sequence",
+    "stage",
+    "capture_packet_index",
+    "capture_timestamp_utc",
+    "lane_index",
+    "lane",
+    "direction",
+    "frame_index",
+    "frame_stream_offset",
+    "subevent_index",
+    "subevent_offset",
+    "subevent_size",
+    "opcode",
+    "transport_source_actor_id_hex",
+    "transport_target_actor_id_hex",
+    "event_name",
+    "function_name",
+    "attributable_fields",
+    "application_sha256",
 ]
 
 LOCATORS = [
@@ -102,10 +119,16 @@ def _hex32(value: int) -> str:
     return f"0x{value:08x}"
 
 
-def _select(events: list[dict], direction: str, frame_index: int,
-            subevent_index: int, opcode: int) -> dict:
+def _select(
+    events: list[dict],
+    direction: str,
+    frame_index: int,
+    subevent_index: int,
+    opcode: int,
+) -> dict:
     matches = [
-        event for event in events
+        event
+        for event in events
         if event["direction"] == direction
         and event["frame_index"] == frame_index
         and event["subevent_index"] == subevent_index
@@ -120,10 +143,14 @@ def _select(events: list[dict], direction: str, frame_index: int,
 
 
 def order_rows(rows: list[dict]) -> None:
-    rows.sort(key=lambda row: (
-        row["capture_packet_index"], row["frame_stream_offset"],
-        row["subevent_offset"], row["direction"],
-    ))
+    rows.sort(
+        key=lambda row: (
+            row["capture_packet_index"],
+            row["frame_stream_offset"],
+            row["subevent_offset"],
+            row["direction"],
+        )
+    )
 
 
 def _fields(stage: str, event: dict, app: bytes) -> str:
@@ -133,18 +160,31 @@ def _fields(stage: str, event: dict, app: bytes) -> str:
         name = _event_name(app)
         if trigger != PLAYER_ACTOR_ID or name != "talkDefault":
             raise ValueError(f"unexpected EventStart identity at {stage}")
-        expected_owner = START_OWNER_ACTOR_ID if stage == "activation-interaction" else REWARD_OWNER_ACTOR_ID
+        expected_owner = (
+            START_OWNER_ACTOR_ID
+            if stage == "activation-interaction"
+            else REWARD_OWNER_ACTOR_ID
+        )
         if owner != expected_owner:
             raise ValueError(f"unexpected EventStart owner at {stage}")
         return f"trigger_actor_id={_hex32(trigger)};owner_actor_id={_hex32(owner)}"
     if event["opcode_value"] == 0x0130:
         function = _function_name(app)
         if function != EXPECTED_FUNCTIONS[event["frame_index"]]:
-            raise ValueError(f"unexpected RunEvent function at frame {event['frame_index']}")
-        if function in {"eventGLSelectDetail", "eventGLDifficulty", "eventGLStart", "eventGuildleveReward"}:
+            raise ValueError(
+                f"unexpected RunEvent function at frame {event['frame_index']}"
+            )
+        if function in {
+            "eventGLSelectDetail",
+            "eventGLDifficulty",
+            "eventGLStart",
+            "eventGuildleveReward",
+        }:
             value = int.from_bytes(app[0x4C:0x4E], "big")
             if value != GUILDLEVE_ID:
-                raise ValueError(f"unexpected guildleve ID prefix at {function}: {value}")
+                raise ValueError(
+                    f"unexpected guildleve ID prefix at {function}: {value}"
+                )
             return f"guildleve_id={value}"
         return ""
     if event["opcode_value"] == 0x017C:
@@ -154,8 +194,16 @@ def _fields(stage: str, event: dict, app: bytes) -> str:
         return f"group_type={group_type}"
     if event["opcode_value"] == 0x0183:
         count = app[0x70]
-        actors = [int.from_bytes(app[0x10 + slot * 0x0C:0x14 + slot * 0x0C], "little") for slot in range(count)]
-        expected = [DIRECTOR_ACTOR_ID, PLAYER_ACTOR_ID, 0x029B27D3, REWARD_OWNER_ACTOR_ID - 0x16]
+        actors = [
+            int.from_bytes(app[0x10 + slot * 0x0C : 0x14 + slot * 0x0C], "little")
+            for slot in range(count)
+        ]
+        expected = [
+            DIRECTOR_ACTOR_ID,
+            PLAYER_ACTOR_ID,
+            0x029B27D3,
+            REWARD_OWNER_ACTOR_ID - 0x16,
+        ]
         if actors != expected:
             raise ValueError(f"unexpected initial content members {actors}")
         return f"member_count={count};member_actor_ids={';'.join(_hex32(actor) for actor in actors)}"
@@ -164,7 +212,13 @@ def _fields(stage: str, event: dict, app: bytes) -> str:
         wanted = {row["property_hash"]: row for row in records}
         signal = wanted.get("0xafedf257")
         start_time = wanted.get("0xd2c67973")
-        if len(records) != 5 or declared != 104 or terminated or signal is None or start_time is None:
+        if (
+            len(records) != 5
+            or declared != 104
+            or terminated
+            or signal is None
+            or start_time is None
+        ):
             raise ValueError("director finish property block shape changed")
         if signal["value_hex"] != "ff" or start_time["value_hex"] != "00000000":
             raise ValueError("director finish property values changed")
@@ -194,27 +248,33 @@ def _build_party_outputs(path: Path = CAPTURE) -> dict[str, bytes]:
     for stage, direction, frame_index, subevent_index, opcode in LOCATORS:
         event = _select(events, direction, frame_index, subevent_index, opcode)
         app = event["sub_body"][16:]
-        rows.append({
-            "capture": path.name,
-            "stage": stage,
-            "capture_packet_index": event["capture_packet_index"],
-            "capture_timestamp_utc": event["capture_timestamp_utc"],
-            "lane_index": event["lane_index"],
-            "lane": event["lane"],
-            "direction": direction,
-            "frame_index": frame_index,
-            "frame_stream_offset": event["frame_stream_offset"],
-            "subevent_index": subevent_index,
-            "subevent_offset": event["subevent_offset"],
-            "subevent_size": event["subevent_size"],
-            "opcode": f"0x{opcode:04x}",
-            "transport_source_actor_id_hex": _hex32(event["transport_source_actor_id"]),
-            "transport_target_actor_id_hex": _hex32(event["transport_target_actor_id"]),
-            "event_name": _event_name(app) if opcode == 0x012D else "",
-            "function_name": _function_name(app) if opcode == 0x0130 else "",
-            "attributable_fields": _fields(stage, event, app),
-            "application_sha256": sha256_bytes(app),
-        })
+        rows.append(
+            {
+                "capture": path.name,
+                "stage": stage,
+                "capture_packet_index": event["capture_packet_index"],
+                "capture_timestamp_utc": event["capture_timestamp_utc"],
+                "lane_index": event["lane_index"],
+                "lane": event["lane"],
+                "direction": direction,
+                "frame_index": frame_index,
+                "frame_stream_offset": event["frame_stream_offset"],
+                "subevent_index": subevent_index,
+                "subevent_offset": event["subevent_offset"],
+                "subevent_size": event["subevent_size"],
+                "opcode": f"0x{opcode:04x}",
+                "transport_source_actor_id_hex": _hex32(
+                    event["transport_source_actor_id"]
+                ),
+                "transport_target_actor_id_hex": _hex32(
+                    event["transport_target_actor_id"]
+                ),
+                "event_name": _event_name(app) if opcode == 0x012D else "",
+                "function_name": _function_name(app) if opcode == 0x0130 else "",
+                "attributable_fields": _fields(stage, event, app),
+                "application_sha256": sha256_bytes(app),
+            }
+        )
     order_rows(rows)
     for sequence, row in enumerate(rows, 1):
         row["sequence"] = sequence
@@ -226,7 +286,9 @@ def _build_party_outputs(path: Path = CAPTURE) -> dict[str, bytes]:
     }
     publisher_functions = sorted(run_functions & {"eventTalkCard", "eventTalkDetail"})
     if publisher_functions:
-        raise ValueError(f"publisher acceptance functions appeared: {publisher_functions}")
+        raise ValueError(
+            f"publisher acceptance functions appeared: {publisher_functions}"
+        )
 
     accounting = {
         "schema_version": 1,
@@ -306,7 +368,9 @@ reward grant, or journal-row removal/retention.
     writer.writerows(rows)
     return {
         "timeline.csv": csv_out.getvalue().encode("ascii"),
-        "accounting.json": (json.dumps(accounting, indent=2, sort_keys=True) + "\n").encode("ascii"),
+        "accounting.json": (
+            json.dumps(accounting, indent=2, sort_keys=True) + "\n"
+        ).encode("ascii"),
         "verdicts.md": verdicts.encode("ascii"),
     }
 
@@ -343,17 +407,33 @@ ACCEPTANCE_SPECS = {
             ("regional-event-end", "s2c", 65, 1, 0x0131),
         ],
         "functions": {
-            11: "eventTalkType", 16: "eventTalkPack", 27: "eventTalkCard",
-            32: "eventTalkDetail", 37: "eventTalkAfterOffer",
-            42: "eventTalkCard", 48: "eventTalkDetail", 52: "eventTalkCard",
-            54: "eventTalkPack", 61: "eventTalkType",
+            11: "eventTalkType",
+            16: "eventTalkPack",
+            27: "eventTalkCard",
+            32: "eventTalkDetail",
+            37: "eventTalkAfterOffer",
+            42: "eventTalkCard",
+            48: "eventTalkDetail",
+            52: "eventTalkCard",
+            54: "eventTalkPack",
+            61: "eventTalkType",
         },
         "counts": {
-            "c2s:0x0001": 24, "c2s:0x00ca": 142, "c2s:0x00cc": 1,
-            "c2s:0x00cd": 1, "c2s:0x012d": 1, "c2s:0x012e": 10,
-            "s2c:0x0001": 24, "s2c:0x00cf": 120, "s2c:0x00d2": 1,
-            "s2c:0x0130": 10, "s2c:0x0131": 1, "s2c:0x0137": 2,
-            "s2c:0x0161": 4, "s2c:0x0167": 4, "s2c:0x018d": 5,
+            "c2s:0x0001": 24,
+            "c2s:0x00ca": 142,
+            "c2s:0x00cc": 1,
+            "c2s:0x00cd": 1,
+            "c2s:0x012d": 1,
+            "c2s:0x012e": 10,
+            "s2c:0x0001": 24,
+            "s2c:0x00cf": 120,
+            "s2c:0x00d2": 1,
+            "s2c:0x0130": 10,
+            "s2c:0x0131": 1,
+            "s2c:0x0137": 2,
+            "s2c:0x0161": 4,
+            "s2c:0x0167": 4,
+            "s2c:0x018d": 5,
         },
     },
     "accept_local_leve.pcapng": {
@@ -384,16 +464,32 @@ ACCEPTANCE_SPECS = {
             ("local-event-end", "s2c", 54, 0, 0x0131),
         ],
         "functions": {
-            5: "talkOfferWelcome", 9: "askOfferPack", 15: "askOfferRank",
-            20: "askOfferQuest", 30: "talkOfferDecide", 34: "askOfferQuest",
-            42: "askOfferRank", 46: "askOfferPack", 50: "finishTalkTurn",
+            5: "talkOfferWelcome",
+            9: "askOfferPack",
+            15: "askOfferRank",
+            20: "askOfferQuest",
+            30: "talkOfferDecide",
+            34: "askOfferQuest",
+            42: "askOfferRank",
+            46: "askOfferPack",
+            50: "finishTalkTurn",
         },
         "counts": {
-            "c2s:0x0001": 22, "c2s:0x00ca": 126, "c2s:0x00cc": 1,
-            "c2s:0x00cd": 1, "c2s:0x012d": 1, "c2s:0x012e": 9,
-            "s2c:0x0001": 22, "s2c:0x00cf": 110, "s2c:0x00d2": 1,
-            "s2c:0x00d9": 3, "s2c:0x0130": 9, "s2c:0x0131": 1,
-            "s2c:0x0137": 1, "s2c:0x0167": 2, "s2c:0x018d": 5,
+            "c2s:0x0001": 22,
+            "c2s:0x00ca": 126,
+            "c2s:0x00cc": 1,
+            "c2s:0x00cd": 1,
+            "c2s:0x012d": 1,
+            "c2s:0x012e": 9,
+            "s2c:0x0001": 22,
+            "s2c:0x00cf": 110,
+            "s2c:0x00d2": 1,
+            "s2c:0x00d9": 3,
+            "s2c:0x0130": 9,
+            "s2c:0x0131": 1,
+            "s2c:0x0137": 1,
+            "s2c:0x0167": 2,
+            "s2c:0x018d": 5,
         },
     },
 }
@@ -417,7 +513,7 @@ def decode_lua_values(data: bytes) -> tuple[list[str], int | None]:
         if tag in {0x00, 0x06}:
             if offset + 4 > len(data):
                 raise ValueError("truncated Lua integer/reference")
-            value = int.from_bytes(data[offset:offset + 4], "big")
+            value = int.from_bytes(data[offset : offset + 4], "big")
             offset += 4
             values.append(("int:" if tag == 0x00 else "actor:") + str(value))
         elif tag == 0x03:
@@ -484,7 +580,9 @@ def _window_counts(events: list[dict], start: int, end: int) -> dict[str, int]:
         if event["lane"] != "main" or not start <= event["capture_packet_index"] <= end:
             continue
         opcode = event.get("opcode_value")
-        key = f"{event['direction']}:" + ("none" if opcode is None else f"0x{opcode:04x}")
+        key = f"{event['direction']}:" + (
+            "none" if opcode is None else f"0x{opcode:04x}"
+        )
         counts[key] += 1
     return dict(sorted(counts.items()))
 
@@ -498,27 +596,33 @@ def _build_acceptance_capture(name: str, spec: dict) -> tuple[list[dict], dict]:
     for stage, direction, frame_index, subevent_index, opcode in spec["locators"]:
         event = _select(events, direction, frame_index, subevent_index, opcode)
         app = event["sub_body"][16:]
-        rows.append({
-            "capture": name,
-            "stage": stage,
-            "capture_packet_index": event["capture_packet_index"],
-            "capture_timestamp_utc": event["capture_timestamp_utc"],
-            "lane_index": event["lane_index"],
-            "lane": event["lane"],
-            "direction": direction,
-            "frame_index": frame_index,
-            "frame_stream_offset": event["frame_stream_offset"],
-            "subevent_index": subevent_index,
-            "subevent_offset": event["subevent_offset"],
-            "subevent_size": event["subevent_size"],
-            "opcode": f"0x{opcode:04x}",
-            "transport_source_actor_id_hex": _hex32(event["transport_source_actor_id"]),
-            "transport_target_actor_id_hex": _hex32(event["transport_target_actor_id"]),
-            "event_name": _event_name(app) if opcode == 0x012D else "",
-            "function_name": _function_name(app) if opcode == 0x0130 else "",
-            "attributable_fields": _acceptance_fields(stage, event, app, spec),
-            "application_sha256": sha256_bytes(app),
-        })
+        rows.append(
+            {
+                "capture": name,
+                "stage": stage,
+                "capture_packet_index": event["capture_packet_index"],
+                "capture_timestamp_utc": event["capture_timestamp_utc"],
+                "lane_index": event["lane_index"],
+                "lane": event["lane"],
+                "direction": direction,
+                "frame_index": frame_index,
+                "frame_stream_offset": event["frame_stream_offset"],
+                "subevent_index": subevent_index,
+                "subevent_offset": event["subevent_offset"],
+                "subevent_size": event["subevent_size"],
+                "opcode": f"0x{opcode:04x}",
+                "transport_source_actor_id_hex": _hex32(
+                    event["transport_source_actor_id"]
+                ),
+                "transport_target_actor_id_hex": _hex32(
+                    event["transport_target_actor_id"]
+                ),
+                "event_name": _event_name(app) if opcode == 0x012D else "",
+                "function_name": _function_name(app) if opcode == 0x0130 else "",
+                "attributable_fields": _acceptance_fields(stage, event, app, spec),
+                "application_sha256": sha256_bytes(app),
+            }
+        )
     order_rows(rows)
     for sequence, row in enumerate(rows, 1):
         row["sequence"] = sequence
@@ -537,8 +641,12 @@ def _build_acceptance_capture(name: str, spec: dict) -> tuple[list[dict], dict]:
             "s2c_frames": totals["s2c_frames"],
             "c2s_wrapped_subevents": totals["c2s_wrapped_subevents"],
             "s2c_wrapped_subevents": totals["s2c_wrapped_subevents"],
-            "c2s_admitted_unparsed_stream_bytes": totals["c2s_admitted_unparsed_stream_bytes"],
-            "s2c_admitted_unparsed_stream_bytes": totals["s2c_admitted_unparsed_stream_bytes"],
+            "c2s_admitted_unparsed_stream_bytes": totals[
+                "c2s_admitted_unparsed_stream_bytes"
+            ],
+            "s2c_admitted_unparsed_stream_bytes": totals[
+                "s2c_admitted_unparsed_stream_bytes"
+            ],
         },
         "transaction_window": {
             "first_capture_packet_index": start,
@@ -552,7 +660,9 @@ def _build_acceptance_capture(name: str, spec: dict) -> tuple[list[dict], dict]:
 
 def build_outputs(path: Path = CAPTURE) -> dict[str, bytes]:
     party_outputs = _build_party_outputs(path)
-    party_rows = list(csv.DictReader(io.StringIO(party_outputs["timeline.csv"].decode("ascii"))))
+    party_rows = list(
+        csv.DictReader(io.StringIO(party_outputs["timeline.csv"].decode("ascii")))
+    )
     party_accounting = json.loads(party_outputs["accounting.json"])
     all_rows = []
     acceptance_accounting = []
@@ -654,7 +764,9 @@ and slot contract is not shared.
     writer.writerows(all_rows)
     return {
         "timeline.csv": csv_out.getvalue().encode("ascii"),
-        "accounting.json": (json.dumps(accounting, indent=2, sort_keys=True) + "\n").encode("ascii"),
+        "accounting.json": (
+            json.dumps(accounting, indent=2, sort_keys=True) + "\n"
+        ).encode("ascii"),
         "verdicts.md": verdicts.encode("ascii"),
     }
 
@@ -676,7 +788,10 @@ def main() -> int:
     if stale:
         print("stale regional guildleve publisher artifacts:\n  " + "\n  ".join(stale))
         return 1
-    print(("verified" if args.check else "wrote") + " 3 regional guildleve publisher artifacts")
+    print(
+        ("verified" if args.check else "wrote")
+        + " 3 regional guildleve publisher artifacts"
+    )
     return 0
 
 

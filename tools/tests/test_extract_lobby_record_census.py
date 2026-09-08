@@ -6,7 +6,11 @@ import unittest
 
 import jsonschema
 
-from tools.extractors.extract_lobby_record_census import OUTPUT, REPO_ROOT, validate_fixture
+from tools.extractors.extract_lobby_record_census import (
+    OUTPUT,
+    REPO_ROOT,
+    validate_fixture,
+)
 
 
 class LobbyRecordCensusTests(unittest.TestCase):
@@ -18,7 +22,9 @@ class LobbyRecordCensusTests(unittest.TestCase):
 
     def test_rejects_shifted_stream_offset(self):
         mutated = copy.deepcopy(self.fixture)
-        mutated["sessions"][1]["directions"][1]["frames"][3]["subrecords"][2]["streamOffset"] += 1
+        mutated["sessions"][1]["directions"][1]["frames"][3]["subrecords"][2][
+            "streamOffset"
+        ] += 1
         with self.assertRaisesRegex(ValueError, "stream offset changed"):
             validate_fixture(mutated)
 
@@ -30,19 +36,25 @@ class LobbyRecordCensusTests(unittest.TestCase):
 
     def test_rejects_changed_inner_opcode(self):
         mutated = copy.deepcopy(self.fixture)
-        mutated["sessions"][1]["directions"][1]["frames"][4]["subrecords"][0]["innerOpcode"] += 1
+        mutated["sessions"][1]["directions"][1]["frames"][4]["subrecords"][0][
+            "innerOpcode"
+        ] += 1
         with self.assertRaisesRegex(ValueError, "census changed"):
             validate_fixture(mutated)
 
     def test_rejects_shifted_encrypted_extent(self):
         mutated = copy.deepcopy(self.fixture)
-        mutated["sessions"][0]["directions"][1]["frames"][1]["subrecords"][0]["encryptedExtent"]["offset"] += 8
+        mutated["sessions"][0]["directions"][1]["frames"][1]["subrecords"][0][
+            "encryptedExtent"
+        ]["offset"] += 8
         with self.assertRaisesRegex(ValueError, "encrypted extent changed"):
             validate_fixture(mutated)
 
     def test_rejects_changed_shared_correspondence(self):
         mutated = copy.deepcopy(self.fixture)
-        mutated["crossSession"]["sharedFrameShapes"][0]["occurrences"][1]["sessionId"] = "session-1"
+        mutated["crossSession"]["sharedFrameShapes"][0]["occurrences"][1][
+            "sessionId"
+        ] = "session-1"
         with self.assertRaisesRegex(ValueError, "does not cover both sessions"):
             validate_fixture(mutated)
 
@@ -75,7 +87,9 @@ class LobbyRecordCensusTests(unittest.TestCase):
         record = mutated["sessions"][0]["directions"][0]["frames"][0]["subrecords"][0]
         record["plaintext"] = "private"
         schema = json.loads(
-            (REPO_ROOT / "schemas/lobby-record-census.schema.json").read_text(encoding="utf-8")
+            (REPO_ROOT / "schemas/lobby-record-census.schema.json").read_text(
+                encoding="utf-8"
+            )
         )
         errors = list(jsonschema.Draft202012Validator(schema).iter_errors(mutated))
         self.assertTrue(errors)

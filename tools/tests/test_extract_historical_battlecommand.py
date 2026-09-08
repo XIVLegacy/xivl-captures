@@ -9,7 +9,9 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 MODULE_PATH = REPO_ROOT / "tools" / "extract_historical_battlecommand.py"
-SPEC = importlib.util.spec_from_file_location("extract_historical_battlecommand", MODULE_PATH)
+SPEC = importlib.util.spec_from_file_location(
+    "extract_historical_battlecommand", MODULE_PATH
+)
 assert SPEC and SPEC.loader
 extractor = importlib.util.module_from_spec(SPEC)
 sys.modules[SPEC.name] = extractor
@@ -58,16 +60,18 @@ class HistoricalBattleCommandTest(unittest.TestCase):
 
     def test_renders_ascii_deterministically(self) -> None:
         first = extractor.render_document(self.document)
-        second = extractor.render_document(extractor.build_document(extractor.DEFAULT_SOURCE))
+        second = extractor.render_document(
+            extractor.build_document(extractor.DEFAULT_SOURCE)
+        )
         self.assertEqual(first, second)
         first.decode("ascii")
 
     def test_preserves_rows_after_repeated_blank_gap(self) -> None:
         root = ET.fromstring(
             f'''<office:document-content
-                xmlns:office="{extractor.NS['office']}"
-                xmlns:table="{extractor.NS['table']}"
-                xmlns:text="{extractor.NS['text']}">
+                xmlns:office="{extractor.NS["office"]}"
+                xmlns:table="{extractor.NS["table"]}"
+                xmlns:text="{extractor.NS["text"]}">
               <office:body><office:spreadsheet><table:table table:name="Gap">
                 <table:table-row><table:table-cell office:value-type="string"><text:p>head</text:p></table:table-cell></table:table-row>
                 <table:table-row table:number-rows-repeated="3"><table:table-cell/></table:table-row>

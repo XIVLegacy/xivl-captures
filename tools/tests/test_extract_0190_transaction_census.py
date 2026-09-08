@@ -17,13 +17,20 @@ import extract_0190_transaction_census as census  # noqa: E402
 
 def target_body(opcode, *, key1=0, key2=0, vector=None, tail=None):
     application_size = 0x68 if opcode == census.RECORD else 8
-    body = bytearray(census.INNER_HEADER_LEN + census.PACKET_HEADER_TAIL_SIZE + application_size)
+    body = bytearray(
+        census.INNER_HEADER_LEN + census.PACKET_HEADER_TAIL_SIZE + application_size
+    )
     struct.pack_into("<H", body, 2, opcode)
     if opcode == census.RECORD:
         values = [key1, key2] + list(vector or range(census.VECTOR_WORDS))
-        struct.pack_into("<18I", body, census.INNER_HEADER_LEN + census.PACKET_HEADER_TAIL_SIZE, *values)
+        struct.pack_into(
+            "<18I",
+            body,
+            census.INNER_HEADER_LEN + census.PACKET_HEADER_TAIL_SIZE,
+            *values,
+        )
         if tail is not None:
-            body[-census.TAIL_SIZE:] = tail
+            body[-census.TAIL_SIZE :] = tail
     return bytes(body)
 
 
@@ -44,9 +51,9 @@ class Map0190TransactionCensusTests(unittest.TestCase):
     @staticmethod
     def accounting():
         return json.loads(
-            (ROOT / "studies" / census.STUDY_ID / "derived" / "accounting.json").read_text(
-                encoding="ascii"
-            )
+            (
+                ROOT / "studies" / census.STUDY_ID / "derived" / "accounting.json"
+            ).read_text(encoding="ascii")
         )
 
     def test_decodes_established_record_layout(self):
@@ -63,7 +70,9 @@ class Map0190TransactionCensusTests(unittest.TestCase):
         self.assertEqual(decoded["tail"], tail)
 
     def test_rejects_mutated_shapes(self):
-        decoded, reason = census.decode_application(census.RECORD, 1, target_body(census.RECORD))
+        decoded, reason = census.decode_application(
+            census.RECORD, 1, target_body(census.RECORD)
+        )
         self.assertIsNone(decoded)
         self.assertEqual(reason, "unexpected_subevent_size")
         decoded, reason = census.decode_application(
@@ -79,7 +88,15 @@ class Map0190TransactionCensusTests(unittest.TestCase):
             event(census.RECORD, 0),
             event(census.BEGIN, 1, zero_application=True),
             event(0x0137, 2),
-            event(census.RECORD, 3, application=b"a", key1=1, key2=0, vector=(0,) * 16, tail=bytes(32)),
+            event(
+                census.RECORD,
+                3,
+                application=b"a",
+                key1=1,
+                key2=0,
+                vector=(0,) * 16,
+                tail=bytes(32),
+            ),
             event(census.END, 4, zero_application=True),
             event(census.END, 5, zero_application=True),
         ]
@@ -114,23 +131,30 @@ class Map0190TransactionCensusTests(unittest.TestCase):
 
     def test_retransmitted_segments_are_separate_from_decoded_events(self):
         packets = [
-            IP(src="203.0.113.10", dst="203.0.113.20") /
-            TCP(sport=54992, dport=50000, seq=100) / Raw(b"abcd"),
-            IP(src="203.0.113.10", dst="203.0.113.20") /
-            TCP(sport=54992, dport=50000, seq=100) / Raw(b"abcd"),
+            IP(src="203.0.113.10", dst="203.0.113.20")
+            / TCP(sport=54992, dport=50000, seq=100)
+            / Raw(b"abcd"),
+            IP(src="203.0.113.10", dst="203.0.113.20")
+            / TCP(sport=54992, dport=50000, seq=100)
+            / Raw(b"abcd"),
         ]
-        lanes = [{
-            "server_endpoint": ("203.0.113.10", 54992),
-            "client_endpoint": ("203.0.113.20", 50000),
-        }]
-        with patch.object(census, "reconstruct_lanes", return_value=lanes), patch.object(
-            census, "read_packets", return_value=packets
+        lanes = [
+            {
+                "server_endpoint": ("203.0.113.10", 54992),
+                "client_endpoint": ("203.0.113.20", 50000),
+            }
+        ]
+        with (
+            patch.object(census, "reconstruct_lanes", return_value=lanes),
+            patch.object(census, "read_packets", return_value=packets),
         ):
             self.assertEqual(census._retransmitted_segments(Path("unused")), 1)
 
     def test_accounting_schema_rejects_count_mutation(self):
         schema = json.loads(
-            (ROOT / "schemas" / "map-0190-transaction-census.schema.json").read_text(encoding="ascii")
+            (ROOT / "schemas" / "map-0190-transaction-census.schema.json").read_text(
+                encoding="ascii"
+            )
         )
         accounting = self.accounting()
         jsonschema.validate(accounting, schema)
@@ -158,13 +182,20 @@ class Map0190TransactionCensusTests(unittest.TestCase):
             corpus["records_in_complete_spans"],
         )
         self.assertEqual(
-            corpus["target_s2c_0x018f"] + corpus["target_s2c_0x0190"] + corpus["target_s2c_0x0191"],
+            corpus["target_s2c_0x018f"]
+            + corpus["target_s2c_0x0190"]
+            + corpus["target_s2c_0x0191"],
             5625,
         )
         vectors = accounting["vectors"]
-        self.assertEqual(sum(vectors["value_bands"].values()), 16 * vectors["record_vectors"])
         self.assertEqual(
-            sum(int(words) * count for words, count in vectors["nonzero_word_count_histogram"].items()),
+            sum(vectors["value_bands"].values()), 16 * vectors["record_vectors"]
+        )
+        self.assertEqual(
+            sum(
+                int(words) * count
+                for words, count in vectors["nonzero_word_count_histogram"].items()
+            ),
             sum(vectors["position_nonzero_counts"].values()),
         )
         self.assertEqual(
@@ -173,7 +204,10 @@ class Map0190TransactionCensusTests(unittest.TestCase):
         )
         self.assertEqual(
             sum(vectors["changed_position_counts"].values()),
-            sum(int(words) * count for words, count in vectors["changed_word_count_histogram"].items()),
+            sum(
+                int(words) * count
+                for words, count in vectors["changed_word_count_histogram"].items()
+            ),
         )
 
     def test_public_products_reject_raw_security_surfaces(self):
@@ -186,8 +220,17 @@ class Map0190TransactionCensusTests(unittest.TestCase):
 
     def test_public_span_columns_exclude_raw_record_surfaces(self):
         forbidden = (
-            "application", "payload", "key", "vector", "tail", "actor",
-            "endpoint", "session", "timestamp", "address", "token",
+            "application",
+            "payload",
+            "key",
+            "vector",
+            "tail",
+            "actor",
+            "endpoint",
+            "session",
+            "timestamp",
+            "address",
+            "token",
         )
         for field in census.SPAN_FIELDS:
             self.assertFalse(any(term in field for term in forbidden), field)

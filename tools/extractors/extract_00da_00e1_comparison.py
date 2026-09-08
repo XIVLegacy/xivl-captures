@@ -40,25 +40,60 @@ STUDY_ID = "map-00da-00e1-comparison"
 OUT = REPO_ROOT / "studies" / STUDY_ID / "derived"
 
 OCCURRENCE_FIELDS = [
-    "capture", "lane_index", "lane", "direction", "direction_event_index",
-    "frame_index", "frame_stream_offset", "capture_packet_index",
-    "capture_timestamp_utc", "outer_timestamp_or_seq_hex", "outer_frame_size",
-    "inflated_frame_body_size", "subevent_index", "subevent_offset",
-    "subevent_size", "subevent_type", "transport_source_actor_id_hex",
-    "transport_target_actor_id_hex", "transport_counter_hex", "inner_header_word0",
-    "opcode", "inner_reserved_hex", "inner_body_size", "inner_body_hex",
+    "capture",
+    "lane_index",
+    "lane",
+    "direction",
+    "direction_event_index",
+    "frame_index",
+    "frame_stream_offset",
+    "capture_packet_index",
+    "capture_timestamp_utc",
+    "outer_timestamp_or_seq_hex",
+    "outer_frame_size",
+    "inflated_frame_body_size",
+    "subevent_index",
+    "subevent_offset",
+    "subevent_size",
+    "subevent_type",
+    "transport_source_actor_id_hex",
+    "transport_target_actor_id_hex",
+    "transport_counter_hex",
+    "inner_header_word0",
+    "opcode",
+    "inner_reserved_hex",
+    "inner_body_size",
+    "inner_body_hex",
     "inner_payload_size",
-    "game_message_preamble_hex", "preamble_word0_u32_hex",
-    "preamble_word1_u32_hex", "application_size", "application_hex",
-    "application_u16_le", "application_u32_le", "inner_body_sha256",
+    "game_message_preamble_hex",
+    "preamble_word0_u32_hex",
+    "preamble_word1_u32_hex",
+    "application_size",
+    "application_hex",
+    "application_u16_le",
+    "application_u32_le",
+    "inner_body_sha256",
 ]
 
 NEIGHBOR_FIELDS = [
-    "anchor_index", "capture", "lane_index", "lane", "direction", "opcode",
-    "relative_event", "neighbor_direction_event_index", "same_frame",
-    "frame_index", "subevent_index", "subevent_offset", "subevent_type",
-    "neighbor_opcode", "transport_source_actor_id_hex",
-    "transport_target_actor_id_hex", "capture_delta_us", "outer_value_delta",
+    "anchor_index",
+    "capture",
+    "lane_index",
+    "lane",
+    "direction",
+    "opcode",
+    "relative_event",
+    "neighbor_direction_event_index",
+    "same_frame",
+    "frame_index",
+    "subevent_index",
+    "subevent_offset",
+    "subevent_type",
+    "neighbor_opcode",
+    "transport_source_actor_id_hex",
+    "transport_target_actor_id_hex",
+    "capture_delta_us",
+    "outer_value_delta",
 ]
 
 VERDICTS_TEXT = """# Comparative verdicts
@@ -181,7 +216,9 @@ def _packet_spans(path: Path, connection: dict, direction: str) -> list[dict]:
             continue
         if ((ip.src, tcp.sport), (ip.dst, tcp.dport)) != expected:
             continue
-        matched.append((int(tcp.seq), len(payload), packet_index, _capture_time_us(packet)))
+        matched.append(
+            (int(tcp.seq), len(payload), packet_index, _capture_time_us(packet))
+        )
     initial_sequence = min(row[0] for row in matched)
     return [
         {
@@ -223,11 +260,17 @@ def _word_vector(data: bytes, width: int) -> str:
     if len(data) % width:
         return ""
     code = "H" if width == 2 else "I"
-    return " ".join(f"0x{value:0{width * 2}x}" for value in struct.unpack(f"<{len(data) // width}{code}", data))
+    return " ".join(
+        f"0x{value:0{width * 2}x}"
+        for value in struct.unpack(f"<{len(data) // width}{code}", data)
+    )
 
 
 def _counter(values) -> dict[str, int]:
-    return {str(key): count for key, count in sorted(Counter(values).items(), key=lambda row: str(row[0]))}
+    return {
+        str(key): count
+        for key, count in sorted(Counter(values).items(), key=lambda row: str(row[0]))
+    }
 
 
 def _decode_capture(path: Path) -> tuple[list[dict], Counter, dict]:
@@ -279,7 +322,9 @@ def _decode_capture(path: Path) -> tuple[list[dict], Counter, dict]:
                         "frame_stream_offset": frame["offset"],
                         "capture_packet_index": completion["packet_index"] + 1,
                         "capture_time_us": completion["capture_time_us"],
-                        "capture_timestamp_utc": _timestamp_utc(completion["capture_time_us"]),
+                        "capture_timestamp_utc": _timestamp_utc(
+                            completion["capture_time_us"]
+                        ),
                         "outer_timestamp_or_seq_hex": frame["timestamp"].hex(),
                         "outer_value": outer_value,
                         "outer_frame_size": frame["size"],
@@ -296,7 +341,7 @@ def _decode_capture(path: Path) -> tuple[list[dict], Counter, dict]:
                     }
                     if opcode is not None:
                         start = subevent["offset"] + SUB_EVENT_HEADER_LEN
-                        sub_body = body[start:subevent["offset"] + subevent["size"]]
+                        sub_body = body[start : subevent["offset"] + subevent["size"]]
                         event["sub_body"] = sub_body
                     events.append(event)
                     direction_event_index += 1
@@ -353,36 +398,53 @@ def _occurrence_row(event: dict) -> dict:
 def _neighbors(all_events: list[dict], occurrences: list[dict]) -> list[dict]:
     groups: dict[tuple, list[dict]] = defaultdict(list)
     for event in all_events:
-        groups[(event["capture"], event["lane_index"], event["direction"])].append(event)
+        groups[(event["capture"], event["lane_index"], event["direction"])].append(
+            event
+        )
     rows = []
     for anchor_index, anchor in enumerate(occurrences):
         group = groups[(anchor["capture"], anchor["lane_index"], anchor["direction"])]
         position = next(i for i, event in enumerate(group) if event is anchor)
-        for neighbor_position in range(max(0, position - WINDOW_RADIUS), min(len(group), position + WINDOW_RADIUS + 1)):
+        for neighbor_position in range(
+            max(0, position - WINDOW_RADIUS),
+            min(len(group), position + WINDOW_RADIUS + 1),
+        ):
             if neighbor_position == position:
                 continue
             neighbor = group[neighbor_position]
             neighbor_opcode = neighbor.get("opcode_value")
-            rows.append({
-                "anchor_index": anchor_index,
-                "capture": anchor["capture"],
-                "lane_index": anchor["lane_index"],
-                "lane": anchor["lane"],
-                "direction": anchor["direction"],
-                "opcode": f"0x{anchor['opcode_value']:04x}",
-                "relative_event": neighbor_position - position,
-                "neighbor_direction_event_index": neighbor["direction_event_index"],
-                "same_frame": "yes" if neighbor["frame_index"] == anchor["frame_index"] else "no",
-                "frame_index": neighbor["frame_index"],
-                "subevent_index": neighbor["subevent_index"],
-                "subevent_offset": neighbor["subevent_offset"],
-                "subevent_type": f"0x{neighbor['subevent_type']:04x}",
-                "neighbor_opcode": f"0x{neighbor_opcode:04x}" if neighbor_opcode is not None else "",
-                "transport_source_actor_id_hex": _hex32(neighbor["transport_source_actor_id"]),
-                "transport_target_actor_id_hex": _hex32(neighbor["transport_target_actor_id"]),
-                "capture_delta_us": neighbor["capture_time_us"] - anchor["capture_time_us"],
-                "outer_value_delta": neighbor["outer_value"] - anchor["outer_value"],
-            })
+            rows.append(
+                {
+                    "anchor_index": anchor_index,
+                    "capture": anchor["capture"],
+                    "lane_index": anchor["lane_index"],
+                    "lane": anchor["lane"],
+                    "direction": anchor["direction"],
+                    "opcode": f"0x{anchor['opcode_value']:04x}",
+                    "relative_event": neighbor_position - position,
+                    "neighbor_direction_event_index": neighbor["direction_event_index"],
+                    "same_frame": "yes"
+                    if neighbor["frame_index"] == anchor["frame_index"]
+                    else "no",
+                    "frame_index": neighbor["frame_index"],
+                    "subevent_index": neighbor["subevent_index"],
+                    "subevent_offset": neighbor["subevent_offset"],
+                    "subevent_type": f"0x{neighbor['subevent_type']:04x}",
+                    "neighbor_opcode": f"0x{neighbor_opcode:04x}"
+                    if neighbor_opcode is not None
+                    else "",
+                    "transport_source_actor_id_hex": _hex32(
+                        neighbor["transport_source_actor_id"]
+                    ),
+                    "transport_target_actor_id_hex": _hex32(
+                        neighbor["transport_target_actor_id"]
+                    ),
+                    "capture_delta_us": neighbor["capture_time_us"]
+                    - anchor["capture_time_us"],
+                    "outer_value_delta": neighbor["outer_value"]
+                    - anchor["outer_value"],
+                }
+            )
     return rows
 
 
@@ -398,22 +460,37 @@ def _distributions(rows: list[dict], neighbors: list[dict]) -> dict:
             "lanes": _counter(row["lane"] for row in selected),
             "directions": _counter(row["direction"] for row in selected),
             "subevent_sizes": _counter(row["subevent_size"] for row in selected),
-            "inner_header_word0_values": _counter(row["inner_header_word0"] for row in selected),
-            "inner_payload_sizes": _counter(row["inner_payload_size"] for row in selected),
+            "inner_header_word0_values": _counter(
+                row["inner_header_word0"] for row in selected
+            ),
+            "inner_payload_sizes": _counter(
+                row["inner_payload_size"] for row in selected
+            ),
             "application_sizes": _counter(row["application_size"] for row in selected),
             "application_hex": _counter(row["application_hex"] for row in selected),
-            "application_u16_le": _counter(row["application_u16_le"] for row in selected),
-            "application_u32_le": _counter(row["application_u32_le"] for row in selected),
-            "transport_source_actor_ids": _counter(row["transport_source_actor_id_hex"] for row in selected),
-            "transport_target_actor_ids": _counter(row["transport_target_actor_id_hex"] for row in selected),
+            "application_u16_le": _counter(
+                row["application_u16_le"] for row in selected
+            ),
+            "application_u32_le": _counter(
+                row["application_u32_le"] for row in selected
+            ),
+            "transport_source_actor_ids": _counter(
+                row["transport_source_actor_id_hex"] for row in selected
+            ),
+            "transport_target_actor_ids": _counter(
+                row["transport_target_actor_id_hex"] for row in selected
+            ),
             "transport_actor_pairs": _counter(
                 f"{row['transport_source_actor_id_hex']}->{row['transport_target_actor_id_hex']}"
                 for row in selected
             ),
-            "preamble_word0_values": _counter(row["preamble_word0_u32_hex"] for row in selected),
+            "preamble_word0_values": _counter(
+                row["preamble_word0_u32_hex"] for row in selected
+            ),
             "relations": {
                 "transport_source_equals_target": sum(
-                    row["_transport_source_actor_id"] == row["_transport_target_actor_id"]
+                    row["_transport_source_actor_id"]
+                    == row["_transport_target_actor_id"]
                     for row in selected
                 ),
                 "preamble_word0_equals_transport_source": sum(
@@ -424,25 +501,33 @@ def _distributions(rows: list[dict], neighbors: list[dict]) -> dict:
                     row["_preamble_word0"] == row["_transport_target_actor_id"]
                     for row in selected
                 ),
-                "zero_transport_target": sum(row["_transport_target_actor_id"] == 0 for row in selected),
+                "zero_transport_target": sum(
+                    row["_transport_target_actor_id"] == 0 for row in selected
+                ),
             },
             "immediate_previous_opcodes": _counter(
                 row["neighbor_opcode"] or f"subevent:{row['subevent_type']}"
-                for row in selected_neighbors if row["relative_event"] == -1
+                for row in selected_neighbors
+                if row["relative_event"] == -1
             ),
             "immediate_following_opcodes": _counter(
                 row["neighbor_opcode"] or f"subevent:{row['subevent_type']}"
-                for row in selected_neighbors if row["relative_event"] == 1
+                for row in selected_neighbors
+                if row["relative_event"] == 1
             ),
         }
     actor_sets = {
-        key: set(result[key]["transport_source_actor_ids"]) | set(result[key]["transport_target_actor_ids"])
+        key: set(result[key]["transport_source_actor_ids"])
+        | set(result[key]["transport_target_actor_ids"])
         for key in result
     }
     result["cross_opcode"] = {
-        "shared_transport_actor_ids_0x00da_0x00e1": sorted(actor_sets["0x00da"] & actor_sets["0x00e1"]),
+        "shared_transport_actor_ids_0x00da_0x00e1": sorted(
+            actor_sets["0x00da"] & actor_sets["0x00e1"]
+        ),
         "shared_application_hex_0x00da_0x00e1": sorted(
-            set(result["0x00da"]["application_hex"]) & set(result["0x00e1"]["application_hex"])
+            set(result["0x00da"]["application_hex"])
+            & set(result["0x00e1"]["application_hex"])
         ),
     }
     return result
@@ -459,21 +544,27 @@ def build_outputs() -> dict[str, bytes]:
         events, capture_totals, lanes = _decode_capture(path)
         all_events.extend(events)
         totals.update(capture_totals)
-        captures.append({
-            "capture": path.name,
-            "size_bytes": path.stat().st_size,
-            "sha256": sha256_file(path),
-            "admitted_lanes": lanes,
-            "discarded_trailing_stream_bytes": {
-                "c2s": capture_totals["c2s_discarded_trailing_stream_bytes"],
-                "s2c": capture_totals["s2c_discarded_trailing_stream_bytes"],
-            },
-            "target_occurrences": {
-                f"0x{opcode:04x}": sum(event.get("opcode_value") == opcode for event in events)
-                for opcode in TARGET_OPCODES
-            },
-        })
-    occurrences = [event for event in all_events if event.get("opcode_value") in TARGET_OPCODES]
+        captures.append(
+            {
+                "capture": path.name,
+                "size_bytes": path.stat().st_size,
+                "sha256": sha256_file(path),
+                "admitted_lanes": lanes,
+                "discarded_trailing_stream_bytes": {
+                    "c2s": capture_totals["c2s_discarded_trailing_stream_bytes"],
+                    "s2c": capture_totals["s2c_discarded_trailing_stream_bytes"],
+                },
+                "target_occurrences": {
+                    f"0x{opcode:04x}": sum(
+                        event.get("opcode_value") == opcode for event in events
+                    )
+                    for opcode in TARGET_OPCODES
+                },
+            }
+        )
+    occurrences = [
+        event for event in all_events if event.get("opcode_value") in TARGET_OPCODES
+    ]
     occurrence_rows = [_occurrence_row(event) for event in occurrences]
     neighbor_rows = _neighbors(all_events, occurrences)
     distributions = _distributions(occurrence_rows, neighbor_rows)
@@ -495,11 +586,22 @@ def build_outputs() -> dict[str, bytes]:
         "captures": len(paths),
         "lanes": totals["lanes"],
         "c2s_occurrences": sum(row["direction"] == "c2s" for row in occurrence_rows),
-        "s2c_0x00da": sum(row["direction"] == "s2c" and row["opcode"] == "0x00da" for row in occurrence_rows),
-        "s2c_0x00e0": sum(row["direction"] == "s2c" and row["opcode"] == "0x00e0" for row in occurrence_rows),
-        "s2c_0x00e1": sum(row["direction"] == "s2c" and row["opcode"] == "0x00e1" for row in occurrence_rows),
-        "subevent_truncations": totals["c2s_subevent_truncations"] + totals["s2c_subevent_truncations"],
-        "wrapped_short_inner_headers": totals["c2s_wrapped_short_inner_headers"] + totals["s2c_wrapped_short_inner_headers"],
+        "s2c_0x00da": sum(
+            row["direction"] == "s2c" and row["opcode"] == "0x00da"
+            for row in occurrence_rows
+        ),
+        "s2c_0x00e0": sum(
+            row["direction"] == "s2c" and row["opcode"] == "0x00e0"
+            for row in occurrence_rows
+        ),
+        "s2c_0x00e1": sum(
+            row["direction"] == "s2c" and row["opcode"] == "0x00e1"
+            for row in occurrence_rows
+        ),
+        "subevent_truncations": totals["c2s_subevent_truncations"]
+        + totals["s2c_subevent_truncations"],
+        "wrapped_short_inner_headers": totals["c2s_wrapped_short_inner_headers"]
+        + totals["s2c_wrapped_short_inner_headers"],
         "target_short_game_message_preambles": sum(
             len(event["sub_body"]) < INNER_HEADER_LEN + GAME_MESSAGE_PREAMBLE_LEN
             for event in occurrences
@@ -552,14 +654,18 @@ def build_outputs() -> dict[str, bytes]:
     return {
         "occurrences.csv": csv_bytes(occurrence_rows, OCCURRENCE_FIELDS),
         "neighborhoods.csv": csv_bytes(neighbor_rows, NEIGHBOR_FIELDS),
-        "accounting.json": (json.dumps(accounting, indent=2, sort_keys=True) + "\n").encode("ascii"),
+        "accounting.json": (
+            json.dumps(accounting, indent=2, sort_keys=True) + "\n"
+        ).encode("ascii"),
         "verdicts.md": VERDICTS_TEXT.encode("ascii"),
     }
 
 
 def csv_bytes(rows: list[dict], fields: list[str]) -> bytes:
     output = io.StringIO(newline="")
-    writer = csv.DictWriter(output, fieldnames=fields, extrasaction="ignore", lineterminator="\n")
+    writer = csv.DictWriter(
+        output, fieldnames=fields, extrasaction="ignore", lineterminator="\n"
+    )
     writer.writeheader()
     writer.writerows(rows)
     return output.getvalue().encode("ascii")
@@ -582,7 +688,10 @@ def main() -> int:
     if stale:
         print("stale 0x00DA/0x00E1 comparison outputs:\n  " + "\n  ".join(stale))
         return 1
-    print(("verified" if args.check else "wrote") + f" {len(outputs)} 0x00DA/0x00E1 comparison artifacts")
+    print(
+        ("verified" if args.check else "wrote")
+        + f" {len(outputs)} 0x00DA/0x00E1 comparison artifacts"
+    )
     return 0
 
 

@@ -8,7 +8,9 @@ sys.path.insert(0, str(ROOT / "tools" / "extractors"))
 import extract_00da_00e1_comparison as comparison  # noqa: E402
 
 
-def event(index: int, opcode: int | None, lane: int = 0, direction: str = "s2c") -> dict:
+def event(
+    index: int, opcode: int | None, lane: int = 0, direction: str = "s2c"
+) -> dict:
     return {
         "capture": "capture.pcapng",
         "lane_index": lane,
@@ -34,7 +36,9 @@ class ComparisonTests(unittest.TestCase):
             {"start": 140, "end": 180, "packet_index": 9, "capture_time_us": 900},
             {"start": 100, "end": 180, "packet_index": 12, "capture_time_us": 1200},
         ]
-        self.assertEqual(comparison._frame_completion(120, 40, spans)["packet_index"], 9)
+        self.assertEqual(
+            comparison._frame_completion(120, 40, spans)["packet_index"], 9
+        )
 
     def test_completion_rejects_missing_frame_bytes(self):
         spans = [{"start": 100, "end": 139, "packet_index": 7, "capture_time_us": 700}]
@@ -46,14 +50,19 @@ class ComparisonTests(unittest.TestCase):
         anchor = event(1, 0x00DA)
         following = event(2, 0x0130)
         mixed = [
-            event(0, 0xDEAD, lane=1), previous,
-            event(0, 0xBEEF, direction="c2s"), anchor, following,
+            event(0, 0xDEAD, lane=1),
+            previous,
+            event(0, 0xBEEF, direction="c2s"),
+            anchor,
+            following,
         ]
         rows = comparison._neighbors(mixed, [anchor])
         self.assertEqual([row["neighbor_opcode"] for row in rows], ["0x0001", "0x0130"])
 
     def test_word_vectors_are_little_endian_and_bounded(self):
-        self.assertEqual(comparison._word_vector(bytes.fromhex("01000200"), 2), "0x0001 0x0002")
+        self.assertEqual(
+            comparison._word_vector(bytes.fromhex("01000200"), 2), "0x0001 0x0002"
+        )
         self.assertEqual(comparison._word_vector(b"\x01\x02\x03", 2), "")
 
 

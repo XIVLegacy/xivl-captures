@@ -47,21 +47,40 @@ SOURCE_MANIFEST = REPO_ROOT / "sources" / "pcap-1.23b" / "manifest.yaml"
 OUT = REPO_ROOT / "studies" / STUDY_ID / "derived"
 
 OCCURRENCE_FIELDS = (
-    "occurrence", "capture", "lane_index", "lane", "direction",
-    "direction_event_index", "capture_completion_packet", "frame_index",
-    "subevent_index", "same_frame_target_ordinal", "same_frame_target_count",
-    "subopcode", "packet_header_clock_u32", "application_value_u32",
-    "derived_modular_sum_u32", "special_sentinel",
+    "occurrence",
+    "capture",
+    "lane_index",
+    "lane",
+    "direction",
+    "direction_event_index",
+    "capture_completion_packet",
+    "frame_index",
+    "subevent_index",
+    "same_frame_target_ordinal",
+    "same_frame_target_count",
+    "subopcode",
+    "packet_header_clock_u32",
+    "application_value_u32",
+    "derived_modular_sum_u32",
+    "special_sentinel",
     "header_clock_minus_capture_completion_us",
     "derived_sum_minus_capture_completion_us",
     "header_clock_minus_outer_floor_seconds",
-    "outer_value_scaled_minus_capture_completion_us", "prior_same_pair_distance",
+    "outer_value_scaled_minus_capture_completion_us",
+    "prior_same_pair_distance",
 )
 NEIGHBOR_FIELDS = (
-    "occurrence", "capture", "lane_index", "relative_event",
-    "neighbor_direction_event_index", "same_frame", "neighbor_frame_index",
-    "neighbor_subevent_index", "neighbor_opcode",
-    "neighbor_capture_delta_us", "neighbor_clock_minus_anchor_clock",
+    "occurrence",
+    "capture",
+    "lane_index",
+    "relative_event",
+    "neighbor_direction_event_index",
+    "same_frame",
+    "neighbor_frame_index",
+    "neighbor_subevent_index",
+    "neighbor_opcode",
+    "neighbor_capture_delta_us",
+    "neighbor_clock_minus_anchor_clock",
 )
 IPV4_RE = re.compile(rb"(?<![0-9])(?:[0-9]{1,3}\.){3}[0-9]{1,3}(?![0-9])")
 RAW_HEX_RE = re.compile(rb"0x[0-9a-fA-F]{8}(?![0-9a-fA-F])")
@@ -110,7 +129,9 @@ def _corpus_digest(paths: list[Path]) -> str:
     return digest.hexdigest()
 
 
-def validate_corpus_paths(paths: list[Path], manifest_path: Path = SOURCE_MANIFEST) -> None:
+def validate_corpus_paths(
+    paths: list[Path], manifest_path: Path = SOURCE_MANIFEST
+) -> None:
     manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8")) or {}
     expected = sorted(member["file"] for member in manifest.get("members", []))
     actual = sorted(path.name for path in paths)
@@ -138,7 +159,9 @@ def _packet_spans(path: Path, connection: dict, direction: str) -> list[dict]:
         tcp = packet["TCP"]
         payload = bytes(tcp.payload)
         if payload and ((ip.src, tcp.sport), (ip.dst, tcp.dport)) == expected:
-            matched.append((int(tcp.seq), len(payload), packet_index, _capture_time_us(packet)))
+            matched.append(
+                (int(tcp.seq), len(payload), packet_index, _capture_time_us(packet))
+            )
     initial_sequence = min(row[0] for row in matched)
     return [
         {
@@ -172,7 +195,9 @@ def _frame_completion(frame_offset: int, frame_size: int, spans: list[dict]) -> 
     raise ValueError(f"captured segments do not complete frame at {frame_offset}")
 
 
-def _segment_accounting(path: Path, connection: dict, direction: str) -> tuple[int, int]:
+def _segment_accounting(
+    path: Path, connection: dict, direction: str
+) -> tuple[int, int]:
     """Return retransmitted overlap and bytes outside complete reconstructed frames."""
     server = connection["server_endpoint"]
     client = connection["client_endpoint"]
@@ -196,7 +221,9 @@ def _segment_accounting(path: Path, connection: dict, direction: str) -> tuple[i
         else:
             merged[-1][1] = max(merged[-1][1], end)
     unique_bytes = sum(end - start for start, end in merged)
-    return payload_bytes - unique_bytes, unique_bytes - len(connection["streams"].get(direction, b""))
+    return payload_bytes - unique_bytes, unique_bytes - len(
+        connection["streams"].get(direction, b"")
+    )
 
 
 def decode_application(subevent_size: int, sub_body: bytes) -> tuple[dict | None, str]:
@@ -205,7 +232,9 @@ def decode_application(subevent_size: int, sub_body: bytes) -> tuple[dict | None
     expected_len = INNER_HEADER_LEN + PACKET_HEADER_TAIL_SIZE + APPLICATION_SIZE
     if len(sub_body) != expected_len:
         return None, "unexpected_application_shape"
-    packet_header_clock, packet_header_reserved = struct.unpack_from("<II", sub_body, INNER_HEADER_LEN)
+    packet_header_clock, packet_header_reserved = struct.unpack_from(
+        "<II", sub_body, INNER_HEADER_LEN
+    )
     if packet_header_reserved != 0:
         return None, "nonzero_packet_header_reserved"
     subopcode, value = struct.unpack_from(
@@ -227,7 +256,9 @@ def _decode_capture(path: Path) -> tuple[list[dict], list[dict], Counter, Counte
     exclusions = Counter()
     connections = reconstruct_connections(path)
     totals["frame_shaped_connections"] = len(connections)
-    admitted = [connection for connection in connections if _is_game_connection(connection)]
+    admitted = [
+        connection for connection in connections if _is_game_connection(connection)
+    ]
     totals["admitted_lanes"] = len(admitted)
     for connection in connections:
         connection_overlap = 0
@@ -279,7 +310,7 @@ def _decode_capture(path: Path) -> tuple[list[dict], list[dict], Counter, Counte
                         continue
                     totals[f"{direction}_wrapped_subevents"] += 1
                     start = event["offset"] + SUB_EVENT_HEADER_LEN
-                    sub_body = body[start:event["offset"] + event["size"]]
+                    sub_body = body[start : event["offset"] + event["size"]]
                     if len(sub_body) < INNER_HEADER_LEN:
                         totals["wrapped_short_inner_headers"] += 1
                         direction_event_index += 1
@@ -287,7 +318,9 @@ def _decode_capture(path: Path) -> tuple[list[dict], list[dict], Counter, Counte
                     opcode = struct.unpack_from("<H", sub_body, 2)[0]
                     header_clock = None
                     if len(sub_body) >= INNER_HEADER_LEN + PACKET_HEADER_TAIL_SIZE:
-                        header_clock = struct.unpack_from("<I", sub_body, INNER_HEADER_LEN)[0]
+                        header_clock = struct.unpack_from(
+                            "<I", sub_body, INNER_HEADER_LEN
+                        )[0]
                     timeline_event = {
                         "capture": path.name,
                         "lane_index": lane_index,
@@ -322,8 +355,17 @@ def _annotate_targets(targets: list[dict]) -> None:
     frames: defaultdict[tuple, list[dict]] = defaultdict(list)
     lanes: defaultdict[tuple, list[dict]] = defaultdict(list)
     for target in targets:
-        frames[(target["capture"], target["lane_index"], target["direction"], target["frame_index"])].append(target)
-        lanes[(target["capture"], target["lane_index"], target["direction"])].append(target)
+        frames[
+            (
+                target["capture"],
+                target["lane_index"],
+                target["direction"],
+                target["frame_index"],
+            )
+        ].append(target)
+        lanes[(target["capture"], target["lane_index"], target["direction"])].append(
+            target
+        )
     for frame_targets in frames.values():
         for ordinal, target in enumerate(frame_targets, 1):
             target["same_frame_target_ordinal"] = ordinal
@@ -345,45 +387,50 @@ def _occurrence_rows(targets: list[dict]) -> list[dict]:
         header_us = target["packet_header_clock"] * 1_000_000
         derived_us = target["derived_modular_sum"] * 1_000_000
         outer_scaled_us = target["outer_value"] * 1_000
-        rows.append({
-            "occurrence": occurrence,
-            "capture": target["capture"],
-            "lane_index": target["lane_index"],
-            "lane": target["lane"],
-            "direction": target["direction"],
-            "direction_event_index": target["direction_event_index"],
-            "capture_completion_packet": target["capture_packet_index"],
-            "frame_index": target["frame_index"],
-            "subevent_index": target["subevent_index"],
-            "same_frame_target_ordinal": target["same_frame_target_ordinal"],
-            "same_frame_target_count": target["same_frame_target_count"],
-            "subopcode": f"0x{target['subopcode']:02x}",
-            "packet_header_clock_u32": target["packet_header_clock"],
-            "application_value_u32": target["application_value"],
-            "derived_modular_sum_u32": target["derived_modular_sum"],
-            "special_sentinel": "yes" if target["special_sentinel"] else "no",
-            "header_clock_minus_capture_completion_us": header_us - capture_time_us,
-            "derived_sum_minus_capture_completion_us": derived_us - capture_time_us,
-            "header_clock_minus_outer_floor_seconds": (
-                target["packet_header_clock"] - target["outer_value"] // 1000
-            ),
-            "outer_value_scaled_minus_capture_completion_us": (
-                outer_scaled_us - capture_time_us
-            ),
-            "prior_same_pair_distance": target["prior_same_pair_distance"],
-        })
+        rows.append(
+            {
+                "occurrence": occurrence,
+                "capture": target["capture"],
+                "lane_index": target["lane_index"],
+                "lane": target["lane"],
+                "direction": target["direction"],
+                "direction_event_index": target["direction_event_index"],
+                "capture_completion_packet": target["capture_packet_index"],
+                "frame_index": target["frame_index"],
+                "subevent_index": target["subevent_index"],
+                "same_frame_target_ordinal": target["same_frame_target_ordinal"],
+                "same_frame_target_count": target["same_frame_target_count"],
+                "subopcode": f"0x{target['subopcode']:02x}",
+                "packet_header_clock_u32": target["packet_header_clock"],
+                "application_value_u32": target["application_value"],
+                "derived_modular_sum_u32": target["derived_modular_sum"],
+                "special_sentinel": "yes" if target["special_sentinel"] else "no",
+                "header_clock_minus_capture_completion_us": header_us - capture_time_us,
+                "derived_sum_minus_capture_completion_us": derived_us - capture_time_us,
+                "header_clock_minus_outer_floor_seconds": (
+                    target["packet_header_clock"] - target["outer_value"] // 1000
+                ),
+                "outer_value_scaled_minus_capture_completion_us": (
+                    outer_scaled_us - capture_time_us
+                ),
+                "prior_same_pair_distance": target["prior_same_pair_distance"],
+            }
+        )
     return rows
 
 
 def _neighbor_rows(targets: list[dict], timeline: list[dict]) -> list[dict]:
     groups: defaultdict[tuple, list[dict]] = defaultdict(list)
     for event in timeline:
-        groups[(event["capture"], event["lane_index"], event["direction"])].append(event)
+        groups[(event["capture"], event["lane_index"], event["direction"])].append(
+            event
+        )
     rows = []
     for occurrence, target in enumerate(targets, 1):
         group = groups[(target["capture"], target["lane_index"], target["direction"])]
         position = next(
-            index for index, event in enumerate(group)
+            index
+            for index, event in enumerate(group)
             if event["direction_event_index"] == target["direction_event_index"]
         )
         start = max(0, position - WINDOW_RADIUS)
@@ -395,19 +442,24 @@ def _neighbor_rows(targets: list[dict], timeline: list[dict]) -> list[dict]:
             clock_delta = ""
             if neighbor["header_clock"] is not None:
                 clock_delta = neighbor["header_clock"] - target["packet_header_clock"]
-            rows.append({
-                "occurrence": occurrence,
-                "capture": target["capture"],
-                "lane_index": target["lane_index"],
-                "relative_event": neighbor_position - position,
-                "neighbor_direction_event_index": neighbor["direction_event_index"],
-                "same_frame": "yes" if neighbor["frame_index"] == target["frame_index"] else "no",
-                "neighbor_frame_index": neighbor["frame_index"],
-                "neighbor_subevent_index": neighbor["subevent_index"],
-                "neighbor_opcode": f"0x{neighbor['opcode']:04x}",
-                "neighbor_capture_delta_us": neighbor["capture_time_us"] - target["capture_time_us"],
-                "neighbor_clock_minus_anchor_clock": clock_delta,
-            })
+            rows.append(
+                {
+                    "occurrence": occurrence,
+                    "capture": target["capture"],
+                    "lane_index": target["lane_index"],
+                    "relative_event": neighbor_position - position,
+                    "neighbor_direction_event_index": neighbor["direction_event_index"],
+                    "same_frame": "yes"
+                    if neighbor["frame_index"] == target["frame_index"]
+                    else "no",
+                    "neighbor_frame_index": neighbor["frame_index"],
+                    "neighbor_subevent_index": neighbor["subevent_index"],
+                    "neighbor_opcode": f"0x{neighbor['opcode']:04x}",
+                    "neighbor_capture_delta_us": neighbor["capture_time_us"]
+                    - target["capture_time_us"],
+                    "neighbor_clock_minus_anchor_clock": clock_delta,
+                }
+            )
     return rows
 
 
@@ -433,37 +485,53 @@ def build_outputs() -> dict[str, bytes]:
             "admitted_chat_lanes": capture_totals["admitted_chat_lanes"],
             "target_s2c_events": capture_totals["target_s2c_events"],
             "target_c2s_events": capture_totals["target_c2s_events"],
-            "retransmitted_overlap_bytes": capture_totals["retransmitted_overlap_bytes"],
-            "discarded_trailing_stream_bytes": capture_totals["discarded_trailing_stream_bytes"],
+            "retransmitted_overlap_bytes": capture_totals[
+                "retransmitted_overlap_bytes"
+            ],
+            "discarded_trailing_stream_bytes": capture_totals[
+                "discarded_trailing_stream_bytes"
+            ],
             "exclusions": dict(sorted(capture_exclusions.items())),
         }
 
     for key in (
-        "compressed_frame_inflate_failures", "subevent_truncations",
-        "wrapped_short_inner_headers", "target_c2s_events",
+        "compressed_frame_inflate_failures",
+        "subevent_truncations",
+        "wrapped_short_inner_headers",
+        "target_c2s_events",
         "admitted_unparsed_frame_body_bytes",
     ):
         totals[key] += 0
     for key in (
-        "tls_signature_connections", "lobby_54994_connections",
-        "other_non_game_connections", "unexpected_subevent_size",
-        "unexpected_application_shape", "nonzero_packet_header_reserved",
+        "tls_signature_connections",
+        "lobby_54994_connections",
+        "other_non_game_connections",
+        "unexpected_subevent_size",
+        "unexpected_application_shape",
+        "nonzero_packet_header_reserved",
     ):
         exclusions[key] += 0
 
     _annotate_targets(all_targets)
     occurrence_rows = _occurrence_rows(all_targets)
     neighbor_rows = _neighbor_rows(all_targets, all_timeline)
-    header_deltas = [row["header_clock_minus_capture_completion_us"] for row in occurrence_rows]
-    derived_deltas = [row["derived_sum_minus_capture_completion_us"] for row in occurrence_rows]
+    header_deltas = [
+        row["header_clock_minus_capture_completion_us"] for row in occurrence_rows
+    ]
+    derived_deltas = [
+        row["derived_sum_minus_capture_completion_us"] for row in occurrence_rows
+    ]
     outer_deltas = [
         row["outer_value_scaled_minus_capture_completion_us"] for row in occurrence_rows
     ]
     compound_frames = {
         (row["capture"], row["lane_index"], row["frame_index"])
-        for row in occurrence_rows if row["same_frame_target_count"] > 1
+        for row in occurrence_rows
+        if row["same_frame_target_count"] > 1
     }
-    repeated_rows = sum(row["prior_same_pair_distance"] != "" for row in occurrence_rows)
+    repeated_rows = sum(
+        row["prior_same_pair_distance"] != "" for row in occurrence_rows
+    )
     accounting = {
         "study_id": STUDY_ID,
         "corpus": {
@@ -475,13 +543,20 @@ def build_outputs() -> dict[str, bytes]:
         "distributions": {
             "events_by_capture": _counter(row["capture"] for row in occurrence_rows),
             "events_by_lane": _counter(row["lane"] for row in occurrence_rows),
-            "events_by_direction": _counter(row["direction"] for row in occurrence_rows),
-            "subopcodes": _counter(row["subopcode"] for row in occurrence_rows),
-            "application_values": _counter(row["application_value_u32"] for row in occurrence_rows),
-            "subopcode_value_pairs": _counter(
-                f"{row['subopcode']}/{row['application_value_u32']}" for row in occurrence_rows
+            "events_by_direction": _counter(
+                row["direction"] for row in occurrence_rows
             ),
-            "special_sentinel": _counter(row["special_sentinel"] for row in occurrence_rows),
+            "subopcodes": _counter(row["subopcode"] for row in occurrence_rows),
+            "application_values": _counter(
+                row["application_value_u32"] for row in occurrence_rows
+            ),
+            "subopcode_value_pairs": _counter(
+                f"{row['subopcode']}/{row['application_value_u32']}"
+                for row in occurrence_rows
+            ),
+            "special_sentinel": _counter(
+                row["special_sentinel"] for row in occurrence_rows
+            ),
             "compound_target_frames": len(compound_frames),
             "repeated_same_pair_events": repeated_rows,
         },
@@ -528,8 +603,8 @@ def build_outputs() -> dict[str, bytes]:
 The complete frozen 54-capture corpus contains {len(all_targets)} valid s2c
 `0x0193` events in eight captures after canonical TCP reconstruction. Every
 event is a 40-byte wrapped subpacket with an 8-byte application payload. There
-are {totals['target_c2s_events']} c2s targets and
-{sum(exclusions.values()) - exclusions['tls_signature_connections'] - exclusions['lobby_54994_connections']} malformed target exclusions.
+are {totals["target_c2s_events"]} c2s targets and
+{sum(exclusions.values()) - exclusions["tls_signature_connections"] - exclusions["lobby_54994_connections"]} malformed target exclusions.
 
 Subopcode `0x12` occurs once with application value 900. Subopcode `0x14`
 occurs eight times: value 2 occurs six times and value 15 occurs twice. No
@@ -595,7 +670,9 @@ case. Neither discriminator exists in the frozen corpus.
     return {
         "occurrences.csv": occurrence_csv,
         "neighborhoods.csv": neighborhood_csv,
-        "accounting.json": (json.dumps(accounting, indent=2, sort_keys=True) + "\n").encode("ascii"),
+        "accounting.json": (
+            json.dumps(accounting, indent=2, sort_keys=True) + "\n"
+        ).encode("ascii"),
         "verdicts.md": verdicts.encode("ascii"),
     }
 
@@ -616,7 +693,9 @@ def main() -> int:
             target.write_bytes(rendered)
     if stale:
         raise SystemExit("stale or missing: " + ", ".join(stale))
-    print(f"map 0x0193 clock contract: {len(outputs)} products {'verified' if args.check else 'written'}")
+    print(
+        f"map 0x0193 clock contract: {len(outputs)} products {'verified' if args.check else 'written'}"
+    )
     return 0
 
 

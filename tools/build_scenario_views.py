@@ -35,7 +35,9 @@ CORPUS_MANIFEST = SOURCES_DIR / "manifest.yaml"
 # Numeric facts use this repo's canonical decode; opcode names use the promoted mapping's `source` field.
 OPCODE_NAMES_JSON = DATA_DIR / "opcode_names.json"
 OBSERVATIONS_JSON = DATA_DIR / "observations.json"
-CAPTURES_DIR = Path(os.environ.get("XIVL_PCAP_OBJECTS_DIR", str(SOURCES_DIR / "objects")))
+CAPTURES_DIR = Path(
+    os.environ.get("XIVL_PCAP_OBJECTS_DIR", str(SOURCES_DIR / "objects"))
+)
 SCENARIOS_DIR = REPO_ROOT / "catalog" / "scenarios"
 
 # Logical repo-relative label used in prose and CSV columns; CAPTURES_DIR does the actual resolution.
@@ -52,8 +54,12 @@ class _NoAlias(yaml.SafeDumper):
 
 def _dump(obj) -> str:
     return yaml.dump(
-        obj, Dumper=_NoAlias, sort_keys=False, default_flow_style=False,
-        allow_unicode=True, width=100,
+        obj,
+        Dumper=_NoAlias,
+        sort_keys=False,
+        default_flow_style=False,
+        allow_unicode=True,
+        width=100,
     )
 
 
@@ -156,14 +162,16 @@ def load_inversion() -> dict:
             if len(candidates) == 1:
                 cand = candidates[0]
                 for pc in local_observed:
-                    inv.setdefault(pc, []).append({
-                        "hex": hexv,
-                        "name": cand.get("name"),
-                        "retail_class_name": cand.get("retail_class_name"),
-                        "service": cand.get("service"),
-                        "direction": direction,
-                        "lengths": lengths,
-                    })
+                    inv.setdefault(pc, []).append(
+                        {
+                            "hex": hexv,
+                            "name": cand.get("name"),
+                            "retail_class_name": cand.get("retail_class_name"),
+                            "service": cand.get("service"),
+                            "direction": direction,
+                            "lengths": lengths,
+                        }
+                    )
                 continue
             for pc in local_observed:
                 claimants = [c for c in candidates if pc in (c.get("observedIn") or [])]
@@ -171,27 +179,35 @@ def load_inversion() -> dict:
                     unclaimed.append((hexv, direction, pc))
                     continue
                 for cand in claimants:
-                    inv.setdefault(pc, []).append({
-                        "hex": hexv,
-                        "name": cand.get("name"),
-                        "retail_class_name": cand.get("retail_class_name"),
-                        "service": cand.get("service"),
-                        "direction": direction,
-                        "lengths": lengths,
-                    })
+                    inv.setdefault(pc, []).append(
+                        {
+                            "hex": hexv,
+                            "name": cand.get("name"),
+                            "retail_class_name": cand.get("retail_class_name"),
+                            "service": cand.get("service"),
+                            "direction": direction,
+                            "lengths": lengths,
+                        }
+                    )
 
     if missing_key or unclaimed:
         if missing_key:
             detail = ", ".join(f"{h} {d}" for h, d in sorted(missing_key))
-            print("ERROR: opcode(s) observed locally with no entry in "
-                  f"derived/opcode_names.json: {detail}. Re-promote the mapping "
-                  "(tools/promote_opcode_names.py) or confirm the source catalog "
-                  "covers them before re-running.", file=sys.stderr)
+            print(
+                "ERROR: opcode(s) observed locally with no entry in "
+                f"derived/opcode_names.json: {detail}. Re-promote the mapping "
+                "(tools/promote_opcode_names.py) or confirm the source catalog "
+                "covers them before re-running.",
+                file=sys.stderr,
+            )
         if unclaimed:
             detail = ", ".join(f"{h} {d} {pc}" for h, d, pc in sorted(unclaimed))
-            print("ERROR: opcode(s) with more than one service in "
-                  "derived/opcode_names.json where no candidate's observedIn "
-                  f"names the pcap: {detail}.", file=sys.stderr)
+            print(
+                "ERROR: opcode(s) with more than one service in "
+                "derived/opcode_names.json where no candidate's observedIn "
+                f"names the pcap: {detail}.",
+                file=sys.stderr,
+            )
         raise SystemExit(2)
 
     return inv
@@ -214,12 +230,13 @@ def member_stats(members: list[str], inv: dict) -> dict:
     for fn in members:
         path = CAPTURES_DIR / fn
         recs = inv.get(fn, [])
-        hexes = sorted({r["hex"] for r in recs if r["hex"]},
-                       key=lambda h: int(h, 16))
+        hexes = sorted({r["hex"] for r in recs if r["hex"]}, key=lambda h: int(h, 16))
         svc = Counter(r["service"] for r in recs if r["service"])
         manifest_item = manifest_members[fn]
         stats[fn] = {
-            "size": path.stat().st_size if path.exists() else manifest_item["size_bytes"],
+            "size": path.stat().st_size
+            if path.exists()
+            else manifest_item["size_bytes"],
             "sha256": sha256_file(path) if path.exists() else manifest_item["sha256"],
             "opcode_hexes": hexes,
             "service_mix": dict(svc),
@@ -235,20 +252,30 @@ def union_opcodes(stats: dict) -> list[dict]:
     for fn, st in stats.items():
         for r in st["records"]:
             key = (r["hex"], r["service"], r["direction"])
-            slot = merged.setdefault(key, {
-                "hex": r["hex"], "service": r["service"], "direction": r["direction"],
-                "name": r["name"], "retail_class_name": r["retail_class_name"],
-                "lengths": set(),
-            })
+            slot = merged.setdefault(
+                key,
+                {
+                    "hex": r["hex"],
+                    "service": r["service"],
+                    "direction": r["direction"],
+                    "name": r["name"],
+                    "retail_class_name": r["retail_class_name"],
+                    "lengths": set(),
+                },
+            )
             slot["lengths"].update(r["lengths"])
     rows = []
     for v in merged.values():
         v["lengths"] = sorted(v["lengths"])
         rows.append(v)
     svc_order = {"lobby": 0, "world": 1, "map": 2, "backend": 3}
-    rows.sort(key=lambda v: (svc_order.get(v["service"], 9),
-                             int(v["hex"], 16) if v["hex"] else 0,
-                             v["direction"] or ""))
+    rows.sort(
+        key=lambda v: (
+            svc_order.get(v["service"], 9),
+            int(v["hex"], 16) if v["hex"] else 0,
+            v["direction"] or "",
+        )
+    )
     return rows
 
 
@@ -304,100 +331,139 @@ def render_readme(s: dict, stats: dict) -> str:
     lines.extend(wrap_prose(s["blurb"]))
     lines.extend(["", "This view summarizes opcode evidence from packet captures.", ""])
     lines.extend(wrap_prose(f"Raw captures: `{SIBLING_LABEL}/`.", bullet=True))
-    lines.extend(wrap_prose(
-        "Evidence class: packet captures, which outrank video breakdowns and wiki sources.",
-        bullet=True,
-    ))
+    lines.extend(
+        wrap_prose(
+            "Evidence class: packet captures, which outrank video breakdowns and wiki sources.",
+            bullet=True,
+        )
+    )
     lines.extend(["", "## Load first", ""])
-    lines.extend(wrap_prose(
-        "`evidence-map.md` - the per-capture opcode rollup, names from "
-        "`derived/opcode_names.json`, plus caveats and gaps.",
-        bullet=True,
-    ))
-    lines.extend(wrap_prose(
-        "`file-inventory.csv` - one row per member pcap (bytes, sha256, observed opcodes).",
-        bullet=True,
-    ))
+    lines.extend(
+        wrap_prose(
+            "`evidence-map.md` - the per-capture opcode rollup, names from "
+            "`derived/opcode_names.json`, plus caveats and gaps.",
+            bullet=True,
+        )
+    )
+    lines.extend(
+        wrap_prose(
+            "`file-inventory.csv` - one row per member pcap (bytes, sha256, observed opcodes).",
+            bullet=True,
+        )
+    )
     lines.extend(["", "## Raw materials", ""])
     for m in members:
         st = stats[m]
-        lines.extend(wrap_prose(
-            f"`{SIBLING_LABEL}/{m}` ({fmt_int(st['size'])} B, "
-            f"{len(st['opcode_hexes'])} opcodes).",
-            bullet=True,
-        ))
+        lines.extend(
+            wrap_prose(
+                f"`{SIBLING_LABEL}/{m}` ({fmt_int(st['size'])} B, "
+                f"{len(st['opcode_hexes'])} opcodes).",
+                bullet=True,
+            )
+        )
     lines += ["", "## Key entities/topics", ""]
     for tag in s["tags"]:
         lines.extend(wrap_prose(tag, bullet=True))
     lines += ["", "## Gaps", ""]
-    lines.extend(wrap_prose(
-        "This scenario carries opcode identity, direction, service, and payload lengths "
-        "only - not decoded field semantics (those live in this repo's "
-        "`derived/payload_layouts.json`).",
-        bullet=True,
-    ))
-    lines.extend(wrap_prose(
-        f"Service split across members: "
-        f"{', '.join(f'{k} {v}' for k, v in sorted(svc_total.items()))}.",
-        bullet=True,
-    ))
+    lines.extend(
+        wrap_prose(
+            "This scenario carries opcode identity, direction, service, and payload lengths "
+            "only - not decoded field semantics (those live in this repo's "
+            "`derived/payload_layouts.json`).",
+            bullet=True,
+        )
+    )
+    lines.extend(
+        wrap_prose(
+            f"Service split across members: "
+            f"{', '.join(f'{k} {v}' for k, v in sorted(svc_total.items()))}.",
+            bullet=True,
+        )
+    )
     if s.get("caveat"):
         lines.extend(wrap_prose(f"Caveat: {s['caveat']}", bullet=True))
     lines += ["", "## Using this view", ""]
-    lines.extend(wrap_prose(
-        "Use `file-inventory.csv` to choose a member pcap for the opcode, then open it "
-        f"from `{SIBLING_LABEL}/` for byte-level work.",
-        bullet=True,
-    ))
-    lines.extend(wrap_prose(
-        "Cross-check the full opcode entry in this repo's `derived/opcode_names.json` "
-        "before citing it.",
-        bullet=True,
-    ))
-    lines.extend(wrap_prose(
-        f"Mapping provenance: {mapping_source()}. The promoted copy is not synchronized "
-        "automatically.",
-        bullet=True,
-    ))
+    lines.extend(
+        wrap_prose(
+            "Use `file-inventory.csv` to choose a member pcap for the opcode, then open it "
+            f"from `{SIBLING_LABEL}/` for byte-level work.",
+            bullet=True,
+        )
+    )
+    lines.extend(
+        wrap_prose(
+            "Cross-check the full opcode entry in this repo's `derived/opcode_names.json` "
+            "before citing it.",
+            bullet=True,
+        )
+    )
+    lines.extend(
+        wrap_prose(
+            f"Mapping provenance: {mapping_source()}. The promoted copy is not synchronized "
+            "automatically.",
+            bullet=True,
+        )
+    )
     lines.append("")
     return "\n".join(lines)
 
 
 def render_evidence_map(s: dict, stats: dict, opcodes: list[dict]) -> str:
     members = s["members"]
-    lines = [f"# {s['title']} - Evidence Map", "",
-             "This map joins two repository-owned products:", "",
-             "- `derived/observations.json` supplies numeric observations.",
-             f"- `derived/opcode_names.json` supplies names promoted from {mapping_source()}.",
-             f"- Raw captures live in `{SIBLING_LABEL}/`.", "",
-             f"## Captures ({len(members)})", ""]
+    lines = [
+        f"# {s['title']} - Evidence Map",
+        "",
+        "This map joins two repository-owned products:",
+        "",
+        "- `derived/observations.json` supplies numeric observations.",
+        f"- `derived/opcode_names.json` supplies names promoted from {mapping_source()}.",
+        f"- Raw captures live in `{SIBLING_LABEL}/`.",
+        "",
+        f"## Captures ({len(members)})",
+        "",
+    ]
     for m in members:
         st = stats[m]
         mix = ", ".join(f"{k} {v}" for k, v in sorted(st["service_mix"].items()))
-        lines.append(f"- `{m}` - {fmt_int(st['size'])} B, "
-                     f"{len(st['opcode_hexes'])} distinct opcodes ({mix}).")
-    lines += ["", f"## Observed opcodes ({len(opcodes)} distinct)", "",
-              "Union across the member captures. `name` is the "
-              "derived/opcode_names.json entry name; `retail class` is the "
-              "retail_class_name attribution when known.", "",
-              "| opcode | service | direction | name | retail class | payload lengths |",
-              "|---|---|---|---|---|---|"]
+        lines.append(
+            f"- `{m}` - {fmt_int(st['size'])} B, "
+            f"{len(st['opcode_hexes'])} distinct opcodes ({mix})."
+        )
+    lines += [
+        "",
+        f"## Observed opcodes ({len(opcodes)} distinct)",
+        "",
+        "Union across the member captures. `name` is the "
+        "derived/opcode_names.json entry name; `retail class` is the "
+        "retail_class_name attribution when known.",
+        "",
+        "| opcode | service | direction | name | retail class | payload lengths |",
+        "|---|---|---|---|---|---|",
+    ]
     for o in opcodes:
         retail_class = o["retail_class_name"] or "-"
         name = o["name"] or "-"
         lengths = ", ".join(str(x) for x in o["lengths"]) or "-"
-        lines.append(f"| `{o['hex']}` | {o['service']} | {o['direction']} | "
-                     f"{name} | {retail_class} | {lengths} |")
-    lines += ["", "## Verification", "",
-              "- Every opcode above comes from `derived/observations.json` "
-              "joined with `derived/opcode_names.json` for the member pcaps. "
-              "No opcode is added manually.",
-              "- Member sizes and sha256 were taken from this repo's "
-              f"`{SIBLING_LABEL}/`; the canonical hashes live in "
-              "`sources/pcap-1.23b/manifest.yaml`.", "",
-              "## Gaps / caveats", "",
-              "- Opcode identity and framing only; decoded payload field semantics "
-              "live in this repo's `derived/` (payload_layouts.json and friends)."]
+        lines.append(
+            f"| `{o['hex']}` | {o['service']} | {o['direction']} | "
+            f"{name} | {retail_class} | {lengths} |"
+        )
+    lines += [
+        "",
+        "## Verification",
+        "",
+        "- Every opcode above comes from `derived/observations.json` "
+        "joined with `derived/opcode_names.json` for the member pcaps. "
+        "No opcode is added manually.",
+        "- Member sizes and sha256 were taken from this repo's "
+        f"`{SIBLING_LABEL}/`; the canonical hashes live in "
+        "`sources/pcap-1.23b/manifest.yaml`.",
+        "",
+        "## Gaps / caveats",
+        "",
+        "- Opcode identity and framing only; decoded payload field semantics "
+        "live in this repo's `derived/` (payload_layouts.json and friends).",
+    ]
     if s.get("caveat"):
         lines.append(f"- {s['caveat']}")
     lines.append("")
@@ -407,19 +473,30 @@ def render_evidence_map(s: dict, stats: dict, opcodes: list[dict]) -> str:
 def render_file_inventory(s: dict, stats: dict) -> str:
     buf = io.StringIO()
     writer = csv.writer(buf, lineterminator="\n")
-    writer.writerow(["pcap", "capture_path", "bytes", "sha256",
-                     "n_opcodes", "opcodes", "service_mix"])
+    writer.writerow(
+        [
+            "pcap",
+            "capture_path",
+            "bytes",
+            "sha256",
+            "n_opcodes",
+            "opcodes",
+            "service_mix",
+        ]
+    )
     for m in s["members"]:
         st = stats[m]
-        writer.writerow([
-            m,
-            f"{SIBLING_LABEL}/{m}",
-            st["size"],
-            st["sha256"],
-            len(st["opcode_hexes"]),
-            ";".join(st["opcode_hexes"]),
-            ";".join(f"{k}={v}" for k, v in sorted(st["service_mix"].items())),
-        ])
+        writer.writerow(
+            [
+                m,
+                f"{SIBLING_LABEL}/{m}",
+                st["size"],
+                st["sha256"],
+                len(st["opcode_hexes"]),
+                ";".join(st["opcode_hexes"]),
+                ";".join(f"{k}={v}" for k, v in sorted(st["service_mix"].items())),
+            ]
+        )
     return buf.getvalue()
 
 
@@ -441,17 +518,24 @@ def build() -> tuple[dict, list[dict]]:
 
 def run(check: bool = False) -> int:
     if not OPCODE_NAMES_JSON.exists():
-        print(f"ERROR: promoted opcode-name mapping not found at {OPCODE_NAMES_JSON}. "
-              "Re-promote it with tools/promote_opcode_names.py.", file=sys.stderr)
+        print(
+            f"ERROR: promoted opcode-name mapping not found at {OPCODE_NAMES_JSON}. "
+            "Re-promote it with tools/promote_opcode_names.py.",
+            file=sys.stderr,
+        )
         return 2
     if not OBSERVATIONS_JSON.exists():
-        print(f"ERROR: observations.json not found at {OBSERVATIONS_JSON}", file=sys.stderr)
+        print(
+            f"ERROR: observations.json not found at {OBSERVATIONS_JSON}",
+            file=sys.stderr,
+        )
         return 2
 
     files, scenarios = build()
     scenario_ids = {s["id"] for s in scenarios}
     stale_dirs = sorted(
-        p for p in (SCENARIOS_DIR.iterdir() if SCENARIOS_DIR.is_dir() else [])
+        p
+        for p in (SCENARIOS_DIR.iterdir() if SCENARIOS_DIR.is_dir() else [])
         if p.is_dir() and p.name not in scenario_ids
     )
 
@@ -493,9 +577,14 @@ def run(check: bool = False) -> int:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Generate pcap-reference scenario views.")
-    parser.add_argument("--check", action="store_true",
-                        help="report stale files; do not write (exit 1 if stale)")
+    parser = argparse.ArgumentParser(
+        description="Generate pcap-reference scenario views."
+    )
+    parser.add_argument(
+        "--check",
+        action="store_true",
+        help="report stale files; do not write (exit 1 if stale)",
+    )
     args = parser.parse_args()
     return run(check=args.check)
 

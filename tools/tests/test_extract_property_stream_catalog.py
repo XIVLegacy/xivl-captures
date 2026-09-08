@@ -35,7 +35,9 @@ class PropertyStreamCatalogTests(unittest.TestCase):
         self.assertEqual(len(target), 30)
         record = bytes([1]) + struct.pack("<I", 0x12345678) + b"\x01"
         stream = bytes([0xA0]) + target + record
-        rows, declared, terminated, consumed = MODULE.parse_records(bytes([len(stream)]) + stream)
+        rows, declared, terminated, consumed = MODULE.parse_records(
+            bytes([len(stream)]) + stream
+        )
         self.assertEqual(declared, len(stream))
         self.assertFalse(terminated)
         self.assertEqual(consumed, 1 + declared)

@@ -10,7 +10,13 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-INPUT = REPO_ROOT / "studies" / "property-stream-hash-catalog" / "derived" / "property-records.csv"
+INPUT = (
+    REPO_ROOT
+    / "studies"
+    / "property-stream-hash-catalog"
+    / "derived"
+    / "property-records.csv"
+)
 OUT = REPO_ROOT / "studies" / "player-hp-calibration" / "derived" / "anchors.csv"
 HEADER_ACTOR_ID = 43723073
 
@@ -33,24 +39,46 @@ EXPECTED_CANDIDATES = {
     (34, 1, 20, 111): 1,
 }
 FIELDS = (
-    "occurrence_index", "repeated_lead", "lead_occurrence", "capture",
-    "lane_index", "frame_index", "wrapped_source_actor_id",
-    "wrapped_destination_actor_id", "packet_indices", "subevent_indices",
-    "state_mainSkill_0", "state_mainSkillLevel", "generalParameter_5", "hpMax_0",
-    "state_mainSkill_0_record_index", "state_mainSkillLevel_record_index",
-    "generalParameter_5_record_index", "hpMax_0_record_index",
+    "occurrence_index",
+    "repeated_lead",
+    "lead_occurrence",
+    "capture",
+    "lane_index",
+    "frame_index",
+    "wrapped_source_actor_id",
+    "wrapped_destination_actor_id",
+    "packet_indices",
+    "subevent_indices",
+    "state_mainSkill_0",
+    "state_mainSkillLevel",
+    "generalParameter_5",
+    "hpMax_0",
+    "state_mainSkill_0_record_index",
+    "state_mainSkillLevel_record_index",
+    "generalParameter_5_record_index",
+    "hpMax_0_record_index",
 )
 
 
 def extract_rows(input_path: Path = INPUT) -> list[dict[str, object]]:
-    by_frame: defaultdict[tuple[str, int, int], list[dict[str, str]]] = defaultdict(list)
+    by_frame: defaultdict[tuple[str, int, int], list[dict[str, str]]] = defaultdict(
+        list
+    )
     target_hashes = {spec[1] for spec in PROPERTY_SPECS}
     with input_path.open(encoding="ascii", newline="") as handle:
         reader = csv.DictReader(handle)
         required = {
-            "record_index", "capture", "lane_index", "frame_index", "subevent_index",
-            "packet_index", "source_actor_id", "destination_actor_id", "property_hash",
-            "value_width", "value_u_le",
+            "record_index",
+            "capture",
+            "lane_index",
+            "frame_index",
+            "subevent_index",
+            "packet_index",
+            "source_actor_id",
+            "destination_actor_id",
+            "property_hash",
+            "value_width",
+            "value_u_le",
         }
         if reader.fieldnames is None or not required.issubset(reader.fieldnames):
             raise ValueError("property-record input is missing required columns")
@@ -74,7 +102,9 @@ def extract_rows(input_path: Path = INPUT) -> list[dict[str, object]]:
 
     candidates.sort(key=lambda item: item[0])
     observed = Counter(
-        tuple(int(rows[prop_hash]["value_u_le"]) for _, prop_hash, _, _ in PROPERTY_SPECS)
+        tuple(
+            int(rows[prop_hash]["value_u_le"]) for _, prop_hash, _, _ in PROPERTY_SPECS
+        )
         for _, rows in candidates
     )
     if observed != EXPECTED_CANDIDATES:
@@ -84,19 +114,25 @@ def extract_rows(input_path: Path = INPUT) -> list[dict[str, object]]:
     candidates = [
         (key, rows)
         for key, rows in candidates
-        if tuple(int(rows[prop_hash]["value_u_le"]) for _, prop_hash, _, _ in PROPERTY_SPECS)
+        if tuple(
+            int(rows[prop_hash]["value_u_le"]) for _, prop_hash, _, _ in PROPERTY_SPECS
+        )
         in lead_by_values
     ]
     lead_counts: Counter[str] = Counter()
     output: list[dict[str, object]] = []
     for occurrence_index, (key, rows) in enumerate(candidates, 1):
-        values = tuple(int(rows[prop_hash]["value_u_le"]) for _, prop_hash, _, _ in PROPERTY_SPECS)
+        values = tuple(
+            int(rows[prop_hash]["value_u_le"]) for _, prop_hash, _, _ in PROPERTY_SPECS
+        )
         lead = lead_by_values[values]
         lead_counts[lead] += 1
         for label, prop_hash, width, _ in PROPERTY_SPECS:
             actual_width = int(rows[prop_hash]["value_width"])
             if actual_width != width:
-                raise ValueError(f"{label} changed width from {width} to {actual_width} in frame {key}")
+                raise ValueError(
+                    f"{label} changed width from {width} to {actual_width} in frame {key}"
+                )
         capture, lane_index, frame_index = key
         selected_rows = list(rows.values())
         rendered: dict[str, object] = {
@@ -108,8 +144,16 @@ def extract_rows(input_path: Path = INPUT) -> list[dict[str, object]]:
             "frame_index": frame_index,
             "wrapped_source_actor_id": HEADER_ACTOR_ID,
             "wrapped_destination_actor_id": HEADER_ACTOR_ID,
-            "packet_indices": " ".join(str(value) for value in sorted({int(row["packet_index"]) for row in selected_rows})),
-            "subevent_indices": " ".join(str(value) for value in sorted({int(row["subevent_index"]) for row in selected_rows})),
+            "packet_indices": " ".join(
+                str(value)
+                for value in sorted({int(row["packet_index"]) for row in selected_rows})
+            ),
+            "subevent_indices": " ".join(
+                str(value)
+                for value in sorted(
+                    {int(row["subevent_index"]) for row in selected_rows}
+                )
+            ),
         }
         for _, prop_hash, _, column in PROPERTY_SPECS:
             rendered[column] = int(rows[prop_hash]["value_u_le"])

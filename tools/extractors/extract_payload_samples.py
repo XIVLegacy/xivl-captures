@@ -69,7 +69,12 @@ def walk_capture_payloads(path: Path) -> list[dict]:
             continue
         for f in parse_outer_frames(blob):
             body = f["body"]
-            if direction == "s2c" and len(body) >= 2 and body[0] == 0x78 and body[1] == 0x9C:
+            if (
+                direction == "s2c"
+                and len(body) >= 2
+                and body[0] == 0x78
+                and body[1] == 0x9C
+            ):
                 try:
                     body = zlib.decompress(body)
                 except zlib.error:
@@ -77,7 +82,11 @@ def walk_capture_payloads(path: Path) -> list[dict]:
             offset = 0
             while offset + SUB_EVENT_HEADER_LEN <= len(body):
                 size, ev_type = struct.unpack_from("<HH", body, offset)
-                if size == 0 or size < SUB_EVENT_HEADER_LEN or offset + size > len(body):
+                if (
+                    size == 0
+                    or size < SUB_EVENT_HEADER_LEN
+                    or offset + size > len(body)
+                ):
                     break
                 if ev_type == SUB_EVENT_CLASS_ACTOR_WRAPPED:
                     sub_body = body[offset + SUB_EVENT_HEADER_LEN : offset + size]

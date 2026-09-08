@@ -5,6 +5,7 @@ Scans root, studies, docs, and catalog Markdown. Raw source objects are valid
 targets but are not scanned. Web links, anchors, and paths outside the repo are
 skipped.
 """
+
 from __future__ import annotations
 
 import re
