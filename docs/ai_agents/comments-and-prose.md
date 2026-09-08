@@ -11,6 +11,9 @@ declaration and leave a short pointer. Branch-time narration and review
 scaffolding are removed before merge. When unsure, keep one line and flag the
 decision in review notes.
 
+Comment length and punctuation are style guidelines. Clarity, correctness,
+source quotations, licensing, and provenance justify exceptions.
+
 ## Repository surfaces
 
 - In tools/ and tools/extractors/, keep comments for framing assumptions,

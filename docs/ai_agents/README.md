@@ -30,10 +30,14 @@ guide](../catalog-guide.md), and the [catalog registry](../../catalog/index.yaml
   correct their public contract, and report the text change explicitly. Hosted
   CI runs the repository checks for every pull request. Public fork and pull
   request contributors may use local runs as optional feedback; the repository
-  owner's local workflow requires one of the applicable refresh commands:
+  owner's local workflow requires one of the applicable refresh commands for
+  evidence inputs (including source and study manifests or sidecars), schemas,
+  pipelines, generated products, or tools:
   `python tools/refresh.py --check` or the same command with `--public-shape`,
-  before a commit, including for prose-only changes that affect evidence
-  citations.
+  before a commit. For prose-only edits, inspect affected claims against their
+  sources, check local links, and run `git diff --check`. Reading the source
+  artifact suffices for claims about that artifact; use a relevant executable
+  check when source inspection cannot establish the changed claim.
 - Use a single commit subject of <=50 chars with no parentheses or
   co-authored trailer.
 - Do not push unless the user explicitly asks.

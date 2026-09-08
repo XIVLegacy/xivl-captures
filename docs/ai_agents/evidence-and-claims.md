@@ -51,7 +51,8 @@ locally.
 
 Keep the finding's evidence citation and verdict here. A consumer project
 promotes a durable implementation or behavior conclusion on its own side with
-an immutable citation to this record.
+a source citation to this record. Add an immutable revision or digest when
+exact version or byte identity affects the conclusion.
 
 ## Numbers in prose
 
@@ -67,13 +68,11 @@ something else, a count is throat-clearing: it tells the reader nothing they
 can act on, and it invites doubt when their own run differs by one. Keep what
 was found. Drop the size of the haystack.
 
-Approximate markers such as "approximately", "roughly", "about", or "~" in an
-incidental scene-setting figure are still a reason to cut the number. An
-approximate figure in an authored observation may remain when the method or
-instrument resolution cannot support more precision; state the method and
-resolution with the figure, and do not turn it into an exact value by inference.
-Where an exact source exists, name that source instead of restating its number
-in prose.
+Useful rounded quantities and supported estimates may remain when they carry
+an observation's claim. State the method, resolution, or bound where material;
+use exact values when precision affects correctness. Do not invent precision
+from uncertain evidence. Cite the source instead of repeating an incidental
+number.
 
 This governs prose the repository authors. A figure inside a quoted or
 transcribed source is source content and stays verbatim, hedge included.
@@ -86,8 +85,7 @@ Facts promoted from another repository use this shape:
 
 Within this repository, retain the stable source or study id, member filename,
 SHA-256, source citation, evidence class, and recorded date. Add a row, symbol,
-section, or derived-file locator when it narrows the claim. Commit hashes and
-date pins are not citations: repository histories are rewritten before
+section, or derived-file locator when it narrows the claim. Commit hashes and date pins do not replace source locators: repository histories are rewritten before
 publication, and dated "as of" claims rot. External sources' own revision
 identifiers and observation dates (harvest, retrieval, capture dates) are
 source metadata and stay verbatim. Branch names, working-tree paths, and
