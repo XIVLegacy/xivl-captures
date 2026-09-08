@@ -9,6 +9,10 @@ manifest, never a generated output by hand, then regenerate.
 The [checks workflow](../.github/workflows/checks.yml) is authoritative for
 CI-covered checks.
 
+Ruff 0.15.21 is the formatter and linter for authored Python. Run
+`ruff format --check --no-cache tools` and `ruff check --no-cache tools` before
+submitting tool changes.
+
 ## Human entry points
 
 The supported commands for direct maintainer use are:

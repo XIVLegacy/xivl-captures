@@ -22,6 +22,8 @@ citations, confidence, and provenance.
 
 ## Python
 
+- Use Ruff 0.15.21 as the Python formatter and linter. Run `ruff format` to
+  format authored tools and `ruff check` to lint them.
 - Use 4 spaces for indentation and no tabs.
 - Use `lower_snake_case` for modules, functions, and variables,
   `UpperCamelCase` for classes, and `UPPER_SNAKE_CASE` for constants.
