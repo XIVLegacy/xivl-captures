@@ -19,7 +19,7 @@ from pathlib import Path
 
 import yaml
 
-from build_scenario_views import BASE_TAGS, load_inversion, member_stats, scenario_search_hints
+from build_scenario_views import BASE_TAGS, load_inversion, scenario_search_hints
 from restricted_paths import EXCLUDED_DERIVED_IDS
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -180,8 +180,7 @@ def build_scenarios() -> list[dict]:
         entry["tags"] = tags
         members = list(s.get("members") or [])
         entry["members"] = members
-        stats = member_stats(members, inv)
-        entry["search_hints"] = scenario_search_hints(members, stats)
+        entry["search_hints"] = scenario_search_hints(members, inv)
         entries.append(entry)
     entries.sort(key=lambda e: e["id"])
     return entries

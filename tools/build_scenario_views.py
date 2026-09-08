@@ -252,13 +252,12 @@ def union_opcodes(stats: dict) -> list[dict]:
     return rows
 
 
-def scenario_search_hints(members: list[str], stats: dict) -> list[str]:
+def scenario_search_hints(members: list[str], inv: dict) -> list[str]:
     """Return member names and receiver classes as scenario search anchors."""
     hints: set[str] = set()
     for fn in members:
         hints.add(fn.rsplit(".", 1)[0].replace("_", " "))
-    for st in stats.values():
-        for r in st["records"]:
+        for r in inv.get(fn, []):
             if r.get("retail_class_name"):
                 hints.add(r["retail_class_name"].lower())
     return sorted(hints)
