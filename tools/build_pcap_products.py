@@ -97,8 +97,12 @@ def _dependency_closure(selected: set[str]) -> set[str]:
 
 
 def _run_group(group: str, stage: Path) -> int:
-    out = lambda name: str(stage / f"{name}.json")
-    csv_out = lambda name: str(stage / f"{name}.csv")
+    def out(name: str) -> str:
+        return str(stage / f"{name}.json")
+
+    def csv_out(name: str) -> str:
+        return str(stage / f"{name}.csv")
+
     commands = {
         "observations": (
             extract_observations.main,

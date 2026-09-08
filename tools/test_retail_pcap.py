@@ -6,7 +6,6 @@ from __future__ import annotations
 import ast
 import copy
 import json
-import shutil
 import stat
 import subprocess
 import sys

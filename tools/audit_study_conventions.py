@@ -187,7 +187,7 @@ def main() -> int:
         description="Audit study conventions (README presence, manifest/catalog agreement, "
         "checksum entry shape, path hygiene) not covered by validate_capture_repo.py."
     )
-    args = parser.parse_args()
+    parser.parse_args()
 
     # Titles/search_hints may contain Japanese; UTF-8 output avoids cp1252 console aborts.
     if hasattr(sys.stdout, "reconfigure"):

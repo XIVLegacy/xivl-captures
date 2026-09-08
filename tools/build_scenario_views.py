@@ -548,7 +548,9 @@ def run(check: bool = False) -> int:
                 path.parent.mkdir(parents=True, exist_ok=True)
                 path.write_text(text, encoding="utf-8", newline="\n")
 
-    rel = lambda p: str(p.relative_to(REPO_ROOT)).replace("\\", "/")
+    def rel(p: Path) -> str:
+        return str(p.relative_to(REPO_ROOT)).replace("\\", "/")
+
     if check:
         problems = []
         if stale:
