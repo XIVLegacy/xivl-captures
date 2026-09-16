@@ -141,12 +141,11 @@ zones (`Locke's Lie`, `Rivenroad`, `Castrum Novum`, `Mistbeard Cove`,
 
 ## Evidence gaps
 
-- The corpus itself is not in this repo (see the manifest `retention.note`), so
-  the CSVs cannot be regenerated on a checkout without the local staging
-  directory. They are committed as the canonical product for that reason.
-- Only four template families were mined. Quests, guildleves, recipes as their
-  own pages, NPCs, achievements and shop inventories are all present in the
-  corpus and are **not** extracted here.
+- Raw source review requires the private archive pinned by
+  `sources/gamerescape-tables/manifest.yaml`. The CSVs are committed as the
+  canonical products; source-processing snapshots remain in the archive.
+- Extraction covers selected fields. NPC tables and quest-derived mob
+  attributions are included; the study's products define the supported coverage.
 - The behavior-code definitions in `mob-behavior-codes.csv` are current-GE
   revisions (2017-2022), not 1.0-era ones. The letter meanings are corroborated
   back to a 2010 revision of `Template:Monster Notes`; the mechanic specifics on
@@ -157,8 +156,8 @@ zones (`Locke's Lie`, `Rivenroad`, `Castrum Novum`, `Mistbeard Cove`,
   unknown, never zero.
 - `hp_low` / `hp_high` are present for 458 of 824 mobs; `mp_low` / `mp_high` are
   sparser still. Community-measured, no sample sizes given.
-- No per-page Wayback snapshots exist. If Gamer Escape goes down, the local
-  corpus and these CSVs are the only copy on hand.
+- No per-page Wayback snapshots were created for this corpus. The private
+  archive preserves source revisions independently of the live site.
 
 ## Derived from the client join
 

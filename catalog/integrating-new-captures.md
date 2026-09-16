@@ -22,8 +22,8 @@ with an immutable citation.
 2. Decide whether to reuse an existing id or create a new one:
    `<content_kind>-<short-name>-video-breakdown`.
 3. Place the document under `sources/<id>/objects/` with its filename
-   unchanged (or record its cold-storage / local-only location in the
-   manifest if it is not kept in-repo).
+   unchanged. If held elsewhere, record its cold-storage or local-only
+   location, or its immutable private-repository archive pin, in the manifest.
 4. Build the distilled evidence packet in `studies/<id>/derived/` -
    `evidence-map.md` alone.
 5. Add or update `sources/<id>/manifest.yaml`.
@@ -101,7 +101,8 @@ Required fields:
   (the source video's title/filename or URL)
 - `members` - one entry per file under `objects/` (`file`, `sha256`,
   `size_bytes`); empty when the source has no in-repo `objects/` (local-only
-  or cold-stored)
+  or cold-stored). Private archives may keep their full member inventory inside
+  the archive and leave this list empty.
 
 The public/private boundary rule (enforced by `tools/validate_schemas.py`):
 `distribution: local-only` implies empty `members` and no `objects/` dir;
@@ -217,6 +218,19 @@ Retention vocabulary (`storage.storage_id` in `sources/<id>/manifest.yaml`):
   gitignored `archives/<id>/` folder at the repo root; `storage.path` records
   the archive-relative location. Configured in `config/cold-storage.example.yaml`
   / `config/cold-storage.local.yaml`.
+- a private repository id - use `distribution: restricted` and
+  `storage.original_state: private-repository`. Record `storage.repository`,
+  its full immutable `commit`, and a repository-relative `path` using `/`
+  separators. `storage.master_archive` records the matching `file`, exact
+  `size_bytes`, and `sha256`. For an embedded member inventory, record its
+  member name and digest as well. Private storage requires the owner's explicit
+  retention approval; it grants no automated-input or credential permission.
+
+For a private archive without local source objects, validation checks its
+immutable identity and reports that external bytes were not verified. Verify
+the retrieved archive's size, digest, and complete member inventory separately
+before using or replacing source material. Public checks do not fetch private
+inputs. The Gamer Escape source manifest is an example of this storage form.
 
 Original retention rule:
 
@@ -234,14 +248,17 @@ Original retention rule:
 Verification checklist:
 
 - the evidence has both `studies/<id>/README.md` and `sources/<id>/manifest.yaml`
-- every path in `sources/<id>/manifest.yaml` and `studies/<id>/manifest.yaml`
-  exists
-- every path listed in `catalog/index.yaml` exists
+- every in-repo path in the source and study manifests and `catalog/index.yaml`
+  exists; external storage paths follow their declared storage policy
+- each private-repository archive has the required repository, relative path,
+  commit, size, and SHA-256 pin; external bytes are verified separately when
+  access is available
 - the raw document is under `sources/<id>/objects/`, or the manifest correctly
-  records its local-only / cold-stored location
+  records its local-only, cold-stored, or private-repository location
 - the distilled packet exists for every `distilled` or `validated` study
 - the evidence map records the stable id, exact source or study path, and verdict
-- `python tools/refresh.py --check` passes
+- `python tools/refresh.py --check` passes, or use `--public-shape` when restricted
+  originals are unavailable
 
 ## Video Breakdown Intake
 

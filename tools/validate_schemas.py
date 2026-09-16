@@ -10,7 +10,7 @@ import os
 import subprocess
 import sys
 import time
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 
 import yaml
 
@@ -272,6 +272,45 @@ def check_source_objects(
     members = doc.get("members") or []
 
     if not objects_dir.is_dir():
+        original_state = (doc.get("storage") or {}).get("original_state")
+        if original_state == "private-repository":
+            storage = doc["storage"]
+            archive = storage.get("master_archive")
+            if not isinstance(archive, dict):
+                archive = {}
+            repository = storage.get("repository")
+            archive_path = storage.get("path")
+            commit = storage.get("commit", "")
+            digest = archive.get("sha256", "")
+            pinned = (
+                isinstance(repository, str)
+                and bool(repository)
+                and isinstance(archive_path, str)
+                and bool(archive_path)
+                and not PurePosixPath(archive_path).is_absolute()
+                and ".." not in PurePosixPath(archive_path).parts
+                and "\\" not in archive_path
+                and ":" not in archive_path
+                and isinstance(commit, str)
+                and len(commit) == 40
+                and all(c in "0123456789abcdef" for c in commit)
+                and isinstance(digest, str)
+                and len(digest) == 64
+                and all(c in "0123456789abcdef" for c in digest)
+                and type(archive.get("size_bytes")) is int
+                and archive["size_bytes"] > 0
+                and archive.get("file") == PurePosixPath(archive_path).name
+            )
+            results.append(
+                (
+                    label,
+                    pinned,
+                    "private archive identity pinned; external bytes not verified here"
+                    if pinned
+                    else "private archive requires repository, path, commit, size, and SHA-256",
+                )
+            )
+            return
         if CORPUS_ABSENT:
             results.append(
                 (
@@ -281,7 +320,6 @@ def check_source_objects(
                 )
             )
             return
-        original_state = (doc.get("storage") or {}).get("original_state")
         if original_state == "cold-stored":
             results.append(
                 (

@@ -1401,8 +1401,8 @@ Three limits on the file:
   `amalj'aa` features in all 13. Rows whose `likely_cause` is `race-name-only` should be
   discounted for that reason.
 
-The corpus is local-only and gitignored, so this one output is skipped rather than emptied
-when it is absent, and the committed CSV stays the canonical product.
+The corpus is retained in the private archive pinned by the source manifest.
+The committed CSV remains the canonical product when raw inputs are unavailable.
 
 ### The quest infobox turns the attribution into the best level statement in the set
 

@@ -44,11 +44,13 @@ evidence there. This study adds two fields that no live FFXIV wiki documents:
 
 ## Source material
 
-**`raw/original/` is empty and stays empty.** The GE wikitext is not in this
-repo: Gamer Escape is a permitted factual baseline, but verbatim GE prose and
-bulk imports of GE pages as-is are excluded. An 11,227-page wikitext mirror is
-exactly such a bulk import. The source corpus remains outside repository
-history; only the normalized products below are public.
+The raw GE wikitext is preserved in the restricted source archive identified by
+[`sources/gamerescape-tables/manifest.yaml`](../../sources/gamerescape-tables/manifest.yaml).
+The archive includes the 11,227-page main corpus, separately retained revisions,
+filtered source pages, and source-table snapshots. Its member inventory pins
+every file's path, size, and hash; page headers retain original revision metadata.
+Raw wikitext and bulk page imports remain outside this public repository's
+history. Only the normalized products below are public.
 
 The CSVs under `derived/` are the canonical, self-contained product.
 `derived/checksums.sha256` anchors them rather than any raw original. They are
@@ -228,8 +230,8 @@ undocumented client names are mentioned in one of GE's 273 quest pages**, 35 of 
 `ge-gap`, and the page names the content rather than interpolating from other mobs. All 273
 pages were last edited in 2011 or 2012, so unlike the ARR-era behavior-code templates they
 are contemporaneous 1.x observation. Only the attribution is stored, never the walkthrough
-prose. The corpus is local only, so this one output is skipped rather than emptied when it
-is absent.
+prose. The corpus is retained in the private archive pinned by the source manifest;
+the committed CSV remains the canonical product when raw inputs are unavailable.
 
 The quest infobox provides **the strongest level statement in the set**. `Minimum Level`
 is filled on 263 of the 273 pages and behaves as a floor: the mob's
@@ -527,9 +529,10 @@ See `derived/zone-client-crosscheck-notes.md`.
 
 ## Evidence gaps
 
-- Corpus is local-only, outside every repository history.
-- Only four template families were mined - quests, guildleves, NPCs, shops and
-  standalone recipe pages are in the corpus and are not extracted here.
+- Raw source review requires the separately retrieved private archive pinned
+  by the source manifest.
+- Extraction covers selected fields. NPC tables and quest-derived mob
+  attributions are included; the study's products define the supported coverage.
 - The behavior-code definitions come from current GE revisions, not 1.0-era ones.
   Their letter meanings are corroborated back to 2010, but any mechanic detail on
   those pages is ARR-era and is not 1.x evidence.

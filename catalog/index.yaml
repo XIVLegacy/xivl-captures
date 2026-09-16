@@ -103,9 +103,9 @@ sources:
 - id: gamerescape-tables
   title: Gamer Escape FFXIV 1.x Item and Mob Tables - Web Tables
   evidence_class: web-tables
-  distribution: local-only
-  original_state: local-only
-  storage_id: local-research-corpus
+  distribution: restricted
+  original_state: private-repository
+  storage_id: XIVLegacy/xivl-private-assets
   member_count: 0
 - id: historical-battlecommand-workbook
   title: Historical BattleCommand Workbook

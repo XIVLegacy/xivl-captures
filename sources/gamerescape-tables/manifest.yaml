@@ -1,7 +1,7 @@
 id: gamerescape-tables
 title: Gamer Escape FFXIV 1.x Item and Mob Tables - Web Tables
 evidence_class: web-tables
-distribution: local-only
+distribution: restricted
 provenance:
   sources:
   - key: ge-item-pages
@@ -9,7 +9,7 @@ provenance:
     url: https://ffxiv.gamerescape.com/wiki/
     archive_url: https://web.archive.org/web/20260719042509/https://ffxiv.gamerescape.com/wiki/Main_Page
     site: Gamer Escape - Final Fantasy XIV wiki
-    note: 'Per-row provenance is the ge_page_title / ge_revision_id / ge_revision_timestamp columns; the live page is https://ffxiv.gamerescape.com/wiki/<ge_page_title> with spaces as underscores. archive_url is the site-level anchor: no per-page Wayback snapshots were created, because the 11,227-page corpus stays local-only by policy (see retention) and the site 403s naive fetchers behind Cloudflare.'
+    note: 'Per-row provenance is the ge_page_title / ge_revision_id / ge_revision_timestamp columns; the live page is https://ffxiv.gamerescape.com/wiki/<ge_page_title> with spaces as underscores. archive_url is the site-level anchor: no per-page Wayback snapshots were created, because the 11,227-page main corpus is retained in the restricted archive and the site 403s naive fetchers behind Cloudflare.'
   - key: ge-mob-pages
     title: Gamer Escape FFXIV wiki - 1.0 mob pages (raw wikitext, Infobox Mob + Mob Row)
     url: https://ffxiv.gamerescape.com/wiki/
@@ -38,7 +38,16 @@ provenance:
     site: Gamer Escape - Final Fantasy XIV wiki
     note: 'The eight Template:Mob Notes-<code> pages the mob infoboxes resolve each behavior letter through, plus the Aggressive / Passive / Detects by Sound / Detects by Magic terminology pages they link to. None are in the local 1.0 corpus; they were fetched from the MediaWiki API on 2026-07-31 and feed mob-behavior-codes.csv, which pins each definition by ge_revision_id. These revisions date from 2017-2022 and are therefore ARR-era: the letter meanings are corroborated back to a 2010 revision of Template:Monster Notes, but the mechanic detail on them is not 1.x evidence.'
 storage:
-  original_state: local-only
-  storage_id: local-research-corpus
-  path: research/gamerescape/pages
+  original_state: private-repository
+  storage_id: XIVLegacy/xivl-private-assets
+  path: web-sources/gamerescape/gamerescape-corpus.zip
+  repository: XIVLegacy/xivl-private-assets
+  commit: d889fe51c1809c9ca853243795f55390afd53faf
+  master_archive:
+    file: gamerescape-corpus.zip
+    sha256: 5591a0544c57475b461ca25ae164e9f6c94b9d7d2c993703274f5c6bf5d28a8b
+    size_bytes: 13923763
+    holds: 15640 wiki files in three source trees and five source-table snapshots
+    member_manifest: corpus-manifest.json
+    member_manifest_sha256: cb75c4b5ca08be0075eafbc1e35bdc5280a9763aee877048231e93a369dff982
 members: []
