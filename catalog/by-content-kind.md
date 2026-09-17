@@ -185,12 +185,13 @@ Generated from `catalog/index.yaml`. Primary axis: `content_kind`.
 
 - `elemen-consumable-effects`
 
-## zone-mechanic (5)
+## zone-mechanic (6)
 
-### Studies (2)
+### Studies (3)
 
 - `elemen-playguide`
 - `elemen-zone-guide`
+- `navmut-world-population-observations`
 
 ### Scenarios (3)
 

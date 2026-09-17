@@ -108,12 +108,20 @@ UNIT_TEST_MODULES = (
     "tools.tests.test_extract_world_party_chat_00c9",
     "tools.tests.test_extract_lobby_record_census",
     "tools.tests.test_extract_historical_battlecommand",
+    "tools.tests.test_import_navmut_observations",
 )
+
+NAVMUT_IMPORTER = TOOLS / "import_navmut_observations.py"
 
 # The three gate modes share these command-level checks. Product-specific
 # stages remain below because their result rows combine related commands.
 CHECK_PLANS = {
     "public": (
+        (
+            [NAVMUT_IMPORTER, "--check"],
+            "public Navmut observation products",
+            (("public Navmut observation products", "regen"),),
+        ),
         (
             [TOOLS / "verify_retail_pcap.py", "--check-contract"],
             "retail PCAP contract",
@@ -170,6 +178,11 @@ CHECK_PLANS = {
         ),
     ),
     "check": (
+        (
+            [NAVMUT_IMPORTER, "--check"],
+            "Navmut observation products",
+            (("Navmut observation products", "regen"),),
+        ),
         (
             [TOOLS / "verify_retail_pcap.py", "--check-contract"],
             "retail PCAP contract",
@@ -238,6 +251,11 @@ CHECK_PLANS = {
         ),
     ),
     "write": (
+        (
+            [NAVMUT_IMPORTER],
+            "import Navmut observation products",
+            (("Navmut observation products", "write"),),
+        ),
         (
             [TOOLS / "build_catalog.py"],
             "build_catalog.py",

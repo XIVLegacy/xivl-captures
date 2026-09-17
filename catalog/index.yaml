@@ -149,6 +149,13 @@ sources:
   original_state: in-repo
   storage_id: repo
   member_count: 366
+- id: navmut-world-population-observations
+  title: Navmut World Population Observations
+  evidence_class: historical-research
+  distribution: public
+  original_state: in-repo
+  storage_id: repo
+  member_count: 1
 - id: pcap-1.23b
   title: FFXIV 1.23b Retail Packet-Capture Corpus
   evidence_class: packet-capture
@@ -1482,6 +1489,38 @@ studies:
   - studies/movement-speed-band-observations/derived/observed-bands.md
   source_refs:
   - source: pcap-1.23b
+- id: navmut-world-population-observations
+  title: Navmut World Population Observations
+  status: indexed
+  evidence_class: historical-research
+  content_kind: zone-mechanic
+  zones:
+  - Lower La Noscea
+  - The Thousand Maws of Toto-Rak
+  - Mor Dhona
+  tags:
+  - navmut
+  - world-population
+  - spawn-observation
+  - ambient
+  - npc
+  - encounter
+  - misc
+  - unresolved-identities
+  - provisional
+  search_hints:
+  - Navmut world population
+  - zone 128
+  - zone 159
+  - zone 190
+  - fst0Dungeon03
+  - ambient NPC encounter misc observations
+  primary_paths:
+  - studies/navmut-world-population-observations/derived/evidence-map.md
+  - studies/navmut-world-population-observations/derived/observations.csv
+  - studies/navmut-world-population-observations/derived/review-by-zone.md
+  source_refs:
+  - source: navmut-world-population-observations
 - id: party-marker-018d-chronology
   title: Party Marker 0x018D Chronology
   status: distilled

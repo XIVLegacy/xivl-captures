@@ -1,0 +1,22 @@
+id: navmut-world-population-observations
+title: Navmut World Population Observations
+evidence_class: historical-research
+distribution: public
+provenance:
+  contributor: gavint130
+  source: Navmut world-population observer
+  filename: observations.jsonl
+  schema_version: 2
+  observed_at: 2026-09-16/17
+  note: Directly recorded world-population observations; raw labels and UUIDs are retained.
+storage:
+  original_state: in-repo
+  storage_id: repo
+  path: objects/
+members:
+- file: observations.jsonl
+  sha256: 8bf6fb2a872e417f3cc94851d84fbf5bc7b76faca0d9164e493affdaeff40214
+  size_bytes: 262971
+notes: >-
+  This source preserves the pinned Navmut JSONL bytes. It records observations,
+  not canonical population definitions or home, slot, or respawn rules.

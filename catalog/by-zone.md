@@ -2,6 +2,24 @@
 
 Generated from `catalog/index.yaml`. Axis: `zones`.
 
+## Lower La Noscea (1)
+
+### Studies (1)
+
+- `navmut-world-population-observations`
+
+## Mor Dhona (1)
+
+### Studies (1)
+
+- `navmut-world-population-observations`
+
+## The Thousand Maws of Toto-Rak (1)
+
+### Studies (1)
+
+- `navmut-world-population-observations`
+
 ## black shroud (1)
 
 ### Scenarios (1)
