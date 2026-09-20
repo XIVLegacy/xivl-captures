@@ -2,6 +2,18 @@
 
 Generated from `catalog/index.yaml`. Axis: `zones`.
 
+## Coerthas (1)
+
+### Studies (1)
+
+- `mooglebox-regional-mob-maps`
+
+## La Noscea (1)
+
+### Studies (1)
+
+- `mooglebox-regional-mob-maps`
+
 ## Lower La Noscea (1)
 
 ### Studies (1)
@@ -13,6 +25,18 @@ Generated from `catalog/index.yaml`. Axis: `zones`.
 ### Studies (1)
 
 - `navmut-world-population-observations`
+
+## Thanalan (1)
+
+### Studies (1)
+
+- `mooglebox-regional-mob-maps`
+
+## The Black Shroud (1)
+
+### Studies (1)
+
+- `mooglebox-regional-mob-maps`
 
 ## The Thousand Maws of Toto-Rak (1)
 

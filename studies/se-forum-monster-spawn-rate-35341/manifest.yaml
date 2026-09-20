@@ -1,0 +1,45 @@
+id: se-forum-monster-spawn-rate-35341
+title: SE Forum Monster Spawn Rate Discussion
+evidence_class: web-tables
+status: distilled
+content_kind: zone-mechanic
+tags:
+- web-reference
+- wiki-tier
+- calibration
+- official-forum
+- forum-thread
+- monster-respawn
+- shared-spawn
+- synchronized-clock
+search_hints:
+- Monster Spawn rate
+- forum thread 35341
+- three to five minute respawn
+- spawn clock
+- shared monster spawn
+- dodo marmot
+- Desert Peiste Antling
+notes: >-
+  Player observations from three posts dated 2012-01-14. The source supports
+  approximate real-time timing, synchronized group respawns, and two reported
+  substitution examples as calibration evidence. It does not establish an
+  Eorzean-time clock, exact server tick, region-specific interval, complete
+  slot membership, selection probability, or patch scope.
+related_implementation_docs: []
+source_refs:
+- source: se-forum-monster-spawn-rate-35341
+primary_paths:
+- derived/evidence-map.md
+- derived/spawn-rate-claims.csv
+canonical_evidence:
+- derived/evidence-map.md
+- derived/spawn-rate-claims.csv
+distilled:
+  distilled: true
+  checksum_file: derived/checksums.sha256
+  distilled_artifacts:
+  - derived/evidence-map.md
+  - derived/spawn-rate-claims.csv
+  - derived/file-inventory.csv
+  - derived/checksums.sha256

@@ -1,0 +1,31 @@
+id: se-forum-monster-spawn-rate-35341
+title: SE Forum Monster Spawn Rate Discussion - Web Table
+evidence_class: web-tables
+distribution: restricted
+provenance:
+  sources:
+  - key: se-forum-35341
+    title: Monster Spawn rate.
+    url: https://forum.square-enix.com/ffxiv/threads/35341
+    site: official FFXIV forum
+    authors: Jynx and Elexia
+    post_ids: 516758, 516761, and 516783
+    post_date: 2012-01-14
+    retrieved_date: 2026-09-19
+    note: >-
+      Player discussion hosted on the official forum. The posts report observed
+      behavior but are not an official Square Enix mechanics statement and do
+      not name a patch.
+storage:
+  original_state: in-repo
+  storage_id: repo
+  path: objects/
+members:
+- file: 35341.html
+  sha256: 9d0e6ffa8821cdfae7b2edc3713a22f73bca07138d94dafd888193ec164bcc4b
+  size_bytes: 411273
+notes: >-
+  The immutable HTML source is retained locally under the repository's
+  restricted-object policy. The distilled study records only claims with exact
+  post locators and keeps timing and shared-spawn interpretations at
+  calibration grade.

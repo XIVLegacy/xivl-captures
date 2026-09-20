@@ -185,13 +185,15 @@ Generated from `catalog/index.yaml`. Primary axis: `content_kind`.
 
 - `elemen-consumable-effects`
 
-## zone-mechanic (6)
+## zone-mechanic (8)
 
-### Studies (3)
+### Studies (5)
 
 - `elemen-playguide`
 - `elemen-zone-guide`
+- `mooglebox-regional-mob-maps`
 - `navmut-world-population-observations`
+- `se-forum-monster-spawn-rate-35341`
 
 ### Scenarios (3)
 

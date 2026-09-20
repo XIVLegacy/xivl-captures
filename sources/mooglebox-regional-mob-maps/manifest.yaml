@@ -1,0 +1,65 @@
+id: mooglebox-regional-mob-maps
+title: Mooglebox FFXIV 1.x Regional Mob Camp Maps - Web Tables
+evidence_class: web-tables
+distribution: restricted
+provenance:
+  sources:
+  - key: mooglebox-regional-mob-maps
+    title: Mooglebox FFXIV 1.x regional mob camp location maps
+    url: http://www.mooglebox.com/
+    archive_url: https://web.archive.org/web/*/http://www.mooglebox.com/
+    site: Mooglebox - FFXIV power database and tools
+    note: Four preserved regional map pages are retained as immutable HTML objects; each page records its original URL and archive lookup URL in the derived marker table.
+  pages:
+  - region: Coerthas
+    file: coerthas.html
+    url: http://www.mooglebox.com/coerthas/index.php
+    archive_url: https://web.archive.org/web/20120602044520/http://mooglebox.com/coerthas/index.php
+  - region: Black Shroud
+    file: blackshroud.html
+    url: http://www.mooglebox.com/blackshroud/index.php
+    archive_url: https://web.archive.org/web/20120605230901/http://mooglebox.com/blackshroud/index.php
+  - region: La Noscea
+    file: la-noscea.html
+    url: http://www.mooglebox.com/la-noscea/index.php
+    archive_url: https://web.archive.org/web/20120702115825/http://www.mooglebox.com/la-noscea/index.php
+  - region: Thanalan
+    file: thanalan.html
+    url: http://www.mooglebox.com/thanalan/index.php
+    archive_url: https://web.archive.org/web/20120605034042/http://mooglebox.com/thanalan/index.php
+  companion_objects:
+  - file: owner-supplied-amaljaa-marker.png
+    supplied_date: 2026-09-19
+    note: >-
+      Owner-supplied screenshot showing the Amalj'aa
+      Scout/Harpooner/Ranger/Seer label, level 20-21, amount 8-10, and
+      coordinates 14.5,21. The tuple matches Thanalan marker 52, but the image
+      itself carries no page or archive metadata.
+storage:
+  original_state: in-repo
+  storage_id: repo
+  path: objects/
+members:
+- file: blackshroud.html
+  sha256: 84bca3963ae4009e074505bd81d8e42a530ab385134ba58064228c86e63baa35
+  size_bytes: 97572
+- file: coerthas.html
+  sha256: 4cc3876f74d17009eda2ed76435bb5e1b84ed1cbd899bc1a766ba41db63932d7
+  size_bytes: 75419
+- file: la-noscea.html
+  sha256: 2336eefc06008562b3885db2e2f18c90a8845825740d5c8b36c2429acf6fe589
+  size_bytes: 90026
+- file: thanalan.html
+  sha256: d7ad7fe8432fdf63c23dbdb53641b4f131e610d772d608d430691e3488524d88
+  size_bytes: 98901
+- file: owner-supplied-amaljaa-marker.png
+  sha256: dbd12d556eddbf135f9c14c0b1ed18afd1bf83f2a80d367e7ffa70f384452706
+  size_bytes: 28242
+products:
+- file: studies/mooglebox-regional-mob-maps/derived/marker-records.csv
+  derived_from: tools/import_mooglebox_mob_maps.py
+notes: >-
+  The four source objects are immutable HTML snapshots. They document map
+  camp markers rather than an exhaustive population census. Slash-separated
+  labels are retained as unresolved shared slots; no candidate is promoted as
+  the occupant of a marker.

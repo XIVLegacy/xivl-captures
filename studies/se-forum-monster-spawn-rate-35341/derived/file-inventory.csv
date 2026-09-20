@@ -1,0 +1,3 @@
+relative_path,kind,source_key,rows,patches_covered,notes
+sources/se-forum-monster-spawn-rate-35341/objects/35341.html,raw-html,se-forum-35341,,unknown,"immutable full thread response retained under restricted-object policy"
+derived/spawn-rate-claims.csv,normalized-table,se-forum-35341,5,unknown,"player observations with exact post locators and explicit limitations"
