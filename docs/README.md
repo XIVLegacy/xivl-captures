@@ -70,6 +70,7 @@ findings.
 - [Movement Speed Band Observations](../studies/movement-speed-band-observations/)
 - [Status Wire Projection Census](../studies/status-wire-projection-census/)
 - [World Party-Chat 0x00C9 Contract](../studies/world-party-chat-00c9-contract/)
+- [Retail NPC and Self-Repair Contract](../studies/retail-repair-contract/)
 - [The Bowl of Embers (Ifrit) - Video Breakdown](../studies/primal-battle-ifrit-bowl-of-embers/)
 
 ## Promoted study note

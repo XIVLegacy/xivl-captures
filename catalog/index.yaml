@@ -1618,6 +1618,28 @@ studies:
   source_refs:
   - source: pcap-1.23b
     citation: sources/pcap-1.23b/manifest.yaml
+- id: retail-repair-contract
+  title: Retail NPC and Self-Repair Contract
+  status: distilled
+  evidence_class: packet-capture
+  tags:
+  - packet-decoding
+  - map-clientbound
+  - map-serverbound
+  - npc-event
+  - inventory
+  search_hints:
+  - PopulaceItemRepairer
+  - confirmRepairItem
+  - CraftCommand 22013
+  - NPC repair tariff
+  - '0x012E'
+  - '0x0130'
+  primary_paths:
+  - studies/retail-repair-contract/derived/npc-repair-observations.csv
+  - studies/retail-repair-contract/derived/verdicts.md
+  source_refs:
+  - source: pcap-1.23b
 - id: se-forum-bloodletter-35795
   title: SE forum Bloodletter Claims
   status: distilled
