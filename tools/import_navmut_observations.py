@@ -6,10 +6,12 @@ from __future__ import annotations
 import argparse
 import csv
 import hashlib
+import io
 import json
 import math
 import re
 import sys
+import zipfile
 from collections import Counter, defaultdict
 from datetime import datetime
 from io import StringIO
@@ -20,12 +22,32 @@ from typing import Any, Iterable
 REPO_ROOT = Path(__file__).resolve().parents[1]
 SOURCE_ID = "navmut-world-population-observations"
 RAW_FILENAME = "observations.jsonl"
+SUPPLEMENT_ARCHIVE_FILENAME = "navmut-Mixedcampandsettlementobservations.zip"
 DEFAULT_INPUT = REPO_ROOT / "sources" / SOURCE_ID / "objects" / RAW_FILENAME
+DEFAULT_SUPPLEMENT = (
+    REPO_ROOT / "sources" / SOURCE_ID / "objects" / SUPPLEMENT_ARCHIVE_FILENAME
+)
 EXPECTED_SHA256 = "8bf6fb2a872e417f3cc94851d84fbf5bc7b76faca0d9164e493affdaeff40214"
 EXPECTED_SIZE = 262971
 EXPECTED_COUNT = 650
-EXPECTED_ZONES = {128: 237, 159: 168, 190: 245}
-EXPECTED_TYPES = {"monster": 590, "mmonster": 1, "npc": 18, "misc": 41}
+EXPECTED_SUPPLEMENT_SHA256 = (
+    "81f89bb7e0508bd2c9e3a587d3ad30dcec7a14be9bfb133df46c485d1a2ce9c7"
+)
+EXPECTED_SUPPLEMENT_SIZE = 20842
+EXPECTED_SUPPLEMENT_MEMBER_SHA256 = (
+    "b385229a6b346f60cba88e19f1c99fbfb1dd643a3bc08c3405ebc980462cc60a"
+)
+EXPECTED_SUPPLEMENT_MEMBER_SIZE = 34042
+EXPECTED_SUPPLEMENT_COUNT = 86
+EXPECTED_ARCHIVE_MEMBERS = {
+    "manifest.json",
+    "observations.jsonl",
+    "observations.csv",
+    "report.md",
+}
+EXPECTED_ZONES = {128: 255, 150: 19, 159: 168, 170: 49, 190: 245}
+EXPECTED_TYPES = {"monster": 590, "mmonster": 1, "npc": 104, "misc": 41}
+EXPECTED_COMBINED_COUNT = EXPECTED_COUNT + EXPECTED_SUPPLEMENT_COUNT
 CATEGORY_BY_TYPE = {
     "monster": "ambient",
     "mmonster": "encounter",
@@ -173,16 +195,7 @@ def validate_record(record: Any, line_number: int) -> dict[str, Any]:
     return record
 
 
-def read_records(
-    input_path: Path, *, enforce_pin: bool = True
-) -> tuple[bytes, list[dict[str, Any]]]:
-    try:
-        raw = input_path.read_bytes()
-    except OSError as exc:
-        raise IntakeError(f"cannot read input: {input_path}") from exc
-    digest = sha256_bytes(raw)
-    if enforce_pin and (len(raw) != EXPECTED_SIZE or digest != EXPECTED_SHA256):
-        raise IntakeError(f"input identity mismatch: size={len(raw)} sha256={digest}")
+def parse_records(raw: bytes) -> list[dict[str, Any]]:
     if not raw.endswith(b"\n") or b"\r" in raw:
         raise IntakeError("input must be LF-delimited JSONL with a trailing newline")
 
@@ -203,16 +216,130 @@ def read_records(
         seen[observation_id] = canonical
         records.append(record)
 
+    return records
+
+
+def read_records(
+    input_path: Path, *, enforce_pin: bool = True
+) -> tuple[bytes, list[dict[str, Any]]]:
+    try:
+        raw = input_path.read_bytes()
+    except OSError as exc:
+        raise IntakeError(f"cannot read input: {input_path}") from exc
+    digest = sha256_bytes(raw)
+    if enforce_pin and (len(raw) != EXPECTED_SIZE or digest != EXPECTED_SHA256):
+        raise IntakeError(f"input identity mismatch: size={len(raw)} sha256={digest}")
+
+    records = parse_records(raw)
+
     if enforce_pin:
         if len(records) != EXPECTED_COUNT:
             raise IntakeError(f"expected {EXPECTED_COUNT} records, got {len(records)}")
-        zones = Counter(row["zone"] for row in records)
-        types = Counter(row["subject_type"].lower() for row in records)
-        if dict(zones) != EXPECTED_ZONES:
-            raise IntakeError(f"zone distribution mismatch: {dict(zones)}")
-        if dict(types) != EXPECTED_TYPES:
-            raise IntakeError(f"subject_type distribution mismatch: {dict(types)}")
     return raw, records
+
+
+def read_supplement_archive(
+    archive_path: Path, *, enforce_pin: bool = True
+) -> tuple[bytes, bytes, list[dict[str, Any]]]:
+    try:
+        archive_raw = archive_path.read_bytes()
+    except OSError as exc:
+        raise IntakeError(f"cannot read supplement: {archive_path}") from exc
+
+    archive_digest = sha256_bytes(archive_raw)
+    if enforce_pin and (
+        len(archive_raw) != EXPECTED_SUPPLEMENT_SIZE
+        or archive_digest != EXPECTED_SUPPLEMENT_SHA256
+    ):
+        raise IntakeError(
+            "supplement identity mismatch: "
+            f"size={len(archive_raw)} sha256={archive_digest}"
+        )
+
+    try:
+        with zipfile.ZipFile(io.BytesIO(archive_raw)) as archive:
+            names = set(archive.namelist())
+            if names != EXPECTED_ARCHIVE_MEMBERS:
+                raise IntakeError(
+                    "supplement archive members mismatch: " + ", ".join(sorted(names))
+                )
+            if any(info.flag_bits & 0x1 for info in archive.infolist()):
+                raise IntakeError(
+                    "supplement archive must not contain encrypted members"
+                )
+            manifest_raw = archive.read("manifest.json")
+            observations_raw = archive.read(RAW_FILENAME)
+    except (OSError, zipfile.BadZipFile, KeyError) as exc:
+        raise IntakeError(f"invalid supplement archive: {exc}") from exc
+
+    try:
+        manifest = json.loads(manifest_raw)
+    except (UnicodeDecodeError, json.JSONDecodeError) as exc:
+        raise IntakeError("supplement manifest is not valid JSON") from exc
+    expected_manifest = {
+        "format": "navmut-observations",
+        "input_count": 1,
+        "members": [
+            "manifest.json",
+            "observations.jsonl",
+            "observations.csv",
+            "report.md",
+        ],
+        "observation_count": EXPECTED_SUPPLEMENT_COUNT,
+        "observations_sha256": EXPECTED_SUPPLEMENT_MEMBER_SHA256,
+        "schema_version": 2,
+    }
+    if manifest != expected_manifest:
+        raise IntakeError("supplement manifest content mismatch")
+
+    observations_digest = sha256_bytes(observations_raw)
+    if (
+        len(observations_raw) != EXPECTED_SUPPLEMENT_MEMBER_SIZE
+        or observations_digest != EXPECTED_SUPPLEMENT_MEMBER_SHA256
+    ):
+        raise IntakeError(
+            "supplement observations identity mismatch: "
+            f"size={len(observations_raw)} sha256={observations_digest}"
+        )
+    records = parse_records(observations_raw)
+    if len(records) != EXPECTED_SUPPLEMENT_COUNT:
+        raise IntakeError(
+            f"expected {EXPECTED_SUPPLEMENT_COUNT} supplement records, "
+            f"got {len(records)}"
+        )
+    return archive_raw, observations_raw, records
+
+
+def merge_records(*record_sets: Iterable[dict[str, Any]]) -> list[dict[str, Any]]:
+    merged: list[dict[str, Any]] = []
+    seen: dict[str, str] = {}
+    for records in record_sets:
+        for record in records:
+            observation_id = record["observation_id"]
+            canonical = json.dumps(record, sort_keys=True, separators=(",", ":"))
+            previous = seen.get(observation_id)
+            if previous is not None:
+                if previous != canonical:
+                    raise IntakeError(
+                        f"observation_id content conflict: {observation_id}"
+                    )
+                continue
+            seen[observation_id] = canonical
+            merged.append(record)
+    return merged
+
+
+def validate_combined_records(records: list[dict[str, Any]]) -> None:
+    if len(records) != EXPECTED_COMBINED_COUNT:
+        raise IntakeError(
+            f"expected {EXPECTED_COMBINED_COUNT} combined records, got {len(records)}"
+        )
+    zones = Counter(row["zone"] for row in records)
+    types = Counter(row["subject_type"].lower() for row in records)
+    if dict(zones) != EXPECTED_ZONES:
+        raise IntakeError(f"zone distribution mismatch: {dict(zones)}")
+    if dict(types) != EXPECTED_TYPES:
+        raise IntakeError(f"subject_type distribution mismatch: {dict(types)}")
 
 
 def ordered_records(records: Iterable[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -305,9 +432,9 @@ def render_review(records: list[dict[str, Any]]) -> str:
     lines = [
         "# Navmut World Population Observations",
         "",
-        "This review surface preserves one row for each of the 650 pinned Navmut "
-        "observations. Rows are ordered by numeric zone, review category, UTC "
-        "timestamp, and observation UUID.",
+        f"This review surface preserves one row for each of the {len(records)} "
+        "pinned Navmut observations. Rows are ordered by numeric zone, review "
+        "category, UTC timestamp, and observation UUID.",
         "",
         "The category is a provisional review partition. NPC and misc records "
         "remain in their source categories; Toto-Rak monsters and monsters with "
@@ -377,7 +504,9 @@ def render_review(records: list[dict[str, Any]]) -> str:
     return "\n".join(lines).rstrip() + "\n"
 
 
-def render_evidence_map(records: list[dict[str, Any]], raw: bytes) -> str:
+def render_evidence_map(
+    records: list[dict[str, Any]], primary_raw: bytes, supplement_raw: bytes
+) -> str:
     zones = Counter(row["zone"] for row in records)
     types = Counter(row["subject_type"].lower() for row in records)
     raw_types = Counter(row["subject_type"] for row in records)
@@ -388,8 +517,15 @@ def render_evidence_map(records: list[dict[str, Any]], raw: bytes) -> str:
         "## Confirmed",
         "",
         f"- The immutable source member sources/{SOURCE_ID}/objects/{RAW_FILENAME} "
-        f"is {len(raw)} bytes with SHA-256 {sha256_bytes(raw)}.",
-        f"- The source contains {len(records)} unique schema-v2 observations.",
+        f"is {len(primary_raw)} bytes with SHA-256 {sha256_bytes(primary_raw)}.",
+        f"- The additive source member sources/{SOURCE_ID}/objects/"
+        f"{SUPPLEMENT_ARCHIVE_FILENAME} is {len(supplement_raw)} bytes with SHA-256 "
+        f"{sha256_bytes(supplement_raw)}. Its embedded observations.jsonl is "
+        f"{EXPECTED_SUPPLEMENT_MEMBER_SIZE} bytes with SHA-256 "
+        f"{EXPECTED_SUPPLEMENT_MEMBER_SHA256}.",
+        f"- The two source members contain {len(records)} unique schema-v2 "
+        "observations after UUID-based additive reconciliation; the additive "
+        "archive contributes 86 new UUIDs and replaces none.",
         "- Zone counts are "
         + ", ".join(f"{zone}={zones[zone]}" for zone in sorted(zones))
         + ".",
@@ -421,8 +557,9 @@ def render_evidence_map(records: list[dict[str, Any]], raw: bytes) -> str:
         "",
         "- Subject names remain raw Navmut labels. No client actor identity is "
         "promoted without a supported static-data join.",
-        "- Zones 128 and 190 remain numeric-only because no exact client zone "
-        "binding for these ids is present in the reviewed client manifest.",
+        "- Zones 128, 150, 170, and 190 remain numeric-only because no exact "
+        "client zone binding for these ids is present in the reviewed client "
+        "manifest.",
         "- Position, map bounds, and rotation are not interpreted as a home point, "
         "spawn slot, respawn point, or respawn rule.",
         "",
@@ -430,7 +567,8 @@ def render_evidence_map(records: list[dict[str, Any]], raw: bytes) -> str:
         "",
         f"- studies/{SOURCE_ID}/derived/observations.csv carries one row per "
         "observation with category and identity-status columns.",
-        f"- studies/{SOURCE_ID}/derived/review-by-zone.md carries the same 650 "
+        f"- studies/{SOURCE_ID}/derived/review-by-zone.md carries the same "
+        f"{len(records)} "
         "records grouped by zone and category.",
         "",
         "## Gaps",
@@ -450,7 +588,7 @@ def render_evidence_map(records: list[dict[str, Any]], raw: bytes) -> str:
     return "\n".join(lines) + "\n"
 
 
-def render_source_manifest(raw: bytes) -> str:
+def render_source_manifest(primary_raw: bytes, supplement_raw: bytes) -> str:
     return f"""id: {SOURCE_ID}
 title: Navmut World Population Observations
 evidence_class: historical-research
@@ -458,21 +596,31 @@ distribution: public
 provenance:
   contributor: gavint130
   source: Navmut world-population observer
-  filename: {RAW_FILENAME}
+  filenames:
+  - {RAW_FILENAME}
+  - {SUPPLEMENT_ARCHIVE_FILENAME}
   schema_version: 2
-  observed_at: 2026-09-16/17
+  observed_at: 2026-09-16/19
   note: Directly recorded world-population observations; raw labels and UUIDs are retained.
 storage:
   original_state: in-repo
-  storage_id: repo
+  storage_id: repo-lfs
   path: objects/
 members:
 - file: {RAW_FILENAME}
-  sha256: {sha256_bytes(raw)}
-  size_bytes: {len(raw)}
+  sha256: {sha256_bytes(primary_raw)}
+  size_bytes: {len(primary_raw)}
+- file: {SUPPLEMENT_ARCHIVE_FILENAME}
+  sha256: {sha256_bytes(supplement_raw)}
+  size_bytes: {len(supplement_raw)}
+  embedded_observations:
+    file: {RAW_FILENAME}
+    sha256: {EXPECTED_SUPPLEMENT_MEMBER_SHA256}
+    size_bytes: {EXPECTED_SUPPLEMENT_MEMBER_SIZE}
 notes: >-
-  This source preserves the pinned Navmut JSONL bytes. It records observations,
-  not canonical population definitions or home, slot, or respawn rules.
+  This source preserves the pinned Navmut JSONL bytes and the later additive
+  archive. They record observations, not canonical population definitions or
+  home, slot, or respawn rules. Absence from an additive export is not deletion.
 """
 
 
@@ -499,10 +647,12 @@ tags:
 search_hints:
 - Navmut world population
 - zone 128
+- zone 150
 - zone 159
+- zone 170
 - zone 190
 - fst0Dungeon03
-- ambient NPC encounter misc observations
+- ambient NPC encounter misc camp settlement observations
 notes: >-
   Indexed, provisional observations attributed to gavint130. The derived review
   surface keeps all records and raw spellings while leaving unsupported
@@ -548,8 +698,10 @@ def write_if_changed(path: Path, content: bytes, *, check: bool) -> None:
         raise
 
 
-def install_raw(source_dir: Path, raw: bytes, *, check: bool) -> None:
-    path = source_dir / "objects" / RAW_FILENAME
+def install_raw(
+    source_dir: Path, raw: bytes, *, filename: str = RAW_FILENAME, check: bool
+) -> None:
+    path = source_dir / "objects" / filename
     if path.exists():
         if path.read_bytes() != raw:
             raise IntakeError(f"source member content conflict: {path}")
@@ -561,13 +713,24 @@ def install_raw(source_dir: Path, raw: bytes, *, check: bool) -> None:
 
 
 def run(args: argparse.Namespace) -> None:
-    raw, records = read_records(args.input, enforce_pin=True)
+    primary_raw, primary_records = read_records(args.input, enforce_pin=True)
+    supplement_raw, _, supplement_records = read_supplement_archive(
+        args.supplement, enforce_pin=True
+    )
+    records = merge_records(primary_records, supplement_records)
+    validate_combined_records(records)
     source_dir = args.source_dir
     study_dir = args.study_dir
-    install_raw(source_dir, raw, check=args.check)
+    install_raw(source_dir, primary_raw, check=args.check)
+    install_raw(
+        source_dir,
+        supplement_raw,
+        filename=SUPPLEMENT_ARCHIVE_FILENAME,
+        check=args.check,
+    )
     write_if_changed(
         source_dir / "manifest.yaml",
-        render_source_manifest(raw).encode("utf-8"),
+        render_source_manifest(primary_raw, supplement_raw).encode("utf-8"),
         check=args.check,
     )
     write_if_changed(
@@ -587,12 +750,13 @@ def run(args: argparse.Namespace) -> None:
     )
     write_if_changed(
         study_dir / "derived" / "evidence-map.md",
-        render_evidence_map(records, raw).encode("utf-8"),
+        render_evidence_map(records, primary_raw, supplement_raw).encode("utf-8"),
         check=args.check,
     )
     print(
         f"PASS: {len(records)} observations, {len(set(row['zone'] for row in records))} zones, "
-        f"sha256 {sha256_bytes(raw)}"
+        f"source sha256 {sha256_bytes(primary_raw)}, "
+        f"supplement sha256 {sha256_bytes(supplement_raw)}"
     )
 
 
@@ -603,6 +767,12 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         type=Path,
         default=DEFAULT_INPUT,
         help="input JSONL; defaults to the tracked in-repo source member",
+    )
+    parser.add_argument(
+        "--supplement",
+        type=Path,
+        default=DEFAULT_SUPPLEMENT,
+        help="additive Navmut ZIP; defaults to the tracked source member",
     )
     parser.add_argument(
         "--source-dir", type=Path, default=REPO_ROOT / "sources" / SOURCE_ID

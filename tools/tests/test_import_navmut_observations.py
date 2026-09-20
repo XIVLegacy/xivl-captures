@@ -37,6 +37,21 @@ class NavmutIntakeTests(unittest.TestCase):
     def test_repository_input_is_the_default(self) -> None:
         args = intake.parse_args([])
         self.assertEqual(args.input, intake.DEFAULT_INPUT)
+        self.assertEqual(args.supplement, intake.DEFAULT_SUPPLEMENT)
+
+    def test_pinned_supplement_archive_is_valid(self) -> None:
+        archive_raw, observations_raw, records = intake.read_supplement_archive(
+            intake.DEFAULT_SUPPLEMENT
+        )
+        self.assertEqual(
+            intake.sha256_bytes(archive_raw), intake.EXPECTED_SUPPLEMENT_SHA256
+        )
+        self.assertEqual(
+            intake.sha256_bytes(observations_raw),
+            intake.EXPECTED_SUPPLEMENT_MEMBER_SHA256,
+        )
+        self.assertEqual(len(records), 86)
+        self.assertEqual({row["subject_type"] for row in records}, {"npc"})
 
     def test_schema_record_and_category_partition(self) -> None:
         row = record("b665b9cc-2d78-425c-9cc8-dbf674386c2c", "monster", 128)
@@ -91,6 +106,18 @@ class NavmutIntakeTests(unittest.TestCase):
             write_jsonl(path, [row, row])
             with self.assertRaisesRegex(intake.IntakeError, "duplicate observation_id"):
                 intake.read_records(path, enforce_pin=False)
+
+    def test_additive_merge_is_idempotent_and_conflict_safe(self) -> None:
+        row = record("b665b9cc-2d78-425c-9cc8-dbf674386c2c", "monster", 128)
+        second = record("ae2ecc91-33a4-407b-8aa9-6bae5cc34dca", "npc", 150)
+        self.assertEqual(intake.merge_records([row], [row, second]), [row, second])
+
+        changed = dict(row)
+        changed["subject_name"] = "Changed"
+        with self.assertRaisesRegex(
+            intake.IntakeError, "observation_id content conflict"
+        ):
+            intake.merge_records([row], [changed])
 
     def test_raw_install_is_idempotent_and_conflict_safe(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

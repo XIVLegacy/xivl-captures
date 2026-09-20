@@ -154,8 +154,8 @@ sources:
   evidence_class: historical-research
   distribution: public
   original_state: in-repo
-  storage_id: repo
-  member_count: 1
+  storage_id: repo-lfs
+  member_count: 2
 - id: pcap-1.23b
   title: FFXIV 1.23b Retail Packet-Capture Corpus
   evidence_class: packet-capture
@@ -1511,10 +1511,12 @@ studies:
   search_hints:
   - Navmut world population
   - zone 128
+  - zone 150
   - zone 159
+  - zone 170
   - zone 190
   - fst0Dungeon03
-  - ambient NPC encounter misc observations
+  - ambient NPC encounter misc camp settlement observations
   primary_paths:
   - studies/navmut-world-population-observations/derived/evidence-map.md
   - studies/navmut-world-population-observations/derived/observations.csv
