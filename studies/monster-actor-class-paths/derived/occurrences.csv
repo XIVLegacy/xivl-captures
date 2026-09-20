@@ -1,0 +1,3 @@
+capture,instantiate_record_index,appearance_record_index,name_record_index,network_actor_id,actor_class_id,pool_name,display_name_id,base_model_id,identity_pair_catalog_count,instance_name,base_class,observed_class_path
+war_quest_update2.pcapng,1999,2006,2007,0x50e15b06,2101608,puroboros,3101608,10028,1,cactusLesse_wil0Fld03_4D@0AC00,CactusLesserStandard,/Chara/Npc/Monster/Cactus/CactusLesserStandard
+war_quest_update2.pcapng,2035,2042,2043,0x50e15b06,2101608,puroboros,3101608,10028,1,cactusLesse_wil0Fld03_Q1@0AC00,CactusLesserStandard,/Chara/Npc/Monster/Cactus/CactusLesserStandard

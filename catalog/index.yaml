@@ -1485,6 +1485,33 @@ studies:
   - studies/map-0193-clock-contract/derived/verdicts.md
   source_refs:
   - source: pcap-1.23b
+- id: monster-actor-class-paths
+  title: Monster Actor-Class Path Join
+  status: distilled
+  evidence_class: packet-capture
+  content_kind: character-mechanic
+  tags:
+  - monsters
+  - actor-class
+  - class-path
+  - packet-decoding
+  - client-data
+  - bahamut
+  search_hints:
+  - Kobold Ascetic
+  - Kobold Pickman
+  - Puroboros
+  - actor class path
+  - '2106637'
+  - '2106628'
+  primary_paths:
+  - studies/monster-actor-class-paths/derived/verdicts.md
+  - studies/monster-actor-class-paths/derived/mappings.csv
+  - studies/monster-actor-class-paths/derived/occurrences.csv
+  - studies/monster-actor-class-paths/derived/accounting.json
+  source_refs:
+  - source: pcap-1.23b
+    citation: sources/pcap-1.23b/manifest.yaml
 - id: mooglebox-regional-mob-maps
   title: Mooglebox FFXIV 1.x Regional Mob Camp Maps - Web Tables
   status: distilled

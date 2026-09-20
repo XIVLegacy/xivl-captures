@@ -1,0 +1,46 @@
+id: monster-actor-class-paths
+title: Monster Actor-Class Path Join
+evidence_class: packet-capture
+status: distilled
+content_kind: character-mechanic
+tags:
+- monsters
+- actor-class
+- class-path
+- packet-decoding
+- client-data
+- bahamut
+search_hints:
+- Kobold Ascetic
+- Kobold Pickman
+- Puroboros
+- actor class path
+- "2106637"
+- "2106628"
+notes: >-
+  Exhaustive 52-row audit of Bahamut's configured Lower La Noscea and Mor
+  Dhona actor classes. A lifetime-scoped instantiate, appearance-base, and
+  display-name join verifies Puroboros as CactusLesserStandard, refutes its
+  historical Bomb path, and leaves both priority Kobold mappings unresolved.
+source_refs:
+- source: pcap-1.23b
+  citation: sources/pcap-1.23b/manifest.yaml
+primary_paths:
+- derived/verdicts.md
+- derived/mappings.csv
+- derived/occurrences.csv
+- derived/accounting.json
+canonical_evidence:
+- derived/verdicts.md
+- derived/mappings.csv
+- derived/occurrences.csv
+- derived/accounting.json
+distilled:
+  distilled: true
+  checksum_file: derived/checksums.sha256
+  distilled_artifacts:
+  - derived/verdicts.md
+  - derived/mappings.csv
+  - derived/occurrences.csv
+  - derived/accounting.json
+  - derived/checksums.sha256

@@ -1,0 +1,27 @@
+{
+  "version": "1.23b",
+  "target_count": 52,
+  "capture_count": 54,
+  "decoded_record_count": 65665,
+  "instantiate_record_count": 831,
+  "completed_lifetime_count": 368,
+  "matched_occurrence_count": 2,
+  "verdict_counts": {
+    "catalog_only": 9,
+    "retail_supported_catalog_conflict": 1,
+    "unresolved": 42
+  },
+  "input": {
+    "path": "inputs/target_actor_classes.csv",
+    "sha256": "ab516e8bb2e235ff3dd93d10ed8bd1644129c1a23d88dd49d445ac04562a27a2",
+    "bahamut_revision": "453691c2ad619234beb448aaefc3b234294c2539",
+    "bahamut_monster_pools_sha256": "24ec4b0a8f8688118d96aab81dcd7f7e0efb9f25b00b20a40ea41dbb4ad5c1f0",
+    "bahamut_actorclass_sha256": "8ed0cc0dd6783f008797ff2e0d6f05578489d5801831b2c0513b38473f344a25",
+    "bahamut_actorclass_graphic_sha256": "4da32970742e571555bec8f4708cb083040b5b071b11bb37785e7496d388f383",
+    "client_data_revision": "bd3515848fe5564bab9eb901558ab918c427a709",
+    "actorclass_csv_sha256": "3ac9f8d1812d49101f367e2a41356be96b5d64b1fc5ca29949195f50ebe1d984",
+    "actorclass_graphic_csv_sha256": "7da8241400530885e0a28ded04a03acf2771b0580a79c1f49f46ee0861010611",
+    "set_actor_appearance_source_sha256": "2edd15504afb2025665f9fafc98b925f331318756a9eb154f6e7fca9302623ef",
+    "set_actor_name_source_sha256": "23ee664cefd9c57c99a18de567e0d439b2eb4db8bf4bdaf3c26beee339e33e81"
+  }
+}
