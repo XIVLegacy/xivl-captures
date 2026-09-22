@@ -34,11 +34,11 @@ class MonsterActorClassPathTest(unittest.TestCase):
         mappings = paths._build_mappings(targets, occurrences)
         self.assertEqual(
             [row["verdict"] for row in mappings],
-            ["retail_supported_catalog_conflict", "catalog_only", "unresolved"],
+            ["catalog_with_runtime_override", "catalog_only", "unresolved"],
         )
         self.assertEqual(
             mappings[0]["adoption_path"],
-            "/Chara/Npc/Monster/New/NewStandard",
+            "/old",
         )
 
     def test_shared_identity_pair_cannot_promote(self):

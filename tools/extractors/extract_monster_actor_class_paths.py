@@ -22,6 +22,13 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 STUDY = REPO_ROOT / "studies" / "monster-actor-class-paths"
 INPUT = STUDY / "inputs" / "target_actor_classes.csv"
 DERIVED = STUDY / "derived"
+FAMILY_CROSSCHECK = (
+    REPO_ROOT
+    / "studies"
+    / "gamerescape-tables"
+    / "derived"
+    / "mob-client-crosscheck.csv"
+)
 
 OP_INSTANTIATE = 0x00CC
 OP_APPEARANCE = 0x00D6
@@ -67,6 +74,15 @@ MAPPING_FIELDS = (
     "retail_class_paths",
     "verdict",
     "adoption_path",
+)
+TAXONOMY_FIELDS = (
+    "actor_class_id",
+    "pool_name",
+    "era_family",
+    "decoded_race_name",
+    "catalog_class_path",
+    "configured_class_path",
+    "runtime_class_paths",
 )
 
 
@@ -228,19 +244,19 @@ def _build_mappings(targets: list[dict], occurrences: list[dict]) -> list[dict]:
         ]
         retail_paths = sorted({row["observed_class_path"] for row in exact})
         catalog_path = target["catalog_class_path"]
-        if len(retail_paths) > 1:
-            verdict = "retail_conflict"
-            adoption_path = ""
-        elif retail_paths:
-            adoption_path = retail_paths[0]
-            verdict = (
-                "retail_supported_catalog_conflict"
-                if catalog_path and catalog_path != adoption_path
-                else "retail_supported"
-            )
-        elif catalog_path:
-            verdict = "catalog_only"
+        if catalog_path:
             adoption_path = catalog_path
+            if len(retail_paths) > 1:
+                verdict = "catalog_with_runtime_variants"
+            elif retail_paths and retail_paths[0] != catalog_path:
+                verdict = "catalog_with_runtime_override"
+            elif retail_paths:
+                verdict = "catalog_runtime_supported"
+            else:
+                verdict = "catalog_only"
+        elif retail_paths:
+            verdict = "runtime_instance_only"
+            adoption_path = ""
         else:
             verdict = "unresolved"
             adoption_path = ""
@@ -256,25 +272,47 @@ def _build_mappings(targets: list[dict], occurrences: list[dict]) -> list[dict]:
     return mappings
 
 
+def _build_taxonomy(mappings: list[dict]) -> list[dict]:
+    with FAMILY_CROSSCHECK.open(newline="", encoding="utf-8-sig") as handle:
+        by_name = {
+            row["mob_name"].strip().lower(): row
+            for row in csv.DictReader(handle)
+            if row["mob_name"].strip()
+        }
+    rows = []
+    for mapping in mappings:
+        mob = by_name.get(mapping["pool_name"].replace("_", " ").lower(), {})
+        rows.append(
+            {
+                "actor_class_id": mapping["actor_class_id"],
+                "pool_name": mapping["pool_name"],
+                "era_family": mob.get("ge_family", ""),
+                "decoded_race_name": mob.get("client_race_name", ""),
+                "catalog_class_path": mapping["catalog_class_path"],
+                "configured_class_path": mapping["configured_class_path"],
+                "runtime_class_paths": mapping["retail_class_paths"],
+            }
+        )
+    return rows
+
+
 def _verdicts(mappings: list[dict], occurrences: list[dict], accounting: dict) -> bytes:
     priority = {row["actor_class_id"]: row for row in mappings}
-    safe = [row for row in mappings if row["verdict"].startswith("retail_supported")]
-    catalog = [row for row in mappings if row["verdict"] == "catalog_only"]
+    catalog = [row for row in mappings if row["verdict"].startswith("catalog")]
     unresolved = [row for row in mappings if row["verdict"] == "unresolved"]
     lines = [
         "# Monster actor-class path verdicts",
         "",
         "## Adoption boundary",
         "",
-        "Only the retained-retail join for Puroboros is externally verified. The",
-        "nine `catalog_only` rows are exact associations in Bahamut's pinned historical",
-        "actorclass catalog, but this study found no independent retail occurrence for",
-        "them. Configured family/job paths are candidates, not mappings.",
+        "The decoded actorclass catalog is the ID-to-class-path authority. Retained",
+        "`0x00CC` paths describe individual runtime instances and do not replace that",
+        "static mapping. Configured family/job paths are candidates, not mappings.",
         "",
         "| Actor class | Pool | Verdict | Path | Evidence |",
         "|---:|---|---|---|---|",
     ]
-    for row in safe:
+    for row in catalog:
         lines.append(
             f"| {row['actor_class_id']} | {row['pool_name']} | "
             f"{row['verdict']} | `{row['adoption_path']}` | "
@@ -283,9 +321,10 @@ def _verdicts(mappings: list[dict], occurrences: list[dict], accounting: dict) -
     lines.extend(
         [
             "",
-            "The Puroboros observations refute the historical catalog path",
-            "`/Chara/Npc/Monster/Bomb/BombNormalStandard`; both unique identity joins",
-            "use `/Chara/Npc/Monster/Cactus/CactusLesserStandard`.",
+            "Puroboros is cataloged as `/Chara/Npc/Monster/Bomb/BombNormalStandard`.",
+            "Its era family and decoded race are both Bomb. Two retained Puroboros",
+            "lifetimes were instantiated through `CactusLesserStandard`; this is a",
+            "runtime-class override observation, not an actorclass remapping.",
             "",
             "## Priority Kobold results",
             "",
@@ -305,15 +344,17 @@ def _verdicts(mappings: list[dict], occurrences: list[dict], accounting: dict) -
             "",
             "The client-script registry proves that `GoblinBommerGlaStandard` exists,",
             "but its schema has no actor-class ID. The retained Goblin instantiate row",
-            "therefore does not identify either Kobold class.",
+            "therefore does not identify either Kobold class. The era family and decoded",
+            "race both identify these rows as Kobold. The configured Goblin path remains",
+            "an implementation calibration, not a taxonomy or mapping claim.",
             "",
-            "## Historical catalog-only rows",
+            "## Other decoded catalog rows",
             "",
             "| Actor class | Pool | Catalog path |",
             "|---:|---|---|",
         ]
     )
-    for row in catalog:
+    for row in [item for item in catalog if item["actor_class_id"] != 2101608]:
         lines.append(
             f"| {row['actor_class_id']} | {row['pool_name']} | "
             f"`{row['catalog_class_path']}` |"
@@ -336,8 +377,9 @@ def _verdicts(mappings: list[dict], occurrences: list[dict], accounting: dict) -
             "and display-name identity. It resets identity state on each `0x00CC`",
             "instantiate, then joins `0x00D6` application `u32 +0x00` (graphic base)",
             "and `0x013D` application `u32 +0x00` (display-name ID) for the same network",
-            "actor lifetime. Only a globally unique decoded pair can identify an exact",
-            "actor-class row.",
+            "actor lifetime. A globally unique decoded pair identifies the actor-class",
+            "row associated with that lifetime. It does not make the lifetime's",
+            "instance class path the static actorclass path.",
             "",
             "The two positive rows are in `war_quest_update2.pcapng` at decoded record",
             "indexes 1999/2007 and 2035/2043 (instantiate/name; appearance is recorded in",
@@ -346,8 +388,9 @@ def _verdicts(mappings: list[dict], occurrences: list[dict], accounting: dict) -
             "## Evidence boundary",
             "",
             "Class-file or registry existence is not an actor-ID association. A matching",
-            "family name, graphic base alone, display name alone, or network actor ID",
-            "alone is insufficient. Network actor IDs are reused across lifetimes.",
+            "family name, graphic base alone, display name alone, network actor ID, or",
+            "per-instance class path cannot replace a decoded actorclass mapping.",
+            "Network actor IDs are reused across lifetimes.",
             "Missing retained coverage is an irreducible historical limitation; this",
             "study does not request a new capture or runtime probe.",
             "",
@@ -360,6 +403,7 @@ def build() -> dict[str, bytes]:
     targets = _read_targets()
     occurrences, scan = _scan(targets)
     mappings = _build_mappings(targets, occurrences)
+    taxonomy = _build_taxonomy(mappings)
     counts = Counter(row["verdict"] for row in mappings)
     accounting = {
         "version": "1.23b",
@@ -370,6 +414,8 @@ def build() -> dict[str, bytes]:
         "input": {
             "path": "inputs/target_actor_classes.csv",
             "sha256": _sha256(INPUT),
+            "family_crosscheck_path": "studies/gamerescape-tables/derived/mob-client-crosscheck.csv",
+            "family_crosscheck_sha256": _sha256(FAMILY_CROSSCHECK),
             "bahamut_revision": "453691c2ad619234beb448aaefc3b234294c2539",
             "bahamut_monster_pools_sha256": "24ec4b0a8f8688118d96aab81dcd7f7e0efb9f25b00b20a40ea41dbb4ad5c1f0",
             "bahamut_actorclass_sha256": "8ed0cc0dd6783f008797ff2e0d6f05578489d5801831b2c0513b38473f344a25",
@@ -387,6 +433,7 @@ def build() -> dict[str, bytes]:
         ).encode("utf-8"),
         "occurrences.csv": _render_csv(OCCURRENCE_FIELDS, occurrences),
         "mappings.csv": _render_csv(MAPPING_FIELDS, mappings),
+        "taxonomy.csv": _render_csv(TAXONOMY_FIELDS, taxonomy),
         "verdicts.md": _verdicts(mappings, occurrences, accounting),
     }
 

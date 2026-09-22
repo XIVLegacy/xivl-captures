@@ -10,6 +10,8 @@ promote Bahamut data.
 ## Start here
 
 - `derived/mappings.csv` - one verdict for every configured actor class.
+- `derived/taxonomy.csv` - era family and decoded-race cross-check for every
+  configured monster.
 - `derived/occurrences.csv` - precise retained packet-lifetime joins.
 - `derived/verdicts.md` - concise conclusions and Bahamut adoption boundary.
 - `derived/accounting.json` - corpus coverage and pinned input identity.
@@ -39,6 +41,12 @@ FFXIV 1.23b client tables pinned by `xivl-client-data` revision
 The target snapshot also records each display-name/base pair's cardinality in
 the complete 7,831-row graphic catalog so a shared pair cannot be promoted as
 an exact actor-class identity.
+
+The taxonomy cross-check joins every configured pool name against
+`studies/gamerescape-tables/derived/mob-client-crosscheck.csv`. It records the
+preserved era family and decoded client race beside the catalog, configured,
+and observed runtime paths. Family agreement is a sanity check, not proof of
+an internal class-path association.
 
 The packet field locators are pinned to Bahamut revision
 `453691c2ad619234beb448aaefc3b234294c2539`:
@@ -71,24 +79,30 @@ s2c `0x00CC` ActorInstantiate. Within that lifetime it joins:
 - `0x00D6` application `u32 +0x00`, the actor graphic base/model ID; and
 - `0x013D` application `u32 +0x00`, the display-name ID.
 
-The display-name/base pair is then matched to the decoded actor tables. An
-exact actor-class mapping requires a pair with global catalog cardinality one.
+The display-name/base pair is then matched to the decoded actor tables. A
+globally unique pair identifies the actor-class row associated with the
+lifetime. It does not turn the lifetime's instance class into the static
+actorclass path.
 The generated occurrence rows retain capture name, decoded record indexes,
 network actor ID, both identity fields, instance name, base class, and path.
 
 ## Findings
 
-Puroboros actor class 2101608 is the only externally verified mapping. Two
-separate retained lifetimes uniquely join it to
-`/Chara/Npc/Monster/Cactus/CactusLesserStandard`. Both contradict Bahamut's
-historical `/Chara/Npc/Monster/Bomb/BombNormalStandard` actorclass row.
+The decoded actorclass catalog maps Puroboros actor class 2101608 to
+`/Chara/Npc/Monster/Bomb/BombNormalStandard`. The preserved Gamer Escape join
+also classifies Puroboros as Bomb, matching the decoded race. Two retained
+Puroboros lifetimes were instantiated through
+`/Chara/Npc/Monster/Cactus/CactusLesserStandard`. That is a runtime-class
+override observation, not an actorclass remapping.
 
 Kobold Ascetic 2106637 and Kobold Pickman 2106628 remain unresolved. Neither
 decoded identity pair occurs in a retained class-path lifetime, and each pair
 is shared by multiple actor-class rows. The configured Goblin fallback is not
 evidence of either mapping. Its spelling also differs from the script registry:
 the registry class is `GoblinBommerGlaStandard`, not
-`GoblinBommerglaStandard`.
+`GoblinBommerglaStandard`. The era family and decoded race both identify these
+rows as Kobold. The configured Goblin class therefore remains an implementation
+calibration, not a taxonomy or mapping claim.
 
 Nine other paths are exact associations in Bahamut's pinned historical
 actorclass catalog, but this corpus provides no independent retail occurrence
@@ -98,15 +112,16 @@ only as candidates.
 
 ## Bahamut boundary
 
-Bahamut can safely adopt the retail-supported Puroboros path and should not use
-the conflicting Bomb path. The nine `catalog_only` paths can preserve
-Bahamut's own historical catalog authority, but this study does not upgrade
-them to independent retail proof. No configured fallback, including either
+Bahamut can safely retain the decoded Puroboros Bomb path. The observed Cactus
+path must not replace it as the actor-ID mapping. The other decoded catalog
+paths retain their catalog authority, while configured fallbacks remain
+provisional implementation choices. No configured fallback, including either
 Kobold fallback, is safe to present as an actor-ID mapping.
 
 ## Evidence boundary
 
 A class file, registry record, family resemblance, display name alone, graphic
-base alone, or reused network actor ID is insufficient. Missing retained
-coverage is an irreducible historical limitation. No live client, runtime
-probe, or new capture is requested.
+base alone, reused network actor ID, or per-instance class path is insufficient
+to replace a decoded actorclass mapping. Missing retained coverage is an
+irreducible historical limitation. No live client, runtime probe, or new
+capture is requested.

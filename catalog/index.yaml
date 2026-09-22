@@ -1507,6 +1507,7 @@ studies:
   primary_paths:
   - studies/monster-actor-class-paths/derived/verdicts.md
   - studies/monster-actor-class-paths/derived/mappings.csv
+  - studies/monster-actor-class-paths/derived/taxonomy.csv
   - studies/monster-actor-class-paths/derived/occurrences.csv
   - studies/monster-actor-class-paths/derived/accounting.json
   source_refs:

@@ -29,7 +29,7 @@ pool_id,pool_name,source,actor_class_id,display_name_id,base_model_id,identity_p
 58,pugot,mor_dhona_observations,2101508,3101508,10025,1,,/Chara/Npc/Monster/Boar/BoarNormalStandard,0,,unresolved,
 59,puk,lower_la_noscea_observations,2100102,3100102,10002,1,,/Chara/Npc/Monster/WingLizard/WingLizardNormalStandard,0,,unresolved,
 60,puk_hatchling,lower_la_noscea_observations,2100101,3100101,10002,9,,/Chara/Npc/Monster/WingLizard/WingLizardLesserStandard,0,,unresolved,
-61,puroboros,mor_dhona_observations,2101608,3101608,10028,1,/Chara/Npc/Monster/Bomb/BombNormalStandard,,2,/Chara/Npc/Monster/Cactus/CactusLesserStandard,retail_supported_catalog_conflict,/Chara/Npc/Monster/Cactus/CactusLesserStandard
+61,puroboros,mor_dhona_observations,2101608,3101608,10028,1,/Chara/Npc/Monster/Bomb/BombNormalStandard,,2,/Chara/Npc/Monster/Cactus/CactusLesserStandard,catalog_with_runtime_override,/Chara/Npc/Monster/Bomb/BombNormalStandard
 62,qiqirn_scrambler,mor_dhona_observations,2106304,3106304,10901,1,,/Chara/Npc/Monster/Qiqirn/QiqirnBareHandsStandard,0,,unresolved,
 63,rainbow_basilisk,mor_dhona_observations,2100714,3100714,10008,1,,/Chara/Npc/Monster/ScaleLizard/ScaleLizardStandard,0,,unresolved,
 64,ravenous_nannygoat,lower_la_noscea_observations,2102307,3102307,10035,1,/Chara/Npc/Monster/Yak/YakFemaleStandard,,0,,catalog_only,/Chara/Npc/Monster/Yak/YakFemaleStandard

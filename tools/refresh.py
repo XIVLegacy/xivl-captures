@@ -86,6 +86,7 @@ VERIFIED_PRODUCTS = tuple(
         "studies/monster-actor-class-paths/derived/accounting.json",
         "studies/monster-actor-class-paths/derived/mappings.csv",
         "studies/monster-actor-class-paths/derived/occurrences.csv",
+        "studies/monster-actor-class-paths/derived/taxonomy.csv",
         "studies/monster-actor-class-paths/derived/verdicts.md",
         "studies/lobby-handshake-triage/derived/lobby-record-census.json",
     ]
