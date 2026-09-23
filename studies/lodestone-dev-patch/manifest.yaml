@@ -47,13 +47,16 @@ source_refs:
 primary_paths:
 - derived/dev-patch-index.md
 - derived/evidence-map.md
+- derived/timer-announcements.md
 - derived/file-inventory.csv
 canonical_evidence:
 - derived/dev-patch-index.md
 - derived/evidence-map.md
+- derived/timer-announcements.md
 distilled:
   distilled: true
   distilled_artifacts:
   - derived/dev-patch-index.md
   - derived/evidence-map.md
+  - derived/timer-announcements.md
   - derived/file-inventory.csv

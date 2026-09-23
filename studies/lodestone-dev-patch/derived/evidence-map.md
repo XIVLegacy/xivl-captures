@@ -21,6 +21,9 @@ First-party SE dev communication documenting **intended** 1.x changes. Ranking:
 
 Most likely to inform downstream behavior/patch work:
 
+- `timer-announcements.md` - direct official 1.18-1.23b patch-note timer
+  statements, with the client-runtime and source-coverage boundaries.
+
 - `battle-reform-auto-attack-2011-06-30.md` - the 1.18 auto-attack introduction
   (before 1.18, DoW/DoM had no passive auto-attack); explains the change.
 - `battle-reform-enmity-2011-07-06.md` - the 1.18 enmity overhaul: from the old

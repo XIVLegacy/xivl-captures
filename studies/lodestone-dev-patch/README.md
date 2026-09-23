@@ -36,6 +36,7 @@ an announced change is intent until confirmed shipped in 1.23b.
 
 - `derived/dev-patch-index.md` - the 63 pages grouped by kind and ordered by date.
 - `derived/evidence-map.md` - highest-value posts, the patches covered, tier note.
+- `derived/timer-announcements.md` - direct official patch-note timer rules and evidence limits.
 - `derived/file-inventory.csv` - every page: slug, title, date, subclass, topic
   URL, word/image counts. The single home for per-page provenance.
 

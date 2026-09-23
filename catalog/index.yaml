@@ -1310,6 +1310,7 @@ studies:
   primary_paths:
   - studies/lodestone-dev-patch/derived/dev-patch-index.md
   - studies/lodestone-dev-patch/derived/evidence-map.md
+  - studies/lodestone-dev-patch/derived/timer-announcements.md
   - studies/lodestone-dev-patch/derived/file-inventory.csv
   source_refs:
   - source: lodestone-dev-patch
