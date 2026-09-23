@@ -1,4 +1,4 @@
-pool_id,pool_name,source,actor_class_id,display_name_id,base_model_id,identity_pair_catalog_count,catalog_class_path,configured_class_path
+pool_id,pool_name,source,actor_class_id,display_name_id,base_model_id,decoded_graphic_pair_row_count,population_catalog_path,population_configured_path
 31,amateur_footpad,lower_la_noscea_observations,2280101,3280101,1,1,,/Chara/Npc/Monster/Fighter/FighterEnemyPugilistStandard
 32,amateur_highwayman,lower_la_noscea_observations,2280103,3280103,1,1,,/Chara/Npc/Monster/Fighter/FighterEnemyGladiatorStandard
 33,amateur_raider,lower_la_noscea_observations,2280105,3280105,1,1,,/Chara/Npc/Monster/Fighter/FighterEnemyMarauderStandard

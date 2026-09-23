@@ -9,7 +9,6 @@ tags:
 - class-path
 - packet-decoding
 - client-data
-- bahamut
 search_hints:
 - Kobold Ascetic
 - Kobold Pickman
@@ -18,11 +17,11 @@ search_hints:
 - "2106637"
 - "2106628"
 notes: >-
-  Exhaustive 52-row audit of Bahamut's configured Lower La Noscea and Mor
-  Dhona actor classes. A lifetime-scoped instantiate, appearance-base, and
-  display-name join records a Puroboros CactusLesserStandard runtime override
-  without replacing its decoded BombNormalStandard actorclass mapping. Both
-  priority Kobold mappings remain unresolved.
+  Exhaustive 52-row audit of the supplied Lower La Noscea and Mor Dhona monster
+  population. A lifetime-scoped instantiate, appearance-base, and display-name
+  join finds two Puroboros CactusLesserStandard instance paths against a
+  BombNormalStandard catalog candidate; neither establishes the static
+  actor-class path. Both priority Kobold mappings remain unresolved.
 source_refs:
 - source: pcap-1.23b
   citation: sources/pcap-1.23b/manifest.yaml

@@ -1,28 +1,30 @@
 # Monster actor-class path verdicts
 
-## Adoption boundary
+## Population catalog candidates
 
-The decoded actorclass catalog is the ID-to-class-path authority. Retained
-`0x00CC` paths describe individual runtime instances and do not replace that
-static mapping. Configured family/job paths are candidates, not mappings.
+The population snapshot supplies the catalog path candidates. The decoded
+client tables supply actor-class and identity fields, but not these class
+paths. A captured `0x00CC` path is per-instance evidence; it does not establish
+a static actor-class path. Configured family/job paths are candidates only.
 
-| Actor class | Pool | Verdict | Path | Evidence |
+| Actor class | Pool | Verdict | Catalog candidate | Evidence |
 |---:|---|---|---|---|
-| 2104004 | dire_rat | catalog_only | `/Chara/Npc/Monster/Lemming/LemmingStandard` | 0 retained lifetimes |
-| 2102001 | dodo | catalog_only | `/Chara/Npc/Monster/Dodo/DodoLesserStandard` | 0 retained lifetimes |
-| 2103904 | ladybug | catalog_only | `/Chara/Npc/Monster/Bug/LadyBugStandard` | 0 retained lifetimes |
-| 2102717 | musk_roseling | catalog_only | `/Chara/Npc/Monster/Flower/FlowerStandard` | 0 retained lifetimes |
-| 2104003 | plains_rat | catalog_only | `/Chara/Npc/Monster/Lemming/LemmingStandard` | 0 retained lifetimes |
-| 2101608 | puroboros | catalog_with_runtime_override | `/Chara/Npc/Monster/Bomb/BombNormalStandard` | 2 retained lifetimes |
-| 2102307 | ravenous_nannygoat | catalog_only | `/Chara/Npc/Monster/Yak/YakFemaleStandard` | 0 retained lifetimes |
-| 2104001 | wharf_rat | catalog_only | `/Chara/Npc/Monster/Lemming/LemmingStandard` | 0 retained lifetimes |
-| 2103901 | bumble_beetle | catalog_only | `/Chara/Npc/Monster/Bug/BugStandard` | 0 retained lifetimes |
-| 2102305 | aldgoat_nanny | catalog_only | `/Chara/Npc/Monster/Yak/YakFemaleStandard` | 0 retained lifetimes |
+| 2104004 | dire_rat | population_catalog_no_instance_observation | `/Chara/Npc/Monster/Lemming/LemmingStandard` | 0 retained lifetimes |
+| 2102001 | dodo | population_catalog_no_instance_observation | `/Chara/Npc/Monster/Dodo/DodoLesserStandard` | 0 retained lifetimes |
+| 2103904 | ladybug | population_catalog_no_instance_observation | `/Chara/Npc/Monster/Bug/LadyBugStandard` | 0 retained lifetimes |
+| 2102717 | musk_roseling | population_catalog_no_instance_observation | `/Chara/Npc/Monster/Flower/FlowerStandard` | 0 retained lifetimes |
+| 2104003 | plains_rat | population_catalog_no_instance_observation | `/Chara/Npc/Monster/Lemming/LemmingStandard` | 0 retained lifetimes |
+| 2101608 | puroboros | population_catalog_instance_path_mismatch | `/Chara/Npc/Monster/Bomb/BombNormalStandard` | 2 retained lifetimes |
+| 2102307 | ravenous_nannygoat | population_catalog_no_instance_observation | `/Chara/Npc/Monster/Yak/YakFemaleStandard` | 0 retained lifetimes |
+| 2104001 | wharf_rat | population_catalog_no_instance_observation | `/Chara/Npc/Monster/Lemming/LemmingStandard` | 0 retained lifetimes |
+| 2103901 | bumble_beetle | population_catalog_no_instance_observation | `/Chara/Npc/Monster/Bug/BugStandard` | 0 retained lifetimes |
+| 2102305 | aldgoat_nanny | population_catalog_no_instance_observation | `/Chara/Npc/Monster/Yak/YakFemaleStandard` | 0 retained lifetimes |
 
-Puroboros is cataloged as `/Chara/Npc/Monster/Bomb/BombNormalStandard`.
-Its era family and decoded race are both Bomb. Two retained Puroboros
-lifetimes were instantiated through `CactusLesserStandard`; this is a
-runtime-class override observation, not an actorclass remapping.
+The population snapshot lists Puroboros as
+`/Chara/Npc/Monster/Bomb/BombNormalStandard`. Two joined retained
+lifetimes show `/Chara/Npc/Monster/Cactus/CactusLesserStandard`. This is
+a catalog/instance-path mismatch for those lifetimes; it establishes
+neither path as Puroboros's static actor-class path.
 
 ## Priority Kobold results
 
@@ -35,9 +37,9 @@ therefore does not identify either Kobold class. The era family and decoded
 race both identify these rows as Kobold. The configured Goblin path remains
 an implementation calibration, not a taxonomy or mapping claim.
 
-## Other decoded catalog rows
+## Other population catalog candidates
 
-| Actor class | Pool | Catalog path |
+| Actor class | Pool | Catalog candidate |
 |---:|---|---|
 | 2104004 | dire_rat | `/Chara/Npc/Monster/Lemming/LemmingStandard` |
 | 2102001 | dodo | `/Chara/Npc/Monster/Dodo/DodoLesserStandard` |
@@ -51,9 +53,9 @@ an implementation calibration, not a taxonomy or mapping claim.
 
 ## Unresolved rows
 
-The remaining 42 rows are unresolved. Their configured paths
-remain calibration candidates only; blank candidates stay blank. Exact rows
-and candidates are retained in `mappings.csv`.
+The remaining 42 rows are unresolved. Their configured
+paths remain calibration candidates only; blank candidates stay blank.
+Exact rows and candidates are retained in `mappings.csv`.
 
 ## Coverage and method
 
@@ -65,10 +67,10 @@ and display-name identity. It resets identity state on each `0x00CC`
 instantiate, then joins `0x00D6` application `u32 +0x00` (graphic base)
 and `0x013D` application `u32 +0x00` (display-name ID) for the same network
 actor lifetime. A globally unique decoded pair identifies the actor-class
-row associated with that lifetime. It does not make the lifetime's
-instance class path the static actorclass path.
+row associated with that lifetime. It does not make the lifetime's instance
+class path the static actor-class path.
 
-The two positive rows are in `war_quest_update2.pcapng` at decoded record
+The two joined occurrence rows are in `war_quest_update2.pcapng` at decoded record
 indexes 1999/2007 and 2035/2043 (instantiate/name; appearance is recorded in
 `occurrences.csv`), both on network actor `0x50e15b06`.
 
@@ -76,7 +78,7 @@ indexes 1999/2007 and 2035/2043 (instantiate/name; appearance is recorded in
 
 Class-file or registry existence is not an actor-ID association. A matching
 family name, graphic base alone, display name alone, network actor ID, or
-per-instance class path cannot replace a decoded actorclass mapping.
+per-instance class path cannot establish a static actor-class mapping.
 Network actor IDs are reused across lifetimes.
 Missing retained coverage is an irreducible historical limitation; this
 study does not request a new capture or runtime probe.

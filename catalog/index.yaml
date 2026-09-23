@@ -1552,7 +1552,6 @@ studies:
   - class-path
   - packet-decoding
   - client-data
-  - bahamut
   search_hints:
   - Kobold Ascetic
   - Kobold Pickman

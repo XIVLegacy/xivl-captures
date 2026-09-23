@@ -2,10 +2,10 @@
 
 ## Study contents
 
-This study tests the 52 actor class IDs used by Bahamut's current Lower La
-Noscea and Mor Dhona monster populations against retained FFXIV 1.23b packets,
-decoded actor identity, and client-script class metadata. It does not modify or
-promote Bahamut data.
+This study tests the 52 actor class IDs in the supplied Lower La Noscea and Mor
+Dhona monster-population snapshot against retained FFXIV 1.23b packets, decoded
+actor identity, and client-script class metadata. It does not modify or promote
+the source project data.
 
 ## Start here
 
@@ -13,7 +13,7 @@ promote Bahamut data.
 - `derived/taxonomy.csv` - era family and decoded-race cross-check for every
   configured monster.
 - `derived/occurrences.csv` - precise retained packet-lifetime joins.
-- `derived/verdicts.md` - concise conclusions and Bahamut adoption boundary.
+- `derived/verdicts.md` - conclusions and population-catalog boundary.
 - `derived/accounting.json` - corpus coverage and pinned input identity.
 - `inputs/target_actor_classes.csv` - minimal reviewed population/catalog
   snapshot used by the deterministic join.
@@ -28,11 +28,11 @@ python tools/extractors/extract_monster_actor_class_paths.py --check
 ## Sources and identity
 
 The runtime source is the 54-member `pcap-1.23b` corpus. The study's target
-snapshot was taken read-only from Bahamut revision
-`453691c2ad619234beb448aaefc3b234294c2539`; the exact inventory and catalog
-files are pinned in `derived/accounting.json` by SHA-256.
-The snapshot keeps only pool identity, the configured candidate path, the
-historical catalog path, and the two decoded identity fields used by the join.
+snapshot records source revision `453691c2ad619234beb448aaefc3b234294c2539`; the
+exact source files are pinned in `derived/accounting.json` by SHA-256. The
+snapshot supplies population identity, configured and catalog path candidates,
+and the actor identity fields used by the join. Its path values are input data,
+not paths decoded from the client tables below.
 
 The actor-class/display-name and actor-graphic/base fields derive from the
 FFXIV 1.23b client tables pinned by `xivl-client-data` revision
@@ -45,17 +45,13 @@ an exact actor-class identity.
 The taxonomy cross-check joins every configured pool name against
 `studies/gamerescape-tables/derived/mob-client-crosscheck.csv`. It records the
 preserved era family and decoded client race beside the catalog, configured,
-and observed runtime paths. Family agreement is a sanity check, not proof of
+and observed instance paths. Family agreement is a sanity check, not proof of
 an internal class-path association.
 
-The packet field locators are pinned to Bahamut revision
-`453691c2ad619234beb448aaefc3b234294c2539`:
-`src/common/protocol/game/s2c/0x00d6_set_actor_appearance.cpp:48` writes the
-model ID first (SHA-256
-`2edd15504afb2025665f9fafc98b925f331318756a9eb154f6e7fca9302623ef`),
-and `src/common/protocol/game/s2c/0x013d_set_actor_name.cpp:66` writes the
-display-name ID first (SHA-256
-`23ee664cefd9c57c99a18de567e0d439b2eb4db8bf4bdaf3c26beee339e33e81`).
+The extractor reads the application `u32` identity field at bytes `+16..+19`
+for both s2c `0x00D6` appearance and `0x013D` name records. The joined record
+indexes and decoded values are retained in `derived/occurrences.csv`; the
+packet-field digest pins are in `derived/accounting.json`.
 
 Client-script corroboration is revision
 `9e564598c3804e543bb6dce2081e90ef559f4c4b`:
@@ -88,12 +84,13 @@ network actor ID, both identity fields, instance name, base class, and path.
 
 ## Findings
 
-The decoded actorclass catalog maps Puroboros actor class 2101608 to
+The supplied population snapshot lists Puroboros actor class 2101608 as
 `/Chara/Npc/Monster/Bomb/BombNormalStandard`. The preserved Gamer Escape join
-also classifies Puroboros as Bomb, matching the decoded race. Two retained
-Puroboros lifetimes were instantiated through
-`/Chara/Npc/Monster/Cactus/CactusLesserStandard`. That is a runtime-class
-override observation, not an actorclass remapping.
+also classifies Puroboros as Bomb, matching the decoded race. Two joined
+retained Puroboros lifetimes show the instance path
+`/Chara/Npc/Monster/Cactus/CactusLesserStandard`. This is a catalog/instance
+path mismatch for those lifetimes; neither path is established here as the
+static actor-class path.
 
 Kobold Ascetic 2106637 and Kobold Pickman 2106628 remain unresolved. Neither
 decoded identity pair occurs in a retained class-path lifetime, and each pair
@@ -104,24 +101,24 @@ the registry class is `GoblinBommerGlaStandard`, not
 rows as Kobold. The configured Goblin class therefore remains an implementation
 calibration, not a taxonomy or mapping claim.
 
-Nine other paths are exact associations in Bahamut's pinned historical
-actorclass catalog, but this corpus provides no independent retail occurrence
-for them. They are labeled `catalog_only`, not retail-verified. The other 42
-rows remain unresolved; configured family/job-compatible paths are retained
-only as candidates.
+Nine other paths are present in the pinned population snapshot, but this corpus
+provides no joined instance occurrence for them. Their paths remain unverified
+catalog candidates. The other 42 rows remain unresolved; configured
+family/job-compatible paths are retained only as candidates.
 
-## Bahamut boundary
+## Population-catalog boundary
 
-Bahamut can safely retain the decoded Puroboros Bomb path. The observed Cactus
-path must not replace it as the actor-ID mapping. The other decoded catalog
-paths retain their catalog authority, while configured fallbacks remain
+The existing population catalog paths remain input candidates, not
+retail-verified actor-class mappings. The two observed Cactus instance paths do
+not establish a static replacement for the Puroboros Bomb candidate. The other
+catalog paths are likewise unverified, while configured fallbacks remain
 provisional implementation choices. No configured fallback, including either
-Kobold fallback, is safe to present as an actor-ID mapping.
+Kobold fallback, is established here as an actor-class mapping.
 
 ## Evidence boundary
 
 A class file, registry record, family resemblance, display name alone, graphic
 base alone, reused network actor ID, or per-instance class path is insufficient
-to replace a decoded actorclass mapping. Missing retained coverage is an
+to establish a static actor-class path. Missing retained coverage is an
 irreducible historical limitation. No live client, runtime probe, or new
 capture is requested.

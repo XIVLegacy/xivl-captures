@@ -41,9 +41,9 @@ INPUT_FIELDS = (
     "actor_class_id",
     "display_name_id",
     "base_model_id",
-    "identity_pair_catalog_count",
-    "catalog_class_path",
-    "configured_class_path",
+    "decoded_graphic_pair_row_count",
+    "population_catalog_path",
+    "population_configured_path",
 )
 OCCURRENCE_FIELDS = (
     "capture",
@@ -55,10 +55,10 @@ OCCURRENCE_FIELDS = (
     "pool_name",
     "display_name_id",
     "base_model_id",
-    "identity_pair_catalog_count",
+    "decoded_graphic_pair_row_count",
     "instance_name",
     "base_class",
-    "observed_class_path",
+    "observed_instance_class_path",
 )
 MAPPING_FIELDS = (
     "pool_id",
@@ -67,22 +67,21 @@ MAPPING_FIELDS = (
     "actor_class_id",
     "display_name_id",
     "base_model_id",
-    "identity_pair_catalog_count",
-    "catalog_class_path",
-    "configured_class_path",
-    "retail_observation_count",
-    "retail_class_paths",
+    "decoded_graphic_pair_row_count",
+    "population_catalog_path",
+    "population_configured_path",
+    "retained_lifetime_count",
+    "retained_instance_class_paths",
     "verdict",
-    "adoption_path",
 )
 TAXONOMY_FIELDS = (
     "actor_class_id",
     "pool_name",
     "era_family",
     "decoded_race_name",
-    "catalog_class_path",
-    "configured_class_path",
-    "runtime_class_paths",
+    "population_catalog_path",
+    "population_configured_path",
+    "retained_instance_class_paths",
 )
 
 
@@ -116,7 +115,7 @@ def _read_targets(path: Path = INPUT) -> list[dict]:
                 "actor_class_id",
                 "display_name_id",
                 "base_model_id",
-                "identity_pair_catalog_count",
+                "decoded_graphic_pair_row_count",
             ):
                 parsed[field] = int(parsed[field])
             rows.append(parsed)
@@ -170,7 +169,7 @@ def _scan(targets: list[dict]) -> tuple[list[dict], dict]:
                     if strings
                     else "",
                     "base_class": strings[path_index - 1] if path_index > 0 else "",
-                    "observed_class_path": class_path,
+                    "observed_instance_class_path": class_path,
                     "completed": False,
                 }
                 continue
@@ -204,12 +203,14 @@ def _scan(targets: list[dict]) -> tuple[list[dict], dict]:
                         "pool_name": target["pool_name"],
                         "display_name_id": state["display_name_id"],
                         "base_model_id": state["base_model_id"],
-                        "identity_pair_catalog_count": target[
-                            "identity_pair_catalog_count"
+                        "decoded_graphic_pair_row_count": target[
+                            "decoded_graphic_pair_row_count"
                         ],
                         "instance_name": state["instance_name"],
                         "base_class": state["base_class"],
-                        "observed_class_path": state["observed_class_path"],
+                        "observed_instance_class_path": state[
+                            "observed_instance_class_path"
+                        ],
                     }
                 )
 
@@ -239,34 +240,30 @@ def _build_mappings(targets: list[dict], occurrences: list[dict]) -> list[dict]:
         exact = [
             row
             for row in actor_occurrences
-            if row["identity_pair_catalog_count"] == 1
-            and row["observed_class_path"].startswith("/Chara/Npc/Monster/")
+            if row["decoded_graphic_pair_row_count"] == 1
+            and row["observed_instance_class_path"].startswith("/Chara/Npc/Monster/")
         ]
-        retail_paths = sorted({row["observed_class_path"] for row in exact})
-        catalog_path = target["catalog_class_path"]
+        instance_paths = sorted({row["observed_instance_class_path"] for row in exact})
+        catalog_path = target["population_catalog_path"]
         if catalog_path:
-            adoption_path = catalog_path
-            if len(retail_paths) > 1:
-                verdict = "catalog_with_runtime_variants"
-            elif retail_paths and retail_paths[0] != catalog_path:
-                verdict = "catalog_with_runtime_override"
-            elif retail_paths:
-                verdict = "catalog_runtime_supported"
+            if len(instance_paths) > 1:
+                verdict = "population_catalog_multiple_instance_paths"
+            elif instance_paths and instance_paths[0] != catalog_path:
+                verdict = "population_catalog_instance_path_mismatch"
+            elif instance_paths:
+                verdict = "population_catalog_instance_path_match"
             else:
-                verdict = "catalog_only"
-        elif retail_paths:
-            verdict = "runtime_instance_only"
-            adoption_path = ""
+                verdict = "population_catalog_no_instance_observation"
+        elif instance_paths:
+            verdict = "observed_instance_path_only"
         else:
             verdict = "unresolved"
-            adoption_path = ""
         mappings.append(
             {
                 **{field: target[field] for field in INPUT_FIELDS},
-                "retail_observation_count": len(exact),
-                "retail_class_paths": "|".join(retail_paths),
+                "retained_lifetime_count": len(exact),
+                "retained_instance_class_paths": "|".join(instance_paths),
                 "verdict": verdict,
-                "adoption_path": adoption_path,
             }
         )
     return mappings
@@ -288,9 +285,11 @@ def _build_taxonomy(mappings: list[dict]) -> list[dict]:
                 "pool_name": mapping["pool_name"],
                 "era_family": mob.get("ge_family", ""),
                 "decoded_race_name": mob.get("client_race_name", ""),
-                "catalog_class_path": mapping["catalog_class_path"],
-                "configured_class_path": mapping["configured_class_path"],
-                "runtime_class_paths": mapping["retail_class_paths"],
+                "population_catalog_path": mapping["population_catalog_path"],
+                "population_configured_path": mapping["population_configured_path"],
+                "retained_instance_class_paths": mapping[
+                    "retained_instance_class_paths"
+                ],
             }
         )
     return rows
@@ -298,33 +297,37 @@ def _build_taxonomy(mappings: list[dict]) -> list[dict]:
 
 def _verdicts(mappings: list[dict], occurrences: list[dict], accounting: dict) -> bytes:
     priority = {row["actor_class_id"]: row for row in mappings}
-    catalog = [row for row in mappings if row["verdict"].startswith("catalog")]
+    catalog = [
+        row for row in mappings if row["verdict"].startswith("population_catalog_")
+    ]
     unresolved = [row for row in mappings if row["verdict"] == "unresolved"]
     lines = [
         "# Monster actor-class path verdicts",
         "",
-        "## Adoption boundary",
+        "## Population catalog candidates",
         "",
-        "The decoded actorclass catalog is the ID-to-class-path authority. Retained",
-        "`0x00CC` paths describe individual runtime instances and do not replace that",
-        "static mapping. Configured family/job paths are candidates, not mappings.",
+        "The population snapshot supplies the catalog path candidates. The decoded",
+        "client tables supply actor-class and identity fields, but not these class",
+        "paths. A captured `0x00CC` path is per-instance evidence; it does not establish",
+        "a static actor-class path. Configured family/job paths are candidates only.",
         "",
-        "| Actor class | Pool | Verdict | Path | Evidence |",
+        "| Actor class | Pool | Verdict | Catalog candidate | Evidence |",
         "|---:|---|---|---|---|",
     ]
     for row in catalog:
         lines.append(
             f"| {row['actor_class_id']} | {row['pool_name']} | "
-            f"{row['verdict']} | `{row['adoption_path']}` | "
-            f"{row['retail_observation_count']} retained lifetimes |"
+            f"{row['verdict']} | `{row['population_catalog_path']}` | "
+            f"{row['retained_lifetime_count']} retained lifetimes |"
         )
     lines.extend(
         [
             "",
-            "Puroboros is cataloged as `/Chara/Npc/Monster/Bomb/BombNormalStandard`.",
-            "Its era family and decoded race are both Bomb. Two retained Puroboros",
-            "lifetimes were instantiated through `CactusLesserStandard`; this is a",
-            "runtime-class override observation, not an actorclass remapping.",
+            "The population snapshot lists Puroboros as",
+            "`/Chara/Npc/Monster/Bomb/BombNormalStandard`. Two joined retained",
+            "lifetimes show `/Chara/Npc/Monster/Cactus/CactusLesserStandard`. This is",
+            "a catalog/instance-path mismatch for those lifetimes; it establishes",
+            "neither path as Puroboros's static actor-class path.",
             "",
             "## Priority Kobold results",
             "",
@@ -335,7 +338,7 @@ def _verdicts(mappings: list[dict], occurrences: list[dict], accounting: dict) -
         lines.append(
             f"- {actor_id} `{row['pool_name']}`: UNRESOLVED. The decoded identity pair "
             f"({row['display_name_id']}, {row['base_model_id']}) is shared by "
-            f"{row['identity_pair_catalog_count']} actor-class rows and has no retained "
+            f"{row['decoded_graphic_pair_row_count']} actor-class rows and has no retained "
             "class-path lifetime. The configured Goblin path is only a family/job "
             "calibration."
         )
@@ -348,25 +351,25 @@ def _verdicts(mappings: list[dict], occurrences: list[dict], accounting: dict) -
             "race both identify these rows as Kobold. The configured Goblin path remains",
             "an implementation calibration, not a taxonomy or mapping claim.",
             "",
-            "## Other decoded catalog rows",
+            "## Other population catalog candidates",
             "",
-            "| Actor class | Pool | Catalog path |",
+            "| Actor class | Pool | Catalog candidate |",
             "|---:|---|---|",
         ]
     )
     for row in [item for item in catalog if item["actor_class_id"] != 2101608]:
         lines.append(
             f"| {row['actor_class_id']} | {row['pool_name']} | "
-            f"`{row['catalog_class_path']}` |"
+            f"`{row['population_catalog_path']}` |"
         )
     lines.extend(
         [
             "",
             "## Unresolved rows",
             "",
-            f"The remaining {len(unresolved)} rows are unresolved. Their configured paths",
-            "remain calibration candidates only; blank candidates stay blank. Exact rows",
-            "and candidates are retained in `mappings.csv`.",
+            f"The remaining {len(unresolved)} rows are unresolved. Their configured",
+            "paths remain calibration candidates only; blank candidates stay blank.",
+            "Exact rows and candidates are retained in `mappings.csv`.",
             "",
             "## Coverage and method",
             "",
@@ -378,10 +381,10 @@ def _verdicts(mappings: list[dict], occurrences: list[dict], accounting: dict) -
             "instantiate, then joins `0x00D6` application `u32 +0x00` (graphic base)",
             "and `0x013D` application `u32 +0x00` (display-name ID) for the same network",
             "actor lifetime. A globally unique decoded pair identifies the actor-class",
-            "row associated with that lifetime. It does not make the lifetime's",
-            "instance class path the static actorclass path.",
+            "row associated with that lifetime. It does not make the lifetime's instance",
+            "class path the static actor-class path.",
             "",
-            "The two positive rows are in `war_quest_update2.pcapng` at decoded record",
+            "The two joined occurrence rows are in `war_quest_update2.pcapng` at decoded record",
             "indexes 1999/2007 and 2035/2043 (instantiate/name; appearance is recorded in",
             "`occurrences.csv`), both on network actor `0x50e15b06`.",
             "",
@@ -389,7 +392,7 @@ def _verdicts(mappings: list[dict], occurrences: list[dict], accounting: dict) -
             "",
             "Class-file or registry existence is not an actor-ID association. A matching",
             "family name, graphic base alone, display name alone, network actor ID, or",
-            "per-instance class path cannot replace a decoded actorclass mapping.",
+            "per-instance class path cannot establish a static actor-class mapping.",
             "Network actor IDs are reused across lifetimes.",
             "Missing retained coverage is an irreducible historical limitation; this",
             "study does not request a new capture or runtime probe.",
@@ -409,17 +412,17 @@ def build() -> dict[str, bytes]:
         "version": "1.23b",
         "target_count": len(targets),
         **scan,
-        "matched_occurrence_count": len(occurrences),
+        "joined_occurrence_count": len(occurrences),
         "verdict_counts": dict(sorted(counts.items())),
         "input": {
             "path": "inputs/target_actor_classes.csv",
             "sha256": _sha256(INPUT),
             "family_crosscheck_path": "studies/gamerescape-tables/derived/mob-client-crosscheck.csv",
             "family_crosscheck_sha256": _sha256(FAMILY_CROSSCHECK),
-            "bahamut_revision": "453691c2ad619234beb448aaefc3b234294c2539",
-            "bahamut_monster_pools_sha256": "24ec4b0a8f8688118d96aab81dcd7f7e0efb9f25b00b20a40ea41dbb4ad5c1f0",
-            "bahamut_actorclass_sha256": "8ed0cc0dd6783f008797ff2e0d6f05578489d5801831b2c0513b38473f344a25",
-            "bahamut_actorclass_graphic_sha256": "4da32970742e571555bec8f4708cb083040b5b071b11bb37785e7496d388f383",
+            "population_source_revision": "453691c2ad619234beb448aaefc3b234294c2539",
+            "population_pool_inventory_sha256": "24ec4b0a8f8688118d96aab81dcd7f7e0efb9f25b00b20a40ea41dbb4ad5c1f0",
+            "population_actorclass_table_sha256": "8ed0cc0dd6783f008797ff2e0d6f05578489d5801831b2c0513b38473f344a25",
+            "population_actorclass_graphic_table_sha256": "4da32970742e571555bec8f4708cb083040b5b071b11bb37785e7496d388f383",
             "client_data_revision": "bd3515848fe5564bab9eb901558ab918c427a709",
             "actorclass_csv_sha256": "3ac9f8d1812d49101f367e2a41356be96b5d64b1fc5ca29949195f50ebe1d984",
             "actorclass_graphic_csv_sha256": "7da8241400530885e0a28ded04a03acf2771b0580a79c1f49f46ee0861010611",

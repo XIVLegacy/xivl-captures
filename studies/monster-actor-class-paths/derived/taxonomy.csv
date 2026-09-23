@@ -1,4 +1,4 @@
-actor_class_id,pool_name,era_family,decoded_race_name,catalog_class_path,configured_class_path,runtime_class_paths
+actor_class_id,pool_name,era_family,decoded_race_name,population_catalog_path,population_configured_path,retained_instance_class_paths
 2280101,amateur_footpad,Enemy Humanoid,,,/Chara/Npc/Monster/Fighter/FighterEnemyPugilistStandard,
 2280103,amateur_highwayman,Enemy Humanoid,,,/Chara/Npc/Monster/Fighter/FighterEnemyGladiatorStandard,
 2280105,amateur_raider,Enemy Humanoid,,,/Chara/Npc/Monster/Fighter/FighterEnemyMarauderStandard,
