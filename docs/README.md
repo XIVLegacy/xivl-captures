@@ -72,6 +72,8 @@ findings.
 - [World Party-Chat 0x00C9 Contract](../studies/world-party-chat-00c9-contract/)
 - [Retail NPC and Self-Repair Contract](../studies/retail-repair-contract/)
 - [The Bowl of Embers (Ifrit) - Video Breakdown](../studies/primal-battle-ifrit-bowl-of-embers/)
+- [Lord Errant - Sampled Video Observations](../studies/main-scenario-lord-errant-video-breakdown/)
+- [Toll of the Warden - Sampled Video Observations](../studies/main-scenario-toll-warden-video-breakdown/)
 
 ## Promoted study note
 

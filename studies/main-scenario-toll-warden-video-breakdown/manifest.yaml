@@ -1,0 +1,27 @@
+id: main-scenario-toll-warden-video-breakdown
+title: Toll of the Warden - Sampled Video Observations
+evidence_class: notes-and-transcripts
+status: distilled
+source_refs:
+- source: main-scenario-toll-warden-video-breakdown
+primary_paths:
+- derived/evidence-map.md
+canonical_evidence:
+- derived/evidence-map.md
+content_kind: main-scenario-battle
+tags:
+- video-breakdown
+- main-scenario
+- toll-of-the-warden
+- combat
+search_hints:
+- Toll of the Warden
+- Gridania rank 30 mission
+- Amalj'aa Drubber
+- Amalj'aa Bowyer
+- Parley
+notes: 2010 footage. It is not evidence of 1.23b-specific behavior.
+distilled:
+  distilled: true
+  distilled_artifacts:
+  - derived/evidence-map.md

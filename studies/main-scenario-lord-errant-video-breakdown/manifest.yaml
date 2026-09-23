@@ -1,0 +1,28 @@
+id: main-scenario-lord-errant-video-breakdown
+title: Lord Errant - Sampled Video Observations
+evidence_class: notes-and-transcripts
+status: distilled
+source_refs:
+- source: main-scenario-lord-errant-video-breakdown
+primary_paths:
+- derived/evidence-map.md
+canonical_evidence:
+- derived/evidence-map.md
+content_kind: main-scenario-battle
+tags:
+- video-breakdown
+- main-scenario
+- lord-errant
+- combat
+- dialogue
+search_hints:
+- Lord Errant
+- Amalj'aa Lancer
+- Amalj'aa Agent
+- Tempered Elezen
+- Minfilia
+notes: Sampled frames only. The exact client patch is unknown; the video is not established as 1.23b footage.
+distilled:
+  distilled: true
+  distilled_artifacts:
+  - derived/evidence-map.md

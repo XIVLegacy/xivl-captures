@@ -149,6 +149,20 @@ sources:
   original_state: in-repo
   storage_id: repo
   member_count: 366
+- id: main-scenario-lord-errant-video-breakdown
+  title: Lord Errant - Sampled Video Observations
+  evidence_class: notes-and-transcripts
+  distribution: public
+  original_state: in-repo
+  storage_id: repo
+  member_count: 1
+- id: main-scenario-toll-warden-video-breakdown
+  title: Toll of the Warden - Sampled Video Observations
+  evidence_class: notes-and-transcripts
+  distribution: public
+  original_state: in-repo
+  storage_id: repo
+  member_count: 1
 - id: mooglebox-regional-mob-maps
   title: Mooglebox FFXIV 1.x Regional Mob Camp Maps - Web Tables
   evidence_class: web-tables
@@ -1426,6 +1440,47 @@ studies:
   source_refs:
   - source: pcap-1.23b
     citation: sources/pcap-1.23b/manifest.yaml
+- id: main-scenario-lord-errant-video-breakdown
+  title: Lord Errant - Sampled Video Observations
+  status: distilled
+  evidence_class: notes-and-transcripts
+  content_kind: main-scenario-battle
+  tags:
+  - video-breakdown
+  - main-scenario
+  - lord-errant
+  - combat
+  - dialogue
+  search_hints:
+  - Lord Errant
+  - Amalj'aa Lancer
+  - Amalj'aa Agent
+  - Tempered Elezen
+  - Minfilia
+  primary_paths:
+  - studies/main-scenario-lord-errant-video-breakdown/derived/evidence-map.md
+  source_refs:
+  - source: main-scenario-lord-errant-video-breakdown
+- id: main-scenario-toll-warden-video-breakdown
+  title: Toll of the Warden - Sampled Video Observations
+  status: distilled
+  evidence_class: notes-and-transcripts
+  content_kind: main-scenario-battle
+  tags:
+  - video-breakdown
+  - main-scenario
+  - toll-of-the-warden
+  - combat
+  search_hints:
+  - Toll of the Warden
+  - Gridania rank 30 mission
+  - Amalj'aa Drubber
+  - Amalj'aa Bowyer
+  - Parley
+  primary_paths:
+  - studies/main-scenario-toll-warden-video-breakdown/derived/evidence-map.md
+  source_refs:
+  - source: main-scenario-toll-warden-video-breakdown
 - id: map-00da-00e1-comparison
   title: Map 0x00DA and 0x00E1 Wire Comparison
   status: distilled

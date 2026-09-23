@@ -121,6 +121,13 @@ Generated from `catalog/index.yaml`. Primary axis: `content_kind`.
 
 - `lodestone-lore`
 
+## main-scenario-battle (2)
+
+### Studies (2)
+
+- `main-scenario-lord-errant-video-breakdown`
+- `main-scenario-toll-warden-video-breakdown`
+
 ## movement-mechanic (2)
 
 ### Studies (1)
