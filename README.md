@@ -25,10 +25,6 @@ XIV 1.23b.
 - [Packet decoding and wire order](docs/pcap-decoding.md)
 - [Tooling and regeneration](tools/README.md)
 
-## Contributing
-
-Pull requests are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) before you open one.
-
 ## License
 
 <a href="LICENSE-DATA"><img src="https://i.creativecommons.org/l/by/4.0/88x31.png" alt="Creative Commons Attribution 4.0 International license"></a>
