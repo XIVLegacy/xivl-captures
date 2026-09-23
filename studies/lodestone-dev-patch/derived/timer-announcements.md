@@ -2,7 +2,7 @@
 
 This note records timer rules stated in the linked official FFXIV 1.x patch
 notes. They are first-party announcements of intended behavior, not proof of
-the installed 1.23b client's runtime state or server policy. The local
+the 1.23b client's runtime state or server policy. The local
 Lodestone transcription does not contain these later numbered patch-note pages;
 the links below are direct source pages, not archive transcriptions.
 
@@ -48,8 +48,8 @@ supported by retail evidence.
 In particular, the 1.22b wording supports a minimum participation condition
 for timer visibility; it does not prove that a Hamlet Defense immediately
 discovers that Hamlet's timer. The 1.23 Skirmish announcement does not supply
-an equivalent first-appearance rule. Neither gap is resolved by the installed
-client's timer consumers.
+an equivalent first-appearance rule. Neither gap is resolved by the client's
+timer consumers.
 
 ## Sources
 
