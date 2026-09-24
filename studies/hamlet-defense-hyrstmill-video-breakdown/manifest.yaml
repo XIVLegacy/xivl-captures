@@ -1,0 +1,27 @@
+id: hamlet-defense-hyrstmill-video-breakdown
+title: "Hyrstmill Hamlet Defense: sampled video observations"
+evidence_class: notes-and-transcripts
+status: distilled
+source_refs:
+- source: hamlet-defense-hyrstmill-video-breakdown
+primary_paths:
+- derived/evidence-map.md
+canonical_evidence:
+- derived/evidence-map.md
+content_kind: hamlet-defense
+system: hamlet-defense
+zones:
+- Hyrstmill
+tags:
+- video-breakdown
+- hamlet-defense
+- combat
+search_hints:
+- Sazel Ciloc the Divine
+- Wing Clipper
+- militia archer Cure
+notes: Sampled frames only. The uploader labels the video Patch 1.22a; it is not established as 1.23b footage.
+distilled:
+  distilled: true
+  distilled_artifacts:
+  - derived/evidence-map.md

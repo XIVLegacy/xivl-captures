@@ -31,6 +31,12 @@ such as guildleve, behest, battle-regimen, grand-company).
 
 - `battlecraft-leve-accept-and-complete`
 
+## hamlet-defense (1)
+
+### Studies (1)
+
+- `hamlet-defense-hyrstmill-video-breakdown`
+
 ## instanced-content (1)
 
 ### Studies (1)

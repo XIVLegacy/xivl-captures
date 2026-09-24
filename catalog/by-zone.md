@@ -8,6 +8,12 @@ Generated from `catalog/index.yaml`. Axis: `zones`.
 
 - `mooglebox-regional-mob-maps`
 
+## Hyrstmill (1)
+
+### Studies (1)
+
+- `hamlet-defense-hyrstmill-video-breakdown`
+
 ## La Noscea (1)
 
 ### Studies (1)

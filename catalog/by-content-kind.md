@@ -93,6 +93,12 @@ Generated from `catalog/index.yaml`. Primary axis: `content_kind`.
 
 - `gathering-node-wood-and-harvest`
 
+## hamlet-defense (1)
+
+### Studies (1)
+
+- `hamlet-defense-hyrstmill-video-breakdown`
+
 ## instanced-dungeon (1)
 
 ### Studies (1)
