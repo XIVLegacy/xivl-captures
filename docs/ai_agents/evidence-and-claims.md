@@ -85,8 +85,8 @@ Facts promoted from another repository use this shape:
 
 Within this repository, retain the stable source or study id, member filename,
 SHA-256, source citation, evidence class, and recorded date. Add a row, symbol,
-section, or derived-file locator when it narrows the claim. Commit hashes and date pins do not replace source locators: repository histories are rewritten before
-publication, and dated "as of" claims rot. External sources' own revision
+section, or derived-file locator when it narrows the claim. Commit hashes and
+date pins do not replace source locators. External sources' own revision
 identifiers and observation dates (harvest, retrieval, capture dates) are
 source metadata and stay verbatim. Branch names, working-tree paths, and
 default sibling paths are not citations.

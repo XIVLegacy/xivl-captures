@@ -45,24 +45,6 @@ SIBLING_LABEL = "sources/pcap-1.23b/objects"
 CORPUS_ABSENT = os.environ.get("XIVL_CORPUS_ABSENT") == "1"
 
 
-class _NoAlias(yaml.SafeDumper):
-    """Never emit YAML anchors or aliases for shared lists."""
-
-    def ignore_aliases(self, data):  # noqa: D401 - simple override
-        return True
-
-
-def _dump(obj) -> str:
-    return yaml.dump(
-        obj,
-        Dumper=_NoAlias,
-        sort_keys=False,
-        default_flow_style=False,
-        allow_unicode=True,
-        width=100,
-    )
-
-
 def load_corpus_manifest() -> dict:
     if not CORPUS_MANIFEST.exists():
         print(f"ERROR: corpus manifest not found at {CORPUS_MANIFEST}", file=sys.stderr)
