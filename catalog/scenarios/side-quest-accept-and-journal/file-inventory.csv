@@ -1,0 +1,4 @@
+pcap,capture_path,bytes,sha256,n_opcodes,opcodes,service_mix
+accept_quest.pcapng,sources/pcap-1.23b/objects/accept_quest.pcapng,53180,a207109240254b1398a36f877afc7ac34a08466cfbd3cdd3f2eb5f4a50718057,15,0x0001;0x00ca;0x00cc;0x00cd;0x00cf;0x00d2;0x00d3;0x012d;0x012e;0x0130;0x0131;0x0133;0x0137;0x0167;0x018d,map=16
+quest_journal.pcapng,sources/pcap-1.23b/objects/quest_journal.pcapng,32264,e1f983e9009a9ebe8b8231647229bee1672a1ac85d95a830113280f534531edc,5,0x0001;0x00ca;0x00cf;0x012d;0x0133,map=6
+quest_update.pcapng,sources/pcap-1.23b/objects/quest_update.pcapng,66756,e31aa9738dd523b7703eefa6d38527135f16d8b5ff2fc314fd7e5b808d7e4787,14,0x0001;0x00ca;0x00cc;0x00cd;0x00cf;0x00d2;0x00d3;0x00e3;0x012d;0x012e;0x0130;0x0131;0x0167;0x018d,map=15

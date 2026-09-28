@@ -1,0 +1,4 @@
+pcap,capture_path,bytes,sha256,n_opcodes,opcodes,service_mix
+chat_say.pcapng,sources/pcap-1.23b/objects/chat_say.pcapng,8864,ccaefd38c94512507d518f83ab693edaf7f42167f3b82876869b53a736275e37,5,0x0001;0x0003;0x00ca;0x00cf;0x018d,map=6
+chat_shout.pcapng,sources/pcap-1.23b/objects/chat_shout.pcapng,7872,94ab6b14373b2d0d0122e14b3eb18a1371e52165172ba18b3fc836c8ba94265a,5,0x0001;0x0003;0x00ca;0x00cf;0x018d,map=6
+small_talk_louisoix.pcapng,sources/pcap-1.23b/objects/small_talk_louisoix.pcapng,18444,58b620d90370ba69202e63f7f70edb79004ccbb8068e11e2e112a825d84dcafe,25,0x0001;0x00ca;0x00cc;0x00cd;0x00ce;0x00cf;0x00d0;0x00d2;0x00d3;0x00d6;0x012d;0x012e;0x0130;0x0131;0x0134;0x0136;0x0137;0x013d;0x0144;0x0145;0x016b;0x0179;0x017b;0x018b;0x018d,map=29
