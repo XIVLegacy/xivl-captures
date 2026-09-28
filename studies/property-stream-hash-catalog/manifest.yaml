@@ -1,0 +1,27 @@
+id: property-stream-hash-catalog
+title: Actor Property Stream Hash Catalog
+evidence_class: packet-capture
+status: indexed
+content_kind: character-mechanic
+tags:
+- property-stream
+- actor-state
+- murmur2
+- packet-decoding
+search_hints:
+- "0x0137"
+- SetActorPropertyPacket
+- property hash
+- typed property stream
+notes: >-
+  Complete record-level decode of the retained 1.23b SetActorProperty corpus.
+  Numeric interpretations remain parallel packet observations rather than
+  promoted property semantics.
+source_refs:
+- source: pcap-1.23b
+primary_paths:
+- derived/accounting.json
+- derived/property-records.csv
+canonical_evidence:
+- derived/accounting.json
+- derived/property-records.csv

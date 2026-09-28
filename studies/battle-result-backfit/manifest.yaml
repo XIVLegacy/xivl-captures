@@ -1,0 +1,59 @@
+id: battle-result-backfit
+title: Battle Result Packet Backfit
+evidence_class: packet-capture
+status: distilled
+content_kind: action-mechanic
+tags:
+- battle-result
+- packet-decoding
+- damage
+- critical-hit
+- block
+- cure
+search_hints:
+- "0x0139"
+- "0x013a"
+- "0x013b"
+- "0x013c"
+- battle result rows
+- normal damage
+- critical damage
+- blocked damage
+- hp recovery
+notes: >-
+  Completed four-stage backfit. The retained packet family is decoded,
+  distributed, matched, fit within evidence limits, and closed with five
+  INSUFFICIENT-DATA contradiction verdicts. No runtime formula, coefficient,
+  command behavior, or tuning value is promoted.
+source_refs:
+- source: pcap-1.23b
+primary_paths:
+- derived/accounting.json
+- derived/battle-result-rows.csv
+- derived/world-master-messages.csv
+- derived/world-master-message-contexts.json
+- derived/distribution-analysis.md
+- derived/distribution-accounting.json
+- derived/distribution-summary.csv
+- derived/matched-comparison-sets.csv
+- derived/hp-recovery-clusters.csv
+- derived/model-fits.md
+- derived/matched-set-ratios.csv
+- derived/recovery-model-observations.csv
+- derived/model-fit-accounting.json
+- derived/promotion-decision.md
+canonical_evidence:
+- derived/accounting.json
+- derived/battle-result-rows.csv
+- derived/world-master-messages.csv
+- derived/world-master-message-contexts.json
+- derived/distribution-analysis.md
+- derived/distribution-accounting.json
+- derived/distribution-summary.csv
+- derived/matched-comparison-sets.csv
+- derived/hp-recovery-clusters.csv
+- derived/model-fits.md
+- derived/matched-set-ratios.csv
+- derived/recovery-model-observations.csv
+- derived/model-fit-accounting.json
+- derived/promotion-decision.md

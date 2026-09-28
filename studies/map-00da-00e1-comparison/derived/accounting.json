@@ -1,0 +1,1263 @@
+{
+  "boundaries": [
+    "Only canonical clear port-54992 game lanes are admitted; TLS, lobby, retransmitted duplicate bytes, and non-game connections are excluded upstream.",
+    "Capture timestamps identify the earliest packet that completes each reconstructed outer frame.",
+    "The outer 8-byte value is retained separately and is not interpreted as wall-clock time.",
+    "Chronology is bounded to three preceding and three following sub-events in one reconstructed connection direction.",
+    "Application words and actor-ID equality tests are numeric comparisons, not semantic field names or causal claims.",
+    "Capture and scenario filenames are not used to assign packet meaning.",
+    "The complete admitted corpus contains no 0x00E0 occurrence in either direction; no synthetic occurrence row is emitted."
+  ],
+  "coverage": {
+    "admitted_unparsed_stream_bytes": 0,
+    "c2s_frames": 8970,
+    "c2s_occurrences": 0,
+    "c2s_subevents": 21201,
+    "c2s_wrapped_subevents": 21109,
+    "captures": 54,
+    "compressed_frame_inflate_failures": 0,
+    "discarded_trailing_stream_bytes": 228,
+    "lanes": 84,
+    "neighborhood_rows": 204,
+    "occurrence_rows": 34,
+    "s2c_0x00da": 31,
+    "s2c_0x00e0": 0,
+    "s2c_0x00e1": 3,
+    "s2c_frames": 10790,
+    "s2c_subevents": 44663,
+    "s2c_wrapped_subevents": 44556,
+    "subevent_truncations": 0,
+    "target_short_game_message_preambles": 0,
+    "wrapped_short_inner_headers": 0
+  },
+  "distributions": {
+    "0x00da": {
+      "application_hex": {
+        "0010000400000000": 1,
+        "00900c0400000000": 11,
+        "0200000200000000": 2,
+        "2900000400000000": 1,
+        "8581000b00000000": 1,
+        "8586000b00000000": 1,
+        "b90b000400000000": 1,
+        "de0b000400000000": 1,
+        "fa0f000400000000": 6,
+        "fb0f000400000000": 6
+      },
+      "application_sizes": {
+        "8": 31
+      },
+      "application_u16_le": {
+        "0x0002 0x0200 0x0000 0x0000": 2,
+        "0x0029 0x0400 0x0000 0x0000": 1,
+        "0x0bb9 0x0400 0x0000 0x0000": 1,
+        "0x0bde 0x0400 0x0000 0x0000": 1,
+        "0x0ffa 0x0400 0x0000 0x0000": 6,
+        "0x0ffb 0x0400 0x0000 0x0000": 6,
+        "0x1000 0x0400 0x0000 0x0000": 1,
+        "0x8185 0x0b00 0x0000 0x0000": 1,
+        "0x8685 0x0b00 0x0000 0x0000": 1,
+        "0x9000 0x040c 0x0000 0x0000": 11
+      },
+      "application_u32_le": {
+        "0x02000002 0x00000000": 2,
+        "0x04000029 0x00000000": 1,
+        "0x04000bb9 0x00000000": 1,
+        "0x04000bde 0x00000000": 1,
+        "0x04000ffa 0x00000000": 6,
+        "0x04000ffb 0x00000000": 6,
+        "0x04001000 0x00000000": 1,
+        "0x040c9000 0x00000000": 11,
+        "0x0b008185 0x00000000": 1,
+        "0x0b008685 0x00000000": 1
+      },
+      "captures": {
+        "gear_changesoul.pcapng": 1,
+        "local_leve_complete.pcapng": 3,
+        "party_battle_leve.pcapng": 19,
+        "return_to_inn.pcapng": 2,
+        "teleport_to_camp_nine_ivies.pcapng": 2,
+        "teleport_to_camp_tranquil.pcapng": 2,
+        "teleport_to_gridania.pcapng": 2
+      },
+      "directions": {
+        "s2c": 31
+      },
+      "immediate_following_opcodes": {
+        "0x0001": 6,
+        "0x00cb": 2,
+        "0x00cf": 4,
+        "0x00d2": 1,
+        "0x00da": 1,
+        "0x0130": 7,
+        "0x0134": 1,
+        "0x0137": 3,
+        "0x015a": 1,
+        "0x0167": 1,
+        "0x0168": 1,
+        "0x017a": 1,
+        "0x018d": 2
+      },
+      "immediate_previous_opcodes": {
+        "0x0001": 7,
+        "0x000c": 1,
+        "0x00cf": 3,
+        "0x00d2": 1,
+        "0x00da": 1,
+        "0x0133": 1,
+        "0x0137": 2,
+        "0x0139": 1,
+        "0x0166": 2,
+        "0x0167": 1,
+        "0x0169": 10,
+        "0x01a4": 1
+      },
+      "inner_header_word0_values": {
+        "20": 31
+      },
+      "inner_payload_sizes": {
+        "16": 31
+      },
+      "lanes": {
+        "main": 31
+      },
+      "occurrences": 31,
+      "preamble_word0_values": {
+        "0x50e0eb0d": 1,
+        "0x50e0eb0f": 1,
+        "0x50e0ec5f": 1,
+        "0x50e0ec62": 1,
+        "0x50e0edd5": 1,
+        "0x50e0edd9": 1,
+        "0x50e0f02d": 1,
+        "0x50e0f7ed": 1,
+        "0x50e0f7ef": 1,
+        "0x50e0fd07": 1,
+        "0x50e0fdca": 2,
+        "0x50e11b59": 1,
+        "0x50e11b87": 1,
+        "0x50e11b8c": 1,
+        "0x50e11b90": 1,
+        "0x50e11bcf": 1,
+        "0x50e11c0b": 1,
+        "0x50e11c84": 1,
+        "0x50e11cc9": 1,
+        "0x50e11cef": 1,
+        "0x50e11d17": 1,
+        "0x50e11d1c": 1,
+        "0x50e11d6f": 1,
+        "0x50e11d79": 1,
+        "0x50e11dcb": 2,
+        "0x50e11ddf": 1,
+        "0x50e11de1": 1,
+        "0x50e11de3": 1,
+        "0x50e11de6": 1
+      },
+      "relations": {
+        "preamble_word0_equals_transport_source": 0,
+        "preamble_word0_equals_transport_target": 0,
+        "transport_source_equals_target": 16,
+        "zero_transport_target": 0
+      },
+      "subevent_sizes": {
+        "40": 31
+      },
+      "transport_actor_pairs": {
+        "0x029b27d3->0x029b2941": 2,
+        "0x029b2941->0x029b2941": 16,
+        "0x45100d45->0x029b2941": 1,
+        "0x45100d46->0x029b2941": 1,
+        "0x45100d47->0x029b2941": 1,
+        "0x45100d48->0x029b2941": 1,
+        "0x45100d49->0x029b2941": 1,
+        "0x45100d4a->0x029b2941": 1,
+        "0x45100d4b->0x029b2941": 1,
+        "0x45100d4c->0x029b2941": 1,
+        "0x45100d4d->0x029b2941": 1,
+        "0x45100d4e->0x029b2941": 1,
+        "0x45100d4f->0x029b2941": 1,
+        "0x45100d50->0x029b2941": 1,
+        "0x45100d5a->0x029b2941": 1
+      },
+      "transport_source_actor_ids": {
+        "0x029b27d3": 2,
+        "0x029b2941": 16,
+        "0x45100d45": 1,
+        "0x45100d46": 1,
+        "0x45100d47": 1,
+        "0x45100d48": 1,
+        "0x45100d49": 1,
+        "0x45100d4a": 1,
+        "0x45100d4b": 1,
+        "0x45100d4c": 1,
+        "0x45100d4d": 1,
+        "0x45100d4e": 1,
+        "0x45100d4f": 1,
+        "0x45100d50": 1,
+        "0x45100d5a": 1
+      },
+      "transport_target_actor_ids": {
+        "0x029b2941": 31
+      }
+    },
+    "0x00e0": {
+      "application_hex": {},
+      "application_sizes": {},
+      "application_u16_le": {},
+      "application_u32_le": {},
+      "captures": {},
+      "directions": {},
+      "immediate_following_opcodes": {},
+      "immediate_previous_opcodes": {},
+      "inner_header_word0_values": {},
+      "inner_payload_sizes": {},
+      "lanes": {},
+      "occurrences": 0,
+      "preamble_word0_values": {},
+      "relations": {
+        "preamble_word0_equals_transport_source": 0,
+        "preamble_word0_equals_transport_target": 0,
+        "transport_source_equals_target": 0,
+        "zero_transport_target": 0
+      },
+      "subevent_sizes": {},
+      "transport_actor_pairs": {},
+      "transport_source_actor_ids": {},
+      "transport_target_actor_ids": {}
+    },
+    "0x00e1": {
+      "application_hex": {
+        "00000105276e60459f52000000000000": 1,
+        "0030010541299b02be52000000000000": 1,
+        "00b0000541299b026e52000000000000": 1
+      },
+      "application_sizes": {
+        "16": 3
+      },
+      "application_u16_le": {
+        "0x0000 0x0501 0x6e27 0x4560 0x529f 0x0000 0x0000 0x0000": 1,
+        "0x3000 0x0501 0x2941 0x029b 0x52be 0x0000 0x0000 0x0000": 1,
+        "0xb000 0x0500 0x2941 0x029b 0x526e 0x0000 0x0000 0x0000": 1
+      },
+      "application_u32_le": {
+        "0x0500b000 0x029b2941 0x0000526e 0x00000000": 1,
+        "0x05010000 0x45606e27 0x0000529f 0x00000000": 1,
+        "0x05013000 0x029b2941 0x000052be 0x00000000": 1
+      },
+      "captures": {
+        "emote_dance.pcapng": 1,
+        "emote_kneel.pcapng": 1,
+        "war_quest_update2.pcapng": 1
+      },
+      "directions": {
+        "s2c": 3
+      },
+      "immediate_following_opcodes": {
+        "0x0001": 2,
+        "0x00ce": 1
+      },
+      "immediate_previous_opcodes": {
+        "0x0001": 2,
+        "0x00cf": 1
+      },
+      "inner_header_word0_values": {
+        "20": 3
+      },
+      "inner_payload_sizes": {
+        "24": 3
+      },
+      "lanes": {
+        "main": 3
+      },
+      "occurrences": 3,
+      "preamble_word0_values": {
+        "0x50e0eeb5": 1,
+        "0x50e0eed1": 1,
+        "0x50e15aac": 1
+      },
+      "relations": {
+        "preamble_word0_equals_transport_source": 0,
+        "preamble_word0_equals_transport_target": 0,
+        "transport_source_equals_target": 2,
+        "zero_transport_target": 0
+      },
+      "subevent_sizes": {
+        "48": 3
+      },
+      "transport_actor_pairs": {
+        "0x029b27d3->0x029b2941": 1,
+        "0x029b2941->0x029b2941": 2
+      },
+      "transport_source_actor_ids": {
+        "0x029b27d3": 1,
+        "0x029b2941": 2
+      },
+      "transport_target_actor_ids": {
+        "0x029b2941": 3
+      }
+    },
+    "cross_opcode": {
+      "shared_application_hex_0x00da_0x00e1": [],
+      "shared_transport_actor_ids_0x00da_0x00e1": [
+        "0x029b27d3",
+        "0x029b2941"
+      ]
+    }
+  },
+  "inputs": {
+    "captures": [
+      {
+        "admitted_lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "capture": "accept_leve.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "42b87e6c095db130def1de5bc382e428b4f4c12c8069c4682d6fa4bc7681967a",
+        "size_bytes": 59576,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "main": 1
+        },
+        "capture": "accept_local_leve.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "3b4b071d88742a5d3c94a1e29ca6a4074cb6b9a9a60207118302fe22f932bd7c",
+        "size_bytes": 50676,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "capture": "accept_quest.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "a207109240254b1398a36f877afc7ac34a08466cfbd3cdd3f2eb5f4a50718057",
+        "size_bytes": 53180,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "main": 1
+        },
+        "capture": "action_and_traits.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "c3d30fe46d69996dc74e4864245c42675cde2388525c03063dac180df528352f",
+        "size_bytes": 37584,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "main": 1
+        },
+        "capture": "add_str.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "246e4948a7ca1e4dc620e724677bfd9153ce76f6445a557967d309e9946021ed",
+        "size_bytes": 20056,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "main": 1
+        },
+        "capture": "attributes.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 0
+        },
+        "sha256": "5bc78b05d45a4e410b7410d046cb8b958ec549ce5b1b51a52225c4d15041a2ff",
+        "size_bytes": 22624,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "capture": "battle_mode_passive_mode.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 0
+        },
+        "sha256": "5a8290df1d11781f4f5fa1f6990651c679e57ee3b8c5549021f06767bb172d4b",
+        "size_bytes": 12776,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "capture": "buy_square_maple_shield.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "aab582bd9658c89cd4d56e132500481f442b9f2dc2179f1a5829ea09776bce6b",
+        "size_bytes": 54088,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "main": 1
+        },
+        "capture": "change_bodyarmor.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "55ee6035d24e80b97c9354a0800b86a52d0a99e1200cf6875a5b56009215021a",
+        "size_bytes": 54536,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "main": 1
+        },
+        "capture": "change_helm.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 0
+        },
+        "sha256": "af1e465076c3acf6188f24f084622b22beccc932bb96effd517b2d9a44606e08",
+        "size_bytes": 39660,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "capture": "change_to_botanist.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "8fdc448a17d19bea3d07855a8d8843d78926c50586f3656946c96b6a6cb27d26",
+        "size_bytes": 41500,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "main": 1
+        },
+        "capture": "chat_say.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 0
+        },
+        "sha256": "ccaefd38c94512507d518f83ab693edaf7f42167f3b82876869b53a736275e37",
+        "size_bytes": 8864,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "main": 1
+        },
+        "capture": "chat_shout.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 0
+        },
+        "sha256": "94ab6b14373b2d0d0122e14b3eb18a1371e52165172ba18b3fc836c8ba94265a",
+        "size_bytes": 7872,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "main": 1
+        },
+        "capture": "check_room_map.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "cca1eea57329b02e5d66e53ad6f44d28deebf8ee8c11cfafd22bf813d1551ee5",
+        "size_bytes": 28032,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "main": 1
+        },
+        "capture": "checkbed.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "9e05a05de6ec44eded13761fcb3546eb248c0c68e537051eef575e29dfff1b79",
+        "size_bytes": 26276,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "capture": "coerthas_map.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "779de805f9172832e986f5c46c0a94f6d93f4b9c7f1c41fd0de0f5f8326c0ae3",
+        "size_bytes": 34364,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "capture": "combat_autoattack.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 0
+        },
+        "sha256": "2f677ab61047b25c4168a3dd9496f372d48de3bba018d582dd5a968b9272f7b2",
+        "size_bytes": 82908,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "main": 1
+        },
+        "capture": "combat_skills.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "7fe66d92f6f62584e57562e51355d310546935690e0b96c2c689b83bbe8a07a7",
+        "size_bytes": 63028,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "capture": "cutscene_book.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "c2cf85e02d8d15fe2aa9261e8b796c29c0a3d9dd9cdf287ce0f75f3a666b2b4d",
+        "size_bytes": 123824,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "capture": "emote_dance.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "9e004f1e791cfc37b7d23e8986a5e69021b7b7f828295fdf7957e36aa1c57dc8",
+        "size_bytes": 30352,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 1
+        }
+      },
+      {
+        "admitted_lanes": {
+          "main": 1
+        },
+        "capture": "emote_kneel.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "3381b6121f5b0789c97ededdc5394c6bc9b14c561029191fb5b3f428033c80e8",
+        "size_bytes": 23920,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 1
+        }
+      },
+      {
+        "admitted_lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "capture": "friendlist_search.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "3b9a35689fb923d9520bbfed8a3886dc2b461c9516492e3d8e68eec093eb7b0e",
+        "size_bytes": 37744,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "capture": "from_gridania_to_blackshroud.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "eff300de679230653953ea3399939a15ce9d6aeafd202c7ebcf5f55e6d24930f",
+        "size_bytes": 196308,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "capture": "gather_wood.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "c308aa4c984eb3e1912383c06e5115c6924713978df43cdb8075335e1bac7d32",
+        "size_bytes": 157688,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "main": 1
+        },
+        "capture": "gear_changesoul.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "62af2cde3a4683fba3e09cc3dfed8001d74303b120381de577b05df492926780",
+        "size_bytes": 23784,
+        "target_occurrences": {
+          "0x00da": 1,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "main": 1
+        },
+        "capture": "gear_changeweapon.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "3eec2c2993feeb2b8c47c1e1f553335638a7262ec13b561e2d52d768f0798080",
+        "size_bytes": 21352,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "main": 1
+        },
+        "capture": "gridania_map.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "13e26b2d68f195b8e2daf7c355a2741c155a1036b80d79c90aab982157290795",
+        "size_bytes": 16184,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "capture": "gridania_to_coerthas.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "63152a1ed6e446df5cc4750fe50a0839f9e45ad270c79abfc72b5c09cc47e547",
+        "size_bytes": 939832,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "capture": "harvest.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "8522a844b6904207c3465ae1d1038599eddb8b9dc47800d5230c8a1c3ad0e440",
+        "size_bytes": 60680,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "main": 1
+        },
+        "capture": "idle_in_party.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 0
+        },
+        "sha256": "98b45822079372380bf834a937a9cb83b662b9e302555aafa14ee353537f74c1",
+        "size_bytes": 20168,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "capture": "idling.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "fd86f5b78b2975dcaf7bb8a8e7f94267f9f2660078a5193ea26732cb317dd385",
+        "size_bytes": 42608,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "capture": "inventory.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 0
+        },
+        "sha256": "f667bfc1cb87afec3c5c5f56b031254101aff012577f6f35c7cbf133815b6878",
+        "size_bytes": 27908,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "capture": "invite_join_party.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "34c946c3f93744d2bbd841e75f983ef12b9bbcb59afcba31414d6d3f41e7de58",
+        "size_bytes": 88372,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "capture": "local_leve_complete.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 0
+        },
+        "sha256": "4f0793f354140478725bf2c30642a3458a854460f47fb11a7af635c8881d95cd",
+        "size_bytes": 358296,
+        "target_occurrences": {
+          "0x00da": 3,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "capture": "login.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 0
+        },
+        "sha256": "28e06b54fe559870031f077f8549b9244caafa7e5177dbca08a7feae6c2b1b62",
+        "size_bytes": 856236,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "main": 1
+        },
+        "capture": "mount_unmount_chocobo.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "e77c06799f07029feb054792eac30baa431da15a61937b1a39bcd025e4db4072",
+        "size_bytes": 21240,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "capture": "move_around_gridania.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "bea7ae86444fa3ef9acc08f148f60dff1e5992188ee85136dec50c64e09236d0",
+        "size_bytes": 220128,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "main": 1
+        },
+        "capture": "move_out_of_room.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "a7a03a1d688f3feb264f8da9fae3519c55b7e267aa3802472f0221f4d729b37b",
+        "size_bytes": 83412,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "capture": "moving_around_gridania.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 0
+        },
+        "sha256": "bf6abf7ccc7a16e071846036477c1fadbc3b46385ef6e747b543d836f3f51017",
+        "size_bytes": 855000,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "main": 1
+        },
+        "capture": "open_gear_menu.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "6b7dee09f59d03d9706ca1c81586dce667cd4d806ee2a2b72d89432d617afc2e",
+        "size_bytes": 25940,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "capture": "party_battle_leve.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "6327e5e1f5cbd51a9baaa9bcbacf53ca51c50a98fe4b66ae3e6bdecd9198089f",
+        "size_bytes": 1429864,
+        "target_occurrences": {
+          "0x00da": 19,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "main": 1
+        },
+        "capture": "quest_journal.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "e1f983e9009a9ebe8b8231647229bee1672a1ac85d95a830113280f534531edc",
+        "size_bytes": 32264,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "capture": "quest_update.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 0
+        },
+        "sha256": "e31aa9738dd523b7703eefa6d38527135f16d8b5ff2fc314fd7e5b808d7e4787",
+        "size_bytes": 66756,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "capture": "repair_items.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 0
+        },
+        "sha256": "bbd829cbd3f42b2cbfb3aa8a74a1cc35d4e2c16c99e5a4a20ca76573f02dd90f",
+        "size_bytes": 63400,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "main": 1
+        },
+        "capture": "return_to_inn.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "9a81e483d3dd2673081afef06ed521c190c4d42be16e95e24097f25ff81f58c1",
+        "size_bytes": 44012,
+        "target_occurrences": {
+          "0x00da": 2,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "capture": "sell_item.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "1cd808fff6501c53e4c113f1fdef090e50dfe0fd7fe86ceaa552b3a53c1b5aac",
+        "size_bytes": 57580,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "main": 1
+        },
+        "capture": "small_talk_louisoix.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 0
+        },
+        "sha256": "58b620d90370ba69202e63f7f70edb79004ccbb8068e11e2e112a825d84dcafe",
+        "size_bytes": 18444,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "main": 1
+        },
+        "capture": "switch_to_weaver.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 0
+        },
+        "sha256": "b41b25bc51be1a64f41861142dc992c14493c65bcd920cadca013243480b777e",
+        "size_bytes": 33364,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "capture": "teleport_to_camp_nine_ivies.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "fac2b485608247d299a406a7065e19918789118e7e544ca85cec4d772da0e3ab",
+        "size_bytes": 80004,
+        "target_occurrences": {
+          "0x00da": 2,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "capture": "teleport_to_camp_tranquil.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "488318351cdedb2e2b650dc68c55014b160fbbc26753c200922402c1ba6c4dd7",
+        "size_bytes": 67920,
+        "target_occurrences": {
+          "0x00da": 2,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "main": 1
+        },
+        "capture": "teleport_to_gridania.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "779141dc79a4bcf4bfc2e265f8b9510607d5a6b6e78d32f8940e5a847e598fa0",
+        "size_bytes": 67620,
+        "target_occurrences": {
+          "0x00da": 2,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "capture": "war_quest_update1.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 0
+        },
+        "sha256": "ce64e429063cc7e49a2045e2f7b0e18b1991f5908368b791b93c72419841e890",
+        "size_bytes": 42812,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      },
+      {
+        "admitted_lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "capture": "war_quest_update2.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "bf43b5ee32c58e5dc6f8149b071bd9c5cd5cc0aaa55ea3528872308fd7be2429",
+        "size_bytes": 206216,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 1
+        }
+      },
+      {
+        "admitted_lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "capture": "war_quest_update3.pcapng",
+        "discarded_trailing_stream_bytes": {
+          "c2s": 0,
+          "s2c": 6
+        },
+        "sha256": "52279e8cbc13d3f4751b5ee3cb9c91df1895ed5c41d30672629db3ec1c9efd05",
+        "size_bytes": 103520,
+        "target_occurrences": {
+          "0x00da": 0,
+          "0x00e0": 0,
+          "0x00e1": 0
+        }
+      }
+    ],
+    "corpus_digest_sha256": "1293490808399dd5e1015d921a388f0fe4931dfa3ef678f30d790f5296025e6a",
+    "source": "pcap-1.23b"
+  },
+  "schema_version": 1,
+  "study": "map-00da-00e1-comparison"
+}

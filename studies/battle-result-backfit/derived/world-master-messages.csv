@@ -1,0 +1,31 @@
+world_master_text_id,observed_rows,message_class,message_label,join_status
+0,120,unknown,no worldMaster row,zero_id
+30108,1,non_fit,actor defeats target,joined
+30109,1,non_fit,actor regains consciousness,joined
+30112,4,non_fit,body part incapacitated,joined
+30116,15,non_fit,actor defeats target variant,joined
+30126,16,non_fit,actor readies command,joined
+30128,6,non_fit,actor begins casting command,joined
+30209,1,non_fit,command fails,joined
+30301,223,normal_damage,normal damage,joined
+30302,20,critical_damage,critical damage,joined
+30303,4,normal_damage,normal body-part damage,joined
+30306,14,block_damage,blocked damage variant 2,joined
+30308,7,parry_damage,parried damage variant 1,joined
+30311,29,miss,miss,joined
+30320,10,hp_recovery,HP recovery,joined
+30328,32,non_fit,command applies status,joined
+30330,13,non_fit,status applied,joined
+30331,31,non_fit,status ended,joined
+30332,2,non_fit,HP absorption,joined
+30335,12,non_fit,command applies status variant,joined
+30338,9,non_fit,status ended variant,joined
+33008,4,hp_recovery,Aegis Boon HP recovery,joined
+33909,3,non_fit,skill level attained,joined
+33919,10,non_fit,EXP chain,joined
+33921,4,non_fit,experience gained,joined
+33934,4,non_fit,experience earned variant 1,joined
+33935,9,non_fit,experience earned variant 2,joined
+33936,11,non_fit,experience earned variant 3,joined
+33950,3,non_fit,experience earned variant 4,joined
+33954,4,non_fit,experience earned variant 5,joined

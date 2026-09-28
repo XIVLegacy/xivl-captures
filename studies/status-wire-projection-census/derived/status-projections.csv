@@ -1,0 +1,4 @@
+wire_status_id_hex,status_row_id,status_word_hex,status_name,all_wire_ids_for_row_hex,chant_kind_1,chant_kind_2,object_bits_8_11,object_bits_14_15,object_bits_12_13,occurrence_count,capture_count
+0x5a59,223129,0x00036799,Protect,0x5a59 0x9da9,6,7,7,1,2,1,1
+0x5adf,223263,0x0003681f,Resting,0x5adf 0x9e2f,6,8,8,1,2,2,2
+0x5dbf,223999,0x00036aff,Well Fed,0x5dbf 0xa10f,6,10,10,1,2,2,2

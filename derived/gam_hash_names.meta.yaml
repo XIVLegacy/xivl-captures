@@ -1,0 +1,13 @@
+dataset: gam_hash_names
+kind: generated
+evidence_class: packet-capture
+schema_version: 1
+output:
+  file: derived/gam_hash_names.json
+  sha256: a76e7f47286cde1a33081fc01e5509230d7c812b917925a348c9a5db3f09c667
+generator:
+  tool: tools/name_gam_hashes.py
+  version: '3'
+inputs:
+- dataset: gam_keys
+  sha256: 2cb5155cc8b744d10298766af29ce11d33eef4551fe82e2168b5eb08475430a3

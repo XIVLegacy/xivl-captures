@@ -1,0 +1,38 @@
+direction,layer,offset_basis,offset,application_offset,width,wire_type,field,observed_status,observed_values,consumer_boundary
+c2s,outer,outer-frame,0,,4,bytes[4],marker,invariant,01 00 00 00,Raw chat-lane body in both directions.
+c2s,outer,outer-frame,4,,2,u16le,outer_size,direction-fixed,568,Includes the 16-byte outer header.
+c2s,outer,outer-frame,6,,2,u16le,outer_type,invariant,1,Observed chat-lane outer type.
+c2s,outer,outer-frame,8,,8,u64le,outer_value,dynamic,not published,Preserve framing value; this study does not classify it as a message sequence.
+c2s,outer,outer-frame,16,,552,bytes,body,direction-fixed,one subevent,Raw body; no zlib inflation.
+c2s,wrapper,subevent,0,,2,u16le,subevent_size,direction-fixed,552,Use the direction-specific fixed size.
+c2s,wrapper,subevent,2,,2,u16le,subevent_type,invariant,0x0003,Actor-wrapped subevent class.
+c2s,wrapper,subevent,4,,4,u32le,source_actor,invariant-per-corpus,one opaque value per direction; values differ,Preserve as an opaque wrapper actor field; do not substitute the sender name field.
+c2s,wrapper,subevent,8,,4,u32le,destination_actor,invariant-per-corpus,one opaque value per direction,Preserve as an opaque wrapper actor field; semantic ownership is not established.
+c2s,wrapper,subevent,12,,4,u32le,counter,direction-specific,one nonzero token,Neither direction exhibits a sequence.
+c2s,game-message,subevent,16,,2,u16le,header_tag,invariant,0x0014,"This is a fixed tag, not a packet length."
+c2s,game-message,subevent,18,,2,u16le,opcode,invariant,0x00c9,World party-chat opcode on the chat lane.
+c2s,game-message,subevent,20,,4,u32le,header_reserved,invariant,0,Write zero.
+c2s,application,subevent,24,0,4,u32le,chat_group_selector,invariant,10,Retail client evidence establishes a u32 selector; all retained rows use 10.
+c2s,application,subevent,28,4,4,u32le,unknown_zero_u32,invariant,0,Write zero; no noun is supported.
+c2s,application,subevent,32,8,4,u32le,unknown_context_u32,invariant-per-corpus,1 token,Preserve or source explicitly; it is not proven to be a stable sender ID or sequence.
+c2s,application,subevent,36,12,512,bytes[512],message,dynamic,11 distinct; lengths 3..92,"NUL-terminated, zero-padded, UTF-8-roundtripping in every retained row."
+c2s,application,subevent,548,524,4,bytes[4],unknown_tail,dynamic,2 nonzero tokens; non-monotonic,Preserve unnamed; do not treat as a sequence.
+s2c,outer,outer-frame,0,,4,bytes[4],marker,invariant,01 00 00 00,Raw chat-lane body in both directions.
+s2c,outer,outer-frame,4,,2,u16le,outer_size,direction-fixed,600,Includes the 16-byte outer header.
+s2c,outer,outer-frame,6,,2,u16le,outer_type,invariant,1,Observed chat-lane outer type.
+s2c,outer,outer-frame,8,,8,u64le,outer_value,dynamic,not published,Preserve framing value; this study does not classify it as a message sequence.
+s2c,outer,outer-frame,16,,584,bytes,body,direction-fixed,one subevent,Raw body; no zlib inflation.
+s2c,wrapper,subevent,0,,2,u16le,subevent_size,direction-fixed,584,Use the direction-specific fixed size.
+s2c,wrapper,subevent,2,,2,u16le,subevent_type,invariant,0x0003,Actor-wrapped subevent class.
+s2c,wrapper,subevent,4,,4,u32le,source_actor,invariant-per-corpus,one opaque value per direction; values differ,Preserve as an opaque wrapper actor field; do not substitute the sender name field.
+s2c,wrapper,subevent,8,,4,u32le,destination_actor,invariant-per-corpus,one opaque value per direction,Preserve as an opaque wrapper actor field; semantic ownership is not established.
+s2c,wrapper,subevent,12,,4,u32le,counter,direction-specific,0,Neither direction exhibits a sequence.
+s2c,game-message,subevent,16,,2,u16le,header_tag,invariant,0x0014,"This is a fixed tag, not a packet length."
+s2c,game-message,subevent,18,,2,u16le,opcode,invariant,0x00c9,World party-chat opcode on the chat lane.
+s2c,game-message,subevent,20,,4,u32le,header_reserved,invariant,0,Write zero.
+s2c,application,subevent,24,0,4,u32le,chat_group_selector,invariant,10,Retail client evidence establishes a u32 selector; all retained rows use 10.
+s2c,application,subevent,28,4,4,u32le,unknown_zero_u32,invariant,0,Write zero; no noun is supported.
+s2c,application,subevent,32,8,4,u32le,unknown_context_u32,dynamic,2 tokens,Preserve or source explicitly; it is not proven to be a stable sender ID or sequence.
+s2c,application,subevent,36,12,32,bytes[32],sender_name,invariant-per-corpus,1 token; length 21,"NUL-terminated, zero-padded sender name; no other sender-identity field is proven."
+s2c,application,subevent,68,44,512,bytes[512],message,dynamic,26 distinct; lengths 2..115,"NUL-terminated, zero-padded, UTF-8-roundtripping in every retained row."
+s2c,application,subevent,580,556,4,bytes[4],unknown_tail,invariant,all zero,Write zero; no noun is supported.

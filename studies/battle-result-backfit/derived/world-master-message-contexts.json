@@ -1,0 +1,2028 @@
+{
+  "actorTypeStatus": "INSUFFICIENT_DATA; retained rows identify actors only by numeric ID",
+  "boundedAbsences": {
+    "0x013B": "No retained packet or row"
+  },
+  "corpusStatus": "closed-frozen",
+  "entries": [
+    {
+      "captures": [
+        "war_quest_update2.pcapng"
+      ],
+      "commandIds": {
+        "23005": 1
+      },
+      "distinctCaptures": 1,
+      "effectIdPresence": {
+        "nonzeroRows": 0,
+        "zeroRows": 1
+      },
+      "englishText": "[@head:022b37ff35020831e4eb02eb03ff04796f75ff25020821e908ff1b023117ff107874782f646973706c61794e616d6503e908020203eb03030303] [@if:020817e4eb02eb03ff07646566656174ff086465666561747303] [@if:020831e4eb02eb04ff04796f75ff25020821e909ff1b023117ff107874782f646973706c61794e616d6503e909020203eb040303].",
+      "messageClass": "non_fit",
+      "messageLabel": "actor defeats target",
+      "numericValuePresence": {
+        "nonzeroRows": 0,
+        "zeroRows": 1
+      },
+      "observedRows": 1,
+      "opcodes": {
+        "0x013A": 1
+      },
+      "outcomeFamily": "defeat",
+      "rowIndexes": [
+        542
+      ],
+      "scenarios": {
+        "job-quest-war-updates": 1
+      },
+      "sourceActorIds": {
+        "1163947556": 1
+      },
+      "targetActorIds": {
+        "43723073": 1
+      },
+      "textParamValues": {
+        "0": 1
+      },
+      "worldMasterTextId": 30108
+    },
+    {
+      "captures": [
+        "war_quest_update2.pcapng"
+      ],
+      "commandIds": {
+        "0": 1
+      },
+      "distinctCaptures": 1,
+      "effectIdPresence": {
+        "nonzeroRows": 1,
+        "zeroRows": 0
+      },
+      "englishText": "[@head:022b37ff35020831e4eb02eb04ff04796f75ff25020821e909ff1b023117ff107874782f646973706c61794e616d6503e909020203eb04030303] [@if:020817e4eb02eb04ff0772656761696eff0872656761696e7303] consciousness.",
+      "messageClass": "non_fit",
+      "messageLabel": "actor regains consciousness",
+      "numericValuePresence": {
+        "nonzeroRows": 1,
+        "zeroRows": 0
+      },
+      "observedRows": 1,
+      "opcodes": {
+        "0x0139": 1
+      },
+      "outcomeFamily": "recovery_state",
+      "rowIndexes": [
+        609
+      ],
+      "scenarios": {
+        "job-quest-war-updates": 1
+      },
+      "sourceActorIds": {
+        "43723073": 1
+      },
+      "targetActorIds": {
+        "43723073": 1
+      },
+      "textParamValues": {
+        "1": 1
+      },
+      "worldMasterTextId": 30109
+    },
+    {
+      "captures": [
+        "party_battle_leve.pcapng",
+        "war_quest_update2.pcapng"
+      ],
+      "commandIds": {
+        "27111": 2,
+        "27191": 2
+      },
+      "distinctCaptures": 2,
+      "effectIdPresence": {
+        "nonzeroRows": 0,
+        "zeroRows": 4
+      },
+      "englishText": "[@head:022b4aff48020844e4eb02eb04ff05796f7572ff37020831e4eb02eb04ff04796f75ff25020821e909ff1b023117ff107874782f646973706c61794e616d6503e909020203eb04030327730303] [@sheet:022818ff137874782f746578745f70617274734e616d65e80d0203] incapacitated.",
+      "messageClass": "non_fit",
+      "messageLabel": "body part incapacitated",
+      "numericValuePresence": {
+        "nonzeroRows": 0,
+        "zeroRows": 4
+      },
+      "observedRows": 4,
+      "opcodes": {
+        "0x013A": 4
+      },
+      "outcomeFamily": "body_part",
+      "rowIndexes": [
+        291,
+        325,
+        565,
+        599
+      ],
+      "scenarios": {
+        "battlecraft-leve-accept-and-complete": 2,
+        "job-quest-war-updates": 2
+      },
+      "sourceActorIds": {
+        "43722707": 2,
+        "43723073": 2
+      },
+      "targetActorIds": {
+        "1158679843": 1,
+        "1158679894": 1,
+        "1163947556": 1,
+        "1163947557": 1
+      },
+      "textParamValues": {
+        "42": 1,
+        "45": 1,
+        "46": 2
+      },
+      "worldMasterTextId": 30112
+    },
+    {
+      "captures": [
+        "combat_autoattack.pcapng",
+        "combat_skills.pcapng",
+        "party_battle_leve.pcapng",
+        "war_quest_update2.pcapng"
+      ],
+      "commandIds": {
+        "22104": 6,
+        "27110": 1,
+        "27111": 1,
+        "27119": 1,
+        "27150": 2,
+        "27158": 1,
+        "27190": 1,
+        "27191": 1,
+        "27198": 1
+      },
+      "distinctCaptures": 4,
+      "effectIdPresence": {
+        "nonzeroRows": 0,
+        "zeroRows": 15
+      },
+      "englishText": "[@head:022b37ff35020831e4eb02eb03ff04796f75ff25020821e908ff1b023117ff107874782f646973706c61794e616d6503e908020203eb03030303] [@if:020817e4eb02eb03ff07646566656174ff086465666561747303] [@if:020831e4eb02eb04ff04796f75ff25020821e909ff1b023117ff107874782f646973706c61794e616d6503e909020203eb040303].",
+      "messageClass": "non_fit",
+      "messageLabel": "actor defeats target variant",
+      "numericValuePresence": {
+        "nonzeroRows": 0,
+        "zeroRows": 15
+      },
+      "observedRows": 15,
+      "opcodes": {
+        "0x013A": 15
+      },
+      "outcomeFamily": "defeat",
+      "rowIndexes": [
+        22,
+        36,
+        134,
+        165,
+        215,
+        250,
+        292,
+        344,
+        389,
+        440,
+        492,
+        539,
+        566,
+        585,
+        604
+      ],
+      "scenarios": {
+        "action-mechanic-combat-and-actions": 2,
+        "battlecraft-leve-accept-and-complete": 9,
+        "job-quest-war-updates": 4
+      },
+      "sourceActorIds": {
+        "43722707": 7,
+        "43723073": 8
+      },
+      "targetActorIds": {
+        "1154495952": 1,
+        "1154495957": 1,
+        "1158679843": 1,
+        "1158679889": 1,
+        "1158679890": 1,
+        "1158679892": 1,
+        "1158679893": 1,
+        "1158679894": 1,
+        "1158679895": 1,
+        "1158679897": 1,
+        "1158679898": 1,
+        "1163947556": 1,
+        "1163947557": 1,
+        "1163947558": 1,
+        "1163947559": 1
+      },
+      "textParamValues": {
+        "0": 15
+      },
+      "worldMasterTextId": 30116
+    },
+    {
+      "captures": [
+        "combat_autoattack.pcapng",
+        "party_battle_leve.pcapng",
+        "war_quest_update2.pcapng"
+      ],
+      "commandIds": {
+        "23061": 4,
+        "23079": 1,
+        "23091": 7,
+        "23092": 1,
+        "23167": 1,
+        "23226": 2
+      },
+      "distinctCaptures": 3,
+      "effectIdPresence": {
+        "nonzeroRows": 16,
+        "zeroRows": 0
+      },
+      "englishText": "[@head:022b37ff35020831e4eb02eb03ff04796f75ff25020821e908ff1b023117ff107874782f646973706c61794e616d6503e908020203eb03030303] [@if:020816e4eb02eb03ff067265616479ff087265616469657303] [@sheet:022811ff0c7874782f636f6d6d616e64e8020403].",
+      "messageClass": "non_fit",
+      "messageLabel": "actor readies command",
+      "numericValuePresence": {
+        "nonzeroRows": 0,
+        "zeroRows": 16
+      },
+      "observedRows": 16,
+      "opcodes": {
+        "0x0139": 16
+      },
+      "outcomeFamily": "command_ready",
+      "rowIndexes": [
+        19,
+        124,
+        141,
+        211,
+        229,
+        339,
+        362,
+        370,
+        376,
+        384,
+        433,
+        456,
+        462,
+        475,
+        587,
+        600
+      ],
+      "scenarios": {
+        "action-mechanic-combat-and-actions": 1,
+        "battlecraft-leve-accept-and-complete": 13,
+        "job-quest-war-updates": 2
+      },
+      "sourceActorIds": {
+        "1154495952": 1,
+        "1158679889": 1,
+        "1158679890": 1,
+        "1158679892": 1,
+        "1158679893": 1,
+        "1158679894": 1,
+        "1158679895": 4,
+        "1158679897": 1,
+        "1158679898": 3,
+        "1163947556": 2
+      },
+      "targetActorIds": {
+        "1158679889": 1,
+        "1158679890": 1,
+        "1158679892": 1,
+        "1158679893": 1,
+        "1158679898": 1,
+        "43722707": 6,
+        "43723073": 5
+      },
+      "textParamValues": {
+        "0": 16
+      },
+      "worldMasterTextId": 30126
+    },
+    {
+      "captures": [
+        "party_battle_leve.pcapng"
+      ],
+      "commandIds": {
+        "27346": 4,
+        "27351": 2
+      },
+      "distinctCaptures": 1,
+      "effectIdPresence": {
+        "nonzeroRows": 6,
+        "zeroRows": 0
+      },
+      "englishText": "[@head:022b37ff35020831e4eb02eb03ff04796f75ff25020821e908ff1b023117ff107874782f646973706c61794e616d6503e908020203eb03030303] [@if:020815e4eb02eb03ff06626567696eff07626567696e7303] casting [@sheet:022811ff0c7874782f636f6d6d616e64e8020403].",
+      "messageClass": "non_fit",
+      "messageLabel": "actor begins casting command",
+      "numericValuePresence": {
+        "nonzeroRows": 0,
+        "zeroRows": 6
+      },
+      "observedRows": 6,
+      "opcodes": {
+        "0x0139": 6
+      },
+      "outcomeFamily": "cast_start",
+      "rowIndexes": [
+        89,
+        173,
+        175,
+        260,
+        395,
+        482
+      ],
+      "scenarios": {
+        "battlecraft-leve-accept-and-complete": 6
+      },
+      "sourceActorIds": {
+        "43722707": 4,
+        "43723073": 2
+      },
+      "targetActorIds": {
+        "43722707": 5,
+        "43723073": 1
+      },
+      "textParamValues": {
+        "0": 6
+      },
+      "worldMasterTextId": 30128
+    },
+    {
+      "captures": [
+        "party_battle_leve.pcapng"
+      ],
+      "commandIds": {
+        "27346": 1
+      },
+      "distinctCaptures": 1,
+      "effectIdPresence": {
+        "nonzeroRows": 0,
+        "zeroRows": 1
+      },
+      "englishText": "[@head:022b4aff48020844e4eb02eb03ff05796f7572ff37020831e4eb02eb03ff04796f75ff25020821e908ff1b023117ff107874782f646973706c61794e616d6503e908020203eb03030327730303] [@sheet:022811ff0c7874782f636f6d6d616e64e8020403] fails.",
+      "messageClass": "non_fit",
+      "messageLabel": "command fails",
+      "numericValuePresence": {
+        "nonzeroRows": 0,
+        "zeroRows": 1
+      },
+      "observedRows": 1,
+      "opcodes": {
+        "0x0139": 1
+      },
+      "outcomeFamily": "command_failure",
+      "rowIndexes": [
+        483
+      ],
+      "scenarios": {
+        "battlecraft-leve-accept-and-complete": 1
+      },
+      "sourceActorIds": {
+        "43723073": 1
+      },
+      "targetActorIds": {
+        "43723073": 1
+      },
+      "textParamValues": {
+        "0": 1
+      },
+      "worldMasterTextId": 30209
+    },
+    {
+      "captures": [
+        "combat_autoattack.pcapng",
+        "combat_skills.pcapng",
+        "party_battle_leve.pcapng",
+        "war_quest_update2.pcapng"
+      ],
+      "commandIds": {
+        "22104": 119,
+        "23003": 17,
+        "23005": 30,
+        "23079": 1,
+        "23091": 5,
+        "23167": 1,
+        "27108": 1,
+        "27110": 2,
+        "27119": 2,
+        "27150": 7,
+        "27152": 2,
+        "27156": 8,
+        "27158": 8,
+        "27190": 11,
+        "27191": 4,
+        "27193": 2,
+        "27198": 3
+      },
+      "distinctCaptures": 4,
+      "effectIdPresence": {
+        "nonzeroRows": 223,
+        "zeroRows": 0
+      },
+      "englishText": "[@head:022b4aff48020844e4eb02eb03ff05796f7572ff37020831e4eb02eb03ff04796f75ff25020821e908ff1b023117ff107874782f646973706c61794e616d6503e908020203eb03030327730303] [@sheet:022811ff0c7874782f636f6d6d616e64e8020403] hits [@if:020831e4eb02eb04ff04796f75ff25020821e909ff1b023117ff107874782f646973706c61794e616d6503e909020203eb040303][@if:02082fe2e80d02ff01ff272066726f6d2074686520022819ff147874782f746578745f6469726563744e616d65e80d020303] for [@number:022003e80b03] [@if:020814e4e80b02ff06706f696e74ff07706f696e747303] of damage.",
+      "messageClass": "normal_damage",
+      "messageLabel": "normal damage",
+      "numericValuePresence": {
+        "nonzeroRows": 223,
+        "zeroRows": 0
+      },
+      "observedRows": 223,
+      "opcodes": {
+        "0x0139": 172,
+        "0x013A": 51
+      },
+      "outcomeFamily": "damage_hit",
+      "rowIndexes": [
+        10,
+        12,
+        13,
+        15,
+        16,
+        17,
+        18,
+        20,
+        21,
+        27,
+        32,
+        34,
+        35,
+        96,
+        98,
+        99,
+        100,
+        103,
+        110,
+        111,
+        116,
+        117,
+        118,
+        119,
+        121,
+        122,
+        123,
+        125,
+        127,
+        129,
+        130,
+        133,
+        138,
+        139,
+        140,
+        143,
+        144,
+        146,
+        147,
+        148,
+        156,
+        159,
+        160,
+        161,
+        162,
+        164,
+        180,
+        186,
+        187,
+        189,
+        191,
+        192,
+        194,
+        195,
+        196,
+        199,
+        200,
+        202,
+        205,
+        206,
+        207,
+        212,
+        214,
+        219,
+        222,
+        225,
+        227,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        244,
+        245,
+        246,
+        247,
+        249,
+        270,
+        271,
+        272,
+        274,
+        275,
+        276,
+        277,
+        278,
+        280,
+        281,
+        282,
+        284,
+        285,
+        286,
+        288,
+        299,
+        300,
+        304,
+        305,
+        307,
+        308,
+        310,
+        318,
+        327,
+        328,
+        335,
+        336,
+        337,
+        338,
+        340,
+        341,
+        342,
+        343,
+        347,
+        352,
+        353,
+        355,
+        356,
+        357,
+        358,
+        360,
+        363,
+        364,
+        365,
+        368,
+        371,
+        372,
+        374,
+        375,
+        378,
+        379,
+        381,
+        383,
+        386,
+        387,
+        388,
+        407,
+        408,
+        409,
+        411,
+        419,
+        421,
+        422,
+        424,
+        426,
+        427,
+        428,
+        429,
+        430,
+        431,
+        432,
+        434,
+        435,
+        436,
+        437,
+        439,
+        445,
+        446,
+        447,
+        448,
+        449,
+        450,
+        454,
+        459,
+        460,
+        461,
+        463,
+        464,
+        465,
+        466,
+        467,
+        469,
+        470,
+        471,
+        472,
+        476,
+        477,
+        478,
+        479,
+        480,
+        485,
+        486,
+        489,
+        510,
+        515,
+        516,
+        520,
+        521,
+        522,
+        525,
+        526,
+        527,
+        529,
+        532,
+        533,
+        534,
+        536,
+        537,
+        541,
+        548,
+        549,
+        550,
+        553,
+        554,
+        558,
+        560,
+        562,
+        569,
+        570,
+        574,
+        575,
+        576,
+        579,
+        580,
+        581,
+        582,
+        588,
+        589,
+        591,
+        592,
+        594,
+        595,
+        596,
+        602,
+        603
+      ],
+      "scenarios": {
+        "action-mechanic-combat-and-actions": 13,
+        "battlecraft-leve-accept-and-complete": 168,
+        "job-quest-war-updates": 42
+      },
+      "sourceActorIds": {
+        "1154495952": 3,
+        "1158679843": 4,
+        "1158679889": 5,
+        "1158679890": 2,
+        "1158679892": 4,
+        "1158679893": 2,
+        "1158679894": 3,
+        "1158679895": 9,
+        "1158679897": 4,
+        "1158679898": 7,
+        "1163947556": 5,
+        "1163947557": 2,
+        "1163947558": 4,
+        "43722707": 108,
+        "43723073": 61
+      },
+      "targetActorIds": {
+        "1154495952": 6,
+        "1154495957": 4,
+        "1158679843": 11,
+        "1158679889": 12,
+        "1158679890": 14,
+        "1158679892": 13,
+        "1158679893": 13,
+        "1158679894": 11,
+        "1158679895": 18,
+        "1158679897": 14,
+        "1158679898": 22,
+        "1163947556": 9,
+        "1163947557": 7,
+        "1163947558": 5,
+        "1163947559": 10,
+        "43722707": 30,
+        "43723073": 24
+      },
+      "textParamValues": {
+        "1": 168,
+        "2": 12,
+        "4": 22,
+        "8": 21
+      },
+      "worldMasterTextId": 30301
+    },
+    {
+      "captures": [
+        "combat_autoattack.pcapng",
+        "party_battle_leve.pcapng",
+        "war_quest_update2.pcapng"
+      ],
+      "commandIds": {
+        "22104": 9,
+        "23003": 4,
+        "23005": 3,
+        "27110": 1,
+        "27119": 1,
+        "27151": 1,
+        "27152": 1
+      },
+      "distinctCaptures": 3,
+      "effectIdPresence": {
+        "nonzeroRows": 20,
+        "zeroRows": 0
+      },
+      "englishText": "Critical! [@head:022b4aff48020844e4eb02eb03ff05796f7572ff37020831e4eb02eb03ff04796f75ff25020821e908ff1b023117ff107874782f646973706c61794e616d6503e908020203eb03030327730303] [@sheet:022811ff0c7874782f636f6d6d616e64e8020403] hits [@if:020831e4eb02eb04ff04796f75ff25020821e909ff1b023117ff107874782f646973706c61794e616d6503e909020203eb040303][@if:02082fe2e80d02ff01ff272066726f6d2074686520022819ff147874782f746578745f6469726563744e616d65e80d020303] for [@number:022003e80b03] [@if:020814e4e80b02ff06706f696e74ff07706f696e747303] of damage.",
+      "messageClass": "critical_damage",
+      "messageLabel": "critical damage",
+      "numericValuePresence": {
+        "nonzeroRows": 20,
+        "zeroRows": 0
+      },
+      "observedRows": 20,
+      "opcodes": {
+        "0x0139": 13,
+        "0x013A": 7
+      },
+      "outcomeFamily": "damage_critical",
+      "rowIndexes": [
+        14,
+        181,
+        188,
+        218,
+        273,
+        314,
+        317,
+        326,
+        349,
+        404,
+        412,
+        425,
+        438,
+        514,
+        528,
+        530,
+        538,
+        571,
+        572,
+        584
+      ],
+      "scenarios": {
+        "action-mechanic-combat-and-actions": 1,
+        "battlecraft-leve-accept-and-complete": 12,
+        "job-quest-war-updates": 7
+      },
+      "sourceActorIds": {
+        "1154495952": 1,
+        "1158679892": 2,
+        "1158679893": 1,
+        "1158679898": 3,
+        "43722707": 11,
+        "43723073": 2
+      },
+      "targetActorIds": {
+        "1158679843": 1,
+        "1158679894": 3,
+        "1158679895": 1,
+        "1158679897": 1,
+        "1163947558": 3,
+        "1163947559": 4,
+        "43722707": 6,
+        "43723073": 1
+      },
+      "textParamValues": {
+        "1": 14,
+        "2": 2,
+        "4": 1,
+        "8": 3
+      },
+      "worldMasterTextId": 30302
+    },
+    {
+      "captures": [
+        "party_battle_leve.pcapng",
+        "war_quest_update2.pcapng"
+      ],
+      "commandIds": {
+        "27111": 2,
+        "27191": 2
+      },
+      "distinctCaptures": 2,
+      "effectIdPresence": {
+        "nonzeroRows": 4,
+        "zeroRows": 0
+      },
+      "englishText": "[@head:022b4aff48020844e4eb02eb03ff05796f7572ff37020831e4eb02eb03ff04796f75ff25020821e908ff1b023117ff107874782f646973706c61794e616d6503e908020203eb03030327730303] [@sheet:022811ff0c7874782f636f6d6d616e64e8020403] hits [@if:020844e4eb02eb04ff05796f7572ff37020831e4eb02eb04ff04796f75ff25020821e909ff1b023117ff107874782f646973706c61794e616d6503e909020203eb040303277303] [@sheet:022818ff137874782f746578745f70617274734e616d65e80d0303] for [@number:022003e80b03] [@if:020814e4e80b02ff06706f696e74ff07706f696e747303] of damage.",
+      "messageClass": "normal_damage",
+      "messageLabel": "normal body-part damage",
+      "numericValuePresence": {
+        "nonzeroRows": 4,
+        "zeroRows": 0
+      },
+      "observedRows": 4,
+      "opcodes": {
+        "0x013A": 4
+      },
+      "outcomeFamily": "damage_body_part",
+      "rowIndexes": [
+        290,
+        322,
+        564,
+        598
+      ],
+      "scenarios": {
+        "battlecraft-leve-accept-and-complete": 2,
+        "job-quest-war-updates": 2
+      },
+      "sourceActorIds": {
+        "43722707": 2,
+        "43723073": 2
+      },
+      "targetActorIds": {
+        "1158679843": 1,
+        "1158679894": 1,
+        "1163947556": 1,
+        "1163947557": 1
+      },
+      "textParamValues": {
+        "42": 1,
+        "45": 1,
+        "46": 2
+      },
+      "worldMasterTextId": 30303
+    },
+    {
+      "captures": [
+        "party_battle_leve.pcapng"
+      ],
+      "commandIds": {
+        "23003": 4,
+        "23005": 9,
+        "23091": 1
+      },
+      "distinctCaptures": 1,
+      "effectIdPresence": {
+        "nonzeroRows": 14,
+        "zeroRows": 0
+      },
+      "englishText": "[@head:022b37ff35020831e4eb02eb04ff04796f75ff25020821e909ff1b023117ff107874782f646973706c61794e616d6503e909020203eb04030303][@if:020813e4e80b01ff01ff0b207061727469616c6c7903] [@if:020815e4eb02eb04ff06626c6f636bff07626c6f636b7303] [@if:020844e4eb02eb03ff05796f7572ff37020831e4eb02eb03ff04796f75ff25020821e908ff1b023117ff107874782f646973706c61794e616d6503e908020203eb030303277303] [@sheet:022811ff0c7874782f636f6d6d616e64e8020403][@if:02082fe2e80d02ff01ff272066726f6d2074686520022819ff147874782f746578745f6469726563744e616d65e80d020303], taking [@number:022003e80b03] [@if:020814e4e80b02ff06706f696e74ff07706f696e747303] of damage.",
+      "messageClass": "block_damage",
+      "messageLabel": "blocked damage variant 2",
+      "numericValuePresence": {
+        "nonzeroRows": 10,
+        "zeroRows": 4
+      },
+      "observedRows": 14,
+      "opcodes": {
+        "0x0139": 10,
+        "0x013A": 4
+      },
+      "outcomeFamily": "damage_blocked",
+      "rowIndexes": [
+        102,
+        106,
+        114,
+        128,
+        131,
+        137,
+        157,
+        197,
+        208,
+        311,
+        332,
+        385,
+        415,
+        420
+      ],
+      "scenarios": {
+        "battlecraft-leve-accept-and-complete": 14
+      },
+      "sourceActorIds": {
+        "1158679889": 5,
+        "1158679890": 2,
+        "1158679892": 2,
+        "1158679895": 3,
+        "1158679897": 1,
+        "1158679898": 1
+      },
+      "targetActorIds": {
+        "43722707": 14
+      },
+      "textParamValues": {
+        "1": 9,
+        "2": 1,
+        "8": 4
+      },
+      "worldMasterTextId": 30306
+    },
+    {
+      "captures": [
+        "combat_skills.pcapng",
+        "party_battle_leve.pcapng",
+        "war_quest_update2.pcapng"
+      ],
+      "commandIds": {
+        "23003": 2,
+        "23005": 4,
+        "23226": 1
+      },
+      "distinctCaptures": 3,
+      "effectIdPresence": {
+        "nonzeroRows": 7,
+        "zeroRows": 0
+      },
+      "englishText": "[@head:022b37ff35020831e4eb02eb04ff04796f75ff25020821e909ff1b023117ff107874782f646973706c61794e616d6503e909020203eb04030303][@if:020813e4e80b01ff01ff0b207061727469616c6c7903] [@if:020816e4eb02eb04ff067061727279ff087061727269657303] [@if:020844e4eb02eb03ff05796f7572ff37020831e4eb02eb03ff04796f75ff25020821e908ff1b023117ff107874782f646973706c61794e616d6503e908020203eb030303277303] [@sheet:022811ff0c7874782f636f6d6d616e64e8020403][@if:02082fe2e80d02ff01ff272066726f6d2074686520022819ff147874782f746578745f6469726563744e616d65e80d020303], taking [@number:022003e80b03] [@if:020814e4e80b02ff06706f696e74ff07706f696e747303] of damage.",
+      "messageClass": "parry_damage",
+      "messageLabel": "parried damage variant 1",
+      "numericValuePresence": {
+        "nonzeroRows": 7,
+        "zeroRows": 0
+      },
+      "observedRows": 7,
+      "opcodes": {
+        "0x0139": 7
+      },
+      "outcomeFamily": "damage_parried",
+      "rowIndexes": [
+        30,
+        33,
+        221,
+        321,
+        556,
+        590,
+        597
+      ],
+      "scenarios": {
+        "action-mechanic-combat-and-actions": 2,
+        "battlecraft-leve-accept-and-complete": 2,
+        "job-quest-war-updates": 3
+      },
+      "sourceActorIds": {
+        "1154495957": 2,
+        "1158679892": 1,
+        "1158679894": 1,
+        "1163947556": 3
+      },
+      "targetActorIds": {
+        "43722707": 3,
+        "43723073": 4
+      },
+      "textParamValues": {
+        "1": 5,
+        "8": 2
+      },
+      "worldMasterTextId": 30308
+    },
+    {
+      "captures": [
+        "party_battle_leve.pcapng",
+        "war_quest_update2.pcapng"
+      ],
+      "commandIds": {
+        "22104": 8,
+        "23003": 4,
+        "23005": 10,
+        "27152": 2,
+        "27158": 2,
+        "27190": 1,
+        "27191": 1,
+        "27193": 1
+      },
+      "distinctCaptures": 2,
+      "effectIdPresence": {
+        "nonzeroRows": 29,
+        "zeroRows": 0
+      },
+      "englishText": "[@head:022b4aff48020844e4eb02eb03ff05796f7572ff37020831e4eb02eb03ff04796f75ff25020821e908ff1b023117ff107874782f646973706c61794e616d6503e908020203eb03030327730303] [@sheet:022811ff0c7874782f636f6d6d616e64e8020403] misses[@if:020881e4eb03eb04ff4302083fe4e908e909ff01ff3620020831e4eb02eb04ff04796f75ff25020821e909ff1b023117ff107874782f646973706c61794e616d6503e909020203eb04030303ff3620020831e4eb02eb04ff04796f75ff25020821e909ff1b023117ff107874782f646973706c61794e616d6503e909020203eb04030303][@if:02082fe2e80d02ff01ff272066726f6d2074686520022819ff147874782f746578745f6469726563744e616d65e80d020303].",
+      "messageClass": "miss",
+      "messageLabel": "miss",
+      "numericValuePresence": {
+        "nonzeroRows": 0,
+        "zeroRows": 29
+      },
+      "observedRows": 29,
+      "opcodes": {
+        "0x0139": 28,
+        "0x013A": 1
+      },
+      "outcomeFamily": "miss",
+      "rowIndexes": [
+        112,
+        113,
+        120,
+        151,
+        158,
+        185,
+        204,
+        220,
+        240,
+        241,
+        283,
+        316,
+        320,
+        330,
+        348,
+        361,
+        373,
+        452,
+        457,
+        468,
+        473,
+        474,
+        531,
+        555,
+        557,
+        561,
+        568,
+        573,
+        593
+      ],
+      "scenarios": {
+        "battlecraft-leve-accept-and-complete": 22,
+        "job-quest-war-updates": 7
+      },
+      "sourceActorIds": {
+        "1158679843": 1,
+        "1158679889": 1,
+        "1158679892": 2,
+        "1158679894": 1,
+        "1158679895": 1,
+        "1158679898": 1,
+        "1163947556": 3,
+        "1163947557": 1,
+        "1163947558": 2,
+        "1163947559": 1,
+        "43722707": 8,
+        "43723073": 7
+      },
+      "targetActorIds": {
+        "1158679889": 2,
+        "1158679890": 2,
+        "1158679892": 2,
+        "1158679893": 1,
+        "1158679894": 1,
+        "1158679895": 3,
+        "1158679898": 4,
+        "43722707": 10,
+        "43723073": 4
+      },
+      "textParamValues": {
+        "1": 24,
+        "4": 1,
+        "8": 4
+      },
+      "worldMasterTextId": 30311
+    },
+    {
+      "captures": [
+        "party_battle_leve.pcapng",
+        "war_quest_update2.pcapng"
+      ],
+      "commandIds": {
+        "27100": 7,
+        "27346": 3
+      },
+      "distinctCaptures": 2,
+      "effectIdPresence": {
+        "nonzeroRows": 10,
+        "zeroRows": 0
+      },
+      "englishText": "[@head:022b37ff35020831e4eb02eb03ff04796f75ff25020821e908ff1b023117ff107874782f646973706c61794e616d6503e908020203eb03030303] [@if:020811e4eb02eb03ff04757365ff057573657303] [@if:0208a2e4e802f2520fff84020956ff1202280eff096974656d44617461e8042a03ff0a021306fefff3f3f303ff0a021306feffc0ffa003ff0a021306feff60c8ff03ff0a021306feffb38cff03ff0a021306feffffa66603ff0a021306feffe5dd7e0303021406feff26262603023114ff0d7874782f6974656d4e616d6502e804020203021402ec03021302ec03ff15022811ff0c7874782f636f6d6d616e64e802040303][@if:020842e4eb02eb04ff01ff39206f6e20020831e4eb02eb04ff04796f75ff25020821e909ff1b023117ff107874782f646973706c61794e616d6503e909020203eb04030303]. [@head:022b37ff35020831e4eb02eb04ff04796f75ff25020821e909ff1b023117ff107874782f646973706c61794e616d6503e909020203eb04030303] [@if:020819e4eb02eb04ff087265636f766572ff097265636f7665727303] [@number:022003e80b03] HP.",
+      "messageClass": "hp_recovery",
+      "messageLabel": "HP recovery",
+      "numericValuePresence": {
+        "nonzeroRows": 10,
+        "zeroRows": 0
+      },
+      "observedRows": 10,
+      "opcodes": {
+        "0x0139": 10
+      },
+      "outcomeFamily": "hp_recovery",
+      "rowIndexes": [
+        152,
+        174,
+        176,
+        228,
+        264,
+        369,
+        396,
+        423,
+        453,
+        535
+      ],
+      "scenarios": {
+        "battlecraft-leve-accept-and-complete": 9,
+        "job-quest-war-updates": 1
+      },
+      "sourceActorIds": {
+        "43722707": 6,
+        "43723073": 4
+      },
+      "targetActorIds": {
+        "43722707": 7,
+        "43723073": 3
+      },
+      "textParamValues": {
+        "0": 10
+      },
+      "worldMasterTextId": 30320
+    },
+    {
+      "captures": [
+        "combat_skills.pcapng",
+        "party_battle_leve.pcapng",
+        "war_quest_update2.pcapng"
+      ],
+      "commandIds": {
+        "23061": 3,
+        "23092": 1,
+        "27107": 1,
+        "27140": 1,
+        "27141": 4,
+        "27142": 2,
+        "27182": 2,
+        "27260": 9,
+        "27264": 5,
+        "27351": 4
+      },
+      "distinctCaptures": 3,
+      "effectIdPresence": {
+        "nonzeroRows": 32,
+        "zeroRows": 0
+      },
+      "englishText": "[@head:022b4aff48020844e4eb02eb03ff05796f7572ff37020831e4eb02eb03ff04796f75ff25020821e908ff1b023117ff107874782f646973706c61794e616d6503e908020203eb03030327730303] [@sheet:022811ff0c7874782f636f6d6d616e64e8020403] [@sheet:022810ff0b7874782f737461747573e80c0603].",
+      "messageClass": "non_fit",
+      "messageLabel": "command applies status",
+      "numericValuePresence": {
+        "nonzeroRows": 0,
+        "zeroRows": 32
+      },
+      "observedRows": 32,
+      "opcodes": {
+        "0x0139": 26,
+        "0x013A": 6
+      },
+      "outcomeFamily": "status_gain",
+      "rowIndexes": [
+        26,
+        29,
+        90,
+        91,
+        92,
+        105,
+        115,
+        126,
+        142,
+        145,
+        190,
+        201,
+        203,
+        223,
+        230,
+        262,
+        263,
+        279,
+        287,
+        309,
+        319,
+        329,
+        331,
+        333,
+        334,
+        380,
+        382,
+        413,
+        458,
+        484,
+        513,
+        578
+      ],
+      "scenarios": {
+        "action-mechanic-combat-and-actions": 2,
+        "battlecraft-leve-accept-and-complete": 28,
+        "job-quest-war-updates": 2
+      },
+      "sourceActorIds": {
+        "1158679889": 1,
+        "1158679890": 1,
+        "1158679892": 1,
+        "1158679898": 1,
+        "43722707": 16,
+        "43723073": 12
+      },
+      "targetActorIds": {
+        "1158679889": 1,
+        "1158679890": 1,
+        "1158679892": 1,
+        "1158679898": 1,
+        "43722707": 13,
+        "43723073": 15
+      },
+      "textParamValues": {
+        "0": 32
+      },
+      "worldMasterTextId": 30328
+    },
+    {
+      "captures": [
+        "return_to_inn.pcapng",
+        "war_quest_update1.pcapng",
+        "war_quest_update2.pcapng",
+        "war_quest_update3.pcapng"
+      ],
+      "commandIds": {
+        "0": 1,
+        "21007": 12
+      },
+      "distinctCaptures": 4,
+      "effectIdPresence": {
+        "nonzeroRows": 13,
+        "zeroRows": 0
+      },
+      "englishText": "[@sheet:022810ff0b7874782f737461747573e80c0303].",
+      "messageClass": "non_fit",
+      "messageLabel": "status applied",
+      "numericValuePresence": {
+        "nonzeroRows": 0,
+        "zeroRows": 13
+      },
+      "observedRows": 13,
+      "opcodes": {
+        "0x0139": 13
+      },
+      "outcomeFamily": "status_gain",
+      "rowIndexes": [
+        502,
+        504,
+        505,
+        507,
+        610,
+        611,
+        612,
+        613,
+        614,
+        616,
+        618,
+        619,
+        621
+      ],
+      "scenarios": {
+        "aetheryte-mechanic-teleport-flows": 1,
+        "job-quest-war-updates": 12
+      },
+      "sourceActorIds": {
+        "43722707": 12,
+        "43723073": 1
+      },
+      "targetActorIds": {
+        "43722707": 12,
+        "43723073": 1
+      },
+      "textParamValues": {
+        "0": 13
+      },
+      "worldMasterTextId": 30330
+    },
+    {
+      "captures": [
+        "combat_skills.pcapng",
+        "move_out_of_room.pcapng",
+        "party_battle_leve.pcapng",
+        "war_quest_update2.pcapng"
+      ],
+      "commandIds": {
+        "0": 20,
+        "23003": 2,
+        "23005": 2,
+        "27190": 3,
+        "27191": 3,
+        "27198": 1
+      },
+      "distinctCaptures": 4,
+      "effectIdPresence": {
+        "nonzeroRows": 31,
+        "zeroRows": 0
+      },
+      "englishText": "[@sheet:022810ff0b7874782f737461747573e80c0503].",
+      "messageClass": "non_fit",
+      "messageLabel": "status ended",
+      "numericValuePresence": {
+        "nonzeroRows": 0,
+        "zeroRows": 31
+      },
+      "observedRows": 31,
+      "opcodes": {
+        "0x0139": 9,
+        "0x013A": 22
+      },
+      "outcomeFamily": "status_loss",
+      "rowIndexes": [
+        31,
+        86,
+        88,
+        94,
+        108,
+        150,
+        154,
+        171,
+        183,
+        184,
+        210,
+        224,
+        232,
+        243,
+        255,
+        257,
+        289,
+        303,
+        313,
+        324,
+        351,
+        367,
+        397,
+        400,
+        406,
+        417,
+        418,
+        491,
+        500,
+        552,
+        608
+      ],
+      "scenarios": {
+        "action-mechanic-combat-and-actions": 1,
+        "battlecraft-leve-accept-and-complete": 27,
+        "job-quest-war-updates": 2,
+        "zone-mechanic-inn-room": 1
+      },
+      "sourceActorIds": {
+        "1158679889": 1,
+        "1158679892": 1,
+        "1158679895": 1,
+        "1158679897": 1,
+        "43722707": 10,
+        "43723073": 17
+      },
+      "targetActorIds": {
+        "43722707": 14,
+        "43723073": 17
+      },
+      "textParamValues": {
+        "0": 27,
+        "1": 3,
+        "8": 1
+      },
+      "worldMasterTextId": 30331
+    },
+    {
+      "captures": [
+        "party_battle_leve.pcapng"
+      ],
+      "commandIds": {
+        "27190": 1,
+        "27191": 1
+      },
+      "distinctCaptures": 1,
+      "effectIdPresence": {
+        "nonzeroRows": 2,
+        "zeroRows": 0
+      },
+      "englishText": "[@head:022b37ff35020831e4eb02eb03ff04796f75ff25020821e908ff1b023117ff107874782f646973706c61794e616d6503e908020203eb03030303] [@if:020817e4eb02eb03ff076162736f7262ff086162736f72627303] [@number:022003e80b03] HP from [@if:020831e4eb02eb04ff04796f75ff25020821e909ff1b023117ff107874782f646973706c61794e616d6503e909020203eb040303].",
+      "messageClass": "non_fit",
+      "messageLabel": "HP absorption",
+      "numericValuePresence": {
+        "nonzeroRows": 2,
+        "zeroRows": 0
+      },
+      "observedRows": 2,
+      "opcodes": {
+        "0x013A": 2
+      },
+      "outcomeFamily": "hp_absorption",
+      "rowIndexes": [
+        323,
+        490
+      ],
+      "scenarios": {
+        "battlecraft-leve-accept-and-complete": 2
+      },
+      "sourceActorIds": {
+        "43723073": 2
+      },
+      "targetActorIds": {
+        "1158679894": 1,
+        "1158679898": 1
+      },
+      "textParamValues": {
+        "1": 2
+      },
+      "worldMasterTextId": 30332
+    },
+    {
+      "captures": [
+        "party_battle_leve.pcapng",
+        "war_quest_update2.pcapng"
+      ],
+      "commandIds": {
+        "27108": 1,
+        "27119": 2,
+        "27156": 8,
+        "27198": 1
+      },
+      "distinctCaptures": 2,
+      "effectIdPresence": {
+        "nonzeroRows": 12,
+        "zeroRows": 0
+      },
+      "englishText": "[@head:022b4aff48020844e4eb02eb03ff05796f7572ff37020831e4eb02eb03ff04796f75ff25020821e908ff1b023117ff107874782f646973706c61794e616d6503e908020203eb03030327730303] [@sheet:022811ff0c7874782f636f6d6d616e64e8020403] [@sheet:022810ff0b7874782f737461747573e80c0603].",
+      "messageClass": "non_fit",
+      "messageLabel": "command applies status variant",
+      "numericValuePresence": {
+        "nonzeroRows": 0,
+        "zeroRows": 12
+      },
+      "observedRows": 12,
+      "opcodes": {
+        "0x013A": 12
+      },
+      "outcomeFamily": "status_gain",
+      "rowIndexes": [
+        101,
+        149,
+        193,
+        226,
+        306,
+        354,
+        410,
+        451,
+        481,
+        511,
+        559,
+        577
+      ],
+      "scenarios": {
+        "battlecraft-leve-accept-and-complete": 9,
+        "job-quest-war-updates": 3
+      },
+      "sourceActorIds": {
+        "43722707": 11,
+        "43723073": 1
+      },
+      "targetActorIds": {
+        "1158679889": 1,
+        "1158679890": 1,
+        "1158679892": 1,
+        "1158679893": 1,
+        "1158679894": 1,
+        "1158679895": 1,
+        "1158679897": 1,
+        "1158679898": 2,
+        "1163947557": 1,
+        "1163947558": 1,
+        "1163947559": 1
+      },
+      "textParamValues": {
+        "1": 10,
+        "4": 1,
+        "8": 1
+      },
+      "worldMasterTextId": 30335
+    },
+    {
+      "captures": [
+        "party_battle_leve.pcapng",
+        "war_quest_update2.pcapng"
+      ],
+      "commandIds": {
+        "0": 9
+      },
+      "distinctCaptures": 2,
+      "effectIdPresence": {
+        "nonzeroRows": 9,
+        "zeroRows": 0
+      },
+      "englishText": "[@sheet:022810ff0b7874782f737461747573e80c0503].",
+      "messageClass": "non_fit",
+      "messageLabel": "status ended variant",
+      "numericValuePresence": {
+        "nonzeroRows": 0,
+        "zeroRows": 9
+      },
+      "observedRows": 9,
+      "opcodes": {
+        "0x0139": 9
+      },
+      "outcomeFamily": "status_loss",
+      "rowIndexes": [
+        109,
+        155,
+        198,
+        239,
+        315,
+        359,
+        414,
+        455,
+        523
+      ],
+      "scenarios": {
+        "battlecraft-leve-accept-and-complete": 8,
+        "job-quest-war-updates": 1
+      },
+      "sourceActorIds": {
+        "1158679889": 1,
+        "1158679890": 1,
+        "1158679892": 1,
+        "1158679893": 1,
+        "1158679894": 1,
+        "1158679895": 1,
+        "1158679897": 1,
+        "1158679898": 1,
+        "1163947559": 1
+      },
+      "targetActorIds": {
+        "1158679889": 1,
+        "1158679890": 1,
+        "1158679892": 1,
+        "1158679893": 1,
+        "1158679894": 1,
+        "1158679895": 1,
+        "1158679897": 1,
+        "1158679898": 1,
+        "1163947559": 1
+      },
+      "textParamValues": {
+        "0": 9
+      },
+      "worldMasterTextId": 30338
+    },
+    {
+      "captures": [
+        "party_battle_leve.pcapng"
+      ],
+      "commandIds": {
+        "23003": 2,
+        "23005": 2
+      },
+      "distinctCaptures": 1,
+      "effectIdPresence": {
+        "nonzeroRows": 4,
+        "zeroRows": 0
+      },
+      "englishText": "[@head:022b37ff35020831e4eb02eb04ff04796f75ff25020821e909ff1b023117ff107874782f646973706c61794e616d6503e909020203eb04030303] [@if:020819e4eb02eb04ff087265636f766572ff097265636f7665727303] [@number:022003e80b03] HP from Aegis Boon.",
+      "messageClass": "hp_recovery",
+      "messageLabel": "Aegis Boon HP recovery",
+      "numericValuePresence": {
+        "nonzeroRows": 4,
+        "zeroRows": 0
+      },
+      "observedRows": 4,
+      "opcodes": {
+        "0x013A": 4
+      },
+      "outcomeFamily": "hp_recovery",
+      "rowIndexes": [
+        107,
+        209,
+        312,
+        416
+      ],
+      "scenarios": {
+        "battlecraft-leve-accept-and-complete": 4
+      },
+      "sourceActorIds": {
+        "1158679889": 1,
+        "1158679892": 1,
+        "1158679895": 1,
+        "1158679897": 1
+      },
+      "targetActorIds": {
+        "43722707": 4
+      },
+      "textParamValues": {
+        "1": 3,
+        "8": 1
+      },
+      "worldMasterTextId": 33008
+    },
+    {
+      "captures": [
+        "harvest.pcapng",
+        "local_leve_complete.pcapng"
+      ],
+      "commandIds": {
+        "0": 3
+      },
+      "distinctCaptures": 2,
+      "effectIdPresence": {
+        "nonzeroRows": 0,
+        "zeroRows": 3
+      },
+      "englishText": "[@head:022b37ff35020831e4eb02eb04ff04796f75ff25020821e909ff1b023117ff107874782f646973706c61794e616d6503e909020203eb04030303] [@if:020817e4eb02eb04ff0761747461696eff0861747461696e7303][@if:020810e4e80d0bff0820736869656c64ff0103] level [@number:022003e80b03].",
+      "messageClass": "non_fit",
+      "messageLabel": "skill level attained",
+      "numericValuePresence": {
+        "nonzeroRows": 3,
+        "zeroRows": 0
+      },
+      "observedRows": 3,
+      "opcodes": {
+        "0x013A": 3
+      },
+      "outcomeFamily": "skill_progression",
+      "rowIndexes": [
+        52,
+        63,
+        75
+      ],
+      "scenarios": {
+        "battlecraft-leve-accept-and-complete": 2,
+        "gathering-node-wood-and-harvest": 1
+      },
+      "sourceActorIds": {
+        "43723073": 3
+      },
+      "targetActorIds": {
+        "43723073": 3
+      },
+      "textParamValues": {
+        "34": 2,
+        "40": 1
+      },
+      "worldMasterTextId": 33909
+    },
+    {
+      "captures": [
+        "party_battle_leve.pcapng"
+      ],
+      "commandIds": {
+        "22104": 6,
+        "27158": 2,
+        "27190": 2
+      },
+      "distinctCaptures": 1,
+      "effectIdPresence": {
+        "nonzeroRows": 0,
+        "zeroRows": 10
+      },
+      "englishText": "EXP chain #[@number:022003e80b03]![@newline:02100103]Chain timer set to [@number:022003e80d03] seconds.",
+      "messageClass": "non_fit",
+      "messageLabel": "EXP chain",
+      "numericValuePresence": {
+        "nonzeroRows": 10,
+        "zeroRows": 0
+      },
+      "observedRows": 10,
+      "opcodes": {
+        "0x013A": 10
+      },
+      "outcomeFamily": "exp_chain",
+      "rowIndexes": [
+        166,
+        168,
+        251,
+        253,
+        390,
+        392,
+        441,
+        443,
+        493,
+        495
+      ],
+      "scenarios": {
+        "battlecraft-leve-accept-and-complete": 10
+      },
+      "sourceActorIds": {
+        "43722707": 2,
+        "43723073": 8
+      },
+      "targetActorIds": {
+        "43722707": 5,
+        "43723073": 5
+      },
+      "textParamValues": {
+        "40": 2,
+        "60": 2,
+        "80": 6
+      },
+      "worldMasterTextId": 33919
+    },
+    {
+      "captures": [
+        "local_leve_complete.pcapng",
+        "party_battle_leve.pcapng",
+        "war_quest_update3.pcapng"
+      ],
+      "commandIds": {
+        "0": 4
+      },
+      "distinctCaptures": 3,
+      "effectIdPresence": {
+        "nonzeroRows": 0,
+        "zeroRows": 4
+      },
+      "englishText": "[@head:022b37ff35020831e4eb02eb04ff04796f75ff25020821e909ff1b023117ff107874782f646973706c61794e616d6503e909020203eb04030303] [@if:020813e4eb02eb04ff056761696eff066761696e7303] [@kilo:022206e80bff022c03][@if:020810e4e80d0bff0820736869656c64ff0103] experience [@if:020814e4e80b02ff06706f696e74ff07706f696e747303].",
+      "messageClass": "non_fit",
+      "messageLabel": "experience gained",
+      "numericValuePresence": {
+        "nonzeroRows": 4,
+        "zeroRows": 0
+      },
+      "observedRows": 4,
+      "opcodes": {
+        "0x0139": 4
+      },
+      "outcomeFamily": "skill_progression",
+      "rowIndexes": [
+        83,
+        498,
+        499,
+        620
+      ],
+      "scenarios": {
+        "battlecraft-leve-accept-and-complete": 3,
+        "job-quest-war-updates": 1
+      },
+      "sourceActorIds": {
+        "43722707": 1,
+        "43723073": 3
+      },
+      "targetActorIds": {
+        "43722707": 1,
+        "43723073": 3
+      },
+      "textParamValues": {
+        "3": 1,
+        "34": 1,
+        "4": 2
+      },
+      "worldMasterTextId": 33921
+    },
+    {
+      "captures": [
+        "war_quest_update2.pcapng"
+      ],
+      "commandIds": {
+        "22104": 1,
+        "27110": 1,
+        "27111": 1,
+        "27119": 1
+      },
+      "distinctCaptures": 1,
+      "effectIdPresence": {
+        "nonzeroRows": 0,
+        "zeroRows": 4
+      },
+      "englishText": "[@head:022b37ff35020831e4eb02eb04ff04796f75ff25020821e909ff1b023117ff107874782f646973706c61794e616d6503e909020203eb04030303] [@if:020813e4eb02eb04ff056561726eff066561726e7303] [@kilo:022206e80bff022c03] [@if:020814e4e80d01ff01ff0c282b022003e80d0325292003]experience [@if:020814e4e80b02ff06706f696e74ff07706f696e747303].",
+      "messageClass": "non_fit",
+      "messageLabel": "experience earned variant 1",
+      "numericValuePresence": {
+        "nonzeroRows": 4,
+        "zeroRows": 0
+      },
+      "observedRows": 4,
+      "opcodes": {
+        "0x013A": 4
+      },
+      "outcomeFamily": "experience",
+      "rowIndexes": [
+        540,
+        567,
+        586,
+        605
+      ],
+      "scenarios": {
+        "job-quest-war-updates": 4
+      },
+      "sourceActorIds": {
+        "43722707": 4
+      },
+      "targetActorIds": {
+        "43722707": 4
+      },
+      "textParamValues": {
+        "3": 4
+      },
+      "worldMasterTextId": 33934
+    },
+    {
+      "captures": [
+        "party_battle_leve.pcapng"
+      ],
+      "commandIds": {
+        "22104": 4,
+        "27150": 2,
+        "27158": 1,
+        "27190": 1,
+        "27191": 1
+      },
+      "distinctCaptures": 1,
+      "effectIdPresence": {
+        "nonzeroRows": 0,
+        "zeroRows": 9
+      },
+      "englishText": "[@head:022b37ff35020831e4eb02eb04ff04796f75ff25020821e909ff1b023117ff107874782f646973706c61794e616d6503e909020203eb04030303] [@if:020813e4eb02eb04ff056561726eff066561726e7303] [@kilo:022206e80bff022c03] [@if:020814e4e80d01ff01ff0c282b022003e80d0325292003]experience [@if:020814e4e80b02ff06706f696e74ff07706f696e747303].",
+      "messageClass": "non_fit",
+      "messageLabel": "experience earned variant 2",
+      "numericValuePresence": {
+        "nonzeroRows": 9,
+        "zeroRows": 0
+      },
+      "observedRows": 9,
+      "opcodes": {
+        "0x013A": 9
+      },
+      "outcomeFamily": "experience",
+      "rowIndexes": [
+        136,
+        169,
+        217,
+        254,
+        294,
+        346,
+        393,
+        444,
+        496
+      ],
+      "scenarios": {
+        "battlecraft-leve-accept-and-complete": 9
+      },
+      "sourceActorIds": {
+        "43722707": 3,
+        "43723073": 6
+      },
+      "targetActorIds": {
+        "43722707": 9
+      },
+      "textParamValues": {
+        "53": 4,
+        "73": 3,
+        "78": 1,
+        "83": 1
+      },
+      "worldMasterTextId": 33935
+    },
+    {
+      "captures": [
+        "combat_autoattack.pcapng",
+        "combat_skills.pcapng",
+        "party_battle_leve.pcapng"
+      ],
+      "commandIds": {
+        "22104": 5,
+        "27150": 2,
+        "27158": 1,
+        "27190": 1,
+        "27191": 1,
+        "27198": 1
+      },
+      "distinctCaptures": 3,
+      "effectIdPresence": {
+        "nonzeroRows": 0,
+        "zeroRows": 11
+      },
+      "englishText": "[@head:022b37ff35020831e4eb02eb04ff04796f75ff25020821e909ff1b023117ff107874782f646973706c61794e616d6503e909020203eb04030303] [@if:020813e4eb02eb04ff056561726eff066561726e7303] [@kilo:022206e80bff022c03] [@if:020814e4e80d01ff01ff0c282b022003e80d0325292003]experience [@if:020814e4e80b02ff06706f696e74ff07706f696e747303].",
+      "messageClass": "non_fit",
+      "messageLabel": "experience earned variant 3",
+      "numericValuePresence": {
+        "nonzeroRows": 11,
+        "zeroRows": 0
+      },
+      "observedRows": 11,
+      "opcodes": {
+        "0x013A": 11
+      },
+      "outcomeFamily": "experience",
+      "rowIndexes": [
+        23,
+        37,
+        135,
+        167,
+        216,
+        252,
+        293,
+        345,
+        391,
+        442,
+        494
+      ],
+      "scenarios": {
+        "action-mechanic-combat-and-actions": 2,
+        "battlecraft-leve-accept-and-complete": 9
+      },
+      "sourceActorIds": {
+        "43722707": 3,
+        "43723073": 8
+      },
+      "targetActorIds": {
+        "43723073": 11
+      },
+      "textParamValues": {
+        "50": 2,
+        "53": 4,
+        "73": 3,
+        "78": 1,
+        "83": 1
+      },
+      "worldMasterTextId": 33936
+    },
+    {
+      "captures": [
+        "local_leve_complete.pcapng"
+      ],
+      "commandIds": {
+        "0": 3
+      },
+      "distinctCaptures": 1,
+      "effectIdPresence": {
+        "nonzeroRows": 0,
+        "zeroRows": 3
+      },
+      "englishText": "[@head:022b37ff35020831e4eb02eb04ff04796f75ff25020821e909ff1b023117ff107874782f646973706c61794e616d6503e909020203eb04030303] [@if:020813e4eb02eb04ff056561726eff066561726e7303] [@kilo:022206e80bff022c03] [@if:020814e4e80d01ff01ff0c282b022003e80d0325292003]experience [@if:020814e4e80b02ff06706f696e74ff07706f696e747303].",
+      "messageClass": "non_fit",
+      "messageLabel": "experience earned variant 4",
+      "numericValuePresence": {
+        "nonzeroRows": 3,
+        "zeroRows": 0
+      },
+      "observedRows": 3,
+      "opcodes": {
+        "0x0139": 1,
+        "0x013A": 2
+      },
+      "outcomeFamily": "experience",
+      "rowIndexes": [
+        62,
+        74,
+        82
+      ],
+      "scenarios": {
+        "battlecraft-leve-accept-and-complete": 3
+      },
+      "sourceActorIds": {
+        "43723073": 3
+      },
+      "targetActorIds": {
+        "43723073": 3
+      },
+      "textParamValues": {
+        "50": 3
+      },
+      "worldMasterTextId": 33950
+    },
+    {
+      "captures": [
+        "gather_wood.pcapng",
+        "harvest.pcapng"
+      ],
+      "commandIds": {
+        "0": 4
+      },
+      "distinctCaptures": 2,
+      "effectIdPresence": {
+        "nonzeroRows": 0,
+        "zeroRows": 4
+      },
+      "englishText": "[@head:022b37ff35020831e4eb02eb04ff04796f75ff25020821e909ff1b023117ff107874782f646973706c61794e616d6503e909020203eb04030303] [@if:020813e4eb02eb04ff056561726eff066561726e7303] [@kilo:022206e80bff022c03] [@if:020814e4e80d01ff01ff0c282b022003e80d0325292003]experience [@if:020814e4e80b02ff06706f696e74ff07706f696e747303].",
+      "messageClass": "non_fit",
+      "messageLabel": "experience earned variant 5",
+      "numericValuePresence": {
+        "nonzeroRows": 4,
+        "zeroRows": 0
+      },
+      "observedRows": 4,
+      "opcodes": {
+        "0x0139": 3,
+        "0x013A": 1
+      },
+      "outcomeFamily": "experience",
+      "rowIndexes": [
+        41,
+        45,
+        51,
+        54
+      ],
+      "scenarios": {
+        "gathering-node-wood-and-harvest": 4
+      },
+      "sourceActorIds": {
+        "43723073": 4
+      },
+      "targetActorIds": {
+        "43723073": 4
+      },
+      "textParamValues": {
+        "50": 4
+      },
+      "worldMasterTextId": 33954
+    }
+  ],
+  "evidenceClass": "packet-capture",
+  "schemaVersion": 1,
+  "totals": {
+    "distinctNonzeroTextIds": 29,
+    "nonzeroTextIdRows": 502,
+    "packets": 531,
+    "rows": 622,
+    "zeroTextIdRows": 120
+  }
+}

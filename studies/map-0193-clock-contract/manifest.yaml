@@ -1,0 +1,35 @@
+id: map-0193-clock-contract
+title: Map 0x0193 Clock/Value Contract
+evidence_class: packet-capture
+status: distilled
+tags:
+- packet-decoding
+- map-clientbound
+- clock-correlation
+search_hints:
+- "0x0193"
+- packet header clock
+- modular endpoint
+notes: >-
+  Exhaustive sanitized clock/value study for every s2c 0x0193 event in the
+  complete retained corpus.
+source_refs:
+- source: pcap-1.23b
+primary_paths:
+- derived/accounting.json
+- derived/occurrences.csv
+- derived/neighborhoods.csv
+- derived/verdicts.md
+canonical_evidence:
+- derived/accounting.json
+- derived/occurrences.csv
+- derived/neighborhoods.csv
+- derived/verdicts.md
+distilled:
+  distilled: true
+  checksum_file: derived/checksums.sha256
+  distilled_artifacts:
+  - derived/accounting.json
+  - derived/occurrences.csv
+  - derived/neighborhoods.csv
+  - derived/verdicts.md

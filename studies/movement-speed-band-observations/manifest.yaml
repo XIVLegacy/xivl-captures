@@ -1,0 +1,25 @@
+id: movement-speed-band-observations
+title: Movement Speed Band Observations
+evidence_class: packet-capture
+status: distilled
+content_kind: movement-mechanic
+tags:
+- movement
+- mount
+- speed
+- packet-decoding
+search_hints:
+- "0x00d0"
+- SetActorSpeedPacket
+- movement speed
+notes: >-
+  Bounded packet observations of the four indexed float32 fields carried by
+  SetActorSpeedPacket. The explicit mount transition carries 3.6/9/9/0.
+  Values remain wire observations; no scalar conversion, movement unit, or
+  server formula is promoted.
+source_refs:
+- source: pcap-1.23b
+primary_paths:
+- derived/observed-bands.md
+canonical_evidence:
+- derived/observed-bands.md

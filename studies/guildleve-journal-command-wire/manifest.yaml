@@ -1,0 +1,44 @@
+id: guildleve-journal-command-wire
+title: Guildleve Journal Command Wire Census
+evidence_class: packet-capture
+status: distilled
+content_kind: battlecraft-leve
+tags:
+- guildleve
+- journal
+- command
+- packet-decoding
+- bounded-absence
+- corpus-search
+search_hints:
+- command 24241
+- "0x5eb1"
+- JournalCommand
+- guildleve break
+- guildleve retry
+- journal subindex
+notes: >-
+  Exhaustive census of all canonical c2s game lanes for JournalCommand static
+  actor 24241, its conditional EventStart owner encoding, and structurally
+  attributable journal ID and subindex arguments. No target command row or raw
+  little-endian command encoding was present; arbitrary values 2 through 5
+  were rejected as numeric coincidences.
+source_refs:
+- source: pcap-1.23b
+  citation: sources/pcap-1.23b/manifest.yaml
+primary_paths:
+- derived/verdicts.md
+- derived/accounting.json
+- derived/command-matches.csv
+canonical_evidence:
+- derived/verdicts.md
+- derived/accounting.json
+- derived/command-matches.csv
+distilled:
+  distilled: true
+  checksum_file: derived/checksums.sha256
+  distilled_artifacts:
+  - derived/verdicts.md
+  - derived/accounting.json
+  - derived/command-matches.csv
+  - derived/checksums.sha256

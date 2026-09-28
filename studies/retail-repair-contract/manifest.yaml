@@ -1,0 +1,34 @@
+id: retail-repair-contract
+title: Retail NPC and Self-Repair Contract
+evidence_class: packet-capture
+status: distilled
+tags:
+- packet-decoding
+- map-clientbound
+- map-serverbound
+- npc-event
+- inventory
+search_hints:
+- PopulaceItemRepairer
+- confirmRepairItem
+- CraftCommand 22013
+- NPC repair tariff
+- "0x012E"
+- "0x0130"
+notes: >-
+  Bounded retail capture evidence for six accepted NPC repairs, joined to the
+  pinned 1.23b client Lua contract. Self-repair has no retained packet witness.
+source_refs:
+- source: pcap-1.23b
+primary_paths:
+- derived/npc-repair-observations.csv
+- derived/verdicts.md
+canonical_evidence:
+- derived/npc-repair-observations.csv
+- derived/verdicts.md
+distilled:
+  distilled: true
+  checksum_file: derived/checksums.sha256
+  distilled_artifacts:
+  - derived/npc-repair-observations.csv
+  - derived/verdicts.md

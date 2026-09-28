@@ -1,0 +1,34 @@
+id: map-0190-transaction-census
+title: Map 0x018F/0x0190/0x0191 Transaction Census
+evidence_class: packet-capture
+status: distilled
+tags:
+- packet-decoding
+- map-clientbound
+- transaction-census
+search_hints:
+- "0x018F"
+- "0x0190"
+- "0x0191"
+- aggregate record vectors
+- unread tail
+notes: >-
+  Exhaustive sanitized transaction, key, vector, tail, repetition, and
+  same-lane context census over the complete retained corpus.
+source_refs:
+- source: pcap-1.23b
+primary_paths:
+- derived/accounting.json
+- derived/spans.csv
+- derived/verdicts.md
+canonical_evidence:
+- derived/accounting.json
+- derived/spans.csv
+- derived/verdicts.md
+distilled:
+  distilled: true
+  checksum_file: derived/checksums.sha256
+  distilled_artifacts:
+  - derived/accounting.json
+  - derived/spans.csv
+  - derived/verdicts.md

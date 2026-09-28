@@ -1,0 +1,378 @@
+{
+  "cure_command_27346": {
+    "hp_recovery_rows": 3,
+    "hp_recovery_values": [
+      151,
+      152,
+      166
+    ],
+    "row_count": 8
+  },
+  "inputs": {
+    "captures": [
+      {
+        "name": "accept_leve.pcapng",
+        "sha256": "42b87e6c095db130def1de5bc382e428b4f4c12c8069c4682d6fa4bc7681967a"
+      },
+      {
+        "name": "accept_local_leve.pcapng",
+        "sha256": "3b4b071d88742a5d3c94a1e29ca6a4074cb6b9a9a60207118302fe22f932bd7c"
+      },
+      {
+        "name": "accept_quest.pcapng",
+        "sha256": "a207109240254b1398a36f877afc7ac34a08466cfbd3cdd3f2eb5f4a50718057"
+      },
+      {
+        "name": "action_and_traits.pcapng",
+        "sha256": "c3d30fe46d69996dc74e4864245c42675cde2388525c03063dac180df528352f"
+      },
+      {
+        "name": "add_str.pcapng",
+        "sha256": "246e4948a7ca1e4dc620e724677bfd9153ce76f6445a557967d309e9946021ed"
+      },
+      {
+        "name": "attributes.pcapng",
+        "sha256": "5bc78b05d45a4e410b7410d046cb8b958ec549ce5b1b51a52225c4d15041a2ff"
+      },
+      {
+        "name": "battle_mode_passive_mode.pcapng",
+        "sha256": "5a8290df1d11781f4f5fa1f6990651c679e57ee3b8c5549021f06767bb172d4b"
+      },
+      {
+        "name": "buy_square_maple_shield.pcapng",
+        "sha256": "aab582bd9658c89cd4d56e132500481f442b9f2dc2179f1a5829ea09776bce6b"
+      },
+      {
+        "name": "change_bodyarmor.pcapng",
+        "sha256": "55ee6035d24e80b97c9354a0800b86a52d0a99e1200cf6875a5b56009215021a"
+      },
+      {
+        "name": "change_helm.pcapng",
+        "sha256": "af1e465076c3acf6188f24f084622b22beccc932bb96effd517b2d9a44606e08"
+      },
+      {
+        "name": "change_to_botanist.pcapng",
+        "sha256": "8fdc448a17d19bea3d07855a8d8843d78926c50586f3656946c96b6a6cb27d26"
+      },
+      {
+        "name": "chat_say.pcapng",
+        "sha256": "ccaefd38c94512507d518f83ab693edaf7f42167f3b82876869b53a736275e37"
+      },
+      {
+        "name": "chat_shout.pcapng",
+        "sha256": "94ab6b14373b2d0d0122e14b3eb18a1371e52165172ba18b3fc836c8ba94265a"
+      },
+      {
+        "name": "check_room_map.pcapng",
+        "sha256": "cca1eea57329b02e5d66e53ad6f44d28deebf8ee8c11cfafd22bf813d1551ee5"
+      },
+      {
+        "name": "checkbed.pcapng",
+        "sha256": "9e05a05de6ec44eded13761fcb3546eb248c0c68e537051eef575e29dfff1b79"
+      },
+      {
+        "name": "coerthas_map.pcapng",
+        "sha256": "779de805f9172832e986f5c46c0a94f6d93f4b9c7f1c41fd0de0f5f8326c0ae3"
+      },
+      {
+        "name": "combat_autoattack.pcapng",
+        "sha256": "2f677ab61047b25c4168a3dd9496f372d48de3bba018d582dd5a968b9272f7b2"
+      },
+      {
+        "name": "combat_skills.pcapng",
+        "sha256": "7fe66d92f6f62584e57562e51355d310546935690e0b96c2c689b83bbe8a07a7"
+      },
+      {
+        "name": "cutscene_book.pcapng",
+        "sha256": "c2cf85e02d8d15fe2aa9261e8b796c29c0a3d9dd9cdf287ce0f75f3a666b2b4d"
+      },
+      {
+        "name": "emote_dance.pcapng",
+        "sha256": "9e004f1e791cfc37b7d23e8986a5e69021b7b7f828295fdf7957e36aa1c57dc8"
+      },
+      {
+        "name": "emote_kneel.pcapng",
+        "sha256": "3381b6121f5b0789c97ededdc5394c6bc9b14c561029191fb5b3f428033c80e8"
+      },
+      {
+        "name": "friendlist_search.pcapng",
+        "sha256": "3b9a35689fb923d9520bbfed8a3886dc2b461c9516492e3d8e68eec093eb7b0e"
+      },
+      {
+        "name": "from_gridania_to_blackshroud.pcapng",
+        "sha256": "eff300de679230653953ea3399939a15ce9d6aeafd202c7ebcf5f55e6d24930f"
+      },
+      {
+        "name": "gather_wood.pcapng",
+        "sha256": "c308aa4c984eb3e1912383c06e5115c6924713978df43cdb8075335e1bac7d32"
+      },
+      {
+        "name": "gear_changesoul.pcapng",
+        "sha256": "62af2cde3a4683fba3e09cc3dfed8001d74303b120381de577b05df492926780"
+      },
+      {
+        "name": "gear_changeweapon.pcapng",
+        "sha256": "3eec2c2993feeb2b8c47c1e1f553335638a7262ec13b561e2d52d768f0798080"
+      },
+      {
+        "name": "gridania_map.pcapng",
+        "sha256": "13e26b2d68f195b8e2daf7c355a2741c155a1036b80d79c90aab982157290795"
+      },
+      {
+        "name": "gridania_to_coerthas.pcapng",
+        "sha256": "63152a1ed6e446df5cc4750fe50a0839f9e45ad270c79abfc72b5c09cc47e547"
+      },
+      {
+        "name": "harvest.pcapng",
+        "sha256": "8522a844b6904207c3465ae1d1038599eddb8b9dc47800d5230c8a1c3ad0e440"
+      },
+      {
+        "name": "idle_in_party.pcapng",
+        "sha256": "98b45822079372380bf834a937a9cb83b662b9e302555aafa14ee353537f74c1"
+      },
+      {
+        "name": "idling.pcapng",
+        "sha256": "fd86f5b78b2975dcaf7bb8a8e7f94267f9f2660078a5193ea26732cb317dd385"
+      },
+      {
+        "name": "inventory.pcapng",
+        "sha256": "f667bfc1cb87afec3c5c5f56b031254101aff012577f6f35c7cbf133815b6878"
+      },
+      {
+        "name": "invite_join_party.pcapng",
+        "sha256": "34c946c3f93744d2bbd841e75f983ef12b9bbcb59afcba31414d6d3f41e7de58"
+      },
+      {
+        "name": "local_leve_complete.pcapng",
+        "sha256": "4f0793f354140478725bf2c30642a3458a854460f47fb11a7af635c8881d95cd"
+      },
+      {
+        "name": "mount_unmount_chocobo.pcapng",
+        "sha256": "e77c06799f07029feb054792eac30baa431da15a61937b1a39bcd025e4db4072"
+      },
+      {
+        "name": "move_around_gridania.pcapng",
+        "sha256": "bea7ae86444fa3ef9acc08f148f60dff1e5992188ee85136dec50c64e09236d0"
+      },
+      {
+        "name": "move_out_of_room.pcapng",
+        "sha256": "a7a03a1d688f3feb264f8da9fae3519c55b7e267aa3802472f0221f4d729b37b"
+      },
+      {
+        "name": "moving_around_gridania.pcapng",
+        "sha256": "bf6abf7ccc7a16e071846036477c1fadbc3b46385ef6e747b543d836f3f51017"
+      },
+      {
+        "name": "open_gear_menu.pcapng",
+        "sha256": "6b7dee09f59d03d9706ca1c81586dce667cd4d806ee2a2b72d89432d617afc2e"
+      },
+      {
+        "name": "party_battle_leve.pcapng",
+        "sha256": "6327e5e1f5cbd51a9baaa9bcbacf53ca51c50a98fe4b66ae3e6bdecd9198089f"
+      },
+      {
+        "name": "quest_journal.pcapng",
+        "sha256": "e1f983e9009a9ebe8b8231647229bee1672a1ac85d95a830113280f534531edc"
+      },
+      {
+        "name": "quest_update.pcapng",
+        "sha256": "e31aa9738dd523b7703eefa6d38527135f16d8b5ff2fc314fd7e5b808d7e4787"
+      },
+      {
+        "name": "repair_items.pcapng",
+        "sha256": "bbd829cbd3f42b2cbfb3aa8a74a1cc35d4e2c16c99e5a4a20ca76573f02dd90f"
+      },
+      {
+        "name": "return_to_inn.pcapng",
+        "sha256": "9a81e483d3dd2673081afef06ed521c190c4d42be16e95e24097f25ff81f58c1"
+      },
+      {
+        "name": "sell_item.pcapng",
+        "sha256": "1cd808fff6501c53e4c113f1fdef090e50dfe0fd7fe86ceaa552b3a53c1b5aac"
+      },
+      {
+        "name": "small_talk_louisoix.pcapng",
+        "sha256": "58b620d90370ba69202e63f7f70edb79004ccbb8068e11e2e112a825d84dcafe"
+      },
+      {
+        "name": "switch_to_weaver.pcapng",
+        "sha256": "b41b25bc51be1a64f41861142dc992c14493c65bcd920cadca013243480b777e"
+      },
+      {
+        "name": "teleport_to_camp_nine_ivies.pcapng",
+        "sha256": "fac2b485608247d299a406a7065e19918789118e7e544ca85cec4d772da0e3ab"
+      },
+      {
+        "name": "teleport_to_camp_tranquil.pcapng",
+        "sha256": "488318351cdedb2e2b650dc68c55014b160fbbc26753c200922402c1ba6c4dd7"
+      },
+      {
+        "name": "teleport_to_gridania.pcapng",
+        "sha256": "779141dc79a4bcf4bfc2e265f8b9510607d5a6b6e78d32f8940e5a847e598fa0"
+      },
+      {
+        "name": "war_quest_update1.pcapng",
+        "sha256": "ce64e429063cc7e49a2045e2f7b0e18b1991f5908368b791b93c72419841e890"
+      },
+      {
+        "name": "war_quest_update2.pcapng",
+        "sha256": "bf43b5ee32c58e5dc6f8149b071bd9c5cd5cc0aaa55ea3528872308fd7be2429"
+      },
+      {
+        "name": "war_quest_update3.pcapng",
+        "sha256": "52279e8cbc13d3f4751b5ee3cb9c91df1895ed5c41d30672629db3ec1c9efd05"
+      }
+    ],
+    "command_battle_params": {
+      "path": "xivl-client-data:derived/command_battle_params.csv",
+      "sha256": "9a81350dbd88d61c90a715f1859a1899d3d86c77c6bb52994371b69e1094a444"
+    },
+    "field_model": {
+      "path": "xivl-client-structs:manifests/battle_result_field_semantics.json",
+      "sha256": "b85a33eb10f21e550a4aa81c9574237a71637a20a577ceebac766ba478bacbb6"
+    },
+    "pcap_manifest": {
+      "path": "sources/pcap-1.23b/manifest.yaml",
+      "sha256": "1d281b26ced720e433aa2354bd036b2e932ebee084de11cd201f9431c646aff4"
+    },
+    "world_master": {
+      "path": "xivl-client-data:csv/worldMaster.csv",
+      "sha256": "2e2e2dd5cd9651388f6fa575b4229081ad0452165e78b725df0a5b5b7cf7c643"
+    }
+  },
+  "message_class_counts": {
+    "block_damage": 14,
+    "critical_damage": 20,
+    "hp_recovery": 14,
+    "miss": 29,
+    "non_fit": 191,
+    "normal_damage": 227,
+    "parry_damage": 7,
+    "unknown": 120
+  },
+  "packet_counts": {
+    "0x0139": 438,
+    "0x013A": 66,
+    "0x013B": 0,
+    "0x013C": 27
+  },
+  "packet_total": 531,
+  "row_count_nonzero_target_mismatches": 0,
+  "row_counts": {
+    "0x0139": 438,
+    "0x013A": 184,
+    "0x013B": 0,
+    "0x013C": 0
+  },
+  "row_total": 622,
+  "scenario_counts": {
+    "action-mechanic-combat-and-actions": {
+      "packets": {
+        "0x0139": 26,
+        "0x013A": 3
+      },
+      "rows": 34
+    },
+    "aetheryte-mechanic-teleport-flows": {
+      "packets": {
+        "0x0139": 1
+      },
+      "rows": 1
+    },
+    "battlecraft-leve-accept-and-complete": {
+      "packets": {
+        "0x0139": 325,
+        "0x013A": 40,
+        "0x013C": 11
+      },
+      "rows": 444
+    },
+    "character-mechanic-attributes-and-class": {
+      "packets": {
+        "0x0139": 3
+      },
+      "rows": 3
+    },
+    "chocobo-mechanic-mount-unmount": {
+      "packets": {
+        "0x0139": 2,
+        "0x013C": 2
+      },
+      "rows": 2
+    },
+    "gathering-node-wood-and-harvest": {
+      "packets": {
+        "0x0139": 10,
+        "0x013A": 1,
+        "0x013C": 9
+      },
+      "rows": 12
+    },
+    "inventory-mechanic-bags-and-gear": {
+      "packets": {
+        "0x0139": 5
+      },
+      "rows": 5
+    },
+    "job-quest-war-updates": {
+      "packets": {
+        "0x0139": 63,
+        "0x013A": 22
+      },
+      "rows": 118
+    },
+    "shop-vendor-buy-sell-repair": {
+      "packets": {
+        "0x013C": 1
+      },
+      "rows": 0
+    },
+    "zone-mechanic-cross-zone-travel": {
+      "packets": {
+        "0x0139": 2,
+        "0x013C": 4
+      },
+      "rows": 2
+    },
+    "zone-mechanic-inn-room": {
+      "packets": {
+        "0x0139": 1
+      },
+      "rows": 1
+    }
+  },
+  "schema_version": 1,
+  "source_actor_mismatches": 0,
+  "world_master_text_id_counts": {
+    "0": 120,
+    "30108": 1,
+    "30109": 1,
+    "30112": 4,
+    "30116": 15,
+    "30126": 16,
+    "30128": 6,
+    "30209": 1,
+    "30301": 223,
+    "30302": 20,
+    "30303": 4,
+    "30306": 14,
+    "30308": 7,
+    "30311": 29,
+    "30320": 10,
+    "30328": 32,
+    "30330": 13,
+    "30331": 31,
+    "30332": 2,
+    "30335": 12,
+    "30338": 9,
+    "33008": 4,
+    "33909": 3,
+    "33919": 10,
+    "33921": 4,
+    "33934": 4,
+    "33935": 9,
+    "33936": 11,
+    "33950": 3,
+    "33954": 4
+  }
+}

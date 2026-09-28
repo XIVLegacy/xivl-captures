@@ -1,0 +1,76 @@
+{
+  "class_counts": {
+    "block_damage": 14,
+    "critical_damage": 20,
+    "hp_recovery": 14,
+    "miss": 29,
+    "non_fit": 191,
+    "normal_damage": 227,
+    "parry_damage": 7,
+    "unknown": 120
+  },
+  "dimension_row_counts": {
+    "command": 84,
+    "overall": 8,
+    "scenario": 28,
+    "source_actor": 77,
+    "target_actor": 74
+  },
+  "input": {
+    "path": "studies/battle-result-backfit/derived/battle-result-rows.csv",
+    "row_count": 622,
+    "sha256": "d67cb49d9489df127b3f374ee85792c43a6feffecbd4e2314072c0622b22e494"
+  },
+  "matched_comparisons": {
+    "block_vs_normal": {
+      "available_outcome_rows": 14,
+      "candidate_pair_count": 34,
+      "matched_normal_rows": 17,
+      "matched_outcome_rows": 14,
+      "matched_sets": 8,
+      "one_to_one_pair_capacity": 12,
+      "unmatched_outcome_rows": 0
+    },
+    "critical_vs_normal": {
+      "available_outcome_rows": 20,
+      "candidate_pair_count": 51,
+      "matched_normal_rows": 27,
+      "matched_outcome_rows": 14,
+      "matched_sets": 9,
+      "one_to_one_pair_capacity": 12,
+      "unmatched_outcome_rows": 6
+    },
+    "miss_vs_normal": {
+      "available_outcome_rows": 29,
+      "candidate_pair_count": 72,
+      "matched_normal_rows": 65,
+      "matched_outcome_rows": 21,
+      "matched_sets": 19,
+      "one_to_one_pair_capacity": 21,
+      "unmatched_outcome_rows": 8
+    },
+    "parry_vs_normal": {
+      "available_outcome_rows": 7,
+      "candidate_pair_count": 5,
+      "matched_normal_rows": 5,
+      "matched_outcome_rows": 3,
+      "matched_sets": 3,
+      "one_to_one_pair_capacity": 3,
+      "unmatched_outcome_rows": 4
+    }
+  },
+  "matching_contract": {
+    "baseline": "normal_damage",
+    "candidate_pair_count": "Cartesian normal/outcome row combinations within a matched set; not temporal pairs.",
+    "effect_fields": "Retained as observations and excluded from matching because their semantics remain unresolved.",
+    "key": [
+      "scenario_id",
+      "command_id",
+      "source_actor_id",
+      "target_actor_id"
+    ]
+  },
+  "recovery_cluster_count": 9,
+  "recovery_within_cluster_pair_count": 8,
+  "schema_version": 1
+}
