@@ -1,0 +1,4 @@
+pcap,capture_path,bytes,sha256,n_opcodes,opcodes,service_mix
+invite_join_party.pcapng,sources/pcap-1.23b/objects/invite_join_party.pcapng,88372,34c946c3f93744d2bbd841e75f983ef12b9bbcb59afcba31414d6d3f41e7de58,16,0x0001;0x00ca;0x00cf;0x012d;0x0133;0x0143;0x0145;0x0169;0x017a;0x017c;0x017d;0x017e;0x017f;0x0187;0x018d;0x01cf,map=18;world=6
+idle_in_party.pcapng,sources/pcap-1.23b/objects/idle_in_party.pcapng,20168,98b45822079372380bf834a937a9cb83b662b9e302555aafa14ee353537f74c1,4,0x0001;0x00ca;0x00cf;0x018d,map=5
+friendlist_search.pcapng,sources/pcap-1.23b/objects/friendlist_search.pcapng,37744,3b9a35689fb923d9520bbfed8a3886dc2b461c9516492e3d8e68eec093eb7b0e,9,0x0001;0x00ca;0x00cf;0x012f;0x0137;0x01cf;0x01dd;0x01df;0x01e0,map=11

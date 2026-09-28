@@ -1,0 +1,3 @@
+pcap,capture_path,bytes,sha256,n_opcodes,opcodes,service_mix
+emote_dance.pcapng,sources/pcap-1.23b/objects/emote_dance.pcapng,30352,9e004f1e791cfc37b7d23e8986a5e69021b7b7f828295fdf7957e36aa1c57dc8,5,0x0001;0x00ca;0x00cf;0x00e1;0x012d,map=6
+emote_kneel.pcapng,sources/pcap-1.23b/objects/emote_kneel.pcapng,23920,3381b6121f5b0789c97ededdc5394c6bc9b14c561029191fb5b3f428033c80e8,5,0x0001;0x00ca;0x00cf;0x00e1;0x012d,map=6

@@ -1,0 +1,110 @@
+# Generated legacy id and path compatibility map.
+# Edit tools/build_catalog_index.py; do not hand-edit.
+ids:
+  action-mechanic-combat-and-actions:
+    scenario: catalog/scenarios/action-mechanic-combat-and-actions/
+  aetheryte-mechanic-teleport-flows:
+    scenario: catalog/scenarios/aetheryte-mechanic-teleport-flows/
+  battlecraft-leve-accept-and-complete:
+    scenario: catalog/scenarios/battlecraft-leve-accept-and-complete/
+  bluegartr-stat-tests:
+    study: studies/bluegartr-stat-tests/
+    source: sources/bluegartr-stat-tests/
+  character-mechanic-attributes-and-class:
+    scenario: catalog/scenarios/character-mechanic-attributes-and-class/
+  chat-mechanic-say-shout-and-npc-talk:
+    scenario: catalog/scenarios/chat-mechanic-say-shout-and-npc-talk/
+  chocobo-mechanic-mount-unmount:
+    scenario: catalog/scenarios/chocobo-mechanic-mount-unmount/
+  cutscene-mechanic-book:
+    scenario: catalog/scenarios/cutscene-mechanic-book/
+  elemen-battle-actions:
+    study: studies/elemen-battle-actions/
+    source: sources/elemen-battle-actions/
+  elemen-battlecraft-leve-objectives:
+    study: studies/elemen-battlecraft-leve-objectives/
+    source: sources/elemen-battlecraft-leve-objectives/
+  elemen-bestiary:
+    study: studies/elemen-bestiary/
+    source: sources/elemen-bestiary/
+  elemen-consumable-effects:
+    study: studies/elemen-consumable-effects/
+    source: sources/elemen-consumable-effects/
+  elemen-craft-gather-actions:
+    study: studies/elemen-craft-gather-actions/
+    source: sources/elemen-craft-gather-actions/
+  elemen-history-removed:
+    study: studies/elemen-history-removed/
+    source: sources/elemen-history-removed/
+  elemen-instanced-content-entry-rules:
+    study: studies/elemen-instanced-content-entry-rules/
+    source: sources/elemen-instanced-content-entry-rules/
+  elemen-level-exp:
+    study: studies/elemen-level-exp/
+    source: sources/elemen-level-exp/
+  elemen-playguide:
+    study: studies/elemen-playguide/
+    source: sources/elemen-playguide/
+  elemen-quest-rewards-walkthroughs:
+    study: studies/elemen-quest-rewards-walkthroughs/
+    source: sources/elemen-quest-rewards-walkthroughs/
+  elemen-shop-inventory:
+    study: studies/elemen-shop-inventory/
+    source: sources/elemen-shop-inventory/
+  elemen-site-archive:
+    study: studies/elemen-site-archive/
+    source: sources/elemen-site-archive/
+  elemen-zone-guide:
+    study: studies/elemen-zone-guide/
+    source: sources/elemen-zone-guide/
+  emote-mechanic-dance-and-kneel:
+    scenario: catalog/scenarios/emote-mechanic-dance-and-kneel/
+  gamerescape-tables:
+    study: studies/gamerescape-tables/
+    source: sources/gamerescape-tables/
+  gathering-node-wood-and-harvest:
+    scenario: catalog/scenarios/gathering-node-wood-and-harvest/
+  inventory-mechanic-bags-and-gear:
+    scenario: catalog/scenarios/inventory-mechanic-bags-and-gear/
+  job-quest-war-updates:
+    scenario: catalog/scenarios/job-quest-war-updates/
+  kanican-tables:
+    study: studies/kanican-tables/
+    source: sources/kanican-tables/
+  lodestone-beginners:
+    study: studies/lodestone-beginners/
+    source: sources/lodestone-beginners/
+  lodestone-dev-patch:
+    study: studies/lodestone-dev-patch/
+    source: sources/lodestone-dev-patch/
+  lodestone-lore:
+    study: studies/lodestone-lore/
+    source: sources/lodestone-lore/
+  lodestone-manual:
+    study: studies/lodestone-manual/
+    source: sources/lodestone-manual/
+  movement-mechanic-gridania-locomotion:
+    scenario: catalog/scenarios/movement-mechanic-gridania-locomotion/
+  primal-battle-ifrit-bowl-of-embers-video-breakdown:
+    study: studies/primal-battle-ifrit-bowl-of-embers/
+    source: sources/primal-battle-ifrit-bowl-of-embers/
+  session-mechanic-login-and-idle:
+    scenario: catalog/scenarios/session-mechanic-login-and-idle/
+  shop-vendor-buy-sell-repair:
+    scenario: catalog/scenarios/shop-vendor-buy-sell-repair/
+  side-quest-accept-and-journal:
+    scenario: catalog/scenarios/side-quest-accept-and-journal/
+  social-mechanic-party-and-friends:
+    scenario: catalog/scenarios/social-mechanic-party-and-friends/
+  zone-mechanic-cross-zone-travel:
+    scenario: catalog/scenarios/zone-mechanic-cross-zone-travel/
+  zone-mechanic-inn-room:
+    scenario: catalog/scenarios/zone-mechanic-inn-room/
+  zone-mechanic-map-ui:
+    scenario: catalog/scenarios/zone-mechanic-map-ui/
+path_prefixes:
+  captures/: sources/pcap-1.23b/objects/
+  data/: derived/
+  datasets/: derived/
+  sets/<id>/: per-kind home; resolve <id> against the `ids:` map above (study/source for a split-set id,
+    scenario for a scenario id)

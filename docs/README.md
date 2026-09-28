@@ -1,0 +1,80 @@
+# Public Capture Documentation
+
+Public documentation for `xivl-captures` starts with the catalog. Open the
+relevant source or study bundle for its manifest, provenance, and findings.
+
+## Documentation pages
+
+- [Style guide](style-guide.md) - authored code, structured-data, and
+  documentation conventions.
+- [Catalog and Evidence](catalog-guide.md) - public discovery,
+  evidence tiers, layer ownership, and the public/restricted boundary.
+- [Packet Decode and Wire Order](pcap-decoding.md) - the pcap framing,
+  lane, nested-event, and exact-order consumer contract.
+
+## AI-agent policy
+
+- [AI-agent policy](ai_agents/README.md) - contribution and documentation
+  rules for this repository.
+- [Evidence and claims](ai_agents/evidence-and-claims.md) - evidence classes,
+  provenance, and claim boundaries.
+- [Comments and prose](ai_agents/comments-and-prose.md) - the deletion-default
+  doctrine for code and manifest comments.
+- [Retail input validation](ai_agents/retail-input-validation.md) - the
+  restricted PCAP corpus check and its claim limits.
+
+## Discovery entry points
+
+- [Catalog registry](../catalog/index.yaml)
+- [Compatibility aliases](../catalog/aliases.yaml)
+- [Content-kind view](../catalog/by-content-kind.md)
+- [Zone view](../catalog/by-zone.md)
+- [System view](../catalog/by-system.md)
+- [Progression view](../catalog/by-progression.md)
+- [City-state view](../catalog/by-city-state.md)
+- [Pcap scenario views](../catalog/scenarios/)
+- [Evidence-class registry](../schemas/evidence-classes.yaml)
+
+## Study bundles
+
+- [Battle Result Packet Backfit](../studies/battle-result-backfit/)
+- [Director Wire Identity Verification](../studies/director-wire-identity/)
+- [Guildleve Journal Command Wire Census](../studies/guildleve-journal-command-wire/)
+- [Regional Guildleve Publisher Contract](../studies/regional-guildleve-publisher-contract/)
+- [Actor Property Stream Hash Catalog](../studies/property-stream-hash-catalog/)
+- [Equipment Property Correlation](../studies/equipment-property-correlation/)
+- [bluegartr FFXIV 1.x Community Stat Testing - Web Tables](../studies/bluegartr-stat-tests/)
+- [eLeMeN FF14 1.x Battle Class Actions - Web Tables](../studies/elemen-battle-actions/)
+- [eLeMeN FF14 1.x Regional Battlecraft Leve Objectives - Web Tables](../studies/elemen-battlecraft-leve-objectives/)
+- [eLeMeN FF14 1.x Bestiary and NM - Web Tables](../studies/elemen-bestiary/)
+- [eLeMeN FF14 1.x Food and Medicine Effect Magnitudes - Web Tables](../studies/elemen-consumable-effects/)
+- [eLeMeN FF14 1.x Crafter and Gatherer Actions - Web Tables](../studies/elemen-craft-gather-actions/)
+- [eLeMeN FF14 1.x History - Removed-System Milestones - Web Tables](../studies/elemen-history-removed/)
+- [eLeMeN FF14 1.x Instanced-Content Entry Rules - Web Tables](../studies/elemen-instanced-content-entry-rules/)
+- [eLeMeN FF14 1.x Level / EXP Growth - Web Tables](../studies/elemen-level-exp/)
+- [eLeMeN FF14 1.x Play Guide - Weather Legend, Aethernet, Market Tax - Web Tables](../studies/elemen-playguide/)
+- [eLeMeN FF14 1.x Quest EXP Rewards and Walkthroughs - Web Tables](../studies/elemen-quest-rewards-walkthroughs/)
+- [eLeMeN FF14 1.x Shop Item-to-NPC Sales Edges - Web Tables](../studies/elemen-shop-inventory/)
+- [eLeMeN FF14 1.x Site Archive - HTML Mirror of Digested Sections](../studies/elemen-site-archive/)
+- [eLeMeN FF14 1.x Zone Guide - Weather, Aetheryte, Adjacency - Web Tables](../studies/elemen-zone-guide/)
+- [Gamer Escape FFXIV 1.x Item and Mob Tables - Web Tables](../studies/gamerescape-tables/)
+- [kanican FFXIV 1.x Combat Theorycrafting - Web Tables](../studies/kanican-tables/)
+- [FFXIV 1.x Lodestone - A Beginner's Guide to Eorzea](../studies/lodestone-beginners/)
+- [FFXIV 1.x Lodestone Dev Posts and Patch Notes](../studies/lodestone-dev-patch/)
+- [FFXIV 1.x Lodestone Lore - GC Newsletters, The Last Word, Events](../studies/lodestone-lore/)
+- [FFXIV 1.0 Lodestone Official Game Manual](../studies/lodestone-manual/)
+- [Lobby Handshake Decryptability and Recipe Test](../studies/lobby-handshake-triage/)
+- [Login 0x018A Main-Lane Neighborhood](../studies/login-018a-neighborhood/)
+- [Movement Speed Band Observations](../studies/movement-speed-band-observations/)
+- [Status Wire Projection Census](../studies/status-wire-projection-census/)
+- [World Party-Chat 0x00C9 Contract](../studies/world-party-chat-00c9-contract/)
+- [Retail NPC and Self-Repair Contract](../studies/retail-repair-contract/)
+- [The Bowl of Embers (Ifrit) - Video Breakdown](../studies/primal-battle-ifrit-bowl-of-embers/)
+- [Lord Errant - Sampled Video Observations](../studies/main-scenario-lord-errant-video-breakdown/)
+- [Toll of the Warden - Sampled Video Observations](../studies/main-scenario-toll-warden-video-breakdown/)
+
+## Promoted study note
+
+- [Elemen client cross-check](../studies/elemen-bestiary/derived/client-crosscheck.md)
+  - citation-grade method and findings for joining eLeMeN fields to the 1.23b
+    client data used by the `elemen-bestiary` study.
