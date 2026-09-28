@@ -1,0 +1,225 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xivlegacy.local/xivl-captures/schemas/map-0190-transaction-census.schema.json",
+  "title": "Sanitized Map 0x0190 transaction census accounting",
+  "type": "object",
+  "required": [
+    "study_id",
+    "corpus",
+    "exclusions",
+    "transaction_issues",
+    "span_distributions",
+    "application_layouts",
+    "key_distributions",
+    "vectors",
+    "tails",
+    "repetition",
+    "contexts",
+    "per_capture",
+    "boundaries"
+  ],
+  "properties": {
+    "study_id": {"const": "map-0190-transaction-census"},
+    "corpus": {
+      "const": {
+        "source_manifest": "sources/pcap-1.23b/manifest.yaml",
+        "admitted_chat_lanes": 30,
+        "admitted_lanes": 84,
+        "admitted_main_lanes": 54,
+        "captures": 54,
+        "complete_spans": 28,
+        "compressed_frame_inflate_failures": 0,
+        "records_in_complete_spans": 5569,
+        "retransmitted_segments": 1759,
+        "subevent_truncations": 0,
+        "target_c2s_0x018f": 0,
+        "target_c2s_0x0190": 0,
+        "target_c2s_0x0191": 0,
+        "target_s2c_0x018f": 28,
+        "target_s2c_0x0190": 5569,
+        "target_s2c_0x0191": 28,
+        "unparsed_frame_body_bytes": 0,
+        "wrapped_short_inner_headers": 0
+      }
+    },
+    "exclusions": {
+      "const": {
+        "unexpected_application_shape": 0,
+        "unexpected_subevent_size": 0
+      }
+    },
+    "transaction_issues": {
+      "const": {
+        "malformed_begin": 0,
+        "malformed_end": 0,
+        "malformed_record": 0,
+        "nested_begin": 0,
+        "orphan_end": 0,
+        "orphan_record": 0,
+        "unterminated_span": 0
+      }
+    },
+    "span_distributions": {
+      "const": {
+        "records_per_span": {"197": 3, "198": 2, "199": 18, "200": 5},
+        "spans_by_capture": {
+          "combat_autoattack.pcapng": 2,
+          "combat_skills.pcapng": 1,
+          "gather_wood.pcapng": 1,
+          "harvest.pcapng": 2,
+          "local_leve_complete.pcapng": 3,
+          "party_battle_leve.pcapng": 17,
+          "repair_items.pcapng": 1,
+          "war_quest_update2.pcapng": 1
+        },
+        "zero_application_0x018f": 28,
+        "zero_application_0x0191": 28
+      }
+    },
+    "application_layouts": {
+      "const": {
+        "0x018f": {"application_size_bytes": 8, "zero_application_events": 28},
+        "0x0190": {
+          "application_size_bytes": 104,
+          "key_dword_offsets": [0, 4],
+          "record_dword_offset_first": 8,
+          "record_dword_offset_last": 68,
+          "record_dword_count": 16,
+          "unread_tail_offset": 72,
+          "unread_tail_size_bytes": 32
+        },
+        "0x0191": {"application_size_bytes": 8, "zero_application_events": 28}
+      }
+    },
+    "key_distributions": {
+      "const": {
+        "equal_key_dwords": 0,
+        "key_dword_0": {
+          "distinct_values": 206,
+          "events": 5569,
+          "maximum_multiplicity": 28,
+          "multiplicity_histogram": {"1": 2, "19": 1, "21": 1, "24": 1, "25": 1, "27": 1, "28": 194, "3": 1, "4": 4},
+          "repeated_events_beyond_first": 5363,
+          "repeated_values": 204,
+          "singleton_values": 2,
+          "zero_events": 0
+        },
+        "key_dword_1": {
+          "distinct_values": 1,
+          "events": 5569,
+          "maximum_multiplicity": 5569,
+          "multiplicity_histogram": {"5569": 1},
+          "repeated_events_beyond_first": 5568,
+          "repeated_values": 1,
+          "singleton_values": 0,
+          "zero_events": 5569
+        },
+        "key_pairs": {
+          "distinct_values": 206,
+          "events": 5569,
+          "maximum_multiplicity": 28,
+          "multiplicity_histogram": {"1": 2, "19": 1, "21": 1, "24": 1, "25": 1, "27": 1, "28": 194, "3": 1, "4": 4},
+          "repeated_events_beyond_first": 5363,
+          "repeated_values": 204,
+          "singleton_values": 2,
+          "zero_events": 0
+        }
+      }
+    },
+    "vectors": {
+      "const": {
+        "all_zero_vectors": 0,
+        "bounded_values_0_255": {"0": 72969, "1": 1543},
+        "changed_position_counts": {"0": 39, "8": 13},
+        "changed_vector_comparisons": 49,
+        "changed_word_count_histogram": {"0": 3927, "1": 46, "2": 3},
+        "distinct_vectors": 150,
+        "equal_vector_comparisons": 3927,
+        "exact_repeated_vectors_beyond_first": 5419,
+        "maximum_vector_multiplicity": 1600,
+        "nonzero_word_count_histogram": {"2": 1968, "3": 2205, "4": 1396},
+        "position_nonzero_counts": {"0": 2058, "1": 1543, "2": 0, "3": 5569, "4": 5569, "5": 0, "6": 0, "7": 0, "8": 1396, "9": 0, "10": 0, "11": 0, "12": 0, "13": 0, "14": 0, "15": 0},
+        "record_vectors": 5569,
+        "same_capture_lane_key_pair_comparisons": 3976,
+        "value_bands": {"1-255": 1543, "256-65535": 7071, "65536-4294967295": 7521, "zero": 72969}
+      }
+    },
+    "tails": {
+      "const": {
+        "all_zero_tails": 5569,
+        "distinct_tails": 1,
+        "nonzero_byte_position_counts": {},
+        "tails": 5569,
+        "varying_byte_positions": []
+      }
+    },
+    "repetition": {
+      "const": {
+        "consecutive_exact_repeats_within_spans": 0,
+        "distinct_0x0190_applications": 288,
+        "distinct_span_record_sequences": 28,
+        "exact_repeated_applications_beyond_first": 5281,
+        "exact_repeated_spans_beyond_first": 0,
+        "maximum_application_multiplicity": 28,
+        "maximum_span_sequence_multiplicity": 1
+      }
+    },
+    "contexts": {
+      "const": {
+        "intervening_non_target_opcodes": {},
+        "nearest_same_lane_opcodes": {
+          "next/0x0001": 3,
+          "next/0x00ca": 2,
+          "next/0x00cf": 2,
+          "next/0x00db": 1,
+          "next/0x0137": 9,
+          "next/0x0139": 2,
+          "next/0x0144": 3,
+          "next/0x0169": 3,
+          "next/0x017a": 1,
+          "next/0x018d": 1,
+          "next/0x0195": 1,
+          "prior/0x0001": 9,
+          "prior/0x000c": 2,
+          "prior/0x00cf": 3,
+          "prior/0x00d3": 1,
+          "prior/0x0130": 1,
+          "prior/0x0137": 3,
+          "prior/0x0139": 2,
+          "prior/0x016e": 2,
+          "prior/0x0177": 1,
+          "prior/0x017a": 1,
+          "prior/0x018b": 2,
+          "prior/0x0195": 1
+        },
+        "spans_with_change_frame_overlap": 0,
+        "spans_with_equipment_carrier_overlap": 0,
+        "spans_with_inventory_frame_overlap": 0
+      }
+    },
+    "per_capture": {
+      "type": "object",
+      "minProperties": 54,
+      "maxProperties": 54,
+      "propertyNames": {"pattern": "^[a-z0-9_]+\\.pcapng$"},
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["admitted_lanes", "target_0x018f", "target_0x0190", "target_0x0191", "complete_spans", "records_in_complete_spans", "retransmitted_segments", "issues", "exclusions"],
+        "properties": {
+          "admitted_lanes": {"type": "integer", "minimum": 1, "maximum": 2},
+          "target_0x018f": {"type": "integer", "minimum": 0},
+          "target_0x0190": {"type": "integer", "minimum": 0},
+          "target_0x0191": {"type": "integer", "minimum": 0},
+          "complete_spans": {"type": "integer", "minimum": 0},
+          "records_in_complete_spans": {"type": "integer", "minimum": 0},
+          "retransmitted_segments": {"type": "integer", "minimum": 0},
+          "issues": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 1}},
+          "exclusions": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 1}}
+        }
+      }
+    },
+    "boundaries": {"type": "array", "minItems": 7, "maxItems": 7, "items": {"type": "string"}}
+  },
+  "additionalProperties": false
+}

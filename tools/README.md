@@ -1,0 +1,171 @@
+# Capture Repository Tools
+
+Canonical scripts that validate, regenerate, and mine the tracked capture
+products (`catalog/`, `derived/`, `studies/`). Edit a script or its input
+manifest, never a generated output by hand, then regenerate.
+
+## Validation
+
+The [checks workflow](../.github/workflows/checks.yml) is authoritative for
+CI-covered checks.
+
+Ruff 0.15.21 is the formatter and linter for authored Python. Run
+`ruff format --check --no-cache tools` and `ruff check --no-cache tools` before
+submitting tool changes.
+
+## Human entry points
+
+The supported commands for direct maintainer use are:
+
+- `python tools/refresh.py` - regenerate every canonical product in dependency
+  order.
+- `python tools/refresh.py --check --public-shape` - explicitly validate the
+  restricted-evidence-absent repository shape.
+- `python tools/import_monster_population.py` - distill the pinned restricted
+  reported population tables; `--check` reproduces them byte-for-byte, while
+  `--check --public-shape` checks public row and evidence invariants only.
+- `python tools/extractors/extract_wire_order.py <capture.pcapng>` - inspect
+  sub-events in deterministic connection order.
+- `python tools/extractors/extract_login_018a_timeline.py` - regenerate the
+  bounded main-lane timeline around login s2c `0x018A`.
+- `python tools/extractors/extract_battle_results.py --client-data-repo <path>
+  --field-model <path>` - regenerate the active battle-result backfit study from
+  the full pcap corpus and explicit client-data/client-struct evidence inputs;
+  add `--check` for a byte-for-byte replay check.
+- `python tools/analyze_battle_result_distributions.py` - regenerate the
+  self-contained Stage 2 distribution and matched-set products from the Stage 1
+  row table; add `--check` for a byte-for-byte replay check.
+- `python tools/analyze_battle_result_fits.py` - regenerate the self-contained
+  Stage 3 matched-set ratios, recovery observations, and fit accounting from
+  committed Stage 1-2 products; add `--check` for a byte-for-byte replay check.
+- `python tools/extractors/extract_director_wire_identity.py` - regenerate the
+  director-role, Group packet, member-list, and type-distribution study; add
+  `--check` for a byte-for-byte replay check.
+- `python tools/extractors/extract_guildleve_journal_command.py` - regenerate
+  the exhaustive c2s census for JournalCommand static actor 24241, journal
+  arguments, and guildleve subindices 2 through 5; add `--check` for replay.
+- `python tools/extractors/extract_00da_00e1_comparison.py` - regenerate the
+  complete clear-game-lane census, payload comparison, and bounded chronology
+  for `0x00DA`, `0x00E0`, and `0x00E1`; add `--check` for replay.
+- `python tools/extractors/extract_status_wire_census.py` - regenerate the
+  exhaustive sanitized s2c `0x0179` census and retail status-word projection;
+  add `--check` for replay.
+- `python tools/extractors/extract_party_marker_chronology.py` - regenerate the
+  exhaustive sanitized s2c `0x018D` record and bounded chronology study; add
+  `--check` for replay.
+- `python tools/analyze_party_marker_fields.py` - regenerate the normalized
+  full-row field census, reuse correlations, and sanitized timing summary for
+  s2c `0x018D`; add `--check` for replay.
+- `python tools/extractors/extract_0193_clock_contract.py` - regenerate the
+  exhaustive sanitized s2c `0x0193` clock/value and bounded chronology study;
+  add `--check` for replay.
+- `python tools/extractors/extract_0190_transaction_census.py` - regenerate the
+  exhaustive sanitized s2c `0x018F`/`0x0190`/`0x0191` transaction, key,
+  vector, tail, repetition, and same-lane context census; add `--check` for
+  replay.
+- `python tools/extractors/extract_world_party_chat_00c9.py` - regenerate the
+  exhaustive sanitized c2s/s2c World chat-lane `0x00C9` contract and synthetic
+  fixtures; add `--check` for replay.
+- `python tools/extract_historical_battlecommand.py` - regenerate the
+  provisional, field-layered BattleCommand workbook extraction; add `--check`
+  for byte-stable replay.
+- `python tools/extractors/extract_property_stream_catalog.py` - regenerate
+  the complete record-level s2c `0x0137` property-stream study, including raw
+  values, packet positions, wrapped source/destination actors, scenarios, and
+  hash profiles.
+- `python tools/validate_framing.py [capture.pcapng ...]` - verify the outer
+  frame compression invariant.
+- `python tools/promote_opcode_names.py --source <opcodes.json>` - replace the
+  promoted local opcode-name snapshot from an explicit source.
+- `python tools/validate_capture_repo.py --recall` - audit catalog search-hint
+  recall against evidence-map anchors.
+
+The remaining scripts below are internal pipeline components, support modules,
+or focused advisory checks. `refresh.py` is their normal entry point.
+
+## Scripts
+
+- `_json_io.py` - shared JSON writer (2-space indent, `ensure_ascii=False`,
+  LF, single trailing newline) and repo-root/derived-dir path constants.
+- `analyze_payload_layouts.py` - infers per-opcode field layouts (constant,
+  zero-pad, variable byte ranges) from `derived/payload_samples.json`.
+- `audit_study_conventions.py` - audits study README presence, manifest/catalog
+  agreement, checksum entry shape and target paths, and path hygiene not covered by
+  `validate_capture_repo.py`.
+- `build_catalog.py` - regenerates scenario views, `catalog/index.yaml`,
+  `catalog/aliases.yaml`, and `catalog/by-*.md` in dependency order. The three
+  phase modules remain internal compatibility surfaces for byte-stable output.
+- `build_pcap_products.py` - regenerates or byte-checks all 12 pcap-derived
+  JSON products (plus the spawn-observations CSV companion) through one cached
+  corpus traversal. `--product NAME` selects a product and its dependencies
+  without making the reducers reopen captures.
+- `build_checksums.py` - regenerates or verifies (`--check`) each study's
+  `derived/` checksum anchor for studies that declare a manifest
+  `checksum_file`. The anchored set is every file under `derived/`; this tool
+  owns checksum coverage and digest integrity.
+- `build_dataset_meta.py` - generates `derived/<name>.meta.yaml` provenance
+  sidecars for every committed `derived/*.json` product, including hashes for
+  any format-specific companion outputs.
+- `check_markdown_links.py` - resolves every in-repo Markdown link target
+  across `studies/`, `docs/`, `catalog/`, and top-level `*.md`; fails on any
+  that dangles. Skips web links and intentional sibling-repo references.
+- `name_gam_hashes.py` - emits the packet-observed property hashes without
+  external name assertions.
+- `promote_opcode_names.py` - promotes the identification layer of an
+  external opcode catalog snapshot into the local
+  `derived/opcode_names.json`.
+- `refresh.py` - the unified check over every canonical product. See Validation
+  above.
+- `soften_source_links.py` - retains study citation paths as plain text when
+  their raw source objects are excluded from the public tree.
+- `validate_capture_repo.py` - validates retention and taxonomy policy across
+  `sources/`, `studies/`, `catalog/scenarios/`, and `derived/`.
+- `validate_digestion.py` - referential-integrity check for the canonical pcap
+  digestion (`derived/observations.json` cross-references).
+- `validate_framing.py` - validates the 1.23b outer-frame model (the
+  compression-flag invariant) across one or more pcap captures.
+- `validate_schemas.py` - JSON-Schema validation plus cross-file referential
+  checks for `schemas/`, `sources/`, `derived/`, `pipelines/`, `studies/`.
+- `requirements.txt` - third-party Python dependencies (scapy, jsonschema,
+  PyYAML). Most tools use only the standard library.
+- `ffxiv-action-names.txt` - hand-seeded action-surface name list consulted
+  by `validate_capture_repo.py`'s `--recall` pass so action names are not
+  flagged as missing search hints.
+
+## extractors/
+
+Pure-Python pcap decoders and miners with no server-runtime dependency. Except
+for the `extract_wire_order.py` diagnostic named above, these are internal
+reducers invoked by `build_pcap_products.py`, not separate human entry points.
+Most take `--out` and write one `derived/*.json` product. Several also take
+explicit capture paths and default to a priority set when none are given.
+
+- `extract_content_samples.py` - decodes inventory-list and event-start
+  packet bodies into ground-truth game-state samples.
+- `extract_gam_keys.py` - extracts SetActorProperty GAM property key hashes
+  and per-key stats from the corpus.
+- `extract_login_018a_timeline.py` - reproduces the same-connection s2c window
+  and c2s frame bracket around the sole admitted login `0x018A` event.
+- `extract_lobby_record_census.py` - reproduces the sanitized full lobby frame,
+  subrecord, decrypted inner-opcode, and cross-session structure fixture from
+  the restricted login capture; `--public-shape` validates it without
+  restricted bytes.
+- `extract_observations.py` - the opcode/length observation extractor. It
+  produces `derived/observations.json` and `derived/lane_observations.json`.
+- `extract_payload_samples.py` - samples raw payload bytes per opcode into
+  `derived/payload_samples.json`.
+- `extract_property_targets.py` - captures the per-target prefix each
+  SetActorProperty property id appears under in the wire stream.
+- `extract_request_response_pairs.py` - correlates c2s opcodes with the s2c
+  opcodes that follow within a reply-time window.
+- `extract_sequences.py` - builds per-capture opcode sequences and finds
+  cross-capture motifs.
+- `extract_spawn_observations.py` - extracts observed actor spawn positions
+  from the pcap corpus into the canonical JSON and a fixed-field CSV view.
+- `extract_streams.py` - reconstructs per-direction TCP streams, admits only
+  clear port-54992 game lanes, and parses outer frames for internal reducers.
+- `extract_timing.py` - computes per-opcode inter-emission timing statistics
+  from outer-frame timestamps.
+- `extract_wire_order.py` - prints sub-events in stream order within each
+  deterministic connection block. It does not recover capture-wide chronology.
+  `derived/sequences.json` also merges directions and collapses runs.

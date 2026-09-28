@@ -1,0 +1,239 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xivlegacy.github.io/xivl-captures/schemas/lobby-record-census.schema.json",
+  "title": "Sanitized decrypted lobby record census",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["format", "source", "crypto", "inventory", "sessions", "crossSession", "redactedClasses"],
+  "properties": {
+    "format": {"const": "xivl-lobby-record-census-v1"},
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "artifact", "sha256", "retainedSessionCount"],
+      "properties": {
+        "id": {"const": "pcap-1.23b"},
+        "artifact": {"const": "login.pcapng"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "retainedSessionCount": {"const": 2}
+      }
+    },
+    "crypto": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["blockSize", "transformedLengthMask", "subrecordPayloadOffset", "transformedPayloadClearTypes", "preKeyPlaintextClearTypes", "observedZeroExtentClearTypes"],
+      "properties": {
+        "blockSize": {"const": 8},
+        "transformedLengthMask": {"const": 65504},
+        "subrecordPayloadOffset": {"const": 16},
+        "transformedPayloadClearTypes": {"const": [3, 10]},
+        "preKeyPlaintextClearTypes": {"const": [7, 9]},
+        "observedZeroExtentClearTypes": {"const": [8]}
+      }
+    },
+    "inventory": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["completeFrameCount", "subrecordCount"],
+      "properties": {
+        "completeFrameCount": {"const": 16},
+        "subrecordCount": {"const": 20}
+      }
+    },
+    "sessions": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {"$ref": "#/$defs/session"}
+    },
+    "crossSession": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sharedFrameShapes", "sharedPostAcknowledgementSubrecords", "acknowledgementComparison"],
+      "properties": {
+        "sharedFrameShapes": {
+          "type": "array",
+          "minItems": 6,
+          "maxItems": 6,
+          "items": {"$ref": "#/$defs/sharedFrameShape"}
+        },
+        "sharedPostAcknowledgementSubrecords": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {"$ref": "#/$defs/sharedRoute"}
+        },
+        "acknowledgementComparison": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["byteComparisonSpans", "repeatedAlignedValueGroups"],
+          "properties": {
+            "byteComparisonSpans": {
+              "type": "array",
+              "minItems": 2,
+              "items": {"$ref": "#/$defs/comparisonSpan"}
+            },
+            "repeatedAlignedValueGroups": {
+              "type": "array",
+              "minItems": 1,
+              "items": {"$ref": "#/$defs/repeatedGroup"}
+            }
+          }
+        }
+      }
+    },
+    "redactedClasses": {
+      "type": "array",
+      "minItems": 5,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    }
+  },
+  "$defs": {
+    "session": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "directions"],
+      "properties": {
+        "id": {"enum": ["session-1", "session-2"]},
+        "directions": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {"$ref": "#/$defs/direction"}
+        }
+      }
+    },
+    "direction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["direction", "streamLength", "completeFrameLength", "frames"],
+      "properties": {
+        "direction": {"enum": ["c2s", "s2c"]},
+        "streamLength": {"type": "integer", "minimum": 1},
+        "completeFrameLength": {"type": "integer", "minimum": 1},
+        "frames": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/frame"}
+        }
+      }
+    },
+    "frame": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["frameIndex", "streamOffset", "outerLength", "subrecordCount", "subrecords"],
+      "properties": {
+        "frameIndex": {"type": "integer", "minimum": 0},
+        "streamOffset": {"type": "integer", "minimum": 0},
+        "outerLength": {"type": "integer", "minimum": 16},
+        "subrecordCount": {"type": "integer", "minimum": 1},
+        "subrecords": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/subrecord"}
+        }
+      }
+    },
+    "subrecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["subrecordIndex", "frameOffset", "streamOffset", "declaredLength", "clearType", "encryptedExtent"],
+      "properties": {
+        "subrecordIndex": {"type": "integer", "minimum": 0},
+        "frameOffset": {"type": "integer", "minimum": 16},
+        "streamOffset": {"type": "integer", "minimum": 16},
+        "declaredLength": {"type": "integer", "minimum": 16},
+        "clearType": {"enum": [3, 7, 8, 9, 10]},
+        "encryptedExtent": {"$ref": "#/$defs/encryptedExtent"},
+        "innerOpcode": {"type": "integer", "minimum": 1, "maximum": 65535}
+      }
+    },
+    "encryptedExtent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["offset", "length"],
+      "properties": {
+        "offset": {"const": 16},
+        "length": {"type": "integer", "minimum": 0, "multipleOf": 32}
+      }
+    },
+    "sharedFrameShape": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "direction", "outerLength", "subrecords", "occurrences"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^(c2s|s2c)-[0-9a-f-]+$"},
+        "direction": {"enum": ["c2s", "s2c"]},
+        "outerLength": {"type": "integer", "minimum": 16},
+        "subrecords": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/sharedSubrecord"}
+        },
+        "occurrences": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {"$ref": "#/$defs/occurrence"}
+        }
+      }
+    },
+    "sharedSubrecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["declaredLength", "clearType", "encryptedLength"],
+      "properties": {
+        "declaredLength": {"type": "integer", "minimum": 16},
+        "clearType": {"enum": [3, 7, 8, 9, 10]},
+        "encryptedLength": {"type": "integer", "minimum": 0, "multipleOf": 32},
+        "innerOpcode": {"type": "integer", "minimum": 1, "maximum": 65535}
+      }
+    },
+    "occurrence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sessionId", "frameIndex", "streamOffset"],
+      "properties": {
+        "sessionId": {"enum": ["session-1", "session-2"]},
+        "frameIndex": {"type": "integer", "minimum": 0},
+        "streamOffset": {"type": "integer", "minimum": 0}
+      }
+    },
+    "sharedRoute": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["direction", "clearType"],
+      "properties": {
+        "direction": {"enum": ["c2s", "s2c"]},
+        "clearType": {"enum": [3, 8]},
+        "innerOpcode": {"type": "integer", "minimum": 1, "maximum": 65535}
+      }
+    },
+    "comparisonSpan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "offset", "length"],
+      "properties": {
+        "kind": {"enum": ["invariant", "dynamic"]},
+        "offset": {"type": "integer", "minimum": 0, "maximum": 671},
+        "length": {"type": "integer", "minimum": 1, "maximum": 672}
+      }
+    },
+    "repeatedGroup": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["offsets", "unitLength", "valueVariesAcrossSessions"],
+      "properties": {
+        "offsets": {
+          "type": "array",
+          "minItems": 2,
+          "uniqueItems": true,
+          "items": {"type": "integer", "minimum": 32, "maximum": 664, "multipleOf": 8}
+        },
+        "unitLength": {"const": 8},
+        "valueVariesAcrossSessions": {"type": "boolean"}
+      }
+    }
+  }
+}

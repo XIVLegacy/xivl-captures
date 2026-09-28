@@ -1,0 +1,17 @@
+storages:
+  repo-lfs:
+    type: repo-root
+    base_path: .
+    notes: |
+      Original committed to this repo via Git LFS under
+      sources/<id>/objects/. Resolve storage_path values relative to
+      the xivl-captures repo root.
+  local-cold-storage:
+    type: repo-root
+    base_path: .
+    notes: |
+      Original lives in the gitignored archives/ folder at the
+      xivl-captures repo root. Manifest storage_path values use the form
+      archives/<id>/<archive>.<ext>. Override base_path in
+      cold-storage.local.yaml only if you want archives/ to live on a
+      separate drive or network mount.

@@ -1,0 +1,55 @@
+# FFXIV 1.0 (1.23b) action-surface names: spells, weaponskills, abilities,
+# statuses, and enemy commands. The validator's --recall pass treats these as
+# action surface (a reviewer notes them, but they are not set-findability
+# anchors), so it does not flag them as missing search_hints. Findability is by
+# NPC / enemy / zone / item name, not by ability name.
+#
+# This is a hand-seeded starter drawn from the first sets. Regenerate/extend from
+# the localized command-name strings in xivl-client-data/csv/xtx_command.csv
+# (and the status sheet) as the corpus grows. Lowercase, one name per line,
+# blank lines and # comments ignored. Absent file = no suppression.
+
+# --- Ifrit / primal commands (The Bowl of Embers) ---
+vulcan burst
+incinerate
+eruption
+crimson cyclone
+hellfire
+
+# --- player abilities / job actions ---
+aegis boon
+ambidexterity
+featherfoot
+invigorate
+outmaneuver
+rampart
+red lotus
+red lotus ii
+second wind
+shock spikes
+siphon mp
+tranquility
+war drum
+provoke
+taunt
+
+# --- weaponskills ---
+circle slash
+circle slash ii
+heavy slash
+light stab
+luminous spire
+onion cut
+spinstroke
+
+# --- spells / enfeebles / buffs ---
+aero ii
+blizzard ii
+cure ii
+curaga ii
+dia
+poison
+slow
+protect
+shell
+stoneskin

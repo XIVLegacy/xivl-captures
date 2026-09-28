@@ -1,0 +1,87 @@
+name: Checks
+
+'on':
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref || github.run_id }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    name: Repository Checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      XIVL_CORPUS_ABSENT: 1
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          lfs: true
+
+      - name: Check changed revision range
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          EVENT_BEFORE: ${{ github.event.before }}
+          EVENT_SHA: ${{ github.sha }}
+          EVENT_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          EVENT_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          case "${EVENT_NAME}" in
+            pull_request)
+              test -n "${EVENT_BASE_SHA}"
+              test -n "${EVENT_HEAD_SHA}"
+              git diff --check "${EVENT_BASE_SHA}...${EVENT_HEAD_SHA}"
+              ;;
+            push)
+              test -n "${EVENT_SHA}"
+              if test -z "${EVENT_BEFORE}" || test "${EVENT_BEFORE}" = "0000000000000000000000000000000000000000"; then
+                git diff-tree --check --root -m -r "${EVENT_SHA}"
+              elif git cat-file -e "${EVENT_BEFORE}^{commit}" 2>/dev/null; then
+                git diff --check "${EVENT_BEFORE}" "${EVENT_SHA}"
+              else
+                echo "previous revision is unavailable; checking the pushed revision"
+                git diff-tree --check --root -m -r "${EVENT_SHA}"
+              fi
+              ;;
+            workflow_dispatch)
+              test -n "${EVENT_SHA}"
+              git diff-tree --check --root -m -r "${EVENT_SHA}"
+              ;;
+            *)
+              echo "unsupported event for revision-range check: ${EVENT_NAME}" >&2
+              exit 1
+              ;;
+          esac
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: tools/requirements.txt
+
+      - name: Install Ruff
+        run: python -m pip install ruff==0.15.21
+
+      - name: Check Python lint
+        run: ruff check --no-cache tools
+
+      - name: Check Python format
+        run: ruff format --check --no-cache tools
+
+      - name: Install validator dependencies
+        run: python -m pip install -r tools/requirements.txt
+
+      - name: Run repository gate
+        run: python tools/refresh.py --check

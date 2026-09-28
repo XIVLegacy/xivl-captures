@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xivlegacy.local/xivl-captures/schemas/study.schema.json",
+  "title": "Stage-3 study manifest",
+  "description": "Validates studies/*/manifest.yaml. The validator skips this schema entirely when studies/ does not exist in the repo.",
+  "type": "object",
+  "properties": {
+    "id": { "$ref": "#/$defs/id48" },
+    "title": { "type": "string", "minLength": 1 },
+    "evidence_class": { "type": "string", "minLength": 1 },
+    "status": { "type": "string", "minLength": 1 },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source": { "type": "string", "minLength": 1 },
+          "citation": { "type": "string" }
+        },
+        "required": ["source"],
+        "additionalProperties": true
+      }
+    },
+    "primary_paths": { "type": "array", "items": { "type": "string" } },
+    "content_kind": { "type": "string" },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "search_hints": { "type": "array", "items": { "type": "string" } },
+    "zones": { "type": "array", "items": { "type": "string" } },
+    "system": { "type": "string" },
+    "city_state": { "type": "string" },
+    "grand_company": { "type": "string" },
+    "progression_track": { "type": "string" },
+    "notes": { "type": ["string", "array"] },
+    "related_implementation_docs": { "type": "array", "items": { "type": "string" } }
+  },
+  "required": ["id", "title", "evidence_class", "status", "source_refs", "primary_paths"],
+  "additionalProperties": true,
+  "$defs": {
+    "id48": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9.-]{0,47}$"
+    }
+  }
+}

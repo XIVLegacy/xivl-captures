@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xivlegacy.local/xivl-captures/schemas/dataset-meta.schema.json",
+  "title": "Dataset metadata sidecar",
+  "description": "Validates data/*.meta.yaml.",
+  "type": "object",
+  "properties": {
+    "dataset": { "$ref": "#/$defs/id48" },
+    "kind": { "enum": ["generated", "promoted", "frozen", "live_validated"] },
+    "evidence_class": { "type": "string", "minLength": 1 },
+    "schema_version": { "const": 1 },
+    "output": {
+      "type": "object",
+      "properties": {
+        "file": { "type": "string", "minLength": 1 },
+        "sha256": { "$ref": "#/$defs/sha256" }
+      },
+      "required": ["file", "sha256"],
+      "additionalProperties": true
+    },
+    "generator": {
+      "type": "object",
+      "properties": {
+        "tool": { "type": "string", "minLength": 1 },
+        "version": { "type": "string", "minLength": 1 }
+      },
+      "required": ["tool", "version"],
+      "additionalProperties": true
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "properties": {
+              "source": { "type": "string", "minLength": 1 },
+              "content_sha256": { "$ref": "#/$defs/sha256" }
+            },
+            "required": ["source", "content_sha256"],
+            "additionalProperties": true
+          },
+          {
+            "type": "object",
+            "properties": {
+              "dataset": { "type": "string", "minLength": 1 },
+              "sha256": { "$ref": "#/$defs/sha256" }
+            },
+            "required": ["dataset", "sha256"],
+            "additionalProperties": true
+          }
+        ]
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "required": ["dataset", "kind", "evidence_class", "schema_version", "output"],
+  "additionalProperties": true,
+  "allOf": [
+    {
+      "if": { "properties": { "kind": { "const": "generated" } } },
+      "then": { "required": ["generator", "inputs"] }
+    },
+    {
+      "if": { "properties": { "kind": { "const": "promoted" } } },
+      "then": {
+        "properties": {
+          "provenance": {
+            "type": "object",
+            "properties": {
+              "citation": { "type": "string", "minLength": 1 }
+            },
+            "required": ["citation"]
+          }
+        },
+        "required": ["provenance"]
+      }
+    },
+    {
+      "if": { "properties": { "kind": { "const": "frozen" } } },
+      "then": {
+        "properties": {
+          "provenance": {
+            "type": "object",
+            "properties": {
+              "note": { "type": "string", "minLength": 1 }
+            },
+            "required": ["note"]
+          }
+        },
+        "required": ["provenance"]
+      }
+    }
+  ],
+  "$defs": {
+    "id48": {
+      "type": "string",
+      "description": "Dataset ids match data/*.json filenames (snake_case), so unlike source/study ids this allows underscores.",
+      "pattern": "^[a-z0-9][a-z0-9_.-]{0,47}$"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}

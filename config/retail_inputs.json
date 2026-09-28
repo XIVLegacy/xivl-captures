@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "inputs": [
+    {
+      "id": "pcap-corpus-1.23b",
+      "filename": "pcap-1.23b-objects.zip",
+      "size": 2622720,
+      "sha256": "20a78b9f40ff2393037c9a160c957783cf590b4f01797493d22fcd2039e9cbff",
+      "source": {
+        "repository": "XIVLegacy/xivl-private-assets",
+        "commit": "aeb52f6dbde95a793ee6d52be28de9f28a885b15",
+        "path": "captures/pcap-1.23b/pcap-1.23b-objects.zip"
+      },
+      "archive": {
+        "member_count": 54,
+        "uncompressed_size": 7242352,
+        "suffix": ".pcapng"
+      },
+      "allowed_checks": [
+        "pcap-1.23b-products-v1"
+      ]
+    }
+  ]
+}
