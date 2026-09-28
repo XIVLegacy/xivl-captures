@@ -1,0 +1,44 @@
+id: primal-battle-ifrit-bowl-of-embers
+title: The Bowl of Embers (Ifrit) - Video Breakdown
+evidence_class: notes-and-transcripts
+status: distilled
+content_kind: primal-battle
+zones:
+- the bowl of embers
+system: instanced-content
+tags:
+- video-breakdown
+- primal
+- ifrit
+- infernal-nail
+- damage-tuning
+search_hints:
+- ifrit
+- the bowl of embers
+- bowl of embers
+- primal
+- vulcan burst
+- incinerate
+- eruption
+- crimson cyclone
+- hellfire
+- infernal nail
+- conjurer
+- siphon mp
+- aegis boon
+- outmaneuver
+- featherfoot
+- video breakdown
+- damage tuning
+notes: 'Retail 1.x video observations from vidssave.com FFXIV 1.0 Ifrit fight 1080P.mp4 (~12:40), covering the Ifrit encounter in The Bowl of Embers from a level-30 Conjurer in a four-player Light Party. Character names are generalized to roles. No packet set covers this encounter, so derived/evidence-map.md verifies the observations against retail client strings. Vulcan Burst, Incinerate, Eruption, Crimson Cyclone, Hellfire, and Infernal Nail all resolve to 1.23b strings. The video additionally records damage and recovery magnitudes, Siphon MP drain, and fight pacing. The source video is not archived.'
+related_implementation_docs: []
+source_refs:
+- source: primal-battle-ifrit-bowl-of-embers
+primary_paths:
+- derived/evidence-map.md
+canonical_evidence:
+- derived/evidence-map.md
+distilled:
+  distilled: true
+  distilled_artifacts:
+  - derived/evidence-map.md

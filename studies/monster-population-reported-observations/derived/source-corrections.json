@@ -1,0 +1,56 @@
+[
+  {
+    "field": "posX",
+    "before": "-341.583",
+    "after": "-329.000",
+    "source_locator": "server_battlenpc_spawn_locations.sql:6654",
+    "verdict": "authored correction; not a retail measurement",
+    "reported_unique_id": "map_2f3df3e2ff32b1db2f4d7560",
+    "observation_id": "placement-005489"
+  },
+  {
+    "field": "posY",
+    "before": "91.925",
+    "after": "92.000",
+    "source_locator": "server_battlenpc_spawn_locations.sql:6654",
+    "verdict": "authored correction; not a retail measurement",
+    "reported_unique_id": "map_2f3df3e2ff32b1db2f4d7560",
+    "observation_id": "placement-005489"
+  },
+  {
+    "field": "posZ",
+    "before": "113.226",
+    "after": "122.000",
+    "source_locator": "server_battlenpc_spawn_locations.sql:6654",
+    "verdict": "authored correction; not a retail measurement",
+    "reported_unique_id": "map_2f3df3e2ff32b1db2f4d7560",
+    "observation_id": "placement-005489"
+  },
+  {
+    "field": "posX",
+    "before": "-294.741",
+    "after": "-310.000",
+    "source_locator": "server_battlenpc_spawn_locations.sql:6655",
+    "verdict": "authored correction; not a retail measurement",
+    "reported_unique_id": "map_7bd5f11fe1a3f9fc4b414c9d",
+    "observation_id": "placement-005954"
+  },
+  {
+    "field": "posY",
+    "before": "92.633",
+    "after": "92.000",
+    "source_locator": "server_battlenpc_spawn_locations.sql:6655",
+    "verdict": "authored correction; not a retail measurement",
+    "reported_unique_id": "map_7bd5f11fe1a3f9fc4b414c9d",
+    "observation_id": "placement-005954"
+  },
+  {
+    "field": "posZ",
+    "before": "145.990",
+    "after": "135.000",
+    "source_locator": "server_battlenpc_spawn_locations.sql:6655",
+    "verdict": "authored correction; not a retail measurement",
+    "reported_unique_id": "map_7bd5f11fe1a3f9fc4b414c9d",
+    "observation_id": "placement-005954"
+  }
+]

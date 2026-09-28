@@ -1,0 +1,52 @@
+id: monster-population-reported-observations
+title: Monster Population Reported Observations
+evidence_class: historical-research
+distribution: restricted
+provenance:
+  contributor: AuroraFlare (supplied compilation; individual observation authorship
+    unresolved)
+  identity_basis: Pinned supplied files; associated revision is reported metadata,
+    not locally verified Git ancestry.
+  rights: Source license and notices are retained with restricted originals. No source
+    code is reproduced. Extracted factual records do not assert a new license for
+    source material.
+  observation_basis: Contributor-reported video observation; underlying videos and
+    per-row time ranges unavailable. Source comments also identify authored habitats
+    and generated offsets.
+  restricted_record:
+    path: archives/monster-population-reported-observations/intake-provenance.json
+    sha256: eea2e570278e80dbeb86ecf22658c34d00c68cd5ca27a5809f60aa77e06445a3
+  source_license: GNU Affero General Public License version 3; original license retained
+    as LICENSE.md. Source material is not relicensed.
+storage:
+  original_state: in-repo
+  storage_id: repo
+  path: objects/
+members:
+- file: BattleNpc.cs
+  sha256: 12eec5c6b716f4fd228841383fa826a581783e42456e695037a874c34c066678
+  size_bytes: 236031
+- file: LICENSE.md
+  sha256: 20b067f86de375aae6db0f283ab2e65de24d537733b89bd58432c101259d84cf
+  size_bytes: 34522
+- file: NM guessed HP per level.md
+  sha256: 101e1d5c2b4639aea971d9635dffd7556984dbe4b75f0712e98b154e17da7ede
+  size_bytes: 13095
+- file: server_battlenpc_mob_types.sql
+  sha256: a56220485d22cb003a44f48eb4ff61288e65059b67a1efffb9acae4e3673cc75
+  size_bytes: 705763
+- file: server_battlenpc_nm_spawn_locations.sql
+  sha256: 0437fa103e8d3669537786b397048775cdc43784d511a0d4b700a4bc6d427f24
+  size_bytes: 77679
+- file: server_battlenpc_spawn_conditions.sql
+  sha256: ac2083d7c69377ff5a0d5516a946e8fa14261d042fcd607a2d8aaadb30226871
+  size_bytes: 5305
+- file: server_battlenpc_spawn_locations.sql
+  sha256: 149aa117f031e213152ad14b382d30a62ac7857f7f1ea390286636f383245bf3
+  size_bytes: 1067556
+- file: server_battlenpc_stale_spawn_cleanup.sql
+  sha256: 83d17c3471944c7ba98fdd66490b410c035be2a5cdb7348dfd4efc6d07c3d7ee
+  size_bytes: 586
+notes: Restricted originals preserve full provenance and existing rights. Public rows
+  retain source identity without granting retail-measurement status. Model material
+  is excluded from placement measurements.

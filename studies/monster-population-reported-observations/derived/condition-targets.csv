@@ -1,0 +1,17 @@
+condition_id,observation_id,verdict
+1,placement-007910,supplied-key-match; not a retail rule
+2,placement-007918,supplied-key-match; not a retail rule
+2,placement-007926,supplied-key-match; not a retail rule
+2,placement-007934,supplied-key-match; not a retail rule
+3,placement-007838,supplied-key-match; not a retail rule
+4,placement-007846,supplied-key-match; not a retail rule
+5,placement-007854,supplied-key-match; not a retail rule
+5,placement-007862,supplied-key-match; not a retail rule
+6,placement-007334,supplied-key-match; not a retail rule
+7,placement-007342,supplied-key-match; not a retail rule
+8,placement-007350,supplied-key-match; not a retail rule
+9,placement-007358,supplied-key-match; not a retail rule
+10,placement-007366,supplied-key-match; not a retail rule
+11,placement-007302,supplied-key-match; not a retail rule
+11,placement-007310,supplied-key-match; not a retail rule
+12,placement-007318,supplied-key-match; not a retail rule

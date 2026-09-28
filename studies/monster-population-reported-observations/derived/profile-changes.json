@@ -1,0 +1,4223 @@
+[
+  {
+    "profile_id": "1003",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1004",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1006",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1008",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1009",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1012",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1013",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1016",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1017",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1021",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1023",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1024",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1025",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1028",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1032",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1035",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1037",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1042",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1044",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1050",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1054",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1056",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1057",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1066",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1067",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1073",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1075",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1076",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1081",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1084",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1085",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1086",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1087",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1088",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1089",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1090",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1091",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1092",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1093",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1094",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1095",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1096",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1097",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1098",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1111",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1115",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1116",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1121",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1122",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1125",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1127",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1128",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1139",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1142",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1143",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1144",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1145",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1148",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1150",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1151",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1152",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1155",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1156",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1158",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1159",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1161",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1162",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1168",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1169",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1170",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1171",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1172",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1176",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1180",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1183",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1184",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1185",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1186",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1187",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1188",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1189",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1190",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1191",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1192",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1193",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1194",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1197",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1200",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1206",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1213",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1217",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1218",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1219",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1220",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1222",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1224",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1226",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1228",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1229",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1231",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1238",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1242",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1244",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1251",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1256",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1258",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1261",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1263",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1266",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1268",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1269",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1282",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1286",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1290",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1291",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1297",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1298",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1302",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1307",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1312",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1316",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1320",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1324",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1327",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1329",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1330",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1332",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1333",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1335",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1337",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1338",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1343",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1347",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1349",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1350",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1351",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1353",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1354",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1371",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1372",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1373",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1375",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1376",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1377",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1378",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1379",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1387",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1389",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1390",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1391",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1392",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1394",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1395",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1396",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1397",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "3003",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "3004",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "3009",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "3011",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "3013",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "3017",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "3018",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "3021",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "3043",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "3045",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "3051",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "3054",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "3063",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "3065",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "3071",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "3072",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "3077",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "3078",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "3086",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "3087",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "3097",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "3098",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "3100",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "3110",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "3111",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "3118",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "3119",
+    "field": "elemenRangedAttack",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:838"
+  },
+  {
+    "profile_id": "1119",
+    "field": "elemenAutoAttackMode",
+    "before": "0",
+    "after": "2",
+    "source_locator": "server_battlenpc_mob_types.sql:844"
+  },
+  {
+    "profile_id": "1124",
+    "field": "elemenAutoAttackMode",
+    "before": "0",
+    "after": "2",
+    "source_locator": "server_battlenpc_mob_types.sql:844"
+  },
+  {
+    "profile_id": "1201",
+    "field": "elemenAutoAttackMode",
+    "before": "0",
+    "after": "2",
+    "source_locator": "server_battlenpc_mob_types.sql:844"
+  },
+  {
+    "profile_id": "1210",
+    "field": "elemenAutoAttackMode",
+    "before": "0",
+    "after": "2",
+    "source_locator": "server_battlenpc_mob_types.sql:844"
+  },
+  {
+    "profile_id": "1236",
+    "field": "elemenAutoAttackMode",
+    "before": "0",
+    "after": "2",
+    "source_locator": "server_battlenpc_mob_types.sql:844"
+  },
+  {
+    "profile_id": "3045",
+    "field": "elemenAutoAttackMode",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:844"
+  },
+  {
+    "profile_id": "3003",
+    "field": "respawnTime",
+    "before": "60",
+    "after": "300",
+    "source_locator": "server_battlenpc_mob_types.sql:859"
+  },
+  {
+    "profile_id": "3004",
+    "field": "respawnTime",
+    "before": "60",
+    "after": "300",
+    "source_locator": "server_battlenpc_mob_types.sql:859"
+  },
+  {
+    "profile_id": "3009",
+    "field": "respawnTime",
+    "before": "60",
+    "after": "300",
+    "source_locator": "server_battlenpc_mob_types.sql:859"
+  },
+  {
+    "profile_id": "3011",
+    "field": "respawnTime",
+    "before": "60",
+    "after": "300",
+    "source_locator": "server_battlenpc_mob_types.sql:859"
+  },
+  {
+    "profile_id": "3013",
+    "field": "respawnTime",
+    "before": "60",
+    "after": "300",
+    "source_locator": "server_battlenpc_mob_types.sql:859"
+  },
+  {
+    "profile_id": "3043",
+    "field": "respawnTime",
+    "before": "60",
+    "after": "300",
+    "source_locator": "server_battlenpc_mob_types.sql:859"
+  },
+  {
+    "profile_id": "3051",
+    "field": "respawnTime",
+    "before": "60",
+    "after": "300",
+    "source_locator": "server_battlenpc_mob_types.sql:859"
+  },
+  {
+    "profile_id": "3063",
+    "field": "respawnTime",
+    "before": "60",
+    "after": "300",
+    "source_locator": "server_battlenpc_mob_types.sql:859"
+  },
+  {
+    "profile_id": "3065",
+    "field": "respawnTime",
+    "before": "60",
+    "after": "300",
+    "source_locator": "server_battlenpc_mob_types.sql:859"
+  },
+  {
+    "profile_id": "3077",
+    "field": "respawnTime",
+    "before": "60",
+    "after": "300",
+    "source_locator": "server_battlenpc_mob_types.sql:859"
+  },
+  {
+    "profile_id": "3078",
+    "field": "respawnTime",
+    "before": "60",
+    "after": "300",
+    "source_locator": "server_battlenpc_mob_types.sql:859"
+  },
+  {
+    "profile_id": "3086",
+    "field": "respawnTime",
+    "before": "60",
+    "after": "300",
+    "source_locator": "server_battlenpc_mob_types.sql:859"
+  },
+  {
+    "profile_id": "3087",
+    "field": "respawnTime",
+    "before": "60",
+    "after": "300",
+    "source_locator": "server_battlenpc_mob_types.sql:859"
+  },
+  {
+    "profile_id": "3098",
+    "field": "respawnTime",
+    "before": "60",
+    "after": "300",
+    "source_locator": "server_battlenpc_mob_types.sql:859"
+  },
+  {
+    "profile_id": "3100",
+    "field": "respawnTime",
+    "before": "60",
+    "after": "300",
+    "source_locator": "server_battlenpc_mob_types.sql:859"
+  },
+  {
+    "profile_id": "3111",
+    "field": "respawnTime",
+    "before": "60",
+    "after": "300",
+    "source_locator": "server_battlenpc_mob_types.sql:859"
+  },
+  {
+    "profile_id": "3118",
+    "field": "respawnTime",
+    "before": "60",
+    "after": "300",
+    "source_locator": "server_battlenpc_mob_types.sql:859"
+  },
+  {
+    "profile_id": "3119",
+    "field": "respawnTime",
+    "before": "60",
+    "after": "300",
+    "source_locator": "server_battlenpc_mob_types.sql:859"
+  },
+  {
+    "profile_id": "1000",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1001",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1002",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1003",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1004",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1005",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1006",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1007",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1008",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1009",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1010",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1011",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1012",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1013",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1014",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1015",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1016",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1017",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1018",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1019",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1020",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1021",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1022",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1023",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1024",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1025",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1026",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1027",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1028",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1029",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1030",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1031",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1032",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1034",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1035",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1036",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1037",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1042",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1043",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1044",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1045",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1046",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1047",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1048",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1049",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1050",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1051",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1052",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1053",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1054",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1055",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1056",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1057",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1058",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1059",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1060",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1061",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1062",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1063",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1064",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1065",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1066",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1067",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1068",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1069",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1070",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1072",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1073",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1074",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1075",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1076",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1077",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1078",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1079",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1080",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1081",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1082",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1083",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1084",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1085",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1086",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1087",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1088",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1089",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1090",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1091",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1092",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1093",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1094",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1095",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1096",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1097",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1098",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1111",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1112",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1113",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1114",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1115",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1116",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1117",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1118",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1119",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1120",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1121",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1122",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1123",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1124",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1125",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1126",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1127",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1128",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1129",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1130",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1131",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1132",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1133",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1134",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1135",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1136",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1137",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1138",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1139",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1140",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1141",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1142",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1143",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1144",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1145",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1146",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1147",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1148",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1149",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1150",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1151",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1152",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1153",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1154",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1155",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1156",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1157",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1158",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1159",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1160",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1161",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1162",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1163",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1164",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1165",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1168",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1169",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1170",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1171",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1172",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1173",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1174",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1175",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1176",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1177",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1178",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1179",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1180",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1181",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1182",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1183",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1184",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1185",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1186",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1187",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1188",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1189",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1190",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1191",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1192",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1193",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1194",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1195",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1196",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1197",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1198",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1199",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1200",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1201",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1202",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1203",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1204",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1205",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1206",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1207",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1208",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1209",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1210",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1211",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1212",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1213",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1214",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1215",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1216",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1217",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1218",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1219",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1220",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1221",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1222",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1223",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1224",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1225",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1226",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1227",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1228",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1229",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1230",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1231",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1232",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1233",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1234",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1235",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1236",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1237",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1238",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1239",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1240",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1241",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1242",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1243",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1244",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1245",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1246",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1247",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1248",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1249",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1250",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1251",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1252",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1253",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1254",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1255",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1256",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1257",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1258",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1259",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1260",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1261",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1262",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1263",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1264",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1265",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1266",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1267",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1268",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1269",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1270",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1271",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1272",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1273",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1274",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1275",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1276",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1277",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1278",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1279",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1280",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1281",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1282",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1283",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1284",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1285",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1286",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1287",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1288",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1289",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1290",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1291",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1292",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1293",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1294",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1295",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1296",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1297",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1298",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1299",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1300",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1301",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1302",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1303",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1304",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1306",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1307",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1308",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1309",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1310",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1311",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1312",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1313",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1314",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1315",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1316",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1317",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1318",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1319",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1320",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1321",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1322",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1323",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1324",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1325",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1326",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1327",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1328",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1329",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1330",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1331",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1332",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1333",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1334",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1335",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1336",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1337",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1338",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1339",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1340",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1341",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1342",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1343",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1344",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1345",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1346",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1347",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1348",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1349",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1350",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1351",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1352",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1353",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1354",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1355",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1356",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1357",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1370",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1371",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1372",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1373",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1374",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1375",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1376",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1377",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1378",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1379",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1380",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1381",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1382",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1383",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1384",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1385",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1386",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1387",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1388",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1389",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1390",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1391",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1392",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1393",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1394",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1395",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1396",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "1397",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "3003",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "3004",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "3009",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "3011",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "3013",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "3017",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "3018",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "3021",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "3043",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "3045",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "3051",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "3054",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "3063",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "3065",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "3071",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "3072",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "3077",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "3078",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "3086",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "3087",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "3097",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "3098",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "3100",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "3110",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "3111",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "3118",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "32708",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "32709",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "3119",
+    "field": "detectionRange",
+    "before": "10",
+    "after": "15",
+    "source_locator": "server_battlenpc_mob_types.sql:888"
+  },
+  {
+    "profile_id": "3119",
+    "field": "detectionType",
+    "before": "0",
+    "after": "1",
+    "source_locator": "server_battlenpc_mob_types.sql:1280"
+  },
+  {
+    "profile_id": "3119",
+    "field": "hpMax",
+    "before": "0",
+    "after": "18540",
+    "source_locator": "server_battlenpc_mob_types.sql:1280"
+  },
+  {
+    "profile_id": "3119",
+    "field": "mpMax",
+    "before": "0",
+    "after": "928",
+    "source_locator": "server_battlenpc_mob_types.sql:1280"
+  }
+]

@@ -1,0 +1,28 @@
+id: monster-population-reported-observations
+title: Monster Population Reported Observations
+evidence_class: historical-research
+status: indexed
+content_kind: zone-mechanic
+tags:
+- world-population
+- reported-observations
+- provisional
+- unresolved-identities
+source_refs:
+- source: monster-population-reported-observations
+primary_paths:
+- derived/evidence-map.md
+- derived/observations.csv
+- derived/accounting.json
+- derived/stat-model-assessment.md
+canonical_evidence:
+- derived/evidence-map.md
+- derived/observations.csv
+distilled:
+  checksum_file: derived/checksums.sha256
+notes: >-
+  Historical reported records, including explicitly authored habitats and
+  generated companion offsets. No row is promoted to a corroborated retail
+  placement. Resource values and the reported empirical model are separate
+  from placement observations. Source patch and underlying video locators
+  remain unresolved.

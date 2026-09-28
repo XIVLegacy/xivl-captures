@@ -1,0 +1,13 @@
+condition_id,source_line,targetType,targetKey,requiredWeatherIds,eorzeaStartHour,eorzeaEndHour,eorzeaDayMask,requiredKillBnpcId,requiredKillUniqueId,requiredKillCount,killWindowSeconds,despawnOnConditionLoss,conditionLossDespawnGraceSeconds,enabled,note,verdict
+1,52,bnpcId,3017,8017,,,0,0,,0,0,0,0,1,eLeMeN NM archive: Dodore appears only while the weather is Gloom.,reported-condition; retail-unverified
+2,53,bnpcId,3018,8017,,,0,0,,0,0,0,0,1,eLeMeN NM archive: all three Dodore minions use the boss Gloom eligibility.,reported-condition; retail-unverified
+3,54,bnpcId,3021,,8,20,0,0,,0,0,0,0,1,eLeMeN NM archive: Elder Mosshorn appears from 08:00 through 20:00 Eorzea time.,reported-condition; retail-unverified
+4,55,bnpcId,3071,,8,20,0,0,,0,0,0,0,1,eLeMeN NM archive: Elder Mosshorn's one Billy uses the boss daytime eligibility.,reported-condition; retail-unverified
+5,56,bnpcId,3072,,8,20,0,0,,0,0,0,0,1,eLeMeN NM archive: Elder Mosshorn's two Nannies use the boss daytime eligibility.,reported-condition; retail-unverified
+6,57,bnpcId,3054,,8,20,0,0,,0,0,0,0,1,eLeMeN NM archive: Haughtpox Bloatbelly appears from 08:00 through 20:00 Eorzea time.,reported-condition; retail-unverified
+7,58,uniqueId,nm_goblin_braggadocio_152_1,,8,20,0,0,,0,0,0,0,1,eLeMeN NM archive: Haughtpox party Braggadocio uses the boss daytime eligibility.,reported-condition; retail-unverified
+8,59,uniqueId,nm_goblin_braggadocio_152_2,,8,20,0,0,,0,0,0,0,1,eLeMeN NM archive: Haughtpox party Braggadocio uses the boss daytime eligibility.,reported-condition; retail-unverified
+9,60,uniqueId,nm_goblin_bouncer_152_1,,8,20,0,0,,0,0,0,0,1,eLeMeN NM archive: Haughtpox party Bouncer uses the boss daytime eligibility.,reported-condition; retail-unverified
+10,61,uniqueId,nm_goblin_bouncer_152_2,,8,20,0,0,,0,0,0,0,1,eLeMeN NM archive: Haughtpox party Bouncer uses the boss daytime eligibility.,reported-condition; retail-unverified
+11,62,bnpcId,3045,,8,20,0,0,,0,0,0,0,1,eLeMeN NM archive: Great Buffalo appears from 08:00 through 20:00 Eorzea time.,reported-condition; retail-unverified
+12,63,bnpcId,3110,,20,8,0,0,,0,0,0,0,1,eLeMeN NM archive: Uraeus appears from 20:00 through 08:00 Eorzea time.,reported-condition; retail-unverified
