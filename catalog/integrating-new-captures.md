@@ -8,6 +8,8 @@ scenario, including damage magnitudes, heal amounts, timing/pacing, and visual
 state. A matching packet scenario can carry some of these values, so compare
 the sources rather than treating any field as video-only.
 
+For web material, use [Web-Source Reference Intake](#web-source-reference-intake).
+
 ## Goal
 
 Each new breakdown receives a stable id, with the raw document preserved under
@@ -72,9 +74,9 @@ id names both halves of an evidence bundle: `sources/<id>/` (the original) and
 
 Good examples:
 
-- `primal-battle-ifrit-bowl-of-embers-video-breakdown`
-- `behest-camp-bearded-rock-lower-la-noscea-video-breakdown`
-- `hamlet-defense-aleport-wave-structure-video-breakdown`
+- `primal-battle-ifrit-video-breakdown`
+- `behest-camp-bearded-rock-video-breakdown`
+- `hamlet-defense-aleport-video-breakdown`
 
 Rules:
 
@@ -265,8 +267,8 @@ Verification checklist:
 A video breakdown is a distinct evidence class with its own tier rule:
 
 **Packet captures > video breakdown > wiki.** Where a breakdown disagrees with a
-packet source (`xivl-opcodes`), the packets win. Where it disagrees with the
-decoded client data (`xivl-client-data`), the client data wins. A breakdown can
+retained packet source in `xivl-captures`, the packets win. Where it disagrees
+with the decoded client data (`xivl-client-data`), the client data wins. A breakdown can
 add damage magnitudes, heal amounts, timing/pacing, and visual state when the
 matching retained packet scenario does not contain them; a packet may still
 carry some of those values.
@@ -280,8 +282,8 @@ In this repo, the pcap corpus covers a fixed set of scenario families, so a
 breakdown's content often has no packet counterpart. So in practice the
 verification that actually runs is step 1 (dialogue vs the client strings)
 and the client-data half of step 2; the packet diff is a bonus for the
-uncommon case where a matching `xivl-opcodes` capture is on hand. The
-decoded client data is the everyday source of truth here.
+uncommon case where a matching retained `xivl-captures` source or study is
+available. The decoded client data is the everyday source of truth here.
 
 Run this checklist at intake, BEFORE marking the study `distilled`, and record
 the verdicts in `studies/<id>/derived/evidence-map.md`:
@@ -297,8 +299,9 @@ the verdicts in `studies/<id>/derived/evidence-map.md`:
    ability / TP move). Cross-check every action name against
    `xivl-client-data/csv/xtx_command.csv` (the localized command-name strings;
    the numeric `command.csv` sheet carries the action data but not the display
-   names); a name with no row is misread or ARR-era. If a `xivl-opcodes` packet
-   capture exists for the same content, diff the breakdown's action names against
+   names); a name with no row is misread or ARR-era. If a retained
+   `xivl-captures` source or study covers the same content, diff the breakdown's
+   action names against
    it - "begins casting X" vs "readies X" confusions and ARR-name substitutions
    are the most common errors. Grade a claim contradicted only when packet
    evidence positively conflicts (the same logged moment shows a different
@@ -383,3 +386,41 @@ Optional facets (`system`, `city_state`, `grand_company`, `progression_track`,
 - Large originals belong in cold storage after distillation.
 - Downstream consumers promote durable conclusions on their own side with
   immutable citations to this repo's evidence ids and verdicts.
+
+## Web-Source Reference Intake
+
+Use the source and study contracts in [Catalog and Evidence](../docs/catalog-guide.md).
+The video naming convention, transcript checks, and single-document assumptions
+above do not apply to a web-source collection.
+
+1. Define the question and reuse an existing source identity when its scope
+   still fits. Select the evidence class from
+   [the registry](../schemas/evidence-classes.yaml). Record whether the source is
+   official documentation, a community table, or secondary analysis in its
+   provenance. Archiving a page does not promote its evidence tier.
+2. Record each claim's original URL and useful page, section, or table locator.
+   Preserve available revision IDs, publication or revision dates, and archived
+   page identities. Distinguish those dates from saved-page timestamps. A
+   site-level archive URL does not establish a snapshot of every cited page.
+   State unavailable source identity rather than inventing a revision.
+3. Preserve originals without rewriting them. Apply Step 10's distribution and
+   storage rules before retaining bytes. The source manifest owns provenance,
+   storage, member names, sizes, and hashes; an embedded member inventory needs
+   its own digest. Private retention requires explicit owner approval and
+   grants no workflow or credential permission. Do not place restricted page
+   bodies or archives in the public tree.
+4. Give the study a README, manifest, and the smallest useful derived product.
+   Its `source_refs` identify the actual source sets, and its `primary_paths`
+   resolve to the recorded analysis. Keep table row and column locators, units,
+   literal values, and uncertainty with each extracted claim. Distinguish
+   transcription from interpretation; source prose is not a research verdict.
+5. Check version and claim scope against the relevant retained retail evidence.
+   Keep later revisions, conflicting localizations, and unsupported mechanics
+   explicit. A matching name alone does not establish a client identifier or
+   runtime behavior. Record positive contradictions separately from absence in
+   a bounded capture or table sample.
+6. Regenerate affected catalog views through their owning tools after an
+   intentional source or study change, then run `python tools/refresh.py --check`.
+   Use `--public-shape` when restricted originals are unavailable, and state
+   that their bytes were not checked. Verify retrieved private archives and
+   complete member identities separately before using them as evidence.

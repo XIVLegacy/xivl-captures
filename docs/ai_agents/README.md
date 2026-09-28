@@ -5,9 +5,11 @@ the contributor is a human or an agent. The contributor owns the change and
 must be able to explain its evidence and scope.
 
 This repository records retail-observation evidence. Agent output, summaries,
-search results, and uncited notes are leads, not evidence. Start with the
-[public docs index](../README.md), the [catalog
-guide](../catalog-guide.md), and the [catalog registry](../../catalog/index.yaml).
+search results, and uncited notes are leads, not evidence. Start with:
+
+- [public docs index](../README.md)
+- [catalog guide](../catalog-guide.md)
+- [catalog registry](../../catalog/index.yaml)
 
 ## Contribution policy
 
