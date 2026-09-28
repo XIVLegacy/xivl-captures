@@ -1,0 +1,7 @@
+effect_jp,effect_en,trigger_jp,example_jp,source
+物理耐性の緩和,physical resistance reduced,通常攻撃 → 通常攻撃,（ライトスラッシュ → 正拳など）,class/battle/index.html
+魔法耐性の緩和,magic resistance reduced,通常攻撃 → 通常魔法攻撃,（ライトスラッシュ → ファントムダートなど）,class/battle/index.html
+詠唱速度ダウン＆消費ＭＰアップ,cast speed down & MP cost up,通常攻撃 → 魔法,（ライトスラッシュ → ファイアなど）,class/battle/index.html
+ＴＰ上昇抑制＆消費ＴＰアップ,TP gain suppressed & TP cost up,通常攻撃 → ＷＳ,（ライトスラッシュ → レッドロータスなど）,class/battle/index.html
+行動適正アップ,action proficiency up,同じクラスの魔法 → 魔法 / 同じクラスのＷＳ → ＷＳ,（丸太割り → ブランディッシュなど）,class/battle/index.html
+ダメージアップ,damage up,異なるクラスのＷＳ → ＷＳ → 魔法 / 異なるクラスの魔法 → 魔法 → ＷＳ,（ブリザド → スカージ → パンクチャーなど）,class/battle/index.html

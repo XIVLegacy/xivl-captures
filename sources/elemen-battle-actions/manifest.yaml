@@ -1,0 +1,54 @@
+id: elemen-battle-actions
+title: eLeMeN FF14 1.x Battle Class Actions - Web Tables
+evidence_class: web-tables
+distribution: restricted
+provenance:
+  sources:
+  - title: class/action index (job/action equip rules)
+    url: http://elemen.sakura.ne.jp/ff14_dated_archives/class/action/index.html
+    site: eLeMeN - FF14
+  - title: 7 battle-class action pages (patch2.00 = final 1.x snapshot)
+    url: http://elemen.sakura.ne.jp/ff14_dated_archives/class/action/~patch2.00_{Gladiator,Pugilist,Marauder,Lancer,Archer,Conjurer,Thaumaturge}.html
+    site: eLeMeN - FF14
+    note: Per-page source path is in derived/file-inventory.csv (source_page column); source HTML preserved in elemen-site-archive.
+  - title: 'class/battle (付加効果を持つ戦術: part-damage map + Battle Regimen)'
+    url: http://elemen.sakura.ne.jp/ff14_dated_archives/class/battle/index.html
+    site: eLeMeN - FF14
+storage:
+  original_state: in-repo
+  storage_id: repo
+  path: objects/
+  master_archive:
+    file: elemen-battle-actions-objects.zip
+    sha256: 399bbcb89c67adf6b9706e2569f60075080072bbb7de839e841abe0f76aa57d2
+    size_bytes: 17725
+    holds: all 9 files under objects/, deflate, fixed timestamps
+    cold_store_path: archives/elemen-battle-actions/elemen-battle-actions-objects.zip
+members:
+- file: pages/Archer.md
+  sha256: 6d484bee10f3dfa90c0d539d74d1b46a391499bd015bdbb87e0c15f9e0d3727e
+  size_bytes: 6768
+- file: pages/Conjurer.md
+  sha256: 033c1cb0c106202a0dbbb16e4ac1b995db9c17a1bbf49d8d321423a312f03ef7
+  size_bytes: 5473
+- file: pages/Gladiator.md
+  sha256: 599c8df76539c8026669e35f8a1aea6971f839bb17d00cfdf4374026a72cbc31
+  size_bytes: 6694
+- file: pages/Lancer.md
+  sha256: 2937c137ed3ced0136a637133c5c972f4b29e6f8260cd0a1479b2a9a9d704a03
+  size_bytes: 6620
+- file: pages/Marauder.md
+  sha256: 8da543b8699a8781e3f32d078c6bd8274264f7796079a1248beadc9d847fb54a
+  size_bytes: 6767
+- file: pages/Pugilist.md
+  sha256: ef0299edf8f28e8c325edc6d275b2c36bb7244f2686a38084cdccd9603d4a243
+  size_bytes: 6598
+- file: pages/Thaumaturge.md
+  sha256: 295e5ee357cc8fe600bcc4db77eceb462cdf30d359c28e8dee4317f800b2b84e
+  size_bytes: 5643
+- file: pages/_action_index.md
+  sha256: c3b2ec84f7564d53d75d5a37db953422256eac223a3e4563a9482537d837937d
+  size_bytes: 3065
+- file: pages/_battle_tactics.md
+  sha256: e02e328ce5f7d1d76cf09e0215f263dafa779732d8e97391b1644778a505f3a5
+  size_bytes: 1865

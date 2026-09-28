@@ -1,0 +1,27 @@
+low_actor_id,high_actor_id,variant_distance,client_race_id,client_race_name,low_name_id,low_display_name,high_name_id,high_display_name,same_displayed_name
+2100201,2100205,4,1002,Raptor,3100205,anole,3100201,grass raptor,0
+2100202,2100206,4,1002,Raptor,3100206,anole,3100202,grass raptor,0
+2100203,2100207,4,1002,Raptor,3100207,lindwurm,3100203,velociraptor,0
+2100204,2100208,4,1002,Raptor,3100208,lindwurm,3100204,velociraptor,0
+2100209,2100210,1,1002,Raptor,3100210,lindwurm,3100209,velociraptor,0
+2100509,2100511,2,1005,Opo-opo,3100511,popoto-opoto,3100509,galago,0
+2100510,2100512,2,1005,Opo-opo,3100512,jackanapes,3100510,lemur,0
+2100609,2100611,2,1006,Gnat,3100611,gnawing gnat,3100609,gnat,0
+2100610,2100612,2,1006,Gnat,3100612,Prince of Pestilence,3100610,ked,0
+2101609,2101611,2,1016,Bomb,3101611,bomb ember,3101609,bomb,0
+2101610,2101612,2,1016,Bomb,3101612,bomb baron,3101610,grenade,0
+2101815,2101817,2,1018,Zombie,3101817,dapper cadaver,3101815,zombie,0
+2101816,2101818,2,1018,Zombie,3101818,dapper cadaver,3101816,zombie,0
+2101908,2101909,1,1019,Wight,3101909,wandering wight,3101908,wight,0
+2102009,2102011,2,1020,Cockatrice,3102011,stuffed dodo,3102009,dodo,0
+2102010,2102012,2,1020,Cockatrice,3102012,Gluttonous Gertrude,3102010,cockatrice,0
+2102717,2102719,2,1027,Flytrap,3102719,musk roseling,3102717,roseling,0
+2102718,2102720,2,1027,Flytrap,3102720,Barometz,3102718,landtrap,0
+2106311,2106312,1,1063,Qiqirn,3106312,Kokoroon Quickfingers,3106311,Qiqirn mercenary,0
+2107613,2107615,2,1076,Crab,3107615,beryl crab,3107613,crab,0
+2107614,2107616,2,1076,Crab,3107616,Old Six-arms,3107614,snipper,0
+2200203,2200204,1,1002,Raptor,3200204,lindwurm,3200203,velociraptor,0
+2206302,2206303,1,1063,Qiqirn,3206303,Longnose Gnognoroon,3206302,Qiqirn goon,0
+2206402,2206403,1,1064,Ixal,3206403,Natali Xlotl the Howler,3206402,Ixali bombardier,0
+2206603,2206604,1,1066,Kobold,3206604,kobold,3206603,kobold,1
+2208904,2208905,1,1089,Golem (1.2),3208905,lunar golem,3208904,stone golem,0

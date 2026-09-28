@@ -1,0 +1,36 @@
+id: elemen-quest-rewards-walkthroughs
+title: eLeMeN FF14 1.x Quest EXP Rewards and Walkthroughs - Web Tables
+evidence_class: web-tables
+distribution: restricted
+provenance:
+  sources:
+  - title: 5 quest index pages (reward tables; patch2.00 = final 1.x snapshot)
+    url: http://elemen.sakura.ne.jp/ff14_dated_archives/quest/{MainQuest,SubQuest,TheGrandCompanies,ClassQuest,JobQuest}/index.html
+    site: eLeMeN - FF14
+  - title: 112 quest detail/walkthrough pages (Main 19, Class 51, Job 42)
+    url: http://elemen.sakura.ne.jp/ff14_dated_archives/quest/{MainQuest,ClassQuest,JobQuest}/*.html
+    site: eLeMeN - FF14
+    note: Per-quest detail source HTML preserved in elemen-site-archive. Sub and Grand Company quests have no detail pages on the source.
+storage:
+  original_state: in-repo
+  storage_id: repo
+  path: objects/
+  master_archive:
+    file: elemen-quest-rewards-walkthroughs-objects.zip
+    sha256: 41b5fe803ecc6f9c01213f8938c19c2db83a36249d450faeed6f265a2787d983
+    size_bytes: 46332
+    holds: all 4 files under objects/, deflate, fixed timestamps
+    cold_store_path: archives/elemen-quest-rewards-walkthroughs/elemen-quest-rewards-walkthroughs-objects.zip
+members:
+- file: pages/quest-rewards.md
+  sha256: 0fb858fc564ecfb5b43544084018426633f7e79da5b907dc85020b6be9d5d6cd
+  size_bytes: 64088
+- file: pages/walkthroughs-class.md
+  sha256: 1dd7cba46fd83176825cdddc19d30db342cc032947515eabee4c3cf9fffdb94d
+  size_bytes: 170508
+- file: pages/walkthroughs-job.md
+  sha256: 5339c0c7a983e58c88a1e5c218b73d21223f9479f641f6e9c4574a5b482b393b
+  size_bytes: 87324
+- file: pages/walkthroughs-main.md
+  sha256: a0718742a52013356cc8e1c55dae820a8ca763ca2fae00d68e1a389f6cb94d5e
+  size_bytes: 77534

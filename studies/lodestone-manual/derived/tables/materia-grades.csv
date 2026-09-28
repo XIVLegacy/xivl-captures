@@ -1,0 +1,7 @@
+operation,item_level_range,grade_i,grade_ii,grade_iii,grade_iv,source_page
+conversion,Optimal level between 1 and 30,yes,no,no,no,materia
+conversion,Optimal level between 31 and 40,yes,yes,no,no,materia
+conversion,Optimal level between 41 and 50,no,yes,yes,yes,materia
+melding,Optimal level between 1 and 30,yes,no,no,no,materia
+melding,Optimal level between 31 and 40,yes,yes,no,no,materia
+melding,Optimal level between 41 and 50,yes,yes,yes,yes,materia

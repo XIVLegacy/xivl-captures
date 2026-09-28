@@ -1,0 +1,20 @@
+id: elemen-shop-inventory
+title: eLeMeN FF14 1.x Shop Item-to-NPC Sales Edges - Web Tables
+evidence_class: web-tables
+distribution: restricted
+provenance:
+  sources: []
+storage:
+  original_state: in-repo
+  storage_id: repo
+  path: objects/
+  master_archive:
+    file: elemen-shop-inventory-objects.zip
+    sha256: 34127c669e2ff097eb47d4de249a1b3377dfac152234d5c50c902f5f056ff52f
+    size_bytes: 15420
+    holds: all 1 files under objects/, deflate, fixed timestamps
+    cold_store_path: archives/elemen-shop-inventory/elemen-shop-inventory-objects.zip
+members:
+- file: pages/shop-sales.md
+  sha256: f26ad8f8cae27b38098c075550308542865e684fce485df7a769881e7c2705d6
+  size_bytes: 179351

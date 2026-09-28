@@ -1,0 +1,22 @@
+class,enemy,enemy_rank,attack,vit,def,min,max,predict,dev_pct,source
+CNJ,Blotched Mongrel,52,Attack,178,34,244,286,265.0,7.925,stat-testing-3-physical-damage-taken
+CNJ,Blotched Mongrel,52,Attack,178,261,182,213,197.5,7.848,stat-testing-3-physical-damage-taken
+CNJ,Blotched Mongrel,52,Attack,178,386,148,173,160.5,7.788,stat-testing-3-physical-damage-taken
+CNJ,Blotched Mongrel,52,Attack,178,481,122,143,132.5,7.925,stat-testing-3-physical-damage-taken
+CNJ,Blotched Mongrel,52,Attack,178,572,97,114,105.5,8.057,stat-testing-3-physical-damage-taken
+CNJ,Blotched Mongrel,52,Attack,178,667,68,80,74.0,8.108,stat-testing-3-physical-damage-taken
+CNJ,Fellbite Peiste,52,Attack,178,34,252,297,274.5,8.197,stat-testing-3-physical-damage-taken
+CNJ,Fellbite Peiste,52,Attack,178,120,233,273,253.0,7.905,stat-testing-3-physical-damage-taken
+CNJ,Fellbite Peiste,52,Attack,178,234,203,238,220.5,7.937,stat-testing-3-physical-damage-taken
+CNJ,Fellbite Peiste,52,Attack,178,409,155,182,168.5,8.012,stat-testing-3-physical-damage-taken
+CNJ,Fellbite Peiste,52,Attack,178,563,113,133,123.0,8.130,stat-testing-3-physical-damage-taken
+CNJ,Fellbite Peiste,52,Attack,178,668,85,99,92.0,7.609,stat-testing-3-physical-damage-taken
+CNJ,Laughing Mongrel,59,Attack,178,34,709,825,767.0,7.562,stat-testing-3-physical-damage-taken
+CNJ,Laughing Mongrel,59,Attack,181,112,664,776,720.0,7.778,stat-testing-3-physical-damage-taken
+CNJ,Laughing Mongrel,59,Attack,187,291,570,667,618.5,7.842,stat-testing-3-physical-damage-taken
+CNJ,Laughing Mongrel,59,Attack,187,636,391,458,424.5,7.892,stat-testing-3-physical-damage-taken
+CNJ,Laughing Mongrel,59,Attack,187,741,337,392,364.5,7.545,stat-testing-3-physical-damage-taken
+CNJ,Sphene Doblyn,59,Attack,178,249,543,637,590.0,7.966,stat-testing-3-physical-damage-taken
+CNJ,Sphene Doblyn,59,Attack,178,410,460,540,500.0,8.000,stat-testing-3-physical-damage-taken
+CNJ,Sphene Doblyn,59,Attack,178,574,376,441,408.5,7.956,stat-testing-3-physical-damage-taken
+GLA,Sphene Doblyn,59,Attack,269,943,158,183,170.5,7.331,stat-testing-3-physical-damage-taken

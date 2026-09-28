@@ -1,0 +1,77 @@
+id: lodestone-manual
+title: FFXIV 1.0 Lodestone Official Game Manual
+evidence_class: web-tables
+status: distilled
+content_kind: action-mechanic
+tags:
+- web-reference
+- official-manual
+- square-enix
+- lodestone-1x
+- game-manual
+- first-party
+- battle
+- classes-and-jobs
+- gathering
+- crafting
+- materia
+- guildleve
+- aetheryte-travel
+- grand-company
+- wiki-consumable
+tags_note: content_kind is set to action-mechanic (the flagship system and the sibling web-tables set kanican-tables use the same kind); this set actually spans the whole 1.0 game manual. The per-system breakdown is in derived/wiki-target-index.md, and the systems are carried as tags above.
+search_hints:
+- official game manual
+- lodestone guide
+- flow of battle
+- auto-attack
+- enmity
+- being KO'd weakness brink of death
+- attribute points allotment
+- aetheryte teleport return
+- guildleves levequest
+- synthesis repair materia
+- hamlet defense
+- text commands macros
+- actions traits abilities action bar
+- classes and jobs disciples
+- synthesis crafting repair materia
+- mining logging fishing gathering
+- grand company maelstrom twin adder immortal flames
+notes: 'Clean Markdown transcription of the official FINAL FANTASY XIV 1.0 Lodestone game manual, harvested from a local Jan-2015 archive of the (now defunct) 1.x Lodestone. 36 pages, ~45k words, 330 content images. One .md per page under sources/lodestone-manual/objects/pages/, page screenshots under sources/lodestone-manual/objects/images/. Unlike the standard web-tables intake (transcribe tables only, leave prose at source), this set preserves each page''s full prose, because the source is a dead site we hold only as a local archive and the manual''s mechanic descriptions are the value. Verbatim SE text stays here in the evidence layer; downstream consumers should reword facts rather than copy it. Evidence tier: this is SE''s OWN first-party manual, so it documents intended 1.x behavior authoritatively - stronger than community wiki, but it records design INTENT, and observed packet/video evidence still outranks it for actual runtime values (intent can diverge from what 1.23b shipped). See derived/evidence-map.md for the tier note and derived/wiki-target-index.md for the page-to-wiki-section map. The source archive contains all 208 pages, including the ~170 news/lore/patch/event pages NOT transcribed here; the dev/patch subset can be harvested later. Authored text and prose are normalized to ASCII; genuinely non-ASCII data cells are kept verbatim (the Materia grade-compat tables use a filled-circle yes-marker). The inline data tables are also normalized into derived/tables/ (19 CSVs, 481 rows: text commands, emotes, macro placeholders, keyboard controls, config options, classes, jobs, grand-company ranks, aetherial transport, incapacitation matrices, materia grades/catalysts, repair costs, achievement NPCs, main menu, more); each row carries a source_page column, and the CSVs are rebuilt from the rowspan-aware HTML because the Markdown flatten dropped some anchor rows.'
+related_implementation_docs: []
+source_refs:
+- source: lodestone-manual
+primary_paths:
+- derived/wiki-target-index.md
+- derived/evidence-map.md
+- derived/file-inventory.csv
+canonical_evidence:
+- derived/wiki-target-index.md
+- derived/evidence-map.md
+distilled:
+  distilled: true
+  distilled_artifacts:
+  - derived/wiki-target-index.md
+  - derived/evidence-map.md
+  - derived/file-inventory.csv
+  - derived/tables/index.md
+  - derived/tables/text-commands.csv
+  - derived/tables/emotes.csv
+  - derived/tables/text-macro-placeholders.csv
+  - derived/tables/keyboard-controls.csv
+  - derived/tables/configuration-options.csv
+  - derived/tables/classes.csv
+  - derived/tables/jobs.csv
+  - derived/tables/job-crossclass-action-sources.csv
+  - derived/tables/grand-company-ranks.csv
+  - derived/tables/aetherial-transport.csv
+  - derived/tables/incapacitation-weaponskills.csv
+  - derived/tables/incapacitation-monster-parts.csv
+  - derived/tables/materia-grades.csv
+  - derived/tables/materia-catalysts.csv
+  - derived/tables/repair-costs.csv
+  - derived/tables/achievement-npcs.csv
+  - derived/tables/main-menu.csv
+  - derived/tables/path-companions.csv
+  - derived/tables/display-name-colors.csv

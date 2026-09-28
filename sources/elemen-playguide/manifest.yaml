@@ -1,0 +1,68 @@
+id: elemen-playguide
+title: eLeMeN FF14 1.x Play Guide - Weather Legend, Aethernet, Market Tax - Web Tables
+evidence_class: web-tables
+distribution: restricted
+provenance:
+  sources: []
+storage:
+  original_state: in-repo
+  storage_id: repo
+  path: objects/
+  master_archive:
+    file: elemen-playguide-objects.zip
+    sha256: f0338af975d1d76538225f6ab454b3c12e731175d3a3d454f03c06ede81a81ca
+    size_bytes: 54372
+    holds: all 17 files under objects/, deflate, fixed timestamps
+    cold_store_path: archives/elemen-playguide/elemen-playguide-objects.zip
+members:
+- file: pages/aethernet.md
+  sha256: bc70161dd1652d2828383a089c5d3edead93377316a7d020dfa8cf57ad596cb3
+  size_bytes: 3595
+- file: pages/bookshelf.md
+  sha256: 18ac23ba0295dbf9f11cf050a5193c6e73f56b072347491f8e6e8743acf75768
+  size_bytes: 4335
+- file: pages/character.md
+  sha256: a20ee8ea2022b98f82f8f71579370c89e7e9b167523995da43ecdc3c8d3acb0d
+  size_bytes: 6640
+- file: pages/classjob.md
+  sha256: 6824b42afbd08e57f7d0229046b974fdc863636941aca99533efb352bc4a970b
+  size_bytes: 34185
+- file: pages/collection.md
+  sha256: 666b243e901186f53d908210c05a00feec82a438013d9457eef0ea9a3337cfb5
+  size_bytes: 5518
+- file: pages/faq_aetheryte.md
+  sha256: 8bb0217b71582bc4eea1cffd710680e43d23f273b124a4df7253e53024a148a6
+  size_bytes: 4254
+- file: pages/faq_class.md
+  sha256: 647613ac60e2b91a5fc98d32b4d12642e8a78239d110c3c9ad0db1954628720b
+  size_bytes: 3352
+- file: pages/faq_guildleve.md
+  sha256: 8df8d43030bbba2be8075bace3bb0c0dc09a789497103ba1169bb9c1ee9bf9d8
+  size_bytes: 10980
+- file: pages/faq_micromenu.md
+  sha256: 9396e22ac3b67cf17046438d98dff94217bfa9037b8e4bdead3fa7be0f9487e9
+  size_bytes: 3054
+- file: pages/faq_quest.md
+  sha256: c36ea10ba1101ed59562d596feb7342187c8f88076b870bb45b67a1d0bfeab00
+  size_bytes: 3192
+- file: pages/faq_tips.md
+  sha256: 9dfb2b3c185f9dcb5f590afd96e0839f96b1afacb3330ccd46003db3e5f4ee52
+  size_bytes: 14480
+- file: pages/guardian.md
+  sha256: e68d1fc9e8aa9ba3e64c2b1a0b480de1abb62a47c12efbf76be2ba5af427d410
+  size_bytes: 5664
+- file: pages/inn.md
+  sha256: c07520423cb3e662556bdb427c676f7af9c831d5bad0ba36f25d63c386fbf52b
+  size_bytes: 8752
+- file: pages/market.md
+  sha256: 7b77f99b97bcf41325ca4e4ddef8688a4a943caeae15f0314e03307a9e222d1e
+  size_bytes: 5475
+- file: pages/mount.md
+  sha256: 237dec34183223c248ab3fe08b5f3738e76e70e92f8b1426916a7b280f186a04
+  size_bytes: 2674
+- file: pages/races.md
+  sha256: 33a528f530567c8f56cfd9946487f4890c00772710374528f332972279a9c363
+  size_bytes: 11356
+- file: pages/world.md
+  sha256: 8790a91aa383a3ffb1d5a956c2cd4ccfd94b21ebb35f42d5bc275694cffbc2f9
+  size_bytes: 17418

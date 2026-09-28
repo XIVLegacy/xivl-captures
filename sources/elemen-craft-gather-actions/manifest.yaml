@@ -1,0 +1,57 @@
+id: elemen-craft-gather-actions
+title: eLeMeN FF14 1.x Crafter and Gatherer Actions - Web Tables
+evidence_class: web-tables
+distribution: restricted
+provenance:
+  sources:
+  - title: 8 Disciples of the Hand action pages (patch2.00 = final 1.x snapshot)
+    url: http://elemen.sakura.ne.jp/ff14_dated_archives/class/action/~patch2.00_{Carpenter,Blacksmith,Armorer,Goldsmith,Leatherworker,Weaver,Alchemist,Culinarian}.html
+    site: eLeMeN - FF14
+    note: Per-page source path is in derived/file-inventory.csv (source_page column); source HTML preserved in elemen-site-archive.
+  - title: 3 Disciples of the Land action pages (Miner / Botanist / Fisher)
+    url: http://elemen.sakura.ne.jp/ff14_dated_archives/class/action/~patch2.00_{Miner,Botanist,Fisher}.html
+    site: eLeMeN - FF14
+storage:
+  original_state: in-repo
+  storage_id: repo
+  path: objects/
+  master_archive:
+    file: elemen-craft-gather-actions-objects.zip
+    sha256: 53bb6e362132265dd979c287efe9705cf5b32f524c516e07e6dca300158c0eae
+    size_bytes: 12930
+    holds: all 11 files under objects/, deflate, fixed timestamps
+    cold_store_path: archives/elemen-craft-gather-actions/elemen-craft-gather-actions-objects.zip
+members:
+- file: pages/Alchemist.md
+  sha256: 99327da2ef4a0549e0583779be7a78a5c9016cf467f6fc294c55696e9392a44a
+  size_bytes: 2012
+- file: pages/Armorer.md
+  sha256: 9bac6dc4eaee05b558ffe17fa118181d0aacd09799711808f684877d3906de47
+  size_bytes: 1908
+- file: pages/Blacksmith.md
+  sha256: cf6789e3e8f5feedcfcf323d6c43a7fbfd8b1c1899edc4b273c5bedab95f23fb
+  size_bytes: 2021
+- file: pages/Botanist.md
+  sha256: 5a6aaed6124185c85907a596c7143623518e35bd39f88f1f653ae31cb9bcb015
+  size_bytes: 6226
+- file: pages/Carpenter.md
+  sha256: a46ce6f521335164ae180e53b4284407b13569882a30f3a7a7a7e5a9beaa3bb8
+  size_bytes: 1896
+- file: pages/Culinarian.md
+  sha256: 6e412daea2c6b8f361c9a4f0ad55760c1ffb92e13cc841484decac3d653b12fd
+  size_bytes: 2130
+- file: pages/Fisher.md
+  sha256: 9d17de40af184cd78a9d73b52f8d8e9a487b5b36d3025cd881922daca105f1c0
+  size_bytes: 5998
+- file: pages/Goldsmith.md
+  sha256: 11efdd78aebb98b89cab74133a76bb137ed8d7d4d47a2c354e212e9d389ef4fc
+  size_bytes: 1933
+- file: pages/Leatherworker.md
+  sha256: 1989d9a8174b7f897385255de3221ac463765b73449137c5c354a98f562b46b6
+  size_bytes: 2001
+- file: pages/Miner.md
+  sha256: cda8ada765a00d8b507ed9e79bcf1e4fcb2f3659a56d57220fa99abd937a1623
+  size_bytes: 6184
+- file: pages/Weaver.md
+  sha256: 6435b5e021681d64adc9f5631b955a2b86c9193e043aacd8d0cd4435a4d5cb5b
+  size_bytes: 2055

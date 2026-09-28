@@ -1,0 +1,16 @@
+weapon,body_part,weaponskill,source_page
+Sword,Head,Spirits Within ( *1 ),effect-inducing-tactics
+Sword,Limbs (Right),Savage Blade,effect-inducing-tactics
+Sword,Other (Right),Flat Blade,effect-inducing-tactics
+Hand-to-Hand,Head,Concussive Blow,effect-inducing-tactics
+Hand-to-Hand,Limbs (Lower),Demolish,effect-inducing-tactics
+Hand-to-Hand,Other (Outer),Dragon Kick ( *2 ),effect-inducing-tactics
+Axe,Head,Skull Sunder,effect-inducing-tactics
+Axe,Limbs (Right),Path of the Storm,effect-inducing-tactics
+Axe,Other (Right),Godsbane,effect-inducing-tactics
+Axe,Other (Outer),Maim,effect-inducing-tactics
+Polearm,Limbs (Left),Heavy Thrust,effect-inducing-tactics
+Polearm,Other (Left),Impulse Drive,effect-inducing-tactics
+Archery,Head,Bloodletter,effect-inducing-tactics
+Archery,Limbs (Lower),Leaden Arrow,effect-inducing-tactics
+Archery,Other (Left),Gloom Arrow,effect-inducing-tactics

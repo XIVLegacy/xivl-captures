@@ -1,0 +1,25 @@
+city,destination_jp,destination_en_client,client_place_id,location_area,x,y,guard_npc_jp,guard_npc_en_client,client_npc_id,match_note
+リムサ・ロミンサ,エーテライト・プラザ,,,上甲板層,7,6,シノードル・ガードナー一等甲兵,Storm Private Gardner,1000373,
+リムサ・ロミンサ,溺れた海豚亭,The Drowning Wench,1071,上甲板層,7,5,リシェンダ・リッチ一等甲兵,Storm Private Rich,1100410,
+リムサ・ロミンサ,レストラン「ビスマルク」,The Bismarck,1057,上甲板層,7,3,ガーグイストル・ポター一等甲兵,Storm Private Potter,1000390,
+リムサ・ロミンサ,フェリードック,Ferry Docks,1061,下甲板層,4,5,オッティリア・ハント一等甲兵,Storm Private Hunt,1100400,
+リムサ・ロミンサ,網倉,Fisherman's Bottom,1054,下甲板層,5,6,ガーディリック・エイブル一等甲兵,Storm Private Abel,1000389,
+リムサ・ロミンサ,八分儀広場,The Octant,1082,下甲板層,6,4,セルフィア・ストーン一等甲兵,Storm Private Stone,1100421,
+リムサ・ロミンサ,鯵刺大橋,,,下甲板層,9,5,ウォルター・ホルト一等甲兵,Storm Private Holt,1000252,
+リムサ・ロミンサ,ゼファー陸門（※1）,Zephyr Gate,1073,ラノシア,25,31,,,,gate-no-npc
+グリダニア,エーテライト・プラザ,,,,5,4,イニシアン・ホワイト一等牙兵,Serpent Private White,1000394,
+グリダニア,カーラインカフェ,Carline Canopy,2071,,7,6,テレサ・ヒル一等牙兵,Serpent Private Hill,1100433,
+グリダニア,アトリエ「フェン・イル」,Atelier Fen[@1F]Yll,2070,,6,4,モーカント・カーヴァー一等牙兵,Serpent Private Carver,1000407,
+グリダニア,口笛粉屋,The Whistling Miller,2072,,5,3,システリリー・ストーン一等牙兵,Serpent Private Stone,1100430,
+グリダニア,神勇隊司令砦,Quiver's Hold,2066,,8,5,マーミン・ホームズ一等牙兵,Serpent Private Holmes,1000406,
+グリダニア,鬼哭隊屯所,Wailing Barracks,2065,,7,2,トマシーヌ・カーク一等牙兵,Serpent Private Kirk,1100434,
+グリダニア,ミスタル連橋（※2）,Mistalle Bridges,2507,黒衣森,34,28,,,,gate-no-npc
+グリダニア,ベルラン連橋（※3）,Berlends Bridges,2506,黒衣森,29,27,,,,gate-no-npc
+ウルダハ,エーテライト・プラザ,,,商業層,5,3,オウェイン・ニュータウン一等闘兵,Flame Private Newton,1000411,
+ウルダハ,クイックサンド,The Quicksand,3067,商業層,6,3,ウルセラ・タナー一等闘兵,Flame Private Tanner,1100440,
+ウルダハ,フロンデール薬学院,Frondale's Phrontistery,3061,政庁層,5,5,ウェン・モーニング一等闘兵,Flame Private Morning,1000419,
+ウルダハ,オニキスレーン,,,商業層,6,6,トリスタナ・コヴィー一等闘兵,Flame Private Covey,1100438,
+ウルダハ,ゴールドコート（商業層,,,商業層,5,5,ピトラエル・アレン一等闘兵,Flame Private Allen,1000412,
+ウルダハ,アルダネス聖櫃堂,Arrzaneth Ossuary,3055,商業層,4,5,ワインフリード・ヤー一等闘兵,Flame Private Yar,1100443,
+ウルダハ,ナル大門（※4）,Gate of Nald,3078,ザナラーン,26,29,,,,gate-no-npc
+ウルダハ,ザル大門（※5）,Gate of Thal,3079,ザナラーン,28,32,,,,gate-no-npc

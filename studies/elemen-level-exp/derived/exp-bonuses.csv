@@ -1,0 +1,11 @@
+bonus_type,tier,exp_bonus_percent,chain_window_seconds,note
+link,1体 (1 linked),25,,per linked monster; link count varies by PT size and level
+link,2体 (2 linked),50,,
+link,3体 (3 linked),75,,
+link,4体以上 (4+ linked),100,,
+chain,1チェーン (chain 1),20,100,kill same-or-higher-level monster in valid window; window shortens as chain grows
+chain,2チェーン (chain 2),25,80,
+chain,3チェーン (chain 3),30,60,
+chain,4チェーン (chain 4),40,20,
+chain,5チェーン目以降 (chain 5+),50,10,
+rest,- (rested),50,,base exp +50% while rested bonus is stored; see play-guide inn

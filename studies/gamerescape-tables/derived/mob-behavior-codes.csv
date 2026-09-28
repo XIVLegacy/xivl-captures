@@ -1,0 +1,9 @@
+code,gloss,used_by_1x_pages,ge_page,ge_revision_id,ge_revision_timestamp
+A,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight",1,Aggressive,1332412,2020-03-14T11:46:01Z
+P,passive - does not attack unless engaged,1,Passive,1534724,2021-03-05T20:19:41Z
+S,detects players by sight,1,Template:Mob Notes-S,638552,2017-05-14T20:57:14Z
+H,detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement,1,Category:Detects by Sound,952013,2019-05-20T13:55:05Z
+TH,detects players by true hearing,1,Template:Mob Notes-TH,638553,2017-05-14T20:57:14Z
+TS,detects players by true sight,0,Template:Mob Notes-TS,638554,2017-05-14T20:57:14Z
+L,links - helps other mobs of its own kind,1,Template:Mob Notes-L,638550,2017-05-14T20:57:14Z
+M,detects players by magic use - triggers when a player casts nearby,0,Category:Detects by Magic,1920408,2022-04-11T20:46:25Z

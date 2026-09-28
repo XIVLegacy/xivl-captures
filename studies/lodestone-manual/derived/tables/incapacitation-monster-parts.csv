@@ -1,0 +1,21 @@
+monster,body_part,breakable_part,source_page
+Hippogryph,Head,Head,effect-inducing-tactics
+Opo-opo,Head,Head,effect-inducing-tactics
+Opo-opo,Limbs (Lower),Legs,effect-inducing-tactics
+Gnat,Head,Head,effect-inducing-tactics
+Cactuar,Limbs (Lower),Legs,effect-inducing-tactics
+Giant crab,Other (Outer),Shell,effect-inducing-tactics
+Salamander,Other (Right),Right Wart Cluster,effect-inducing-tactics
+Salamander,Other (Left),Left Wart Cluster,effect-inducing-tactics
+Wolf,Head,Head,effect-inducing-tactics
+Boar,Head,Head,effect-inducing-tactics
+Ahriman,Head,Eye,effect-inducing-tactics
+Ahriman,Other (Outer),Tail,effect-inducing-tactics
+Wight,Head,Skull,effect-inducing-tactics
+Dodo,Head,Head,effect-inducing-tactics
+Dodo,Limbs (Lower),Legs,effect-inducing-tactics
+Coblyn,Other (Outer),Ore Cluster,effect-inducing-tactics
+Aldgoat,Head,Horns,effect-inducing-tactics
+Imp,Head,Head,effect-inducing-tactics
+Flytrap,Head,Maw,effect-inducing-tactics
+Antling,Head,Mandibles,effect-inducing-tactics

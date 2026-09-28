@@ -1,0 +1,52 @@
+id: mooglebox-regional-mob-maps
+title: Mooglebox FFXIV 1.x Regional Mob Camp Maps - Web Tables
+evidence_class: web-tables
+status: distilled
+content_kind: zone-mechanic
+zones:
+- Coerthas
+- The Black Shroud
+- La Noscea
+- Thanalan
+tags:
+- web-reference
+- wiki-tier
+- regional-map
+- spawn-location
+- mob-camp
+- shared-slot-labels
+- unresolved-identities
+search_hints:
+- Mooglebox
+- mob camp location tool
+- regional mob map
+- Coerthas mob camps
+- Black Shroud mob camps
+- La Noscea mob camps
+- Thanalan mob camps
+- Amalj'aa
+- shared spawn slot
+notes: >-
+  Deterministic transcription of four preserved Mooglebox regional mob camp
+  map pages. The marker table retains source order, raw slash labels, parsed
+  candidates, level and amount text with bounds, popup coordinates, aggression
+  marker, and original/archive lookup URLs. Slash-separated names are an
+  explicit unresolved shared-slot verdict: the page does not identify which
+  candidate occupied the marker. This community web-table evidence is
+  calibration material and does not establish retail spawn slots, population,
+  or respawn behavior.
+source_refs:
+- source: mooglebox-regional-mob-maps
+primary_paths:
+- derived/evidence-map.md
+- derived/marker-records.csv
+canonical_evidence:
+- derived/evidence-map.md
+- derived/marker-records.csv
+distilled:
+  distilled: true
+  checksum_file: derived/checksums.sha256
+  distilled_artifacts:
+  - derived/evidence-map.md
+  - derived/marker-records.csv
+  - derived/checksums.sha256

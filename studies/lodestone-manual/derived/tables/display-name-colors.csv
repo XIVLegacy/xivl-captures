@@ -1,0 +1,8 @@
+display_name_color,meaning,source_page
+White,Other PCs,the-game-screen
+Blue,Party member,the-game-screen
+Green,NPC,the-game-screen
+Yellow,Combatable Enemy (You are not yet entitled to experience or loot),the-game-screen
+Red,Enemy you or your party members have claimed (You are entitled to experience and loot),the-game-screen
+Purple,Enemy someone other than you or your party members has claimed (You are not entitled to experience or loot),the-game-screen
+Orange,Hostile attacking or linked enemy (You are not yet entitled to experience or loot),the-game-screen

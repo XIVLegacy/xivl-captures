@@ -1,0 +1,16 @@
+tribe_jp,tribe_en,tribe_client_id,gender,str,vit,dex,int,mnd,pie,resist_fire,resist_water,resist_lightning,resist_wind,resist_earth,resist_ice,source
+ミッドランダー,Midlander,1,M,16,15,14,16,13,16,16,16,15,15,15,13,sources/elemen-playguide/objects/pages/races.md
+ミッドランダー,Midlander,2,F,16,15,14,16,13,16,16,16,15,15,15,13,sources/elemen-playguide/objects/pages/races.md
+ハイランダー,Highlander,3,M,18,17,15,13,15,12,15,13,18,14,14,16,sources/elemen-playguide/objects/pages/races.md
+フォレスター,Wildwood,4,M,14,13,18,17,12,16,12,15,14,18,17,14,sources/elemen-playguide/objects/pages/races.md
+フォレスター,Wildwood,5,F,14,13,18,17,12,16,12,15,14,18,17,14,sources/elemen-playguide/objects/pages/races.md
+シェーダー,Duskwight,6,M,15,14,15,18,15,13,14,16,15,12,17,16,sources/elemen-playguide/objects/pages/races.md
+シェーダー,Duskwight,7,F,15,14,15,18,15,13,14,16,15,12,17,16,sources/elemen-playguide/objects/pages/races.md
+プレーンフォーク,Plainsfolk,8,M,13,13,17,16,15,16,14,15,17,15,16,13,sources/elemen-playguide/objects/pages/races.md
+プレーンフォーク,Plainsfolk,9,F,13,13,17,16,15,16,14,15,17,15,16,13,sources/elemen-playguide/objects/pages/races.md
+デューンフォーク,Dunesfolk,10,M,12,12,15,16,17,18,17,12,15,16,17,12,sources/elemen-playguide/objects/pages/races.md
+デューンフォーク,Dunesfolk,11,F,12,12,15,16,17,18,17,12,15,16,17,12,sources/elemen-playguide/objects/pages/races.md
+サンシーカー,Seeker of the Sun,12,F,16,15,17,13,14,15,18,17,12,13,15,15,sources/elemen-playguide/objects/pages/races.md
+ムーンキーパー,Keeper of the Moon,13,F,13,12,16,14,18,17,13,14,16,15,14,18,sources/elemen-playguide/objects/pages/races.md
+ゼーヴォルフ,Sea Wolf,14,M,17,18,13,12,16,14,13,18,13,17,12,17,sources/elemen-playguide/objects/pages/races.md
+ローエンガルデ,Hellsguard,15,M,15,16,12,15,17,15,18,15,14,16,13,14,sources/elemen-playguide/objects/pages/races.md

@@ -1,0 +1,50 @@
+id: elemen-english-reference
+title: eLeMeN FF14 1.x English Reference - Selected Web-Unique Prose
+evidence_class: web-tables
+status: distilled
+content_kind: zone-mechanic
+tags:
+- web-reference
+- wiki-tier
+- translation
+- lore
+- game-mechanics
+- playguide
+- history
+- materia
+- grand-company
+- aetheryte
+- guildleve
+- elemen
+- patch-1.x
+search_hints:
+- eLeMeN English translation FAQ lore history overmeld Grand Company
+- playguide teleport anima leve allowances journal
+- eLeMeN qualitative materia overmeld rules
+- history categories and unobtainable history rows
+- selected passages source URL archive member SHA-256
+notes: >-
+  English reference of seven selected prose passages from the final-1.x eLeMeN
+  site archive. It does not cover the full site or full playguide.
+  Japanese source captures and existing normalized CSVs are unchanged. English
+  gameplay terms and proper-name forms in this study are translator glosses unless
+  explicitly cross-referenced to client data. The Grand Company city/company
+  forms use the verified client-data names recorded in
+  xivl-client-data:docs/corpus-inventory.md:82-88; no other client-data joins
+  were performed. Coverage and page identities outside this reference are listed in
+  derived/completion-inventory.md.
+related_implementation_docs: []
+source_refs:
+- source: elemen-site-archive
+  citation: Raw HTML source URLs, archive members, hashes, and passage locators are recorded in derived/english-reference.md.
+primary_paths:
+- README.md
+- derived/english-reference.md
+- derived/completion-inventory.md
+canonical_evidence:
+- derived/english-reference.md
+distilled:
+  distilled: true
+  distilled_artifacts:
+  - derived/english-reference.md
+  - derived/completion-inventory.md

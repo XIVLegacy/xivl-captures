@@ -1,0 +1,8 @@
+system,unit_jp,abbr,definition,metric
+length,イルム,Im,最小単位,2.54センチ
+length,フルム,Fm,12イルム,30.48センチ
+length,ヤルム,Ym,3フルム,0.9144メートル
+length,マルム,Mm,1760ヤルム,1609メートル
+weight,オンズ,Oz,最小単位,28.35グラム
+weight,ポンズ,Pz,16オンズ,453.6グラム
+weight,トンズ,Tz,2000ポンズ,907.2キログラム

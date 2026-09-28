@@ -1,0 +1,3 @@
+path,kind,rows
+derived/shop-sales.csv,item-npc-edges,2087
+sources/elemen-shop-inventory/objects/pages/shop-sales.md,verbatim-transcription,518

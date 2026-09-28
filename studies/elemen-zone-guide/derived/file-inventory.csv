@@ -1,0 +1,11 @@
+path,kind,rows
+derived/zones.csv,normalized-table,28
+derived/adjacency.csv,normalized-table,52
+derived/weather.csv,normalized-table,28
+derived/aetheryte.csv,normalized-table,25
+derived/service-npcs.csv,normalized-table,70
+derived/submaps.csv,normalized-table,45
+derived/shops.csv,normalized-table,154
+sources/elemen-zone-guide/objects/pages/area-guide.md,verbatim-transcription,
+sources/elemen-zone-guide/objects/pages/submaps.md,verbatim-transcription,
+sources/elemen-zone-guide/objects/pages/shops.md,verbatim-transcription,

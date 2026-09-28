@@ -1,0 +1,825 @@
+mob_name,family,resolved_flags,resolved_from,mob_page_flags,family_page_flags,sighting_flags,ge_aggressive,flags_gloss
+Aetherbound Slave,Ogre,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Ahriman,Ahriman,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Akoman,Ahriman,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Akoman's Daewa,Ahriman,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Ala Mhigan Axeman,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Ala Mhigan Bladedancer,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Ala Mhigan Bowman,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Ala Mhigan Challenger,Enemy Humanoid,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Ala Mhigan Pikeman,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Ala Mhigan Shaman,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Alchemist's Tinder,Wisp,A,sighting,,,A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Aldgoat Billy,Aldgoat,P,family-page,,P,P,,passive - does not attack unless engaged
+Aldgoat Nanny,Aldgoat,P,family-page,,P,P,,passive - does not attack unless engaged
+All-seeing Eye,Ahriman,P,mob-page,P,"A, S",P,,passive - does not attack unless engaged
+Alpgrot Orobon,Angler,"A, TH",family-page,,"A, TH",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Alpha Coywolf,Wolf,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Alpha Eft,Salamander,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Alpha Gnat,Gnat,"A, TH",family-page,,"A, TH",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Alpha Miteling,Diremite,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Alpha Roseling,Landtrap,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Alpha Toad,Toad,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Alux,Imp,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Alvara Sourkiss,Enemy Humanoid,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Amalj'aa Bowyer,Amalj'aa,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Amalj'aa Bruiser,Amalj'aa,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Amalj'aa Chief,Amalj'aa,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Amalj'aa Divinator,Amalj'aa,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Amalj'aa Drubber,Amalj'aa,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Amalj'aa Grappler,Amalj'aa,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Amalj'aa Grunt,Amalj'aa,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Amalj'aa Hunter,Amalj'aa,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Amalj'aa Inculcator,Amalj'aa,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Amalj'aa Javelineer,Amalj'aa,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Amalj'aa Lancer,Amalj'aa,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Amalj'aa Pugilist,Amalj'aa,"A, S",family-page,,"A, S",A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Amalj'aa Shaman,Amalj'aa,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Amalj'aa Stargazer,Amalj'aa,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Amalj'aa Striker,Amalj'aa,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Amalj'aa Transfigurator,Amalj'aa,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Amalj'aa Transfisticator,Amalj'aa,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Amalj'aa Transfixer,Amalj'aa,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Amalj'aa Trooper,Amalj'aa,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Amateur Footpad,Enemy Humanoid,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Amateur Highwayman,Enemy Humanoid,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Amateur Raider,Enemy Humanoid,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Anemone,Aurelia,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Angler,Angler,"A, TH",family-page,,"A, TH",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Ankle Biter,Chigoe,,,,,,,
+Anole,Raptor,"A, S, L",family-page,,"A, S, L",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight; links - helps other mobs of its own kind"
+Anole Familiar,Raptor,"A, S, L",family-page,,"A, S, L",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight; links - helps other mobs of its own kind"
+Anole Stalker,Raptor,"A, S, L",family-page,,"A, S, L",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight; links - helps other mobs of its own kind"
+Antares,Diremite,"A, H",family-page,,"A, H",,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Antelope Doe,Antelope,P,sighting,,,P,,passive - does not attack unless engaged
+Antelope Stag,Antelope,"A, S",mob-page,"A, S",,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Antling Digger,Antling,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Antling Forager,Antling,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Antling Worker,Antling,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Apep,Basilisk,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Apkallu,Apkallu,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Arbor Squirrel,Rodent,P,family-page,,P,,,passive - does not attack unless engaged
+Ascian,Ascian,,,,,,,
+Ashdrake,Drake,"A, H",family-page,,"A, H",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Atomos,Primal,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Aurelia,Aurelia,"A, H",family-page,,"A, H",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Aurora Angler,Angler,"A, TH",family-page,,"A, TH",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+B'Khenna Phoenixfire,Enemy Humanoid,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+B'khenna the Pheonixfire,Enemy Humanoid,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Balloon,Bomb,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Bandicoot,Mole,P,family-page,,P,P,,passive - does not attack unless engaged
+Bandit Spearman,Enemy Humanoid,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Banemite,Diremite,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Banescale Guivre,Drake,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Barbatos,Gargoyle,A,sighting,,,A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Bardi,Wolf,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Bark Eft,Salamander,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Bark Weevil,Beetle,A,sighting,,,A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Barometz,Landtrap,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Basilisk,Basilisk,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Bastard Mite,Diremite,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Batraal,Gargoyle,A,sighting,,,A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Battle Drake,Drake,"A, H",family-page,,"A, H","A, P",Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Battrap,Landtrap,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Beady Beetle,Beetle,,,,,,,
+Bee Cloud,Swarm,,,,,,x,
+Beryl Crab,Crab,"P, H",family-page,,"P, H",P,,passive - does not attack unless engaged; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement
+Biast,Drake,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Bigmouth Orobon,Angler,"A, TH",family-page,,"A, TH",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Bile Gnat,Gnat,"A, TH",family-page,,"A, TH",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Bilge-soaked Buccaneer,Enemy Humanoid,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Bixie,Chimera,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Black Bat,Bat,"A, H",family-page,,"A, H","A, P",x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Black Crow Cleaver,Enemy Humanoid,"A, S",family-page,,"A, S",A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Black Crow Swashbuckler,Enemy Humanoid,"A, S",family-page,,"A, S",A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Black Eft,Salamander,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Black Wolf,Wolf,,,,,,Y,
+Blind Eft,Salamander,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Bloated Bogy,Ghost,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Bloated Burble,Snurble,P,sighting,,,P,,passive - does not attack unless engaged
+Bloodied Buccaneer,Enemy Humanoid,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Bloodshore Bell,Aurelia,P,mob-page,P,"A, H",P,,passive - does not attack unless engaged
+Bloodshot Eye,Ahriman,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Bloodthirsty Wolf,Wolf,P,mob-page,P,,P,,passive - does not attack unless engaged
+Bloody Revenant,Ghost,A,sighting,,,A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Blotched Mongrel,Wolf,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Bog Yarzon,Yarzon,"A, H",family-page,,"A, H",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Bogy,Ghost,,,,,,,
+Bomb,Bomb,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Bomb Baron,Bomb,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Bomb Ember,Bomb,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Bone Nix,Toad,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Branded Drake,Drake,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Brimstone Bomb,Bomb,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Brine Bogy,Ghost,A,sighting,,,A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Bristletail Marmot,Rodent,P,family-page,,P,,,passive - does not attack unless engaged
+Brutal Sheep,Ram,P,sighting,,,P,,passive - does not attack unless engaged
+Buata,Boar,"A, TH",family-page,,"A, TH",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Bumble Beetle,Beetle,P,sighting,,,P,,passive - does not attack unless engaged
+Burble,Snurble,P,sighting,,,P,,passive - does not attack unless engaged
+Burned Brother,Amalj'aa,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Buzzard,Vulture,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Buzzing Djigga,Chigoe,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Cactuar,Cactuar,P,family-page,,P,P,,passive - does not attack unless engaged
+Cactuar Jack,Cactuar,P,family-page,,P,P,,passive - does not attack unless engaged
+Cactuar Jaques,Cactuar,P,family-page,,P,A,Y,passive - does not attack unless engaged
+Cadaverous Cockatrice,Cockatrice,P,sighting,,,P,,passive - does not attack unless engaged
+Canopy Galago,Opo-opo,P,family-page,,P,P,,passive - does not attack unless engaged
+Canyon Condor,Vulture,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Capricious Cassie,Morbol,"A, TH",family-page,,"A, TH",A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Carrier Ladybug,Beetle,P,sighting,,,P,,passive - does not attack unless engaged
+Carrion Chiglet,Chigoe,A,sighting,,,A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Carrion Chigoe,Chigoe,A,sighting,,,A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Cassiopeia,Aurelia,P,mob-page,P,"A, H",P,,passive - does not attack unless engaged
+Cave Bat,Bat,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Cavern Eft,Salamander,"A, H",family-page,,"A, H",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Cavernulous Coblyn,Coblyn,P,family-page,,P,P,,passive - does not attack unless engaged
+Cell Mite,Diremite,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Cellar Puk,Puk,P,sighting,,,P,,passive - does not attack unless engaged
+Ceruleum Generator,Unknown,P,sighting,,,P,,passive - does not attack unless engaged
+Chain Bearer,Ghost,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Chiglet,Chigoe,,,,,,,
+Chigoe,Chigoe,A,sighting,,,A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Chinchilla,Rodent,P,family-page,,P,,,passive - does not attack unless engaged
+Cinderbelly Eft,Salamander,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Cliffdiver,Vulture,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Clipper,Crab,"P, H",family-page,,"P, H",P,,passive - does not attack unless engaged; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement
+Cloud Hippocerf,Hippogryph,"A, TH",family-page,,"A, TH",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Cochineal Cactuar,Cactuar,P,family-page,,P,,,passive - does not attack unless engaged
+Cockatrice,Cockatrice,,,,,,,
+Coiled Adder,Enemy Humanoid,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Common Cactuar,Cactuar,P,family-page,,P,P,,passive - does not attack unless engaged
+Condor,Vulture,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Copper Coblyn,Coblyn,P,family-page,,P,P,,passive - does not attack unless engaged
+Corroded Coblyn,Coblyn,P,family-page,,P,P,,passive - does not attack unless engaged
+Corrosive Coblyn,Coblyn,P,family-page,,P,P,,passive - does not attack unless engaged
+Crabfisher,Angler,"A, TH",family-page,,"A, TH",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Crapulous Canine,Wolf,P,mob-page,P,,P,,passive - does not attack unless engaged
+Creeping Ivy,Morbol,"A, TH",family-page,,"A, TH",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Croft Kalong,Bat,"A, H",family-page,,"A, H",,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Curious Galago,Opo-opo,P,family-page,,P,P,,passive - does not attack unless engaged
+Curious Gorge,Enemy Humanoid,"A, S",family-page,,"A, S",,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Cursed Eye,Ahriman,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Daddy Longlegs,Yarzon,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Dapper Cadaver,Fomor,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Darkeye Devilet,Imp,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Darkwing Devilet,Imp,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Deadeyes,Wolf,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Deathstroke Assassin,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Deepground Puk,Puk,P,sighting,,,P,,passive - does not attack unless engaged
+Deepvoid Pikeman,Fomor,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Deepvoid Scamp,Imp,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Deepvoid Sludge,Flan,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Deepvoid Soul,Ghost,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Deepvoid Warrior,Wight,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Deepvoid Watcher,Ahriman,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Deepvoid Wizard,Fomor,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Delta Crab,Crab,"P, H",family-page,,"P, H",P,,passive - does not attack unless engaged; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement
+Desert Peiste,Basilisk,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Devilet,Imp,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Dew Hare,Slug,P,sighting,,,P,,passive - does not attack unless engaged
+Diamond-tooth Hedgemole,Mole,"A, H",mob-page,"A, H",P,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Dire Dormouse,Rodent,P,family-page,,P,P,,passive - does not attack unless engaged
+Dire Rat,Rodent,P,family-page,,P,P,,passive - does not attack unless engaged
+Diremite,Diremite,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Diremite Straggler,Diremite,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Dirty Mongrel,Wolf,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Dodo,Cockatrice,,,,,,,
+Dodore,Ahriman,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Dodore's Minion,Ahriman,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Doomvoid Guivre,Drake,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Dormouse,Rodent,P,family-page,,P,P,,passive - does not attack unless engaged
+Downcast Hippocerf,Hippogryph,"A, TH",family-page,,"A, TH",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Downy Dunstan,Ram,P,sighting,,,P,x,passive - does not attack unless engaged
+Drake Familiar,Drake,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Dreadwolf,Wolf,A,sighting,,,A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Dreamtoad,Toad,"A, S",family-page,,"A, S",A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Drifting Anemone,Aurelia,"A, H",family-page,,"A, H",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Drifting Aurelia,Aurelia,"A, H",family-page,,"A, H",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Drifting Dud,Bomb,"A, S",family-page,,"A, S",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Drifting Mine,Bomb,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Drunken Dormouse,Rodent,P,family-page,,P,P,,passive - does not attack unless engaged
+Drybone Shrew,Mole,P,family-page,,P,P,,passive - does not attack unless engaged
+Dune Bogy,Ghost,,,,,,,
+Dusty Devilet,Imp,A,sighting,,,A,A,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Dusty Mongrel,Wolf,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Dwarf Banemite,Diremite,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Dwarf Diremite,Diremite,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Earth Elemental,Elemental,"A, H",family-page,,"A, H",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Earthbound Wrath,Elemental,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Eftstool,Funguar,P,family-page,,P,A,Y,passive - does not attack unless engaged
+Elder Longhorn,Aldgoat,P,family-page,,P,A,Y,passive - does not attack unless engaged
+Elder Mosshorn,Aldgoat,P,family-page,,P,A,x,passive - does not attack unless engaged
+Elite Bestiarius,Enemy Humanoid,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Elite Eques,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Elite Funditor,Enemy Humanoid,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Elite Hoplomachus,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Elite Laquearius,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Elite Medicus,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Elite Sagitarius,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Elite Secutor,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Elite Signifer,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Elite Speculator,Enemy Humanoid,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Elite Triarius,Enemy Humanoid,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Emerald Bee Swarm,Swarm,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Emerald Salamander,Salamander,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Emperor Apkallu,Apkallu,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Errant Soul,Ghost,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Errant Spirt,Ghost,,,,,,,
+Escaped Goobbue,Goobbue,"A, H",family-page,,"A, H",,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Estinien Wyrmblood,Enemy Humanoid,"A, S",family-page,,"A, S",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Eurylochus,Boar,"A, TH",family-page,,"A, TH",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Evenfall Firefly,Firefly,,,,,,,
+Evil Eye,Ahriman,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Eyetrap,Landtrap,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Fachan,Ahriman,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Faerie Funguar,Funguar,P,family-page,,P,,,passive - does not attack unless engaged
+Fallen Archmage,Fomor,,,,,,,
+Fallen Captain,Fomor,,,,,,,
+Fallen Mage,Fomor,,,,,,,
+Fallen Pikeman,Fomor,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Fallen Soldier,Fomor,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Fallen Wizard,Fomor,,,,,,,
+Fallgourd Funguar,Funguar,P,family-page,,P,,,passive - does not attack unless engaged
+Fat Dodo,Cockatrice,P,sighting,,,P,,passive - does not attack unless engaged
+Fellbite Peiste,Basilisk,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Feral Dodo,Cockatrice,P,sighting,,,P,,passive - does not attack unless engaged
+Feral Watchdog,Wolf,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Fevered Doe,Antelope,P,sighting,,,P,,passive - does not attack unless engaged
+Figgy Pudding,Flan,"A, H",family-page,,"A, H",A,A,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Fire Bomb,Bomb,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Fire Elemental,Elemental,"A, H",family-page,,"A, H",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Firebound Wrath,Elemental,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Firedrake,Drake,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Firefly,Firefly,,,,,,,
+Firestarter Imp,Imp,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Flamedrake,Drake,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Flamefist Ahlygg Roh,Amalj'aa,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Floating Eye,Ahriman,P,mob-page,P,"A, S","A, P",,passive - does not attack unless engaged
+Flytrap,Landtrap,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Foraging Doe,Antelope,,,,,,,
+Forest Funguar,Funguar,P,family-page,,P,P,,passive - does not attack unless engaged
+Forest Roseling,Landtrap,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Forsaken Soul,Ghost,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Frenzied Aurelia,Aurelia,"A, H",family-page,,"A, H",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Friar's Lantern,Wisp,A,sighting,,,A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Frightened Cactuar,Cactuar,P,family-page,,P,P,,passive - does not attack unless engaged
+Frightened Lemur,Opo-opo,P,family-page,,P,P,,passive - does not attack unless engaged
+Fumbling Funguar,Funguar,P,family-page,,P,,,passive - does not attack unless engaged
+Furline Mosstrooper,Enemy Humanoid,"A, S",family-page,,"A, S",A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Furryfoot Kupli Kipp,Moogle,A,sighting,,,A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Gall Gnat,Gnat,"A, TH",family-page,,"A, TH",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Game Dodo,Cockatrice,P,sighting,,,P,,passive - does not attack unless engaged
+Gaoler's Lantern,Wisp,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Garuda,Primal,A,sighting,,,A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Gas Bomb,Bomb,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Ghost Slug,Slug,P,sighting,,,P,,passive - does not attack unless engaged
+Giant Bat,Bat,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Giant Crab,Crab,"P, H",family-page,,"P, H",P,,passive - does not attack unless engaged; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement
+Giant Gnat,Gnat,"A, TH",family-page,,"A, TH",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Giant Remora,Angler,"A, TH",family-page,,"A, TH",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Giant Slug,Slug,P,sighting,,,P,,passive - does not attack unless engaged
+Gigantoad,Toad,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Gloom Lurker,Wisp,A,sighting,,,A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Gloom Seeker,Wisp,P,sighting,,,P,,passive - does not attack unless engaged
+Glowfly,Firefly,,,,,,,
+Gluttonous Gertrude,Cockatrice,P,sighting,,,P,x,passive - does not attack unless engaged
+Goblin Bouncer,Goblin,P,family-page,,P,P,,passive - does not attack unless engaged
+Goblin Braggadocio,Goblin,P,family-page,,P,,,passive - does not attack unless engaged
+Goblin Freesword,Goblin,P,family-page,,P,,,passive - does not attack unless engaged
+Goblin Headman,Goblin,"A, S",mob-page,"A, S",P,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Goblin Mugger,Goblin,P,family-page,,P,P,,passive - does not attack unless engaged
+Goblin Thug,Goblin,P,family-page,,P,P,,passive - does not attack unless engaged
+Goddess Girdle,Aurelia,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Godwin Goodgoat,Enemy Humanoid,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Goobbue,Goobbue,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Gorgebug,Beetle,,,,,,,
+Gorged Djigga,Chigoe,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Grass Raptor,Raptor,"A, S, L",family-page,,"A, S, L",,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight; links - helps other mobs of its own kind"
+Gravid Crab,Crab,"P, H",family-page,,"P, H",A,Y,passive - does not attack unless engaged; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement
+Great Buffalo,Buffalo,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Great Elm,Treant,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Great Oak,Treant,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Greater Buffalo,Buffalo,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Greedy Angler,Angler,"A, TH",family-page,,"A, TH",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Green Dewflower Sylph,Sylph,,,,,,,
+Grenade,Bomb,"A, S",family-page,,"A, S",A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Greywine,Drake,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Gripper,Crab,"A, H",mob-page,"A, H","P, H",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Guano Gnat,Gnat,"A, TH",family-page,,"A, TH",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Guardian of the Grove,Treant,"A, H",family-page,,"A, H",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Guivre,Drake,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Hairless Hare,Slug,P,sighting,,,P,,passive - does not attack unless engaged
+Haughtpox Bloatbelly,Goblin,"A, S",mob-page,"A, S",P,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Headrip Ogre,Ogre,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Headsman's Axe,Ixal,"A, S",family-page,,"A, S",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Hedgemole,Mole,P,family-page,,P,P,,passive - does not attack unless engaged
+Heliodor Doblyn,Coblyn,P,family-page,,P,P,,passive - does not attack unless engaged
+Hellbender,Salamander,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Hellsbound Warrior,Wight,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Hellsfire Hedgemole,Mole,P,family-page,,P,P,,passive - does not attack unless engaged
+Hill Yarzon,Yarzon,"A, H",family-page,,"A, H","A, P",Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Hippocerf,Hippogryph,"A, TH",family-page,,"A, TH",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Hippogryph,Hippogryph,"A, TH",family-page,,"A, TH",A,A,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Hippogryph Pup,Hippogryph,"A, TH",family-page,,"A, TH",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Hispid Dormouse,Rodent,P,family-page,,P,P,,passive - does not attack unless engaged
+Honeybee Swarm,Swarm,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Horde Mite,Diremite,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Hoverfly Swarm,Swarm,,,,,,x,
+Hungry Dreadwolf,Wolf,,,,,,,
+Hunter Kalong,Bat,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Ice Elemental,Elemental,"A, H",family-page,,"A, H",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Icebound Wrath,Elemental,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Ifrit,Primal,A,sighting,,,A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Ignis Fatuus,Bomb,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Illtempered Pteroc.jpg,Puk,,,,,,,
+Imperial Eques,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Imperial Hastatus,Enemy Humanoid,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Imperial Hoplomachus,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Imperial Juggernaut,Juggernaut,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Imperial Laquearius,Enemy Humanoid,"A, S",family-page,,"A, S",,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Imperial Medicus,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Imperial Myrmillo,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Imperial Pilus Prior,Enemy Humanoid,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Imperial Primus Ordinarius,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Imperial Retiarius,Enemy Humanoid,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Imperial Sagitarius,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Imperial Secutor,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Imperial Signifer,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Imperial Speculator,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Imperial Triarius,Enemy Humanoid,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Imperial Veles,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Imperial War Hound,Wolf,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Imptrap,Landtrap,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Infernal Nail,Unknown,P,sighting,,,P,,passive - does not attack unless engaged
+Inferno Drake,Drake,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Inland Angler,Angler,"A, TH",family-page,,"A, TH",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Iron Coblyn,Coblyn,P,family-page,,P,P,,passive - does not attack unless engaged
+Ironshell,Crab,"A, H",mob-page,"A, H","P, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Island Crab,Crab,"P, H",family-page,,"P, H",P,,passive - does not attack unless engaged; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement
+Ixali Boundwing,Ixal,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Ixali Bravewing,Ixal,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Ixali Bravo,Ixal,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Ixali Fearcaller,Ixal,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Ixali Fencer,Ixal,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Ixali Fogcaller,Ixal,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Ixali Sabreur,Ixal,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Ixali Scout,Ixal,"A, S",family-page,,"A, S",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Ixali Squire,Ixal,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Ixali Stillbeak,Ixal,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Ixali Strongbeak,Ixal,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+J'moldva (Mob),Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Jackal Pup,Wolf,A,sighting,,,A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Jackanapes,Opo-opo,P,family-page,,P,P,,passive - does not attack unless engaged
+Jellyfish,Aurelia,"A, H",family-page,,"A, H",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Jenlyns Straightblade,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Jetsam Jelly,Aurelia,P,mob-page,P,"A, H",P,,passive - does not attack unless engaged
+Jumping Djigga,Chigoe,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Kalong,Bat,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Karakul Ewe,Ram,P,sighting,,,P,,passive - does not attack unless engaged
+Ked,Gnat,"A, TH",family-page,,"A, TH",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Kedtrap,Landtrap,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+King Apkallu,Apkallu,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Kobold Acolyte,Kobold,"A, S",family-page,,"A, S",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Kobold Almsman,Kobold,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Kobold Ascetic,Kobold,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Kobold Ashman,Kobold,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Kobold Bedesman,Kobold,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Kobold Footman,Kobold,"A, S",family-page,,"A, S",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Kobold Junkman,Kobold,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Kobold Kirkman,Kobold,"A, S",family-page,,"A, S",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Kobold Mendicant,Kobold,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Kobold Packman,Kobold,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Kobold Patrolman,Kobold,"A, S",family-page,,"A, S",A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Kobold Pickman,Kobold,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Kobold Pitman,Kobold,"A, S",family-page,,"A, S",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Kobold Prelate,Kobold,"A, S",family-page,,"A, S",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Kobold Quarryman,Kobold,"A, S",family-page,,"A, S",A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Kobold Supplicant,Kobold,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Kobold Vestryman,Kobold,"A, S",family-page,,"A, S",A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Kokoroon Quickfingers,Qiqirn,P,family-page,,P,P,x,passive - does not attack unless engaged
+Kraken Deckhand,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Ladybug,Beetle,P,sighting,,,P,,passive - does not attack unless engaged
+Lake Crab,Crab,"P, H",family-page,,"P, H",P,,passive - does not attack unless engaged; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement
+Lammergeyer,Vulture,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Land Angler,Angler,"A, TH",family-page,,"A, TH",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Laughing Mongrel,Wolf,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Lava Drake,Drake,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Lead Coblyn,Coblyn,P,family-page,,P,P,,passive - does not attack unless engaged
+Lemur,Opo-opo,P,family-page,,P,P,,passive - does not attack unless engaged
+Lightning Beetle,Firefly,,,,,,,
+Lightning Elemental,Elemental,"A, H",family-page,,"A, H","A, P",Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Lily of the Vale,Landtrap,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Lindwurm,Raptor,"A, S, L",family-page,,"A, S, L",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight; links - helps other mobs of its own kind"
+Little Apkallu,Apkallu,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Lone Coeurl,Coeurl,A,sighting,,,A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Lone Wolf,Wolf,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Longclaw Galago,Opo-opo,P,family-page,,P,P,,passive - does not attack unless engaged
+Longhorn Billygoat,Aldgoat,P,family-page,,P,A,Y,passive - does not attack unless engaged
+Longhorn Nannygoat,Aldgoat,P,family-page,,P,A,Y,passive - does not attack unless engaged
+Lost Ewe,Ram,P,sighting,,,P,,passive - does not attack unless engaged
+Lost Lamb,Ram,,,,,,,
+Lost Wether,Ram,P,sighting,,,P,,passive - does not attack unless engaged
+Loverly Ladybird,Beetle,P,sighting,,,P,,passive - does not attack unless engaged
+Lowland Billygoat,Aldgoat,P,family-page,,P,P,,passive - does not attack unless engaged
+Lowland Nannygoat,Aldgoat,P,family-page,,P,P,,passive - does not attack unless engaged
+Lunar Fragment,Unknown,P,sighting,,,P,,passive - does not attack unless engaged
+Lunar Golem,Golem,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Lunging Lemur,Opo-opo,P,family-page,,P,,,passive - does not attack unless engaged
+Mad Angler,Angler,"A, TH",family-page,,"A, TH",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Mad Karakul Ewe,Ram,A,mob-page,A,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Magicked Bones,Wight,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Magitek Transmitter,Unknown,P,sighting,,,P,,passive - does not attack unless engaged
+Magitek Vanguard,Magitek Armor,A,sighting,,,A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Magitek Vanguard F-1,Magitek Armor,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Magitek Vanguard H-1,Magitek Armor,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Maidenbug,Beetle,P,sighting,,,P,,passive - does not attack unless engaged
+Maned Wyrmhound,Basilisk,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Manipulated Eye,Ahriman,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Manipulated Ogre,Ogre,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Marshlight,Wisp,A,sighting,,,A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Megalocrab,Crab,"P, H",family-page,,"P, H",P,,passive - does not attack unless engaged; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement
+Mickle Mouse,Rodent,P,family-page,,P,P,,passive - does not attack unless engaged
+Midge Cloud,Swarm,,,,,,,
+Migrating Doe,Antelope,P,sighting,,,P,,passive - does not attack unless engaged
+Mildewed Goobbue,Goobbue,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Mirror Roselet,Landtrap,"A, H",family-page,,"A, H",A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Mistbeard Buccaneer,Enemy Humanoid,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Miteling,Diremite,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Miteling Straggler,Diremite,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Mitetrap,Landtrap,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Moiling Mole,Mole,P,family-page,,P,P,,passive - does not attack unless engaged
+Molting Megalocrab,Crab,"P, H",family-page,,"P, H",P,,passive - does not attack unless engaged; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement
+Molting Miteling,Diremite,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Moon-eared Mouse,Rodent,P,family-page,,P,P,,passive - does not attack unless engaged
+Moon-eyed Mouse,Rodent,P,family-page,,P,P,,passive - does not attack unless engaged
+Moon-toothed Mouse,Rodent,P,family-page,,P,P,,passive - does not attack unless engaged
+Moonblind Dodo,Cockatrice,P,sighting,,,P,,passive - does not attack unless engaged
+Moraby Mole,Mole,P,family-page,,P,P,,passive - does not attack unless engaged
+Morbol,Morbol,"A, TH",family-page,,"A, TH",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Mosshorn Billygoat,Aldgoat,P,family-page,,P,A,x,passive - does not attack unless engaged
+Mosshorn Nannygoat,Aldgoat,P,family-page,,P,A,x,passive - does not attack unless engaged
+Mossy Goobbue,Goobbue,"A, H",mob-page,"A, H","A, H","A, H",x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Mottled Eft,Salamander,"A, H",family-page,,"A, H",P,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Mountain Peiste,Basilisk,,,,,,,
+Mudpuppy,Salamander,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Mummer's Lantern,Wisp,P,sighting,,,P,,passive - does not attack unless engaged
+Mun-Tuy Sapling,Landtrap,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Mun-Tuy Squirrel,Rodent,P,family-page,,P,P,,passive - does not attack unless engaged
+Musk Roseling,Landtrap,"A, H",family-page,,"A, H",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Musk Stag,Antelope,P,sighting,,,P,,passive - does not attack unless engaged
+Myrmidon Drone,Antling,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Myrmidon Guard,Antling,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Myrmidon Princess,Antling,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Myrmidon Sentry,Antling,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Myrmidon Soldier,Antling,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Naked Mole,Mole,P,family-page,,P,P,,passive - does not attack unless engaged
+Napalm,Bomb,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Natalan,Ixal,"A, S",family-page,,"A, S",,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Natalan Boneknitter,Ixal,"A, S",family-page,,"A, S",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Natalan Gatekeeper,Ixal,"A, S",family-page,,"A, S",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Natalan Logsplitter,Ixal,"A, S",family-page,,"A, S",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Natalan Pikecarver,Ixal,"A, S",family-page,,"A, S",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Natalan Sentry,Ixal,"A, S",family-page,,"A, S",,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Natalan Sentry,Ixal,"A, S",family-page,,"A, S",,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Natalan Sentry,Ixal,"A, S",family-page,,"A, S",,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Natalan Sentry,Ixal,"A, S",family-page,,"A, S",,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Natalan Wolftamer,Ixal,"A, S",family-page,,"A, S",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Needletail,Diremite,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Nest Commander,Antling,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Nestling Buzzard,Vulture,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Nether Nix,Toad,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Nibbled Toadstool,Funguar,P,family-page,,P,P,,passive - does not attack unless engaged
+Nightblade Assassin,Enemy Humanoid,"A, S",family-page,,"A, S",A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Nightwolf,Wolf,,,,,,,
+Nix,Toad,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Northern Eft,Salamander,"A, H",family-page,,"A, H",P,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Nut Nibbler,Rodent,P,family-page,,P,P,,passive - does not attack unless engaged
+Nutbiter Marmot,Rodent,P,family-page,,P,P,,passive - does not attack unless engaged
+Nutbreaker Squirrel,Rodent,P,family-page,,P,P,,passive - does not attack unless engaged
+Nutcracker Squirrel,Rodent,P,family-page,,P,P,,passive - does not attack unless engaged
+Nutgrabber Marmot,Rodent,P,family-page,,P,P,,passive - does not attack unless engaged
+Ocean Roseling,Landtrap,"A, H",family-page,,"A, H",,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Oilbug,Beetle,P,sighting,,,P,,passive - does not attack unless engaged
+Old Six-arms,Crab,"P, H",family-page,,"P, H",P,,passive - does not attack unless engaged; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement
+Opo-Opo,Opo-opo,P,family-page,,P,,,passive - does not attack unless engaged
+Ornery Karakul Ewe,Ram,P,sighting,,,P,,passive - does not attack unless engaged
+Orobon,Angler,"A, TH",family-page,,"A, TH",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Ossuary Almstaker,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Pack Rat,Rodent,P,family-page,,P,,,passive - does not attack unless engaged
+Painted Ladybug,Beetle,P,sighting,,,P,,passive - does not attack unless engaged
+Palemoon Parazuzu,Enemy Humanoid,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Peiste Familiar,Basilisk,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Phaia,Boar,"A, TH",family-page,,"A, TH",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Phantasma,Ghost,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Pharosfly,Firefly,,,,,,,
+Phurble,Snurble,P,sighting,,,P,,passive - does not attack unless engaged
+Plague Djigga,Chigoe,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Plague Rat,Rodent,P,family-page,,P,P,,passive - does not attack unless engaged
+Plain Pudding,Flan,"A, H",family-page,,"A, H",A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Plains Footpad,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Plains Rat,Rodent,P,family-page,,P,P,,passive - does not attack unless engaged
+Plasma Spark,Plasmoid,"A, H",family-page,,"A, H",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Plasmoid,Plasmoid,"A, H",family-page,,"A, H",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Poison Flytrap,Landtrap,"A, H",family-page,,"A, H",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Poisoned Peasant,Ghost,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Popoto-opoto,Opo-opo,P,family-page,,P,P,,passive - does not attack unless engaged
+Porcupine,Mole,P,family-page,,P,P,,passive - does not attack unless engaged
+Prince of Pestilence,Gnat,"A, TH",family-page,,"A, TH",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Princess of Pestilence,Gnat,"A, TH",family-page,,"A, TH",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Prison Pteroc,Puk,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Prison Pudding,Flan,"A, H",family-page,,"A, H",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Pruned Roselet,Landtrap,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Pteroc Matron,Puk,P,sighting,,,P,,passive - does not attack unless engaged
+Pteroctrap,Landtrap,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Pugot,Boar,"A, TH",family-page,,"A, TH",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Puk,Puk,,,,,,,
+Puk Hatchling,Puk,P,sighting,,,P,,passive - does not attack unless engaged
+Pukla Puki the Pomburner,Moogle,A,sighting,,,A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Pukna Pako the Tailturner,Moogle,A,sighting,,,A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Puksi Piko the Shaggysong,Moogle,A,sighting,,,A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Puroboros,Bomb,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Pus Gnat,Gnat,"A, TH",family-page,,"A, TH",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Pygmy Dormouse,Rodent,P,family-page,,P,P,,passive - does not attack unless engaged
+Pyrausta,Puk,,,,,,,
+Pyro,Imp,,,,,,x,
+Qiqirn Beater,Qiqirn,P,family-page,,P,P,,passive - does not attack unless engaged
+Qiqirn Egg Hunter,Qiqirn,P,family-page,,P,P,,passive - does not attack unless engaged
+Qiqirn Goon,Qiqirn,P,family-page,,P,P,,passive - does not attack unless engaged
+Qiqirn Mercenary,Qiqirn,P,family-page,,P,,,passive - does not attack unless engaged
+Qiqirn Poacher,Qiqirn,P,family-page,,P,P,,passive - does not attack unless engaged
+Qiqirn Scrambler,Qiqirn,P,family-page,,P,P,,passive - does not attack unless engaged
+Qiqirn Shirrer,Qiqirn,P,family-page,,P,,,passive - does not attack unless engaged
+Quartz Doblyn,Coblyn,P,family-page,,P,P,,passive - does not attack unless engaged
+Queen Bolete,Funguar,P,family-page,,P,P,x,passive - does not attack unless engaged
+Queen Gougou,Opo-opo,P,family-page,,P,P,,passive - does not attack unless engaged
+Quicksand Peiste,Basilisk,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Rabid Coywolf,Wolf,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Rabid Dodo,Cockatrice,P,sighting,,,P,,passive - does not attack unless engaged
+Rabid Jackal,Wolf,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Ragged Hippocerf,Hippogryph,"A, TH",family-page,,"A, TH",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Raging Ram,Ram,P,sighting,,,P,,passive - does not attack unless engaged
+Rainbow Basilisk,Basilisk,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Ranig'oh,Drake,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Raptor Poacher,Enemy Humanoid,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Rat Mole,Mole,P,family-page,,P,P,,passive - does not attack unless engaged
+Ravenous Billygoat,Aldgoat,P,family-page,,P,P,,passive - does not attack unless engaged
+Ravenous Nannygoat,Aldgoat,P,family-page,,P,P,,passive - does not attack unless engaged
+Razor Plume,Unknown,A,sighting,,,A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Razorback,Boar,"A, TH",family-page,,"A, TH",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Rebel,Enemy Humanoid,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Recluse Hippogryph,Hippogryph,"A, TH",family-page,,"A, TH",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Red Dewflower Sylph,Sylph,,,,,,,
+Redhorn Ogre,Ogre,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Redwing Ked,Gnat,"A, TH",family-page,,"A, TH",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Reef Angler,Angler,"A, TH",family-page,,"A, TH",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Remora,Angler,"A, TH",family-page,,"A, TH",,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Revenant,Ghost,A,sighting,,,A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Rift Angler,Angler,"A, TH",family-page,,"A, TH",,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Ringtail,Opo-opo,P,family-page,,P,P,,passive - does not attack unless engaged
+Ringtail Pteroc,Puk,,,,,,,
+Ripe Shrieker,Funguar,P,family-page,,P,P,,passive - does not attack unless engaged
+Roadrunner,Cockatrice,P,sighting,,,P,,passive - does not attack unless engaged
+Roadside Bewitcher,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Roadside Bludgeoner,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Roadside Poacher,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Roadside Stabber,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Roadside Tracker,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Roadside Trapper,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Rock Crab,Crab,"P, H",family-page,,"P, H",P,,passive - does not attack unless engaged; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement
+Rorogun the Tailtamer,Enemy Humanoid,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Roselet,Landtrap,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Roseling,Landtrap,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Rotting Corpse,Fomor,A,sighting,,,A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Rubyscale Pteroc,Puk,,,,,,,
+Ruffletuft Kupta Kapa,Moogle,A,sighting,,,A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Runagate Imp,Imp,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Sabletooth Spriggan,Spriggan,"A, S",family-page,,"A, S",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Sabotender,Cactuar,P,family-page,,P,P,,passive - does not attack unless engaged
+Sabotender Del Sol,Cactuar,P,family-page,,P,P,,passive - does not attack unless engaged
+Salamander,Salamander,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Salt Hare,Slug,P,sighting,,,P,,passive - does not attack unless engaged
+Saltspray Pteroc,Puk,P,sighting,,,P,,passive - does not attack unless engaged
+Sand Bat,Bat,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Sand Slug,Slug,P,sighting,,,P,,passive - does not attack unless engaged
+Sand Yarzon,Yarzon,"A, H",family-page,,"A, H",A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Sandskin Peiste,Basilisk,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Sandstorm,Swarm,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Sargas,Diremite,"A, H",family-page,,"A, H",,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Sazel Ciloc the Divine,Ixal,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Scalepuk,Puk,,,,,,,
+Scarred Kalong,Bat,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Scarred Watchwolf,Wolf,A,sighting,,,A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Scout Vulture,Vulture,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Scout Wolf,Wolf,"A, P",sighting-conflict,,,"A, P",Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; passive - does not attack unless engaged"
+Scrambling Spriggan,Spriggan,P,mob-page,P,"A, S",P,,passive - does not attack unless engaged
+Screamer,Funguar,P,family-page,,P,,,passive - does not attack unless engaged
+Screaming Kalong,Bat,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Screecher,Funguar,P,family-page,,P,,,passive - does not attack unless engaged
+Scurrying Spriggan,Spriggan,P,mob-page,P,"A, S",P,,passive - does not attack unless engaged
+Sea Hare,Slug,P,sighting,,,P,,passive - does not attack unless engaged
+Sea Puk,Puk,P,sighting,,,P,,passive - does not attack unless engaged
+Sea Wasp,Aurelia,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Ser Aucheforne of the High Tide,Enemy Humanoid,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Serpent Reaver Claw,Enemy Humanoid,"A, S",family-page,,"A, S",A,y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Serpent Reaver Eye,Enemy Humanoid,"A, S",family-page,,"A, S",A,y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Serpent Reaver Fin,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Sewer Mole,Mole,P,family-page,,P,P,,passive - does not attack unless engaged
+Shade Lurker,Wisp,A,sighting,,,A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Shade Seeker,Wisp,P,sighting,,,P,,passive - does not attack unless engaged
+Shadow Lurker,Wisp,A,sighting,,,A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Shadow Seeker,Wisp,P,sighting,,,P,,passive - does not attack unless engaged
+Shaggy Wolf,Wolf,,,,,,,
+Shaula,Diremite,"A, H",family-page,,"A, H",,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Shearing Sheridan,Crab,"A, H",mob-page,"A, H","P, H",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Shore Slug,Slug,P,sighting,,,P,,passive - does not attack unless engaged
+Shroud Bee Swarm,Swarm,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Shroud Hare,Slug,P,sighting,,,P,,passive - does not attack unless engaged
+Shroud Shrew,Mole,P,family-page,,P,P,,passive - does not attack unless engaged
+Shuffling Spriggan,Spriggan,P,mob-page,P,"A, S",P,,passive - does not attack unless engaged
+Sirocco,Antelope,P,sighting,,,P,,passive - does not attack unless engaged
+Skeleton Soldier,Wight,"A, H",family-page,,"A, H",A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Skeleton Swordbearer,Wight,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Skulking Wolf,Wolf,A,sighting,,,A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Slippery Sykes,Slug,P,sighting,,,P,,passive - does not attack unless engaged
+Slithering Slug,Slug,P,sighting,,,P,,passive - does not attack unless engaged
+Smoke Bomb,Bomb,"A, S",family-page,,"A, S",A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Smolenkos,Ahriman,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Snapping Shrew,Mole,P,family-page,,P,P,,passive - does not attack unless engaged
+Snipper,Crab,"A, H",mob-page,"A, H","P, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Snowbuck Stag,Antelope,"A, S",mob-page,"A, S",,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Snurble,Snurble,P,sighting,,,P,,passive - does not attack unless engaged
+Sordes,Puk,,,,,,,
+Sotted Simian,Opo-Opo,P,sighting,,,P,,passive - does not attack unless engaged
+Soulgazer,Ahriman,P,mob-page,P,"A, S",P,,passive - does not attack unless engaged
+Spawning Orobon,Angler,"A, TH",family-page,,"A, TH",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Spelaean Slug,Slug,A,sighting,,,A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Sphene Doblyn,Coblyn,P,family-page,,P,,,passive - does not attack unless engaged
+Spindiggle,Spriggan,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Spinesnap Ogre,Ogre,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Spiny Dormouse,Rodent,P,family-page,,P,P,,passive - does not attack unless engaged
+Spirit of the Wood,Elemental,"A, H",family-page,,"A, H",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Spiteful,Spriggan,"A, S",family-page,,"A, S",,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Spitfire,Spriggan,"A, S",family-page,,"A, S",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Spriggan,Spriggan,"A, S",family-page,,"A, S",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Spriggan Bezzler,Spriggan,"A, S",family-page,,"A, S",P,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Spriggan Collector,Spriggan,"A, S",family-page,,"A, S","A, P",Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Sprinting Spriggan,Spriggan,P,mob-page,P,"A, S",P,,passive - does not attack unless engaged
+Star Marmot,Rodent,P,family-page,,P,P,,passive - does not attack unless engaged
+Steropes,Cyclopes,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Stollenwurm,Drake,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Stone Golem,Golem,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Stoneshell,Crab,"P, H",family-page,,"P, H",P,,passive - does not attack unless engaged; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement
+Storm Biast,Drake,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Stormcry Boatswain,Enemy Humanoid,"A, S",family-page,,"A, S",A,y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Stormcry Powder Monkey,Enemy Humanoid,"A, S",family-page,,"A, S",A,y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Stormcry Quartermaster,Enemy Humanoid,"A, S",family-page,,"A, S",A,y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Stray Dodo,Cockatrice,P,sighting,,,P,,passive - does not attack unless engaged
+Stray Karakul Ewe,Ram,P,sighting,,,P,,passive - does not attack unless engaged
+Stray Karakul Ram,Ram,P,sighting,,,P,,passive - does not attack unless engaged
+Stuffed Dodo,Cockatrice,P,sighting,,,P,,passive - does not attack unless engaged
+Stumbling Funguar,Funguar,P,family-page,,P,,,passive - does not attack unless engaged
+Sulfur Slug,Slug,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Sultan's Trumpet,Mole,P,family-page,,P,P,,passive - does not attack unless engaged
+Sultansworn Elite,Enemy Humanoid,"A, S",family-page,,"A, S",,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Sun Midge Swarm,Swarm,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Sundrake,Drake,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Sure-footed Billygoat,Aldgoat,P,family-page,,P,P,,passive - does not attack unless engaged
+Surf Eft,Salamander,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Sylph Susurrus,Sylph,,,,,,,
+Syrphid Cloud,Swarm,,,,,,,
+Syrphid Swarm,Swarm,P,sighting,,,P,,passive - does not attack unless engaged
+Tainted Louse,Chigoe,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Tarbh Uisge,Buffalo,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Tempered Captive,Hyur,P,sighting,,,P,,passive - does not attack unless engaged
+Tempest Biast,Drake,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Territorial Angler,Angler,"A, TH",family-page,,"A, TH",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Territorial Antling,Antling,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Territorial Chiglet,Chigoe,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Territorial Coblyn,Coblyn,P,family-page,,P,A,,passive - does not attack unless engaged
+Territorial Digger,Antling,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Territorial Dreadwolf,Wolf,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Territorial Galago,Opo-opo,P,family-page,,P,P,,passive - does not attack unless engaged
+Territorial Gnat,Gnat,"A, TH",family-page,,"A, TH",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Territorial Hog,Boar,"A, TH",family-page,,"A, TH",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Territorial Megalocrab,Crab,"A, H",mob-page,"A, H","P, H",A,A,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Territorial Raptor,Raptor,"A, S, L",family-page,,"A, S, L",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight; links - helps other mobs of its own kind"
+Territorial Roselet,Landtrap,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Territorial Scavenger,Yarzon,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Territorial Wolf,Wolf,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Territorial Yarzon,Yarzon,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Thickshell,Crab,"P, H",family-page,,"P, H",P,,passive - does not attack unless engaged; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement
+Third Order Patriarch Zu Ga,Kobold,"A, S",family-page,,"A, S",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Thistletail Marmot,Rodent,P,family-page,,P,P,,passive - does not attack unless engaged
+Thorned Roseling,Landtrap,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Tiny Dormouse,Rodent,P,family-page,,P,P,,passive - does not attack unless engaged
+Toad Poacher,Enemy Humanoid,"A, S",family-page,,"A, S",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Toadsquatter Femomo,Enemy Humanoid,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Toadstool,Funguar,P,family-page,,P,P,,passive - does not attack unless engaged
+Toadtrap,Landtrap,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Toothless Gladiator,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Tourney Gladiator,Enemy Humanoid,"A, S",family-page,,"A, S",A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Toxic Flytrap,Landtrap,"A, H",family-page,,"A, H",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Toxic Toad,Toad,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Trancetoad,Toad,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Tree Slug,Slug,P,sighting,,,P,,passive - does not attack unless engaged
+Truffle Hog,Boar,"A, TH",family-page,,"A, TH",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Tuco-tuco,Mole,P,family-page,,P,P,,passive - does not attack unless engaged
+Turquoise Dewflower Sylph,Sylph,,,,,,,
+Tusked Hog,Boar,"A, TH",family-page,,"A, TH",A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+U'Ghamaro Ashman,Kobold,"A, S",family-page,,"A, S",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+U'Ghamaro Gateman,Kobold,"A, S",family-page,,"A, S",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+U'Ghamaro Gurneyman,Kobold,"A, S",family-page,,"A, S",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+U'Ghamaro Junkman,Kobold,"A, S",family-page,,"A, S",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+U'Ghamaro Overman,Kobold,"A, S",family-page,,"A, S",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+U'Ghamaro Underman,Kobold,"A, S",family-page,,"A, S",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Uncommon Cactuar,Cactuar,P,family-page,,P,,,passive - does not attack unless engaged
+Unknown Soldier,Ghost,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Uraeus,Basilisk,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+VIIth Legion Centurion,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+VIIth Legion Eques,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+VIIth Legion Hoplomachus,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+VIIth Legion Laquearius,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+VIIth Legion Medicus,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+VIIth Legion Sagitarius,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+VIIth Legion Secutor,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+VIIth Legion Signifer,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Vale Diremite,Diremite,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Vale Wasp,Aurelia,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Velociraptor,Raptor,"A, S, L",family-page,,"A, S, L",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight; links - helps other mobs of its own kind"
+Venomtongue Assassin,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Vile Gnat,Gnat,"A, TH",family-page,,"A, TH",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Void Flame,Wisp,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Void Lantern,Wisp,A,sighting,,,A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Voidtongue Ahzabb Chah,Amalj'aa,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Vulture,Vulture,"A, S",family-page,,"A, S",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Vulture Poacher,Enemy Humanoid,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Vulturetrap,Landtrap,"A, H",family-page,,"A, H",A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Wadjet,Basilisk,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Wandering Bogy,Ghost,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Wandering Mage,Fomor,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Wandering Soldier,Fomor,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Wandering Wight,Wight,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Wandering Wisp,Wisp,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Watchwolf,Wolf,A,sighting,,,A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Water Elemental,Elemental,"A, H",family-page,,"A, H",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Waterdog,Salamander,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Wayside Archer,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Wayside Backstabber,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Wayside Bewitcher,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Wayside Bludgeoner,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Wayside Boarder,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Wayside Lancer,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Wayside Pugilist,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Wayside Raider,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Wayside Sniper,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Wendigo,Wight,"A, H",family-page,,"A, H",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Westroad Footpad,Enemy Humanoid,"A, S",family-page,,"A, S",A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Westroad Raider,Enemy Humanoid,"A, S",family-page,,"A, S",A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Wharf Rat,Rodent,P,family-page,,P,P,,passive - does not attack unless engaged
+Whiskerwall Kupdi Koop,Moogle,A,sighting,,,A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Whitetalon,Hippogryph,"A, TH",family-page,,"A, TH",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Wicked Soul,Ghost,A,sighting,,,A,A,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Widargelt the Watcher,Enemy Humanoid,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Widow's Suitor,Diremite,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Widowmaker,Diremite,"A, H",family-page,,"A, H",,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Wight Warrior,Wight,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Wild Boar,Boar,"A, TH",family-page,,"A, TH",A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Wild Ewe,Ram,P,sighting,,,P,,passive - does not attack unless engaged
+Wild Hog,Boar,"A, TH",family-page,,"A, TH",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by true hearing"
+Wild Jackal,Wolf,A,sighting,,,A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Will-o'-the Wykes,Wisp,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Will-o'-the-wisp,Wisp,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Wind Elemental,Elemental,"A, H",family-page,,"A, H",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Windborn Buccaneer,Enemy Humanoid,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Wingrat,Bat,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Wisp Familiar,Wisp,A,sighting,,,A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Wolf Poacher,Enemy Humanoid,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Wood Weevil,Beetle,P,sighting,,,P,,passive - does not attack unless engaged
+Woodsin Thrall,Ghost,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Woolywart Kupqu Kogi,Moogle,A,sighting,,,A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Xha Viqqoh the Nibbler,Enemy Humanoid,"A, S",family-page,,"A, S",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Yarzon Biter,Yarzon,"A, H",family-page,,"A, H",A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Yarzon Bleeder,Yarzon,"A, H",family-page,,"A, H",A,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Yarzon Burrower,Yarzon,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Yarzon Feeder,Yarzon,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Yarzon Invader,Yarzon,"A, H",family-page,,"A, H",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Yarzon Scavenger,Yarzon,"A, H",family-page,,"A, H",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Yarzon Stalker,Yarzon,"A, H",family-page,,"A, H",,,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Yellow Dewflower Sylph,Sylph,,,,,,,
+Yotoli Hueloc the Austere,Ixal,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Young Antelope Stag,Antelope,A,sighting,,,A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"
+Young Galago,Opo-opo,P,family-page,,P,P,,passive - does not attack unless engaged
+Young Raptor,Raptor,"A, S, L",family-page,,"A, S, L",A,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight; links - helps other mobs of its own kind"
+Zahar'ak Chandler,Amalj'aa,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Zahar'ak Drubber,Amalj'aa,"A, S",family-page,,"A, S",A,Yes,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Zahar'ak Feretrar,Amalj'aa,"A, S",family-page,,"A, S",A,^,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Zahar'ak Halberdier,Amalj'aa,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Zahar'ak Illuminator,Amalj'aa,"A, S",family-page,,"A, S",A,^,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Zahar'ak Ostiary,Amalj'aa,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Zahar'ak Scriniary,Amalj'aa,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Zahar'ak Sniper,Amalj'aa,"A, S",family-page,,"A, S",A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by sight"
+Zanig'oh,Drake,"A, H",family-page,,"A, H",,x,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; detects players by hearing - triggers when a player passes nearby at a non-walking rate of movement"
+Zikko,Imp,,,,,,,
+Zombie Mage,Fomor,"A, P",sighting-conflict,,,"A, P",Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight; passive - does not attack unless engaged"
+Zombie Pikeman,Fomor,A,sighting,,,A,Y,"aggressive - attacks on sight unless the player is far enough above it in level, or is out of its line of sight"

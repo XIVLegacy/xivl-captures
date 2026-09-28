@@ -1,0 +1,26 @@
+patch,release_date,in_effect_until,notes,source
+1.15a,2011-02-02,2011-02-16,,bg-patch-note-threads
+1.15b,2011-02-17,2011-03-02,,bg-patch-note-threads
+1.16,2011-03-03,2011-03-24,,bg-patch-note-threads
+1.16a,2011-03-25,2011-04-13,,bg-patch-note-threads
+1.17,2011-04-14,2011-04-24,,bg-patch-note-threads
+1.17a,2011-04-25,2011-05-22,,bg-patch-note-threads
+1.17b,2011-05-23,2011-06-14,,bg-patch-note-threads
+1.17c,2011-06-15,2011-07-20,,bg-patch-note-threads
+1.18,2011-07-21,2011-08-04,"a separate 2011-07-14 thread covers the pre-patch miscellaneous adjustments",bg-patch-note-threads
+1.18a,2011-08-05,2011-08-09,,bg-patch-note-threads
+1.18b,2011-08-10,2011-09-29,"the trait-point-cap thread sits here",bg-patch-note-threads
+1.19,2011-09-30,2011-12-11,"the stats thread opens 2011-10-11, eleven days into this window",bg-patch-note-threads
+1.20,2011-12-12,2011-12-26,"the patch that fundamentally reworked skills and formulas; everything tested before it describes replaced mechanics",bg-patch-note-threads
+1.20a,2011-12-27,2012-03-07,,bg-patch-note-threads
+1.21,2012-03-08,2012-03-25,"weaponskill attack-power calculation changed; Flat Blade combo bonus became MND-dependent",bg-patch-note-threads
+1.21a,2012-03-26,2012-04-24,,bg-patch-note-threads
+1.22,2012-04-25,2012-05-08,"block damage reduction formula completely redone",bg-patch-note-threads
+1.22a,2012-05-09,2012-07-24,"the 2012-05-23 hotfix inside this window revised the crit rating / crit attack power / magic crit rating algorithms",bg-patch-note-threads
+1.23,2012-07-25,2012-08-12,,bg-patch-note-threads
+1.23a,2012-08-13,2012-09-11,,bg-patch-note-threads
+1.23b,2012-09-12,,"the repo's target version; the stats thread has only a handful of posts after this date and none of them are tests",bg-patch-note-threads
+1.22b,,,"GAP - no dedicated patch-note thread was staged. Attested in-thread only through a link to an `NA Patch 1.22c Hotfixes (Jun. 27)` thread, and by the gamerescape set's per-item patch_introduced column",bg-patch-note-threads
+1.22c,,,"GAP - as 1.22b. The June 27 2012 hotfix thread re-quotes the same crit-algorithm text as the May 23 hotfix",bg-patch-note-threads
+1.19a,,,"GAP - no staged thread. Attested only by the gamerescape set's per-item patch_introduced column",bg-patch-note-threads
+1.20b,,,"GAP - no staged thread. Attested only by the gamerescape set's per-item patch_introduced column",bg-patch-note-threads

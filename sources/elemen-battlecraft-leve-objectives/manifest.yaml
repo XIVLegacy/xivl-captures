@@ -1,0 +1,30 @@
+id: elemen-battlecraft-leve-objectives
+title: eLeMeN FF14 1.x Regional Battlecraft Leve Objectives - Web Tables
+evidence_class: web-tables
+distribution: restricted
+provenance:
+  sources:
+  - title: 3 regional battlecraft leve pages (patch2.00 = final 1.x snapshot)
+    url: http://elemen.sakura.ne.jp/ff14_dated_archives/guildleve/regional/{LimsaLominsa,Gridania,Ul'dah}_BattlecraftLeves.html
+    site: eLeMeN - FF14
+    note: Per-page source path is in derived/file-inventory.csv (source_page column); source HTML preserved in elemen-site-archive.
+storage:
+  original_state: in-repo
+  storage_id: repo
+  path: objects/
+  master_archive:
+    file: elemen-battlecraft-leve-objectives-objects.zip
+    sha256: 8a76f79daec400e4665917401f3c16f05b9c8e2e6c29c4b8006772bddf86ad0d
+    size_bytes: 8318
+    holds: all 3 files under objects/, deflate, fixed timestamps
+    cold_store_path: archives/elemen-battlecraft-leve-objectives/elemen-battlecraft-leve-objectives-objects.zip
+members:
+- file: pages/Gridania_BattlecraftLeves.md
+  sha256: d4f5c56d8aa15ac2afd30694c69b4afa841f3b7b56b23d0ded4ddf9d104f6bfc
+  size_bytes: 10996
+- file: pages/LimsaLominsa_BattlecraftLeves.md
+  sha256: 44f0226ae53300f520cc8d1dea12644cb7c328a6814a92a73d07275db5e32f02
+  size_bytes: 11889
+- file: pages/Uldah_BattlecraftLeves.md
+  sha256: b0bcf5abdd80e6e3c4f6606f4ba31d51b8fb7832ce13c6b68e093487c2d5da0e
+  size_bytes: 11264

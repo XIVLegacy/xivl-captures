@@ -1,0 +1,4 @@
+path,kind,rows
+derived/instanced-content-entry-rules.csv,normalized-table,15
+derived/glossary.md,glossary,
+sources/elemen-instanced-content-entry-rules/objects/pages/instanced-content-entry-rules.md,verbatim-transcription,13

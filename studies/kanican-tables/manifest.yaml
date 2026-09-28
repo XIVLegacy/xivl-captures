@@ -1,0 +1,64 @@
+id: kanican-tables
+title: kanican FFXIV 1.x Combat Theorycrafting - Web Tables
+evidence_class: web-tables
+status: distilled
+content_kind: action-mechanic
+tags:
+- web-reference
+- wiki-tier
+- calibration
+- patch-1.18
+- patch-1.20
+- cure-formula
+- healing
+- magic-evasion
+- physical-damage-taken
+- critical-damage-bonus
+- enmity
+- combat-sp
+- kanican
+search_hints:
+- cure formula
+- cura
+- healing magic potency
+- magic evasion
+- meva
+- magic resist tiers
+- physical damage taken
+- defense mitigation
+- critical damage bonus
+- critical potency
+- crit bonus cap
+- enmity
+- combat sp
+- skill points
+- kanican
+- kaeko leta
+- stat testing
+- rampage
+- thundaga
+notes: 'Transcription of kanican''s (Kaeko Leta''s) FFXIV 1.x theorycrafting from LiveJournal. 11 posts spanning patches 1.18-1.20/1.21 (Aug 2011-Mar 2012). Evidence tier: wiki (packet captures > video breakdown > wiki), so values here are CALIBRATION-grade. The four 1.20 Stat Testing posts (Cure/Cura, magic evasion, physical damage taken, critical damage bonus) carry the recoverable data - 40 Excel-screenshot images preserved under sources/kanican-tables/objects/images/ back the derived CSVs. All pre-1.20 images (48) are dead LiveJournal placeholders not on the Wayback Machine; the v1.18 enmity table values are lost, only text survives. Formulas are the author''s best-fit predictors, not decompiled constants. This is the upstream source for later 1.x community formula writeups; not to be confused with Valk''s ARR 2.0-beta B.L.I.T.Z.B.A.L.L., which reused the methodology with 2.0 values and is out of scope for a 1.23b repo.'
+related_implementation_docs: []
+source_refs:
+- source: kanican-tables
+primary_paths:
+- derived/evidence-map.md
+- derived/formulas.md
+- derived/healing-cure-cura.csv
+- derived/critical-damage-bonus.csv
+canonical_evidence:
+- derived/formulas.md
+- derived/evidence-map.md
+- derived/healing-cure-cura.csv
+- derived/critical-damage-bonus.csv
+distilled:
+  distilled: true
+  distilled_artifacts:
+  - derived/evidence-map.md
+  - derived/formulas.md
+  - derived/healing-cure-cura.csv
+  - derived/critical-damage-bonus.csv
+  - derived/physical-damage-taken.csv
+  - derived/magic-evasion-caps.csv
+  - derived/magic-evasion-resist-tests.csv
+  - derived/file-inventory.csv

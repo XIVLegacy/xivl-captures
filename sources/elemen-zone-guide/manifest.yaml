@@ -1,0 +1,30 @@
+id: elemen-zone-guide
+title: eLeMeN FF14 1.x Zone Guide - Weather, Aetheryte, Adjacency - Web Tables
+evidence_class: web-tables
+distribution: restricted
+provenance:
+  sources:
+  - title: etc/area section index + 28 zone pages (final 1.x snapshot)
+    url: http://elemen.sakura.ne.jp/ff14_dated_archives/etc/area/index.html
+    site: eLeMeN - FF14
+    note: 28 zone pages (4 city-states, 5 field regions, 18 dungeons/instances, 1 ship) plus the section index, preserved in elemen-site-archive. Apostrophes in source filenames are written as _ (Ul_dah, U_GhamaroMines, Cutter_sCry).
+storage:
+  original_state: in-repo
+  storage_id: repo
+  path: objects/
+  master_archive:
+    file: elemen-zone-guide-objects.zip
+    sha256: e10136126aaf246eeeccf07e6bdb54061a13497d9cdebcdf289de00c61a70dcd
+    size_bytes: 9986
+    holds: all 3 files under objects/, deflate, fixed timestamps
+    cold_store_path: archives/elemen-zone-guide/elemen-zone-guide-objects.zip
+members:
+- file: pages/area-guide.md
+  sha256: e4c7101cfaf30537537a9e7ed4b30ae982fa0d3e969f8604e375d765f5348cb3
+  size_bytes: 20693
+- file: pages/shops.md
+  sha256: 7fd82528decada15e6e24c30d48767cc20149f889499ab076c5bbdb02d0f17f8
+  size_bytes: 17026
+- file: pages/submaps.md
+  sha256: 82293d6e799312117c71bedd3490ecadcc29b3c93b160f8c2f891ccbb867bb30
+  size_bytes: 3233

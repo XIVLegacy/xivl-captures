@@ -1,0 +1,11 @@
+# Resist-strength distributions from kanican's MEVA testing. Resist tiers reduce
+# incoming magic damage in 25% steps: None (0%), Single (-25%), Double (-50%),
+# Triple (-75%). effective_resist_pct is the author's average total damage
+# reduction. For the poison_res panels the None/Single/Double/Triple counts are
+# over the damaging-hit subset (n = 33 / 29 / 27), not all trials; see
+# raw image images/stat-testing-2-meva/09.png for the full breakdown.
+test,element,meva,poison_res_bonus,subset_n,resist_none_count,resist_none_pct,resist_single_count,resist_single_pct,resist_double_count,resist_double_pct,resist_triple_count,resist_triple_pct,effective_resist_pct,source
+Scream (R46 self test),Earth,420,0,420,15,3.57,217,51.67,143,34.05,45,10.71,62.02,stat-testing-2-meva
+Scourge poison DoT,Umbral,544,0,33,4,12.12,17,51.52,11,33.33,1,3.03,68.18,stat-testing-2-meva
+Scourge poison DoT,Umbral,544,+12,29,2,6.90,13,44.83,9,31.03,5,17.24,60.34,stat-testing-2-meva
+Scourge poison DoT,Umbral,544,+21,27,1,3.70,9,33.33,13,48.15,4,14.81,56.48,stat-testing-2-meva

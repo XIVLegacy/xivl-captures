@@ -1,0 +1,67 @@
+group_jp,group_en,category_jp,category_en,item_jp,item_marker,client_item_id,client_item_en,effect_jp,effect_en,recast_s,duration_s,client_recast_s,client_duration_s,source
+回復薬類,Recovery,HP回復,HP Recovery,ポーション,,3020001,Potion,HP回復量:＋40%(上限 100) リキャストタイム:1:10,HP Regen:+40%(cap 100) Recast Time:1:10,70,,70,0,elemen-medicine
+回復薬類,Recovery,HP回復,HP Recovery,ハイポーション,,3020002,Hi-potion,HP回復量:＋30%(上限 300) リキャストタイム:1:20,HP Regen:+30%(cap 300) Recast Time:1:20,80,,80,0,elemen-medicine
+回復薬類,Recovery,HP回復,HP Recovery,メガポーション,,3020003,Mega-potion,HP回復量:＋20%(上限 600) リキャストタイム:1:30,HP Regen:+20%(cap 600) Recast Time:1:30,90,,90,0,elemen-medicine
+回復薬類,Recovery,HP回復,HP Recovery,ファイアポーション,,3020006,Fire Potion,HP回復量:＋40%(上限 50) リキャストタイム:0:45,HP Regen:+40%(cap 50) Recast Time:0:45,45,,45,0,elemen-medicine
+回復薬類,Recovery,HP回復,HP Recovery,ウォーターポーション,,3020007,Water Potion,HP回復量:＋40%(上限 50) リキャストタイム:0:45,HP Regen:+40%(cap 50) Recast Time:0:45,45,,45,0,elemen-medicine
+回復薬類,Recovery,HP回復,HP Recovery,ウィンドポーション,,3020008,Wind Potion,HP回復量:＋40%(上限 50) リキャストタイム:0:45,HP Regen:+40%(cap 50) Recast Time:0:45,45,,45,0,elemen-medicine
+回復薬類,Recovery,HP回復,HP Recovery,アースポーション,,3020009,Earth Potion,HP回復量:＋40%(上限 50) リキャストタイム:0:45,HP Regen:+40%(cap 50) Recast Time:0:45,45,,45,0,elemen-medicine
+回復薬類,Recovery,HP回復,HP Recovery,ライトニングポーション,,3020010,Lightning Potion,HP回復量:＋40%(上限 50) リキャストタイム:0:45,HP Regen:+40%(cap 50) Recast Time:0:45,45,,45,0,elemen-medicine
+回復薬類,Recovery,HP回復,HP Recovery,アイスポーション,,3020011,Ice Potion,HP回復量:＋40%(上限 50) リキャストタイム:0:45,HP Regen:+40%(cap 50) Recast Time:0:45,45,,45,0,elemen-medicine
+治療薬類,Remedy,状態異常回復,Status Recovery,目薬,,3020401,Eye Drops,闇を払う秘薬（効果：暗闇の回復） リキャストタイム:1:10,removes Blind; recast 1:10,70,,270,0,elemen-medicine
+治療薬類,Remedy,状態異常回復,Status Recovery,やまびこ薬,,3020402,Throat Drops,声を取り戻す秘薬（効果：静寂の回復） リキャストタイム:1:10,removes Silence; recast 1:10,70,,240,0,elemen-medicine
+治療薬類,Remedy,状態異常回復,Status Recovery,きつけ薬,,3020403,Dawn Drops,目覚めを促す秘薬（効果：睡眠の回復） リキャストタイム:1:10,removes Sleep; recast 1:10,70,,210,0,elemen-medicine
+治療薬類,Remedy,状態異常回復,Status Recovery,元気薬,,3020404,Spine Drops,筋肉をほぐす秘薬（効果：麻痺の回復） リキャストタイム:1:20,removes Paralysis; recast 1:20,80,,240,0,elemen-medicine
+治療薬類,Remedy,状態異常回復,Status Recovery,沈静薬,,3020405,Nerve Drops,気を静める秘薬（効果：敵視低下） リキャストタイム:1:20,reduces enmity; recast 1:20,80,,240,60,elemen-medicine
+治療薬類,Remedy,状態異常回復,Status Recovery,止血薬,,3020406,Blood Drops,止血する秘薬（効果：中毒の回復） リキャストタイム:1:10,removes Poison; recast 1:10,70,,180,0,elemen-medicine
+治療薬類,Remedy,状態異常回復,Status Recovery,息継ぎ薬,,3020407,Lung Drops,気道を通す秘薬（効果：静寂＋中毒の回復） リキャストタイム:1:20,removes Silence + Poison; recast 1:20,80,,240,0,elemen-medicine
+治療薬類,Remedy,状態異常回復,Status Recovery,強心薬,,3020408,Heart Drops,鼓動を促す秘薬（効果：麻痺＋中毒の回復） リキャストタイム:1:20,removes Paralysis + Poison; recast 1:20,80,,240,0,elemen-medicine
+治療薬類,Remedy,状態異常回復,Status Recovery,金の針,,3020409,Gold Needle,石化を治癒する魔法の針 リキャストタイム:1:20,cures Petrification; recast 1:20,80,,240,0,elemen-medicine
+治療薬類,Remedy,状態異常回復,Status Recovery,軍用再生薬,◆◆,3020411,Company-issue Expectorant,フェニックスの尾を用いた粉薬［一定確率で目標を行動不能から蘇生］ リキャストタイム:0:05,chance-based raise from KO; recast 0:05,5,,5,0,elemen-medicine
+治療薬類,Remedy,状態異常回復,Status Recovery,軍用蘇生薬,◆◆,3020412,Company-issue Tonic,フェニックスの尾を用いた高品質粉薬［目標を行動不能から蘇生］ リキャストタイム:0:05,raise from KO; recast 0:05,5,,5,0,elemen-medicine
+精魂薬類,Restorative,MP回復,MP Recovery,エーテル,,3020101,Ether,MP回復量:＋40%(上限 100) リキャストタイム:4:00,MP Regen:+40%(cap 100) Recast Time:4:00,240,,240,0,elemen-medicine
+精魂薬類,Restorative,MP回復,MP Recovery,ハイエーテル,,3020102,Hi-ether,MP回復量:＋30%(上限 300) リキャストタイム:4:30,MP Regen:+30%(cap 300) Recast Time:4:30,270,,270,0,elemen-medicine
+精魂薬類,Restorative,MP回復,MP Recovery,メガエーテル,,3020103,Mega-ether,MP回復量:＋20%(上限 600) リキャストタイム:5:00,MP Regen:+20%(cap 600) Recast Time:5:00,300,,300,0,elemen-medicine
+精魂薬類,Restorative,MP回復,MP Recovery,ファイアエーテル,,3020105,Fire Ether,MP回復量:＋30%(上限 50) リキャストタイム:5:00,MP Regen:+30%(cap 50) Recast Time:5:00,300,,300,0,elemen-medicine
+精魂薬類,Restorative,MP回復,MP Recovery,ウォーターエーテル,,3020106,Water Ether,MP回復量:＋30%(上限 50) リキャストタイム:5:00,MP Regen:+30%(cap 50) Recast Time:5:00,300,,300,0,elemen-medicine
+精魂薬類,Restorative,MP回復,MP Recovery,ウィンドエーテル,,3020107,Wind Ether,MP回復量:＋30%(上限 50) リキャストタイム:5:00,MP Regen:+30%(cap 50) Recast Time:5:00,300,,300,0,elemen-medicine
+精魂薬類,Restorative,MP回復,MP Recovery,アースエーテル,,3020108,Earth Ether,MP回復量:＋30%(上限 50) リキャストタイム:5:00,MP Regen:+30%(cap 50) Recast Time:5:00,300,,300,0,elemen-medicine
+精魂薬類,Restorative,MP回復,MP Recovery,ライトニングエーテル,,3020109,Lightning Ether,MP回復量:＋30%(上限 50) リキャストタイム:5:00,MP Regen:+30%(cap 50) Recast Time:5:00,300,,300,0,elemen-medicine
+精魂薬類,Restorative,MP回復,MP Recovery,アイスエーテル,,3020110,Ice Ether,MP回復量:＋30%(上限 50) リキャストタイム:5:00,MP Regen:+30%(cap 50) Recast Time:5:00,300,,300,0,elemen-medicine
+精魂薬類,Restorative,MP回復,MP Recovery,エリクサー,,3020201,Elixir,HP回復量:＋50%(上限 2000) MP回復量:＋30%(上限 1050) リキャストタイム:7:30,HP Regen:+50%(cap 2000) MP Regen:+30%(cap 1050) Recast Time:7:30,450,,450,0,elemen-medicine
+精魂薬類,Restorative,MP回復,MP Recovery,ダスケンドラフト,◆◆,3020202,Dusken Draught,HP回復量:＋50%(上限 2000) リキャストタイム:3:30,HP Regen:+50%(cap 2000) Recast Time:3:30,210,,210,0,elemen-medicine
+精魂薬類,Restorative,MP回復,MP Recovery,ハーバルキス,◆◆,3020203,Kiss of the Morning Meadow,MP回復量:＋30%(上限 1050) リキャストタイム:4:30,MP Regen:+30%(cap 1050) Recast Time:4:30,270,,270,0,elemen-medicine
+精魂薬類,Restorative,MP回復,MP Recovery,オニキスティア,◆◆,3020204,Onyx Tears,HP回復量:＋20%(上限 850) MP回復量:＋20%(上限 600) リキャストタイム:4:30,HP Regen:+20%(cap 850) MP Regen:+20%(cap 600) Recast Time:4:30,270,,270,0,elemen-medicine
+毒薬類,Poison,弱体効果,Enfeebling,暗闇毒,,3020301,Blinding Potion,闇を招く毒薬（効果：暗闇） 効果時間:0:10 リキャストタイム:2:00,"inflicts Blind; duration 0:10, recast 2:00",120,10,120,10,elemen-medicine
+毒薬類,Poison,弱体効果,Enfeebling,静寂毒,,3020302,Silencing Potion,声を失う毒薬（効果：静寂） 効果時間:0:10 リキャストタイム:2:00,"inflicts Silence; duration 0:10, recast 2:00",120,10,120,10,elemen-medicine
+毒薬類,Poison,弱体効果,Enfeebling,昏睡毒,,3020303,Sleeping Potion,眠気をもよおす毒薬（効果：睡眠） 効果時間:0:10 リキャストタイム:2:00,"inflicts Sleep; duration 0:10, recast 2:00",120,10,120,10,elemen-medicine
+毒薬類,Poison,弱体効果,Enfeebling,マヒ毒,,3020304,Paralyzing Potion,動きを封じる毒薬（効果：麻痺） 効果時間:0:10 リキャストタイム:2:00,"inflicts Paralysis; duration 0:10, recast 2:00",120,10,120,10,elemen-medicine
+毒薬類,Poison,弱体効果,Enfeebling,出血毒,,3020306,Poisoning Potion,出血を促す毒薬（効果：中毒） 効果時間:0:20 リキャストタイム:2:00,"inflicts Poison; duration 0:20, recast 2:00",120,20,120,20,elemen-medicine
+毒薬類,Poison,弱体効果,Enfeebling,窒息毒,,3020307,Smothering Potion,窒息を引き起こす毒薬（効果：静寂＋中毒） 効果時間:0:10 リキャストタイム:2:00,"inflicts Silence + Poison; duration 0:10, recast 2:00",120,10,120,10,elemen-medicine
+毒薬類,Poison,弱体効果,Enfeebling,停心毒,,3020308,Disabling Potion,停心を引き起こす毒薬（効果：麻痺＋中毒） 効果時間:0:10 リキャストタイム:2:00,"inflicts Paralysis + Poison; duration 0:10, recast 2:00",120,10,120,10,elemen-medicine
+霊薬類,Elixir,自己強化,Self-Enhancement,熱狂薬,,3020305,Maddening Potion,敵視:+100 効果時間:1:00 リキャストタイム:4:00,Enmity:+100 Duration:1:00 Recast Time:4:00,240,60,240,60,elemen-medicine
+霊薬類,Elixir,自己強化,Self-Enhancement,沈静薬,,3020405,Nerve Drops,敵視:-80 効果時間:1:00 リキャストタイム:4:00,Enmity:-80 Duration:1:00 Recast Time:4:00,240,60,240,60,elemen-medicine
+霊薬類,Elixir,自己強化,Self-Enhancement,鉄甲薬,,3020501,Ironhide Unguent,鋼鉄の皮膚を付与する秘薬（効果：プロテス） 効果時間:5:00 リキャストタイム:10:00,"grants Protect; duration 5:00, recast 10:00",600,300,600,300,elemen-medicine
+霊薬類,Elixir,自己強化,Self-Enhancement,亀甲薬,,3020502,Ironwill Unguent,魔法の甲羅を付与する秘薬（効果：シェル） 効果時間:5:00 リキャストタイム:10:00,"grants Shell; duration 5:00, recast 10:00",600,300,600,300,elemen-medicine
+霊薬類,Elixir,自己強化,Self-Enhancement,体力の薬,,3020511,Muscle Restorative,HP:+5%(上限 250) 効果時間:10:00 リキャストタイム:15:00,HP:+5%(cap 250) Duration:10:00 Recast Time:15:00,900,600,900,600,elemen-medicine
+霊薬類,Elixir,自己強化,Self-Enhancement,剛力の薬,,3020512,Potion of Strength,STR:+22%(上限 20) 物理攻撃力:+26%(上限 45) 効果時間:0:30 リキャストタイム:3:40,Strength:+22%(cap 20) Attack Power:+26%(cap 45) Duration:0:30 Recast Time:3:40,220,30,220,30,elemen-medicine
+霊薬類,Elixir,自己強化,Self-Enhancement,剛力の妙薬,,3020513,Hi-potion of Strength,STR:+18%(上限 30) 物理攻撃力:+22%(上限 90) 効果時間:0:30 リキャストタイム:3:50,Strength:+18%(cap 30) Attack Power:+22%(cap 90) Duration:0:30 Recast Time:3:50,230,30,230,30,elemen-medicine
+霊薬類,Elixir,自己強化,Self-Enhancement,剛力の秘薬,,3020514,Mega-potion of Strength,STR:+14%(上限 40) 物理攻撃力:+18%(上限 125) 効果時間:0:30 リキャストタイム:4:00,Strength:+14%(cap 40) Attack Power:+18%(cap 125) Duration:0:30 Recast Time:4:00,240,30,240,30,elemen-medicine
+霊薬類,Elixir,自己強化,Self-Enhancement,活力の薬,,3020515,Potion of Vitality,VIT:+22%(上限 20) 物理防御力:+26%(上限 45) 効果時間:1:00 リキャストタイム:3:40,Vitality:+22%(cap 20) Defense:+26%(cap 45) Duration:1:00 Recast Time:3:40,220,60,220,60,elemen-medicine
+霊薬類,Elixir,自己強化,Self-Enhancement,活力の妙薬,,3020516,Hi-potion of Vitality,VIT:+18%(上限 30) 物理防御力:+22%(上限 90) 効果時間:1:00 リキャストタイム:3:50,Vitality:+18%(cap 30) Defense:+22%(cap 90) Duration:1:00 Recast Time:3:50,230,60,230,60,elemen-medicine
+霊薬類,Elixir,自己強化,Self-Enhancement,活力の秘薬,,3020517,Mega-potion of Vitality,VIT:+14%(上限 40) 物理防御力:+18%(上限 125) 効果時間:1:00 リキャストタイム:4:00,Vitality:+14%(cap 40) Defense:+18%(cap 125) Duration:1:00 Recast Time:4:00,240,60,240,60,elemen-medicine
+霊薬類,Elixir,自己強化,Self-Enhancement,眼力の薬,,3020518,Potion of Dexterity,DEX:+22%(上限 20) 物理攻撃力:+24%(上限 40) 効果時間:0:40 リキャストタイム:3:40,Dexterity:+22%(cap 20) Attack Power:+24%(cap 40) Duration:0:40 Recast Time:3:40,220,40,220,40,elemen-medicine
+霊薬類,Elixir,自己強化,Self-Enhancement,眼力の妙薬,,3020519,Hi-potion of Dexterity,DEX:+18%(上限 30) 物理攻撃力:+20%(上限 60) 効果時間:0:40 リキャストタイム:3:50,Dexterity:+18%(cap 30) Attack Power:+20%(cap 60) Duration:0:40 Recast Time:3:50,230,40,230,40,elemen-medicine
+霊薬類,Elixir,自己強化,Self-Enhancement,眼力の秘薬,,3020520,Mega-potion of Dexterity,DEX:+14%(上限 40) 物理攻撃力:+16%(上限 80) 効果時間:0:40 リキャストタイム:4:00,Dexterity:+14%(cap 40) Attack Power:+16%(cap 80) Duration:0:40 Recast Time:4:00,240,40,240,40,elemen-medicine
+霊薬類,Elixir,自己強化,Self-Enhancement,知力の薬,,3020521,Potion of Intelligence,INT:+22%(上限 20) 攻撃魔法威力:+24%(上限 40) 効果時間:0:30 リキャストタイム:3:40,Intelligence:+22%(cap 20) Attack Magic Potency:+24%(cap 40) Duration:0:30 Recast Time:3:40,220,30,220,30,elemen-medicine
+霊薬類,Elixir,自己強化,Self-Enhancement,知力の妙薬,,3020522,Hi-potion of Intelligence,INT:+18%(上限 30) 攻撃魔法威力:+20%(上限 60) 効果時間:0:30 リキャストタイム:3:50,Intelligence:+18%(cap 30) Attack Magic Potency:+20%(cap 60) Duration:0:30 Recast Time:3:50,230,30,230,30,elemen-medicine
+霊薬類,Elixir,自己強化,Self-Enhancement,知力の秘薬,,3020523,Mega-potion of Intelligence,INT:+14%(上限 40) 攻撃魔法威力:+16%(上限 80) 効果時間:0:30 リキャストタイム:4:00,Intelligence:+14%(cap 40) Attack Magic Potency:+16%(cap 80) Duration:0:30 Recast Time:4:00,240,30,240,30,elemen-medicine
+霊薬類,Elixir,自己強化,Self-Enhancement,意力の薬,,3020524,Potion of Mind,MND:+22%(上限 20) 回復魔法威力:+24%(上限 40) 効果時間:1:00 リキャストタイム:3:40,Mind:+22%(cap 20) Healing Magic Potency:+24%(cap 40) Duration:1:00 Recast Time:3:40,220,60,220,60,elemen-medicine
+霊薬類,Elixir,自己強化,Self-Enhancement,意力の妙薬,,3020525,Hi-potion of Mind,MND:+18%(上限 30) 回復魔法威力:+20%(上限 60) 効果時間:1:00 リキャストタイム:3:50,Mind:+18%(cap 30) Healing Magic Potency:+20%(cap 60) Duration:1:00 Recast Time:3:50,230,60,230,60,elemen-medicine
+霊薬類,Elixir,自己強化,Self-Enhancement,意力の秘薬,,3020526,Mega-potion of Mind,MND:+14%(上限 40) 回復魔法威力:+16%(上限 80) 効果時間:1:00 リキャストタイム:4:00,Mind:+14%(cap 40) Healing Magic Potency:+16%(cap 80) Duration:1:00 Recast Time:4:00,240,60,240,60,elemen-medicine
+霊薬類,Elixir,自己強化,Self-Enhancement,信力の薬,,3020527,Potion of Piety,PIE:+22%(上限 20) 魔法回避力:+24%(上限 40) 効果時間:1:00 リキャストタイム:3:40,Piety:+22%(cap 20) Magic Evasion:+24%(cap 40) Duration:1:00 Recast Time:3:40,220,60,220,60,elemen-medicine
+霊薬類,Elixir,自己強化,Self-Enhancement,信力の妙薬,,3020528,Hi-potion of Piety,PIE:+18%(上限 30) 魔法回避力:+20%(上限 60) 効果時間:1:00 リキャストタイム:3:50,Piety:+18%(cap 30) Magic Evasion:+20%(cap 60) Duration:1:00 Recast Time:3:50,230,60,230,60,elemen-medicine
+霊薬類,Elixir,自己強化,Self-Enhancement,信力の秘薬,,3020529,Mega-potion of Piety,PIE:+14%(上限 40) 魔法回避力:+16%(上限 80) 効果時間:1:00 リキャストタイム:4:00,Piety:+14%(cap 40) Magic Evasion:+16%(cap 80) Duration:1:00 Recast Time:4:00,240,60,240,60,elemen-medicine
+霊薬類,Elixir,自己強化,Self-Enhancement,巨人の薬,,3020536,Giant's Drink,HP:+6%(上限 300) 効果時間:10:00 リキャストタイム:10:00,HP:+6%(cap 300) Duration:10:00 Recast Time:10:00,600,600,600,600,elemen-medicine
+霊薬類,Elixir,自己強化,Self-Enhancement,過属性クリスタル,,3020537,Over-aspected Crystal,物理攻撃力:+22%(上限 90) 攻撃魔法威力:+20%(上限 60) 効果時間:0:40 リキャストタイム:3:50,Attack Power:+22%(cap 90) Attack Magic Potency:+20%(cap 60) Duration:0:40 Recast Time:3:50,230,40,230,40,elemen-medicine
+霊薬類,Elixir,自己強化,Self-Enhancement,月のカーテン,,3020538,Lunar Curtain,魔法障壁を張るための粉末状の秘薬。属性を失ったクラスターの効能により、特定のエーテル波を吸収する 効果時間:0:15 リキャストタイム:30:00,"magic barrier (absorbs aetherial waves); duration 0:15, recast 30:00",1800,15,1800,15,elemen-medicine

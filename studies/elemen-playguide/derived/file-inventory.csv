@@ -1,0 +1,8 @@
+path,kind,rows
+derived/weather-legend.csv,normalized-table,19
+derived/aethernet.csv,normalized-table,24
+derived/market-tax.csv,normalized-table,19
+derived/units.csv,normalized-table,7
+derived/moon-phases.csv,normalized-table,8
+derived/race-base-stats.csv,normalized-table,15
+sources/elemen-playguide/objects/pages/,verbatim-transcription (FAQ/lore prose),17

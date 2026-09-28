@@ -1,0 +1,23 @@
+id: elemen-level-exp
+title: eLeMeN FF14 1.x Level / EXP Growth - Web Tables
+evidence_class: web-tables
+distribution: restricted
+provenance:
+  sources:
+  - title: class/level index (level / exp growth)
+    url: http://elemen.sakura.ne.jp/ff14_dated_archives/class/level/index.html
+    site: eLeMeN - FF14
+storage:
+  original_state: in-repo
+  storage_id: repo
+  path: objects/
+  master_archive:
+    file: elemen-level-exp-objects.zip
+    sha256: 02a2c7c9e80dc2547b91857a1b8c3783d50ca0a5f45a60691935f52e99c42d18
+    size_bytes: 2773
+    holds: all 1 files under objects/, deflate, fixed timestamps
+    cold_store_path: archives/elemen-level-exp/elemen-level-exp-objects.zip
+members:
+- file: pages/level-exp.md
+  sha256: b0b7706c8458d96999c4e293489406b565d4e24afec9c113a0c56a0098948080
+  size_bytes: 8695

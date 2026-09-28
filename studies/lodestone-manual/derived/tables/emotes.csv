@@ -1,0 +1,54 @@
+command,aliases,description,source_page
+/sit,,Certain emotes have special sitting equivalents. Also sits your character in a chair if the chair is nearby. * Moving while seated will cause your character to stand. >> Subcommands: on - Switch to a sitting position. off - Switch to standing position. Toggle between sitting and standing when no subcommand is specified.,text-commands-and-macros
+/bow,,Perform a bow.,text-commands-and-macros
+/grandcompanysalute,,Perform your Grand Company's salute. * Cannot be performed by those of Recruit rank.,text-commands-and-macros
+/goodbye,,Bid farewell.,text-commands-and-macros
+/kneel,,Kneel in respect.,text-commands-and-macros
+/salute,,Perform a salute.,text-commands-and-macros
+/wave,,Wave your hand.,text-commands-and-macros
+/welcome,,Make a welcoming gesture.,text-commands-and-macros
+/blowkiss,,Blow a kiss.,text-commands-and-macros
+/cheer,,Cheer enthusiastically.,text-commands-and-macros
+/congratulate,,Offer congratulations.,text-commands-and-macros
+/me,,Motion to yourself.,text-commands-and-macros
+/deny,,Strongly disagree.,text-commands-and-macros
+/no,,Disagree.,text-commands-and-macros
+/pray,,Offer solemn words of prayer to the Twelve or whatever gods it is you keep.,text-commands-and-macros
+/psych,,Psych yourself up.,text-commands-and-macros
+/think,,Become lost in thought.,text-commands-and-macros
+/thumbsup,,Strongly agree.,text-commands-and-macros
+/yes,,Nod in approval.,text-commands-and-macros
+/airquotes,,Make air quotes. * Motion not accompanied by a log message.,text-commands-and-macros
+/clap,,Applaud.,text-commands-and-macros
+/dance,,Start dancing.,text-commands-and-macros
+/doze,,Start dozing off.,text-commands-and-macros
+/grovel,,Fall to your knees in unworthiness.,text-commands-and-macros
+/pose,,Strike a pose.,text-commands-and-macros
+/stagger,,Stagger for a moment.,text-commands-and-macros
+/stretch,,Stretch.,text-commands-and-macros
+/surprised,,Act surprised.,text-commands-and-macros
+/beckon,,Make a beckoning motion.,text-commands-and-macros
+/examineself,,Admire yourself.,text-commands-and-macros
+/lookout,,Scan the area.,text-commands-and-macros
+/point,,Point at something.,text-commands-and-macros
+/poke,,Make a poking gesture.,text-commands-and-macros
+/blush,,Blush with embarrassment.,text-commands-and-macros
+/chuckle,,Chuckle in amusement.,text-commands-and-macros
+/comfort,,Make a consoling gesture.,text-commands-and-macros
+/happy,,Display extreme happiness.,text-commands-and-macros
+/joy,,Express joy.,text-commands-and-macros
+/laugh,,Burst out laughing.,text-commands-and-macros
+/rally,,Give encouragement.,text-commands-and-macros
+/soothe,,Make a comforting gesture.,text-commands-and-macros
+/angry,,Be angry.,text-commands-and-macros
+/cry,,Break into tears.,text-commands-and-macros
+/disappointed,,Convey utter disappointment.,text-commands-and-macros
+/doubt,,Appear doubtful.,text-commands-and-macros
+/fume,,Express disappointment.,text-commands-and-macros
+/furious,,Be furious.,text-commands-and-macros
+/huh,,Express confusion.,text-commands-and-macros
+/panic,,Start to panic.,text-commands-and-macros
+/shocked,,Act shocked.,text-commands-and-macros
+/shrug,,Shrug.,text-commands-and-macros
+/sulk,,Wallow in self-pity.,text-commands-and-macros
+/upset,,Express disgust.,text-commands-and-macros

@@ -1,0 +1,20 @@
+class_kind,rank,trait_points,reported_by,notes,patch,patch_basis,post_number,post_id,post_date,source
+disciple-of-war-or-magic,1,6,NEmINIS,"the poster states this as already known when asking the question",1.18b,post-date,8,4772942,2011-09-03,bg-106754-trait-point-cap
+disciple-of-war-or-magic,9,8,NEmINIS,,1.18b,post-date,8,4772942,2011-09-03,bg-106754-trait-point-cap
+disciple-of-war-or-magic,10,9,NEmINIS,,1.18b,post-date,8,4772942,2011-09-03,bg-106754-trait-point-cap
+disciple-of-war-or-magic,15,10,Baelari and NEmINIS,"both tables agree",1.18b,post-date,4,4772322,2011-09-02,bg-106754-trait-point-cap
+disciple-of-war-or-magic,16,11,Baelari and NEmINIS,"both tables agree",1.18b,post-date,4,4772322,2011-09-02,bg-106754-trait-point-cap
+disciple-of-war-or-magic,17,11,NEmINIS,,1.18b,post-date,8,4772942,2011-09-03,bg-106754-trait-point-cap
+disciple-of-war-or-magic,20,12,Baelari and NEmINIS,"both tables agree",1.18b,post-date,4,4772322,2011-09-02,bg-106754-trait-point-cap
+disciple-of-war-or-magic,22,13,Baelari and NEmINIS,"both tables agree",1.18b,post-date,4,4772322,2011-09-02,bg-106754-trait-point-cap
+disciple-of-war-or-magic,24,14,Baelari and NEmINIS,"both tables agree; NEmINIS specifically asks for ranks 24-26 to be re-verified because they break every formula he tried",1.18b,post-date,4,4772322,2011-09-02,bg-106754-trait-point-cap
+disciple-of-war-or-magic,25,14,Baelari and NEmINIS,"both tables agree; flagged for re-verification",1.18b,post-date,4,4772322,2011-09-02,bg-106754-trait-point-cap
+disciple-of-war-or-magic,26,14,Baelari and NEmINIS,"both tables agree; flagged for re-verification",1.18b,post-date,4,4772322,2011-09-02,bg-106754-trait-point-cap
+disciple-of-war-or-magic,30,16,Baelari and NEmINIS,"both tables agree",1.18b,post-date,4,4772322,2011-09-02,bg-106754-trait-point-cap
+disciple-of-war-or-magic,34,18,NEmINIS,"equal to the rank 36 value, so the step happens at or before 34",1.18b,post-date,8,4772942,2011-09-03,bg-106754-trait-point-cap
+disciple-of-war-or-magic,36,18,Baelari and NEmINIS,"both tables agree",1.18b,post-date,4,4772322,2011-09-02,bg-106754-trait-point-cap
+disciple-of-war-or-magic,37,19,NEmINIS,,1.18b,post-date,8,4772942,2011-09-03,bg-106754-trait-point-cap
+disciple-of-war-or-magic,38,19,NEmINIS,,1.18b,post-date,8,4772942,2011-09-03,bg-106754-trait-point-cap
+disciple-of-war-or-magic,45,22,Baelari and NEmINIS,"both tables agree",1.18b,post-date,4,4772322,2011-09-02,bg-106754-trait-point-cap
+disciple-of-war-or-magic,50,24,Baelari and NEmINIS,"both tables agree",1.18b,post-date,4,4772322,2011-09-02,bg-106754-trait-point-cap
+disciple-of-the-hand,50,26,Criosist,"stated as `on crafting classes @ 50 you get 26 iirc` - hearsay, never confirmed in the thread. The only row suggesting DoH has a different ladder",1.18b,post-date,5,4772392,2011-09-02,bg-106754-trait-point-cap

@@ -1,0 +1,168 @@
+discipline,class_jp,class_en,section_jp,section_en,name_jp,name_en_client,client_command_id,level,tp,cast,recast_time,effect_duration,equip_condition_jp,equip_condition_en,description_jp,source
+hand,木工,Carpenter,アクション,action,投擲,Throw,22113,1,-,-,5秒,-,汎用,general,武器を投げつける。 [目標にダメージ] 投擲武器を装備する,class/action/~patch2.00_Carpenter.html
+hand,木工,Carpenter,アクション,action,つぶて打ち,Stone Throw,22114,1,-,-,5秒,-,汎用,general,拾った石を投げつける。 [目標にダメージ],class/action/~patch2.00_Carpenter.html
+hand,木工,Carpenter,アクション,action,キャノンアーム,Wrist Flick,29861,10,-,-,30秒,-,非戦闘用,non-combat use,次のつぶて打ち：追加効果スタン,class/action/~patch2.00_Carpenter.html
+hand,木工,Carpenter,ゴッドセンド,godsend,テンダータッチ,Tender Touch,29531,10,,,,,クラフター専用,Disciples of the Hand only,3ターンの間、素材耐用度の消費を25%カット。,class/action/~patch2.00_Carpenter.html
+hand,木工,Carpenter,ゴッドセンド,godsend,ヘイスティハンド,Hasty Hand,29502,15,,,,,クラフター専用,Disciples of the Hand only,一気に製品を完成させる。失敗した時の損害は大きいが、充分な腕前があれば確実に成功する。,class/action/~patch2.00_Carpenter.html
+hand,木工,Carpenter,ゴッドセンド,godsend,インプロヴァイズ,Improvise,29528,20,,,,,クラフター専用,Disciples of the Hand only,3ターンの間、属性異常中だと目標品質度上昇量が200％アップ。,class/action/~patch2.00_Carpenter.html
+hand,木工,Carpenter,ゴッドセンド,godsend,アンエアリングハンド,Unerring Hand,29507,30,,,,,クラフター専用,Disciples of the Hand only,進捗を進める。,class/action/~patch2.00_Carpenter.html
+hand,木工,Carpenter,ゴッドセンド,godsend,グランドマスタリー,Grandmastery,29518,30,,,,,クラフター専用,Disciples of the Hand only,次のターン、すべての作業が必ず成功する。,class/action/~patch2.00_Carpenter.html
+hand,木工,Carpenter,ゴッドセンド,godsend,パーフェクション,Perfection,29519,36,,,,,クラフター専用,Disciples of the Hand only,次のターン、入魂作業が必ず大成功する。,class/action/~patch2.00_Carpenter.html
+hand,木工,Carpenter,ゴッドセンド,godsend,ビエルゴの祝福,Byregot's Blessing,29541,45,,,,,クラフター専用,Disciples of the Hand only,3ターンの間、目標品質度上昇量が100%アップ。,class/action/~patch2.00_Carpenter.html
+hand,鍛冶,Blacksmith,アクション,action,投擲,Throw,22113,1,-,-,5秒,-,汎用,general,武器を投げつける。 [目標にダメージ] 投擲武器を装備する,class/action/~patch2.00_Blacksmith.html
+hand,鍛冶,Blacksmith,アクション,action,つぶて打ち,Stone Throw,22114,1,-,-,5秒,-,汎用,general,拾った石を投げつける。 [目標にダメージ],class/action/~patch2.00_Blacksmith.html
+hand,鍛冶,Blacksmith,アクション,action,キャノンアーム,Wrist Flick,29861,10,-,-,30秒,-,非戦闘用,non-combat use,次のつぶて打ち：追加効果スタン,class/action/~patch2.00_Blacksmith.html
+hand,鍛冶,Blacksmith,ゴッドセンド,godsend,メーカーミューズ,Maker's Muse,29509,10,,,,,クラフター専用,Disciples of the Hand only,3ターンの間、標準作業が必ず成功する。,class/action/~patch2.00_Blacksmith.html
+hand,鍛冶,Blacksmith,ゴッドセンド,godsend,ヘイスティハンド,Hasty Hand,29502,15,,,,,クラフター専用,Disciples of the Hand only,一気に製品を完成させる。失敗した時の損害は大きいが、充分な腕前があれば確実に成功する。,class/action/~patch2.00_Blacksmith.html
+hand,鍛冶,Blacksmith,ゴッドセンド,godsend,ブランド・オブ・ファイア,Brand of Fire,29521,20,,,,,クラフター専用,Disciples of the Hand only,属性異常を解除して目標品質度をアップする。火属性異常を解除した場合は特に効果が高い。,class/action/~patch2.00_Blacksmith.html
+hand,鍛冶,Blacksmith,ゴッドセンド,godsend,工面算段,Ingenuity,29533,30,,,,,クラフター専用,Disciples of the Hand only,3ターンの間、レシピの製作難易度を自分の腕前と同等にする。,class/action/~patch2.00_Blacksmith.html
+hand,鍛冶,Blacksmith,ゴッドセンド,godsend,サブリメーション,Sublimation,29547,30,,,,,クラフター専用,Disciples of the Hand only,3ターンの間、目標品質度上昇量が50%アップ。,class/action/~patch2.00_Blacksmith.html
+hand,鍛冶,Blacksmith,ゴッドセンド,godsend,ハイリターン,High Return,29511,36,,,,,クラフター専用,Disciples of the Hand only,次のターン、属性異常中だとすべての作業が必ず大成功する。,class/action/~patch2.00_Blacksmith.html
+hand,鍛冶,Blacksmith,ゴッドセンド,godsend,グレーターコーリング,Greater Calling,29510,45,,,,,クラフター専用,Disciples of the Hand only,3ターンの間、すべての作業が必ず成功する。,class/action/~patch2.00_Blacksmith.html
+hand,板金,Armorer,アクション,action,投擲,Throw,22113,1,-,-,5秒,-,汎用,general,武器を投げつける。 [目標にダメージ] 投擲武器を装備する,class/action/~patch2.00_Armorer.html
+hand,板金,Armorer,アクション,action,つぶて打ち,Stone Throw,22114,1,-,-,5秒,-,汎用,general,拾った石を投げつける。 [目標にダメージ],class/action/~patch2.00_Armorer.html
+hand,板金,Armorer,アクション,action,キャノンアーム,Wrist Flick,29861,10,-,-,30秒,-,非戦闘用,non-combat use,次のつぶて打ち：追加効果スタン,class/action/~patch2.00_Armorer.html
+hand,板金,Armorer,ゴッドセンド,godsend,堅調,Sure and Steady,29512,10,,,,,クラフター専用,Disciples of the Hand only,次のターン、標準作業が必ず大成功する。,class/action/~patch2.00_Armorer.html
+hand,板金,Armorer,ゴッドセンド,godsend,ヘイスティハンド,Hasty Hand,29502,15,,,,,クラフター専用,Disciples of the Hand only,一気に製品を完成させる。失敗した時の損害は大きいが、充分な腕前があれば確実に成功する。,class/action/~patch2.00_Armorer.html
+hand,板金,Armorer,ゴッドセンド,godsend,ブランド・オブ・アイス,Brand of Ice,29522,20,,,,,クラフター専用,Disciples of the Hand only,属性異常を解除して目標品質度をアップする。氷属性異常を解除した場合は特に効果が高い。,class/action/~patch2.00_Armorer.html
+hand,板金,Armorer,ゴッドセンド,godsend,グレートストライド,Great Strides,29536,30,,,,,クラフター専用,Disciples of the Hand only,3ターンの間、進捗量が50%アップ。,class/action/~patch2.00_Armorer.html
+hand,板金,Armorer,ゴッドセンド,godsend,レゾリューション,Resolution,29548,30,,,,,クラフター専用,Disciples of the Hand only,3ターンの間、目標品質度上昇量が50%アップ。,class/action/~patch2.00_Armorer.html
+hand,板金,Armorer,ゴッドセンド,godsend,審美眼,Eye for Detail,29537,36,,,,,クラフター専用,Disciples of the Hand only,進捗を少し戻し、目標品質度をアップする。,class/action/~patch2.00_Armorer.html
+hand,板金,Armorer,ゴッドセンド,godsend,ピース・バイ・ピース,Piece by Piece,29503,45,,,,,クラフター専用,Disciples of the Hand only,進捗を大幅に進める。,class/action/~patch2.00_Armorer.html
+hand,彫金,Goldsmith,アクション,action,投擲,Throw,22113,1,-,-,5秒,-,汎用,general,武器を投げつける。 [目標にダメージ] 投擲武器を装備する,class/action/~patch2.00_Goldsmith.html
+hand,彫金,Goldsmith,アクション,action,つぶて打ち,Stone Throw,22114,1,-,-,5秒,-,汎用,general,拾った石を投げつける。 [目標にダメージ],class/action/~patch2.00_Goldsmith.html
+hand,彫金,Goldsmith,アクション,action,キャノンアーム,Wrist Flick,29861,10,-,-,30秒,-,非戦闘用,non-combat use,次のつぶて打ち：追加効果スタン,class/action/~patch2.00_Goldsmith.html
+hand,彫金,Goldsmith,ゴッドセンド,godsend,プライド・オブ・レイバー,Pride of Labor,29545,10,,,,,クラフター専用,Disciples of the Hand only,次のターン、目標品質度上昇量が50%アップ。,class/action/~patch2.00_Goldsmith.html
+hand,彫金,Goldsmith,ゴッドセンド,godsend,ヘイスティハンド,Hasty Hand,29502,15,,,,,クラフター専用,Disciples of the Hand only,一気に製品を完成させる。失敗した時の損害は大きいが、充分な腕前があれば確実に成功する。,class/action/~patch2.00_Goldsmith.html
+hand,彫金,Goldsmith,ゴッドセンド,godsend,ブランド・オブ・ウィンド,Brand of Wind,29523,20,,,,,クラフター専用,Disciples of the Hand only,属性異常を解除して目標品質度をアップする。風属性異常を解除した場合は特に効果が高い。,class/action/~patch2.00_Goldsmith.html
+hand,彫金,Goldsmith,ゴッドセンド,godsend,メチクラスマインド,Meticulous Mind,29539,30,,,,,クラフター専用,Disciples of the Hand only,3ターンの間、素材耐用度の消費を50%カット。,class/action/~patch2.00_Goldsmith.html
+hand,彫金,Goldsmith,ゴッドセンド,godsend,マニピュレーション,Manipulation,29550,30,,,,,クラフター専用,Disciples of the Hand only,素材耐用度を回復する。,class/action/~patch2.00_Goldsmith.html
+hand,彫金,Goldsmith,ゴッドセンド,godsend,インスピレーション,Inspiration,29544,36,,,,,クラフター専用,Disciples of the Hand only,3ターンの間、目標品質度上昇量が50%アップ。,class/action/~patch2.00_Goldsmith.html
+hand,彫金,Goldsmith,ゴッドセンド,godsend,模範,By the Book,29506,45,,,,,クラフター専用,Disciples of the Hand only,進捗を大幅に進める。,class/action/~patch2.00_Goldsmith.html
+hand,革細工,Leatherworker,アクション,action,投擲,Throw,22113,1,-,-,5秒,-,汎用,general,武器を投げつける。 [目標にダメージ] 投擲武器を装備する,class/action/~patch2.00_Leatherworker.html
+hand,革細工,Leatherworker,アクション,action,つぶて打ち,Stone Throw,22114,1,-,-,5秒,-,汎用,general,拾った石を投げつける。 [目標にダメージ],class/action/~patch2.00_Leatherworker.html
+hand,革細工,Leatherworker,アクション,action,キャノンアーム,Wrist Flick,29861,10,-,-,30秒,-,非戦闘用,non-combat use,次のつぶて打ち：追加効果スタン,class/action/~patch2.00_Leatherworker.html
+hand,革細工,Leatherworker,ゴッドセンド,godsend,フルフィルメント,Fulfillment,29514,10,,,,,クラフター専用,Disciples of the Hand only,次のターン、標準作業が必ず大成功する。,class/action/~patch2.00_Leatherworker.html
+hand,革細工,Leatherworker,ゴッドセンド,godsend,ヘイスティハンド,Hasty Hand,29502,15,,,,,クラフター専用,Disciples of the Hand only,一気に製品を完成させる。失敗した時の損害は大きいが、充分な腕前があれば確実に成功する。,class/action/~patch2.00_Leatherworker.html
+hand,革細工,Leatherworker,ゴッドセンド,godsend,ブランド・オブ・アース,Brand of Earth,29524,20,,,,,クラフター専用,Disciples of the Hand only,属性異常を解除して目標品質度をアップする。土属性異常を解除した場合は特に効果が高い。,class/action/~patch2.00_Leatherworker.html
+hand,革細工,Leatherworker,ゴッドセンド,godsend,ボールドエンデバー,Bold Endeavor,29513,30,,,,,クラフター専用,Disciples of the Hand only,次のターン、すべての作業が必ず成功する。,class/action/~patch2.00_Leatherworker.html
+hand,革細工,Leatherworker,ゴッドセンド,godsend,インナークワイエット,Inner Quiet,29542,30,,,,,クラフター専用,Disciples of the Hand only,次のターン、目標品質度上昇量が100%アップ。,class/action/~patch2.00_Leatherworker.html
+hand,革細工,Leatherworker,ゴッドセンド,godsend,クリーンスレート,Clean Slate,29504,36,,,,,クラフター専用,Disciples of the Hand only,進捗と耐用度と目標品質度を製作開始時の状態に戻す。,class/action/~patch2.00_Leatherworker.html
+hand,革細工,Leatherworker,ゴッドセンド,godsend,デタミネーション,Determination,29534,45,,,,,クラフター専用,Disciples of the Hand only,次のターン、進捗量が150%アップ。,class/action/~patch2.00_Leatherworker.html
+hand,裁縫,Weaver,アクション,action,投擲,Throw,22113,1,-,-,5秒,-,汎用,general,武器を投げつける。 [目標にダメージ] 投擲武器を装備する,class/action/~patch2.00_Weaver.html
+hand,裁縫,Weaver,アクション,action,つぶて打ち,Stone Throw,22114,1,-,-,5秒,-,汎用,general,拾った石を投げつける。 [目標にダメージ],class/action/~patch2.00_Weaver.html
+hand,裁縫,Weaver,アクション,action,キャノンアーム,Wrist Flick,29861,10,-,-,30秒,-,非戦闘用,non-combat use,次のつぶて打ち：追加効果スタン,class/action/~patch2.00_Weaver.html
+hand,裁縫,Weaver,ゴッドセンド,godsend,マスターピース,Masterpiece,29515,10,,,,,クラフター専用,Disciples of the Hand only,次のターン、入魂作業が必ず成功する。,class/action/~patch2.00_Weaver.html
+hand,裁縫,Weaver,ゴッドセンド,godsend,ヘイスティハンド,Hasty Hand,29502,15,,,,,クラフター専用,Disciples of the Hand only,一気に製品を完成させる。失敗した時の損害は大きいが、充分な腕前があれば確実に成功する。,class/action/~patch2.00_Weaver.html
+hand,裁縫,Weaver,ゴッドセンド,godsend,ブランド・オブ・ライトニング,Brand of Lightning,29525,20,,,,,クラフター専用,Disciples of the Hand only,属性異常を解除して目標品質度をアップする。雷属性異常を解除した場合は特に効果が高い。,class/action/~patch2.00_Weaver.html
+hand,裁縫,Weaver,ゴッドセンド,godsend,グランドデザイン,Grand Design,29505,30,,,,,クラフター専用,Disciples of the Hand only,進捗を進める。,class/action/~patch2.00_Weaver.html
+hand,裁縫,Weaver,ゴッドセンド,godsend,グッドメジャー,Good Measure,29543,30,,,,,クラフター専用,Disciples of the Hand only,次のターン、目標品質度上昇量が100%アップ。,class/action/~patch2.00_Weaver.html
+hand,裁縫,Weaver,ゴッドセンド,godsend,完全,Flawlessness,29538,36,,,,,クラフター専用,Disciples of the Hand only,次のターン、素材耐用度の消費を100%カット。,class/action/~patch2.00_Weaver.html
+hand,裁縫,Weaver,ゴッドセンド,godsend,ロイヤルフィット,Fit for Kings,29549,36,,,,,クラフター専用,Disciples of the Hand only,3ターンの間、目標品質度上昇量が50%アップ。,class/action/~patch2.00_Weaver.html
+hand,裁縫,Weaver,ゴッドセンド,godsend,カルミネーション,Culmination,29516,45,,,,,クラフター専用,Disciples of the Hand only,次のターン、すべての作業が必ず大成功する。,class/action/~patch2.00_Weaver.html
+hand,練成,Alchemist,アクション,action,投擲,Throw,22113,1,-,-,5秒,-,汎用,general,武器を投げつける。 [目標にダメージ] 投擲武器を装備する,class/action/~patch2.00_Alchemist.html
+hand,練成,Alchemist,アクション,action,つぶて打ち,Stone Throw,22114,1,-,-,5秒,-,汎用,general,拾った石を投げつける。 [目標にダメージ],class/action/~patch2.00_Alchemist.html
+hand,練成,Alchemist,アクション,action,キャノンアーム,Wrist Flick,29861,10,-,-,30秒,-,非戦闘用,non-combat use,次のつぶて打ち：追加効果スタン,class/action/~patch2.00_Alchemist.html
+hand,練成,Alchemist,ゴッドセンド,godsend,アスペクトバランス,Aspect Balance,29553,10,,,,,クラフター専用,Disciples of the Hand only,3ターンの間、光球を白色に保つ。,class/action/~patch2.00_Alchemist.html
+hand,練成,Alchemist,ゴッドセンド,godsend,ヘイスティハンド,Hasty Hand,29502,15,,,,,クラフター専用,Disciples of the Hand only,一気に製品を完成させる。失敗した時の損害は大きいが、充分な腕前があれば確実に成功する。,class/action/~patch2.00_Alchemist.html
+hand,練成,Alchemist,ゴッドセンド,godsend,クリエイティブアージ,Creative Urge,29520,20,,,,,クラフター専用,Disciples of the Hand only,次のターン、すべての作業が必ず成功する。,class/action/~patch2.00_Alchemist.html
+hand,練成,Alchemist,ゴッドセンド,godsend,秘訣,Tricks of the Trade,29508,30,,,,,クラフター専用,Disciples of the Hand only,進捗を進める。,class/action/~patch2.00_Alchemist.html
+hand,練成,Alchemist,ゴッドセンド,godsend,イノベーション,Innovation,29546,30,,,,,クラフター専用,Disciples of the Hand only,3ターンの間、目標品質度上昇量が50%アップ。,class/action/~patch2.00_Alchemist.html
+hand,練成,Alchemist,ゴッドセンド,godsend,コンファートゾーン,Comfort Zone,29532,36,,,,,クラフター専用,Disciples of the Hand only,3ターンの間、素材耐用度の消費を100%カット。ただし作業は大成功しなくなる。,class/action/~patch2.00_Alchemist.html
+hand,練成,Alchemist,ゴッドセンド,godsend,ピュリファケーション,Purification,29552,36,,,,,クラフター専用,Disciples of the Hand only,次のターン、目標品質度上昇量が125%アップ。,class/action/~patch2.00_Alchemist.html
+hand,練成,Alchemist,ゴッドセンド,godsend,マスターズメンド,Master's Mend,29529,45,,,,,クラフター専用,Disciples of the Hand only,素材耐用度を大幅に回復する,class/action/~patch2.00_Alchemist.html
+hand,調理,Culinarian,アクション,action,投擲,Throw,22113,1,-,-,5秒,-,汎用,general,武器を投げつける。 [目標にダメージ] 投擲武器を装備する,class/action/~patch2.00_Culinarian.html
+hand,調理,Culinarian,アクション,action,つぶて打ち,Stone Throw,22114,1,-,-,5秒,-,汎用,general,拾った石を投げつける。 [目標にダメージ],class/action/~patch2.00_Culinarian.html
+hand,調理,Culinarian,アクション,action,キャノンアーム,Wrist Flick,29861,10,-,-,30秒,-,非戦闘用,non-combat use,次のつぶて打ち：追加効果スタン,class/action/~patch2.00_Culinarian.html
+hand,調理,Culinarian,ゴッドセンド,godsend,保全,Make the Most,29540,10,,,,,クラフター専用,Disciples of the Hand only,素材耐用度を少し回復する。,class/action/~patch2.00_Culinarian.html
+hand,調理,Culinarian,ゴッドセンド,godsend,ヘイスティハンド,Hasty Hand,29502,15,,,,,クラフター専用,Disciples of the Hand only,一気に製品を完成させる。失敗した時の損害は大きいが、充分な腕前があれば確実に成功する。,class/action/~patch2.00_Culinarian.html
+hand,調理,Culinarian,ゴッドセンド,godsend,ブランド・オブ・ウォーター,Brand of Water,29526,20,,,,,クラフター専用,Disciples of the Hand only,属性異常を解除して目標品質度をアップする。水属性異常を解除した場合は特に効果が高い。,class/action/~patch2.00_Culinarian.html
+hand,調理,Culinarian,ゴッドセンド,godsend,ライフパーパス,Life's Purpose,29517,30,,,,,クラフター専用,Disciples of the Hand only,次のターン、すべての作業が必ず成功する。,class/action/~patch2.00_Culinarian.html
+hand,調理,Culinarian,ゴッドセンド,godsend,倹約,Waste Not,29530,30,,,,,クラフター専用,Disciples of the Hand only,次のターン、素材耐用度の消費を100%カット。,class/action/~patch2.00_Culinarian.html
+hand,調理,Culinarian,ゴッドセンド,godsend,エレメンタルアピール,Elemental Appeal,29527,36,,,,,クラフター専用,Disciples of the Hand only,3ターンの間、属性異常の発生・暴走を防ぎ、光球を白色に保つ。,class/action/~patch2.00_Culinarian.html
+hand,調理,Culinarian,ゴッドセンド,godsend,ハート・アンド・ソウル,Heart and Soul,29551,36,,,,,クラフター専用,Disciples of the Hand only,次のターン、目標品質度上昇量が125%アップ。,class/action/~patch2.00_Culinarian.html
+hand,調理,Culinarian,ゴッドセンド,godsend,マグナムオーパス,Magnum Opus,29535,45,,,,,クラフター専用,Disciples of the Hand only,次のターン、光球が虹色だと目標品質度上昇量が150%アップ。,class/action/~patch2.00_Culinarian.html
+land,採掘,Miner,アクション,action,投擲,Throw,22113,1,-,-,5秒,-,汎用,general,武器を投げつける。 [目標にダメージ] 投擲武器を装備する,class/action/~patch2.00_Miner.html
+land,採掘,Miner,アクション,action,つぶて打ち,Stone Throw,22114,1,-,-,5秒,-,汎用,general,拾った石を投げつける。 [目標にダメージ],class/action/~patch2.00_Miner.html
+land,採掘,Miner,アクション,action,ランドサーベイ,Lay of the Land,29801,1,-,-,15秒,-,採掘専用,Miner only,周囲を調べ、グレード1の採掘場を探す。 「ランドサーベイ」系でリキャストを共有,class/action/~patch2.00_Miner.html
+land,採掘,Miner,アクション,action,プロスペクト,Prospect,29831,3,-,-,30秒,-,採掘専用,Miner only,現在いるエリアの地勢を鑑み、グレード1以下の採掘場の数と位置を予測する。それらの距離が遠かった場合、クイックが発動する。 「プロスペクト」系でリキャストを共有,class/action/~patch2.00_Miner.html
+land,採掘,Miner,アクション,action,ランドサーベイII,Lay of the Land II,29802,8,-,-,15秒,-,採掘専用,Miner only,周囲を調べ、グレード2の採掘場を探す。 「ランドサーベイ」系でリキャストを共有,class/action/~patch2.00_Miner.html
+land,採掘,Miner,アクション,action,ステルス,Stealth,29873,8,-,-,-,-,ギャザラー専用,Disciples of the Land only,レベル20以下のモンスターの敵視から逃れる効果を付与、または解除。レベル8以下で使用可能。 ステルス効果中は、移動速度が低下 ステルス効果中は、クイック等の速度上昇効果は無効 都市の中やダンジョンの中では使用不可,class/action/~patch2.00_Miner.html
+land,採掘,Miner,アクション,action,キャノンアーム,Wrist Flick,29861,10,-,-,30秒,-,非戦闘用,non-combat use,次のつぶて打ち：追加効果スタン,class/action/~patch2.00_Miner.html
+land,採掘,Miner,アクション,action,プロスペクトII,Prospect II,29832,10,-,-,30秒,-,採掘専用,Miner only,現在いるエリアの地勢を鑑み、グレード2以下の採掘場の数と位置を予測する。それらの距離が遠かった場合、クイックが発動する。 「プロスペクト」系でリキャストを共有,class/action/~patch2.00_Miner.html
+land,採掘,Miner,アクション,action,ランドサーベイIII,Lay of the Land III,29803,18,-,-,15秒,-,採掘専用,Miner only,周囲を調べ、グレード3の採掘場を探す。 「ランドサーベイ」系でリキャストを共有,class/action/~patch2.00_Miner.html
+land,採掘,Miner,アクション,action,ステルスII,Stealth II,29874,18,-,-,-,-,ギャザラー専用,Disciples of the Land only,レベル30以下のモンスターの敵視から逃れる効果を付与、または解除。レベル18以下で使用可能。 ステルス効果中は、移動速度が低下 ステルス効果中は、クイック等の速度上昇効果は無効 都市の中やダンジョンの中では使用不可,class/action/~patch2.00_Miner.html
+land,採掘,Miner,アクション,action,プロスペクトIII,Prospect III,29833,20,-,-,30秒,-,採掘専用,Miner only,現在いるエリアの地勢を鑑み、グレード3以下の採掘場の数と位置を予測する。それらの距離が遠かった場合、クイックが発動する。 「プロスペクト」系でリキャストを共有,class/action/~patch2.00_Miner.html
+land,採掘,Miner,アクション,action,プロスペクトIV,Prospect IV,29834,30,-,-,30秒,-,採掘専用,Miner only,現在いるエリアの地勢を鑑み、グレード4以下の採掘場の数と位置を予測する。それらの距離が遠かった場合、クイックが発動する。 「プロスペクト」系でリキャストを共有,class/action/~patch2.00_Miner.html
+land,採掘,Miner,アクション,action,ランドサーベイIV,Lay of the Land IV,29804,28,-,-,15秒,-,採掘専用,Miner only,周囲を調べ、グレード4の採掘場を探す。 「ランドサーベイ」系でリキャストを共有,class/action/~patch2.00_Miner.html
+land,採掘,Miner,アクション,action,ステルスIII,Stealth III,29875,28,-,-,-,-,ギャザラー専用,Disciples of the Land only,レベル40以下のモンスターの敵視から逃れる効果を付与、または解除。レベル28以下で使用可能。 ステルス効果中は、移動速度が低下 ステルス効果中は、クイック等の速度上昇効果は無効 都市の中やダンジョンの中では使用不可,class/action/~patch2.00_Miner.html
+land,採掘,Miner,アクション,action,プロスペクトV,Prospect V,29835,30,-,-,30秒,-,採掘専用,Miner only,現在いるエリアの地勢を鑑み、グレード5以下の採掘場の数と位置を予測する。それらの距離が遠かった場合、クイックが発動する。 「プロスペクト」系でリキャストを共有,class/action/~patch2.00_Miner.html
+land,採掘,Miner,アクション,action,ランドサーベイV,Lay of the Land V,29805,38,-,-,15秒,-,採掘専用,Miner only,周囲を調べ、グレード5の採掘場を探す。 「ランドサーベイ」系でリキャストを共有,class/action/~patch2.00_Miner.html
+land,採掘,Miner,アクション,action,ステルスIV,Stealth IV,29876,38,-,-,-,-,ギャザラー専用,Disciples of the Land only,レベル50以下のモンスターの敵視から逃れる効果を付与、または解除。レベル38以下で使用可能。 ステルス効果中は、移動速度が低下 ステルス効果中は、クイック等の速度上昇効果は無効 都市の中やダンジョンの中では使用不可,class/action/~patch2.00_Miner.html
+land,採掘,Miner,ゴッドセンド,godsend,シャープビジョン,Sharp Vision,29705,10,,,,,ギャザラー専用,Disciples of the Land only,ねらったアイテムのヒット範囲＋。,class/action/~patch2.00_Miner.html
+land,採掘,Miner,ゴッドセンド,godsend,アースフェイバー,Earthen Favor,29702,15,,,,,ギャザラー専用,Disciples of the Land only,遭遇率の低いアイテムの発見率＋。,class/action/~patch2.00_Miner.html
+land,採掘,Miner,ゴッドセンド,godsend,ナルザルの加護,Nald'thal's Ward,29730,20,,,,,ギャザラー専用,Disciples of the Land only,自身の炎属性が一時的に＋。,class/action/~patch2.00_Miner.html
+land,採掘,Miner,ゴッドセンド,godsend,メネフィナの加護,Menphina's Ward,29731,20,,,,,ギャザラー専用,Disciples of the Land only,自身の氷属性が一時的に＋。,class/action/~patch2.00_Miner.html
+land,採掘,Miner,ゴッドセンド,godsend,彫工の力,Deep Vigor,29736,20,,,,,ギャザラー専用,Disciples of the Land only,自身のVITが一時的に＋。,class/action/~patch2.00_Miner.html
+land,採掘,Miner,ゴッドセンド,godsend,石工の理,Solid Reason,29739,20,,,,,ギャザラー専用,Disciples of the Land only,自身のMNDが一時的に＋。,class/action/~patch2.00_Miner.html
+land,採掘,Miner,ゴッドセンド,godsend,キングスイールド,King's Yield,29718,25,,,,,ギャザラー専用,Disciples of the Land only,獲得数＋。,class/action/~patch2.00_Miner.html
+land,採掘,Miner,ゴッドセンド,godsend,ストーンリゾルヴ,Stone Resolve,29721,30,,,,,ギャザラー専用,Disciples of the Land only,Remainderの減少率－。,class/action/~patch2.00_Miner.html
+land,採掘,Miner,ゴッドセンド,godsend,岩石学,Truth of Mountains,29727,30,,,,,ギャザラー専用,Disciples of the Land only,Aim（アイテムをねらう）時の命中精度＋。,class/action/~patch2.00_Miner.html
+land,採掘,Miner,ゴッドセンド,godsend,石理識別,Master of Rock,29724,36,,,,,ギャザラー専用,Disciples of the Land only,クオリティの高いアイテムの入手確率＋。,class/action/~patch2.00_Miner.html
+land,採掘,Miner,ゴッドセンド,godsend,ゴッズプリント,Fingerprints of the Gods,29742,Q （1）,,,,,ギャザラー専用,Disciples of the Land only,特定採集場所で「触媒」を発見。 サブクエスト『想いを繋ぐ力』を進行中に開眼,class/action/~patch2.00_Miner.html
+land,園芸,Botanist,アクション,action,投擲,Throw,22113,1,-,-,5秒,-,汎用,general,武器を投げつける。 [目標にダメージ] 投擲武器を装備する,class/action/~patch2.00_Botanist.html
+land,園芸,Botanist,アクション,action,つぶて打ち,Stone Throw,22114,1,-,-,5秒,-,汎用,general,拾った石を投げつける。 [目標にダメージ],class/action/~patch2.00_Botanist.html
+land,園芸,Botanist,アクション,action,アーバーコール,Arbor Call,29811,1,-,-,15秒,-,園芸専用,Botanist only,周囲を調べ、グレード1の良木を探す。 「アーバーコール」系でリキャストを共有,class/action/~patch2.00_Botanist.html
+land,園芸,Botanist,アクション,action,トライアングレート,Triangulate,29841,3,-,-,30秒,-,園芸専用,Botanist only,現在いるエリアの地勢を鑑み、グレード1以下の良木の数と位置を予測する。それらの距離が遠かった場合、クイックが発動する。 「トライアングレート」系でリキャストを共有,class/action/~patch2.00_Botanist.html
+land,園芸,Botanist,アクション,action,アーバーコールII,Arbor Call II,29812,8,-,-,15秒,-,園芸専用,Botanist only,周囲を調べ、グレード2の良木を探す。 「アーバーコール」系でリキャストを共有,class/action/~patch2.00_Botanist.html
+land,園芸,Botanist,アクション,action,ステルス,Stealth,29873,8,-,-,-,-,ギャザラー専用,Disciples of the Land only,レベル20以下のモンスターの敵視から逃れる効果を付与、または解除。レベル8以下で使用可能。 ステルス効果中は、移動速度が低下 ステルス効果中は、クイック等の速度上昇効果は無効 都市の中やダンジョンの中では使用不可,class/action/~patch2.00_Botanist.html
+land,園芸,Botanist,アクション,action,キャノンアーム,Wrist Flick,29861,10,-,-,30秒,-,非戦闘用,non-combat use,次のつぶて打ち：追加効果スタン,class/action/~patch2.00_Botanist.html
+land,園芸,Botanist,アクション,action,トライアングレートII,Triangulate II,29842,10,-,-,30秒,-,園芸専用,Botanist only,現在いるエリアの地勢を鑑み、グレード2以下の良木の数と位置を予測する。それらの距離が遠かった場合、クイックが発動する。 「トライアングレート」系でリキャストを共有,class/action/~patch2.00_Botanist.html
+land,園芸,Botanist,アクション,action,アーバーコールIII,Arbor Call III,29813,18,-,-,15秒,-,園芸専用,Botanist only,周囲を調べ、グレード3の良木を探す。 「アーバーコール」系でリキャストを共有,class/action/~patch2.00_Botanist.html
+land,園芸,Botanist,アクション,action,ステルスII,Stealth II,29874,18,-,-,-,-,ギャザラー専用,Disciples of the Land only,レベル30以下のモンスターの敵視から逃れる効果を付与、または解除。レベル18以下で使用可能。 ステルス効果中は、移動速度が低下 ステルス効果中は、クイック等の速度上昇効果は無効 都市の中やダンジョンの中では使用不可,class/action/~patch2.00_Botanist.html
+land,園芸,Botanist,アクション,action,トライアングレートIII,Triangulate III,29843,20,-,-,30秒,-,園芸専用,Botanist only,現在いるエリアの地勢を鑑み、グレード3以下の良木の数と位置を予測する。それらの距離が遠かった場合、クイックが発動する。 「トライアングレート」系でリキャストを共有,class/action/~patch2.00_Botanist.html
+land,園芸,Botanist,アクション,action,トライアングレートIV,Triangulate IV,29844,20,-,-,30秒,-,園芸専用,Botanist only,現在いるエリアの地勢を鑑み、グレード4以下の良木の数と位置を予測する。それらの距離が遠かった場合、クイックが発動する。 「トライアングレート」系でリキャストを共有,class/action/~patch2.00_Botanist.html
+land,園芸,Botanist,アクション,action,アーバーコールIV,Arbor Call IV,29814,28,-,-,15秒,-,園芸専用,Botanist only,周囲を調べ、グレード4の良木を探す。,class/action/~patch2.00_Botanist.html
+land,園芸,Botanist,アクション,action,ステルスIII,Stealth III,29875,28,-,-,-,-,ギャザラー専用,Disciples of the Land only,レベル40以下のモンスターの敵視から逃れる効果を付与、または解除。レベル28以下で使用可能。 ステルス効果中は、移動速度が低下 ステルス効果中は、クイック等の速度上昇効果は無効 都市の中やダンジョンの中では使用不可,class/action/~patch2.00_Botanist.html
+land,園芸,Botanist,アクション,action,トライアングレートV,Triangulate V,29845,30,-,-,30秒,-,園芸専用,Botanist only,現在いるエリアの地勢を鑑み、グレード5以下の良木の数と位置を予測する。それらの距離が遠かった場合、クイックが発動する。 「トライアングレート」系でリキャストを共有,class/action/~patch2.00_Botanist.html
+land,園芸,Botanist,アクション,action,アーバーコールV,Arbor Call V,29815,38,-,-,15秒,-,園芸専用,Botanist only,周囲を調べ、グレード5の良木を探す。 「アーバーコール」系でリキャストを共有,class/action/~patch2.00_Botanist.html
+land,園芸,Botanist,アクション,action,ステルスIV,Stealth IV,29876,38,-,-,-,-,ギャザラー専用,Disciples of the Land only,レベル50以下のモンスターの敵視から逃れる効果を付与、または解除。レベル38以下で使用可能。 ステルス効果中は、移動速度が低下 ステルス効果中は、クイック等の速度上昇効果は無効 都市の中やダンジョンの中では使用不可,class/action/~patch2.00_Botanist.html
+land,園芸,Botanist,ゴッドセンド,godsend,フィールドマスタリー,Field Mastery,29706,10,,,,,ギャザラー専用,Disciples of the Land only,ねらったアイテムのヒット範囲＋。,class/action/~patch2.00_Botanist.html
+land,園芸,Botanist,ゴッドセンド,godsend,ストローク・オブ・ラック,Stroke of Luck,29703,15,,,,,ギャザラー専用,Disciples of the Land only,遭遇率の低いアイテムの発見率＋。,class/action/~patch2.00_Botanist.html
+land,園芸,Botanist,ゴッドセンド,godsend,ノフィカの加護,Nophica's Ward,29732,20,,,,,ギャザラー専用,Disciples of the Land only,自身の土属性が一時的に＋。,class/action/~patch2.00_Botanist.html
+land,園芸,Botanist,ゴッドセンド,godsend,ビエルゴの加護,Byregot's Ward,29735,20,,,,,ギャザラー専用,Disciples of the Land only,自身の雷属性が一時的に＋。,class/action/~patch2.00_Botanist.html
+land,園芸,Botanist,ゴッドセンド,godsend,きこりの腕,Brunt Force,29737,20,,,,,ギャザラー専用,Disciples of the Land only,自身のSTRが一時的に＋。,class/action/~patch2.00_Botanist.html
+land,園芸,Botanist,ゴッドセンド,godsend,老農の知,Ageless Words,29740,20,,,,,ギャザラー専用,Disciples of the Land only,自身のINTが一時的に＋。,class/action/~patch2.00_Botanist.html
+land,園芸,Botanist,ゴッドセンド,godsend,スエット・オブ・ブロウ,Sweat of Brow,29719,25,,,,,ギャザラー専用,Disciples of the Land only,修錬値の入手量＋。,class/action/~patch2.00_Botanist.html
+land,園芸,Botanist,ゴッドセンド,godsend,グリーンマインド,Green Mind,29722,30,,,,,ギャザラー専用,Disciples of the Land only,Remainderの減少率－。,class/action/~patch2.00_Botanist.html
+land,園芸,Botanist,ゴッドセンド,godsend,樹木学,Truth of Forests,29728,30,,,,,ギャザラー専用,Disciples of the Land only,Aim（アイテムをねらう）時の命中範囲＋。,class/action/~patch2.00_Botanist.html
+land,園芸,Botanist,ゴッドセンド,godsend,樹相識別,Master of Timber,29725,36,,,,,ギャザラー専用,Disciples of the Land only,クオリティの高いアイテムの入手確率＋。,class/action/~patch2.00_Botanist.html
+land,園芸,Botanist,ゴッドセンド,godsend,ゴッズプリント,Fingerprints of the Gods,29742,Q （1）,,,,,ギャザラー専用,Disciples of the Land only,特定採集場所で「触媒」を発見。 サブクエスト『想いを繋ぐ力』を進行中に開眼,class/action/~patch2.00_Botanist.html
+land,漁釣,Fisher,アクション,action,投擲,Throw,22113,1,-,-,5秒,-,汎用,general,武器を投げつける。 [目標にダメージ] 投擲武器を装備する,class/action/~patch2.00_Fisher.html
+land,漁釣,Fisher,アクション,action,つぶて打ち,Stone Throw,22114,1,-,-,5秒,-,汎用,general,拾った石を投げつける。 [目標にダメージ],class/action/~patch2.00_Fisher.html
+land,漁釣,Fisher,アクション,action,ガルアイ,Gulleye,29821,1,-,-,15秒,-,漁釣専用,Fisher only,周囲を調べ、グレード1の穴場を探す。 「ガルアイ」系でリキャストを共有,class/action/~patch2.00_Fisher.html
+land,漁釣,Fisher,アクション,action,ダウズ,Dowse,29851,3,-,-,30秒,-,漁釣専用,Fisher only,現在いるエリアの地勢を鑑み、グレード1以下の穴場の数と位置を予測する。それらの距離が遠かった場合、クイックが発動する。 「ダウズ」系でリキャストを共有,class/action/~patch2.00_Fisher.html
+land,漁釣,Fisher,アクション,action,ガルアイII,Gulleye II,29822,8,-,-,15秒,-,漁釣専用,Fisher only,周囲を調べ、グレード2の穴場を探す。 「ガルアイ」系でリキャストを共有,class/action/~patch2.00_Fisher.html
+land,漁釣,Fisher,アクション,action,ステルス,Stealth,29873,8,-,-,-,-,ギャザラー専用,Disciples of the Land only,レベル20以下のモンスターの敵視から逃れる効果を付与、または解除。レベル8以下で使用可能。 ステルス効果中は、移動速度が低下 ステルス効果中は、クイック等の速度上昇効果は無効 都市の中やダンジョンの中では使用不可,class/action/~patch2.00_Fisher.html
+land,漁釣,Fisher,アクション,action,キャノンアーム,Wrist Flick,29861,10,-,-,30秒,-,非戦闘用,non-combat use,次のつぶて打ち：追加効果スタン,class/action/~patch2.00_Fisher.html
+land,漁釣,Fisher,アクション,action,ダウズII,Dowse II,29852,10,-,-,30秒,-,漁釣専用,Fisher only,現在いるエリアの地勢を鑑み、グレード2以下の穴場の数と位置を予測する。それらの距離が遠かった場合、クイックが発動する。 「ダウズ」系でリキャストを共有,class/action/~patch2.00_Fisher.html
+land,漁釣,Fisher,アクション,action,ガルアイIII,Gulleye III,29823,18,-,-,15秒,-,漁釣専用,Fisher only,周囲を調べ、グレード3の穴場を探す。 「ガルアイ」系でリキャストを共有,class/action/~patch2.00_Fisher.html
+land,漁釣,Fisher,アクション,action,ステルスII,Stealth II,29874,18,-,-,-,-,ギャザラー専用,Disciples of the Land only,レベル30以下のモンスターの敵視から逃れる効果を付与、または解除。レベル18以下で使用可能。 ステルス効果中は、移動速度が低下 ステルス効果中は、クイック等の速度上昇効果は無効 都市の中やダンジョンの中では使用不可,class/action/~patch2.00_Fisher.html
+land,漁釣,Fisher,アクション,action,ダウズIII,Dowse III,29853,20,-,-,30秒,-,漁釣専用,Fisher only,現在いるエリアの地勢を鑑み、グレード3以下の穴場の数と位置を予測する。それらの距離が遠かった場合、クイックが発動する。 「ダウズ」系でリキャストを共有,class/action/~patch2.00_Fisher.html
+land,漁釣,Fisher,アクション,action,ダウズIV,Dowse IV,29854,20,-,-,30秒,-,漁釣専用,Fisher only,現在いるエリアの地勢を鑑み、グレード4以下の穴場の数と位置を予測する。それらの距離が遠かった場合、クイックが発動する。 「ダウズ」系でリキャストを共有,class/action/~patch2.00_Fisher.html
+land,漁釣,Fisher,アクション,action,ガルアイIV,Gulleye IV,29824,28,-,-,15秒,-,漁釣専用,Fisher only,周囲を調べ、グレード4の穴場を探す。 「ガルアイ」系でリキャストを共有,class/action/~patch2.00_Fisher.html
+land,漁釣,Fisher,アクション,action,ステルスIII,Stealth III,29875,28,-,-,-,-,ギャザラー専用,Disciples of the Land only,レベル40以下のモンスターの敵視から逃れる効果を付与、または解除。レベル28以下で使用可能。 ステルス効果中は、移動速度が低下 ステルス効果中は、クイック等の速度上昇効果は無効 都市の中やダンジョンの中では使用不可,class/action/~patch2.00_Fisher.html
+land,漁釣,Fisher,アクション,action,ダウズV,Dowse V,29855,30,-,-,30秒,-,漁釣専用,Fisher only,現在いるエリアの地勢を鑑み、グレード5以下の穴場の数と位置を予測する。それらの距離が遠かった場合、クイックが発動する。 「ダウズ」系でリキャストを共有,class/action/~patch2.00_Fisher.html
+land,漁釣,Fisher,アクション,action,ガルアイV,Gulleye V,29825,38,-,-,15秒,-,漁釣専用,Fisher only,周囲を調べ、グレード5の穴場を探す。 「ガルアイ」系でリキャストを共有,class/action/~patch2.00_Fisher.html
+land,漁釣,Fisher,アクション,action,ステルスIV,Stealth IV,29876,38,-,-,-,-,ギャザラー専用,Disciples of the Land only,レベル50以下のモンスターの敵視から逃れる効果を付与、または解除。レベル38以下で使用可能。 ステルス効果中は、移動速度が低下 ステルス効果中は、クイック等の速度上昇効果は無効 都市の中やダンジョンの中では使用不可,class/action/~patch2.00_Fisher.html
+land,漁釣,Fisher,ゴッドセンド,godsend,ベテラントレード,Veteran Trade,29707,10,,,,,ギャザラー専用,Disciples of the Land only,ねらったアイテムのヒット範囲＋。,class/action/~patch2.00_Fisher.html
+land,漁釣,Fisher,ゴッドセンド,godsend,ネイチャーバウンティ,Nature's Bounty,29704,15,,,,,ギャザラー専用,Disciples of the Land only,遭遇率の低いアイテムの発見率＋。,class/action/~patch2.00_Fisher.html
+land,漁釣,Fisher,ゴッドセンド,godsend,リムレーンの加護,Llymlaen's Ward,29733,20,,,,,ギャザラー専用,Disciples of the Land only,自身の風属性が一時的に＋。,class/action/~patch2.00_Fisher.html
+land,漁釣,Fisher,ゴッドセンド,godsend,サリャクの加護,Thaliak's Ward,29734,20,,,,,ギャザラー専用,Disciples of the Land only,自身の水属性が一時的に＋。,class/action/~patch2.00_Fisher.html
+land,漁釣,Fisher,ゴッドセンド,godsend,海人の敏,Deft Grasp,29738,20,,,,,ギャザラー専用,Disciples of the Land only,自身のDEXが一時的に＋。,class/action/~patch2.00_Fisher.html
+land,漁釣,Fisher,ゴッドセンド,godsend,船乗りの信,Tidal Faith,29741,20,,,,,ギャザラー専用,Disciples of the Land only,自身のPIEが一時的に＋。,class/action/~patch2.00_Fisher.html
+land,漁釣,Fisher,ゴッドセンド,godsend,ウェイ・オブ・プレンティ,Way of Plenty,29717,25,,,,,ギャザラー専用,Disciples of the Land only,Remainderの値＋。,class/action/~patch2.00_Fisher.html
+land,漁釣,Fisher,ゴッドセンド,godsend,クレバーアーチ,Clever Arc,29723,30,,,,,ギャザラー専用,Disciples of the Land only,Remainderの減少率－。,class/action/~patch2.00_Fisher.html
+land,漁釣,Fisher,ゴッドセンド,godsend,海洋学,Truth of Seas,29729,30,,,,,ギャザラー専用,Disciples of the Land only,アイテム獲得時、クリスタルを100%入手。,class/action/~patch2.00_Fisher.html
+land,漁釣,Fisher,ゴッドセンド,godsend,魚影識別,Master of Fish,29726,36,,,,,ギャザラー専用,Disciples of the Land only,クオリティの高いアイテムの入手確率＋。,class/action/~patch2.00_Fisher.html
+land,漁釣,Fisher,ゴッドセンド,godsend,ゴッズプリント,Fingerprints of the Gods,29742,Q （1）,,,,,ギャザラー専用,Disciples of the Land only,特定採集場所で「触媒」を発見。 サブクエスト『想いを繋ぐ力』を進行中に開眼,class/action/~patch2.00_Fisher.html

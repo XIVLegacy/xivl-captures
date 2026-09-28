@@ -1,0 +1,47 @@
+category,option,description,source_page
+System,Action Bar Display,Toggle action bar display when in passive mode.,configuration
+System,Toggle Macro Bar,"Toggle the continuous display of the macro bar. When the macro bar is hidden, pressing the Ctrl or Alt key (or the gamepad button to which the macro bar has been assigned) displays the macro bar. Pressing the same key again hides it.",configuration
+System,Action Reselect Cancel,Enable canceling of actions by selecting them again from the action bar while they are being cast or channeled.,configuration
+System,Damage Display,Toggle the graphical display of damage and status effects.,configuration
+System,Profanity Filter,Toggle the profanity filter for words appearing in the chat log and other UI elements.,configuration
+System,Character Shadows,Toggle the display of character shadows. (Switch off to improve game performance.),configuration
+System,Dust Effects,Toggle dust effects made by moving characters. (Switch off to improve game performance.),configuration
+System,Extended Drawing,Toggle the range at which characters are drawn. (Switch off to improve game performance.),configuration
+System,Physics,Toggle realistic physics for the movement of graphical elements such as hair and garments. (Switch off to improve game performance.),configuration
+System,Frame Rate Limit,Set the frame rate to 60 fps or 30 fps. (Set to 30 fps to improve game performance.),configuration
+Name Display,Names,Toggle the display of all character names.,configuration
+Name Display,Display Name Position,Set display position for all characters (up or down).,configuration
+Name Display,Display Names,"Display/hide settings for each category. Player: Name/Icon, HP Bar Party Members: Name/Icon, HP Bar Other Players: Name/Icon, HP Bar NPCs: Name/Icon Enemies: Name, HP Bar, Level, Aggression, Enmity",configuration
+Target Settings,Targeting Type,"Toggle between targeting modes A, B, and C.",configuration
+Target Settings,Target Cursor Type,"Toggle between target cursor types A (central), B (floating), and C (both).",configuration
+Target Settings,Direct Targeting,Toggle the direct targeting feature whereby pressing Confirm selects the closest valid target when none is currently selected.,configuration
+Target Settings,Auto Target Lock,Toggle the auto target lock feature whereby executing an action causes the character to automatically lock on to the target.,configuration
+Target Settings,Target Engaged Enemies,"Toggle targeting of engaged enemies only. When activated, enemies will be targeted in the following manner: - Targeting modes A or C (target filter set to All ): If you are in active mode, you will target only enemies who are hostile towards you. - Targeting mode B: If target filter is set to Enemy , you will target only enemies who are hostile towards you.",configuration
+Target Settings,Action Subtargets,Toggle the option to select an alternate target for actions executed directly from the action bar. * Recommended when playing with a gamepad only (no mouse).,configuration
+Target Settings,Target Highlight,"When toggled on, placing the mouse cursor over a character will cause that character to flash. Targeted characters will appear bordered in yellow.",configuration
+Target Settings,Display Name Zoom,"When toggled on, placing the mouse cursor over a character will cause that character's display name to appear enlarged.",configuration
+Log Settings,/tell Sound Effect,Toggle the sound effect that plays when receiving a /tell.,configuration
+Log Settings,Individual Weaponskill Damage,"Toggle the display of individual damage figures in the log for weaponskills that strike multiple times. * When toggled off, displays only the number of strikes landed and total damage dealt.",configuration
+Log Settings,Log Display,"To display a tab, click on its button and then check Enable Tab . Please note that the left tab in chat log 1 cannot be disabled. * Not checking Enable Tab in either tab in chat log 2 will cause that chat log to disappear.",configuration
+Log Settings,Chat Log Renaming,"To rename a chat log, click on its button and then input a new name in the field situated in the upper middle of the display.",configuration
+Log Settings,Log Transparency,"Drag the slide bar to the right to increase chat log transparency, and to the left to decrease it.",configuration
+Log Settings,Text Transparency,"Drag the slide bar to the right to increase text transparency, and to the left to decrease it.",configuration
+Log Settings,Font Size,"Select the font size to display in the log (large, medium, or small).",configuration
+Log Settings,Log Auto-hide,Toggle the automatic hiding of the log if inactive for 60 seconds.,configuration
+Log Settings,Chat Filters,"It is possible to customize the chat filters for each log. Clicking on a chat log button brings up a list of message types , each of which can be set to Show or Hide .",configuration
+Keyboard,Chat-specific Keyboard,"Toggling on removes the need to first press Space when inputting chat, and nullifies the functions mapped to each key.",configuration
+Keyboard,Keyboard Settings,Keyboard controls can be set to either Type A or Type B according to your personal preference. It is also possible to adjust the functions mapped to each key for both keyboard types. Up to two keys can be assigned to a single action.,configuration
+Audio,Volume,The volume of the following sounds can be changed. Drag the slide bar all the way left to mute or all the way right to maximize volume. - Background Music - System Sounds - Sound Effects - Voices - Ambient Sounds,configuration
+Audio,Audio Distance,"Set the position from which sound effects originate in 3-D environments. Sliding the bar to the left to set the source closer to the character, and to the right to set it closer to the screen.",configuration
+Audio,Dolby Pro Logic IIz,Toggle Dolby Pro Logic IIz audio features. * A Dolby Pro Logic IIz device must be connected to your PC.,configuration
+Camera,1st Person Camera Y-axis,"When set to Normal, the 1st Person Camera Y-axis will behave as follows: Pressing the I key, or the gamepad button set to Move Camera Up, will shift the character's line of sight upwards. Pressing the K key, or the gamepad button set to Move Camera Up, will shift the character's line of sight downwards. When set to Inverted, the character's line of sight will move in the opposite direction.",configuration
+Camera,1st Person Camera X-axis,"When set to Normal, the 1st Person Camera X-axis will behave as follows: Pressing the J key, or the gamepad button set to Move Camera Left, will shift the character's line of sight to the left. Pressing the L key, or the gamepad button set to Move Camera Right, will shift the character's line of sight to the right. When set to Inverted, the character's line of sight will move in the opposite direction.",configuration
+Camera,3rd Person Camera Y-axis,"When set to Normal, the 3rd Person Camera Y-axis will behave as follows: Pressing the I key, or the gamepad button set to Move Camera Up, will move the camera upwards. Pressing the K key, or the gamepad button set to Move Camera Up, will move the camera downwards. When set to Inverted, the camera will move in the opposite direction.",configuration
+Camera,3rd Person Camera X-axis,"When set to Normal, the 1st Person Camera X-axis will behave as follows: Pressing the J key, or the gamepad button set to Move Camera Left, will move the camera to the left. Pressing the L key, or the gamepad button set to Move Camera Right, will move the camera to the right. When set to Inverted, the camera will move in the opposite direction.",configuration
+Camera,3rd Person Camera Field of View,"Drag the slide bar to the left to widen the field of vision, and to the right to shrink it.",configuration
+Camera,Vertical Camera Position,"Drag the slide bar to the left (Up) to increase camera height, and to the right (Down) to decrease it.",configuration
+Camera,Camera Speed,Drag the slide bar to the left or right to decrease or increase camera movement speed respectively.,configuration
+Camera,Lock-on Camera Range,Drag the slide bar to the left (Narrow) and right (Wide) to set the movement range for the camera during target lock.,configuration
+Camera,Event NPC Camera Lock,Toggle the feature whereby the camera centers upon the NPC with whom you are engaged in a conversation.,configuration
+Camera,Save Camera Position,Save camera position by pressing Confirm . The camera will default to this position every time you log into FINAL FANTASY XIV.,configuration
+Camera,Reset Camera Position,Reset saved camera position to the system default.,configuration

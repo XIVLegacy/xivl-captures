@@ -1,0 +1,3 @@
+relative_path,kind,source_key,rows,patches_covered,notes
+sources/se-forum-bloodletter-35795/objects/pages/thread-35795-bloodletter-posts.md,selected-excerpt,se-forum-35795,,unknown,"five post locators and a copyright-bounded question and answer"
+derived/bloodletter-claims.csv,normalized-table,se-forum-35795,4,unknown,"player claims; the selected posts have no patch marker or controlled trials"

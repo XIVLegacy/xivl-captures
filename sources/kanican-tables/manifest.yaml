@@ -1,0 +1,236 @@
+id: kanican-tables
+title: kanican FFXIV 1.x Combat Theorycrafting - Web Tables
+evidence_class: web-tables
+distribution: restricted
+provenance:
+  sources:
+  - title: FFXIV - Five Months In
+    url: https://kanican.livejournal.com/51311.html
+    archive_url: https://web.archive.org/web/20260716073931/https://kanican.livejournal.com/51311.html
+    published: February 2 2011, 14:37
+    patch: ~1.16
+    site: kanican (Kaeko Leta) on LiveJournal
+  - title: The Mechanics of Combat SP (Part I)
+    url: https://kanican.livejournal.com/51730.html
+    archive_url: https://web.archive.org/web/20250817153700/https://kanican.livejournal.com/51730.html
+    published: February 13 2011, 18:52
+    patch: ~1.16
+    site: kanican (Kaeko Leta) on LiveJournal
+  - title: The Mechanics of Combat SP (Part II)
+    url: https://kanican.livejournal.com/52445.html
+    archive_url: https://web.archive.org/web/20260716074008/https://kanican.livejournal.com/52445.html
+    published: February 18 2011, 00:05
+    patch: ~1.16
+    site: kanican (Kaeko Leta) on LiveJournal
+  - title: Thaumaturge Dodore Solo
+    url: https://kanican.livejournal.com/53093.html
+    archive_url: https://web.archive.org/web/20260716074052/https://kanican.livejournal.com/53093.html
+    published: March 3 2011, 01:28
+    patch: ~1.17
+    site: kanican (Kaeko Leta) on LiveJournal
+  - title: Abusing the "Return" AI
+    url: https://kanican.livejournal.com/53736.html
+    archive_url: https://web.archive.org/web/20260716074125/https://kanican.livejournal.com/53736.html
+    published: April 29 2011, 00:20
+    patch: ~1.17
+    site: kanican (Kaeko Leta) on LiveJournal
+  - title: FFXIV v1.18 Enmity Testing (Part I)
+    url: https://kanican.livejournal.com/54094.html
+    archive_url: https://web.archive.org/web/20230430113048/https://kanican.livejournal.com/54094.html
+    published: August 6 2011, 21:47
+    patch: '1.18'
+    site: kanican (Kaeko Leta) on LiveJournal
+  - title: XIV Enmity Table v1.18
+    url: https://kanican.livejournal.com/54373.html
+    archive_url: https://web.archive.org/web/20230430064857/https://kanican.livejournal.com/54373.html
+    published: August 19 2011, 23:54
+    patch: '1.18'
+    site: kanican (Kaeko Leta) on LiveJournal
+  - title: Stat Testing - Part I (Cure Formula)
+    url: https://kanican.livejournal.com/54846.html
+    archive_url: https://web.archive.org/web/20250815202435/https://kanican.livejournal.com/54846.html
+    published: January 29 2012, 01:21
+    patch: '1.20'
+    site: kanican (Kaeko Leta) on LiveJournal
+  - title: Stat Testing - Part II (MEVA)
+    url: https://kanican.livejournal.com/55370.html
+    archive_url: https://web.archive.org/web/20260716074200/https://kanican.livejournal.com/55370.html
+    published: February 4 2012, 13:07
+    patch: '1.20'
+    site: kanican (Kaeko Leta) on LiveJournal
+  - title: Stat Testing - Part III (Physical Damage Taken)
+    url: https://kanican.livejournal.com/55915.html
+    archive_url: https://web.archive.org/web/20230503125930/https://kanican.livejournal.com/55915.html
+    published: February 21 2012, 17:20
+    patch: '1.20'
+    site: kanican (Kaeko Leta) on LiveJournal
+  - title: Stat Testing - Part IV (Critical Damage Bonus)
+    url: https://kanican.livejournal.com/56489.html
+    archive_url: https://web.archive.org/web/20260716074239/https://kanican.livejournal.com/56489.html
+    published: March 3 2012, 14:24
+    patch: 1.20/1.21
+    site: kanican (Kaeko Leta) on LiveJournal
+storage:
+  original_state: in-repo
+  storage_id: repo
+  path: objects/
+  master_archive:
+    file: kanican-tables-objects.zip
+    sha256: 51bb1fd79225371a1804c543b838e9360a89cd13b59e06f4bb93741e7830c13c
+    size_bytes: 3519061
+    holds: all 51 files under objects/, deflate, fixed timestamps
+    cold_store_path: archives/kanican-tables/kanican-tables-objects.zip
+members:
+- file: abusing-the-return-ai.md
+  sha256: a24d8f754ff9ba9a154899731ccc6f23a77cffb3b1d263bf2817aee533a77c17
+  size_bytes: 9742
+- file: combat-sp-part-1.md
+  sha256: 3f69904c0327b9525377664fc90f75c966e694e2f3b6b7291763adfa727df798
+  size_bytes: 19410
+- file: combat-sp-part-2.md
+  sha256: 88802e0722ccba1c3f0c3f153b6bb2f74d481d6dc547b6b664488eeb2d591965
+  size_bytes: 15917
+- file: enmity-table-v118.md
+  sha256: ac58f6d681ef44ea9b19ead5b43793b22022ad012bbb88966bb511c255e344d4
+  size_bytes: 1037
+- file: enmity-testing-v118-part-1.md
+  sha256: c7f6b0fa885fe73a81847dd82314f7fad85a34936850162591c251637f2ee908
+  size_bytes: 25010
+- file: five-months-in.md
+  sha256: c97839cdb3e0755e21f19877825b238b5cdc5fc12a4f0d893afdc7f18528a925
+  size_bytes: 34851
+- file: images/stat-testing-1-cure-formula/01.png
+  sha256: 3c41d1899fdf3c124fc7b32b5e8a0d9c1bcfa1fb853bdff3ec181f208b3f4329
+  size_bytes: 180509
+- file: images/stat-testing-1-cure-formula/03.png
+  sha256: 048f82fa3fff279027980c54bdd98abb535c97b2272647d92709eaf05fa82a1e
+  size_bytes: 20548
+- file: images/stat-testing-1-cure-formula/05.png
+  sha256: 84dfcd6e18ecee35a73ece274cc3216e7ca9240b8b30a8670b9c0246b75805a8
+  size_bytes: 65132
+- file: images/stat-testing-1-cure-formula/06.png
+  sha256: 0c5c034c65b5e1f006437f4553f763be1e903170ba65ce1f75322aaacc1b3061
+  size_bytes: 42785
+- file: images/stat-testing-1-cure-formula/09.png
+  sha256: 42c493db803d7b739692cbeabc24635a88b546d03e4c4fd845d9aba13bc22728
+  size_bytes: 5406
+- file: images/stat-testing-2-meva/01.png
+  sha256: d7a3f4b0dafa4a3185843ff1b0578cf70690ec4cc198267386eef3661e99da17
+  size_bytes: 15028
+- file: images/stat-testing-2-meva/04.png
+  sha256: 6538a911752bfe61e91f7350c72e93d91cf8ce4f665cd28fbc4bdcd44456d3e8
+  size_bytes: 86828
+- file: images/stat-testing-2-meva/08.png
+  sha256: 8634f283cb1d2d76a662af09a730ebec3c6b40a43b047a42647b5a0c47285e98
+  size_bytes: 10144
+- file: images/stat-testing-2-meva/09.png
+  sha256: 51a810418c09f98eb60732063b4a049d0d9d3c4c8a0c5c7d4e0254735b0a6c23
+  size_bytes: 211520
+- file: images/stat-testing-2-meva/10.png
+  sha256: 25c4604c789284573ba8ee754868b3a24bf89ec530ce75bf556462e13be1bd95
+  size_bytes: 119283
+- file: images/stat-testing-2-meva/11.png
+  sha256: aa937a640da936676373a8f512d41a1837b86e1a3d154ee0e87e84599094f6e3
+  size_bytes: 9629
+- file: images/stat-testing-3-physical-damage-taken/04.png
+  sha256: 4142a254c8f68916d8e35d11b41445bdb62c2266bdcf23fda36c38c5eba7370f
+  size_bytes: 97074
+- file: images/stat-testing-3-physical-damage-taken/05.png
+  sha256: fd2ed354d2a4d1a27956faba358b575cb9ec58d07617697aa4e9c8c2d7b92ef7
+  size_bytes: 98706
+- file: images/stat-testing-3-physical-damage-taken/07.png
+  sha256: 35c2f1ac76219b2ddf4e06396cbd7679f2c930ad474a0b6aacf9c80df50367ea
+  size_bytes: 79299
+- file: images/stat-testing-3-physical-damage-taken/08.png
+  sha256: c019970e940c6f0a866eac0f7b21688c55aa5bbd5105eeb581b6e3218a8b4e5b
+  size_bytes: 66452
+- file: images/stat-testing-3-physical-damage-taken/10.png
+  sha256: 526974e9c8adc1f9651ec3c1eba47309fade63bc20d4fcecd73fbc8a06a270ce
+  size_bytes: 45883
+- file: images/stat-testing-3-physical-damage-taken/11.png
+  sha256: 74e9fc2d57186f863c097674f0127f853006fdaf3f3b327bbdc91acb48ce5e24
+  size_bytes: 37715
+- file: images/stat-testing-3-physical-damage-taken/12.png
+  sha256: 5c2f081ced9e29c11972207be0de451ae7e8544946b521aaa62fa21f43ce3112
+  size_bytes: 42238
+- file: images/stat-testing-3-physical-damage-taken/13.png
+  sha256: e5ab1c3f9d9dcc4a13893cf717a31eb7de80f62a222194576d0d4cda3986c50c
+  size_bytes: 61008
+- file: images/stat-testing-3-physical-damage-taken/15.png
+  sha256: 999bf83f031c1e8164bd668dd5426219c4df9d7c101855ac66765200a93e5275
+  size_bytes: 76040
+- file: images/stat-testing-3-physical-damage-taken/17.png
+  sha256: 3ed5362b9e619b1f4ae3366f28686fde33c49cfab544066c6774e3635e8c3d12
+  size_bytes: 57652
+- file: images/stat-testing-3-physical-damage-taken/19.png
+  sha256: 7109c695bd834d9e509ec9c9f402654c3faf52d5c8f1bc461676d9007348c7d8
+  size_bytes: 64542
+- file: images/stat-testing-3-physical-damage-taken/21.png
+  sha256: e9060c5d78702b0ed8fa0dbaaaf1646cce8e2337ea55c0d46717510da404b119
+  size_bytes: 84780
+- file: images/stat-testing-3-physical-damage-taken/23.png
+  sha256: 1cc23804f287d07c1c77a66c60b49e47a6c536419871636f8acfd5bc67362af5
+  size_bytes: 13484
+- file: images/stat-testing-3-physical-damage-taken/24.png
+  sha256: 9538f2134aff4558a49d2da45f9dfcf92e36ccb8ce9774c7fbb7f75195de4db4
+  size_bytes: 13157
+- file: images/stat-testing-3-physical-damage-taken/25.png
+  sha256: 74e9fc2d57186f863c097674f0127f853006fdaf3f3b327bbdc91acb48ce5e24
+  size_bytes: 37715
+- file: images/stat-testing-4-critical-damage-bonus/01.png
+  sha256: 5d8d2d0baf033de2ac52c13100e661605a9260486282c50b373f5c744e394e5d
+  size_bytes: 624522
+- file: images/stat-testing-4-critical-damage-bonus/02.png
+  sha256: afafa4f31c8127f9182217448d9f7e5dbb7825708a2ca88467f880a3bab6443c
+  size_bytes: 83518
+- file: images/stat-testing-4-critical-damage-bonus/03.png
+  sha256: 1e41f82bcfac0ba4392ecdad154d46bbda5c7d4fa9f92a8f72924525bb84b027
+  size_bytes: 269851
+- file: images/stat-testing-4-critical-damage-bonus/05.png
+  sha256: 03f14a714ff41496d067a4afe3a6d1afeaa5ce5ea6191e3e86c0d9242b8821e9
+  size_bytes: 76470
+- file: images/stat-testing-4-critical-damage-bonus/06.png
+  sha256: 9d024b846d1dc1adeebc3830735344e58eb6555d9e5fd0d4505411226f4ccdff
+  size_bytes: 9400
+- file: images/stat-testing-4-critical-damage-bonus/07.png
+  sha256: cec6db3aa0026debbd6fd76da51015fb25414e82b0504840a107669cd99843d9
+  size_bytes: 72401
+- file: images/stat-testing-4-critical-damage-bonus/08.png
+  sha256: eed0bff7500152bf2852a16d91116554e6ff11bbdbfb37c3d539a6b890ddd8ca
+  size_bytes: 70445
+- file: images/stat-testing-4-critical-damage-bonus/11.png
+  sha256: 365341b8c1a4ff1b655ac6ec07ae1903774de5878cf312f55c52f75003103ee7
+  size_bytes: 87574
+- file: images/stat-testing-4-critical-damage-bonus/12.png
+  sha256: 3c41d1899fdf3c124fc7b32b5e8a0d9c1bcfa1fb853bdff3ec181f208b3f4329
+  size_bytes: 180509
+- file: images/stat-testing-4-critical-damage-bonus/13.png
+  sha256: d220c2880db7c33ab0d2c1a91db6187077838621d2027392a2134e572b882276
+  size_bytes: 59569
+- file: images/stat-testing-4-critical-damage-bonus/14.png
+  sha256: c0ce10e7dc9761d2ba23a9a2e302d8b8830457c93d9d75bbb56f51c9a20aa860
+  size_bytes: 28487
+- file: images/stat-testing-4-critical-damage-bonus/16.png
+  sha256: 73dd75e4dd0adf2e49e3eb913f305b58d87d0daf27c2d6217f30dab4c99127b0
+  size_bytes: 113736
+- file: images/stat-testing-4-critical-damage-bonus/20.png
+  sha256: 06341bc4cd67d3652704b4ee792bf170080f7f6904aebbc6995d567bdebc82f5
+  size_bytes: 55528
+- file: images/stat-testing-4-critical-damage-bonus/21.png
+  sha256: 73dd75e4dd0adf2e49e3eb913f305b58d87d0daf27c2d6217f30dab4c99127b0
+  size_bytes: 113736
+- file: stat-testing-1-cure-formula.md
+  sha256: 6227c66eeb4c0569b7c2d9e5c44e376bde21aea0923b2c088fa4da77e4c7fe1a
+  size_bytes: 25175
+- file: stat-testing-2-meva.md
+  sha256: 28b1808bdf2d1928e31acf258570e74094a9b869858c26c7ee311f53a654119f
+  size_bytes: 26569
+- file: stat-testing-3-physical-damage-taken.md
+  sha256: e1eabdc70b815b0ca5ebfcb359e10b72b56d0e46f1b634627576a98e38f614c9
+  size_bytes: 32979
+- file: stat-testing-4-critical-damage-bonus.md
+  sha256: 6aa01f8eae3864add07f91e58fa229ab2810455f285844db2ff0fca08c204582
+  size_bytes: 31915
+- file: thaumaturge-dodore-solo.md
+  sha256: 0d628ed821a2ef75c4ad9c63883b6c007013520f0c76f9a1386d73641bb8d326
+  size_bytes: 19068

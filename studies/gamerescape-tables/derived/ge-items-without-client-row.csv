@@ -1,0 +1,55 @@
+ge_page_title,item_name,item_category,patch_introduced,removed_before_arr,likely_cause,client_variants
+Aldgoat Meat,Aldgoat Meat,,,0,no-client-name-match,
+Canvas Acton Body,Canvas Acton Body,Cloth Body,,0,client-ships-colour-variants-only,Canvas Acton Body (Blue) | Canvas Acton Body (Green) | Canvas Acton Body (Red) | Canvas Acton Body (Yellow)
+Canvas Acton Sleeves,Canvas Acton Sleeves,Cloth Sleeve,,0,client-ships-colour-variants-only,Canvas Acton Sleeves (Auburn) | Canvas Acton Sleeves (Blue) | Canvas Acton Sleeves (Brown) | Canvas Acton Sleeves (Pink)
+Canvas Hood,Canvas Hood,Armor Cloth,,0,client-ships-colour-variants-only,Canvas Hood (Blue) | Canvas Hood (Brown)
+Canvas Outer Cowl,Canvas Outer Cowl,Hooded Attire Cloth,,0,client-ships-colour-variants-only,Canvas Outer Cowl (Blue) | Canvas Outer Cowl (Brown)
+Canvas Shoulder Guards,Canvas Shoulder Guards,Shield Part,,0,client-ships-colour-variants-only,Canvas Shoulder Guards (Blue)
+Cotton Acton Body,Cotton Acton Body,Cloth Body,,0,client-ships-colour-variants-only,Cotton Acton Body (Blue) | Cotton Acton Body (Green) | Cotton Acton Body (Red) | Cotton Acton Body (Yellow)
+Cotton Acton Sleeves,Cotton Acton Sleeves,Cloth Sleeve,,0,client-ships-colour-variants-only,Cotton Acton Sleeves (Blue) | Cotton Acton Sleeves (Green) | Cotton Acton Sleeves (Red) | Cotton Acton Sleeves (Yellow)
+Cotton Half-robe Back,Cotton Half-robe Back,Back Cloth,,1,no-client-name-match,
+Cotton Half-robe Back (Blue),Cotton Half-robe Back (Blue),Back Cloth,,1,no-client-name-match,
+Cotton Half-robe Back (Green),Cotton Half-robe Back (Green),Back Cloth,,1,no-client-name-match,
+Cotton Half-robe Back (Red),Cotton Half-robe Back (Red),Back Cloth,,1,no-client-name-match,
+Cotton Half-robe Back (Yellow),Cotton Half-robe Back (Yellow),Back Cloth,,1,no-client-name-match,
+Cotton Half-robe Front,Cotton Half-robe Front,Front Cloth,,1,no-client-name-match,
+Cotton Half-robe Front (Blue),Cotton Half-robe Front (Blue),Front Cloth,,1,no-client-name-match,
+Cotton Half-robe Front (Green),Cotton Half-robe Front (Green),Front Cloth,,1,no-client-name-match,
+Cotton Half-robe Front (Red),Cotton Half-robe Front (Red),Front Cloth,,1,no-client-name-match,
+Cotton Half-robe Front (Yellow),Cotton Half-robe Front (Yellow),Front Cloth,,1,no-client-name-match,
+Cotton Shoulder Guards,Cotton Shoulder Guards,Shield Part,,0,client-ships-colour-variants-only,Cotton Shoulder Guards (Red)
+Dated Bone Scale Mail,Dated Bone Scale Mail,War Garb,,1,client-ships-colour-variants-only,Dated Bone Scale Mail (Grey) | Dated Bone Scale Mail (Taupe)
+Dated Canvas Acton,Dated Canvas Acton,War Garb,,1,client-ships-colour-variants-only,Dated Canvas Acton (Auburn) | Dated Canvas Acton (Blue) | Dated Canvas Acton (Brown) | Dated Canvas Acton (Pink)
+Dated Cotton Acton,Dated Cotton Acton,War Garb,,1,client-ships-colour-variants-only,Dated Cotton Acton (Blue) | Dated Cotton Acton (Green) | Dated Cotton Acton (Red) | Dated Cotton Acton (Yellow)
+Dated Dodoskin Harness,Dated Dodoskin Harness,War Garb,,1,client-ships-colour-variants-only,Dated Dodoskin Harness (Grey) | Dated Dodoskin Harness (Taupe)
+Dated Dodoskin Jacket,Dated Dodoskin Jacket,War Garb,,1,client-ships-colour-variants-only,Dated Dodoskin Jacket (Marmot) | Dated Dodoskin Jacket (Rat) | Dated Dodoskin Jacket (Squirrel)
+Dated Harrier's Jacket,Dated Harrier's Jacket,War Garb,,1,client-ships-colour-variants-only,Dated Harrier's Jacket (Black) | Dated Harrier's Jacket (Green) | Dated Harrier's Jacket (Ochre) | Dated Harrier's Jacket (Red)
+Dated Hempen Acton,Dated Hempen Acton,War Garb,,1,client-ships-colour-variants-only,Dated Hempen Acton (Beige) | Dated Hempen Acton (Brown) | Dated Hempen Acton (Grey)
+Dated Hunting Tunic,Dated Hunting Tunic,Attire,,1,client-ships-colour-variants-only,Dated Hunting Tunic (Beige) | Dated Hunting Tunic (Brown) | Dated Hunting Tunic (Grey)
+Dated Leather Harness,Dated Leather Harness,War Garb,,1,client-ships-colour-variants-only,Dated Leather Harness (Black) | Dated Leather Harness (Green) | Dated Leather Harness (Ochre) | Dated Leather Harness (Red)
+Dated Leather Jacket,Dated Leather Jacket,War Garb,,1,client-ships-colour-variants-only,Dated Leather Jacket (Black) | Dated Leather Jacket (Green) | Dated Leather Jacket (Ochre) | Dated Leather Jacket (Red)
+Dated Scouting Jacket,Dated Scouting Jacket,War Garb,,1,client-ships-colour-variants-only,Dated Scouting Jacket (Black) | Dated Scouting Jacket (Green) | Dated Scouting Jacket (Ochre) | Dated Scouting Jacket (Red)
+Dated Sheepskin Harness,Dated Sheepskin Harness,War Garb,,1,client-ships-colour-variants-only,Dated Sheepskin Harness (Grey) | Dated Sheepskin Harness (Taupe)
+Dated Toadskin Harness,Dated Toadskin Harness,War Garb,,1,client-ships-colour-variants-only,Dated Toadskin Harness (Black) | Dated Toadskin Harness (Green) | Dated Toadskin Harness (Ochre) | Dated Toadskin Harness (Red)
+Dried Majoram,Dried Majoram,Spice,,0,no-client-name-match,
+Fen-Yll Signature Shoes,Fen-Yll Signature Shoes,Quest Item,,0,no-client-name-match,
+Hempen Acton Body,Hempen Acton Body,Cloth Body,,0,client-ships-colour-variants-only,Hempen Acton Body (Beige) | Hempen Acton Body (Brown) | Hempen Acton Body (Grey)
+Hempen Acton Sleeves,Hempen Acton Sleeves,Cloth Sleeve,,0,client-ships-colour-variants-only,Hempen Acton Sleeves (Beige) | Hempen Acton Sleeves (Brown) | Hempen Acton Sleeves (Grey)
+Hempen Half-robe Back,Hempen Half-robe Back,Back Cloth,,1,no-client-name-match,
+Hempen Half-robe Back (Beige),Hempen Half-robe Back (Beige),Back Cloth,,1,no-client-name-match,
+Hempen Half-robe Back (Brown),Hempen Half-robe Back (Brown),Back Cloth,,1,no-client-name-match,
+Hempen Half-robe Back (Grey),Hempen Half-robe Back (Grey),Back Cloth,,1,no-client-name-match,
+Hempen Half-robe Front,Hempen Half-robe Front,Front Cloth,,1,no-client-name-match,
+Hempen Half-robe Front (Beige),Hempen Half-robe Front (Beige),Front Cloth,,1,no-client-name-match,
+Hempen Half-robe Front (Brown),Hempen Half-robe Front (Brown),Front Cloth,,1,no-client-name-match,
+Hempen Half-robe Front (Grey),Hempen Half-robe Front (Grey),Front Cloth,,1,no-client-name-match,
+Iron Magnifiers,Iron Magnifiers,Eyewear,,0,no-client-name-match,
+Leather Swordguard,Leather Swordguard,Weapon Part,,0,client-ships-colour-variants-only,Leather Swordguard (Red)
+Luminary Leather,Luminary Leather,Leather,,0,no-client-name-match,
+Rubelite Bracelets,Rubelite Bracelets,Bracelets,1.21,0,no-client-name-match,
+Rubelite Choker,Rubelite Choker,Necklace,1.21,0,no-client-name-match,
+Rubelite Earrings,Rubelite Earrings,Earrings,1.21,0,no-client-name-match,
+Rubelite Ring,Rubelite Ring,Ring,1.21,0,no-client-name-match,
+The Book of Renette,The Book of Renette,Quest Item,1.18,0,no-client-name-match,
+Velveteen Shoulder Guards,Velveteen Shoulder Guards,Shield Part,,1,client-ships-colour-variants-only,Velveteen Shoulder Guards (Black)
+Vintage Fen-Yll Boots,Vintage Fen-Yll Boots,Quest Item,,0,no-client-name-match,
