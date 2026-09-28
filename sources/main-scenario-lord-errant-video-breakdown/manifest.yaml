@@ -1,0 +1,21 @@
+id: main-scenario-lord-errant-video-breakdown
+title: Lord Errant - Sampled Video Observations
+evidence_class: notes-and-transcripts
+distribution: public
+provenance:
+  sources:
+  - title: FFXIV - Lord Errant Quest
+    url: https://www.youtube.com/watch?v=tJrl9bfP5A8
+    site: YouTube
+    uploader: iAreStoopid
+    duration: 13:24
+    page_age_displayed: 15y ago
+storage:
+  original_state: in-repo
+  storage_id: repo
+  path: objects/
+  notes: The video itself is not archived. The in-repository member is a frame-limited observation record.
+members:
+- file: lord_errant_video_breakdown.md
+  sha256: 5f28e75ff95a8b829766b37c458824a08ffb971071f805a9ed6b48a95276db69
+  size_bytes: 2982

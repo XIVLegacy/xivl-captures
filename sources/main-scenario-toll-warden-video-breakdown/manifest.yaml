@@ -1,0 +1,21 @@
+id: main-scenario-toll-warden-video-breakdown
+title: Toll of the Warden - Sampled Video Observations
+evidence_class: notes-and-transcripts
+distribution: public
+provenance:
+  sources:
+  - title: Final Fantasy XIV Rank 30 Gridania/Main Story Mission - Toll of the Warden
+    url: https://www.youtube.com/watch?v=pwZtrzwEMVY
+    site: YouTube
+    uploader: RydiaMist
+    published: 2010-12-10
+    duration: 14:02
+storage:
+  original_state: in-repo
+  storage_id: repo
+  path: objects/
+  notes: The video itself is not archived. The in-repository member is a frame-limited observation record.
+members:
+- file: toll_of_the_warden_video_breakdown.md
+  sha256: 6c2f1d48b4dce63ec75a77626789fe65a7591d5a476094a9a5ff01c8341d1a44
+  size_bytes: 2823

@@ -1,0 +1,98 @@
+{
+  "counts": {
+    "placements": 7049,
+    "referenced_profiles": 599,
+    "nm_aliases": 84,
+    "candidate_group_memberships": 63,
+    "link_group_memberships": 27,
+    "conditions": 12,
+    "condition_targets": 16,
+    "hp_overrides": 31,
+    "mp_overrides": 26,
+    "attack_40": 599
+  },
+  "expected": {
+    "placements": 7049,
+    "referenced_profiles": 599,
+    "nm_aliases": 84,
+    "candidate_group_memberships": 63,
+    "link_group_memberships": 27,
+    "conditions": 12,
+    "condition_targets": 16,
+    "hp_overrides": 31,
+    "mp_overrides": 26,
+    "attack_40": 599
+  },
+  "discrepancies": {},
+  "zones": {
+    "128": 381,
+    "129": 290,
+    "130": 220,
+    "131": 116,
+    "132": 216,
+    "135": 176,
+    "137": 107,
+    "143": 348,
+    "145": 189,
+    "147": 196,
+    "148": 453,
+    "150": 263,
+    "151": 405,
+    "152": 417,
+    "153": 266,
+    "154": 293,
+    "157": 143,
+    "158": 172,
+    "170": 181,
+    "171": 320,
+    "172": 278,
+    "173": 265,
+    "174": 307,
+    "176": 173,
+    "178": 192,
+    "190": 355,
+    "235": 327
+  },
+  "position_verdicts": {
+    "reported-unverified": 4727,
+    "authored-habitat": 1990,
+    "density-expansion-unverified": 322,
+    "generated-companion-offset": 10
+  },
+  "retail_corroborated_rows": 0,
+  "unapplied_source_join": [
+    {
+      "source_locator": "server_battlenpc_mob_types.sql:869",
+      "field": "isNotorious",
+      "verdict": "unresolved external class join; not applied"
+    }
+  ],
+  "suppressed_conditional_aliases": 0,
+  "duplicate_reported_unique_ids": {
+    "ixali_fencer_152_1": 2,
+    "ixali_fencer_152_2": 2,
+    "ixali_fencer_152_3": 2,
+    "ixali_fencer_152_4": 2,
+    "ixali_fencer_152_5": 2,
+    "ixali_fencer_152_6": 2,
+    "ixali_fencer_152_7": 2,
+    "ixali_fencer_152_8": 2,
+    "ixali_fencer_152_9": 2,
+    "ixali_fencer_152_10": 2,
+    "ixali_fencer_152_11": 2,
+    "ixali_fencer_152_12": 2,
+    "ixali_fencer_152_13": 2,
+    "ixali_fencer_152_14": 2,
+    "ixali_fencer_152_15": 2,
+    "ixali_fencer_152_16": 2,
+    "ixali_fencer_152_17": 2,
+    "ixali_fencer_152_18": 2,
+    "ixali_fencer_152_19": 2
+  },
+  "comparison_inputs": {
+    "studies/navmut-world-population-observations/derived/observations.csv": "0fb9ac43ce3eed05fcd3228f27e049b294f36227be93f1aec76be6a2da6a3e35",
+    "derived/spawn_observations.csv": "d4f68b277795a828d9373a03a81421af9940c8524517775593fa2581058eab93"
+  },
+  "comparison_matches": {},
+  "unidentified_comment_records": 3
+}

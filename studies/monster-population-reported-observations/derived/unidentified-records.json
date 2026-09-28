@@ -1,0 +1,38 @@
+[
+  {
+    "observation_id": "unidentified-008059",
+    "source_member": "server_battlenpc_spawn_locations.sql",
+    "source_line": 8059,
+    "reported_capture_line": "2",
+    "subject_name": "unknown",
+    "x": "593.133",
+    "y": "30.221",
+    "z": "300.101",
+    "zone": "128",
+    "verdict": "reported-unidentified; excluded from active placement rowset; retail-unverified"
+  },
+  {
+    "observation_id": "unidentified-008060",
+    "source_member": "server_battlenpc_spawn_locations.sql",
+    "source_line": 8060,
+    "reported_capture_line": "77",
+    "subject_name": "unknown",
+    "x": "1140.677",
+    "y": "279.538",
+    "z": "-517.835",
+    "zone": "171",
+    "verdict": "reported-unidentified; excluded from active placement rowset; retail-unverified"
+  },
+  {
+    "observation_id": "unidentified-008061",
+    "source_member": "server_battlenpc_spawn_locations.sql",
+    "source_line": 8061,
+    "reported_capture_line": "78",
+    "subject_name": "unknown",
+    "x": "1147.588",
+    "y": "280.151",
+    "z": "-517.464",
+    "zone": "171",
+    "verdict": "reported-unidentified; excluded from active placement rowset; retail-unverified"
+  }
+]

@@ -1,0 +1,21 @@
+id: hamlet-defense-hyrstmill-video-breakdown
+title: "FFXIV 1.0 - 65,000 points Hamlet Defense, Hystmill [65,000スコア・ハムレット防衛戦]"
+evidence_class: notes-and-transcripts
+distribution: public
+provenance:
+  sources:
+  - title: "FFXIV 1.0 - 65,000 points Hamlet Defense, Hystmill [65,000スコア・ハムレット防衛戦]"
+    url: https://www.youtube.com/watch?v=xi9NlNB8t5M
+    site: YouTube
+    uploader: TidteeToey
+    duration: 21:44
+    page_age_displayed: "14y ago"
+storage:
+  original_state: in-repo
+  storage_id: repo
+  path: objects/
+  notes: The video itself is not archived. The in-repository member is a sampled observation record.
+members:
+- file: hyrstmill_video_breakdown.md
+  sha256: 9e915f09f274f009be811a16d07d05b1b80aa6780e456514720283186399ab6c
+  size_bytes: 4610

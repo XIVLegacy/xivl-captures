@@ -1,0 +1,20 @@
+id: primal-battle-ifrit-bowl-of-embers
+title: The Bowl of Embers (Ifrit) - Video Breakdown
+evidence_class: notes-and-transcripts
+distribution: public
+provenance:
+  sources: []
+storage:
+  original_state: in-repo
+  storage_id: repo
+  path: objects/
+  master_archive:
+    file: primal-battle-ifrit-bowl-of-embers-objects.zip
+    sha256: dbe57f9e3fcaf1986b8ab23f2ec12f40c295e0a61c668c4fcc97c88702bb8070
+    size_bytes: 4720
+    holds: all 1 files under objects/, deflate, fixed timestamps
+    cold_store_path: archives/primal-battle-ifrit-bowl-of-embers/primal-battle-ifrit-bowl-of-embers-objects.zip
+members:
+- file: the_bowl_of_embers_ifrit_video_breakdown.md
+  sha256: 2d4fb1812cb52783a1620a7d17cda11d63826c43e0007452a8d2bfd4ac3cf7da
+  size_bytes: 13577
