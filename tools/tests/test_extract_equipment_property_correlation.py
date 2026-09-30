@@ -12,6 +12,139 @@ assert SPEC and SPEC.loader
 SPEC.loader.exec_module(MODULE)
 
 
+def _property_row(
+    record_index,
+    *,
+    capture="synthetic.pcapng",
+    lane_index=0,
+    source_actor_id=1,
+    destination_actor_id=1,
+    target_marker="",
+    property_hash="0x00000001",
+    value_hex="00",
+    frame_index=0,
+    subevent_index=0,
+    packet_index=0,
+    record_in_packet=0,
+    stream_offset=1,
+):
+    return {
+        "record_index": str(record_index),
+        "capture": capture,
+        "lane_index": str(lane_index),
+        "source_actor_id": str(source_actor_id),
+        "destination_actor_id": str(destination_actor_id),
+        "target_marker": target_marker,
+        "property_hash": property_hash,
+        "value_hex": value_hex,
+        "value_u_le": str(int.from_bytes(bytes.fromhex(value_hex), "little")),
+        "frame_index": str(frame_index),
+        "subevent_index": str(subevent_index),
+        "packet_index": str(packet_index),
+        "record_in_packet": str(record_in_packet),
+        "stream_offset": str(stream_offset),
+    }
+
+
+def _replay(rows, **kwargs):
+    defaults = {
+        "event_id": "equipment-event-synthetic",
+        "capture": "synthetic.pcapng",
+        "lane_index": 0,
+        "source_actor_id": 1,
+        "destination_actor_id": 1,
+        "source_actor": "actor-01",
+        "destination_actor": "actor-01",
+        "equipment_slot": 0,
+        "catalog_item_id": "0x00000001",
+        "begin_frame": 10,
+        "begin_subevent": 1,
+        "end_frame": 10,
+        "end_subevent": 3,
+    }
+    defaults.update(kwargs)
+    return MODULE._replay_property_rows(rows, **defaults)
+
+
+class EquipmentPropertyReplaySyntheticTests(unittest.TestCase):
+    def test_wire_order_repeated_writes_and_carrier_bound_exclusion(self):
+        rows = [
+            _property_row(4, frame_index=11, value_hex="01", stream_offset=20),
+            _property_row(5, frame_index=11, value_hex="02", stream_offset=10),
+            _property_row(
+                3,
+                frame_index=10,
+                subevent_index=2,
+                value_hex="ff",
+                stream_offset=1,
+            ),
+            _property_row(
+                2, frame_index=9, subevent_index=1, value_hex="01", stream_offset=20
+            ),
+            _property_row(
+                1, frame_index=9, subevent_index=1, value_hex="02", stream_offset=10
+            ),
+            _property_row(6, frame_index=13, value_hex="03", stream_offset=1),
+        ]
+        replay = _replay(rows)
+        self.assertEqual(
+            [row["comparison_status"] for row in replay], ["CHANGED", "UNCHANGED"]
+        )
+        self.assertEqual([row["after_record_index"] for row in replay], ["5", "4"])
+        self.assertEqual(replay[0]["before_record_index"], "2")
+        self.assertEqual(replay[0]["within_carrier_write_count"], 1)
+        self.assertEqual(replay[0]["after_write_count"], 2)
+        self.assertTrue(all(row["after_record_index"] != "6" for row in replay))
+
+    def test_partition_and_target_marker_context_isolation(self):
+        rows = [
+            _property_row(1, frame_index=9, value_hex="01", target_marker="a"),
+            _property_row(2, frame_index=11, value_hex="02", target_marker="a"),
+            _property_row(3, frame_index=11, value_hex="03", target_marker="b"),
+            _property_row(4, frame_index=11, value_hex="04", lane_index=1),
+            _property_row(5, frame_index=11, value_hex="05", source_actor_id=2),
+            _property_row(6, frame_index=11, value_hex="06", capture="other.pcapng"),
+        ]
+        replay = _replay(rows)
+        self.assertEqual(
+            [row["comparison_status"] for row in replay],
+            ["CHANGED", "UNKNOWN-INITIAL"],
+        )
+        self.assertEqual(
+            {row["property_context"] for row in replay}, {"context-01", "context-02"}
+        )
+        self.assertTrue(all("a" not in row["property_context"] for row in replay))
+
+    def test_unknown_initial_value_is_explicit(self):
+        replay = _replay(
+            [
+                _property_row(
+                    8,
+                    frame_index=12,
+                    property_hash="0x00000002",
+                    value_hex="09",
+                )
+            ]
+        )
+        self.assertEqual(len(replay), 1)
+        self.assertEqual(replay[0]["comparison_status"], "UNKNOWN-INITIAL")
+        self.assertEqual(replay[0]["before_record_index"], "")
+
+    def test_no_post_frame_is_explicit(self):
+        replay = _replay(
+            [
+                _property_row(
+                    9,
+                    frame_index=9,
+                    property_hash="0x00000003",
+                    value_hex="09",
+                )
+            ]
+        )
+        self.assertEqual(replay[0]["comparison_status"], "NO-POST-FRAME")
+        self.assertEqual(replay[0]["post_frame_cutoff"], "")
+
+
 @unittest.skipUnless(
     MODULE.default_corpus_paths(),
     "restricted corpus absent",
@@ -19,7 +152,13 @@ SPEC.loader.exec_module(MODULE)
 class EquipmentTransitionCensusTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.accounting, cls.matrix, cls.deltas, cls.summary = MODULE.extract()
+        (
+            cls.accounting,
+            cls.matrix,
+            cls.deltas,
+            cls.summary,
+            cls.replay,
+        ) = MODULE.extract_with_replay()
 
     def test_full_corpus_and_balanced_framing(self):
         self.assertEqual(len(self.accounting), 54)
@@ -151,6 +290,60 @@ class EquipmentTransitionCensusTests(unittest.TestCase):
         }
         self.assertTrue(actors)
         self.assertTrue(all(str(actor).startswith("actor-") for actor in actors))
+
+    def test_bounded_replay_covers_only_named_candidates(self):
+        self.assertEqual(
+            {row["event_id"] for row in self.replay}, MODULE.REPLAY_EVENT_IDS
+        )
+        self.assertTrue(
+            all(
+                row["comparison_status"] not in {"CHANGED", "UNCHANGED"}
+                for row in self.replay
+            )
+        )
+        self.assertTrue(
+            all(row["within_carrier_write_count"] == 0 for row in self.replay)
+        )
+        expected_post_frames = {
+            "equipment-event-002": 20,
+            "equipment-event-005": 23,
+            "equipment-event-006": 36,
+            "equipment-event-027": 16,
+            "equipment-event-111": 26,
+        }
+        for event_id, frame_index in expected_post_frames.items():
+            self.assertEqual(
+                {
+                    row["post_frame_cutoff"]
+                    for row in self.replay
+                    if row["event_id"] == event_id
+                },
+                {frame_index},
+            )
+        expected_before = {
+            ("equipment-event-002", "0x0ad1ce80"): "33",
+            ("equipment-event-005", "0x0ad1ce80"): "49",
+            ("equipment-event-006", "0x416571ac"): "52",
+            ("equipment-event-027", "0x0ad1ce80"): "587",
+            ("equipment-event-111", "0x0ad1ce80"): "8140",
+        }
+        for key, record_index in expected_before.items():
+            matching = [
+                row
+                for row in self.replay
+                if (row["event_id"], row["property_hash"]) == key
+            ]
+            self.assertEqual(len(matching), 1)
+            self.assertEqual(matching[0]["before_record_index"], record_index)
+        self.assertEqual(
+            next(
+                row["after_record_index"]
+                for row in self.replay
+                if row["event_id"] == "equipment-event-002"
+                and row["property_hash"] == "0x8cae90db"
+            ),
+            "37",
+        )
 
 
 if __name__ == "__main__":

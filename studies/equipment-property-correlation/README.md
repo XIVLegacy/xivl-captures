@@ -10,6 +10,9 @@ item-package slots and catalog item IDs.
 
 Nearby 0x0137 property projections are compared only when their capture-local
 actor tokens, lane, and property hashes match on both sides of a framed event.
+The bounded replay also requires matching target-marker context before carrying
+an earlier write forward. Its post side is the inclusive nearest actor-scoped
+property frame after the carrier.
 The census preserves order and distance without treating chronology as
 causality.
 
@@ -19,8 +22,10 @@ causality.
 - `derived/capture-accounting.csv` - one row for each canonical capture.
 - `derived/matrix.csv` - one row for each equipment link or missing-carrier event.
 - `derived/property-joins.csv` - before/after property observations around carrier events.
+- `derived/property-replay.csv` - bounded earlier-write replay for events 002,
+  005, 006, 027, and 111.
 
-Regenerate or byte-check all four products:
+Regenerate or byte-check all five products:
 
 ```text
 python tools/extractors/extract_equipment_property_correlation.py
@@ -41,6 +46,14 @@ joins catalog item `0x007A3F58` while property hash `0x8cae90db` changes from
 141 to 161. Six exact aggregate snapshots separately bind the old catalog item
 `0x007A3D64` to equipment slot 8, closing the old-link state gap without
 turning a snapshot into a transition.
+
+The bounded earlier-write replay covers exactly equipment events 002, 005, 006,
+027, and 111. It uses the last wire-ordered write before carrier start and
+subsequent writes in the inclusive nearest actor-scoped property frame after
+the carrier. Records are partitioned by capture, lane, header actor pair,
+property hash, and target-marker context.
+The five candidates have no changed or unchanged compatible replay pair; they
+remain bounded negatives and do not alter the nearest-frame classifications.
 
 ## Topics
 
@@ -66,6 +79,14 @@ property hash present in both nearest actor-scoped projections.
 side is absent. `AGGREGATE-SNAPSHOT` retains 0x014E state without promoting it
 to a transition. `MISSING-CARRIER` identifies framed inventory activity without
 an equipment link, plus the named soul capture's property-only gap.
+
+`property-replay.csv` retains exact record, frame, subevent, packet,
+record-in-packet, stream-offset, wire-order, value, and distance locators for
+the five named candidates. Repeated writes are retained individually. Writes
+inside carrier bounds are counted and excluded from comparison. Unknown initial
+values stay unknown; if no actor-scoped post frame exists, that boundary is
+recorded explicitly. Target-marker strings are represented by local context
+tokens rather than published raw identifiers.
 
 Exact repeated TCP payload segments are counted before reconstruction, and
 repeated aggregate equipment states are counted separately. Opcodes
