@@ -19,8 +19,8 @@ Union across the member captures. `name` is the derived/opcode_names.json entry 
 
 | opcode | service | direction | name | retail class | payload lengths |
 |---|---|---|---|---|---|
-| `0x00c9` | world | clientbound | PartyChatMessagePacket | - | 584 |
-| `0x00c9` | world | serverbound | PartyChatMessagePacket | - | 552 |
+| `0x00c9` | world | clientbound | SelectedGroupChatMessagePacket | - | 584 |
+| `0x00c9` | world | serverbound | SelectedGroupChatMessagePacket | - | 552 |
 | `0x0133` | world | serverbound | GroupWorkUpdatePacket | - | 72 |
 | `0x017a` | world | clientbound | SynchGroupWorkValuesPacket | - | 176 |
 | `0x017c` | world | clientbound | GroupHeaderPacket | - | 152 |
@@ -45,7 +45,7 @@ Union across the member captures. `name` is the derived/opcode_names.json entry 
 | `0x00d3` | map | clientbound | SetActorTargetAnimatedPacket | Application::Lua::Script::Client::Command::Network::SetTargetTimeReceiver | 40 |
 | `0x00d6` | map | clientbound | SetActorAppearancePacket | - | 296 |
 | `0x00d9` | map | clientbound | PlayBGAnimation | - | 40 |
-| `0x00da` | map | clientbound | PlayAnimationOnActorPacket | - | 40 |
+| `0x00da` | map | clientbound | _0x00DA | - | 40 |
 | `0x00db` | map | clientbound | SetActorTargetPacket | - | 40 |
 | `0x00de` | map | clientbound | _0x00DE | - | 40 |
 | `0x00e2` | map | clientbound | _0xE2Packet | - | 40 |
@@ -67,7 +67,7 @@ Union across the member captures. `name` is the derived/opcode_names.json entry 
 | `0x0144` | map | clientbound | SetActorSubStatePacket | Application::Lua::Script::Client::Command::System::ChangeActorSubStatModeBorderReceiver | 40 |
 | `0x0145` | map | clientbound | SetActorIconPacket | Application::Lua::Script::Client::Command::Network::ChangeActorExtraStatReceiver | 40 |
 | `0x0146` | map | clientbound | InventorySetBeginPacket | - | 40 |
-| `0x0147` | map | clientbound | InventorySetEndPacket | - | 40 |
+| `0x0147` | map | clientbound | _0x0147 | - | 40 |
 | `0x0148` | map | clientbound | InventoryListX01Packet | - | 144 |
 | `0x0157` | map | clientbound | _0x0157 | Application::Lua::Script::Client::Command::Network::SendLogReceiver | 48 |
 | `0x015a` | map | clientbound | _0x015A | Application::Lua::Script::Client::Command::Network::SendLogReceiver | 80 |
@@ -91,7 +91,7 @@ Union across the member captures. `name` is the derived/opcode_names.json entry 
 | `0x0183` | map | clientbound | ContentMembersX08Packet | - | 152 |
 | `0x0187` | map | clientbound | SetOccupancyGroupPacket | - | 96 |
 | `0x018b` | map | clientbound | SetGroupLayoutIDPacket | - | 88 |
-| `0x018d` | map | clientbound | PartyMapMarkerUpdatePacket | - | 696 |
+| `0x018d` | map | clientbound | _0x018D | - | 696 |
 | `0x018f` | map | clientbound | _0x018F | - | 40 |
 | `0x0190` | map | clientbound | _0x0190 | - | 136 |
 | `0x0191` | map | clientbound | _0x0191 | - | 40 |

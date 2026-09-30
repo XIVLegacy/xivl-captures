@@ -22,6 +22,19 @@ fields remain observation-only until evidence supports a semantic name.
 
 ## Decode contract
 
+### Adopted opcode identification
+
+[`derived/opcode_names.json`](../derived/opcode_names.json) projects the
+identification fields from `xivl-opcodes:opcodes.json` at commit
+`eda2dc94ac9812a928b59e932fa5a5a9c5581b03`. Its `source_sha256` records the
+catalog byte identity. Normal regeneration uses this local snapshot.
+
+Names and confidence describe the curated identification layer. They do not
+change numeric capture observations or establish handler behavior. Historical
+interpretations remain in the pinned source catalog's entry `notes`, including
+the map/clientbound `0x0147` provenance. Its adopted name is `_0x0147` with
+`pcap_observed` confidence.
+
 ### TCP streams and connections
 
 The decoder reconstructs each TCP direction by placing segments at their

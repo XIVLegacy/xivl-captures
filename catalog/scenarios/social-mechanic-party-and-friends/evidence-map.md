@@ -41,7 +41,7 @@ Union across the member captures. `name` is the derived/opcode_names.json entry 
 | `0x017e` | map | clientbound | GroupMembersEndPacket | - | 56 |
 | `0x017f` | map | clientbound | GroupMembersX08Packet | - | 440 |
 | `0x0187` | map | clientbound | SetOccupancyGroupPacket | - | 96 |
-| `0x018d` | map | clientbound | PartyMapMarkerUpdatePacket | - | 696 |
+| `0x018d` | map | clientbound | _0x018D | - | 696 |
 | `0x01cf` | map | clientbound | _0x01CF | - | 1640 |
 | `0x01cf` | map | serverbound | _0x01CFHandler | - | 40 |
 | `0x01dd` | map | serverbound | _0x01DD | - | 296 |

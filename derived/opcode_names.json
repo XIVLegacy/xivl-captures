@@ -1,6 +1,6 @@
 {
   "source": "xivl-opcodes:opcodes.json",
-  "source_sha256": "46003891e031bb94b4e7b7cbe4c3108ce00bbc385f9ea72a019d335024173799",
+  "source_sha256": "7fd010b2ea5596fd3d91bd151bbb1665b369c96a630a5393cdf57e0d7ef1dfb2",
   "evidenceTier": "curated identification layer promoted as local evidence; no freshness promise against the sibling catalog",
   "entries": [
     {
@@ -28,7 +28,9 @@
       "name": "_0x0003Handler",
       "retail_class_name": "Application::Network::LobbyClient::ServiceLoginOperation",
       "confidence": "implemented",
-      "observedIn": []
+      "observedIn": [
+        "login.pcapng"
+      ]
     },
     {
       "service": "lobby",
@@ -37,7 +39,9 @@
       "name": "SelectCharacterPacket",
       "retail_class_name": "Application::Network::LobbyClient::GameLoginOperation",
       "confidence": "implemented",
-      "observedIn": []
+      "observedIn": [
+        "login.pcapng"
+      ]
     },
     {
       "service": "lobby",
@@ -46,7 +50,9 @@
       "name": "SessionPacket",
       "retail_class_name": "Application::Network::LobbyClient::LobbyLoginOperation",
       "confidence": "implemented",
-      "observedIn": []
+      "observedIn": [
+        "login.pcapng"
+      ]
     },
     {
       "service": "lobby",
@@ -73,7 +79,9 @@
       "name": "AccountListPacket",
       "retail_class_name": "Application::Network::LobbyClient::LobbyLoginOperation",
       "confidence": "implemented",
-      "observedIn": []
+      "observedIn": [
+        "login.pcapng"
+      ]
     },
     {
       "service": "lobby",
@@ -82,7 +90,9 @@
       "name": "CharacterListPacket",
       "retail_class_name": "Application::Network::LobbyClient::ServiceLoginOperation",
       "confidence": "implemented",
-      "observedIn": []
+      "observedIn": [
+        "login.pcapng"
+      ]
     },
     {
       "service": "lobby",
@@ -100,7 +110,9 @@
       "name": "SelectCharacterConfirmPacket",
       "retail_class_name": "Application::Network::LobbyClient::GameLoginOperation",
       "confidence": "implemented",
-      "observedIn": []
+      "observedIn": [
+        "login.pcapng"
+      ]
     },
     {
       "service": "lobby",
@@ -127,7 +139,9 @@
       "name": "WorldListPacket",
       "retail_class_name": "Application::Network::LobbyClient::ServiceLoginOperation",
       "confidence": "implemented",
-      "observedIn": []
+      "observedIn": [
+        "login.pcapng"
+      ]
     },
     {
       "service": "lobby",
@@ -136,7 +150,9 @@
       "name": "ImportListPacket",
       "retail_class_name": "Application::Network::LobbyClient::ServiceLoginOperation",
       "confidence": "implemented",
-      "observedIn": []
+      "observedIn": [
+        "login.pcapng"
+      ]
     },
     {
       "service": "lobby",
@@ -145,7 +161,9 @@
       "name": "RetainerListPacket",
       "retail_class_name": "Application::Network::LobbyClient::ServiceLoginOperation",
       "confidence": "implemented",
-      "observedIn": []
+      "observedIn": [
+        "login.pcapng"
+      ]
     },
     {
       "service": "lobby",
@@ -1071,9 +1089,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x00da",
-      "name": "PlayAnimationOnActorPacket",
+      "name": "_0x00DA",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": [
         "gear_changesoul.pcapng",
         "local_leve_complete.pcapng",
@@ -1116,9 +1134,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x00e1",
-      "name": "ActorDoEmotePacket",
+      "name": "_0x00E1",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": [
         "emote_dance.pcapng",
         "emote_kneel.pcapng",
@@ -1465,7 +1483,7 @@
       "opcodeHex": "0x0134",
       "name": "SetActorStatePacket",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "confirmed",
       "observedIn": [
         "battle_mode_passive_mode.pcapng",
         "combat_autoattack.pcapng",
@@ -1474,6 +1492,7 @@
         "gather_wood.pcapng",
         "gridania_to_coerthas.pcapng",
         "local_leve_complete.pcapng",
+        "login.pcapng",
         "mount_unmount_chocobo.pcapng",
         "move_around_gridania.pcapng",
         "move_out_of_room.pcapng",
@@ -1492,7 +1511,7 @@
       "service": "map",
       "direction": "serverbound",
       "opcodeHex": "0x0134",
-      "name": "_0x0134",
+      "name": "AchievementTitleRequestPacket",
       "retail_class_name": null,
       "confidence": "decomp_routed",
       "observedIn": []
@@ -1787,9 +1806,9 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x0147",
-      "name": "InventorySetEndPacket",
+      "name": "_0x0147",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "pcap_observed",
       "observedIn": [
         "buy_square_maple_shield.pcapng",
         "change_bodyarmor.pcapng",
@@ -2768,7 +2787,7 @@
       "service": "map",
       "direction": "clientbound",
       "opcodeHex": "0x018d",
-      "name": "PartyMapMarkerUpdatePacket",
+      "name": "_0x018D",
       "retail_class_name": null,
       "confidence": "decomp_routed",
       "observedIn": [
@@ -3062,10 +3081,11 @@
       "opcodeHex": "0x019d",
       "name": "SetPlayerTitlePacket",
       "retail_class_name": "Application::Lua::Script::Client::Command::Network::AchievementTitleReceiver",
-      "confidence": "implemented",
+      "confidence": "confirmed",
       "observedIn": [
         "from_gridania_to_blackshroud.pcapng",
         "gridania_to_coerthas.pcapng",
+        "login.pcapng",
         "move_out_of_room.pcapng",
         "moving_around_gridania.pcapng",
         "party_battle_leve.pcapng",
@@ -3091,7 +3111,7 @@
       "opcodeHex": "0x019f",
       "name": "SendAchievementRatePacket",
       "retail_class_name": "Application::Lua::Script::Client::Command::Network::AchievementAchievedCountReceiver",
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": []
     },
     {
@@ -3311,9 +3331,9 @@
       "service": "map",
       "direction": "serverbound",
       "opcodeHex": "0x01c9",
-      "name": "AddRemoveSocialPacket",
+      "name": "_0x01C9Handler",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": []
     },
     {
@@ -3329,9 +3349,9 @@
       "service": "map",
       "direction": "serverbound",
       "opcodeHex": "0x01ca",
-      "name": "AddRemoveSocialPacket",
+      "name": "_0x01CAHandler",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": []
     },
     {
@@ -3341,7 +3361,9 @@
       "name": "_0x01CB",
       "retail_class_name": null,
       "confidence": "decomp_routed",
-      "observedIn": []
+      "observedIn": [
+        "login.pcapng"
+      ]
     },
     {
       "service": "map",
@@ -3349,8 +3371,10 @@
       "opcodeHex": "0x01cb",
       "name": "_0x01CBHandler",
       "retail_class_name": null,
-      "confidence": "implemented",
-      "observedIn": []
+      "confidence": "decomp_routed",
+      "observedIn": [
+        "login.pcapng"
+      ]
     },
     {
       "service": "map",
@@ -3365,9 +3389,9 @@
       "service": "map",
       "direction": "serverbound",
       "opcodeHex": "0x01cc",
-      "name": "AddRemoveSocialPacket",
+      "name": "_0x01CCHandler",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": []
     },
     {
@@ -3383,9 +3407,9 @@
       "service": "map",
       "direction": "serverbound",
       "opcodeHex": "0x01cd",
-      "name": "AddRemoveSocialPacket",
+      "name": "_0x01CDHandler",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "blocked",
       "observedIn": []
     },
     {
@@ -3395,7 +3419,9 @@
       "name": "_0x01CE",
       "retail_class_name": null,
       "confidence": "decomp_routed",
-      "observedIn": []
+      "observedIn": [
+        "login.pcapng"
+      ]
     },
     {
       "service": "map",
@@ -3403,8 +3429,10 @@
       "opcodeHex": "0x01ce",
       "name": "_0x01CEHandler",
       "retail_class_name": null,
-      "confidence": "implemented",
-      "observedIn": []
+      "confidence": "decomp_routed",
+      "observedIn": [
+        "login.pcapng"
+      ]
     },
     {
       "service": "map",
@@ -3424,7 +3452,7 @@
       "opcodeHex": "0x01cf",
       "name": "_0x01CFHandler",
       "retail_class_name": null,
-      "confidence": "implemented",
+      "confidence": "decomp_routed",
       "observedIn": [
         "friendlist_search.pcapng",
         "invite_join_party.pcapng"
@@ -3780,9 +3808,18 @@
     },
     {
       "service": "world",
+      "direction": "clientbound",
+      "opcodeHex": "0x00c8",
+      "name": "TellChatMessagePacket",
+      "retail_class_name": null,
+      "confidence": "decomp_routed",
+      "observedIn": []
+    },
+    {
+      "service": "world",
       "direction": "serverbound",
       "opcodeHex": "0x00c8",
-      "name": "_0x00C8",
+      "name": "TellChatMessagePacket",
       "retail_class_name": null,
       "confidence": "decomp_routed",
       "observedIn": []
@@ -3791,7 +3828,7 @@
       "service": "world",
       "direction": "clientbound",
       "opcodeHex": "0x00c9",
-      "name": "PartyChatMessagePacket",
+      "name": "SelectedGroupChatMessagePacket",
       "retail_class_name": null,
       "confidence": "pcap_observed",
       "observedIn": [
@@ -3803,7 +3840,7 @@
       "service": "world",
       "direction": "serverbound",
       "opcodeHex": "0x00c9",
-      "name": "PartyChatMessagePacket",
+      "name": "SelectedGroupChatMessagePacket",
       "retail_class_name": null,
       "confidence": "implemented",
       "observedIn": [
@@ -4007,15 +4044,6 @@
       "direction": "clientbound",
       "opcodeHex": "0x0189",
       "name": "CreateNamedGroupMultiple",
-      "retail_class_name": null,
-      "confidence": "implemented",
-      "observedIn": []
-    },
-    {
-      "service": "world",
-      "direction": "clientbound",
-      "opcodeHex": "0x018a",
-      "name": "SetActiveLinkshellPacket",
       "retail_class_name": null,
       "confidence": "implemented",
       "observedIn": []
