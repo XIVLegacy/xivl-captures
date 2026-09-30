@@ -33,6 +33,22 @@ TCP reconstruction suppressed 1759 exact repeated payload segments. The census s
 | equipment-event-027 | `gear_changeweapon.pcapng` | 0 | `0x003D7E3D` | exact-same-event-item-link | 13 -> 16 |
 | equipment-event-111 | `switch_to_weaver.pcapng` | 0 | `0x005C77E6` | exact-same-event-item-link | 10 -> 26 |
 
+## Bounded earlier-property-write replay
+
+`property-replay.csv` covers exactly the five bounded candidates listed below. For each candidate it partitions records by capture, lane, header actor pair, property hash, and target-marker context, then retains the last wire-ordered write before carrier start and every subsequent write in the inclusive nearest actor-scoped property frame after carrier end. Writes inside the carrier frame/subevent bounds are counted and excluded from the before/after comparison. Target-marker contexts are emitted only as capture-local `context-NN` tokens; numeric actor IDs, endpoints, and raw target-marker strings are not published.
+
+A `CHANGED` row is replay-supported correlation evidence and remains separate from `EXACT-TRANSITION`. `UNKNOWN-INITIAL` means a post-carrier write had no compatible earlier writer in the partition. `NO-SUBSEQUENT-WRITE-IN-POST-FRAME` means the earlier writer was retained but no compatible write arrived in the selected nearest post-carrier frame. `NO-POST-FRAME` records that no actor-scoped post-carrier property frame exists.
+
+| Event | Capture | Carrier bounds | Post frame | Rows | Changed | Unchanged | Unknown initial | No subsequent | In-carrier writes |
+|---|---|---|---:|---:|---:|---:|---:|---:|---:|
+| equipment-event-002 | `change_bodyarmor.pcapng` | f19/s1 -> f19/s6 | 20 | 7 | 0 | 0 | 5 | 2 | 0 |
+| equipment-event-005 | `change_to_botanist.pcapng` | f21/s1 -> f21/s6 | 23 | 35 | 0 | 0 | 33 | 2 | 0 |
+| equipment-event-006 | `change_to_botanist.pcapng` | f34/s1 -> f34/s6 | 36 | 36 | 0 | 0 | 1 | 35 | 0 |
+| equipment-event-027 | `gear_changeweapon.pcapng` | f14/s1 -> f14/s6 | 16 | 83 | 0 | 0 | 81 | 2 | 0 |
+| equipment-event-111 | `switch_to_weaver.pcapng` | f22/s1 -> f22/s6 | 26 | 70 | 0 | 0 | 68 | 2 | 0 |
+
+The five retained candidates produced no `CHANGED` or `UNCHANGED` replay row. Their nearest-frame classifications and the established helm `EXACT-TRANSITION` remain unchanged; the replay closes this bounded check as a negative while retaining exact last-writer and subsequent-writer locators in the CSV.
+
 ## Claim boundary
 
 Actor labels are capture-local tokens assigned by first observed appearance. They preserve equality without publishing actor or session identifiers. Property hashes and integer values are wire facts only; no gameplay meaning is assigned to `generalParameter[18]` or another indexed property. Aggregate snapshots, chronology, and 0x018F-0x0191 traffic are not forced into transition claims.

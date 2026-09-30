@@ -39,6 +39,13 @@ PROPERTY_RECORDS = (
     / "property-records.csv"
 )
 OUT = REPO_ROOT / "studies" / "equipment-property-correlation" / "derived"
+REPLAY_EVENT_IDS = {
+    "equipment-event-002",
+    "equipment-event-005",
+    "equipment-event-006",
+    "equipment-event-027",
+    "equipment-event-111",
+}
 
 SET_BEGIN, SET_END = 0x0146, 0x0147
 CHANGE_BEGIN, CHANGE_END = 0x016D, 0x016E
@@ -144,6 +151,48 @@ PROPERTY_FIELDS = (
     "after_distance_frames",
     "after_distance_us",
 )
+REPLAY_FIELDS = (
+    "event_id",
+    "capture",
+    "lane_index",
+    "source_actor",
+    "destination_actor",
+    "equipment_slot",
+    "catalog_item_id",
+    "carrier_begin_frame",
+    "carrier_begin_subevent",
+    "carrier_end_frame",
+    "carrier_end_subevent",
+    "property_context",
+    "property_hash",
+    "comparison_status",
+    "before_record_index",
+    "before_frame",
+    "before_subevent",
+    "before_packet_index",
+    "before_record_in_packet",
+    "before_stream_offset",
+    "before_order",
+    "before_value_hex",
+    "before_value_u_le",
+    "after_record_index",
+    "after_frame",
+    "after_subevent",
+    "after_packet_index",
+    "after_record_in_packet",
+    "after_stream_offset",
+    "after_order",
+    "after_value_hex",
+    "after_value_u_le",
+    "after_write_ordinal",
+    "after_write_count",
+    "within_carrier_write_count",
+    "before_distance_frames",
+    "before_distance_subevents",
+    "after_distance_frames",
+    "after_distance_subevents",
+    "post_frame_cutoff",
+)
 
 
 def _sha256(path: Path) -> str:
@@ -156,6 +205,39 @@ def _sha256(path: Path) -> str:
 
 def _event_order(row: dict) -> tuple[int, int, int]:
     return int(row["frame_index"]), int(row["subevent_index"]), int(row["ordinal"])
+
+
+def _property_order(row: dict) -> tuple[int, int, int, int, int, int]:
+    """Return wire order without relying on CSV input order or timestamps."""
+
+    return (
+        int(row["frame_index"]),
+        int(row["subevent_index"]),
+        int(row["stream_offset"]),
+        int(row["record_in_packet"]),
+        int(row["packet_index"]),
+        int(row["record_index"]),
+    )
+
+
+def _property_position(row: dict) -> tuple[int, int]:
+    return int(row["frame_index"]), int(row["subevent_index"])
+
+
+def _property_order_text(row: dict) -> str:
+    return (
+        f"f{row['frame_index']}/s{row['subevent_index']}"
+        f"/p{row['packet_index']}/r{row['record_in_packet']}"
+        f"/o{row['stream_offset']}"
+    )
+
+
+def _property_distance_subevents(left: dict | None, right: dict | None) -> int | str:
+    if not left or not right:
+        return ""
+    if int(left["frame_index"]) != int(right["frame_index"]):
+        return ""
+    return int(right["subevent_index"]) - int(left["subevent_index"])
 
 
 def _actor_labels(
@@ -353,6 +435,218 @@ def _load_properties() -> dict[str, list[dict[str, str]]]:
     return grouped
 
 
+def _replay_property_rows(
+    properties: list[dict[str, str]],
+    *,
+    event_id: str,
+    capture: str,
+    lane_index: int,
+    source_actor_id: int,
+    destination_actor_id: int,
+    source_actor: str,
+    destination_actor: str,
+    equipment_slot: object,
+    catalog_item_id: object,
+    begin_frame: int,
+    begin_subevent: int,
+    end_frame: int,
+    end_subevent: int,
+) -> list[dict[str, object]]:
+    """Replay bounded property writes for one sanitized carrier candidate.
+
+    A property context is keyed by its target marker in addition to the
+    capture, lane, actor pair, and property hash. The marker is represented by
+    a local token in output so printable target names are never published. The
+    post side is limited to the nearest actor-scoped property frame after the
+    carrier, matching the established nearest-frame projection.
+    """
+
+    partition = [
+        row
+        for row in properties
+        if row.get("capture", capture) == capture
+        and int(row["lane_index"]) == lane_index
+        and int(row["source_actor_id"]) == source_actor_id
+        and int(row["destination_actor_id"]) == destination_actor_id
+    ]
+    partition.sort(key=_property_order)
+    nearest_after_frame = min(
+        (
+            int(row["frame_index"])
+            for row in partition
+            if _property_position(row) > (end_frame, end_subevent)
+        ),
+        default=None,
+    )
+    if not partition:
+        return [
+            {
+                **_blank(REPLAY_FIELDS),
+                "event_id": event_id,
+                "capture": capture,
+                "lane_index": lane_index,
+                "source_actor": source_actor,
+                "destination_actor": destination_actor,
+                "equipment_slot": equipment_slot,
+                "catalog_item_id": catalog_item_id,
+                "carrier_begin_frame": begin_frame,
+                "carrier_begin_subevent": begin_subevent,
+                "carrier_end_frame": end_frame,
+                "carrier_end_subevent": end_subevent,
+                "comparison_status": "NO-PROPERTY-OBSERVATIONS",
+                "post_frame_cutoff": "",
+            }
+        ]
+
+    context_tokens: dict[str, str] = {}
+    for row in partition:
+        marker = row["target_marker"]
+        if marker not in context_tokens:
+            context_tokens[marker] = f"context-{len(context_tokens) + 1:02d}"
+
+    groups: dict[tuple[str, str], list[dict[str, str]]] = defaultdict(list)
+    for row in partition:
+        groups[(row["property_hash"], row["target_marker"])].append(row)
+
+    begin_position = (begin_frame, begin_subevent)
+    end_position = (end_frame, end_subevent)
+    rows: list[dict[str, object]] = []
+    for (property_hash, marker), group in sorted(
+        groups.items(), key=lambda item: (item[0][0], context_tokens[item[0][1]])
+    ):
+        before = None
+        inside: list[dict[str, str]] = []
+        after: list[dict[str, str]] = []
+        for row in group:
+            position = _property_position(row)
+            if position < begin_position:
+                before = row
+            elif position <= end_position:
+                inside.append(row)
+            elif (
+                nearest_after_frame is not None
+                and int(row["frame_index"]) == nearest_after_frame
+            ):
+                after.append(row)
+
+        common = {
+            "event_id": event_id,
+            "capture": capture,
+            "lane_index": lane_index,
+            "source_actor": source_actor,
+            "destination_actor": destination_actor,
+            "equipment_slot": equipment_slot,
+            "catalog_item_id": catalog_item_id,
+            "carrier_begin_frame": begin_frame,
+            "carrier_begin_subevent": begin_subevent,
+            "carrier_end_frame": end_frame,
+            "carrier_end_subevent": end_subevent,
+            "property_context": context_tokens[marker],
+            "property_hash": property_hash,
+            "within_carrier_write_count": len(inside),
+            "post_frame_cutoff": nearest_after_frame
+            if nearest_after_frame is not None
+            else "",
+        }
+
+        if after:
+            for after_ordinal, after_row in enumerate(after, start=1):
+                if before is None:
+                    status = "UNKNOWN-INITIAL"
+                elif before["value_hex"] == after_row["value_hex"]:
+                    status = "UNCHANGED"
+                else:
+                    status = "CHANGED"
+                rows.append(
+                    {
+                        **_blank(REPLAY_FIELDS),
+                        **common,
+                        "comparison_status": status,
+                        "before_record_index": before["record_index"] if before else "",
+                        "before_frame": before["frame_index"] if before else "",
+                        "before_subevent": before["subevent_index"] if before else "",
+                        "before_packet_index": before["packet_index"] if before else "",
+                        "before_record_in_packet": before["record_in_packet"]
+                        if before
+                        else "",
+                        "before_stream_offset": before["stream_offset"]
+                        if before
+                        else "",
+                        "before_order": _property_order_text(before) if before else "",
+                        "before_value_hex": before["value_hex"] if before else "",
+                        "before_value_u_le": before["value_u_le"] if before else "",
+                        "after_record_index": after_row["record_index"],
+                        "after_frame": after_row["frame_index"],
+                        "after_subevent": after_row["subevent_index"],
+                        "after_packet_index": after_row["packet_index"],
+                        "after_record_in_packet": after_row["record_in_packet"],
+                        "after_stream_offset": after_row["stream_offset"],
+                        "after_order": _property_order_text(after_row),
+                        "after_value_hex": after_row["value_hex"],
+                        "after_value_u_le": after_row["value_u_le"],
+                        "after_write_ordinal": after_ordinal,
+                        "after_write_count": len(after),
+                        "before_distance_frames": begin_frame
+                        - int(before["frame_index"])
+                        if before
+                        else "",
+                        "before_distance_subevents": _property_distance_subevents(
+                            before,
+                            {
+                                "frame_index": begin_frame,
+                                "subevent_index": begin_subevent,
+                            },
+                        ),
+                        "after_distance_frames": int(after_row["frame_index"])
+                        - end_frame,
+                        "after_distance_subevents": _property_distance_subevents(
+                            {
+                                "frame_index": end_frame,
+                                "subevent_index": end_subevent,
+                            },
+                            after_row,
+                        ),
+                    }
+                )
+        elif before:
+            rows.append(
+                {
+                    **_blank(REPLAY_FIELDS),
+                    **common,
+                    "comparison_status": "NO-SUBSEQUENT-WRITE-IN-POST-FRAME"
+                    if nearest_after_frame is not None
+                    else "NO-POST-FRAME",
+                    "before_record_index": before["record_index"],
+                    "before_frame": before["frame_index"],
+                    "before_subevent": before["subevent_index"],
+                    "before_packet_index": before["packet_index"],
+                    "before_record_in_packet": before["record_in_packet"],
+                    "before_stream_offset": before["stream_offset"],
+                    "before_order": _property_order_text(before),
+                    "before_value_hex": before["value_hex"],
+                    "before_value_u_le": before["value_u_le"],
+                    "before_distance_frames": begin_frame - int(before["frame_index"]),
+                    "before_distance_subevents": _property_distance_subevents(
+                        before,
+                        {
+                            "frame_index": begin_frame,
+                            "subevent_index": begin_subevent,
+                        },
+                    ),
+                }
+            )
+        elif inside:
+            rows.append(
+                {
+                    **_blank(REPLAY_FIELDS),
+                    **common,
+                    "comparison_status": "WITHIN-CARRIER-ONLY",
+                }
+            )
+
+    return rows
+
+
 def _property_projection(
     properties: list[dict[str, str]],
     *,
@@ -472,11 +766,14 @@ def _csv_bytes(rows: list[dict], fields: tuple[str, ...]) -> bytes:
     return output.getvalue().encode("ascii")
 
 
-def extract() -> tuple[list[dict], list[dict], list[dict], dict[str, int]]:
+def extract_with_replay() -> tuple[
+    list[dict], list[dict], list[dict], dict[str, int], list[dict]
+]:
     properties_by_capture = _load_properties()
     accounting_rows: list[dict] = []
     matrix_rows: list[dict] = []
     property_rows: list[dict] = []
+    replay_specs: list[dict] = []
     event_number = 0
     aggregate_seen: dict[tuple, str] = {}
     corpus_paths = default_corpus_paths()
@@ -688,6 +985,27 @@ def extract() -> tuple[list[dict], list[dict], list[dict], dict[str, int]]:
                         }
                     )
                 capture_matrix.append(row)
+                if (
+                    event_id in REPLAY_EVENT_IDS
+                    and classification == "BOUNDED-CANDIDATE"
+                ):
+                    replay_specs.append(
+                        {
+                            "event_id": event_id,
+                            "capture": path.name,
+                            "lane_index": lane_index,
+                            "source_actor_id": actor_source,
+                            "destination_actor_id": actor_destination,
+                            "source_actor": labels[actor_source],
+                            "destination_actor": labels[actor_destination],
+                            "equipment_slot": row["equipment_slot"],
+                            "catalog_item_id": row["catalog_item_id"],
+                            "begin_frame": int(begin["frame_index"]),
+                            "begin_subevent": int(begin["subevent_index"]),
+                            "end_frame": int(end["frame_index"]),
+                            "end_subevent": int(end["subevent_index"]),
+                        }
+                    )
                 if link_event["opcode"] == 0x014D and match:
                     for prop_hash in sorted(
                         before_by_hash.keys() | after_by_hash.keys()
@@ -878,10 +1196,46 @@ def extract() -> tuple[list[dict], list[dict], list[dict], dict[str, int]]:
             int(row["excluded_0x018f_0x0191_count"]) for row in accounting_rows
         ),
     }
+    if {spec["event_id"] for spec in replay_specs} != REPLAY_EVENT_IDS:
+        raise ValueError(
+            "equipment property replay requires exactly the five named "
+            "bounded candidates"
+        )
+    if len(replay_specs) != len(REPLAY_EVENT_IDS):
+        raise ValueError("equipment property replay candidates are not unique")
+    replay_rows: list[dict] = []
+    for spec in sorted(replay_specs, key=lambda row: row["event_id"]):
+        replay_rows.extend(
+            _replay_property_rows(
+                properties_by_capture.get(spec["capture"], []),
+                event_id=spec["event_id"],
+                capture=spec["capture"],
+                lane_index=spec["lane_index"],
+                source_actor_id=spec["source_actor_id"],
+                destination_actor_id=spec["destination_actor_id"],
+                source_actor=spec["source_actor"],
+                destination_actor=spec["destination_actor"],
+                equipment_slot=spec["equipment_slot"],
+                catalog_item_id=spec["catalog_item_id"],
+                begin_frame=spec["begin_frame"],
+                begin_subevent=spec["begin_subevent"],
+                end_frame=spec["end_frame"],
+                end_subevent=spec["end_subevent"],
+            )
+        )
+    return accounting_rows, matrix_rows, property_rows, summary, replay_rows
+
+
+def extract() -> tuple[list[dict], list[dict], list[dict], dict[str, int]]:
+    """Preserve the established four-return extraction API."""
+
+    accounting_rows, matrix_rows, property_rows, summary, _ = extract_with_replay()
     return accounting_rows, matrix_rows, property_rows, summary
 
 
-def _evidence_map_bytes(matrix: list[dict], summary: dict[str, int]) -> bytes:
+def _evidence_map_bytes(
+    matrix: list[dict], summary: dict[str, int], replay: list[dict]
+) -> bytes:
     exact = [row for row in matrix if row["classification"] == "EXACT-TRANSITION"]
     candidates = [row for row in matrix if row["classification"] == "BOUNDED-CANDIDATE"]
     missing = [row for row in matrix if row["classification"] == "MISSING-CARRIER"]
@@ -930,6 +1284,35 @@ def _evidence_map_bytes(matrix: list[dict], summary: dict[str, int]) -> bytes:
     lines.extend(
         [
             "",
+            "## Bounded earlier-property-write replay",
+            "",
+            "`property-replay.csv` covers exactly the five bounded candidates listed below. For each candidate it partitions records by capture, lane, header actor pair, property hash, and target-marker context, then retains the last wire-ordered write before carrier start and every subsequent write in the inclusive nearest actor-scoped property frame after carrier end. Writes inside the carrier frame/subevent bounds are counted and excluded from the before/after comparison. Target-marker contexts are emitted only as capture-local `context-NN` tokens; numeric actor IDs, endpoints, and raw target-marker strings are not published.",
+            "",
+            "A `CHANGED` row is replay-supported correlation evidence and remains separate from `EXACT-TRANSITION`. `UNKNOWN-INITIAL` means a post-carrier write had no compatible earlier writer in the partition. `NO-SUBSEQUENT-WRITE-IN-POST-FRAME` means the earlier writer was retained but no compatible write arrived in the selected nearest post-carrier frame. `NO-POST-FRAME` records that no actor-scoped post-carrier property frame exists.",
+            "",
+            "| Event | Capture | Carrier bounds | Post frame | Rows | Changed | Unchanged | Unknown initial | No subsequent | In-carrier writes |",
+            "|---|---|---|---:|---:|---:|---:|---:|---:|---:|",
+        ]
+    )
+    replay_by_event: dict[str, list[dict]] = defaultdict(list)
+    for row in replay:
+        replay_by_event[str(row["event_id"])].append(row)
+    for event_id in sorted(REPLAY_EVENT_IDS):
+        event_rows = replay_by_event[event_id]
+        first = event_rows[0]
+        counts = Counter(str(row["comparison_status"]) for row in event_rows)
+        in_carrier = max(
+            (int(row["within_carrier_write_count"]) for row in event_rows),
+            default=0,
+        )
+        lines.append(
+            f"| {event_id} | `{first['capture']}` | f{first['carrier_begin_frame']}/s{first['carrier_begin_subevent']} -> f{first['carrier_end_frame']}/s{first['carrier_end_subevent']} | {first['post_frame_cutoff'] or 'none'} | {len(event_rows)} | {counts['CHANGED']} | {counts['UNCHANGED']} | {counts['UNKNOWN-INITIAL']} | {counts['NO-SUBSEQUENT-WRITE-IN-POST-FRAME'] + counts['NO-POST-FRAME']} | {in_carrier} |"
+        )
+    lines.extend(
+        [
+            "",
+            "The five retained candidates produced no `CHANGED` or `UNCHANGED` replay row. Their nearest-frame classifications and the established helm `EXACT-TRANSITION` remain unchanged; the replay closes this bounded check as a negative while retaining exact last-writer and subsequent-writer locators in the CSV.",
+            "",
             "## Claim boundary",
             "",
             "Actor labels are capture-local tokens assigned by first observed appearance. They preserve equality without publishing actor or session identifiers. Property hashes and integer values are wire facts only; no gameplay meaning is assigned to `generalParameter[18]` or another indexed property. Aggregate snapshots, chronology, and 0x018F-0x0191 traffic are not forced into transition claims.",
@@ -963,12 +1346,13 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
-    accounting, matrix, properties, summary = extract()
+    accounting, matrix, properties, summary, replay = extract_with_replay()
     outputs = {
         "capture-accounting.csv": _csv_bytes(accounting, ACCOUNTING_FIELDS),
         "matrix.csv": _csv_bytes(matrix, MATRIX_FIELDS),
         "property-joins.csv": _csv_bytes(properties, PROPERTY_FIELDS),
-        "evidence-map.md": _evidence_map_bytes(matrix, summary),
+        "property-replay.csv": _csv_bytes(replay, REPLAY_FIELDS),
+        "evidence-map.md": _evidence_map_bytes(matrix, summary, replay),
     }
     stale = []
     for name, data in outputs.items():

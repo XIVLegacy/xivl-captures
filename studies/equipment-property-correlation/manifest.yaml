@@ -19,8 +19,8 @@ search_hints:
 - generalParameter
 notes: >-
   Sanitized full-corpus equipment transition census with exact joins, bounded
-  candidates, aggregate snapshots, missing carriers, and no inferred property
-  semantics.
+  candidates, aggregate snapshots, missing carriers, and a bounded replay for
+  five named candidates with no inferred property semantics.
 source_refs:
 - source: pcap-1.23b
 primary_paths:
@@ -28,11 +28,13 @@ primary_paths:
 - derived/capture-accounting.csv
 - derived/matrix.csv
 - derived/property-joins.csv
+- derived/property-replay.csv
 canonical_evidence:
 - derived/evidence-map.md
 - derived/capture-accounting.csv
 - derived/matrix.csv
 - derived/property-joins.csv
+- derived/property-replay.csv
 distilled:
   distilled: true
   checksum_file: derived/checksums.sha256
@@ -41,3 +43,4 @@ distilled:
   - derived/evidence-map.md
   - derived/matrix.csv
   - derived/property-joins.csv
+  - derived/property-replay.csv

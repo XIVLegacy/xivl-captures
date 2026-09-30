@@ -945,6 +945,7 @@ studies:
   - studies/equipment-property-correlation/derived/capture-accounting.csv
   - studies/equipment-property-correlation/derived/matrix.csv
   - studies/equipment-property-correlation/derived/property-joins.csv
+  - studies/equipment-property-correlation/derived/property-replay.csv
   source_refs:
   - source: pcap-1.23b
 - id: gamerescape-tables
