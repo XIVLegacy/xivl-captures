@@ -81,7 +81,7 @@
     "capture": "login.pcapng",
     "capture_sha256": "28e06b54fe559870031f077f8549b9244caafa7e5177dbca08a7feae6c2b1b62",
     "opcode_names_file": "derived/opcode_names.json",
-    "opcode_names_sha256": "d9de608bdcbae8670f50aa3b5712d4b3f2170e3116931e78e500796e9b11119d"
+    "opcode_names_sha256": "529ee24970932ca62cc4504432252d671b2c6a63f29b1e52ecd2bf0f900e0ff6"
   },
   "main_connection_reconstruction": {
     "c2s": {

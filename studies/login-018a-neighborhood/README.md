@@ -34,8 +34,8 @@ boundary accepts the two clear TCP 54992 game connections and rejects two TLS
 connections and two TCP 54994 lobby connections.
 
 Opcode labels come from the promoted local snapshot in
-`derived/opcode_names.json`. Its source at
-[the immutable xivl-opcodes catalog](https://github.com/XIVLegacy/xivl-opcodes/blob/db9e9d770698b086f19758ecc5803012308f5891/opcodes.json)
+`derived/opcode_names.json`. The adopted source described in
+[the packet decoding guide](../../docs/pcap-decoding.md#adopted-opcode-identification)
 attributes the retained event to the map main lane while deliberately keeping
 the `_0x018A` placeholder. The tracked dispatcher record at
 [the immutable xivl-decomp dispatcher record](https://github.com/XIVLegacy/xivl-decomp/blob/d62cc943327b0457673485fcb0820247835ce9e8/config/ffxivgame.protocol_evidence.json)

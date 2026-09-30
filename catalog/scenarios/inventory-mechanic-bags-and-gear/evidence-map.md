@@ -27,14 +27,14 @@ Union across the member captures. `name` is the derived/opcode_names.json entry 
 | `0x00cf` | map | clientbound | MoveActorToPositionPacket | - | 80 |
 | `0x00d0` | map | clientbound | SetActorSpeedPacket | - | 168 |
 | `0x00d6` | map | clientbound | SetActorAppearancePacket | - | 296 |
-| `0x00da` | map | clientbound | PlayAnimationOnActorPacket | - | 40 |
+| `0x00da` | map | clientbound | _0x00DA | - | 40 |
 | `0x012d` | map | serverbound | EventStartPacket | - | 216 |
 | `0x012f` | map | serverbound | WorkStateUpdatePacket | - | 72 |
 | `0x0137` | map | clientbound | SetActorPropetyPacket | Application::Lua::Script::Client::Command::Network::SyncMemoryReceiver | 168 |
 | `0x0139` | map | clientbound | CommandResultX01Packet | - | 88 |
 | `0x0144` | map | clientbound | SetActorSubStatePacket | Application::Lua::Script::Client::Command::System::ChangeActorSubStatModeBorderReceiver | 40 |
 | `0x0146` | map | clientbound | InventorySetBeginPacket | - | 40 |
-| `0x0147` | map | clientbound | InventorySetEndPacket | - | 40 |
+| `0x0147` | map | clientbound | _0x0147 | - | 40 |
 | `0x0148` | map | clientbound | InventoryListX01Packet | - | 144 |
 | `0x0149` | map | clientbound | InventoryListX08Packet | - | 936 |
 | `0x014d` | map | clientbound | LinkedItemListX01Packet | - | 40 |

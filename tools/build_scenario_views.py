@@ -128,6 +128,9 @@ def load_inversion() -> dict:
 
     by_key: dict[tuple[str, str], list[dict]] = {}
     for e in mapping["entries"]:
+        # observations.json excludes port-54994 lobby traffic; shared wire integers are not lobby witnesses.
+        if e["service"] == "lobby":
+            continue
         by_key.setdefault((e["opcodeHex"], e["direction"]), []).append(e)
 
     inv: dict[str, list[dict]] = {}

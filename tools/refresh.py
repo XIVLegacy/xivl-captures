@@ -92,6 +92,7 @@ VERIFIED_PRODUCTS = tuple(
     ]
 )
 UNIT_TEST_MODULES = (
+    "tools.tests.test_build_scenario_views",
     "tools.tests.test_validate_source_storage",
     "tools.tests.test_analyze_battle_result_distributions",
     "tools.tests.test_analyze_battle_result_fits",

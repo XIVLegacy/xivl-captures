@@ -44,7 +44,7 @@ Union across the member captures. `name` is the derived/opcode_names.json entry 
 | `0x00cf` | map | clientbound | MoveActorToPositionPacket | - | 80 |
 | `0x00d0` | map | clientbound | SetActorSpeedPacket | - | 168 |
 | `0x00d6` | map | clientbound | SetActorAppearancePacket | - | 296 |
-| `0x00da` | map | clientbound | PlayAnimationOnActorPacket | - | 40 |
+| `0x00da` | map | clientbound | _0x00DA | - | 40 |
 | `0x00e2` | map | clientbound | _0xE2Packet | - | 40 |
 | `0x012d` | map | serverbound | EventStartPacket | - | 216 |
 | `0x012e` | map | clientbound | SetTalkEventCondition | Application::Lua::Script::Client::Command::Network::SetTalkEventConditionReceiver | 72 |
@@ -61,7 +61,7 @@ Union across the member captures. `name` is the derived/opcode_names.json entry 
 | `0x0144` | map | clientbound | SetActorSubStatePacket | Application::Lua::Script::Client::Command::System::ChangeActorSubStatModeBorderReceiver | 40 |
 | `0x0145` | map | clientbound | SetActorIconPacket | Application::Lua::Script::Client::Command::Network::ChangeActorExtraStatReceiver | 40 |
 | `0x0146` | map | clientbound | InventorySetBeginPacket | - | 40 |
-| `0x0147` | map | clientbound | InventorySetEndPacket | - | 40 |
+| `0x0147` | map | clientbound | _0x0147 | - | 40 |
 | `0x0148` | map | clientbound | InventoryListX01Packet | - | 144 |
 | `0x0149` | map | clientbound | InventoryListX08Packet | - | 936 |
 | `0x014a` | map | clientbound | InventoryListX16Packet | - | 1824 |
@@ -86,7 +86,7 @@ Union across the member captures. `name` is the derived/opcode_names.json entry 
 | `0x017f` | map | clientbound | GroupMembersX08Packet | - | 440 |
 | `0x0183` | map | clientbound | ContentMembersX08Packet | - | 152 |
 | `0x0187` | map | clientbound | SetOccupancyGroupPacket | - | 96 |
-| `0x018d` | map | clientbound | PartyMapMarkerUpdatePacket | - | 696 |
+| `0x018d` | map | clientbound | _0x018D | - | 696 |
 | `0x0193` | map | clientbound | _0x0193 | - | 40 |
 | `0x0194` | map | clientbound | SetGrandCompanyPacket | Application::Lua::Script::Client::Command::Network::GrandCompanyReceiver | 40 |
 | `0x0196` | map | clientbound | SetSpecialEventWorkPacket | - | 56 |

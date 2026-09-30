@@ -35,7 +35,7 @@ Union across the member captures. `name` is the derived/opcode_names.json entry 
 | `0x013c` | map | clientbound | CommandResultX00Packet | - | 72 |
 | `0x0144` | map | clientbound | SetActorSubStatePacket | Application::Lua::Script::Client::Command::System::ChangeActorSubStatModeBorderReceiver | 40 |
 | `0x0146` | map | clientbound | InventorySetBeginPacket | - | 40 |
-| `0x0147` | map | clientbound | InventorySetEndPacket | - | 40 |
+| `0x0147` | map | clientbound | _0x0147 | - | 40 |
 | `0x0148` | map | clientbound | InventoryListX01Packet | - | 144 |
 | `0x0149` | map | clientbound | InventoryListX08Packet | - | 936 |
 | `0x014b` | map | clientbound | InventoryListX32Packet | - | 3616 |
@@ -44,7 +44,7 @@ Union across the member captures. `name` is the derived/opcode_names.json entry 
 | `0x0169` | map | clientbound | _0x0169 | Application::Lua::Script::Client::Command::Network::SendLogReceiver | 72 |
 | `0x016d` | map | clientbound | InventoryBeginChangePacket | - | 40 |
 | `0x016e` | map | clientbound | InventoryEndChangePacket | - | 40 |
-| `0x018d` | map | clientbound | PartyMapMarkerUpdatePacket | - | 696 |
+| `0x018d` | map | clientbound | _0x018D | - | 696 |
 | `0x018f` | map | clientbound | _0x018F | - | 40 |
 | `0x0190` | map | clientbound | _0x0190 | - | 136 |
 | `0x0191` | map | clientbound | _0x0191 | - | 40 |

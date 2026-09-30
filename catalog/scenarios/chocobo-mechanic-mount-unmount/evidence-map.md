@@ -28,7 +28,7 @@ Union across the member captures. `name` is the derived/opcode_names.json entry 
 | `0x013c` | map | clientbound | CommandResultX00Packet | - | 72 |
 | `0x0157` | map | clientbound | _0x0157 | Application::Lua::Script::Client::Command::Network::SendLogReceiver | 48 |
 | `0x018b` | map | clientbound | SetGroupLayoutIDPacket | - | 88 |
-| `0x018d` | map | clientbound | PartyMapMarkerUpdatePacket | - | 696 |
+| `0x018d` | map | clientbound | _0x018D | - | 696 |
 | `0x0197` | map | clientbound | SetCurrentMountChocoboPacket | Application::Lua::Script::Client::Command::System::ChocoboGradeReceiver | 40 |
 
 ## Verification
