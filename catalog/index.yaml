@@ -345,6 +345,24 @@ studies:
   - studies/bluegartr-stat-tests/derived/patch-dating.csv
   source_refs:
   - source: bluegartr-stat-tests
+- id: cast-result-state-order
+  title: Cast Property and Result Wire Order
+  status: distilled
+  evidence_class: packet-capture
+  tags:
+  - packet-decoding
+  - map-clientbound
+  - cast-state
+  search_hints:
+  - castCommandClient
+  - castEndClient
+  - result wire order
+  primary_paths:
+  - studies/cast-result-state-order/derived/accounting.json
+  - studies/cast-result-state-order/derived/events.csv
+  - studies/cast-result-state-order/derived/sequences.csv
+  source_refs:
+  - source: pcap-1.23b
 - id: director-wire-identity
   title: Director Wire Identity Verification
   status: distilled

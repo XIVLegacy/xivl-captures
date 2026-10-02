@@ -1,0 +1,5764 @@
+{
+  "boundaries": [
+    "Actor equality tokens are capture-local SHA-256-derived identifiers; raw actor identifiers and connection addresses are excluded.",
+    "Property labels are retained catalog labels for the two requested hashes; values are decoded little-endian u32 observations.",
+    "Mode 0x0144 fields remain generic numeric wire fields; no chant-setter meaning is assigned.",
+    "0x0177 callback events are counted and omitted because no committed direct decoder is available in this capture repository.",
+    "Packet order is reconstructed s2c order within one admitted connection and direction; it does not establish CPU/UI order or user-action causality."
+  ],
+  "census_by_capture": {
+    "action_and_traits.pcapng": {
+      "relevant_event_counts": {
+        "mode_update": 2,
+        "result_packet": 2
+      },
+      "unsupported_callback_0177_count": 0,
+      "wrapped_opcode_counts": {
+        "wrapped_0001": 22,
+        "wrapped_00cf": 55,
+        "wrapped_00d0": 6,
+        "wrapped_0131": 2,
+        "wrapped_0137": 7,
+        "wrapped_0139": 2,
+        "wrapped_0144": 2,
+        "wrapped_0159": 2
+      }
+    },
+    "add_str.pcapng": {
+      "relevant_event_counts": {
+        "mode_update": 1
+      },
+      "unsupported_callback_0177_count": 0,
+      "wrapped_opcode_counts": {
+        "wrapped_0001": 14,
+        "wrapped_00cf": 23,
+        "wrapped_00d0": 3,
+        "wrapped_0130": 1,
+        "wrapped_0131": 1,
+        "wrapped_0137": 1,
+        "wrapped_0144": 1,
+        "wrapped_018d": 2
+      }
+    },
+    "battle_mode_passive_mode.pcapng": {
+      "relevant_event_counts": {
+        "result_packet": 2
+      },
+      "unsupported_callback_0177_count": 0,
+      "wrapped_opcode_counts": {
+        "wrapped_0001": 8,
+        "wrapped_00cb": 1,
+        "wrapped_00cf": 42,
+        "wrapped_0131": 2,
+        "wrapped_0134": 2,
+        "wrapped_0139": 2,
+        "wrapped_018d": 1
+      }
+    },
+    "change_bodyarmor.pcapng": {
+      "relevant_event_counts": {
+        "mode_update": 1,
+        "result_packet": 1
+      },
+      "unsupported_callback_0177_count": 0,
+      "wrapped_opcode_counts": {
+        "wrapped_0001": 19,
+        "wrapped_00cf": 50,
+        "wrapped_00d0": 3,
+        "wrapped_00d6": 1,
+        "wrapped_0137": 7,
+        "wrapped_0139": 1,
+        "wrapped_0144": 1,
+        "wrapped_0146": 2,
+        "wrapped_0147": 2,
+        "wrapped_0149": 1,
+        "wrapped_014d": 1,
+        "wrapped_015b": 1,
+        "wrapped_016d": 1,
+        "wrapped_016e": 1
+      }
+    },
+    "change_helm.pcapng": {
+      "relevant_event_counts": {
+        "mode_update": 2,
+        "result_packet": 2
+      },
+      "unsupported_callback_0177_count": 0,
+      "wrapped_opcode_counts": {
+        "wrapped_0001": 24,
+        "wrapped_00cf": 60,
+        "wrapped_00d0": 6,
+        "wrapped_00d6": 2,
+        "wrapped_0137": 6,
+        "wrapped_0139": 2,
+        "wrapped_0144": 2,
+        "wrapped_0146": 4,
+        "wrapped_0147": 4,
+        "wrapped_0148": 2,
+        "wrapped_014d": 1,
+        "wrapped_0152": 1,
+        "wrapped_015b": 2,
+        "wrapped_016d": 2,
+        "wrapped_016e": 2
+      }
+    },
+    "change_to_botanist.pcapng": {
+      "relevant_event_counts": {
+        "mode_update": 3,
+        "result_packet": 2
+      },
+      "unsupported_callback_0177_count": 0,
+      "wrapped_opcode_counts": {
+        "wrapped_0001": 23,
+        "wrapped_00cf": 111,
+        "wrapped_00d0": 6,
+        "wrapped_00d6": 2,
+        "wrapped_0137": 9,
+        "wrapped_0139": 2,
+        "wrapped_0144": 3,
+        "wrapped_0146": 4,
+        "wrapped_0147": 4,
+        "wrapped_0148": 1,
+        "wrapped_0149": 1,
+        "wrapped_014d": 2,
+        "wrapped_0159": 1,
+        "wrapped_015a": 1,
+        "wrapped_015b": 2,
+        "wrapped_016d": 2,
+        "wrapped_016e": 2,
+        "wrapped_018d": 5
+      }
+    },
+    "combat_autoattack.pcapng": {
+      "relevant_event_counts": {
+        "mode_update": 11,
+        "result_packet": 14,
+        "status_update": 5
+      },
+      "unsupported_callback_0177_count": 0,
+      "wrapped_opcode_counts": {
+        "wrapped_0001": 43,
+        "wrapped_000c": 2,
+        "wrapped_00ca": 5,
+        "wrapped_00cb": 10,
+        "wrapped_00cc": 5,
+        "wrapped_00ce": 5,
+        "wrapped_00cf": 242,
+        "wrapped_00d0": 7,
+        "wrapped_00d2": 2,
+        "wrapped_00d3": 2,
+        "wrapped_00d6": 5,
+        "wrapped_00db": 2,
+        "wrapped_00de": 1,
+        "wrapped_0131": 2,
+        "wrapped_0134": 9,
+        "wrapped_0137": 30,
+        "wrapped_0139": 13,
+        "wrapped_013a": 1,
+        "wrapped_013d": 5,
+        "wrapped_0144": 11,
+        "wrapped_0145": 5,
+        "wrapped_0146": 5,
+        "wrapped_0147": 5,
+        "wrapped_0148": 5,
+        "wrapped_0157": 1,
+        "wrapped_015a": 5,
+        "wrapped_016b": 5,
+        "wrapped_016d": 5,
+        "wrapped_016e": 5,
+        "wrapped_0179": 5,
+        "wrapped_017a": 6,
+        "wrapped_017b": 5,
+        "wrapped_017c": 5,
+        "wrapped_017d": 5,
+        "wrapped_017e": 5,
+        "wrapped_0183": 5,
+        "wrapped_0187": 2,
+        "wrapped_018b": 1,
+        "wrapped_018d": 8,
+        "wrapped_018f": 2,
+        "wrapped_0190": 400,
+        "wrapped_0191": 2,
+        "wrapped_0195": 4
+      }
+    },
+    "combat_skills.pcapng": {
+      "relevant_event_counts": {
+        "mode_update": 4,
+        "result_packet": 11
+      },
+      "unsupported_callback_0177_count": 5,
+      "wrapped_opcode_counts": {
+        "wrapped_0001": 33,
+        "wrapped_000c": 2,
+        "wrapped_00cf": 171,
+        "wrapped_00d0": 14,
+        "wrapped_00d2": 2,
+        "wrapped_00d3": 2,
+        "wrapped_00db": 2,
+        "wrapped_00de": 1,
+        "wrapped_0131": 7,
+        "wrapped_0134": 4,
+        "wrapped_0137": 31,
+        "wrapped_0139": 9,
+        "wrapped_013a": 2,
+        "wrapped_0144": 4,
+        "wrapped_0146": 5,
+        "wrapped_0147": 5,
+        "wrapped_0148": 5,
+        "wrapped_015a": 5,
+        "wrapped_016d": 5,
+        "wrapped_016e": 5,
+        "wrapped_0177": 5,
+        "wrapped_0187": 2,
+        "wrapped_018b": 1,
+        "wrapped_018d": 7,
+        "wrapped_018f": 1,
+        "wrapped_0190": 200,
+        "wrapped_0191": 1,
+        "wrapped_0195": 4
+      }
+    },
+    "from_gridania_to_blackshroud.pcapng": {
+      "relevant_event_counts": {
+        "mode_update": 27,
+        "status_update": 27
+      },
+      "unsupported_callback_0177_count": 0,
+      "wrapped_opcode_counts": {
+        "wrapped_0001": 135,
+        "wrapped_0005": 1,
+        "wrapped_0006": 1,
+        "wrapped_0007": 1,
+        "wrapped_0008": 1,
+        "wrapped_000c": 1,
+        "wrapped_000d": 1,
+        "wrapped_000f": 1,
+        "wrapped_0010": 1,
+        "wrapped_00ca": 27,
+        "wrapped_00cb": 58,
+        "wrapped_00cc": 27,
+        "wrapped_00ce": 27,
+        "wrapped_00cf": 217,
+        "wrapped_00d0": 27,
+        "wrapped_00d6": 22,
+        "wrapped_012e": 17,
+        "wrapped_0132": 8,
+        "wrapped_0134": 27,
+        "wrapped_0136": 23,
+        "wrapped_0137": 37,
+        "wrapped_013d": 27,
+        "wrapped_0144": 27,
+        "wrapped_0145": 27,
+        "wrapped_0146": 7,
+        "wrapped_0147": 7,
+        "wrapped_0149": 3,
+        "wrapped_014a": 1,
+        "wrapped_014b": 6,
+        "wrapped_014e": 2,
+        "wrapped_016b": 27,
+        "wrapped_016d": 3,
+        "wrapped_016e": 3,
+        "wrapped_016f": 6,
+        "wrapped_0179": 27,
+        "wrapped_017a": 1,
+        "wrapped_017b": 28,
+        "wrapped_017c": 2,
+        "wrapped_017d": 2,
+        "wrapped_017e": 2,
+        "wrapped_017f": 2,
+        "wrapped_0187": 2,
+        "wrapped_018b": 20,
+        "wrapped_018d": 22,
+        "wrapped_0194": 1,
+        "wrapped_0196": 1,
+        "wrapped_0198": 1,
+        "wrapped_0199": 1,
+        "wrapped_019a": 1,
+        "wrapped_019b": 1,
+        "wrapped_019c": 1,
+        "wrapped_019d": 1,
+        "wrapped_01a4": 1
+      }
+    },
+    "gather_wood.pcapng": {
+      "relevant_event_counts": {
+        "mode_update": 3,
+        "result_packet": 10,
+        "status_update": 2
+      },
+      "unsupported_callback_0177_count": 0,
+      "wrapped_opcode_counts": {
+        "wrapped_0001": 88,
+        "wrapped_00ca": 2,
+        "wrapped_00cb": 1,
+        "wrapped_00cc": 2,
+        "wrapped_00ce": 2,
+        "wrapped_00cf": 465,
+        "wrapped_00d0": 5,
+        "wrapped_00d3": 2,
+        "wrapped_00d6": 2,
+        "wrapped_012f": 1,
+        "wrapped_0130": 43,
+        "wrapped_0131": 1,
+        "wrapped_0134": 4,
+        "wrapped_0137": 4,
+        "wrapped_0139": 7,
+        "wrapped_013c": 3,
+        "wrapped_013d": 2,
+        "wrapped_0144": 3,
+        "wrapped_0145": 2,
+        "wrapped_0146": 2,
+        "wrapped_0147": 2,
+        "wrapped_0148": 2,
+        "wrapped_0166": 6,
+        "wrapped_0167": 2,
+        "wrapped_0168": 5,
+        "wrapped_0169": 2,
+        "wrapped_016b": 2,
+        "wrapped_016d": 2,
+        "wrapped_016e": 2,
+        "wrapped_0179": 2,
+        "wrapped_017a": 2,
+        "wrapped_017b": 2,
+        "wrapped_017c": 2,
+        "wrapped_017d": 2,
+        "wrapped_017e": 2,
+        "wrapped_0183": 2,
+        "wrapped_018d": 18,
+        "wrapped_018f": 1,
+        "wrapped_0190": 199,
+        "wrapped_0191": 1
+      }
+    },
+    "gear_changesoul.pcapng": {
+      "relevant_event_counts": {
+        "mode_update": 1,
+        "result_packet": 1
+      },
+      "unsupported_callback_0177_count": 0,
+      "wrapped_opcode_counts": {
+        "wrapped_0001": 15,
+        "wrapped_00cf": 35,
+        "wrapped_00d0": 3,
+        "wrapped_00da": 1,
+        "wrapped_0137": 10,
+        "wrapped_0139": 1,
+        "wrapped_0144": 1,
+        "wrapped_015a": 1,
+        "wrapped_01a4": 1
+      }
+    },
+    "gear_changeweapon.pcapng": {
+      "relevant_event_counts": {
+        "mode_update": 1,
+        "result_packet": 1
+      },
+      "unsupported_callback_0177_count": 0,
+      "wrapped_opcode_counts": {
+        "wrapped_0001": 13,
+        "wrapped_00cf": 35,
+        "wrapped_00d0": 3,
+        "wrapped_00d6": 1,
+        "wrapped_0137": 15,
+        "wrapped_0139": 1,
+        "wrapped_0144": 1,
+        "wrapped_0146": 2,
+        "wrapped_0147": 2,
+        "wrapped_0149": 1,
+        "wrapped_014d": 1,
+        "wrapped_015a": 1,
+        "wrapped_015b": 1,
+        "wrapped_016d": 1,
+        "wrapped_016e": 1
+      }
+    },
+    "gridania_to_coerthas.pcapng": {
+      "relevant_event_counts": {
+        "mode_update": 232,
+        "result_packet": 6,
+        "status_update": 232
+      },
+      "unsupported_callback_0177_count": 0,
+      "wrapped_opcode_counts": {
+        "wrapped_0001": 508,
+        "wrapped_0005": 3,
+        "wrapped_0006": 3,
+        "wrapped_0007": 3,
+        "wrapped_0008": 4,
+        "wrapped_000c": 3,
+        "wrapped_000d": 3,
+        "wrapped_000f": 3,
+        "wrapped_0010": 3,
+        "wrapped_00ca": 232,
+        "wrapped_00cb": 233,
+        "wrapped_00cc": 232,
+        "wrapped_00ce": 232,
+        "wrapped_00cf": 1640,
+        "wrapped_00d0": 244,
+        "wrapped_00d6": 216,
+        "wrapped_00d8": 1,
+        "wrapped_00d9": 2,
+        "wrapped_00e2": 1,
+        "wrapped_012e": 34,
+        "wrapped_0131": 2,
+        "wrapped_0132": 24,
+        "wrapped_0134": 231,
+        "wrapped_0136": 86,
+        "wrapped_0137": 265,
+        "wrapped_0139": 2,
+        "wrapped_013c": 4,
+        "wrapped_013d": 232,
+        "wrapped_0144": 232,
+        "wrapped_0145": 232,
+        "wrapped_0146": 21,
+        "wrapped_0147": 21,
+        "wrapped_0149": 9,
+        "wrapped_014a": 3,
+        "wrapped_014b": 18,
+        "wrapped_014e": 6,
+        "wrapped_0157": 2,
+        "wrapped_016b": 252,
+        "wrapped_016d": 4,
+        "wrapped_016e": 4,
+        "wrapped_016f": 52,
+        "wrapped_0179": 232,
+        "wrapped_017a": 173,
+        "wrapped_017b": 235,
+        "wrapped_017c": 176,
+        "wrapped_017d": 176,
+        "wrapped_017e": 176,
+        "wrapped_017f": 6,
+        "wrapped_0183": 170,
+        "wrapped_0187": 5,
+        "wrapped_018b": 79,
+        "wrapped_018d": 94,
+        "wrapped_0193": 1,
+        "wrapped_0194": 3,
+        "wrapped_0196": 3,
+        "wrapped_0197": 3,
+        "wrapped_0198": 3,
+        "wrapped_0199": 3,
+        "wrapped_019a": 3,
+        "wrapped_019b": 3,
+        "wrapped_019c": 3,
+        "wrapped_019d": 3,
+        "wrapped_01a4": 3
+      }
+    },
+    "harvest.pcapng": {
+      "relevant_event_counts": {
+        "mode_update": 6,
+        "result_packet": 10
+      },
+      "unsupported_callback_0177_count": 0,
+      "wrapped_opcode_counts": {
+        "wrapped_0001": 34,
+        "wrapped_00ce": 2,
+        "wrapped_00cf": 176,
+        "wrapped_00d0": 9,
+        "wrapped_012f": 2,
+        "wrapped_0130": 4,
+        "wrapped_0131": 2,
+        "wrapped_0137": 7,
+        "wrapped_0139": 3,
+        "wrapped_013a": 1,
+        "wrapped_013c": 6,
+        "wrapped_0144": 6,
+        "wrapped_0146": 2,
+        "wrapped_0147": 2,
+        "wrapped_0148": 2,
+        "wrapped_0167": 2,
+        "wrapped_0168": 2,
+        "wrapped_0169": 4,
+        "wrapped_016d": 2,
+        "wrapped_016e": 2,
+        "wrapped_018d": 6,
+        "wrapped_018f": 2,
+        "wrapped_0190": 396,
+        "wrapped_0191": 2
+      }
+    },
+    "local_leve_complete.pcapng": {
+      "relevant_event_counts": {
+        "mode_update": 31,
+        "result_packet": 38,
+        "status_update": 2
+      },
+      "unsupported_callback_0177_count": 0,
+      "wrapped_opcode_counts": {
+        "wrapped_0001": 215,
+        "wrapped_000c": 6,
+        "wrapped_00ca": 2,
+        "wrapped_00cb": 3,
+        "wrapped_00cc": 2,
+        "wrapped_00ce": 2,
+        "wrapped_00cf": 1071,
+        "wrapped_00d0": 17,
+        "wrapped_00d2": 4,
+        "wrapped_00d3": 4,
+        "wrapped_00d6": 2,
+        "wrapped_00da": 3,
+        "wrapped_0130": 71,
+        "wrapped_0131": 3,
+        "wrapped_0133": 7,
+        "wrapped_0134": 10,
+        "wrapped_0137": 16,
+        "wrapped_0139": 25,
+        "wrapped_013a": 2,
+        "wrapped_013c": 11,
+        "wrapped_013d": 2,
+        "wrapped_0144": 31,
+        "wrapped_0145": 2,
+        "wrapped_0146": 3,
+        "wrapped_0147": 3,
+        "wrapped_0148": 3,
+        "wrapped_0166": 18,
+        "wrapped_0167": 55,
+        "wrapped_0168": 22,
+        "wrapped_0169": 9,
+        "wrapped_016b": 2,
+        "wrapped_016d": 3,
+        "wrapped_016e": 3,
+        "wrapped_0179": 2,
+        "wrapped_017a": 2,
+        "wrapped_017b": 2,
+        "wrapped_017c": 2,
+        "wrapped_017d": 2,
+        "wrapped_017e": 2,
+        "wrapped_0183": 2,
+        "wrapped_018b": 1,
+        "wrapped_018d": 43,
+        "wrapped_018f": 3,
+        "wrapped_0190": 591,
+        "wrapped_0191": 3
+      }
+    },
+    "login.pcapng": {
+      "relevant_event_counts": {
+        "mode_update": 10,
+        "status_update": 10
+      },
+      "unsupported_callback_0177_count": 0,
+      "wrapped_opcode_counts": {
+        "wrapped_0001": 40,
+        "wrapped_0002": 1,
+        "wrapped_0003": 9,
+        "wrapped_0005": 1,
+        "wrapped_000c": 1,
+        "wrapped_000f": 1,
+        "wrapped_0010": 1,
+        "wrapped_00ca": 10,
+        "wrapped_00cc": 10,
+        "wrapped_00ce": 10,
+        "wrapped_00cf": 109,
+        "wrapped_00d0": 10,
+        "wrapped_00d6": 6,
+        "wrapped_012e": 4,
+        "wrapped_0132": 8,
+        "wrapped_0134": 10,
+        "wrapped_0136": 6,
+        "wrapped_0137": 22,
+        "wrapped_013d": 10,
+        "wrapped_0144": 10,
+        "wrapped_0145": 10,
+        "wrapped_0146": 7,
+        "wrapped_0147": 7,
+        "wrapped_0149": 3,
+        "wrapped_014a": 1,
+        "wrapped_014b": 6,
+        "wrapped_014e": 2,
+        "wrapped_016b": 9,
+        "wrapped_016d": 1,
+        "wrapped_016e": 1,
+        "wrapped_016f": 2,
+        "wrapped_0179": 10,
+        "wrapped_017a": 3,
+        "wrapped_017b": 10,
+        "wrapped_017c": 4,
+        "wrapped_017d": 4,
+        "wrapped_017e": 4,
+        "wrapped_017f": 4,
+        "wrapped_0187": 2,
+        "wrapped_0189": 1,
+        "wrapped_018a": 1,
+        "wrapped_0194": 1,
+        "wrapped_0196": 1,
+        "wrapped_0198": 1,
+        "wrapped_0199": 1,
+        "wrapped_019a": 1,
+        "wrapped_019b": 1,
+        "wrapped_019c": 1,
+        "wrapped_019d": 1,
+        "wrapped_01a3": 1,
+        "wrapped_01a4": 1,
+        "wrapped_01a7": 1,
+        "wrapped_01cb": 1,
+        "wrapped_01ce": 1,
+        "wrapped_01d3": 1
+      }
+    },
+    "mount_unmount_chocobo.pcapng": {
+      "relevant_event_counts": {
+        "result_packet": 4
+      },
+      "unsupported_callback_0177_count": 0,
+      "wrapped_opcode_counts": {
+        "wrapped_0001": 12,
+        "wrapped_000c": 2,
+        "wrapped_00d0": 6,
+        "wrapped_0131": 1,
+        "wrapped_0134": 1,
+        "wrapped_0139": 2,
+        "wrapped_013c": 2,
+        "wrapped_0157": 2,
+        "wrapped_018b": 1,
+        "wrapped_018d": 2,
+        "wrapped_0197": 1
+      }
+    },
+    "move_around_gridania.pcapng": {
+      "relevant_event_counts": {
+        "mode_update": 33,
+        "status_update": 33
+      },
+      "unsupported_callback_0177_count": 0,
+      "wrapped_opcode_counts": {
+        "wrapped_0001": 108,
+        "wrapped_00ca": 33,
+        "wrapped_00cb": 35,
+        "wrapped_00cc": 33,
+        "wrapped_00ce": 33,
+        "wrapped_00cf": 378,
+        "wrapped_00d0": 33,
+        "wrapped_00d6": 31,
+        "wrapped_00d8": 2,
+        "wrapped_00e3": 2,
+        "wrapped_012e": 21,
+        "wrapped_0134": 33,
+        "wrapped_0136": 31,
+        "wrapped_0137": 33,
+        "wrapped_013d": 33,
+        "wrapped_0144": 33,
+        "wrapped_0145": 33,
+        "wrapped_016b": 34,
+        "wrapped_016f": 9,
+        "wrapped_0175": 1,
+        "wrapped_0179": 33,
+        "wrapped_017b": 33,
+        "wrapped_018b": 18,
+        "wrapped_018d": 22
+      }
+    },
+    "move_out_of_room.pcapng": {
+      "relevant_event_counts": {
+        "mode_update": 53,
+        "result_packet": 1,
+        "status_update": 53
+      },
+      "unsupported_callback_0177_count": 1,
+      "wrapped_opcode_counts": {
+        "wrapped_0001": 46,
+        "wrapped_0005": 1,
+        "wrapped_0006": 1,
+        "wrapped_0007": 1,
+        "wrapped_0008": 2,
+        "wrapped_000a": 1,
+        "wrapped_000c": 1,
+        "wrapped_000d": 1,
+        "wrapped_000f": 1,
+        "wrapped_0010": 1,
+        "wrapped_00ca": 53,
+        "wrapped_00cb": 9,
+        "wrapped_00cc": 53,
+        "wrapped_00ce": 53,
+        "wrapped_00cf": 232,
+        "wrapped_00d0": 56,
+        "wrapped_00d2": 2,
+        "wrapped_00d3": 2,
+        "wrapped_00d6": 46,
+        "wrapped_00d8": 2,
+        "wrapped_00d9": 1,
+        "wrapped_00e2": 1,
+        "wrapped_00e3": 2,
+        "wrapped_012e": 42,
+        "wrapped_0130": 1,
+        "wrapped_0131": 1,
+        "wrapped_0132": 8,
+        "wrapped_0134": 53,
+        "wrapped_0136": 47,
+        "wrapped_0137": 63,
+        "wrapped_0139": 1,
+        "wrapped_013d": 53,
+        "wrapped_0144": 53,
+        "wrapped_0145": 53,
+        "wrapped_0146": 7,
+        "wrapped_0147": 7,
+        "wrapped_0149": 3,
+        "wrapped_014a": 1,
+        "wrapped_014b": 6,
+        "wrapped_014e": 2,
+        "wrapped_016b": 54,
+        "wrapped_016d": 2,
+        "wrapped_016e": 2,
+        "wrapped_016f": 3,
+        "wrapped_0170": 2,
+        "wrapped_0177": 1,
+        "wrapped_0179": 53,
+        "wrapped_017a": 1,
+        "wrapped_017b": 54,
+        "wrapped_017c": 2,
+        "wrapped_017d": 2,
+        "wrapped_017e": 2,
+        "wrapped_017f": 2,
+        "wrapped_0187": 1,
+        "wrapped_018b": 1,
+        "wrapped_018d": 6,
+        "wrapped_0193": 1,
+        "wrapped_0194": 1,
+        "wrapped_0196": 1,
+        "wrapped_0198": 1,
+        "wrapped_0199": 1,
+        "wrapped_019a": 1,
+        "wrapped_019b": 1,
+        "wrapped_019c": 1,
+        "wrapped_019d": 1,
+        "wrapped_01a4": 1
+      }
+    },
+    "moving_around_gridania.pcapng": {
+      "relevant_event_counts": {
+        "mode_update": 281,
+        "status_update": 281
+      },
+      "unsupported_callback_0177_count": 0,
+      "wrapped_opcode_counts": {
+        "wrapped_0001": 444,
+        "wrapped_0005": 2,
+        "wrapped_0006": 2,
+        "wrapped_0007": 2,
+        "wrapped_0008": 4,
+        "wrapped_0009": 1,
+        "wrapped_000a": 1,
+        "wrapped_000d": 2,
+        "wrapped_000f": 2,
+        "wrapped_0010": 2,
+        "wrapped_00ca": 281,
+        "wrapped_00cb": 225,
+        "wrapped_00cc": 281,
+        "wrapped_00ce": 281,
+        "wrapped_00cf": 2051,
+        "wrapped_00d0": 281,
+        "wrapped_00d6": 261,
+        "wrapped_00d8": 10,
+        "wrapped_00d9": 1,
+        "wrapped_00e3": 9,
+        "wrapped_012e": 214,
+        "wrapped_0132": 16,
+        "wrapped_0134": 281,
+        "wrapped_0136": 252,
+        "wrapped_0137": 303,
+        "wrapped_013d": 281,
+        "wrapped_0144": 281,
+        "wrapped_0145": 281,
+        "wrapped_0146": 14,
+        "wrapped_0147": 14,
+        "wrapped_0149": 6,
+        "wrapped_014a": 2,
+        "wrapped_014b": 12,
+        "wrapped_014e": 4,
+        "wrapped_016b": 284,
+        "wrapped_016d": 7,
+        "wrapped_016e": 7,
+        "wrapped_016f": 33,
+        "wrapped_0170": 6,
+        "wrapped_0179": 281,
+        "wrapped_017a": 2,
+        "wrapped_017b": 283,
+        "wrapped_017c": 4,
+        "wrapped_017d": 4,
+        "wrapped_017e": 4,
+        "wrapped_017f": 4,
+        "wrapped_0187": 4,
+        "wrapped_018b": 85,
+        "wrapped_018d": 85,
+        "wrapped_0194": 2,
+        "wrapped_0196": 2,
+        "wrapped_0198": 2,
+        "wrapped_0199": 2,
+        "wrapped_019a": 2,
+        "wrapped_019b": 2,
+        "wrapped_019c": 2,
+        "wrapped_019d": 2,
+        "wrapped_01a4": 2
+      }
+    },
+    "party_battle_leve.pcapng": {
+      "relevant_event_counts": {
+        "mode_update": 184,
+        "property_write": 6,
+        "result_packet": 338,
+        "status_update": 108
+      },
+      "unsupported_callback_0177_count": 105,
+      "wrapped_opcode_counts": {
+        "wrapped_0001": 677,
+        "wrapped_000c": 4,
+        "wrapped_000f": 1,
+        "wrapped_00c9": 25,
+        "wrapped_00ca": 108,
+        "wrapped_00cb": 129,
+        "wrapped_00cc": 108,
+        "wrapped_00ce": 110,
+        "wrapped_00cf": 4539,
+        "wrapped_00d0": 334,
+        "wrapped_00d2": 74,
+        "wrapped_00d3": 117,
+        "wrapped_00d6": 107,
+        "wrapped_00da": 19,
+        "wrapped_00db": 39,
+        "wrapped_00de": 29,
+        "wrapped_00e2": 1,
+        "wrapped_012e": 40,
+        "wrapped_0130": 7,
+        "wrapped_0131": 54,
+        "wrapped_0133": 14,
+        "wrapped_0134": 146,
+        "wrapped_0136": 117,
+        "wrapped_0137": 853,
+        "wrapped_0139": 300,
+        "wrapped_013a": 38,
+        "wrapped_013d": 108,
+        "wrapped_0143": 7,
+        "wrapped_0144": 184,
+        "wrapped_0145": 108,
+        "wrapped_0146": 10,
+        "wrapped_0147": 10,
+        "wrapped_0148": 10,
+        "wrapped_0157": 2,
+        "wrapped_015a": 8,
+        "wrapped_0166": 3,
+        "wrapped_0167": 6,
+        "wrapped_0168": 8,
+        "wrapped_0169": 8,
+        "wrapped_016b": 145,
+        "wrapped_016d": 11,
+        "wrapped_016e": 11,
+        "wrapped_016f": 77,
+        "wrapped_0177": 105,
+        "wrapped_0179": 108,
+        "wrapped_017a": 59,
+        "wrapped_017b": 108,
+        "wrapped_017c": 131,
+        "wrapped_017d": 131,
+        "wrapped_017e": 131,
+        "wrapped_017f": 1,
+        "wrapped_0183": 167,
+        "wrapped_0187": 12,
+        "wrapped_018b": 72,
+        "wrapped_018d": 134,
+        "wrapped_018f": 17,
+        "wrapped_0190": 3383,
+        "wrapped_0191": 17,
+        "wrapped_0193": 1,
+        "wrapped_0194": 1,
+        "wrapped_0195": 114,
+        "wrapped_019d": 1,
+        "wrapped_01a4": 1
+      }
+    },
+    "repair_items.pcapng": {
+      "relevant_event_counts": {
+        "mode_update": 1,
+        "result_packet": 1
+      },
+      "unsupported_callback_0177_count": 0,
+      "wrapped_opcode_counts": {
+        "wrapped_0001": 34,
+        "wrapped_00cf": 138,
+        "wrapped_00d0": 3,
+        "wrapped_00d2": 2,
+        "wrapped_00d3": 2,
+        "wrapped_0130": 13,
+        "wrapped_0131": 1,
+        "wrapped_013c": 1,
+        "wrapped_0144": 1,
+        "wrapped_0146": 6,
+        "wrapped_0147": 6,
+        "wrapped_0148": 6,
+        "wrapped_0169": 6,
+        "wrapped_016d": 6,
+        "wrapped_016e": 6,
+        "wrapped_018d": 6,
+        "wrapped_018f": 1,
+        "wrapped_0190": 200,
+        "wrapped_0191": 1
+      }
+    },
+    "return_to_inn.pcapng": {
+      "relevant_event_counts": {
+        "mode_update": 10,
+        "result_packet": 1,
+        "status_update": 10
+      },
+      "unsupported_callback_0177_count": 1,
+      "wrapped_opcode_counts": {
+        "wrapped_0001": 26,
+        "wrapped_0005": 1,
+        "wrapped_0006": 1,
+        "wrapped_0007": 1,
+        "wrapped_0008": 2,
+        "wrapped_000c": 1,
+        "wrapped_000f": 1,
+        "wrapped_0010": 1,
+        "wrapped_00ca": 10,
+        "wrapped_00cc": 10,
+        "wrapped_00ce": 10,
+        "wrapped_00cf": 57,
+        "wrapped_00d0": 13,
+        "wrapped_00d6": 6,
+        "wrapped_00da": 2,
+        "wrapped_00e2": 1,
+        "wrapped_012e": 4,
+        "wrapped_0130": 1,
+        "wrapped_0131": 1,
+        "wrapped_0132": 8,
+        "wrapped_0134": 10,
+        "wrapped_0136": 6,
+        "wrapped_0137": 21,
+        "wrapped_0139": 1,
+        "wrapped_013d": 10,
+        "wrapped_0144": 10,
+        "wrapped_0145": 10,
+        "wrapped_0146": 7,
+        "wrapped_0147": 7,
+        "wrapped_0149": 3,
+        "wrapped_014a": 1,
+        "wrapped_014b": 6,
+        "wrapped_014e": 2,
+        "wrapped_0166": 1,
+        "wrapped_016b": 9,
+        "wrapped_016d": 1,
+        "wrapped_016e": 1,
+        "wrapped_016f": 2,
+        "wrapped_0177": 1,
+        "wrapped_0179": 10,
+        "wrapped_017a": 1,
+        "wrapped_017b": 11,
+        "wrapped_017c": 2,
+        "wrapped_017d": 2,
+        "wrapped_017e": 2,
+        "wrapped_017f": 2,
+        "wrapped_0187": 2,
+        "wrapped_018d": 3,
+        "wrapped_0193": 2,
+        "wrapped_0194": 1,
+        "wrapped_0196": 1,
+        "wrapped_0198": 1,
+        "wrapped_0199": 1,
+        "wrapped_019a": 1,
+        "wrapped_019b": 1,
+        "wrapped_019c": 1,
+        "wrapped_019d": 1,
+        "wrapped_01a3": 1,
+        "wrapped_01a4": 1
+      }
+    },
+    "small_talk_louisoix.pcapng": {
+      "relevant_event_counts": {
+        "mode_update": 1,
+        "status_update": 1
+      },
+      "unsupported_callback_0177_count": 0,
+      "wrapped_opcode_counts": {
+        "wrapped_0001": 12,
+        "wrapped_00ca": 1,
+        "wrapped_00cc": 1,
+        "wrapped_00ce": 1,
+        "wrapped_00cf": 29,
+        "wrapped_00d0": 1,
+        "wrapped_00d2": 2,
+        "wrapped_00d3": 2,
+        "wrapped_00d6": 1,
+        "wrapped_012e": 1,
+        "wrapped_0130": 2,
+        "wrapped_0131": 1,
+        "wrapped_0134": 1,
+        "wrapped_0136": 1,
+        "wrapped_0137": 1,
+        "wrapped_013d": 1,
+        "wrapped_0144": 1,
+        "wrapped_0145": 1,
+        "wrapped_016b": 1,
+        "wrapped_0179": 1,
+        "wrapped_017b": 1,
+        "wrapped_018b": 1,
+        "wrapped_018d": 3
+      }
+    },
+    "switch_to_weaver.pcapng": {
+      "relevant_event_counts": {
+        "mode_update": 1,
+        "result_packet": 1
+      },
+      "unsupported_callback_0177_count": 0,
+      "wrapped_opcode_counts": {
+        "wrapped_0001": 17,
+        "wrapped_00cf": 90,
+        "wrapped_00d0": 3,
+        "wrapped_00d6": 2,
+        "wrapped_00e3": 1,
+        "wrapped_0137": 11,
+        "wrapped_0139": 1,
+        "wrapped_0144": 1,
+        "wrapped_0146": 14,
+        "wrapped_0147": 14,
+        "wrapped_0148": 6,
+        "wrapped_0149": 1,
+        "wrapped_014d": 1,
+        "wrapped_0152": 6,
+        "wrapped_015a": 1,
+        "wrapped_015b": 7,
+        "wrapped_016d": 7,
+        "wrapped_016e": 7,
+        "wrapped_018d": 4,
+        "wrapped_01a4": 3
+      }
+    },
+    "teleport_to_camp_nine_ivies.pcapng": {
+      "relevant_event_counts": {
+        "mode_update": 15,
+        "status_update": 15
+      },
+      "unsupported_callback_0177_count": 0,
+      "wrapped_opcode_counts": {
+        "wrapped_0001": 45,
+        "wrapped_0005": 1,
+        "wrapped_0006": 1,
+        "wrapped_0007": 1,
+        "wrapped_0008": 2,
+        "wrapped_000c": 1,
+        "wrapped_000d": 1,
+        "wrapped_000f": 1,
+        "wrapped_0010": 1,
+        "wrapped_00ca": 15,
+        "wrapped_00cc": 15,
+        "wrapped_00ce": 15,
+        "wrapped_00cf": 109,
+        "wrapped_00d0": 15,
+        "wrapped_00d6": 10,
+        "wrapped_00da": 2,
+        "wrapped_00e2": 1,
+        "wrapped_012e": 5,
+        "wrapped_0130": 5,
+        "wrapped_0131": 1,
+        "wrapped_0132": 8,
+        "wrapped_0134": 15,
+        "wrapped_0136": 8,
+        "wrapped_0137": 26,
+        "wrapped_013d": 15,
+        "wrapped_0144": 15,
+        "wrapped_0145": 15,
+        "wrapped_0146": 7,
+        "wrapped_0147": 7,
+        "wrapped_0149": 3,
+        "wrapped_014a": 1,
+        "wrapped_014b": 6,
+        "wrapped_014e": 2,
+        "wrapped_0166": 1,
+        "wrapped_0169": 1,
+        "wrapped_016b": 16,
+        "wrapped_016d": 1,
+        "wrapped_016e": 1,
+        "wrapped_016f": 3,
+        "wrapped_0179": 15,
+        "wrapped_017a": 4,
+        "wrapped_017b": 16,
+        "wrapped_017c": 5,
+        "wrapped_017d": 5,
+        "wrapped_017e": 5,
+        "wrapped_017f": 2,
+        "wrapped_0183": 3,
+        "wrapped_0187": 2,
+        "wrapped_018d": 8,
+        "wrapped_0193": 1,
+        "wrapped_0194": 1,
+        "wrapped_0196": 1,
+        "wrapped_0198": 1,
+        "wrapped_0199": 1,
+        "wrapped_019a": 1,
+        "wrapped_019b": 1,
+        "wrapped_019c": 1,
+        "wrapped_019d": 1,
+        "wrapped_01a4": 1
+      }
+    },
+    "teleport_to_camp_tranquil.pcapng": {
+      "relevant_event_counts": {
+        "mode_update": 19,
+        "status_update": 19
+      },
+      "unsupported_callback_0177_count": 0,
+      "wrapped_opcode_counts": {
+        "wrapped_0001": 40,
+        "wrapped_0005": 1,
+        "wrapped_0006": 1,
+        "wrapped_0007": 1,
+        "wrapped_0008": 1,
+        "wrapped_0009": 1,
+        "wrapped_000d": 1,
+        "wrapped_000f": 1,
+        "wrapped_0010": 1,
+        "wrapped_00ca": 19,
+        "wrapped_00cc": 19,
+        "wrapped_00ce": 19,
+        "wrapped_00cf": 68,
+        "wrapped_00d0": 19,
+        "wrapped_00d6": 14,
+        "wrapped_00da": 2,
+        "wrapped_00e2": 1,
+        "wrapped_012e": 11,
+        "wrapped_0130": 3,
+        "wrapped_0131": 1,
+        "wrapped_0132": 8,
+        "wrapped_0134": 19,
+        "wrapped_0136": 18,
+        "wrapped_0137": 29,
+        "wrapped_013d": 19,
+        "wrapped_0144": 19,
+        "wrapped_0145": 19,
+        "wrapped_0146": 7,
+        "wrapped_0147": 7,
+        "wrapped_0149": 3,
+        "wrapped_014a": 1,
+        "wrapped_014b": 6,
+        "wrapped_014e": 2,
+        "wrapped_0166": 1,
+        "wrapped_0169": 1,
+        "wrapped_016b": 22,
+        "wrapped_016d": 1,
+        "wrapped_016e": 1,
+        "wrapped_016f": 7,
+        "wrapped_0179": 19,
+        "wrapped_017a": 2,
+        "wrapped_017b": 20,
+        "wrapped_017c": 3,
+        "wrapped_017d": 3,
+        "wrapped_017e": 3,
+        "wrapped_017f": 2,
+        "wrapped_0183": 1,
+        "wrapped_0187": 2,
+        "wrapped_018d": 7,
+        "wrapped_0193": 1,
+        "wrapped_0194": 1,
+        "wrapped_0196": 1,
+        "wrapped_0198": 1,
+        "wrapped_0199": 1,
+        "wrapped_019a": 1,
+        "wrapped_019b": 1,
+        "wrapped_019c": 1,
+        "wrapped_019d": 1,
+        "wrapped_01a4": 1
+      }
+    },
+    "teleport_to_gridania.pcapng": {
+      "relevant_event_counts": {
+        "mode_update": 13,
+        "status_update": 13
+      },
+      "unsupported_callback_0177_count": 0,
+      "wrapped_opcode_counts": {
+        "wrapped_0001": 38,
+        "wrapped_0005": 1,
+        "wrapped_0006": 1,
+        "wrapped_0007": 1,
+        "wrapped_0008": 2,
+        "wrapped_000c": 1,
+        "wrapped_000d": 1,
+        "wrapped_000f": 1,
+        "wrapped_0010": 1,
+        "wrapped_00ca": 13,
+        "wrapped_00cc": 13,
+        "wrapped_00ce": 13,
+        "wrapped_00cf": 155,
+        "wrapped_00d0": 13,
+        "wrapped_00d6": 8,
+        "wrapped_00da": 2,
+        "wrapped_00e2": 1,
+        "wrapped_012e": 4,
+        "wrapped_0130": 3,
+        "wrapped_0131": 1,
+        "wrapped_0132": 8,
+        "wrapped_0134": 13,
+        "wrapped_0136": 7,
+        "wrapped_0137": 24,
+        "wrapped_013d": 13,
+        "wrapped_0144": 13,
+        "wrapped_0145": 13,
+        "wrapped_0146": 9,
+        "wrapped_0147": 9,
+        "wrapped_0148": 1,
+        "wrapped_0149": 4,
+        "wrapped_014a": 1,
+        "wrapped_014b": 6,
+        "wrapped_014e": 2,
+        "wrapped_0152": 1,
+        "wrapped_0153": 1,
+        "wrapped_0166": 3,
+        "wrapped_0168": 2,
+        "wrapped_0169": 1,
+        "wrapped_016b": 14,
+        "wrapped_016d": 3,
+        "wrapped_016e": 3,
+        "wrapped_016f": 3,
+        "wrapped_0179": 13,
+        "wrapped_017a": 2,
+        "wrapped_017b": 14,
+        "wrapped_017c": 3,
+        "wrapped_017d": 3,
+        "wrapped_017e": 3,
+        "wrapped_017f": 2,
+        "wrapped_0183": 1,
+        "wrapped_0187": 2,
+        "wrapped_018d": 7,
+        "wrapped_0193": 1,
+        "wrapped_0194": 1,
+        "wrapped_0196": 1,
+        "wrapped_0198": 1,
+        "wrapped_0199": 1,
+        "wrapped_019a": 1,
+        "wrapped_019b": 1,
+        "wrapped_019c": 1,
+        "wrapped_019d": 1,
+        "wrapped_01a4": 1
+      }
+    },
+    "war_quest_update1.pcapng": {
+      "relevant_event_counts": {
+        "result_packet": 1
+      },
+      "unsupported_callback_0177_count": 0,
+      "wrapped_opcode_counts": {
+        "wrapped_0001": 25,
+        "wrapped_00cb": 2,
+        "wrapped_00cf": 133,
+        "wrapped_00d0": 3,
+        "wrapped_00d2": 3,
+        "wrapped_00d3": 2,
+        "wrapped_00e3": 1,
+        "wrapped_0130": 1,
+        "wrapped_0131": 1,
+        "wrapped_0137": 1,
+        "wrapped_0139": 1,
+        "wrapped_0167": 1,
+        "wrapped_0169": 1,
+        "wrapped_018d": 5
+      }
+    },
+    "war_quest_update2.pcapng": {
+      "relevant_event_counts": {
+        "mode_update": 44,
+        "result_packet": 73,
+        "status_update": 18
+      },
+      "unsupported_callback_0177_count": 16,
+      "wrapped_opcode_counts": {
+        "wrapped_0001": 116,
+        "wrapped_0006": 1,
+        "wrapped_0007": 1,
+        "wrapped_0008": 1,
+        "wrapped_000c": 1,
+        "wrapped_000d": 1,
+        "wrapped_000f": 1,
+        "wrapped_0010": 1,
+        "wrapped_00c9": 1,
+        "wrapped_00ca": 18,
+        "wrapped_00cb": 11,
+        "wrapped_00cc": 18,
+        "wrapped_00ce": 123,
+        "wrapped_00cf": 570,
+        "wrapped_00d0": 75,
+        "wrapped_00d2": 12,
+        "wrapped_00d3": 13,
+        "wrapped_00d6": 13,
+        "wrapped_00db": 19,
+        "wrapped_00de": 12,
+        "wrapped_00e1": 1,
+        "wrapped_00e2": 1,
+        "wrapped_012f": 1,
+        "wrapped_0131": 8,
+        "wrapped_0133": 1,
+        "wrapped_0134": 39,
+        "wrapped_0136": 1,
+        "wrapped_0137": 143,
+        "wrapped_0139": 51,
+        "wrapped_013a": 22,
+        "wrapped_013d": 18,
+        "wrapped_0143": 3,
+        "wrapped_0144": 44,
+        "wrapped_0145": 18,
+        "wrapped_0146": 6,
+        "wrapped_0147": 6,
+        "wrapped_0148": 6,
+        "wrapped_0157": 1,
+        "wrapped_015a": 9,
+        "wrapped_0167": 2,
+        "wrapped_0169": 3,
+        "wrapped_016b": 18,
+        "wrapped_016d": 7,
+        "wrapped_016e": 7,
+        "wrapped_016f": 1,
+        "wrapped_0177": 16,
+        "wrapped_0179": 18,
+        "wrapped_017a": 12,
+        "wrapped_017b": 20,
+        "wrapped_017c": 19,
+        "wrapped_017d": 19,
+        "wrapped_017e": 19,
+        "wrapped_017f": 1,
+        "wrapped_0183": 18,
+        "wrapped_0187": 4,
+        "wrapped_018b": 6,
+        "wrapped_018d": 23,
+        "wrapped_018f": 1,
+        "wrapped_0190": 200,
+        "wrapped_0191": 1,
+        "wrapped_0193": 1,
+        "wrapped_0194": 1,
+        "wrapped_0195": 27,
+        "wrapped_019d": 1,
+        "wrapped_01a4": 1
+      }
+    },
+    "war_quest_update3.pcapng": {
+      "relevant_event_counts": {
+        "mode_update": 2,
+        "result_packet": 11,
+        "status_update": 2
+      },
+      "unsupported_callback_0177_count": 0,
+      "wrapped_opcode_counts": {
+        "wrapped_0001": 59,
+        "wrapped_00ca": 2,
+        "wrapped_00cb": 1,
+        "wrapped_00cc": 2,
+        "wrapped_00ce": 2,
+        "wrapped_00cf": 331,
+        "wrapped_00d0": 29,
+        "wrapped_00d2": 2,
+        "wrapped_00d3": 2,
+        "wrapped_00d6": 2,
+        "wrapped_00e3": 1,
+        "wrapped_0130": 3,
+        "wrapped_0131": 1,
+        "wrapped_0134": 4,
+        "wrapped_0137": 11,
+        "wrapped_0139": 11,
+        "wrapped_013d": 2,
+        "wrapped_0144": 2,
+        "wrapped_0145": 2,
+        "wrapped_0146": 2,
+        "wrapped_0147": 2,
+        "wrapped_0148": 2,
+        "wrapped_0167": 1,
+        "wrapped_0169": 11,
+        "wrapped_016b": 2,
+        "wrapped_016d": 2,
+        "wrapped_016e": 2,
+        "wrapped_0179": 2,
+        "wrapped_017a": 2,
+        "wrapped_017b": 2,
+        "wrapped_017c": 2,
+        "wrapped_017d": 2,
+        "wrapped_017e": 2,
+        "wrapped_0183": 2,
+        "wrapped_018b": 1,
+        "wrapped_018d": 12
+      }
+    }
+  },
+  "coverage": {
+    "captures_manifest_members": 54,
+    "captures_scanned": 54,
+    "captures_with_relevant_events": 31,
+    "cast_property_records": 6,
+    "result_packets_decoded": 531,
+    "sequences_nonzero_to_zero": 2,
+    "unsupported_0177_events_omitted": 128
+  },
+  "errors": {},
+  "framing_by_capture": {
+    "accept_leve.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 16640,
+            "frame_count": 90,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 90,
+            "stream_bytes": 16640,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 7932,
+            "frame_count": 71,
+            "inflated_frames": 71,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 71,
+            "raw_frames": 0,
+            "stream_bytes": 7932,
+            "subevent_complete_bytes": 21056,
+            "subevent_frames_checked": 71,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      },
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 24,
+            "subevent_frames_checked": 1,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "chat",
+        "lane_index": 1
+      }
+    ],
+    "accept_local_leve.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 13880,
+            "frame_count": 75,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 75,
+            "stream_bytes": 13880,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 6604,
+            "frame_count": 59,
+            "inflated_frames": 59,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 59,
+            "raw_frames": 0,
+            "stream_bytes": 6604,
+            "subevent_complete_bytes": 17768,
+            "subevent_frames_checked": 59,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      }
+    ],
+    "accept_quest.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 8480,
+            "frame_count": 48,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 48,
+            "stream_bytes": 8480,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 3890,
+            "frame_count": 34,
+            "inflated_frames": 34,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 34,
+            "raw_frames": 0,
+            "stream_bytes": 3890,
+            "subevent_complete_bytes": 11328,
+            "subevent_frames_checked": 34,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      },
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 24,
+            "subevent_frames_checked": 1,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "chat",
+        "lane_index": 1
+      }
+    ],
+    "action_and_traits.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 11208,
+            "frame_count": 63,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 63,
+            "stream_bytes": 11208,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 3788,
+            "frame_count": 40,
+            "inflated_frames": 40,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 40,
+            "raw_frames": 0,
+            "stream_bytes": 3788,
+            "subevent_complete_bytes": 8536,
+            "subevent_frames_checked": 40,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      }
+    ],
+    "add_str.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 6536,
+            "frame_count": 38,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 38,
+            "stream_bytes": 6536,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 2352,
+            "frame_count": 28,
+            "inflated_frames": 28,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 28,
+            "raw_frames": 0,
+            "stream_bytes": 2352,
+            "subevent_complete_bytes": 5096,
+            "subevent_frames_checked": 28,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      }
+    ],
+    "attributes.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 7664,
+            "frame_count": 45,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 45,
+            "stream_bytes": 7664,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 2539,
+            "frame_count": 29,
+            "inflated_frames": 29,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 29,
+            "raw_frames": 0,
+            "stream_bytes": 2539,
+            "subevent_complete_bytes": 5288,
+            "subevent_frames_checked": 29,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      }
+    ],
+    "battle_mode_passive_mode.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 4048,
+            "frame_count": 22,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 22,
+            "stream_bytes": 4048,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 2022,
+            "frame_count": 18,
+            "inflated_frames": 18,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 18,
+            "raw_frames": 0,
+            "stream_bytes": 2022,
+            "subevent_complete_bytes": 5024,
+            "subevent_frames_checked": 18,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      },
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 24,
+            "subevent_frames_checked": 1,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "chat",
+        "lane_index": 1
+      }
+    ],
+    "buy_square_maple_shield.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 14752,
+            "frame_count": 82,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 82,
+            "stream_bytes": 14752,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 6576,
+            "frame_count": 58,
+            "inflated_frames": 58,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 58,
+            "raw_frames": 0,
+            "stream_bytes": 6576,
+            "subevent_complete_bytes": 18680,
+            "subevent_frames_checked": 58,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      },
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 24,
+            "subevent_frames_checked": 1,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "chat",
+        "lane_index": 1
+      }
+    ],
+    "change_bodyarmor.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 9928,
+            "frame_count": 55,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 55,
+            "stream_bytes": 9928,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 3394,
+            "frame_count": 34,
+            "inflated_frames": 34,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 34,
+            "raw_frames": 0,
+            "stream_bytes": 3394,
+            "subevent_complete_bytes": 8648,
+            "subevent_frames_checked": 34,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      }
+    ],
+    "change_helm.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 12272,
+            "frame_count": 66,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 66,
+            "stream_bytes": 12272,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 4252,
+            "frame_count": 43,
+            "inflated_frames": 43,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 43,
+            "raw_frames": 0,
+            "stream_bytes": 4252,
+            "subevent_complete_bytes": 10272,
+            "subevent_frames_checked": 43,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      }
+    ],
+    "change_to_botanist.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 12184,
+            "frame_count": 64,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 64,
+            "stream_bytes": 12184,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 6438,
+            "frame_count": 48,
+            "inflated_frames": 48,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 48,
+            "raw_frames": 0,
+            "stream_bytes": 6438,
+            "subevent_complete_bytes": 19248,
+            "subevent_frames_checked": 48,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      },
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 24,
+            "subevent_frames_checked": 1,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "chat",
+        "lane_index": 1
+      }
+    ],
+    "chat_say.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 3160,
+            "frame_count": 16,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 16,
+            "stream_bytes": 3160,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 803,
+            "frame_count": 10,
+            "inflated_frames": 10,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 10,
+            "raw_frames": 0,
+            "stream_bytes": 803,
+            "subevent_complete_bytes": 1800,
+            "subevent_frames_checked": 10,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      }
+    ],
+    "chat_shout.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 2872,
+            "frame_count": 14,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 14,
+            "stream_bytes": 2872,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 808,
+            "frame_count": 10,
+            "inflated_frames": 10,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 10,
+            "raw_frames": 0,
+            "stream_bytes": 808,
+            "subevent_complete_bytes": 1800,
+            "subevent_frames_checked": 10,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      }
+    ],
+    "check_room_map.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 7664,
+            "frame_count": 47,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 47,
+            "stream_bytes": 7664,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 2266,
+            "frame_count": 27,
+            "inflated_frames": 27,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 27,
+            "raw_frames": 0,
+            "stream_bytes": 2266,
+            "subevent_complete_bytes": 4624,
+            "subevent_frames_checked": 27,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      }
+    ],
+    "checkbed.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 4496,
+            "frame_count": 24,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 24,
+            "stream_bytes": 4496,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 1459,
+            "frame_count": 17,
+            "inflated_frames": 17,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 17,
+            "raw_frames": 0,
+            "stream_bytes": 1459,
+            "subevent_complete_bytes": 2848,
+            "subevent_frames_checked": 17,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      }
+    ],
+    "coerthas_map.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 5080,
+            "frame_count": 31,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 31,
+            "stream_bytes": 5080,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 1548,
+            "frame_count": 19,
+            "inflated_frames": 19,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 19,
+            "raw_frames": 0,
+            "stream_bytes": 1548,
+            "subevent_complete_bytes": 3536,
+            "subevent_frames_checked": 19,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      },
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 24,
+            "subevent_frames_checked": 1,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "chat",
+        "lane_index": 1
+      }
+    ],
+    "combat_autoattack.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 20000,
+            "frame_count": 117,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 117,
+            "stream_bytes": 20000,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 21425,
+            "frame_count": 155,
+            "inflated_frames": 155,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 155,
+            "raw_frames": 0,
+            "stream_bytes": 21425,
+            "subevent_complete_bytes": 102120,
+            "subevent_frames_checked": 155,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      },
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 24,
+            "subevent_frames_checked": 1,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "chat",
+        "lane_index": 1
+      }
+    ],
+    "combat_skills.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 13544,
+            "frame_count": 80,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 80,
+            "stream_bytes": 13544,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 14499,
+            "frame_count": 117,
+            "inflated_frames": 117,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 117,
+            "raw_frames": 0,
+            "stream_bytes": 14499,
+            "subevent_complete_bytes": 60528,
+            "subevent_frames_checked": 117,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      }
+    ],
+    "cutscene_book.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 35336,
+            "frame_count": 213,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 213,
+            "stream_bytes": 35336,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 9782,
+            "frame_count": 117,
+            "inflated_frames": 117,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 117,
+            "raw_frames": 0,
+            "stream_bytes": 9782,
+            "subevent_complete_bytes": 19888,
+            "subevent_frames_checked": 117,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      },
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 24,
+            "subevent_frames_checked": 1,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "chat",
+        "lane_index": 1
+      }
+    ],
+    "emote_dance.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 8424,
+            "frame_count": 50,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 50,
+            "stream_bytes": 8424,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 2353,
+            "frame_count": 28,
+            "inflated_frames": 28,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 28,
+            "raw_frames": 0,
+            "stream_bytes": 2353,
+            "subevent_complete_bytes": 4800,
+            "subevent_frames_checked": 28,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      },
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 24,
+            "subevent_frames_checked": 1,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "chat",
+        "lane_index": 1
+      }
+    ],
+    "emote_kneel.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 6760,
+            "frame_count": 40,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 40,
+            "stream_bytes": 6760,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 1844,
+            "frame_count": 22,
+            "inflated_frames": 22,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 22,
+            "raw_frames": 0,
+            "stream_bytes": 1844,
+            "subevent_complete_bytes": 3744,
+            "subevent_frames_checked": 22,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      }
+    ],
+    "friendlist_search.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 10440,
+            "frame_count": 60,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 60,
+            "stream_bytes": 10440,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 3776,
+            "frame_count": 38,
+            "inflated_frames": 38,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 38,
+            "raw_frames": 0,
+            "stream_bytes": 3776,
+            "subevent_complete_bytes": 9672,
+            "subevent_frames_checked": 38,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      },
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 24,
+            "subevent_frames_checked": 1,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "chat",
+        "lane_index": 1
+      }
+    ],
+    "from_gridania_to_blackshroud.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 51128,
+            "frame_count": 308,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 308,
+            "stream_bytes": 51128,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 35517,
+            "frame_count": 285,
+            "inflated_frames": 285,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 285,
+            "raw_frames": 0,
+            "stream_bytes": 35517,
+            "subevent_complete_bytes": 118032,
+            "subevent_frames_checked": 285,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      },
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 120,
+            "frame_count": 3,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 3,
+            "stream_bytes": 120,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 120,
+            "frame_count": 3,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 3,
+            "stream_bytes": 120,
+            "subevent_complete_bytes": 72,
+            "subevent_frames_checked": 3,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "chat",
+        "lane_index": 1
+      }
+    ],
+    "gather_wood.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 37968,
+            "frame_count": 222,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 222,
+            "stream_bytes": 37968,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 31985,
+            "frame_count": 239,
+            "inflated_frames": 239,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 239,
+            "raw_frames": 0,
+            "stream_bytes": 31985,
+            "subevent_complete_bytes": 97624,
+            "subevent_frames_checked": 239,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      },
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 80,
+            "frame_count": 2,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 2,
+            "stream_bytes": 80,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 80,
+            "frame_count": 2,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 2,
+            "stream_bytes": 80,
+            "subevent_complete_bytes": 48,
+            "subevent_frames_checked": 2,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "chat",
+        "lane_index": 1
+      }
+    ],
+    "gear_changesoul.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 7840,
+            "frame_count": 42,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 42,
+            "stream_bytes": 7840,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 2859,
+            "frame_count": 28,
+            "inflated_frames": 28,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 28,
+            "raw_frames": 0,
+            "stream_bytes": 2859,
+            "subevent_complete_bytes": 6232,
+            "subevent_frames_checked": 28,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      }
+    ],
+    "gear_changeweapon.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 7112,
+            "frame_count": 36,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 36,
+            "stream_bytes": 7112,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 3482,
+            "frame_count": 28,
+            "inflated_frames": 28,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 28,
+            "raw_frames": 0,
+            "stream_bytes": 3482,
+            "subevent_complete_bytes": 8488,
+            "subevent_frames_checked": 28,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      }
+    ],
+    "gridania_map.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 5128,
+            "frame_count": 30,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 30,
+            "stream_bytes": 5128,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 1992,
+            "frame_count": 17,
+            "inflated_frames": 17,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 17,
+            "raw_frames": 0,
+            "stream_bytes": 1992,
+            "subevent_complete_bytes": 6032,
+            "subevent_frames_checked": 17,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      }
+    ],
+    "gridania_to_coerthas.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 225432,
+            "frame_count": 1300,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1300,
+            "stream_bytes": 225432,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 225863,
+            "frame_count": 1362,
+            "inflated_frames": 1362,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 1362,
+            "raw_frames": 0,
+            "stream_bytes": 225863,
+            "subevent_complete_bytes": 786224,
+            "subevent_frames_checked": 1362,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      },
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 400,
+            "frame_count": 10,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 10,
+            "stream_bytes": 400,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 400,
+            "frame_count": 10,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 10,
+            "stream_bytes": 400,
+            "subevent_complete_bytes": 240,
+            "subevent_frames_checked": 10,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "chat",
+        "lane_index": 1
+      }
+    ],
+    "harvest.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 11616,
+            "frame_count": 71,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 71,
+            "stream_bytes": 11616,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 14266,
+            "frame_count": 89,
+            "inflated_frames": 89,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 89,
+            "raw_frames": 0,
+            "stream_bytes": 14266,
+            "subevent_complete_bytes": 80704,
+            "subevent_frames_checked": 89,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      },
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 24,
+            "subevent_frames_checked": 1,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "chat",
+        "lane_index": 1
+      }
+    ],
+    "idle_in_party.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 4736,
+            "frame_count": 29,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 29,
+            "stream_bytes": 4736,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 2101,
+            "frame_count": 18,
+            "inflated_frames": 18,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 18,
+            "raw_frames": 0,
+            "stream_bytes": 2101,
+            "subevent_complete_bytes": 6096,
+            "subevent_frames_checked": 18,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      }
+    ],
+    "idling.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 12656,
+            "frame_count": 77,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 77,
+            "stream_bytes": 12656,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 4106,
+            "frame_count": 51,
+            "inflated_frames": 51,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 51,
+            "raw_frames": 0,
+            "stream_bytes": 4106,
+            "subevent_complete_bytes": 9568,
+            "subevent_frames_checked": 51,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      },
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 24,
+            "subevent_frames_checked": 1,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "chat",
+        "lane_index": 1
+      }
+    ],
+    "inventory.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 7864,
+            "frame_count": 46,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 46,
+            "stream_bytes": 7864,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 2448,
+            "frame_count": 27,
+            "inflated_frames": 27,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 27,
+            "raw_frames": 0,
+            "stream_bytes": 2448,
+            "subevent_complete_bytes": 5296,
+            "subevent_frames_checked": 27,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      },
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 24,
+            "subevent_frames_checked": 1,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "chat",
+        "lane_index": 1
+      }
+    ],
+    "invite_join_party.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 24672,
+            "frame_count": 148,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 148,
+            "stream_bytes": 24672,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 11647,
+            "frame_count": 101,
+            "inflated_frames": 101,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 101,
+            "raw_frames": 0,
+            "stream_bytes": 11647,
+            "subevent_complete_bytes": 35960,
+            "subevent_frames_checked": 101,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      },
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 24,
+            "subevent_frames_checked": 1,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "chat",
+        "lane_index": 1
+      }
+    ],
+    "local_leve_complete.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 78944,
+            "frame_count": 499,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 499,
+            "stream_bytes": 78944,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 69970,
+            "frame_count": 520,
+            "inflated_frames": 520,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 520,
+            "raw_frames": 0,
+            "stream_bytes": 69970,
+            "subevent_complete_bytes": 245576,
+            "subevent_frames_checked": 520,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      },
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 200,
+            "frame_count": 5,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 5,
+            "stream_bytes": 200,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 200,
+            "frame_count": 5,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 5,
+            "stream_bytes": 200,
+            "subevent_complete_bytes": 120,
+            "subevent_frames_checked": 5,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "chat",
+        "lane_index": 1
+      }
+    ],
+    "login.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 11864,
+            "frame_count": 87,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 87,
+            "stream_bytes": 11864,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 15240,
+            "frame_count": 89,
+            "inflated_frames": 89,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 89,
+            "raw_frames": 0,
+            "stream_bytes": 15240,
+            "subevent_complete_bytes": 67120,
+            "subevent_frames_checked": 89,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      },
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 152,
+            "frame_count": 3,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 3,
+            "stream_bytes": 152,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 152,
+            "frame_count": 3,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 3,
+            "stream_bytes": 152,
+            "subevent_complete_bytes": 104,
+            "subevent_frames_checked": 3,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "chat",
+        "lane_index": 1
+      }
+    ],
+    "mount_unmount_chocobo.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 5672,
+            "frame_count": 34,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 34,
+            "stream_bytes": 5672,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 1347,
+            "frame_count": 18,
+            "inflated_frames": 18,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 18,
+            "raw_frames": 0,
+            "stream_bytes": 1347,
+            "subevent_complete_bytes": 3912,
+            "subevent_frames_checked": 18,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      }
+    ],
+    "move_around_gridania.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 49264,
+            "frame_count": 301,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 301,
+            "stream_bytes": 49264,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 34838,
+            "frame_count": 271,
+            "inflated_frames": 271,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 271,
+            "raw_frames": 0,
+            "stream_bytes": 34838,
+            "subevent_complete_bytes": 106448,
+            "subevent_frames_checked": 271,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      },
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 80,
+            "frame_count": 2,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 2,
+            "stream_bytes": 80,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 80,
+            "frame_count": 2,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 2,
+            "stream_bytes": 80,
+            "subevent_complete_bytes": 48,
+            "subevent_frames_checked": 2,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "chat",
+        "lane_index": 1
+      }
+    ],
+    "move_out_of_room.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 11680,
+            "frame_count": 81,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 81,
+            "stream_bytes": 11680,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 31713,
+            "frame_count": 134,
+            "inflated_frames": 134,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 134,
+            "raw_frames": 0,
+            "stream_bytes": 31713,
+            "subevent_complete_bytes": 139864,
+            "subevent_frames_checked": 134,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      }
+    ],
+    "moving_around_gridania.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 197000,
+            "frame_count": 1195,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1195,
+            "stream_bytes": 197000,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 216736,
+            "frame_count": 1319,
+            "inflated_frames": 1319,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 1319,
+            "raw_frames": 0,
+            "stream_bytes": 216736,
+            "subevent_complete_bytes": 763920,
+            "subevent_frames_checked": 1319,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      },
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 400,
+            "frame_count": 10,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 10,
+            "stream_bytes": 400,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 400,
+            "frame_count": 10,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 10,
+            "stream_bytes": 400,
+            "subevent_complete_bytes": 240,
+            "subevent_frames_checked": 10,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "chat",
+        "lane_index": 1
+      }
+    ],
+    "open_gear_menu.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 8888,
+            "frame_count": 51,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 51,
+            "stream_bytes": 8888,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 2557,
+            "frame_count": 29,
+            "inflated_frames": 29,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 29,
+            "raw_frames": 0,
+            "stream_bytes": 2557,
+            "subevent_complete_bytes": 5424,
+            "subevent_frames_checked": 29,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      }
+    ],
+    "party_battle_leve.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 304008,
+            "frame_count": 1803,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1803,
+            "stream_bytes": 304008,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 433634,
+            "frame_count": 3476,
+            "inflated_frames": 3476,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 3476,
+            "raw_frames": 0,
+            "stream_bytes": 433634,
+            "subevent_complete_bytes": 1456232,
+            "subevent_frames_checked": 3476,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      },
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 5712,
+            "frame_count": 24,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 24,
+            "stream_bytes": 5712,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 15600,
+            "frame_count": 40,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 40,
+            "stream_bytes": 15600,
+            "subevent_complete_bytes": 14960,
+            "subevent_frames_checked": 40,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "chat",
+        "lane_index": 1
+      }
+    ],
+    "quest_journal.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 9616,
+            "frame_count": 56,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 56,
+            "stream_bytes": 9616,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 2721,
+            "frame_count": 32,
+            "inflated_frames": 32,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 32,
+            "raw_frames": 0,
+            "stream_bytes": 2721,
+            "subevent_complete_bytes": 5728,
+            "subevent_frames_checked": 32,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      }
+    ],
+    "quest_update.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 19008,
+            "frame_count": 111,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 111,
+            "stream_bytes": 19008,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 6567,
+            "frame_count": 72,
+            "inflated_frames": 72,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 72,
+            "raw_frames": 0,
+            "stream_bytes": 6567,
+            "subevent_complete_bytes": 16352,
+            "subevent_frames_checked": 72,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      },
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 24,
+            "subevent_frames_checked": 1,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "chat",
+        "lane_index": 1
+      }
+    ],
+    "repair_items.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 17360,
+            "frame_count": 94,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 94,
+            "stream_bytes": 17360,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 11157,
+            "frame_count": 87,
+            "inflated_frames": 87,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 87,
+            "raw_frames": 0,
+            "stream_bytes": 11157,
+            "subevent_complete_bytes": 50072,
+            "subevent_frames_checked": 87,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      },
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 24,
+            "subevent_frames_checked": 1,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "chat",
+        "lane_index": 1
+      }
+    ],
+    "return_to_inn.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 7616,
+            "frame_count": 50,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 50,
+            "stream_bytes": 7616,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 12851,
+            "frame_count": 63,
+            "inflated_frames": 63,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 63,
+            "raw_frames": 0,
+            "stream_bytes": 12851,
+            "subevent_complete_bytes": 56024,
+            "subevent_frames_checked": 63,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      }
+    ],
+    "sell_item.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 14968,
+            "frame_count": 81,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 81,
+            "stream_bytes": 14968,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 10419,
+            "frame_count": 67,
+            "inflated_frames": 67,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 67,
+            "raw_frames": 0,
+            "stream_bytes": 10419,
+            "subevent_complete_bytes": 39944,
+            "subevent_frames_checked": 67,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      },
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 24,
+            "subevent_frames_checked": 1,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "chat",
+        "lane_index": 1
+      }
+    ],
+    "small_talk_louisoix.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 6368,
+            "frame_count": 35,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 35,
+            "stream_bytes": 6368,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 2856,
+            "frame_count": 27,
+            "inflated_frames": 27,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 27,
+            "raw_frames": 0,
+            "stream_bytes": 2856,
+            "subevent_complete_bytes": 7416,
+            "subevent_frames_checked": 27,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      }
+    ],
+    "switch_to_weaver.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 8816,
+            "frame_count": 48,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 48,
+            "stream_bytes": 8816,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 5602,
+            "frame_count": 40,
+            "inflated_frames": 40,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 40,
+            "raw_frames": 0,
+            "stream_bytes": 5602,
+            "subevent_complete_bytes": 18928,
+            "subevent_frames_checked": 40,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      }
+    ],
+    "teleport_to_camp_nine_ivies.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 16424,
+            "frame_count": 103,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 103,
+            "stream_bytes": 16424,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 18834,
+            "frame_count": 106,
+            "inflated_frames": 106,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 106,
+            "raw_frames": 0,
+            "stream_bytes": 18834,
+            "subevent_complete_bytes": 73720,
+            "subevent_frames_checked": 106,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      },
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 24,
+            "subevent_frames_checked": 1,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "chat",
+        "lane_index": 1
+      }
+    ],
+    "teleport_to_camp_tranquil.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 13440,
+            "frame_count": 85,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 85,
+            "stream_bytes": 13440,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 17265,
+            "frame_count": 83,
+            "inflated_frames": 83,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 83,
+            "raw_frames": 0,
+            "stream_bytes": 17265,
+            "subevent_complete_bytes": 75008,
+            "subevent_frames_checked": 83,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      },
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 24,
+            "subevent_frames_checked": 1,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "chat",
+        "lane_index": 1
+      }
+    ],
+    "teleport_to_gridania.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 12672,
+            "frame_count": 80,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 80,
+            "stream_bytes": 12672,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 18318,
+            "frame_count": 96,
+            "inflated_frames": 96,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 96,
+            "raw_frames": 0,
+            "stream_bytes": 18318,
+            "subevent_complete_bytes": 73416,
+            "subevent_frames_checked": 96,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      }
+    ],
+    "war_quest_update1.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 11832,
+            "frame_count": 69,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 69,
+            "stream_bytes": 11832,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 7101,
+            "frame_count": 61,
+            "inflated_frames": 61,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 61,
+            "raw_frames": 0,
+            "stream_bytes": 7101,
+            "subevent_complete_bytes": 17184,
+            "subevent_frames_checked": 61,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      },
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 40,
+            "frame_count": 1,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 1,
+            "stream_bytes": 40,
+            "subevent_complete_bytes": 24,
+            "subevent_frames_checked": 1,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "chat",
+        "lane_index": 1
+      }
+    ],
+    "war_quest_update2.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 29592,
+            "frame_count": 205,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 205,
+            "stream_bytes": 29592,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 69113,
+            "frame_count": 667,
+            "inflated_frames": 667,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 667,
+            "raw_frames": 0,
+            "stream_bytes": 69113,
+            "subevent_complete_bytes": 190368,
+            "subevent_frames_checked": 667,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      },
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 1256,
+            "frame_count": 5,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 5,
+            "stream_bytes": 1256,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 720,
+            "frame_count": 4,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 4,
+            "stream_bytes": 720,
+            "subevent_complete_bytes": 656,
+            "subevent_frames_checked": 4,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "chat",
+        "lane_index": 1
+      }
+    ],
+    "war_quest_update3.pcapng": [
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 28328,
+            "frame_count": 167,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 167,
+            "stream_bytes": 28328,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 20403,
+            "frame_count": 165,
+            "inflated_frames": 165,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 165,
+            "raw_frames": 0,
+            "stream_bytes": 20403,
+            "subevent_complete_bytes": 52128,
+            "subevent_frames_checked": 165,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "main",
+        "lane_index": 0
+      },
+      {
+        "directions": {
+          "c2s": {
+            "complete_frame_bytes": 80,
+            "frame_count": 2,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 2,
+            "stream_bytes": 80,
+            "subevent_complete_bytes": 0,
+            "subevent_frames_checked": 0,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          },
+          "s2c": {
+            "complete_frame_bytes": 80,
+            "frame_count": 2,
+            "inflated_frames": 0,
+            "marker0_inflatable_body": 0,
+            "marker1_frames": 0,
+            "raw_frames": 2,
+            "stream_bytes": 80,
+            "subevent_complete_bytes": 48,
+            "subevent_frames_checked": 2,
+            "subevent_trailing_bytes": 0,
+            "trailing_bytes": 0
+          }
+        },
+        "lane": "chat",
+        "lane_index": 1
+      }
+    ]
+  },
+  "input_hashes": {
+    "captures": {
+      "accept_leve.pcapng": "42b87e6c095db130def1de5bc382e428b4f4c12c8069c4682d6fa4bc7681967a",
+      "accept_local_leve.pcapng": "3b4b071d88742a5d3c94a1e29ca6a4074cb6b9a9a60207118302fe22f932bd7c",
+      "accept_quest.pcapng": "a207109240254b1398a36f877afc7ac34a08466cfbd3cdd3f2eb5f4a50718057",
+      "action_and_traits.pcapng": "c3d30fe46d69996dc74e4864245c42675cde2388525c03063dac180df528352f",
+      "add_str.pcapng": "246e4948a7ca1e4dc620e724677bfd9153ce76f6445a557967d309e9946021ed",
+      "attributes.pcapng": "5bc78b05d45a4e410b7410d046cb8b958ec549ce5b1b51a52225c4d15041a2ff",
+      "battle_mode_passive_mode.pcapng": "5a8290df1d11781f4f5fa1f6990651c679e57ee3b8c5549021f06767bb172d4b",
+      "buy_square_maple_shield.pcapng": "aab582bd9658c89cd4d56e132500481f442b9f2dc2179f1a5829ea09776bce6b",
+      "change_bodyarmor.pcapng": "55ee6035d24e80b97c9354a0800b86a52d0a99e1200cf6875a5b56009215021a",
+      "change_helm.pcapng": "af1e465076c3acf6188f24f084622b22beccc932bb96effd517b2d9a44606e08",
+      "change_to_botanist.pcapng": "8fdc448a17d19bea3d07855a8d8843d78926c50586f3656946c96b6a6cb27d26",
+      "chat_say.pcapng": "ccaefd38c94512507d518f83ab693edaf7f42167f3b82876869b53a736275e37",
+      "chat_shout.pcapng": "94ab6b14373b2d0d0122e14b3eb18a1371e52165172ba18b3fc836c8ba94265a",
+      "check_room_map.pcapng": "cca1eea57329b02e5d66e53ad6f44d28deebf8ee8c11cfafd22bf813d1551ee5",
+      "checkbed.pcapng": "9e05a05de6ec44eded13761fcb3546eb248c0c68e537051eef575e29dfff1b79",
+      "coerthas_map.pcapng": "779de805f9172832e986f5c46c0a94f6d93f4b9c7f1c41fd0de0f5f8326c0ae3",
+      "combat_autoattack.pcapng": "2f677ab61047b25c4168a3dd9496f372d48de3bba018d582dd5a968b9272f7b2",
+      "combat_skills.pcapng": "7fe66d92f6f62584e57562e51355d310546935690e0b96c2c689b83bbe8a07a7",
+      "cutscene_book.pcapng": "c2cf85e02d8d15fe2aa9261e8b796c29c0a3d9dd9cdf287ce0f75f3a666b2b4d",
+      "emote_dance.pcapng": "9e004f1e791cfc37b7d23e8986a5e69021b7b7f828295fdf7957e36aa1c57dc8",
+      "emote_kneel.pcapng": "3381b6121f5b0789c97ededdc5394c6bc9b14c561029191fb5b3f428033c80e8",
+      "friendlist_search.pcapng": "3b9a35689fb923d9520bbfed8a3886dc2b461c9516492e3d8e68eec093eb7b0e",
+      "from_gridania_to_blackshroud.pcapng": "eff300de679230653953ea3399939a15ce9d6aeafd202c7ebcf5f55e6d24930f",
+      "gather_wood.pcapng": "c308aa4c984eb3e1912383c06e5115c6924713978df43cdb8075335e1bac7d32",
+      "gear_changesoul.pcapng": "62af2cde3a4683fba3e09cc3dfed8001d74303b120381de577b05df492926780",
+      "gear_changeweapon.pcapng": "3eec2c2993feeb2b8c47c1e1f553335638a7262ec13b561e2d52d768f0798080",
+      "gridania_map.pcapng": "13e26b2d68f195b8e2daf7c355a2741c155a1036b80d79c90aab982157290795",
+      "gridania_to_coerthas.pcapng": "63152a1ed6e446df5cc4750fe50a0839f9e45ad270c79abfc72b5c09cc47e547",
+      "harvest.pcapng": "8522a844b6904207c3465ae1d1038599eddb8b9dc47800d5230c8a1c3ad0e440",
+      "idle_in_party.pcapng": "98b45822079372380bf834a937a9cb83b662b9e302555aafa14ee353537f74c1",
+      "idling.pcapng": "fd86f5b78b2975dcaf7bb8a8e7f94267f9f2660078a5193ea26732cb317dd385",
+      "inventory.pcapng": "f667bfc1cb87afec3c5c5f56b031254101aff012577f6f35c7cbf133815b6878",
+      "invite_join_party.pcapng": "34c946c3f93744d2bbd841e75f983ef12b9bbcb59afcba31414d6d3f41e7de58",
+      "local_leve_complete.pcapng": "4f0793f354140478725bf2c30642a3458a854460f47fb11a7af635c8881d95cd",
+      "login.pcapng": "28e06b54fe559870031f077f8549b9244caafa7e5177dbca08a7feae6c2b1b62",
+      "mount_unmount_chocobo.pcapng": "e77c06799f07029feb054792eac30baa431da15a61937b1a39bcd025e4db4072",
+      "move_around_gridania.pcapng": "bea7ae86444fa3ef9acc08f148f60dff1e5992188ee85136dec50c64e09236d0",
+      "move_out_of_room.pcapng": "a7a03a1d688f3feb264f8da9fae3519c55b7e267aa3802472f0221f4d729b37b",
+      "moving_around_gridania.pcapng": "bf6abf7ccc7a16e071846036477c1fadbc3b46385ef6e747b543d836f3f51017",
+      "open_gear_menu.pcapng": "6b7dee09f59d03d9706ca1c81586dce667cd4d806ee2a2b72d89432d617afc2e",
+      "party_battle_leve.pcapng": "6327e5e1f5cbd51a9baaa9bcbacf53ca51c50a98fe4b66ae3e6bdecd9198089f",
+      "quest_journal.pcapng": "e1f983e9009a9ebe8b8231647229bee1672a1ac85d95a830113280f534531edc",
+      "quest_update.pcapng": "e31aa9738dd523b7703eefa6d38527135f16d8b5ff2fc314fd7e5b808d7e4787",
+      "repair_items.pcapng": "bbd829cbd3f42b2cbfb3aa8a74a1cc35d4e2c16c99e5a4a20ca76573f02dd90f",
+      "return_to_inn.pcapng": "9a81e483d3dd2673081afef06ed521c190c4d42be16e95e24097f25ff81f58c1",
+      "sell_item.pcapng": "1cd808fff6501c53e4c113f1fdef090e50dfe0fd7fe86ceaa552b3a53c1b5aac",
+      "small_talk_louisoix.pcapng": "58b620d90370ba69202e63f7f70edb79004ccbb8068e11e2e112a825d84dcafe",
+      "switch_to_weaver.pcapng": "b41b25bc51be1a64f41861142dc992c14493c65bcd920cadca013243480b777e",
+      "teleport_to_camp_nine_ivies.pcapng": "fac2b485608247d299a406a7065e19918789118e7e544ca85cec4d772da0e3ab",
+      "teleport_to_camp_tranquil.pcapng": "488318351cdedb2e2b650dc68c55014b160fbbc26753c200922402c1ba6c4dd7",
+      "teleport_to_gridania.pcapng": "779141dc79a4bcf4bfc2e265f8b9510607d5a6b6e78d32f8940e5a847e598fa0",
+      "war_quest_update1.pcapng": "ce64e429063cc7e49a2045e2f7b0e18b1991f5908368b791b93c72419841e890",
+      "war_quest_update2.pcapng": "bf43b5ee32c58e5dc6f8149b071bd9c5cd5cc0aaa55ea3528872308fd7be2429",
+      "war_quest_update3.pcapng": "52279e8cbc13d3f4751b5ee3cb9c91df1895ed5c41d30672629db3ec1c9efd05"
+    },
+    "manifest": {
+      "path": "sources/pcap-1.23b/manifest.yaml",
+      "sha256": "6023da8a8409b22fd9702be2baf9da2ec88e506a48cd66582809f30d3a51ba8c"
+    },
+    "native_cast_contract": {
+      "path": "manifests/cast_chant_presentation.json#activeCastGauge.properties",
+      "revision": "b1b36be9678832830bcc319e50a1c061c4ffabe5",
+      "sha256": "33b400347c528bea4049f4461e8bd80886f3410cd87f9db632305a5e2b6ea375"
+    },
+    "products": {
+      "battle_result_rows": {
+        "path": "studies/battle-result-backfit/derived/battle-result-rows.csv",
+        "sha256": "d67cb49d9489df127b3f374ee85792c43a6feffecbd4e2314072c0622b22e494"
+      },
+      "property_records": {
+        "path": "studies/property-stream-hash-catalog/derived/property-records.csv",
+        "sha256": "244a87a0182c9d3f0b9de253cb7fc454b0f9fd07e2530d6f546b539b7269f437"
+      },
+      "status_occurrences": {
+        "path": "studies/status-wire-projection-census/derived/occurrences.csv",
+        "sha256": "2a0c5d09492ca1b62bc101dbb64d9e5216ff50bd8a2e9cd8b4d855bf4f15e069"
+      }
+    },
+    "tools": {
+      "extract_battle_results": {
+        "path": "tools/extractors/extract_battle_results.py",
+        "sha256": "d75be8c66b603a0821a2959e72e5b9c4460dc6ea64633291aad9c5c244514e69"
+      },
+      "extract_property_stream_catalog": {
+        "path": "tools/extractors/extract_property_stream_catalog.py",
+        "sha256": "0f16f7f7b33704a054e1f72c64599014f77afacb5dc1b54f9469516757d8b029"
+      },
+      "extract_status_wire_census": {
+        "path": "tools/extractors/extract_status_wire_census.py",
+        "sha256": "6987683c81d5c2f7bdf5cf635812694d5bae518b7de56e42b2eb2386f1b98ea5"
+      },
+      "extract_streams": {
+        "path": "tools/extractors/extract_streams.py",
+        "sha256": "bc7450d0ba80a7410ce6a407f0efcd429facf2e4384b4f40a294d4e9b209d0e5"
+      }
+    }
+  },
+  "presence_inventory": {
+    "battle_result_backfit": {
+      "packets": 531,
+      "priority_capture_command_rows": {
+        "party_battle_leve.pcapng:0x0139:27346": 8
+      },
+      "rows": 622
+    },
+    "property_stream_hash_catalog": {
+      "target_rows": 6,
+      "target_rows_by_capture": {
+        "party_battle_leve.pcapng": 6
+      },
+      "target_rows_by_hash": {
+        "0x59c40d5d": 2,
+        "0xf683a451": 4
+      },
+      "target_rows_by_hash_and_value": {
+        "0x59c40d5d:1356930012": 1,
+        "0x59c40d5d:1356930498": 1,
+        "0xf683a451:0": 2,
+        "0xf683a451:27346": 2
+      },
+      "target_rows_by_hash_zero_state": {
+        "0x59c40d5d": {
+          "nonzero": 2,
+          "nonzero_to_zero_sequences": 0,
+          "zero": 0
+        },
+        "0xf683a451": {
+          "nonzero": 2,
+          "nonzero_to_zero_sequences": 2,
+          "zero": 2
+        }
+      }
+    },
+    "status_wire_projection_census": {
+      "captures_with_occurrences": 17,
+      "occurrences": 831
+    }
+  },
+  "schema_version": 1,
+  "scope": "same admitted s2c connection chronology for retained cast-state properties and bounded result/mode/status joins",
+  "sequences": [
+    {
+      "actor_equality": "actor-had93fc3bcc1c",
+      "anchor_nonzero_write": {
+        "capture": "party_battle_leve.pcapng",
+        "direction": "s2c",
+        "event_kind": "property_write",
+        "frame_index": 814,
+        "frame_offset": 100572,
+        "inflated_offset": 0,
+        "inner_size": 20,
+        "lane": "main",
+        "lane_event_index": 2816,
+        "lane_index": 0,
+        "opcode": "0x0137",
+        "property": "cast_command_client",
+        "property_actor": "actor-had93fc3bcc1c",
+        "property_hash": "0xf683a451",
+        "record_index_in_packet": 1,
+        "source_actor": "actor-had93fc3bcc1c",
+        "subevent_index": 0,
+        "subevent_size": 168,
+        "target_actor": "actor-had93fc3bcc1c",
+        "value_u_le": 27346,
+        "value_width": 4
+      },
+      "bounded_command_match_actor_equal_count": 2,
+      "bounded_command_match_count": 2,
+      "bounded_context_events": [
+        {
+          "application_length": 16,
+          "capture": "party_battle_leve.pcapng",
+          "direction": "s2c",
+          "event_kind": "mode_update",
+          "field0_u24": 14752729,
+          "field3_u8": 0,
+          "field5_u8": 12,
+          "field7_u16": 0,
+          "frame_index": 810,
+          "frame_offset": 100139,
+          "inflated_offset": 0,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 2810,
+          "lane_index": 0,
+          "opcode": "0x0144",
+          "source_actor": "actor-ha2fb66adea3a",
+          "subevent_index": 0,
+          "subevent_size": 40,
+          "target_actor": "actor-had93fc3bcc1c"
+        },
+        {
+          "application_length": 56,
+          "capture": "party_battle_leve.pcapng",
+          "declared_row_capacity": 1,
+          "direction": "s2c",
+          "event_kind": "result_packet",
+          "frame_index": 810,
+          "frame_offset": 100139,
+          "header": {
+            "command_id": 27346,
+            "effect_or_animation_id": 16781413,
+            "header_control_value": 0,
+            "presentation_flags": 2064,
+            "row_count": 1
+          },
+          "inflated_offset": 40,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 2811,
+          "lane_index": 0,
+          "opcode": "0x0139",
+          "rows": [
+            {
+              "effect_id": 805306626,
+              "numeric_value": 151,
+              "row_index_in_packet": 0,
+              "row_ordinal_or_filter": 1,
+              "target_actor": "actor-ha2fb66adea3a",
+              "text_param": 0,
+              "world_master_text_id": 30320
+            }
+          ],
+          "shape": "X01",
+          "source_actor": "actor-ha2fb66adea3a",
+          "subevent_index": 1,
+          "subevent_size": 88
+        },
+        {
+          "capture": "party_battle_leve.pcapng",
+          "direction": "s2c",
+          "event_kind": "property_write",
+          "frame_index": 814,
+          "frame_offset": 100572,
+          "inflated_offset": 0,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 2816,
+          "lane_index": 0,
+          "opcode": "0x0137",
+          "property": "cast_end_client",
+          "property_actor": "actor-had93fc3bcc1c",
+          "property_hash": "0x59c40d5d",
+          "record_index_in_packet": 0,
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 0,
+          "subevent_size": 168,
+          "target_actor": "actor-had93fc3bcc1c",
+          "value_u_le": 1356930012,
+          "value_width": 4
+        },
+        {
+          "capture": "party_battle_leve.pcapng",
+          "direction": "s2c",
+          "event_kind": "property_write",
+          "frame_index": 814,
+          "frame_offset": 100572,
+          "inflated_offset": 0,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 2816,
+          "lane_index": 0,
+          "opcode": "0x0137",
+          "property": "cast_command_client",
+          "property_actor": "actor-had93fc3bcc1c",
+          "property_hash": "0xf683a451",
+          "record_index_in_packet": 1,
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 0,
+          "subevent_size": 168,
+          "target_actor": "actor-had93fc3bcc1c",
+          "value_u_le": 27346,
+          "value_width": 4
+        },
+        {
+          "application_length": 16,
+          "capture": "party_battle_leve.pcapng",
+          "direction": "s2c",
+          "event_kind": "mode_update",
+          "field0_u24": 14752730,
+          "field3_u8": 96,
+          "field5_u8": 12,
+          "field7_u16": 0,
+          "frame_index": 815,
+          "frame_offset": 100665,
+          "inflated_offset": 0,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 2817,
+          "lane_index": 0,
+          "opcode": "0x0144",
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 0,
+          "subevent_size": 40,
+          "target_actor": "actor-had93fc3bcc1c"
+        },
+        {
+          "application_length": 56,
+          "capture": "party_battle_leve.pcapng",
+          "declared_row_capacity": 1,
+          "direction": "s2c",
+          "event_kind": "result_packet",
+          "frame_index": 815,
+          "frame_offset": 100665,
+          "header": {
+            "command_id": 27346,
+            "effect_or_animation_id": 1862270979,
+            "header_control_value": 0,
+            "presentation_flags": 2064,
+            "row_count": 1
+          },
+          "inflated_offset": 40,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 2818,
+          "lane_index": 0,
+          "opcode": "0x0139",
+          "rows": [
+            {
+              "effect_id": 1,
+              "numeric_value": 0,
+              "row_index_in_packet": 0,
+              "row_ordinal_or_filter": 1,
+              "target_actor": "actor-ha2fb66adea3a",
+              "text_param": 0,
+              "world_master_text_id": 30128
+            }
+          ],
+          "shape": "X01",
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 1,
+          "subevent_size": 88
+        },
+        {
+          "application_length": 16,
+          "capture": "party_battle_leve.pcapng",
+          "direction": "s2c",
+          "event_kind": "mode_update",
+          "field0_u24": 14752732,
+          "field3_u8": 0,
+          "field5_u8": 12,
+          "field7_u16": 0,
+          "frame_index": 822,
+          "frame_offset": 101526,
+          "inflated_offset": 0,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 2838,
+          "lane_index": 0,
+          "opcode": "0x0144",
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 0,
+          "subevent_size": 40,
+          "target_actor": "actor-had93fc3bcc1c"
+        },
+        {
+          "application_length": 56,
+          "capture": "party_battle_leve.pcapng",
+          "declared_row_capacity": 1,
+          "direction": "s2c",
+          "event_kind": "result_packet",
+          "frame_index": 822,
+          "frame_offset": 101526,
+          "header": {
+            "command_id": 27346,
+            "effect_or_animation_id": 16781413,
+            "header_control_value": 0,
+            "presentation_flags": 2064,
+            "row_count": 1
+          },
+          "inflated_offset": 40,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 2839,
+          "lane_index": 0,
+          "opcode": "0x0139",
+          "rows": [
+            {
+              "effect_id": 805306627,
+              "numeric_value": 166,
+              "row_index_in_packet": 0,
+              "row_ordinal_or_filter": 1,
+              "target_actor": "actor-ha2fb66adea3a",
+              "text_param": 0,
+              "world_master_text_id": 30320
+            }
+          ],
+          "shape": "X01",
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 1,
+          "subevent_size": 88
+        },
+        {
+          "capture": "party_battle_leve.pcapng",
+          "direction": "s2c",
+          "event_kind": "property_write",
+          "frame_index": 823,
+          "frame_offset": 101615,
+          "inflated_offset": 336,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 2842,
+          "lane_index": 0,
+          "opcode": "0x0137",
+          "property": "cast_command_client",
+          "property_actor": "actor-had93fc3bcc1c",
+          "property_hash": "0xf683a451",
+          "record_index_in_packet": 2,
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 2,
+          "subevent_size": 168,
+          "target_actor": "actor-had93fc3bcc1c",
+          "value_u_le": 0,
+          "value_width": 4
+        }
+      ],
+      "bounded_result_joins": [
+        {
+          "command_id": 27346,
+          "command_match": true,
+          "in_interval": false,
+          "locator": {
+            "capture": "party_battle_leve.pcapng",
+            "frame_index": 810,
+            "inflated_offset": 40,
+            "lane_event_index": 2811,
+            "lane_index": 0,
+            "subevent_index": 1
+          },
+          "matching_command_witness": false,
+          "row_target_equal_property_actor": false,
+          "rows": [
+            {
+              "effect_id": 805306626,
+              "numeric_value": 151,
+              "row_index_in_packet": 0,
+              "row_ordinal_or_filter": 1,
+              "target_actor": "actor-ha2fb66adea3a",
+              "text_param": 0,
+              "world_master_text_id": 30320
+            }
+          ],
+          "source_actor_equal_property_actor": false
+        },
+        {
+          "command_id": 27346,
+          "command_match": true,
+          "in_interval": true,
+          "locator": {
+            "capture": "party_battle_leve.pcapng",
+            "frame_index": 815,
+            "inflated_offset": 40,
+            "lane_event_index": 2818,
+            "lane_index": 0,
+            "subevent_index": 1
+          },
+          "matching_command_witness": true,
+          "row_target_equal_property_actor": false,
+          "rows": [
+            {
+              "effect_id": 1,
+              "numeric_value": 0,
+              "row_index_in_packet": 0,
+              "row_ordinal_or_filter": 1,
+              "target_actor": "actor-ha2fb66adea3a",
+              "text_param": 0,
+              "world_master_text_id": 30128
+            }
+          ],
+          "source_actor_equal_property_actor": true
+        },
+        {
+          "command_id": 27346,
+          "command_match": true,
+          "in_interval": true,
+          "locator": {
+            "capture": "party_battle_leve.pcapng",
+            "frame_index": 822,
+            "inflated_offset": 40,
+            "lane_event_index": 2839,
+            "lane_index": 0,
+            "subevent_index": 1
+          },
+          "matching_command_witness": true,
+          "row_target_equal_property_actor": false,
+          "rows": [
+            {
+              "effect_id": 805306627,
+              "numeric_value": 166,
+              "row_index_in_packet": 0,
+              "row_ordinal_or_filter": 1,
+              "target_actor": "actor-ha2fb66adea3a",
+              "text_param": 0,
+              "world_master_text_id": 30320
+            }
+          ],
+          "source_actor_equal_property_actor": true
+        }
+      ],
+      "capture": "party_battle_leve.pcapng",
+      "close_zero_write": {
+        "capture": "party_battle_leve.pcapng",
+        "direction": "s2c",
+        "event_kind": "property_write",
+        "frame_index": 823,
+        "frame_offset": 101615,
+        "inflated_offset": 336,
+        "inner_size": 20,
+        "lane": "main",
+        "lane_event_index": 2842,
+        "lane_index": 0,
+        "opcode": "0x0137",
+        "property": "cast_command_client",
+        "property_actor": "actor-had93fc3bcc1c",
+        "property_hash": "0xf683a451",
+        "record_index_in_packet": 2,
+        "source_actor": "actor-had93fc3bcc1c",
+        "subevent_index": 2,
+        "subevent_size": 168,
+        "target_actor": "actor-had93fc3bcc1c",
+        "value_u_le": 0,
+        "value_width": 4
+      },
+      "inclusive_interval_events": [
+        {
+          "capture": "party_battle_leve.pcapng",
+          "direction": "s2c",
+          "event_kind": "property_write",
+          "frame_index": 814,
+          "frame_offset": 100572,
+          "inflated_offset": 0,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 2816,
+          "lane_index": 0,
+          "opcode": "0x0137",
+          "property": "cast_command_client",
+          "property_actor": "actor-had93fc3bcc1c",
+          "property_hash": "0xf683a451",
+          "record_index_in_packet": 1,
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 0,
+          "subevent_size": 168,
+          "target_actor": "actor-had93fc3bcc1c",
+          "value_u_le": 27346,
+          "value_width": 4
+        },
+        {
+          "application_length": 16,
+          "capture": "party_battle_leve.pcapng",
+          "direction": "s2c",
+          "event_kind": "mode_update",
+          "field0_u24": 14752730,
+          "field3_u8": 96,
+          "field5_u8": 12,
+          "field7_u16": 0,
+          "frame_index": 815,
+          "frame_offset": 100665,
+          "inflated_offset": 0,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 2817,
+          "lane_index": 0,
+          "opcode": "0x0144",
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 0,
+          "subevent_size": 40,
+          "target_actor": "actor-had93fc3bcc1c"
+        },
+        {
+          "application_length": 56,
+          "capture": "party_battle_leve.pcapng",
+          "declared_row_capacity": 1,
+          "direction": "s2c",
+          "event_kind": "result_packet",
+          "frame_index": 815,
+          "frame_offset": 100665,
+          "header": {
+            "command_id": 27346,
+            "effect_or_animation_id": 1862270979,
+            "header_control_value": 0,
+            "presentation_flags": 2064,
+            "row_count": 1
+          },
+          "inflated_offset": 40,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 2818,
+          "lane_index": 0,
+          "opcode": "0x0139",
+          "rows": [
+            {
+              "effect_id": 1,
+              "numeric_value": 0,
+              "row_index_in_packet": 0,
+              "row_ordinal_or_filter": 1,
+              "target_actor": "actor-ha2fb66adea3a",
+              "text_param": 0,
+              "world_master_text_id": 30128
+            }
+          ],
+          "shape": "X01",
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 1,
+          "subevent_size": 88
+        },
+        {
+          "application_length": 16,
+          "capture": "party_battle_leve.pcapng",
+          "direction": "s2c",
+          "event_kind": "mode_update",
+          "field0_u24": 14752732,
+          "field3_u8": 0,
+          "field5_u8": 12,
+          "field7_u16": 0,
+          "frame_index": 822,
+          "frame_offset": 101526,
+          "inflated_offset": 0,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 2838,
+          "lane_index": 0,
+          "opcode": "0x0144",
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 0,
+          "subevent_size": 40,
+          "target_actor": "actor-had93fc3bcc1c"
+        },
+        {
+          "application_length": 56,
+          "capture": "party_battle_leve.pcapng",
+          "declared_row_capacity": 1,
+          "direction": "s2c",
+          "event_kind": "result_packet",
+          "frame_index": 822,
+          "frame_offset": 101526,
+          "header": {
+            "command_id": 27346,
+            "effect_or_animation_id": 16781413,
+            "header_control_value": 0,
+            "presentation_flags": 2064,
+            "row_count": 1
+          },
+          "inflated_offset": 40,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 2839,
+          "lane_index": 0,
+          "opcode": "0x0139",
+          "rows": [
+            {
+              "effect_id": 805306627,
+              "numeric_value": 166,
+              "row_index_in_packet": 0,
+              "row_ordinal_or_filter": 1,
+              "target_actor": "actor-ha2fb66adea3a",
+              "text_param": 0,
+              "world_master_text_id": 30320
+            }
+          ],
+          "shape": "X01",
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 1,
+          "subevent_size": 88
+        },
+        {
+          "capture": "party_battle_leve.pcapng",
+          "direction": "s2c",
+          "event_kind": "property_write",
+          "frame_index": 823,
+          "frame_offset": 101615,
+          "inflated_offset": 336,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 2842,
+          "lane_index": 0,
+          "opcode": "0x0137",
+          "property": "cast_command_client",
+          "property_actor": "actor-had93fc3bcc1c",
+          "property_hash": "0xf683a451",
+          "record_index_in_packet": 2,
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 2,
+          "subevent_size": 168,
+          "target_actor": "actor-had93fc3bcc1c",
+          "value_u_le": 0,
+          "value_width": 4
+        }
+      ],
+      "interpretation_boundary": "Wire order is reconstructed s2c order within one admitted lane; it does not prove CPU/UI order or user-action causality.",
+      "lane_index": 0,
+      "property": "cast_command_client",
+      "strict_intervening_events": [
+        {
+          "application_length": 16,
+          "capture": "party_battle_leve.pcapng",
+          "direction": "s2c",
+          "event_kind": "mode_update",
+          "field0_u24": 14752730,
+          "field3_u8": 96,
+          "field5_u8": 12,
+          "field7_u16": 0,
+          "frame_index": 815,
+          "frame_offset": 100665,
+          "inflated_offset": 0,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 2817,
+          "lane_index": 0,
+          "opcode": "0x0144",
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 0,
+          "subevent_size": 40,
+          "target_actor": "actor-had93fc3bcc1c"
+        },
+        {
+          "application_length": 56,
+          "capture": "party_battle_leve.pcapng",
+          "declared_row_capacity": 1,
+          "direction": "s2c",
+          "event_kind": "result_packet",
+          "frame_index": 815,
+          "frame_offset": 100665,
+          "header": {
+            "command_id": 27346,
+            "effect_or_animation_id": 1862270979,
+            "header_control_value": 0,
+            "presentation_flags": 2064,
+            "row_count": 1
+          },
+          "inflated_offset": 40,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 2818,
+          "lane_index": 0,
+          "opcode": "0x0139",
+          "rows": [
+            {
+              "effect_id": 1,
+              "numeric_value": 0,
+              "row_index_in_packet": 0,
+              "row_ordinal_or_filter": 1,
+              "target_actor": "actor-ha2fb66adea3a",
+              "text_param": 0,
+              "world_master_text_id": 30128
+            }
+          ],
+          "shape": "X01",
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 1,
+          "subevent_size": 88
+        },
+        {
+          "application_length": 16,
+          "capture": "party_battle_leve.pcapng",
+          "direction": "s2c",
+          "event_kind": "mode_update",
+          "field0_u24": 14752732,
+          "field3_u8": 0,
+          "field5_u8": 12,
+          "field7_u16": 0,
+          "frame_index": 822,
+          "frame_offset": 101526,
+          "inflated_offset": 0,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 2838,
+          "lane_index": 0,
+          "opcode": "0x0144",
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 0,
+          "subevent_size": 40,
+          "target_actor": "actor-had93fc3bcc1c"
+        },
+        {
+          "application_length": 56,
+          "capture": "party_battle_leve.pcapng",
+          "declared_row_capacity": 1,
+          "direction": "s2c",
+          "event_kind": "result_packet",
+          "frame_index": 822,
+          "frame_offset": 101526,
+          "header": {
+            "command_id": 27346,
+            "effect_or_animation_id": 16781413,
+            "header_control_value": 0,
+            "presentation_flags": 2064,
+            "row_count": 1
+          },
+          "inflated_offset": 40,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 2839,
+          "lane_index": 0,
+          "opcode": "0x0139",
+          "rows": [
+            {
+              "effect_id": 805306627,
+              "numeric_value": 166,
+              "row_index_in_packet": 0,
+              "row_ordinal_or_filter": 1,
+              "target_actor": "actor-ha2fb66adea3a",
+              "text_param": 0,
+              "world_master_text_id": 30320
+            }
+          ],
+          "shape": "X01",
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 1,
+          "subevent_size": 88
+        }
+      ],
+      "target_equality_checked": true
+    },
+    {
+      "actor_equality": "actor-had93fc3bcc1c",
+      "anchor_nonzero_write": {
+        "capture": "party_battle_leve.pcapng",
+        "direction": "s2c",
+        "event_kind": "property_write",
+        "frame_index": 3290,
+        "frame_offset": 404548,
+        "inflated_offset": 552,
+        "inner_size": 20,
+        "lane": "main",
+        "lane_event_index": 12254,
+        "lane_index": 0,
+        "opcode": "0x0137",
+        "property": "cast_command_client",
+        "property_actor": "actor-had93fc3bcc1c",
+        "property_hash": "0xf683a451",
+        "record_index_in_packet": 1,
+        "source_actor": "actor-had93fc3bcc1c",
+        "subevent_index": 3,
+        "subevent_size": 168,
+        "target_actor": "actor-had93fc3bcc1c",
+        "value_u_le": 27346,
+        "value_width": 4
+      },
+      "bounded_command_match_actor_equal_count": 2,
+      "bounded_command_match_count": 2,
+      "bounded_context_events": [
+        {
+          "application_length": 184,
+          "capture": "party_battle_leve.pcapng",
+          "declared_row_capacity": 10,
+          "direction": "s2c",
+          "event_kind": "result_packet",
+          "frame_index": 3290,
+          "frame_offset": 404548,
+          "header": {
+            "command_id": 27156,
+            "effect_or_animation_id": 302096389,
+            "header_control_value": 0,
+            "presentation_flags": 2064,
+            "row_count": 2
+          },
+          "inflated_offset": 336,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 12253,
+          "lane_index": 0,
+          "opcode": "0x013a",
+          "rows": [
+            {
+              "effect_id": 134219268,
+              "numeric_value": 50,
+              "row_index_in_packet": 0,
+              "row_ordinal_or_filter": 1,
+              "target_actor": "actor-hbf9b2276be1d",
+              "text_param": 4,
+              "world_master_text_id": 30301
+            },
+            {
+              "effect_id": 537093927,
+              "numeric_value": 0,
+              "row_index_in_packet": 1,
+              "row_ordinal_or_filter": 1,
+              "target_actor": "actor-hbf9b2276be1d",
+              "text_param": 4,
+              "world_master_text_id": 30335
+            }
+          ],
+          "shape": "X10",
+          "source_actor": "actor-ha2fb66adea3a",
+          "subevent_index": 2,
+          "subevent_size": 216
+        },
+        {
+          "capture": "party_battle_leve.pcapng",
+          "direction": "s2c",
+          "event_kind": "property_write",
+          "frame_index": 3290,
+          "frame_offset": 404548,
+          "inflated_offset": 552,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 12254,
+          "lane_index": 0,
+          "opcode": "0x0137",
+          "property": "cast_end_client",
+          "property_actor": "actor-had93fc3bcc1c",
+          "property_hash": "0x59c40d5d",
+          "record_index_in_packet": 0,
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 3,
+          "subevent_size": 168,
+          "target_actor": "actor-had93fc3bcc1c",
+          "value_u_le": 1356930498,
+          "value_width": 4
+        },
+        {
+          "capture": "party_battle_leve.pcapng",
+          "direction": "s2c",
+          "event_kind": "property_write",
+          "frame_index": 3290,
+          "frame_offset": 404548,
+          "inflated_offset": 552,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 12254,
+          "lane_index": 0,
+          "opcode": "0x0137",
+          "property": "cast_command_client",
+          "property_actor": "actor-had93fc3bcc1c",
+          "property_hash": "0xf683a451",
+          "record_index_in_packet": 1,
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 3,
+          "subevent_size": 168,
+          "target_actor": "actor-had93fc3bcc1c",
+          "value_u_le": 27346,
+          "value_width": 4
+        },
+        {
+          "application_length": 16,
+          "capture": "party_battle_leve.pcapng",
+          "direction": "s2c",
+          "event_kind": "mode_update",
+          "field0_u24": 14753216,
+          "field3_u8": 96,
+          "field5_u8": 12,
+          "field7_u16": 0,
+          "frame_index": 3291,
+          "frame_offset": 404733,
+          "inflated_offset": 0,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 12255,
+          "lane_index": 0,
+          "opcode": "0x0144",
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 0,
+          "subevent_size": 40,
+          "target_actor": "actor-had93fc3bcc1c"
+        },
+        {
+          "application_length": 56,
+          "capture": "party_battle_leve.pcapng",
+          "declared_row_capacity": 1,
+          "direction": "s2c",
+          "event_kind": "result_packet",
+          "frame_index": 3291,
+          "frame_offset": 404733,
+          "header": {
+            "command_id": 27346,
+            "effect_or_animation_id": 1862270979,
+            "header_control_value": 0,
+            "presentation_flags": 2064,
+            "row_count": 1
+          },
+          "inflated_offset": 40,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 12256,
+          "lane_index": 0,
+          "opcode": "0x0139",
+          "rows": [
+            {
+              "effect_id": 1,
+              "numeric_value": 0,
+              "row_index_in_packet": 0,
+              "row_ordinal_or_filter": 1,
+              "target_actor": "actor-had93fc3bcc1c",
+              "text_param": 0,
+              "world_master_text_id": 30128
+            }
+          ],
+          "shape": "X01",
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 1,
+          "subevent_size": 88
+        },
+        {
+          "application_length": 16,
+          "capture": "party_battle_leve.pcapng",
+          "direction": "s2c",
+          "event_kind": "mode_update",
+          "field0_u24": 14753216,
+          "field3_u8": 0,
+          "field5_u8": 0,
+          "field7_u16": 0,
+          "frame_index": 3295,
+          "frame_offset": 405133,
+          "inflated_offset": 560,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 12272,
+          "lane_index": 0,
+          "opcode": "0x0144",
+          "source_actor": "actor-he0bc7375daba",
+          "subevent_index": 5,
+          "subevent_size": 40,
+          "target_actor": "actor-had93fc3bcc1c"
+        },
+        {
+          "application_length": 40,
+          "capture": "party_battle_leve.pcapng",
+          "direction": "s2c",
+          "event_kind": "status_update",
+          "frame_index": 3295,
+          "frame_offset": 405133,
+          "inflated_offset": 600,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 12273,
+          "lane_index": 0,
+          "nonzero_status_ids": [],
+          "nonzero_status_slots": [],
+          "opcode": "0x0179",
+          "source_actor": "actor-he0bc7375daba",
+          "subevent_index": 6,
+          "subevent_size": 72,
+          "target_actor": "actor-had93fc3bcc1c"
+        },
+        {
+          "application_length": 16,
+          "capture": "party_battle_leve.pcapng",
+          "direction": "s2c",
+          "event_kind": "mode_update",
+          "field0_u24": 14753217,
+          "field3_u8": 0,
+          "field5_u8": 12,
+          "field7_u16": 0,
+          "frame_index": 3297,
+          "frame_offset": 405648,
+          "inflated_offset": 0,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 12282,
+          "lane_index": 0,
+          "opcode": "0x0144",
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 0,
+          "subevent_size": 40,
+          "target_actor": "actor-had93fc3bcc1c"
+        },
+        {
+          "application_length": 56,
+          "capture": "party_battle_leve.pcapng",
+          "declared_row_capacity": 1,
+          "direction": "s2c",
+          "event_kind": "result_packet",
+          "frame_index": 3297,
+          "frame_offset": 405648,
+          "header": {
+            "command_id": 27346,
+            "effect_or_animation_id": 2130706434,
+            "header_control_value": 0,
+            "presentation_flags": 2064,
+            "row_count": 1
+          },
+          "inflated_offset": 40,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 12283,
+          "lane_index": 0,
+          "opcode": "0x0139",
+          "rows": [
+            {
+              "effect_id": 0,
+              "numeric_value": 0,
+              "row_index_in_packet": 0,
+              "row_ordinal_or_filter": 1,
+              "target_actor": "actor-had93fc3bcc1c",
+              "text_param": 0,
+              "world_master_text_id": 30209
+            }
+          ],
+          "shape": "X01",
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 1,
+          "subevent_size": 88
+        },
+        {
+          "capture": "party_battle_leve.pcapng",
+          "direction": "s2c",
+          "event_kind": "property_write",
+          "frame_index": 3298,
+          "frame_offset": 405729,
+          "inflated_offset": 0,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 12284,
+          "lane_index": 0,
+          "opcode": "0x0137",
+          "property": "cast_command_client",
+          "property_actor": "actor-had93fc3bcc1c",
+          "property_hash": "0xf683a451",
+          "record_index_in_packet": 0,
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 0,
+          "subevent_size": 168,
+          "target_actor": "actor-had93fc3bcc1c",
+          "value_u_le": 0,
+          "value_width": 4
+        }
+      ],
+      "bounded_result_joins": [
+        {
+          "command_id": 27346,
+          "command_match": true,
+          "in_interval": true,
+          "locator": {
+            "capture": "party_battle_leve.pcapng",
+            "frame_index": 3291,
+            "inflated_offset": 40,
+            "lane_event_index": 12256,
+            "lane_index": 0,
+            "subevent_index": 1
+          },
+          "matching_command_witness": true,
+          "row_target_equal_property_actor": true,
+          "rows": [
+            {
+              "effect_id": 1,
+              "numeric_value": 0,
+              "row_index_in_packet": 0,
+              "row_ordinal_or_filter": 1,
+              "target_actor": "actor-had93fc3bcc1c",
+              "text_param": 0,
+              "world_master_text_id": 30128
+            }
+          ],
+          "source_actor_equal_property_actor": true
+        },
+        {
+          "command_id": 27346,
+          "command_match": true,
+          "in_interval": true,
+          "locator": {
+            "capture": "party_battle_leve.pcapng",
+            "frame_index": 3297,
+            "inflated_offset": 40,
+            "lane_event_index": 12283,
+            "lane_index": 0,
+            "subevent_index": 1
+          },
+          "matching_command_witness": true,
+          "row_target_equal_property_actor": true,
+          "rows": [
+            {
+              "effect_id": 0,
+              "numeric_value": 0,
+              "row_index_in_packet": 0,
+              "row_ordinal_or_filter": 1,
+              "target_actor": "actor-had93fc3bcc1c",
+              "text_param": 0,
+              "world_master_text_id": 30209
+            }
+          ],
+          "source_actor_equal_property_actor": true
+        }
+      ],
+      "capture": "party_battle_leve.pcapng",
+      "close_zero_write": {
+        "capture": "party_battle_leve.pcapng",
+        "direction": "s2c",
+        "event_kind": "property_write",
+        "frame_index": 3298,
+        "frame_offset": 405729,
+        "inflated_offset": 0,
+        "inner_size": 20,
+        "lane": "main",
+        "lane_event_index": 12284,
+        "lane_index": 0,
+        "opcode": "0x0137",
+        "property": "cast_command_client",
+        "property_actor": "actor-had93fc3bcc1c",
+        "property_hash": "0xf683a451",
+        "record_index_in_packet": 0,
+        "source_actor": "actor-had93fc3bcc1c",
+        "subevent_index": 0,
+        "subevent_size": 168,
+        "target_actor": "actor-had93fc3bcc1c",
+        "value_u_le": 0,
+        "value_width": 4
+      },
+      "inclusive_interval_events": [
+        {
+          "capture": "party_battle_leve.pcapng",
+          "direction": "s2c",
+          "event_kind": "property_write",
+          "frame_index": 3290,
+          "frame_offset": 404548,
+          "inflated_offset": 552,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 12254,
+          "lane_index": 0,
+          "opcode": "0x0137",
+          "property": "cast_command_client",
+          "property_actor": "actor-had93fc3bcc1c",
+          "property_hash": "0xf683a451",
+          "record_index_in_packet": 1,
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 3,
+          "subevent_size": 168,
+          "target_actor": "actor-had93fc3bcc1c",
+          "value_u_le": 27346,
+          "value_width": 4
+        },
+        {
+          "application_length": 16,
+          "capture": "party_battle_leve.pcapng",
+          "direction": "s2c",
+          "event_kind": "mode_update",
+          "field0_u24": 14753216,
+          "field3_u8": 96,
+          "field5_u8": 12,
+          "field7_u16": 0,
+          "frame_index": 3291,
+          "frame_offset": 404733,
+          "inflated_offset": 0,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 12255,
+          "lane_index": 0,
+          "opcode": "0x0144",
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 0,
+          "subevent_size": 40,
+          "target_actor": "actor-had93fc3bcc1c"
+        },
+        {
+          "application_length": 56,
+          "capture": "party_battle_leve.pcapng",
+          "declared_row_capacity": 1,
+          "direction": "s2c",
+          "event_kind": "result_packet",
+          "frame_index": 3291,
+          "frame_offset": 404733,
+          "header": {
+            "command_id": 27346,
+            "effect_or_animation_id": 1862270979,
+            "header_control_value": 0,
+            "presentation_flags": 2064,
+            "row_count": 1
+          },
+          "inflated_offset": 40,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 12256,
+          "lane_index": 0,
+          "opcode": "0x0139",
+          "rows": [
+            {
+              "effect_id": 1,
+              "numeric_value": 0,
+              "row_index_in_packet": 0,
+              "row_ordinal_or_filter": 1,
+              "target_actor": "actor-had93fc3bcc1c",
+              "text_param": 0,
+              "world_master_text_id": 30128
+            }
+          ],
+          "shape": "X01",
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 1,
+          "subevent_size": 88
+        },
+        {
+          "application_length": 16,
+          "capture": "party_battle_leve.pcapng",
+          "direction": "s2c",
+          "event_kind": "mode_update",
+          "field0_u24": 14753216,
+          "field3_u8": 0,
+          "field5_u8": 0,
+          "field7_u16": 0,
+          "frame_index": 3295,
+          "frame_offset": 405133,
+          "inflated_offset": 560,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 12272,
+          "lane_index": 0,
+          "opcode": "0x0144",
+          "source_actor": "actor-he0bc7375daba",
+          "subevent_index": 5,
+          "subevent_size": 40,
+          "target_actor": "actor-had93fc3bcc1c"
+        },
+        {
+          "application_length": 40,
+          "capture": "party_battle_leve.pcapng",
+          "direction": "s2c",
+          "event_kind": "status_update",
+          "frame_index": 3295,
+          "frame_offset": 405133,
+          "inflated_offset": 600,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 12273,
+          "lane_index": 0,
+          "nonzero_status_ids": [],
+          "nonzero_status_slots": [],
+          "opcode": "0x0179",
+          "source_actor": "actor-he0bc7375daba",
+          "subevent_index": 6,
+          "subevent_size": 72,
+          "target_actor": "actor-had93fc3bcc1c"
+        },
+        {
+          "application_length": 16,
+          "capture": "party_battle_leve.pcapng",
+          "direction": "s2c",
+          "event_kind": "mode_update",
+          "field0_u24": 14753217,
+          "field3_u8": 0,
+          "field5_u8": 12,
+          "field7_u16": 0,
+          "frame_index": 3297,
+          "frame_offset": 405648,
+          "inflated_offset": 0,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 12282,
+          "lane_index": 0,
+          "opcode": "0x0144",
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 0,
+          "subevent_size": 40,
+          "target_actor": "actor-had93fc3bcc1c"
+        },
+        {
+          "application_length": 56,
+          "capture": "party_battle_leve.pcapng",
+          "declared_row_capacity": 1,
+          "direction": "s2c",
+          "event_kind": "result_packet",
+          "frame_index": 3297,
+          "frame_offset": 405648,
+          "header": {
+            "command_id": 27346,
+            "effect_or_animation_id": 2130706434,
+            "header_control_value": 0,
+            "presentation_flags": 2064,
+            "row_count": 1
+          },
+          "inflated_offset": 40,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 12283,
+          "lane_index": 0,
+          "opcode": "0x0139",
+          "rows": [
+            {
+              "effect_id": 0,
+              "numeric_value": 0,
+              "row_index_in_packet": 0,
+              "row_ordinal_or_filter": 1,
+              "target_actor": "actor-had93fc3bcc1c",
+              "text_param": 0,
+              "world_master_text_id": 30209
+            }
+          ],
+          "shape": "X01",
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 1,
+          "subevent_size": 88
+        },
+        {
+          "capture": "party_battle_leve.pcapng",
+          "direction": "s2c",
+          "event_kind": "property_write",
+          "frame_index": 3298,
+          "frame_offset": 405729,
+          "inflated_offset": 0,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 12284,
+          "lane_index": 0,
+          "opcode": "0x0137",
+          "property": "cast_command_client",
+          "property_actor": "actor-had93fc3bcc1c",
+          "property_hash": "0xf683a451",
+          "record_index_in_packet": 0,
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 0,
+          "subevent_size": 168,
+          "target_actor": "actor-had93fc3bcc1c",
+          "value_u_le": 0,
+          "value_width": 4
+        }
+      ],
+      "interpretation_boundary": "Wire order is reconstructed s2c order within one admitted lane; it does not prove CPU/UI order or user-action causality.",
+      "lane_index": 0,
+      "property": "cast_command_client",
+      "strict_intervening_events": [
+        {
+          "application_length": 16,
+          "capture": "party_battle_leve.pcapng",
+          "direction": "s2c",
+          "event_kind": "mode_update",
+          "field0_u24": 14753216,
+          "field3_u8": 96,
+          "field5_u8": 12,
+          "field7_u16": 0,
+          "frame_index": 3291,
+          "frame_offset": 404733,
+          "inflated_offset": 0,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 12255,
+          "lane_index": 0,
+          "opcode": "0x0144",
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 0,
+          "subevent_size": 40,
+          "target_actor": "actor-had93fc3bcc1c"
+        },
+        {
+          "application_length": 56,
+          "capture": "party_battle_leve.pcapng",
+          "declared_row_capacity": 1,
+          "direction": "s2c",
+          "event_kind": "result_packet",
+          "frame_index": 3291,
+          "frame_offset": 404733,
+          "header": {
+            "command_id": 27346,
+            "effect_or_animation_id": 1862270979,
+            "header_control_value": 0,
+            "presentation_flags": 2064,
+            "row_count": 1
+          },
+          "inflated_offset": 40,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 12256,
+          "lane_index": 0,
+          "opcode": "0x0139",
+          "rows": [
+            {
+              "effect_id": 1,
+              "numeric_value": 0,
+              "row_index_in_packet": 0,
+              "row_ordinal_or_filter": 1,
+              "target_actor": "actor-had93fc3bcc1c",
+              "text_param": 0,
+              "world_master_text_id": 30128
+            }
+          ],
+          "shape": "X01",
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 1,
+          "subevent_size": 88
+        },
+        {
+          "application_length": 16,
+          "capture": "party_battle_leve.pcapng",
+          "direction": "s2c",
+          "event_kind": "mode_update",
+          "field0_u24": 14753216,
+          "field3_u8": 0,
+          "field5_u8": 0,
+          "field7_u16": 0,
+          "frame_index": 3295,
+          "frame_offset": 405133,
+          "inflated_offset": 560,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 12272,
+          "lane_index": 0,
+          "opcode": "0x0144",
+          "source_actor": "actor-he0bc7375daba",
+          "subevent_index": 5,
+          "subevent_size": 40,
+          "target_actor": "actor-had93fc3bcc1c"
+        },
+        {
+          "application_length": 40,
+          "capture": "party_battle_leve.pcapng",
+          "direction": "s2c",
+          "event_kind": "status_update",
+          "frame_index": 3295,
+          "frame_offset": 405133,
+          "inflated_offset": 600,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 12273,
+          "lane_index": 0,
+          "nonzero_status_ids": [],
+          "nonzero_status_slots": [],
+          "opcode": "0x0179",
+          "source_actor": "actor-he0bc7375daba",
+          "subevent_index": 6,
+          "subevent_size": 72,
+          "target_actor": "actor-had93fc3bcc1c"
+        },
+        {
+          "application_length": 16,
+          "capture": "party_battle_leve.pcapng",
+          "direction": "s2c",
+          "event_kind": "mode_update",
+          "field0_u24": 14753217,
+          "field3_u8": 0,
+          "field5_u8": 12,
+          "field7_u16": 0,
+          "frame_index": 3297,
+          "frame_offset": 405648,
+          "inflated_offset": 0,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 12282,
+          "lane_index": 0,
+          "opcode": "0x0144",
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 0,
+          "subevent_size": 40,
+          "target_actor": "actor-had93fc3bcc1c"
+        },
+        {
+          "application_length": 56,
+          "capture": "party_battle_leve.pcapng",
+          "declared_row_capacity": 1,
+          "direction": "s2c",
+          "event_kind": "result_packet",
+          "frame_index": 3297,
+          "frame_offset": 405648,
+          "header": {
+            "command_id": 27346,
+            "effect_or_animation_id": 2130706434,
+            "header_control_value": 0,
+            "presentation_flags": 2064,
+            "row_count": 1
+          },
+          "inflated_offset": 40,
+          "inner_size": 20,
+          "lane": "main",
+          "lane_event_index": 12283,
+          "lane_index": 0,
+          "opcode": "0x0139",
+          "rows": [
+            {
+              "effect_id": 0,
+              "numeric_value": 0,
+              "row_index_in_packet": 0,
+              "row_ordinal_or_filter": 1,
+              "target_actor": "actor-had93fc3bcc1c",
+              "text_param": 0,
+              "world_master_text_id": 30209
+            }
+          ],
+          "shape": "X01",
+          "source_actor": "actor-had93fc3bcc1c",
+          "subevent_index": 1,
+          "subevent_size": 88
+        }
+      ],
+      "target_equality_checked": true
+    }
+  ]
+}

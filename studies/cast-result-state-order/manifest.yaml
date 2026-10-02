@@ -1,0 +1,32 @@
+id: cast-result-state-order
+title: Cast Property and Result Wire Order
+evidence_class: packet-capture
+status: distilled
+tags:
+- packet-decoding
+- map-clientbound
+- cast-state
+search_hints:
+- castCommandClient
+- castEndClient
+- result wire order
+notes: >-
+  Sanitized connection-local cast property and result witnesses from the
+  complete retained retail capture corpus.
+source_refs:
+- source: pcap-1.23b
+primary_paths:
+- derived/accounting.json
+- derived/events.csv
+- derived/sequences.csv
+canonical_evidence:
+- derived/accounting.json
+- derived/events.csv
+- derived/sequences.csv
+distilled:
+  distilled: true
+  checksum_file: derived/checksums.sha256
+  distilled_artifacts:
+  - derived/accounting.json
+  - derived/events.csv
+  - derived/sequences.csv
