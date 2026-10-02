@@ -28,7 +28,7 @@ not establish native queue consumption, gauge visibility, or CPU execution
 order.
 
 The script consumer's conditional visibility behavior is documented in
-[the cast gauge lifecycle](https://github.com/XIVLegacy/xivl-client-scripts/blob/88e257218fe1719421081661190efb9ecf52ea6a/docs/cast-gauge-lifecycle.md).
+[the cast gauge lifecycle](https://github.com/XIVLegacy/xivl-client-scripts/blob/f82d2596059f169d52684cd32e9eea8f92750436/docs/cast-gauge-lifecycle.md).
 That script rule does not bind the captured actor to the local player or
 determine when queued results are displayed.
 
