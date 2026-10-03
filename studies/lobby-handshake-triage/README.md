@@ -2,7 +2,10 @@
 
 ## Study contents
 
-This bounded packet-capture study inventories the canonical session and zone-transition members that could contain a lobby or pre-zone handshake. It records the TLS-versus-raw classification, raw lobby ciphertext targets, and the confirmed capture-native decrypt recipe.
+This study examines the recorded sessions and zone transitions that could
+contain a lobby or pre-zone handshake. It distinguishes TLS from raw traffic,
+identifies lobby ciphertext, and documents the confirmed method for decrypting
+it from capture data.
 
 ## Start here
 

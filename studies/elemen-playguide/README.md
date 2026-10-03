@@ -1,10 +1,9 @@
 # eLeMeN FF14 1.x Play Guide - Weather Legend, Aethernet, Market Tax - Web Tables
 
-A full mirror of the eLeMeN - FF14 (`elemen.sakura.ne.jp`) `etc/playguide/`
-section - the game's play-guide (FAQ, lore, tutorial, plus a few structured data
-tables). All pages are transcribed verbatim. Six sets carry structured,
-cross-checkable evidence and are normalized into derived CSVs. The centerpiece is
-the **weather-icon legend**, which decodes the `[weatherN]` tokens left opaque in
+The eLeMeN - FF14 (`elemen.sakura.ne.jp`) `etc/playguide/` section contains
+FAQs, lore, tutorials, and structured tables. All pages are transcribed
+verbatim. Six sets of checkable data are also available as derived CSVs,
+including the weather-icon legend for the `[weatherN]` tokens used in
 `elemen-zone-guide`.
 
 ## Study contents

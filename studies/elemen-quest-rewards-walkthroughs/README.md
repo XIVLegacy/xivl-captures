@@ -1,10 +1,10 @@
 # eLeMeN FF14 1.x Quest EXP Rewards and Walkthroughs - Web Tables
 
-The web-unique slices of the eLeMeN - FF14 (`elemen.sakura.ne.jp`) quest section
-are the quest **EXP reward amounts** (server-side and largely absent from the
-client) and the per-quest **walkthroughs** (step order, prereq chain, reward
-patch-history). A client-first comparison found the rest of the section redundant with
-`xivl-client-data`; these are the parts that clear the bar.
+This study preserves quest EXP rewards and walkthroughs from eLeMeN - FF14
+(`elemen.sakura.ne.jp`). The walkthroughs cover step order, prerequisites,
+and changes to rewards across patches. EXP amounts are largely absent from
+the client; comparison found that the rest of the quest section repeated
+`xivl-client-data` records.
 
 ## Study contents
 

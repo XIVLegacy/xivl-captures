@@ -69,7 +69,7 @@ Published actor labels are capture-local tokens assigned in first-observed
 order. They preserve actor equality within a capture without publishing actor,
 session, endpoint, TCP sequence, or raw payload identifiers. Catalog item IDs,
 property hashes, decoded values, slots, and canonical lane/frame/subevent/row
-positions remain citation-grade packet facts.
+positions remain citable packet facts.
 
 ## Evidence gaps
 

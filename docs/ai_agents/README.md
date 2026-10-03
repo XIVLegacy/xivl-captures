@@ -67,7 +67,7 @@ docs/ai_agents/ is the tracked public policy tier. It contains only policy
 pages that have a subject in this repository. Do not add queues, prompts,
 working notes, or unfinished maintainer material to tracked docs.
 
-When a local note becomes citation-grade evidence, promote it into the
+When a local note becomes citable evidence, promote it into the
 relevant studies/<id>/ bundle or the appropriate public catalog guide. Keep
 its source identifiers, hashes, citations, dates, and evidence class intact.
 Remove superseded process notes from the public tree.

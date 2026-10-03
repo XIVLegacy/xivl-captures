@@ -1,10 +1,10 @@
 # eLeMeN FF14 1.x Shop Item-to-NPC Sales Edges - Web Tables
 
-The one web-unique slice of the eLeMeN - FF14 (`elemen.sakura.ne.jp`)
-`etc/shopitem/` section: the **item <-> selling-NPC sales edges** - which named
-NPC stocks which item. A client-first comparison found the item names and flat prices
-client-primary and the NPC roster already covered by `elemen-zone-guide`; the
-edge is the piece the client does not carry in decoded form.
+This study records which NPC sells each item in the eLeMeN - FF14
+(`elemen.sakura.ne.jp`) `etc/shopitem/` section. The client comparison already
+established item names and flat prices, while `elemen-zone-guide` covers the
+NPC roster. The item-to-seller relationships are not available in the decoded
+client data.
 
 ## Study contents
 

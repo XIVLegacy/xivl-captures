@@ -1,12 +1,11 @@
 # eLeMeN FF14 1.x Zone Guide - Weather, Aetheryte, Adjacency - Web Tables
 
-The web-unique slices of the eLeMeN - FF14 (`elemen.sakura.ne.jp`) `etc/area/`
-section: per-zone **weather runtime behavior**, **aetheryte teleport economy**,
-**adjacency + transport graph**, **service-NPC and shop-NPC rosters** with
-coords, and **sub-map patch-implementation dates**. A client-first comparison found
-the map geometry, shop item inventories, and gathering tables redundant with
-`xivl-client-data`; these are the parts the client does not carry in usable
-form. Full mirror of the web-unique content across all 28 area pages.
+The eLeMeN - FF14 (`elemen.sakura.ne.jp`) `etc/area/` pages describe zone
+weather, aetheryte teleport costs, connections and transport, service and shop
+NPCs with coordinates, and dates when sub-maps changed. This study preserves
+those details across all 28 area pages. Comparison found that map geometry,
+shop inventories, and gathering tables repeated `xivl-client-data`; the
+retained details were not available there in usable form.
 
 ## Study contents
 

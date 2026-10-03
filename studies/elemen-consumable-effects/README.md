@@ -1,12 +1,12 @@
 # eLeMeN FF14 1.x Food and Medicine Effect Magnitudes - Web Tables
 
-The web-unique slice of the eLeMeN - FF14 (`elemen.sakura.ne.jp`) `etc/food`
-(食事効果) and `etc/medicine` (薬品効果) sections: the **per-item effect
-magnitude specifications** for 1.x food and medicine. A client-first comparison found
-item names, category, effect duration, and recast time client-primary
-(`xtx_itemName`, `itemData`), and the effect magnitudes - percentage/cap stat
-buffs, recovery formulas, buff/debuff status specs - absent from any decoded
-client sheet. Those magnitudes are the payload. They are server-side tuning.
+The eLeMeN - FF14 (`elemen.sakura.ne.jp`) `etc/food` (食事効果) and
+`etc/medicine` (薬品効果) sections describe effect magnitudes for 1.x food
+and medicine: percentage bonuses, caps, recovery formulas, and buff/debuff
+status specifications. The decoded client sheets supply names, categories,
+effect durations, and recast times (`xtx_itemName`, `itemData`), but the
+comparison found no matching effect magnitudes. Those web-reported tuning
+values are the subject of this study.
 
 ## Study contents
 

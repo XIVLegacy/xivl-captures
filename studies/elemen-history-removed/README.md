@@ -1,11 +1,10 @@
 # eLeMeN FF14 1.x History - Removed-System Milestones - Web Tables
 
-The narrow historical slice of the eLeMeN - FF14 (`elemen.sakura.ne.jp`)
-`etc/history/` section: the **`現在は取得不可能` (currently unobtainable)**
-Lodestone History milestones - the records of removed systems and past content
-the client's achievement system does not preserve. A client-first comparison found the
-History feed's live progression ladders substance-redundant with the client
-achievement system. These records for removed systems are the part that clears the bar.
+This study preserves the **`現在は取得不可能` (currently unobtainable)**
+Lodestone History milestones from eLeMeN - FF14 (`elemen.sakura.ne.jp`),
+`etc/history/`. They describe removed systems and past content not preserved
+by the client achievement system. The comparison found that the History
+feed's current progression records repeated client achievement data.
 
 ## Study contents
 

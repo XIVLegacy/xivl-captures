@@ -2,10 +2,10 @@
 
 ## Study contents
 
-This run-once study searched every immutable member of the canonical 1.23b
-capture corpus for autotranslate phrase selections and for Map `0x0003` and
-World `0x00c9` chat packets. It records the complete search space, methods,
-specimen locators, bounded negative result, and evidence ceiling.
+Every immutable member of the canonical 1.23b capture corpus was searched for
+autotranslate phrase selections, Map `0x0003`, and World `0x00c9` chat
+packets. The study records the search scope, methods, specimen locators,
+and negative results, including what those results cannot establish.
 
 ## Start here
 
