@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regenerate or verify every generated catalog surface in dependency order."""
+"""Regenerate or verify all catalog outputs in dependency order."""
 
 from __future__ import annotations
 

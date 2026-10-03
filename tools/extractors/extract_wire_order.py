@@ -23,7 +23,7 @@ from extract_observations import (  # type: ignore
 
 
 class SubEvent:
-    """One actor-wrapped game sub-event, with the fields order questions need."""
+    """One actor-wrapped game sub-event with fields needed to inspect wire order."""
 
     __slots__ = ("index", "frame", "direction", "opcode", "sourceId")
 

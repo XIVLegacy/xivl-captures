@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Census c2s wire evidence for guildleve journal command 24241."""
+"""Collect c2s wire observations for guildleve journal command 24241."""
 
 from __future__ import annotations
 

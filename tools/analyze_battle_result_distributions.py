@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Stage 2 distributions and outcome-matched comparison sets."""
+"""Build battle-result distributions and comparison sets with matching outcomes."""
 
 from __future__ import annotations
 

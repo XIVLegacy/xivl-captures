@@ -38,7 +38,7 @@ def classify_offset(values: list[int]) -> dict:
 
 
 def group_runs(per_offset: list[dict]) -> list[dict]:
-    """Merge consecutive offsets with the same role+value into a single run."""
+    """Merge consecutive offsets with the same role and value into one run."""
     runs: list[dict] = []
     for offset, info in enumerate(per_offset):
         if not runs:

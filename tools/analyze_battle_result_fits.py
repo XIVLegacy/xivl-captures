@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Stage 3 descriptive fits from strict battle-result matched sets."""
+"""Build descriptive fits from strictly matched battle-result sets."""
 
 from __future__ import annotations
 
