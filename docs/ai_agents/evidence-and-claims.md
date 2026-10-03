@@ -31,7 +31,7 @@ inputs and class for a generated or promoted product. Catalog views are the
 discovery layer, not independent evidence.
 
 Repository code, tests, schemas, and docs establish this repository's storage
-and regeneration contracts. They do not by themselves prove retail behavior.
+and regeneration contracts. They alone do not prove retail behavior.
 Agent output, summaries, search snippets, and unattributed statements are
 leads. Inspect the underlying source, study, or dataset before promoting a
 fact.
@@ -63,10 +63,8 @@ Figures that carry the claim stay verbatim. Row counts, coverage ratios, per-fil
 sizes and hashes, offsets, and extraction diffs are the claim itself - the
 sentence exists to state them. Removing one destroys evidence.
 
-Incidental figures go and the claim stays. When the sentence is about
-something else, a count is throat-clearing: it tells the reader nothing they
-can act on, and it invites doubt when their own run differs by one. Keep what
-was found. Drop the size of the haystack.
+Omit counts that do not support the claim. They add maintenance work
+without helping the reader assess the finding.
 
 Useful rounded quantities and supported estimates may remain when they carry
 an observation's claim. State the method, resolution, or bound where material;

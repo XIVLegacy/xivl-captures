@@ -1,11 +1,10 @@
 # eLeMeN FF14 1.x Site Archive - HTML Mirror of Digested Sections
 
-A consolidated verbatim HTML mirror of the eLeMeN - FF14
-(`elemen.sakura.ne.jp/ff14_dated_archives/`) sections represented in this archive,
-preserved at their true site paths. eLeMeN is the fragile fan site that preserves
-the final 1.x (patch 1.23b) data at the 2012-11-11 world-down and is the primary
-source behind every `elemen-*` set. This archive is its preservation and provenance
-copy so the source cannot vanish.
+This archive preserves the represented eLeMeN - FF14 sections at their
+original HTML paths under `elemen.sakura.ne.jp/ff14_dated_archives/`. The fan
+site records final 1.x (patch 1.23b) data at the 2012-11-11 shutdown and is the
+source for every `elemen-*` set. This copy preserves the pages and their
+provenance independently of the live site.
 
 ## Study contents
 

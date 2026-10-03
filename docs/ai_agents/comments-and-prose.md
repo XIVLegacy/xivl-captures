@@ -5,10 +5,9 @@ the default. Keep a comment only when it records a current invariant, a
 client or wire fact, an evidence citation, a safety constraint, or an API or
 tool contract that names and types cannot show.
 
-Compress a survivor to one line at the use site when possible. Move a longer
+Shorten a retained comment to one line at the use site when possible. Move a longer
 contract to a public documentation page, a study-derived note, or a canonical
-declaration and leave a short pointer. Branch-time narration and review
-scaffolding are removed before merge. When unsure, keep one line and flag the
+declaration and leave a short pointer. Remove temporary implementation and review notes before merge. When unsure, keep one line and flag the
 decision in review notes.
 
 Comment length and punctuation are style guidelines. Clarity, correctness,
@@ -63,8 +62,8 @@ Delete code narration:
 
 ## Authored public prose
 
-Public tier prose, meaning the README, the docs index, and any
-page a stranger reads, uses a plain, direct register.
+Write public documentation in plain language. Name the file, operation,
+result, or remaining question directly.
 
 All tracked authored prose and structured descriptions state current evidence or
 contracts. They are not prompts, assignments, review summaries, checkout state,
@@ -76,8 +75,9 @@ batch-processing history. Retain dates that belong to external source or
 provenance metadata, actual evidence observations or captures, retail build or
 source identity, legal metadata, or required vendor artifact names.
 
-- Avoid over-hyphenation and invented compound modifiers. Established
-  technical terms keep their hyphens.
+- Avoid awkward compounds and strings of modifiers. Rewrite the sentence
+  rather than joining more words with hyphens. Preserve established technical
+  terms, identifiers, and quoted source text.
 - Use semicolons sparingly, preferring periods, commas, or short lists.
 - Cut parenthetical asides. If the aside matters, make it a short sentence
   of its own. If it does not, delete it.

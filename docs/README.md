@@ -1,4 +1,4 @@
-# Public Capture Documentation
+# Documentation
 
 Public documentation for `xivl-captures` starts with the catalog. Open the
 relevant source or study bundle for its manifest, provenance, and findings.
@@ -18,8 +18,7 @@ relevant source or study bundle for its manifest, provenance, and findings.
   rules for this repository.
 - [Evidence and claims](ai_agents/evidence-and-claims.md) - evidence classes,
   provenance, and claim boundaries.
-- [Comments and prose](ai_agents/comments-and-prose.md) - the deletion-default
-  doctrine for code and manifest comments.
+- [Comments and prose](ai_agents/comments-and-prose.md) - rules for code and manifest comments.
 - [Retail input validation](ai_agents/retail-input-validation.md) - the
   restricted PCAP corpus check and its claim limits.
 
@@ -76,5 +75,5 @@ relevant source or study bundle for its manifest, provenance, and findings.
 ## Promoted study note
 
 - [Elemen client cross-check](../studies/elemen-bestiary/derived/client-crosscheck.md)
-  - citation-grade method and findings for joining eLeMeN fields to the 1.23b
+  - citable method and findings for joining eLeMeN fields to the 1.23b
     client data used by the `elemen-bestiary` study.

@@ -11,7 +11,7 @@ battle basics and passive/active mode, setting actions to the action bar,
 trading, Disciple of the Hand stats, and more (see `derived/index.md` for the
 per-column topics).
 
-Provides first-party reference material for downstream consumer onboarding.
+These official guides describe how new players were introduced to the game.
 
 **Evidence tier.** First-party SE tips of design **intent** - stronger than
 community wiki, but observed packet/video still outranks it for runtime values.
@@ -37,7 +37,7 @@ This content overlaps the manual's how-to-play material.
 
 ## Promoted conclusions
 
-The transcribed columns are registered as first-party onboarding source material
+The transcribed columns are registered as official guides for new players
 for downstream consumers. No runtime behavior conclusion is promoted from this
 study. That requires corroboration against the manual, client, or captures.
 

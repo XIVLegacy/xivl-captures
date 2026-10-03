@@ -1,8 +1,7 @@
 <h1 align="center">XIVLegacy Captures</h1>
 
 <p align="center">
-Retail packet captures, decoded products, and research studies for<br>
-Final Fantasy XIV 1.23b.
+Packet captures, historical sources, and research studies for Final Fantasy XIV 1.23b.
 </p>
 
 <p align="center">
@@ -11,18 +10,12 @@ Final Fantasy XIV 1.23b.
 <a href="https://github.com/XIVLegacy/xivl-captures/actions/workflows/checks.yml"><img src="https://github.com/XIVLegacy/xivl-captures/actions/workflows/checks.yml/badge.svg" alt="Checks"></a>
 </p>
 
-## About
+Start with the [catalog guide](docs/catalog-guide.md) to find a source or study
+and check what its evidence supports.
 
-This repository catalogs retail packet captures, decoded products, web source
-transcriptions, and research studies for Final Fantasy XIV 1.23b.
-
-## Documentation
-
-- [Documentation home](docs/README.md)
-- [Evidence and claims](docs/ai_agents/evidence-and-claims.md)
-- [Catalog and evidence](docs/catalog-guide.md)
+- [Documentation](docs/README.md)
 - [Packet decoding and wire order](docs/pcap-decoding.md)
-- [Tooling and regeneration](tools/README.md)
+- [Tools and regeneration](tools/README.md)
 
 ## License
 

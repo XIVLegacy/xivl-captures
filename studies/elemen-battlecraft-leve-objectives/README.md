@@ -1,11 +1,10 @@
 # eLeMeN FF14 1.x Regional Battlecraft Leve Objectives - Web Tables
 
-The web-unique slice of the eLeMeN - FF14 (`elemen.sakura.ne.jp`) regional
-battlecraft guildleve pages: the readable **objective choreography** per leve
-(wave structure, spawns, flee/add behavior, lottery and item-gated mechanics),
-joined to the client leve id. A client-first comparison of the whole guildleve
-section found everything else redundant with the client. This is the one part
-that clears the bar.
+These eLeMeN - FF14 (`elemen.sakura.ne.jp`) guildleve records describe
+objectives, waves, spawns, fleeing enemies, reinforcements, lotteries, and
+item requirements. Each record is joined to a client leve id. Comparison
+with the client found that the rest of the guildleve section repeated client
+data; this study retains the objective details that comparison did not recover.
 
 ## Study contents
 

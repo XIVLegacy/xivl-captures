@@ -1,8 +1,7 @@
 # Catalog and Evidence
 
-This page is the public consumer map for the evidence layers in
-`xivl-captures`. It explains where to discover a finding, which evidence
-class supports it, and which tree owns the durable artifact.
+Use this guide to find sources and studies, understand their evidence classes,
+and locate the files that hold each finding.
 
 ## Discovery layer
 
@@ -12,14 +11,14 @@ class supports it, and which tree owns the durable artifact.
   their current public homes.
 - `catalog/by-content-kind.md`, `catalog/by-zone.md`, `catalog/by-system.md`,
   `catalog/by-progression.md`, and `catalog/by-city-state.md` are generated
-  axis views for browsing the registry.
+  views of the registry grouped by topic.
 - `catalog/scenarios/<id>/` contains the generated pcap scenario views. These
   views join the local numeric observations with the promoted opcode-name
   snapshot while keeping the scenario ids stable.
 - [`docs/pcap-decoding.md`](pcap-decoding.md) explains how to interpret the
   packet framing, lane products, nested event fields, and stream-order limits.
 
-The catalog is a discovery and projection layer. Source and study manifests,
+Use the catalog to browse summarized evidence. Source and study manifests,
 dataset sidecars, and pipeline declarations remain the authoritative inputs for
 the generated views.
 

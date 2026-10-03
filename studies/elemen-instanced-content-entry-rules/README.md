@@ -1,13 +1,12 @@
 # eLeMeN FF14 1.x Instanced-Content Entry Rules - Web Tables
 
-The one web-unique slice of the eLeMeN - FF14 (`elemen.sakura.ne.jp`)
-`gamecontents/` section: the **entry-rule parameters** for 1.x instanced content -
-the 4 instanced raids, the primal battles (Hard/Extreme tiers), and the 5
-open-world stronghold fields. A client-first comparison of the full `gamecontents/`
-section found everything else client-redundant (Materia value grid = `materia.csv`
-exact; Grand Company ranks/seals = `gcRank`/`gcSealShopItem`) or video-breakdown
-territory (per-boss strategy prose). The entry gates - level/party/time/re-challenge -
-are the piece the client does not decode.
+The eLeMeN - FF14 (`elemen.sakura.ne.jp`) `gamecontents/` pages list entry
+requirements for the 4 instanced raids, primal battles at Hard/Extreme tiers,
+and 5 open-world stronghold fields. This study retains their level, party,
+time, and re-challenge requirements, which the client comparison did not
+recover. The Materia grid matched `materia.csv`, and Grand Company ranks and
+seals matched `gcRank`/`gcSealShopItem`. Boss strategy prose belongs in video
+studies rather than these entry-rule tables.
 
 ## Study contents
 

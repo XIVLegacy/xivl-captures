@@ -1,8 +1,8 @@
 # Capture Repository Tools
 
-Canonical scripts that validate, regenerate, and mine the tracked capture
-products (`catalog/`, `derived/`, `studies/`). Edit a script or its input
-manifest, never a generated output by hand, then regenerate.
+These scripts validate, regenerate, and analyze the capture products in
+`catalog/`, `derived/`, and `studies/`. Edit a script or its input manifest,
+then regenerate the output. Do not edit generated files by hand.
 
 ## Validation
 
