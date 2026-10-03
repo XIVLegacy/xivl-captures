@@ -1,8 +1,6 @@
-# FFXIV 1.0 (1.23b) action-surface names: spells, weaponskills, abilities,
-# statuses, and enemy commands. The validator's --recall pass treats these as
-# action surface (a reviewer notes them, but they are not set-findability
-# anchors), so it does not flag them as missing search_hints. Findability is by
-# NPC / enemy / zone / item name, not by ability name.
+# FFXIV 1.0 (1.23b) spells, weaponskills, abilities, statuses, and enemy commands.
+# The validator's --recall pass excludes these names from missing search_hints.
+# NPC, enemy, zone, and item names identify capture sets; action names do not.
 #
 # This is a hand-seeded starter drawn from the first sets. Regenerate/extend from
 # the localized command-name strings in xivl-client-data/csv/xtx_command.csv

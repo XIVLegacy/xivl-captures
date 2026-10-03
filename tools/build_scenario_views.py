@@ -207,7 +207,7 @@ def sha256_file(path: Path) -> str:
 
 
 def member_stats(members: list[str], inv: dict) -> dict:
-    """Per-member size/sha/opcode rollup, all from disk + the local join."""
+    """Summarize each member's size, SHA, and opcodes from disk and the local join."""
     stats = {}
     manifest_members = {
         item["file"]: item for item in (load_corpus_manifest().get("members") or [])

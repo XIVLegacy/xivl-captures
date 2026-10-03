@@ -14,7 +14,7 @@ DATA_DIR = REPO_ROOT / "derived"
 
 
 def write_json(path, obj) -> None:
-    """Write indent-2 UTF-8 JSON with LF and one trailing newline."""
+    """Write UTF-8 JSON with two-space indentation and one trailing LF."""
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8", newline="") as f:

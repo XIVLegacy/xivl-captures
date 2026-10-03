@@ -65,7 +65,7 @@ def _ascii_strings(b: bytes, minlen: int = 3) -> list[str]:
 
 
 def walk_capture_spawns(path: Path) -> list[dict]:
-    """One record per (actorId) with a position, for a single capture."""
+    """Return one record per actorId with an observed position in this capture."""
     pos: dict[int, tuple[float, float, float, float]] = {}
     inst: dict[int, tuple[str, str, str, str]] = {}
     add: set[int] = set()
