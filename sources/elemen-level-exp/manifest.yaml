@@ -15,7 +15,7 @@ storage:
     file: elemen-level-exp-objects.zip
     sha256: 02a2c7c9e80dc2547b91857a1b8c3783d50ca0a5f45a60691935f52e99c42d18
     size_bytes: 2773
-    holds: all 1 files under objects/, deflate, fixed timestamps
+    holds: "1 file under objects/; deflate compression and fixed timestamps"
     cold_store_path: archives/elemen-level-exp/elemen-level-exp-objects.zip
 members:
 - file: pages/level-exp.md

@@ -284,7 +284,7 @@ scenarios:
   - movement
   - locomotion
   - position-update
-  blurb: Two player-locomotion recordings around Gridania (position-update traffic).
+  blurb: "Two player movement recordings around Gridania (position-update traffic)."
   members:
   - move_around_gridania.pcapng
   - moving_around_gridania.pcapng
@@ -416,10 +416,7 @@ scenarios:
   - journal
   - quest-update
   blurb: "Generic quest-state captures: accepting a quest, the quest journal projection, and a quest update."
-  caveat: >-
-    content_kind side-quest is the generic quest-state reading; the captures do
-    not identify the specific quest, so it could be a class/job/story quest.
-    Refine if the quest is identified.
+  caveat: 'content_kind side-quest is the generic quest-state reading; the captures do not identify the specific quest, so it could be a class/job/story quest. The quest identity remains unresolved.'
   members:
   - accept_quest.pcapng
   - quest_journal.pcapng
@@ -433,11 +430,7 @@ scenarios:
   - quest-update
   - war-quest
   blurb: "A three-part quest-update sequence captured from the `war_quest` scenario."
-  caveat: >-
-    The `war_quest` filename is read here as a Warrior job questline, hence
-    content_kind job-quest / progression_track job-quest. This is a filename
-    inference only - not confirmed against the quest data - and could instead be
-    a story or other quest. Refine when the quest is identified.
+  caveat: 'The `war_quest` filename is read here as a Warrior job questline, hence content_kind job-quest / progression_track job-quest. This is a filename inference only - not confirmed against the quest data - and could instead be a story or other quest. The quest identity remains unresolved.'
   members:
   - war_quest_update1.pcapng
   - war_quest_update2.pcapng

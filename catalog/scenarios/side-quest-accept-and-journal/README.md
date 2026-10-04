@@ -36,8 +36,8 @@ This view summarizes opcode evidence from packet captures.
   `derived/payload_layouts.json`).
 - Service split across members: map 37.
 - Caveat: content_kind side-quest is the generic quest-state reading; the captures do
-  not identify the specific quest, so it could be a class/job/story quest. Refine if the
-  quest is identified.
+  not identify the specific quest, so it could be a class/job/story quest. The quest
+  identity remains unresolved.
 
 ## Using this view
 

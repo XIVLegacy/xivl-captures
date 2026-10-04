@@ -17,11 +17,7 @@ search_hints:
 - autotranslate selection
 - chat relay
 - bounded absence
-notes: >-
-  Run-once exhaustive search of the canonical 54-member 1.23b capture corpus.
-  Chat-relay specimens were found and decoded. No terminator-bearing match was
-  found for any of 9,048 tested fixed-phrase selector encodings. The tested
-  02 1d marker and selector encodings remain unverified hypotheses.
+notes: 'Exhaustive search of the canonical 54-member 1.23b capture corpus. Chat-relay specimens were found and decoded. No terminator-bearing match was found for any of 9,048 tested fixed-phrase selector encodings. The tested 02 1d marker and selector encodings remain unverified hypotheses.'
 source_refs:
 - source: pcap-1.23b
   citation: sources/pcap-1.23b/manifest.yaml

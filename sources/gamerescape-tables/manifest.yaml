@@ -26,12 +26,12 @@ provenance:
     title: Gamer Escape FFXIV wiki - 1.0 Infobox NPC pages
     url: https://ffxiv.gamerescape.com/wiki/Baderon_Tenfingers
     site: Gamer Escape - Final Fantasy XIV wiki
-    note: 'The 1,335 Infobox NPC pages in the same corpus as ge-mob-pages, the largest template family in it and the last one unmined. Best provenance of any GE source in this set: 263 pages were last edited in 2010, contemporaneous with 1.0''s launch, and none after 2012. They feed npcs.csv - race, clan, gender, occupation, affiliation, zone, coordinates and shop inventory, none of which the client ships - and npc-client-crosscheck.csv. The prose params Dialogue, Notes and Biography are excluded as verbatim GE prose, per the same register rule as the family pages.'
+    note: 'The 1,335 Infobox NPC pages in the same corpus as ge-mob-pages, the largest template family in it. Of these, 263 pages were last edited in 2010, contemporaneous with 1.0''s launch, and none after 2012. They feed npcs.csv - race, clan, gender, occupation, affiliation, zone, coordinates and shop inventory, none of which the client ships - and npc-client-crosscheck.csv. The prose params Dialogue, Notes and Biography are excluded as verbatim GE prose, per the same register rule as the family pages.'
   - key: ge-quest-pages
     title: Gamer Escape FFXIV wiki - 1.x Infobox Quest pages
     url: https://ffxiv.gamerescape.com/wiki/Futures_Perfect
     site: Gamer Escape - Final Fantasy XIV wiki
-    note: 'The 273 Infobox Quest pages inside the same wikitext corpus as ge-mob-pages. They matter because every one of them was last edited in 2011 or 2012, which makes them the only GE material in this set unambiguously contemporaneous with 1.x - better provenance than the ARR-era ge-terminology-pages. They feed mob-quest-attribution.csv, which stores the quest and its revision id for each undocumented client mob name a quest mentions. Only that attribution is stored: the register excludes verbatim GE prose, and these pages are walkthrough prose throughout.'
+    note: 'The 273 Infobox Quest pages inside the same wikitext corpus as ge-mob-pages. Every page was last edited in 2011 or 2012, making them the only GE material in this set unambiguously contemporaneous with 1.x. The ge-terminology-pages are ARR-era. They feed mob-quest-attribution.csv, which stores the quest and its revision id for each undocumented client mob name a quest mentions. Only that attribution is stored: the register excludes verbatim GE prose, and these pages are walkthrough prose throughout.'
   - key: ge-terminology-pages
     title: Gamer Escape FFXIV wiki - mob behavior code templates and terminology pages
     url: https://ffxiv.gamerescape.com/wiki/Template:Mob_Notes-S
