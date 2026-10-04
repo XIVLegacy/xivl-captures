@@ -1,4 +1,4 @@
-# War Quest Updates - Evidence Map
+# Warrior - Pride and Duty Updates - Evidence Map
 
 This map joins two repository-owned products:
 
@@ -109,4 +109,4 @@ Union across the member captures. `name` is the derived/opcode_names.json entry 
 ## Gaps / caveats
 
 - Opcode identity and framing only; decoded payload field semantics live in this repo's `derived/` (payload_layouts.json and friends).
-- The `war_quest` filename is read here as a Warrior job questline, hence content_kind job-quest / progression_track job-quest. This is a filename inference only - not confirmed against the quest data - and could instead be a story or other quest. The quest identity remains unresolved.
+- update1 calls processEventCurious; update3 calls processEventClear and processEventJob. These handlers occur in quest/scenario/war/war0j1.lua, the first Warrior job quest script. update2 is the middle capture in the same recording series. The quest title is retained in studies/elemen-quest-rewards-walkthroughs/derived/quest-walkthroughs.csv, client_quest_id 111201.
