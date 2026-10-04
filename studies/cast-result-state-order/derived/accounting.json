@@ -4244,7 +4244,7 @@
     },
     "manifest": {
       "path": "sources/pcap-1.23b/manifest.yaml",
-      "sha256": "6023da8a8409b22fd9702be2baf9da2ec88e506a48cd66582809f30d3a51ba8c"
+      "sha256": "baaa15f99f7f5d865bf2ec0dbcc1e454d034382b0559edccb0085c57c4061cf5"
     },
     "native_cast_contract": {
       "path": "manifests/cast_chant_presentation.json#activeCastGauge.properties",

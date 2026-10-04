@@ -422,15 +422,15 @@ scenarios:
   - quest_journal.pcapng
   - quest_update.pcapng
 - id: job-quest-war-updates
-  title: War Quest Updates
+  title: Warrior - Pride and Duty Updates
   content_kind: job-quest
   progression_track: job-quest
   tags:
   - quest
   - quest-update
   - war-quest
-  blurb: "A three-part quest-update sequence captured from the `war_quest` scenario."
-  caveat: 'The `war_quest` filename is read here as a Warrior job questline, hence content_kind job-quest / progression_track job-quest. This is a filename inference only - not confirmed against the quest data - and could instead be a story or other quest. The quest identity remains unresolved.'
+  blurb: "Three captures of the Warrior job quest Pride and Duty (Will Take You from the Mountain)."
+  caveat: 'update1 calls processEventCurious; update3 calls processEventClear and processEventJob. These handlers occur in quest/scenario/war/war0j1.lua, the first Warrior job quest script. update2 is the middle capture in the same recording series. The quest title is retained in studies/elemen-quest-rewards-walkthroughs/derived/quest-walkthroughs.csv, client_quest_id 111201.'
   members:
   - war_quest_update1.pcapng
   - war_quest_update2.pcapng

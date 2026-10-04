@@ -2395,7 +2395,7 @@ scenarios:
   - inventory
   - open gear menu
 - id: job-quest-war-updates
-  title: War Quest Updates
+  title: Warrior - Pride and Duty Updates
   content_kind: job-quest
   progression_track: job-quest
   tags:
