@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://xivlegacy.local/xivl-captures/schemas/dataset-meta.schema.json",
   "title": "Dataset metadata sidecar",
-  "description": "Validates data/*.meta.yaml.",
+  "description": "Validates derived/*.meta.yaml.",
   "type": "object",
   "properties": {
     "dataset": { "$ref": "#/$defs/id48" },
@@ -98,7 +98,7 @@
   "$defs": {
     "id48": {
       "type": "string",
-      "description": "Dataset ids match data/*.json filenames (snake_case), so unlike source/study ids this allows underscores.",
+      "description": "Dataset ids match derived/*.json filenames and allow underscores.",
       "pattern": "^[a-z0-9][a-z0-9_.-]{0,47}$"
     },
     "sha256": {

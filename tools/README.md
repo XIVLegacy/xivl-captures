@@ -13,6 +13,23 @@ Ruff 0.15.21 is the formatter and linter for authored Python. Run
 `ruff format --check --no-cache tools` and `ruff check --no-cache tools` before
 submitting tool changes.
 
+### Schema ownership
+
+| Contract | Records | Validation owner |
+|---|---|---|
+| [`source.schema.json`](../schemas/source.schema.json) | `sources/*/manifest.yaml` | `validate_schemas.py`; source identity and member hashes remain in the manifest. |
+| [`study.schema.json`](../schemas/study.schema.json) | `studies/*/manifest.yaml` | `validate_schemas.py`; source references and primary paths are checked separately. |
+| [`dataset-meta.schema.json`](../schemas/dataset-meta.schema.json) | `derived/*.meta.yaml` | `build_dataset_meta.py --check` verifies sidecar hashes and regeneration; `validate_schemas.py` checks shape, evidence class, dataset IDs, filenames, and pairing. |
+| [`pipeline.schema.json`](../schemas/pipeline.schema.json) | `pipelines/*.yaml` | `validate_schemas.py` checks shape, runner paths, and output ownership. |
+| Study census schemas | The corresponding study's `derived/*.json` | `validate_schemas.py` and the owning extractor's tests; the status-wire census schema is exercised by `test_extract_status_wire_census.py`. |
+| [`navmut-observation.schema.json`](../schemas/navmut-observation.schema.json) | Individual Navmut JSONL observations | A record-shape reference. `import_navmut_observations.py` owns intake validation, including finite coordinates, UTC timestamps, duplicate IDs, and exact input pins. |
+| Retail input and attestation schemas | `config/` grants, checks, and attestations | `validate_schemas.py`, `verify_retail_pcap.py`, and their contract tests. |
+
+The fixed counts and identities in study census schemas constrain a named
+retained result; they are not general limits on the protocol. Notes in source
+and study records carry evidence or interpretation. In Navmut observations,
+notes also inform the importer's provisional encounter classification.
+
 ## Human entry points
 
 The supported commands for direct maintainer use are:
