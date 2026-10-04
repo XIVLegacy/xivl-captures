@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://xivlegacy.local/xivl-captures/schemas/study.schema.json",
-  "title": "Stage-3 study manifest",
-  "description": "Validates studies/*/manifest.yaml. The validator skips this schema entirely when studies/ does not exist in the repo.",
+  "title": "Study manifest",
+  "description": "Validates studies/*/manifest.yaml.",
   "type": "object",
   "properties": {
     "id": { "$ref": "#/$defs/id48" },

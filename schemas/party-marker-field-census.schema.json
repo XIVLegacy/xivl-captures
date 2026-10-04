@@ -105,7 +105,7 @@
       "properties": {
         "consecutive_lane_pairs": {"const": 554},
         "outer_delta_buckets": {"const": {"1000-4999": 6, "5000-29999": 548}},
-        "frame_delta_distribution": {"type": "object", "propertyNames": {"pattern": "^[0-9]+$"}, "additionalProperties": {"type": "integer", "minimum": 1}},
+        "frame_delta_distribution": {"$ref": "#/$defs/frequencyMap"},
         "exact_outer_values_published": {"const": false},
         "exact_capture_times_published": {"const": false}
       }
@@ -125,6 +125,7 @@
   },
   "additionalProperties": false,
   "$defs": {
+    "frequencyMap": {"type": "object", "propertyNames": {"pattern": "^[0-9]+$"}, "additionalProperties": {"type": "integer", "minimum": 1}},
     "countMap": {"type": "object", "propertyNames": {"pattern": "^[a-z0-9-]+$"}, "additionalProperties": {"type": "integer", "minimum": 0}},
     "offsetCountMap": {"type": "object", "minProperties": 40, "maxProperties": 40, "propertyNames": {"pattern": "^\\+0x[0-9a-f]{2}$"}, "additionalProperties": {"type": "integer", "minimum": 0, "maximum": 769}},
     "integerProfile": {
@@ -139,7 +140,7 @@
         "all_ones_sentinel_count": {"type": "integer", "minimum": 0},
         "unsigned_magnitude_distribution": {"$ref": "#/$defs/countMap"},
         "signed_sign_distribution": {"type": "object", "additionalProperties": false, "required": ["negative", "zero", "positive"], "properties": {"negative": {"type": "integer", "minimum": 0}, "zero": {"type": "integer", "minimum": 0}, "positive": {"type": "integer", "minimum": 0}}},
-        "value_frequency_groups": {"type": "object", "propertyNames": {"pattern": "^[0-9]+$"}, "additionalProperties": {"type": "integer", "minimum": 1}},
+        "value_frequency_groups": {"$ref": "#/$defs/frequencyMap"},
         "unsigned_value_distribution": {"type": "object", "propertyNames": {"pattern": "^(?:[0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$"}, "additionalProperties": {"type": "integer", "minimum": 1}}
       }
     },
@@ -153,7 +154,7 @@
         "negative_finite": {"type": "integer", "minimum": 0}, "positive_finite": {"type": "integer", "minimum": 0},
         "positive_zero": {"type": "integer", "minimum": 0}, "negative_zero": {"type": "integer", "minimum": 0},
         "subnormal": {"const": 0}, "distinct_bit_patterns": {"type": "integer", "minimum": 1},
-        "bit_pattern_frequency_groups": {"type": "object", "propertyNames": {"pattern": "^[0-9]+$"}, "additionalProperties": {"type": "integer", "minimum": 1}},
+        "bit_pattern_frequency_groups": {"$ref": "#/$defs/frequencyMap"},
         "finite_min": {"type": "string"}, "finite_max": {"type": "string"}
       }
     },
@@ -164,7 +165,7 @@
         "samples": {"type": "integer", "minimum": 1}, "distinct_tuples": {"type": "integer", "minimum": 1},
         "repeated_tuple_groups": {"type": "integer", "minimum": 0}, "samples_in_repeated_groups": {"type": "integer", "minimum": 0},
         "maximum_group_size": {"type": "integer", "minimum": 1},
-        "frequency_groups": {"type": "object", "propertyNames": {"pattern": "^[0-9]+$"}, "additionalProperties": {"type": "integer", "minimum": 1}}
+        "frequency_groups": {"$ref": "#/$defs/frequencyMap"}
       }
     },
     "positionProfile": {
