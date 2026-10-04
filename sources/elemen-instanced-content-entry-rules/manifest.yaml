@@ -24,7 +24,7 @@ storage:
     file: elemen-instanced-content-entry-rules-objects.zip
     sha256: 7fe43db93ef3b3352222c57950550deaa31d923195e64eb633ed11d9c8d2e15e
     size_bytes: 2305
-    holds: all 1 files under objects/, deflate, fixed timestamps
+    holds: "1 file under objects/; deflate compression and fixed timestamps"
     cold_store_path: archives/elemen-instanced-content-entry-rules/elemen-instanced-content-entry-rules-objects.zip
 members:
 - file: pages/instanced-content-entry-rules.md

@@ -2,7 +2,7 @@
 
 ## What this scenario contains
 
-Two player-locomotion recordings around Gridania (position-update traffic).
+Two player movement recordings around Gridania (position-update traffic).
 
 This view summarizes opcode evidence from packet captures.
 

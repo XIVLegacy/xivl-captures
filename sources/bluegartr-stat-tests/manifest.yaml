@@ -20,7 +20,7 @@ provenance:
     title: bluegartr patch-note threads, 1.15a through 1.23b
     url: https://www.bluegartr.com/forums/156-Final-Fantasy-XIV
     site: bluegartr forums
-    note: 'Dating reference only, for derived/patch-dating.csv - the thread start dates give each patch''s release date, which is what resolves every patch_basis=post-date assignment. These threads are deliberately NOT a set of their own: the official patch note text already lives in studies/lodestone-dev-patch.'
+    note: 'Dating reference only, for derived/patch-dating.csv - the thread start dates give each patch''s release date, which is what resolves every patch_basis=post-date assignment. These threads are not a separate set: the official patch note text already lives in studies/lodestone-dev-patch.'
 storage:
   original_state: in-repo
   storage_id: repo

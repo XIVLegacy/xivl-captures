@@ -36,7 +36,7 @@ This view summarizes opcode evidence from packet captures.
 - Caveat: The `war_quest` filename is read here as a Warrior job questline, hence
   content_kind job-quest / progression_track job-quest. This is a filename inference
   only - not confirmed against the quest data - and could instead be a story or other
-  quest. Refine when the quest is identified.
+  quest. The quest identity remains unresolved.
 
 ## Using this view
 

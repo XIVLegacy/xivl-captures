@@ -12,7 +12,7 @@ storage:
     file: primal-battle-ifrit-bowl-of-embers-objects.zip
     sha256: dbe57f9e3fcaf1986b8ab23f2ec12f40c295e0a61c668c4fcc97c88702bb8070
     size_bytes: 4720
-    holds: all 1 files under objects/, deflate, fixed timestamps
+    holds: "1 file under objects/; deflate compression and fixed timestamps"
     cold_store_path: archives/primal-battle-ifrit-bowl-of-embers/primal-battle-ifrit-bowl-of-embers-objects.zip
 members:
 - file: the_bowl_of_embers_ifrit_video_breakdown.md

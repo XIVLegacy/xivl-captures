@@ -20,11 +20,7 @@ search_hints:
 - critical damage
 - blocked damage
 - hp recovery
-notes: >-
-  Completed four-stage backfit. The retained packet family is decoded,
-  distributed, matched, fit within evidence limits, and closed with five
-  INSUFFICIENT-DATA contradiction verdicts. No runtime formula, coefficient,
-  command behavior, or tuning value is promoted.
+notes: 'The four-stage backfit decodes, distributes, matches, and fits the retained packet family within evidence limits, yielding five INSUFFICIENT-DATA contradiction verdicts. No runtime formula, coefficient, command behavior, or tuning value is promoted.'
 source_refs:
 - source: pcap-1.23b
 primary_paths:

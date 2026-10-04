@@ -109,4 +109,4 @@ Union across the member captures. `name` is the derived/opcode_names.json entry 
 ## Gaps / caveats
 
 - Opcode identity and framing only; decoded payload field semantics live in this repo's `derived/` (payload_layouts.json and friends).
-- The `war_quest` filename is read here as a Warrior job questline, hence content_kind job-quest / progression_track job-quest. This is a filename inference only - not confirmed against the quest data - and could instead be a story or other quest. Refine when the quest is identified.
+- The `war_quest` filename is read here as a Warrior job questline, hence content_kind job-quest / progression_track job-quest. This is a filename inference only - not confirmed against the quest data - and could instead be a story or other quest. The quest identity remains unresolved.
