@@ -12,6 +12,9 @@ search_hints:
 - "0x017c"
 - "0x017f"
 - "0x0183"
+- "0x00cc"
+- ZoneMaster
+- SetMap actor id
 - group type 30001
 - director actor id
 notes: >-
@@ -20,15 +23,18 @@ notes: >-
   names and constants are excluded from the evidence chain.
 source_refs:
 - source: pcap-1.23b
+  citation: sources/pcap-1.23b/manifest.yaml
 primary_paths:
 - derived/accounting.json
 - derived/group-packets.csv
 - derived/group-members.csv
 - derived/event-role-candidates.csv
 - derived/verdicts.md
+- derived/zone-controller-identity.md
 canonical_evidence:
 - derived/accounting.json
 - derived/group-packets.csv
 - derived/group-members.csv
 - derived/event-role-candidates.csv
 - derived/verdicts.md
+- derived/zone-controller-identity.md

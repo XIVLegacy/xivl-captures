@@ -377,6 +377,9 @@ studies:
   - '0x017c'
   - '0x017f'
   - '0x0183'
+  - '0x00cc'
+  - ZoneMaster
+  - SetMap actor id
   - group type 30001
   - director actor id
   primary_paths:
@@ -385,8 +388,10 @@ studies:
   - studies/director-wire-identity/derived/group-members.csv
   - studies/director-wire-identity/derived/event-role-candidates.csv
   - studies/director-wire-identity/derived/verdicts.md
+  - studies/director-wire-identity/derived/zone-controller-identity.md
   source_refs:
   - source: pcap-1.23b
+    citation: sources/pcap-1.23b/manifest.yaml
 - id: elemen-battle-actions
   title: eLeMeN FF14 1.x Battle Class Actions - Web Tables
   status: distilled
