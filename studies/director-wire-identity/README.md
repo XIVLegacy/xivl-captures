@@ -15,6 +15,8 @@ fields remain uninterpreted unless the static client layout supplies the name.
 - `derived/group-packets.csv` - one row per Group-family packet.
 - `derived/group-members.csv` - transposed `0x017F` and `0x0183` member rows.
 - `derived/event-role-candidates.csv` - EventStart owner actors and event names.
+- `derived/zone-controller-identity.md` - seven paired retail observations of
+  the numeric SetMap field and ZoneMaster actor-ID encoding.
 
 Regenerate or verify the canonical products:
 
@@ -42,6 +44,9 @@ two same-ID EventStart/content-member correlations use high nibble 4 without
 proving director identity; party-battle headers carry type 30001; and the
 proposed offsets conflate the large Group member packet with the compact
 content-member packet.
+
+The separate `derived/zone-controller-identity.md` records observed ZoneMaster
+object identities and does not change these four director verdicts.
 
 ## Topics
 
