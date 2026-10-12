@@ -45,6 +45,9 @@ The supported commands for direct maintainer use are:
   sub-events in deterministic connection order.
 - `python tools/extractors/extract_login_018a_timeline.py` - regenerate the
   bounded main-lane timeline around login s2c `0x018A`.
+- `python tools/extractors/extract_login_0002_appearance_order.py` - regenerate
+  the numeric same-source login `0x0002`/`0x00CA`/`0x00D6`/`0x00CC` order;
+  add `--check` for replay.
 - `python tools/extractors/extract_battle_results.py --client-data-repo <path>
   --field-model <path>` - regenerate the active battle-result backfit study from
   the full pcap corpus and explicit client-data/client-struct evidence inputs;

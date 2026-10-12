@@ -1484,6 +1484,26 @@ studies:
   - studies/lodestone-manual/derived/file-inventory.csv
   source_refs:
   - source: lodestone-manual
+- id: login-0002-appearance-order
+  title: Login 0x0002 Same-Source Appearance Order
+  status: distilled
+  evidence_class: packet-capture
+  content_kind: session-mechanic
+  tags:
+  - login
+  - packet-order
+  - packet-decoding
+  - main-lane
+  search_hints:
+  - '0x0002'
+  - '0x00d6'
+  - '0x00cc'
+  - wrapped source order
+  primary_paths:
+  - studies/login-0002-appearance-order/derived/events.csv
+  - studies/login-0002-appearance-order/derived/accounting.json
+  source_refs:
+  - source: pcap-1.23b
 - id: login-018a-neighborhood
   title: Login 0x018A Main-Lane Neighborhood
   status: distilled
