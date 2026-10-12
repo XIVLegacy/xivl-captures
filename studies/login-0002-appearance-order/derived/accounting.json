@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "study": "login-0002-appearance-order",
+  "input": {
+    "source": "pcap-1.23b",
+    "capture": "login.pcapng",
+    "capture_sha256": "28e06b54fe559870031f077f8549b9244caafa7e5177dbca08a7feae6c2b1b62",
+    "size_bytes": 856236,
+    "manifest_locator": "sources/pcap-1.23b/manifest.yaml:135-137"
+  },
+  "admission": {
+    "raw_frame_shaped_connections": 6,
+    "admitted_connections": 2,
+    "rejected_connections": 4,
+    "raw_server_port_counts": {
+      "443": 2,
+      "54992": 2,
+      "54994": 2
+    }
+  },
+  "framing": [
+    {
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "stream_bytes": 11864,
+      "frames": 87,
+      "wrapped_inner_events": 175,
+      "trailing_bytes": 0,
+      "captured_payload_segments": 87,
+      "unique_reconstructed_starts": 87,
+      "compressed_frames": 0
+    },
+    {
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "stream_bytes": 15240,
+      "frames": 89,
+      "wrapped_inner_events": 385,
+      "trailing_bytes": 0,
+      "captured_payload_segments": 82,
+      "unique_reconstructed_starts": 82,
+      "compressed_frames": 89
+    },
+    {
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "c2s",
+      "stream_bytes": 152,
+      "frames": 3,
+      "wrapped_inner_events": 0,
+      "trailing_bytes": 0,
+      "captured_payload_segments": 3,
+      "unique_reconstructed_starts": 3,
+      "compressed_frames": 0
+    },
+    {
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "s2c",
+      "stream_bytes": 152,
+      "frames": 3,
+      "wrapped_inner_events": 0,
+      "trailing_bytes": 0,
+      "captured_payload_segments": 3,
+      "unique_reconstructed_starts": 3,
+      "compressed_frames": 0
+    }
+  ],
+  "anchor": {
+    "connection_index": 0,
+    "lane": "main",
+    "direction": "s2c",
+    "direction_event_index": 1,
+    "frame_index": 3,
+    "frame_stream_offset": 167,
+    "subevent_index": 0,
+    "subevent_offset": 0,
+    "capture_packet_index": 951,
+    "frame_start_capture_packet_index": 951,
+    "opcode": 2,
+    "src_actor": 43723073,
+    "dst_actor": 43723073,
+    "subevent_size": 48,
+    "subevent_sha256": "77195fa69ee36250fdb54b90b962a02420f118607ba70515cd0a509d69b55f15"
+  },
+  "selected_source_counts": {
+    "0x0002": 1,
+    "0x00CA": 1,
+    "0x00CC": 1,
+    "0x00D6": 1,
+    "0x00D7": 0
+  },
+  "all_admitted_s2c_counts": {
+    "0x0002": 1,
+    "0x00CA": 10,
+    "0x00CC": 10,
+    "0x00D6": 6,
+    "0x00D7": 0
+  },
+  "order": [
+    "0x0002",
+    "0x00CA",
+    "0x00D6",
+    "0x00CC"
+  ],
+  "index_convention": "Connection, frame, sub-event and direction-event indexes are zero-based; capture packet indexes are one-based. Stream offsets are wire bytes; sub-event offsets are in the decoded frame body.",
+  "boundary": "One reconstructed s2c direction on one admitted TCP connection; no capture-wide or cross-direction order, dispatch timing, appearance admission or rendering is established. Wrapped source equality is numeric; native case-2 interpretation belongs to the consumer."
+}

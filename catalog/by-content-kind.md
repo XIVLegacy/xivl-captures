@@ -156,11 +156,12 @@ Generated from `catalog/index.yaml`. Primary axis: `content_kind`.
 
 - `primal-battle-ifrit-bowl-of-embers`
 
-## session-mechanic (3)
+## session-mechanic (4)
 
-### Studies (2)
+### Studies (3)
 
 - `lobby-handshake-triage`
+- `login-0002-appearance-order`
 - `login-018a-neighborhood`
 
 ### Scenarios (1)

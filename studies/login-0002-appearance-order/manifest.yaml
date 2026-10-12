@@ -1,0 +1,27 @@
+id: login-0002-appearance-order
+title: Login 0x0002 Same-Source Appearance Order
+evidence_class: packet-capture
+status: distilled
+content_kind: session-mechanic
+tags:
+- login
+- packet-order
+- packet-decoding
+- main-lane
+search_hints:
+- "0x0002"
+- "0x00d6"
+- "0x00cc"
+- wrapped source order
+notes: >-
+  Numeric same-source order around the sole admitted login s2c inner 0x0002.
+  Reconstructed stream and decoded body offsets preserve connection-local
+  order; source equality does not by itself establish a native actor role.
+source_refs:
+- source: pcap-1.23b
+primary_paths:
+- derived/events.csv
+- derived/accounting.json
+canonical_evidence:
+- derived/events.csv
+- derived/accounting.json

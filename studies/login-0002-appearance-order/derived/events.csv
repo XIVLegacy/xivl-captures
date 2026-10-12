@@ -1,0 +1,5 @@
+connection_index,lane,direction,direction_event_index,frame_index,frame_stream_offset,subevent_index,subevent_offset,capture_packet_index,frame_start_capture_packet_index,opcode,src_actor,dst_actor,subevent_size,subevent_sha256
+0,main,s2c,1,3,167,0,0,951,951,0x0002,0x029B2941,0x029B2941,48,77195fa69ee36250fdb54b90b962a02420f118607ba70515cd0a509d69b55f15
+0,main,s2c,22,9,962,0,0,961,961,0x00CA,0x029B2941,0x029B2941,40,936186c010ae7b6104da25cdc699da05c7dab0017cf622077347928f1aa90d92
+0,main,s2c,33,9,962,11,856,961,961,0x00D6,0x029B2941,0x029B2941,296,4ae588dba6e873314dc292eed46c4028231ac9165f7d29ce4f0eaf73f5bd9f0c
+0,main,s2c,88,17,5457,19,2232,970,969,0x00CC,0x029B2941,0x029B2941,296,dedc507b168703910f528f55b85ea61c1f845a02519f2cd43141bb226217464a
