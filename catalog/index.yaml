@@ -183,7 +183,7 @@ sources:
   distribution: restricted
   original_state: in-repo
   storage_id: repo
-  member_count: 5
+  member_count: 4
 - id: navmut-world-population-observations
   title: Navmut World Population Observations
   evidence_class: historical-research
