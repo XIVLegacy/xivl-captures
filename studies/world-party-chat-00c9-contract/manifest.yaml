@@ -15,7 +15,7 @@ search_hints:
 - chat relay
 notes: >-
   Exhaustive sanitized direction-specific contract for every retained World
-  chat-lane 0x00C9 event, with normalized fixtures and a Bahamut adoption
+  chat-lane 0x00C9 event, with normalized fixtures and a server adoption
   boundary.
 source_refs:
 - source: pcap-1.23b

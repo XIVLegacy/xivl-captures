@@ -4,7 +4,7 @@
 
 This study exhaustively reconciles every World chat-lane `0x00C9` event in the
 54-member retained retail corpus. It separates c2s and s2c framing, publishes a
-Bahamut-ready field matrix, and preserves unsupported fields as opaque
+implementation-ready field matrix, and preserves unsupported fields as opaque
 tokens.
 
 ## Start here
@@ -13,7 +13,7 @@ tokens.
 - `derived/occurrences.csv` - one sanitized tokenized row per retained event with lane-local frame locators.
 - `derived/field-matrix.csv` - outer, wrapper, game-message, and application offsets.
 - `derived/normalized-fixtures.json` - generated synthetic c2s and s2c subevents.
-- `derived/verdicts.md` - promoted contract and Bahamut adoption boundary.
+- `derived/verdicts.md` - promoted contract and server adoption boundary.
 
 Regenerate or verify all five products:
 
@@ -48,7 +48,7 @@ tail remain opaque. The context differs between the two s2c capture contexts,
 while the sender-name bytes are equal. This does not establish separate login
 sessions or a stable numeric sender identifier.
 
-## Bahamut boundary
+## Server boundary
 
 The retail recipient route is World clientbound `0x00C9` on the raw chat lane.
 It is not Map clientbound `0x0003` on the main lane. The study establishes the
@@ -73,7 +73,7 @@ delivery policy, server causality, or independently proven session identity.
 - Direction-specific packet framing
 - Sender-name and message buffers
 - Opaque actor, context, counter, and tail fields
-- Bahamut recipient-route replacement
+- Server recipient-route replacement
 
 ## Evidence gaps
 

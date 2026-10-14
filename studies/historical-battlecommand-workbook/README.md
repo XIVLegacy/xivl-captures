@@ -29,5 +29,5 @@ python tools/extract_historical_battlecommand.py
 python tools/extract_historical_battlecommand.py --check
 ```
 
-See `derived/evidence-map.md` for the first Bahamut-relevant records, retail
+See `derived/evidence-map.md` for the first server-relevant records, retail
 cross-check, conflicts, and unresolved meanings.

@@ -1,4 +1,4 @@
-ge_zone,ge_sightings,classification,match_pass,client_place_name_ids,client_display_name,client_zone_ids,client_zone_group_ids,bahamut_zones
+ge_zone,ge_sightings,classification,match_pass,client_place_name_ids,client_display_name,client_zone_ids,client_zone_group_ids,external_roster_zones
 Western Thanalan,113,client-zone,exact,3003,western Thanalan,172 211,304,172=Western Thanalan
 North Shroud,95,client-zone,exact,2009,north Shroud,152 207 247 258 259,204,152=North Shroud 207=North Shroud
 Central Shroud,93,client-zone,exact,2007,central Shroud,150 162 164 165 166 167 168,202,150=Central Shroud 162=Central Shroud 164=Central Shroud 165=Central Shroud 166=Central Shroud 167=Central Shroud 168=Central Shroud
