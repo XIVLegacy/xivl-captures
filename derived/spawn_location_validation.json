@@ -1,6 +1,6 @@
 {
   "version": "1.23b",
-  "seedTable": "external non-public Bahamut source consulted at research time: bahamut/sql/server_spawn_locations.sql",
+  "seedTable": "historical external spawn-location table consulted at research time",
   "seedRows": 1013,
   "tolerances": {
     "exactM": 0.05,

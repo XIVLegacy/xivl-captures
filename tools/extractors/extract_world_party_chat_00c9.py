@@ -1026,7 +1026,7 @@ invariant nonzero value c2s and zero in all s2c rows. The c2s tail has two
 nonzero equality classes and is non-monotonic.
 Neither field supplies an observed message sequence.
 
-## Bahamut adoption boundary
+## Server adoption boundary
 
 A retail-shaped recipient packet is World clientbound `0x00C9` on the chat
 lane, not Map clientbound `0x0003` on the main lane. A consumer may adopt the
