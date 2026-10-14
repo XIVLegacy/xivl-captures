@@ -9,12 +9,7 @@
 | La Noscea | sources/mooglebox-regional-mob-maps/objects/la-noscea.html | 63 | http://www.mooglebox.com/la-noscea/index.php | Wayback lookup |
 | Thanalan | sources/mooglebox-regional-mob-maps/objects/thanalan.html | 78 | http://www.mooglebox.com/thanalan/index.php | Wayback lookup |
 
-The source manifest pins each HTML member by SHA-256 and byte size. It also
-pins the owner-supplied Amalj'aa screenshot. The screenshot's displayed tuple
-matches Thanalan marker 52, but the image has no independent page metadata, so
-that attribution remains a content match rather than image provenance.
-
-The
+The source manifest pins each HTML member by SHA-256 and byte size. The
 importer verifies those pins before generating the CSV, so a changed snapshot
 cannot silently alter the normalized rows. The page-specific archive lookup
 URLs are retained in the CSV.

@@ -27,13 +27,6 @@ provenance:
     file: thanalan.html
     url: http://www.mooglebox.com/thanalan/index.php
     archive_url: https://web.archive.org/web/20120605034042/http://mooglebox.com/thanalan/index.php
-  companion_objects:
-  - file: owner-supplied-amaljaa-marker.png
-    note: >-
-      Owner-supplied screenshot showing the Amalj'aa
-      Scout/Harpooner/Ranger/Seer label, level 20-21, amount 8-10, and
-      coordinates 14.5,21. The tuple matches Thanalan marker 52, but the image
-      itself carries no page or archive metadata.
 storage:
   original_state: in-repo
   storage_id: repo
@@ -51,9 +44,6 @@ members:
 - file: thanalan.html
   sha256: d7ad7fe8432fdf63c23dbdb53641b4f131e610d772d608d430691e3488524d88
   size_bytes: 98901
-- file: owner-supplied-amaljaa-marker.png
-  sha256: dbd12d556eddbf135f9c14c0b1ed18afd1bf83f2a80d367e7ffa70f384452706
-  size_bytes: 28242
 products:
 - file: studies/mooglebox-regional-mob-maps/derived/marker-records.csv
   derived_from: tools/import_mooglebox_mob_maps.py
