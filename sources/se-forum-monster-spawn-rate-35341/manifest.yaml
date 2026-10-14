@@ -21,7 +21,7 @@ storage:
   path: objects/
 members:
 - file: 35341.html
-  sha256: 9d0e6ffa8821cdfae7b2edc3713a22f73bca07138d94dafd888193ec164bcc4b
+  sha256: 37b167ae1b5c4dcf6afb69d5b3864a6440846b396ece79e8769e696b25b03f76
   size_bytes: 411273
 notes: >-
   The immutable HTML source is retained locally under the repository's
