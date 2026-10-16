@@ -1,0 +1,199 @@
+{
+  "study": "battle-result-actor-join",
+  "inputs": {
+    "battle_rows": {
+      "path": "studies/battle-result-backfit/derived/battle-result-rows.csv",
+      "sha256": "d67cb49d9489df127b3f374ee85792c43a6feffecbd4e2314072c0622b22e494",
+      "rows": 622
+    },
+    "property_records": {
+      "path": "studies/property-stream-hash-catalog/derived/property-records.csv",
+      "sha256": "244a87a0182c9d3f0b9de253cb7fc454b0f9fd07e2530d6f546b539b7269f437",
+      "records": 9307,
+      "joined_field_records": 3094
+    },
+    "hash_names": {
+      "citation": "xivl-client-structs:manifests/gam_hash_names.json",
+      "sha256": "4c6626aaec0569e8e857ae4d25ddd186614d8843c50b91904c4ac617283d2ca3",
+      "resolved_names": 263
+    },
+    "engage_captures": [
+      {
+        "file": "combat_autoattack.pcapng",
+        "source": "sources/pcap-1.23b/manifest.yaml",
+        "sha256": "2f677ab61047b25c4168a3dd9496f372d48de3bba018d582dd5a968b9272f7b2"
+      },
+      {
+        "file": "combat_skills.pcapng",
+        "source": "sources/pcap-1.23b/manifest.yaml",
+        "sha256": "7fe66d92f6f62584e57562e51355d310546935690e0b96c2c689b83bbe8a07a7"
+      },
+      {
+        "file": "party_battle_leve.pcapng",
+        "source": "sources/pcap-1.23b/manifest.yaml",
+        "sha256": "6327e5e1f5cbd51a9baaa9bcbacf53ca51c50a98fe4b66ae3e6bdecd9198089f"
+      },
+      {
+        "file": "war_quest_update2.pcapng",
+        "source": "sources/pcap-1.23b/manifest.yaml",
+        "sha256": "bf43b5ee32c58e5dc6f8149b071bd9c5cd5cc0aaa55ea3528872308fd7be2429"
+      }
+    ]
+  },
+  "hard_asserts": {
+    "battle_rows": 622,
+    "property_records": 9307
+  },
+  "fields": [
+    {
+      "column": "class",
+      "property": "charaWork.parameterSave.state_mainSkill[0]",
+      "hash": "0x7532ce24"
+    },
+    {
+      "column": "level",
+      "property": "charaWork.parameterSave.state_mainSkillLevel",
+      "hash": "0x96063588"
+    },
+    {
+      "column": "hpMax",
+      "property": "charaWork.parameterSave.hpMax[0]",
+      "hash": "0x7bcdfb69"
+    },
+    {
+      "column": "hp",
+      "property": "charaWork.parameterSave.hp[0]",
+      "hash": "0x4232bcaa"
+    },
+    {
+      "column": "mp",
+      "property": "charaWork.parameterSave.mp",
+      "hash": "0x13f89710"
+    },
+    {
+      "column": "mpMax",
+      "property": "charaWork.parameterSave.mpMax",
+      "hash": "0x3c95d5c5"
+    },
+    {
+      "column": "tp",
+      "property": "charaWork.parameterTemp.tp",
+      "hash": "0x0b99c876"
+    },
+    {
+      "column": "hateType",
+      "property": "npcWork.hateType",
+      "hash": "0x8e9c05be"
+    }
+  ],
+  "parameters": {
+    "tp_window_frames": 14,
+    "robust_ratio_drop": "0.05",
+    "about_tolerance": "0.01",
+    "engage_window_frames": 32,
+    "engage_run_gap_frames": 2,
+    "player_id_limit": 1073741824
+  },
+  "join_tier_counts": {
+    "class": {
+      "T0": 320,
+      "T1": 383,
+      "T2": 242,
+      "none": 299
+    },
+    "level": {
+      "T0": 361,
+      "T1": 386,
+      "T2": 242,
+      "none": 255
+    },
+    "hpMax": {
+      "T0": 361,
+      "T1": 390,
+      "T2": 240,
+      "none": 253
+    },
+    "hp": {
+      "T0": 1010,
+      "none": 234
+    },
+    "mp": {
+      "T0": 827,
+      "none": 417
+    },
+    "mpMax": {
+      "T0": 361,
+      "T1": 388,
+      "T2": 240,
+      "none": 255
+    },
+    "tp": {
+      "T0": 1040,
+      "none": 204
+    }
+  },
+  "bridges": [
+    {
+      "capture": "gear_changesoul.pcapng",
+      "lane_index": 0,
+      "actor_id": 43723073,
+      "values": {
+        "class": 3,
+        "level": 31,
+        "hpMax": 1016,
+        "mpMax": 548
+      },
+      "source_captures": [
+        "gridania_to_coerthas.pcapng",
+        "moving_around_gridania.pcapng",
+        "teleport_to_camp_nine_ivies.pcapng"
+      ],
+      "hp_max_observed": 1016,
+      "mp_max_observed": 548
+    },
+    {
+      "capture": "party_battle_leve.pcapng",
+      "lane_index": 0,
+      "actor_id": 43723073,
+      "values": {
+        "class": 4,
+        "level": 26,
+        "hpMax": 758,
+        "mpMax": 249
+      },
+      "source_captures": [
+        "from_gridania_to_blackshroud.pcapng",
+        "login.pcapng",
+        "move_out_of_room.pcapng",
+        "return_to_inn.pcapng",
+        "teleport_to_camp_tranquil.pcapng",
+        "teleport_to_gridania.pcapng"
+      ],
+      "hp_max_observed": 758,
+      "mp_max_observed": 249
+    }
+  ],
+  "subject_check": {
+    "checks": 234,
+    "matches": 149
+  },
+  "tp_windows": {
+    "dealt-move": 5,
+    "dealt-other": 97,
+    "dealt-swing": 40,
+    "taken": 131,
+    "unclean": 396
+  },
+  "engagements": 9,
+  "mob_level_hp_rows": 216,
+  "verdicts": {
+    "CONFLICT": 5,
+    "REPRODUCED": 40,
+    "UNRESOLVABLE": 5
+  },
+  "boundaries": [
+    "source_actor_id is taken as the 0x0137 subject; supported, not proven.",
+    "Class ids are recorded values, not class names.",
+    "Damage is banded; gear and attributes are not joined."
+  ]
+}

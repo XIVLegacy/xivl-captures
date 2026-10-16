@@ -37,6 +37,7 @@ relevant source or study bundle for its manifest, provenance, and findings.
 ## Study bundles
 
 - [Battle Result Packet Backfit](../studies/battle-result-backfit/)
+- [Battle-Result Actor Join](../studies/battle-result-actor-join/)
 - [Director Wire Identity Verification](../studies/director-wire-identity/)
 - [Guildleve Journal Command Wire Census](../studies/guildleve-journal-command-wire/)
 - [Regional Guildleve Publisher Contract](../studies/regional-guildleve-publisher-contract/)
