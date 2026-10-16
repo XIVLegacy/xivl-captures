@@ -1,0 +1,61 @@
+id: battle-result-actor-join
+title: Battle-Result Actor Join
+evidence_class: packet-capture
+status: distilled
+content_kind: character-mechanic
+tags:
+- combat
+- property-stream
+- actor-state
+- battle-result
+- tp
+- engage-order
+search_hints:
+- "0x0137"
+- "0x0139"
+- "0x0187"
+- "0x0195"
+- hateType
+- actor stat join
+- miss rate
+- block rate
+- parry rate
+- damage band
+- TP step
+- mob hpMax by level
+- "43722707"
+- "43723073"
+notes: >-
+  Joins all 622 battle-result rows to the nearest-preceding property-stream
+  record of each actor with a per-value join tier, then evaluates recorded
+  hit, damage, TP, engage-order, Cure, identity, and mob level/hpMax anchors.
+  Source-actor-is-subject is supported, not proven.
+source_refs:
+- source: pcap-1.23b
+primary_paths:
+- derived/evidence-map.md
+- derived/anchor-summary.csv
+- derived/joined-rows.csv
+- derived/tp-series.csv
+- derived/engage-order.csv
+- derived/mob-level-hp.csv
+- derived/accounting.json
+canonical_evidence:
+- derived/evidence-map.md
+- derived/anchor-summary.csv
+- derived/joined-rows.csv
+- derived/tp-series.csv
+- derived/engage-order.csv
+- derived/mob-level-hp.csv
+- derived/accounting.json
+distilled:
+  distilled: true
+  checksum_file: derived/checksums.sha256
+  distilled_artifacts:
+  - derived/evidence-map.md
+  - derived/anchor-summary.csv
+  - derived/joined-rows.csv
+  - derived/tp-series.csv
+  - derived/engage-order.csv
+  - derived/mob-level-hp.csv
+  - derived/accounting.json
