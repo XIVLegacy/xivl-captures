@@ -16,15 +16,21 @@ search_hints:
 - "366"
 - "368"
 notes: >-
-  Three retained main-lane server-to-client delegateEvent/processPgEvent calls
-  with bounded serialized parameters. The final integer's meaning and any
-  client-data source-column selection remain unestablished.
+  The complete manifest-admitted clear-game corpus contains three main-lane
+  server-to-client delegateEvent/processPgEvent calls. Two bounded talkDefault
+  exchanges retain client inputs and server output. Bytecode-established
+  text-ID and scheduler positional use is recorded in
+  xivl-client-scripts:docs/passivegl-craft-columns.md, Supplied dialogue
+  consumer. Source-column selection and runtime scheduler execution remain
+  unestablished.
 source_refs:
 - source: pcap-1.23b
   citation: sources/pcap-1.23b/manifest.yaml
 primary_paths:
 - derived/calls.json
 - derived/accounting.json
+- derived/exchanges.json
 canonical_evidence:
 - derived/calls.json
 - derived/accounting.json
+- derived/exchanges.json

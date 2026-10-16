@@ -1382,6 +1382,7 @@ studies:
   primary_paths:
   - studies/local-guildleve-dialogue/derived/calls.json
   - studies/local-guildleve-dialogue/derived/accounting.json
+  - studies/local-guildleve-dialogue/derived/exchanges.json
   source_refs:
   - source: pcap-1.23b
     citation: sources/pcap-1.23b/manifest.yaml

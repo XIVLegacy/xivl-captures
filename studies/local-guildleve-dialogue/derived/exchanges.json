@@ -1,0 +1,1564 @@
+{
+  "schema_version": 1,
+  "study": "local-guildleve-dialogue",
+  "capture": "local_leve_complete.pcapng",
+  "windows": [
+    {
+      "owner_actor_id_hex": "0x44B00005",
+      "directions": {
+        "c2s": [
+          {
+            "location": {
+              "capture": "local_leve_complete.pcapng",
+              "lane_index": 0,
+              "lane": "main",
+              "direction": "c2s",
+              "direction_event_index": 15,
+              "frame_index": 5,
+              "frame_stream_offset": 872,
+              "capture_packet_index": 16,
+              "capture_time_us": 1356922108888240,
+              "capture_timestamp_utc": "2012-12-31T02:48:28.888240Z",
+              "outer_timestamp_or_seq_hex": "d83bdcee3b010000",
+              "outer_value": 1356922108888,
+              "outer_frame_size": 440,
+              "inflated_frame_body_size": 424,
+              "subevent_index": 2,
+              "subevent_offset": 104,
+              "subevent_size": 216,
+              "subevent_type": 3,
+              "transport_source_actor_id": 43723073,
+              "transport_target_actor_id": 43723073,
+              "transport_counter": 59958992,
+              "inner_header_word0": 20,
+              "opcode": "0x012D"
+            },
+            "application_size": 184,
+            "application_hex": "41299b020500b04400008025dd9ed91d0174616c6b44656661756c74000610e800061070000000510000000401061010010f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b04480988828",
+            "application_sha256": "871d8addbcb641dd983ea827352155a0333557f977ba6b2e90258e3b663fe065",
+            "event_name": "talkDefault",
+            "owner_actor_id_hex": "0x44B00005",
+            "owner_actor_application_offset": 4
+          },
+          {
+            "location": {
+              "capture": "local_leve_complete.pcapng",
+              "lane_index": 0,
+              "lane": "main",
+              "direction": "c2s",
+              "direction_event_index": 32,
+              "frame_index": 11,
+              "frame_stream_offset": 2144,
+              "capture_packet_index": 28,
+              "capture_time_us": 1356922110984045,
+              "capture_timestamp_utc": "2012-12-31T02:48:30.984045Z",
+              "outer_timestamp_or_seq_hex": "e943dcee3b010000",
+              "outer_value": 1356922110953,
+              "outer_frame_size": 264,
+              "inflated_frame_body_size": 248,
+              "subevent_index": 2,
+              "subevent_offset": 128,
+              "subevent_size": 120,
+              "subevent_type": 3,
+              "transport_source_actor_id": 43723073,
+              "transport_target_actor_id": 43723073,
+              "transport_counter": 647747360,
+              "inner_header_word0": 20,
+              "opcode": "0x012E"
+            },
+            "application_size": 88,
+            "application_hex": "41299b020000802500000000a414df3801000000000000000000020f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000082dfe40d47",
+            "application_sha256": "ebf2bc9919bd467d29b3261e49e965cc9567a765693cf9b11be38f3f018723b1",
+            "parameter_application_offset": 17,
+            "parameter_size": 64,
+            "parameters_hex": "000000000000000000020f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "decoded_parameters": [
+              {
+                "tag_offset": 0,
+                "tag": 0,
+                "type": "integer",
+                "value_offset": 1,
+                "value": 0,
+                "value_hex": "0x00000000"
+              },
+              {
+                "tag_offset": 5,
+                "tag": 0,
+                "type": "integer",
+                "value_offset": 6,
+                "value": 2,
+                "value_hex": "0x00000002"
+              }
+            ],
+            "end_tag_offset": 10,
+            "application_tail_hex": "000082dfe40d47",
+            "application_byte_16": 1
+          },
+          {
+            "location": {
+              "capture": "local_leve_complete.pcapng",
+              "lane_index": 0,
+              "lane": "main",
+              "direction": "c2s",
+              "direction_event_index": 36,
+              "frame_index": 13,
+              "frame_stream_offset": 2608,
+              "capture_packet_index": 35,
+              "capture_time_us": 1356922111713641,
+              "capture_timestamp_utc": "2012-12-31T02:48:31.713641Z",
+              "outer_timestamp_or_seq_hex": "c246dcee3b010000",
+              "outer_value": 1356922111682,
+              "outer_frame_size": 264,
+              "inflated_frame_body_size": 248,
+              "subevent_index": 0,
+              "subevent_offset": 0,
+              "subevent_size": 120,
+              "subevent_type": 3,
+              "transport_source_actor_id": 43723073,
+              "transport_target_actor_id": 43723073,
+              "transport_counter": 10000,
+              "inner_header_word0": 20,
+              "opcode": "0x012E"
+            },
+            "application_size": 88,
+            "application_hex": "41299b02000080250000000042bc9e2b01050f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000f1025ec71800",
+            "application_sha256": "0419b6119e1ea5497c465149e39d1002fb17e42f72807a0a94908151ceda91b1",
+            "parameter_application_offset": 17,
+            "parameter_size": 64,
+            "parameters_hex": "050f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "decoded_parameters": [
+              {
+                "tag_offset": 0,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              }
+            ],
+            "end_tag_offset": 1,
+            "application_tail_hex": "00f1025ec71800",
+            "application_byte_16": 1
+          },
+          {
+            "location": {
+              "capture": "local_leve_complete.pcapng",
+              "lane_index": 0,
+              "lane": "main",
+              "direction": "c2s",
+              "direction_event_index": 47,
+              "frame_index": 17,
+              "frame_stream_offset": 3360,
+              "capture_packet_index": 43,
+              "capture_time_us": 1356922113141703,
+              "capture_timestamp_utc": "2012-12-31T02:48:33.141703Z",
+              "outer_timestamp_or_seq_hex": "754cdcee3b010000",
+              "outer_value": 1356922113141,
+              "outer_frame_size": 320,
+              "inflated_frame_body_size": 304,
+              "subevent_index": 1,
+              "subevent_offset": 64,
+              "subevent_size": 120,
+              "subevent_type": 3,
+              "transport_source_actor_id": 43723073,
+              "transport_target_actor_id": 43723073,
+              "transport_counter": 59958992,
+              "inner_header_word0": 20,
+              "opcode": "0x012E"
+            },
+            "application_size": 88,
+            "application_hex": "41299b02000080250000000042bc9e2b01050f00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006ef01800",
+            "application_sha256": "9b70ce39e62c1d38eeaf2e52355f5e4a7760509b9d7773ebdb57f2e765fc1b48",
+            "parameter_application_offset": 17,
+            "parameter_size": 64,
+            "parameters_hex": "050f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "decoded_parameters": [
+              {
+                "tag_offset": 0,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              }
+            ],
+            "end_tag_offset": 1,
+            "application_tail_hex": "0000006ef01800",
+            "application_byte_16": 1
+          },
+          {
+            "location": {
+              "capture": "local_leve_complete.pcapng",
+              "lane_index": 0,
+              "lane": "main",
+              "direction": "c2s",
+              "direction_event_index": 74,
+              "frame_index": 28,
+              "frame_stream_offset": 5288,
+              "capture_packet_index": 75,
+              "capture_time_us": 1356922117091944,
+              "capture_timestamp_utc": "2012-12-31T02:48:37.091944Z",
+              "outer_timestamp_or_seq_hex": "e35bdcee3b010000",
+              "outer_value": 1356922117091,
+              "outer_frame_size": 320,
+              "inflated_frame_body_size": 304,
+              "subevent_index": 1,
+              "subevent_offset": 64,
+              "subevent_size": 120,
+              "subevent_type": 3,
+              "transport_source_actor_id": 43723073,
+              "transport_target_actor_id": 43723073,
+              "transport_counter": 59958992,
+              "inner_header_word0": 20,
+              "opcode": "0x012E"
+            },
+            "application_size": 88,
+            "application_hex": "41299b02000080250000000042bc9e2b01050f00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005b9e00000000c0",
+            "application_sha256": "3ae80715af129f6926c0e36cff6dd6d8415c6864227d769d7fa7dcc491ac7bc0",
+            "parameter_application_offset": 17,
+            "parameter_size": 64,
+            "parameters_hex": "050f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "decoded_parameters": [
+              {
+                "tag_offset": 0,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              }
+            ],
+            "end_tag_offset": 1,
+            "application_tail_hex": "5b9e00000000c0",
+            "application_byte_16": 1
+          },
+          {
+            "location": {
+              "capture": "local_leve_complete.pcapng",
+              "lane_index": 0,
+              "lane": "main",
+              "direction": "c2s",
+              "direction_event_index": 85,
+              "frame_index": 32,
+              "frame_stream_offset": 6096,
+              "capture_packet_index": 86,
+              "capture_time_us": 1356922118549712,
+              "capture_timestamp_utc": "2012-12-31T02:48:38.549712Z",
+              "outer_timestamp_or_seq_hex": "9561dcee3b010000",
+              "outer_value": 1356922118549,
+              "outer_frame_size": 264,
+              "inflated_frame_body_size": 248,
+              "subevent_index": 1,
+              "subevent_offset": 64,
+              "subevent_size": 120,
+              "subevent_type": 3,
+              "transport_source_actor_id": 43723073,
+              "transport_target_actor_id": 43723073,
+              "transport_counter": 59958992,
+              "inner_header_word0": 20,
+              "opcode": "0x012E"
+            },
+            "application_size": 88,
+            "application_hex": "41299b02000080250000000042bc9e2b01050f00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006ef01800",
+            "application_sha256": "9b70ce39e62c1d38eeaf2e52355f5e4a7760509b9d7773ebdb57f2e765fc1b48",
+            "parameter_application_offset": 17,
+            "parameter_size": 64,
+            "parameters_hex": "050f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "decoded_parameters": [
+              {
+                "tag_offset": 0,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              }
+            ],
+            "end_tag_offset": 1,
+            "application_tail_hex": "0000006ef01800",
+            "application_byte_16": 1
+          },
+          {
+            "location": {
+              "capture": "local_leve_complete.pcapng",
+              "lane_index": 0,
+              "lane": "main",
+              "direction": "c2s",
+              "direction_event_index": 88,
+              "frame_index": 33,
+              "frame_stream_offset": 6360,
+              "capture_packet_index": 90,
+              "capture_time_us": 1356922118914024,
+              "capture_timestamp_utc": "2012-12-31T02:48:38.914024Z",
+              "outer_timestamp_or_seq_hex": "0263dcee3b010000",
+              "outer_value": 1356922118914,
+              "outer_frame_size": 264,
+              "inflated_frame_body_size": 248,
+              "subevent_index": 1,
+              "subevent_offset": 64,
+              "subevent_size": 120,
+              "subevent_type": 3,
+              "transport_source_actor_id": 43723073,
+              "transport_target_actor_id": 43723073,
+              "transport_counter": 59958992,
+              "inner_header_word0": 20,
+              "opcode": "0x012E"
+            },
+            "application_size": 88,
+            "application_hex": "41299b02000080250000000042bc9e2b01050f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000de6a03cc05a03e",
+            "application_sha256": "31dd2b5c2acc3a661e3b999a549ea29cd47f4b70072e78b155e8f50612b73e49",
+            "parameter_application_offset": 17,
+            "parameter_size": 64,
+            "parameters_hex": "050f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "decoded_parameters": [
+              {
+                "tag_offset": 0,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              }
+            ],
+            "end_tag_offset": 1,
+            "application_tail_hex": "de6a03cc05a03e",
+            "application_byte_16": 1
+          }
+        ],
+        "s2c": [
+          {
+            "location": {
+              "capture": "local_leve_complete.pcapng",
+              "lane_index": 0,
+              "lane": "main",
+              "direction": "s2c",
+              "direction_event_index": 15,
+              "frame_index": 6,
+              "frame_stream_offset": 574,
+              "capture_packet_index": 19,
+              "capture_time_us": 1356922109419368,
+              "capture_timestamp_utc": "2012-12-31T02:48:29.419368Z",
+              "outer_timestamp_or_seq_hex": "163edcee3b010000",
+              "outer_value": 1356922109462,
+              "outer_frame_size": 111,
+              "inflated_frame_body_size": 176,
+              "subevent_index": 0,
+              "subevent_offset": 0,
+              "subevent_size": 176,
+              "subevent_type": 3,
+              "transport_source_actor_id": 43723073,
+              "transport_target_actor_id": 43723073,
+              "transport_counter": 4275232768,
+              "inner_header_word0": 20,
+              "opcode": "0x0130"
+            },
+            "application_size": 144,
+            "application_hex": "41299b020500b0440174616c6b44656661756c740000000000000000000000000000000000000000007377697463684576656e7400000000000000000000000000000000000000000006a0f1afcd06a0f1d58a05050000000001000000000100000003f10f00000000000000000000000000000000000000000000000000000000000000000000000013504340000000",
+            "application_sha256": "a5f2fd6b0b4a024e3f58d30d417b082541a69c93f7123f89abcfc28fc1727527",
+            "parameter_application_offset": 73,
+            "parameter_size": 64,
+            "parameters_hex": "06a0f1afcd06a0f1d58a05050000000001000000000100000003f10f000000000000000000000000000000000000000000000000000000000000000000000000",
+            "decoded_parameters": [
+              {
+                "tag_offset": 0,
+                "tag": 6,
+                "type": "actor",
+                "value_offset": 1,
+                "value": 2700193741,
+                "value_hex": "0xA0F1AFCD"
+              },
+              {
+                "tag_offset": 5,
+                "tag": 6,
+                "type": "actor",
+                "value_offset": 6,
+                "value": 2700203402,
+                "value_hex": "0xA0F1D58A"
+              },
+              {
+                "tag_offset": 10,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              },
+              {
+                "tag_offset": 11,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              },
+              {
+                "tag_offset": 12,
+                "tag": 0,
+                "type": "integer",
+                "value_offset": 13,
+                "value": 1,
+                "value_hex": "0x00000001"
+              },
+              {
+                "tag_offset": 17,
+                "tag": 0,
+                "type": "integer",
+                "value_offset": 18,
+                "value": 1,
+                "value_hex": "0x00000001"
+              },
+              {
+                "tag_offset": 22,
+                "tag": 0,
+                "type": "integer",
+                "value_offset": 23,
+                "value": 1009,
+                "value_hex": "0x000003F1"
+              }
+            ],
+            "end_tag_offset": 27,
+            "application_tail_hex": "13504340000000",
+            "function": "switchEvent",
+            "owner_actor_id_hex": "0x44B00005",
+            "owner_actor_application_offset": 4
+          },
+          {
+            "location": {
+              "capture": "local_leve_complete.pcapng",
+              "lane_index": 0,
+              "lane": "main",
+              "direction": "s2c",
+              "direction_event_index": 29,
+              "frame_index": 11,
+              "frame_stream_offset": 1168,
+              "capture_packet_index": 30,
+              "capture_time_us": 1356922111316719,
+              "capture_timestamp_utc": "2012-12-31T02:48:31.316719Z",
+              "outer_timestamp_or_seq_hex": "3546dcee3b010000",
+              "outer_value": 1356922111541,
+              "outer_frame_size": 121,
+              "inflated_frame_body_size": 176,
+              "subevent_index": 0,
+              "subevent_offset": 0,
+              "subevent_size": 176,
+              "subevent_type": 3,
+              "transport_source_actor_id": 43723073,
+              "transport_target_actor_id": 43723073,
+              "transport_counter": 4275232768,
+              "inner_header_word0": 20,
+              "opcode": "0x0130"
+            },
+            "application_size": 144,
+            "application_hex": "41299b020500b0440174616c6b44656661756c7400000000000000000000000000000000000000000064656c65676174654576656e740000000000000000000000000000000000000006029b294106a0f1d58a0277656c636f6d6554616c6b00050505050f00000000000000000000000000000000000000000000000000000000000000000000000002504340000000",
+            "application_sha256": "a8db2ddd831bac6ab9e0e433c1cfa9bbe689c4d1869f1d19aef6a170bbed68e0",
+            "parameter_application_offset": 73,
+            "parameter_size": 64,
+            "parameters_hex": "06029b294106a0f1d58a0277656c636f6d6554616c6b00050505050f000000000000000000000000000000000000000000000000000000000000000000000000",
+            "decoded_parameters": [
+              {
+                "tag_offset": 0,
+                "tag": 6,
+                "type": "actor",
+                "value_offset": 1,
+                "value": 43723073,
+                "value_hex": "0x029B2941"
+              },
+              {
+                "tag_offset": 5,
+                "tag": 6,
+                "type": "actor",
+                "value_offset": 6,
+                "value": 2700203402,
+                "value_hex": "0xA0F1D58A"
+              },
+              {
+                "tag_offset": 10,
+                "tag": 2,
+                "type": "string",
+                "value_offset": 11,
+                "value": "welcomeTalk"
+              },
+              {
+                "tag_offset": 23,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              },
+              {
+                "tag_offset": 24,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              },
+              {
+                "tag_offset": 25,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              },
+              {
+                "tag_offset": 26,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              }
+            ],
+            "end_tag_offset": 27,
+            "application_tail_hex": "02504340000000",
+            "function": "delegateEvent",
+            "owner_actor_id_hex": "0x44B00005",
+            "owner_actor_application_offset": 4
+          },
+          {
+            "location": {
+              "capture": "local_leve_complete.pcapng",
+              "lane_index": 0,
+              "lane": "main",
+              "direction": "s2c",
+              "direction_event_index": 41,
+              "frame_index": 14,
+              "frame_stream_offset": 1619,
+              "capture_packet_index": 38,
+              "capture_time_us": 1356922112274850,
+              "capture_timestamp_utc": "2012-12-31T02:48:32.274850Z",
+              "outer_timestamp_or_seq_hex": "e448dcee3b010000",
+              "outer_value": 1356922112228,
+              "outer_frame_size": 126,
+              "inflated_frame_body_size": 176,
+              "subevent_index": 0,
+              "subevent_offset": 0,
+              "subevent_size": 176,
+              "subevent_type": 3,
+              "transport_source_actor_id": 43723073,
+              "transport_target_actor_id": 43723073,
+              "transport_counter": 4275232768,
+              "inner_header_word0": 20,
+              "opcode": "0x0130"
+            },
+            "application_size": 144,
+            "application_hex": "41299b020500b0440174616c6b44656661756c7400000000000000000000000000000000000000000064656c65676174654576656e740000000000000000000000000000000000000006029b294106a0f1d58a0270726f6365737350674576656e7400000000016d00151a900005050f0000000000000000000000000000000000000000000000000002504340000000",
+            "application_sha256": "6f9569f9741e98456fb0af4e28aacb4e6bff4b6e539066993773d673be3e649b",
+            "parameter_application_offset": 73,
+            "parameter_size": 64,
+            "parameters_hex": "06029b294106a0f1d58a0270726f6365737350674576656e7400000000016d00151a900005050f00000000000000000000000000000000000000000000000000",
+            "decoded_parameters": [
+              {
+                "tag_offset": 0,
+                "tag": 6,
+                "type": "actor",
+                "value_offset": 1,
+                "value": 43723073,
+                "value_hex": "0x029B2941"
+              },
+              {
+                "tag_offset": 5,
+                "tag": 6,
+                "type": "actor",
+                "value_offset": 6,
+                "value": 2700203402,
+                "value_hex": "0xA0F1D58A"
+              },
+              {
+                "tag_offset": 10,
+                "tag": 2,
+                "type": "string",
+                "value_offset": 11,
+                "value": "processPgEvent"
+              },
+              {
+                "tag_offset": 26,
+                "tag": 0,
+                "type": "integer",
+                "value_offset": 27,
+                "value": 365,
+                "value_hex": "0x0000016D"
+              },
+              {
+                "tag_offset": 31,
+                "tag": 0,
+                "type": "integer",
+                "value_offset": 32,
+                "value": 354062336,
+                "value_hex": "0x151A9000"
+              },
+              {
+                "tag_offset": 36,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              },
+              {
+                "tag_offset": 37,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              }
+            ],
+            "end_tag_offset": 38,
+            "application_tail_hex": "02504340000000",
+            "function": "delegateEvent",
+            "owner_actor_id_hex": "0x44B00005",
+            "owner_actor_application_offset": 4
+          },
+          {
+            "location": {
+              "capture": "local_leve_complete.pcapng",
+              "lane_index": 0,
+              "lane": "main",
+              "direction": "s2c",
+              "direction_event_index": 44,
+              "frame_index": 17,
+              "frame_stream_offset": 1860,
+              "capture_packet_index": 49,
+              "capture_time_us": 1356922113702549,
+              "capture_timestamp_utc": "2012-12-31T02:48:33.702549Z",
+              "outer_timestamp_or_seq_hex": "094fdcee3b010000",
+              "outer_value": 1356922113801,
+              "outer_frame_size": 129,
+              "inflated_frame_body_size": 176,
+              "subevent_index": 0,
+              "subevent_offset": 0,
+              "subevent_size": 176,
+              "subevent_type": 3,
+              "transport_source_actor_id": 43723073,
+              "transport_target_actor_id": 43723073,
+              "transport_counter": 4275232768,
+              "inner_header_word0": 20,
+              "opcode": "0x0130"
+            },
+            "application_size": 144,
+            "application_hex": "41299b020500b0440174616c6b44656661756c7400000000000000000000000000000000000000000064656c65676174654576656e740000000000000000000000000000000000000006029b294106a0f1d58a0273696d706c6546616465496e416e644f757400050505050f000000000000000000000000000000000000000000000000000000000002504340000000",
+            "application_sha256": "1c279b7e7710494db9182d141bc3bdc34ecd2df49207737a4a066148e5b9e4e9",
+            "parameter_application_offset": 73,
+            "parameter_size": 64,
+            "parameters_hex": "06029b294106a0f1d58a0273696d706c6546616465496e416e644f757400050505050f0000000000000000000000000000000000000000000000000000000000",
+            "decoded_parameters": [
+              {
+                "tag_offset": 0,
+                "tag": 6,
+                "type": "actor",
+                "value_offset": 1,
+                "value": 43723073,
+                "value_hex": "0x029B2941"
+              },
+              {
+                "tag_offset": 5,
+                "tag": 6,
+                "type": "actor",
+                "value_offset": 6,
+                "value": 2700203402,
+                "value_hex": "0xA0F1D58A"
+              },
+              {
+                "tag_offset": 10,
+                "tag": 2,
+                "type": "string",
+                "value_offset": 11,
+                "value": "simpleFadeInAndOut"
+              },
+              {
+                "tag_offset": 30,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              },
+              {
+                "tag_offset": 31,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              },
+              {
+                "tag_offset": 32,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              },
+              {
+                "tag_offset": 33,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              }
+            ],
+            "end_tag_offset": 34,
+            "application_tail_hex": "02504340000000",
+            "function": "delegateEvent",
+            "owner_actor_id_hex": "0x44B00005",
+            "owner_actor_application_offset": 4
+          },
+          {
+            "location": {
+              "capture": "local_leve_complete.pcapng",
+              "lane_index": 0,
+              "lane": "main",
+              "direction": "s2c",
+              "direction_event_index": 70,
+              "frame_index": 25,
+              "frame_stream_offset": 2860,
+              "capture_packet_index": 79,
+              "capture_time_us": 1356922117656795,
+              "capture_timestamp_utc": "2012-12-31T02:48:37.656795Z",
+              "outer_timestamp_or_seq_hex": "105edcee3b010000",
+              "outer_value": 1356922117648,
+              "outer_frame_size": 127,
+              "inflated_frame_body_size": 176,
+              "subevent_index": 0,
+              "subevent_offset": 0,
+              "subevent_size": 176,
+              "subevent_type": 3,
+              "transport_source_actor_id": 43723073,
+              "transport_target_actor_id": 43723073,
+              "transport_counter": 4275232768,
+              "inner_header_word0": 20,
+              "opcode": "0x0130"
+            },
+            "application_size": 144,
+            "application_hex": "41299b020500b0440174616c6b44656661756c7400000000000000000000000000000000000000000064656c65676174654576656e740000000000000000000000000000000000000006029b294106a0f1d58a0270726f6365737350674576656e7400000000016e000413600005050f0000000000000000000000000000000000000000000000000002504340000000",
+            "application_sha256": "cc1ee45e4b57d4daf8419806a317a78e02078778576adec78fcd8bd59706994f",
+            "parameter_application_offset": 73,
+            "parameter_size": 64,
+            "parameters_hex": "06029b294106a0f1d58a0270726f6365737350674576656e7400000000016e000413600005050f00000000000000000000000000000000000000000000000000",
+            "decoded_parameters": [
+              {
+                "tag_offset": 0,
+                "tag": 6,
+                "type": "actor",
+                "value_offset": 1,
+                "value": 43723073,
+                "value_hex": "0x029B2941"
+              },
+              {
+                "tag_offset": 5,
+                "tag": 6,
+                "type": "actor",
+                "value_offset": 6,
+                "value": 2700203402,
+                "value_hex": "0xA0F1D58A"
+              },
+              {
+                "tag_offset": 10,
+                "tag": 2,
+                "type": "string",
+                "value_offset": 11,
+                "value": "processPgEvent"
+              },
+              {
+                "tag_offset": 26,
+                "tag": 0,
+                "type": "integer",
+                "value_offset": 27,
+                "value": 366,
+                "value_hex": "0x0000016E"
+              },
+              {
+                "tag_offset": 31,
+                "tag": 0,
+                "type": "integer",
+                "value_offset": 32,
+                "value": 68378624,
+                "value_hex": "0x04136000"
+              },
+              {
+                "tag_offset": 36,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              },
+              {
+                "tag_offset": 37,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              }
+            ],
+            "end_tag_offset": 38,
+            "application_tail_hex": "02504340000000",
+            "function": "delegateEvent",
+            "owner_actor_id_hex": "0x44B00005",
+            "owner_actor_application_offset": 4
+          },
+          {
+            "location": {
+              "capture": "local_leve_complete.pcapng",
+              "lane_index": 0,
+              "lane": "main",
+              "direction": "s2c",
+              "direction_event_index": 84,
+              "frame_index": 28,
+              "frame_stream_offset": 3316,
+              "capture_packet_index": 89,
+              "capture_time_us": 1356922118796814,
+              "capture_timestamp_utc": "2012-12-31T02:48:38.796814Z",
+              "outer_timestamp_or_seq_hex": "6e63dcee3b010000",
+              "outer_value": 1356922119022,
+              "outer_frame_size": 156,
+              "inflated_frame_body_size": 256,
+              "subevent_index": 2,
+              "subevent_offset": 80,
+              "subevent_size": 176,
+              "subevent_type": 3,
+              "transport_source_actor_id": 43723073,
+              "transport_target_actor_id": 43723073,
+              "transport_counter": 4275232768,
+              "inner_header_word0": 20,
+              "opcode": "0x0130"
+            },
+            "application_size": 144,
+            "application_hex": "41299b020500b0440174616c6b44656661756c7400000000000000000000000000000000000000000064656c65676174654576656e740000000000000000000000000000000000000006029b294106a0f1d58a0266696e69736854616c6b5475726e00050505050f00000000000000000000000000000000000000000000000000000000000000000002504340000000",
+            "application_sha256": "de4f77dd61c3fbac43ba2e4402103ab6d44df5f783086e9f53b4c65734c26b62",
+            "parameter_application_offset": 73,
+            "parameter_size": 64,
+            "parameters_hex": "06029b294106a0f1d58a0266696e69736854616c6b5475726e00050505050f000000000000000000000000000000000000000000000000000000000000000000",
+            "decoded_parameters": [
+              {
+                "tag_offset": 0,
+                "tag": 6,
+                "type": "actor",
+                "value_offset": 1,
+                "value": 43723073,
+                "value_hex": "0x029B2941"
+              },
+              {
+                "tag_offset": 5,
+                "tag": 6,
+                "type": "actor",
+                "value_offset": 6,
+                "value": 2700203402,
+                "value_hex": "0xA0F1D58A"
+              },
+              {
+                "tag_offset": 10,
+                "tag": 2,
+                "type": "string",
+                "value_offset": 11,
+                "value": "finishTalkTurn"
+              },
+              {
+                "tag_offset": 26,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              },
+              {
+                "tag_offset": 27,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              },
+              {
+                "tag_offset": 28,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              },
+              {
+                "tag_offset": 29,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              }
+            ],
+            "end_tag_offset": 30,
+            "application_tail_hex": "02504340000000",
+            "function": "delegateEvent",
+            "owner_actor_id_hex": "0x44B00005",
+            "owner_actor_application_offset": 4
+          },
+          {
+            "location": {
+              "capture": "local_leve_complete.pcapng",
+              "lane_index": 0,
+              "lane": "main",
+              "direction": "s2c",
+              "direction_event_index": 86,
+              "frame_index": 30,
+              "frame_stream_offset": 3548,
+              "capture_packet_index": 93,
+              "capture_time_us": 1356922119459595,
+              "capture_timestamp_utc": "2012-12-31T02:48:39.459595Z",
+              "outer_timestamp_or_seq_hex": "4165dcee3b010000",
+              "outer_value": 1356922119489,
+              "outer_frame_size": 75,
+              "inflated_frame_body_size": 80,
+              "subevent_index": 0,
+              "subevent_offset": 0,
+              "subevent_size": 80,
+              "subevent_type": 3,
+              "transport_source_actor_id": 43723073,
+              "transport_target_actor_id": 43723073,
+              "transport_counter": 4275232768,
+              "inner_header_word0": 20,
+              "opcode": "0x0131"
+            },
+            "application_size": 48,
+            "application_hex": "41299b02000000000174616c6b44656661756c74000000000000000000000000000000000000000000f2d409588e150a",
+            "application_sha256": "eae01d72304f83600d9e21bed171fa5f90250dac9237802335450179a8a3f50f"
+          }
+        ]
+      }
+    },
+    {
+      "owner_actor_id_hex": "0x44B00005",
+      "directions": {
+        "c2s": [
+          {
+            "location": {
+              "capture": "local_leve_complete.pcapng",
+              "lane_index": 0,
+              "lane": "main",
+              "direction": "c2s",
+              "direction_event_index": 966,
+              "frame_index": 458,
+              "frame_stream_offset": 71344,
+              "capture_packet_index": 1698,
+              "capture_time_us": 1356922307945339,
+              "capture_timestamp_utc": "2012-12-31T02:51:47.945339Z",
+              "outer_timestamp_or_seq_hex": "6245dfee3b010000",
+              "outer_value": 1356922307938,
+              "outer_frame_size": 440,
+              "inflated_frame_body_size": 424,
+              "subevent_index": 2,
+              "subevent_offset": 104,
+              "subevent_size": 216,
+              "subevent_type": 3,
+              "transport_source_actor_id": 43723073,
+              "transport_target_actor_id": 43723073,
+              "transport_counter": 59958992,
+              "inner_header_word0": 20,
+              "opcode": "0x012D"
+            },
+            "application_size": 184,
+            "application_hex": "41299b020500b04400008025dd9ed91d0174616c6b44656661756c74000610e800061070000000510000000401061010010f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b04480988828",
+            "application_sha256": "871d8addbcb641dd983ea827352155a0333557f977ba6b2e90258e3b663fe065",
+            "event_name": "talkDefault",
+            "owner_actor_id_hex": "0x44B00005",
+            "owner_actor_application_offset": 4
+          },
+          {
+            "location": {
+              "capture": "local_leve_complete.pcapng",
+              "lane_index": 0,
+              "lane": "main",
+              "direction": "c2s",
+              "direction_event_index": 987,
+              "frame_index": 466,
+              "frame_stream_offset": 72960,
+              "capture_packet_index": 1722,
+              "capture_time_us": 1356922310770627,
+              "capture_timestamp_utc": "2012-12-31T02:51:50.770627Z",
+              "outer_timestamp_or_seq_hex": "6b50dfee3b010000",
+              "outer_value": 1356922310763,
+              "outer_frame_size": 264,
+              "inflated_frame_body_size": 248,
+              "subevent_index": 1,
+              "subevent_offset": 64,
+              "subevent_size": 120,
+              "subevent_type": 3,
+              "transport_source_actor_id": 43723073,
+              "transport_target_actor_id": 43723073,
+              "transport_counter": 59958992,
+              "inner_header_word0": 20,
+              "opcode": "0x012E"
+            },
+            "application_size": 88,
+            "application_hex": "41299b020000802500000000a414df3801000000000000000000020f00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005b9e00000000c0",
+            "application_sha256": "bf649f1be489f2d9ceac659519613c14a73b6b50f86b955ac50606ccfcad811b",
+            "parameter_application_offset": 17,
+            "parameter_size": 64,
+            "parameters_hex": "000000000000000000020f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "decoded_parameters": [
+              {
+                "tag_offset": 0,
+                "tag": 0,
+                "type": "integer",
+                "value_offset": 1,
+                "value": 0,
+                "value_hex": "0x00000000"
+              },
+              {
+                "tag_offset": 5,
+                "tag": 0,
+                "type": "integer",
+                "value_offset": 6,
+                "value": 2,
+                "value_hex": "0x00000002"
+              }
+            ],
+            "end_tag_offset": 10,
+            "application_tail_hex": "5b9e00000000c0",
+            "application_byte_16": 1
+          },
+          {
+            "location": {
+              "capture": "local_leve_complete.pcapng",
+              "lane_index": 0,
+              "lane": "main",
+              "direction": "c2s",
+              "direction_event_index": 992,
+              "frame_index": 468,
+              "frame_stream_offset": 73424,
+              "capture_packet_index": 1728,
+              "capture_time_us": 1356922311501093,
+              "capture_timestamp_utc": "2012-12-31T02:51:51.501093Z",
+              "outer_timestamp_or_seq_hex": "4653dfee3b010000",
+              "outer_value": 1356922311494,
+              "outer_frame_size": 264,
+              "inflated_frame_body_size": 248,
+              "subevent_index": 0,
+              "subevent_offset": 0,
+              "subevent_size": 120,
+              "subevent_type": 3,
+              "transport_source_actor_id": 43723073,
+              "transport_target_actor_id": 43723073,
+              "transport_counter": 10000,
+              "inner_header_word0": 20,
+              "opcode": "0x012E"
+            },
+            "application_size": 88,
+            "application_hex": "41299b02000080250000000042bc9e2b01050f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000f1025ec71800",
+            "application_sha256": "0419b6119e1ea5497c465149e39d1002fb17e42f72807a0a94908151ceda91b1",
+            "parameter_application_offset": 17,
+            "parameter_size": 64,
+            "parameters_hex": "050f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "decoded_parameters": [
+              {
+                "tag_offset": 0,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              }
+            ],
+            "end_tag_offset": 1,
+            "application_tail_hex": "00f1025ec71800",
+            "application_byte_16": 1
+          },
+          {
+            "location": {
+              "capture": "local_leve_complete.pcapng",
+              "lane_index": 0,
+              "lane": "main",
+              "direction": "c2s",
+              "direction_event_index": 1005,
+              "frame_index": 473,
+              "frame_stream_offset": 74320,
+              "capture_packet_index": 1747,
+              "capture_time_us": 1356922313295110,
+              "capture_timestamp_utc": "2012-12-31T02:51:53.295110Z",
+              "outer_timestamp_or_seq_hex": "485adfee3b010000",
+              "outer_value": 1356922313288,
+              "outer_frame_size": 320,
+              "inflated_frame_body_size": 304,
+              "subevent_index": 1,
+              "subevent_offset": 64,
+              "subevent_size": 120,
+              "subevent_type": 3,
+              "transport_source_actor_id": 43723073,
+              "transport_target_actor_id": 43723073,
+              "transport_counter": 59958992,
+              "inner_header_word0": 20,
+              "opcode": "0x012E"
+            },
+            "application_size": 88,
+            "application_hex": "41299b02000080250000000042bc9e2b01050f00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006ef01800",
+            "application_sha256": "9b70ce39e62c1d38eeaf2e52355f5e4a7760509b9d7773ebdb57f2e765fc1b48",
+            "parameter_application_offset": 17,
+            "parameter_size": 64,
+            "parameters_hex": "050f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "decoded_parameters": [
+              {
+                "tag_offset": 0,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              }
+            ],
+            "end_tag_offset": 1,
+            "application_tail_hex": "0000006ef01800",
+            "application_byte_16": 1
+          },
+          {
+            "location": {
+              "capture": "local_leve_complete.pcapng",
+              "lane_index": 0,
+              "lane": "main",
+              "direction": "c2s",
+              "direction_event_index": 1011,
+              "frame_index": 475,
+              "frame_stream_offset": 74784,
+              "capture_packet_index": 1752,
+              "capture_time_us": 1356922314023681,
+              "capture_timestamp_utc": "2012-12-31T02:51:54.023681Z",
+              "outer_timestamp_or_seq_hex": "205ddfee3b010000",
+              "outer_value": 1356922314016,
+              "outer_frame_size": 264,
+              "inflated_frame_body_size": 248,
+              "subevent_index": 1,
+              "subevent_offset": 64,
+              "subevent_size": 120,
+              "subevent_type": 3,
+              "transport_source_actor_id": 43723073,
+              "transport_target_actor_id": 43723073,
+              "transport_counter": 59958992,
+              "inner_header_word0": 20,
+              "opcode": "0x012E"
+            },
+            "application_size": 88,
+            "application_hex": "41299b02000080250000000042bc9e2b01050f00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002a670d09000000",
+            "application_sha256": "5abd419a75a23c140bec1d0b7c8fe150b07198239d96933bc1e2cb283f939994",
+            "parameter_application_offset": 17,
+            "parameter_size": 64,
+            "parameters_hex": "050f0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "decoded_parameters": [
+              {
+                "tag_offset": 0,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              }
+            ],
+            "end_tag_offset": 1,
+            "application_tail_hex": "2a670d09000000",
+            "application_byte_16": 1
+          }
+        ],
+        "s2c": [
+          {
+            "location": {
+              "capture": "local_leve_complete.pcapng",
+              "lane_index": 0,
+              "lane": "main",
+              "direction": "s2c",
+              "direction_event_index": 2175,
+              "frame_index": 490,
+              "frame_stream_offset": 66189,
+              "capture_packet_index": 1701,
+              "capture_time_us": 1356922308471204,
+              "capture_timestamp_utc": "2012-12-31T02:51:48.471204Z",
+              "outer_timestamp_or_seq_hex": "7547dfee3b010000",
+              "outer_value": 1356922308469,
+              "outer_frame_size": 111,
+              "inflated_frame_body_size": 176,
+              "subevent_index": 0,
+              "subevent_offset": 0,
+              "subevent_size": 176,
+              "subevent_type": 3,
+              "transport_source_actor_id": 43723073,
+              "transport_target_actor_id": 43723073,
+              "transport_counter": 4275232768,
+              "inner_header_word0": 20,
+              "opcode": "0x0130"
+            },
+            "application_size": 144,
+            "application_hex": "41299b020500b0440174616c6b44656661756c740000000000000000000000000000000000000000007377697463684576656e7400000000000000000000000000000000000000000006a0f1afcd06a0f1d58a05050000000001000000000100000003f10f00000000000000000000000000000000000000000000000000000000000000000000000013504340000000",
+            "application_sha256": "a5f2fd6b0b4a024e3f58d30d417b082541a69c93f7123f89abcfc28fc1727527",
+            "parameter_application_offset": 73,
+            "parameter_size": 64,
+            "parameters_hex": "06a0f1afcd06a0f1d58a05050000000001000000000100000003f10f000000000000000000000000000000000000000000000000000000000000000000000000",
+            "decoded_parameters": [
+              {
+                "tag_offset": 0,
+                "tag": 6,
+                "type": "actor",
+                "value_offset": 1,
+                "value": 2700193741,
+                "value_hex": "0xA0F1AFCD"
+              },
+              {
+                "tag_offset": 5,
+                "tag": 6,
+                "type": "actor",
+                "value_offset": 6,
+                "value": 2700203402,
+                "value_hex": "0xA0F1D58A"
+              },
+              {
+                "tag_offset": 10,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              },
+              {
+                "tag_offset": 11,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              },
+              {
+                "tag_offset": 12,
+                "tag": 0,
+                "type": "integer",
+                "value_offset": 13,
+                "value": 1,
+                "value_hex": "0x00000001"
+              },
+              {
+                "tag_offset": 17,
+                "tag": 0,
+                "type": "integer",
+                "value_offset": 18,
+                "value": 1,
+                "value_hex": "0x00000001"
+              },
+              {
+                "tag_offset": 22,
+                "tag": 0,
+                "type": "integer",
+                "value_offset": 23,
+                "value": 1009,
+                "value_hex": "0x000003F1"
+              }
+            ],
+            "end_tag_offset": 27,
+            "application_tail_hex": "13504340000000",
+            "function": "switchEvent",
+            "owner_actor_id_hex": "0x44B00005",
+            "owner_actor_application_offset": 4
+          },
+          {
+            "location": {
+              "capture": "local_leve_complete.pcapng",
+              "lane_index": 0,
+              "lane": "main",
+              "direction": "s2c",
+              "direction_event_index": 2189,
+              "frame_index": 495,
+              "frame_stream_offset": 66744,
+              "capture_packet_index": 1724,
+              "capture_time_us": 1356922311103325,
+              "capture_timestamp_utc": "2012-12-31T02:51:51.103325Z",
+              "outer_timestamp_or_seq_hex": "9e52dfee3b010000",
+              "outer_value": 1356922311326,
+              "outer_frame_size": 121,
+              "inflated_frame_body_size": 176,
+              "subevent_index": 0,
+              "subevent_offset": 0,
+              "subevent_size": 176,
+              "subevent_type": 3,
+              "transport_source_actor_id": 43723073,
+              "transport_target_actor_id": 43723073,
+              "transport_counter": 4275232768,
+              "inner_header_word0": 20,
+              "opcode": "0x0130"
+            },
+            "application_size": 144,
+            "application_hex": "41299b020500b0440174616c6b44656661756c7400000000000000000000000000000000000000000064656c65676174654576656e740000000000000000000000000000000000000006029b294106a0f1d58a0277656c636f6d6554616c6b00050505050f00000000000000000000000000000000000000000000000000000000000000000000000002504340000000",
+            "application_sha256": "a8db2ddd831bac6ab9e0e433c1cfa9bbe689c4d1869f1d19aef6a170bbed68e0",
+            "parameter_application_offset": 73,
+            "parameter_size": 64,
+            "parameters_hex": "06029b294106a0f1d58a0277656c636f6d6554616c6b00050505050f000000000000000000000000000000000000000000000000000000000000000000000000",
+            "decoded_parameters": [
+              {
+                "tag_offset": 0,
+                "tag": 6,
+                "type": "actor",
+                "value_offset": 1,
+                "value": 43723073,
+                "value_hex": "0x029B2941"
+              },
+              {
+                "tag_offset": 5,
+                "tag": 6,
+                "type": "actor",
+                "value_offset": 6,
+                "value": 2700203402,
+                "value_hex": "0xA0F1D58A"
+              },
+              {
+                "tag_offset": 10,
+                "tag": 2,
+                "type": "string",
+                "value_offset": 11,
+                "value": "welcomeTalk"
+              },
+              {
+                "tag_offset": 23,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              },
+              {
+                "tag_offset": 24,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              },
+              {
+                "tag_offset": 25,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              },
+              {
+                "tag_offset": 26,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              }
+            ],
+            "end_tag_offset": 27,
+            "application_tail_hex": "02504340000000",
+            "function": "delegateEvent",
+            "owner_actor_id_hex": "0x44B00005",
+            "owner_actor_application_offset": 4
+          },
+          {
+            "location": {
+              "capture": "local_leve_complete.pcapng",
+              "lane_index": 0,
+              "lane": "main",
+              "direction": "s2c",
+              "direction_event_index": 2191,
+              "frame_index": 497,
+              "frame_stream_offset": 66922,
+              "capture_packet_index": 1734,
+              "capture_time_us": 1356922311892645,
+              "capture_timestamp_utc": "2012-12-31T02:51:51.892645Z",
+              "outer_timestamp_or_seq_hex": "ad55dfee3b010000",
+              "outer_value": 1356922312109,
+              "outer_frame_size": 127,
+              "inflated_frame_body_size": 176,
+              "subevent_index": 0,
+              "subevent_offset": 0,
+              "subevent_size": 176,
+              "subevent_type": 3,
+              "transport_source_actor_id": 43723073,
+              "transport_target_actor_id": 43723073,
+              "transport_counter": 4275232768,
+              "inner_header_word0": 20,
+              "opcode": "0x0130"
+            },
+            "application_size": 144,
+            "application_hex": "41299b020500b0440174616c6b44656661756c7400000000000000000000000000000000000000000064656c65676174654576656e740000000000000000000000000000000000000006029b294106a0f1d58a0270726f6365737350674576656e74000000000170000414000005050f0000000000000000000000000000000000000000000000000002504340000000",
+            "application_sha256": "a01bad43654cf3a4563d246d71a2d460fa4e4346cd1a0d18cf3a4fd1bf07092f",
+            "parameter_application_offset": 73,
+            "parameter_size": 64,
+            "parameters_hex": "06029b294106a0f1d58a0270726f6365737350674576656e74000000000170000414000005050f00000000000000000000000000000000000000000000000000",
+            "decoded_parameters": [
+              {
+                "tag_offset": 0,
+                "tag": 6,
+                "type": "actor",
+                "value_offset": 1,
+                "value": 43723073,
+                "value_hex": "0x029B2941"
+              },
+              {
+                "tag_offset": 5,
+                "tag": 6,
+                "type": "actor",
+                "value_offset": 6,
+                "value": 2700203402,
+                "value_hex": "0xA0F1D58A"
+              },
+              {
+                "tag_offset": 10,
+                "tag": 2,
+                "type": "string",
+                "value_offset": 11,
+                "value": "processPgEvent"
+              },
+              {
+                "tag_offset": 26,
+                "tag": 0,
+                "type": "integer",
+                "value_offset": 27,
+                "value": 368,
+                "value_hex": "0x00000170"
+              },
+              {
+                "tag_offset": 31,
+                "tag": 0,
+                "type": "integer",
+                "value_offset": 32,
+                "value": 68419584,
+                "value_hex": "0x04140000"
+              },
+              {
+                "tag_offset": 36,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              },
+              {
+                "tag_offset": 37,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              }
+            ],
+            "end_tag_offset": 38,
+            "application_tail_hex": "02504340000000",
+            "function": "delegateEvent",
+            "owner_actor_id_hex": "0x44B00005",
+            "owner_actor_application_offset": 4
+          },
+          {
+            "location": {
+              "capture": "local_leve_complete.pcapng",
+              "lane_index": 0,
+              "lane": "main",
+              "direction": "s2c",
+              "direction_event_index": 2232,
+              "frame_index": 502,
+              "frame_stream_offset": 67643,
+              "capture_packet_index": 1751,
+              "capture_time_us": 1356922313854874,
+              "capture_timestamp_utc": "2012-12-31T02:51:53.854874Z",
+              "outer_timestamp_or_seq_hex": "205ddfee3b010000",
+              "outer_value": 1356922314016,
+              "outer_frame_size": 310,
+              "inflated_frame_body_size": 1080,
+              "subevent_index": 12,
+              "subevent_offset": 904,
+              "subevent_size": 176,
+              "subevent_type": 3,
+              "transport_source_actor_id": 43723073,
+              "transport_target_actor_id": 43723073,
+              "transport_counter": 4275232768,
+              "inner_header_word0": 20,
+              "opcode": "0x0130"
+            },
+            "application_size": 144,
+            "application_hex": "41299b020500b0440174616c6b44656661756c7400000000000000000000000000000000000000000064656c65676174654576656e740000000000000000000000000000000000000006029b294106a0f1d58a0266696e69736854616c6b5475726e00050505050f00000000000000000000000000000000000000000000000000000000000000000002504340000000",
+            "application_sha256": "de4f77dd61c3fbac43ba2e4402103ab6d44df5f783086e9f53b4c65734c26b62",
+            "parameter_application_offset": 73,
+            "parameter_size": 64,
+            "parameters_hex": "06029b294106a0f1d58a0266696e69736854616c6b5475726e00050505050f000000000000000000000000000000000000000000000000000000000000000000",
+            "decoded_parameters": [
+              {
+                "tag_offset": 0,
+                "tag": 6,
+                "type": "actor",
+                "value_offset": 1,
+                "value": 43723073,
+                "value_hex": "0x029B2941"
+              },
+              {
+                "tag_offset": 5,
+                "tag": 6,
+                "type": "actor",
+                "value_offset": 6,
+                "value": 2700203402,
+                "value_hex": "0xA0F1D58A"
+              },
+              {
+                "tag_offset": 10,
+                "tag": 2,
+                "type": "string",
+                "value_offset": 11,
+                "value": "finishTalkTurn"
+              },
+              {
+                "tag_offset": 26,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              },
+              {
+                "tag_offset": 27,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              },
+              {
+                "tag_offset": 28,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              },
+              {
+                "tag_offset": 29,
+                "tag": 5,
+                "type": "nil",
+                "value": null
+              }
+            ],
+            "end_tag_offset": 30,
+            "application_tail_hex": "02504340000000",
+            "function": "delegateEvent",
+            "owner_actor_id_hex": "0x44B00005",
+            "owner_actor_application_offset": 4
+          },
+          {
+            "location": {
+              "capture": "local_leve_complete.pcapng",
+              "lane_index": 0,
+              "lane": "main",
+              "direction": "s2c",
+              "direction_event_index": 2244,
+              "frame_index": 505,
+              "frame_stream_offset": 68370,
+              "capture_packet_index": 1758,
+              "capture_time_us": 1356922314589841,
+              "capture_timestamp_utc": "2012-12-31T02:51:54.589841Z",
+              "outer_timestamp_or_seq_hex": "2b5fdfee3b010000",
+              "outer_value": 1356922314539,
+              "outer_frame_size": 76,
+              "inflated_frame_body_size": 80,
+              "subevent_index": 0,
+              "subevent_offset": 0,
+              "subevent_size": 80,
+              "subevent_type": 3,
+              "transport_source_actor_id": 43723073,
+              "transport_target_actor_id": 43723073,
+              "transport_counter": 4275232768,
+              "inner_header_word0": 20,
+              "opcode": "0x0131"
+            },
+            "application_size": 48,
+            "application_hex": "41299b02000000000174616c6b44656661756c74000000000000000000000000000000000000000000f2d409588e150a",
+            "application_sha256": "eae01d72304f83600d9e21bed171fa5f90250dac9237802335450179a8a3f50f"
+          }
+        ]
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "comparison": "EventStart",
+      "capture_packet_indexes": [
+        16,
+        1698
+      ],
+      "equal_application_prefix_size": 184,
+      "equal_prefix_sha256": "871d8addbcb641dd983ea827352155a0333557f977ba6b2e90258e3b663fe065",
+      "complete_application_equal": true,
+      "remaining_application_hex": [
+        "",
+        ""
+      ]
+    },
+    {
+      "comparison": "switchEvent",
+      "capture_packet_indexes": [
+        19,
+        1701
+      ],
+      "equal_application_prefix_size": 144,
+      "equal_prefix_sha256": "a5f2fd6b0b4a024e3f58d30d417b082541a69c93f7123f89abcfc28fc1727527",
+      "complete_application_equal": true,
+      "remaining_application_hex": [
+        "",
+        ""
+      ]
+    },
+    {
+      "comparison": "welcomeTalk",
+      "capture_packet_indexes": [
+        30,
+        1724
+      ],
+      "equal_application_prefix_size": 144,
+      "equal_prefix_sha256": "a8db2ddd831bac6ab9e0e433c1cfa9bbe689c4d1869f1d19aef6a170bbed68e0",
+      "complete_application_equal": true,
+      "remaining_application_hex": [
+        "",
+        ""
+      ]
+    },
+    {
+      "comparison": "integer-result-EventUpdate",
+      "capture_packet_indexes": [
+        28,
+        1722
+      ],
+      "equal_application_prefix_size": 81,
+      "equal_prefix_sha256": "12fa2c2efa27dcd12879e5dc41b90589d90744ca991d79ba25cbda318a83bedb",
+      "complete_application_equal": false,
+      "remaining_application_hex": [
+        "000082dfe40d47",
+        "5b9e00000000c0"
+      ]
+    }
+  ],
+  "association": "Each direction is in reconstructed lane-0 stream order. The two explicit windows retain every c2s EventStart/EventUpdate and owner-matching s2c RunEvent, plus the talkDefault end. EventUpdate carries no owner field identified here; membership is bounded context, not a proved response/callback pairing.",
+  "packet_provenance": "Capture packet indexes identify earliest frame-completion packets. Cross-direction packet comparisons describe captured provenance, not the server's receive or execution order.",
+  "producer_boundary": "processPgEvent and its two integers are observed on server-to-client 0x0130. The capture does not expose server code, server state, a source-column selector, or a binding from owner 0x44B00005 to a client-data actor class."
+}

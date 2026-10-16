@@ -34,5 +34,3076 @@
   "selection": "Every admitted application payload containing the ASCII processPgEvent literal, required to be a main s2c 0x0130 delegateEvent call.",
   "index_convention": "Lane, frame, subevent and direction-event indexes are zero-based; capture packet indexes are one-based. Frame stream offsets are wire bytes; subevent offsets are decoded-frame-body bytes. Parameter offsets are relative to the 64-byte block.",
   "packet_locator": "The earliest captured packet that completes the outer frame in reconstructed TCP sequence space.",
-  "boundary": "One retained capture; connection-local stream order only. The second integer's meaning and any client-data source-column selection are unestablished."
+  "boundary": "The complete manifest-admitted clear-game corpus is censused. Exchange order is per connection direction; packet provenance does not prove server causality. Client-data source-column selection remains unestablished.",
+  "consumer_interpretation": {
+    "citation": "xivl-client-scripts:docs/passivegl-craft-columns.md#supplied-dialogue-consumer",
+    "qualification": "Raw bytecode establishes text-ID and scheduler positional use, not runtime scheduler execution or source-column selection."
+  },
+  "corpus": {
+    "manifest": "sources/pcap-1.23b/manifest.yaml",
+    "manifest_members": 54,
+    "pcap_members": 54,
+    "non_pcap_members": 0,
+    "corpus_digest_sha256": "1293490808399dd5e1015d921a388f0fe4931dfa3ef678f30d790f5296025e6a",
+    "framing": {
+      "lanes": 84,
+      "c2s_discarded_trailing_stream_bytes": 0,
+      "c2s_admitted_unparsed_stream_bytes": 0,
+      "c2s_frames": 8970,
+      "c2s_subevents": 21201,
+      "c2s_wrapped_subevents": 21109,
+      "s2c_discarded_trailing_stream_bytes": 228,
+      "s2c_admitted_unparsed_stream_bytes": 0,
+      "s2c_frames": 10790,
+      "s2c_subevents": 44663,
+      "s2c_wrapped_subevents": 44556
+    },
+    "selected_occurrences": 3,
+    "members": [
+      {
+        "capture": "accept_leve.pcapng",
+        "size_bytes": 59576,
+        "sha256": "42b87e6c095db130def1de5bc382e428b4f4c12c8069c4682d6fa4bc7681967a",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "framing": {
+          "lanes": 2,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 91,
+          "c2s_subevents": 234,
+          "c2s_wrapped_subevents": 233,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 72,
+          "s2c_subevents": 216,
+          "s2c_wrapped_subevents": 215
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 6,
+          "admitted_connections": 2,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 4
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 91,
+            "s2c_compressed_frames": 71,
+            "s2c_raw_frames": 1
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {
+          "eventTalkAfterOffer": 1,
+          "eventTalkCard": 3,
+          "eventTalkDetail": 2,
+          "eventTalkPack": 2,
+          "eventTalkType": 2
+        }
+      },
+      {
+        "capture": "accept_local_leve.pcapng",
+        "size_bytes": 50676,
+        "sha256": "3b4b071d88742a5d3c94a1e29ca6a4074cb6b9a9a60207118302fe22f932bd7c",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "main": 1
+        },
+        "framing": {
+          "lanes": 1,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 75,
+          "c2s_subevents": 193,
+          "c2s_wrapped_subevents": 193,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 59,
+          "s2c_subevents": 181,
+          "s2c_wrapped_subevents": 181
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 4,
+          "admitted_connections": 1,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 3
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 75,
+            "s2c_compressed_frames": 59
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {
+          "askOfferPack": 2,
+          "askOfferQuest": 2,
+          "askOfferRank": 2,
+          "finishTalkTurn": 1,
+          "talkOfferDecide": 1,
+          "talkOfferWelcome": 1
+        }
+      },
+      {
+        "capture": "accept_quest.pcapng",
+        "size_bytes": 53180,
+        "sha256": "a207109240254b1398a36f877afc7ac34a08466cfbd3cdd3f2eb5f4a50718057",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "framing": {
+          "lanes": 2,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 49,
+          "c2s_subevents": 121,
+          "c2s_wrapped_subevents": 120,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 35,
+          "s2c_subevents": 112,
+          "s2c_wrapped_subevents": 111
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 6,
+          "admitted_connections": 2,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 4
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 49,
+            "s2c_compressed_frames": 34,
+            "s2c_raw_frames": 1
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {
+          "delegateEvent": 1,
+          "switchEvent": 1
+        }
+      },
+      {
+        "capture": "action_and_traits.pcapng",
+        "size_bytes": 37584,
+        "sha256": "c3d30fe46d69996dc74e4864245c42675cde2388525c03063dac180df528352f",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "main": 1
+        },
+        "framing": {
+          "lanes": 1,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 63,
+          "c2s_subevents": 157,
+          "c2s_wrapped_subevents": 157,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 40,
+          "s2c_subevents": 98,
+          "s2c_wrapped_subevents": 98
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 3,
+          "admitted_connections": 1,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 2
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 63,
+            "s2c_compressed_frames": 40
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "add_str.pcapng",
+        "size_bytes": 20056,
+        "sha256": "246e4948a7ca1e4dc620e724677bfd9153ce76f6445a557967d309e9946021ed",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "main": 1
+        },
+        "framing": {
+          "lanes": 1,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 38,
+          "c2s_subevents": 91,
+          "c2s_wrapped_subevents": 91,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 28,
+          "s2c_subevents": 46,
+          "s2c_wrapped_subevents": 46
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 3,
+          "admitted_connections": 1,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 2
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 38,
+            "s2c_compressed_frames": 28
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {
+          "delegateCommand": 1
+        }
+      },
+      {
+        "capture": "attributes.pcapng",
+        "size_bytes": 22624,
+        "sha256": "5bc78b05d45a4e410b7410d046cb8b958ec549ce5b1b51a52225c4d15041a2ff",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "main": 1
+        },
+        "framing": {
+          "lanes": 1,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 45,
+          "c2s_subevents": 110,
+          "c2s_wrapped_subevents": 110,
+          "s2c_discarded_trailing_stream_bytes": 0,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 29,
+          "s2c_subevents": 64,
+          "s2c_wrapped_subevents": 64
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 2,
+          "admitted_connections": 1,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 1
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 45,
+            "s2c_compressed_frames": 29
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "battle_mode_passive_mode.pcapng",
+        "size_bytes": 12776,
+        "sha256": "5a8290df1d11781f4f5fa1f6990651c679e57ee3b8c5549021f06767bb172d4b",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "framing": {
+          "lanes": 2,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 23,
+          "c2s_subevents": 55,
+          "c2s_wrapped_subevents": 54,
+          "s2c_discarded_trailing_stream_bytes": 0,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 19,
+          "s2c_subevents": 59,
+          "s2c_wrapped_subevents": 58
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 3,
+          "admitted_connections": 2,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 1
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 23,
+            "s2c_compressed_frames": 18,
+            "s2c_raw_frames": 1
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "buy_square_maple_shield.pcapng",
+        "size_bytes": 54088,
+        "sha256": "aab582bd9658c89cd4d56e132500481f442b9f2dc2179f1a5829ea09776bce6b",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "framing": {
+          "lanes": 2,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 83,
+          "c2s_subevents": 207,
+          "c2s_wrapped_subevents": 206,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 59,
+          "s2c_subevents": 188,
+          "s2c_wrapped_subevents": 187
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 5,
+          "admitted_connections": 2,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 3
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 83,
+            "s2c_compressed_frames": 58,
+            "s2c_raw_frames": 1
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {
+          "closeShopBuy": 1,
+          "finishTalkTurn": 1,
+          "openShopBuy": 1,
+          "selectModeOfMultiWeaponVendor": 2,
+          "selectShopBuy": 2,
+          "welcomeTalk": 1
+        }
+      },
+      {
+        "capture": "change_bodyarmor.pcapng",
+        "size_bytes": 54536,
+        "sha256": "55ee6035d24e80b97c9354a0800b86a52d0a99e1200cf6875a5b56009215021a",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "main": 1
+        },
+        "framing": {
+          "lanes": 1,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 55,
+          "c2s_subevents": 141,
+          "c2s_wrapped_subevents": 141,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 34,
+          "s2c_subevents": 91,
+          "s2c_wrapped_subevents": 91
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 3,
+          "admitted_connections": 1,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 2
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 55,
+            "s2c_compressed_frames": 34
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "change_helm.pcapng",
+        "size_bytes": 39660,
+        "sha256": "af1e465076c3acf6188f24f084622b22beccc932bb96effd517b2d9a44606e08",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "main": 1
+        },
+        "framing": {
+          "lanes": 1,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 66,
+          "c2s_subevents": 173,
+          "c2s_wrapped_subevents": 173,
+          "s2c_discarded_trailing_stream_bytes": 0,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 43,
+          "s2c_subevents": 120,
+          "s2c_wrapped_subevents": 120
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 3,
+          "admitted_connections": 1,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 2
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 66,
+            "s2c_compressed_frames": 43
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "change_to_botanist.pcapng",
+        "size_bytes": 41500,
+        "sha256": "8fdc448a17d19bea3d07855a8d8843d78926c50586f3656946c96b6a6cb27d26",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "framing": {
+          "lanes": 2,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 65,
+          "c2s_subevents": 173,
+          "c2s_wrapped_subevents": 172,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 49,
+          "s2c_subevents": 182,
+          "s2c_wrapped_subevents": 181
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 4,
+          "admitted_connections": 2,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 2
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 65,
+            "s2c_compressed_frames": 48,
+            "s2c_raw_frames": 1
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "chat_say.pcapng",
+        "size_bytes": 8864,
+        "sha256": "ccaefd38c94512507d518f83ab693edaf7f42167f3b82876869b53a736275e37",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "main": 1
+        },
+        "framing": {
+          "lanes": 1,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 16,
+          "c2s_subevents": 38,
+          "c2s_wrapped_subevents": 38,
+          "s2c_discarded_trailing_stream_bytes": 0,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 10,
+          "s2c_subevents": 16,
+          "s2c_wrapped_subevents": 16
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 2,
+          "admitted_connections": 1,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 1
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 16,
+            "s2c_compressed_frames": 10
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "chat_shout.pcapng",
+        "size_bytes": 7872,
+        "sha256": "94ab6b14373b2d0d0122e14b3eb18a1371e52165172ba18b3fc836c8ba94265a",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "main": 1
+        },
+        "framing": {
+          "lanes": 1,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 14,
+          "c2s_subevents": 34,
+          "c2s_wrapped_subevents": 34,
+          "s2c_discarded_trailing_stream_bytes": 0,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 10,
+          "s2c_subevents": 16,
+          "s2c_wrapped_subevents": 16
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 1,
+          "admitted_connections": 1,
+          "excluded_connections": [],
+          "compression": {
+            "c2s_raw_frames": 14,
+            "s2c_compressed_frames": 10
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "check_room_map.pcapng",
+        "size_bytes": 28032,
+        "sha256": "cca1eea57329b02e5d66e53ad6f44d28deebf8ee8c11cfafd22bf813d1551ee5",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "main": 1
+        },
+        "framing": {
+          "lanes": 1,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 47,
+          "c2s_subevents": 110,
+          "c2s_wrapped_subevents": 110,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 27,
+          "s2c_subevents": 59,
+          "s2c_wrapped_subevents": 59
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 3,
+          "admitted_connections": 1,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 2
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 47,
+            "s2c_compressed_frames": 27
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "checkbed.pcapng",
+        "size_bytes": 26276,
+        "sha256": "9e05a05de6ec44eded13761fcb3546eb248c0c68e537051eef575e29dfff1b79",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "main": 1
+        },
+        "framing": {
+          "lanes": 1,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 24,
+          "c2s_subevents": 64,
+          "c2s_wrapped_subevents": 64,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 17,
+          "s2c_subevents": 38,
+          "s2c_wrapped_subevents": 38
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 1,
+          "admitted_connections": 1,
+          "excluded_connections": [],
+          "compression": {
+            "c2s_raw_frames": 24,
+            "s2c_compressed_frames": 17
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {
+          "askLogout": 1
+        }
+      },
+      {
+        "capture": "coerthas_map.pcapng",
+        "size_bytes": 34364,
+        "sha256": "779de805f9172832e986f5c46c0a94f6d93f4b9c7f1c41fd0de0f5f8326c0ae3",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "framing": {
+          "lanes": 2,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 32,
+          "c2s_subevents": 74,
+          "c2s_wrapped_subevents": 73,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 20,
+          "s2c_subevents": 32,
+          "s2c_wrapped_subevents": 31
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 3,
+          "admitted_connections": 2,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 1
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 32,
+            "s2c_compressed_frames": 19,
+            "s2c_raw_frames": 1
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "combat_autoattack.pcapng",
+        "size_bytes": 82908,
+        "sha256": "2f677ab61047b25c4168a3dd9496f372d48de3bba018d582dd5a968b9272f7b2",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "framing": {
+          "lanes": 2,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 118,
+          "c2s_subevents": 286,
+          "c2s_wrapped_subevents": 285,
+          "s2c_discarded_trailing_stream_bytes": 0,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 156,
+          "s2c_subevents": 899,
+          "s2c_wrapped_subevents": 898
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 7,
+          "admitted_connections": 2,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 5
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 118,
+            "s2c_compressed_frames": 155,
+            "s2c_raw_frames": 1
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "combat_skills.pcapng",
+        "size_bytes": 63028,
+        "sha256": "7fe66d92f6f62584e57562e51355d310546935690e0b96c2c689b83bbe8a07a7",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "main": 1
+        },
+        "framing": {
+          "lanes": 1,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 80,
+          "c2s_subevents": 181,
+          "c2s_wrapped_subevents": 181,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 117,
+          "s2c_subevents": 535,
+          "s2c_wrapped_subevents": 535
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 5,
+          "admitted_connections": 1,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 4
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 80,
+            "s2c_compressed_frames": 117
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "cutscene_book.pcapng",
+        "size_bytes": 123824,
+        "sha256": "c2cf85e02d8d15fe2aa9261e8b796c29c0a3d9dd9cdf287ce0f75f3a666b2b4d",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "framing": {
+          "lanes": 2,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 214,
+          "c2s_subevents": 511,
+          "c2s_wrapped_subevents": 510,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 118,
+          "s2c_subevents": 267,
+          "s2c_wrapped_subevents": 266
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 11,
+          "admitted_connections": 2,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 9
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 214,
+            "s2c_compressed_frames": 117,
+            "s2c_raw_frames": 1
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "emote_dance.pcapng",
+        "size_bytes": 30352,
+        "sha256": "9e004f1e791cfc37b7d23e8986a5e69021b7b7f828295fdf7957e36aa1c57dc8",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "framing": {
+          "lanes": 2,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 51,
+          "c2s_subevents": 120,
+          "c2s_wrapped_subevents": 119,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 29,
+          "s2c_subevents": 65,
+          "s2c_wrapped_subevents": 64
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 4,
+          "admitted_connections": 2,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 2
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 51,
+            "s2c_compressed_frames": 28,
+            "s2c_raw_frames": 1
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "emote_kneel.pcapng",
+        "size_bytes": 23920,
+        "sha256": "3381b6121f5b0789c97ededdc5394c6bc9b14c561029191fb5b3f428033c80e8",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "main": 1
+        },
+        "framing": {
+          "lanes": 1,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 40,
+          "c2s_subevents": 95,
+          "c2s_wrapped_subevents": 95,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 22,
+          "s2c_subevents": 50,
+          "s2c_wrapped_subevents": 50
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 2,
+          "admitted_connections": 1,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 1
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 40,
+            "s2c_compressed_frames": 22
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "friendlist_search.pcapng",
+        "size_bytes": 37744,
+        "sha256": "3b9a35689fb923d9520bbfed8a3886dc2b461c9516492e3d8e68eec093eb7b0e",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "framing": {
+          "lanes": 2,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 61,
+          "c2s_subevents": 148,
+          "c2s_wrapped_subevents": 147,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 39,
+          "s2c_subevents": 82,
+          "s2c_wrapped_subevents": 81
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 5,
+          "admitted_connections": 2,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 3
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 61,
+            "s2c_compressed_frames": 38,
+            "s2c_raw_frames": 1
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "from_gridania_to_blackshroud.pcapng",
+        "size_bytes": 196308,
+        "sha256": "eff300de679230653953ea3399939a15ce9d6aeafd202c7ebcf5f55e6d24930f",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "framing": {
+          "lanes": 2,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 311,
+          "c2s_subevents": 735,
+          "c2s_wrapped_subevents": 730,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 288,
+          "s2c_subevents": 930,
+          "s2c_wrapped_subevents": 923
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 14,
+          "admitted_connections": 2,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 12
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 311,
+            "s2c_compressed_frames": 285,
+            "s2c_raw_frames": 3
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "gather_wood.pcapng",
+        "size_bytes": 157688,
+        "sha256": "c308aa4c984eb3e1912383c06e5115c6924713978df43cdb8075335e1bac7d32",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "framing": {
+          "lanes": 2,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 224,
+          "c2s_subevents": 509,
+          "c2s_wrapped_subevents": 507,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 241,
+          "s2c_subevents": 901,
+          "s2c_wrapped_subevents": 899
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 11,
+          "admitted_connections": 2,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 9
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 224,
+            "s2c_compressed_frames": 239,
+            "s2c_raw_frames": 2
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {
+          "delegateCommand": 43
+        }
+      },
+      {
+        "capture": "gear_changesoul.pcapng",
+        "size_bytes": 23784,
+        "sha256": "62af2cde3a4683fba3e09cc3dfed8001d74303b120381de577b05df492926780",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "main": 1
+        },
+        "framing": {
+          "lanes": 1,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 42,
+          "c2s_subevents": 111,
+          "c2s_wrapped_subevents": 111,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 28,
+          "s2c_subevents": 68,
+          "s2c_wrapped_subevents": 68
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 2,
+          "admitted_connections": 1,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 1
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 42,
+            "s2c_compressed_frames": 28
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "gear_changeweapon.pcapng",
+        "size_bytes": 21352,
+        "sha256": "3eec2c2993feeb2b8c47c1e1f553335638a7262ec13b561e2d52d768f0798080",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "main": 1
+        },
+        "framing": {
+          "lanes": 1,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 36,
+          "c2s_subevents": 101,
+          "c2s_wrapped_subevents": 101,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 28,
+          "s2c_subevents": 79,
+          "s2c_wrapped_subevents": 79
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 2,
+          "admitted_connections": 1,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 1
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 36,
+            "s2c_compressed_frames": 28
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "gridania_map.pcapng",
+        "size_bytes": 16184,
+        "sha256": "13e26b2d68f195b8e2daf7c355a2741c155a1036b80d79c90aab982157290795",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "main": 1
+        },
+        "framing": {
+          "lanes": 1,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 30,
+          "c2s_subevents": 74,
+          "c2s_wrapped_subevents": 74,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 17,
+          "s2c_subevents": 62,
+          "s2c_wrapped_subevents": 62
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 2,
+          "admitted_connections": 1,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 1
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 30,
+            "s2c_compressed_frames": 17
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "gridania_to_coerthas.pcapng",
+        "size_bytes": 939832,
+        "sha256": "63152a1ed6e446df5cc4750fe50a0839f9e45ad270c79abfc72b5c09cc47e547",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "framing": {
+          "lanes": 2,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 1310,
+          "c2s_subevents": 3234,
+          "c2s_wrapped_subevents": 3220,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 1372,
+          "s2c_subevents": 6873,
+          "s2c_wrapped_subevents": 6855
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 52,
+          "admitted_connections": 2,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 48
+            },
+            {
+              "reason": "non-game-server-port",
+              "server_port": 139,
+              "count": 1
+            },
+            {
+              "reason": "non-game-server-port",
+              "server_port": 445,
+              "count": 1
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 1310,
+            "s2c_compressed_frames": 1362,
+            "s2c_raw_frames": 10
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "harvest.pcapng",
+        "size_bytes": 60680,
+        "sha256": "8522a844b6904207c3465ae1d1038599eddb8b9dc47800d5230c8a1c3ad0e440",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "framing": {
+          "lanes": 2,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 72,
+          "c2s_subevents": 156,
+          "c2s_wrapped_subevents": 155,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 90,
+          "s2c_subevents": 677,
+          "s2c_wrapped_subevents": 676
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 6,
+          "admitted_connections": 2,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 4
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 72,
+            "s2c_compressed_frames": 89,
+            "s2c_raw_frames": 1
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {
+          "delegateCommand": 4
+        }
+      },
+      {
+        "capture": "idle_in_party.pcapng",
+        "size_bytes": 20168,
+        "sha256": "98b45822079372380bf834a937a9cb83b662b9e302555aafa14ee353537f74c1",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "main": 1
+        },
+        "framing": {
+          "lanes": 1,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 29,
+          "c2s_subevents": 68,
+          "c2s_wrapped_subevents": 68,
+          "s2c_discarded_trailing_stream_bytes": 0,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 18,
+          "s2c_subevents": 63,
+          "s2c_wrapped_subevents": 63
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 3,
+          "admitted_connections": 1,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 2
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 29,
+            "s2c_compressed_frames": 18
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "idling.pcapng",
+        "size_bytes": 42608,
+        "sha256": "fd86f5b78b2975dcaf7bb8a8e7f94267f9f2660078a5193ea26732cb317dd385",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "framing": {
+          "lanes": 2,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 78,
+          "c2s_subevents": 183,
+          "c2s_wrapped_subevents": 182,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 52,
+          "s2c_subevents": 80,
+          "s2c_wrapped_subevents": 79
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 5,
+          "admitted_connections": 2,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 3
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 78,
+            "s2c_compressed_frames": 51,
+            "s2c_raw_frames": 1
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "inventory.pcapng",
+        "size_bytes": 27908,
+        "sha256": "f667bfc1cb87afec3c5c5f56b031254101aff012577f6f35c7cbf133815b6878",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "framing": {
+          "lanes": 2,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 47,
+          "c2s_subevents": 114,
+          "c2s_wrapped_subevents": 113,
+          "s2c_discarded_trailing_stream_bytes": 0,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 28,
+          "s2c_subevents": 64,
+          "s2c_wrapped_subevents": 63
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 4,
+          "admitted_connections": 2,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 2
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 47,
+            "s2c_compressed_frames": 27,
+            "s2c_raw_frames": 1
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "invite_join_party.pcapng",
+        "size_bytes": 88372,
+        "sha256": "34c946c3f93744d2bbd841e75f983ef12b9bbcb59afcba31414d6d3f41e7de58",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "framing": {
+          "lanes": 2,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 149,
+          "c2s_subevents": 354,
+          "c2s_wrapped_subevents": 353,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 102,
+          "s2c_subevents": 347,
+          "s2c_wrapped_subevents": 346
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 9,
+          "admitted_connections": 2,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 7
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 149,
+            "s2c_compressed_frames": 101,
+            "s2c_raw_frames": 1
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "local_leve_complete.pcapng",
+        "size_bytes": 358296,
+        "sha256": "4f0793f354140478725bf2c30642a3458a854460f47fb11a7af635c8881d95cd",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "framing": {
+          "lanes": 2,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 504,
+          "c2s_subevents": 1075,
+          "c2s_wrapped_subevents": 1070,
+          "s2c_discarded_trailing_stream_bytes": 0,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 525,
+          "s2c_subevents": 2292,
+          "s2c_wrapped_subevents": 2287
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 24,
+          "admitted_connections": 2,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 22
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 504,
+            "s2c_compressed_frames": 520,
+            "s2c_raw_frames": 5
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [
+          {
+            "capture": "local_leve_complete.pcapng",
+            "lane_index": 0,
+            "lane": "main",
+            "direction": "s2c",
+            "direction_event_index": 41,
+            "frame_index": 14,
+            "frame_stream_offset": 1619,
+            "capture_packet_index": 38,
+            "capture_time_us": 1356922112274850,
+            "capture_timestamp_utc": "2012-12-31T02:48:32.274850Z",
+            "outer_timestamp_or_seq_hex": "e448dcee3b010000",
+            "outer_value": 1356922112228,
+            "outer_frame_size": 126,
+            "inflated_frame_body_size": 176,
+            "subevent_index": 0,
+            "subevent_offset": 0,
+            "subevent_size": 176,
+            "subevent_type": 3,
+            "transport_source_actor_id": 43723073,
+            "transport_target_actor_id": 43723073,
+            "transport_counter": 4275232768,
+            "inner_header_word0": 20,
+            "opcode": "0x0130"
+          },
+          {
+            "capture": "local_leve_complete.pcapng",
+            "lane_index": 0,
+            "lane": "main",
+            "direction": "s2c",
+            "direction_event_index": 70,
+            "frame_index": 25,
+            "frame_stream_offset": 2860,
+            "capture_packet_index": 79,
+            "capture_time_us": 1356922117656795,
+            "capture_timestamp_utc": "2012-12-31T02:48:37.656795Z",
+            "outer_timestamp_or_seq_hex": "105edcee3b010000",
+            "outer_value": 1356922117648,
+            "outer_frame_size": 127,
+            "inflated_frame_body_size": 176,
+            "subevent_index": 0,
+            "subevent_offset": 0,
+            "subevent_size": 176,
+            "subevent_type": 3,
+            "transport_source_actor_id": 43723073,
+            "transport_target_actor_id": 43723073,
+            "transport_counter": 4275232768,
+            "inner_header_word0": 20,
+            "opcode": "0x0130"
+          },
+          {
+            "capture": "local_leve_complete.pcapng",
+            "lane_index": 0,
+            "lane": "main",
+            "direction": "s2c",
+            "direction_event_index": 2191,
+            "frame_index": 497,
+            "frame_stream_offset": 66922,
+            "capture_packet_index": 1734,
+            "capture_time_us": 1356922311892645,
+            "capture_timestamp_utc": "2012-12-31T02:51:51.892645Z",
+            "outer_timestamp_or_seq_hex": "ad55dfee3b010000",
+            "outer_value": 1356922312109,
+            "outer_frame_size": 127,
+            "inflated_frame_body_size": 176,
+            "subevent_index": 0,
+            "subevent_offset": 0,
+            "subevent_size": 176,
+            "subevent_type": 3,
+            "transport_source_actor_id": 43723073,
+            "transport_target_actor_id": 43723073,
+            "transport_counter": 4275232768,
+            "inner_header_word0": 20,
+            "opcode": "0x0130"
+          }
+        ],
+        "all_admitted_0x0130_function_counts": {
+          "delegateCommand": 61,
+          "delegateEvent": 8,
+          "switchEvent": 2
+        }
+      },
+      {
+        "capture": "login.pcapng",
+        "size_bytes": 856236,
+        "sha256": "28e06b54fe559870031f077f8549b9244caafa7e5177dbca08a7feae6c2b1b62",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "framing": {
+          "lanes": 2,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 90,
+          "c2s_subevents": 180,
+          "c2s_wrapped_subevents": 175,
+          "s2c_discarded_trailing_stream_bytes": 0,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 92,
+          "s2c_subevents": 390,
+          "s2c_wrapped_subevents": 385
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 20,
+          "admitted_connections": 2,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 13
+            },
+            {
+              "reason": "non-game-server-port",
+              "server_port": 443,
+              "count": 2
+            },
+            {
+              "reason": "non-game-server-port",
+              "server_port": 36151,
+              "count": 1
+            },
+            {
+              "reason": "non-game-server-port",
+              "server_port": 54994,
+              "count": 2
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 90,
+            "s2c_compressed_frames": 89,
+            "s2c_raw_frames": 3
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "mount_unmount_chocobo.pcapng",
+        "size_bytes": 21240,
+        "sha256": "e77c06799f07029feb054792eac30baa431da15a61937b1a39bcd025e4db4072",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "main": 1
+        },
+        "framing": {
+          "lanes": 1,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 34,
+          "c2s_subevents": 77,
+          "c2s_wrapped_subevents": 77,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 18,
+          "s2c_subevents": 32,
+          "s2c_wrapped_subevents": 32
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 2,
+          "admitted_connections": 1,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 1
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 34,
+            "s2c_compressed_frames": 18
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "move_around_gridania.pcapng",
+        "size_bytes": 220128,
+        "sha256": "bea7ae86444fa3ef9acc08f148f60dff1e5992188ee85136dec50c64e09236d0",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "framing": {
+          "lanes": 2,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 303,
+          "c2s_subevents": 710,
+          "c2s_wrapped_subevents": 708,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 273,
+          "s2c_subevents": 1057,
+          "s2c_wrapped_subevents": 1055
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 17,
+          "admitted_connections": 2,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 13
+            },
+            {
+              "reason": "non-game-server-port",
+              "server_port": 139,
+              "count": 1
+            },
+            {
+              "reason": "non-game-server-port",
+              "server_port": 445,
+              "count": 1
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 303,
+            "s2c_compressed_frames": 271,
+            "s2c_raw_frames": 2
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "move_out_of_room.pcapng",
+        "size_bytes": 83412,
+        "sha256": "a7a03a1d688f3feb264f8da9fae3519c55b7e267aa3802472f0221f4d729b37b",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "main": 1
+        },
+        "framing": {
+          "lanes": 1,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 81,
+          "c2s_subevents": 167,
+          "c2s_wrapped_subevents": 166,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 134,
+          "s2c_subevents": 1169,
+          "s2c_wrapped_subevents": 1167
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 6,
+          "admitted_connections": 1,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 5
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 81,
+            "s2c_compressed_frames": 134
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {
+          "delegateEvent": 1
+        }
+      },
+      {
+        "capture": "moving_around_gridania.pcapng",
+        "size_bytes": 855000,
+        "sha256": "bf6abf7ccc7a16e071846036477c1fadbc3b46385ef6e747b543d836f3f51017",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "framing": {
+          "lanes": 2,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 1205,
+          "c2s_subevents": 2845,
+          "c2s_wrapped_subevents": 2831,
+          "s2c_discarded_trailing_stream_bytes": 0,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 1329,
+          "s2c_subevents": 7233,
+          "s2c_wrapped_subevents": 7215
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 47,
+          "admitted_connections": 2,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 45
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 1205,
+            "s2c_compressed_frames": 1319,
+            "s2c_raw_frames": 10
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "open_gear_menu.pcapng",
+        "size_bytes": 25940,
+        "sha256": "6b7dee09f59d03d9706ca1c81586dce667cd4d806ee2a2b72d89432d617afc2e",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "main": 1
+        },
+        "framing": {
+          "lanes": 1,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 51,
+          "c2s_subevents": 128,
+          "c2s_wrapped_subevents": 128,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 29,
+          "s2c_subevents": 67,
+          "s2c_wrapped_subevents": 67
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 3,
+          "admitted_connections": 1,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 2
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 51,
+            "s2c_compressed_frames": 29
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "party_battle_leve.pcapng",
+        "size_bytes": 1429864,
+        "sha256": "6327e5e1f5cbd51a9baaa9bcbacf53ca51c50a98fe4b66ae3e6bdecd9198089f",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "framing": {
+          "lanes": 2,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 1827,
+          "c2s_subevents": 4297,
+          "c2s_wrapped_subevents": 4282,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 3516,
+          "s2c_subevents": 13415,
+          "s2c_wrapped_subevents": 13400
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 73,
+          "admitted_connections": 2,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 71
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 1827,
+            "s2c_compressed_frames": 3476,
+            "s2c_raw_frames": 40
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {
+          "eventAetheryteChildSelect": 1,
+          "eventGLDifficulty": 1,
+          "eventGLSelect": 1,
+          "eventGLSelectDetail": 1,
+          "eventGLStart": 1,
+          "eventGuildleveReward": 1,
+          "eventTalkGuildleveWarp": 1
+        }
+      },
+      {
+        "capture": "quest_journal.pcapng",
+        "size_bytes": 32264,
+        "sha256": "e1f983e9009a9ebe8b8231647229bee1672a1ac85d95a830113280f534531edc",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "main": 1
+        },
+        "framing": {
+          "lanes": 1,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 56,
+          "c2s_subevents": 134,
+          "c2s_wrapped_subevents": 134,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 32,
+          "s2c_subevents": 72,
+          "s2c_wrapped_subevents": 72
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 3,
+          "admitted_connections": 1,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 2
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 56,
+            "s2c_compressed_frames": 32
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "quest_update.pcapng",
+        "size_bytes": 66756,
+        "sha256": "e31aa9738dd523b7703eefa6d38527135f16d8b5ff2fc314fd7e5b808d7e4787",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "framing": {
+          "lanes": 2,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 112,
+          "c2s_subevents": 273,
+          "c2s_wrapped_subevents": 272,
+          "s2c_discarded_trailing_stream_bytes": 0,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 73,
+          "s2c_subevents": 152,
+          "s2c_wrapped_subevents": 151
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 6,
+          "admitted_connections": 2,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 4
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 112,
+            "s2c_compressed_frames": 72,
+            "s2c_raw_frames": 1
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {
+          "delegateEvent": 1,
+          "switchEvent": 1
+        }
+      },
+      {
+        "capture": "repair_items.pcapng",
+        "size_bytes": 63400,
+        "sha256": "bbd829cbd3f42b2cbfb3aa8a74a1cc35d4e2c16c99e5a4a20ca76573f02dd90f",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "framing": {
+          "lanes": 2,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 95,
+          "c2s_subevents": 241,
+          "c2s_wrapped_subevents": 240,
+          "s2c_discarded_trailing_stream_bytes": 0,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 88,
+          "s2c_subevents": 440,
+          "s2c_wrapped_subevents": 439
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 5,
+          "admitted_connections": 2,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 3
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 95,
+            "s2c_compressed_frames": 87,
+            "s2c_raw_frames": 1
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {
+          "confirmRepairItem": 6,
+          "finishTalkTurn": 1,
+          "selectItem": 4,
+          "talkWelcome": 2
+        }
+      },
+      {
+        "capture": "return_to_inn.pcapng",
+        "size_bytes": 44012,
+        "sha256": "9a81e483d3dd2673081afef06ed521c190c4d42be16e95e24097f25ff81f58c1",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "main": 1
+        },
+        "framing": {
+          "lanes": 1,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 50,
+          "c2s_subevents": 107,
+          "c2s_wrapped_subevents": 106,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 63,
+          "s2c_subevents": 315,
+          "s2c_wrapped_subevents": 313
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 4,
+          "admitted_connections": 1,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 3
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 50,
+            "s2c_compressed_frames": 63
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {
+          "delegateCommand": 1
+        }
+      },
+      {
+        "capture": "sell_item.pcapng",
+        "size_bytes": 57580,
+        "sha256": "1cd808fff6501c53e4c113f1fdef090e50dfe0fd7fe86ceaa552b3a53c1b5aac",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "framing": {
+          "lanes": 2,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 82,
+          "c2s_subevents": 209,
+          "c2s_wrapped_subevents": 208,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 68,
+          "s2c_subevents": 212,
+          "s2c_wrapped_subevents": 211
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 6,
+          "admitted_connections": 2,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 4
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 82,
+            "s2c_compressed_frames": 67,
+            "s2c_raw_frames": 1
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {
+          "closeShopSell": 1,
+          "finishTalkTurn": 1,
+          "informSellPrice": 1,
+          "openShopSell": 1,
+          "selectModeOfMultiWeaponVendor": 2,
+          "selectShopSell": 3,
+          "welcomeTalk": 1
+        }
+      },
+      {
+        "capture": "small_talk_louisoix.pcapng",
+        "size_bytes": 18444,
+        "sha256": "58b620d90370ba69202e63f7f70edb79004ccbb8068e11e2e112a825d84dcafe",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "main": 1
+        },
+        "framing": {
+          "lanes": 1,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 35,
+          "c2s_subevents": 90,
+          "c2s_wrapped_subevents": 90,
+          "s2c_discarded_trailing_stream_bytes": 0,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 27,
+          "s2c_subevents": 67,
+          "s2c_wrapped_subevents": 67
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 3,
+          "admitted_connections": 1,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 2
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 35,
+            "s2c_compressed_frames": 27
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {
+          "delegateEvent": 1,
+          "switchEvent": 1
+        }
+      },
+      {
+        "capture": "switch_to_weaver.pcapng",
+        "size_bytes": 33364,
+        "sha256": "b41b25bc51be1a64f41861142dc992c14493c65bcd920cadca013243480b777e",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "main": 1
+        },
+        "framing": {
+          "lanes": 1,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 48,
+          "c2s_subevents": 125,
+          "c2s_wrapped_subevents": 125,
+          "s2c_discarded_trailing_stream_bytes": 0,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 40,
+          "s2c_subevents": 197,
+          "s2c_wrapped_subevents": 197
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 2,
+          "admitted_connections": 1,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 1
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 48,
+            "s2c_compressed_frames": 40
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "teleport_to_camp_nine_ivies.pcapng",
+        "size_bytes": 80004,
+        "sha256": "fac2b485608247d299a406a7065e19918789118e7e544ca85cec4d772da0e3ab",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "framing": {
+          "lanes": 2,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 104,
+          "c2s_subevents": 231,
+          "c2s_wrapped_subevents": 229,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 107,
+          "s2c_subevents": 476,
+          "s2c_wrapped_subevents": 473
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 8,
+          "admitted_connections": 2,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 6
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 104,
+            "s2c_compressed_frames": 106,
+            "s2c_raw_frames": 1
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {
+          "delegateCommand": 5
+        }
+      },
+      {
+        "capture": "teleport_to_camp_tranquil.pcapng",
+        "size_bytes": 67920,
+        "sha256": "488318351cdedb2e2b650dc68c55014b160fbbc26753c200922402c1ba6c4dd7",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "framing": {
+          "lanes": 2,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 86,
+          "c2s_subevents": 190,
+          "c2s_wrapped_subevents": 188,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 84,
+          "s2c_subevents": 489,
+          "s2c_wrapped_subevents": 486
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 6,
+          "admitted_connections": 2,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 4
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 86,
+            "s2c_compressed_frames": 83,
+            "s2c_raw_frames": 1
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {
+          "delegateCommand": 3
+        }
+      },
+      {
+        "capture": "teleport_to_gridania.pcapng",
+        "size_bytes": 67620,
+        "sha256": "779141dc79a4bcf4bfc2e265f8b9510607d5a6b6e78d32f8940e5a847e598fa0",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "main": 1
+        },
+        "framing": {
+          "lanes": 1,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 80,
+          "c2s_subevents": 178,
+          "c2s_wrapped_subevents": 177,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 96,
+          "s2c_subevents": 489,
+          "s2c_wrapped_subevents": 487
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 5,
+          "admitted_connections": 1,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 4
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 80,
+            "s2c_compressed_frames": 96
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {
+          "delegateCommand": 3
+        }
+      },
+      {
+        "capture": "war_quest_update1.pcapng",
+        "size_bytes": 42812,
+        "sha256": "ce64e429063cc7e49a2045e2f7b0e18b1991f5908368b791b93c72419841e890",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "framing": {
+          "lanes": 2,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 70,
+          "c2s_subevents": 170,
+          "c2s_wrapped_subevents": 169,
+          "s2c_discarded_trailing_stream_bytes": 0,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 62,
+          "s2c_subevents": 181,
+          "s2c_wrapped_subevents": 180
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 5,
+          "admitted_connections": 2,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 3
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 70,
+            "s2c_compressed_frames": 61,
+            "s2c_raw_frames": 1
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {
+          "delegateEvent": 1
+        }
+      },
+      {
+        "capture": "war_quest_update2.pcapng",
+        "size_bytes": 206216,
+        "sha256": "bf43b5ee32c58e5dc6f8149b071bd9c5cd5cc0aaa55ea3528872308fd7be2429",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "framing": {
+          "lanes": 2,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 210,
+          "c2s_subevents": 412,
+          "c2s_wrapped_subevents": 409,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 671,
+          "s2c_subevents": 1836,
+          "s2c_wrapped_subevents": 1833
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 15,
+          "admitted_connections": 2,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 13
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 210,
+            "s2c_compressed_frames": 667,
+            "s2c_raw_frames": 4
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {}
+      },
+      {
+        "capture": "war_quest_update3.pcapng",
+        "size_bytes": 103520,
+        "sha256": "52279e8cbc13d3f4751b5ee3cb9c91df1895ed5c41d30672629db3ec1c9efd05",
+        "status": "decoded-clear-game-lanes",
+        "lanes": {
+          "chat": 1,
+          "main": 1
+        },
+        "framing": {
+          "lanes": 2,
+          "c2s_discarded_trailing_stream_bytes": 0,
+          "c2s_admitted_unparsed_stream_bytes": 0,
+          "c2s_frames": 169,
+          "c2s_subevents": 407,
+          "c2s_wrapped_subevents": 405,
+          "s2c_discarded_trailing_stream_bytes": 6,
+          "s2c_admitted_unparsed_stream_bytes": 0,
+          "s2c_frames": 167,
+          "s2c_subevents": 522,
+          "s2c_wrapped_subevents": 520
+        },
+        "admission": {
+          "payload_bearing_tcp_connections": 9,
+          "admitted_connections": 2,
+          "excluded_connections": [
+            {
+              "reason": "non-game-server-port",
+              "server_port": 80,
+              "count": 7
+            }
+          ],
+          "compression": {
+            "c2s_raw_frames": 169,
+            "s2c_compressed_frames": 165,
+            "s2c_raw_frames": 2
+          },
+          "compression_flag_mismatches": 0,
+          "decoded_frame_zero_padding_bytes": {
+            "c2s": 0,
+            "s2c": 0
+          }
+        },
+        "decoder_failures": {
+          "c2s_compressed_frame_inflate_failures": 0,
+          "c2s_subevent_truncations": 0,
+          "c2s_wrapped_short_inner_headers": 0,
+          "s2c_compressed_frame_inflate_failures": 0,
+          "s2c_subevent_truncations": 0,
+          "s2c_wrapped_short_inner_headers": 0
+        },
+        "processPgEvent_occurrences": [],
+        "all_admitted_0x0130_function_counts": {
+          "delegateEvent": 3
+        }
+      }
+    ],
+    "scope": "Every manifest member is identity-checked; every PCAP member is decoded through canonical clear port-54992 game admission. Non-game TCP connections and non-PCAP members are separate exclusions. Unlisted local files are outside scope. TLS and lobby plaintext are not searched."
+  }
 }
