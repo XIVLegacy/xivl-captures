@@ -56,6 +56,10 @@ The supported commands for direct maintainer use are:
 - `python tools/extractors/extract_login_0002_appearance_order.py` - regenerate
   the numeric same-source login `0x0002`/`0x00CA`/`0x00D6`/`0x00CC` order;
   add `--check` for replay.
+- `python tools/extractors/extract_command_registration.py` - reproduce all
+  retained s2c `0x0132` byte/name pairs, batch order, and actor references;
+  `--check` verifies exact replay and `--check --public-shape` checks retained
+  accounting without restricted captures.
 - `python tools/extractors/extract_battle_results.py --client-data-repo <path>
   --field-model <path>` - regenerate the active battle-result backfit study from
   the full pcap corpus and explicit client-data/client-struct evidence inputs;

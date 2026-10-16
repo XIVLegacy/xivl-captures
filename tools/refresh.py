@@ -109,6 +109,7 @@ UNIT_TEST_MODULES = (
     "tools.tests.test_extract_spawn_observations",
     "tools.tests.test_extract_login_018a_timeline",
     "tools.tests.test_extract_login_0002_appearance_order",
+    "tools.tests.test_extract_command_registration",
     "tools.tests.test_extract_guildleve_journal_command",
     "tools.tests.test_extract_regional_guildleve_publisher_contract",
     "tools.tests.test_extract_00da_00e1_comparison",
@@ -449,6 +450,10 @@ def run_group_species_products(
         (
             TOOLS / "extractors/extract_friendlist_search_exchange.py",
             "friend-search wire exchange",
+        ),
+        (
+            TOOLS / "extractors/extract_command_registration.py",
+            "command registration wire census",
         ),
     ):
         command = [script]
