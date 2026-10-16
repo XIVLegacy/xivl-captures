@@ -21,8 +21,10 @@ notes: >-
   exchanges retain client inputs and server output. Bytecode-established
   text-ID and scheduler positional use is recorded in
   xivl-client-scripts:docs/passivegl-craft-columns.md, Supplied dialogue
-  consumer. Source-column selection and runtime scheduler execution remain
-  unestablished.
+  consumer. Selected intervening craft arguments and player property writes
+  distinguish the recorded intervals without binding journal slot 8 to quest
+  120202 or establishing a source-column selector. Runtime scheduler execution
+  remains unestablished.
 source_refs:
 - source: pcap-1.23b
   citation: sources/pcap-1.23b/manifest.yaml
@@ -30,7 +32,9 @@ primary_paths:
 - derived/calls.json
 - derived/accounting.json
 - derived/exchanges.json
+- derived/progression.json
 canonical_evidence:
 - derived/calls.json
 - derived/accounting.json
 - derived/exchanges.json
+- derived/progression.json

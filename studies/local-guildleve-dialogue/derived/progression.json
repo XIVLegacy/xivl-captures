@@ -1,0 +1,937 @@
+{
+  "schema_version": 1,
+  "study": "local-guildleve-dialogue",
+  "input": {
+    "source": "pcap-1.23b",
+    "capture": "local_leve_complete.pcapng",
+    "size_bytes": 358296,
+    "sha256": "4f0793f354140478725bf2c30642a3458a854460f47fb11a7af635c8881d95cd",
+    "manifest": "sources/pcap-1.23b/manifest.yaml"
+  },
+  "command_calls": [
+    {
+      "location": {
+        "capture": "local_leve_complete.pcapng",
+        "lane_index": 0,
+        "lane": "main",
+        "direction": "s2c",
+        "direction_event_index": 181,
+        "frame_index": 58,
+        "frame_stream_offset": 7229,
+        "capture_packet_index": 186,
+        "capture_time_us": 1356922129027040,
+        "capture_timestamp_utc": "2012-12-31T02:48:49.027040Z",
+        "outer_timestamp_or_seq_hex": "648bdcee3b010000",
+        "outer_value": 1356922129252,
+        "outer_frame_size": 142,
+        "inflated_frame_body_size": 176,
+        "subevent_index": 0,
+        "subevent_offset": 0,
+        "subevent_size": 176,
+        "subevent_type": 3,
+        "transport_source_actor_id": 43723073,
+        "transport_target_actor_id": 43723073,
+        "transport_counter": 4275232768,
+        "inner_header_word0": 20,
+        "opcode": "0x0130"
+      },
+      "application_size": 144,
+      "application_hex": "41299b02f155f0a000636f6d6d616e644a756467654d6f64650000000000000000000000000000000064656c6567617465436f6d6d616e64000000000000000000000000000000000006a0f4e20302636f6e6669726d4c6576650006a0f055f1000001d58a000000000200007a88d400000000000000000005000000000100000000000f000000000008504340000000",
+      "application_sha256": "2c0ea466ec423b789856d43245004e94f71a4974def513fc013e4c7fddf9f718",
+      "parameter_application_offset": 73,
+      "parameter_size": 64,
+      "parameters_hex": "06a0f4e20302636f6e6669726d4c6576650006a0f055f1000001d58a000000000200007a88d400000000000000000005000000000100000000000f0000000000",
+      "decoded_parameters": [
+        {
+          "tag_offset": 0,
+          "tag": 6,
+          "type": "actor",
+          "value_offset": 1,
+          "value": 2700403203,
+          "value_hex": "0xA0F4E203"
+        },
+        {
+          "tag_offset": 5,
+          "tag": 2,
+          "type": "string",
+          "value_offset": 6,
+          "value": "confirmLeve"
+        },
+        {
+          "tag_offset": 18,
+          "tag": 6,
+          "type": "actor",
+          "value_offset": 19,
+          "value": 2700105201,
+          "value_hex": "0xA0F055F1"
+        },
+        {
+          "tag_offset": 23,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 24,
+          "value": 120202,
+          "value_hex": "0x0001D58A"
+        },
+        {
+          "tag_offset": 28,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 29,
+          "value": 2,
+          "value_hex": "0x00000002"
+        },
+        {
+          "tag_offset": 33,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 34,
+          "value": 8030420,
+          "value_hex": "0x007A88D4"
+        },
+        {
+          "tag_offset": 38,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 39,
+          "value": 0,
+          "value_hex": "0x00000000"
+        },
+        {
+          "tag_offset": 43,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 44,
+          "value": 5,
+          "value_hex": "0x00000005"
+        },
+        {
+          "tag_offset": 48,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 49,
+          "value": 1,
+          "value_hex": "0x00000001"
+        },
+        {
+          "tag_offset": 53,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 54,
+          "value": 0,
+          "value_hex": "0x00000000"
+        }
+      ],
+      "end_tag_offset": 58,
+      "application_tail_hex": "08504340000000",
+      "function": "delegateCommand",
+      "owner_actor_id_hex": "0xA0F055F1",
+      "owner_actor_application_offset": 4
+    },
+    {
+      "location": {
+        "capture": "local_leve_complete.pcapng",
+        "lane_index": 0,
+        "lane": "main",
+        "direction": "s2c",
+        "direction_event_index": 818,
+        "frame_index": 195,
+        "frame_stream_offset": 25944,
+        "capture_packet_index": 658,
+        "capture_time_us": 1356922185871306,
+        "capture_timestamp_utc": "2012-12-31T02:49:45.871306Z",
+        "outer_timestamp_or_seq_hex": "0669ddee3b010000",
+        "outer_value": 1356922185990,
+        "outer_frame_size": 173,
+        "inflated_frame_body_size": 288,
+        "subevent_index": 2,
+        "subevent_offset": 112,
+        "subevent_size": 176,
+        "subevent_type": 3,
+        "transport_source_actor_id": 43723073,
+        "transport_target_actor_id": 43723073,
+        "transport_counter": 4275232768,
+        "inner_header_word0": 20,
+        "opcode": "0x0130"
+      },
+      "application_size": 144,
+      "application_hex": "41299b02f155f0a000636f6d6d616e644a756467654d6f64650000000000000000000000000000000064656c6567617465436f6d6d616e64000000000000000000000000000000000006a0f4e2030261736b436f6e74696e75654c6f63616c6c6576650006a0f055f1000001d58a00007a88d40000000001000000000300000000040f00000000000008504340000000",
+      "application_sha256": "3f0339e613398d18d9afddebe6e6f6fcd2a346a2611fe9629385a3236ad8115a",
+      "parameter_application_offset": 73,
+      "parameter_size": 64,
+      "parameters_hex": "06a0f4e2030261736b436f6e74696e75654c6f63616c6c6576650006a0f055f1000001d58a00007a88d40000000001000000000300000000040f000000000000",
+      "decoded_parameters": [
+        {
+          "tag_offset": 0,
+          "tag": 6,
+          "type": "actor",
+          "value_offset": 1,
+          "value": 2700403203,
+          "value_hex": "0xA0F4E203"
+        },
+        {
+          "tag_offset": 5,
+          "tag": 2,
+          "type": "string",
+          "value_offset": 6,
+          "value": "askContinueLocalleve"
+        },
+        {
+          "tag_offset": 27,
+          "tag": 6,
+          "type": "actor",
+          "value_offset": 28,
+          "value": 2700105201,
+          "value_hex": "0xA0F055F1"
+        },
+        {
+          "tag_offset": 32,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 33,
+          "value": 120202,
+          "value_hex": "0x0001D58A"
+        },
+        {
+          "tag_offset": 37,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 38,
+          "value": 8030420,
+          "value_hex": "0x007A88D4"
+        },
+        {
+          "tag_offset": 42,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 43,
+          "value": 1,
+          "value_hex": "0x00000001"
+        },
+        {
+          "tag_offset": 47,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 48,
+          "value": 3,
+          "value_hex": "0x00000003"
+        },
+        {
+          "tag_offset": 52,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 53,
+          "value": 4,
+          "value_hex": "0x00000004"
+        }
+      ],
+      "end_tag_offset": 57,
+      "application_tail_hex": "08504340000000",
+      "function": "delegateCommand",
+      "owner_actor_id_hex": "0xA0F055F1",
+      "owner_actor_application_offset": 4
+    },
+    {
+      "location": {
+        "capture": "local_leve_complete.pcapng",
+        "lane_index": 0,
+        "lane": "main",
+        "direction": "s2c",
+        "direction_event_index": 1572,
+        "frame_index": 362,
+        "frame_stream_offset": 48794,
+        "capture_packet_index": 1240,
+        "capture_time_us": 1356922255590237,
+        "capture_timestamp_utc": "2012-12-31T02:50:55.590237Z",
+        "outer_timestamp_or_seq_hex": "7c79deee3b010000",
+        "outer_value": 1356922255740,
+        "outer_frame_size": 173,
+        "inflated_frame_body_size": 288,
+        "subevent_index": 2,
+        "subevent_offset": 112,
+        "subevent_size": 176,
+        "subevent_type": 3,
+        "transport_source_actor_id": 43723073,
+        "transport_target_actor_id": 43723073,
+        "transport_counter": 4275232768,
+        "inner_header_word0": 20,
+        "opcode": "0x0130"
+      },
+      "application_size": 144,
+      "application_hex": "41299b02f155f0a000636f6d6d616e644a756467654d6f64650000000000000000000000000000000064656c6567617465436f6d6d616e64000000000000000000000000000000000006a0f4e2030261736b436f6e74696e75654c6f63616c6c6576650006a0f055f1000001d58a00007a88d40000000002000000000300000000030f00000000000008504340000000",
+      "application_sha256": "de6b8a60dbfc737986d651cf576910fda5991ef31e6b37a06331fc227ee86cdd",
+      "parameter_application_offset": 73,
+      "parameter_size": 64,
+      "parameters_hex": "06a0f4e2030261736b436f6e74696e75654c6f63616c6c6576650006a0f055f1000001d58a00007a88d40000000002000000000300000000030f000000000000",
+      "decoded_parameters": [
+        {
+          "tag_offset": 0,
+          "tag": 6,
+          "type": "actor",
+          "value_offset": 1,
+          "value": 2700403203,
+          "value_hex": "0xA0F4E203"
+        },
+        {
+          "tag_offset": 5,
+          "tag": 2,
+          "type": "string",
+          "value_offset": 6,
+          "value": "askContinueLocalleve"
+        },
+        {
+          "tag_offset": 27,
+          "tag": 6,
+          "type": "actor",
+          "value_offset": 28,
+          "value": 2700105201,
+          "value_hex": "0xA0F055F1"
+        },
+        {
+          "tag_offset": 32,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 33,
+          "value": 120202,
+          "value_hex": "0x0001D58A"
+        },
+        {
+          "tag_offset": 37,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 38,
+          "value": 8030420,
+          "value_hex": "0x007A88D4"
+        },
+        {
+          "tag_offset": 42,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 43,
+          "value": 2,
+          "value_hex": "0x00000002"
+        },
+        {
+          "tag_offset": 47,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 48,
+          "value": 3,
+          "value_hex": "0x00000003"
+        },
+        {
+          "tag_offset": 52,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 53,
+          "value": 3,
+          "value_hex": "0x00000003"
+        }
+      ],
+      "end_tag_offset": 57,
+      "application_tail_hex": "08504340000000",
+      "function": "delegateCommand",
+      "owner_actor_id_hex": "0xA0F055F1",
+      "owner_actor_application_offset": 4
+    },
+    {
+      "location": {
+        "capture": "local_leve_complete.pcapng",
+        "lane_index": 0,
+        "lane": "main",
+        "direction": "s2c",
+        "direction_event_index": 2093,
+        "frame_index": 464,
+        "frame_stream_offset": 63083,
+        "capture_packet_index": 1581,
+        "capture_time_us": 1356922297470013,
+        "capture_timestamp_utc": "2012-12-31T02:51:37.470013Z",
+        "outer_timestamp_or_seq_hex": "b91cdfee3b010000",
+        "outer_value": 1356922297529,
+        "outer_frame_size": 171,
+        "inflated_frame_body_size": 288,
+        "subevent_index": 2,
+        "subevent_offset": 112,
+        "subevent_size": 176,
+        "subevent_type": 3,
+        "transport_source_actor_id": 43723073,
+        "transport_target_actor_id": 43723073,
+        "transport_counter": 4275232768,
+        "inner_header_word0": 20,
+        "opcode": "0x0130"
+      },
+      "application_size": 144,
+      "application_hex": "41299b02f155f0a000636f6d6d616e644a756467654d6f64650000000000000000000000000000000064656c6567617465436f6d6d616e64000000000000000000000000000000000006a0f4e2030261736b436f6e74696e75654c6f63616c6c6576650006a0f055f1000001d58a00007a88d40000000003000000000300000000020f00000000000008504340000000",
+      "application_sha256": "48d105b768b07f96b39f18fc40611be83faa565d9209f8bc9f19a2f669bd9675",
+      "parameter_application_offset": 73,
+      "parameter_size": 64,
+      "parameters_hex": "06a0f4e2030261736b436f6e74696e75654c6f63616c6c6576650006a0f055f1000001d58a00007a88d40000000003000000000300000000020f000000000000",
+      "decoded_parameters": [
+        {
+          "tag_offset": 0,
+          "tag": 6,
+          "type": "actor",
+          "value_offset": 1,
+          "value": 2700403203,
+          "value_hex": "0xA0F4E203"
+        },
+        {
+          "tag_offset": 5,
+          "tag": 2,
+          "type": "string",
+          "value_offset": 6,
+          "value": "askContinueLocalleve"
+        },
+        {
+          "tag_offset": 27,
+          "tag": 6,
+          "type": "actor",
+          "value_offset": 28,
+          "value": 2700105201,
+          "value_hex": "0xA0F055F1"
+        },
+        {
+          "tag_offset": 32,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 33,
+          "value": 120202,
+          "value_hex": "0x0001D58A"
+        },
+        {
+          "tag_offset": 37,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 38,
+          "value": 8030420,
+          "value_hex": "0x007A88D4"
+        },
+        {
+          "tag_offset": 42,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 43,
+          "value": 3,
+          "value_hex": "0x00000003"
+        },
+        {
+          "tag_offset": 47,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 48,
+          "value": 3,
+          "value_hex": "0x00000003"
+        },
+        {
+          "tag_offset": 52,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 53,
+          "value": 2,
+          "value_hex": "0x00000002"
+        }
+      ],
+      "end_tag_offset": 57,
+      "application_tail_hex": "08504340000000",
+      "function": "delegateCommand",
+      "owner_actor_id_hex": "0xA0F055F1",
+      "owner_actor_application_offset": 4
+    }
+  ],
+  "craft_selection_input": {
+    "location": {
+      "capture": "local_leve_complete.pcapng",
+      "lane_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "direction_event_index": 137,
+      "frame_index": 57,
+      "frame_stream_offset": 10136,
+      "capture_packet_index": 184,
+      "capture_time_us": 1356922128773720,
+      "capture_timestamp_utc": "2012-12-31T02:48:48.773720Z",
+      "outer_timestamp_or_seq_hex": "8589dcee3b010000",
+      "outer_value": 1356922128773,
+      "outer_frame_size": 264,
+      "inflated_frame_body_size": 248,
+      "subevent_index": 1,
+      "subevent_offset": 64,
+      "subevent_size": 120,
+      "subevent_type": 3,
+      "transport_source_actor_id": 43723073,
+      "transport_target_actor_id": 43723073,
+      "transport_counter": 59958992,
+      "inner_header_word0": 20,
+      "opcode": "0x012E"
+    },
+    "application_size": 88,
+    "application_hex": "41299b020000802500000000f82af1d70006a0f1d58a0f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005b9e0000000040",
+    "application_sha256": "1e225bb4211d4abcadc269aca59550d121ca17efd3f250df8194d93f3d3db7d2",
+    "parameter_application_offset": 17,
+    "parameter_size": 64,
+    "parameters_hex": "06a0f1d58a0f00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "decoded_parameters": [
+      {
+        "tag_offset": 0,
+        "tag": 6,
+        "type": "actor",
+        "value_offset": 1,
+        "value": 2700203402,
+        "value_hex": "0xA0F1D58A"
+      }
+    ],
+    "end_tag_offset": 5,
+    "application_tail_hex": "5b9e0000000040",
+    "application_byte_16": 0
+  },
+  "player_property_writes": [
+    {
+      "location": {
+        "capture": "local_leve_complete.pcapng",
+        "lane_index": 0,
+        "lane": "main",
+        "direction": "s2c",
+        "direction_event_index": 85,
+        "frame_index": 29,
+        "frame_stream_offset": 3472,
+        "capture_packet_index": 91,
+        "capture_time_us": 1356922119111215,
+        "capture_timestamp_utc": "2012-12-31T02:48:39.111215Z",
+        "outer_timestamp_or_seq_hex": "ce63dcee3b010000",
+        "outer_value": 1356922119118,
+        "outer_frame_size": 76,
+        "inflated_frame_body_size": 168,
+        "subevent_index": 0,
+        "subevent_offset": 0,
+        "subevent_size": 168,
+        "subevent_type": 3,
+        "transport_source_actor_id": 43723073,
+        "transport_target_actor_id": 43723073,
+        "transport_counter": 4275232768,
+        "inner_header_word0": 20,
+        "opcode": "0x0137"
+      },
+      "application_size": 136,
+      "application_sha256": "e62ea48f6445730068f7f64a2c4d399df3f0c52de78dca57e23744b07f332583",
+      "application_hex": "150145c097cf0190776f726b2f6775696c646c657665000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "declared_stream_bytes": 21,
+      "selected_records": [
+        {
+          "stream_offset": 1,
+          "target_marker": "",
+          "property_hash": "0xcf97c045",
+          "value_width": 1,
+          "value_hex": "01",
+          "value_u_le": 1,
+          "value_f32": "",
+          "field_name": "work.guildleveChecked[8]",
+          "record_application_offset": 1,
+          "hash_application_offset": 2,
+          "value_application_offset": 6,
+          "record_hex": "0145c097cf01"
+        }
+      ]
+    },
+    {
+      "location": {
+        "capture": "local_leve_complete.pcapng",
+        "lane_index": 0,
+        "lane": "main",
+        "direction": "s2c",
+        "direction_event_index": 2088,
+        "frame_index": 461,
+        "frame_stream_offset": 62446,
+        "capture_packet_index": 1576,
+        "capture_time_us": 1356922296769791,
+        "capture_timestamp_utc": "2012-12-31T02:51:36.769791Z",
+        "outer_timestamp_or_seq_hex": "051adfee3b010000",
+        "outer_value": 1356922296837,
+        "outer_frame_size": 488,
+        "inflated_frame_body_size": 2248,
+        "subevent_index": 18,
+        "subevent_offset": 2080,
+        "subevent_size": 168,
+        "subevent_type": 3,
+        "transport_source_actor_id": 43723073,
+        "transport_target_actor_id": 43723073,
+        "transport_counter": 4275232768,
+        "inner_header_word0": 20,
+        "opcode": "0x0137"
+      },
+      "application_size": 136,
+      "application_sha256": "265bba57524b00590eaa258ca64027a2803a078dbd640c47eef1aacbb36b1bbb",
+      "application_hex": "5804d379433f720100009e6368617261576f726b2f626174746c655374617465466f7253656c6604ac7e91d63d0a574095706c61796572576f726b2f657870426f6e75730168bb6e990190776f726b2f6775696c646c6576650000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "declared_stream_bytes": 88,
+      "selected_records": [
+        {
+          "stream_offset": 68,
+          "target_marker": "playerWork/expBonus",
+          "property_hash": "0x996ebb68",
+          "value_width": 1,
+          "value_hex": "01",
+          "value_u_le": 1,
+          "value_f32": "",
+          "field_name": "work.guildleveDone[8]",
+          "record_application_offset": 68,
+          "hash_application_offset": 69,
+          "value_application_offset": 73,
+          "record_hex": "0168bb6e9901"
+        }
+      ]
+    },
+    {
+      "location": {
+        "capture": "local_leve_complete.pcapng",
+        "lane_index": 0,
+        "lane": "main",
+        "direction": "s2c",
+        "direction_event_index": 2233,
+        "frame_index": 503,
+        "frame_stream_offset": 67953,
+        "capture_packet_index": 1751,
+        "capture_time_us": 1356922313854874,
+        "capture_timestamp_utc": "2012-12-31T02:51:53.854874Z",
+        "outer_timestamp_or_seq_hex": "3e5ddfee3b010000",
+        "outer_value": 1356922314046,
+        "outer_frame_size": 147,
+        "inflated_frame_body_size": 168,
+        "subevent_index": 0,
+        "subevent_offset": 0,
+        "subevent_size": 168,
+        "subevent_type": 3,
+        "transport_source_actor_id": 43723073,
+        "transport_target_actor_id": 43723073,
+        "transport_counter": 4275232768,
+        "inner_header_word0": 20,
+        "opcode": "0x0137"
+      },
+      "application_size": 136,
+      "application_sha256": "0577da7cd4c202a3d214562c442ab22dc4415c82f2e52da0007787e971c4383a",
+      "application_hex": "6404d379433fd60100009e6368617261576f726b2f626174746c655374617465466f7253656c6604b77b8a3e0000000094706c61796572576f726b2f6a6f75726e616c0211fe5e4f00000168bb6e99000145c097cf0090776f726b2f6775696c646c6576650000000000000000000000000000000000000000000000000000000000000000000000",
+      "declared_stream_bytes": 100,
+      "selected_records": [
+        {
+          "stream_offset": 39,
+          "target_marker": "charaWork/battleStateForSelf",
+          "property_hash": "0x3e8a7bb7",
+          "value_width": 4,
+          "value_hex": "00000000",
+          "value_u_le": 0,
+          "value_f32": "0",
+          "field_name": "playerWork.questGuildleve[0]",
+          "record_application_offset": 39,
+          "hash_application_offset": 40,
+          "value_application_offset": 44,
+          "record_hex": "04b77b8a3e00000000"
+        },
+        {
+          "stream_offset": 67,
+          "target_marker": "playerWork/journal",
+          "property_hash": "0x4f5efe11",
+          "value_width": 2,
+          "value_hex": "0000",
+          "value_u_le": 0,
+          "value_f32": "",
+          "field_name": "work.guildleveId[8]",
+          "record_application_offset": 67,
+          "hash_application_offset": 68,
+          "value_application_offset": 72,
+          "record_hex": "0211fe5e4f0000"
+        },
+        {
+          "stream_offset": 74,
+          "target_marker": "playerWork/journal",
+          "property_hash": "0x996ebb68",
+          "value_width": 1,
+          "value_hex": "00",
+          "value_u_le": 0,
+          "value_f32": "",
+          "field_name": "work.guildleveDone[8]",
+          "record_application_offset": 74,
+          "hash_application_offset": 75,
+          "value_application_offset": 79,
+          "record_hex": "0168bb6e9900"
+        },
+        {
+          "stream_offset": 80,
+          "target_marker": "playerWork/journal",
+          "property_hash": "0xcf97c045",
+          "value_width": 1,
+          "value_hex": "00",
+          "value_u_le": 0,
+          "value_f32": "",
+          "field_name": "work.guildleveChecked[8]",
+          "record_application_offset": 80,
+          "hash_application_offset": 81,
+          "value_application_offset": 85,
+          "record_hex": "0145c097cf00"
+        }
+      ]
+    }
+  ],
+  "quest_keyed_attention_parameters": [
+    {
+      "location": {
+        "capture": "local_leve_complete.pcapng",
+        "lane_index": 0,
+        "lane": "main",
+        "direction": "s2c",
+        "direction_event_index": 797,
+        "frame_index": 191,
+        "frame_stream_offset": 24980,
+        "capture_packet_index": 648,
+        "capture_time_us": 1356922185066606,
+        "capture_timestamp_utc": "2012-12-31T02:49:45.066606Z",
+        "outer_timestamp_or_seq_hex": "4066ddee3b010000",
+        "outer_value": 1356922185280,
+        "outer_frame_size": 580,
+        "inflated_frame_body_size": 2040,
+        "subevent_index": 7,
+        "subevent_offset": 896,
+        "subevent_size": 224,
+        "subevent_type": 3,
+        "transport_source_actor_id": 43723073,
+        "transport_target_actor_id": 43723073,
+        "transport_counter": 4275232768,
+        "inner_header_word0": 20,
+        "opcode": "0x0133"
+      },
+      "application_size": 192,
+      "application_sha256": "694c303e95d0c54dba073f42008a220025321c103956922ff6fa0f5f27c58f51",
+      "parameter_application_offset": 0,
+      "parameter_bytes_through_end_hex": "02617474656e74696f6e00065ff8000102000000009cb7000001d58a000000000100000000030f",
+      "decoded_parameters": [
+        {
+          "tag_offset": 0,
+          "tag": 2,
+          "type": "string",
+          "value_offset": 1,
+          "value": "attention"
+        },
+        {
+          "tag_offset": 11,
+          "tag": 6,
+          "type": "actor",
+          "value_offset": 12,
+          "value": 1610088449,
+          "value_hex": "0x5FF80001"
+        },
+        {
+          "tag_offset": 16,
+          "tag": 2,
+          "type": "string",
+          "value_offset": 17,
+          "value": ""
+        },
+        {
+          "tag_offset": 18,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 19,
+          "value": 40119,
+          "value_hex": "0x00009CB7"
+        },
+        {
+          "tag_offset": 23,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 24,
+          "value": 120202,
+          "value_hex": "0x0001D58A"
+        },
+        {
+          "tag_offset": 28,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 29,
+          "value": 1,
+          "value_hex": "0x00000001"
+        },
+        {
+          "tag_offset": 33,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 34,
+          "value": 3,
+          "value_hex": "0x00000003"
+        }
+      ],
+      "end_tag_offset": 38,
+      "zero_padding_size": 153
+    },
+    {
+      "location": {
+        "capture": "local_leve_complete.pcapng",
+        "lane_index": 0,
+        "lane": "main",
+        "direction": "s2c",
+        "direction_event_index": 1550,
+        "frame_index": 357,
+        "frame_stream_offset": 47772,
+        "capture_packet_index": 1230,
+        "capture_time_us": 1356922254802324,
+        "capture_timestamp_utc": "2012-12-31T02:50:54.802324Z",
+        "outer_timestamp_or_seq_hex": "4576deee3b010000",
+        "outer_value": 1356922254917,
+        "outer_frame_size": 581,
+        "inflated_frame_body_size": 2040,
+        "subevent_index": 7,
+        "subevent_offset": 896,
+        "subevent_size": 224,
+        "subevent_type": 3,
+        "transport_source_actor_id": 43723073,
+        "transport_target_actor_id": 43723073,
+        "transport_counter": 4275232768,
+        "inner_header_word0": 20,
+        "opcode": "0x0133"
+      },
+      "application_size": 192,
+      "application_sha256": "667aff85fdf1af19be3e290162fda218b4ca2c1d19e1a6082a0555185203eadb",
+      "parameter_application_offset": 0,
+      "parameter_bytes_through_end_hex": "02617474656e74696f6e00065ff8000102000000009cb7000001d58a000000000200000000030f",
+      "decoded_parameters": [
+        {
+          "tag_offset": 0,
+          "tag": 2,
+          "type": "string",
+          "value_offset": 1,
+          "value": "attention"
+        },
+        {
+          "tag_offset": 11,
+          "tag": 6,
+          "type": "actor",
+          "value_offset": 12,
+          "value": 1610088449,
+          "value_hex": "0x5FF80001"
+        },
+        {
+          "tag_offset": 16,
+          "tag": 2,
+          "type": "string",
+          "value_offset": 17,
+          "value": ""
+        },
+        {
+          "tag_offset": 18,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 19,
+          "value": 40119,
+          "value_hex": "0x00009CB7"
+        },
+        {
+          "tag_offset": 23,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 24,
+          "value": 120202,
+          "value_hex": "0x0001D58A"
+        },
+        {
+          "tag_offset": 28,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 29,
+          "value": 2,
+          "value_hex": "0x00000002"
+        },
+        {
+          "tag_offset": 33,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 34,
+          "value": 3,
+          "value_hex": "0x00000003"
+        }
+      ],
+      "end_tag_offset": 38,
+      "zero_padding_size": 153
+    },
+    {
+      "location": {
+        "capture": "local_leve_complete.pcapng",
+        "lane_index": 0,
+        "lane": "main",
+        "direction": "s2c",
+        "direction_event_index": 2084,
+        "frame_index": 461,
+        "frame_stream_offset": 62446,
+        "capture_packet_index": 1576,
+        "capture_time_us": 1356922296769791,
+        "capture_timestamp_utc": "2012-12-31T02:51:36.769791Z",
+        "outer_timestamp_or_seq_hex": "051adfee3b010000",
+        "outer_value": 1356922296837,
+        "outer_frame_size": 488,
+        "inflated_frame_body_size": 2248,
+        "subevent_index": 14,
+        "subevent_offset": 1560,
+        "subevent_size": 224,
+        "subevent_type": 3,
+        "transport_source_actor_id": 43723073,
+        "transport_target_actor_id": 43723073,
+        "transport_counter": 4275232768,
+        "inner_header_word0": 20,
+        "opcode": "0x0133"
+      },
+      "application_size": 192,
+      "application_sha256": "93f525f282ddac4ee1833755e341c7056ee9559d219d01d1a601e53b00105a8b",
+      "parameter_application_offset": 0,
+      "parameter_bytes_through_end_hex": "02617474656e74696f6e00065ff8000102000000009cb9000001d58a0f",
+      "decoded_parameters": [
+        {
+          "tag_offset": 0,
+          "tag": 2,
+          "type": "string",
+          "value_offset": 1,
+          "value": "attention"
+        },
+        {
+          "tag_offset": 11,
+          "tag": 6,
+          "type": "actor",
+          "value_offset": 12,
+          "value": 1610088449,
+          "value_hex": "0x5FF80001"
+        },
+        {
+          "tag_offset": 16,
+          "tag": 2,
+          "type": "string",
+          "value_offset": 17,
+          "value": ""
+        },
+        {
+          "tag_offset": 18,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 19,
+          "value": 40121,
+          "value_hex": "0x00009CB9"
+        },
+        {
+          "tag_offset": 23,
+          "tag": 0,
+          "type": "integer",
+          "value_offset": 24,
+          "value": 120202,
+          "value_hex": "0x0001D58A"
+        }
+      ],
+      "end_tag_offset": 28,
+      "zero_padding_size": 163
+    }
+  ],
+  "slot_id_coverage": {
+    "main_s2c_property_packets_examined": 16,
+    "guildleveId_8_values_in_stream_order": [
+      0
+    ]
+  },
+  "property_name_interpretation": {
+    "citation": "xivl-client-structs:manifests/gam_hash_names.json",
+    "sha256": "4c6626aaec0569e8e857ae4d25ddd186614d8843c50b91904c4ac617283d2ca3",
+    "qualification": "Exact backward MurmurHash2 name-to-hash matches. Target markers retain separate stream context. Both transport actor fields equal the player ID in these selected writes."
+  },
+  "boundary": "Selected calls and writes retain direction-local order and earliest frame-completion packet provenance. The recording has no nonzero guildleveId[8] baseline identifying its quest. The adjacent 120202 calls do not independently bind slot 8 to that quest, establish a delivery request, expose server execution or a source-column selector, or prove that the done write selected text 368. GenericData rows retain typed arguments without assigning a text bank or server rule."
+}

@@ -14,6 +14,9 @@ server code or selection rule.
 - [Exchanges](derived/exchanges.json) retain two bounded `talkDefault`
   conversations, grouped by connection direction, with full application
   bytes, decoded parameter blocks and exact comparisons.
+- [Progression](derived/progression.json) retains selected craft calls,
+  quest-keyed typed parameters and player property writes between the
+  conversations, plus the property reset after the second text call.
 - [Source manifest](../../sources/pcap-1.23b/manifest.yaml) owns the retained
   capture's provenance and restricted distribution.
 
@@ -102,9 +105,13 @@ The `welcomeTalk` blocks contain actors `0x029B2941` and `0xA0F1D58A`, the
 method string and four nil values. They use the same owner as the
 `processPgEvent` calls. The observed first integers are 365 and 368. The
 EventStart equality and EventUpdate prefix equality do not establish a
-selector for either text ID: the unknown EventUpdate tails differ, and other
-captured activity separates the conversations. This comparison supplies no
-source-column rule or server-state explanation.
+selector for either text ID. The seven trailing EventUpdate bytes differ.
+The native writer analysis in
+`xivl-client-structs:structs/network/event-update.md` identifies those positions
+as unwritten bytes in the copied stack record and application offset 12 as
+the CRC32 of the 64-byte parameter block. This qualifies the tail difference;
+it does not establish a dialogue selector. Other captured activity separates
+the conversations.
 
 The first conversation also retains c2s nil EventUpdates at packets 43 and
 75, s2c `simpleFadeInAndOut` at packet 49, and the 366 call at packet 79.
@@ -123,6 +130,69 @@ updates and `finishTalkTurn`, not just the initial text calls. The two
 directions are never merged to assign stream order. Capture packet indexes
 are frame-completion provenance, not the server's receive or execution order.
 No binding from the wire owner to a client-data actor class is established.
+
+## Intervening observations
+
+The selected craft calls use `0x0130` `delegateCommand`, owner `0xA0F055F1`,
+and a parameter prefix of actor `0xA0F4E203`, method string, and actor
+`0xA0F055F1`. The table lists every remaining parameter in each selected block.
+All are big-endian integers with the tags and offsets retained in
+`derived/progression.json`.
+
+| Main s2c frame | Subevent | Capture packet | Method | Integer parameters |
+|---:|---:|---:|---|---|
+| 58 | 0 | 186 | `confirmLeve` | `120202, 2, 8030420, 0, 5, 1, 0` |
+| 195 | 2 | 658 | `askContinueLocalleve` | `120202, 8030420, 1, 3, 4` |
+| 362 | 2 | 1240 | `askContinueLocalleve` | `120202, 8030420, 2, 3, 3` |
+| 464 | 2 | 1581 | `askContinueLocalleve` | `120202, 8030420, 3, 3, 2` |
+
+The intervening c2s EventUpdate at frame 57, subevent 1, packet 184 contains
+exactly actor `0xA0F1D58A`, then END. Its association is the bounded
+`selectCraftQuest` / `confirmLeve` neighborhood, without a proved callback
+pairing. The client interpretation of the craft arguments is owned by
+`xivl-client-scripts:docs/passivegl-dialogue-producer.md#intervening-craft-progress`.
+These are selected typed calls; their order alone does not prove delivery,
+craft success or the server's dialogue-selection rule.
+
+Three s2c GenericData `0x0133` streams contain the prefix string `attention`,
+actor `0x5FF80001`, and an empty string, followed by these integer lists:
+
+| Main s2c frame | Subevent | Capture packet | Integer parameters |
+|---:|---:|---:|---|
+| 191 | 7 | 648 | `40119, 120202, 1, 3` |
+| 357 | 7 | 1230 | `40119, 120202, 2, 3` |
+| 461 | 14 | 1576 | `40121, 120202` |
+
+This records the typed values without assigning a text bank or treating
+GenericData as authoritative quest state.
+
+The same s2c stream contains these `0x0137` property writes. Both wrapped
+transport actor fields equal player `0x029B2941`; none of these packets has
+`0xA0F1D58A` as its transport source.
+
+| Main s2c frame | Subevent | Capture packet | Exact hash-resolved field | Raw value |
+|---:|---:|---:|---|---|
+| 29 | 0 | 91 | `work.guildleveChecked[8]` | `01` |
+| 461 | 18 | 1576 | `work.guildleveDone[8]` | `01` |
+| 503 | 0 | 1751 | `playerWork.questGuildleve[0]` | `00000000` |
+| 503 | 0 | 1751 | `work.guildleveId[8]` | `0000` |
+| 503 | 0 | 1751 | `work.guildleveDone[8]` | `00` |
+| 503 | 0 | 1751 | `work.guildleveChecked[8]` | `00` |
+
+Field identities are exact backward MurmurHash2 matches in
+`xivl-client-structs:manifests/gam_hash_names.json`, SHA-256
+`4c6626aaec0569e8e857ae4d25ddd186614d8843c50b91904c4ac617283d2ca3`.
+The product retains each hash, width, target-marker context, application
+offset, complete application bytes and SHA-256. The target-marker string
+does not replace the full property-path hash.
+
+The checked write follows the 366 call in the s2c stream. The done write
+precedes the second conversation and its 368 call; the zero writes follow
+that call. The recording has no nonzero `guildleveId[8]` baseline linking
+slot 8 to quest 120202. These state writes and the separately quest-keyed
+craft calls distinguish the captured intervals, but do not establish that
+slot 8 belongs to 120202, that the done write selects 368, or which
+`passiveGL_craft` source column the server reads.
 
 ## Reproduction
 
