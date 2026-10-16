@@ -1,0 +1,2985 @@
+{
+  "schema_version": 1,
+  "study": "command-registration",
+  "source_id": "pcap-1.23b",
+  "source_manifest_sha256": "baaa15f99f7f5d865bf2ec0dbcc1e454d034382b0559edccb0085c57c4061cf5",
+  "inputs": [
+    {
+      "file": "accept_leve.pcapng",
+      "sha256": "42b87e6c095db130def1de5bc382e428b4f4c12c8069c4682d6fa4bc7681967a",
+      "size_bytes": 59576
+    },
+    {
+      "file": "accept_local_leve.pcapng",
+      "sha256": "3b4b071d88742a5d3c94a1e29ca6a4074cb6b9a9a60207118302fe22f932bd7c",
+      "size_bytes": 50676
+    },
+    {
+      "file": "accept_quest.pcapng",
+      "sha256": "a207109240254b1398a36f877afc7ac34a08466cfbd3cdd3f2eb5f4a50718057",
+      "size_bytes": 53180
+    },
+    {
+      "file": "action_and_traits.pcapng",
+      "sha256": "c3d30fe46d69996dc74e4864245c42675cde2388525c03063dac180df528352f",
+      "size_bytes": 37584
+    },
+    {
+      "file": "add_str.pcapng",
+      "sha256": "246e4948a7ca1e4dc620e724677bfd9153ce76f6445a557967d309e9946021ed",
+      "size_bytes": 20056
+    },
+    {
+      "file": "attributes.pcapng",
+      "sha256": "5bc78b05d45a4e410b7410d046cb8b958ec549ce5b1b51a52225c4d15041a2ff",
+      "size_bytes": 22624
+    },
+    {
+      "file": "battle_mode_passive_mode.pcapng",
+      "sha256": "5a8290df1d11781f4f5fa1f6990651c679e57ee3b8c5549021f06767bb172d4b",
+      "size_bytes": 12776
+    },
+    {
+      "file": "buy_square_maple_shield.pcapng",
+      "sha256": "aab582bd9658c89cd4d56e132500481f442b9f2dc2179f1a5829ea09776bce6b",
+      "size_bytes": 54088
+    },
+    {
+      "file": "change_bodyarmor.pcapng",
+      "sha256": "55ee6035d24e80b97c9354a0800b86a52d0a99e1200cf6875a5b56009215021a",
+      "size_bytes": 54536
+    },
+    {
+      "file": "change_helm.pcapng",
+      "sha256": "af1e465076c3acf6188f24f084622b22beccc932bb96effd517b2d9a44606e08",
+      "size_bytes": 39660
+    },
+    {
+      "file": "change_to_botanist.pcapng",
+      "sha256": "8fdc448a17d19bea3d07855a8d8843d78926c50586f3656946c96b6a6cb27d26",
+      "size_bytes": 41500
+    },
+    {
+      "file": "chat_say.pcapng",
+      "sha256": "ccaefd38c94512507d518f83ab693edaf7f42167f3b82876869b53a736275e37",
+      "size_bytes": 8864
+    },
+    {
+      "file": "chat_shout.pcapng",
+      "sha256": "94ab6b14373b2d0d0122e14b3eb18a1371e52165172ba18b3fc836c8ba94265a",
+      "size_bytes": 7872
+    },
+    {
+      "file": "check_room_map.pcapng",
+      "sha256": "cca1eea57329b02e5d66e53ad6f44d28deebf8ee8c11cfafd22bf813d1551ee5",
+      "size_bytes": 28032
+    },
+    {
+      "file": "checkbed.pcapng",
+      "sha256": "9e05a05de6ec44eded13761fcb3546eb248c0c68e537051eef575e29dfff1b79",
+      "size_bytes": 26276
+    },
+    {
+      "file": "coerthas_map.pcapng",
+      "sha256": "779de805f9172832e986f5c46c0a94f6d93f4b9c7f1c41fd0de0f5f8326c0ae3",
+      "size_bytes": 34364
+    },
+    {
+      "file": "combat_autoattack.pcapng",
+      "sha256": "2f677ab61047b25c4168a3dd9496f372d48de3bba018d582dd5a968b9272f7b2",
+      "size_bytes": 82908
+    },
+    {
+      "file": "combat_skills.pcapng",
+      "sha256": "7fe66d92f6f62584e57562e51355d310546935690e0b96c2c689b83bbe8a07a7",
+      "size_bytes": 63028
+    },
+    {
+      "file": "cutscene_book.pcapng",
+      "sha256": "c2cf85e02d8d15fe2aa9261e8b796c29c0a3d9dd9cdf287ce0f75f3a666b2b4d",
+      "size_bytes": 123824
+    },
+    {
+      "file": "emote_dance.pcapng",
+      "sha256": "9e004f1e791cfc37b7d23e8986a5e69021b7b7f828295fdf7957e36aa1c57dc8",
+      "size_bytes": 30352
+    },
+    {
+      "file": "emote_kneel.pcapng",
+      "sha256": "3381b6121f5b0789c97ededdc5394c6bc9b14c561029191fb5b3f428033c80e8",
+      "size_bytes": 23920
+    },
+    {
+      "file": "friendlist_search.pcapng",
+      "sha256": "3b9a35689fb923d9520bbfed8a3886dc2b461c9516492e3d8e68eec093eb7b0e",
+      "size_bytes": 37744
+    },
+    {
+      "file": "from_gridania_to_blackshroud.pcapng",
+      "sha256": "eff300de679230653953ea3399939a15ce9d6aeafd202c7ebcf5f55e6d24930f",
+      "size_bytes": 196308
+    },
+    {
+      "file": "gather_wood.pcapng",
+      "sha256": "c308aa4c984eb3e1912383c06e5115c6924713978df43cdb8075335e1bac7d32",
+      "size_bytes": 157688
+    },
+    {
+      "file": "gear_changesoul.pcapng",
+      "sha256": "62af2cde3a4683fba3e09cc3dfed8001d74303b120381de577b05df492926780",
+      "size_bytes": 23784
+    },
+    {
+      "file": "gear_changeweapon.pcapng",
+      "sha256": "3eec2c2993feeb2b8c47c1e1f553335638a7262ec13b561e2d52d768f0798080",
+      "size_bytes": 21352
+    },
+    {
+      "file": "gridania_map.pcapng",
+      "sha256": "13e26b2d68f195b8e2daf7c355a2741c155a1036b80d79c90aab982157290795",
+      "size_bytes": 16184
+    },
+    {
+      "file": "gridania_to_coerthas.pcapng",
+      "sha256": "63152a1ed6e446df5cc4750fe50a0839f9e45ad270c79abfc72b5c09cc47e547",
+      "size_bytes": 939832
+    },
+    {
+      "file": "harvest.pcapng",
+      "sha256": "8522a844b6904207c3465ae1d1038599eddb8b9dc47800d5230c8a1c3ad0e440",
+      "size_bytes": 60680
+    },
+    {
+      "file": "idle_in_party.pcapng",
+      "sha256": "98b45822079372380bf834a937a9cb83b662b9e302555aafa14ee353537f74c1",
+      "size_bytes": 20168
+    },
+    {
+      "file": "idling.pcapng",
+      "sha256": "fd86f5b78b2975dcaf7bb8a8e7f94267f9f2660078a5193ea26732cb317dd385",
+      "size_bytes": 42608
+    },
+    {
+      "file": "inventory.pcapng",
+      "sha256": "f667bfc1cb87afec3c5c5f56b031254101aff012577f6f35c7cbf133815b6878",
+      "size_bytes": 27908
+    },
+    {
+      "file": "invite_join_party.pcapng",
+      "sha256": "34c946c3f93744d2bbd841e75f983ef12b9bbcb59afcba31414d6d3f41e7de58",
+      "size_bytes": 88372
+    },
+    {
+      "file": "local_leve_complete.pcapng",
+      "sha256": "4f0793f354140478725bf2c30642a3458a854460f47fb11a7af635c8881d95cd",
+      "size_bytes": 358296
+    },
+    {
+      "file": "login.pcapng",
+      "sha256": "28e06b54fe559870031f077f8549b9244caafa7e5177dbca08a7feae6c2b1b62",
+      "size_bytes": 856236
+    },
+    {
+      "file": "mount_unmount_chocobo.pcapng",
+      "sha256": "e77c06799f07029feb054792eac30baa431da15a61937b1a39bcd025e4db4072",
+      "size_bytes": 21240
+    },
+    {
+      "file": "move_around_gridania.pcapng",
+      "sha256": "bea7ae86444fa3ef9acc08f148f60dff1e5992188ee85136dec50c64e09236d0",
+      "size_bytes": 220128
+    },
+    {
+      "file": "move_out_of_room.pcapng",
+      "sha256": "a7a03a1d688f3feb264f8da9fae3519c55b7e267aa3802472f0221f4d729b37b",
+      "size_bytes": 83412
+    },
+    {
+      "file": "moving_around_gridania.pcapng",
+      "sha256": "bf6abf7ccc7a16e071846036477c1fadbc3b46385ef6e747b543d836f3f51017",
+      "size_bytes": 855000
+    },
+    {
+      "file": "open_gear_menu.pcapng",
+      "sha256": "6b7dee09f59d03d9706ca1c81586dce667cd4d806ee2a2b72d89432d617afc2e",
+      "size_bytes": 25940
+    },
+    {
+      "file": "party_battle_leve.pcapng",
+      "sha256": "6327e5e1f5cbd51a9baaa9bcbacf53ca51c50a98fe4b66ae3e6bdecd9198089f",
+      "size_bytes": 1429864
+    },
+    {
+      "file": "quest_journal.pcapng",
+      "sha256": "e1f983e9009a9ebe8b8231647229bee1672a1ac85d95a830113280f534531edc",
+      "size_bytes": 32264
+    },
+    {
+      "file": "quest_update.pcapng",
+      "sha256": "e31aa9738dd523b7703eefa6d38527135f16d8b5ff2fc314fd7e5b808d7e4787",
+      "size_bytes": 66756
+    },
+    {
+      "file": "repair_items.pcapng",
+      "sha256": "bbd829cbd3f42b2cbfb3aa8a74a1cc35d4e2c16c99e5a4a20ca76573f02dd90f",
+      "size_bytes": 63400
+    },
+    {
+      "file": "return_to_inn.pcapng",
+      "sha256": "9a81e483d3dd2673081afef06ed521c190c4d42be16e95e24097f25ff81f58c1",
+      "size_bytes": 44012
+    },
+    {
+      "file": "sell_item.pcapng",
+      "sha256": "1cd808fff6501c53e4c113f1fdef090e50dfe0fd7fe86ceaa552b3a53c1b5aac",
+      "size_bytes": 57580
+    },
+    {
+      "file": "small_talk_louisoix.pcapng",
+      "sha256": "58b620d90370ba69202e63f7f70edb79004ccbb8068e11e2e112a825d84dcafe",
+      "size_bytes": 18444
+    },
+    {
+      "file": "switch_to_weaver.pcapng",
+      "sha256": "b41b25bc51be1a64f41861142dc992c14493c65bcd920cadca013243480b777e",
+      "size_bytes": 33364
+    },
+    {
+      "file": "teleport_to_camp_nine_ivies.pcapng",
+      "sha256": "fac2b485608247d299a406a7065e19918789118e7e544ca85cec4d772da0e3ab",
+      "size_bytes": 80004
+    },
+    {
+      "file": "teleport_to_camp_tranquil.pcapng",
+      "sha256": "488318351cdedb2e2b650dc68c55014b160fbbc26753c200922402c1ba6c4dd7",
+      "size_bytes": 67920
+    },
+    {
+      "file": "teleport_to_gridania.pcapng",
+      "sha256": "779141dc79a4bcf4bfc2e265f8b9510607d5a6b6e78d32f8940e5a847e598fa0",
+      "size_bytes": 67620
+    },
+    {
+      "file": "war_quest_update1.pcapng",
+      "sha256": "ce64e429063cc7e49a2045e2f7b0e18b1991f5908368b791b93c72419841e890",
+      "size_bytes": 42812
+    },
+    {
+      "file": "war_quest_update2.pcapng",
+      "sha256": "bf43b5ee32c58e5dc6f8149b071bd9c5cd5cc0aaa55ea3528872308fd7be2429",
+      "size_bytes": 206216
+    },
+    {
+      "file": "war_quest_update3.pcapng",
+      "sha256": "52279e8cbc13d3f4751b5ee3cb9c91df1895ed5c41d30672629db3ec1c9efd05",
+      "size_bytes": 103520
+    }
+  ],
+  "counts": {
+    "occurrences": 96,
+    "capture_counts": {
+      "from_gridania_to_blackshroud.pcapng": 8,
+      "gridania_to_coerthas.pcapng": 24,
+      "login.pcapng": 8,
+      "move_out_of_room.pcapng": 8,
+      "moving_around_gridania.pcapng": 16,
+      "return_to_inn.pcapng": 8,
+      "teleport_to_camp_nine_ivies.pcapng": 8,
+      "teleport_to_camp_tranquil.pcapng": 8,
+      "teleport_to_gridania.pcapng": 8
+    },
+    "mapping_counts": {
+      "commandForced": 12,
+      "commandDefault": 12,
+      "commandWeak": 12,
+      "commandContent": 12,
+      "commandJudgeMode": 12,
+      "commandRequest": 12,
+      "widgetCreate": 12,
+      "macroRequest": 12
+    },
+    "batches": [
+      {
+        "capture": "from_gridania_to_blackshroud.pcapng",
+        "connection_index": 0,
+        "frame_index": 237,
+        "first_subevent_index": 1,
+        "capture_packet_index": 757,
+        "name_order": [
+          "commandForced",
+          "commandDefault",
+          "commandWeak",
+          "commandContent",
+          "commandJudgeMode",
+          "commandRequest",
+          "widgetCreate",
+          "macroRequest"
+        ]
+      },
+      {
+        "capture": "gridania_to_coerthas.pcapng",
+        "connection_index": 0,
+        "frame_index": 176,
+        "first_subevent_index": 1,
+        "capture_packet_index": 594,
+        "name_order": [
+          "commandForced",
+          "commandDefault",
+          "commandWeak",
+          "commandContent",
+          "commandJudgeMode",
+          "commandRequest",
+          "widgetCreate",
+          "macroRequest"
+        ]
+      },
+      {
+        "capture": "gridania_to_coerthas.pcapng",
+        "connection_index": 0,
+        "frame_index": 846,
+        "first_subevent_index": 1,
+        "capture_packet_index": 2857,
+        "name_order": [
+          "commandForced",
+          "commandDefault",
+          "commandWeak",
+          "commandContent",
+          "commandJudgeMode",
+          "commandRequest",
+          "widgetCreate",
+          "macroRequest"
+        ]
+      },
+      {
+        "capture": "gridania_to_coerthas.pcapng",
+        "connection_index": 0,
+        "frame_index": 1320,
+        "first_subevent_index": 1,
+        "capture_packet_index": 4011,
+        "name_order": [
+          "commandForced",
+          "commandDefault",
+          "commandWeak",
+          "commandContent",
+          "commandJudgeMode",
+          "commandRequest",
+          "widgetCreate",
+          "macroRequest"
+        ]
+      },
+      {
+        "capture": "login.pcapng",
+        "connection_index": 0,
+        "frame_index": 9,
+        "first_subevent_index": 1,
+        "capture_packet_index": 961,
+        "name_order": [
+          "commandForced",
+          "commandDefault",
+          "commandWeak",
+          "commandContent",
+          "commandJudgeMode",
+          "commandRequest",
+          "widgetCreate",
+          "macroRequest"
+        ]
+      },
+      {
+        "capture": "move_out_of_room.pcapng",
+        "connection_index": 0,
+        "frame_index": 32,
+        "first_subevent_index": 2,
+        "capture_packet_index": 87,
+        "name_order": [
+          "commandForced",
+          "commandDefault",
+          "commandWeak",
+          "commandContent",
+          "commandJudgeMode",
+          "commandRequest",
+          "widgetCreate",
+          "macroRequest"
+        ]
+      },
+      {
+        "capture": "moving_around_gridania.pcapng",
+        "connection_index": 0,
+        "frame_index": 203,
+        "first_subevent_index": 2,
+        "capture_packet_index": 464,
+        "name_order": [
+          "commandForced",
+          "commandDefault",
+          "commandWeak",
+          "commandContent",
+          "commandJudgeMode",
+          "commandRequest",
+          "widgetCreate",
+          "macroRequest"
+        ]
+      },
+      {
+        "capture": "moving_around_gridania.pcapng",
+        "connection_index": 0,
+        "frame_index": 1251,
+        "first_subevent_index": 1,
+        "capture_packet_index": 3567,
+        "name_order": [
+          "commandForced",
+          "commandDefault",
+          "commandWeak",
+          "commandContent",
+          "commandJudgeMode",
+          "commandRequest",
+          "widgetCreate",
+          "macroRequest"
+        ]
+      },
+      {
+        "capture": "return_to_inn.pcapng",
+        "connection_index": 0,
+        "frame_index": 38,
+        "first_subevent_index": 1,
+        "capture_packet_index": 139,
+        "name_order": [
+          "commandForced",
+          "commandDefault",
+          "commandWeak",
+          "commandContent",
+          "commandJudgeMode",
+          "commandRequest",
+          "widgetCreate",
+          "macroRequest"
+        ]
+      },
+      {
+        "capture": "teleport_to_camp_nine_ivies.pcapng",
+        "connection_index": 0,
+        "frame_index": 73,
+        "first_subevent_index": 1,
+        "capture_packet_index": 307,
+        "name_order": [
+          "commandForced",
+          "commandDefault",
+          "commandWeak",
+          "commandContent",
+          "commandJudgeMode",
+          "commandRequest",
+          "widgetCreate",
+          "macroRequest"
+        ]
+      },
+      {
+        "capture": "teleport_to_camp_tranquil.pcapng",
+        "connection_index": 0,
+        "frame_index": 47,
+        "first_subevent_index": 1,
+        "capture_packet_index": 211,
+        "name_order": [
+          "commandForced",
+          "commandDefault",
+          "commandWeak",
+          "commandContent",
+          "commandJudgeMode",
+          "commandRequest",
+          "widgetCreate",
+          "macroRequest"
+        ]
+      },
+      {
+        "capture": "teleport_to_gridania.pcapng",
+        "connection_index": 0,
+        "frame_index": 59,
+        "first_subevent_index": 1,
+        "capture_packet_index": 181,
+        "name_order": [
+          "commandForced",
+          "commandDefault",
+          "commandWeak",
+          "commandContent",
+          "commandJudgeMode",
+          "commandRequest",
+          "widgetCreate",
+          "macroRequest"
+        ]
+      }
+    ]
+  },
+  "actor_references": [
+    {
+      "capture": "from_gridania_to_blackshroud.pcapng",
+      "connection_index": 0,
+      "c2s_0008_body0_actor_counts": {
+        "0x029B2941": 2
+      },
+      "first_c2s_0008": {
+        "capture": "from_gridania_to_blackshroud.pcapng",
+        "connection_index": 0,
+        "direction": "c2s",
+        "frame_index": 136,
+        "frame_stream_offset": 22768,
+        "subevent_index": 0,
+        "subevent_offset": 0,
+        "capture_packet_index": 427,
+        "actor_id": "0x029B2941"
+      },
+      "c2s_00ca_source_actor_counts": {
+        "0x029B2941": 617
+      },
+      "first_c2s_00ca": {
+        "capture": "from_gridania_to_blackshroud.pcapng",
+        "connection_index": 0,
+        "direction": "c2s",
+        "frame_index": 0,
+        "frame_stream_offset": 0,
+        "subevent_index": 0,
+        "subevent_offset": 0,
+        "capture_packet_index": 1,
+        "actor_id": "0x029B2941"
+      }
+    },
+    {
+      "capture": "gridania_to_coerthas.pcapng",
+      "connection_index": 0,
+      "c2s_0008_body0_actor_counts": {
+        "0x029B2941": 4
+      },
+      "first_c2s_0008": {
+        "capture": "gridania_to_coerthas.pcapng",
+        "connection_index": 0,
+        "direction": "c2s",
+        "frame_index": 101,
+        "frame_stream_offset": 16992,
+        "subevent_index": 0,
+        "subevent_offset": 0,
+        "capture_packet_index": 297,
+        "actor_id": "0x029B2941"
+      },
+      "c2s_00ca_source_actor_counts": {
+        "0x029B2941": 2563
+      },
+      "first_c2s_00ca": {
+        "capture": "gridania_to_coerthas.pcapng",
+        "connection_index": 0,
+        "direction": "c2s",
+        "frame_index": 0,
+        "frame_stream_offset": 0,
+        "subevent_index": 0,
+        "subevent_offset": 0,
+        "capture_packet_index": 1,
+        "actor_id": "0x029B2941"
+      }
+    },
+    {
+      "capture": "login.pcapng",
+      "connection_index": 0,
+      "c2s_0008_body0_actor_counts": {
+        "0x029B2941": 1
+      },
+      "first_c2s_0008": {
+        "capture": "login.pcapng",
+        "connection_index": 0,
+        "direction": "c2s",
+        "frame_index": 2,
+        "frame_stream_offset": 144,
+        "subevent_index": 0,
+        "subevent_offset": 0,
+        "capture_packet_index": 935,
+        "actor_id": "0x029B2941"
+      },
+      "c2s_00ca_source_actor_counts": {
+        "0x029B2941": 110
+      },
+      "first_c2s_00ca": {
+        "capture": "login.pcapng",
+        "connection_index": 0,
+        "direction": "c2s",
+        "frame_index": 32,
+        "frame_stream_offset": 2744,
+        "subevent_index": 2,
+        "subevent_offset": 80,
+        "capture_packet_index": 1104,
+        "actor_id": "0x029B2941"
+      }
+    },
+    {
+      "capture": "move_out_of_room.pcapng",
+      "connection_index": 0,
+      "c2s_0008_body0_actor_counts": {
+        "0x029B2941": 1
+      },
+      "first_c2s_0008": {
+        "capture": "move_out_of_room.pcapng",
+        "connection_index": 0,
+        "direction": "c2s",
+        "frame_index": 18,
+        "frame_stream_offset": 3392,
+        "subevent_index": 0,
+        "subevent_offset": 0,
+        "capture_packet_index": 58,
+        "actor_id": "0x029B2941"
+      },
+      "c2s_00ca_source_actor_counts": {
+        "0x029B2941": 115
+      },
+      "first_c2s_00ca": {
+        "capture": "move_out_of_room.pcapng",
+        "connection_index": 0,
+        "direction": "c2s",
+        "frame_index": 0,
+        "frame_stream_offset": 0,
+        "subevent_index": 0,
+        "subevent_offset": 0,
+        "capture_packet_index": 2,
+        "actor_id": "0x029B2941"
+      }
+    },
+    {
+      "capture": "moving_around_gridania.pcapng",
+      "connection_index": 0,
+      "c2s_0008_body0_actor_counts": {
+        "0x029B2941": 4
+      },
+      "first_c2s_0008": {
+        "capture": "moving_around_gridania.pcapng",
+        "connection_index": 0,
+        "direction": "c2s",
+        "frame_index": 139,
+        "frame_stream_offset": 22824,
+        "subevent_index": 0,
+        "subevent_offset": 0,
+        "capture_packet_index": 417,
+        "actor_id": "0x029B2941"
+      },
+      "c2s_00ca_source_actor_counts": {
+        "0x029B2941": 2402
+      },
+      "first_c2s_00ca": {
+        "capture": "moving_around_gridania.pcapng",
+        "connection_index": 0,
+        "direction": "c2s",
+        "frame_index": 0,
+        "frame_stream_offset": 0,
+        "subevent_index": 0,
+        "subevent_offset": 0,
+        "capture_packet_index": 2,
+        "actor_id": "0x029B2941"
+      }
+    },
+    {
+      "capture": "return_to_inn.pcapng",
+      "connection_index": 0,
+      "c2s_0008_body0_actor_counts": {
+        "0x029B2941": 1
+      },
+      "first_c2s_0008": {
+        "capture": "return_to_inn.pcapng",
+        "connection_index": 0,
+        "direction": "c2s",
+        "frame_index": 29,
+        "frame_stream_offset": 5000,
+        "subevent_index": 0,
+        "subevent_offset": 0,
+        "capture_packet_index": 107,
+        "actor_id": "0x029B2941"
+      },
+      "c2s_00ca_source_actor_counts": {
+        "0x029B2941": 79
+      },
+      "first_c2s_00ca": {
+        "capture": "return_to_inn.pcapng",
+        "connection_index": 0,
+        "direction": "c2s",
+        "frame_index": 0,
+        "frame_stream_offset": 0,
+        "subevent_index": 0,
+        "subevent_offset": 0,
+        "capture_packet_index": 3,
+        "actor_id": "0x029B2941"
+      }
+    },
+    {
+      "capture": "teleport_to_camp_nine_ivies.pcapng",
+      "connection_index": 0,
+      "c2s_0008_body0_actor_counts": {
+        "0x029B2941": 1
+      },
+      "first_c2s_0008": {
+        "capture": "teleport_to_camp_nine_ivies.pcapng",
+        "connection_index": 0,
+        "direction": "c2s",
+        "frame_index": 78,
+        "frame_stream_offset": 13544,
+        "subevent_index": 0,
+        "subevent_offset": 0,
+        "capture_packet_index": 278,
+        "actor_id": "0x029B2941"
+      },
+      "c2s_00ca_source_actor_counts": {
+        "0x029B2941": 175
+      },
+      "first_c2s_00ca": {
+        "capture": "teleport_to_camp_nine_ivies.pcapng",
+        "connection_index": 0,
+        "direction": "c2s",
+        "frame_index": 0,
+        "frame_stream_offset": 0,
+        "subevent_index": 0,
+        "subevent_offset": 0,
+        "capture_packet_index": 2,
+        "actor_id": "0x029B2941"
+      }
+    },
+    {
+      "capture": "teleport_to_camp_tranquil.pcapng",
+      "connection_index": 0,
+      "c2s_0008_body0_actor_counts": {
+        "0x029B2941": 1
+      },
+      "first_c2s_0008": {
+        "capture": "teleport_to_camp_tranquil.pcapng",
+        "connection_index": 0,
+        "direction": "c2s",
+        "frame_index": 57,
+        "frame_stream_offset": 9960,
+        "subevent_index": 0,
+        "subevent_offset": 0,
+        "capture_packet_index": 179,
+        "actor_id": "0x029B2941"
+      },
+      "c2s_00ca_source_actor_counts": {
+        "0x029B2941": 145
+      },
+      "first_c2s_00ca": {
+        "capture": "teleport_to_camp_tranquil.pcapng",
+        "connection_index": 0,
+        "direction": "c2s",
+        "frame_index": 0,
+        "frame_stream_offset": 0,
+        "subevent_index": 0,
+        "subevent_offset": 0,
+        "capture_packet_index": 2,
+        "actor_id": "0x029B2941"
+      }
+    },
+    {
+      "capture": "teleport_to_gridania.pcapng",
+      "connection_index": 0,
+      "c2s_0008_body0_actor_counts": {
+        "0x029B2941": 1
+      },
+      "first_c2s_0008": {
+        "capture": "teleport_to_gridania.pcapng",
+        "connection_index": 0,
+        "direction": "c2s",
+        "frame_index": 46,
+        "frame_stream_offset": 8096,
+        "subevent_index": 0,
+        "subevent_offset": 0,
+        "capture_packet_index": 148,
+        "actor_id": "0x029B2941"
+      },
+      "c2s_00ca_source_actor_counts": {
+        "0x029B2941": 136
+      },
+      "first_c2s_00ca": {
+        "capture": "teleport_to_gridania.pcapng",
+        "connection_index": 0,
+        "direction": "c2s",
+        "frame_index": 0,
+        "frame_stream_offset": 0,
+        "subevent_index": 0,
+        "subevent_offset": 0,
+        "capture_packet_index": 2,
+        "actor_id": "0x029B2941"
+      }
+    }
+  ],
+  "framing": [
+    {
+      "capture": "accept_leve.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 90,
+      "stream_bytes": 16640,
+      "captured_payload_segments": 90,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "accept_leve.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 71,
+      "stream_bytes": 7932,
+      "captured_payload_segments": 65,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "accept_leve.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "c2s",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "accept_leve.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "s2c",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "accept_local_leve.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 75,
+      "stream_bytes": 13880,
+      "captured_payload_segments": 75,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "accept_local_leve.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 59,
+      "stream_bytes": 6604,
+      "captured_payload_segments": 54,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "accept_quest.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 48,
+      "stream_bytes": 8480,
+      "captured_payload_segments": 48,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "accept_quest.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 34,
+      "stream_bytes": 3890,
+      "captured_payload_segments": 30,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "accept_quest.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "c2s",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "accept_quest.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "s2c",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "action_and_traits.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 63,
+      "stream_bytes": 11208,
+      "captured_payload_segments": 63,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "action_and_traits.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 40,
+      "stream_bytes": 3788,
+      "captured_payload_segments": 39,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "add_str.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 38,
+      "stream_bytes": 6536,
+      "captured_payload_segments": 38,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "add_str.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 28,
+      "stream_bytes": 2352,
+      "captured_payload_segments": 26,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "attributes.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 45,
+      "stream_bytes": 7664,
+      "captured_payload_segments": 45,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "attributes.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 29,
+      "stream_bytes": 2539,
+      "captured_payload_segments": 28,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "battle_mode_passive_mode.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 22,
+      "stream_bytes": 4048,
+      "captured_payload_segments": 22,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "battle_mode_passive_mode.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 18,
+      "stream_bytes": 2022,
+      "captured_payload_segments": 16,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "battle_mode_passive_mode.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "c2s",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "battle_mode_passive_mode.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "s2c",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "buy_square_maple_shield.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 82,
+      "stream_bytes": 14752,
+      "captured_payload_segments": 82,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "buy_square_maple_shield.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 58,
+      "stream_bytes": 6576,
+      "captured_payload_segments": 57,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "buy_square_maple_shield.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "c2s",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "buy_square_maple_shield.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "s2c",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "change_bodyarmor.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 55,
+      "stream_bytes": 9928,
+      "captured_payload_segments": 55,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "change_bodyarmor.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 34,
+      "stream_bytes": 3394,
+      "captured_payload_segments": 33,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "change_helm.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 66,
+      "stream_bytes": 12272,
+      "captured_payload_segments": 66,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "change_helm.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 43,
+      "stream_bytes": 4252,
+      "captured_payload_segments": 41,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "change_to_botanist.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 64,
+      "stream_bytes": 12184,
+      "captured_payload_segments": 64,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "change_to_botanist.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 48,
+      "stream_bytes": 6438,
+      "captured_payload_segments": 42,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "change_to_botanist.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "c2s",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "change_to_botanist.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "s2c",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "chat_say.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 16,
+      "stream_bytes": 3160,
+      "captured_payload_segments": 16,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "chat_say.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 10,
+      "stream_bytes": 803,
+      "captured_payload_segments": 10,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "chat_shout.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 14,
+      "stream_bytes": 2872,
+      "captured_payload_segments": 14,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "chat_shout.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 10,
+      "stream_bytes": 808,
+      "captured_payload_segments": 9,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "check_room_map.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 47,
+      "stream_bytes": 7664,
+      "captured_payload_segments": 47,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "check_room_map.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 27,
+      "stream_bytes": 2266,
+      "captured_payload_segments": 27,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "checkbed.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 24,
+      "stream_bytes": 4496,
+      "captured_payload_segments": 24,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "checkbed.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 17,
+      "stream_bytes": 1459,
+      "captured_payload_segments": 17,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "coerthas_map.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 31,
+      "stream_bytes": 5080,
+      "captured_payload_segments": 31,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "coerthas_map.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 19,
+      "stream_bytes": 1548,
+      "captured_payload_segments": 19,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "coerthas_map.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "c2s",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "coerthas_map.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "s2c",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "combat_autoattack.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 117,
+      "stream_bytes": 20000,
+      "captured_payload_segments": 117,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "combat_autoattack.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 155,
+      "stream_bytes": 21425,
+      "captured_payload_segments": 104,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "combat_autoattack.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "c2s",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "combat_autoattack.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "s2c",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "combat_skills.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 80,
+      "stream_bytes": 13544,
+      "captured_payload_segments": 80,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "combat_skills.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 117,
+      "stream_bytes": 14499,
+      "captured_payload_segments": 74,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "cutscene_book.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 213,
+      "stream_bytes": 35336,
+      "captured_payload_segments": 213,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "cutscene_book.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 117,
+      "stream_bytes": 9782,
+      "captured_payload_segments": 117,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "cutscene_book.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "c2s",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "cutscene_book.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "s2c",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "emote_dance.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 50,
+      "stream_bytes": 8424,
+      "captured_payload_segments": 50,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "emote_dance.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 28,
+      "stream_bytes": 2353,
+      "captured_payload_segments": 28,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "emote_dance.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "c2s",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "emote_dance.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "s2c",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "emote_kneel.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 40,
+      "stream_bytes": 6760,
+      "captured_payload_segments": 40,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "emote_kneel.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 22,
+      "stream_bytes": 1844,
+      "captured_payload_segments": 22,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "friendlist_search.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 60,
+      "stream_bytes": 10440,
+      "captured_payload_segments": 60,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "friendlist_search.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 38,
+      "stream_bytes": 3776,
+      "captured_payload_segments": 38,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "friendlist_search.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "c2s",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "friendlist_search.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "s2c",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "from_gridania_to_blackshroud.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 308,
+      "stream_bytes": 51128,
+      "captured_payload_segments": 308,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "from_gridania_to_blackshroud.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 285,
+      "stream_bytes": 35517,
+      "captured_payload_segments": 231,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "from_gridania_to_blackshroud.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "c2s",
+      "frames": 3,
+      "stream_bytes": 120,
+      "captured_payload_segments": 3,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "from_gridania_to_blackshroud.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "s2c",
+      "frames": 3,
+      "stream_bytes": 120,
+      "captured_payload_segments": 3,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "gather_wood.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 222,
+      "stream_bytes": 37968,
+      "captured_payload_segments": 222,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "gather_wood.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 239,
+      "stream_bytes": 31985,
+      "captured_payload_segments": 194,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "gather_wood.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "c2s",
+      "frames": 2,
+      "stream_bytes": 80,
+      "captured_payload_segments": 2,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "gather_wood.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "s2c",
+      "frames": 2,
+      "stream_bytes": 80,
+      "captured_payload_segments": 2,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "gear_changesoul.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 42,
+      "stream_bytes": 7840,
+      "captured_payload_segments": 42,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "gear_changesoul.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 28,
+      "stream_bytes": 2859,
+      "captured_payload_segments": 27,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "gear_changeweapon.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 36,
+      "stream_bytes": 7112,
+      "captured_payload_segments": 36,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "gear_changeweapon.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 28,
+      "stream_bytes": 3482,
+      "captured_payload_segments": 26,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "gridania_map.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 30,
+      "stream_bytes": 5128,
+      "captured_payload_segments": 30,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "gridania_map.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 17,
+      "stream_bytes": 1992,
+      "captured_payload_segments": 17,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "gridania_to_coerthas.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 1300,
+      "stream_bytes": 225432,
+      "captured_payload_segments": 1300,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "gridania_to_coerthas.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 1362,
+      "stream_bytes": 225863,
+      "captured_payload_segments": 1075,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "gridania_to_coerthas.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "c2s",
+      "frames": 10,
+      "stream_bytes": 400,
+      "captured_payload_segments": 10,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "gridania_to_coerthas.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "s2c",
+      "frames": 10,
+      "stream_bytes": 400,
+      "captured_payload_segments": 10,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "harvest.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 71,
+      "stream_bytes": 11616,
+      "captured_payload_segments": 71,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "harvest.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 89,
+      "stream_bytes": 14266,
+      "captured_payload_segments": 72,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "harvest.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "c2s",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "harvest.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "s2c",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "idle_in_party.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 29,
+      "stream_bytes": 4736,
+      "captured_payload_segments": 29,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "idle_in_party.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 18,
+      "stream_bytes": 2101,
+      "captured_payload_segments": 17,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "idling.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 77,
+      "stream_bytes": 12656,
+      "captured_payload_segments": 77,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "idling.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 51,
+      "stream_bytes": 4106,
+      "captured_payload_segments": 51,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "idling.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "c2s",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "idling.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "s2c",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "inventory.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 46,
+      "stream_bytes": 7864,
+      "captured_payload_segments": 46,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "inventory.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 27,
+      "stream_bytes": 2448,
+      "captured_payload_segments": 27,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "inventory.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "c2s",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "inventory.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "s2c",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "invite_join_party.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 148,
+      "stream_bytes": 24672,
+      "captured_payload_segments": 149,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "invite_join_party.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 101,
+      "stream_bytes": 11647,
+      "captured_payload_segments": 91,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "invite_join_party.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "c2s",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "invite_join_party.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "s2c",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "local_leve_complete.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 499,
+      "stream_bytes": 78944,
+      "captured_payload_segments": 499,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "local_leve_complete.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 520,
+      "stream_bytes": 69970,
+      "captured_payload_segments": 451,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "local_leve_complete.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "c2s",
+      "frames": 5,
+      "stream_bytes": 200,
+      "captured_payload_segments": 5,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "local_leve_complete.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "s2c",
+      "frames": 5,
+      "stream_bytes": 200,
+      "captured_payload_segments": 5,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "login.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 87,
+      "stream_bytes": 11864,
+      "captured_payload_segments": 87,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "login.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 89,
+      "stream_bytes": 15240,
+      "captured_payload_segments": 82,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "login.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "c2s",
+      "frames": 3,
+      "stream_bytes": 152,
+      "captured_payload_segments": 3,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "login.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "s2c",
+      "frames": 3,
+      "stream_bytes": 152,
+      "captured_payload_segments": 3,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "mount_unmount_chocobo.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 34,
+      "stream_bytes": 5672,
+      "captured_payload_segments": 34,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "mount_unmount_chocobo.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 18,
+      "stream_bytes": 1347,
+      "captured_payload_segments": 17,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "move_around_gridania.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 301,
+      "stream_bytes": 49264,
+      "captured_payload_segments": 301,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "move_around_gridania.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 271,
+      "stream_bytes": 34838,
+      "captured_payload_segments": 223,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "move_around_gridania.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "c2s",
+      "frames": 2,
+      "stream_bytes": 80,
+      "captured_payload_segments": 2,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "move_around_gridania.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "s2c",
+      "frames": 2,
+      "stream_bytes": 80,
+      "captured_payload_segments": 2,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "move_out_of_room.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 81,
+      "stream_bytes": 11680,
+      "captured_payload_segments": 81,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "move_out_of_room.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 134,
+      "stream_bytes": 31713,
+      "captured_payload_segments": 102,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "moving_around_gridania.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 1195,
+      "stream_bytes": 197000,
+      "captured_payload_segments": 1195,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "moving_around_gridania.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 1319,
+      "stream_bytes": 216736,
+      "captured_payload_segments": 985,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "moving_around_gridania.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "c2s",
+      "frames": 10,
+      "stream_bytes": 400,
+      "captured_payload_segments": 10,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "moving_around_gridania.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "s2c",
+      "frames": 10,
+      "stream_bytes": 400,
+      "captured_payload_segments": 10,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "open_gear_menu.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 51,
+      "stream_bytes": 8888,
+      "captured_payload_segments": 51,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "open_gear_menu.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 29,
+      "stream_bytes": 2557,
+      "captured_payload_segments": 29,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "party_battle_leve.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 1803,
+      "stream_bytes": 304008,
+      "captured_payload_segments": 1803,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "party_battle_leve.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 3476,
+      "stream_bytes": 433634,
+      "captured_payload_segments": 1748,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "party_battle_leve.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "c2s",
+      "frames": 24,
+      "stream_bytes": 5712,
+      "captured_payload_segments": 24,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "party_battle_leve.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "s2c",
+      "frames": 40,
+      "stream_bytes": 15600,
+      "captured_payload_segments": 40,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "quest_journal.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 56,
+      "stream_bytes": 9616,
+      "captured_payload_segments": 56,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "quest_journal.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 32,
+      "stream_bytes": 2721,
+      "captured_payload_segments": 31,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "quest_update.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 111,
+      "stream_bytes": 19008,
+      "captured_payload_segments": 111,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "quest_update.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 72,
+      "stream_bytes": 6567,
+      "captured_payload_segments": 71,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "quest_update.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "c2s",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "quest_update.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "s2c",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "repair_items.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 94,
+      "stream_bytes": 17360,
+      "captured_payload_segments": 94,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "repair_items.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 87,
+      "stream_bytes": 11157,
+      "captured_payload_segments": 72,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "repair_items.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "c2s",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "repair_items.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "s2c",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "return_to_inn.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 50,
+      "stream_bytes": 7616,
+      "captured_payload_segments": 50,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "return_to_inn.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 63,
+      "stream_bytes": 12851,
+      "captured_payload_segments": 50,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "sell_item.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 81,
+      "stream_bytes": 14968,
+      "captured_payload_segments": 81,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "sell_item.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 67,
+      "stream_bytes": 10419,
+      "captured_payload_segments": 59,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "sell_item.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "c2s",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "sell_item.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "s2c",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "small_talk_louisoix.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 35,
+      "stream_bytes": 6368,
+      "captured_payload_segments": 35,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "small_talk_louisoix.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 27,
+      "stream_bytes": 2856,
+      "captured_payload_segments": 25,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "switch_to_weaver.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 48,
+      "stream_bytes": 8816,
+      "captured_payload_segments": 48,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "switch_to_weaver.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 40,
+      "stream_bytes": 5602,
+      "captured_payload_segments": 33,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "teleport_to_camp_nine_ivies.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 103,
+      "stream_bytes": 16424,
+      "captured_payload_segments": 103,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "teleport_to_camp_nine_ivies.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 106,
+      "stream_bytes": 18834,
+      "captured_payload_segments": 90,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "teleport_to_camp_nine_ivies.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "c2s",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "teleport_to_camp_nine_ivies.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "s2c",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "teleport_to_camp_tranquil.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 85,
+      "stream_bytes": 13440,
+      "captured_payload_segments": 85,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "teleport_to_camp_tranquil.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 83,
+      "stream_bytes": 17265,
+      "captured_payload_segments": 70,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "teleport_to_camp_tranquil.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "c2s",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "teleport_to_camp_tranquil.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "s2c",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "teleport_to_gridania.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 80,
+      "stream_bytes": 12672,
+      "captured_payload_segments": 80,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "teleport_to_gridania.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 96,
+      "stream_bytes": 18318,
+      "captured_payload_segments": 77,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "war_quest_update1.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 69,
+      "stream_bytes": 11832,
+      "captured_payload_segments": 69,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "war_quest_update1.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 61,
+      "stream_bytes": 7101,
+      "captured_payload_segments": 53,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "war_quest_update1.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "c2s",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "war_quest_update1.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "s2c",
+      "frames": 1,
+      "stream_bytes": 40,
+      "captured_payload_segments": 1,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "war_quest_update2.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 205,
+      "stream_bytes": 29592,
+      "captured_payload_segments": 205,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "war_quest_update2.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 667,
+      "stream_bytes": 69113,
+      "captured_payload_segments": 319,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "war_quest_update2.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "c2s",
+      "frames": 5,
+      "stream_bytes": 1256,
+      "captured_payload_segments": 5,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "war_quest_update2.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "s2c",
+      "frames": 4,
+      "stream_bytes": 720,
+      "captured_payload_segments": 4,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "war_quest_update3.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "c2s",
+      "frames": 167,
+      "stream_bytes": 28328,
+      "captured_payload_segments": 167,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "war_quest_update3.pcapng",
+      "connection_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "frames": 165,
+      "stream_bytes": 20403,
+      "captured_payload_segments": 133,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "war_quest_update3.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "c2s",
+      "frames": 2,
+      "stream_bytes": 80,
+      "captured_payload_segments": 2,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    },
+    {
+      "capture": "war_quest_update3.pcapng",
+      "connection_index": 1,
+      "lane": "chat",
+      "direction": "s2c",
+      "frames": 2,
+      "stream_bytes": 80,
+      "captured_payload_segments": 2,
+      "trailing_bytes": 0,
+      "sequence_gaps": 0,
+      "subevent_truncations": 0,
+      "compression_mismatches": 0
+    }
+  ],
+  "occurrences_sha256": "c68acf6c7216205cfd58f87649bbd2a1f516b3c6c74f587583bc255965d93182"
+}

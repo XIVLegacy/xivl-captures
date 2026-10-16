@@ -1,0 +1,31 @@
+id: command-registration
+title: Command Registration 0x0132 Wire Census
+evidence_class: packet-capture
+status: distilled
+content_kind: session-mechanic
+tags:
+- packet-decoding
+- packet-order
+- command-registration
+search_hints:
+- "0x0132"
+- commandRequest
+- commandForced
+- commandDefault
+- commandWeak
+- commandContent
+- commandJudgeMode
+- widgetCreate
+- macroRequest
+notes: >-
+  Complete retained-corpus byte/name census and connection-local batch order
+  for s2c 0x0132. Wrapped actor fields agree with client-originating actor
+  references. Wire bytes alone do not establish native registration behavior.
+source_refs:
+- source: pcap-1.23b
+primary_paths:
+- derived/occurrences.csv
+- derived/accounting.json
+canonical_evidence:
+- derived/occurrences.csv
+- derived/accounting.json

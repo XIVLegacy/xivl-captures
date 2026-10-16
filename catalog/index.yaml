@@ -400,6 +400,30 @@ studies:
   - studies/cast-result-state-order/derived/sequences.csv
   source_refs:
   - source: pcap-1.23b
+- id: command-registration
+  title: Command Registration 0x0132 Wire Census
+  status: distilled
+  evidence_class: packet-capture
+  content_kind: session-mechanic
+  tags:
+  - packet-decoding
+  - packet-order
+  - command-registration
+  search_hints:
+  - '0x0132'
+  - commandRequest
+  - commandForced
+  - commandDefault
+  - commandWeak
+  - commandContent
+  - commandJudgeMode
+  - widgetCreate
+  - macroRequest
+  primary_paths:
+  - studies/command-registration/derived/occurrences.csv
+  - studies/command-registration/derived/accounting.json
+  source_refs:
+  - source: pcap-1.23b
 - id: director-wire-identity
   title: Director Wire Identity Verification
   status: distilled
