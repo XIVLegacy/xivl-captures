@@ -201,6 +201,12 @@ Generated from `catalog/index.yaml`. Primary axis: `content_kind`.
 
 - `elemen-consumable-effects`
 
+## tradecraft-leve (1)
+
+### Studies (1)
+
+- `local-guildleve-dialogue`
+
 ## zone-mechanic (10)
 
 ### Studies (7)

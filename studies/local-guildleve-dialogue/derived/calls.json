@@ -1,0 +1,281 @@
+[
+  {
+    "location": {
+      "capture": "local_leve_complete.pcapng",
+      "lane_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "direction_event_index": 41,
+      "frame_index": 14,
+      "frame_stream_offset": 1619,
+      "capture_packet_index": 38,
+      "capture_time_us": 1356922112274850,
+      "capture_timestamp_utc": "2012-12-31T02:48:32.274850Z",
+      "outer_timestamp_or_seq_hex": "e448dcee3b010000",
+      "outer_value": 1356922112228,
+      "outer_frame_size": 126,
+      "inflated_frame_body_size": 176,
+      "subevent_index": 0,
+      "subevent_offset": 0,
+      "subevent_size": 176,
+      "subevent_type": 3,
+      "transport_source_actor_id": 43723073,
+      "transport_target_actor_id": 43723073,
+      "transport_counter": 4275232768,
+      "inner_header_word0": 20,
+      "opcode": "0x0130"
+    },
+    "function": "delegateEvent",
+    "owner_actor_id_hex": "0x44B00005",
+    "owner_actor_application_offset": 4,
+    "application_prefix_hex": "41299b020500b0440174616c6b44656661756c74000000000000000000000000000000000000000000",
+    "application_size": 144,
+    "application_sha256": "6f9569f9741e98456fb0af4e28aacb4e6bff4b6e539066993773d673be3e649b",
+    "parameter_application_offset": 73,
+    "parameter_size": 64,
+    "parameters_hex": "06029b294106a0f1d58a0270726f6365737350674576656e7400000000016d00151a900005050f00000000000000000000000000000000000000000000000000",
+    "parameters_sha256": "72cf4d4d2bb2b5f204554b665ea0a4d18752524d252442d013f1cf3984c5e079",
+    "decoded_parameters": [
+      {
+        "tag_offset": 0,
+        "tag": 6,
+        "type": "actor",
+        "value_offset": 1,
+        "value": 43723073,
+        "value_hex": "0x029B2941"
+      },
+      {
+        "tag_offset": 5,
+        "tag": 6,
+        "type": "actor",
+        "value_offset": 6,
+        "value": 2700203402,
+        "value_hex": "0xA0F1D58A"
+      },
+      {
+        "tag_offset": 10,
+        "tag": 2,
+        "type": "string",
+        "value_offset": 11,
+        "value": "processPgEvent"
+      },
+      {
+        "tag_offset": 26,
+        "tag": 0,
+        "type": "integer",
+        "value_offset": 27,
+        "value": 365,
+        "value_hex": "0x0000016D"
+      },
+      {
+        "tag_offset": 31,
+        "tag": 0,
+        "type": "integer",
+        "value_offset": 32,
+        "value": 354062336,
+        "value_hex": "0x151A9000"
+      },
+      {
+        "tag_offset": 36,
+        "tag": 5,
+        "type": "nil",
+        "value": null
+      },
+      {
+        "tag_offset": 37,
+        "tag": 5,
+        "type": "nil",
+        "value": null
+      }
+    ],
+    "end_tag_offset": 38,
+    "zero_padding_size": 25,
+    "application_tail_hex": "02504340000000"
+  },
+  {
+    "location": {
+      "capture": "local_leve_complete.pcapng",
+      "lane_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "direction_event_index": 70,
+      "frame_index": 25,
+      "frame_stream_offset": 2860,
+      "capture_packet_index": 79,
+      "capture_time_us": 1356922117656795,
+      "capture_timestamp_utc": "2012-12-31T02:48:37.656795Z",
+      "outer_timestamp_or_seq_hex": "105edcee3b010000",
+      "outer_value": 1356922117648,
+      "outer_frame_size": 127,
+      "inflated_frame_body_size": 176,
+      "subevent_index": 0,
+      "subevent_offset": 0,
+      "subevent_size": 176,
+      "subevent_type": 3,
+      "transport_source_actor_id": 43723073,
+      "transport_target_actor_id": 43723073,
+      "transport_counter": 4275232768,
+      "inner_header_word0": 20,
+      "opcode": "0x0130"
+    },
+    "function": "delegateEvent",
+    "owner_actor_id_hex": "0x44B00005",
+    "owner_actor_application_offset": 4,
+    "application_prefix_hex": "41299b020500b0440174616c6b44656661756c74000000000000000000000000000000000000000000",
+    "application_size": 144,
+    "application_sha256": "cc1ee45e4b57d4daf8419806a317a78e02078778576adec78fcd8bd59706994f",
+    "parameter_application_offset": 73,
+    "parameter_size": 64,
+    "parameters_hex": "06029b294106a0f1d58a0270726f6365737350674576656e7400000000016e000413600005050f00000000000000000000000000000000000000000000000000",
+    "parameters_sha256": "6fccccefe509e02c61c2ff7b0bf70775da2061924a53b9f9e0a1175149deeb24",
+    "decoded_parameters": [
+      {
+        "tag_offset": 0,
+        "tag": 6,
+        "type": "actor",
+        "value_offset": 1,
+        "value": 43723073,
+        "value_hex": "0x029B2941"
+      },
+      {
+        "tag_offset": 5,
+        "tag": 6,
+        "type": "actor",
+        "value_offset": 6,
+        "value": 2700203402,
+        "value_hex": "0xA0F1D58A"
+      },
+      {
+        "tag_offset": 10,
+        "tag": 2,
+        "type": "string",
+        "value_offset": 11,
+        "value": "processPgEvent"
+      },
+      {
+        "tag_offset": 26,
+        "tag": 0,
+        "type": "integer",
+        "value_offset": 27,
+        "value": 366,
+        "value_hex": "0x0000016E"
+      },
+      {
+        "tag_offset": 31,
+        "tag": 0,
+        "type": "integer",
+        "value_offset": 32,
+        "value": 68378624,
+        "value_hex": "0x04136000"
+      },
+      {
+        "tag_offset": 36,
+        "tag": 5,
+        "type": "nil",
+        "value": null
+      },
+      {
+        "tag_offset": 37,
+        "tag": 5,
+        "type": "nil",
+        "value": null
+      }
+    ],
+    "end_tag_offset": 38,
+    "zero_padding_size": 25,
+    "application_tail_hex": "02504340000000"
+  },
+  {
+    "location": {
+      "capture": "local_leve_complete.pcapng",
+      "lane_index": 0,
+      "lane": "main",
+      "direction": "s2c",
+      "direction_event_index": 2191,
+      "frame_index": 497,
+      "frame_stream_offset": 66922,
+      "capture_packet_index": 1734,
+      "capture_time_us": 1356922311892645,
+      "capture_timestamp_utc": "2012-12-31T02:51:51.892645Z",
+      "outer_timestamp_or_seq_hex": "ad55dfee3b010000",
+      "outer_value": 1356922312109,
+      "outer_frame_size": 127,
+      "inflated_frame_body_size": 176,
+      "subevent_index": 0,
+      "subevent_offset": 0,
+      "subevent_size": 176,
+      "subevent_type": 3,
+      "transport_source_actor_id": 43723073,
+      "transport_target_actor_id": 43723073,
+      "transport_counter": 4275232768,
+      "inner_header_word0": 20,
+      "opcode": "0x0130"
+    },
+    "function": "delegateEvent",
+    "owner_actor_id_hex": "0x44B00005",
+    "owner_actor_application_offset": 4,
+    "application_prefix_hex": "41299b020500b0440174616c6b44656661756c74000000000000000000000000000000000000000000",
+    "application_size": 144,
+    "application_sha256": "a01bad43654cf3a4563d246d71a2d460fa4e4346cd1a0d18cf3a4fd1bf07092f",
+    "parameter_application_offset": 73,
+    "parameter_size": 64,
+    "parameters_hex": "06029b294106a0f1d58a0270726f6365737350674576656e74000000000170000414000005050f00000000000000000000000000000000000000000000000000",
+    "parameters_sha256": "6e2852166adcccb940d2bb455b367c7cc4aeb2be4ea42fc4c707ca08356f6fe3",
+    "decoded_parameters": [
+      {
+        "tag_offset": 0,
+        "tag": 6,
+        "type": "actor",
+        "value_offset": 1,
+        "value": 43723073,
+        "value_hex": "0x029B2941"
+      },
+      {
+        "tag_offset": 5,
+        "tag": 6,
+        "type": "actor",
+        "value_offset": 6,
+        "value": 2700203402,
+        "value_hex": "0xA0F1D58A"
+      },
+      {
+        "tag_offset": 10,
+        "tag": 2,
+        "type": "string",
+        "value_offset": 11,
+        "value": "processPgEvent"
+      },
+      {
+        "tag_offset": 26,
+        "tag": 0,
+        "type": "integer",
+        "value_offset": 27,
+        "value": 368,
+        "value_hex": "0x00000170"
+      },
+      {
+        "tag_offset": 31,
+        "tag": 0,
+        "type": "integer",
+        "value_offset": 32,
+        "value": 68419584,
+        "value_hex": "0x04140000"
+      },
+      {
+        "tag_offset": 36,
+        "tag": 5,
+        "type": "nil",
+        "value": null
+      },
+      {
+        "tag_offset": 37,
+        "tag": 5,
+        "type": "nil",
+        "value": null
+      }
+    ],
+    "end_tag_offset": 38,
+    "zero_padding_size": 25,
+    "application_tail_hex": "02504340000000"
+  }
+]

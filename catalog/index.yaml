@@ -1362,6 +1362,29 @@ studies:
   - studies/lobby-handshake-triage/derived/lobby-record-census.json
   source_refs:
   - source: pcap-1.23b
+- id: local-guildleve-dialogue
+  title: Local Guildleve Dialogue Calls
+  status: distilled
+  evidence_class: packet-capture
+  content_kind: tradecraft-leve
+  system: guildleve
+  tags:
+  - local-leve
+  - dialogue
+  - packet-decoding
+  search_hints:
+  - local_leve_complete
+  - delegateEvent
+  - processPgEvent
+  - '365'
+  - '366'
+  - '368'
+  primary_paths:
+  - studies/local-guildleve-dialogue/derived/calls.json
+  - studies/local-guildleve-dialogue/derived/accounting.json
+  source_refs:
+  - source: pcap-1.23b
+    citation: sources/pcap-1.23b/manifest.yaml
 - id: lodestone-beginners
   title: FFXIV 1.x Lodestone - A Beginner's Guide to Eorzea
   status: distilled
