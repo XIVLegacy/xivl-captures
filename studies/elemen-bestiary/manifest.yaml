@@ -53,6 +53,9 @@ primary_paths:
 - derived/nm-spawns.csv
 - derived/glossary.md
 - derived/file-inventory.csv
+- derived/species-drops.csv
+- derived/species-drop-coverage.csv
+- derived/species-drop-accounting.json
 canonical_evidence:
 - derived/bestiary-taxonomy.csv
 - derived/mob-skill-list.csv
@@ -60,6 +63,9 @@ canonical_evidence:
 - derived/nm-spawns.csv
 - derived/glossary.md
 - derived/evidence-map.md
+- derived/species-drops.csv
+- derived/species-drop-coverage.csv
+- derived/species-drop-accounting.json
 distilled:
   distilled: true
   distilled_artifacts:
@@ -71,3 +77,6 @@ distilled:
   - derived/glossary.md
   - derived/evidence-map.md
   - derived/file-inventory.csv
+  - derived/species-drops.csv
+  - derived/species-drop-coverage.csv
+  - derived/species-drop-accounting.json

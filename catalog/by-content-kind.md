@@ -157,10 +157,12 @@ Generated from `catalog/index.yaml`. Primary axis: `content_kind`.
 
 - `primal-battle-ifrit-bowl-of-embers`
 
-## session-mechanic (4)
+## session-mechanic (6)
 
-### Studies (3)
+### Studies (5)
 
+- `friendlist-search-wire-exchange`
+- `group-combat-wire-contracts`
 - `lobby-handshake-triage`
 - `login-0002-appearance-order`
 - `login-018a-neighborhood`

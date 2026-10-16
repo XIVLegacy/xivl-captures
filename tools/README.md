@@ -36,6 +36,14 @@ The supported commands for direct maintainer use are:
 
 - `python tools/refresh.py` - regenerate every canonical product in dependency
   order.
+- `python tools/extractors/extract_group_combat_contracts.py --check` - replay
+  occupancy, group-work, and enmity observations with capture-completion order.
+- `python tools/build_species_drop_coverage.py --check` - audit ordinary-species
+  drop coverage against the retained bestiary pages. Both commands support
+  `--public-shape` to check public product accounting without restricted bytes.
+- `python tools/extractors/extract_friendlist_search_exchange.py --check` -
+  reproduce the retained friend-search exchange extents without exposing names
+  or raw payload bytes; `--public-shape` checks public accounting only.
 - `python tools/refresh.py --check --public-shape` - explicitly validate the
   restricted-evidence-absent repository shape.
 - `python tools/import_monster_population.py` - distill the pinned restricted

@@ -162,6 +162,34 @@ So both CSVs are sourced entirely from `NM_<Region>.md`; counts by page are in
 
 ## Cross-source notes
 
+### Ordinary species drop boundary
+
+`species-drop-coverage.csv` contains one row for each of the 112 species in
+`species-client-map.csv`. Each row identifies its genus page, source SHA-256,
+client-name mapping already established by that map, and the verbatim crystal
+priority note from `bestiary-taxonomy.csv`. These remain historical site-table
+observations in the `web-tables` evidence tier.
+
+The 65 retained regular-page transcriptions contain taxonomy and special
+moves. None contains an ordinary-item drop list or a level-band field.
+`species-drops.csv` consequently contains the requested column contract and
+zero data rows. This is a boundary of the retained source material; it does
+not assert that ordinary species drop no items in retail.
+
+The proposed fields for client family id, mob level band, ordinary item JP/EN,
+client item id, drop group, and rarity mark cannot be populated from those
+pages. Existing species actor-family variants do not establish an actorclass
+family id or a drop list for each variant. Crystal element-priority notes
+establish no crystal/shard item-id match or rate. No inferred rows are emitted.
+The evidence-class column reserves `site table`, `site note`, and `inferred`
+for future source-backed rows; the coverage rows use `site table`.
+
+`tools/build_species_drop_coverage.py` verifies each retained page against the
+source manifest, detects item/level field labels, and regenerates the empty
+drop table, coverage table, and `species-drop-accounting.json`. Public-shape
+mode verifies the same public products and source pins without reading the
+restricted page bytes. The 84 NM drop rows in `mob-drops.csv` are unchanged.
+
 - Weakness vs crystal drop: the `weakness_attr_inferred` / `resistance_attr_inferred`
   columns are the site's own 推測 (inferred-from-enemy-attribute) values and can
   point to a different element than the genus's crystal drop order. This is the

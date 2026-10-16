@@ -120,6 +120,17 @@ compound colors (e.g. `赤<br>+<br>（黄）`) as documented exceptions.
 
 ## Evidence gaps
 
+[Ordinary species drop coverage](derived/species-drop-coverage.csv) audits
+all 112 mapped species across the 65 retained regular bestiary pages.
+Those pages contain no ordinary-item drop table or level band.
+[species-drops.csv](derived/species-drops.csv) therefore has zero data rows.
+The [coverage accounting](derived/species-drop-accounting.json) pins every
+page and the unchanged 84-row NM drop table. Reproduce with
+`python tools/build_species_drop_coverage.py --check`; add `--public-shape`
+to validate public pins and products without reading restricted pages.
+The [evidence map](derived/evidence-map.md#ordinary-species-drop-boundary)
+owns the limits of this result.
+
 - `攻撃特性` (attack property) is defined in the site legend but is not
   populated in any transcribed table. The CSV column is retained but empty.
 - 15 genera are `GAP` in `genus_en_client` because the client *race* table

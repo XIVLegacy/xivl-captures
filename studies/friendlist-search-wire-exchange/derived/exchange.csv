@@ -1,0 +1,4 @@
+direction,connection,lane,capture_packet,frame,subevent,opcode,subevent_bytes,game_message_prefix_bytes,application_bytes,application_nonzero_bytes,application_sha256,capture_completion_delta_us,record_layout
+c2s,0,main,131,41,1,0x01DD,296,16,264,4,8bc2c526200a7f9ac26d4343ac523ea9c29e5a099d9267d3588764f8deae4b14,0,unassigned
+s2c,0,main,148,27,0,0x01DF,968,16,936,375,f8f1ad868a3aa29457764e7679680ec455e6bc69decc2fce4bd55ae499efcf53,679150,unassigned
+s2c,0,main,148,27,1,0x01E0,648,16,616,256,4539b84619005b663bfbd81d0322be02a1ecf8bf77c73cde0a2b508b420bdd05,679150,unassigned
