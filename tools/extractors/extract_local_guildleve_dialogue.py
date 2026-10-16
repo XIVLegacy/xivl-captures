@@ -25,6 +25,7 @@ from extract_00da_00e1_comparison import (  # noqa: E402
 )
 
 from extract_observations import parse_sub_events  # noqa: E402
+from extract_property_stream_catalog import parse_records  # noqa: E402
 from extract_streams import (  # noqa: E402
     GAME_SERVER_PORT,
     _server_endpoint,
@@ -431,6 +432,199 @@ def build_exchanges(events: list[dict]) -> dict:
     }
 
 
+def build_progression(events: list[dict]) -> dict:
+    """Retain selected intervening calls and exact synchronized field writes."""
+
+    def selected(direction: str, frame: int, subevent: int, packet: int) -> dict:
+        matches = [
+            event
+            for event in events
+            if event["lane_index"] == 0
+            and event["lane"] == "main"
+            and event["direction"] == direction
+            and event["frame_index"] == frame
+            and event["subevent_index"] == subevent
+        ]
+        if len(matches) != 1 or matches[0]["capture_packet_index"] != packet:
+            raise ValueError("progression locator changed")
+        event = matches[0]
+        if (
+            event["transport_source_actor_id"] != 0x029B2941
+            or event["transport_target_actor_id"] != 0x029B2941
+        ):
+            raise ValueError("progression transport actor changed")
+        return event
+
+    command_calls = []
+    for frame, subevent, packet, method, integers in (
+        (58, 0, 186, "confirmLeve", [120202, 2, 8030420, 0, 5, 1, 0]),
+        (195, 2, 658, "askContinueLocalleve", [120202, 8030420, 1, 3, 4]),
+        (362, 2, 1240, "askContinueLocalleve", [120202, 8030420, 2, 3, 3]),
+        (464, 2, 1581, "askContinueLocalleve", [120202, 8030420, 3, 3, 2]),
+    ):
+        event = selected("s2c", frame, subevent, packet)
+        app = application_bytes(event)
+        if event["opcode_value"] != 0x0130 or len(app) != 144:
+            raise ValueError("progression command envelope changed")
+        row = exchange_row(event)
+        if (
+            row["function"] != "delegateCommand"
+            or row["owner_actor_id_hex"] != "0xA0F055F1"
+            or [(item["type"], item["value"]) for item in row["decoded_parameters"]]
+            != [
+                ("actor", 0xA0F4E203),
+                ("string", method),
+                ("actor", 0xA0F055F1),
+                *[("integer", value) for value in integers],
+            ]
+        ):
+            raise ValueError("progression command parameters changed")
+        command_calls.append(row)
+
+    selection = selected("c2s", 57, 1, 184)
+    if selection["opcode_value"] != 0x012E:
+        raise ValueError("craft selection opcode changed")
+    selection_row = exchange_row(selection)
+    if [
+        (item["type"], item["value"]) for item in selection_row["decoded_parameters"]
+    ] != [("actor", 0xA0F1D58A)]:
+        raise ValueError("craft selection actor changed")
+
+    field_names = {
+        "0xcf97c045": "work.guildleveChecked[8]",
+        "0x996ebb68": "work.guildleveDone[8]",
+        "0x4f5efe11": "work.guildleveId[8]",
+        "0x3e8a7bb7": "playerWork.questGuildleve[0]",
+    }
+    property_writes = []
+    for frame, subevent, packet, expected in (
+        (29, 0, 91, {"0xcf97c045": (1, 1)}),
+        (461, 18, 1576, {"0x996ebb68": (1, 1)}),
+        (
+            503,
+            0,
+            1751,
+            {
+                "0x3e8a7bb7": (4, 0),
+                "0x4f5efe11": (2, 0),
+                "0x996ebb68": (1, 0),
+                "0xcf97c045": (1, 0),
+            },
+        ),
+    ):
+        event = selected("s2c", frame, subevent, packet)
+        app = application_bytes(event)
+        if event["opcode_value"] != 0x0137 or len(app) != 136:
+            raise ValueError("progression property envelope changed")
+        records, declared, _, consumed = parse_records(app)
+        if consumed != declared + 1 or any(app[consumed:]):
+            raise ValueError("progression property bounds changed")
+        retained = []
+        for record in records:
+            prop_hash = record["property_hash"]
+            if prop_hash not in field_names:
+                continue
+            offset = record["stream_offset"]
+            width = record["value_width"]
+            record.update(
+                field_name=field_names[prop_hash],
+                record_application_offset=offset,
+                hash_application_offset=offset + 1,
+                value_application_offset=offset + 5,
+                record_hex=app[offset : offset + 5 + width].hex(),
+            )
+            retained.append(record)
+        if {
+            record["property_hash"]: (record["value_width"], record["value_u_le"])
+            for record in retained
+        } != expected:
+            raise ValueError("progression property values changed")
+        property_writes.append(
+            {
+                "location": event_location(event),
+                "application_size": len(app),
+                "application_sha256": hashlib.sha256(app).hexdigest(),
+                "application_hex": app.hex(),
+                "declared_stream_bytes": declared,
+                "selected_records": retained,
+            }
+        )
+
+    attention_parameters = []
+    for frame, subevent, packet, integers in (
+        (191, 7, 648, [40119, 120202, 1, 3]),
+        (357, 7, 1230, [40119, 120202, 2, 3]),
+        (461, 14, 1576, [40121, 120202]),
+    ):
+        event = selected("s2c", frame, subevent, packet)
+        app = application_bytes(event)
+        if event["opcode_value"] != 0x0133 or len(app) != 192:
+            raise ValueError("progression GenericData envelope changed")
+        # These selected streams end within 64 bytes and have only zero padding.
+        values, end = decode_parameters(app[:64])
+        if any(app[end + 1 :]) or [
+            (item["type"], item["value"]) for item in values
+        ] != [
+            ("string", "attention"),
+            ("actor", 0x5FF80001),
+            ("string", ""),
+            *[("integer", value) for value in integers],
+        ]:
+            raise ValueError("progression GenericData parameters changed")
+        attention_parameters.append(
+            {
+                "location": event_location(event),
+                "application_size": len(app),
+                "application_sha256": hashlib.sha256(app).hexdigest(),
+                "parameter_application_offset": 0,
+                "parameter_bytes_through_end_hex": app[: end + 1].hex(),
+                "decoded_parameters": values,
+                "end_tag_offset": end,
+                "zero_padding_size": len(app) - end - 1,
+            }
+        )
+    all_properties = [
+        event
+        for event in events
+        if event["lane_index"] == 0
+        and event["direction"] == "s2c"
+        and event["opcode_value"] == 0x0137
+    ]
+    slot_id_values = [
+        record["value_u_le"]
+        for event in all_properties
+        for record in parse_records(application_bytes(event))[0]
+        if record["property_hash"] == "0x4f5efe11"
+    ]
+    if slot_id_values != [0]:
+        raise ValueError("progression slot-ID baseline changed")
+    return {
+        "schema_version": 1,
+        "study": STUDY,
+        "input": {
+            "source": "pcap-1.23b",
+            "capture": CAPTURE,
+            "size_bytes": CAPTURE_SIZE,
+            "sha256": CAPTURE_SHA256,
+            "manifest": "sources/pcap-1.23b/manifest.yaml",
+        },
+        "command_calls": command_calls,
+        "craft_selection_input": selection_row,
+        "player_property_writes": property_writes,
+        "quest_keyed_attention_parameters": attention_parameters,
+        "slot_id_coverage": {
+            "main_s2c_property_packets_examined": len(all_properties),
+            "guildleveId_8_values_in_stream_order": slot_id_values,
+        },
+        "property_name_interpretation": {
+            "citation": "xivl-client-structs:manifests/gam_hash_names.json",
+            "sha256": "4c6626aaec0569e8e857ae4d25ddd186614d8843c50b91904c4ac617283d2ca3",
+            "qualification": "Exact backward MurmurHash2 name-to-hash matches. Target markers retain separate stream context. Both transport actor fields equal the player ID in these selected writes.",
+        },
+        "boundary": "Selected calls and writes retain direction-local order and earliest frame-completion packet provenance. The recording has no nonzero guildleveId[8] baseline identifying its quest. The adjacent 120202 calls do not independently bind slot 8 to that quest, establish a delivery request, expose server execution or a source-column selector, or prove that the done write selected text 368. GenericData rows retain typed arguments without assigning a text bank or server rule.",
+    }
+
+
 def build_outputs(path: Path, repo: Path = REPO_ROOT) -> dict[str, bytes]:
     data = path.read_bytes()
     if len(data) != CAPTURE_SIZE or hashlib.sha256(data).hexdigest() != CAPTURE_SHA256:
@@ -547,6 +741,7 @@ def build_outputs(path: Path, repo: Path = REPO_ROOT) -> dict[str, bytes]:
             "calls.json": calls,
             "accounting.json": accounting,
             "exchanges.json": build_exchanges(events),
+            "progression.json": build_progression(events),
         }.items()
     }
 
