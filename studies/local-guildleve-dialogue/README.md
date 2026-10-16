@@ -51,8 +51,10 @@ citation; reproduction uses only this repository's capture and decoder.
 
 These are typed wire observations. The two integer positions alone do not
 establish a dialogue table, text identity, packing scheme, or client-data
-source-column selection. The second integer's semantic meaning remains
-unknown. The actor values do not independently identify native actor classes.
+source-column selection. The bytecode-qualified positional roles of the two
+integers are recorded in `xivl-client-scripts:docs/passivegl-craft-columns.md`,
+section "Supplied dialogue consumer". The actor values do not independently
+identify native actor classes.
 This study covers one retained capture and makes no corpus-wide absence claim.
 
 ## Reproduction
