@@ -21,11 +21,12 @@ such as guildleve, behest, battle-regimen, grand-company).
 
 - `chocobo-mechanic-mount-unmount`
 
-## guildleve (2)
+## guildleve (3)
 
-### Studies (1)
+### Studies (2)
 
 - `elemen-battlecraft-leve-objectives`
+- `local-guildleve-dialogue`
 
 ### Scenarios (1)
 

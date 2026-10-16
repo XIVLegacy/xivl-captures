@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "study": "local-guildleve-dialogue",
+  "input": {
+    "source": "pcap-1.23b",
+    "capture": "local_leve_complete.pcapng",
+    "sha256": "4f0793f354140478725bf2c30642a3458a854460f47fb11a7af635c8881d95cd",
+    "size_bytes": 358296,
+    "manifest": "sources/pcap-1.23b/manifest.yaml"
+  },
+  "framing": {
+    "lanes": 2,
+    "c2s_discarded_trailing_stream_bytes": 0,
+    "c2s_admitted_unparsed_stream_bytes": 0,
+    "c2s_frames": 504,
+    "c2s_subevents": 1075,
+    "c2s_wrapped_subevents": 1070,
+    "s2c_discarded_trailing_stream_bytes": 0,
+    "s2c_admitted_unparsed_stream_bytes": 0,
+    "s2c_frames": 525,
+    "s2c_subevents": 2292,
+    "s2c_wrapped_subevents": 2287
+  },
+  "lanes": {
+    "chat": 1,
+    "main": 1
+  },
+  "all_admitted_0x0130_function_counts": {
+    "delegateCommand": 61,
+    "delegateEvent": 8,
+    "switchEvent": 2
+  },
+  "selected_calls": 3,
+  "selection": "Every admitted application payload containing the ASCII processPgEvent literal, required to be a main s2c 0x0130 delegateEvent call.",
+  "index_convention": "Lane, frame, subevent and direction-event indexes are zero-based; capture packet indexes are one-based. Frame stream offsets are wire bytes; subevent offsets are decoded-frame-body bytes. Parameter offsets are relative to the 64-byte block.",
+  "packet_locator": "The earliest captured packet that completes the outer frame in reconstructed TCP sequence space.",
+  "boundary": "One retained capture; connection-local stream order only. The second integer's meaning and any client-data source-column selection are unestablished."
+}

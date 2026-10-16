@@ -1,0 +1,30 @@
+id: local-guildleve-dialogue
+title: Local Guildleve Dialogue Calls
+evidence_class: packet-capture
+status: distilled
+content_kind: tradecraft-leve
+system: guildleve
+tags:
+- local-leve
+- dialogue
+- packet-decoding
+search_hints:
+- local_leve_complete
+- delegateEvent
+- processPgEvent
+- "365"
+- "366"
+- "368"
+notes: >-
+  Three retained main-lane server-to-client delegateEvent/processPgEvent calls
+  with bounded serialized parameters. The final integer's meaning and any
+  client-data source-column selection remain unestablished.
+source_refs:
+- source: pcap-1.23b
+  citation: sources/pcap-1.23b/manifest.yaml
+primary_paths:
+- derived/calls.json
+- derived/accounting.json
+canonical_evidence:
+- derived/calls.json
+- derived/accounting.json
