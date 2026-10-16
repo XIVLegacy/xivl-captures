@@ -1,0 +1,38 @@
+id: group-combat-wire-contracts
+title: Occupancy, Group Work, and Enmity Wire Observations
+evidence_class: packet-capture
+status: distilled
+content_kind: session-mechanic
+tags:
+- combat
+- party
+- group-work
+- enmity
+- packet-order
+search_hints:
+- "0x0187 occupancy group"
+- "0x017A group work property stream linkshell"
+- "0x0195 enmity indicator cadence"
+notes: >-
+  Exhaustive retained-corpus numeric census with capture-completion chronology
+  for the combat examples. Occupancy reference equality is distinguished from
+  server claim policy. No player-linkshell specimen, universal enmity formula,
+  or fixed member-rank packet record is established.
+source_refs:
+- source: pcap-1.23b
+primary_paths:
+- derived/occupancy.csv
+- derived/group-matches.csv
+- derived/group-work.csv
+- derived/group-work-properties.csv
+- derived/group-headers.csv
+- derived/deletions.csv
+- derived/enmity.csv
+- derived/combat-timeline.csv
+- derived/accounting.json
+canonical_evidence:
+- derived/occupancy.csv
+- derived/group-work.csv
+- derived/enmity.csv
+- derived/combat-timeline.csv
+- derived/accounting.json

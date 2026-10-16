@@ -95,6 +95,7 @@ VERIFIED_PRODUCTS = tuple(
     ]
 )
 UNIT_TEST_MODULES = (
+    "tools.tests.test_group_combat_contracts",
     "tools.tests.test_build_scenario_views",
     "tools.tests.test_validate_source_storage",
     "tools.tests.test_analyze_battle_result_distributions",
@@ -436,6 +437,36 @@ def parse_only_check(name: str, reason: str, results: list) -> None:
     results.append((f"derived/{name}", "parse-only", True, reason))
 
 
+def run_group_species_products(
+    results: list, *, check: bool, public_shape: bool = False
+) -> None:
+    for script, label in (
+        (
+            TOOLS / "extractors/extract_group_combat_contracts.py",
+            "group and combat wire products",
+        ),
+        (TOOLS / "build_species_drop_coverage.py", "ordinary species drop coverage"),
+        (
+            TOOLS / "extractors/extract_friendlist_search_exchange.py",
+            "friend-search wire exchange",
+        ),
+    ):
+        command = [script]
+        if check:
+            command.append("--check")
+        if public_shape:
+            command.append("--public-shape")
+        ok = run(command, label)
+        results.append(
+            (
+                label,
+                "validate" if public_shape else "regen" if check else "write",
+                ok,
+                "" if ok else "see output above",
+            )
+        )
+
+
 def do_public_check() -> int:
     results: list[tuple[str, str, bool, str]] = []
 
@@ -445,6 +476,7 @@ def do_public_check() -> int:
     )
 
     run_plan("public", results)
+    run_group_species_products(results, check=True, public_shape=True)
 
     ok = run(
         [LOBBY_RECORD_CENSUS, "--check", "--public-shape"],
@@ -553,6 +585,7 @@ def do_check() -> int:
     )
 
     run_plan("check", results)
+    run_group_species_products(results, check=True)
 
     ok = run([PCAP_BUILDER, "--check"], "build_pcap_products.py --check")
     digestion_ok = run([TOOLS / "validate_digestion.py"], "validate_digestion.py")
@@ -862,6 +895,7 @@ def do_write() -> int:
     results: list[tuple[str, str, bool, str]] = []
 
     run_plan("write", results)
+    run_group_species_products(results, check=False)
 
     ok = run([PCAP_BUILDER], "build_pcap_products.py")
     digestion_ok = run([TOOLS / "validate_digestion.py"], "validate_digestion.py")

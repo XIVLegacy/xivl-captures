@@ -1,0 +1,24 @@
+id: friendlist-search-wire-exchange
+title: Friend Search Retained Wire Exchange
+evidence_class: packet-capture
+status: distilled
+content_kind: session-mechanic
+tags:
+- friend-list
+- search
+- packet-order
+search_hints:
+- friendlist_search 0x01DD 0x01DF 0x01E0
+- friend search response packet extents
+notes: >-
+  Capture-completion order and exact application extents for the retained
+  friend-search example. Result record fields remain unassigned; no names,
+  comments, raw packet bytes, or string-derived field interpretations ship.
+source_refs:
+- source: pcap-1.23b
+primary_paths:
+- derived/exchange.csv
+- derived/accounting.json
+canonical_evidence:
+- derived/exchange.csv
+- derived/accounting.json

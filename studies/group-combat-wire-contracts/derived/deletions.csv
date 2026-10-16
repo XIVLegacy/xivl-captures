@@ -1,0 +1,8 @@
+capture,connection,lane,direction,capture_packet,frame,subevent,source_actor,destination_actor,tuple_u64_00,tuple_u64_08,tuple_u64_10,tuple_u64_18,prior_matching_occupancy_packets,last_matching_occupancy_frame
+party_battle_leve.pcapng,0,main,s2c,1192,848,1,43723073,43723073,0,0,0,2918332558536083491,2,373
+party_battle_leve.pcapng,0,main,s2c,3181,1872,1,43723073,43723073,0,0,0,2918332558536083492,2,1364
+party_battle_leve.pcapng,0,main,s2c,3817,2350,1,43723073,43723073,0,0,0,2918332558536083475,2,2091
+party_battle_leve.pcapng,0,main,s2c,4548,2888,2,43723073,43723073,0,0,0,2918332558536083493,2,2291
+party_battle_leve.pcapng,0,main,s2c,5234,3369,2,43723073,43723073,0,0,0,2918332558536083495,2,2870
+party_battle_leve.pcapng,0,main,s2c,5444,3448,2,43723073,43723073,7,2918332558536083490,0,2918332558536083490,0,
+party_battle_leve.pcapng,0,main,s2c,5444,3448,3,43723073,43723073,4,2918332558536083490,0,2918332558536083490,0,

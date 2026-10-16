@@ -556,6 +556,9 @@ studies:
   - studies/elemen-bestiary/derived/nm-spawns.csv
   - studies/elemen-bestiary/derived/glossary.md
   - studies/elemen-bestiary/derived/file-inventory.csv
+  - studies/elemen-bestiary/derived/species-drops.csv
+  - studies/elemen-bestiary/derived/species-drop-coverage.csv
+  - studies/elemen-bestiary/derived/species-drop-accounting.json
   source_refs:
   - source: elemen-bestiary
   - source: elemen-site-archive
@@ -1008,6 +1011,23 @@ studies:
   - studies/equipment-property-correlation/derived/property-replay.csv
   source_refs:
   - source: pcap-1.23b
+- id: friendlist-search-wire-exchange
+  title: Friend Search Retained Wire Exchange
+  status: distilled
+  evidence_class: packet-capture
+  content_kind: session-mechanic
+  tags:
+  - friend-list
+  - search
+  - packet-order
+  search_hints:
+  - friendlist_search 0x01DD 0x01DF 0x01E0
+  - friend search response packet extents
+  primary_paths:
+  - studies/friendlist-search-wire-exchange/derived/exchange.csv
+  - studies/friendlist-search-wire-exchange/derived/accounting.json
+  source_refs:
+  - source: pcap-1.23b
 - id: gamerescape-tables
   title: Gamer Escape FFXIV 1.x Item and Mob Tables - Web Tables
   status: distilled
@@ -1215,6 +1235,33 @@ studies:
   - studies/gamerescape-tables/derived/mob-families.csv
   source_refs:
   - source: gamerescape-tables
+- id: group-combat-wire-contracts
+  title: Occupancy, Group Work, and Enmity Wire Observations
+  status: distilled
+  evidence_class: packet-capture
+  content_kind: session-mechanic
+  tags:
+  - combat
+  - party
+  - group-work
+  - enmity
+  - packet-order
+  search_hints:
+  - 0x0187 occupancy group
+  - 0x017A group work property stream linkshell
+  - 0x0195 enmity indicator cadence
+  primary_paths:
+  - studies/group-combat-wire-contracts/derived/occupancy.csv
+  - studies/group-combat-wire-contracts/derived/group-matches.csv
+  - studies/group-combat-wire-contracts/derived/group-work.csv
+  - studies/group-combat-wire-contracts/derived/group-work-properties.csv
+  - studies/group-combat-wire-contracts/derived/group-headers.csv
+  - studies/group-combat-wire-contracts/derived/deletions.csv
+  - studies/group-combat-wire-contracts/derived/enmity.csv
+  - studies/group-combat-wire-contracts/derived/combat-timeline.csv
+  - studies/group-combat-wire-contracts/derived/accounting.json
+  source_refs:
+  - source: pcap-1.23b
 - id: guildleve-journal-command-wire
   title: Guildleve Journal Command Wire Census
   status: distilled

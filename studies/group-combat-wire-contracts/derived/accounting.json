@@ -1,0 +1,353 @@
+{
+  "schema_version": 1,
+  "evidence_class": "packet-capture",
+  "inputs": [
+    {
+      "capture": "accept_leve.pcapng",
+      "sha256": "42b87e6c095db130def1de5bc382e428b4f4c12c8069c4682d6fa4bc7681967a"
+    },
+    {
+      "capture": "accept_local_leve.pcapng",
+      "sha256": "3b4b071d88742a5d3c94a1e29ca6a4074cb6b9a9a60207118302fe22f932bd7c"
+    },
+    {
+      "capture": "accept_quest.pcapng",
+      "sha256": "a207109240254b1398a36f877afc7ac34a08466cfbd3cdd3f2eb5f4a50718057"
+    },
+    {
+      "capture": "action_and_traits.pcapng",
+      "sha256": "c3d30fe46d69996dc74e4864245c42675cde2388525c03063dac180df528352f"
+    },
+    {
+      "capture": "add_str.pcapng",
+      "sha256": "246e4948a7ca1e4dc620e724677bfd9153ce76f6445a557967d309e9946021ed"
+    },
+    {
+      "capture": "attributes.pcapng",
+      "sha256": "5bc78b05d45a4e410b7410d046cb8b958ec549ce5b1b51a52225c4d15041a2ff"
+    },
+    {
+      "capture": "battle_mode_passive_mode.pcapng",
+      "sha256": "5a8290df1d11781f4f5fa1f6990651c679e57ee3b8c5549021f06767bb172d4b"
+    },
+    {
+      "capture": "buy_square_maple_shield.pcapng",
+      "sha256": "aab582bd9658c89cd4d56e132500481f442b9f2dc2179f1a5829ea09776bce6b"
+    },
+    {
+      "capture": "change_bodyarmor.pcapng",
+      "sha256": "55ee6035d24e80b97c9354a0800b86a52d0a99e1200cf6875a5b56009215021a"
+    },
+    {
+      "capture": "change_helm.pcapng",
+      "sha256": "af1e465076c3acf6188f24f084622b22beccc932bb96effd517b2d9a44606e08"
+    },
+    {
+      "capture": "change_to_botanist.pcapng",
+      "sha256": "8fdc448a17d19bea3d07855a8d8843d78926c50586f3656946c96b6a6cb27d26"
+    },
+    {
+      "capture": "chat_say.pcapng",
+      "sha256": "ccaefd38c94512507d518f83ab693edaf7f42167f3b82876869b53a736275e37"
+    },
+    {
+      "capture": "chat_shout.pcapng",
+      "sha256": "94ab6b14373b2d0d0122e14b3eb18a1371e52165172ba18b3fc836c8ba94265a"
+    },
+    {
+      "capture": "check_room_map.pcapng",
+      "sha256": "cca1eea57329b02e5d66e53ad6f44d28deebf8ee8c11cfafd22bf813d1551ee5"
+    },
+    {
+      "capture": "checkbed.pcapng",
+      "sha256": "9e05a05de6ec44eded13761fcb3546eb248c0c68e537051eef575e29dfff1b79"
+    },
+    {
+      "capture": "coerthas_map.pcapng",
+      "sha256": "779de805f9172832e986f5c46c0a94f6d93f4b9c7f1c41fd0de0f5f8326c0ae3"
+    },
+    {
+      "capture": "combat_autoattack.pcapng",
+      "sha256": "2f677ab61047b25c4168a3dd9496f372d48de3bba018d582dd5a968b9272f7b2"
+    },
+    {
+      "capture": "combat_skills.pcapng",
+      "sha256": "7fe66d92f6f62584e57562e51355d310546935690e0b96c2c689b83bbe8a07a7"
+    },
+    {
+      "capture": "cutscene_book.pcapng",
+      "sha256": "c2cf85e02d8d15fe2aa9261e8b796c29c0a3d9dd9cdf287ce0f75f3a666b2b4d"
+    },
+    {
+      "capture": "emote_dance.pcapng",
+      "sha256": "9e004f1e791cfc37b7d23e8986a5e69021b7b7f828295fdf7957e36aa1c57dc8"
+    },
+    {
+      "capture": "emote_kneel.pcapng",
+      "sha256": "3381b6121f5b0789c97ededdc5394c6bc9b14c561029191fb5b3f428033c80e8"
+    },
+    {
+      "capture": "friendlist_search.pcapng",
+      "sha256": "3b9a35689fb923d9520bbfed8a3886dc2b461c9516492e3d8e68eec093eb7b0e"
+    },
+    {
+      "capture": "from_gridania_to_blackshroud.pcapng",
+      "sha256": "eff300de679230653953ea3399939a15ce9d6aeafd202c7ebcf5f55e6d24930f"
+    },
+    {
+      "capture": "gather_wood.pcapng",
+      "sha256": "c308aa4c984eb3e1912383c06e5115c6924713978df43cdb8075335e1bac7d32"
+    },
+    {
+      "capture": "gear_changesoul.pcapng",
+      "sha256": "62af2cde3a4683fba3e09cc3dfed8001d74303b120381de577b05df492926780"
+    },
+    {
+      "capture": "gear_changeweapon.pcapng",
+      "sha256": "3eec2c2993feeb2b8c47c1e1f553335638a7262ec13b561e2d52d768f0798080"
+    },
+    {
+      "capture": "gridania_map.pcapng",
+      "sha256": "13e26b2d68f195b8e2daf7c355a2741c155a1036b80d79c90aab982157290795"
+    },
+    {
+      "capture": "gridania_to_coerthas.pcapng",
+      "sha256": "63152a1ed6e446df5cc4750fe50a0839f9e45ad270c79abfc72b5c09cc47e547"
+    },
+    {
+      "capture": "harvest.pcapng",
+      "sha256": "8522a844b6904207c3465ae1d1038599eddb8b9dc47800d5230c8a1c3ad0e440"
+    },
+    {
+      "capture": "idle_in_party.pcapng",
+      "sha256": "98b45822079372380bf834a937a9cb83b662b9e302555aafa14ee353537f74c1"
+    },
+    {
+      "capture": "idling.pcapng",
+      "sha256": "fd86f5b78b2975dcaf7bb8a8e7f94267f9f2660078a5193ea26732cb317dd385"
+    },
+    {
+      "capture": "inventory.pcapng",
+      "sha256": "f667bfc1cb87afec3c5c5f56b031254101aff012577f6f35c7cbf133815b6878"
+    },
+    {
+      "capture": "invite_join_party.pcapng",
+      "sha256": "34c946c3f93744d2bbd841e75f983ef12b9bbcb59afcba31414d6d3f41e7de58"
+    },
+    {
+      "capture": "local_leve_complete.pcapng",
+      "sha256": "4f0793f354140478725bf2c30642a3458a854460f47fb11a7af635c8881d95cd"
+    },
+    {
+      "capture": "login.pcapng",
+      "sha256": "28e06b54fe559870031f077f8549b9244caafa7e5177dbca08a7feae6c2b1b62"
+    },
+    {
+      "capture": "mount_unmount_chocobo.pcapng",
+      "sha256": "e77c06799f07029feb054792eac30baa431da15a61937b1a39bcd025e4db4072"
+    },
+    {
+      "capture": "move_around_gridania.pcapng",
+      "sha256": "bea7ae86444fa3ef9acc08f148f60dff1e5992188ee85136dec50c64e09236d0"
+    },
+    {
+      "capture": "move_out_of_room.pcapng",
+      "sha256": "a7a03a1d688f3feb264f8da9fae3519c55b7e267aa3802472f0221f4d729b37b"
+    },
+    {
+      "capture": "moving_around_gridania.pcapng",
+      "sha256": "bf6abf7ccc7a16e071846036477c1fadbc3b46385ef6e747b543d836f3f51017"
+    },
+    {
+      "capture": "open_gear_menu.pcapng",
+      "sha256": "6b7dee09f59d03d9706ca1c81586dce667cd4d806ee2a2b72d89432d617afc2e"
+    },
+    {
+      "capture": "party_battle_leve.pcapng",
+      "sha256": "6327e5e1f5cbd51a9baaa9bcbacf53ca51c50a98fe4b66ae3e6bdecd9198089f"
+    },
+    {
+      "capture": "quest_journal.pcapng",
+      "sha256": "e1f983e9009a9ebe8b8231647229bee1672a1ac85d95a830113280f534531edc"
+    },
+    {
+      "capture": "quest_update.pcapng",
+      "sha256": "e31aa9738dd523b7703eefa6d38527135f16d8b5ff2fc314fd7e5b808d7e4787"
+    },
+    {
+      "capture": "repair_items.pcapng",
+      "sha256": "bbd829cbd3f42b2cbfb3aa8a74a1cc35d4e2c16c99e5a4a20ca76573f02dd90f"
+    },
+    {
+      "capture": "return_to_inn.pcapng",
+      "sha256": "9a81e483d3dd2673081afef06ed521c190c4d42be16e95e24097f25ff81f58c1"
+    },
+    {
+      "capture": "sell_item.pcapng",
+      "sha256": "1cd808fff6501c53e4c113f1fdef090e50dfe0fd7fe86ceaa552b3a53c1b5aac"
+    },
+    {
+      "capture": "small_talk_louisoix.pcapng",
+      "sha256": "58b620d90370ba69202e63f7f70edb79004ccbb8068e11e2e112a825d84dcafe"
+    },
+    {
+      "capture": "switch_to_weaver.pcapng",
+      "sha256": "b41b25bc51be1a64f41861142dc992c14493c65bcd920cadca013243480b777e"
+    },
+    {
+      "capture": "teleport_to_camp_nine_ivies.pcapng",
+      "sha256": "fac2b485608247d299a406a7065e19918789118e7e544ca85cec4d772da0e3ab"
+    },
+    {
+      "capture": "teleport_to_camp_tranquil.pcapng",
+      "sha256": "488318351cdedb2e2b650dc68c55014b160fbbc26753c200922402c1ba6c4dd7"
+    },
+    {
+      "capture": "teleport_to_gridania.pcapng",
+      "sha256": "779141dc79a4bcf4bfc2e265f8b9510607d5a6b6e78d32f8940e5a847e598fa0"
+    },
+    {
+      "capture": "war_quest_update1.pcapng",
+      "sha256": "ce64e429063cc7e49a2045e2f7b0e18b1991f5908368b791b93c72419841e890"
+    },
+    {
+      "capture": "war_quest_update2.pcapng",
+      "sha256": "bf43b5ee32c58e5dc6f8149b071bd9c5cd5cc0aaa55ea3528872308fd7be2429"
+    },
+    {
+      "capture": "war_quest_update3.pcapng",
+      "sha256": "52279e8cbc13d3f4751b5ee3cb9c91df1895ed5c41d30672629db3ec1c9efd05"
+    }
+  ],
+  "chronology": "capture packet completing each reconstructed frame, then subevent order; zero-based frame/subevent, one-based capture packet; cross-direction ties unresolved",
+  "counts": {
+    "occupancy": 44,
+    "group_work": 275,
+    "group_work_properties": 338,
+    "enmity": 149
+  },
+  "combat": {
+    "combat_autoattack.pcapng": {
+      "first_hostile_result": {
+        "capture_packet": 65,
+        "frame": 20,
+        "subevent": 1,
+        "opcode": 313
+      },
+      "first_result": {
+        "capture_packet": 20,
+        "frame": 7,
+        "subevent": 1,
+        "opcode": 313
+      },
+      "first_occupancy": {
+        "capture_packet": 65,
+        "frame": 19,
+        "subevent": 0
+      },
+      "occupancy_count": 2,
+      "delete_group_count": 0,
+      "result_count": 14,
+      "enmity_count": 4
+    },
+    "combat_skills.pcapng": {
+      "first_hostile_result": {
+        "capture_packet": 85,
+        "frame": 27,
+        "subevent": 0,
+        "opcode": 313
+      },
+      "first_result": {
+        "capture_packet": 24,
+        "frame": 5,
+        "subevent": 1,
+        "opcode": 313
+      },
+      "first_occupancy": {
+        "capture_packet": 85,
+        "frame": 26,
+        "subevent": 0
+      },
+      "occupancy_count": 2,
+      "delete_group_count": 0,
+      "result_count": 11,
+      "enmity_count": 4
+    },
+    "party_battle_leve.pcapng": {
+      "first_hostile_result": {
+        "capture_packet": 587,
+        "frame": 395,
+        "subevent": 0,
+        "opcode": 313
+      },
+      "first_result": {
+        "capture_packet": 6,
+        "frame": 1,
+        "subevent": 0,
+        "opcode": 314
+      },
+      "first_occupancy": {
+        "capture_packet": 134,
+        "frame": 65,
+        "subevent": 0
+      },
+      "occupancy_count": 12,
+      "delete_group_count": 7,
+      "result_count": 338,
+      "enmity_count": 114
+    }
+  },
+  "occupancy_work_pairs": {
+    "0,0": 35,
+    "7858604,2147483648": 9
+  },
+  "work_marker_tags": {
+    "136": 271,
+    "154": 2,
+    "151": 1,
+    "155": 1
+  },
+  "enmity_values": {
+    "100": 37,
+    "65535": 55,
+    "36": 2,
+    "32": 3,
+    "65": 2,
+    "57": 1,
+    "51": 1,
+    "39": 1,
+    "46": 1,
+    "38": 2,
+    "63": 2,
+    "99": 1,
+    "58": 1,
+    "74": 1,
+    "95": 3,
+    "82": 1,
+    "50": 3,
+    "5": 1,
+    "3": 1,
+    "17": 2,
+    "52": 2,
+    "85": 2,
+    "84": 1,
+    "93": 2,
+    "76": 2,
+    "66": 2,
+    "62": 1,
+    "2": 1,
+    "1": 1,
+    "10": 1,
+    "18": 1,
+    "16": 1,
+    "31": 1,
+    "25": 1,
+    "68": 2,
+    "67": 1,
+    "70": 1,
+    "59": 1,
+    "56": 1,
+    "89": 2,
+    "90": 1
+  }
+}

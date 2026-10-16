@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "evidence_class": "packet-capture",
+  "capture": {
+    "file": "friendlist_search.pcapng",
+    "sha256": "3b9a35689fb923d9520bbfed8a3886dc2b461c9516492e3d8e68eec093eb7b0e",
+    "size_bytes": 37744
+  },
+  "selected_opcodes": [
+    "0x01DC",
+    "0x01DD",
+    "0x01DE",
+    "0x01DF",
+    "0x01E0"
+  ],
+  "event_count": 3,
+  "counts": {
+    "c2s.0x01DC": 0,
+    "c2s.0x01DD": 1,
+    "c2s.0x01DE": 0,
+    "c2s.0x01DF": 0,
+    "c2s.0x01E0": 0,
+    "s2c.0x01DC": 0,
+    "s2c.0x01DD": 0,
+    "s2c.0x01DE": 0,
+    "s2c.0x01DF": 1,
+    "s2c.0x01E0": 1
+  },
+  "chronology": "Capture packets completing reconstructed frames, then same-direction frame/subevent order; capture packets one-based, frame/subevent zero-based. Completion timing is not client dispatch or server processing timing.",
+  "privacy": "No names, comments, endpoints, actor ids, raw packet bytes, or string-derived record fields are emitted. Payload digests identify the bounded observed applications.",
+  "boundary": "One observed request followed by two clientbound application extents. This census does not assign result record counts, stride, field semantics, completeness, or causality from string placement or co-occurrence."
+}
