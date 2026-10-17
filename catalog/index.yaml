@@ -389,6 +389,26 @@ studies:
   - studies/bluegartr-stat-tests/derived/patch-dating.csv
   source_refs:
   - source: bluegartr-stat-tests
+- id: c2s-00ca-position-report
+  title: Client Position Report 0x00CA Observations
+  status: distilled
+  evidence_class: packet-capture
+  content_kind: movement-mechanic
+  tags:
+  - movement
+  - position
+  - packet-decoding
+  - map-serverbound
+  search_hints:
+  - '0x00ca'
+  - UpdatePlayerPositionPacket
+  - moveState
+  - position report
+  primary_paths:
+  - studies/c2s-00ca-position-report/derived/verdicts.md
+  - studies/c2s-00ca-position-report/derived/accounting.json
+  source_refs:
+  - source: pcap-1.23b
 - id: cast-result-state-order
   title: Cast Property and Result Wire Order
   status: distilled

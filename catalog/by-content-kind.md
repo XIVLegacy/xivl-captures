@@ -135,10 +135,11 @@ Generated from `catalog/index.yaml`. Primary axis: `content_kind`.
 - `main-scenario-lord-errant-video-breakdown`
 - `main-scenario-toll-warden-video-breakdown`
 
-## movement-mechanic (2)
+## movement-mechanic (3)
 
-### Studies (1)
+### Studies (2)
 
+- `c2s-00ca-position-report`
 - `movement-speed-band-observations`
 
 ### Scenarios (1)

@@ -1,0 +1,34 @@
+id: c2s-00ca-position-report
+title: Client Position Report 0x00CA Observations
+evidence_class: packet-capture
+status: distilled
+content_kind: movement-mechanic
+tags:
+- movement
+- position
+- packet-decoding
+- map-serverbound
+search_hints:
+- "0x00ca"
+- UpdatePlayerPositionPacket
+- moveState
+- position report
+notes: >-
+  Aggregate counts and statistics for every sent client-to-server 0x00ca
+  position report in the two Gridania movement captures. Covers the moveState
+  values, the rotation against travel direction relation, and the observed
+  horizontal speed. Coordinates and payload bytes stay out of the products.
+source_refs:
+- source: pcap-1.23b
+primary_paths:
+- derived/verdicts.md
+- derived/accounting.json
+canonical_evidence:
+- derived/accounting.json
+- derived/verdicts.md
+distilled:
+  distilled: true
+  checksum_file: derived/checksums.sha256
+  distilled_artifacts:
+  - derived/accounting.json
+  - derived/verdicts.md

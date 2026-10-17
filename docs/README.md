@@ -68,6 +68,7 @@ relevant source or study bundle for its manifest, provenance, and findings.
 - [Login 0x0002 Same-Source Appearance Order](../studies/login-0002-appearance-order/)
 - [Command Registration 0x0132 Wire Census](../studies/command-registration/)
 - [Movement Speed Band Observations](../studies/movement-speed-band-observations/)
+- [Client Position Report 0x00CA Observations](../studies/c2s-00ca-position-report/)
 - [Status Wire Projection Census](../studies/status-wire-projection-census/)
 - [World Party-Chat 0x00C9 Contract](../studies/world-party-chat-00c9-contract/)
 - [Retail NPC and Self-Repair Contract](../studies/retail-repair-contract/)

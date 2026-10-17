@@ -1,0 +1,167 @@
+{
+  "captures": {
+    "move_around_gridania.pcapng": {
+      "horizontal_step_length_bins": {
+        "0.5_to_1": 4,
+        "1_to_2": 278,
+        "ge_2": 1,
+        "lt_0.5": 291
+      },
+      "move_state_counts": {
+        "0": 24,
+        "2": 576
+      },
+      "position_changing_by_move_state": {
+        "0": 1,
+        "2": 573
+      },
+      "position_changing_total": 574,
+      "records": 600,
+      "reserved_distinct_values": 23,
+      "rot_max": 2.9109,
+      "rot_min": -3.1018,
+      "rotation": {
+        "all_steps": {
+          "mean_offset_rad": -0.0055,
+          "n": 573,
+          "resultant_length": 0.981
+        },
+        "steps_ge_1": {
+          "mean_offset_rad": 0.003,
+          "n": 279,
+          "resultant_length": 0.993
+        },
+        "steps_lt_1": {
+          "mean_offset_rad": -0.0137,
+          "n": 294,
+          "resultant_length": 0.9697
+        }
+      },
+      "run": {
+        "all_reports_move_state_2": true,
+        "duration_seconds": 104,
+        "interior_seconds": 103,
+        "interior_seconds_contiguous": true,
+        "mean_speed": 4.83,
+        "path_length": 502.1,
+        "reports": 576,
+        "reports_per_interior_second": {
+          "4": 14,
+          "5": 20,
+          "6": 69
+        },
+        "second_bucket_speed": {
+          "max": 5.7152,
+          "mean": 4.8515,
+          "median": 5.3148,
+          "min": 0.1146,
+          "n": 103,
+          "p5": 3.5354,
+          "p95": 5.5015
+        },
+        "window_10s_speed": {
+          "max": 5.043,
+          "mean": 4.8556,
+          "median": 4.9392,
+          "min": 4.2817,
+          "n": 10,
+          "p5": 4.2817,
+          "p95": 5.043
+        }
+      },
+      "sha256": "bea7ae86444fa3ef9acc08f148f60dff1e5992188ee85136dec50c64e09236d0",
+      "size_bytes": 220128,
+      "timestamp_high_dword_nonzero": 0,
+      "timestamp_non_decreasing": true,
+      "timestamp_prefix_equals_payload": 600
+    },
+    "moving_around_gridania.pcapng": {
+      "horizontal_step_length_bins": {
+        "0.5_to_1": 6,
+        "1_to_2": 1175,
+        "ge_2": 2,
+        "lt_0.5": 1192
+      },
+      "move_state_counts": {
+        "0": 24,
+        "2": 2378
+      },
+      "position_changing_by_move_state": {
+        "0": 1,
+        "2": 2374
+      },
+      "position_changing_total": 2375,
+      "records": 2402,
+      "reserved_distinct_values": 59,
+      "rot_max": 3.138,
+      "rot_min": -3.1252,
+      "rotation": {
+        "all_steps": {
+          "mean_offset_rad": -0.0009,
+          "n": 2374,
+          "resultant_length": 0.9921
+        },
+        "steps_ge_1": {
+          "mean_offset_rad": -0.0036,
+          "n": 1177,
+          "resultant_length": 0.9928
+        },
+        "steps_lt_1": {
+          "mean_offset_rad": 0.0018,
+          "n": 1197,
+          "resultant_length": 0.9913
+        }
+      },
+      "run": {
+        "all_reports_move_state_2": true,
+        "duration_seconds": 423,
+        "interior_seconds": 422,
+        "interior_seconds_contiguous": true,
+        "mean_speed": 4.92,
+        "path_length": 2081.9,
+        "reports": 2378,
+        "reports_per_interior_second": {
+          "4": 42,
+          "5": 85,
+          "6": 286,
+          "7": 9
+        },
+        "second_bucket_speed": {
+          "max": 5.6313,
+          "mean": 4.9278,
+          "median": 5.2467,
+          "min": 2.4358,
+          "n": 422,
+          "p5": 3.517,
+          "p95": 5.5
+        },
+        "window_10s_speed": {
+          "max": 5.1239,
+          "mean": 4.9298,
+          "median": 4.9532,
+          "min": 4.4409,
+          "n": 42,
+          "p5": 4.7951,
+          "p95": 5.0533
+        }
+      },
+      "sha256": "bf6abf7ccc7a16e071846036477c1fadbc3b46385ef6e747b543d836f3f51017",
+      "size_bytes": 855000,
+      "timestamp_high_dword_nonzero": 0,
+      "timestamp_non_decreasing": true,
+      "timestamp_prefix_equals_payload": 2402
+    }
+  },
+  "combined_rotation_steps_ge_1": {
+    "mean_offset_rad": -0.0023,
+    "n": 1456,
+    "resultant_length": 0.9929
+  },
+  "direction": "c2s",
+  "evidence_class": "packet-capture",
+  "generator_version": "1",
+  "long_step_threshold": 1.0,
+  "opcode": "0x00ca",
+  "study": "c2s-00ca-position-report",
+  "sub_event_size": 64
+}

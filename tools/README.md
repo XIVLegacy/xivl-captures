@@ -98,6 +98,10 @@ The supported commands for direct maintainer use are:
 - `python tools/extractors/extract_world_party_chat_00c9.py` - regenerate the
   exhaustive sanitized c2s/s2c World chat-lane `0x00C9` contract and synthetic
   fixtures; add `--check` for replay.
+- `python tools/extractors/extract_c2s_00ca_position_report.py` - regenerate
+  the sanitized c2s `0x00CA` moveState, rotation, and horizontal speed study
+  from the two Gridania movement captures; add `--check` for replay and
+  `--public-shape` to validate retained products without the captures.
 - `python tools/extract_historical_battlecommand.py` - regenerate the
   provisional, field-layered BattleCommand workbook extraction; add `--check`
   for byte-stable replay.
