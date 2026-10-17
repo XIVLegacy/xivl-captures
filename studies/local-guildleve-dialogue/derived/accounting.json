@@ -59,6 +59,47 @@
       "s2c_wrapped_subevents": 44556
     },
     "selected_occurrences": 3,
+    "all_admitted_0x0130_delegate_prefix_string_counts": {
+      "delegateCommand": {
+        "askContinueLocalleve": 3,
+        "askInputWidget": 8,
+        "closeCraftProgressWidget": 3,
+        "closeCraftStartWidget": 4,
+        "closeInputWidget": 1,
+        "confirmLeve": 1,
+        "confirmRcp": 1,
+        "craftCommandUI": 20,
+        "eventAetheryte": 4,
+        "eventConfirm": 4,
+        "eventRegion": 4,
+        "loadTextData": 4,
+        "openCraftProgressWidget": 3,
+        "openInputWidget": 1,
+        "operateUI": 1,
+        "orderInputWidget": 12,
+        "selectCraftQuest": 1,
+        "selectRcp": 1,
+        "start": 3,
+        "targetCancel": 1,
+        "textInputWidget": 18,
+        "turnToTarget": 3,
+        "updateInfo": 20
+      },
+      "delegateEvent": {
+        "defaultTalkLouisoix_001": 1,
+        "defaultTalkWithInn_ExitDoor": 1,
+        "finishTalkTurn": 2,
+        "processEventClear": 1,
+        "processEventCurious": 1,
+        "processEventJob": 1,
+        "processEventStart": 1,
+        "processEvent_010": 1,
+        "processPgEvent": 3,
+        "simpleFadeInAndOut": 1,
+        "sqrwa": 1,
+        "welcomeTalk": 2
+      }
+    },
     "members": [
       {
         "capture": "accept_leve.pcapng",
@@ -118,6 +159,10 @@
           "eventTalkDetail": 2,
           "eventTalkPack": 2,
           "eventTalkType": 2
+        },
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
         }
       },
       {
@@ -177,6 +222,10 @@
           "finishTalkTurn": 1,
           "talkOfferDecide": 1,
           "talkOfferWelcome": 1
+        },
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
         }
       },
       {
@@ -234,6 +283,12 @@
         "all_admitted_0x0130_function_counts": {
           "delegateEvent": 1,
           "switchEvent": 1
+        },
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {
+            "processEventStart": 1
+          }
         }
       },
       {
@@ -286,7 +341,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "add_str.pcapng",
@@ -340,6 +399,12 @@
         "processPgEvent_occurrences": [],
         "all_admitted_0x0130_function_counts": {
           "delegateCommand": 1
+        },
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {
+            "operateUI": 1
+          },
+          "delegateEvent": {}
         }
       },
       {
@@ -392,7 +457,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "battle_mode_passive_mode.pcapng",
@@ -446,7 +515,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "buy_square_maple_shield.pcapng",
@@ -507,6 +580,10 @@
           "selectModeOfMultiWeaponVendor": 2,
           "selectShopBuy": 2,
           "welcomeTalk": 1
+        },
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
         }
       },
       {
@@ -559,7 +636,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "change_helm.pcapng",
@@ -611,7 +692,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "change_to_botanist.pcapng",
@@ -665,7 +750,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "chat_say.pcapng",
@@ -717,7 +806,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "chat_shout.pcapng",
@@ -763,7 +856,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "check_room_map.pcapng",
@@ -815,7 +912,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "checkbed.pcapng",
@@ -863,6 +964,10 @@
         "processPgEvent_occurrences": [],
         "all_admitted_0x0130_function_counts": {
           "askLogout": 1
+        },
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
         }
       },
       {
@@ -917,7 +1022,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "combat_autoattack.pcapng",
@@ -971,7 +1080,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "combat_skills.pcapng",
@@ -1023,7 +1136,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "cutscene_book.pcapng",
@@ -1077,7 +1194,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "emote_dance.pcapng",
@@ -1131,7 +1252,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "emote_kneel.pcapng",
@@ -1183,7 +1308,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "friendlist_search.pcapng",
@@ -1237,7 +1366,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "from_gridania_to_blackshroud.pcapng",
@@ -1291,7 +1424,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "gather_wood.pcapng",
@@ -1347,6 +1484,19 @@
         "processPgEvent_occurrences": [],
         "all_admitted_0x0130_function_counts": {
           "delegateCommand": 43
+        },
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {
+            "askInputWidget": 8,
+            "closeInputWidget": 1,
+            "loadTextData": 1,
+            "openInputWidget": 1,
+            "orderInputWidget": 12,
+            "targetCancel": 1,
+            "textInputWidget": 18,
+            "turnToTarget": 1
+          },
+          "delegateEvent": {}
         }
       },
       {
@@ -1399,7 +1549,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "gear_changeweapon.pcapng",
@@ -1451,7 +1605,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "gridania_map.pcapng",
@@ -1503,7 +1661,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "gridania_to_coerthas.pcapng",
@@ -1567,7 +1729,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "harvest.pcapng",
@@ -1623,6 +1789,13 @@
         "processPgEvent_occurrences": [],
         "all_admitted_0x0130_function_counts": {
           "delegateCommand": 4
+        },
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {
+            "loadTextData": 2,
+            "turnToTarget": 2
+          },
+          "delegateEvent": {}
         }
       },
       {
@@ -1675,7 +1848,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "idling.pcapng",
@@ -1729,7 +1906,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "inventory.pcapng",
@@ -1783,7 +1964,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "invite_join_party.pcapng",
@@ -1837,7 +2022,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "local_leve_complete.pcapng",
@@ -1971,6 +2160,28 @@
           "delegateCommand": 61,
           "delegateEvent": 8,
           "switchEvent": 2
+        },
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {
+            "askContinueLocalleve": 3,
+            "closeCraftProgressWidget": 3,
+            "closeCraftStartWidget": 4,
+            "confirmLeve": 1,
+            "confirmRcp": 1,
+            "craftCommandUI": 20,
+            "loadTextData": 1,
+            "openCraftProgressWidget": 3,
+            "selectCraftQuest": 1,
+            "selectRcp": 1,
+            "start": 3,
+            "updateInfo": 20
+          },
+          "delegateEvent": {
+            "finishTalkTurn": 2,
+            "processPgEvent": 3,
+            "simpleFadeInAndOut": 1,
+            "welcomeTalk": 2
+          }
         }
       },
       {
@@ -2040,7 +2251,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "mount_unmount_chocobo.pcapng",
@@ -2092,7 +2307,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "move_around_gridania.pcapng",
@@ -2156,7 +2375,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "move_out_of_room.pcapng",
@@ -2210,6 +2433,12 @@
         "processPgEvent_occurrences": [],
         "all_admitted_0x0130_function_counts": {
           "delegateEvent": 1
+        },
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {
+            "defaultTalkWithInn_ExitDoor": 1
+          }
         }
       },
       {
@@ -2264,7 +2493,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "open_gear_menu.pcapng",
@@ -2316,7 +2549,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "party_battle_leve.pcapng",
@@ -2378,6 +2615,10 @@
           "eventGLStart": 1,
           "eventGuildleveReward": 1,
           "eventTalkGuildleveWarp": 1
+        },
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
         }
       },
       {
@@ -2430,7 +2671,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "quest_update.pcapng",
@@ -2487,6 +2732,12 @@
         "all_admitted_0x0130_function_counts": {
           "delegateEvent": 1,
           "switchEvent": 1
+        },
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {
+            "processEvent_010": 1
+          }
         }
       },
       {
@@ -2546,6 +2797,10 @@
           "finishTalkTurn": 1,
           "selectItem": 4,
           "talkWelcome": 2
+        },
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
         }
       },
       {
@@ -2600,6 +2855,12 @@
         "processPgEvent_occurrences": [],
         "all_admitted_0x0130_function_counts": {
           "delegateCommand": 1
+        },
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {
+            "eventConfirm": 1
+          },
+          "delegateEvent": {}
         }
       },
       {
@@ -2662,6 +2923,10 @@
           "selectModeOfMultiWeaponVendor": 2,
           "selectShopSell": 3,
           "welcomeTalk": 1
+        },
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
         }
       },
       {
@@ -2717,6 +2982,12 @@
         "all_admitted_0x0130_function_counts": {
           "delegateEvent": 1,
           "switchEvent": 1
+        },
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {
+            "defaultTalkLouisoix_001": 1
+          }
         }
       },
       {
@@ -2769,7 +3040,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "teleport_to_camp_nine_ivies.pcapng",
@@ -2825,6 +3100,14 @@
         "processPgEvent_occurrences": [],
         "all_admitted_0x0130_function_counts": {
           "delegateCommand": 5
+        },
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {
+            "eventAetheryte": 2,
+            "eventConfirm": 1,
+            "eventRegion": 2
+          },
+          "delegateEvent": {}
         }
       },
       {
@@ -2881,6 +3164,14 @@
         "processPgEvent_occurrences": [],
         "all_admitted_0x0130_function_counts": {
           "delegateCommand": 3
+        },
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {
+            "eventAetheryte": 1,
+            "eventConfirm": 1,
+            "eventRegion": 1
+          },
+          "delegateEvent": {}
         }
       },
       {
@@ -2935,6 +3226,14 @@
         "processPgEvent_occurrences": [],
         "all_admitted_0x0130_function_counts": {
           "delegateCommand": 3
+        },
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {
+            "eventAetheryte": 1,
+            "eventConfirm": 1,
+            "eventRegion": 1
+          },
+          "delegateEvent": {}
         }
       },
       {
@@ -2991,6 +3290,12 @@
         "processPgEvent_occurrences": [],
         "all_admitted_0x0130_function_counts": {
           "delegateEvent": 1
+        },
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {
+            "processEventCurious": 1
+          }
         }
       },
       {
@@ -3045,7 +3350,11 @@
           "s2c_wrapped_short_inner_headers": 0
         },
         "processPgEvent_occurrences": [],
-        "all_admitted_0x0130_function_counts": {}
+        "all_admitted_0x0130_function_counts": {},
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {}
+        }
       },
       {
         "capture": "war_quest_update3.pcapng",
@@ -3101,6 +3410,14 @@
         "processPgEvent_occurrences": [],
         "all_admitted_0x0130_function_counts": {
           "delegateEvent": 3
+        },
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+          "delegateCommand": {},
+          "delegateEvent": {
+            "processEventClear": 1,
+            "processEventJob": 1,
+            "sqrwa": 1
+          }
         }
       }
     ],

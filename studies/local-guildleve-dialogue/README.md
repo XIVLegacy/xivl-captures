@@ -82,6 +82,33 @@ application payloads containing the ASCII `processPgEvent` literal. This is a
 bounded corpus result, not an absence claim about unrecorded sessions or
 excluded protocols.
 
+## Delegated prefix-string census
+
+The same corpus contains 200 complete s2c `0x0130` applications. Of these,
+121 name `delegateCommand` and 16 name `delegateEvent` in the outer function
+field. The corpus accounting's
+`all_admitted_0x0130_delegate_prefix_string_counts` records the string in
+every delegated actor/string prefix, grouped by outer function and capture.
+
+| Outer function | Typed prefix | String index, zero-based | Calls |
+| --- | --- | ---: | ---: |
+| `delegateCommand` | actor, string | `1` | `121` |
+| `delegateEvent` | actor, actor, string | `2` | `16` |
+
+The prefix reader requires a complete 64-byte parameter block, reads actor
+tag `0x06` with its four-byte value and string tag `0x02` through its NUL
+terminator, and stops after the string. All 137 prefixes satisfy those forms.
+It does not decode the remaining arguments. An unsupported later tag does
+not hide a prefix string or imply that the full argument block was decoded.
+
+Neither the complete outer function-name census nor these prefix strings
+contains `askJoinMateria`, `cancelTarget`, `askJoinResult` or `displayRate`.
+This bounds those physical string positions in the retained complete
+applications under the corpus limits above. It does not establish a native
+delegate target, callback execution or a request-to-callback pairing for
+materia commands `22014` and `22015`. Their extracted client contract is
+`xivl-client-scripts:docs/materia-meld-client-contract.md`.
+
 ## Bounded exchanges
 
 Both retained conversations use EventStart `0x012D` with `talkDefault` and

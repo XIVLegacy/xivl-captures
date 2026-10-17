@@ -110,6 +110,7 @@ UNIT_TEST_MODULES = (
     "tools.tests.test_extract_login_018a_timeline",
     "tools.tests.test_extract_login_0002_appearance_order",
     "tools.tests.test_extract_command_registration",
+    "tools.tests.test_delegate_prefix_census",
     "tools.tests.test_extract_guildleve_journal_command",
     "tools.tests.test_extract_regional_guildleve_publisher_contract",
     "tools.tests.test_extract_00da_00e1_comparison",

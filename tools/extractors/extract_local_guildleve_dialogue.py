@@ -110,6 +110,33 @@ def application_bytes(event: dict) -> bytes:
     return event.get("sub_body", b"")[INNER_HEADER_LEN + GAME_MESSAGE_PREAMBLE_LEN :]
 
 
+def delegate_prefix_string(function: str, parameters: bytes) -> str:
+    """Read the actor/string prefix without decoding subsequent arguments."""
+    if len(parameters) != PARAMETER_SIZE:
+        raise ValueError("expected exactly 64 parameter bytes")
+    if function == "delegateCommand":
+        actor_count = 1
+    elif function == "delegateEvent":
+        actor_count = 2
+    else:
+        raise ValueError("unsupported delegate function")
+    offset = 0
+    for _ in range(actor_count):
+        if parameters[offset] != 6:
+            raise ValueError("expected actor in delegate prefix")
+        offset += 5
+    if parameters[offset] != 2:
+        raise ValueError("expected string in delegate prefix")
+    start = offset + 1
+    end = parameters.find(b"\0", start)
+    if end < 0:
+        raise ValueError("unterminated delegate prefix string")
+    try:
+        return parameters[start:end].decode("ascii")
+    except UnicodeDecodeError:
+        raise ValueError("non-ASCII delegate prefix string") from None
+
+
 def event_location(event: dict) -> dict:
     location = {key: value for key, value in event.items() if key != "sub_body"}
     location["opcode"] = f"0x{location.pop('opcode_value'):04X}"
@@ -191,6 +218,7 @@ def survey_corpus(
     aggregate = Counter()
     occurrences = []
     paths = []
+    prefix_string_counts = {"delegateCommand": Counter(), "delegateEvent": Counter()}
     for member in sorted(members, key=lambda row: row["file"]):
         name = member["file"]
         if Path(name).name != name:
@@ -222,15 +250,25 @@ def survey_corpus(
                 if totals[f"{direction}_{key}"]:
                     raise ValueError(f"{name}: unexpected {direction} {key}")
         function_counts = Counter()
+        member_prefix_counts = {
+            "delegateCommand": Counter(),
+            "delegateEvent": Counter(),
+        }
         hits = []
         for event in events:
             app = application_bytes(event)
             if event["opcode_value"] == 0x0130:
                 if len(app) < PARAMETER_OFFSET:
                     raise ValueError(f"{name}: short RunEvent application")
-                function_counts[
-                    app[0x29:PARAMETER_OFFSET].split(b"\0", 1)[0].decode("ascii")
-                ] += 1
+                function = app[0x29:PARAMETER_OFFSET].split(b"\0", 1)[0].decode("ascii")
+                function_counts[function] += 1
+                if function in member_prefix_counts:
+                    prefix = delegate_prefix_string(
+                        function,
+                        app[PARAMETER_OFFSET : PARAMETER_OFFSET + PARAMETER_SIZE],
+                    )
+                    member_prefix_counts[function][prefix] += 1
+                    prefix_string_counts[function][prefix] += 1
             if b"processPgEvent" in app:
                 hits.append(event_location(event))
         occurrences.extend(hits)
@@ -250,6 +288,10 @@ def survey_corpus(
             },
             processPgEvent_occurrences=hits,
             all_admitted_0x0130_function_counts=dict(sorted(function_counts.items())),
+            all_admitted_0x0130_delegate_prefix_string_counts={
+                function: dict(sorted(counts.items()))
+                for function, counts in member_prefix_counts.items()
+            },
         )
         aggregate.update(totals)
         rows.append(row)
@@ -284,6 +326,10 @@ def survey_corpus(
         "corpus_digest_sha256": corpus_digest(paths),
         "framing": dict(aggregate),
         "selected_occurrences": len(occurrences),
+        "all_admitted_0x0130_delegate_prefix_string_counts": {
+            function: dict(sorted(counts.items()))
+            for function, counts in prefix_string_counts.items()
+        },
         "members": rows,
         "scope": "Every manifest member is identity-checked; every PCAP member is decoded through canonical clear port-54992 game admission. Non-game TCP connections and non-PCAP members are separate exclusions. Unlisted local files are outside scope. TLS and lobby plaintext are not searched.",
     }
