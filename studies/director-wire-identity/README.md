@@ -225,6 +225,48 @@ owns the callback consumers and conditional NPC delegate argument map. A
 Winter-specific producer or correlated invocation outside this searched
 evidence would be needed to establish the historical selection and quantity.
 
+## Impish question packet boundary
+
+The same exact 54-member source set and canonical decoded byte domain in
+[Winter snowman packet boundary](#winter-snowman-packet-boundary) contained
+no identified Impish Impositions question/answer producer or invocation.
+Every member's size/hash and the canonical decoder pins matched that census.
+The source identity, 84 admitted connections, frame/subevent counts, strict
+framing checks, exclusions and overlap-resolution limits were unchanged.
+The functions were inspected at revision
+`53f2b6fd4b2a91bb84da949a607a98a641a5355c`.
+
+Every byte offset of every decoded frame body, in both directions, was
+searched for these 16 separate queries. All returned zero:
+
+| Query | Encoding |
+| --- | --- |
+| `firstTalkAskEvent`, `firstTalkNomalEvent`, `firstUboa`, `getSweets`, `processEventHWLStart`, `processEventHWGStart`, `processEventHWUStart` | Seven case-sensitive ASCII literals. |
+| `Spl0i2`, `PopulaceHalloweenTrans`, `HalloweenDirector` | Three case-insensitive ASCII substrings. |
+| `110800`, `1b0d0` | Decimal ASCII and case-insensitive hexadecimal ASCII. |
+| Quest `110800` / `0x0001B0D0` | Separate little- and big-endian u32 byte sequences. |
+| Static actor key `0xA0F1B0D0` | Separate little- and big-endian u32 byte sequences. |
+
+The static key uses the same documented `0xA0F00000 | low_id` encoding.
+`xivl-client-data:manifests/staticactor_class_paths.json`, row `id=110800`,
+maps the quest to `/Quest/Scenario/Spl/Spl0i2`; its digest is the one recorded
+above. This is a static search identity, not an observed invocation.
+
+The generic census again parsed all 126 c2s `0x012D` and 200 s2c `0x0130`
+name/owner fields, with no selected method or quest-owner match. Whole-body
+searching also covered an inner callback selector inside typed parameters.
+No matching candidate supplied a question, three choices, expected answer
+or complete typed invocation vector. The existing canonical decoder and
+query procedure in [Decode limits and reproduction](#decode-limits-and-reproduction)
+reproduce this result with the Impish query set above.
+
+This negative applies to the canonical resolved clear-game records, with the
+same excluded connections, 228 trailing bytes and conflicting-overlap limits.
+It does not prove historical absence or choose a direct-call/delegate route.
+`xivl-client-scripts:docs/impish-impositions-client-contract.md`, Question
+bank and producer boundary, owns the preserved text bank and callback inputs.
+The retained packets did not close their producer gap.
+
 ## Further research
 
 No broader retail corpus exists. Catalog consumers may adopt the corrected
