@@ -409,6 +409,29 @@ studies:
   - studies/c2s-00ca-position-report/derived/accounting.json
   source_refs:
   - source: pcap-1.23b
+- id: c2s-012d-event-start
+  title: Client EventStart 0x012D Joins
+  status: distilled
+  evidence_class: packet-capture
+  content_kind: npc-interaction
+  tags:
+  - event
+  - talk
+  - packet-decoding
+  - map-serverbound
+  search_hints:
+  - '0x012d'
+  - EventStartPacket
+  - talkDefault
+  - selector
+  - server codes
+  - '0x00cc'
+  - '0x00cd'
+  primary_paths:
+  - studies/c2s-012d-event-start/derived/verdicts.md
+  - studies/c2s-012d-event-start/derived/accounting.json
+  source_refs:
+  - source: pcap-1.23b
 - id: cast-result-state-order
   title: Cast Property and Result Wire Order
   status: distilled

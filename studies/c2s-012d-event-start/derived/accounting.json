@@ -1,0 +1,1231 @@
+{
+  "captures": {
+    "accept_leve.pcapng": {
+      "messages": 1,
+      "sha256": "42b87e6c095db130def1de5bc382e428b4f4c12c8069c4682d6fa4bc7681967a",
+      "size_bytes": 59576
+    },
+    "accept_local_leve.pcapng": {
+      "messages": 1,
+      "sha256": "3b4b071d88742a5d3c94a1e29ca6a4074cb6b9a9a60207118302fe22f932bd7c",
+      "size_bytes": 50676
+    },
+    "accept_quest.pcapng": {
+      "messages": 1,
+      "sha256": "a207109240254b1398a36f877afc7ac34a08466cfbd3cdd3f2eb5f4a50718057",
+      "size_bytes": 53180
+    },
+    "action_and_traits.pcapng": {
+      "messages": 2,
+      "sha256": "c3d30fe46d69996dc74e4864245c42675cde2388525c03063dac180df528352f",
+      "size_bytes": 37584
+    },
+    "add_str.pcapng": {
+      "messages": 1,
+      "sha256": "246e4948a7ca1e4dc620e724677bfd9153ce76f6445a557967d309e9946021ed",
+      "size_bytes": 20056
+    },
+    "battle_mode_passive_mode.pcapng": {
+      "messages": 2,
+      "sha256": "5a8290df1d11781f4f5fa1f6990651c679e57ee3b8c5549021f06767bb172d4b",
+      "size_bytes": 12776
+    },
+    "buy_square_maple_shield.pcapng": {
+      "messages": 1,
+      "sha256": "aab582bd9658c89cd4d56e132500481f442b9f2dc2179f1a5829ea09776bce6b",
+      "size_bytes": 54088
+    },
+    "change_bodyarmor.pcapng": {
+      "messages": 1,
+      "sha256": "55ee6035d24e80b97c9354a0800b86a52d0a99e1200cf6875a5b56009215021a",
+      "size_bytes": 54536
+    },
+    "change_helm.pcapng": {
+      "messages": 2,
+      "sha256": "af1e465076c3acf6188f24f084622b22beccc932bb96effd517b2d9a44606e08",
+      "size_bytes": 39660
+    },
+    "change_to_botanist.pcapng": {
+      "messages": 2,
+      "sha256": "8fdc448a17d19bea3d07855a8d8843d78926c50586f3656946c96b6a6cb27d26",
+      "size_bytes": 41500
+    },
+    "checkbed.pcapng": {
+      "messages": 1,
+      "sha256": "9e05a05de6ec44eded13761fcb3546eb248c0c68e537051eef575e29dfff1b79",
+      "size_bytes": 26276
+    },
+    "combat_autoattack.pcapng": {
+      "messages": 2,
+      "sha256": "2f677ab61047b25c4168a3dd9496f372d48de3bba018d582dd5a968b9272f7b2",
+      "size_bytes": 82908
+    },
+    "combat_skills.pcapng": {
+      "messages": 7,
+      "sha256": "7fe66d92f6f62584e57562e51355d310546935690e0b96c2c689b83bbe8a07a7",
+      "size_bytes": 63028
+    },
+    "emote_dance.pcapng": {
+      "messages": 1,
+      "sha256": "9e004f1e791cfc37b7d23e8986a5e69021b7b7f828295fdf7957e36aa1c57dc8",
+      "size_bytes": 30352
+    },
+    "emote_kneel.pcapng": {
+      "messages": 1,
+      "sha256": "3381b6121f5b0789c97ededdc5394c6bc9b14c561029191fb5b3f428033c80e8",
+      "size_bytes": 23920
+    },
+    "from_gridania_to_blackshroud.pcapng": {
+      "messages": 2,
+      "sha256": "eff300de679230653953ea3399939a15ce9d6aeafd202c7ebcf5f55e6d24930f",
+      "size_bytes": 196308
+    },
+    "gather_wood.pcapng": {
+      "messages": 2,
+      "sha256": "c308aa4c984eb3e1912383c06e5115c6924713978df43cdb8075335e1bac7d32",
+      "size_bytes": 157688
+    },
+    "gear_changesoul.pcapng": {
+      "messages": 1,
+      "sha256": "62af2cde3a4683fba3e09cc3dfed8001d74303b120381de577b05df492926780",
+      "size_bytes": 23784
+    },
+    "gear_changeweapon.pcapng": {
+      "messages": 1,
+      "sha256": "3eec2c2993feeb2b8c47c1e1f553335638a7262ec13b561e2d52d768f0798080",
+      "size_bytes": 21352
+    },
+    "gridania_to_coerthas.pcapng": {
+      "messages": 6,
+      "sha256": "63152a1ed6e446df5cc4750fe50a0839f9e45ad270c79abfc72b5c09cc47e547",
+      "size_bytes": 939832
+    },
+    "harvest.pcapng": {
+      "messages": 4,
+      "sha256": "8522a844b6904207c3465ae1d1038599eddb8b9dc47800d5230c8a1c3ad0e440",
+      "size_bytes": 60680
+    },
+    "invite_join_party.pcapng": {
+      "messages": 1,
+      "sha256": "34c946c3f93744d2bbd841e75f983ef12b9bbcb59afcba31414d6d3f41e7de58",
+      "size_bytes": 88372
+    },
+    "local_leve_complete.pcapng": {
+      "messages": 3,
+      "sha256": "4f0793f354140478725bf2c30642a3458a854460f47fb11a7af635c8881d95cd",
+      "size_bytes": 358296
+    },
+    "mount_unmount_chocobo.pcapng": {
+      "messages": 2,
+      "sha256": "e77c06799f07029feb054792eac30baa431da15a61937b1a39bcd025e4db4072",
+      "size_bytes": 21240
+    },
+    "move_out_of_room.pcapng": {
+      "messages": 1,
+      "sha256": "a7a03a1d688f3feb264f8da9fae3519c55b7e267aa3802472f0221f4d729b37b",
+      "size_bytes": 83412
+    },
+    "party_battle_leve.pcapng": {
+      "messages": 55,
+      "sha256": "6327e5e1f5cbd51a9baaa9bcbacf53ca51c50a98fe4b66ae3e6bdecd9198089f",
+      "size_bytes": 1429864
+    },
+    "quest_journal.pcapng": {
+      "messages": 2,
+      "sha256": "e1f983e9009a9ebe8b8231647229bee1672a1ac85d95a830113280f534531edc",
+      "size_bytes": 32264
+    },
+    "quest_update.pcapng": {
+      "messages": 1,
+      "sha256": "e31aa9738dd523b7703eefa6d38527135f16d8b5ff2fc314fd7e5b808d7e4787",
+      "size_bytes": 66756
+    },
+    "repair_items.pcapng": {
+      "messages": 1,
+      "sha256": "bbd829cbd3f42b2cbfb3aa8a74a1cc35d4e2c16c99e5a4a20ca76573f02dd90f",
+      "size_bytes": 63400
+    },
+    "return_to_inn.pcapng": {
+      "messages": 1,
+      "sha256": "9a81e483d3dd2673081afef06ed521c190c4d42be16e95e24097f25ff81f58c1",
+      "size_bytes": 44012
+    },
+    "sell_item.pcapng": {
+      "messages": 1,
+      "sha256": "1cd808fff6501c53e4c113f1fdef090e50dfe0fd7fe86ceaa552b3a53c1b5aac",
+      "size_bytes": 57580
+    },
+    "small_talk_louisoix.pcapng": {
+      "messages": 1,
+      "sha256": "58b620d90370ba69202e63f7f70edb79004ccbb8068e11e2e112a825d84dcafe",
+      "size_bytes": 18444
+    },
+    "switch_to_weaver.pcapng": {
+      "messages": 1,
+      "sha256": "b41b25bc51be1a64f41861142dc992c14493c65bcd920cadca013243480b777e",
+      "size_bytes": 33364
+    },
+    "teleport_to_camp_nine_ivies.pcapng": {
+      "messages": 1,
+      "sha256": "fac2b485608247d299a406a7065e19918789118e7e544ca85cec4d772da0e3ab",
+      "size_bytes": 80004
+    },
+    "teleport_to_camp_tranquil.pcapng": {
+      "messages": 1,
+      "sha256": "488318351cdedb2e2b650dc68c55014b160fbbc26753c200922402c1ba6c4dd7",
+      "size_bytes": 67920
+    },
+    "teleport_to_gridania.pcapng": {
+      "messages": 1,
+      "sha256": "779141dc79a4bcf4bfc2e265f8b9510607d5a6b6e78d32f8940e5a847e598fa0",
+      "size_bytes": 67620
+    },
+    "war_quest_update1.pcapng": {
+      "messages": 1,
+      "sha256": "ce64e429063cc7e49a2045e2f7b0e18b1991f5908368b791b93c72419841e890",
+      "size_bytes": 42812
+    },
+    "war_quest_update2.pcapng": {
+      "messages": 9,
+      "sha256": "bf43b5ee32c58e5dc6f8149b071bd9c5cd5cc0aaa55ea3528872308fd7be2429",
+      "size_bytes": 206216
+    },
+    "war_quest_update3.pcapng": {
+      "messages": 1,
+      "sha256": "52279e8cbc13d3f4751b5ee3cb9c91df1895ed5c41d30672629db3ec1c9efd05",
+      "size_bytes": 103520
+    }
+  },
+  "corpus": {
+    "joins": [
+      {
+        "count": 2,
+        "event_name": "caution",
+        "low22": 0,
+        "selector": 2,
+        "zone_field": 155
+      },
+      {
+        "count": 1,
+        "event_name": "caution",
+        "low22": 60,
+        "selector": 2,
+        "zone_field": 172
+      },
+      {
+        "count": 1,
+        "event_name": "commandContent",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 145
+      },
+      {
+        "count": 1,
+        "event_name": "commandContent",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 150
+      },
+      {
+        "count": 1,
+        "event_name": "commandContent",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 154
+      },
+      {
+        "count": 1,
+        "event_name": "commandContent",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 206
+      },
+      {
+        "count": 5,
+        "event_name": "commandDefault",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 154
+      },
+      {
+        "count": 38,
+        "event_name": "commandDefault",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 162
+      },
+      {
+        "count": 1,
+        "event_name": "commandDefault",
+        "low22": 60,
+        "selector": 0,
+        "zone_field": 172
+      },
+      {
+        "count": 2,
+        "event_name": "commandForced",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 150
+      },
+      {
+        "count": 6,
+        "event_name": "commandForced",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 154
+      },
+      {
+        "count": 14,
+        "event_name": "commandForced",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 162
+      },
+      {
+        "count": 4,
+        "event_name": "commandForced",
+        "low22": 60,
+        "selector": 0,
+        "zone_field": 172
+      },
+      {
+        "count": 2,
+        "event_name": "commandForced",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 244
+      },
+      {
+        "count": 1,
+        "event_name": "commandJudgeMode",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 145
+      },
+      {
+        "count": 4,
+        "event_name": "commandJudgeMode",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 150
+      },
+      {
+        "count": 1,
+        "event_name": "commandRequest",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 145
+      },
+      {
+        "count": 6,
+        "event_name": "commandRequest",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 150
+      },
+      {
+        "count": 1,
+        "event_name": "commandRequest",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 152
+      },
+      {
+        "count": 2,
+        "event_name": "commandRequest",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 155
+      },
+      {
+        "count": 9,
+        "event_name": "commandRequest",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 244
+      },
+      {
+        "count": 2,
+        "event_name": "exit",
+        "low22": 0,
+        "selector": 2,
+        "zone_field": 155
+      },
+      {
+        "count": 1,
+        "event_name": "exit",
+        "low22": 60,
+        "selector": 2,
+        "zone_field": 172
+      },
+      {
+        "count": 1,
+        "event_name": "noticeEvent",
+        "low22": 60,
+        "selector": 5,
+        "zone_field": 172
+      },
+      {
+        "count": 1,
+        "event_name": "noticeEvent",
+        "low22": 60,
+        "selector": 101,
+        "zone_field": 172
+      },
+      {
+        "count": 1,
+        "event_name": "regionChange",
+        "low22": 0,
+        "selector": 2,
+        "zone_field": 152
+      },
+      {
+        "count": 2,
+        "event_name": "talkDefault",
+        "low22": 0,
+        "selector": 1,
+        "zone_field": 150
+      },
+      {
+        "count": 1,
+        "event_name": "talkDefault",
+        "low22": 0,
+        "selector": 1,
+        "zone_field": 151
+      },
+      {
+        "count": 5,
+        "event_name": "talkDefault",
+        "low22": 0,
+        "selector": 1,
+        "zone_field": 155
+      },
+      {
+        "count": 2,
+        "event_name": "talkDefault",
+        "low22": 0,
+        "selector": 1,
+        "zone_field": 162
+      },
+      {
+        "count": 2,
+        "event_name": "talkDefault",
+        "low22": 0,
+        "selector": 1,
+        "zone_field": 172
+      },
+      {
+        "count": 2,
+        "event_name": "talkDefault",
+        "low22": 0,
+        "selector": 1,
+        "zone_field": 206
+      },
+      {
+        "count": 2,
+        "event_name": "talkDefault",
+        "low22": 0,
+        "selector": 1,
+        "zone_field": 244
+      },
+      {
+        "count": 1,
+        "event_name": "talkDefault",
+        "low22": 0,
+        "selector": 101,
+        "zone_field": 162
+      }
+    ],
+    "messages": 126,
+    "selector_by_event_name": {
+      "caution": {
+        "2": 3
+      },
+      "commandContent": {
+        "0": 4
+      },
+      "commandDefault": {
+        "0": 44
+      },
+      "commandForced": {
+        "0": 28
+      },
+      "commandJudgeMode": {
+        "0": 5
+      },
+      "commandRequest": {
+        "0": 19
+      },
+      "exit": {
+        "2": 3
+      },
+      "noticeEvent": {
+        "101": 1,
+        "5": 1
+      },
+      "regionChange": {
+        "2": 1
+      },
+      "talkDefault": {
+        "1": 16,
+        "101": 1
+      }
+    },
+    "server_codes_low22_nonzero": 9,
+    "server_codes_low22_zero": 117,
+    "zone_field_counts": {
+      "145": 3,
+      "150": 15,
+      "151": 1,
+      "152": 2,
+      "154": 12,
+      "155": 11,
+      "162": 55,
+      "172": 11,
+      "206": 3,
+      "244": 13
+    }
+  },
+  "direction": "c2s",
+  "evidence_class": "packet-capture",
+  "generator_version": "1",
+  "message_length": 200,
+  "opcode": "0x012d",
+  "published_samples": {
+    "joins": [
+      {
+        "count": 2,
+        "event_name": "caution",
+        "low22": 0,
+        "selector": 2,
+        "zone_field": 155
+      },
+      {
+        "count": 1,
+        "event_name": "commandContent",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 145
+      },
+      {
+        "count": 1,
+        "event_name": "commandContent",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 150
+      },
+      {
+        "count": 1,
+        "event_name": "commandContent",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 154
+      },
+      {
+        "count": 1,
+        "event_name": "commandContent",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 206
+      },
+      {
+        "count": 3,
+        "event_name": "commandDefault",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 154
+      },
+      {
+        "count": 2,
+        "event_name": "commandDefault",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 162
+      },
+      {
+        "count": 2,
+        "event_name": "commandForced",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 150
+      },
+      {
+        "count": 5,
+        "event_name": "commandForced",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 154
+      },
+      {
+        "count": 1,
+        "event_name": "commandForced",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 162
+      },
+      {
+        "count": 2,
+        "event_name": "commandForced",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 244
+      },
+      {
+        "count": 1,
+        "event_name": "commandJudgeMode",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 145
+      },
+      {
+        "count": 4,
+        "event_name": "commandJudgeMode",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 150
+      },
+      {
+        "count": 6,
+        "event_name": "commandRequest",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 150
+      },
+      {
+        "count": 2,
+        "event_name": "commandRequest",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 155
+      },
+      {
+        "count": 9,
+        "event_name": "commandRequest",
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 244
+      },
+      {
+        "count": 2,
+        "event_name": "exit",
+        "low22": 0,
+        "selector": 2,
+        "zone_field": 155
+      },
+      {
+        "count": 1,
+        "event_name": "regionChange",
+        "low22": 0,
+        "selector": 2,
+        "zone_field": 152
+      },
+      {
+        "count": 2,
+        "event_name": "talkDefault",
+        "low22": 0,
+        "selector": 1,
+        "zone_field": 150
+      },
+      {
+        "count": 1,
+        "event_name": "talkDefault",
+        "low22": 0,
+        "selector": 1,
+        "zone_field": 151
+      },
+      {
+        "count": 5,
+        "event_name": "talkDefault",
+        "low22": 0,
+        "selector": 1,
+        "zone_field": 155
+      },
+      {
+        "count": 1,
+        "event_name": "talkDefault",
+        "low22": 0,
+        "selector": 1,
+        "zone_field": 162
+      },
+      {
+        "count": 1,
+        "event_name": "talkDefault",
+        "low22": 0,
+        "selector": 1,
+        "zone_field": 172
+      },
+      {
+        "count": 2,
+        "event_name": "talkDefault",
+        "low22": 0,
+        "selector": 1,
+        "zone_field": 206
+      },
+      {
+        "count": 2,
+        "event_name": "talkDefault",
+        "low22": 0,
+        "selector": 1,
+        "zone_field": 244
+      }
+    ],
+    "messages": 60,
+    "sample_joins": [
+      {
+        "capture": "accept_leve.pcapng",
+        "event_name": "talkDefault",
+        "index": 0,
+        "low22": 0,
+        "selector": 1,
+        "zone_field": 155
+      },
+      {
+        "capture": "accept_local_leve.pcapng",
+        "event_name": "talkDefault",
+        "index": 1,
+        "low22": 0,
+        "selector": 1,
+        "zone_field": 155
+      },
+      {
+        "capture": "accept_quest.pcapng",
+        "event_name": "talkDefault",
+        "index": 2,
+        "low22": 0,
+        "selector": 1,
+        "zone_field": 155
+      },
+      {
+        "capture": "action_and_traits.pcapng",
+        "event_name": "commandForced",
+        "index": 3,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 244
+      },
+      {
+        "capture": "action_and_traits.pcapng",
+        "event_name": "commandForced",
+        "index": 4,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 244
+      },
+      {
+        "capture": "add_str.pcapng",
+        "event_name": "commandJudgeMode",
+        "index": 5,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 145
+      },
+      {
+        "capture": "battle_mode_passive_mode.pcapng",
+        "event_name": "commandForced",
+        "index": 6,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 154
+      },
+      {
+        "capture": "battle_mode_passive_mode.pcapng",
+        "event_name": "commandForced",
+        "index": 7,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 154
+      },
+      {
+        "capture": "buy_square_maple_shield.pcapng",
+        "event_name": "talkDefault",
+        "index": 8,
+        "low22": 0,
+        "selector": 1,
+        "zone_field": 155
+      },
+      {
+        "capture": "change_bodyarmor.pcapng",
+        "event_name": "commandRequest",
+        "index": 9,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 244
+      },
+      {
+        "capture": "change_helm.pcapng",
+        "event_name": "commandRequest",
+        "index": 10,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 244
+      },
+      {
+        "capture": "change_helm.pcapng",
+        "event_name": "commandRequest",
+        "index": 11,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 244
+      },
+      {
+        "capture": "change_to_botanist.pcapng",
+        "event_name": "commandRequest",
+        "index": 12,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 150
+      },
+      {
+        "capture": "change_to_botanist.pcapng",
+        "event_name": "commandRequest",
+        "index": 13,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 150
+      },
+      {
+        "capture": "checkbed.pcapng",
+        "event_name": "talkDefault",
+        "index": 14,
+        "low22": 0,
+        "selector": 1,
+        "zone_field": 244
+      },
+      {
+        "capture": "combat_autoattack.pcapng",
+        "event_name": "commandForced",
+        "index": 15,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 154
+      },
+      {
+        "capture": "combat_autoattack.pcapng",
+        "event_name": "commandForced",
+        "index": 16,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 154
+      },
+      {
+        "capture": "combat_skills.pcapng",
+        "event_name": "commandForced",
+        "index": 17,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 154
+      },
+      {
+        "capture": "combat_skills.pcapng",
+        "event_name": "commandDefault",
+        "index": 18,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 154
+      },
+      {
+        "capture": "combat_skills.pcapng",
+        "event_name": "commandDefault",
+        "index": 19,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 154
+      },
+      {
+        "capture": "combat_skills.pcapng",
+        "event_name": "commandDefault",
+        "index": 20,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 154
+      },
+      {
+        "capture": "emote_dance.pcapng",
+        "event_name": "commandRequest",
+        "index": 21,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 244
+      },
+      {
+        "capture": "emote_kneel.pcapng",
+        "event_name": "commandRequest",
+        "index": 22,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 244
+      },
+      {
+        "capture": "from_gridania_to_blackshroud.pcapng",
+        "event_name": "caution",
+        "index": 23,
+        "low22": 0,
+        "selector": 2,
+        "zone_field": 155
+      },
+      {
+        "capture": "from_gridania_to_blackshroud.pcapng",
+        "event_name": "exit",
+        "index": 24,
+        "low22": 0,
+        "selector": 2,
+        "zone_field": 155
+      },
+      {
+        "capture": "gather_wood.pcapng",
+        "event_name": "commandRequest",
+        "index": 25,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 150
+      },
+      {
+        "capture": "gather_wood.pcapng",
+        "event_name": "commandJudgeMode",
+        "index": 26,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 150
+      },
+      {
+        "capture": "gear_changesoul.pcapng",
+        "event_name": "commandRequest",
+        "index": 27,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 244
+      },
+      {
+        "capture": "gear_changeweapon.pcapng",
+        "event_name": "commandRequest",
+        "index": 28,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 244
+      },
+      {
+        "capture": "gridania_to_coerthas.pcapng",
+        "event_name": "caution",
+        "index": 29,
+        "low22": 0,
+        "selector": 2,
+        "zone_field": 155
+      },
+      {
+        "capture": "gridania_to_coerthas.pcapng",
+        "event_name": "exit",
+        "index": 30,
+        "low22": 0,
+        "selector": 2,
+        "zone_field": 155
+      },
+      {
+        "capture": "gridania_to_coerthas.pcapng",
+        "event_name": "commandForced",
+        "index": 31,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 150
+      },
+      {
+        "capture": "gridania_to_coerthas.pcapng",
+        "event_name": "regionChange",
+        "index": 32,
+        "low22": 0,
+        "selector": 2,
+        "zone_field": 152
+      },
+      {
+        "capture": "harvest.pcapng",
+        "event_name": "commandRequest",
+        "index": 33,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 150
+      },
+      {
+        "capture": "harvest.pcapng",
+        "event_name": "commandJudgeMode",
+        "index": 34,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 150
+      },
+      {
+        "capture": "harvest.pcapng",
+        "event_name": "commandRequest",
+        "index": 35,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 150
+      },
+      {
+        "capture": "harvest.pcapng",
+        "event_name": "commandJudgeMode",
+        "index": 36,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 150
+      },
+      {
+        "capture": "invite_join_party.pcapng",
+        "event_name": "commandRequest",
+        "index": 37,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 155
+      },
+      {
+        "capture": "local_leve_complete.pcapng",
+        "event_name": "talkDefault",
+        "index": 38,
+        "low22": 0,
+        "selector": 1,
+        "zone_field": 150
+      },
+      {
+        "capture": "local_leve_complete.pcapng",
+        "event_name": "commandJudgeMode",
+        "index": 39,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 150
+      },
+      {
+        "capture": "local_leve_complete.pcapng",
+        "event_name": "talkDefault",
+        "index": 40,
+        "low22": 0,
+        "selector": 1,
+        "zone_field": 150
+      },
+      {
+        "capture": "mount_unmount_chocobo.pcapng",
+        "event_name": "commandForced",
+        "index": 41,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 150
+      },
+      {
+        "capture": "mount_unmount_chocobo.pcapng",
+        "event_name": "commandRequest",
+        "index": 42,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 150
+      },
+      {
+        "capture": "move_out_of_room.pcapng",
+        "event_name": "talkDefault",
+        "index": 43,
+        "low22": 0,
+        "selector": 1,
+        "zone_field": 244
+      },
+      {
+        "capture": "party_battle_leve.pcapng",
+        "event_name": "talkDefault",
+        "index": 44,
+        "low22": 0,
+        "selector": 1,
+        "zone_field": 162
+      },
+      {
+        "capture": "party_battle_leve.pcapng",
+        "event_name": "commandForced",
+        "index": 45,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 162
+      },
+      {
+        "capture": "party_battle_leve.pcapng",
+        "event_name": "commandDefault",
+        "index": 46,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 162
+      },
+      {
+        "capture": "party_battle_leve.pcapng",
+        "event_name": "commandDefault",
+        "index": 47,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 162
+      },
+      {
+        "capture": "quest_journal.pcapng",
+        "event_name": "commandRequest",
+        "index": 48,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 244
+      },
+      {
+        "capture": "quest_journal.pcapng",
+        "event_name": "commandRequest",
+        "index": 49,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 244
+      },
+      {
+        "capture": "quest_update.pcapng",
+        "event_name": "talkDefault",
+        "index": 50,
+        "low22": 0,
+        "selector": 1,
+        "zone_field": 206
+      },
+      {
+        "capture": "repair_items.pcapng",
+        "event_name": "talkDefault",
+        "index": 51,
+        "low22": 0,
+        "selector": 1,
+        "zone_field": 151
+      },
+      {
+        "capture": "return_to_inn.pcapng",
+        "event_name": "commandContent",
+        "index": 52,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 206
+      },
+      {
+        "capture": "sell_item.pcapng",
+        "event_name": "talkDefault",
+        "index": 53,
+        "low22": 0,
+        "selector": 1,
+        "zone_field": 155
+      },
+      {
+        "capture": "small_talk_louisoix.pcapng",
+        "event_name": "talkDefault",
+        "index": 54,
+        "low22": 0,
+        "selector": 1,
+        "zone_field": 206
+      },
+      {
+        "capture": "switch_to_weaver.pcapng",
+        "event_name": "commandRequest",
+        "index": 55,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 155
+      },
+      {
+        "capture": "teleport_to_camp_nine_ivies.pcapng",
+        "event_name": "commandContent",
+        "index": 56,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 145
+      },
+      {
+        "capture": "teleport_to_camp_tranquil.pcapng",
+        "event_name": "commandContent",
+        "index": 57,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 150
+      },
+      {
+        "capture": "teleport_to_gridania.pcapng",
+        "event_name": "commandContent",
+        "index": 58,
+        "low22": 0,
+        "selector": 0,
+        "zone_field": 154
+      },
+      {
+        "capture": "war_quest_update1.pcapng",
+        "event_name": "talkDefault",
+        "index": 59,
+        "low22": 0,
+        "selector": 1,
+        "zone_field": 172
+      }
+    ],
+    "selector_by_event_name": {
+      "caution": {
+        "2": 2
+      },
+      "commandContent": {
+        "0": 4
+      },
+      "commandDefault": {
+        "0": 5
+      },
+      "commandForced": {
+        "0": 10
+      },
+      "commandJudgeMode": {
+        "0": 5
+      },
+      "commandRequest": {
+        "0": 17
+      },
+      "exit": {
+        "2": 2
+      },
+      "regionChange": {
+        "2": 1
+      },
+      "talkDefault": {
+        "1": 14
+      }
+    },
+    "server_codes_low22_nonzero": 0,
+    "server_codes_low22_zero": 60,
+    "zone_field_counts": {
+      "145": 2,
+      "150": 15,
+      "151": 1,
+      "152": 1,
+      "154": 9,
+      "155": 11,
+      "162": 4,
+      "172": 1,
+      "206": 3,
+      "244": 13
+    }
+  },
+  "study": "c2s-012d-event-start",
+  "targets": {
+    "selector 1": {
+      "lock_actor_equals_owner": 16,
+      "lock_immediately_before": 16,
+      "lock_second_dword": {
+        "zero": 16
+      },
+      "lock_since_previous_start": 16,
+      "messages": 16,
+      "set_actor_equals_owner": 13,
+      "set_before_lock": 13,
+      "set_second_dword": {
+        "0xe0000000": 13
+      },
+      "set_since_previous_start": 13
+    },
+    "selector 101": {
+      "lock_actor_equals_owner": 0,
+      "lock_immediately_before": 0,
+      "lock_second_dword": {},
+      "lock_since_previous_start": 0,
+      "messages": 1,
+      "set_actor_equals_owner": 1,
+      "set_before_lock": 0,
+      "set_second_dword": {
+        "0xe0000000": 1
+      },
+      "set_since_previous_start": 1
+    }
+  }
+}

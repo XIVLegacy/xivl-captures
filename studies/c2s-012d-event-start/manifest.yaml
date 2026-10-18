@@ -1,0 +1,37 @@
+id: c2s-012d-event-start
+title: Client EventStart 0x012D Joins
+evidence_class: packet-capture
+status: distilled
+content_kind: npc-interaction
+tags:
+- event
+- talk
+- packet-decoding
+- map-serverbound
+search_hints:
+- "0x012d"
+- EventStartPacket
+- talkDefault
+- selector
+- server codes
+- "0x00cc"
+- "0x00cd"
+notes: >-
+  Counts for every sent client-to-server 0x012d EventStart in the captures.
+  Joins the selector byte, the server codes fields, and the event name, and
+  counts the 0x00cc and 0x00cd target messages that precede each talkDefault.
+  Actor ids, timestamps, and payload bytes stay out of the products.
+source_refs:
+- source: pcap-1.23b
+primary_paths:
+- derived/verdicts.md
+- derived/accounting.json
+canonical_evidence:
+- derived/accounting.json
+- derived/verdicts.md
+distilled:
+  distilled: true
+  checksum_file: derived/checksums.sha256
+  distilled_artifacts:
+  - derived/accounting.json
+  - derived/verdicts.md

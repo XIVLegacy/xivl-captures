@@ -152,6 +152,12 @@ Generated from `catalog/index.yaml`. Primary axis: `content_kind`.
 
 - `elemen-bestiary`
 
+## npc-interaction (1)
+
+### Studies (1)
+
+- `c2s-012d-event-start`
+
 ## primal-battle (1)
 
 ### Studies (1)

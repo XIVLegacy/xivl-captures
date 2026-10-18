@@ -102,6 +102,10 @@ The supported commands for direct maintainer use are:
   the sanitized c2s `0x00CA` moveState, rotation, and horizontal speed study
   from the two Gridania movement captures; add `--check` for replay and
   `--public-shape` to validate retained products without the captures.
+- `python tools/extractors/extract_c2s_012d_event_start.py` - regenerate the
+  sanitized c2s `0x012D` EventStart selector, server codes, event name, and
+  talk target-message joins from the retail captures; add `--check` for replay
+  and `--public-shape` to validate retained products without the captures.
 - `python tools/extract_historical_battlecommand.py` - regenerate the
   provisional, field-layered BattleCommand workbook extraction; add `--check`
   for byte-stable replay.
