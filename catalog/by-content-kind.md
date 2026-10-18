@@ -157,9 +157,9 @@ Generated from `catalog/index.yaml`. Primary axis: `content_kind`.
 
 - `primal-battle-ifrit-bowl-of-embers`
 
-## session-mechanic (7)
+## session-mechanic (8)
 
-### Studies (6)
+### Studies (7)
 
 - `command-registration`
 - `friendlist-search-wire-exchange`
@@ -167,6 +167,7 @@ Generated from `catalog/index.yaml`. Primary axis: `content_kind`.
 - `lobby-handshake-triage`
 - `login-0002-appearance-order`
 - `login-018a-neighborhood`
+- `weather-000d-wire`
 
 ### Scenarios (1)
 

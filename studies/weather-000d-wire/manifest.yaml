@@ -1,0 +1,25 @@
+id: weather-000d-wire
+title: Map Weather 0x000D Wire Contract
+evidence_class: packet-capture
+status: distilled
+content_kind: session-mechanic
+tags:
+- weather
+- packet-decoding
+- main-lane
+search_hints:
+- "0x000d"
+- weather 8030 duration 5
+- Limsa weather 8007 evidence boundary
+source_refs:
+- source: pcap-1.23b
+  citation: sources/pcap-1.23b/manifest.yaml
+primary_paths:
+- derived/evidence-map.md
+canonical_evidence:
+- derived/evidence-map.md
+distilled:
+  distilled: true
+  checksum_file: derived/checksums.sha256
+  distilled_artifacts:
+  - derived/evidence-map.md

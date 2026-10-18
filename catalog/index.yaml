@@ -2227,6 +2227,24 @@ studies:
   - studies/status-wire-projection-census/derived/verdicts.md
   source_refs:
   - source: pcap-1.23b
+- id: weather-000d-wire
+  title: Map Weather 0x000D Wire Contract
+  status: distilled
+  evidence_class: packet-capture
+  content_kind: session-mechanic
+  tags:
+  - weather
+  - packet-decoding
+  - main-lane
+  search_hints:
+  - '0x000d'
+  - weather 8030 duration 5
+  - Limsa weather 8007 evidence boundary
+  primary_paths:
+  - studies/weather-000d-wire/derived/evidence-map.md
+  source_refs:
+  - source: pcap-1.23b
+    citation: sources/pcap-1.23b/manifest.yaml
 - id: world-party-chat-00c9-contract
   title: World Party-Chat 0x00C9 Contract
   status: distilled
