@@ -134,6 +134,97 @@ the per-member accounting in
 The four members have zero c2s tails and zero admitted unparsed stream bytes.
 Their 18 discarded s2c trailing bytes are outside these c2s observations.
 
+## Winter snowman packet boundary
+
+The retained clear-game packet records supplied no witness for Winter Is Not
+Coming, quest `110801`, or its five snowman callbacks. This is a bounded
+negative over the canonical decoded corpus, not proof about uncaptured retail
+sessions or every possible encoding.
+
+The input was all 54 members of
+[pcap-1.23b](../../sources/pcap-1.23b/manifest.yaml), with every local member's
+size and SHA-256 checked against that manifest. Its byte identity was
+`baaa15f99f7f5d865bf2ec0dbcc1e454d034382b0559edccb0085c57c4061cf5`.
+The manifest pins archive `pcap-1.23b-objects.zip`, 2,622,720 bytes, SHA-256
+`20a78b9f40ff2393037c9a160c957783cf590b4f01797493d22fcd2039e9cbff`.
+The archive container itself was not read for this check. The sorted member
+digest from `tools/extractors/extract_00da_00e1_comparison.py:corpus_digest`
+was `1293490808399dd5e1015d921a388f0fe4931dfa3ef678f30d790f5296025e6a`.
+
+Canonical reconstruction admitted 84 clear TCP 54992 connections. Both
+directions were inspected, including main and chat lanes:
+
+| Direction | Complete outer frames | Complete subevents |
+| --- | ---: | ---: |
+| c2s | 8,970 | 21,201 |
+| s2c | 10,790 | 44,663 |
+
+The query domain was every byte offset in each decoded outer-frame body,
+after inflation when flagged, including subevent headers, direct session
+records, wrapped application payloads and padding. Every query below had
+zero occurrences. Numeric byte searches did not require alignment.
+
+| Query | Encoding |
+| --- | --- |
+| `processEventSnowMan`, `processEventSnowManOk`, `processEventSnowManEvent`, `processEventSnowMandefo`, `processEventSnowMandefo2` | Five separate case-sensitive ASCII literal searches. |
+| `Spl0i3` | Case-insensitive ASCII substring, also covering the class path. |
+| `110801`, `1b0d1` | Decimal ASCII and case-insensitive hexadecimal ASCII. |
+| Quest `110801` / `0x0001B0D1` | Separate little- and big-endian u32 byte sequences. |
+| Static actor key `0xA0F1B0D1` | Separate little- and big-endian u32 byte sequences. |
+
+The last key follows `0xA0F00000 | low_id`, documented in
+`xivl-decomp:docs/resource/static-actor-registry.md`, File contract and retail
+coverage. `xivl-client-data:manifests/staticactor_class_paths.json`, records
+row `id=110801`, maps that ID to `/Quest/Scenario/Spl/Spl0i3`; the manifest
+SHA-256 is `d612438827e5997422ab6f64a807e567ddf1b953c532e8a319d67b93c53c9db0`.
+This static identity does not prove a captured quest invocation.
+
+Field checks counted all 126 c2s `0x012D` EventStart records and all 200 s2c
+`0x0130` RunEventFunction records. None had the selected quest owner or a
+selected snowman name. The whole-body searches also covered callback names
+inside typed arguments, rather than only the outer function-name field.
+No `0x016C` occurred in either direction; its adopted local catalog name is
+`SetEmoteEventCondition`. That name supplies no additional field layout.
+There was therefore no matching candidate whose full argument vector could
+establish the selected callback or P3.
+
+### Decode limits and reproduction
+
+The producer was a read-only Python 3.12.0 traversal of the repository's
+`default_corpus_paths`, `reconstruct_lanes`, `parse_outer_frames`,
+`maybe_inflate` and `parse_sub_events`, using Scapy 2.7.0 and zlib 1.2.13.
+The functions were inspected at repository revision
+`dcd125c4ef2dac6152c96881db03df9341affd2d`. Reproduction requires the exact
+manifest members, both directions of every admitted connection, the complete
+query domain and encodings above, and comparison with the frame/subevent
+totals. The existing `_decode_capture` in
+`tools/extractors/extract_00da_00e1_comparison.py` supplies frame, subevent
+and completing-packet locators for any candidate. Its event dictionaries
+alone omit direct-session bodies, so search the decoded frame bodies before
+reducing to wrapped events.
+
+Compression flags agreed with complete zlib decoding. There were zero
+admitted unparsed stream bytes, truncated subevents, short wrapped inner
+headers or nonzero unparsed decoded-body bytes. Reconstruction had no
+sequence gaps. It discarded 228 trailing s2c bytes outside complete frames,
+and excluded 381 other payload-bearing TCP connections. TLS and lobby traffic
+were outside the clear-game query domain.
+
+`extract_streams.py:_reconstruct_direction` sorts segments by sequence number
+and overwrites overlapping bytes in that stable order. In the admitted
+connections, 11,497 overlapping byte writes disagreed with the preceding
+value across 57 directional streams. No alternate overlap reconstruction was
+performed. The negative result applies to the canonical resolved streams,
+not every conflicting byte alternative, excluded traffic, discarded tails,
+arbitrary encodings or uncaptured sessions. Frame/subevent order is local to
+one connection and direction; no cross-connection chronology was inferred.
+
+The existing packet corpus therefore did not close the Winter callback
+mapping or supply P3. `xivl-client-scripts:docs/winter-is-not-coming-client-contract.md`
+owns the callback consumers and conditional NPC delegate argument map. A
+Winter-specific producer or correlated invocation outside this searched
+evidence would be needed to establish the historical selection and quantity.
+
 ## Further research
 
 No broader retail corpus exists. Catalog consumers may adopt the corrected
