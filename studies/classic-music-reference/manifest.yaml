@@ -1,0 +1,35 @@
+id: classic-music-reference
+title: Music ID, Title and Usage Crosswalk
+evidence_class: web-tables
+status: distilled
+content_kind: session-mechanic
+tags:
+- music
+- music-ids
+- track-titles
+- zone-usage
+- version-scope
+search_hints:
+- Music revision 1196
+- music IDs 1 through 109
+- Whisper of the Land
+- The Forest's Pulse
+- Eorzea de Chocobo
+- pre-1.18 field music
+source_refs:
+- source: classic-music-reference
+  citation: sources/classic-music-reference/manifest.yaml
+- source: pcap-1.23b
+  citation: sources/pcap-1.23b/manifest.yaml
+primary_paths:
+- derived/music-crosswalk.csv
+- derived/evidence-map.md
+canonical_evidence:
+- derived/music-crosswalk.csv
+- derived/evidence-map.md
+distilled:
+  distilled: true
+  checksum_file: derived/checksums.sha256
+  distilled_artifacts:
+  - derived/music-crosswalk.csv
+  - derived/evidence-map.md

@@ -1,0 +1,110 @@
+music_id,source_line,source_name,source_usage,title_confidence,usage_confidence,wiki_version_scope,numeric_id_evidence,computed_resource_key,resource_availability
+1,44,March of the Moogles,"Plays during the opening cutscene for Gridania as well as in the Main Scenario quest ""Sundered Skies"".",secondary-named,secondary,unspecified,wiki-only,0x07FE0001,not-checked
+2,51,Into the Adder's Den,"Plays inside the Grand Company, The Order of the Twin Adder.",secondary-named,secondary,unspecified,wiki-only,0x07FE0002,not-checked
+3,58,Maelstrom Command,"Plays inside the Grand Company, The Maelstrom.",secondary-named,secondary,unspecified,wiki-only,0x07FE0003,not-checked
+4,65,The Hall of Flames,"Plays inside the Grand Company, The Immortal Flames.",secondary-named,secondary,unspecified,wiki-only,0x07FE0004,not-checked
+5,72,The Dark's Embrace,"Standard theme inside Aurum Vale, Cutter's Cry, and Dzemael Darkhold.",secondary-named,secondary,unspecified,wiki-only,0x07FE0005,not-checked
+6,79,The Dark's Kiss,"Plays during battle inside Aurum Vale, Cutter's Cry, and Dzemael Darkhold.",secondary-named,secondary,unspecified,wiki-only,0x07FE0006,not-checked
+7,86,,Placeholder,unresolved-placeholder,secondary-note-only,unspecified,shipped-lua-reference,0x07FE0007,not-checked
+8,93,Battle Drums,Plays in battle inside Zahar'ak.,secondary-named,secondary,unspecified,wiki-only,0x07FE0008,not-checked
+9,100,The Seventh Gate,Plays during Skirmish.,secondary-named,secondary,unspecified,wiki-only,0x07FE0009,not-checked
+10,107,Nemesis,"Plays when fighting the last boss in Aurum Vale, Cutter's Cry, and Dzemael Darkhold.",secondary-named,secondary,unspecified,wiki-only,0x07FE000A,not-checked
+11,114,Phantoms on the Lake,Plays in normal battles in Mor Dhona.,secondary-named,secondary,unspecified,wiki-only,0x07FE000B,not-checked
+12,121,Beneath Bloodied Banners,Battle Theme. // Needs more info,secondary-named,secondary-incomplete,unspecified,wiki-only,0x07FE000C,not-checked
+13,128,The Forest's Pulse,Plays in normal battles in the Black Shroud.,secondary-named,secondary,unspecified,retail-packet-request,0x07FE000D,not-checked
+14,135,Bathed in Woodsin,Plays during Battle Guildleves in the Black Shroud.,secondary-named,secondary,unspecified,wiki-only,0x07FE000E,not-checked
+15,142,Pennons Aloft,Plays in normal battles in the Coerthas.,secondary-named,secondary,unspecified,wiki-only,0x07FE000F,not-checked
+16,149,Starlight and Sellswords,Plays during Faction leves in Coerthas,secondary-named,secondary,unspecified,wiki-only,0x07FE0010,not-checked
+17,156,Tempest,"Plays during the battle with Nael Van Darnus in the quest ""The Raven, Nevermore"".",secondary-named,secondary,unspecified,wiki-only,0x07FE0011,not-checked
+18,163,Fury,Plays when fighting the last boss in Behest.,secondary-named,secondary,unspecified,wiki-only,0x07FE0012,not-checked
+19,170,Imperium,"Plays during the ""United We Stand"" boss fight.",secondary-named,secondary,unspecified,wiki-only,0x07FE0013,not-checked
+20,177,The Dark’s Embrace?,// May be the multi-track variant of #5,secondary-tentative,secondary-note-only,unspecified,wiki-only,0x07FE0014,not-checked
+21,184,Nail of the Heavens,Plays in normal battles in La Noscea.,secondary-named,secondary,unspecified,wiki-only,0x07FE0015,not-checked
+22,191,In the Shadow of the Colossus,Plays during Battle Guildleves in La Noscea.,secondary-named,secondary,unspecified,wiki-only,0x07FE0016,not-checked
+23,198,Primal Judgment,Plays when battling Ifrit.,secondary-named,secondary,unspecified,wiki-only,0x07FE0017,not-checked
+24,205,Steel Reason,Plays in Castrum Novum.,secondary-named,secondary,unspecified,wiki-only,0x07FE0018,not-checked
+25,212,Quicksand,Plays in normal battles in Thanalan.,secondary-named,secondary,unspecified,shipped-lua-reference,0x07FE0019,not-checked
+26,219,Desert Moon Defied,Plays during Battle Guildleves in Thanalan.,secondary-named,secondary,unspecified,wiki-only,0x07FE001A,not-checked
+27,226,No Quarter,Plays during Behest.,secondary-named,secondary,unspecified,wiki-only,0x07FE001B,not-checked
+28,233,Prelude - Remembrance,Plays in the title screen.,secondary-named,secondary,unspecified,wiki-only,0x07FE001C,not-checked
+29,240,Answers,"Plays briefly during the opening cutscenes for Gridania, Limsa Lominsa, and Ul'dah.",secondary-named,secondary,unspecified,wiki-only,0x07FE001D,not-checked
+30,247,Answers,"Removed in post-launch versions. 22,952 bytes larger, but no length or bitrate/sample change.",secondary-named,secondary-note-only,removed-post-launch-claim,wiki-only,0x07FE001E,not-checked
+31,254,,Placeholder,unresolved-placeholder,secondary-note-only,unspecified,wiki-only,0x07FE001F,not-checked
+32,261,Opening Movie music,Removed in post-launch versions.,descriptive-only,secondary-note-only,removed-post-launch-claim,wiki-only,0x07FE0020,not-checked
+33,268,Without Shadow,"Plays when an Ascian appears in the Main Scenario quest ""Toll of the Warden"".",secondary-named,secondary,unspecified,wiki-only,0x07FE0021,not-checked
+34,275,Wrath of the Eikons,"Plays when Ifrit appears in the Main Scenario quest ""Lord Errant"".",secondary-named,secondary,unspecified,wiki-only,0x07FE0022,not-checked
+35,282,Imperial Will,"Plays in a number of quests, including the Main Scenario quest ""Futures Perfect"".",secondary-named,secondary,unspecified,wiki-only,0x07FE0023,not-checked
+36,289,Fever Dream,"Plays during certain quests, including the Main Scenario quest ""Living on a Prayer"".",secondary-named,secondary,unspecified,wiki-only,0x07FE0024,not-checked
+37,296,Daring Dalliances,Plays during certain quests.,secondary-named,secondary,unspecified,wiki-only,0x07FE0025,not-checked
+38,303,Fragments of Forever,,secondary-named,unspecified,unspecified,wiki-only,0x07FE0026,not-checked
+39,310,Piece of Mind,"Plays during the Main Scenario quest ""Living on a Prayer""",secondary-named,secondary,unspecified,wiki-only,0x07FE0027,not-checked
+40,317,The Echo,"Plays during certain cutscenes involving Echo, as well as in the Black Mage quest ""Always Bet On Black"".",secondary-named,secondary,unspecified,wiki-only,0x07FE0028,not-checked
+41,324,From the Heart,"Plays during the Miner quest ""Little Saboteurs""",secondary-named,secondary,unspecified,wiki-only,0x07FE0029,not-checked
+42,331,Inner Recess,"Plays in a number of quests, including the Main Scenario quest ""Futures Perfect"".",secondary-named,secondary,unspecified,wiki-only,0x07FE002A,not-checked
+43,338,Neverborn,Plays during certain quests.,secondary-named,secondary,unspecified,wiki-only,0x07FE002B,not-checked
+44,345,Fourteen Steps,,secondary-named,unspecified,unspecified,wiki-only,0x07FE002C,not-checked
+45,352,Tranquility,"Plays during the opening cutscene for Gridania, as well as a number of ""Path of the Twelve"" Main Scenario quests, including ""Toll of the Warden"".",secondary-named,secondary,unspecified,wiki-only,0x07FE002D,not-checked
+46,359,Sacred Bonds,"Plays in a number of quests, including the Main Scenario quest ""Futures Perfect"".",secondary-named,secondary,unspecified,wiki-only,0x07FE002E,not-checked
+47,366,Conflagration,"Plays during the Main Scenario quest ""Lord Errant"".",secondary-named,secondary,unspecified,wiki-only,0x07FE002F,not-checked
+48,373,Supply & Demand,Plays in Market Wards.,secondary-named,secondary,unspecified,wiki-only,0x07FE0030,not-checked
+49,380,Tears for Mor Dhona,Plays in the Mor Dhona.,secondary-named,secondary,unspecified,wiki-only,0x07FE0031,not-checked
+50,387,Where the Heart Is,"Plays during certain quests, including the Main Scenario quest ""Toll of the Warden"".",secondary-named,secondary,unspecified,wiki-only,0x07FE0032,not-checked
+51,394,Born of the Boughs - The Theme of Gridania,Plays in Gridania.,secondary-named,secondary,unspecified,wiki-only,0x07FE0033,not-checked
+52,401,Emerald Labyrinth,Plays in the Black Shroud before patch 1.18.,secondary-named,secondary,pre-1.18-claim,wiki-only,0x07FE0034,not-checked
+53,408,Freedom,Plays in La Noscea from patch 1.18 onward.,secondary-named,secondary,1.18-onward-claim,wiki-only,0x07FE0035,not-checked
+54,415,Holy Consult,"Plays during the Conjurer quest ""Good Knight, Sweet Dreams""",secondary-named,secondary,unspecified,wiki-only,0x07FE0036,not-checked
+55,422,Unspoken,Plays in Coerthas.,secondary-named,secondary,unspecified,wiki-only,0x07FE0037,not-checked
+56,429,Flightless Wings,Plays inside Natalan.,secondary-named,secondary,unspecified,wiki-only,0x07FE0038,not-checked
+57,436,Whisper of the Land,Plays in the Black Shroud from patch 1.18 onward.,secondary-named,secondary,1.18-onward-claim,retail-packet-request,0x07FE0039,not-checked
+58,443,Enraptured,,secondary-named,unspecified,unspecified,wiki-only,0x07FE003A,not-checked
+59,450,Navigator's Glory - The Theme of Limsa Lominsa,Plays in Limsa Lominsa.,secondary-named,secondary,unspecified,wiki-only,0x07FE003B,not-checked
+60,457,On Windy Meadows,Plays in La Noscea before patch 1.18.,secondary-named,secondary,pre-1.18-claim,wiki-only,0x07FE003C,not-checked
+61,464,Behind Closed Doors,Plays inside Inns.,secondary-named,secondary,unspecified,shipped-lua-reference,0x07FE003D,not-checked
+62,471,Widdershins,Plays in Thanalan from patch 1.18 onward.,secondary-named,secondary,1.18-onward-claim,wiki-only,0x07FE003E,not-checked
+63,478,Aetherial Slumber,Plays in the game's credits.,secondary-named,secondary,unspecified,wiki-only,0x07FE003F,not-checked
+64,485,Bo-down,Plays when riding a Chocobo.,secondary-named,secondary,unspecified,wiki-only,0x07FE0040,not-checked
+65,492,Horizons Calling,Plays when taking the Ferry.,secondary-named,secondary,unspecified,wiki-only,0x07FE0041,not-checked
+66,499,The Twin Faces of Fate - The Theme of Ul'dah,Plays in Ul'dah.,secondary-named,secondary,unspecified,wiki-only,0x07FE0042,not-checked
+67,506,Twilight over Thanalan,Plays in Thanalan before patch 1.18.,secondary-named,secondary,pre-1.18-claim,wiki-only,0x07FE0043,not-checked
+68,513,With these Hands,,secondary-named,unspecified,unspecified,wiki-only,0x07FE0044,not-checked
+69,520,Decisions,"Plays during the Parley mini-game, as well as inside the Waking Sands during the Main Scenario quest ""Fade to White""",secondary-named,secondary,unspecified,wiki-only,0x07FE0045,not-checked
+70,527,Opening Theme,Character Creation Music.,secondary-named,secondary,unspecified,wiki-only,0x07FE0046,not-checked
+71,534,Nature's Bounty,,secondary-named,unspecified,unspecified,wiki-only,0x07FE0047,not-checked
+72,541,When a Tree Falls,Plays during Gathering Guildleves.,secondary-named,secondary,unspecified,wiki-only,0x07FE0048,not-checked
+73,548,By Design,Plays during Synthesis.,secondary-named,secondary,unspecified,wiki-only,0x07FE0049,not-checked
+74,555,Starlight Celebration,Played during the Starlight Celebration event. // Christmas,secondary-named,secondary,unspecified,wiki-only,0x07FE004A,not-checked
+75,562,All Saint's Wake,Played during the All Saints Wake event. // Halloween,secondary-named,secondary,unspecified,wiki-only,0x07FE004B,not-checked
+76,569,Heavensturn,Played during the Heavensturn event. // New Year’s,secondary-named,secondary,unspecified,wiki-only,0x07FE004C,not-checked
+77,576,Moonfire Faire,"Played during the Firefall Faire event, as well as the opening cutscene for Ul'dah. // Summer",secondary-named,secondary,unspecified,wiki-only,0x07FE004D,not-checked
+78,583,Everbinding Oath,,secondary-named,unspecified,unspecified,wiki-only,0x07FE004E,not-checked
+79,590,Crowning Achievements,Plays upon quest completion.,secondary-named,secondary,unspecified,wiki-only,0x07FE004F,not-checked
+80,597,Final Respite,,secondary-named,unspecified,unspecified,wiki-only,0x07FE0050,not-checked
+81,604,Victory Fanfare (Full),Plays upon completion of dungeons.,secondary-named,secondary,unspecified,wiki-only,0x07FE0051,not-checked
+82,611,Victory Fanfare (Short),Plays when the player levels up.,secondary-named,secondary,unspecified,wiki-only,0x07FE0052,not-checked
+83,618,Eorzea de Chocobo,Plays when riding a Chocobo.,secondary-named,secondary,unspecified,retail-packet-request,0x07FE0053,not-checked
+84,625,Airborne,Plays during cutscene for Airship ride.,secondary-named,secondary,unspecified,wiki-only,0x07FE0054,not-checked
+85,632,Dewdrops & Moonbeams,Kan-E-Senna's theme.,secondary-named,secondary,unspecified,wiki-only,0x07FE0055,not-checked
+86,639,Ripples in the Sea,Merlwyb's theme.,secondary-named,secondary,unspecified,wiki-only,0x07FE0056,not-checked
+87,646,Canticle,Plays during certain quests.,secondary-named,secondary,unspecified,wiki-only,0x07FE0057,not-checked
+88,653,The Sands' Secrets,Raubahn's theme.,secondary-named,secondary,unspecified,wiki-only,0x07FE0058,not-checked
+89,660,Dreams Aloft,Cid’s theme.,secondary-named,secondary,unspecified,wiki-only,0x07FE0059,not-checked
+90,667,"Quick as Silver, Hard as Stone",Plays inside the U'Ghamaro Mines.,secondary-named,secondary,unspecified,wiki-only,0x07FE005A,not-checked
+91,674,Birds of a Feather,Plays during Caravan Security events.,secondary-named,secondary,unspecified,wiki-only,0x07FE005B,not-checked
+92,681,Flee Together,,secondary-named,unspecified,unspecified,wiki-only,0x07FE005C,not-checked
+93,688,Honor and Duty,Plays during Grand Company promotions.,secondary-named,secondary,unspecified,wiki-only,0x07FE005D,not-checked
+94,695,Pitfire,Plays inside Zahar'ak.,secondary-named,secondary,unspecified,wiki-only,0x07FE005E,not-checked
+95,702,The Promise of Plunder,Plays in Shposhae and Mun-Tuy Cellars from patch 1.19 onward.,secondary-named,secondary,1.19-onward-claim,wiki-only,0x07FE005F,not-checked
+96,709,???,// Variant of Breaking Boundaries,unresolved-unknown,secondary-note-only,unspecified,wiki-only,0x07FE0060,not-checked
+97,716,Seven Jesters,Plays in the first half of the Good King Moggle Mog XII fight.,secondary-named,secondary,unspecified,wiki-only,0x07FE0061,not-checked
+98,723,The Rider's Boon,Plays when riding the Goobbue mount.,secondary-named,secondary,unspecified,wiki-only,0x07FE0062,not-checked
+99,730,Good King Moggle Mog XII,Plays in the latter half of the Good King Moggle Mog XII fight.,secondary-named,secondary,unspecified,wiki-only,0x07FE0063,not-checked
+100,737,Meteor,"Plays during ""United We Stand"" quest cutscene with Nael Van Darnus.",secondary-named,secondary,unspecified,wiki-only,0x07FE0064,not-checked
+101,744,The Hero of Hatchingtide,// Hatching-tide is the Easter event,secondary-named,secondary-note-only,unspecified,wiki-only,0x07FE0065,not-checked
+102,751,Breaking Boundaries,Plays during all level 50 Job quests.,secondary-named,secondary,unspecified,wiki-only,0x07FE0066,not-checked
+103,758,Relics,,secondary-named,unspecified,unspecified,wiki-only,0x07FE0067,not-checked
+104,765,Fallen Angel,Plays when battling Garuda.,secondary-named,secondary,unspecified,wiki-only,0x07FE0068,not-checked
+105,772,To the Fore,Plays during boss battles in Hamlet Defense.,secondary-named,secondary,unspecified,wiki-only,0x07FE0069,not-checked
+106,779,The Tug of Fate,Plays during Hamlet Defense.,secondary-named,secondary,unspecified,wiki-only,0x07FE006A,not-checked
+107,786,In the Arms of Althyk,Plays when going to sleep inside an Inn.,secondary-named,secondary,unspecified,wiki-only,0x07FE006B,not-checked
+108,793,Rise of the White Raven,"Plays during the battle with Nael Deus Darnus in the quest ""The Raven, Nevermore"".",secondary-named,secondary,unspecified,wiki-only,0x07FE006C,not-checked
+109,800,Agent of Inquiry,Hildibrand’s Theme – Cutscenes,secondary-named,secondary,unspecified,wiki-only,0x07FE006D,not-checked

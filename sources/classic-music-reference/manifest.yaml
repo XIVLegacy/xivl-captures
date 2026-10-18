@@ -1,0 +1,28 @@
+id: classic-music-reference
+title: Music ID and Title Reference
+evidence_class: web-tables
+distribution: local-only
+storage:
+  original_state: local-only
+  storage_id: local-music-reference
+  path: music.html
+provenance:
+  source_type: community wiki table
+  title: Music - FFXIV Classic Wiki
+  url: http://ffxivclassic.fragmenterworks.com/wiki/index.php/Music
+  revision_id: 1196
+  last_modified: Wed, 02 Jun 2021 07:09:14 GMT
+  observed_http_date: Sun, 18 Oct 2026 17:45:27 GMT
+  observed_http_status: 200
+  locator: Music List table, Music ID / Name / Usage columns
+  attributed_usage_source: http://finalfantasy.wikia.com/wiki/Before_Meteor:_Final_Fantasy_XIV_Original_Soundtrack
+  attribution_scope: The footer attributed the majority of usage descriptions to this page. That downstream page was not independently inspected for this study.
+  inspected_html:
+    file: music.html
+    size_bytes: 23576
+    sha256: 53ec28c33e7134de4e5417dc76259afc0f66028cdc5aba19bdb52e9c9239ccdb
+members: []
+notes:
+- The inspected HTML remained local-only. No public raw copy or permanent archive is declared.
+- The revision and member digest identify the inspected page, not a retail-era artifact or a current live revision.
+- Titles and usage descriptions retain secondary-source confidence. The numeric range is not a resource-availability inventory.

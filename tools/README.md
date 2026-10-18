@@ -36,6 +36,11 @@ The supported commands for direct maintainer use are:
 
 - `python tools/refresh.py` - regenerate every canonical product in dependency
   order.
+- `python tools/extract_classic_music_reference.py --html <music.html>` -
+  reproduce the retained Music revision 1196 crosswalk with separate title,
+  usage and numeric-evidence fields. Add `--check` for byte comparison. The
+  source manifest pins the required local-only HTML; this command downloads
+  nothing and is not an automated retail-input workflow.
 - `python tools/extractors/extract_group_combat_contracts.py --check` - replay
   occupancy, group-work, and enmity observations with capture-completion order.
 - `python tools/build_species_drop_coverage.py --check` - audit ordinary-species

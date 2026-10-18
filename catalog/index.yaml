@@ -9,6 +9,13 @@ sources:
   original_state: in-repo
   storage_id: repo
   member_count: 3
+- id: classic-music-reference
+  title: Music ID and Title Reference
+  evidence_class: web-tables
+  distribution: local-only
+  original_state: local-only
+  storage_id: local-music-reference
+  member_count: 0
 - id: elemen-battle-actions
   title: eLeMeN FF14 1.x Battle Class Actions - Web Tables
   evidence_class: web-tables
@@ -450,6 +457,32 @@ studies:
   - studies/cast-result-state-order/derived/sequences.csv
   source_refs:
   - source: pcap-1.23b
+- id: classic-music-reference
+  title: Music ID, Title and Usage Crosswalk
+  status: distilled
+  evidence_class: web-tables
+  content_kind: session-mechanic
+  tags:
+  - music
+  - music-ids
+  - track-titles
+  - zone-usage
+  - version-scope
+  search_hints:
+  - Music revision 1196
+  - music IDs 1 through 109
+  - Whisper of the Land
+  - The Forest's Pulse
+  - Eorzea de Chocobo
+  - pre-1.18 field music
+  primary_paths:
+  - studies/classic-music-reference/derived/music-crosswalk.csv
+  - studies/classic-music-reference/derived/evidence-map.md
+  source_refs:
+  - source: classic-music-reference
+    citation: sources/classic-music-reference/manifest.yaml
+  - source: pcap-1.23b
+    citation: sources/pcap-1.23b/manifest.yaml
 - id: command-registration
   title: Command Registration 0x0132 Wire Census
   status: distilled
