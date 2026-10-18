@@ -15,7 +15,7 @@ fields remain uninterpreted unless the static client layout supplies the name.
 - `derived/group-packets.csv` - one row per Group-family packet.
 - `derived/group-members.csv` - transposed `0x017F` and `0x0183` member rows.
 - `derived/event-role-candidates.csv` - EventStart owner actors and event names.
-- `derived/zone-controller-identity.md` - seven paired retail observations of
+- `derived/zone-controller-identity.md` - eight paired retail observations of
   the numeric SetMap field and ZoneMaster actor-ID encoding.
 
 Regenerate or verify the canonical products:

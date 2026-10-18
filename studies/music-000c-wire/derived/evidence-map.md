@@ -16,6 +16,10 @@ audio driver. The selected set is not a full-corpus music census. Its absence
 of modes 2/3 does not prove that retail never used those modes for combat.
 No capture-wide chronology was constructed across connections or directions.
 
+The [map-context finding](map-context.md) owns the direct map/ZoneMaster
+absence check, nearest retained numeric candidates and TCP coverage gaps for
+the four combat requests. Those candidates do not establish an active zone.
+
 ## Source identities
 
 Source id `pcap-1.23b`, evidence class `packet-capture`, and the original

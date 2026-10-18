@@ -83,8 +83,9 @@ These are the page's candidate associations, not accepted server zone rows:
 | Gridania | 51, Born of the Boughs - The Theme of Gridania | Unspecified | City association only. |
 | Ul'dah | 66, The Twin Faces of Fate - The Theme of Ul'dah | Unspecified | City association only. |
 
-The packet ID 57 intersects the later Shroud candidate, but the selected
-capture evidence does not establish that zone or every Shroud subarea.
+The packet ID 57 intersects the later Shroud candidate, but the
+[retained map-context check](../../music-000c-wire/derived/map-context.md)
+does not establish that zone or every Shroud subarea.
 The page gives ID 68 the name `With these Hands` with no usage description;
 it does not supply a Thanalan normal association for that ID. Neither fact
 authorizes replacing a consumer's authored zone values without its own

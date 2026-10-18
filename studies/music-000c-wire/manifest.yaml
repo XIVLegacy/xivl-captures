@@ -19,10 +19,13 @@ source_refs:
   citation: sources/pcap-1.23b/manifest.yaml
 primary_paths:
 - derived/evidence-map.md
+- derived/map-context.md
 canonical_evidence:
 - derived/evidence-map.md
+- derived/map-context.md
 distilled:
   distilled: true
   checksum_file: derived/checksums.sha256
   distilled_artifacts:
   - derived/evidence-map.md
+  - derived/map-context.md

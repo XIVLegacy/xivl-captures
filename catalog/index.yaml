@@ -1980,6 +1980,7 @@ studies:
   - song 83 mode 4
   primary_paths:
   - studies/music-000c-wire/derived/evidence-map.md
+  - studies/music-000c-wire/derived/map-context.md
   source_refs:
   - source: pcap-1.23b
     citation: sources/pcap-1.23b/manifest.yaml
