@@ -240,6 +240,13 @@ sources:
   original_state: in-repo
   storage_id: repo
   member_count: 1
+- id: seasonal-impish-impositions-video-breakdown
+  title: Impish Impositions - Sampled 2011 Video Observations
+  evidence_class: notes-and-transcripts
+  distribution: public
+  original_state: in-repo
+  storage_id: repo
+  member_count: 1
 studies:
 - id: battle-result-actor-join
   title: Battle-Result Actor Join
@@ -2229,6 +2236,29 @@ studies:
   - studies/se-forum-white-mage-41900/derived/enhancing-magic.csv
   source_refs:
   - source: se-forum-white-mage-41900
+- id: seasonal-impish-impositions-video-breakdown
+  title: Impish Impositions - Sampled 2011 Video Observations
+  status: distilled
+  evidence_class: notes-and-transcripts
+  content_kind: side-quest
+  tags:
+  - video-breakdown
+  - seasonal-event
+  - all-saints-wake
+  - impish-impositions
+  - rewards
+  - dialogue
+  search_hints:
+  - Impish Impositions
+  - Trickster Imp
+  - Pumpkin Cookie
+  - treat basket
+  - three choices
+  - '2011'
+  primary_paths:
+  - studies/seasonal-impish-impositions-video-breakdown/derived/evidence-map.md
+  source_refs:
+  - source: seasonal-impish-impositions-video-breakdown
 - id: status-wire-projection-census
   title: Status Wire Projection Census
   status: distilled

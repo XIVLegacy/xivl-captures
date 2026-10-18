@@ -74,6 +74,7 @@ relevant source or study bundle for its manifest, provenance, and findings.
 - [The Bowl of Embers (Ifrit) - Video Breakdown](../studies/primal-battle-ifrit-bowl-of-embers/)
 - [Lord Errant - Sampled Video Observations](../studies/main-scenario-lord-errant-video-breakdown/)
 - [Toll of the Warden - Sampled Video Observations](../studies/main-scenario-toll-warden-video-breakdown/)
+- [Impish Impositions - Sampled 2011 Video Observations](../studies/seasonal-impish-impositions-video-breakdown/)
 
 ## Promoted study note
 

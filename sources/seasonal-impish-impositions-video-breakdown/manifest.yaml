@@ -1,0 +1,25 @@
+id: seasonal-impish-impositions-video-breakdown
+title: Impish Impositions - Sampled 2011 Video Observations
+evidence_class: notes-and-transcripts
+distribution: public
+provenance:
+  sources:
+  - title: Final Fantasy XIV 1.0 - Original Halloween Event (All Saints' Wake)
+    url: https://www.youtube.com/watch?v=Yn8L_t8sCTk
+    site: YouTube
+    uploader: Leonesaurus
+    uploader_url: https://www.youtube.com/@Leonesaurus
+    published: '2011-10-19'
+    duration: '8:42'
+    description: Impish Impositions Quest
+    observation_timestamps: ['5:03', '5:13', '5:28', '5:38']
+    archive_snapshot: Not identified; the video remains external.
+storage:
+  original_state: in-repo
+  storage_id: repo
+  path: objects/
+  notes: The member hash identifies the authored observation record, not video bytes. Neither video media nor screenshots are archived here.
+members:
+- file: impish_impositions_video_breakdown.md
+  sha256: 6f7e1821abbe9c7a349da880d7d816211220b3259ee7896537eb46da9d329e90
+  size_bytes: 4227

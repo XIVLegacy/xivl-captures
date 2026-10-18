@@ -1,0 +1,30 @@
+id: seasonal-impish-impositions-video-breakdown
+title: Impish Impositions - Sampled 2011 Video Observations
+evidence_class: notes-and-transcripts
+status: distilled
+source_refs:
+- source: seasonal-impish-impositions-video-breakdown
+primary_paths:
+- derived/evidence-map.md
+canonical_evidence:
+- derived/evidence-map.md
+content_kind: side-quest
+tags:
+- video-breakdown
+- seasonal-event
+- all-saints-wake
+- impish-impositions
+- rewards
+- dialogue
+search_hints:
+- Impish Impositions
+- Trickster Imp
+- Pumpkin Cookie
+- treat basket
+- three choices
+- '2011'
+notes: Sampled 2011 footage, exact patch unknown. The reported nine-cookie reward and separate three-cookie basket acquisition do not establish 1.23b runtime settlement.
+distilled:
+  distilled: true
+  distilled_artifacts:
+  - derived/evidence-map.md

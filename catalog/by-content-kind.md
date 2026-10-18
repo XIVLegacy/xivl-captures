@@ -184,11 +184,12 @@ Generated from `catalog/index.yaml`. Primary axis: `content_kind`.
 
 - `shop-vendor-buy-sell-repair`
 
-## side-quest (2)
+## side-quest (3)
 
-### Studies (1)
+### Studies (2)
 
 - `elemen-quest-rewards-walkthroughs`
+- `seasonal-impish-impositions-video-breakdown`
 
 ### Scenarios (1)
 
