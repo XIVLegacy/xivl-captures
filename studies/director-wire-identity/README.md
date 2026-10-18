@@ -267,6 +267,65 @@ It does not prove historical absence or choose a direct-call/delegate route.
 bank and producer boundary, owns the preserved text bank and callback inputs.
 The retained packets did not close their producer gap.
 
+## Flowers for All packet boundary
+
+The retained canonical clear-game corpus supplied no identified Flowers for
+All selecting trigger, callback, complete typed invocation, correlated reply
+or reply-to-duty transition. This negative covers the finite queries below
+in the canonical resolved streams, not uncaptured sessions or every encoding.
+
+The source set, manifest hash and sorted member digest were exactly those in
+[Winter snowman packet boundary](#winter-snowman-packet-boundary). For this
+check, the manifest-pinned archive itself and all 54 members were read and
+verified against their size/hash pins. Reconstruction at repository revision
+`699caa93fa32227bedbe5aff1794ddf504c96609` admitted the same 84 connections,
+19,760 complete frames and 65,864 complete subevents. The decoder, runtime,
+search domain and reproduction procedure were those in
+[Decode limits and reproduction](#decode-limits-and-reproduction).
+
+Every byte offset in every decoded frame body was searched in both
+directions, including headers, direct-session records, typed parameters and
+padding. These queries all returned zero; numeric searches were unaligned:
+
+| Query | Encoding |
+| --- | --- |
+| `Man0u0`, `Flowers for All` | Two case-insensitive ASCII substrings, including class/callback names. |
+| `110009`, `1adb9` | Decimal ASCII and case-insensitive hexadecimal ASCII. |
+| Quest `110009` / `0x0001ADB9` | Separate little- and big-endian u32 byte sequences. |
+| Static quest actor key `0xA0F1ADB9` | Separate little- and big-endian u32 byte sequences. |
+| `contentsJoinAskInBasaClass` | Exact case-sensitive ASCII literal. |
+
+The static key uses the documented `0xA0F00000 | low_id` encoding cited
+above. The same pinned
+`xivl-client-data:manifests/staticactor_class_paths.json`, row `id=110009`,
+maps this quest to `/Quest/Scenario/Man/Man0u0`. This supplies a static search
+identity, not a runtime actor binding. The generic field census also checked
+all 126 c2s `0x012D` EventStart and 200 s2c `0x0130` RunEventFunction records:
+none had a selected name or quest owner `0xA0F1ADB9`.
+
+The separate case-sensitive generic literal `pushDefault` occurred 114
+times: 57 in s2c `0x016F` and 57 in s2c `0x0136`, across ten sources. None
+occurred in `0x012D` or `0x0130`, and the searched domain supplied no Flowers
+identity to join them to this quest. These generic occurrences do not recover
+a Flowers trigger class, callback, argument vector or response.
+
+For example, `from_gridania_to_blackshroud.pcapng`, main connection 0, s2c,
+contained the literal in frame 182 / subevent 2 (`0x016F`, decoded-body
+offset 163) and frame 183 / subevent 0 (`0x0136`, decoded-body offset 37).
+Both completed in capture packet 606. Frame, connection and subevent indexes
+are zero-based; capture packet numbers are one-based. The source manifest
+pins the exact member, and `_decode_capture` supplies these locators.
+
+Strict inflation/framing checks and zero admitted unparsed bytes agreed with
+the earlier census. The same 381 excluded connections, 228 trailing s2c
+bytes and 11,497 conflicting overlap writes across 57 directional streams
+remain outside this negative or subject to canonical overlap resolution.
+No alternative overlap reconstruction or cross-direction chronology was used.
+There was no selected candidate whose arguments, reply or content transition
+could be inspected. `xivl-client-scripts:docs/duty-confirmation-client-contract.md`,
+Flowers for All binding boundary, owns the inherited helper and conditional
+callback frame; its availability does not close this packet binding gap.
+
 ## Further research
 
 No broader retail corpus exists. Catalog consumers may adopt the corrected
