@@ -1879,6 +1879,27 @@ studies:
   - studies/movement-speed-band-observations/derived/observed-bands.md
   source_refs:
   - source: pcap-1.23b
+- id: music-000c-wire
+  title: Map Music 0x000C Wire Samples
+  status: distilled
+  evidence_class: packet-capture
+  content_kind: session-mechanic
+  tags:
+  - music
+  - combat
+  - mount
+  - packet-decoding
+  - main-lane
+  search_hints:
+  - '0x000c'
+  - song 13 mode 1
+  - song 57 mode 4
+  - song 83 mode 4
+  primary_paths:
+  - studies/music-000c-wire/derived/evidence-map.md
+  source_refs:
+  - source: pcap-1.23b
+    citation: sources/pcap-1.23b/manifest.yaml
 - id: navmut-world-population-observations
   title: Navmut World Population Observations
   status: indexed
