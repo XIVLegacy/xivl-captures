@@ -111,6 +111,10 @@ it for the local player uses that same member array. The separate
 field. A native property-hash join from this structure to a linkshell
 `0x017A` stream remains unestablished in these captures.
 
+The native parser's marker classes and the type-20002 rank consumer inventory
+are recorded in `xivl-client-structs:docs/linkshell-rank-work-contract.md`.
+That static record does not add a retained linkshell or `0x62` specimen here.
+
 ## Enmity `0x0195`
 
 Every subevent is 40 bytes. The eight-byte application payload contains a
