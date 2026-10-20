@@ -118,9 +118,14 @@ false tags are `0x04` at `+0x72..+0x76`. Integer tags are `0x00` at
 `+0x77`, `+0x7C`, `+0x81`, `+0x86`, `+0x8B` and `+0x90`, each followed
 by four big-endian bytes. END is `0x0F` at `+0x95`; all 114 following
 application bytes are zero. Their field/alignment split is unassigned.
-There is no nil or reference token before END. The meaning of 20005 and
-the route from this stream to formal Lua initialization arguments remain
-unresolved; the six integers are not assigned initializer parameter names.
+There is no nil or reference token before END. The native route is recorded in
+`xivl-decomp:docs/net/guildleve-initializer-route.md`: under its prefix-string
+consumption condition, the ordinary non-current-player arm reads five controls
+before the numeric vector and the first false selects deferred initialization.
+`xivl-client-scripts:docs/guildleve-initializer-arguments.md` supplies the
+conditional mapping to client Director ID 20005, Guildleve ID 12487, location 6
+and zero extra-marker XYZ. Prefix-helper consumption, descriptor vector transfer and lifetime,
+historical branch/endian state and completed invocation remain unproved.
 
 The complete `eventGLStart` argument block at application `+0x49..+0x88`
 contains nine `0x00` big-endian integer tokens:
