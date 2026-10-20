@@ -119,12 +119,12 @@ false tags are `0x04` at `+0x72..+0x76`. Integer tags are `0x00` at
 by four big-endian bytes. END is `0x0F` at `+0x95`; all 114 following
 application bytes are zero. Their field/alignment split is unassigned.
 There is no nil or reference token before END. The native route is recorded in
-`xivl-decomp:docs/net/guildleve-initializer-route.md`: under its prefix-string
-consumption condition, the ordinary non-current-player arm reads five controls
+`xivl-decomp:docs/net/guildleve-initializer-route.md`: its prefix helper consumes
+the tag, path and NUL; the ordinary non-current-player arm reads five controls
 before the numeric vector and the first false selects deferred initialization.
 `xivl-client-scripts:docs/guildleve-initializer-arguments.md` supplies the
 conditional mapping to client Director ID 20005, Guildleve ID 12487, location 6
-and zero extra-marker XYZ. Prefix-helper consumption, descriptor vector transfer and lifetime,
+and zero extra-marker XYZ. Inner descriptor vector transfer and lifetime,
 historical branch/endian state and completed invocation remain unproved.
 
 The complete `eventGLStart` argument block at application `+0x49..+0x88`
