@@ -77,6 +77,85 @@ supports Aetheryte activation of row 12487, director completion, reward
 presentation, and retirement, but does not connect acceptance to activation or
 prove publisher hand-in, payout, or journal mutation.
 
+## Retail client Director binding for 12487
+
+The party capture directly joins Guildleve 12487 to actor `0x45100D44` and
+client script `/Director/Guildleve/PrivateGLBattleOrbNormal`. In one s2c
+`0x00CC` record, that actor is the transport source, the fixed text field
+contains `PrivateGLBattleOrbNormal`, and the serialized parameter stream
+contains both the full script path and integer 12487. This is a client script
+binding for this retained activation, independent of the actor's high nibble
+or content-group membership. It does not identify a server implementation
+class or establish a mapping for other Guildleves.
+
+The source is the same 1,429,864-byte `party_battle_leve.pcapng` pinned above.
+All locators below are main connection 0. Frame and subevent indexes are
+zero-based; completing capture packet numbers are one-based. Application
+offset zero follows the 16-byte subevent header, 8-byte inner header and
+8-byte game preamble.
+
+| Record | Direction | Frame / subevent | Completing packet | Opcode | Application bytes |
+| --- | --- | --- | ---: | --- | ---: |
+| `eventGLStart`, owner `0x4510000C` | s2c | 40 / 2 | 94 | `0x0130` | 144 |
+| One-value response | c2s | 42 / 2 | 110 | `0x012E` | 88 |
+| Actor, class and Guildleve join | s2c | 50 / 17 | 118 | `0x00CC` | 264 |
+
+The class-bearing record starts at decoded-body offset 1304 in the outer
+frame at reconstructed s2c stream offset 5608. Its application SHA-256 is
+`6d8094109a3c70cbf8252ef6dba9c457ccb67b112e189b6c6681c7055e933491`.
+Application `+0x24..+0x43` contains the class name followed by eight NULs.
+The complete parameter stream at `+0x44` is:
+
+```text
+string "/Director/Guildleve/PrivateGLBattleOrbNormal",
+false, false, false, false, false,
+integer 20005, integer 12487, integer 6,
+integer 0, integer 0, integer 0, END
+```
+
+The string tag is `0x02` at `+0x44`, with NUL at `+0x71`. The five Boolean
+false tags are `0x04` at `+0x72..+0x76`. Integer tags are `0x00` at
+`+0x77`, `+0x7C`, `+0x81`, `+0x86`, `+0x8B` and `+0x90`, each followed
+by four big-endian bytes. END is `0x0F` at `+0x95`; all 114 following
+application bytes are zero. Their field/alignment split is unassigned.
+There is no nil or reference token before END. The meaning of 20005 and
+the route from this stream to formal Lua initialization arguments remain
+unresolved; the six integers are not assigned initializer parameter names.
+
+The complete `eventGLStart` argument block at application `+0x49..+0x88`
+contains nine `0x00` big-endian integer tokens:
+
+```text
+(12487, 1, 3, 3, 12, 0, 0, 0, 0), END
+```
+
+END is at `+0x76`, followed by 18 zero bytes within that block. The remaining
+seven application bytes are outside it. The response's 64-byte block at
+`+0x11..+0x50` contains integer 1, END at `+0x16`, and 58 zero bytes;
+the result count at `+0x10` is 1. Neither vector contains nil or references.
+The [Aetheryte event contract](https://github.com/XIVLegacy/xivl-client-scripts/blob/add34c6b54cf55905f869fe5115766937974a21c/docs/aetheryte-guildleve-events.md#eventglstart-and-widget-argument-reshuffling)
+owns the nine presentation-slot meanings and widget reshuffle. This captured
+response does not prove that it caused actor creation or a reward grant.
+
+The [script registry](https://github.com/XIVLegacy/xivl-client-scripts/blob/add34c6b54cf55905f869fe5115766937974a21c/lua/registry.json),
+key `director/guildleve/privateglbattleorbnormal`, independently maps the
+observed path to `PrivateGLBattleOrbNormal`, `initAsGuildleve` and require
+`/Director/Guildleve/GuildleveBaseClass`. Registry metadata supplies no native
+argument-routing proof. The same actor later supplies the existing
+`director-finish-update` at s2c frame 3374 / subevent 0 in the selected
+timeline. The class-bearing record adds identity to that client lifecycle
+without connecting publisher acceptance to activation.
+
+Reproduction uses `_decode_capture` from
+`tools/extractors/extract_00da_00e1_comparison.py` at revision
+`208c87e0e037f87dcbe7e542019918b53e355691`, selected by the exact locators
+above. Strip the inner header and preamble, compare the application digest,
+then read the fixed text and each tagged value through END. Canonical decoding
+yielded 1,827 c2s and 3,516 s2c complete frames with zero admitted unparsed
+stream bytes. It also reported six discarded trailing reconstructed s2c
+bytes outside complete frames. No selected argument stream was truncated.
+Ordering remains local to each connection and direction.
+
 ## Topics
 
 - regional Guildleve publisher acceptance
