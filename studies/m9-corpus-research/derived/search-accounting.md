@@ -8,9 +8,14 @@ objects matched the size and SHA-256 recorded by
 canonical corpus content digest was
 `3e39bfbffdf5a7efa0f42fc221f42dc2d1d28af8f19378d28921a3b903c0c7ee`.
 
-The canonical game decoder covered 53 members. It excludes `login.pcapng` from
-game framing. The raw TCP scan included that member, so every manifest object
-participated in at least one search pass.
+The M9 game-framing pass covered 53 members. Its raw TCP scan included
+`login.pcapng`, so every manifest object participated in at least one search
+pass. The totals below describe those search passes. The current
+[decode contract](../../../docs/pcap-decoding.md#tcp-streams-and-connections)
+admits that member's raw 54992 game connections; its raw 54994 lobby
+connections and TLS account traffic remain outside game framing. The
+[World chat accounting](../../world-party-chat-00c9-contract/derived/accounting.json)
+owns the current complete-corpus `0x00C9` scan and its exclusions.
 
 ## Decode passes
 
