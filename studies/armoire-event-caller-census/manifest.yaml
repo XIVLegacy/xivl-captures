@@ -1,0 +1,43 @@
+id: armoire-event-caller-census
+title: Armoire Event Caller Census
+evidence_class: packet-capture
+status: distilled
+content_kind: npc-interaction
+tags:
+- packet-decoding
+- armoire
+- item-storage
+- map-clientbound
+- map-serverbound
+- evidence-ceiling
+search_hints:
+- ObjectItemStorage
+- storageMenu
+- selectCategory
+- selectStoreItem
+- selectReceiveItem
+- "0x01a5"
+- SetPlayerItemStoragePacket
+- EntrustItemReceiver
+- "0x0130"
+- "0x012d"
+- "0x012e"
+- item storage
+notes: >-
+  Binds the retained ObjectItemStorage actor and display-name initializer in
+  return_to_inn.pcapng, then records the bounded non-observation of an
+  actor-targeted store or retrieve caller, request, result, or state
+  transition. Existing full-corpus products, the 54-member metadata census,
+  and two selected raw captures (return_to_inn.pcapng and login.pcapng) are
+  pinned in README.md; no raw payloads or full refresh are published.
+source_refs:
+- source: pcap-1.23b
+primary_paths:
+- README.md
+canonical_evidence:
+- README.md
+related_implementation_docs:
+- xivl-client-structs:docs/client-architecture.md
+- xivl-client-structs:structs/network/event-update.md
+- xivl-client-scripts:docs/item-storage-widget-contracts.md
+- xivl-client-scripts:docs/passivegl-dialogue-producer.md

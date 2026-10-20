@@ -255,6 +255,35 @@ sources:
   storage_id: repo
   member_count: 1
 studies:
+- id: armoire-event-caller-census
+  title: Armoire Event Caller Census
+  status: distilled
+  evidence_class: packet-capture
+  content_kind: npc-interaction
+  tags:
+  - packet-decoding
+  - armoire
+  - item-storage
+  - map-clientbound
+  - map-serverbound
+  - evidence-ceiling
+  search_hints:
+  - ObjectItemStorage
+  - storageMenu
+  - selectCategory
+  - selectStoreItem
+  - selectReceiveItem
+  - '0x01a5'
+  - SetPlayerItemStoragePacket
+  - EntrustItemReceiver
+  - '0x0130'
+  - '0x012d'
+  - '0x012e'
+  - item storage
+  primary_paths:
+  - studies/armoire-event-caller-census/README.md
+  source_refs:
+  - source: pcap-1.23b
 - id: battle-result-actor-join
   title: Battle-Result Actor Join
   status: distilled
