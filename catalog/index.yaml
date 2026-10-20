@@ -2154,6 +2154,30 @@ studies:
   source_refs:
   - source: pcap-1.23b
     citation: sources/pcap-1.23b/manifest.yaml
+- id: request-nmrush-caller-bindings
+  title: Request Warden and NMRush Caller Bindings
+  status: indexed
+  evidence_class: packet-capture
+  tags:
+  - npc-event
+  - actor-initialization
+  - packet-decoding
+  - bounded-absence
+  search_hints:
+  - PopulaceRequestWarden
+  - RequestDirector
+  - PopulaceNMRushGuide
+  - QuestDirectorNMRush01
+  - QuestDirectorNMRush02
+  - speechType
+  - townType
+  - Behest caller
+  - Skirmish caller
+  primary_paths:
+  - studies/request-nmrush-caller-bindings/README.md
+  source_refs:
+  - source: pcap-1.23b
+    citation: sources/pcap-1.23b/manifest.yaml
 - id: retail-repair-contract
   title: Retail NPC and Self-Repair Contract
   status: distilled

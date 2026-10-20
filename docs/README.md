@@ -41,6 +41,7 @@ relevant source or study bundle for its manifest, provenance, and findings.
 - [Director Wire Identity Verification](../studies/director-wire-identity/)
 - [Guildleve Journal Command Wire Census](../studies/guildleve-journal-command-wire/)
 - [Regional Guildleve Publisher Contract](../studies/regional-guildleve-publisher-contract/)
+- [Request Warden and NMRush Caller Bindings](../studies/request-nmrush-caller-bindings/)
 - [Actor Property Stream Hash Catalog](../studies/property-stream-hash-catalog/)
 - [Equipment Property Correlation](../studies/equipment-property-correlation/)
 - [bluegartr FFXIV 1.x Community Stat Testing - Web Tables](../studies/bluegartr-stat-tests/)

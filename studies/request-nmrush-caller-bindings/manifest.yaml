@@ -1,0 +1,31 @@
+id: request-nmrush-caller-bindings
+title: Request Warden and NMRush Caller Bindings
+evidence_class: packet-capture
+status: indexed
+tags:
+- npc-event
+- actor-initialization
+- packet-decoding
+- bounded-absence
+search_hints:
+- PopulaceRequestWarden
+- RequestDirector
+- PopulaceNMRushGuide
+- QuestDirectorNMRush01
+- QuestDirectorNMRush02
+- speechType
+- townType
+- Behest caller
+- Skirmish caller
+notes: >-
+  One Request Warden class-bearing creation record in six retained captures.
+  The selected fields provide no matching recruitment or NMRush event call.
+  Client formal arguments and normal/company content identity remain separate
+  from the serialized values.
+source_refs:
+- source: pcap-1.23b
+  citation: sources/pcap-1.23b/manifest.yaml
+primary_paths:
+- README.md
+canonical_evidence:
+- README.md
