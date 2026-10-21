@@ -12,6 +12,7 @@ relevant source or study bundle for its manifest, provenance, and findings.
 - [Packet Decode and Wire Order](pcap-decoding.md) - the pcap framing,
   lane, nested-event, and exact-order consumer contract.
 - [Mob drops, crystal gating, and party loot evidence](mob-drops-party-loot-evidence.md)
+- [Combat sight detection evidence](combat-sight-detection-evidence.md)
 
 ## AI-agent policy
 
