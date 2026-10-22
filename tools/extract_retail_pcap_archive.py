@@ -216,8 +216,8 @@ def extract_archive(
 ) -> dict[str, Any]:
     """Validate completely, then extract regular allowlisted members."""
     shape = inspect_archive(archive_path, manifest_path=manifest_path)
-    # Recheck the immutable identity at the phase boundary before opening any
-    # output, so a replaced archive cannot bypass the complete validation pass.
+    # Recheck the archive identity before opening any output. Replacing the
+    # archive after validation must not bypass the identity check.
     _archive_identity(archive_path)
     created = not destination.exists()
     try:

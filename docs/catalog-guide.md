@@ -6,8 +6,8 @@ and locate the files that hold each finding.
 ## Discovery layer
 
 - `catalog/index.yaml` is the generated machine-readable registry for sources,
-  studies, pcap scenarios, and derived.
-- `catalog/aliases.yaml` resolves stable ids and pre-reshape path prefixes to
+  studies, pcap scenarios, and derived products.
+- `catalog/aliases.yaml` resolves stable ids and legacy path prefixes to
   their current public homes.
 - `catalog/by-content-kind.md`, `catalog/by-zone.md`, `catalog/by-system.md`,
   `catalog/by-progression.md`, and `catalog/by-city-state.md` are generated
