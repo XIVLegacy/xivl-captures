@@ -147,6 +147,100 @@ these commands to a pending-drop identity, ownership change, cancellation or
 settlement; the contract explicitly says these routes do not establish a
 lot/pass protocol (`xivl-client-scripts:docs/loot-item-ui-contract.md:79-108`).
 
+### Selected package-4 item publication bracket
+
+The retained `pcap-1.23b` member `party_battle_leve.pcapng` contains one
+selected full item record for native/wire package `4`, capacity `10`, slot
+`0`, catalog item `10006111` (`0x0098AE5F`), quantity `1`, with item-record
+identity `0x0000000008368B13`. This is an A-level observed wire fact,
+`packet-capture`, tier 1. Native package and slot numbering convert to Lua
+package `5` and slot `1`. This binds the received package number to the
+number read by the loot-list UI; it does not identify a mob source, grant
+event, shared lot, owner transition or successful inventory transfer.
+
+The source identity is
+[`sources/pcap-1.23b/manifest.yaml`](../sources/pcap-1.23b/manifest.yaml),
+member `party_battle_leve.pcapng`, `1429864` bytes, SHA-256
+`6327e5e1f5cbd51a9baaa9bcbacf53ca51c50a98fe4b66ae3e6bdecd9198089f`.
+The authenticated archive is `pcap-1.23b-objects.zip`, `2622720` bytes,
+SHA-256 `20a78b9f40ff2393037c9a160c957783cf590b4f01797493d22fcd2039e9cbff`,
+pinned by [`config/retail_inputs.json`](../config/retail_inputs.json).
+
+The four records share transport source and target within main lane `0`,
+s2c frame `1733`, at directional stream offset `212115`. The outer frame
+is `100` bytes and inflates to a `304`-byte body. Lane, frame, subevent and
+body offsets below are zero-based. Capture packet `3013` is one-based and
+is the earliest captured packet completing all bytes of this outer frame.
+It is a capture-completion locator, not a client execution timestamp.
+
+| Subevent | Inflated body offset | Sub-event bytes | Opcode |
+| --- | --- | --- | --- |
+| `1` | `40` | `40` | `0x0146` |
+| `2` | `80` | `144` | `0x0148` |
+| `3` | `224` | `40` | `_0x0147` |
+| `4` | `264` | `40` | `0x016E` |
+
+The selected order is `0x0146 -> 0x0148 -> _0x0147 -> 0x016E`.
+The only additional inspected neighbor is same-frame subevent `0`,
+`0x016D`, immediately before it. This is order within one reconstructed
+connection and direction, not an aggregate motif or a cross-connection
+chronology. `_0x0147` retains its adopted placeholder and has no assigned
+package-end or settlement effect here.
+
+For these wrapped records, the 16-byte sub-event header precedes the
+16-byte game-message prefix: an 8-byte inner header followed by an 8-byte
+preamble. Application offset `+0` is therefore sub-event offset `+32`,
+or `sub_body +16` in the extractors. The `0x0148` application is one
+`0x70`-byte item record. These little-endian fields are the selected decode:
+
+| Record | Application offset | Field | Value |
+| --- | --- | --- | --- |
+| `0x0146` | `+0x00`, u32 | Package actor | Equals the transport source actor; identifier omitted |
+| `0x0146` | `+0x04`, u16 | Capacity | `10` |
+| `0x0146` | `+0x06`, u8 | Native/wire package | `4` |
+| `0x0148` | `+0x00`, u64 | Item-record identity, named `uniqueId` by the extractor | `0x0000000008368B13` |
+| `0x0148` | `+0x08`, s32 | Quantity | `1` |
+| `0x0148` | `+0x0C`, u32 | Catalog item ID | `10006111` / `0x0098AE5F` |
+| `0x0148` | `+0x10`, u16 | Native slot | `0` |
+
+The package field is one byte, not a dword. No semantics are assigned to
+`0x0146` application `+7`. The eight-byte item-record identity is not a
+catalog ID, a proven globally unique instance ID or a request discriminator.
+Field layout and index conversion use
+`xivl-client-structs:manifests/inventory_subsystem.json`,
+`supporting_record_classes.InventoryItem`, and
+`xivl-client-structs:docs/bazaar-native-wire-contract.md#package-and-slot-numbering`
+at revision `b144a3c8a816516c6fb759bf0011e38587276705`.
+
+The shared receive contract queues package selection before the item and
+queues End at `0x016E`. End execution integrates staged packages and
+publishes changed-slot callbacks when materialization is ready, or queues
+a continuation otherwise
+(`xivl-client-structs:docs/bazaar-native-wire-contract.md#incoming-package-operations-and-publication`,
+same revision). Thus this bracket supplies the captured package/item/End
+inputs to that publication path. It does not observe execution, callback
+delivery, widget refresh or completion of a deferred continuation. The
+first unbound causal edge is the request or source event that produced
+this bracket. No request-to-item or ownership/outcome join is established.
+Quantity `1` is a received record value, not a kill-drop quantity policy.
+
+Reproduction used captures revision
+`4421307fc41c0c4790f091426b3331112e075a3e`, Python `3.12.0` and Scapy
+`2.7.0`. Only the named archive member was read into `BytesIO`, authenticated,
+and passed to `scapy.rdpcap`. Its packets seeded the exact resolved member
+path in `extract_streams.read_packets`' cache before calling
+`tools/validate_framing.py:check` and
+`tools/extractors/extract_00da_00e1_comparison.py:_decode_capture`.
+This was an in-memory input adaptation, not a CLI run against a materialized
+input. No raw file was written, and the existing local cache file was not
+read. Fields were checked with
+`tools/extractors/extract_content_samples.py:parse_inventory_items` and
+`tools/extractors/extract_equipment_property_correlation.py:_parse_item_rows`.
+Framing reported zero compression mismatches. The decoder reported zero
+admitted unparsed bytes and sub-event truncations, while trimming six s2c
+bytes after the last complete frame. That tail is outside this complete
+selected frame. No other capture or causal neighborhood was interpreted.
+
 ## Explicit evidence gaps
 
 The retained evidence leaves these mechanics open:
