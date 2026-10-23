@@ -86,3 +86,4 @@ surface this repository does not have.
 | Catalog consumer page | [docs/catalog-guide.md](../catalog-guide.md) |
 | Evidence classes and claims | [evidence-and-claims.md](evidence-and-claims.md) |
 | Comments and prose | [comments-and-prose.md](comments-and-prose.md) |
+| Test scope, fixtures, and validation | [test-authoring.md](test-authoring.md) |
