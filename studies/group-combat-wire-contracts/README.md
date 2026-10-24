@@ -116,6 +116,10 @@ callback and type-20002 rank consumer inventory are recorded in
 `xivl-client-structs:docs/linkshell-rank-work-contract.md`.
 That static record does not add a retained linkshell or `0x62` specimen here.
 
+The [master-transfer capture boundary](linkshell-master-transfer.md) records
+the full-corpus request search, group-type census, source pins and reproduction
+method. It identifies no transfer request/reply specimen.
+
 ## Enmity `0x0195`
 
 Every subevent is 40 bytes. The eight-byte application payload contains a
