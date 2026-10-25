@@ -97,7 +97,7 @@ cell contains a longer sentence.
 | QTXT017 / 3:57 | `What in the world was that explosion!? And what in the seven [...]` | exact dialogue body | `gcl107.csv:305 f1`; `xtx_displayName.csv:4000658 f1`; `xtx_gcRank.csv:27 f10` | Case and punctuation match the whole body cell. Speaker labels are checked separately; source timing, event dispatch, actor binding and attack pairing remain unproved. |
 | QTXT018 / 5:54 | `Magdelin Vaire wishes to teleport you to Gridania.` | compatible teleport invitation template | `worldMaster.csv:34107 f1`; `xtx__text_ui(2).csv:100622,100851 f1,2,3`; `xtx__text_ui.csv:11319,74402,100622,100851 f1,2,3`; `xtx_placeName.csv:2001 f1,2,4,6` | Player Magdelin Vaire and destination grammar/lookup are dynamic. Complete Gridania label matches are retained; no actual destination numeric ID, acceptance or execution is established. |
 | QTXT019 / 5:54 | `Teleporting...` | exact system text | `worldMaster.csv:34105 f1` | Three ASCII periods match. Retained Teleporting text does not identify the trigger or exact travel timestamp. |
-| QTXT020 / 5:54 | `To travel to Rivenroad, you must be in a party consisting of [...]` | compatible entry requirement template controls unevaluated | `gcl107.csv:138,170,327 f1`; `xtx__text_ui.csv:11350 f1`; `xtx_placeName.csv:4073 f1,2`; `xtx_raidDungeon.csv:15 f26` | Three equal gcl107 cells use a duty-sheet substitution and encoded count/level controls. Four/eight/45 are video readings; these controls were not evaluated, so neither runtime parameters nor fixed client constants are assigned. No enforcement, mode or actual duty ID is established. |
+| QTXT020 / 5:54 | `To travel to Rivenroad, you must be in a party consisting of [...]` | compatible entry template; fixed description operands qualified | `gcl107.csv:138,170,327 f1`; `xtx__text_ui.csv:11350 f1`; `xtx_placeName.csv:4073 f1,2`; `xtx_raidDungeon.csv:15 f26` | Three equal gcl107 cells use a duty-sheet substitution. The separately qualified native control profile selects literal four/eight and level 45 in this snapshot. That corroborates the displayed description, without selecting historical arguments, build, duty ID, mode or server enforcement. |
 | QTXT021 / 5:54 | `Furthermore, each party member must also have fulfilled the e[...]` | requirement body quote style distinct | `gcl107.csv:139,171 f1`; `xtx_quest.csv:111433,111633,111833 f2` | Two equal cells say fulfilled entry requirements for one of three quests, with curly quotes rather than source ASCII quotes. Related328 says completed To Kill a Raven and Living on a Prayer and is materially distinct, not a replacement. No server gate was tested. |
 | QTXT022 / 9:51 | `There it is!` | exact dialogue body | `gcl107.csv:334 f1`; `xtx_displayName.csv:2700004 f1,6,13,14` | Exact body cell; any Nael Van Darnus speaker label is separately case-distinct from the lowercase-van name cell. No attack or actor-resource assignment. |
 | QTXT023 / 11:51 | `And I, first among Thy servants, shall be honored to attend t[...]` | exact dialogue body | `gcl107.csv:197 f1`; `xtx_displayName.csv:2700001 f1,6,13,14` | Exact body cell; any Nael Van Darnus speaker label is separately case-distinct from the lowercase-van name cell. No attack or actor-resource assignment. |
@@ -166,8 +166,11 @@ U+2500. QTXT005 records ASCII `~`, while UI5054 has U+FF5E and a number
 placeholder. No EXP formula or multiplier was inferred from this text
 check. Seal fields 55/57 are item 1000202/count-shaped
 6000, with Serpent Seal(s) item-name cells; this corroborates an offer
-component, not a grant. Entry count/level controls were not evaluated as
-either fixed constants or runtime parameters. gcl107139/171's fulfilled
+component, not a grant. The entry cell's fixed count/level operands are qualified
+by `xivl-decomp:docs/resource/rich-string-entry-counts.md` and
+`xivl-client-scripts:docs/to-kill-a-raven-client-contract.md`, Embedded entry values.
+That static control interpretation does not establish historical row/argument
+selection or admission enforcement. gcl107139/171's fulfilled
 one-of-three condition is distinct from328's completed-two-quests condition.
 QTXT027/QTXT043 remain partial. Protect/Battle Voice labels establish no
 successful application or tier change; Bloodletter status/command names
