@@ -24,12 +24,16 @@ level field, not a spawn script. The pruned page is only a disambiguation list.
 | `pages/United_We_Stand_Limsa_Lominsa.wiki` | [333134](https://ffxiv.gamerescape.com/w/index.php?oldid=333134) | 2012-09-19T21:58:00Z | 4271 | `3926596ff0c8c9671e91b60ea857de7de19c5e36a6850292b3bab024c69f2d6a` |
 | `pages/United_We_Stand_Ul_dah.wiki` | [332883](https://ffxiv.gamerescape.com/w/index.php?oldid=332883) | 2012-09-09T06:11:47Z | 4074 | `09384944ecf9bd897a121587046570b269ccd7311f299fb40ac4c3cc39a2c2b1` |
 | `pruned/United_We_Stand.wiki` | [332761](https://ffxiv.gamerescape.com/w/index.php?oldid=332761) | 2012-06-06T21:39:44Z | 252 | `a80b4ce061fb1fb2ce6fac8dd774880562a4b20be0841f5bcdf1cf07e9540c70` |
+| `pages/Magitek_Vanguard.wiki` | [241161](https://ffxiv.gamerescape.com/w/index.php?oldid=241161) | 2012-07-30T19:02:53Z | 1648 | `8f67fe7d89f3cd145d14d0d41c80a16d81b0a79bfc36eba05545f68a46a4d63b` |
+| `pages/Magitek_Vanguard_F-1.wiki` | [354863](https://ffxiv.gamerescape.com/w/index.php?oldid=354863) | 2012-06-09T03:30:14Z | 1094 | `7e3dd804da358aeae767ec7b3e1eb4058e993f32bcc9247c5eb4a7e847108ddf` |
+| `pages/Magitek_Vanguard_H-1.wiki` | [354742](https://ffxiv.gamerescape.com/w/index.php?oldid=354742) | 2012-07-23T07:29:35Z | 2266 | `1cf0c6fc64833e2ae4baf0bf7e3b48233e9e94f625a9e2c7025ca70fba64a74d` |
+| `pages/Magitek_Transmitter.wiki` | [355480](https://ffxiv.gamerescape.com/w/index.php?oldid=355480) | 2012-08-08T20:06:37Z | 1086 | `e54071f52a96f994450e7be1b82f34c5a10b7cb64693709548f6abd9e0da293b` |
 
 The source manifest pins archive SHA-256
 `5591a0544c57475b461ca25ae164e9f6c94b9d7d2c993703274f5c6bf5d28a8b`
 and member-manifest SHA-256
 `cb75c4b5ca08be0075eafbc1e35bdc5280a9763aee877048231e93a369dff982`.
-Both hashes and all six member hashes were verified before interpretation.
+Both hashes and all listed member hashes were verified before interpretation.
 
 ## Encounter observations and limits
 
@@ -53,6 +57,30 @@ on which player dealt the most generator damage. The shared observation is a
 generator-destruction-related enmity effect on F-1. Neither a last-hit rule nor a
 highest-damage rule is established across these revisions, and no magnitude or
 reset behavior is recorded.
+
+## Vanguard variants and combat-description limits
+
+The retained mob pages distinguish generic Magitek Vanguard, F-1 and H-1.
+F-1 lines 41-48 explicitly list United We Stand in Castrum Novum at level 63.
+H-1 lines 41-84 have separate Castrum rows at levels 61, 62 and 63 with empty
+quest fields. Empty fields do not establish H-1's absence from the quest or
+identify an outdoor or instanced encounter. Magitek Transmitter lines 41-48
+list United We Stand in Castrum at level 55 with behavior code P. These are
+wiki sightings, not recovered client actor IDs or server level settings.
+
+Only the generic Vanguard page claims occasional hate resets, at line 37.
+It gives no trigger, interval or named action. Its Castrum row at lines 69-76
+is level 58 and has no quest field; the note is not tied to that row. F-1
+and H-1 have empty Notes fields at lines 36-37, so the generic statement
+does not establish either variant's behavior or explain the generator-related
+enmity effect described in the walkthroughs.
+
+None of these three pages or the retained Magitek Transmitter page names a
+combat action. They supply no exact action-name join to client command IDs
+or evidence assigning a command to F-1. The shared Magitek Armor family label
+at line 11 of the three Vanguard pages does not establish shared attacks or
+mechanics. Header lines 2-5 retain the revisions and timestamps listed above;
+they date edits, not observations or guaranteed 1.23b encounter versions.
 
 ## Comparison with the client contract
 
