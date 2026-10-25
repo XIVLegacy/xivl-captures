@@ -1371,6 +1371,8 @@ studies:
   - studies/gamerescape-tables/derived/mob-families.csv
   source_refs:
   - source: gamerescape-tables
+  - source: elemen-site-archive
+  - source: lodestone-dev-patch
 - id: group-combat-wire-contracts
   title: Occupancy, Group Work, and Enmity Wire Observations
   status: distilled

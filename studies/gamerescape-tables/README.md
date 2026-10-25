@@ -21,6 +21,9 @@ evidence there. This study adds two fields that no live FFXIV wiki documents:
 
 ## Start here
 
+- [United We Stand encounter accounts](derived/united-we-stand-encounter.md)
+  and [Rivenroad mode and phase descriptions](derived/rivenroad-encounter.md)
+  preserve dated quest-page observations separately from client contracts.
 - `derived/evidence-map.md` - tier and version caveats, the unique-value fields, and every
   dirty-data pattern (unnormalized booleans, mixed `hq_effect`
   vocabularies, undocumented `behavior_flags`). Read this before using the CSVs.

@@ -31,7 +31,7 @@ provenance:
     title: Gamer Escape FFXIV wiki - 1.x Infobox Quest pages
     url: https://ffxiv.gamerescape.com/wiki/Futures_Perfect
     site: Gamer Escape - Final Fantasy XIV wiki
-    note: 'The 273 Infobox Quest pages inside the same wikitext corpus as ge-mob-pages. Every page was last edited in 2011 or 2012, making them the only GE material in this set unambiguously contemporaneous with 1.x. The ge-terminology-pages are ARR-era. They feed mob-quest-attribution.csv, which stores the quest and its revision id for each undocumented client mob name a quest mentions. Only that attribution is stored: the register excludes verbatim GE prose, and these pages are walkthrough prose throughout.'
+    note: 'The 273 Infobox Quest pages inside the same wikitext corpus as ge-mob-pages. Every page was last edited in 2011 or 2012, making them the only GE material in this set unambiguously contemporaneous with 1.x. The ge-terminology-pages are ARR-era. They feed mob-quest-attribution.csv, which stores the quest and its revision id for each undocumented client mob name a quest mentions, and the paraphrased United We Stand and Rivenroad encounter accounts. The register excludes verbatim GE walkthrough prose.'
   - key: ge-terminology-pages
     title: Gamer Escape FFXIV wiki - mob behavior code templates and terminology pages
     url: https://ffxiv.gamerescape.com/wiki/Template:Mob_Notes-S

@@ -196,6 +196,8 @@ notes: 'Normalized transcription of the Gamer Escape FFXIV wiki''s 1.0-era item 
 related_implementation_docs: []
 source_refs:
 - source: gamerescape-tables
+- source: elemen-site-archive
+- source: lodestone-dev-patch
 primary_paths:
 - derived/evidence-map.md
 - derived/items.csv
@@ -208,6 +210,9 @@ primary_paths:
 - derived/mob-locations.csv
 - derived/mob-families.csv
 canonical_evidence:
+- derived/united-we-stand-encounter.md
+- derived/rivenroad-encounter.md
+- derived/rivenroad-source-identities.md
 - derived/items.csv
 - derived/mobs.csv
 - derived/mob-locations.csv
@@ -244,6 +249,9 @@ distilled:
   distilled: true
   checksum_file: derived/checksums.sha256
   distilled_artifacts:
+  - derived/united-we-stand-encounter.md
+  - derived/rivenroad-encounter.md
+  - derived/rivenroad-source-identities.md
   - derived/items.csv
   - derived/mobs.csv
   - derived/mob-locations.csv
