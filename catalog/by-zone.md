@@ -14,6 +14,12 @@ Generated from `catalog/index.yaml`. Axis: `zones`.
 
 - `mooglebox-regional-mob-maps`
 
+## Gridania (1)
+
+### Studies (1)
+
+- `gc-quest-to-kill-a-raven-video-breakdown`
+
 ## Hyrstmill (1)
 
 ### Studies (1)
@@ -38,11 +44,13 @@ Generated from `catalog/index.yaml`. Axis: `zones`.
 
 - `navmut-world-population-observations`
 
-## Rivenroad (1)
+## Rivenroad (3)
 
-### Studies (1)
+### Studies (3)
 
+- `gc-quest-to-kill-a-raven-video-breakdown`
 - `se-forum-rivenroad-hard-51632`
+- `side-quest-rivenroad-hard-video-breakdown`
 
 ## Thanalan (1)
 

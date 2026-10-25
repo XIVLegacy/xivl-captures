@@ -1,0 +1,34 @@
+id: side-quest-rivenroad-hard-video-breakdown
+title: 'Order of the Blue Garter - Nael deus Darnus (Hard): sampled video record'
+evidence_class: notes-and-transcripts
+distribution: public
+provenance:
+  sources:
+  - title: Order of the Blue Garter - Nael deus Darnus (Hard)
+    url: https://www.youtube.com/watch?v=nwvi79-qAjM
+    site: YouTube
+    uploader: Bluegarterls
+    uploader_url: https://www.youtube.com/@Bluegarterls
+    channel_id: UCViChbl5SVMRmZFSvBqntMA
+    video_id: nwvi79-qAjM
+    duration: '25:58'
+    duration_seconds: 1558
+    published_at: '2012-08-16T00:17:37-07:00'
+    uploaded_at: '2012-08-16T00:17:37-07:00'
+  metadata:
+    watch_page_sha256: 3edb6208d660466697ef3215577bda2633e8a85b5d6229fdb4efaf06deb6d87e
+    oembed_sha256: 4e05ecbdda3369555c8689d5d8c99a6685dfe6da63a9bf1cf9e13663ae0a5d15
+    notes: Original watch metadata and oEmbed agreed on title and uploader. Response digests
+      identify bytes read, not immutable archived revisions. No archive.org snapshot identity
+      was established. Publication does not establish recording date or exact client patch.
+storage:
+  original_state: in-repo
+  storage_id: repo
+  path: objects/
+  notes: The video and screenshot files are not archived. The single Markdown member contains
+    the sampled observation record, candidate readings and source-time coverage. Source URL
+    plus whole-second player time supplies a reinspection locator.
+members:
+- file: rivenroad_hard_video_breakdown.md
+  sha256: 94e0191a2268035b3699b2dd38a6639d8e85b30fb50d2c9ddca70692a1531441
+  size_bytes: 27916

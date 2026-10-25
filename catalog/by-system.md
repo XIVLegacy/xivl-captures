@@ -21,10 +21,11 @@ such as guildleve, behest, battle-regimen, grand-company).
 
 - `chocobo-mechanic-mount-unmount`
 
-## grand-company (1)
+## grand-company (2)
 
-### Studies (1)
+### Studies (2)
 
+- `gc-quest-to-kill-a-raven-video-breakdown`
 - `gc-quest-united-we-stand-video-breakdown`
 
 ## guildleve (3)
@@ -44,9 +45,10 @@ such as guildleve, behest, battle-regimen, grand-company).
 
 - `hamlet-defense-hyrstmill-video-breakdown`
 
-## instanced-content (2)
+## instanced-content (3)
 
-### Studies (2)
+### Studies (3)
 
 - `primal-battle-ifrit-bowl-of-embers`
 - `se-forum-rivenroad-hard-51632`
+- `side-quest-rivenroad-hard-video-breakdown`

@@ -114,6 +114,13 @@ sources:
   original_state: private-repository
   storage_id: XIVLegacy/xivl-private-assets
   member_count: 0
+- id: gc-quest-to-kill-a-raven-video-breakdown
+  title: 'FFXIV Patch 1.23 Company Quest - To Kill a Raven (Gridania Final Battle): sampled video record'
+  evidence_class: notes-and-transcripts
+  distribution: public
+  original_state: in-repo
+  storage_id: repo
+  member_count: 1
 - id: gc-quest-united-we-stand-video-breakdown
   title: 'Final Fantasy 14 - United we stand: sampled video record'
   evidence_class: notes-and-transcripts
@@ -263,6 +270,13 @@ sources:
   member_count: 1
 - id: seasonal-impish-impositions-video-breakdown
   title: Impish Impositions - Sampled 2011 Video Observations
+  evidence_class: notes-and-transcripts
+  distribution: public
+  original_state: in-repo
+  storage_id: repo
+  member_count: 1
+- id: side-quest-rivenroad-hard-video-breakdown
+  title: 'Order of the Blue Garter - Nael deus Darnus (Hard): sampled video record'
   evidence_class: notes-and-transcripts
   distribution: public
   original_state: in-repo
@@ -1387,6 +1401,35 @@ studies:
   - source: gamerescape-tables
   - source: elemen-site-archive
   - source: lodestone-dev-patch
+- id: gc-quest-to-kill-a-raven-video-breakdown
+  title: 'To Kill a Raven (Gridania): sampled quest video'
+  status: distilled
+  evidence_class: notes-and-transcripts
+  content_kind: grand-company-quest
+  system: grand-company
+  city_state: gridania
+  zones:
+  - Gridania
+  - Rivenroad
+  tags:
+  - video-breakdown
+  - combat
+  - entry-rules
+  - reward-offer
+  - journal-update
+  search_hints:
+  - To Kill a Raven (Gridania)
+  - Rivenroad
+  - Serpent Lieutenant Fulke
+  - Kan-E-Senna
+  - Serpent Private Hodder
+  - Cid
+  - Nael van Darnus
+  - Nael deus Darnus
+  primary_paths:
+  - studies/gc-quest-to-kill-a-raven-video-breakdown/derived/evidence-map.md
+  source_refs:
+  - source: gc-quest-to-kill-a-raven-video-breakdown
 - id: gc-quest-united-we-stand-video-breakdown
   title: 'United We Stand: sampled Castrum Novum video'
   status: distilled
@@ -2456,6 +2499,29 @@ studies:
   - studies/seasonal-impish-impositions-video-breakdown/derived/evidence-map.md
   source_refs:
   - source: seasonal-impish-impositions-video-breakdown
+- id: side-quest-rivenroad-hard-video-breakdown
+  title: 'Rivenroad (Hard): sampled video evidence'
+  status: distilled
+  evidence_class: notes-and-transcripts
+  content_kind: side-quest
+  system: instanced-content
+  zones:
+  - Rivenroad
+  tags:
+  - video-breakdown
+  - combat
+  - journal-update
+  - rivenroad-hard
+  search_hints:
+  - Rivenroad (Hard)
+  - The Raven, Nevermore
+  - Nael deus Darnus
+  - Blue Garter
+  - Lunar Dynamo
+  primary_paths:
+  - studies/side-quest-rivenroad-hard-video-breakdown/derived/evidence-map.md
+  source_refs:
+  - source: side-quest-rivenroad-hard-video-breakdown
 - id: status-wire-projection-census
   title: Status Wire Projection Census
   status: distilled

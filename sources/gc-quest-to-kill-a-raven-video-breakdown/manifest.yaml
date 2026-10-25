@@ -1,0 +1,35 @@
+id: gc-quest-to-kill-a-raven-video-breakdown
+title: 'FFXIV Patch 1.23 Company Quest - To Kill a Raven (Gridania Final Battle): sampled
+  video record'
+evidence_class: notes-and-transcripts
+distribution: public
+provenance:
+  sources:
+  - title: FFXIV Patch 1.23 Company Quest - To Kill a Raven (Gridania Final Battle)
+    url: https://www.youtube.com/watch?v=6EHb-aUk0Hc
+    site: YouTube
+    uploader: RydiaMist
+    uploader_url: https://www.youtube.com/@RydiaMist
+    channel_id: UC8Gf2etrASTfXmsYiP-IYzQ
+    video_id: 6EHb-aUk0Hc
+    duration: '39:32'
+    duration_seconds: 2372
+    published_at: '2012-07-27T06:32:40-07:00'
+    uploaded_at: '2012-07-27T06:32:40-07:00'
+  metadata:
+    watch_page_sha256: 0349f15dcf9436a0862895459bbafb87ec0270adec91627397b921fc0174433a
+    oembed_sha256: fc45616d2e19ce91ca8c6d8aa2c971eb0ad699429f71bf480a97d369854e61cc
+    notes: Original watch metadata and oEmbed agreed on title and uploader. Response digests
+      identify bytes read, not immutable archived revisions. No archive.org snapshot identity
+      was established. Publication does not establish recording date or exact client patch.
+storage:
+  original_state: in-repo
+  storage_id: repo
+  path: objects/
+  notes: The video and screenshot files are not archived. The single Markdown member contains
+    the sampled observation record, candidate readings and source-time coverage. Source URL
+    plus whole-second player time supplies a reinspection locator.
+members:
+- file: to_kill_a_raven_video_breakdown.md
+  sha256: 5640742a4457f200c412d4912eb6cafcd8c47f203c1162aa958d253eaa5a14a1
+  size_bytes: 39580

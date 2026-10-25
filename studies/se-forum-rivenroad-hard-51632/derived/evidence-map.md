@@ -132,6 +132,11 @@ or inspected video moment was used to settle these claims.
 
 ## Reproduction
 
+The [linked-video study](../../side-quest-rivenroad-hard-video-breakdown/derived/evidence-map.md)
+owns sampled observations from the guide's video link. Its displayed Hard label,
+retained combat text and journal update do not verify this guide's complete
+phase schedule, thresholds or action assignments.
+
 Authenticate the HTML member and CSV archive/member identities above. Select
 post container `post_788628`, decode HTML entities and read the named sections
 in each ledger row. The source quotes are at HTML lines 721, 723, 741, 743,

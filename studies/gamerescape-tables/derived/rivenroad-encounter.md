@@ -67,6 +67,11 @@ The separate [Carraway guide study](../../se-forum-rivenroad-hard-51632/derived/
 owns another attributable Hard account, its reported phase structure and
 client-text qualifications. It remains historical player evidence.
 
+The [company-quest video](../../gc-quest-to-kill-a-raven-video-breakdown/derived/evidence-map.md)
+and [labeled Hard video](../../side-quest-rivenroad-hard-video-breakdown/derived/evidence-map.md)
+own separate sampled retail observations. They do not turn this account's
+mechanical claims into observed rules or establish a shared runtime mode.
+
 ## Corroboration and limits
 
 The preserved Nael van Darnus (Monster) revision 26370, August 6, 2012, Notes,

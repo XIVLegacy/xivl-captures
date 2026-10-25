@@ -29,7 +29,7 @@ canonical_evidence:
 - derived/evidence-map.md
 - derived/guide-claims.csv
 - derived/client-text-crosscheck.csv
-notes: Hard attribution belongs to the guide and forum thread. All mechanical rows remain historical player claims; client-text matches do not select runtime commands, actors or modes. Exact recording patch and linked video gameplay are unestablished.
+notes: Hard attribution belongs to the guide and forum thread. All mechanical rows remain historical player claims; client-text matches do not select runtime commands, actors or modes. The separate side-quest-rivenroad-hard-video-breakdown study owns sampled linked-video observations; exact recording patch remains unestablished.
 distilled:
   distilled: true
   checksum_file: derived/checksums.sha256

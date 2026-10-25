@@ -3,7 +3,11 @@
 Generated from `catalog/index.yaml`. Axis: `city_state` (Limsa Lominsa,
 Gridania, Ul'dah).
 
-## gridania (2)
+## gridania (3)
+
+### Studies (1)
+
+- `gc-quest-to-kill-a-raven-video-breakdown`
 
 ### Scenarios (2)
 

@@ -1,0 +1,39 @@
+id: gc-quest-to-kill-a-raven-video-breakdown
+title: 'To Kill a Raven (Gridania): sampled quest video'
+evidence_class: notes-and-transcripts
+status: distilled
+source_refs:
+- source: gc-quest-to-kill-a-raven-video-breakdown
+primary_paths:
+- derived/evidence-map.md
+canonical_evidence:
+- derived/evidence-map.md
+content_kind: grand-company-quest
+system: grand-company
+zones:
+- Gridania
+- Rivenroad
+tags:
+- video-breakdown
+- combat
+- entry-rules
+- reward-offer
+- journal-update
+search_hints:
+- To Kill a Raven (Gridania)
+- Rivenroad
+- Serpent Lieutenant Fulke
+- Kan-E-Senna
+- Serpent Private Hodder
+- Cid
+- Nael van Darnus
+- Nael deus Darnus
+related_implementation_docs: []
+notes: Bounded still-frame evidence with complete client-text candidate verdicts. Exact recording
+  patch, historical runtime arguments/IDs, mode/resource/AI bindings, event counts, progression
+  triggers and reward receipt remain qualified.
+distilled:
+  distilled: true
+  distilled_artifacts:
+  - derived/evidence-map.md
+city_state: gridania

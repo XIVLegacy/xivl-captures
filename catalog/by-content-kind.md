@@ -94,10 +94,11 @@ Generated from `catalog/index.yaml`. Primary axis: `content_kind`.
 
 - `gathering-node-wood-and-harvest`
 
-## grand-company-quest (1)
+## grand-company-quest (2)
 
-### Studies (1)
+### Studies (2)
 
+- `gc-quest-to-kill-a-raven-video-breakdown`
 - `gc-quest-united-we-stand-video-breakdown`
 
 ## hamlet-defense (1)
@@ -199,13 +200,14 @@ Generated from `catalog/index.yaml`. Primary axis: `content_kind`.
 
 - `shop-vendor-buy-sell-repair`
 
-## side-quest (4)
+## side-quest (5)
 
-### Studies (3)
+### Studies (4)
 
 - `elemen-quest-rewards-walkthroughs`
 - `se-forum-rivenroad-hard-51632`
 - `seasonal-impish-impositions-video-breakdown`
+- `side-quest-rivenroad-hard-video-breakdown`
 
 ### Scenarios (1)
 

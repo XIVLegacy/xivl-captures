@@ -1,0 +1,33 @@
+id: side-quest-rivenroad-hard-video-breakdown
+title: 'Rivenroad (Hard): sampled video evidence'
+evidence_class: notes-and-transcripts
+status: distilled
+source_refs:
+- source: side-quest-rivenroad-hard-video-breakdown
+primary_paths:
+- derived/evidence-map.md
+canonical_evidence:
+- derived/evidence-map.md
+content_kind: side-quest
+system: instanced-content
+zones:
+- Rivenroad
+tags:
+- video-breakdown
+- combat
+- journal-update
+- rivenroad-hard
+search_hints:
+- Rivenroad (Hard)
+- The Raven, Nevermore
+- Nael deus Darnus
+- Blue Garter
+- Lunar Dynamo
+related_implementation_docs: []
+notes: Bounded still-frame evidence with complete client-text candidate verdicts. Exact recording
+  patch, historical runtime arguments/IDs, mode/resource/AI bindings, event counts, progression
+  triggers and reward receipt remain qualified.
+distilled:
+  distilled: true
+  distilled_artifacts:
+  - derived/evidence-map.md
