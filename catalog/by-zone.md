@@ -2,6 +2,12 @@
 
 Generated from `catalog/index.yaml`. Axis: `zones`.
 
+## Castrum Novum Transmission Tower (1)
+
+### Studies (1)
+
+- `gc-quest-united-we-stand-video-breakdown`
+
 ## Coerthas (1)
 
 ### Studies (1)

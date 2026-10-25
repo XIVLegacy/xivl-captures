@@ -94,6 +94,12 @@ Generated from `catalog/index.yaml`. Primary axis: `content_kind`.
 
 - `gathering-node-wood-and-harvest`
 
+## grand-company-quest (1)
+
+### Studies (1)
+
+- `gc-quest-united-we-stand-video-breakdown`
+
 ## hamlet-defense (1)
 
 ### Studies (1)

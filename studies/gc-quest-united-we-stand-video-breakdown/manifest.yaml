@@ -1,0 +1,31 @@
+id: gc-quest-united-we-stand-video-breakdown
+title: "United We Stand: sampled Castrum Novum video"
+evidence_class: notes-and-transcripts
+status: distilled
+source_refs:
+- source: gc-quest-united-we-stand-video-breakdown
+primary_paths:
+- derived/evidence-map.md
+canonical_evidence:
+- derived/evidence-map.md
+content_kind: grand-company-quest
+system: grand-company
+city_state: limsa-lominsa
+zones:
+- Castrum Novum Transmission Tower
+tags:
+- video-breakdown
+- combat
+- journal-update
+search_hints:
+- United We Stand
+- Castrum Novum
+- Ceruleum Generator
+- Magitek Transmitter
+- Magitek Vanguard F-1
+- Magitek Vanguard F-I
+notes: Selected still frames of 1.x footage. Exact recording patch, Vanguard suffix glyph/source row, journal trigger and encounter rules are unresolved.
+distilled:
+  distilled: true
+  distilled_artifacts:
+  - derived/evidence-map.md

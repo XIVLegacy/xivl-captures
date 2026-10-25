@@ -12,9 +12,10 @@ Evidence class: `web-tables`, secondary research tier. Source bundle:
 `sources/gamerescape-tables/manifest.yaml`. The three quest pages were edited
 before ARR; the revision timestamps date edits, not the reported fights.
 Their substantially shared wording is not three independent observations.
-No gameplay video was inspected. The plot page is a dialogue transcription,
-not a detailed fight log. The Ceruleum Generator page supplies a sighting and
-level field, not a spawn script. The pruned page is only a disambiguation list.
+This historical study did not inspect gameplay video. The plot page is a
+dialogue transcription, not a detailed fight log. The Ceruleum Generator page
+supplies a sighting and level field, not a spawn script. The pruned page is
+only a disambiguation list.
 
 | Retained member | Revision | Edit timestamp | Bytes | SHA-256 |
 | --- | ---: | --- | ---: | --- |
@@ -127,6 +128,7 @@ patch provenance. Their coordinates are not retail spawn evidence and were not
 used to infer any position here.
 
 The retained Limsa page links a separate Guide:United We Stand and embeds video
-ID `qDdvF9wpCBs`. Neither linked artifact was inspected in this study. They are
-specific next evidence candidates for enmity targeting and reinforcement
-timing, not verification of the present account.
+ID `qDdvF9wpCBs`. The guide remains uninspected. The separate
+[sampled video study](../../gc-quest-united-we-stand-video-breakdown/derived/evidence-map.md)
+records device geometry, displayed names and the journal update. It does not
+verify the account's unobserved targeting, reinforcement or reactivation rules.

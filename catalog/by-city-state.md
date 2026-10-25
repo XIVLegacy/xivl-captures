@@ -9,3 +9,9 @@ Gridania, Ul'dah).
 
 - `movement-mechanic-gridania-locomotion`
 - `zone-mechanic-inn-room`
+
+## limsa-lominsa (1)
+
+### Studies (1)
+
+- `gc-quest-united-we-stand-video-breakdown`

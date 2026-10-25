@@ -114,6 +114,13 @@ sources:
   original_state: private-repository
   storage_id: XIVLegacy/xivl-private-assets
   member_count: 0
+- id: gc-quest-united-we-stand-video-breakdown
+  title: 'Final Fantasy 14 - United we stand: sampled video record'
+  evidence_class: notes-and-transcripts
+  distribution: public
+  original_state: in-repo
+  storage_id: repo
+  member_count: 1
 - id: hamlet-defense-hyrstmill-video-breakdown
   title: FFXIV 1.0 - 65,000 points Hamlet Defense, Hystmill [65,000スコア・ハムレット防衛戦]
   evidence_class: notes-and-transcripts
@@ -1373,6 +1380,30 @@ studies:
   - source: gamerescape-tables
   - source: elemen-site-archive
   - source: lodestone-dev-patch
+- id: gc-quest-united-we-stand-video-breakdown
+  title: 'United We Stand: sampled Castrum Novum video'
+  status: distilled
+  evidence_class: notes-and-transcripts
+  content_kind: grand-company-quest
+  system: grand-company
+  city_state: limsa-lominsa
+  zones:
+  - Castrum Novum Transmission Tower
+  tags:
+  - video-breakdown
+  - combat
+  - journal-update
+  search_hints:
+  - United We Stand
+  - Castrum Novum
+  - Ceruleum Generator
+  - Magitek Transmitter
+  - Magitek Vanguard F-1
+  - Magitek Vanguard F-I
+  primary_paths:
+  - studies/gc-quest-united-we-stand-video-breakdown/derived/evidence-map.md
+  source_refs:
+  - source: gc-quest-united-we-stand-video-breakdown
 - id: group-combat-wire-contracts
   title: Occupancy, Group Work, and Enmity Wire Observations
   status: distilled

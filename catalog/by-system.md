@@ -21,6 +21,12 @@ such as guildleve, behest, battle-regimen, grand-company).
 
 - `chocobo-mechanic-mount-unmount`
 
+## grand-company (1)
+
+### Studies (1)
+
+- `gc-quest-united-we-stand-video-breakdown`
+
 ## guildleve (3)
 
 ### Studies (2)

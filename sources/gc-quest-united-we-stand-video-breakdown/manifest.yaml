@@ -1,0 +1,30 @@
+id: gc-quest-united-we-stand-video-breakdown
+title: "Final Fantasy 14 - United we stand: sampled video record"
+evidence_class: notes-and-transcripts
+distribution: public
+provenance:
+  sources:
+  - title: Final Fantasy 14 - United we stand
+    url: https://www.youtube.com/watch?v=qDdvF9wpCBs
+    site: YouTube
+    uploader: ValeSan87
+    uploader_url: https://www.youtube.com/@ValeSan87
+    channel_id: UC8H-IcvNxb2QevdgpEr8gBQ
+    video_id: qDdvF9wpCBs
+    duration: "8:13"
+    duration_seconds: 493
+    published_at: "2012-07-27T14:34:44-07:00"
+    uploaded_at: "2012-07-27T14:34:44-07:00"
+  metadata:
+    watch_page_sha256: d60ee9457027a1bf17e7bcefdde08de99a8e9c6aaccbe34839b2a63b6163c870
+    oembed_sha256: df7ae7dbf3b810706836ba568cc05cdcea1cd78fbcb55834b369679ce694740b
+    notes: Original watch metadata and oEmbed agreed on title and uploader. No archive.org snapshot identity was established. Publication does not establish recording date or client patch.
+storage:
+  original_state: in-repo
+  storage_id: repo
+  path: objects/
+  notes: The video and screenshot files are not archived. The member is a sampled observation record; source URL plus whole-second player time supplies the reproduction locator.
+members:
+- file: united_we_stand_video_breakdown.md
+  sha256: 10fbb08a3fca4e2ad526ff16f670643054d000f438817b4abee8ff5227fefdbf
+  size_bytes: 9424
