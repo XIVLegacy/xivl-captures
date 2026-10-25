@@ -63,6 +63,10 @@ uncontrolled wiki estimates, not independently measured formulas. The page
 does not provide a complete Hard phase schedule, golem count, meteor cadence,
 or numeric command/animation mapping.
 
+The separate [Carraway guide study](../../se-forum-rivenroad-hard-51632/derived/evidence-map.md)
+owns another attributable Hard account, its reported phase structure and
+client-text qualifications. It remains historical player evidence.
+
 ## Corroboration and limits
 
 The preserved Nael van Darnus (Monster) revision 26370, August 6, 2012, Notes,

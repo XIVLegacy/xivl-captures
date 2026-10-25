@@ -1,0 +1,40 @@
+id: se-forum-rivenroad-hard-51632
+title: "Rivenroad Hard: historical guide claims and client text"
+evidence_class: historical-research
+status: distilled
+content_kind: side-quest
+system: instanced-content
+zones:
+- Rivenroad
+tags:
+- web-reference
+- forum-thread
+- historical-research
+- rivenroad-hard
+- combat
+search_hints:
+- To Kill a Raven
+- The Raven Nevermore
+- Nael deus Darnus
+- Carraway Blue Garter guide
+- Iron Curtain Iron Chariot
+- Megaflare Dalamud Dive
+source_refs:
+- source: se-forum-rivenroad-hard-51632
+primary_paths:
+- derived/evidence-map.md
+- derived/guide-claims.csv
+- derived/client-text-crosscheck.csv
+canonical_evidence:
+- derived/evidence-map.md
+- derived/guide-claims.csv
+- derived/client-text-crosscheck.csv
+notes: Hard attribution belongs to the guide and forum thread. All mechanical rows remain historical player claims; client-text matches do not select runtime commands, actors or modes. Exact recording patch and linked video gameplay are unestablished.
+distilled:
+  distilled: true
+  checksum_file: derived/checksums.sha256
+  distilled_artifacts:
+  - derived/evidence-map.md
+  - derived/guide-claims.csv
+  - derived/client-text-crosscheck.csv
+  - derived/checksums.sha256

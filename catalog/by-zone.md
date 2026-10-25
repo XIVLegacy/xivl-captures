@@ -38,6 +38,12 @@ Generated from `catalog/index.yaml`. Axis: `zones`.
 
 - `navmut-world-population-observations`
 
+## Rivenroad (1)
+
+### Studies (1)
+
+- `se-forum-rivenroad-hard-51632`
+
 ## Thanalan (1)
 
 ### Studies (1)

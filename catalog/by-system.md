@@ -44,8 +44,9 @@ such as guildleve, behest, battle-regimen, grand-company).
 
 - `hamlet-defense-hyrstmill-video-breakdown`
 
-## instanced-content (1)
+## instanced-content (2)
 
-### Studies (1)
+### Studies (2)
 
 - `primal-battle-ifrit-bowl-of-embers`
+- `se-forum-rivenroad-hard-51632`

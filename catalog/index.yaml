@@ -240,6 +240,13 @@ sources:
   original_state: in-repo
   storage_id: repo
   member_count: 1
+- id: se-forum-rivenroad-hard-51632
+  title: 'Rivenroad Hard: Carraway''s Blue Garter guide post'
+  evidence_class: historical-research
+  distribution: restricted
+  original_state: in-repo
+  storage_id: repo
+  member_count: 1
 - id: se-forum-second-wind-51208
   title: SE Forum Second Wind Claims - Web Table
   evidence_class: web-tables
@@ -2343,6 +2350,33 @@ studies:
   - studies/se-forum-paladin-enmity/derived/paladin-enmity.csv
   source_refs:
   - source: se-forum-paladin-enmity
+- id: se-forum-rivenroad-hard-51632
+  title: 'Rivenroad Hard: historical guide claims and client text'
+  status: distilled
+  evidence_class: historical-research
+  content_kind: side-quest
+  system: instanced-content
+  zones:
+  - Rivenroad
+  tags:
+  - web-reference
+  - forum-thread
+  - historical-research
+  - rivenroad-hard
+  - combat
+  search_hints:
+  - To Kill a Raven
+  - The Raven Nevermore
+  - Nael deus Darnus
+  - Carraway Blue Garter guide
+  - Iron Curtain Iron Chariot
+  - Megaflare Dalamud Dive
+  primary_paths:
+  - studies/se-forum-rivenroad-hard-51632/derived/evidence-map.md
+  - studies/se-forum-rivenroad-hard-51632/derived/guide-claims.csv
+  - studies/se-forum-rivenroad-hard-51632/derived/client-text-crosscheck.csv
+  source_refs:
+  - source: se-forum-rivenroad-hard-51632
 - id: se-forum-second-wind-51208
   title: SE forum Second Wind Claims
   status: distilled

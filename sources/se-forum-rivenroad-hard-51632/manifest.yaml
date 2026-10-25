@@ -1,0 +1,31 @@
+id: se-forum-rivenroad-hard-51632
+title: "Rivenroad Hard: Carraway's Blue Garter guide post"
+evidence_class: historical-research
+distribution: restricted
+provenance:
+  sources:
+  - key: se-forum-51632-post-92
+    title: Rivenroad (Hard) Discussion and Strategies Thread - Page 10
+    url: https://forum.square-enix.com/ffxiv/threads/51632-Rivenroad-%28Hard%29-Discussion-and-Strategies-Thread/page10
+    site: official FFXIV forum
+    author: carraway
+    post_number: 92
+    post_id: 788628
+    post_displayed_at: "08-16-2012 01:28 PM"
+    last_edited_displayed_at: "08-16-2012 05:15 PM"
+    timezone: not established
+    guide_title: "Order of the Blue Garter's Guide to Nael deus Darnus (Hard)"
+    guide_printed_date: "2012/08/15"
+    guide_compiler: Carraway Author
+    original_guide_permalink: http://bluegarter.guildwork.com/forum/threads/502c78a1205cb237c6d9f8c3-order-of-the-blue-garters-guide-to-nael-deus-darnus-hard
+    linked_video: http://www.youtube.com/watch?v=nwvi79-qAjM
+    note: Player guide hosted on the official forum, not an official mechanics statement. Only post 92 is interpreted. The retained forum copy is the source; byte identity with the Guildwork original is unverified.
+storage:
+  original_state: in-repo
+  storage_id: repo
+  path: objects/
+  notes: Unchanged public HTML response retained as an ignored source object. The public surface contains provenance and derived factual ledgers; no video or frame file is retained.
+members:
+- file: rivenroad-hard-51632-page10.html
+  sha256: a45fcb9c2b33b9b898d2c869858057167773af4505cfbb15b3c2f5f6374fec2c
+  size_bytes: 442836
