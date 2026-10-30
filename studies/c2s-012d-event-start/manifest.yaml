@@ -20,18 +20,23 @@ notes: >-
   Counts for every sent client-to-server 0x012d EventStart in the captures.
   Joins the selector byte, the server codes fields, and the event name, and
   counts the 0x00cc and 0x00cd target messages that precede each talkDefault.
-  Actor ids, timestamps, and payload bytes stay out of the products.
+  Actor ids, timestamps, and payload bytes stay out of the products. The
+  job-change-context extension adds a bounded 0x01a4/request join and a full
+  retained-corpus packed-selector scan.
 source_refs:
 - source: pcap-1.23b
 primary_paths:
 - derived/verdicts.md
 - derived/accounting.json
+- derived/job-change-context.json
 canonical_evidence:
 - derived/accounting.json
 - derived/verdicts.md
+- derived/job-change-context.json
 distilled:
   distilled: true
   checksum_file: derived/checksums.sha256
   distilled_artifacts:
   - derived/accounting.json
   - derived/verdicts.md
+  - derived/job-change-context.json

@@ -494,6 +494,7 @@ studies:
   primary_paths:
   - studies/c2s-012d-event-start/derived/verdicts.md
   - studies/c2s-012d-event-start/derived/accounting.json
+  - studies/c2s-012d-event-start/derived/job-change-context.json
   source_refs:
   - source: pcap-1.23b
 - id: cast-result-state-order

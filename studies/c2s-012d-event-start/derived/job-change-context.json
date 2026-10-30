@@ -1,0 +1,452 @@
+{
+  "evidence_class": "packet-capture",
+  "extension": "job-change-context",
+  "generator_version": "1",
+  "job_contexts": [
+    {
+      "candidate_neighbors": [],
+      "capture": "from_gridania_to_blackshroud.pcapng",
+      "connection_index": 0,
+      "frame_index": 245,
+      "frame_stream_offset": 29991,
+      "job_byte": 0,
+      "job_source_equals_destination": true,
+      "lane": "main",
+      "subevent_index": 10,
+      "subevent_offset": 1392,
+      "window_events_before_after": 3
+    },
+    {
+      "candidate_neighbors": [
+        {
+          "all_four_actor_fields_equal": true,
+          "application_offset": 0,
+          "designated_value": "0x04000029",
+          "destination_equals_job": true,
+          "frame_index": 14,
+          "frame_stream_offset": 1182,
+          "opcode": "0x00da",
+          "relative_event": 1,
+          "source_equals_job": true,
+          "subevent_index": 0,
+          "subevent_offset": 0
+        }
+      ],
+      "capture": "gear_changesoul.pcapng",
+      "connection_index": 0,
+      "frame_index": 13,
+      "frame_stream_offset": 1128,
+      "job_byte": 16,
+      "job_source_equals_destination": true,
+      "lane": "main",
+      "subevent_index": 0,
+      "subevent_offset": 0,
+      "window_events_before_after": 3
+    },
+    {
+      "candidate_neighbors": [],
+      "capture": "gridania_to_coerthas.pcapng",
+      "connection_index": 0,
+      "frame_index": 184,
+      "frame_stream_offset": 20546,
+      "job_byte": 16,
+      "job_source_equals_destination": true,
+      "lane": "main",
+      "subevent_index": 10,
+      "subevent_offset": 1392,
+      "window_events_before_after": 3
+    },
+    {
+      "candidate_neighbors": [],
+      "capture": "gridania_to_coerthas.pcapng",
+      "connection_index": 0,
+      "frame_index": 854,
+      "frame_stream_offset": 121573,
+      "job_byte": 16,
+      "job_source_equals_destination": true,
+      "lane": "main",
+      "subevent_index": 10,
+      "subevent_offset": 1392,
+      "window_events_before_after": 3
+    },
+    {
+      "candidate_neighbors": [],
+      "capture": "gridania_to_coerthas.pcapng",
+      "connection_index": 0,
+      "frame_index": 1328,
+      "frame_stream_offset": 219176,
+      "job_byte": 16,
+      "job_source_equals_destination": true,
+      "lane": "main",
+      "subevent_index": 10,
+      "subevent_offset": 1392,
+      "window_events_before_after": 3
+    },
+    {
+      "candidate_neighbors": [],
+      "capture": "login.pcapng",
+      "connection_index": 0,
+      "frame_index": 17,
+      "frame_stream_offset": 5457,
+      "job_byte": 0,
+      "job_source_equals_destination": true,
+      "lane": "main",
+      "subevent_index": 10,
+      "subevent_offset": 1392,
+      "window_events_before_after": 3
+    },
+    {
+      "candidate_neighbors": [],
+      "capture": "move_out_of_room.pcapng",
+      "connection_index": 0,
+      "frame_index": 40,
+      "frame_stream_offset": 7042,
+      "job_byte": 0,
+      "job_source_equals_destination": true,
+      "lane": "main",
+      "subevent_index": 10,
+      "subevent_offset": 1392,
+      "window_events_before_after": 3
+    },
+    {
+      "candidate_neighbors": [],
+      "capture": "moving_around_gridania.pcapng",
+      "connection_index": 0,
+      "frame_index": 211,
+      "frame_stream_offset": 35370,
+      "job_byte": 16,
+      "job_source_equals_destination": true,
+      "lane": "main",
+      "subevent_index": 10,
+      "subevent_offset": 1392,
+      "window_events_before_after": 3
+    },
+    {
+      "candidate_neighbors": [],
+      "capture": "moving_around_gridania.pcapng",
+      "connection_index": 0,
+      "frame_index": 1259,
+      "frame_stream_offset": 195820,
+      "job_byte": 16,
+      "job_source_equals_destination": true,
+      "lane": "main",
+      "subevent_index": 10,
+      "subevent_offset": 1392,
+      "window_events_before_after": 3
+    },
+    {
+      "candidate_neighbors": [],
+      "capture": "party_battle_leve.pcapng",
+      "connection_index": 0,
+      "frame_index": 3453,
+      "frame_stream_offset": 426527,
+      "job_byte": 0,
+      "job_source_equals_destination": false,
+      "lane": "main",
+      "subevent_index": 34,
+      "subevent_offset": 2952,
+      "window_events_before_after": 3
+    },
+    {
+      "candidate_neighbors": [],
+      "capture": "return_to_inn.pcapng",
+      "connection_index": 0,
+      "frame_index": 47,
+      "frame_stream_offset": 7610,
+      "job_byte": 0,
+      "job_source_equals_destination": true,
+      "lane": "main",
+      "subevent_index": 10,
+      "subevent_offset": 1392,
+      "window_events_before_after": 3
+    },
+    {
+      "candidate_neighbors": [],
+      "capture": "switch_to_weaver.pcapng",
+      "connection_index": 0,
+      "frame_index": 19,
+      "frame_stream_offset": 2261,
+      "job_byte": 0,
+      "job_source_equals_destination": true,
+      "lane": "main",
+      "subevent_index": 0,
+      "subevent_offset": 0,
+      "window_events_before_after": 3
+    },
+    {
+      "candidate_neighbors": [],
+      "capture": "switch_to_weaver.pcapng",
+      "connection_index": 0,
+      "frame_index": 20,
+      "frame_stream_offset": 2312,
+      "job_byte": 16,
+      "job_source_equals_destination": true,
+      "lane": "main",
+      "subevent_index": 0,
+      "subevent_offset": 0,
+      "window_events_before_after": 3
+    },
+    {
+      "candidate_neighbors": [],
+      "capture": "switch_to_weaver.pcapng",
+      "connection_index": 0,
+      "frame_index": 22,
+      "frame_stream_offset": 2661,
+      "job_byte": 0,
+      "job_source_equals_destination": true,
+      "lane": "main",
+      "subevent_index": 8,
+      "subevent_offset": 1216,
+      "window_events_before_after": 3
+    },
+    {
+      "candidate_neighbors": [],
+      "capture": "teleport_to_camp_nine_ivies.pcapng",
+      "connection_index": 0,
+      "frame_index": 81,
+      "frame_stream_offset": 10441,
+      "job_byte": 16,
+      "job_source_equals_destination": true,
+      "lane": "main",
+      "subevent_index": 10,
+      "subevent_offset": 1392,
+      "window_events_before_after": 3
+    },
+    {
+      "candidate_neighbors": [],
+      "capture": "teleport_to_camp_tranquil.pcapng",
+      "connection_index": 0,
+      "frame_index": 55,
+      "frame_stream_offset": 7836,
+      "job_byte": 0,
+      "job_source_equals_destination": true,
+      "lane": "main",
+      "subevent_index": 10,
+      "subevent_offset": 1392,
+      "window_events_before_after": 3
+    },
+    {
+      "candidate_neighbors": [],
+      "capture": "teleport_to_gridania.pcapng",
+      "connection_index": 0,
+      "frame_index": 67,
+      "frame_stream_offset": 11166,
+      "job_byte": 0,
+      "job_source_equals_destination": true,
+      "lane": "main",
+      "subevent_index": 12,
+      "subevent_offset": 2368,
+      "window_events_before_after": 3
+    },
+    {
+      "candidate_neighbors": [],
+      "capture": "war_quest_update2.pcapng",
+      "connection_index": 0,
+      "frame_index": 639,
+      "frame_stream_offset": 60667,
+      "job_byte": 15,
+      "job_source_equals_destination": false,
+      "lane": "main",
+      "subevent_index": 31,
+      "subevent_offset": 2640,
+      "window_events_before_after": 3
+    }
+  ],
+  "request_job_pairs": [
+    {
+      "all_four_actor_fields_equal": true,
+      "application_04_low16": 12017,
+      "capture": "gear_changesoul.pcapng",
+      "connection_index": 0,
+      "job_source_equals_destination": true,
+      "job_update": {
+        "direction": "s2c",
+        "frame_index": 13,
+        "frame_stream_offset": 1128,
+        "subevent_index": 0,
+        "subevent_offset": 0
+      },
+      "lane": "main",
+      "request": {
+        "direction": "c2s",
+        "frame_index": 19,
+        "frame_stream_offset": 3416,
+        "subevent_index": 0,
+        "subevent_offset": 0
+      },
+      "request_destination_equals_job_destination": true,
+      "request_source_equals_destination": true,
+      "request_source_equals_job_source": true
+    }
+  ],
+  "requests": [
+    {
+      "application_04_low16": 12017,
+      "application_size": 184,
+      "capture": "gear_changesoul.pcapng",
+      "connection_index": 0,
+      "direction": "c2s",
+      "event_name": "commandRequest",
+      "event_type": 0,
+      "frame_index": 19,
+      "frame_stream_offset": 3416,
+      "lane": "main",
+      "opcode": "0x012d",
+      "source_equals_destination": true,
+      "subevent_index": 0,
+      "subevent_offset": 0,
+      "typed_tail": [
+        {
+          "tail_offset": 0,
+          "type": "int",
+          "value": 1
+        },
+        {
+          "tail_offset": 5,
+          "type": "nil"
+        },
+        {
+          "tail_offset": 6,
+          "type": "nil"
+        },
+        {
+          "tail_offset": 7,
+          "type": "nil"
+        },
+        {
+          "tail_offset": 8,
+          "type": "nil"
+        },
+        {
+          "tail_offset": 9,
+          "type": "nil"
+        },
+        {
+          "tail_offset": 10,
+          "type": "nil"
+        },
+        {
+          "tail_offset": 11,
+          "type": "nil"
+        },
+        {
+          "tail_offset": 12,
+          "type": "nil"
+        },
+        {
+          "tail_offset": 13,
+          "type": "terminator"
+        }
+      ],
+      "typed_tail_application_offset": 49
+    }
+  ],
+  "scope": {
+    "animation_designated_field": "application +0 for 0x00da/0x00e0/0x00e1",
+    "combat_designated_field": "application +4 for 0x0139/0x013a/0x013b/0x013c",
+    "cross_direction_order_claim": false,
+    "job_opcode": "0x01a4",
+    "neighborhood": "same admitted s2c connection and direction, +/-3 decoded subevents",
+    "request_opcode": "0x012d"
+  },
+  "selector_search": {
+    "body_tail_nonzero_bytes": 0,
+    "complete_subevents": 65864,
+    "compression_mismatches": 0,
+    "designated_fields": {
+      "animation": "application +0 for 0x00da/0x00e0/0x00e1",
+      "combat_result": "application +4 for 0x0139/0x013a/0x013b/0x013c"
+    },
+    "exact_any_complete_subevent_count": 0,
+    "exact_designated_field_count": 0,
+    "exact_value": "0x04000030",
+    "frames": 19760,
+    "packed_any_complete_subevent_count": 0,
+    "packed_designated_field_count": 0,
+    "packed_predicate": "(value & 0xFF000FFF) == 0x04000030",
+    "predicate_sanity": {
+      "0x04000029": false,
+      "0x04000030": true,
+      "0x04001030": true,
+      "0x040ff030": true
+    },
+    "scope": "all complete decoded subevent bytes in all 54 verified members",
+    "truncated_subevents": 0
+  },
+  "source": {
+    "captures_in_output": {
+      "from_gridania_to_blackshroud.pcapng": {
+        "sha256": "eff300de679230653953ea3399939a15ce9d6aeafd202c7ebcf5f55e6d24930f",
+        "size_bytes": 196308
+      },
+      "gear_changesoul.pcapng": {
+        "sha256": "62af2cde3a4683fba3e09cc3dfed8001d74303b120381de577b05df492926780",
+        "size_bytes": 23784
+      },
+      "gridania_to_coerthas.pcapng": {
+        "sha256": "63152a1ed6e446df5cc4750fe50a0839f9e45ad270c79abfc72b5c09cc47e547",
+        "size_bytes": 939832
+      },
+      "login.pcapng": {
+        "sha256": "28e06b54fe559870031f077f8549b9244caafa7e5177dbca08a7feae6c2b1b62",
+        "size_bytes": 856236
+      },
+      "move_out_of_room.pcapng": {
+        "sha256": "a7a03a1d688f3feb264f8da9fae3519c55b7e267aa3802472f0221f4d729b37b",
+        "size_bytes": 83412
+      },
+      "moving_around_gridania.pcapng": {
+        "sha256": "bf6abf7ccc7a16e071846036477c1fadbc3b46385ef6e747b543d836f3f51017",
+        "size_bytes": 855000
+      },
+      "party_battle_leve.pcapng": {
+        "sha256": "6327e5e1f5cbd51a9baaa9bcbacf53ca51c50a98fe4b66ae3e6bdecd9198089f",
+        "size_bytes": 1429864
+      },
+      "return_to_inn.pcapng": {
+        "sha256": "9a81e483d3dd2673081afef06ed521c190c4d42be16e95e24097f25ff81f58c1",
+        "size_bytes": 44012
+      },
+      "switch_to_weaver.pcapng": {
+        "sha256": "b41b25bc51be1a64f41861142dc992c14493c65bcd920cadca013243480b777e",
+        "size_bytes": 33364
+      },
+      "teleport_to_camp_nine_ivies.pcapng": {
+        "sha256": "fac2b485608247d299a406a7065e19918789118e7e544ca85cec4d772da0e3ab",
+        "size_bytes": 80004
+      },
+      "teleport_to_camp_tranquil.pcapng": {
+        "sha256": "488318351cdedb2e2b650dc68c55014b160fbbc26753c200922402c1ba6c4dd7",
+        "size_bytes": 67920
+      },
+      "teleport_to_gridania.pcapng": {
+        "sha256": "779141dc79a4bcf4bfc2e265f8b9510607d5a6b6e78d32f8940e5a847e598fa0",
+        "size_bytes": 67620
+      },
+      "war_quest_update2.pcapng": {
+        "sha256": "bf43b5ee32c58e5dc6f8149b071bd9c5cd5cc0aaa55ea3528872308fd7be2429",
+        "size_bytes": 206216
+      }
+    },
+    "local_members_verified": 54,
+    "manifest": "sources/pcap-1.23b/manifest.yaml",
+    "manifest_member_count": 54,
+    "manifest_sha256": "baaa15f99f7f5d865bf2ec0dbcc1e454d034382b0559edccb0085c57c4061cf5"
+  },
+  "study": "c2s-012d-event-start",
+  "summary": {
+    "job_byte_counts": {
+      "0": 9,
+      "15": 1,
+      "16": 8
+    },
+    "job_contexts_with_candidate_neighbor": 1,
+    "job_update_count": 18,
+    "request_count_by_application_04_low16": {
+      "12017": 1
+    },
+    "request_count_for_application_04_low16_12017": 1,
+    "request_job_pair_count": 1,
+    "request_job_pairs_all_four_equal": 1
+  }
+}
