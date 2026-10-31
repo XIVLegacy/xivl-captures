@@ -200,11 +200,12 @@ Generated from `catalog/index.yaml`. Primary axis: `content_kind`.
 
 - `shop-vendor-buy-sell-repair`
 
-## side-quest (5)
+## side-quest (6)
 
-### Studies (4)
+### Studies (5)
 
 - `elemen-quest-rewards-walkthroughs`
+- `quest-journal-map-wire`
 - `se-forum-rivenroad-hard-51632`
 - `seasonal-impish-impositions-video-breakdown`
 - `side-quest-rivenroad-hard-video-breakdown`

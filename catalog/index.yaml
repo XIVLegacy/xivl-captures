@@ -2233,6 +2233,28 @@ studies:
   - studies/property-stream-hash-catalog/derived/property-records.csv
   source_refs:
   - source: pcap-1.23b
+- id: quest-journal-map-wire
+  title: Quest Journal and Map Packets
+  status: distilled
+  evidence_class: packet-capture
+  content_kind: side-quest
+  tags:
+  - quest
+  - journal
+  - quest-map
+  - packet-decoding
+  search_hints:
+  - command 24211
+  - quest 110658
+  - marker 11065801
+  - The Penultimate Prank
+  - qtdata
+  - qtmap
+  primary_paths:
+  - studies/quest-journal-map-wire/derived/evidence-map.md
+  source_refs:
+  - source: pcap-1.23b
+    citation: sources/pcap-1.23b/manifest.yaml
 - id: regional-guildleve-publisher-contract
   title: Regional Guildleve Publisher Contract
   status: distilled

@@ -35,9 +35,9 @@ This view summarizes opcode evidence from packet captures.
   not decoded field semantics (those live in this repo's
   `derived/payload_layouts.json`).
 - Service split across members: map 37.
-- Caveat: content_kind side-quest is the generic quest-state reading; the captures do
-  not identify the specific quest, so it could be a class/job/story quest. The quest
-  identity remains unresolved.
+- Caveat: content_kind side-quest is the generic quest-state reading. The journal member
+  carries quest key 110658; studies/quest-journal-map-wire owns its journal/map
+  crosscheck. The accept and update members remain unjoined to that quest identity.
 
 ## Using this view
 

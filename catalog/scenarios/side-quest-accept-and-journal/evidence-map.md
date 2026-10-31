@@ -44,4 +44,4 @@ Union across the member captures. `name` is the derived/opcode_names.json entry 
 ## Gaps / caveats
 
 - Opcode identity and framing only; decoded payload field semantics live in this repo's `derived/` (payload_layouts.json and friends).
-- content_kind side-quest is the generic quest-state reading; the captures do not identify the specific quest, so it could be a class/job/story quest. The quest identity remains unresolved.
+- content_kind side-quest is the generic quest-state reading. The journal member carries quest key 110658; studies/quest-journal-map-wire owns its journal/map crosscheck. The accept and update members remain unjoined to that quest identity.

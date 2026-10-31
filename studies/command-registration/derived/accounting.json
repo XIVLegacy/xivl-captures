@@ -2,7 +2,7 @@
   "schema_version": 1,
   "study": "command-registration",
   "source_id": "pcap-1.23b",
-  "source_manifest_sha256": "baaa15f99f7f5d865bf2ec0dbcc1e454d034382b0559edccb0085c57c4061cf5",
+  "source_manifest_sha256": "6136e448317e5e80fba964a34038c65b6d4c76e5cbc6f338c9e663eabffc8992",
   "inputs": [
     {
       "file": "accept_leve.pcapng",

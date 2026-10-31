@@ -416,7 +416,7 @@ scenarios:
   - journal
   - quest-update
   blurb: "Generic quest-state captures: accepting a quest, the quest journal projection, and a quest update."
-  caveat: 'content_kind side-quest is the generic quest-state reading; the captures do not identify the specific quest, so it could be a class/job/story quest. The quest identity remains unresolved.'
+  caveat: 'content_kind side-quest is the generic quest-state reading. The journal member carries quest key 110658; studies/quest-journal-map-wire owns its journal/map crosscheck. The accept and update members remain unjoined to that quest identity.'
   members:
   - accept_quest.pcapng
   - quest_journal.pcapng

@@ -1,0 +1,35 @@
+id: quest-journal-map-wire
+title: Quest Journal and Map Packets
+evidence_class: packet-capture
+status: distilled
+content_kind: side-quest
+tags:
+- quest
+- journal
+- quest-map
+- packet-decoding
+search_hints:
+- command 24211
+- quest 110658
+- marker 11065801
+- The Penultimate Prank
+- qtdata
+- qtmap
+notes: >-
+  One retained member carries journal and map requests for key 110658 and
+  requestedData replies. Client fixed arguments separate the quest key from
+  the one-element marker tail. Temporal and TCP acknowledgement correlation
+  do not prove the server's application matching or quest-phase selection.
+source_refs:
+- source: pcap-1.23b
+  citation: sources/pcap-1.23b/manifest.yaml
+primary_paths:
+- derived/evidence-map.md
+canonical_evidence:
+- derived/evidence-map.md
+distilled:
+  distilled: true
+  checksum_file: derived/checksums.sha256
+  distilled_artifacts:
+  - derived/evidence-map.md
+  - derived/checksums.sha256

@@ -431,7 +431,7 @@
     "local_members_verified": 54,
     "manifest": "sources/pcap-1.23b/manifest.yaml",
     "manifest_member_count": 54,
-    "manifest_sha256": "baaa15f99f7f5d865bf2ec0dbcc1e454d034382b0559edccb0085c57c4061cf5"
+    "manifest_sha256": "6136e448317e5e80fba964a34038c65b6d4c76e5cbc6f338c9e663eabffc8992"
   },
   "study": "c2s-012d-event-start",
   "summary": {
