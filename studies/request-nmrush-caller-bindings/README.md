@@ -58,6 +58,35 @@ little-endian u32 `[0x04,0x08)`. Each function had a full 64-byte parameter
 span; the eight-input group had no short selected fields. A filename selected
 a candidate input, not a content identity.
 
+### Complementary NMRush census
+
+The other forty retained members are exactly the source-manifest membership
+minus the fourteen tabulated above. Their 2,200,532 bytes matched the manifest
+sizes and SHA-256 values. Framing validation and `_decode_capture` used revision
+`ae87ab0c0339e5e1648c623439b2c90956764385`. The admitted 60 connections contained
+6,414 complete outer frames, 37 s2c `0x00CC` class fields and 134 s2c `0x0130`
+function fields with complete 64-byte parameter spans. Complete admitted bodies
+were consumed exactly, with no framing, compression, inflation, truncation or
+short-field failures. The canonical reducer excluded 162 trailing s2c bytes.
+
+Using the same application offsets above, the class comparison selected only
+`PopulaceNMRushGuide`, `QuestDirectorNMRush01` and `QuestDirectorNMRush02`.
+The function and typed-string comparisons selected the seven Guide methods
+listed above, using exact full strings. Parameter traversal covered all 64 bytes:
+tags `0x00`, `0x01` and `0x06` had four-byte leaves, `0x02` had a NUL-terminated
+string, and `0x03`, `0x04` and `0x05` had no leaf bytes. Each span reached `0x0F`
+with zero padding afterward. None of the 80 typed strings matched a selector.
+No selected class or outer function matched either, so no actor-owner or
+`0x012D`/`0x012E` correlation was selected.
+
+Together with the disjoint fourteen-member comparison, this covers all 54
+retained members: 831 admitted s2c class fields and 200 s2c function fields with
+their full 64-byte spans contain no selected NMRush class or Guide method.
+This closes these named fields, not unrecorded sessions, excluded protocols or
+other caller forms. It supplies no Guide actor, Director parameters, answer
+ownership or content-state producer. The forty-member result covers only the
+NMRush selectors above.
+
 ## Warden creation record
 
 In `teleport_to_camp_tranquil.pcapng`, main connection 0, s2c frame 61 /
@@ -97,10 +126,11 @@ initializer". Capture bytes alone do not prove the Lua request completed.
 
 ## Remaining caller boundary
 
-There is no matching `RequestDirector`, Guide or NMRush Director class in
-these selected `0x00CC` fields, nor a selected named event call. This bounded
-comparison supplies no Warden join/cancel/end arguments, Director `requestId`,
+The fourteen-member comparison contains no matching `RequestDirector`, Guide
+or NMRush Director class in its selected `0x00CC` fields, nor a selected named
+event call. This bounded comparison supplies no Warden join/cancel/end
+arguments, Director `requestId`,
 Guide talk argument, returned option consumer or synchronized content-state
-producer. It is not an absence claim for the other retained captures or for
-all possible caller forms. Filenames served as candidate locators and do not
-establish where a content encounter ran.
+producer. The fourteen-member comparison alone is not an absence claim for the
+other retained captures or for all possible caller forms. Filenames served as
+candidate locators and do not establish where a content encounter ran.

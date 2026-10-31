@@ -14,6 +14,7 @@ relevant source or study bundle for its manifest, provenance, and findings.
 - [Mob drops, crystal gating, and party loot evidence](mob-drops-party-loot-evidence.md)
 - [Combat sight detection evidence](combat-sight-detection-evidence.md)
 - [Combat and quest-duty observations](combat-duty-observations.md)
+- [Skirmish and Behest content evidence](skirmish-behest-content-evidence.md)
 - [Land-gathering observed sequence](land-gathering-observed-sequence.md)
 - [Selected class action behavior evidence](class-action-behavior-evidence.md)
 
