@@ -14,6 +14,7 @@ relevant source or study bundle for its manifest, provenance, and findings.
 - [Mob drops, crystal gating, and party loot evidence](mob-drops-party-loot-evidence.md)
 - [Combat sight detection evidence](combat-sight-detection-evidence.md)
 - [Combat and quest-duty observations](combat-duty-observations.md)
+- [Land-gathering observed sequence](land-gathering-observed-sequence.md)
 
 ## AI-agent policy
 
