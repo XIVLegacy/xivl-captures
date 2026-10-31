@@ -80,6 +80,51 @@ python tools/extractors/extract_job_change_context.py --check
 python tools/extractors/extract_job_change_context.py --public-shape
 ```
 
+## Combat stance request context
+
+The retained `combat_skills.pcapng` has seven `0x012D` requests and four
+`0x0134` state records on main connection 0. The request actor and the
+state-record source are equal for the rows below. The other two state records
+belong to a different actor.
+
+| Completing packet | Direction | Frame / subevent | Stream offset | Observation |
+| ---: | --- | --- | ---: | --- |
+| 21 | c2s | 6 / 1 | 976 | `commandForced`, static-owner low 16 bits 21001. |
+| 24 | s2c | 5 / 0 | 617 | `0x0134`, state byte 2. |
+| 65 | c2s | 17 / 2 | 3120 | `commandDefault`, static-owner low 16 bits 27260. |
+| 84 | c2s | 22 / 0 | 4032 | `commandDefault`, static-owner low 16 bits 27264. |
+| 108 | c2s | 29 / 1 | 5168 | `commandDefault`, static-owner low 16 bits 27190. |
+| 133 | c2s | 36 / 2 | 6240 | `commandDefault`, static-owner low 16 bits 27191. |
+| 157 | c2s | 44 / 0 | 7640 | `commandDefault`, static-owner low 16 bits 27198. |
+| 239 | c2s | 63 / 2 | 10488 | `commandForced`, static-owner low 16 bits 21002. |
+| 244 | s2c | 105 / 0 | 13233 | `0x0134`, state byte 0. |
+
+The static command catalog names 21001 Active Mode, 21002 Passive Mode,
+27260 Invigorate, 27264 Blood for Blood and 27190 Heavy Swing
+(`xivl-client-data:derived/command_battle_params.csv`, matching IDs).
+The two forced requests have typed tail
+`nil,nil,1,nil,nil,nil,nil,nil,nil`. Each of the five default requests has
+`nil,0,1,nil,reference,nil,nil,nil,nil`; the selected reference is equal
+across those five requests. Binding-reference equality with an actor ID is
+not assigned here.
+
+State 2 is the last observed same-actor state for all five default requests.
+The state-0 publication follows the final forced request, with no later
+non-stance request in this capture. This does not witness an action used
+while passive, automatic weapon drawing or a passive command's server reply.
+Packet completion order is observational, without a causal request/reply
+association or a claim about server evaluation or rendering.
+
+The [source manifest](../../sources/pcap-1.23b/manifest.yaml) pins the member
+at 63,028 bytes, SHA-256
+`7fe66d92f6f62584e57562e51355d310546935690e0b96c2c689b83bbe8a07a7`.
+Frames and subevents are zero-based within each reconstructed direction;
+completing packets are one-based. The selected decode retained 80 c2s and
+117 s2c complete frames, zero admitted unparsed bytes and six discarded
+trailing reconstructed s2c bytes. The independent framing check reported
+zero trailing bytes and flag mismatches. These counters describe different
+stages of the [decode contract](../../docs/pcap-decoding.md).
+
 ## Limits
 
 The published payload samples zero-fill each event name of four or more letters.
