@@ -90,6 +90,10 @@ and walks wrapped actor subevents. The application payload begins after the
 transposed from structure-of-arrays wire storage; X18 has a static shape but no
 retained packet, and X00 carries no target rows.
 
+The source manifest lists 54 captures. This generation's accounting lists
+53 capture inputs; `login.pcapng` is not listed. The retained table's
+observations are limited to that generation.
+
 ## Promoted conclusions
 
 Stage 1 promotes only an evidence table and accounting facts:
@@ -141,6 +145,11 @@ for each bit or a complete hit-effect enum. Exact rows are
   but is not interpreted as a wall-clock timestamp or used for cross-lane order.
 - The corpus is a set of gameplay witnesses, not a controlled rate or formula
   experiment.
+
+The retained table of 622 target rows contains no command 23556, 23539 or
+23552, no WorldMaster text 30379 and no per-target `effect_id` 0x48000200.
+These are finite table observations, without a general historical absence
+claim. The exact table identity is pinned in Promoted conclusions above.
 
 ## Further research
 
