@@ -106,6 +106,17 @@ corpus contains normal damage, critical damage, blocked damage, parried damage,
 miss, HP recovery, non-fit, and unclassified rows. Numeric magnitude and
 effect IDs never select a class.
 
+The seven rows classified by `worldMaster` text 30308 as parried damage
+contain `effect_id` values `0x08000E04` twice, `0x08000E08` twice,
+`0x08000E0C` twice and `0x08000E4C` once. Bit `0x4` is absent in
+`row_index` 556 and 597, at `war_quest_update2.pcapng` lane 0,
+frame 306/subevent 0 and frame 534/subevent 0. The shared mask `0xE00`
+and these composites are observations, without independently proved names
+for each bit or a complete hit-effect enum. Exact rows are
+[`derived/battle-result-rows.csv`](derived/battle-result-rows.csv),
+`row_index` 30, 33, 221, 321, 556, 590 and 597. The table's SHA-256 is
+`d67cb49d9489df127b3f374ee85792c43a6feffecbd4e2314072c0622b22e494`.
+
 ## Topics
 
 - battle-result packet family
