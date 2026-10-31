@@ -12,6 +12,7 @@ relevant source or study bundle for its manifest, provenance, and findings.
 - [Packet Decode and Wire Order](pcap-decoding.md) - the pcap framing,
   lane, nested-event, and exact-order consumer contract.
 - [Mob drops, crystal gating, and party loot evidence](mob-drops-party-loot-evidence.md)
+- [World population and drop value evidence](world-population-value-evidence.md)
 - [Combat sight detection evidence](combat-sight-detection-evidence.md)
 - [Combat and quest-duty observations](combat-duty-observations.md)
 - [Skirmish and Behest content evidence](skirmish-behest-content-evidence.md)
