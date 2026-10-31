@@ -13,6 +13,7 @@ relevant source or study bundle for its manifest, provenance, and findings.
   lane, nested-event, and exact-order consumer contract.
 - [Mob drops, crystal gating, and party loot evidence](mob-drops-party-loot-evidence.md)
 - [Combat sight detection evidence](combat-sight-detection-evidence.md)
+- [Combat and quest-duty observations](combat-duty-observations.md)
 
 ## AI-agent policy
 
