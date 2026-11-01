@@ -11,6 +11,7 @@ relevant source or study bundle for its manifest, provenance, and findings.
   evidence tiers, layer ownership, and the public/restricted boundary.
 - [Packet Decode and Wire Order](pcap-decoding.md) - the pcap framing,
   lane, nested-event, and exact-order consumer contract.
+- [Airship purchase, boarding and waiting evidence](airship-boarding-evidence.md)
 - [Mob drops, crystal gating, and party loot evidence](mob-drops-party-loot-evidence.md)
 - [World population and drop value evidence](world-population-value-evidence.md)
 - [Combat sight detection evidence](combat-sight-detection-evidence.md)
