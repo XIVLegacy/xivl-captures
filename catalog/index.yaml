@@ -2152,6 +2152,9 @@ studies:
   - crowd-control
   - experience-points
   - market-search
+  - repair-request
+  - player-search
+  - thornmarch
   search_hints:
   - dev1151 stationary HP MP recovery
   - dev1132 link EXP bonus
@@ -2160,6 +2163,9 @@ studies:
   - 1.20a interrupted enemy casting graphics
   - 1.20 Raise Rebirth action tables
   - item search twenty transactions history maintenance
+  - equipped repair request dark matter repair level
+  - Seeking Party status settings Close
+  - Good King Moggle Mog XII death enmity range chest
   primary_paths:
   - studies/official-1x-battle-patches/derived/evidence-map.md
   - studies/official-1x-battle-patches/derived/post-comparison.json

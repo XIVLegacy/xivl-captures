@@ -15,7 +15,7 @@ to its restricted `objects/pages/` storage.
 | `32606-patch1.20-Patch-1.20-Notes.html` | NOC_JP, `476417` | `12-12-2011 08:29 PM` | Battle, class reforms |
 | Same 1.20 member | NOC_JP, `476429` | `12-12-2011 08:39 PM` | Seven class action/trait tables |
 | Same 1.20 member | NOC_JP, `476421` | `12-12-2011 08:31 PM` | System, `dev1250` and `dev1251` |
-| `34137-patch1.20a-1.20a-Patch-Notes.html` | NOC_JP, `497816` | `12-27-2011 07:40 PM` | Bug Fixes, enemy casting graphics |
+| `34137-patch1.20a-1.20a-Patch-Notes.html` | NOC_JP, `497816` | `12-27-2011 07:40 PM` | Item, `dev1291`; System, `dev1293`; Bug Fixes, casting graphics, Seeking Party and Thornmarch |
 | `39024-patch1.21-Patch-1.21-Notes.html` | NOC_JP, `580990` | `03-08-2012 10:46 PM` | Battle, `dev1071` and `dev1302` |
 
 These are the forum's displayed times. No independent display-time timezone
@@ -83,6 +83,64 @@ damage or a status ailment had interrupted the cast. This is a visual-state
 bug-fix announcement. It neither says every damaging hit interrupts nor
 establishes a chance or server-result sequence. Source:
 [1.20a Patch Notes][patch-120a], Bug Fixes, enemy casting-graphics item.
+
+## Equipped repair requests and player search in 1.20a
+
+Post `497816`, `dev1291`, announces equipped-gear repair requests. Placing
+a request requires gil and a dark-matter grade determined by repair level:
+
+| Repair level | Gil required | Dark-matter grade |
+| --- | ---: | ---: |
+| 1-10 | 100 | 1 |
+| 11-20 | 200 | 2 |
+| 21-30 | 300 | 3 |
+| 31-40 | 400 | 4 |
+| 41-50 | 500 | 5 |
+
+An open request shows a repair icon beside the player's name. Gear > Cancel
+Request offers cancellation; repairing all gear alone does not automatically
+close the request. The repairer's current class must match the item's repair
+class, and Repair All selects the items that player can repair. The requester
+supplies all dark matter. The announced repairer reward is gil and EXP based
+on repaired-item level. Both players must remain nearby for repairs to be
+possible; no distance number is supplied.
+
+The same post's `dev1293` announces current online statuses in search results
+and automatic Your Settings saving on Close, with Accept removed. Bug Fixes
+also identifies an online-status reversion after leaving or disbanding a party
+joined through Seeking Party: the erroneous restored value came from before
+Seeking Party settings were made.
+
+These are announced 1.20a rules. They do not establish direct 24244 acceptance
+or settlement, an observed 1.23b debit/material/condition transition, or numeric
+distance and EXP rewards. Source: [1.20a Patch Notes][patch-120a], post
+`497816`, `dev1291` Making/Accepting a Repair Request, `dev1293`, and the
+Seeking Party Bug Fixes item. Existing client contracts remain separate:
+
+- `xivl-client-scripts:docs/repair-request-client-contract.md`.
+- `xivl-client-scripts:docs/party-matching-client-contract.md`.
+- `xivl-client-scripts:docs/search-recruitment-native-boundaries.md`.
+- `xivl-client-structs:docs/repair-contract.md`.
+
+## Thornmarch bug-fix announcements in 1.20a
+
+Post `497816`, Bug Fixes nested items 10-14, announces fixes for these
+pre-fix conditions:
+
+| Item | Condition addressed |
+| --- | --- |
+| 10 | Enmity reset in the Good King Moggle Mog XII battle left the enemy no longer acting. |
+| 11 | Opening its treasure chest with little time remaining failed to extend time. |
+| 12 | Moogle-Go-Round, Mognesia and Pom Flare took effect with no targets in range. The item excludes Pukla Puki the Pomburner's Pom Flare. |
+| 13 | Moogles healed at the point of death regained HP and continued fighting instead of dying. |
+| 14 | Moogles using weaponskills at the point of death completed them before dying. |
+
+The announcement supplies no reset algorithm, added-time amount, range
+geometry, actor-to-command ID or weaponskill/death evaluation sequence.
+The death items do not bind a staged-death resource or model state to a court
+actor, revival or king-entry phase. These announced fixes are not observed
+1.23b action/state/reset timelines. Source: [1.20a Patch Notes][patch-120a],
+post `497816`, Bug Fixes items 10-14 and item 12's attached exception.
 
 ## Raise names in the 1.20 class tables
 

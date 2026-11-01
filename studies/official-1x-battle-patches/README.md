@@ -3,7 +3,8 @@
 This study records selected first-party announcements for patches 1.19, 1.20,
 1.20a and 1.21: passive recovery, link EXP, crowd-control cooldowns, movement
 and casting, an enemy casting-graphics fix, and the class-action lists.
-It also identifies the separate per-item market-history announcement.
+It also records equipped-repair requests, player-search changes, Thornmarch
+bug-fix announcements and the separate per-item market-history announcement.
 
 - [Evidence and source locators](derived/evidence-map.md) own the bounded
   announced rules and their limits.
