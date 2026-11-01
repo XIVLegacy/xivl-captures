@@ -1,10 +1,12 @@
 # Official FFXIV 1.x battle patch notes
 
 This study records selected first-party announcements for patches 1.19, 1.20,
-1.20a and 1.21: passive recovery, link EXP, crowd-control cooldowns, movement
+1.20a, 1.21, 1.22 and 1.22a: passive recovery, link EXP, crowd-control cooldowns, movement
 and casting, an enemy casting-graphics fix, and the class-action lists.
 It also records equipped-repair requests, player-search changes, Thornmarch
 bug-fix announcements and the separate per-item market-history announcement.
+Garuda and raid admission, reentry and reward requirements, party commencement
+restrictions and the Hard Aerial Blast fix retain their announced patch scope.
 
 - [Evidence and source locators](derived/evidence-map.md) own the bounded
   announced rules and their limits.
@@ -21,12 +23,11 @@ the evidence class.
 
 ## Source scope
 
-The source preserves four current official thread pages and three available
-historical page snapshots. It covers the selected posts listed in the finding,
-not every page or attachment in each thread. The selected 1.19 and 1.21 Battle
-posts matched their historical snapshots after the documented text extraction.
-The 1.20 snapshot lacks the selected class-action and market posts; no snapshot
-was returned for the exact 1.20a URL.
+The source manifest identifies the current official pages and available
+historical snapshots. The finding covers its selected posts rather than every
+page or attachment in those threads. The [comparison receipt](derived/post-comparison.json)
+records selected-post presence and equality; an available page need not
+preserve the post required by a finding.
 
 The existing [Lodestone dev and patch study](../lodestone-dev-patch/README.md)
 owns the earlier saved Lodestone topic collection and timer announcements.

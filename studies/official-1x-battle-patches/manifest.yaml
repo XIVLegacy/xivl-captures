@@ -15,6 +15,8 @@ tags:
 - repair-request
 - player-search
 - thornmarch
+- garuda
+- instance-admission
 search_hints:
 - dev1151 stationary HP MP recovery
 - dev1132 link EXP bonus
@@ -26,9 +28,10 @@ search_hints:
 - equipped repair request dark matter repair level
 - Seeking Party status settings Close
 - Good King Moggle Mog XII death enmity range chest
-notes: Version-qualified first-party patch announcements. The preserved text and exact source
-  identities do not establish observed 1.23b runtime behavior, hidden server rules or packet
-  fields.
+- Howling Eye normal Hard entry waits vortex fletchings
+- 1.22a Garuda Hard Aerial Blast HP condition
+notes: Version-qualified first-party patch announcements. The preserved text and exact source identities
+  do not establish observed 1.23b runtime behavior, hidden server rules or packet fields.
 source_refs:
 - source: official-1x-battle-patches
 primary_paths:

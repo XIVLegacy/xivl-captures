@@ -113,5 +113,45 @@
     "both_posts_present": true,
     "exact_text_equal": true,
     "whitespace_normalized_equal": true
+  },
+  {
+    "thread": "43599",
+    "post_id": "post_660452",
+    "records": [
+      {
+        "file": "43599-patch1.22-Patch-1.22-Notes.archive-20121025113122.html",
+        "post_present": false,
+        "text_sha256": null
+      },
+      {
+        "file": "43599-patch1.22-Patch-1.22-Notes.html",
+        "post_present": true,
+        "text_sha256": "0dd1c48410daee3a93fc89abf56beb0cf207252840c645baf4d706734035bb93"
+      }
+    ],
+    "archive_member_available": true,
+    "both_posts_present": false,
+    "exact_text_equal": null,
+    "whitespace_normalized_equal": null
+  },
+  {
+    "thread": "45067",
+    "post_id": "post_682107",
+    "records": [
+      {
+        "file": "45067-patch1.22a-Patch-1.22a-Notes.archive-20121025185209.html",
+        "post_present": true,
+        "text_sha256": "907b047f1ac6e5af8ee020b157b3e5d27fba95d2bb66cc278d5a085e87f630f0"
+      },
+      {
+        "file": "45067-patch1.22a-Patch-1.22a-Notes.html",
+        "post_present": true,
+        "text_sha256": "907b047f1ac6e5af8ee020b157b3e5d27fba95d2bb66cc278d5a085e87f630f0"
+      }
+    ],
+    "archive_member_available": true,
+    "both_posts_present": true,
+    "exact_text_equal": true,
+    "whitespace_normalized_equal": true
   }
 ]

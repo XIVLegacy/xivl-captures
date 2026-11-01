@@ -218,7 +218,7 @@ sources:
   distribution: restricted
   original_state: in-repo
   storage_id: repo
-  member_count: 7
+  member_count: 11
 - id: pcap-1.23b
   title: FFXIV 1.23b Retail Packet-Capture Corpus
   evidence_class: packet-capture
@@ -2155,6 +2155,8 @@ studies:
   - repair-request
   - player-search
   - thornmarch
+  - garuda
+  - instance-admission
   search_hints:
   - dev1151 stationary HP MP recovery
   - dev1132 link EXP bonus
@@ -2166,6 +2168,8 @@ studies:
   - equipped repair request dark matter repair level
   - Seeking Party status settings Close
   - Good King Moggle Mog XII death enmity range chest
+  - Howling Eye normal Hard entry waits vortex fletchings
+  - 1.22a Garuda Hard Aerial Blast HP condition
   primary_paths:
   - studies/official-1x-battle-patches/derived/evidence-map.md
   - studies/official-1x-battle-patches/derived/post-comparison.json

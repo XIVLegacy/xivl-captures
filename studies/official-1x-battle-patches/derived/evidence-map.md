@@ -17,6 +17,8 @@ to its restricted `objects/pages/` storage.
 | Same 1.20 member | NOC_JP, `476421` | `12-12-2011 08:31 PM` | System, `dev1250` and `dev1251` |
 | `34137-patch1.20a-1.20a-Patch-Notes.html` | NOC_JP, `497816` | `12-27-2011 07:40 PM` | Item, `dev1291`; System, `dev1293`; Bug Fixes, casting graphics, Seeking Party and Thornmarch |
 | `39024-patch1.21-Patch-1.21-Notes.html` | NOC_JP, `580990` | `03-08-2012 10:46 PM` | Battle, `dev1071` and `dev1302` |
+| `43599-patch1.22-Patch-1.22-Notes.html` | NOC_JP, `660452` | `04-25-2012 09:24 PM` | Event, `dev1362` and `dev1363` |
+| `45067-patch1.22a-Patch-1.22a-Notes.html` | NOC_JP, `682107` | `05-09-2012 07:03 PM` | Event, `dev1404` and `dev1406`; Fixed Bugs, Garuda Hard Aerial Blast |
 
 These are the forum's displayed times. No independent display-time timezone
 or per-post revision identifier was established. Retrieval and archive times
@@ -173,7 +175,10 @@ part of this source selection.
 
 Python 3.12.0 and BeautifulSoup 4.14.3 with `html.parser` selected
 `li[id^="post_"]` and each post's `.postcontent`. Text extraction used
-`get_text("\n", strip=True)`, then UTF-8 encoding for SHA-256. The retained
+`get_text("\n", strip=True)`, then UTF-8 encoding for SHA-256.
+Whitespace-normalized equality compares extracted texts after
+`re.sub(r"\s+", " ", text).strip()`; the recorded text hashes
+still identify the unnormalized extraction. The retained
 [comparison receipt](post-comparison.json) contains no post bodies.
 Its `both_posts_present` field requires the selected post in both a current
 member and an archive member. Equality is `null` when either member or post
@@ -200,3 +205,55 @@ or capture correlation is implied by these HTML checks.
 [patch-120]: https://forum.square-enix.com/ffxiv/threads/32606-patch1.20-Patch-1.20-Notes
 [patch-120a]: https://forum.square-enix.com/ffxiv/threads/34137-patch1.20a-1.20a-Patch-Notes
 [patch-121]: https://forum.square-enix.com/ffxiv/threads/39024-patch1.21-Patch-1.21-Notes
+
+## Garuda admission and Aerial Blast announcements
+
+### Patch 1.22 Event post
+
+[Official post 660452](https://forum.square-enix.com/ffxiv/threads/43599-patch1.22-Patch-1.22-Notes#post660452), NOC_JP, displayed 04-25-2012 09:24 PM, dev1362/dev1363:
+
+| Announced rule | The Howling Eye | The Howling Eye (Hard) |
+| --- | --- | --- |
+| Combat class level | 40+ | 45+ |
+| Party size | 4-8 | 8 |
+| Time limit | 30 minutes | 30 minutes |
+| Victory reentry wait | 15 minutes | 15 minutes |
+| Defeat reentry wait | 5 minutes | 5 minutes |
+| Quest | City versions of In for Garuda Wakening | Taming the Tempest |
+| Quest prerequisite | Deus ex Machina, Shadow of the Raven, or Careless Whispers completed | In for Garuda Wakening completed |
+| Participant quest state | Same Wakening stage or completed | No additional quest-state condition listed |
+
+The Hard quest was repeatable. An exit note allowed reentry after unclaimed
+victory rewards without restarting the quest. Hard chest eligibility required
+vortex fletchings at clear; nonstarting participants could enter without them
+but forgo chest rewards. Vortex headdresses entered loot lists before inventory
+and could be passed. Aurum Vale and Cutter's Cry changed from eight entrants
+to four through eight, retaining difficulty designed for eight.
+
+### Patch 1.22a Event and Fixed Bugs post
+
+[Official post 682107](https://forum.square-enix.com/ffxiv/threads/45067-patch1.22a-Patch-1.22a-Notes#post682107), NOC_JP, displayed 05-09-2012 07:03 PM:
+
+- Dev1404 added a participant option: undertaking the Garuda quest and having
+  defeated Garuda, before quest completion. This post spells its title
+  `In for Garuda Awakening`; the 1.22 post uses `Wakening`.
+- Dev1406 announced a party commencement block when any member was synthesizing,
+  gathering, mounted, seated or in active mode, naming raids, primal battles
+  and hamlet defense as content classes.
+- Fixed Bugs identified Garuda in the Hard battle failing to use Aerial Blast
+  after HP fell to an unspecified level. This supports an announced HP/action
+  relationship, without a numeric threshold or complete phase policy.
+
+### Source comparison and behavior limits
+
+The selected 1.22a post matched its snapshot at `20121025185209` after the
+documented whitespace normalization. The 1.22 snapshot at `20121025113122`
+preserved only opening post 660197, so the selected Event post was not
+comparable. Display timestamps, archive timestamps and retrieval times remain
+separate; no independent per-post revision identifier or display timezone was
+available.
+
+These are version-qualified official announcements. They do not prove a
+1.23b actor/command binding, exact HP trigger, attack cadence, rock mitigation,
+add sequence, reset order, accepted admission or reward settlement. The source
+title spellings do not independently identify quest IDs.

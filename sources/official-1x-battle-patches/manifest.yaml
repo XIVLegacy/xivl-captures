@@ -5,17 +5,18 @@ distribution: restricted
 provenance:
   publisher: Square Enix
   site: forum.square-enix.com/ffxiv
-  scope: Selected original English official Patch Notes forum pages for patches 1.19, 1.20,
-    1.20a and 1.21, plus the available page snapshots listed in members. This is not the complete
-    thread or patch-history corpus.
-  source_identity: Official NOC_NA and NOC_JP posts, identified by thread and post IDs in
-    the study. Original publication display dates are distinct from retrieval and archive
-    times. No independent per-post revision ID or display-time timezone was available.
-  retention: Complete byte-preserved HTML responses; no text rewriting or image fetching.
-    Restricted source objects are excluded from the public tree.
-  archive_limit: No snapshot was returned for the exact 1.20a URL. The preserved 1.20 archive
-    page contains only the opening post, not its selected reform/action/history posts. The study
-    identifies each comparison scope.
+  scope: Selected original English official Patch Notes forum pages for patches 1.19, 1.20, 1.20a, 1.21,
+    1.22 and 1.22a, plus the available page snapshots listed in members. This is not the complete thread
+    or patch-history corpus.
+  source_identity: Official NOC_NA and NOC_JP posts, identified by thread and post IDs in the study. Original
+    publication display dates are distinct from retrieval and archive times. No independent per-post revision
+    ID or display-time timezone was available.
+  retention: Complete byte-preserved HTML responses; no text rewriting or image fetching. Restricted source
+    objects are excluded from the public tree.
+  archive_limit: No snapshot was returned for the exact 1.20a URL. The preserved 1.20 archive page contains
+    only the opening post, not its selected reform/action/history posts. The study identifies each comparison
+    scope. The preserved 1.22 snapshot contains opening post 660197, not selected Event post 660452. Selected
+    1.22a post 682107 matched its preserved snapshot.
 storage:
   original_state: in-repo
   storage_id: repo
@@ -84,3 +85,39 @@ members:
   retrieved_at: '2026-11-01T06:51:18.749280+00:00'
   archive_url: http://web.archive.org/web/20120626004028/http://forum.square-enix.com:80/ffxiv/threads/39024-patch1.21-Patch-1.21-Notes
   archive_timestamp: '20120626004028'
+- file: pages/43599-patch1.22-Patch-1.22-Notes.archive-20121025113122.html
+  sha256: f551dd582fe86e705ef25dab25910478d8a5af006fe4c1535ec9df0f300856b3
+  size_bytes: 313265
+  role: archived-official-page
+  original_url: https://forum.square-enix.com/ffxiv/threads/43599-patch1.22-Patch-1.22-Notes
+  retrieval_url: https://web.archive.org/web/20121025113122/http://forum.square-enix.com/ffxiv/threads/43599-patch1.22-Patch-1.22-Notes
+  retrieved_at: '2026-11-01T22:09:26.399809+00:00'
+  archive_url: http://web.archive.org/web/20121025113122/http://forum.square-enix.com/ffxiv/threads/43599-patch1.22-Patch-1.22-Notes
+  archive_timestamp: '20121025113122'
+- file: pages/43599-patch1.22-Patch-1.22-Notes.html
+  sha256: ae62e134cbd30837390c393e88430ddad50413174bae02b0a2018e91683960ee
+  size_bytes: 532543
+  role: current-official-page
+  original_url: https://forum.square-enix.com/ffxiv/threads/43599-patch1.22-Patch-1.22-Notes
+  retrieval_url: https://forum.square-enix.com/ffxiv/threads/43599-patch1.22-Patch-1.22-Notes
+  retrieved_at: '2026-11-01T22:01:14.132215+00:00'
+  archive_url: http://web.archive.org/web/20121025113122/http://forum.square-enix.com/ffxiv/threads/43599-patch1.22-Patch-1.22-Notes
+  archive_timestamp: '20121025113122'
+- file: pages/45067-patch1.22a-Patch-1.22a-Notes.archive-20121025185209.html
+  sha256: ab282ee846497704da1c335b410e508c8c15f2c5f0cc8da0e1401545a4dd3ff7
+  size_bytes: 179888
+  role: archived-official-page
+  original_url: https://forum.square-enix.com/ffxiv/threads/45067-patch1.22a-Patch-1.22a-Notes
+  retrieval_url: https://web.archive.org/web/20121025185209/http://forum.square-enix.com/ffxiv/threads/45067-patch1.22a-Patch-1.22a-Notes
+  retrieved_at: '2026-11-01T22:09:26.399809+00:00'
+  archive_url: http://web.archive.org/web/20121025185209/http://forum.square-enix.com/ffxiv/threads/45067-patch1.22a-Patch-1.22a-Notes
+  archive_timestamp: '20121025185209'
+- file: pages/45067-patch1.22a-Patch-1.22a-Notes.html
+  sha256: 6695c53c92c71561496fa0d9f52ca9144f513b9481f6cce6abcdf30407483084
+  size_bytes: 452944
+  role: current-official-page
+  original_url: https://forum.square-enix.com/ffxiv/threads/45067-patch1.22a-Patch-1.22a-Notes
+  retrieval_url: https://forum.square-enix.com/ffxiv/threads/45067-patch1.22a-Patch-1.22a-Notes
+  retrieved_at: '2026-11-01T22:01:15.540815+00:00'
+  archive_url: http://web.archive.org/web/20121025185209/http://forum.square-enix.com/ffxiv/threads/45067-patch1.22a-Patch-1.22a-Notes
+  archive_timestamp: '20121025185209'
