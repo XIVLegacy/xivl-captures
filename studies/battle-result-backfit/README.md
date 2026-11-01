@@ -151,6 +151,10 @@ The retained table of 622 target rows contains no command 23556, 23539 or
 These are finite table observations, without a general historical absence
 claim. The exact table identity is pinned in Promoted conclusions above.
 
+| Question | Observation and remaining boundary | Locator | Confidence |
+| --- | --- | --- | --- |
+| Ordinary Counter, Vengeance and spikes result rows | Unresolved: this retained product does not supply an attributable specimen distinguishing the three. Neither text 30379 nor per-target `effect_id` 0x48000200 occurs. A distinction needs an initiating hit and return row joined to the same actor lifetime, source/target roles, command or status, text, text parameter and per-target effect. | `derived/battle-result-rows.csv`, 622 rows, SHA-256 above; [field model](https://github.com/XIVLegacy/xivl-client-structs/blob/75eede1395e5436dd0593b4b631dbc16312f2e80/manifests/battle_result_field_semantics.json), `queueEntry.presentationFlags` and `targetRow.effectId/worldMasterTextId/textParam`. | High for this finite product and separate header/target-row fields; retaliation attribution unresolved. |
+
 ## Further research
 
 Stages 2-3 published bounded distributions, strict matched sets, descriptive
