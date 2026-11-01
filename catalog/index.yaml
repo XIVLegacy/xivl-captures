@@ -2157,6 +2157,7 @@ studies:
   - thornmarch
   - garuda
   - instance-admission
+  - local-guildleve
   search_hints:
   - dev1151 stationary HP MP recovery
   - dev1132 link EXP bonus
@@ -2170,6 +2171,7 @@ studies:
   - Good King Moggle Mog XII death enmity range chest
   - Howling Eye normal Hard entry waits vortex fletchings
   - 1.22a Garuda Hard Aerial Blast HP condition
+  - dev1365 local leve performance 100 300 item rewards
   primary_paths:
   - studies/official-1x-battle-patches/derived/evidence-map.md
   - studies/official-1x-battle-patches/derived/post-comparison.json

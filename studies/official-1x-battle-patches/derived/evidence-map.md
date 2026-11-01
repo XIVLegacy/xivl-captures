@@ -17,7 +17,7 @@ to its restricted `objects/pages/` storage.
 | Same 1.20 member | NOC_JP, `476421` | `12-12-2011 08:31 PM` | System, `dev1250` and `dev1251` |
 | `34137-patch1.20a-1.20a-Patch-Notes.html` | NOC_JP, `497816` | `12-27-2011 07:40 PM` | Item, `dev1291`; System, `dev1293`; Bug Fixes, casting graphics, Seeking Party and Thornmarch |
 | `39024-patch1.21-Patch-1.21-Notes.html` | NOC_JP, `580990` | `03-08-2012 10:46 PM` | Battle, `dev1071` and `dev1302` |
-| `43599-patch1.22-Patch-1.22-Notes.html` | NOC_JP, `660452` | `04-25-2012 09:24 PM` | Event, `dev1362` and `dev1363` |
+| `43599-patch1.22-Patch-1.22-Notes.html` | NOC_JP, `660452` | `04-25-2012 09:24 PM` | Event, `dev1362`, `dev1363` and `dev1365` |
 | `45067-patch1.22a-Patch-1.22a-Notes.html` | NOC_JP, `682107` | `05-09-2012 07:03 PM` | Event, `dev1404` and `dev1406`; Fixed Bugs, Garuda Hard Aerial Blast |
 
 These are the forum's displayed times. No independent display-time timezone
@@ -257,3 +257,18 @@ These are version-qualified official announcements. They do not prove a
 1.23b actor/command binding, exact HP trigger, attack cadence, rock mitigation,
 add sequence, reset order, accepted admission or reward settlement. The source
 title spellings do not independently identify quest IDs.
+
+## Local guildleve performance rewards in 1.22
+
+Post `660452`, `dev1365`, announced these item rewards:
+
+| Condition | Award |
+| --- | --- |
+| Successful completion | One item |
+| Performance reaches 100 | One additional item |
+| Performance reaches 300 | Another item becomes possible |
+
+Crystal rewards also changed; quantities, item identities and odds were
+unspecified. The source did not establish an evaluation formula or observed
+1.23b rewards. The selected Event post was absent from the retained 1.22
+snapshot, as recorded in the [post comparison](post-comparison.json).
