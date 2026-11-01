@@ -1,0 +1,117 @@
+[
+  {
+    "thread": "24910",
+    "post_id": "post_361386",
+    "records": [
+      {
+        "file": "24910-patch1.19-Patch-1.19-Notes.archive-20120625214919.html",
+        "post_present": true,
+        "text_sha256": "506444c4340e89375bab3880916012ad105aa81deee429ce293dc758b2990447"
+      },
+      {
+        "file": "24910-patch1.19-Patch-1.19-Notes.html",
+        "post_present": true,
+        "text_sha256": "506444c4340e89375bab3880916012ad105aa81deee429ce293dc758b2990447"
+      }
+    ],
+    "archive_member_available": true,
+    "both_posts_present": true,
+    "exact_text_equal": true,
+    "whitespace_normalized_equal": true
+  },
+  {
+    "thread": "32606",
+    "post_id": "post_476417",
+    "records": [
+      {
+        "file": "32606-patch1.20-Patch-1.20-Notes.archive-20121025185324.html",
+        "post_present": false,
+        "text_sha256": null
+      },
+      {
+        "file": "32606-patch1.20-Patch-1.20-Notes.html",
+        "post_present": true,
+        "text_sha256": "e2d83dee6df822a63603ea45e2c5d061b2161d8a4be51e403a6b1fe3f6d5f3c4"
+      }
+    ],
+    "archive_member_available": true,
+    "both_posts_present": false,
+    "exact_text_equal": null,
+    "whitespace_normalized_equal": null
+  },
+  {
+    "thread": "32606",
+    "post_id": "post_476429",
+    "records": [
+      {
+        "file": "32606-patch1.20-Patch-1.20-Notes.archive-20121025185324.html",
+        "post_present": false,
+        "text_sha256": null
+      },
+      {
+        "file": "32606-patch1.20-Patch-1.20-Notes.html",
+        "post_present": true,
+        "text_sha256": "f4e8983600a893f457fb6951a923c67b84692d13658cc7f83f4c52e6ddce49a5"
+      }
+    ],
+    "archive_member_available": true,
+    "both_posts_present": false,
+    "exact_text_equal": null,
+    "whitespace_normalized_equal": null
+  },
+  {
+    "thread": "32606",
+    "post_id": "post_476421",
+    "records": [
+      {
+        "file": "32606-patch1.20-Patch-1.20-Notes.archive-20121025185324.html",
+        "post_present": false,
+        "text_sha256": null
+      },
+      {
+        "file": "32606-patch1.20-Patch-1.20-Notes.html",
+        "post_present": true,
+        "text_sha256": "48938ec6874dc50dcbaa49adf560cbfc1565c45e2cdd7e819e777cfb27030524"
+      }
+    ],
+    "archive_member_available": true,
+    "both_posts_present": false,
+    "exact_text_equal": null,
+    "whitespace_normalized_equal": null
+  },
+  {
+    "thread": "34137",
+    "post_id": "post_497816",
+    "records": [
+      {
+        "file": "34137-patch1.20a-1.20a-Patch-Notes.html",
+        "post_present": true,
+        "text_sha256": "f4a589972ca1a21db453d792a08a2ccb7de7a5e10d1e679f923b3263494d2e0a"
+      }
+    ],
+    "archive_member_available": false,
+    "both_posts_present": false,
+    "exact_text_equal": null,
+    "whitespace_normalized_equal": null
+  },
+  {
+    "thread": "39024",
+    "post_id": "post_580990",
+    "records": [
+      {
+        "file": "39024-patch1.21-Patch-1.21-Notes.archive-20120626004028.html",
+        "post_present": true,
+        "text_sha256": "333948a0e03b1546a19808b107d8f7edce9889f334cf6fca68b5f1f239773a40"
+      },
+      {
+        "file": "39024-patch1.21-Patch-1.21-Notes.html",
+        "post_present": true,
+        "text_sha256": "333948a0e03b1546a19808b107d8f7edce9889f334cf6fca68b5f1f239773a40"
+      }
+    ],
+    "archive_member_available": true,
+    "both_posts_present": true,
+    "exact_text_equal": true,
+    "whitespace_normalized_equal": true
+  }
+]

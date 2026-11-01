@@ -1,0 +1,38 @@
+id: official-1x-battle-patches
+title: Official FFXIV 1.x battle patch notes
+evidence_class: web-tables
+status: distilled
+content_kind: action-mechanic
+tags:
+- official
+- patch-notes
+- battle-reform
+- regeneration
+- spellcasting
+- crowd-control
+- experience-points
+- market-search
+search_hints:
+- dev1151 stationary HP MP recovery
+- dev1132 link EXP bonus
+- dev1302 movement casting interruption
+- dev1071 CC cooldown diminishing returns
+- 1.20a interrupted enemy casting graphics
+- 1.20 Raise Rebirth action tables
+- item search twenty transactions history maintenance
+notes: Version-qualified first-party patch announcements. The preserved text and exact source
+  identities do not establish observed 1.23b runtime behavior, hidden server rules or packet
+  fields.
+source_refs:
+- source: official-1x-battle-patches
+primary_paths:
+- derived/evidence-map.md
+- derived/post-comparison.json
+canonical_evidence:
+- derived/evidence-map.md
+distilled:
+  distilled: true
+  checksum_file: derived/checksums.sha256
+  distilled_artifacts:
+  - derived/evidence-map.md
+  - derived/post-comparison.json

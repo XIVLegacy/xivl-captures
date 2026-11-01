@@ -1,0 +1,86 @@
+id: official-1x-battle-patches
+title: Official FFXIV 1.x battle patch notes
+evidence_class: web-tables
+distribution: restricted
+provenance:
+  publisher: Square Enix
+  site: forum.square-enix.com/ffxiv
+  scope: Selected original English official Patch Notes forum pages for patches 1.19, 1.20,
+    1.20a and 1.21, plus the available page snapshots listed in members. This is not the complete
+    thread or patch-history corpus.
+  source_identity: Official NOC_NA and NOC_JP posts, identified by thread and post IDs in
+    the study. Original publication display dates are distinct from retrieval and archive
+    times. No independent per-post revision ID or display-time timezone was available.
+  retention: Complete byte-preserved HTML responses; no text rewriting or image fetching.
+    Restricted source objects are excluded from the public tree.
+  archive_limit: No snapshot was returned for the exact 1.20a URL. The preserved 1.20 archive
+    page contains only the opening post, not its selected reform/action/history posts. The study
+    identifies each comparison scope.
+storage:
+  original_state: in-repo
+  storage_id: repo
+  path: objects/
+members:
+- file: pages/24910-patch1.19-Patch-1.19-Notes.archive-20120625214919.html
+  sha256: 715d39e34916c5e34f8dfafad9e3540c18a99d01f6d6faa403ca319df0c0299f
+  size_bytes: 269969
+  role: archived-official-page
+  original_url: https://forum.square-enix.com/ffxiv/threads/24910-patch1.19-Patch-1.19-Notes
+  retrieval_url: https://web.archive.org/web/20120625214919/http://forum.square-enix.com:80/ffxiv/threads/24910-patch1.19-Patch-1.19-Notes
+  retrieved_at: '2026-11-01T06:53:31.340989+00:00'
+  archive_url: http://web.archive.org/web/20120625214919/http://forum.square-enix.com:80/ffxiv/threads/24910-patch1.19-Patch-1.19-Notes
+  archive_timestamp: '20120625214919'
+- file: pages/24910-patch1.19-Patch-1.19-Notes.html
+  sha256: b102c52cd4f532c8d31b04bc79073a15b3e9e7b5d94f0245a8cd45cfdc442f9d
+  size_bytes: 572477
+  role: current-official-page
+  original_url: https://forum.square-enix.com/ffxiv/threads/24910-patch1.19-Patch-1.19-Notes
+  retrieval_url: https://forum.square-enix.com/ffxiv/threads/24910-patch1.19-Patch-1.19-Notes
+  retrieved_at: '2026-11-01T06:51:14.905887+00:00'
+  archive_url: http://web.archive.org/web/20120625214919/http://forum.square-enix.com:80/ffxiv/threads/24910-patch1.19-Patch-1.19-Notes
+  archive_timestamp: '20120625214919'
+- file: pages/32606-patch1.20-Patch-1.20-Notes.archive-20121025185324.html
+  sha256: c42205ed802caed967c7c81e7a7247706f76dd3988e11ddfe03be2cdd17a25c8
+  size_bytes: 453721
+  role: archived-official-page
+  original_url: https://forum.square-enix.com/ffxiv/threads/32606-patch1.20-Patch-1.20-Notes
+  retrieval_url: https://web.archive.org/web/20121025185324/http://forum.square-enix.com/ffxiv/threads/32606-patch1.20-Patch-1.20-Notes
+  retrieved_at: '2026-11-01T06:53:31.342996+00:00'
+  archive_url: http://web.archive.org/web/20121025185324/http://forum.square-enix.com/ffxiv/threads/32606-patch1.20-Patch-1.20-Notes
+  archive_timestamp: '20121025185324'
+- file: pages/32606-patch1.20-Patch-1.20-Notes.html
+  sha256: 57d79001cd9071296218e4b3a7f21b71bdbcd1ca1602a8b44536e0be04fdb451
+  size_bytes: 713188
+  role: current-official-page
+  original_url: https://forum.square-enix.com/ffxiv/threads/32606-patch1.20-Patch-1.20-Notes
+  retrieval_url: https://forum.square-enix.com/ffxiv/threads/32606-patch1.20-Patch-1.20-Notes
+  retrieved_at: '2026-11-01T06:51:16.337320+00:00'
+  archive_url: http://web.archive.org/web/20121025185324/http://forum.square-enix.com/ffxiv/threads/32606-patch1.20-Patch-1.20-Notes
+  archive_timestamp: '20121025185324'
+- file: pages/34137-patch1.20a-1.20a-Patch-Notes.html
+  sha256: ebcb9cfac129067bf8726b4e7f6af8faa316474cc33590bba6d38260c7e06583
+  size_bytes: 394054
+  role: current-official-page
+  original_url: https://forum.square-enix.com/ffxiv/threads/34137-patch1.20a-1.20a-Patch-Notes
+  retrieval_url: https://forum.square-enix.com/ffxiv/threads/34137-patch1.20a-1.20a-Patch-Notes
+  retrieved_at: '2026-11-01T06:51:17.929086+00:00'
+  archive_url: null
+  archive_timestamp: null
+- file: pages/39024-patch1.21-Patch-1.21-Notes.archive-20120626004028.html
+  sha256: 88b12c98eadc676583d2158e9890ac5fd3295f25662df690e1f83d716db25001
+  size_bytes: 334735
+  role: archived-official-page
+  original_url: https://forum.square-enix.com/ffxiv/threads/39024-patch1.21-Patch-1.21-Notes
+  retrieval_url: https://web.archive.org/web/20120626004028/http://forum.square-enix.com:80/ffxiv/threads/39024-patch1.21-Patch-1.21-Notes
+  retrieved_at: '2026-11-01T06:53:32.498905+00:00'
+  archive_url: http://web.archive.org/web/20120626004028/http://forum.square-enix.com:80/ffxiv/threads/39024-patch1.21-Patch-1.21-Notes
+  archive_timestamp: '20120626004028'
+- file: pages/39024-patch1.21-Patch-1.21-Notes.html
+  sha256: 2d42e8312248eb28fa2b0dad44ea215e5c3456a5234de277015ed429bc9e19e2
+  size_bytes: 639361
+  role: current-official-page
+  original_url: https://forum.square-enix.com/ffxiv/threads/39024-patch1.21-Patch-1.21-Notes
+  retrieval_url: https://forum.square-enix.com/ffxiv/threads/39024-patch1.21-Patch-1.21-Notes
+  retrieved_at: '2026-11-01T06:51:18.749280+00:00'
+  archive_url: http://web.archive.org/web/20120626004028/http://forum.square-enix.com:80/ffxiv/threads/39024-patch1.21-Patch-1.21-Notes
+  archive_timestamp: '20120626004028'

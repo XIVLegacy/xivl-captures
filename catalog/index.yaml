@@ -212,6 +212,13 @@ sources:
   original_state: in-repo
   storage_id: repo-lfs
   member_count: 2
+- id: official-1x-battle-patches
+  title: Official FFXIV 1.x battle patch notes
+  evidence_class: web-tables
+  distribution: restricted
+  original_state: in-repo
+  storage_id: repo
+  member_count: 7
 - id: pcap-1.23b
   title: FFXIV 1.23b Retail Packet-Capture Corpus
   evidence_class: packet-capture
@@ -2131,6 +2138,33 @@ studies:
   - studies/navmut-world-population-observations/derived/review-by-zone.md
   source_refs:
   - source: navmut-world-population-observations
+- id: official-1x-battle-patches
+  title: Official FFXIV 1.x battle patch notes
+  status: distilled
+  evidence_class: web-tables
+  content_kind: action-mechanic
+  tags:
+  - official
+  - patch-notes
+  - battle-reform
+  - regeneration
+  - spellcasting
+  - crowd-control
+  - experience-points
+  - market-search
+  search_hints:
+  - dev1151 stationary HP MP recovery
+  - dev1132 link EXP bonus
+  - dev1302 movement casting interruption
+  - dev1071 CC cooldown diminishing returns
+  - 1.20a interrupted enemy casting graphics
+  - 1.20 Raise Rebirth action tables
+  - item search twenty transactions history maintenance
+  primary_paths:
+  - studies/official-1x-battle-patches/derived/evidence-map.md
+  - studies/official-1x-battle-patches/derived/post-comparison.json
+  source_refs:
+  - source: official-1x-battle-patches
 - id: party-marker-018d-chronology
   title: Party Marker 0x018D Chronology
   status: distilled

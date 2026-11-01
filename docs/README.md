@@ -71,6 +71,7 @@ relevant source or study bundle for its manifest, provenance, and findings.
 - [kanican FFXIV 1.x Combat Theorycrafting - Web Tables](../studies/kanican-tables/)
 - [FFXIV 1.x Lodestone - A Beginner's Guide to Eorzea](../studies/lodestone-beginners/)
 - [FFXIV 1.x Lodestone Dev Posts and Patch Notes](../studies/lodestone-dev-patch/)
+- [Official FFXIV 1.x battle patch notes](../studies/official-1x-battle-patches/)
 - [FFXIV 1.x Lodestone Lore - GC Newsletters, The Last Word, Events](../studies/lodestone-lore/)
 - [FFXIV 1.0 Lodestone Official Game Manual](../studies/lodestone-manual/)
 - [Lobby Handshake Decryptability and Recipe Test](../studies/lobby-handshake-triage/)
