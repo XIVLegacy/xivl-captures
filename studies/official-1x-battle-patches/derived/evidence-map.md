@@ -18,7 +18,7 @@ to its restricted `objects/pages/` storage.
 | `34137-patch1.20a-1.20a-Patch-Notes.html` | NOC_JP, `497816` | `12-27-2011 07:40 PM` | Item, `dev1291`; System, `dev1293`; Bug Fixes, casting graphics, Seeking Party and Thornmarch |
 | `39024-patch1.21-Patch-1.21-Notes.html` | NOC_JP, `580990` | `03-08-2012 10:46 PM` | Battle, `dev1071` and `dev1302` |
 | `43599-patch1.22-Patch-1.22-Notes.html` | NOC_JP, `660452` | `04-25-2012 09:24 PM` | Event, `dev1362`, `dev1363` and `dev1365` |
-| `45067-patch1.22a-Patch-1.22a-Notes.html` | NOC_JP, `682107` | `05-09-2012 07:03 PM` | Event, `dev1404` and `dev1406`; Fixed Bugs, Garuda Hard Aerial Blast and Hamlet defense |
+| `45067-patch1.22a-Patch-1.22a-Notes.html` | NOC_JP, `682107` | `05-09-2012 07:03 PM` | Event, `dev1404` and `dev1406`; Fixed Bugs, Garuda Hard Aerial Blast, Hamlet defense and retainer dispatch feedback |
 
 These are the forum's displayed times. No independent display-time timezone
 or per-post revision identifier was established. Retrieval and archive times
@@ -303,3 +303,18 @@ score deductions, evaluation points, item/actor/ability IDs, a complete
 enmity formula, reset/cleanup order or server reward settlement. Naming Sazel
 does not bind a client actor instance, encounter variant or action opcode.
 The abandonment wait is distinct from the Garuda victory/defeat waits.
+
+## Retainer dispatch capacity feedback in 1.22a
+
+[Official post 682107](https://forum.square-enix.com/ffxiv/threads/45067-patch1.22a-Patch-1.22a-Notes#post682107),
+NOC_JP, displayed 05-09-2012 07:03 PM, announced a fix for absent error feedback
+when a player attempted to dispatch a retainer to an area already at capacity.
+The item appeared under that post's Fixed Bugs heading.
+The [post comparison](post-comparison.json)
+records the selected post's retained historical match.
+
+The statement establishes an announced feedback correction, not observed
+1.23b rejection or deployment. It gave no capacity count, area/ward identity,
+destination-key mapping, error-text row, opcode, request/result tuple,
+mutation, recall or ownership rule. It does not settle offline sales,
+currency collection or server transactions.
