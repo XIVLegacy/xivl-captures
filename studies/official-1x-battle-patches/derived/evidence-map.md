@@ -18,7 +18,7 @@ to its restricted `objects/pages/` storage.
 | `34137-patch1.20a-1.20a-Patch-Notes.html` | NOC_JP, `497816` | `12-27-2011 07:40 PM` | Item, `dev1291`; System, `dev1293`; Bug Fixes, casting graphics, Seeking Party and Thornmarch |
 | `39024-patch1.21-Patch-1.21-Notes.html` | NOC_JP, `580990` | `03-08-2012 10:46 PM` | Battle, `dev1071` and `dev1302` |
 | `43599-patch1.22-Patch-1.22-Notes.html` | NOC_JP, `660452` | `04-25-2012 09:24 PM` | Event, `dev1362`, `dev1363` and `dev1365` |
-| `45067-patch1.22a-Patch-1.22a-Notes.html` | NOC_JP, `682107` | `05-09-2012 07:03 PM` | Event, `dev1404` and `dev1406`; Fixed Bugs, Garuda Hard Aerial Blast |
+| `45067-patch1.22a-Patch-1.22a-Notes.html` | NOC_JP, `682107` | `05-09-2012 07:03 PM` | Event, `dev1404` and `dev1406`; Fixed Bugs, Garuda Hard Aerial Blast and Hamlet defense |
 
 These are the forum's displayed times. No independent display-time timezone
 or per-post revision identifier was established. Retrieval and archive times
@@ -272,3 +272,34 @@ Crystal rewards also changed; quantities, item identities and odds were
 unspecified. The source did not establish an evaluation formula or observed
 1.23b rewards. The selected Event post was absent from the retained 1.22
 snapshot, as recorded in the [post comparison](post-comparison.json).
+
+## Hamlet defense bug-fix announcements in 1.22a
+
+[Official post 682107](https://forum.square-enix.com/ffxiv/threads/45067-patch1.22a-Patch-1.22a-Notes#post682107),
+NOC_JP, displayed 05-09-2012 07:03 PM, listed these pre-fix conditions under
+Fixed Bugs:
+
+| Subject | Announced pre-fix condition or correction |
+| --- | --- |
+| Provisioning rank | Some players failed to receive top-twenty provisioner recognition. |
+| Messages | Certain Hamlet messages were incorrect. |
+| Pot of humours | Examining one with a full inventory reduced points. |
+| Gathering-class evaluation | Recognition of all three gathering classes incorrectly required every participant to be a Disciple of the Land. The correction required one member of each of the three classes. |
+| NPC dialogue | Certain Hamlet NPC dialogue was incorrect. |
+| Notification graphics | Background graphics on certain notification interfaces displayed incorrectly. |
+| Abandonment wait | Reattempting after abandonment was possible after five minutes; the announced correct wait was 15 minutes. |
+| Sleep | A Disciple of the Land sleep ability affected the beastman leader. |
+| Stone Throw | Disciples of the Hand/Land involuntarily entered active mode when using Stone Throw on an enemy. |
+| Enmity abilities | Hand/Land abilities described as lifting enmity took effect only after Sazel Ciloc the Divine appeared. |
+
+The selection consists of the ten innermost list items explicitly naming
+Hamlet in the first list after the exact Fixed Bugs heading. The attached
+class-presence and 15-minute qualifications belong to their respective items.
+The [post comparison](post-comparison.json) records the retained 1.22a post's
+match with snapshot `20121025185209`.
+
+These are announced fixes, not observed 1.23b behavior. The text did not give
+score deductions, evaluation points, item/actor/ability IDs, a complete
+enmity formula, reset/cleanup order or server reward settlement. Naming Sazel
+does not bind a client actor instance, encounter variant or action opcode.
+The abandonment wait is distinct from the Garuda victory/defeat waits.

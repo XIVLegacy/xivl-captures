@@ -2158,6 +2158,7 @@ studies:
   - garuda
   - instance-admission
   - local-guildleve
+  - hamlet-defense
   search_hints:
   - dev1151 stationary HP MP recovery
   - dev1132 link EXP bonus
@@ -2172,6 +2173,8 @@ studies:
   - Howling Eye normal Hard entry waits vortex fletchings
   - 1.22a Garuda Hard Aerial Blast HP condition
   - dev1365 local leve performance 100 300 item rewards
+  - 1.22a Hamlet defense provisioners evaluation abandonment 15 minutes
+  - Hamlet sleep Stone Throw enmity Sazel Ciloc the Divine fixes
   primary_paths:
   - studies/official-1x-battle-patches/derived/evidence-map.md
   - studies/official-1x-battle-patches/derived/post-comparison.json

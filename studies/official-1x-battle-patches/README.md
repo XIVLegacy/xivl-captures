@@ -8,6 +8,7 @@ bug-fix announcements and the separate per-item market-history announcement.
 Garuda and raid admission, reentry and reward requirements, party commencement
 restrictions and the Hard Aerial Blast fix retain their announced patch scope.
 Local guildleve performance rewards retain their separate 1.22 scope.
+Hamlet defense bug-fix announcements retain their separate 1.22a scope.
 
 - [Evidence and source locators](derived/evidence-map.md) own the bounded
   announced rules and their limits.
