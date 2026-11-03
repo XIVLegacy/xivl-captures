@@ -174,4 +174,4 @@ zone, private-area identity, level, XYZ and rotation remain unresolved.
 [position-header]: https://github.com/XIVLegacy/xivl-opcodes/blob/8eef487105c53b7602597cd204db008693cc0b24/structs/map/clientbound.h#L384-L400
 [header-contract]: https://github.com/XIVLegacy/xivl-opcodes/blob/8eef487105c53b7602597cd204db008693cc0b24/structs/README.md#consumer-contract
 [text-manifest]: https://github.com/XIVLegacy/xivl-client-data/blob/a8e7075594d0209033aea51520e91cc1ccfc2d00/manifests/tables.json#L5891-L5897
-[airship-text]: https://github.com/XIVLegacy/xivl-client-data/blob/7b4337b4efe873c0e3c865a8ea7646a80f75d9cd/docs/message-operand-rows.md
+[airship-text]: https://github.com/XIVLegacy/xivl-client-data/blob/7c014aa2aae438527275f649f882515b59c71f74/docs/message-operand-rows.md

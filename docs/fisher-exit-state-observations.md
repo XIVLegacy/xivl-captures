@@ -92,9 +92,9 @@ the supplied-frame adaptation. Preserve actor and connection lifetimes when
 matching states; do not join records by numeric source alone across captures.
 
 [fish-lookup]: https://github.com/XIVLegacy/xivl-client-scripts/blob/20ec80505035a492409b2677dff51aa439363487/docs/gathering-marker-fishing-ui.md#place-driven-judge-command-mapping
-[commands]: https://github.com/XIVLegacy/xivl-client-data/blob/7b4337b4efe873c0e3c865a8ea7646a80f75d9cd/derived/command_battle_params.csv
+[commands]: https://github.com/XIVLegacy/xivl-client-data/blob/7c014aa2aae438527275f649f882515b59c71f74/derived/command_battle_params.csv
 [skill-property]: https://github.com/XIVLegacy/xivl-client-structs/blob/b356634bd04a421769fe5fd73b336649963feff0/manifests/property_stream_hash_catalog.json
-[skill-name]: https://github.com/XIVLegacy/xivl-client-data/blob/7b4337b4efe873c0e3c865a8ea7646a80f75d9cd/docs/skill-name-rows.md
+[skill-name]: https://github.com/XIVLegacy/xivl-client-data/blob/7c014aa2aae438527275f649f882515b59c71f74/docs/skill-name-rows.md
 [result-fields]: https://github.com/XIVLegacy/xivl-client-structs/blob/b356634bd04a421769fe5fd73b336649963feff0/manifests/battle_result_field_semantics.json
 [decoder]: https://github.com/XIVLegacy/xivl-captures/blob/0d59991d51ef3436f0c7a934f49090d7743ee86f/tools/extractors/extract_00da_00e1_comparison.py#L276-L350
 [state-field]: https://github.com/XIVLegacy/xivl-opcodes/blob/8eef487105c53b7602597cd204db008693cc0b24/opcodes.json#L2895-L2929
