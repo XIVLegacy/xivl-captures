@@ -12,8 +12,9 @@ transactions.
 The query started with the existing full-corpus products for the exact names
 `ObjectItemStorage`, `storageMenu`, `selectCategory`, `selectStoreItem`,
 and `selectReceiveItem`, plus the numeric and named 0x01a5 item-storage
-opcode records. Only `return_to_inn.pcapng` had a concrete
-`ObjectItemStorage` spawn row, and it was the first capture opened for typed
+opcode records. The spawn product has concrete `ObjectItemStorage` rows in
+`login.pcapng` and `return_to_inn.pcapng`. `return_to_inn.pcapng` was the
+first capture opened for typed
 actor, display, and interaction context. The later 54-member pass was limited
 to the metadata census described below; `login.pcapng` was then selected for
 the second bounded direct-record context check.
@@ -29,26 +30,19 @@ zero-based.
 
 ## Bound actor record
 
-The existing spawn product has one matching row in
+The spawn product has one matching row in each of `login.pcapng` and
 `return_to_inn.pcapng`. This is a bounded product query, not a complete
-actor census:
+actor census. The `return_to_inn.pcapng` record is:
 
 | Field | Value |
 | --- | --- |
-| Spawn-product actor field | `0x50e0ede1` |
+| Spawn-product actor field | `0x47a0000f` |
 | s2c 0x00cc locator | frame 51, subevent 7, direction-local event index 270; wire wrapped index 268 |
 | Transport | source `0x47a0000f`, target `0x029b2941`; subpacket size 296 |
 | Instance name | `objItemStor_prv0Inn01_0e@0F400` |
 | Base class | `ObjectItemStorage` |
 | Class path | `/Chara/Npc/Object/ObjectItemStorage` |
 | Associated literal | `TEST` in the 0x00cc string area; retained as a literal slot, not interpreted as a semantic name |
-
-The spawn product names the preamble field above `actorId`, but it is read
-from `sub_body[8:12]` and is shared by distinct s2c `0x012e` records:
-frame 49/subevent 28 from source `0x47a00007`, frame 50/subevent 2 from
-`0x47a0000c`, frame 50/subevent 17 from `0x47a00006`, and frame
-50/subevent 32 from `0x47a0000f`. It is retained here only as the existing
-product field, not as a unique actor key.
 
 The direct same-source records supporting the return-to-inn actor presence are
 s2c `0x00ca` add at frame 50/subevent 31, direction-local event index 257,
@@ -83,7 +77,7 @@ The exact-name query produced these bounded results:
 
 | Product | Coverage and result |
 | --- | --- |
-| `derived/spawn_observations.json` | 54-capture walk, 497 positioned rows across 18 captures; exactly one matching `ObjectItemStorage` row in this product, with the shared preamble caveat above |
+| `derived/spawn_observations.json` | 54-capture walk, 642 positioned rows across 18 captures; two matching `ObjectItemStorage` rows, one each in `login.pcapng` and `return_to_inn.pcapng` |
 | `derived/observations.json` | 54 retained capture members; aggregate count of 200 s2c `0x0130` packets only, with no function names; no s2c numeric key `0x01a5` |
 | `studies/director-wire-identity` | 54 captures and 126 c2s `0x012d` EventStart role/event-name rows; the five exact storage names were absent from these retained role rows |
 | `studies/c2s-012d-event-start` | 126 c2s `0x012d` messages in 39 captures; none of the five exact storage names occur in the product |
@@ -278,9 +272,9 @@ that preserves those joins.
   `derived/observations.meta.yaml`: SHA-256
   `2534bc940f04ecdaa5af8555f8433f5db95786e5bdbe0fc8bcea3053e40715a0`.
 - `derived/spawn_observations.json`: SHA-256
-  `69f7a21ef4b7bd0c48cafc1c7db68884b9273bfa3fd03043303633106e940581`;
+  `2e14f200434fd96685d2d0ca8c6135077d1686a279ad9d8c008989822b325899`;
   `derived/spawn_observations.csv`: SHA-256
-  `d4f68b277795a828d9373a03a81421af9940c8524517775593fa2581058eab93`.
+  `888623b05e04ea2f5ca51bf107f913e334abb891ebd363fd209dddb7b4a3e153`.
 - `derived/opcode_names.json`: SHA-256
   `529ee24970932ca62cc4504432252d671b2c6a63f29b1e52ecd2bf0f900e0ff6`.
 - `studies/director-wire-identity/derived/accounting.json`: SHA-256

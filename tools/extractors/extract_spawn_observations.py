@@ -1,6 +1,6 @@
 """Extract first observed NPC and object spawn identities and positions.
 
-Join s2c opcodes 0x00ca, 0x00cc, and 0x00ce by the actor id at offset 8.
+Join s2c opcodes 0x00ca, 0x00cc, and 0x00ce by the wrapped source actor id.
 Position floats are at offsets 24, 28, 32, and 36. Zone tags remain verbatim.
 """
 
@@ -26,7 +26,7 @@ from extract_payload_samples import walk_capture_payloads  # type: ignore
 from extract_observations import default_corpus_paths  # type: ignore
 
 # Bump when extraction changes output; record the version in pipelines/*.yaml and derived/*.meta.yaml.
-GENERATOR_VERSION = "2"
+GENERATOR_VERSION = "3"
 
 DEFAULT_OUT = (
     Path(__file__).parent.parent.parent / "derived" / "spawn_observations.json"
@@ -73,9 +73,7 @@ def walk_capture_spawns(path: Path) -> list[dict]:
         if r["direction"] != "s2c":
             continue
         b = bytes.fromhex(r["bytes"])
-        if len(b) < 12:
-            continue
-        aid = int.from_bytes(b[8:12], "little")
+        aid = r["source_actor_id"]
         op = r["opcode"]
         if op == OP_ADD:
             add.add(aid)
@@ -89,7 +87,8 @@ def walk_capture_spawns(path: Path) -> list[dict]:
                 m = ZONE_RE.search(ss[0])
                 if m:
                     zt = m.group(1)
-            inst[aid] = (name, base, cpath, zt)
+            # Keep the first observed identity for each actor.
+            inst.setdefault(aid, (name, base, cpath, zt))
         elif op == OP_POS and len(b) >= 40:
             if aid not in pos:  # Keep the first observed placement for each actor.
                 pos[aid] = struct.unpack_from("<ffff", b, 24)
