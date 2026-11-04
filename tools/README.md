@@ -111,6 +111,11 @@ The supported commands for direct maintainer use are:
   sanitized c2s `0x012D` EventStart selector, server codes, event name, and
   talk target-message joins from the retail captures; add `--check` for replay
   and `--public-shape` to validate retained products without the captures.
+- `python tools/extractors/extract_c2s_battle_engage_order.py` - regenerate
+  the sanitized c2s battle engage and disengage order study, joining the
+  `0x00CC`, `0x00CD`, and Active/Passive Mode `0x012D` records to the server
+  replies, target echoes, and first attack results; add `--check` for replay
+  and `--public-shape` to validate retained products without the captures.
 - `python tools/extractors/extract_job_change_context.py` - regenerate the
   bounded job-update, command-request, selector-negative, typed-tail, and
   same-direction presentation context extension for the c2s `0x012D` study;

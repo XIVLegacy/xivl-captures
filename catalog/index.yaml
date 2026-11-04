@@ -504,6 +504,31 @@ studies:
   - studies/c2s-012d-event-start/derived/job-change-context.json
   source_refs:
   - source: pcap-1.23b
+- id: c2s-battle-engage-order
+  title: Client Battle Engage and Disengage Order
+  status: distilled
+  evidence_class: packet-capture
+  content_kind: action-mechanic
+  tags:
+  - battle-mode
+  - targeting
+  - packet-decoding
+  - map-serverbound
+  search_hints:
+  - '0x00cc'
+  - '0x00cd'
+  - '0x012d'
+  - LockTargetPacket
+  - SetTargetPacket
+  - Active Mode
+  - Passive Mode
+  - commandForced
+  - auto-attack
+  primary_paths:
+  - studies/c2s-battle-engage-order/derived/verdicts.md
+  - studies/c2s-battle-engage-order/derived/accounting.json
+  source_refs:
+  - source: pcap-1.23b
 - id: cast-result-state-order
   title: Cast Property and Result Wire Order
   status: distilled
