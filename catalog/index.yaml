@@ -3293,10 +3293,6 @@ derived:
   kind: generated
   evidence_class: packet-capture
   output_file: derived/sequences.json
-- id: spawn_location_validation
-  kind: frozen
-  evidence_class: packet-capture
-  output_file: derived/spawn_location_validation.json
 - id: spawn_observations
   kind: generated
   evidence_class: packet-capture

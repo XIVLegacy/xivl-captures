@@ -21,7 +21,6 @@ PIPELINES_DIR = REPO_ROOT / "pipelines"
 SOURCE_MANIFEST = REPO_ROOT / "sources" / "pcap-1.23b" / "manifest.yaml"
 
 PROMOTED_DATASETS = {"opcode_names"}
-FROZEN_DATASETS = {"spawn_location_validation"}
 
 # Some generated datasets publish a format-specific companion alongside the
 # canonical JSON. Keep this mapping here because pipeline outputs remain one
@@ -30,18 +29,9 @@ ADDITIONAL_OUTPUTS = {
     "spawn_observations": ("spawn_observations.csv",),
 }
 
-# Fixed historical provenance is not derivable from the file, so keep it with the frozen artifact definition.
-FROZEN_NOTES = {
-    "spawn_location_validation": (
-        "Frozen historical artifact from a one-time spawn-location divergence "
-        "study. This repo retains its result as packet-capture evidence."
-    ),
-}
-
 # Non-generated evidence classes are assigned explicitly.
 NON_GENERATED_EVIDENCE_CLASS = {
     "opcode_names": "packet-capture",
-    "spawn_location_validation": "packet-capture",
 }
 
 
@@ -127,20 +117,6 @@ def build_promoted_meta(name: str) -> dict:
     }
 
 
-def build_frozen_meta(name: str) -> dict:
-    return {
-        "dataset": name,
-        "kind": "frozen",
-        "evidence_class": NON_GENERATED_EVIDENCE_CLASS[name],
-        "schema_version": 1,
-        "output": {
-            "file": f"derived/{name}.json",
-            "sha256": sha256_file(DATA_DIR / f"{name}.json"),
-        },
-        "provenance": {"note": FROZEN_NOTES[name]},
-    }
-
-
 def dump_yaml(obj: dict) -> str:
     return yaml.dump(obj, default_flow_style=False, sort_keys=False, allow_unicode=True)
 
@@ -160,8 +136,6 @@ def build_all_meta() -> dict[str, dict]:
         name = json_path.stem
         if name in PROMOTED_DATASETS:
             out[name] = build_promoted_meta(name)
-        elif name in FROZEN_DATASETS:
-            out[name] = build_frozen_meta(name)
         elif name in pipelines_by_output:
             out[name] = build_generated_meta(
                 name, pipelines_by_output[name], corpus_hash
@@ -169,8 +143,8 @@ def build_all_meta() -> dict[str, dict]:
         else:
             print(
                 f"error: derived/{json_path.name} has no pipeline output entry and is not "
-                "marked promoted/frozen in tools/build_dataset_meta.py. Add a "
-                "pipelines/*.yaml entry (or a PROMOTED_DATASETS/FROZEN_DATASETS "
+                "marked promoted in tools/build_dataset_meta.py. Add a "
+                "pipelines/*.yaml entry (or a PROMOTED_DATASETS "
                 "entry) before this product can get a sidecar.",
                 file=sys.stderr,
             )

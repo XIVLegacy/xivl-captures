@@ -2,7 +2,7 @@
 """Validate or regenerate canonical products in dependency order.
 
 ``--check`` compares temporary regeneration without modifying the tree.
-Promoted and frozen products are parse-only.
+Promoted products are parse-only.
 """
 
 from __future__ import annotations
@@ -46,7 +46,6 @@ VERIFIED_PRODUCTS = tuple(
     [f"derived/{name}" for name in PCAP_PRODUCTS]
     + [
         "derived/opcode_names.json",
-        "derived/spawn_location_validation.json",
         "studies/battle-result-backfit/derived/distribution-summary.csv",
         "studies/battle-result-backfit/derived/matched-comparison-sets.csv",
         "studies/battle-result-backfit/derived/hp-recovery-clusters.csv",
@@ -385,10 +384,6 @@ MONSTER_ACTOR_CLASS_PATHS = (
 )
 LOBBY_RECORD_CENSUS = TOOLS / "extractors" / "extract_lobby_record_census.py"
 
-# Promoted or frozen products are parse-only.
-PARSE_ONLY_PRODUCTS = [
-    ("spawn_location_validation.json", "frozen historical artifact"),
-]
 SUBPROCESS_TIMEOUT_SECONDS = 300
 
 
@@ -663,9 +658,6 @@ def do_check() -> int:
                 else "regeneration or digestion failed, see output above",
             )
         )
-
-    for name, reason in PARSE_ONLY_PRODUCTS:
-        parse_only_check(name, reason, results)
 
     ok = run(
         [BATTLE_RESULT_DISTRIBUTIONS, "--check"],
@@ -1009,9 +1001,6 @@ def do_write() -> int:
                 else "generation or digestion failed, see output above",
             )
         )
-    for name, reason in PARSE_ONLY_PRODUCTS:
-        parse_only_check(name, reason, results)
-
     ok = run(
         [BATTLE_RESULT_DISTRIBUTIONS],
         "analyze_battle_result_distributions.py",
