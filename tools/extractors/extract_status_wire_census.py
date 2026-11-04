@@ -86,7 +86,7 @@ def decode_wire_id(wire_id: int) -> int:
         raise ValueError("wire status id must fit u16")
     if wire_id == 0:
         return 0
-    return 200000 + wire_id - (0x4350 if wire_id > 0x8000 else 0)
+    return 200000 + wire_id + (0x4350 if wire_id > 0x8000 else 0)
 
 
 def unpack_status_word(row_id: int) -> dict[str, int]:
@@ -444,7 +444,7 @@ def build_outputs(crosswalk_path: Path = CROSSWALK) -> dict[str, bytes]:
             "Status names label complete status rows, not nibble values.",
             "Actor labels are capture-local pseudonyms and cannot be joined across captures.",
             "Chronology is direction-local reconstructed stream order and does not prove causality or server policy.",
-            "Both supported reverse wire encodings are retained; neither is preferred without wire evidence.",
+            "Each observed status row has one wire encoding; no decoded event carries a wire ID above 0x8000.",
             "No raw payload, endpoint, player name, token, timestamp, or raw actor identifier is published.",
         ],
     }
@@ -472,10 +472,9 @@ low-nibble projection. All three rows expose Chant kind 1 value 6, Object bits
 14..15 value 1, and Object bits 12..13 value 2. Those upper projections remain
 effectively single-value in this corpus despite repeated packet occurrences.
 
-Each observed row has both a low and high reverse wire encoding under the
-native transform. Only the low encodings appear on wire. The study preserves
-both supported encodings and does not infer that one encoding is preferred in
-unobserved cases.
+Each observed row has one wire encoding, the low one. The high branch cannot
+reach rows 223129, 223263 or 223999. No decoded event carries a wire ID above
+`0x8000`, so these packets do not witness the high branch.
 
 ## Rejected interpretations
 
@@ -488,8 +487,8 @@ wiki terminology, and implementation vocabulary are outside this study.
 
 This corpus distinguishes three values in the shared bits 8..11 projection but
 only one observed value in each upper projection. Additional retail status rows
-with different upper bits are required to broaden those witnesses. A capture
-using a high reverse wire encoding would be required to compare encoding use.
+with different upper bits are required to broaden those witnesses. A packet
+carrying a wire ID above `0x8000` would be required to witness the high branch.
 """
     return {
         "occurrences.csv": _csv_bytes(OCCURRENCE_FIELDS, occurrence_rows),

@@ -4276,7 +4276,7 @@
       },
       "extract_status_wire_census": {
         "path": "tools/extractors/extract_status_wire_census.py",
-        "sha256": "6987683c81d5c2f7bdf5cf635812694d5bae518b7de56e42b2eb2386f1b98ea5"
+        "sha256": "c80a316ed72e80af5b3b633a7da9f87a2aef6166a980d66d9510830ec1f6bf1f"
       },
       "extract_streams": {
         "path": "tools/extractors/extract_streams.py",

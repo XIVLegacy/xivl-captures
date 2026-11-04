@@ -13,7 +13,10 @@ import extract_status_wire_census as census  # noqa: E402
 class StatusWireCensusTests(unittest.TestCase):
     def test_native_translation_boundary(self):
         self.assertEqual(census.decode_wire_id(0x8000), 232768)
-        self.assertEqual(census.decode_wire_id(0x8001), 215537)
+        self.assertEqual(census.decode_wire_id(0x8001), 250001)
+        self.assertEqual(census.decode_wire_id(0x83E9), 251001)
+        self.assertEqual(census.decode_wire_id(0x9DA9), 257593)
+        self.assertEqual(census.decode_wire_id(0xFFFF), 282767)
         self.assertEqual(census.decode_wire_id(0), 0)
 
     def test_projections_overlap_without_labels(self):
@@ -28,9 +31,22 @@ class StatusWireCensusTests(unittest.TestCase):
             },
         )
 
-    def test_crosswalk_preserves_reverse_ambiguity(self):
+    def test_crosswalk_rows_have_one_wire_encoding(self):
         row = census._load_crosswalk(census.CROSSWALK)[223263]
-        self.assertEqual(row["wire_ids"], (0x5ADF, 0x9E2F))
+        self.assertEqual(row["wire_ids"], (0x5ADF,))
+
+    def test_crosswalk_rejects_unreachable_encoding(self):
+        import tempfile
+
+        with tempfile.TemporaryDirectory() as raw:
+            path = Path(raw) / "crosswalk.csv"
+            path.write_text(
+                "status_row_id,status_name,all_wire_ids_for_row_hex,chant_kind_1,chant_kind_2,object_bits_8_11,object_bits_14_15,object_bits_12_13\n"
+                "223263,Resting,0x5ADF 0x9E2F,6,8,8,1,2\n",
+                encoding="ascii",
+            )
+            with self.assertRaisesRegex(ValueError, "invalid reverse encodings"):
+                census._load_crosswalk(path)
 
     def test_retransmission_overlap_is_counted(self):
         class Layer:
@@ -65,7 +81,7 @@ class StatusWireCensusTests(unittest.TestCase):
             path = Path(raw) / "crosswalk.csv"
             path.write_text(
                 "status_row_id,status_name,all_wire_ids_for_row_hex,chant_kind_1,chant_kind_2,object_bits_8_11,object_bits_14_15,object_bits_12_13\n"
-                "223263,Resting,0x5ADF 0x9E2F,7,8,8,1,2\n",
+                "223263,Resting,0x5ADF,7,8,8,1,2\n",
                 encoding="ascii",
             )
             with self.assertRaisesRegex(ValueError, "stale chant_kind_1"):

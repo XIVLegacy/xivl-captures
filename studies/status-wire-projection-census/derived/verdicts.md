@@ -19,10 +19,9 @@ low-nibble projection. All three rows expose Chant kind 1 value 6, Object bits
 14..15 value 1, and Object bits 12..13 value 2. Those upper projections remain
 effectively single-value in this corpus despite repeated packet occurrences.
 
-Each observed row has both a low and high reverse wire encoding under the
-native transform. Only the low encodings appear on wire. The study preserves
-both supported encodings and does not infer that one encoding is preferred in
-unobserved cases.
+Each observed row has one wire encoding, the low one. The high branch cannot
+reach rows 223129, 223263 or 223999. No decoded event carries a wire ID above
+`0x8000`, so these packets do not witness the high branch.
 
 ## Rejected interpretations
 
@@ -35,5 +34,5 @@ wiki terminology, and implementation vocabulary are outside this study.
 
 This corpus distinguishes three values in the shared bits 8..11 projection but
 only one observed value in each upper projection. Additional retail status rows
-with different upper bits are required to broaden those witnesses. A capture
-using a high reverse wire encoding would be required to compare encoding use.
+with different upper bits are required to broaden those witnesses. A packet
+carrying a wire ID above `0x8000` would be required to witness the high branch.

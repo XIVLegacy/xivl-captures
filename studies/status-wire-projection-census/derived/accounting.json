@@ -3,7 +3,7 @@
     "Status names label complete status rows, not nibble values.",
     "Actor labels are capture-local pseudonyms and cannot be joined across captures.",
     "Chronology is direction-local reconstructed stream order and does not prove causality or server policy.",
-    "Both supported reverse wire encodings are retained; neither is preferred without wire evidence.",
+    "Each observed status row has one wire encoding; no decoded event carries a wire ID above 0x8000.",
     "No raw payload, endpoint, player name, token, timestamp, or raw actor identifier is published."
   ],
   "coverage": {

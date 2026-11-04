@@ -13,7 +13,7 @@ numeric reader projections without assigning meanings to their values.
   per-capture chronology accounting.
 - `derived/occurrences.csv` - one sanitized row per decoded packet.
 - `derived/status-projections.csv` - unique observed wire IDs joined to status
-  rows, complete-row names, reverse encodings, and numeric projections.
+  rows, complete-row names, the wire encoding, and numeric projections.
 - `derived/verdicts.md` - promoted conclusions and rejected interpretations.
 
 Regenerate or verify the products:
@@ -32,14 +32,14 @@ reconstruction removes retransmitted duplicate bytes before framing.
 The proven packet shape and native lookup are recorded in
 [client opcode semantics](https://github.com/XIVLegacy/xivl-opcodes/blob/db9e9d770698b086f19758ecc5803012308f5891/data/client_opcode_semantics.json)
 under `s2c-0179`. The status-row join is pinned to the immutable
-[substat crosswalk](https://github.com/XIVLegacy/xivl-client-data/blob/ffe929b8bebd5d6d071a98ddceb78d32bc6c0d17/derived/substat_status_crosswalk.csv).
+[substat crosswalk](https://github.com/XIVLegacy/xivl-client-data/blob/b9273931d11b05b0523988f604ad894fadc4618f/derived/substat_status_crosswalk.csv).
 Its source sheet is the restricted `csv/xtx_status.csv`; the minimal
 study-owned snapshot under `inputs/` makes regeneration repository-local.
 
-The native translation is `row = 200000 + wire - adjustment`, where adjustment
-is `0x4350` only when `wire > 0x8000`. A row can therefore have overlapping low
-and high reverse encodings. The output retains every valid encoding and does
-not select a preferred one.
+The native translation is `row = 200000 + wire + adjustment`, where adjustment
+is `0x4350` only when `wire > 0x8000`. The low branch reaches rows 200001 to
+232768 and the high branch rows 250001 to 282767, so a row has at most one wire
+encoding.
 
 ## Promoted conclusions
 
@@ -70,18 +70,18 @@ event repetition does not create additional nibble witnesses.
 ## Evidence gaps
 
 The observed rows vary in bits 8..11 but not in the requested upper bit
-projections. No high reverse wire encoding appears in the corpus. Chronology
+projections. No decoded event carries a wire ID above `0x8000`. Chronology
 does not identify why a status row was sent.
 
 ## Further research
 
 Additional retail packets containing status rows with different upper bits
-would broaden those projections. A directly observed high reverse encoding
-would be required to compare use of the two native encoding branches.
+would broaden those projections. A retail packet carrying a wire ID above
+`0x8000` would be required to witness the high translation branch.
 
 ## Verification
 
 Repository validation reproduces the four derived products and validates the
 study checksum and schemas, and runs focused mutation tests for translation,
-bit projections, reverse-encoding ambiguity, retransmission overlap, and
+bit projections, unreachable reverse encodings, retransmission overlap, and
 malformed packet exclusion.
