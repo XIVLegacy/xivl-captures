@@ -17,6 +17,7 @@ relevant source or study bundle for its manifest, provenance, and findings.
 - [Combat sight detection evidence](combat-sight-detection-evidence.md)
 - [Combat and quest-duty observations](combat-duty-observations.md)
 - [Skirmish and Behest content evidence](skirmish-behest-content-evidence.md)
+- [Battle Regimen announced rules and client limits](battle-regimen-source-evidence.md)
 - [Land-gathering observed sequence](land-gathering-observed-sequence.md)
 - [Fisher exit state and recipient evidence](fisher-exit-state-observations.md)
 - [Selected class action behavior evidence](class-action-behavior-evidence.md)
