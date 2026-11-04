@@ -91,7 +91,7 @@
   },
   "comparison_inputs": {
     "studies/navmut-world-population-observations/derived/observations.csv": "0fb9ac43ce3eed05fcd3228f27e049b294f36227be93f1aec76be6a2da6a3e35",
-    "derived/spawn_observations.csv": "888623b05e04ea2f5ca51bf107f913e334abb891ebd363fd209dddb7b4a3e153"
+    "derived/spawn_observations.csv": "02afc952e44cb6593b638185148ab0f7dff1ba48350151594a1622a61bda9be0"
   },
   "comparison_matches": {},
   "unidentified_comment_records": 3

@@ -56,8 +56,8 @@ class SpawnObservationsJoinTest(unittest.TestCase):
                 _record(spawn.OP_ADD, 1, 100),
                 _position(1, 101, 10.0),
                 _position(1, 102, 99.0),
-                _instance(1, 103, "alpha"),
-                _instance(1, 104, "@$alpha"),
+                _instance(1, 103, "@$alpha"),
+                _instance(1, 104, "bravo"),
             ]
         )
         self.assertEqual(list(rows), ["0x00000001"])

@@ -57,7 +57,7 @@ OP_ADD, OP_INST, OP_POS = 202, 204, 206  # 0x00ca / 0x00cc / 0x00ce
 # Wire fact: instance-name zone tags look like `_fst0Twn01a_` or `_wil0Fld03_`.
 ZONE_RE = re.compile(r"_((?:fst|roc|sea|wil|ocn|lak|prv|ori|non)\d[A-Za-z]+\d+[a-z]?)_")
 # Wire quirk: the wire prepends sync/length glyphs before the printable name.
-_NAME_LSTRIP = "&%3=(+*)/-#$ !\"'0123456789"
+_NAME_LSTRIP = "&%3=(+*)/-#$@ !\"'0123456789"
 
 
 def _ascii_strings(b: bytes, minlen: int = 3) -> list[str]:

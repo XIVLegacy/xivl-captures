@@ -457,7 +457,7 @@
     {
       "capture": "gridania_to_coerthas.pcapng",
       "actorId": "0x44880001",
-      "instanceName": "@$_areaMaster@09100",
+      "instanceName": "_areaMaster@09100",
       "baseClass": "ZoneMasterRocR0",
       "classPath": "",
       "zoneTag": "",
@@ -471,7 +471,7 @@
     {
       "capture": "gridania_to_coerthas.pcapng",
       "actorId": "0x44880002",
-      "instanceName": "@$weatherDire_roc0Fld03_01@09100",
+      "instanceName": "weatherDire_roc0Fld03_01@09100",
       "baseClass": "WeatherDirector",
       "classPath": "",
       "zoneTag": "roc0Fld03",
@@ -485,7 +485,7 @@
     {
       "capture": "gridania_to_coerthas.pcapng",
       "actorId": "0x44880044",
-      "instanceName": "@$afterQuestW_roc0Fld03_15@09100",
+      "instanceName": "afterQuestW_roc0Fld03_15@09100",
       "baseClass": "AfterQuestWarpDirector",
       "classPath": "",
       "zoneTag": "roc0Fld03",
@@ -499,7 +499,7 @@
     {
       "capture": "gridania_to_coerthas.pcapng",
       "actorId": "0x4488005b",
-      "instanceName": "@$serowFemale_roc0Fld03_1s@09100",
+      "instanceName": "serowFemale_roc0Fld03_1s@09100",
       "baseClass": "SerowFemaleStandard",
       "classPath": "/Chara/Npc/Monster/Serow/SerowFemaleStandard",
       "zoneTag": "roc0Fld03",
@@ -513,7 +513,7 @@
     {
       "capture": "gridania_to_coerthas.pcapng",
       "actorId": "0x44880090",
-      "instanceName": "@$serowFemale_roc0Fld03_2j@09100",
+      "instanceName": "serowFemale_roc0Fld03_2j@09100",
       "baseClass": "SerowFemaleStandard",
       "classPath": "/Chara/Npc/Monster/Serow/SerowFemaleStandard",
       "zoneTag": "roc0Fld03",
@@ -527,7 +527,7 @@
     {
       "capture": "gridania_to_coerthas.pcapng",
       "actorId": "0x448800ec",
-      "instanceName": "@$nuteaterStd_roc0Fld03_3N@09100",
+      "instanceName": "nuteaterStd_roc0Fld03_3N@09100",
       "baseClass": "NuteaterStandard",
       "classPath": "/Chara/Npc/Monster/Lemming/NuteaterStandard",
       "zoneTag": "roc0Fld03",

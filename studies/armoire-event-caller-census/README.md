@@ -272,9 +272,9 @@ that preserves those joins.
   `derived/observations.meta.yaml`: SHA-256
   `2534bc940f04ecdaa5af8555f8433f5db95786e5bdbe0fc8bcea3053e40715a0`.
 - `derived/spawn_observations.json`: SHA-256
-  `2e14f200434fd96685d2d0ca8c6135077d1686a279ad9d8c008989822b325899`;
+  `8c6f8a6ebc9adcae9b3993e1fcaf7f5ce7ac3bebb97c8e3ef866af795a4ff4f8`;
   `derived/spawn_observations.csv`: SHA-256
-  `888623b05e04ea2f5ca51bf107f913e334abb891ebd363fd209dddb7b4a3e153`.
+  `02afc952e44cb6593b638185148ab0f7dff1ba48350151594a1622a61bda9be0`.
 - `derived/opcode_names.json`: SHA-256
   `529ee24970932ca62cc4504432252d671b2c6a63f29b1e52ecd2bf0f900e0ff6`.
 - `studies/director-wire-identity/derived/accounting.json`: SHA-256
