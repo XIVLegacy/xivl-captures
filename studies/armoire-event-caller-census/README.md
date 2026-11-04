@@ -13,11 +13,10 @@ The query started with the existing full-corpus products for the exact names
 `ObjectItemStorage`, `storageMenu`, `selectCategory`, `selectStoreItem`,
 and `selectReceiveItem`, plus the numeric and named 0x01a5 item-storage
 opcode records. The spawn product has concrete `ObjectItemStorage` rows in
-`login.pcapng` and `return_to_inn.pcapng`. `return_to_inn.pcapng` was the
-first capture opened for typed
-actor, display, and interaction context. The later 54-member pass was limited
-to the metadata census described below; `login.pcapng` was then selected for
-the second bounded direct-record context check.
+`login.pcapng` and `return_to_inn.pcapng`. `return_to_inn.pcapng` supplies the
+typed actor, display, and interaction context, and `login.pcapng` supplies a
+second bounded direct-record context check. The 54-member pass is limited to
+the metadata census described below.
 
 The return-to-inn capture was decoded with the existing clear-game decoder
 after framing validation. It has one admitted `main` lane, 50 c2s frames, and 63 s2c
