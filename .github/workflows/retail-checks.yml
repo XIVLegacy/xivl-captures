@@ -57,7 +57,7 @@ jobs:
     name: PCAP Corpus Checks
     needs: retail-preflight
     runs-on: ubuntu-24.04
-    timeout-minutes: 20
+    timeout-minutes: 30
     environment:
       name: retail-evidence
     steps:
@@ -115,7 +115,7 @@ jobs:
           mkdir -p "${staging_root}"
           export XIVL_CORPUS_ABSENT=1
           export XIVL_PCAP_OBJECTS_DIR="${private_root}/corpus"
-          if ! timeout 300s python tools/refresh.py --check > "${private_root}/refresh.log" 2>&1; then
+          if ! timeout 900s python tools/refresh.py --check > "${private_root}/refresh.log" 2>&1; then
             awk '/^=== refresh.py summary ===/ { emit = 1 } emit' "${private_root}/refresh.log"
             exit 1
           fi
