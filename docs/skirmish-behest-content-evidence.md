@@ -74,6 +74,12 @@ coordinate or encounter validation.
 | Turtleback Island | Stone Golem | 1267 | 671 | 29179 | 2012-07-28T21:28:01Z |
 | Turtleback Island | Wadjet | 1394 | 758 | 28852 | 2012-07-28T21:21:06Z |
 
+The retained [July 10 Skirmish announcement](../sources/lodestone-dev-patch/objects/pages/skirmish-2012-07-10.md),
+Participation and Objectives, gave defeating all enemies within 30 minutes as
+the overall objective. It did not specify a universal prerequisite for the
+next opponent to appear. The Turtleback Island wiki notes below separately
+describe predecessor-defeat or reported-time alternatives.
+
 The joined `notes` cells describe the following spawn relationships at wiki
 tier. They do not bind `QuestDirectorNMRush01` or `QuestDirectorNMRush02` to
 either island. The minute values below are preserved as reported
