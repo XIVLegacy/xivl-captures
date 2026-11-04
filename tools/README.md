@@ -51,6 +51,8 @@ The supported commands for direct maintainer use are:
   or raw payload bytes; `--public-shape` checks public accounting only.
 - `python tools/refresh.py --check --public-shape` - explicitly validate the
   restricted-evidence-absent repository shape.
+- `python tools/refresh.py --check --retail-pcap` - reproduce the PCAP products
+  with only the PCAP corpus restored; other restricted sources stay public-shape.
 - `python tools/import_monster_population.py` - distill the pinned restricted
   reported population tables; `--check` reproduces them byte-for-byte, while
   `--check --public-shape` checks public row and evidence invariants only.

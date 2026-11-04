@@ -202,12 +202,21 @@ CHECK_PLANS = {
             (("public dataset metadata", "validate"),),
         ),
     ),
-    "check": (
+    "restricted-population": (
         (
             [TOOLS / "import_monster_population.py", "--check"],
             "reported monster population regeneration",
             (("reported monster population regeneration", "regen"),),
         ),
+    ),
+    "public-population": (
+        (
+            [TOOLS / "import_monster_population.py", "--check", "--public-shape"],
+            "public reported monster population",
+            (("public reported monster population", "validate"),),
+        ),
+    ),
+    "check": (
         (
             [NAVMUT_IMPORTER, "--check"],
             "Navmut observation products",
@@ -442,15 +451,22 @@ def parse_only_check(name: str, reason: str, results: list) -> None:
     results.append((f"derived/{name}", "parse-only", True, reason))
 
 
+SPECIES_COVERAGE_LABEL = "ordinary species drop coverage"
+
+
 def run_group_species_products(
-    results: list, *, check: bool, public_shape: bool = False
+    results: list,
+    *,
+    check: bool,
+    public_shape: bool = False,
+    public_species: bool = False,
 ) -> None:
     for script, label in (
         (
             TOOLS / "extractors/extract_group_combat_contracts.py",
             "group and combat wire products",
         ),
-        (TOOLS / "build_species_drop_coverage.py", "ordinary species drop coverage"),
+        (TOOLS / "build_species_drop_coverage.py", SPECIES_COVERAGE_LABEL),
         (
             TOOLS / "extractors/extract_friendlist_search_exchange.py",
             "friend-search wire exchange",
@@ -463,13 +479,14 @@ def run_group_species_products(
         command = [script]
         if check:
             command.append("--check")
-        if public_shape:
+        public = public_shape or (public_species and label == SPECIES_COVERAGE_LABEL)
+        if public:
             command.append("--public-shape")
         ok = run(command, label)
         results.append(
             (
                 label,
-                "validate" if public_shape else "regen" if check else "write",
+                "validate" if public else "regen" if check else "write",
                 ok,
                 "" if ok else "see output above",
             )
@@ -637,7 +654,7 @@ def do_public_check() -> int:
     return report(results)
 
 
-def do_check() -> int:
+def do_check(*, pcap_only: bool = False) -> int:
     results: list[tuple[str, str, bool, str]] = []
 
     ok = run(["-m", "unittest", *UNIT_TEST_MODULES], "explicit unit tests")
@@ -645,8 +662,10 @@ def do_check() -> int:
         ("explicit unit tests", "validate", ok, "" if ok else "see output above")
     )
 
+    # The retail job holds only the PCAP corpus; other restricted sources stay public-shape.
+    run_plan("public-population" if pcap_only else "restricted-population", results)
     run_plan("check", results)
-    run_group_species_products(results, check=True)
+    run_group_species_products(results, check=True, public_species=pcap_only)
 
     ok = run([PCAP_BUILDER, "--check"], "build_pcap_products.py --check")
     digestion_ok = run([TOOLS / "validate_digestion.py"], "validate_digestion.py")
@@ -1335,7 +1354,18 @@ def main() -> int:
         action="store_true",
         help="validate a filtered fresh-init tree with restricted evidence absent",
     )
+    parser.add_argument(
+        "--retail-pcap",
+        action="store_true",
+        help="reproduce PCAP products with only the PCAP corpus restored",
+    )
     args = parser.parse_args()
+    if args.retail_pcap:
+        if not args.check or args.public_shape:
+            parser.error("--retail-pcap requires --check without --public-shape")
+        if not RESTRICTED_OBJECTS.is_dir():
+            parser.error("--retail-pcap requires the restored PCAP corpus")
+        return do_check(pcap_only=True)
     if args.public_shape:
         if not args.check:
             parser.error("--public-shape requires --check")

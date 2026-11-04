@@ -32,6 +32,11 @@ member drift, and uncompressed-size drift. Private bytes stay under one
 temporary root. The shared `finalize-retail-attestation` action removes that
 root before artifact validation and upload.
 
+The job runs `python tools/refresh.py --check --retail-pcap`, because the PCAP
+archive is its only restricted input. The reported monster population and
+ordinary species drop coverage checks read other restricted sources, so they
+keep their `--public-shape` validation there and are outside this claim.
+
 The hosted claim is exact deterministic agreement between the 54-member PCAP
 archive and the already tracked products, catalogs, schemas, sidecars, and
 digestion checks. It does not establish capture chronology across connection
