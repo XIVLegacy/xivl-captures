@@ -2,12 +2,13 @@
 
 Generated from `catalog/index.yaml`. Primary axis: `content_kind`.
 
-## action-mechanic (15)
+## action-mechanic (16)
 
-### Studies (14)
+### Studies (15)
 
 - `battle-result-backfit`
 - `bluegartr-stat-tests`
+- `c2s-battle-engage-order`
 - `elemen-battle-actions`
 - `elemen-craft-gather-actions`
 - `historical-battlecommand-workbook`

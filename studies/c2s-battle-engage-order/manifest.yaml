@@ -1,0 +1,41 @@
+id: c2s-battle-engage-order
+title: Client Battle Engage and Disengage Order
+evidence_class: packet-capture
+status: distilled
+content_kind: action-mechanic
+tags:
+- battle-mode
+- targeting
+- packet-decoding
+- map-serverbound
+search_hints:
+- "0x00cc"
+- "0x00cd"
+- "0x012d"
+- LockTargetPacket
+- SetTargetPacket
+- Active Mode
+- Passive Mode
+- commandForced
+- auto-attack
+notes: >-
+  Order of every client-to-server 0x00cc lock, 0x00cd set, and Active or
+  Passive Mode 0x012d request in the captures, joined to the server mode
+  reply, the 0x00d2 and 0x00d3 target records, and the 22104 attack
+  results. Products hold shape classes, counts, packet locators,
+  field-value classes, and millisecond deltas. Actor ids, absolute
+  timestamps, and raw payloads stay out of the products.
+source_refs:
+- source: pcap-1.23b
+primary_paths:
+- derived/verdicts.md
+- derived/accounting.json
+canonical_evidence:
+- derived/accounting.json
+- derived/verdicts.md
+distilled:
+  distilled: true
+  checksum_file: derived/checksums.sha256
+  distilled_artifacts:
+  - derived/accounting.json
+  - derived/verdicts.md

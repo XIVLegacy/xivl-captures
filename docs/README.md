@@ -81,6 +81,7 @@ relevant source or study bundle for its manifest, provenance, and findings.
 - [Movement Speed Band Observations](../studies/movement-speed-band-observations/)
 - [Client Position Report 0x00CA Observations](../studies/c2s-00ca-position-report/)
 - [Client EventStart 0x012D Joins](../studies/c2s-012d-event-start/)
+- [Client Battle Engage and Disengage Order](../studies/c2s-battle-engage-order/)
 - [Status Wire Projection Census](../studies/status-wire-projection-census/)
 - [World Party-Chat 0x00C9 Contract](../studies/world-party-chat-00c9-contract/)
 - [Retail NPC and Self-Repair Contract](../studies/retail-repair-contract/)

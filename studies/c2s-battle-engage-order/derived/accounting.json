@@ -1,0 +1,1041 @@
+{
+  "captures": {
+    "accept_leve.pcapng": {
+      "counts": {
+        "0x00cc actor, zero": 1,
+        "0x00cc clear": 1,
+        "0x00cd actor, 0xe0000000": 3,
+        "0x00cd clear, 0xe0000000": 1,
+        "0x00cd self, 0xe0000000": 1
+      },
+      "sha256": "42b87e6c095db130def1de5bc382e428b4f4c12c8069c4682d6fa4bc7681967a",
+      "size_bytes": 59576
+    },
+    "accept_local_leve.pcapng": {
+      "counts": {
+        "0x00cc actor, zero": 1,
+        "0x00cc clear": 1,
+        "0x00cd actor, 0xe0000000": 2,
+        "0x00cd clear, 0xe0000000": 1
+      },
+      "sha256": "3b4b071d88742a5d3c94a1e29ca6a4074cb6b9a9a60207118302fe22f932bd7c",
+      "size_bytes": 50676
+    },
+    "accept_quest.pcapng": {
+      "counts": {
+        "0x00cc actor, zero": 1,
+        "0x00cc clear": 1,
+        "0x00cd actor, 0xe0000000": 1,
+        "0x00cd clear, 0xe0000000": 1
+      },
+      "sha256": "a207109240254b1398a36f877afc7ac34a08466cfbd3cdd3f2eb5f4a50718057",
+      "size_bytes": 53180
+    },
+    "battle_mode_passive_mode.pcapng": {
+      "counts": {
+        "mode 21001": 1,
+        "mode 21002": 1
+      },
+      "sha256": "5a8290df1d11781f4f5fa1f6990651c679e57ee3b8c5549021f06767bb172d4b",
+      "size_bytes": 12776
+    },
+    "buy_square_maple_shield.pcapng": {
+      "counts": {
+        "0x00cc actor, zero": 1,
+        "0x00cc clear": 1,
+        "0x00cd actor, 0xe0000000": 2,
+        "0x00cd clear, 0xe0000000": 1
+      },
+      "sha256": "aab582bd9658c89cd4d56e132500481f442b9f2dc2179f1a5829ea09776bce6b",
+      "size_bytes": 54088
+    },
+    "checkbed.pcapng": {
+      "counts": {
+        "0x00cc actor, zero": 1,
+        "0x00cc clear": 1,
+        "0x00cd actor, 0xe0000000": 2,
+        "0x00cd clear, 0xe0000000": 1
+      },
+      "sha256": "9e05a05de6ec44eded13761fcb3546eb248c0c68e537051eef575e29dfff1b79",
+      "size_bytes": 26276
+    },
+    "combat_autoattack.pcapng": {
+      "counts": {
+        "0x00cc actor, nonzero": 1,
+        "0x00cc clear": 1,
+        "0x00cd actor, 0xe0000000": 1,
+        "0x00cd actor, same actor": 1,
+        "0x00cd clear, 0xe0000000": 1,
+        "mode 21001": 1,
+        "mode 21002": 1
+      },
+      "sha256": "2f677ab61047b25c4168a3dd9496f372d48de3bba018d582dd5a968b9272f7b2",
+      "size_bytes": 82908
+    },
+    "combat_skills.pcapng": {
+      "counts": {
+        "0x00cc actor, nonzero": 1,
+        "0x00cc clear": 1,
+        "0x00cd actor, 0xe0000000": 1,
+        "0x00cd actor, same actor": 1,
+        "0x00cd clear, 0xe0000000": 1,
+        "mode 21001": 1,
+        "mode 21002": 1
+      },
+      "sha256": "7fe66d92f6f62584e57562e51355d310546935690e0b96c2c689b83bbe8a07a7",
+      "size_bytes": 63028
+    },
+    "cutscene_book.pcapng": {
+      "counts": {
+        "0x00cc actor, zero": 1,
+        "0x00cc clear": 1,
+        "0x00cd actor, 0xe0000000": 2,
+        "0x00cd clear, 0xe0000000": 1
+      },
+      "sha256": "c2cf85e02d8d15fe2aa9261e8b796c29c0a3d9dd9cdf287ce0f75f3a666b2b4d",
+      "size_bytes": 123824
+    },
+    "gather_wood.pcapng": {
+      "counts": {
+        "0x00cd actor, 0xe0000000": 1,
+        "0x00cd clear, 0xe0000000": 1
+      },
+      "sha256": "c308aa4c984eb3e1912383c06e5115c6924713978df43cdb8075335e1bac7d32",
+      "size_bytes": 157688
+    },
+    "local_leve_complete.pcapng": {
+      "counts": {
+        "0x00cc actor, zero": 2,
+        "0x00cc clear": 2,
+        "0x00cd actor, 0xe0000000": 4,
+        "0x00cd clear, 0xe0000000": 2
+      },
+      "sha256": "4f0793f354140478725bf2c30642a3458a854460f47fb11a7af635c8881d95cd",
+      "size_bytes": 358296
+    },
+    "move_out_of_room.pcapng": {
+      "counts": {
+        "0x00cc actor, zero": 1,
+        "0x00cc clear": 1,
+        "0x00cd actor, 0xe0000000": 2,
+        "0x00cd clear, 0xe0000000": 1
+      },
+      "sha256": "a7a03a1d688f3feb264f8da9fae3519c55b7e267aa3802472f0221f4d729b37b",
+      "size_bytes": 83412
+    },
+    "party_battle_leve.pcapng": {
+      "counts": {
+        "0x00cc actor, nonzero": 12,
+        "0x00cc actor, zero": 2,
+        "0x00cc clear": 14,
+        "0x00cd actor, 0xe0000000": 17,
+        "0x00cd actor, same actor": 14,
+        "0x00cd clear, 0xe0000000": 18,
+        "0x00cd self, 0xe0000000": 5,
+        "0x00cd self, same actor": 5,
+        "mode 21001": 7,
+        "mode 21002": 7
+      },
+      "sha256": "6327e5e1f5cbd51a9baaa9bcbacf53ca51c50a98fe4b66ae3e6bdecd9198089f",
+      "size_bytes": 1429864
+    },
+    "quest_update.pcapng": {
+      "counts": {
+        "0x00cc actor, zero": 1,
+        "0x00cc clear": 1,
+        "0x00cd actor, 0xe0000000": 2,
+        "0x00cd clear, 0xe0000000": 1
+      },
+      "sha256": "e31aa9738dd523b7703eefa6d38527135f16d8b5ff2fc314fd7e5b808d7e4787",
+      "size_bytes": 66756
+    },
+    "repair_items.pcapng": {
+      "counts": {
+        "0x00cc actor, zero": 1,
+        "0x00cc clear": 1,
+        "0x00cd actor, 0xe0000000": 2,
+        "0x00cd clear, 0xe0000000": 1
+      },
+      "sha256": "bbd829cbd3f42b2cbfb3aa8a74a1cc35d4e2c16c99e5a4a20ca76573f02dd90f",
+      "size_bytes": 63400
+    },
+    "sell_item.pcapng": {
+      "counts": {
+        "0x00cc actor, zero": 1,
+        "0x00cc clear": 1,
+        "0x00cd actor, 0xe0000000": 2,
+        "0x00cd clear, 0xe0000000": 1
+      },
+      "sha256": "1cd808fff6501c53e4c113f1fdef090e50dfe0fd7fe86ceaa552b3a53c1b5aac",
+      "size_bytes": 57580
+    },
+    "small_talk_louisoix.pcapng": {
+      "counts": {
+        "0x00cc actor, zero": 1,
+        "0x00cc clear": 1,
+        "0x00cd actor, 0xe0000000": 2,
+        "0x00cd clear, 0xe0000000": 1
+      },
+      "sha256": "58b620d90370ba69202e63f7f70edb79004ccbb8068e11e2e112a825d84dcafe",
+      "size_bytes": 18444
+    },
+    "war_quest_update1.pcapng": {
+      "counts": {
+        "0x00cc actor, zero": 1,
+        "0x00cc clear": 1,
+        "0x00cd actor, 0xe0000000": 1,
+        "0x00cd clear, 0xe0000000": 1
+      },
+      "sha256": "ce64e429063cc7e49a2045e2f7b0e18b1991f5908368b791b93c72419841e890",
+      "size_bytes": 42812
+    },
+    "war_quest_update2.pcapng": {
+      "counts": {
+        "0x00cc actor, nonzero": 2,
+        "0x00cc clear": 2,
+        "0x00cd actor, 0xe0000000": 2,
+        "0x00cd actor, same actor": 2,
+        "0x00cd clear, 0xe0000000": 2,
+        "mode 21001": 2,
+        "mode 21002": 2
+      },
+      "sha256": "bf43b5ee32c58e5dc6f8149b071bd9c5cd5cc0aaa55ea3528872308fd7be2429",
+      "size_bytes": 206216
+    },
+    "war_quest_update3.pcapng": {
+      "counts": {
+        "0x00cc actor, zero": 1,
+        "0x00cc clear": 1,
+        "0x00cd actor, 0xe0000000": 2,
+        "0x00cd clear, 0xe0000000": 1
+      },
+      "sha256": "52279e8cbc13d3f4751b5ee3cb9c91df1895ed5c41d30672629db3ec1c9efd05",
+      "size_bytes": 103520
+    }
+  },
+  "clear_to_mode_ms": {
+    "max": 10632,
+    "median": 5278,
+    "min": 1096,
+    "n": 7
+  },
+  "clears": [
+    {
+      "after_lock": "actor, nonzero",
+      "count": 7,
+      "echo": "0x00d2 then 0x00d3, one frame",
+      "next_mode": "21002",
+      "same_frame_next": "0x00cd clear, 0xe0000000"
+    },
+    {
+      "after_lock": "actor, nonzero",
+      "count": 9,
+      "echo": "0x00d2 then 0x00d3, one frame",
+      "next_mode": "none",
+      "same_frame_next": "0x00cd clear, 0xe0000000"
+    },
+    {
+      "after_lock": "actor, zero",
+      "count": 1,
+      "echo": "other",
+      "next_mode": "none",
+      "same_frame_next": "0x00ca"
+    },
+    {
+      "after_lock": "actor, zero",
+      "count": 1,
+      "echo": "0x00d2 then 0x00d3, one frame",
+      "next_mode": "21001",
+      "same_frame_next": "0x00cd clear, 0xe0000000"
+    },
+    {
+      "after_lock": "actor, zero",
+      "count": 15,
+      "echo": "0x00d2 then 0x00d3, one frame",
+      "next_mode": "none",
+      "same_frame_next": "0x00cd clear, 0xe0000000"
+    }
+  ],
+  "decode": {
+    "c2s_frames": 8970,
+    "c2s_subevents": 21201
+  },
+  "direction": "c2s",
+  "engage_summary": {
+    "attacks_after_clear": 2,
+    "c2s_before_attack": {
+      "0x0001": 22,
+      "0x00ca": 113,
+      "0x012d commandDefault": 2
+    },
+    "clear_to_attack_ms": {
+      "max": 531,
+      "median": 363.5,
+      "min": 196,
+      "n": 2
+    },
+    "d2_after_clear": 1,
+    "d3_before_lock": 4,
+    "first_attack_after_clear": 1,
+    "first_attack_opcode": {
+      "0x0139": 13
+    },
+    "lock_frame_shapes": {
+      "0x0001 + 0x00cc actor, nonzero + 0x00cd actor, same actor": 1,
+      "0x00cc actor, nonzero + 0x00cd actor, same actor": 10,
+      "0x00cc actor, nonzero + 0x00cd actor, same actor + 0x0001": 3,
+      "0x00cc actor, nonzero + 0x00cd actor, same actor + 0x012d commandDefault": 1,
+      "0x00cd actor, 0xe0000000 + 0x00cc actor, nonzero + 0x00cd actor, same actor": 1
+    },
+    "lock_to_attack_ms": {
+      "max": 5170,
+      "median": 1292,
+      "min": 476,
+      "n": 13
+    },
+    "lock_to_d2_ms": {
+      "max": 564,
+      "median": 529.5,
+      "min": 226,
+      "n": 16
+    },
+    "locks": 16,
+    "modes": {
+      "21001": 16
+    },
+    "select_frame_gap": {
+      "0": 1,
+      "1": 12,
+      "2": 1,
+      "5": 1
+    },
+    "select_frame_shapes": {
+      "0x0001 + 0x00cd actor, 0xe0000000": 3,
+      "0x00cc clear + 0x00cd clear, 0xe0000000 + 0x00cd actor, 0xe0000000 + 0x0133 + 0x0133 + 0x0133": 1,
+      "0x00cd actor, 0xe0000000": 5,
+      "0x00cd actor, 0xe0000000 + 0x0001": 5,
+      "0x00cd actor, 0xe0000000 + 0x00cc actor, nonzero + 0x00cd actor, same actor": 1
+    },
+    "select_same_frame": 1,
+    "select_to_lock_ms_earlier_frame": {
+      "max": 1794,
+      "median": 364,
+      "min": 333,
+      "n": 14
+    },
+    "with_attack": 13,
+    "with_attack_after_clear": 2,
+    "with_clear": 16,
+    "with_d2": 16,
+    "with_select": 15
+  },
+  "engages": [
+    {
+      "attack_after_clear": false,
+      "attacks_after_clear": 0,
+      "c2s_before_attack": {
+        "0x0001": 3,
+        "0x00ca": 14
+      },
+      "c2s_frame": 13,
+      "capture": "combat_autoattack.pcapng",
+      "clear_ms": 30843,
+      "clear_to_attack_ms": [],
+      "d2_after_clear": false,
+      "first_attack_ms": 2765,
+      "first_attack_opcode": "0x0139",
+      "first_d2_ms": 564,
+      "frame_shape": "0x00cc actor, nonzero + 0x00cd actor, same actor",
+      "mode": "21001",
+      "packet": 46,
+      "select": {
+        "c2s_frame": 12,
+        "d3_before_lock": false,
+        "frame_gap": 1,
+        "frame_shape": "0x00cd actor, 0xe0000000",
+        "ms_to_lock": 365,
+        "packet": 29
+      }
+    },
+    {
+      "attack_after_clear": false,
+      "attacks_after_clear": 0,
+      "c2s_before_attack": {
+        "0x0001": 5,
+        "0x00ca": 19,
+        "0x012d commandDefault": 2
+      },
+      "c2s_frame": 11,
+      "capture": "combat_skills.pcapng",
+      "clear_ms": 19760,
+      "clear_to_attack_ms": [],
+      "d2_after_clear": false,
+      "first_attack_ms": 5170,
+      "first_attack_opcode": "0x0139",
+      "first_d2_ms": 561,
+      "frame_shape": "0x00cc actor, nonzero + 0x00cd actor, same actor",
+      "mode": "21001",
+      "packet": 47,
+      "select": {
+        "c2s_frame": 10,
+        "d3_before_lock": true,
+        "frame_gap": 1,
+        "frame_shape": "0x00cd actor, 0xe0000000 + 0x0001",
+        "ms_to_lock": 365,
+        "packet": 44
+      }
+    },
+    {
+      "attack_after_clear": false,
+      "attacks_after_clear": 0,
+      "c2s_before_attack": {
+        "0x0001": 1,
+        "0x00ca": 6
+      },
+      "c2s_frame": 231,
+      "capture": "party_battle_leve.pcapng",
+      "clear_ms": 20342,
+      "clear_to_attack_ms": [],
+      "d2_after_clear": false,
+      "first_attack_ms": 1292,
+      "first_attack_opcode": "0x0139",
+      "first_d2_ms": 561,
+      "frame_shape": "0x00cc actor, nonzero + 0x00cd actor, same actor + 0x0001",
+      "mode": "21001",
+      "packet": 664,
+      "select": {
+        "c2s_frame": 230,
+        "d3_before_lock": false,
+        "frame_gap": 1,
+        "frame_shape": "0x00cd actor, 0xe0000000",
+        "ms_to_lock": 364,
+        "packet": 662
+      }
+    },
+    {
+      "attack_after_clear": false,
+      "attacks_after_clear": 0,
+      "c2s_before_attack": {
+        "0x0001": 1,
+        "0x00ca": 6
+      },
+      "c2s_frame": 291,
+      "capture": "party_battle_leve.pcapng",
+      "clear_ms": 23737,
+      "clear_to_attack_ms": [],
+      "d2_after_clear": false,
+      "first_attack_ms": 1258,
+      "first_attack_opcode": "0x0139",
+      "first_d2_ms": 528,
+      "frame_shape": "0x00cc actor, nonzero + 0x00cd actor, same actor",
+      "mode": "21001",
+      "packet": 837,
+      "select": {
+        "c2s_frame": 290,
+        "d3_before_lock": true,
+        "frame_gap": 1,
+        "frame_shape": "0x0001 + 0x00cd actor, 0xe0000000",
+        "ms_to_lock": 334,
+        "packet": 834
+      }
+    },
+    {
+      "attack_after_clear": false,
+      "attacks_after_clear": 0,
+      "c2s_before_attack": {
+        "0x0001": 1,
+        "0x00ca": 2
+      },
+      "c2s_frame": 872,
+      "capture": "party_battle_leve.pcapng",
+      "clear_ms": 23839,
+      "clear_to_attack_ms": [],
+      "d2_after_clear": false,
+      "first_attack_ms": 529,
+      "first_attack_opcode": "0x0139",
+      "first_d2_ms": 529,
+      "frame_shape": "0x00cc actor, nonzero + 0x00cd actor, same actor",
+      "mode": "21001",
+      "packet": 2586,
+      "select": {
+        "c2s_frame": 871,
+        "d3_before_lock": false,
+        "frame_gap": 1,
+        "frame_shape": "0x00cd actor, 0xe0000000",
+        "ms_to_lock": 337,
+        "packet": 2583
+      }
+    },
+    {
+      "attack_after_clear": false,
+      "attacks_after_clear": 0,
+      "c2s_before_attack": {
+        "0x0001": 1,
+        "0x00ca": 8
+      },
+      "c2s_frame": 934,
+      "capture": "party_battle_leve.pcapng",
+      "clear_ms": 28369,
+      "clear_to_attack_ms": [],
+      "d2_after_clear": false,
+      "first_attack_ms": 1486,
+      "first_attack_opcode": "0x0139",
+      "first_d2_ms": 530,
+      "frame_shape": "0x00cc actor, nonzero + 0x00cd actor, same actor + 0x0001",
+      "mode": "21001",
+      "packet": 2777,
+      "select": {
+        "c2s_frame": 933,
+        "d3_before_lock": false,
+        "frame_gap": 1,
+        "frame_shape": "0x00cd actor, 0xe0000000",
+        "ms_to_lock": 364,
+        "packet": 2775
+      }
+    },
+    {
+      "attack_after_clear": false,
+      "attacks_after_clear": 0,
+      "c2s_before_attack": {
+        "0x0001": 2,
+        "0x00ca": 10
+      },
+      "c2s_frame": 1176,
+      "capture": "party_battle_leve.pcapng",
+      "clear_ms": 20230,
+      "clear_to_attack_ms": [],
+      "d2_after_clear": false,
+      "first_attack_ms": 1931,
+      "first_attack_opcode": "0x0139",
+      "first_d2_ms": 226,
+      "frame_shape": "0x00cd actor, 0xe0000000 + 0x00cc actor, nonzero + 0x00cd actor, same actor",
+      "mode": "21001",
+      "packet": 3481,
+      "select": {
+        "c2s_frame": 1176,
+        "d3_before_lock": false,
+        "frame_gap": 0,
+        "frame_shape": "0x00cd actor, 0xe0000000 + 0x00cc actor, nonzero + 0x00cd actor, same actor",
+        "ms_to_lock": 0,
+        "packet": 3481
+      }
+    },
+    {
+      "attack_after_clear": false,
+      "attacks_after_clear": 0,
+      "c2s_before_attack": {
+        "0x0001": 1,
+        "0x00ca": 4
+      },
+      "c2s_frame": 1283,
+      "capture": "party_battle_leve.pcapng",
+      "clear_ms": 29282,
+      "clear_to_attack_ms": [],
+      "d2_after_clear": false,
+      "first_attack_ms": 893,
+      "first_attack_opcode": "0x0139",
+      "first_d2_ms": 528,
+      "frame_shape": "0x00cc actor, nonzero + 0x00cd actor, same actor",
+      "mode": "21001",
+      "packet": 3816,
+      "select": {
+        "c2s_frame": 1282,
+        "d3_before_lock": false,
+        "frame_gap": 1,
+        "frame_shape": "0x00cd actor, 0xe0000000 + 0x0001",
+        "ms_to_lock": 365,
+        "packet": 3814
+      }
+    },
+    {
+      "attack_after_clear": true,
+      "attacks_after_clear": 1,
+      "c2s_before_attack": {
+        "0x00ca": 5,
+        "0x00cc clear": 1,
+        "0x00cd clear, 0xe0000000": 1
+      },
+      "c2s_frame": 1356,
+      "capture": "party_battle_leve.pcapng",
+      "clear_ms": 365,
+      "clear_to_attack_ms": [
+        531
+      ],
+      "d2_after_clear": true,
+      "first_attack_ms": 896,
+      "first_attack_opcode": "0x0139",
+      "first_d2_ms": 559,
+      "frame_shape": "0x00cc actor, nonzero + 0x00cd actor, same actor + 0x0001",
+      "mode": "21001",
+      "packet": 4088,
+      "select": {
+        "c2s_frame": 1355,
+        "d3_before_lock": false,
+        "frame_gap": 1,
+        "frame_shape": "0x00cc clear + 0x00cd clear, 0xe0000000 + 0x00cd actor, 0xe0000000 + 0x0133 + 0x0133 + 0x0133",
+        "ms_to_lock": 334,
+        "packet": 4085
+      }
+    },
+    {
+      "attack_after_clear": false,
+      "attacks_after_clear": 1,
+      "c2s_before_attack": {
+        "0x0001": 4,
+        "0x00ca": 20
+      },
+      "c2s_frame": 1360,
+      "capture": "party_battle_leve.pcapng",
+      "clear_ms": 7806,
+      "clear_to_attack_ms": [
+        196
+      ],
+      "d2_after_clear": false,
+      "first_attack_ms": 3781,
+      "first_attack_opcode": "0x0139",
+      "first_d2_ms": 529,
+      "frame_shape": "0x00cc actor, nonzero + 0x00cd actor, same actor",
+      "mode": "21001",
+      "packet": 4096,
+      "select": {
+        "c2s_frame": 1359,
+        "d3_before_lock": false,
+        "frame_gap": 1,
+        "frame_shape": "0x00cd actor, 0xe0000000 + 0x0001",
+        "ms_to_lock": 333,
+        "packet": 4094
+      }
+    },
+    {
+      "attack_after_clear": false,
+      "attacks_after_clear": 0,
+      "c2s_before_attack": {
+        "0x0001": 3,
+        "0x00ca": 18
+      },
+      "c2s_frame": 1386,
+      "capture": "party_battle_leve.pcapng",
+      "clear_ms": 28946,
+      "clear_to_attack_ms": [],
+      "d2_after_clear": false,
+      "first_attack_ms": 3323,
+      "first_attack_opcode": "0x0139",
+      "first_d2_ms": 529,
+      "frame_shape": "0x00cc actor, nonzero + 0x00cd actor, same actor",
+      "mode": "21001",
+      "packet": 4161,
+      "select": {
+        "c2s_frame": 1385,
+        "d3_before_lock": false,
+        "frame_gap": 1,
+        "frame_shape": "0x0001 + 0x00cd actor, 0xe0000000",
+        "ms_to_lock": 366,
+        "packet": 4159
+      }
+    },
+    {
+      "attack_after_clear": false,
+      "attacks_after_clear": 0,
+      "c2s_before_attack": {
+        "0x00ca": 4
+      },
+      "c2s_frame": 1519,
+      "capture": "party_battle_leve.pcapng",
+      "clear_ms": 23804,
+      "clear_to_attack_ms": [],
+      "d2_after_clear": false,
+      "first_attack_ms": 892,
+      "first_attack_opcode": "0x0139",
+      "first_d2_ms": 560,
+      "frame_shape": "0x0001 + 0x00cc actor, nonzero + 0x00cd actor, same actor",
+      "mode": "21001",
+      "packet": 4567,
+      "select": {
+        "c2s_frame": 1518,
+        "d3_before_lock": false,
+        "frame_gap": 1,
+        "frame_shape": "0x00cd actor, 0xe0000000",
+        "ms_to_lock": 335,
+        "packet": 4564
+      }
+    },
+    {
+      "attack_after_clear": false,
+      "attacks_after_clear": 0,
+      "c2s_before_attack": {
+        "0x00ca": 2
+      },
+      "c2s_frame": 1580,
+      "capture": "party_battle_leve.pcapng",
+      "clear_ms": 36865,
+      "clear_to_attack_ms": [],
+      "d2_after_clear": false,
+      "first_attack_ms": 476,
+      "first_attack_opcode": "0x0139",
+      "first_d2_ms": 476,
+      "frame_shape": "0x00cc actor, nonzero + 0x00cd actor, same actor",
+      "mode": "21001",
+      "packet": 4788,
+      "select": {
+        "c2s_frame": 1579,
+        "d3_before_lock": false,
+        "frame_gap": 1,
+        "frame_shape": "0x00cd actor, 0xe0000000 + 0x0001",
+        "ms_to_lock": 333,
+        "packet": 4784
+      }
+    },
+    {
+      "attack_after_clear": false,
+      "attacks_after_clear": 0,
+      "c2s_before_attack": {},
+      "c2s_frame": 1688,
+      "capture": "party_battle_leve.pcapng",
+      "clear_ms": 4354,
+      "clear_to_attack_ms": [],
+      "d2_after_clear": false,
+      "first_attack_ms": null,
+      "first_d2_ms": 545,
+      "frame_shape": "0x00cc actor, nonzero + 0x00cd actor, same actor",
+      "mode": "21001",
+      "packet": 5155,
+      "select": null
+    },
+    {
+      "attack_after_clear": false,
+      "attacks_after_clear": 0,
+      "c2s_before_attack": {},
+      "c2s_frame": 92,
+      "capture": "war_quest_update2.pcapng",
+      "clear_ms": 1033,
+      "clear_to_attack_ms": [],
+      "d2_after_clear": false,
+      "first_attack_ms": null,
+      "first_d2_ms": 561,
+      "frame_shape": "0x00cc actor, nonzero + 0x00cd actor, same actor",
+      "mode": "21001",
+      "packet": 250,
+      "select": {
+        "c2s_frame": 90,
+        "d3_before_lock": true,
+        "frame_gap": 2,
+        "frame_shape": "0x0001 + 0x00cd actor, 0xe0000000",
+        "ms_to_lock": 667,
+        "packet": 245
+      }
+    },
+    {
+      "attack_after_clear": false,
+      "attacks_after_clear": 0,
+      "c2s_before_attack": {},
+      "c2s_frame": 101,
+      "capture": "war_quest_update2.pcapng",
+      "clear_ms": 5585,
+      "clear_to_attack_ms": [],
+      "d2_after_clear": false,
+      "first_attack_ms": null,
+      "first_d2_ms": 527,
+      "frame_shape": "0x00cc actor, nonzero + 0x00cd actor, same actor + 0x012d commandDefault",
+      "mode": "21001",
+      "packet": 269,
+      "select": {
+        "c2s_frame": 96,
+        "d3_before_lock": true,
+        "frame_gap": 5,
+        "frame_shape": "0x00cd actor, 0xe0000000 + 0x0001",
+        "ms_to_lock": 1794,
+        "packet": 258
+      }
+    }
+  ],
+  "event_start_crc": {
+    "crc32_matches_parameter_window": 126,
+    "messages": 126,
+    "owner_low16_is_attack_command": 0
+  },
+  "evidence_class": "packet-capture",
+  "generator_version": "2",
+  "lock_second_dword": [
+    {
+      "count": 3,
+      "shape": "actor, nonzero",
+      "value": "0x00000040"
+    },
+    {
+      "count": 12,
+      "shape": "actor, nonzero",
+      "value": "0x0466e6a4"
+    },
+    {
+      "count": 1,
+      "shape": "actor, nonzero",
+      "value": "0x048ae2a4"
+    },
+    {
+      "count": 17,
+      "shape": "actor, zero",
+      "value": "0x00000000"
+    },
+    {
+      "count": 17,
+      "shape": "clear",
+      "value": "0x00000000"
+    },
+    {
+      "count": 1,
+      "shape": "clear",
+      "value": "0x00000020"
+    },
+    {
+      "count": 2,
+      "shape": "clear",
+      "value": "0x00000040"
+    },
+    {
+      "count": 2,
+      "shape": "clear",
+      "value": "0x00000058"
+    },
+    {
+      "count": 1,
+      "shape": "clear",
+      "value": "0x008b000a"
+    },
+    {
+      "count": 1,
+      "shape": "clear",
+      "value": "0x00cf97aa"
+    },
+    {
+      "count": 8,
+      "shape": "clear",
+      "value": "0x03918eb0"
+    },
+    {
+      "count": 1,
+      "shape": "clear",
+      "value": "0x65440100"
+    }
+  ],
+  "locks": [
+    {
+      "count": 16,
+      "mode": "21001",
+      "same_frame_next": "0x00cd actor, same actor",
+      "shape": "actor, nonzero"
+    },
+    {
+      "count": 1,
+      "mode": "21002",
+      "same_frame_next": "0x012d talkDefault",
+      "shape": "actor, zero"
+    },
+    {
+      "count": 1,
+      "mode": "none",
+      "same_frame_next": "0x00cd actor, 0xe0000000",
+      "shape": "actor, zero"
+    },
+    {
+      "count": 15,
+      "mode": "none",
+      "same_frame_next": "0x012d talkDefault",
+      "shape": "actor, zero"
+    },
+    {
+      "count": 15,
+      "mode": "21001",
+      "same_frame_next": "0x00cd clear, 0xe0000000",
+      "shape": "clear"
+    },
+    {
+      "count": 2,
+      "mode": "21002",
+      "same_frame_next": "0x00cd clear, 0xe0000000",
+      "shape": "clear"
+    },
+    {
+      "count": 1,
+      "mode": "none",
+      "same_frame_next": "0x00ca",
+      "shape": "clear"
+    },
+    {
+      "count": 15,
+      "mode": "none",
+      "same_frame_next": "0x00cd clear, 0xe0000000",
+      "shape": "clear"
+    }
+  ],
+  "mode_replies": [
+    {
+      "command": 21001,
+      "count": 7,
+      "prior_state": "00",
+      "reply_frame": "0x0134 02 bf + 0x0139 command=request + 0x0131 commandForced",
+      "typed_tail": "nil,nil,int 1,nil,nil,nil,nil,nil,nil"
+    },
+    {
+      "command": 21001,
+      "count": 5,
+      "prior_state": "none",
+      "reply_frame": "0x0134 02 bf + 0x0139 command=request + 0x0131 commandForced",
+      "typed_tail": "nil,nil,int 1,nil,nil,nil,nil,nil,nil"
+    },
+    {
+      "command": 21002,
+      "count": 11,
+      "prior_state": "02",
+      "reply_frame": "0x0134 00 bf + 0x0139 command=request + 0x0131 commandForced",
+      "typed_tail": "nil,nil,int 1,nil,nil,nil,nil,nil,nil"
+    },
+    {
+      "command": 21002,
+      "count": 1,
+      "prior_state": "03",
+      "reply_frame": "0x0131 commandForced",
+      "typed_tail": "nil,nil,int 1,nil,actor=lock target,nil,nil,nil,nil"
+    }
+  ],
+  "mode_reply_ms": {
+    "max": 589,
+    "median": 558.5,
+    "min": 289,
+    "n": 24
+  },
+  "mode_requests": [
+    {
+      "command": 21001,
+      "count": 12,
+      "crc32": "0xbbbac113",
+      "event_name": "commandForced",
+      "selector": 0,
+      "trigger_is_sender": true,
+      "typed_tail": "nil,nil,int 1,nil,nil,nil,nil,nil,nil"
+    },
+    {
+      "command": 21002,
+      "count": 1,
+      "crc32": "0x8e123be4",
+      "event_name": "commandForced",
+      "selector": 0,
+      "trigger_is_sender": true,
+      "typed_tail": "nil,nil,int 1,nil,actor=lock target,nil,nil,nil,nil"
+    },
+    {
+      "command": 21002,
+      "count": 11,
+      "crc32": "0xbbbac113",
+      "event_name": "commandForced",
+      "selector": 0,
+      "trigger_is_sender": true,
+      "typed_tail": "nil,nil,int 1,nil,nil,nil,nil,nil,nil"
+    }
+  ],
+  "same_actor_sets": [
+    {
+      "after_same_frame_lock": false,
+      "count": 1,
+      "mode": "21001",
+      "same_frame_next": "frame end",
+      "self": false
+    },
+    {
+      "after_same_frame_lock": false,
+      "count": 1,
+      "mode": "21002",
+      "same_frame_next": "0x00ca",
+      "self": false
+    },
+    {
+      "after_same_frame_lock": false,
+      "count": 1,
+      "mode": "21001",
+      "same_frame_next": "0x0001",
+      "self": true
+    },
+    {
+      "after_same_frame_lock": false,
+      "count": 1,
+      "mode": "21001",
+      "same_frame_next": "0x00ca",
+      "self": true
+    },
+    {
+      "after_same_frame_lock": false,
+      "count": 1,
+      "mode": "21001",
+      "same_frame_next": "0x012d commandDefault",
+      "self": true
+    },
+    {
+      "after_same_frame_lock": false,
+      "count": 1,
+      "mode": "21002",
+      "same_frame_next": "0x00ca",
+      "self": true
+    },
+    {
+      "after_same_frame_lock": false,
+      "count": 1,
+      "mode": "21002",
+      "same_frame_next": "0x012d commandDefault",
+      "self": true
+    },
+    {
+      "after_same_frame_lock": true,
+      "count": 3,
+      "mode": "21001",
+      "same_frame_next": "0x0001",
+      "self": false
+    },
+    {
+      "after_same_frame_lock": true,
+      "count": 11,
+      "mode": "21001",
+      "same_frame_next": "0x00ca",
+      "self": false
+    },
+    {
+      "after_same_frame_lock": true,
+      "count": 1,
+      "mode": "21001",
+      "same_frame_next": "0x012d commandDefault",
+      "self": false
+    },
+    {
+      "after_same_frame_lock": true,
+      "count": 1,
+      "mode": "21001",
+      "same_frame_next": "frame end",
+      "self": false
+    }
+  ],
+  "set_classes": {
+    "actor, 0xe0000000": 51,
+    "actor, same actor": 18,
+    "clear, 0xe0000000": 38,
+    "self, 0xe0000000": 6,
+    "self, same actor": 5
+  },
+  "study": "c2s-battle-engage-order",
+  "talk_starts": [
+    {
+      "count": 16,
+      "next_is_owner": true,
+      "prev_is_owner": true,
+      "same_frame_next": "0x00cd actor, 0xe0000000",
+      "same_frame_prev": "0x00cc actor, zero",
+      "selector": 1
+    },
+    {
+      "count": 1,
+      "next_is_owner": false,
+      "prev_is_owner": false,
+      "same_frame_next": "0x00cc clear",
+      "same_frame_prev": "0x00ca",
+      "selector": 101
+    }
+  ],
+  "target_records_before_mode_reply": 0
+}
