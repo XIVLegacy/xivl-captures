@@ -50,11 +50,9 @@ retail extraction.
 
 ## Reproduced result
 
-[Retail Checks run 32528392471](https://github.com/XIVLegacy/xivl-captures/actions/runs/32528392471)
-reproduced the tracked
+[Retail Checks run 41848439792](https://github.com/XIVLegacy/xivl-captures/actions/runs/41848439792)
+passed at commit `ee221d88d6fbb290c29499b8122cd8368d9b58f6`. The tracked
 [`pcap-1.23b-products.json`](../../config/retail_evidence/pcap-1.23b-products.json)
-attestation byte-for-byte.
-The retained file is 306 bytes with SHA-256
-`cca5f8f2a66220c06353dd337ed6b368420fa980aed2546751330de67884f001`.
-Artifact allowlist, schema, cleanup, negative-control, and public-log leakage
-reviews passed, and the ignored review root was removed completely.
+is its retained attestation, byte-for-byte: 306 bytes with SHA-256
+`29bbbafe844ae30f33a94d5864407b3377fe766390f50cee41f7283769f7bd83`.
+The job's retained-output step accepted that file as the artifact's only file.
