@@ -18,10 +18,10 @@ search_hints:
 - "2106628"
 notes: >-
   Exhaustive 52-row audit of the supplied Lower La Noscea and Mor Dhona monster
-  population. A lifetime-scoped instantiate, appearance-base, and display-name
-  join finds two Puroboros CactusLesserStandard instance paths against a
-  BombNormalStandard catalog candidate; neither establishes the static
-  actor-class path. Both priority Kobold mappings remain unresolved.
+  population. A source actor lifetime join of instantiate, appearance-base,
+  and display-name records finds no matching instance class paths for the
+  target identity pairs. Catalog paths and both priority Kobold mappings
+  remain unverified.
 source_refs:
 - source: pcap-1.23b
   citation: sources/pcap-1.23b/manifest.yaml

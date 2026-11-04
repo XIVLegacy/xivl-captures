@@ -68,8 +68,9 @@ schemas contain no actor-class ID, display-name ID, or mob-name association.
 
 ## Method
 
+The lifetime key is the source actor at wrapped sub-event header `+4`.
 Network actor IDs are reused, so the extractor starts a new lifetime at every
-s2c `0x00CC` ActorInstantiate. Within that lifetime it joins:
+s2c `0x00CC` ActorInstantiate for that source. Within that lifetime it joins:
 
 - the `0x00CC` class path;
 - `0x00D6` application `u32 +0x00`, the actor graphic base/model ID; and
@@ -80,17 +81,24 @@ globally unique pair identifies the actor-class row associated with the
 lifetime. It does not turn the lifetime's instance class into the static
 actorclass path.
 The generated occurrence rows retain capture name, decoded record indexes,
-network actor ID, both identity fields, instance name, base class, and path.
+source actor ID, both identity fields, instance name, base class, and path.
+
+`walk_capture_payloads` returns the body after the 16-byte sub-event header.
+Its `+8` word is therefore game-message header `+8`, separate from both
+wrapped actor fields. STATIC client evidence identifies this as a clock slot:
+`xivl-decomp:docs/net/zone-outbound-header.md#construction-and-finalization`
+records the Zone builder's `_time64(NULL)` call at `0x00DC1BFF` and its low
+dword store at `0x00DC1C07`. This does not identify the server's producer or
+prove the clock policy of every incoming packet. The lifetime join uses the
+wrapped source, never this header clock word.
 
 ## Findings
 
 The supplied population snapshot lists Puroboros actor class 2101608 as
 `/Chara/Npc/Monster/Bomb/BombNormalStandard`. The preserved Gamer Escape join
-also classifies Puroboros as Bomb, matching the decoded race. Two joined
-retained Puroboros lifetimes show the instance path
-`/Chara/Npc/Monster/Cactus/CactusLesserStandard`. This is a catalog/instance
-path mismatch for those lifetimes; neither path is established here as the
-static actor-class path.
+also classifies Puroboros as Bomb, matching the decoded race. No retained
+source actor lifetime joins its decoded display-name/base pair to an instance
+class path. The Bomb path remains an unverified catalog candidate.
 
 Kobold Ascetic 2106637 and Kobold Pickman 2106628 remain unresolved. Neither
 decoded identity pair occurs in a retained class-path lifetime, and each pair
@@ -101,7 +109,7 @@ the registry class is `GoblinBommerGlaStandard`, not
 rows as Kobold. The configured Goblin class therefore remains an implementation
 calibration, not a taxonomy or mapping claim.
 
-Nine other paths are present in the pinned population snapshot, but this corpus
+Ten paths are present in the pinned population snapshot, but this corpus
 provides no joined instance occurrence for them. Their paths remain unverified
 catalog candidates. The other 42 rows remain unresolved; configured
 family/job-compatible paths are retained only as candidates.
@@ -109,10 +117,8 @@ family/job-compatible paths are retained only as candidates.
 ## Population-catalog boundary
 
 The existing population catalog paths remain input candidates, not
-retail-verified actor-class mappings. The two observed Cactus instance paths do
-not establish a static replacement for the Puroboros Bomb candidate. The other
-catalog paths are likewise unverified, while configured fallbacks remain
-provisional implementation choices. No configured fallback, including either
+retail-verified actor-class mappings. Configured fallbacks remain provisional
+implementation choices. No configured fallback, including either
 Kobold fallback, is established here as an actor-class mapping.
 
 ## Evidence boundary

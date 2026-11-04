@@ -14,17 +14,16 @@ a static actor-class path. Configured family/job paths are candidates only.
 | 2103904 | ladybug | population_catalog_no_instance_observation | `/Chara/Npc/Monster/Bug/LadyBugStandard` | 0 retained lifetimes |
 | 2102717 | musk_roseling | population_catalog_no_instance_observation | `/Chara/Npc/Monster/Flower/FlowerStandard` | 0 retained lifetimes |
 | 2104003 | plains_rat | population_catalog_no_instance_observation | `/Chara/Npc/Monster/Lemming/LemmingStandard` | 0 retained lifetimes |
-| 2101608 | puroboros | population_catalog_instance_path_mismatch | `/Chara/Npc/Monster/Bomb/BombNormalStandard` | 2 retained lifetimes |
+| 2101608 | puroboros | population_catalog_no_instance_observation | `/Chara/Npc/Monster/Bomb/BombNormalStandard` | 0 retained lifetimes |
 | 2102307 | ravenous_nannygoat | population_catalog_no_instance_observation | `/Chara/Npc/Monster/Yak/YakFemaleStandard` | 0 retained lifetimes |
 | 2104001 | wharf_rat | population_catalog_no_instance_observation | `/Chara/Npc/Monster/Lemming/LemmingStandard` | 0 retained lifetimes |
 | 2103901 | bumble_beetle | population_catalog_no_instance_observation | `/Chara/Npc/Monster/Bug/BugStandard` | 0 retained lifetimes |
 | 2102305 | aldgoat_nanny | population_catalog_no_instance_observation | `/Chara/Npc/Monster/Yak/YakFemaleStandard` | 0 retained lifetimes |
 
 The population snapshot lists Puroboros as
-`/Chara/Npc/Monster/Bomb/BombNormalStandard`. Two joined retained
-lifetimes show `/Chara/Npc/Monster/Cactus/CactusLesserStandard`. This is
-a catalog/instance-path mismatch for those lifetimes; it establishes
-neither path as Puroboros's static actor-class path.
+`/Chara/Npc/Monster/Bomb/BombNormalStandard`. Its retained lifetime count
+is 0; its catalog path remains
+an unverified candidate.
 
 ## Priority Kobold results
 
@@ -62,17 +61,19 @@ Exact rows and candidates are retained in `mappings.csv`.
 The extractor scanned 54 retained captures,
 65665 decoded records,
 831 instantiate records, and
-368 lifetimes carrying both appearance
+186 lifetimes carrying both appearance
 and display-name identity. It resets identity state on each `0x00CC`
-instantiate, then joins `0x00D6` application `u32 +0x00` (graphic base)
-and `0x013D` application `u32 +0x00` (display-name ID) for the same network
+instantiate, keyed by the wrapped sub-event header's source actor at +4,
+then joins `0x00D6` application `u32 +0x00` (graphic base)
+and `0x013D` application `u32 +0x00` (display-name ID) for the same source
 actor lifetime. A globally unique decoded pair identifies the actor-class
 row associated with that lifetime. It does not make the lifetime's instance
 class path the static actor-class path.
 
-The two joined occurrence rows are in `war_quest_update2.pcapng` at decoded record
-indexes 1999/2007 and 2035/2043 (instantiate/name; appearance is recorded in
-`occurrences.csv`), both on network actor `0x50e15b06`.
+The join produced 0 occurrence rows in `occurrences.csv`.
+The wrapped body's +8 word belongs to the game-message header's clock
+slot and is not used as an actor identity. The study README owns that
+field's evidence and boundary.
 
 ## Evidence boundary
 

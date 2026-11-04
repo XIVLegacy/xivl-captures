@@ -50,7 +50,7 @@ OCCURRENCE_FIELDS = (
     "instantiate_record_index",
     "appearance_record_index",
     "name_record_index",
-    "network_actor_id",
+    "source_actor_id",
     "actor_class_id",
     "pool_name",
     "display_name_id",
@@ -150,7 +150,7 @@ def _scan(targets: list[dict]) -> tuple[list[dict], dict]:
             raw = bytes.fromhex(record["bytes"])
             if len(raw) < 20:
                 continue
-            actor_id = int.from_bytes(raw[8:12], "little")
+            actor_id = record["source_actor_id"]
             opcode = record["opcode"]
             if opcode == OP_INSTANTIATE:
                 instantiate_records += 1
@@ -198,7 +198,7 @@ def _scan(targets: list[dict]) -> tuple[list[dict], dict]:
                         "instantiate_record_index": state["instantiate_record_index"],
                         "appearance_record_index": state["appearance_record_index"],
                         "name_record_index": state["name_record_index"],
-                        "network_actor_id": f"0x{actor_id:08x}",
+                        "source_actor_id": f"0x{actor_id:08x}",
                         "actor_class_id": target["actor_class_id"],
                         "pool_name": target["pool_name"],
                         "display_name_id": state["display_name_id"],
@@ -324,10 +324,9 @@ def _verdicts(mappings: list[dict], occurrences: list[dict], accounting: dict) -
         [
             "",
             "The population snapshot lists Puroboros as",
-            "`/Chara/Npc/Monster/Bomb/BombNormalStandard`. Two joined retained",
-            "lifetimes show `/Chara/Npc/Monster/Cactus/CactusLesserStandard`. This is",
-            "a catalog/instance-path mismatch for those lifetimes; it establishes",
-            "neither path as Puroboros's static actor-class path.",
+            "`/Chara/Npc/Monster/Bomb/BombNormalStandard`. Its retained lifetime count",
+            f"is {priority[2101608]['retained_lifetime_count']}; its catalog path remains",
+            "an unverified candidate.",
             "",
             "## Priority Kobold results",
             "",
@@ -378,15 +377,17 @@ def _verdicts(mappings: list[dict], occurrences: list[dict], accounting: dict) -
             f"{accounting['instantiate_record_count']} instantiate records, and",
             f"{accounting['completed_lifetime_count']} lifetimes carrying both appearance",
             "and display-name identity. It resets identity state on each `0x00CC`",
-            "instantiate, then joins `0x00D6` application `u32 +0x00` (graphic base)",
-            "and `0x013D` application `u32 +0x00` (display-name ID) for the same network",
+            "instantiate, keyed by the wrapped sub-event header's source actor at +4,",
+            "then joins `0x00D6` application `u32 +0x00` (graphic base)",
+            "and `0x013D` application `u32 +0x00` (display-name ID) for the same source",
             "actor lifetime. A globally unique decoded pair identifies the actor-class",
             "row associated with that lifetime. It does not make the lifetime's instance",
             "class path the static actor-class path.",
             "",
-            "The two joined occurrence rows are in `war_quest_update2.pcapng` at decoded record",
-            "indexes 1999/2007 and 2035/2043 (instantiate/name; appearance is recorded in",
-            "`occurrences.csv`), both on network actor `0x50e15b06`.",
+            f"The join produced {len(occurrences)} occurrence rows in `occurrences.csv`.",
+            "The wrapped body's +8 word belongs to the game-message header's clock",
+            "slot and is not used as an actor identity. The study README owns that",
+            "field's evidence and boundary.",
             "",
             "## Evidence boundary",
             "",

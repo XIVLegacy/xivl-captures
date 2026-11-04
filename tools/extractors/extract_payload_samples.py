@@ -98,6 +98,9 @@ def walk_capture_payloads(path: Path) -> list[dict]:
                                 "opcode": inner_opcode,
                                 "sub_size": size,
                                 "capture": path.name,
+                                "source_actor_id": struct.unpack_from(
+                                    "<I", body, offset + 4
+                                )[0],
                                 # Preserve raw spawn bytes here. Scrub only when emitting samples.
                                 "bytes": sub_body.hex(),
                             }

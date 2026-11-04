@@ -4,11 +4,10 @@
   "capture_count": 54,
   "decoded_record_count": 65665,
   "instantiate_record_count": 831,
-  "completed_lifetime_count": 368,
-  "joined_occurrence_count": 2,
+  "completed_lifetime_count": 186,
+  "joined_occurrence_count": 0,
   "verdict_counts": {
-    "population_catalog_instance_path_mismatch": 1,
-    "population_catalog_no_instance_observation": 9,
+    "population_catalog_no_instance_observation": 10,
     "unresolved": 42
   },
   "input": {

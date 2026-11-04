@@ -29,7 +29,7 @@ actor_class_id,pool_name,era_family,decoded_race_name,population_catalog_path,po
 2101508,pugot,Boar,Boar,,/Chara/Npc/Monster/Boar/BoarNormalStandard,
 2100102,puk,Puk,Puk,,/Chara/Npc/Monster/WingLizard/WingLizardNormalStandard,
 2100101,puk_hatchling,Puk,Puk,,/Chara/Npc/Monster/WingLizard/WingLizardLesserStandard,
-2101608,puroboros,Bomb,Bomb,/Chara/Npc/Monster/Bomb/BombNormalStandard,,/Chara/Npc/Monster/Cactus/CactusLesserStandard
+2101608,puroboros,Bomb,Bomb,/Chara/Npc/Monster/Bomb/BombNormalStandard,,
 2106304,qiqirn_scrambler,Qiqirn,Qiqirn,,/Chara/Npc/Monster/Qiqirn/QiqirnBareHandsStandard,
 2100714,rainbow_basilisk,Basilisk,Basilisk,,/Chara/Npc/Monster/ScaleLizard/ScaleLizardStandard,
 2102307,ravenous_nannygoat,Aldgoat,Aldgoats,/Chara/Npc/Monster/Yak/YakFemaleStandard,,
