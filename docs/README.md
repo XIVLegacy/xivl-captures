@@ -21,6 +21,7 @@ relevant source or study bundle for its manifest, provenance, and findings.
 - [Primal quest announcements](primal-quest-announcements.md)
 - [Repair rule announcements](repair-announcements.md)
 - [Published Guildleve rules and reform intent](guildleve-published-rules.md)
+- [Published Hamlet Defense rules](hamlet-published-rules.md)
 - [Battle Regimen announced rules and client limits](battle-regimen-source-evidence.md)
 - [Gridania opening accounts and named-call evidence](gridania-opening-retained-evidence.md)
 - [Land-gathering observed sequence](land-gathering-observed-sequence.md)
