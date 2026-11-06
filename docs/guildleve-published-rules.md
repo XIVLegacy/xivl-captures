@@ -54,6 +54,32 @@ use. Line 7 separately restricts Grand Company levequests to full-fledged
 Company members. These statements do not extend the regional or local
 holding rules to Company leves.
 
+## Manual Company levequest participation
+
+The [Grand Company Guide](http://lodestone.finalfantasyxiv.com/pl/guide/cont01.html),
+"Company Levequests," lines 184-203, supplies a separate participation
+contract. Its inventory row is `grand-company-guide` in the
+[per-page inventory](../studies/lodestone-manual/derived/file-inventory.csv).
+The [source manifest](../sources/lodestone-manual/manifest.yaml) pins member
+`sources/lodestone-manual/objects/pages/grand-company-guide.md`, 19,212 bytes,
+SHA-256 `daec7989504db2c4cbf289c8ce496ce417a2eb33ea6c1021ad19be25e52a5b2a`.
+This first-party manual retains evidence class `web-tables`, tier 3, and
+establishes documented intent. The 2015-01-08 snapshot dates preservation,
+not a selected patch or proof of 1.23b behavior. Images are not used.
+
+| Subject | Documented Company-leve rule | Guide line |
+| --- | --- | --- |
+| Acceptance and time | The quest begins when accepted and must be completed within its time limit. Undertaking it calls for speaking with a listed Grand Company NPC while carrying at least one leve allowance. | 186 |
+| Participants and linking | Only the adventurer who accepted the quest may challenge it. Leve linking and leve sharing are prohibited. | 188 |
+| Recruit eligibility | Recruits cannot accept Company levequests. | 190 |
+| Company affiliation | Adventurers cannot accept levequests from other Grand Companies. | 202 |
+
+These Company-specific restrictions differ from the regional participation
+rules below. Carrying an allowance is a published prerequisite, not evidence
+of an allowance debit. The section provides no numeric time limit or reward
+rule and demonstrates no admission, timer enforcement, allowance mutation
+or reward grant.
+
 ## Manual regional participation and completion
 
 The following rules come from "Undertaking Regional Levequests."
