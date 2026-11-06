@@ -17,6 +17,7 @@ relevant source or study bundle for its manifest, provenance, and findings.
 - [Combat sight detection evidence](combat-sight-detection-evidence.md)
 - [Combat and quest-duty observations](combat-duty-observations.md)
 - [Skirmish and Behest content evidence](skirmish-behest-content-evidence.md)
+- [Raid entry announcements](raid-entry-announcements.md)
 - [Repair rule announcements](repair-announcements.md)
 - [Published Guildleve rules and reform intent](guildleve-published-rules.md)
 - [Battle Regimen announced rules and client limits](battle-regimen-source-evidence.md)
