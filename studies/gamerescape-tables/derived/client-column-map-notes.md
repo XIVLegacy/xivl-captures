@@ -472,31 +472,34 @@ own and not an inference:
 set", which the item can answer by itself, but Sanction is a player state. The
 status table says what it is - `xtx_status.csv` row **223992**, `Sanction`, whose
 description reads "Receiving the gear-enhancing benefits of your Grand Company's
-sanction", with a separate line for its expiry, so it is a timed buff whose whole
-function is to enhance gear. That is exactly what a condition on a stat bonus needs
-to be, and it is why the 33 Sanction rows carry threshold 1 rather than a piece
-count.
+sanction", with a separate line for its expiry. The authored text describes a
+timed, gear-enhancing effect. That is consistent with a condition on a stat bonus;
+the 33 Sanction rows carry the literal value 1. These
+text and column joins do not establish the runtime predicate or stat application.
 
-`populaceCompanyBuffer.csv` is where a player gets it, and it names the mechanic
-outright. A dedicated company official **bestows** sanction (row 5, `Have sanction
-bestowed`); it is not bought. Rows 10-14 explain it:
+`populaceCompanyBuffer.csv` describes a dedicated company official bestowing
+sanction (row 5, `Have sanction bestowed`). This is authored service text, without
+proof of a payment or free settlement. Rows 10-14 explain it:
 
 - Sanction is "a process which involves the casting of any one of a range of
   enhancing spells on **gear specially crafted to harbor enchantments**" (row 11).
-  That is `equipment.71 = 16010` from the item's side: the column is how an item
-  declares itself sanction-ready, which is why its threshold is a flag at 1 rather
-  than a piece count.
+  That associates the `equipment.71 = 16010` group with the Sanction label.
+  These rows' column 72 holds 1; the text does not show how a runtime consumer
+  tests that value.
 - The effect lasts a number of minutes supplied at runtime and "grants a bonus to
   the efficacy of certain gear" (row 13).
 - Which gear qualifies "can be identified by viewing item details in the inventory
   interface" (row 14) - the purpose of the `Sanction: ` label in `paramName`.
 - It is gated on company rank: Chief Storm / Serpent / Flame Sergeant or above.
 
-**This corrects an earlier reading.** `populaceCompanyShop.csv` row 26 does offer to
-exchange seals "for the effect of" a status, and that was taken here as the
-purchase route for Sanction. It is not: the status id in that row is a runtime
-argument, and the buffer bestows sanction for free on rank. Whatever row 26 sells,
-Sanction is not established to be it.
+`populaceCompanyShop.csv` row 26 offers to exchange seals "for the effect of" a
+status supplied at runtime. That operand does not identify Sanction. The
+CompanyBuffer contract in
+`xivl-client-scripts:docs/sanction-company-buffer-contract.md` establishes local
+rank/menu, dialogue and separate effect callbacks, without proving a status
+grant, cost or duration. The distinct scroll offers are recorded in
+`xivl-client-data:docs/sanction-static-rows.md`; their item purchase remains
+separate from the NPC service.
 
 That also explains the negative GE result recorded below: none of the 93 `73/74`
 values shows up as a worn stat because every one of them is gated behind either a
@@ -518,7 +521,8 @@ For the record, since nothing else in the file touches a column:
 `populaceCompanyShop.csv` is 140 rows x 5 languages, keys 2-141 with no gaps, and
 runs the seal counters of all three companies. The three seal currencies are not
 interchangeable, seals are capped and any issued over the cap are lost (row 32),
-and besides items they buy promotions, the Sanction effect, chocobo barding, and
+and besides items the shop text covers promotions, a runtime-supplied status
+effect, chocobo barding, and
 access to a company aetherial transport network gated by an item. Rows 53-58,
 73-74 and 83-84 are Foundation Day seasonal stock.
 
