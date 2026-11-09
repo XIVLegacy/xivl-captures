@@ -19,6 +19,7 @@ relevant source or study bundle for its manifest, provenance, and findings.
 - [Skirmish and Behest content evidence](skirmish-behest-content-evidence.md)
 - [Battle Regimen announced rules and client limits](battle-regimen-source-evidence.md)
 - [Gridania opening accounts and named-call evidence](gridania-opening-retained-evidence.md)
+- [NPC nameplate startup work](npc-nameplate-startup-work.md)
 - [Land-gathering observed sequence](land-gathering-observed-sequence.md)
 - [Fisher exit state and recipient evidence](fisher-exit-state-observations.md)
 - [Selected class action behavior evidence](class-action-behavior-evidence.md)
