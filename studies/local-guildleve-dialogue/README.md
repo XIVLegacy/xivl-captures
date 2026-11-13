@@ -243,6 +243,35 @@ application bytes `[0x49, 0x89)`. The `0x012E` parameters occupy
 `[0x11, 0x51)`. Read tags in sequence through the listed END offsets, and
 check the remaining parameter bytes are zero.
 
+### First recorded synthesis actions
+
+The first `openCraftProgressWidget` order in the table above is followed
+by these selected type-0 orders on the same owner, trigger and delegate
+prefix. `nil` is tag `0x05`. The other values use integer tag `0x00`.
+
+| Main s2c frame | Subevent | Capture packet | Method | END offset | Remaining parameters |
+|---:|---:|---:|---|---:|---|
+| 93 | 0 | 315 | `craftCommandUI` | 36 | `34, 1` |
+| 102 | 4 | 365 | `updateInfo` | 45 | `8, 87, 0, nil, nil, nil, 0` |
+| 104 | 0 | 372 | `craftCommandUI` | 36 | `34, 1` |
+
+The intervening type-0 updates carry the same trigger and the
+`0x25800000` server-codes word. Their CRCs match the 64-byte parameter
+windows.
+
+| Main c2s frame | Subevent | Capture packet | END offset | Parameters | CRC |
+|---:|---:|---:|---:|---|---|
+| 107 | 1 | 347 | 5 | `22580` | `0xBC1A97C4` |
+| 112 | 0 | 368 | 1 | `nil` | `0x2B9EBC42` |
+| 122 | 1 | 398 | 5 | `22580` | `0xBC1A97C4` |
+
+The packet order is 315, 347, 365, 368, 372, 398. The
+[progress script contract](https://github.com/XIVLegacy/xivl-client-scripts/blob/e291e89/docs/craft-progress-flow-contract.md#ordinary-opening-and-first-standard-synthesis)
+identifies 34 as the selected class argument and 22580 as the first
+standard command for that class and order. The capture records the
+command ID and following refresh. The physical input and gameplay
+calculation require separate evidence.
+
 ### Other progression observations
 
 Three s2c GenericData `0x0133` streams contain the prefix string `attention`,
