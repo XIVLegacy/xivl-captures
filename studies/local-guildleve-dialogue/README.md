@@ -181,6 +181,70 @@ pairing. The client interpretation of the craft arguments is owned by
 These are selected typed calls; their order alone does not prove delivery,
 craft success or the server's dialogue-selection rule.
 
+### Recipe selection and progress opening
+
+The main connection records a `commandJudgeMode` EventStart for owner
+`0xA0F055F1` and trigger `0x029B2941` at c2s frame 43, subevent 1, packet
+121. The nine typed request values are in
+[Selected commandJudgeMode request vectors](../director-wire-identity/README.md#selected-commandjudgemode-request-vectors).
+
+The following `0x0130` records have event name `commandJudgeMode`, type 0,
+trigger `0x029B2941`, owner `0xA0F055F1` and function `delegateCommand`.
+Each parameter block begins with actor `0xA0F4E203`, the method string
+shown, and actor `0xA0F055F1`. The last column lists the remaining
+parameters. Integers use tag `0x00`, booleans use `0x03` (true) or `0x04`
+(false), and each parameter block ends with `0x0F`. END offsets count
+from the start of the 64-byte parameter block.
+
+| Main s2c frame | Subevent | Capture packet | Method | END offset | Remaining parameters |
+|---:|---:|---:|---|---:|---|
+| 42 | 1 | 123 | `loadTextData` | 24 | none |
+| 43 | 3 | 128 | `start` | 63 | `0, false, 0, 0, 0, 0, 0, 0, 0, 0` |
+| 51 | 0 | 169 | `closeCraftStartWidget` | 33 | none |
+| 63 | 0 | 201 | `start` | 63 | `0, true, 10005001, 10005001, 10007507, 10005301, 0, 0, 0, 0` |
+| 70 | 0 | 232 | `selectRcp` | 26 | `8030420` |
+| 72 | 0 | 242 | `confirmRcp` | 62 | `8030420, 1, 1000007, 1, 1000005, 1, 0, 0` |
+| 81 | 0 | 276 | `closeCraftStartWidget` | 33 | none |
+| 90 | 0 | 306 | `openCraftProgressWidget` | 50 | `100, 0, 0` |
+
+These are the selected type-0 `0x012E` records with trigger
+`0x029B2941` and a zero word at application offset 8. Each `nil` is an
+explicit tag `0x05`.
+
+| Main c2s frame | Subevent | Capture packet | END offset | Parameters |
+|---:|---:|---:|---:|---|
+| 45 | 2 | 126 | 1 | `nil` |
+| 51 | 0 | 165 | 50 | `3, 0, 0, 0, 0, 0, 0, 0, 0, 0` |
+| 52 | 0 | 170 | 1 | `nil` |
+| 73 | 1 | 230 | 50 | `1, 0, 10005001, 10005001, 10007507, 10005301, 0, 0, 0, 0` |
+| 75 | 0 | 237 | 5 | `1` |
+| 87 | 1 | 274 | 1 | `true` |
+| 89 | 0 | 280 | 1 | `nil` |
+| 100 | 2 | 310 | 1 | `nil` |
+
+The capture packet column places these records near one another. The
+direction-local frame indexes and application fields establish the wire
+observations. EventUpdate has no owner field in this layout. The supplied
+material values in the type-0 exchange are integers. The selected interval
+does not establish the item reference encoding for an ordinary player-bag
+selection, the attended control, or successful item settlement.
+
+For the client consumers, see
+`xivl-client-scripts:docs/craft-start-selection-contract.md` (Choice,
+completion and cancellation),
+`xivl-client-scripts:docs/local-guildleve-supplies-contract.md` (Crafting
+client boundary), and
+`xivl-client-scripts:docs/craft-progress-flow-contract.md` (Judge to widget).
+
+To reproduce the tables, verify the member identity in [Reproduction](#reproduction)
+and reconstruct the main clear-game lane in both directions. Use the table
+locators to select complete wrapped subevents. The `0x0130` parameters occupy
+application bytes `[0x49, 0x89)`. The `0x012E` parameters occupy
+`[0x11, 0x51)`. Read tags in sequence through the listed END offsets, and
+check the remaining parameter bytes are zero.
+
+### Other progression observations
+
 Three s2c GenericData `0x0133` streams contain the prefix string `attention`,
 actor `0x5FF80001`, and an empty string, followed by these integer lists:
 
